@@ -1,0 +1,30 @@
+{
+  "name": "pipewrench",
+  "version": "1.0.0",
+  "description": "",
+  "types": "PipeWrench.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asledgehammer/PipeWrench.git"
+  },
+  "keywords": [
+    "pipewrench",
+    "projectzomboid",
+    "project",
+    "zomboid",
+    "pz",
+    "typescript",
+    "typescripttolua",
+    "tstl",
+    "lua"
+  ],
+  "author": "asledgehammer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/asledgehammer/PipeWrench/issues"
+  },
+  "homepage": "https://github.com/asledgehammer/PipeWrench#readme"
+}
