@@ -13,7 +13,9 @@ PipeWrench is a set of TypeScript definitions for both the Java API and Lua code
 
 # Support
 
-## asledgehammer Discord
+![](https://i.imgur.com/ZLnfTK4.png)
+
+## Discord Server
 https://discord.gg/u3vWvcPX8f
 
 If you like what I do and helped your community a lot, feel free to buy me a coffee!
