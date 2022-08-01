@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:38:59.869Z
+ * File generated at: 2022-08-01T06:43:04.744Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -262,6 +262,8 @@ declare module 'PipeWrench' {
 
       isCenterView: ((_bonusAngle: any) => any) | any;
 
+      isInRangeForUpdate: (() => any) | any;
+
       isInRangeOfPlayer: ((_range: any) => any) | any;
 
       isNearby: (() => any) | any;
@@ -296,6 +298,8 @@ declare module 'PipeWrench' {
 
       setAlpha: ((_a: any) => any) | any;
 
+      setCanRollForSearchFocus: (() => any) | any;
+
       setColor: ((_rgba: any) => any) | any;
 
       setIsBeingRemoved: ((_isBeingRemoved: any) => any) | any;
@@ -307,6 +311,8 @@ declare module 'PipeWrench' {
       setIsSeenThisUpdate: ((_isSeen: any) => any) | any;
 
       setSpotTimer: ((_time: any) => any) | any;
+
+      setWorldMarkerPosition: (() => any) | any;
 
       spotIcon: (() => any) | any;
 

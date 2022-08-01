@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
+ * File generated at 2022-08-01T11:49Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -1518,10 +1518,10 @@ declare module 'PipeWrench' {
       setTransitionOut(arg0: zombie.core.skinnedmodel.advancedanimation.AnimTransition): void;
       /**
        * Method Parameters: 
-       *  - (LiveAnimNode arg0, AnimTransition arg1, AnimationTrack arg2): void
        *  - (AnimNode arg0, AnimTransition arg1, AnimationTrack arg2): void
+       *  - (LiveAnimNode arg0, AnimTransition arg1, AnimationTrack arg2): void
        */
-      startTransitionIn(arg0: zombie.core.skinnedmodel.advancedanimation.LiveAnimNode | zombie.core.skinnedmodel.advancedanimation.AnimNode, arg1: zombie.core.skinnedmodel.advancedanimation.AnimTransition, arg2: zombie.core.skinnedmodel.animation.AnimationTrack): void;
+      startTransitionIn(arg0: zombie.core.skinnedmodel.advancedanimation.AnimNode | zombie.core.skinnedmodel.advancedanimation.LiveAnimNode, arg1: zombie.core.skinnedmodel.advancedanimation.AnimTransition, arg2: zombie.core.skinnedmodel.animation.AnimationTrack): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void

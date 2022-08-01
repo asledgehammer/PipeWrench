@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:38:58.972Z
+ * File generated at: 2022-08-01T06:43:03.127Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -42,15 +42,31 @@ declare module 'PipeWrench' {
 
       static onDebugColor: ((playerObj: any, vehicle: any) => any) | any;
 
+      static OnDoorLock: ((worldobjects: any, door: any) => any) | any;
+
       static OnGetDoorKey: ((worldobjects: any, door: any, player: any) => any) | any;
 
       static onHordeManager: ((square: any, player: any) => any) | any;
 
+      static onMakeNoise: ((square: any, playerObj: any, radius: any, volume: any) => any) | any;
+
+      static OnRemoveAllZombiesClient: ((zombie: any) => any) | any;
+
       static onRemoveItemTool: ((playerObj: any) => any) | any;
+
+      static OnSetDoorKeyID: ((worldobjects: any, door: any) => any) | any;
+
+      static OnSetDoorKeyIDBuilding: ((worldobjects: any, door: any) => any) | any;
+
+      static OnSetDoorKeyIDRandom: ((worldobjects: any, door: any) => any) | any;
 
       static onSpawnVehicle: ((playerObj: any) => any) | any;
 
       static onTeleportUI: ((playerObj: any) => any) | any;
+
+      static onTriggerThunderUI: ((playerObj: any) => any) | any;
+
+      static setForceLockDoor: ((worldobjects: any, door: any, player: any) => any) | any;
     }
   }
   export namespace lua.client.DebugUIs.AdminContextMenu {}

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T23:58Z
+ * File generated at 2022-08-01T11:49Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -173,6 +173,8 @@ declare module 'PipeWrench' {
   export class AttackState extends zombie.ai.states.AttackState {}
   /** @customConstructor AttackVars.new */
   export class AttackVars extends zombie.network.packets.hit.AttackVars {}
+  /** @customConstructor Authorization.new */
+  export class Authorization extends zombie.vehicles.BaseVehicle$Authorization {}
   /** @customConstructor BSFurnace.new */
   export class BSFurnace extends zombie.iso.objects.BSFurnace {}
   /** @customConstructor BarricadeAble.new */
@@ -297,6 +299,8 @@ declare module 'PipeWrench' {
   export class ChatTab extends zombie.chat.ChatTab {}
   /** @customConstructor ChatType.new */
   export class ChatType extends zombie.network.chat.ChatType {}
+  /** @customConstructor CheckState.new */
+  export class CheckState extends zombie.core.raknet.UdpConnection$CheckState {}
   /** @customConstructor Checks.new */
   export class Checks extends zombie.debug.DebugOptions$Checks {}
   /** @customConstructor ChecksumState.new */
@@ -1593,6 +1597,8 @@ declare module 'PipeWrench' {
   export class StrLerpVal extends zombie.iso.weather.WeatherPeriod$StrLerpVal {}
   /** @customConstructor StringConfigOption.new */
   export class StringConfigOption extends zombie.config.StringConfigOption {}
+  /** @customConstructor StringDrawer.new */
+  export class StringDrawer extends zombie.ui.TextManager$StringDrawer {}
   /** @customConstructor StringSandboxOption.new */
   export class StringSandboxOption extends zombie.SandboxOptions$StringSandboxOption {}
   /** @customConstructor StringServerOption.new */
@@ -1737,6 +1743,10 @@ declare module 'PipeWrench' {
   export class Userlog extends zombie.network.Userlog {}
   /** @customConstructor UserlogType.new */
   export class UserlogType extends zombie.network.Userlog$UserlogType {}
+  /** @customConstructor ValidatePacket.new */
+  export class ValidatePacket extends zombie.network.packets.ValidatePacket {}
+  /** @customConstructor ValidateState.new */
+  export class ValidateState extends zombie.network.packets.ValidatePacket$ValidateState {}
   /** @customConstructor Vector.new */
   export class Vector<any> extends java.util.Vector<any> {}
   /** @customConstructor Vector2.new */
@@ -2019,7 +2029,6 @@ declare module 'PipeWrench' {
   export type ListIterator = java.util.ListIterator<any>
   export type LocalDateTime = java.time.LocalDateTime
   export type Locale = java.util.Locale
-  export type LogListener = com.asledgehammer.crafthammer.api.event.log.LogListener
   export type LuaCallFrame = se.krka.kahlua.vm.LuaCallFrame
   export type LuaCaller = se.krka.kahlua.integration.LuaCaller
   export type LuaClosure = se.krka.kahlua.vm.LuaClosure
@@ -2080,7 +2089,6 @@ declare module 'PipeWrench' {
   export type ToIntFunction = java.util._function_.ToIntFunction<any>
   export type ToLongFunction = java.util._function_.ToLongFunction<any>
   export type URI = java.net.URI
-  export type UUID = java.util.UUID
   export type UnaryOperator = java.util._function_.UnaryOperator<any>
   export type Vector2d = org.joml.Vector2d
   export type Vector2dc = org.joml.Vector2dc
@@ -2411,6 +2419,13 @@ declare module 'PipeWrench' {
    * @noSelf
    *
    * Method Parameters: 
+   *  - (String arg0): boolean
+   */
+  export function checkStringPattern(arg0: string): boolean;
+  /**
+   * @noSelf
+   *
+   * Method Parameters: 
    *  - (String arg0, String arg1): zombie.scripting.objects.Item
    */
   export function cloneItemType(arg0: string, arg1: string): zombie.scripting.objects.Item;
@@ -2577,6 +2592,13 @@ declare module 'PipeWrench' {
    *  - (boolean arg0): void
    */
   export function doKeyPress(arg0: boolean): void;
+  /**
+   * @noSelf
+   *
+   * Method Parameters: 
+   *  - (String arg0): void
+   */
+  export function doLuaDebuggerAction(arg0: string): void;
   /**
    * @noSelf
    *
@@ -4171,10 +4193,10 @@ declare module 'PipeWrench' {
    * @noSelf
    *
    * Method Parameters: 
-   *  - (String arg0): zombie.inventory.InventoryItem
    *  - (Item arg0): zombie.inventory.InventoryItem
+   *  - (String arg0): zombie.inventory.InventoryItem
    */
-  export function instanceItem(arg0: string | zombie.scripting.objects.Item): zombie.inventory.InventoryItem;
+  export function instanceItem(arg0: zombie.scripting.objects.Item | string): zombie.inventory.InventoryItem;
   /**
    * @noSelf
    *
@@ -4774,6 +4796,13 @@ declare module 'PipeWrench' {
    * @noSelf
    *
    * Method Parameters: 
+   *  - (String arg0, String arg1, String arg2): boolean
+   */
+  export function renameSaveFile(arg0: string, arg1: string, arg2: string): boolean;
+  /**
+   * @noSelf
+   *
+   * Method Parameters: 
    *  - (float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, int arg8): void
    */
   export function renderIsoCircle(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
@@ -5031,6 +5060,13 @@ declare module 'PipeWrench' {
    *  - (IsoGameCharacter arg0, IsoGameCharacter arg1, BodyPart arg2, InventoryItem arg3, boolean arg4): void
    */
   export function sendStitch(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.IsoGameCharacter, arg2: zombie.characters.BodyDamage.BodyPart, arg3: zombie.inventory.InventoryItem, arg4: boolean): void;
+  /**
+   * @noSelf
+   *
+   * Method Parameters: 
+   *  - (BaseVehicle arg0, IsoGameCharacter arg1, int arg2, int arg3): void
+   */
+  export function sendSwitchSeat(arg0: zombie.vehicles.BaseVehicle, arg1: zombie.characters.IsoGameCharacter, arg2: number, arg3: number): void;
   /**
    * @noSelf
    *
@@ -5636,6 +5672,10 @@ declare module 'PipeWrench' {
   /** @customConstructor ISBarbedWire:new */
   export class ISBarbedWire extends lua.server.BuildingObjects.ISBarbedWire {}
 
+  // [server/BuildingObjects/ISBrushToolTileCursor.d.ts]
+  /** @customConstructor ISBrushToolTileCursor:new */
+  export class ISBrushToolTileCursor extends lua.server.BuildingObjects.ISBrushToolTileCursor {}
+
   // [server/BuildingObjects/ISBSFurnace.d.ts]
   /** @customConstructor ISBSFurnace:new */
   export class ISBSFurnace extends lua.server.BuildingObjects.ISBSFurnace {}
@@ -5935,8 +5975,25 @@ declare module 'PipeWrench' {
   export class AttachmentEditorUI_Scene extends lua.client.DebugUIs.AttachmentEditorUI_Scene {}
   /** @customConstructor AttachmentEditorUI_SwitchView:new */
   export class AttachmentEditorUI_SwitchView extends lua.client.DebugUIs.AttachmentEditorUI_SwitchView {}
+  /** @customConstructor AttachmentEditorUI_WorldAttachmentPanel:new */
+  export class AttachmentEditorUI_WorldAttachmentPanel extends lua.client.DebugUIs
+    .AttachmentEditorUI_WorldAttachmentPanel {}
   /** @noSelf */
   export const AttachmentEditorState_InitUI = lua.client.DebugUIs.AttachmentEditorUI.AttachmentEditorState_InitUI;
+
+  // [client/DebugUIs/BrushTool/BrushToolChooseTileUI.d.ts]
+  /** @customConstructor BrushToolChooseTileUI:new */
+  export class BrushToolChooseTileUI extends lua.client.DebugUIs.BrushTool.BrushToolChooseTileUI {}
+  /** @customConstructor BrushToolTilePickerList:new */
+  export class BrushToolTilePickerList extends lua.client.DebugUIs.BrushTool.BrushToolTilePickerList {}
+
+  // [client/DebugUIs/BrushTool/BrushToolManager.d.ts]
+  /** @customConstructor BrushToolManager:new */
+  export class BrushToolManager extends lua.client.DebugUIs.BrushTool.BrushToolManager {}
+
+  // [client/DebugUIs/BrushTool/FireBrushUI.d.ts]
+  /** @customConstructor FireBrushUI:new */
+  export class FireBrushUI extends lua.client.DebugUIs.BrushTool.FireBrushUI {}
 
   // [client/DebugUIs/DebugChunkState/DebugChunkState_ObjectPickerPanel.d.ts]
   /** @customConstructor DebugChunkState_ObjectPickerPanel:new */
@@ -6241,6 +6298,10 @@ declare module 'PipeWrench' {
   /** @customConstructor ISAttachedItemsUI:new */
   export class ISAttachedItemsUI extends lua.client.DebugUIs.ISAttachedItemsUI {}
 
+  // [client/DebugUIs/ISExtAnimListDebugUI.d.ts]
+  /** @customConstructor ISExtAnimListDebugUI:new */
+  export class ISExtAnimListDebugUI extends lua.client.DebugUIs.ISExtAnimListDebugUI {}
+
   // [client/DebugUIs/ISFastTeleportMove.d.ts]
   export class ISFastTeleportMove {}
 
@@ -6277,6 +6338,10 @@ declare module 'PipeWrench' {
   export class ISTilesPickerDebugUI extends lua.client.DebugUIs.ISTilesPickerDebugUI {}
   /** @customConstructor ISTilesPickerTilesList:new */
   export class ISTilesPickerTilesList extends lua.client.DebugUIs.ISTilesPickerTilesList {}
+
+  // [client/DebugUIs/ISTriggerThunderUI.d.ts]
+  /** @customConstructor ISTriggerThunderUI:new */
+  export class ISTriggerThunderUI extends lua.client.DebugUIs.ISTriggerThunderUI {}
 
   // [client/DebugUIs/LuaDebugger.d.ts]
   /** @customConstructor LuaDebugger:new */
@@ -6877,6 +6942,11 @@ declare module 'PipeWrench' {
   /** @customConstructor ISPanelJoypad:new */
   export class ISPanelJoypad extends lua.client.ISUI.ISPanelJoypad {}
 
+  // [client/ISUI/ISPauseModListUI.d.ts]
+  /** @customConstructor ISPauseModListUI:new */
+  export class ISPauseModListUI extends lua.client.ISUI.ISPauseModListUI {}
+  export class PauseBuggedModList {}
+
   // [client/ISUI/ISPostDeathUI.d.ts]
   /** @customConstructor ISPostDeathUI:new */
   export class ISPostDeathUI extends lua.client.ISUI.ISPostDeathUI {}
@@ -6998,7 +7068,7 @@ declare module 'PipeWrench' {
   // [client/ISUI/ISUIElement.d.ts]
   /**
    * @customConstructor ISUIElement:new
-   * @author [JabDoesThings]
+   * @docAuthors [JabDoesThings]
    *
    * **ISUIElement** is the base UI class in the Project Zomboid Lua codebase.
    */
@@ -7900,6 +7970,9 @@ declare module 'PipeWrench' {
   /** @noSelf */
   export const doSurvivalGuide = lua.client.SurvivalGuide.SurvivalGuideManager.doSurvivalGuide;
 
+  // [server/TemplateReplacers.d.ts]
+  export class TemplateReplacers {}
+
   // [client/Tests/MapObjectTests.d.ts]
   /** @noSelf */
   export const MapObjectTestCampfire = lua.client.Tests.MapObjectTests.MapObjectTestCampfire;
@@ -8601,9 +8674,6 @@ declare module 'PipeWrench' {
   // [shared/Util/StringReplacer.d.ts]
   export class StringReplacer {}
 
-  // [shared/Util/Vector2.d.ts]
-  export class Vector2 {}
-
   // [client/Vehicles/ISUI/EditVehicleState.d.ts]
   /** @customConstructor EditVehicleUI:new */
   export class EditVehicleUI extends lua.client.Vehicles.ISUI.EditVehicleUI {}
@@ -8796,6 +8866,10 @@ declare module 'PipeWrench' {
   // [client/Vehicles/TimedActions/ISStartVehicleEngine.d.ts]
   /** @customConstructor ISStartVehicleEngine:new */
   export class ISStartVehicleEngine extends lua.client.Vehicles.TimedActions.ISStartVehicleEngine {}
+
+  // [client/Vehicles/TimedActions/ISStopVehicle.d.ts]
+  /** @customConstructor ISStopVehicle:new */
+  export class ISStopVehicle extends lua.client.Vehicles.TimedActions.ISStopVehicle {}
 
   // [client/Vehicles/TimedActions/ISSwitchVehicleSeat.d.ts]
   /** @customConstructor ISSwitchVehicleSeat:new */

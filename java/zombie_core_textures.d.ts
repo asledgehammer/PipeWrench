@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
+ * File generated at 2022-08-01T11:49Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -312,10 +312,10 @@ declare module 'PipeWrench' {
       makeTransp(arg0: number, arg1: number, arg2: number, arg3?: number): void;
       /**
        * Method Parameters: 
-       *  - (Raster arg0): void
        *  - (BufferedImage arg0): void
+       *  - (Raster arg0): void
        */
-      setData(arg0: java.awt.image.Raster | java.awt.image.BufferedImage): void;
+      setData(arg0: java.awt.image.BufferedImage | java.awt.image.Raster): void;
       /**
        * @noSelf
        *
@@ -510,11 +510,11 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (Empty): void
+       *  - (WrappedBuffer arg0): void
        *  - (boolean[] arg0): void
        *  - (BooleanGrid arg0): void
-       *  - (WrappedBuffer arg0): void
        */
-      createMask(arg0?: boolean[] | zombie.core.utils.BooleanGrid | zombie.core.utils.WrappedBuffer): void;
+      createMask(arg0?: zombie.core.utils.WrappedBuffer | boolean[] | zombie.core.utils.BooleanGrid): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -940,11 +940,11 @@ declare module 'PipeWrench' {
        *
        * Method Parameters: 
        *  - (String arg0): zombie.core.textures.Texture
-       *  - (String arg0, int arg1): zombie.core.textures.Texture
        *  - (String arg0, String arg1): zombie.core.textures.Texture
+       *  - (String arg0, int arg1): zombie.core.textures.Texture
        *  - (String arg0, int[] arg1, String arg2): zombie.core.textures.Texture
        */
-      static getSharedTexture(arg0: string, arg1?: number | string | number[], arg2?: string): zombie.core.textures.Texture;
+      static getSharedTexture(arg0: string, arg1?: string | number | number[], arg2?: string): zombie.core.textures.Texture;
       /**
        * @noSelf
        *

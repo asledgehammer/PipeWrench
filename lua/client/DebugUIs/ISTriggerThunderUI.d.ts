@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:02.565Z
+ * File generated at: 2022-08-01T06:43:04.095Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -30,16 +30,26 @@
 import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
-  export namespace lua.shared.Util {
-    export class Vector2 {
-      private constructor();
-
+  export namespace lua.client.DebugUIs {
+    /** @customConstructor ISTriggerThunderUI:new */
+    export class ISTriggerThunderUI extends lua.client.ISUI.ISCollapsableWindow {
+      [id: string]: any;
       static [id: string]: any;
 
-      static getLength: ((x: any, y: any) => any) | any;
+      character: any;
 
-      static normalize: ((x: any, y: any) => any) | any;
+      onlineUsers: any;
+
+      tickBox: any;
+
+      triggerThunder: any;
+
+      users: any;
+
+      constructor(x: any, y: any, width: any, height: any, character: any);
+
+      onClick: ((button: any) => any) | any;
     }
   }
-  export namespace lua.shared.Util.Vector2 {}
+  export namespace lua.client.DebugUIs.ISTriggerThunderUI {}
 }

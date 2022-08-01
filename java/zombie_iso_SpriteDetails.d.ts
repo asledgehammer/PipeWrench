@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
+ * File generated at 2022-08-01T11:49Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -102,6 +102,7 @@ declare module 'PipeWrench' {
       static readonly makeWindowInvincible: zombie.iso.SpriteDetails.IsoFlagType;
       static readonly noStart: zombie.iso.SpriteDetails.IsoFlagType;
       static readonly ontable: zombie.iso.SpriteDetails.IsoFlagType;
+      static readonly open: zombie.iso.SpriteDetails.IsoFlagType;
       static readonly pushable: zombie.iso.SpriteDetails.IsoFlagType;
       static readonly sheetCurtains: zombie.iso.SpriteDetails.IsoFlagType;
       static readonly shelfE: zombie.iso.SpriteDetails.IsoFlagType;

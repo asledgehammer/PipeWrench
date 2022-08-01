@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
+ * File generated at 2022-08-01T11:49Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -473,10 +473,10 @@ declare module 'PipeWrench' {
       getAttachmentById(arg0: string): zombie.scripting.objects.ModelAttachment;
       /**
        * Method Parameters: 
-       *  - (int arg0, Matrix4f arg1): org.joml.Matrix4f
        *  - (ModelAttachment arg0, Matrix4f arg1): org.joml.Matrix4f
+       *  - (int arg0, Matrix4f arg1): org.joml.Matrix4f
        */
-      getAttachmentMatrix(arg0: number | zombie.scripting.objects.ModelAttachment, arg1: org.joml.Matrix4f): org.joml.Matrix4f;
+      getAttachmentMatrix(arg0: zombie.scripting.objects.ModelAttachment | number, arg1: org.joml.Matrix4f): org.joml.Matrix4f;
       /**
        * Method Parameters: 
        *  - (String arg0, Matrix4f arg1): org.joml.Matrix4f

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
+ * File generated at 2022-08-01T11:49Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -83,10 +83,10 @@ declare module 'PipeWrench' {
     export class InventoryItem {
       /**
        * Constructors: 
-       *  - (String arg0, String arg1, String arg2, String arg3)
        *  - (String arg0, String arg1, String arg2, Item arg3)
+       *  - (String arg0, String arg1, String arg2, String arg3)
        */
-      constructor(arg0: string, arg1: string, arg2: string, arg3: string | zombie.scripting.objects.Item);
+      constructor(arg0: string, arg1: string, arg2: string, arg3: zombie.scripting.objects.Item | string);
       /**
        * Method Parameters: 
        *  - (InventoryItem arg0): boolean
@@ -2066,10 +2066,10 @@ declare module 'PipeWrench' {
       FindAndReturnCategory(arg0: string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (InventoryItem arg0): zombie.inventory.InventoryItem
        *  - (String arg0): zombie.inventory.InventoryItem
+       *  - (InventoryItem arg0): zombie.inventory.InventoryItem
        */
-      FindAndReturnStack(arg0: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
+      FindAndReturnStack(arg0: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (int arg0): zombie.inventory.InventoryItem
@@ -2087,11 +2087,11 @@ declare module 'PipeWrench' {
       HasType(arg0: zombie.inventory.ItemType): boolean;
       /**
        * Method Parameters: 
-       *  - (InventoryItem arg0): void
-       *  - (String arg0): void
        *  - (ItemType arg0): zombie.inventory.InventoryItem
+       *  - (String arg0): void
+       *  - (InventoryItem arg0): void
        */
-      Remove(arg0: zombie.inventory.InventoryItem | string | zombie.inventory.ItemType): void | zombie.inventory.InventoryItem;
+      Remove(arg0: zombie.inventory.ItemType | string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem | void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -2125,13 +2125,13 @@ declare module 'PipeWrench' {
       clear(): void;
       /**
        * Method Parameters: 
-       *  - (String arg0): boolean
        *  - (InventoryItem arg0): boolean
+       *  - (String arg0): boolean
        *  - (InventoryItem arg0, boolean arg1): boolean
        *  - (String arg0, boolean arg1): boolean
        *  - (String arg0, boolean arg1, boolean arg2): boolean
        */
-      contains(arg0: string | zombie.inventory.InventoryItem, arg1?: boolean, arg2?: boolean): boolean;
+      contains(arg0: zombie.inventory.InventoryItem | string, arg1?: boolean, arg2?: boolean): boolean;
       /**
        * Method Parameters: 
        *  - (LuaClosure arg0): boolean
@@ -2390,10 +2390,10 @@ declare module 'PipeWrench' {
       getBestConditionEvalRecurse(arg0: se.krka.kahlua.vm.LuaClosure): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (Predicate arg0): zombie.inventory.InventoryItem
        *  - (String arg0): zombie.inventory.InventoryItem
+       *  - (Predicate arg0): zombie.inventory.InventoryItem
        */
-      getBestConditionRecurse(arg0: java.util._function_.Predicate<zombie.inventory.InventoryItem> | string): zombie.inventory.InventoryItem;
+      getBestConditionRecurse(arg0: string | java.util._function_.Predicate<zombie.inventory.InventoryItem>): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (LuaClosure arg0, LuaClosure arg1): zombie.inventory.InventoryItem
@@ -2779,10 +2779,10 @@ declare module 'PipeWrench' {
        * Method Parameters: 
        *  - (String arg0): number
        *  - (String arg0, boolean arg1): number
-       *  - (String arg0, boolean arg1, ArrayList arg2): number
        *  - (String arg0, boolean arg1, boolean arg2): number
+       *  - (String arg0, boolean arg1, ArrayList arg2): number
        */
-      getNumberOfItem(arg0: string, arg1?: boolean, arg2?: java.util.ArrayList<zombie.inventory.ItemContainer> | boolean): number;
+      getNumberOfItem(arg0: string, arg1?: boolean, arg2?: boolean | java.util.ArrayList<zombie.inventory.ItemContainer>): number;
       /**
        * Method Parameters: 
        *  - (Empty): string

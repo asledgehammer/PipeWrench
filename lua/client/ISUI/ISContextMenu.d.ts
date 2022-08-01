@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:00.248Z
+ * File generated at: 2022-08-01T06:43:05.300Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -121,6 +121,24 @@ declare module 'PipeWrench' {
           ) => any)
         | any;
 
+      addDebugOption:
+        | ((
+            name: any,
+            target: any,
+            onSelect: any,
+            param1: any,
+            param2: any,
+            param3: any,
+            param4: any,
+            param5: any,
+            param6: any,
+            param7: any,
+            param8: any,
+            param9: any,
+            param10: any
+          ) => any)
+        | any;
+
       addDefaultOptions: (() => any) | any;
 
       addOption:
@@ -201,6 +219,8 @@ declare module 'PipeWrench' {
 
       getItemY: ((index: any) => any) | any;
 
+      getMenuOptionNames: (() => any) | any;
+
       getNew: ((parentContext: any) => any) | any;
 
       getOptionFromName: ((name: any) => any) | any;
@@ -220,6 +240,44 @@ declare module 'PipeWrench' {
       hideSelfAndChildren2: (() => any) | any;
 
       hideToolTip: (() => any) | any;
+
+      insertOptionAfter:
+        | ((
+            prevOptionName: any,
+            name: any,
+            target: any,
+            onSelect: any,
+            param1: any,
+            param2: any,
+            param3: any,
+            param4: any,
+            param5: any,
+            param6: any,
+            param7: any,
+            param8: any,
+            param9: any,
+            param10: any
+          ) => any)
+        | any;
+
+      insertOptionBefore:
+        | ((
+            nextOptionName: any,
+            name: any,
+            target: any,
+            onSelect: any,
+            param1: any,
+            param2: any,
+            param3: any,
+            param4: any,
+            param5: any,
+            param6: any,
+            param7: any,
+            param8: any,
+            param9: any,
+            param10: any
+          ) => any)
+        | any;
 
       isAnyVisible: (() => any) | any;
 
@@ -246,6 +304,8 @@ declare module 'PipeWrench' {
       onMouseWheel: ((del: any) => any) | any;
 
       removeLastOption: (() => any) | any;
+
+      removeOptionByName: ((optName: any) => any) | any;
 
       render: (() => any) | any;
 

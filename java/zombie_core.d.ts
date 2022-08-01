@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
+ * File generated at 2022-08-01T11:49Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -3693,6 +3693,13 @@ declare module 'PipeWrench' {
        * Method Parameters: 
        *  - (String arg0): string
        */
+      static getMoveableDisplayNameOrNull(arg0: string): string;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): string
+       */
       static getMultiStageBuild(arg0: string): string;
       /**
        * @noSelf
@@ -3762,10 +3769,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (Language arg0): void
        *  - (int arg0): void
+       *  - (Language arg0): void
        */
-      static setLanguage(arg0: zombie.core.Language | number): void;
+      static setLanguage(arg0: number | zombie.core.Language): void;
     }
   }
 }

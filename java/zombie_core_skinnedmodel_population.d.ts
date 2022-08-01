@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
+ * File generated at 2022-08-01T11:49Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -278,10 +278,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (ClothingItemReference arg0, CharacterMask arg1): void
        *  - (ClothingItem arg0, CharacterMask arg1): void
+       *  - (ClothingItemReference arg0, CharacterMask arg1): void
        */
-      static tryGetCombinedMask(arg0: zombie.core.skinnedmodel.population.ClothingItemReference | zombie.core.skinnedmodel.population.ClothingItem, arg1: zombie.core.skinnedmodel.model.CharacterMask): void;
+      static tryGetCombinedMask(arg0: zombie.core.skinnedmodel.population.ClothingItem | zombie.core.skinnedmodel.population.ClothingItemReference, arg1: zombie.core.skinnedmodel.model.CharacterMask): void;
     }
     /**
      * @customConstructor ClothingItemReference.new

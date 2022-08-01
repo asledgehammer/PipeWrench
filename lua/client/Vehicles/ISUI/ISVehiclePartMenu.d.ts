@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:02.658Z
+ * File generated at: 2022-08-01T06:43:10.779Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,6 +36,10 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
+      static doAddFuelMenu: ((playerObj: any, part: any, context: any) => any) | any;
+
+      static doSiphonFuelMenu: ((playerObj: any, part: any, context: any) => any) | any;
+
       static equipRequiredItems: ((playerObj: any, part: any, tbl: any) => any) | any;
 
       static getGasCanNotEmpty: ((playerObj: any, typeToItem: any) => any) | any;
@@ -43,6 +47,10 @@ declare module 'PipeWrench' {
       static getGasCanNotFull: ((playerObj: any, typeToItem: any) => any) | any;
 
       static getNearbyFuelPump: ((vehicle: any) => any) | any;
+
+      static onAddFuelNew:
+        | ((worldobjects: any, part: any, fuelContainerList: any, fuelContainer: any, player: any) => any)
+        | any;
 
       static onAddGasoline: ((playerObj: any, part: any) => any) | any;
 
@@ -67,6 +75,10 @@ declare module 'PipeWrench' {
       static onPumpGasolinePathFail: ((playerObj: any) => any) | any;
 
       static onSmashWindow: ((playerObj: any, part: any, open: any) => any) | any;
+
+      static onTakeFuelNew:
+        | ((worldobjects: any, part: any, fuelContainerList: any, fuelContainer: any, player: any) => any)
+        | any;
 
       static onTakeGasoline: ((playerObj: any, part: any) => any) | any;
 

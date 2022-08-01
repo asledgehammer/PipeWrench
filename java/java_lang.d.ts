@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
+ * File generated at 2022-08-01T11:49Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -67,8 +67,8 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (int arg0): number
        *  - (long arg0): number
+       *  - (int arg0): number
        */
       static absExact(arg0: number): number;
       /**
@@ -177,8 +177,8 @@ declare module 'PipeWrench' {
        *
        * Method Parameters: 
        *  - (long arg0, long arg1): number
-       *  - (int arg0, int arg1): number
        *  - (long arg0, int arg1): number
+       *  - (int arg0, int arg1): number
        */
       static floorDiv(arg0: number, arg1: number): number;
       /**
@@ -186,8 +186,8 @@ declare module 'PipeWrench' {
        *
        * Method Parameters: 
        *  - (long arg0, int arg1): number
-       *  - (int arg0, int arg1): number
        *  - (long arg0, long arg1): number
+       *  - (int arg0, int arg1): number
        */
       static floorMod(arg0: number, arg1: number): number;
       /**
@@ -305,8 +305,8 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (double arg0): number
        *  - (float arg0): number
+       *  - (double arg0): number
        */
       static nextDown(arg0: number): number;
       /**
@@ -342,8 +342,8 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (double arg0): number
        *  - (float arg0): number
+       *  - (double arg0): number
        */
       static round(arg0: number): number;
       /**
@@ -430,8 +430,8 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (double arg0): number
        *  - (float arg0): number
+       *  - (double arg0): number
        */
       static ulp(arg0: number): number;
     }

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
+ * File generated at 2022-08-01T11:49Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -89,11 +89,6 @@ declare module 'PipeWrench' {
       ceil(arg0?: org.joml.Vector2f): org.joml.Vector2f;
       /**
        * Method Parameters: 
-       *  - (Empty): any
-       */
-      clone(): any;
-      /**
-       * Method Parameters: 
        *  - (Vector2fc arg0): number
        *  - (float arg0, float arg1): number
        */
@@ -106,14 +101,14 @@ declare module 'PipeWrench' {
       distanceSquared(arg0: org.joml.Vector2fc | number, arg1?: number): number;
       /**
        * Method Parameters: 
-       *  - (float arg0): org.joml.Vector2f
        *  - (Vector2fc arg0): org.joml.Vector2f
+       *  - (float arg0): org.joml.Vector2f
        *  - (Vector2fc arg0, Vector2f arg1): org.joml.Vector2f
        *  - (float arg0, float arg1): org.joml.Vector2f
        *  - (float arg0, Vector2f arg1): org.joml.Vector2f
        *  - (float arg0, float arg1, Vector2f arg2): org.joml.Vector2f
        */
-      div(arg0: number | org.joml.Vector2fc, arg1?: org.joml.Vector2f | number, arg2?: org.joml.Vector2f): org.joml.Vector2f;
+      div(arg0: org.joml.Vector2fc | number, arg1?: org.joml.Vector2f | number, arg2?: org.joml.Vector2f): org.joml.Vector2f;
       /**
        * Method Parameters: 
        *  - (Vector2fc arg0): number
@@ -122,8 +117,8 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (Object arg0): boolean
-       *  - (Vector2fc arg0, float arg1): boolean
        *  - (float arg0, float arg1): boolean
+       *  - (Vector2fc arg0, float arg1): boolean
        */
       equals(arg0: any, arg1?: number): boolean;
       /**
@@ -134,24 +129,24 @@ declare module 'PipeWrench' {
       floor(arg0?: org.joml.Vector2f): org.joml.Vector2f;
       /**
        * Method Parameters: 
-       *  - (float arg0, Vector2fc arg1): org.joml.Vector2f
        *  - (Vector2fc arg0, Vector2fc arg1): org.joml.Vector2f
+       *  - (float arg0, Vector2fc arg1): org.joml.Vector2f
        *  - (Vector2fc arg0, Vector2fc arg1, Vector2f arg2): org.joml.Vector2f
        *  - (float arg0, Vector2fc arg1, Vector2f arg2): org.joml.Vector2f
        */
-      fma(arg0: number | org.joml.Vector2fc, arg1: org.joml.Vector2fc, arg2?: org.joml.Vector2f): org.joml.Vector2f;
+      fma(arg0: org.joml.Vector2fc | number, arg1: org.joml.Vector2fc, arg2?: org.joml.Vector2f): org.joml.Vector2f;
       /**
        * Method Parameters: 
-       *  - (int arg0): number
-       *  - (FloatBuffer arg0): java.nio.FloatBuffer
        *  - (ByteBuffer arg0): java.nio.ByteBuffer
+       *  - (FloatBuffer arg0): java.nio.FloatBuffer
        *  - (Vector2f arg0): org.joml.Vector2f
        *  - (Vector2d arg0): org.joml.Vector2d
+       *  - (int arg0): number
+       *  - (int arg0, ByteBuffer arg1): java.nio.ByteBuffer
        *  - (int arg0, FloatBuffer arg1): java.nio.FloatBuffer
        *  - (int arg0, Vector2i arg1): org.joml.Vector2i
-       *  - (int arg0, ByteBuffer arg1): java.nio.ByteBuffer
        */
-      get(arg0: number | java.nio.FloatBuffer | java.nio.ByteBuffer | org.joml.Vector2f | org.joml.Vector2d, arg1?: java.nio.FloatBuffer | org.joml.Vector2i | java.nio.ByteBuffer): number | java.nio.FloatBuffer | java.nio.ByteBuffer | org.joml.Vector2f | org.joml.Vector2d | org.joml.Vector2i;
+      get(arg0: java.nio.ByteBuffer | java.nio.FloatBuffer | org.joml.Vector2f | org.joml.Vector2d | number, arg1?: java.nio.ByteBuffer | java.nio.FloatBuffer | org.joml.Vector2i): java.nio.ByteBuffer | java.nio.FloatBuffer | org.joml.Vector2f | org.joml.Vector2d | number | org.joml.Vector2i;
       /**
        * Method Parameters: 
        *  - (long arg0): org.joml.Vector2fc
@@ -209,16 +204,16 @@ declare module 'PipeWrench' {
        * Method Parameters: 
        *  - (float arg0): org.joml.Vector2f
        *  - (Matrix2dc arg0): org.joml.Vector2f
-       *  - (Vector2fc arg0): org.joml.Vector2f
        *  - (Matrix2fc arg0): org.joml.Vector2f
+       *  - (Vector2fc arg0): org.joml.Vector2f
+       *  - (Matrix2dc arg0, Vector2f arg1): org.joml.Vector2f
        *  - (float arg0, Vector2f arg1): org.joml.Vector2f
        *  - (Vector2fc arg0, Vector2f arg1): org.joml.Vector2f
        *  - (float arg0, float arg1): org.joml.Vector2f
-       *  - (Matrix2dc arg0, Vector2f arg1): org.joml.Vector2f
        *  - (Matrix2fc arg0, Vector2f arg1): org.joml.Vector2f
        *  - (float arg0, float arg1, Vector2f arg2): org.joml.Vector2f
        */
-      mul(arg0: number | org.joml.Matrix2dc | org.joml.Vector2fc | org.joml.Matrix2fc, arg1?: org.joml.Vector2f | number, arg2?: org.joml.Vector2f): org.joml.Vector2f;
+      mul(arg0: number | org.joml.Matrix2dc | org.joml.Matrix2fc | org.joml.Vector2fc, arg1?: org.joml.Vector2f | number, arg2?: org.joml.Vector2f): org.joml.Vector2f;
       /**
        * Method Parameters: 
        *  - (Matrix3x2fc arg0): org.joml.Vector2f
@@ -269,20 +264,20 @@ declare module 'PipeWrench' {
       round(arg0?: org.joml.Vector2f): org.joml.Vector2f;
       /**
        * Method Parameters: 
-       *  - (double arg0): org.joml.Vector2f
        *  - (float arg0): org.joml.Vector2f
-       *  - (Vector2fc arg0): org.joml.Vector2f
-       *  - (ByteBuffer arg0): org.joml.Vector2f
+       *  - (double arg0): org.joml.Vector2f
        *  - (float[] arg0): org.joml.Vector2f
-       *  - (Vector2dc arg0): org.joml.Vector2f
        *  - (Vector2ic arg0): org.joml.Vector2f
+       *  - (Vector2dc arg0): org.joml.Vector2f
+       *  - (Vector2fc arg0): org.joml.Vector2f
        *  - (FloatBuffer arg0): org.joml.Vector2f
+       *  - (ByteBuffer arg0): org.joml.Vector2f
        *  - (float arg0, float arg1): org.joml.Vector2f
        *  - (double arg0, double arg1): org.joml.Vector2f
        *  - (int arg0, FloatBuffer arg1): org.joml.Vector2f
        *  - (int arg0, ByteBuffer arg1): org.joml.Vector2f
        */
-      set(arg0: number | org.joml.Vector2fc | java.nio.ByteBuffer | number[] | org.joml.Vector2dc | org.joml.Vector2ic | java.nio.FloatBuffer, arg1?: number | java.nio.FloatBuffer | java.nio.ByteBuffer): org.joml.Vector2f;
+      set(arg0: number | number[] | org.joml.Vector2ic | org.joml.Vector2dc | org.joml.Vector2fc | java.nio.FloatBuffer | java.nio.ByteBuffer, arg1?: number | java.nio.FloatBuffer | java.nio.ByteBuffer): org.joml.Vector2f;
       /**
        * Method Parameters: 
        *  - (int arg0, float arg1): org.joml.Vector2f
@@ -296,11 +291,11 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (Vector2fc arg0): org.joml.Vector2f
-       *  - (float arg0, float arg1): org.joml.Vector2f
        *  - (Vector2fc arg0, Vector2f arg1): org.joml.Vector2f
+       *  - (float arg0, float arg1): org.joml.Vector2f
        *  - (float arg0, float arg1, Vector2f arg2): org.joml.Vector2f
        */
-      sub(arg0: org.joml.Vector2fc | number, arg1?: number | org.joml.Vector2f, arg2?: org.joml.Vector2f): org.joml.Vector2f;
+      sub(arg0: org.joml.Vector2fc | number, arg1?: org.joml.Vector2f | number, arg2?: org.joml.Vector2f): org.joml.Vector2f;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -421,11 +416,6 @@ declare module 'PipeWrench' {
       ceil(arg0?: org.joml.Vector3f): org.joml.Vector3f;
       /**
        * Method Parameters: 
-       *  - (Empty): any
-       */
-      clone(): any;
-      /**
-       * Method Parameters: 
        *  - (Vector3fc arg0): org.joml.Vector3f
        *  - (Vector3fc arg0, Vector3f arg1): org.joml.Vector3f
        *  - (float arg0, float arg1, float arg2): org.joml.Vector3f
@@ -485,14 +475,14 @@ declare module 'PipeWrench' {
        * Method Parameters: 
        *  - (ByteBuffer arg0): java.nio.ByteBuffer
        *  - (FloatBuffer arg0): java.nio.FloatBuffer
+       *  - (Vector3d arg0): org.joml.Vector3d
        *  - (int arg0): number
        *  - (Vector3f arg0): org.joml.Vector3f
-       *  - (Vector3d arg0): org.joml.Vector3d
        *  - (int arg0, FloatBuffer arg1): java.nio.FloatBuffer
-       *  - (int arg0, ByteBuffer arg1): java.nio.ByteBuffer
        *  - (int arg0, Vector3i arg1): org.joml.Vector3i
+       *  - (int arg0, ByteBuffer arg1): java.nio.ByteBuffer
        */
-      get(arg0: java.nio.ByteBuffer | java.nio.FloatBuffer | number | org.joml.Vector3f | org.joml.Vector3d, arg1?: java.nio.FloatBuffer | java.nio.ByteBuffer | org.joml.Vector3i): java.nio.ByteBuffer | java.nio.FloatBuffer | number | org.joml.Vector3f | org.joml.Vector3d | org.joml.Vector3i;
+      get(arg0: java.nio.ByteBuffer | java.nio.FloatBuffer | org.joml.Vector3d | number | org.joml.Vector3f, arg1?: java.nio.FloatBuffer | org.joml.Vector3i | java.nio.ByteBuffer): java.nio.ByteBuffer | java.nio.FloatBuffer | org.joml.Vector3d | number | org.joml.Vector3f | org.joml.Vector3i;
       /**
        * Method Parameters: 
        *  - (long arg0): org.joml.Vector3fc
@@ -561,20 +551,20 @@ declare module 'PipeWrench' {
       minComponent(): number;
       /**
        * Method Parameters: 
-       *  - (Matrix3x2fc arg0): org.joml.Vector3f
-       *  - (Vector3fc arg0): org.joml.Vector3f
        *  - (Matrix3dc arg0): org.joml.Vector3f
+       *  - (Vector3fc arg0): org.joml.Vector3f
        *  - (Matrix3fc arg0): org.joml.Vector3f
+       *  - (Matrix3x2fc arg0): org.joml.Vector3f
        *  - (float arg0): org.joml.Vector3f
-       *  - (Matrix3x2fc arg0, Vector3f arg1): org.joml.Vector3f
-       *  - (Vector3fc arg0, Vector3f arg1): org.joml.Vector3f
        *  - (Matrix3dc arg0, Vector3f arg1): org.joml.Vector3f
+       *  - (Vector3fc arg0, Vector3f arg1): org.joml.Vector3f
        *  - (Matrix3fc arg0, Vector3f arg1): org.joml.Vector3f
        *  - (float arg0, Vector3f arg1): org.joml.Vector3f
+       *  - (Matrix3x2fc arg0, Vector3f arg1): org.joml.Vector3f
        *  - (float arg0, float arg1, float arg2): org.joml.Vector3f
        *  - (float arg0, float arg1, float arg2, Vector3f arg3): org.joml.Vector3f
        */
-      mul(arg0: org.joml.Matrix3x2fc | org.joml.Vector3fc | org.joml.Matrix3dc | org.joml.Matrix3fc | number, arg1?: org.joml.Vector3f | number, arg2?: number, arg3?: org.joml.Vector3f): org.joml.Vector3f;
+      mul(arg0: org.joml.Matrix3dc | org.joml.Vector3fc | org.joml.Matrix3fc | org.joml.Matrix3x2fc | number, arg1?: org.joml.Vector3f | number, arg2?: number, arg3?: org.joml.Vector3f): org.joml.Vector3f;
       /**
        * Method Parameters: 
        *  - (Vector3fc arg0, Vector3fc arg1): org.joml.Vector3f
@@ -585,20 +575,20 @@ declare module 'PipeWrench' {
       mulAdd(arg0: org.joml.Vector3fc | number, arg1: org.joml.Vector3fc, arg2?: org.joml.Vector3f): org.joml.Vector3f;
       /**
        * Method Parameters: 
-       *  - (Matrix4fc arg0): org.joml.Vector3f
        *  - (Matrix4x3fc arg0): org.joml.Vector3f
+       *  - (Matrix4fc arg0): org.joml.Vector3f
        *  - (Matrix4dc arg0): org.joml.Vector3f
        *  - (Matrix4dc arg0, Vector3f arg1): org.joml.Vector3f
-       *  - (Matrix4x3fc arg0, Vector3f arg1): org.joml.Vector3f
        *  - (Matrix4fc arg0, Vector3f arg1): org.joml.Vector3f
+       *  - (Matrix4x3fc arg0, Vector3f arg1): org.joml.Vector3f
        */
-      mulDirection(arg0: org.joml.Matrix4fc | org.joml.Matrix4x3fc | org.joml.Matrix4dc, arg1?: org.joml.Vector3f): org.joml.Vector3f;
+      mulDirection(arg0: org.joml.Matrix4x3fc | org.joml.Matrix4fc | org.joml.Matrix4dc, arg1?: org.joml.Vector3f): org.joml.Vector3f;
       /**
        * Method Parameters: 
        *  - (Matrix4x3fc arg0): org.joml.Vector3f
        *  - (Matrix4fc arg0): org.joml.Vector3f
-       *  - (Matrix4x3fc arg0, Vector3f arg1): org.joml.Vector3f
        *  - (Matrix4fc arg0, Vector3f arg1): org.joml.Vector3f
+       *  - (Matrix4x3fc arg0, Vector3f arg1): org.joml.Vector3f
        */
       mulPosition(arg0: org.joml.Matrix4x3fc | org.joml.Matrix4fc, arg1?: org.joml.Vector3f): org.joml.Vector3f;
       /**
@@ -641,11 +631,11 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (Empty): org.joml.Vector3f
-       *  - (float arg0): org.joml.Vector3f
        *  - (Vector3f arg0): org.joml.Vector3f
+       *  - (float arg0): org.joml.Vector3f
        *  - (float arg0, Vector3f arg1): org.joml.Vector3f
        */
-      normalize(arg0?: number | org.joml.Vector3f, arg1?: org.joml.Vector3f): org.joml.Vector3f;
+      normalize(arg0?: org.joml.Vector3f | number, arg1?: org.joml.Vector3f): org.joml.Vector3f;
       /**
        * Method Parameters: 
        *  - (Vector3fc arg0): org.joml.Vector3f
@@ -715,23 +705,23 @@ declare module 'PipeWrench' {
       round(arg0?: org.joml.Vector3f): org.joml.Vector3f;
       /**
        * Method Parameters: 
+       *  - (FloatBuffer arg0): org.joml.Vector3f
        *  - (double arg0): org.joml.Vector3f
-       *  - (Vector3dc arg0): org.joml.Vector3f
-       *  - (Vector3ic arg0): org.joml.Vector3f
-       *  - (float arg0): org.joml.Vector3f
        *  - (ByteBuffer arg0): org.joml.Vector3f
        *  - (float[] arg0): org.joml.Vector3f
-       *  - (FloatBuffer arg0): org.joml.Vector3f
+       *  - (Vector3ic arg0): org.joml.Vector3f
+       *  - (Vector3dc arg0): org.joml.Vector3f
+       *  - (float arg0): org.joml.Vector3f
        *  - (Vector3fc arg0): org.joml.Vector3f
-       *  - (Vector2fc arg0, float arg1): org.joml.Vector3f
-       *  - (Vector2dc arg0, float arg1): org.joml.Vector3f
        *  - (int arg0, FloatBuffer arg1): org.joml.Vector3f
-       *  - (Vector2ic arg0, float arg1): org.joml.Vector3f
        *  - (int arg0, ByteBuffer arg1): org.joml.Vector3f
+       *  - (Vector2dc arg0, float arg1): org.joml.Vector3f
+       *  - (Vector2fc arg0, float arg1): org.joml.Vector3f
+       *  - (Vector2ic arg0, float arg1): org.joml.Vector3f
        *  - (double arg0, double arg1, double arg2): org.joml.Vector3f
        *  - (float arg0, float arg1, float arg2): org.joml.Vector3f
        */
-      set(arg0: number | org.joml.Vector3dc | org.joml.Vector3ic | java.nio.ByteBuffer | number[] | java.nio.FloatBuffer | org.joml.Vector3fc | org.joml.Vector2fc | org.joml.Vector2dc | org.joml.Vector2ic, arg1?: number | java.nio.FloatBuffer | java.nio.ByteBuffer, arg2?: number): org.joml.Vector3f;
+      set(arg0: java.nio.FloatBuffer | number | java.nio.ByteBuffer | number[] | org.joml.Vector3ic | org.joml.Vector3dc | org.joml.Vector3fc | org.joml.Vector2dc | org.joml.Vector2fc | org.joml.Vector2ic, arg1?: java.nio.FloatBuffer | java.nio.ByteBuffer | number, arg2?: number): org.joml.Vector3f;
       /**
        * Method Parameters: 
        *  - (int arg0, float arg1): org.joml.Vector3f

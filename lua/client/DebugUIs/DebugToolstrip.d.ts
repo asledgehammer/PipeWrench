@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:38:59.495Z
+ * File generated at: 2022-08-01T06:43:03.989Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -35,6 +35,12 @@ declare module 'PipeWrench' {
     export class DebugToolstrip extends lua.client.ISUI.ISPanel {
       [id: string]: any;
       static [id: string]: any;
+
+      buttonResume: any;
+
+      buttonStepInto: any;
+
+      buttonStepOver: any;
 
       debugLog: any;
 
@@ -57,6 +63,12 @@ declare module 'PipeWrench' {
       constructor(x: any, y: any, width: any, height: any);
 
       createChildren: (() => any) | any;
+
+      onButtonResume: (() => any) | any;
+
+      onButtonStepInto: (() => any) | any;
+
+      onButtonStepOver: (() => any) | any;
 
       onDebugLog: (() => any) | any;
 

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
+ * File generated at 2022-08-01T11:49Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -1070,7 +1070,6 @@ declare module 'PipeWrench' {
       trimToSize<T>(): void;
     }
     export type TimeZone = any;
-    export type UUID = any;
     /**
      * @customConstructor Vector.new
      * @

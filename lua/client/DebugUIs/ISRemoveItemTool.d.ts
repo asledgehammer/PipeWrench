@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:38:59.520Z
+ * File generated at: 2022-08-01T06:43:04.037Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -68,8 +68,6 @@ declare module 'PipeWrench' {
 
       constructor(x: any, y: any, width: any, height: any, player: any);
 
-      clickedRadio: ((buttons: any, index: any) => any) | any;
-
       destroy: (() => any) | any;
 
       onClick: ((button: any) => any) | any;
@@ -80,7 +78,9 @@ declare module 'PipeWrench' {
 
       titleBarHeight: (() => any) | any;
 
-      updateButtons: (() => any) | any;
+      static removeItem: ((item: any, player: any) => any) | any;
+
+      static removeItems: ((items: any, player: any) => any) | any;
     }
   }
   export namespace lua.client.DebugUIs.ISRemoveItemTool {}

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
+ * File generated at 2022-08-01T11:49Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -47,11 +47,11 @@ declare module 'PipeWrench' {
        *
        * Method Parameters: 
        *  - (Perk arg0, String arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9, int arg10, int arg11): zombie.characters.skills.PerkFactory$Perk
-       *  - (Perk arg0, String arg1, Perk arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9, int arg10, int arg11, int arg12): zombie.characters.skills.PerkFactory$Perk
        *  - (Perk arg0, String arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9, int arg10, int arg11, boolean arg12): zombie.characters.skills.PerkFactory$Perk
+       *  - (Perk arg0, String arg1, Perk arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9, int arg10, int arg11, int arg12): zombie.characters.skills.PerkFactory$Perk
        *  - (Perk arg0, String arg1, Perk arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9, int arg10, int arg11, int arg12, boolean arg13): zombie.characters.skills.PerkFactory$Perk
        */
-      static AddPerk(arg0: zombie.characters.skills.PerkFactory$Perk, arg1: string, arg2: number | zombie.characters.skills.PerkFactory$Perk, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number, arg12?: number | boolean, arg13?: boolean): zombie.characters.skills.PerkFactory$Perk;
+      static AddPerk(arg0: zombie.characters.skills.PerkFactory$Perk, arg1: string, arg2: number | zombie.characters.skills.PerkFactory$Perk, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number, arg12?: boolean | number, arg13?: boolean): zombie.characters.skills.PerkFactory$Perk;
       /**
        * @noSelf
        *

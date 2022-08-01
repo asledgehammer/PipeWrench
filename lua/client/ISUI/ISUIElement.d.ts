@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:00.718Z
+ * File generated at: 2022-08-01T06:43:06.489Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -33,7 +33,7 @@ declare module 'PipeWrench' {
   export namespace lua.client.ISUI {
     /**
      * @customConstructor ISUIElement:new
-     * @author [JabDoesThings]
+     * @docAuthors [JabDoesThings]
      *
      * **ISUIElement** is the base UI class in the Project Zomboid Lua codebase.
      */
@@ -64,7 +64,7 @@ declare module 'PipeWrench' {
       forceCursorVisible: boolean;
 
       /** The height of the UI element. (In pixels) */
-      height: boolean;
+      height: number;
 
       /** Horizontal Scrollbar. */
       hscroll: ISScrollBar;
@@ -114,6 +114,8 @@ declare module 'PipeWrench' {
       y: number;
 
       /**
+       * Example description.
+       *
        * @param x - The x coordinate on the screen. (In pixels)
        * @param y - The y coordinate on the screen. (In pixels)
        * @param width - The width of the UI element. (In pixels)
@@ -139,7 +141,6 @@ declare module 'PipeWrench' {
        * Adds this UI element to the UI manager for the game.
        *
        * (NOTE: This means that this element is a root element with no parent)
-       *
        */
       addToUIManager: () => void;
 

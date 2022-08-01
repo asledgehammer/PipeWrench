@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
+ * File generated at 2022-08-01T11:49Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -179,19 +179,19 @@ declare module 'PipeWrench' {
        * Method Parameters: 
        *  - (String arg0): number
        *  - (String arg0, IsoGameCharacter arg1): number
+       *  - (String arg0, IsoGridSquare arg1): number
        *  - (String arg0, boolean arg1): number
        *  - (String arg0, IsoObject arg1): number
-       *  - (String arg0, IsoGridSquare arg1): number
        *  - (String arg0, int arg1, int arg2, int arg3): number
        */
-      playSound(arg0: string, arg1?: zombie.characters.IsoGameCharacter | boolean | zombie.iso.IsoObject | zombie.iso.IsoGridSquare | number, arg2?: number, arg3?: number): number;
+      playSound(arg0: string, arg1?: zombie.characters.IsoGameCharacter | zombie.iso.IsoGridSquare | boolean | zombie.iso.IsoObject | number, arg2?: number, arg3?: number): number;
       /**
        * Method Parameters: 
-       *  - (String arg0, IsoGridSquare arg1): number
        *  - (String arg0, IsoObject arg1): number
+       *  - (String arg0, IsoGridSquare arg1): number
        *  - (String arg0, boolean arg1, IsoObject arg2): number
        */
-      playSoundImpl(arg0: string, arg1: zombie.iso.IsoGridSquare | zombie.iso.IsoObject | boolean, arg2?: zombie.iso.IsoObject): number;
+      playSoundImpl(arg0: string, arg1: zombie.iso.IsoObject | zombie.iso.IsoGridSquare | boolean, arg2?: zombie.iso.IsoObject): number;
       /**
        * Method Parameters: 
        *  - (String arg0): number
@@ -272,6 +272,11 @@ declare module 'PipeWrench' {
        *  - (String arg0): number
        */
       stopSoundByName(arg0: string): number;
+      /**
+       * Method Parameters: 
+       *  - (long arg0): void
+       */
+      stopSoundLocal(arg0: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): void

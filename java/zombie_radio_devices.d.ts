@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
+ * File generated at 2022-08-01T11:49Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -371,6 +371,11 @@ declare module 'PipeWrench' {
        *  - (int arg0): void
        */
       setHeadphoneType(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      setInitialPower(): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void

@@ -1,4 +1,4 @@
-/**
+/*
  * MIT License
  *
  * Copyright (c) 2022 JabDoesThings
@@ -21,13 +21,35 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
+ * File generated at: 2022-08-01T06:43:05.890Z
  */
 
 /** @noResolution @noSelfInFile */
-/// <reference path="../reference.d.ts" />
+/// <reference path="../../../reference.d.ts" />
+/// <reference path="../../../PipeWrench.d.ts" />
+import * as PipeWrench from 'PipeWrench';
+
 declare module 'PipeWrench' {
-  export namespace com.asledgehammer.crafthammer.api.event.log {
-    export type LogListener = any;
+  export namespace lua.client.ISUI {
+    /** @customConstructor ISPauseModListUI:new */
+    export class ISPauseModListUI extends lua.client.ISUI.ISPanelJoypad {
+      [id: string]: any;
+      static [id: string]: any;
+
+      chatText: any;
+
+      destroyOnClick: any;
+
+      name: any;
+
+      constructor(x: any, y: any, width: any, height: any);
+
+      destroy: (() => any) | any;
+    }
+
+    export class PauseBuggedModList {
+      static [id: string]: any;
+    }
   }
+  export namespace lua.client.ISUI.ISPauseModListUI {}
 }

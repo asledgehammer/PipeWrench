@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:00.122Z
+ * File generated at: 2022-08-01T06:43:05.114Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -35,8 +35,6 @@ declare module 'PipeWrench' {
       private constructor();
 
       static [id: string]: any;
-
-      static SpawnItemCheckerList: any;
 
       static doRollItem_CalcChances:
         | ((containerDist: any, arg1: any, arg2: any, character: any, arg4: any, isJunk: any, arg6: any) => any)

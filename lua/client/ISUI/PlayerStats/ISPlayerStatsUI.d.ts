@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:01.022Z
+ * File generated at: 2022-08-01T06:43:07.025Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -100,6 +100,8 @@ declare module 'PipeWrench' {
 
       warningPointsBtn: any;
 
+      weightBtn: any;
+
       windows: any;
 
       xoffset: any;
@@ -125,6 +127,8 @@ declare module 'PipeWrench' {
       onChangeName: ((button: any, player: any, changedName: any) => any) | any;
 
       onChangeProfession: ((button: any, prof: any) => any) | any;
+
+      onChangeWeight: ((button: any, player: any) => any) | any;
 
       onMouseWheelXXX: ((del: any) => any) | any;
 

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:38:59.853Z
+ * File generated at: 2022-08-01T06:43:04.699Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -47,6 +47,8 @@ declare module 'PipeWrench' {
       static addZoneDef: ((_zoneDef: any, _overwrite: any) => any) | any;
 
       static checkIfRecreateIcons: (() => any) | any;
+
+      static checkMetaZone: ((_zoneData: any) => any) | any;
 
       static checkRefillZone: ((_zoneData: any) => any) | any;
 
@@ -191,6 +193,10 @@ declare module 'PipeWrench' {
       static updateTimeValues: (() => any) | any;
 
       static updateZone: ((_zoneData: any) => any) | any;
+
+      static zoneContains: ((_zoneData: any, _x: any, _y: any, _z: any) => any) | any;
+
+      static zoneIntersects: ((_zoneData: any, _x: any, _y: any, _z: any, _w: any, _h: any) => any) | any;
     }
   }
   export namespace lua.shared.Foraging.forageSystem {}

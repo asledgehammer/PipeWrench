@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:38:59.101Z
+ * File generated at: 2022-08-01T06:43:03.364Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -88,6 +88,8 @@ declare module 'PipeWrench' {
 
       static OnDoorLock: ((worldobjects: any, door: any) => any) | any;
 
+      static onExtList: ((playerObj: any) => any) | any;
+
       static OnFireplaceSetFuel: ((obj: any) => any) | any;
 
       static OnFireplaceZeroFuel: ((obj: any) => any) | any;
@@ -102,7 +104,7 @@ declare module 'PipeWrench' {
 
       static onHordeManager: ((square: any, player: any) => any) | any;
 
-      static onMakeNoise: ((square: any, playerObj: any) => any) | any;
+      static onMakeNoise: ((square: any, playerObj: any, radius: any, volume: any) => any) | any;
 
       static OnMannequinCreateItem: ((script: any) => any) | any;
 
@@ -150,6 +152,10 @@ declare module 'PipeWrench' {
 
       static OnSetDoorKeyID: ((worldobjects: any, door: any) => any) | any;
 
+      static OnSetDoorKeyIDBuilding: ((worldobjects: any, door: any) => any) | any;
+
+      static OnSetDoorKeyIDRandom: ((worldobjects: any, door: any) => any) | any;
+
       static OnSetZombieOnFire: ((zombie: any) => any) | any;
 
       static onSpawnPoints: ((square: any, player: any) => any) | any;
@@ -177,6 +183,8 @@ declare module 'PipeWrench' {
       static OnWindowSmash: ((worldobjects: any, window: any) => any) | any;
 
       static pickSquare: ((x: any, y: any) => any) | any;
+
+      static setForceLockDoor: ((worldobjects: any, door: any, player: any) => any) | any;
 
       static stagger: ((player: any, stag: any) => any) | any;
     }

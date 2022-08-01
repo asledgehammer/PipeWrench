@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
+ * File generated at 2022-08-01T11:49Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -106,11 +106,6 @@ declare module 'PipeWrench' {
        *  - (Empty): string
        */
       getDescription(): string;
-      /**
-       * Method Parameters: 
-       *  - (Empty): string
-       */
-      getHitDescription(): string;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -306,11 +301,6 @@ declare module 'PipeWrench' {
        *  - (Empty): string
        */
       getDescription(): string;
-      /**
-       * Method Parameters: 
-       *  - (Empty): string
-       */
-      getHitDescription(): string;
       /**
        * Method Parameters: 
        *  - (Empty): number

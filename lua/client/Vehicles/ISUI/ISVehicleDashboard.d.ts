@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:02.628Z
+ * File generated at: 2022-08-01T06:43:10.726Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -159,6 +159,8 @@ declare module 'PipeWrench' {
       static onEnterVehicle: ((character: any) => any) | any;
 
       static onExitVehicle: ((character: any) => any) | any;
+
+      static onGameStart: (() => any) | any;
 
       static OnGameStart: (() => any) | any;
 

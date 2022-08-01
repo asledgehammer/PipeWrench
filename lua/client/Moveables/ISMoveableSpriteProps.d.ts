@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:01.380Z
+ * File generated at: 2022-08-01T06:43:08.171Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -147,6 +147,8 @@ declare module 'PipeWrench' {
       hasTool: ((_player: any, _mode: any) => any) | any;
 
       instanceItem: ((_spriteNameOverride: any) => any) | any;
+
+      isFloorAtTopOfStairs: ((object: any) => any) | any;
 
       isFreeTile: ((_square: any) => any) | any;
 

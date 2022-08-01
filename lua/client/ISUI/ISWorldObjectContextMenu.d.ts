@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:00.822Z
+ * File generated at: 2022-08-01T06:43:06.655Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -66,11 +66,19 @@ declare module 'PipeWrench' {
 
       static createMenu: ((player: any, worldobjects: any, x: any, y: any, test: any) => any) | any;
 
+      static doAddFuelGenerator:
+        | ((worldobjects: any, generator: any, fuelContainerList: any, fuelContainer: any, player: any) => any)
+        | any;
+
+      static doBrushToolOptions: ((context: any, worldobjects: any, player: any) => any) | any;
+
       static doChopTree: ((playerObj: any, tree: any) => any) | any;
 
       static doCleanBlood: ((playerObj: any, square: any) => any) | any;
 
       static doDrinkWaterMenu: ((object: any, player: any, context: any) => any) | any;
+
+      static doFillFuelMenu: ((source: any, playerNum: any, context: any) => any) | any;
 
       static doFillWaterMenu: ((sink: any, playerNum: any, context: any) => any) | any;
 
@@ -145,6 +153,10 @@ declare module 'PipeWrench' {
       static onAddCompost: ((compost: any, item: any, playerObj: any) => any) | any;
 
       static onAddFuel: ((worldobjects: any, petrolCan: any, generator: any, player: any) => any) | any;
+
+      static onAddFuelGenerator:
+        | ((worldobjects: any, petrolCan: any, generator: any, player: any, context: any) => any)
+        | any;
 
       static onAddPlayerToSafehouse: ((worldobjects: any, safehouse: any, player: any) => any) | any;
 
@@ -299,6 +311,10 @@ declare module 'PipeWrench' {
       static onStoveSetting: ((worldobjects: any, stove: any, player: any) => any) | any;
 
       static onTakeFuel: ((worldobjects: any, playerObj: any, fuelStation: any) => any) | any;
+
+      static onTakeFuelNew:
+        | ((worldobjects: any, fuelObject: any, fuelContainerList: any, fuelContainer: any, player: any) => any)
+        | any;
 
       static onTakeGenerator: ((worldobjects: any, generator: any, player: any) => any) | any;
 

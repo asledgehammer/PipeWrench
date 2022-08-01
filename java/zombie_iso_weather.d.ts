@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
+ * File generated at 2022-08-01T11:49Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -1459,10 +1459,10 @@ declare module 'PipeWrench' {
       setModdedValue(arg0: zombie.iso.weather.ClimateColorInfo): void;
       /**
        * Method Parameters: 
-       *  - (ClimateColorInfo arg0, float arg1): void
        *  - (ByteBuffer arg0, float arg1): void
+       *  - (ClimateColorInfo arg0, float arg1): void
        */
-      setOverride(arg0: zombie.iso.weather.ClimateColorInfo | java.nio.ByteBuffer, arg1: number): void;
+      setOverride(arg0: java.nio.ByteBuffer | zombie.iso.weather.ClimateColorInfo, arg1: number): void;
     }
     /**
      * @customConstructor ClimateFloat.new

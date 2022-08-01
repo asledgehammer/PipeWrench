@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:02.798Z
+ * File generated at: 2022-08-01T06:43:11.058Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -57,6 +57,10 @@ declare module 'PipeWrench' {
       static compareFloats: ((a: any, b: any, precision: any) => any) | any;
 
       static createPartInventoryItem: ((part: any) => any) | any;
+
+      static createPartInventoryItem_HAMRadio: ((part: any) => any) | any;
+
+      static createPartInventoryItem_Radio: ((part: any) => any) | any;
 
       static getChildWindow: ((part: any) => any) | any;
 

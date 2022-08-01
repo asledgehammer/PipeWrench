@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:38:58.674Z
+ * File generated at: 2022-08-01T06:43:02.688Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -68,6 +68,8 @@ declare module 'PipeWrench' {
       getSquare2Pos: ((square: any, north: any) => any) | any;
 
       getSquare3Pos: ((square: any, north: any) => any) | any;
+
+      getSquareTopPos: ((square: any, north: any) => any) | any;
 
       setInfo: ((square: any, level: any, north: any, sprite: any, luaobject: any) => any) | any;
     }
