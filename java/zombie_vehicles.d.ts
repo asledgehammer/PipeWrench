@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-01T11:49Z
+ * File generated at 2022-08-02T00:45Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -2712,10 +2712,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, KahluaTable arg1): void
        *  - (String arg0, Object... arg1): void
+       *  - (String arg0, KahluaTable arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
+      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -3331,10 +3331,10 @@ declare module 'PipeWrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (String arg0): void
        *  - (IsoSprite arg0): void
+       *  - (String arg0): void
        */
-      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
+      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -3488,10 +3488,10 @@ declare module 'PipeWrench' {
       shouldCollideWithObjects(): boolean;
       /**
        * Method Parameters: 
-       *  - (int arg0): boolean
        *  - (IsoGameCharacter arg0): boolean
+       *  - (int arg0): boolean
        */
-      showPassenger(arg0: number | zombie.characters.IsoGameCharacter): boolean;
+      showPassenger(arg0: zombie.characters.IsoGameCharacter | number): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -3862,10 +3862,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *

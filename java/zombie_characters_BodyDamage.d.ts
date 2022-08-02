@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-01T11:49Z
+ * File generated at 2022-08-02T00:45Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -95,10 +95,10 @@ declare module 'PipeWrench' {
       IncreasePanicFloat(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (BodyPartType arg0): boolean
        *  - (int arg0): boolean
+       *  - (BodyPartType arg0): boolean
        */
-      IsBandaged(arg0: zombie.characters.BodyDamage.BodyPartType | number): boolean;
+      IsBandaged(arg0: number | zombie.characters.BodyDamage.BodyPartType): boolean;
       /**
        * Method Parameters: 
        *  - (int arg0): boolean
@@ -170,10 +170,10 @@ declare module 'PipeWrench' {
       IsStitched(arg0: zombie.characters.BodyDamage.BodyPartType | number): boolean;
       /**
        * Method Parameters: 
-       *  - (int arg0): boolean
        *  - (BodyPartType arg0): boolean
+       *  - (int arg0): boolean
        */
-      IsWounded(arg0: number | zombie.characters.BodyDamage.BodyPartType): boolean;
+      IsWounded(arg0: zombie.characters.BodyDamage.BodyPartType | number): boolean;
       /**
        * Method Parameters: 
        *  - (Food arg0): void
@@ -234,10 +234,10 @@ declare module 'PipeWrench' {
       SetBitten(arg0: zombie.characters.BodyDamage.BodyPartType | number, arg1: boolean, arg2?: boolean): void;
       /**
        * Method Parameters: 
-       *  - (int arg0, boolean arg1): void
        *  - (BodyPartType arg0, boolean arg1): void
+       *  - (int arg0, boolean arg1): void
        */
-      SetBleeding(arg0: number | zombie.characters.BodyDamage.BodyPartType, arg1: boolean): void;
+      SetBleeding(arg0: zombie.characters.BodyDamage.BodyPartType | number, arg1: boolean): void;
       /**
        * Method Parameters: 
        *  - (int arg0, boolean arg1): void
@@ -246,10 +246,10 @@ declare module 'PipeWrench' {
       SetBleedingStemmed(arg0: number | zombie.characters.BodyDamage.BodyPartType, arg1: boolean): void;
       /**
        * Method Parameters: 
-       *  - (BodyPartType arg0, boolean arg1): void
        *  - (int arg0, boolean arg1): void
+       *  - (BodyPartType arg0, boolean arg1): void
        */
-      SetCortorised(arg0: zombie.characters.BodyDamage.BodyPartType | number, arg1: boolean): void;
+      SetCortorised(arg0: number | zombie.characters.BodyDamage.BodyPartType, arg1: boolean): void;
       /**
        * Method Parameters: 
        *  - (int arg0, boolean arg1): void
@@ -268,10 +268,10 @@ declare module 'PipeWrench' {
       SetScratchedFromWeapon(arg0: number, arg1: boolean): void;
       /**
        * Method Parameters: 
-       *  - (BodyPartType arg0, boolean arg1): void
        *  - (int arg0, boolean arg1): void
+       *  - (BodyPartType arg0, boolean arg1): void
        */
-      SetWounded(arg0: zombie.characters.BodyDamage.BodyPartType | number, arg1: boolean): void;
+      SetWounded(arg0: number | zombie.characters.BodyDamage.BodyPartType, arg1: boolean): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -354,16 +354,16 @@ declare module 'PipeWrench' {
       getBodyPart(arg0: zombie.characters.BodyDamage.BodyPartType): zombie.characters.BodyDamage.BodyPart;
       /**
        * Method Parameters: 
-       *  - (int arg0): number
        *  - (BodyPartType arg0): number
+       *  - (int arg0): number
        */
-      getBodyPartHealth(arg0: number | zombie.characters.BodyDamage.BodyPartType): number;
+      getBodyPartHealth(arg0: zombie.characters.BodyDamage.BodyPartType | number): number;
       /**
        * Method Parameters: 
-       *  - (BodyPartType arg0): string
        *  - (int arg0): string
+       *  - (BodyPartType arg0): string
        */
-      getBodyPartName(arg0: zombie.characters.BodyDamage.BodyPartType | number): string;
+      getBodyPartName(arg0: number | zombie.characters.BodyDamage.BodyPartType): string;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.ArrayList<zombie.characters.BodyDamage.BodyPart>

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-01T11:49Z
+ * File generated at 2022-08-02T00:46Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -2138,21 +2138,21 @@ declare module 'PipeWrench' {
    * Method Parameters: 
    *  - (String arg0): void
    */
-  export function ProceedFactionMessage(arg0: string): void;
+  export function proceedFactionMessage(arg0: string): void;
   /**
    * @noSelf
    *
    * Method Parameters: 
    *  - (String arg0): void
    */
-  export function ProcessAdminChatMessage(arg0: string): void;
+  export function processAdminChatMessage(arg0: string): void;
   /**
    * @noSelf
    *
    * Method Parameters: 
    *  - (String arg0): void
    */
-  export function ProcessSafehouseMessage(arg0: string): void;
+  export function processSafehouseMessage(arg0: string): void;
   /**
    * @noSelf
    *
@@ -3914,7 +3914,7 @@ declare module 'PipeWrench' {
    * Method Parameters: 
    *  - (Empty): se.krka.kahlua.vm.KahluaTable
    */
-  export function getStatistics(): se.krka.kahlua.vm.KahluaTable;
+  export function getMPStatistics(): se.krka.kahlua.vm.KahluaTable;
   /**
    * @noSelf
    *
@@ -4055,7 +4055,7 @@ declare module 'PipeWrench' {
    * Method Parameters: 
    *  - (Empty): se.krka.kahlua.vm.KahluaTable
    */
-  export function getTime(): se.krka.kahlua.vm.KahluaTable;
+  export function getMPStatus(): se.krka.kahlua.vm.KahluaTable;
   /**
    * @noSelf
    *
@@ -4193,17 +4193,17 @@ declare module 'PipeWrench' {
    * @noSelf
    *
    * Method Parameters: 
-   *  - (Item arg0): zombie.inventory.InventoryItem
    *  - (String arg0): zombie.inventory.InventoryItem
+   *  - (Item arg0): zombie.inventory.InventoryItem
    */
-  export function instanceItem(arg0: zombie.scripting.objects.Item | string): zombie.inventory.InventoryItem;
+  export function instanceItem(arg0: string | zombie.scripting.objects.Item): zombie.inventory.InventoryItem;
   /**
    * @noSelf
    *
    * Method Parameters: 
    *  - (Object arg0, String arg1): boolean
    */
-  export function instof(arg0: any, arg1: string): boolean;
+  export function _instanceof_(arg0: any, arg1: string): boolean;
   /**
    * @noSelf
    *
@@ -4511,7 +4511,7 @@ declare module 'PipeWrench' {
    * Method Parameters: 
    *  - (Object arg0, String arg1): boolean
    */
-  export function isType(arg0: any, arg1: string): boolean;
+  export function istype(arg0: any, arg1: string): boolean;
   /**
    * @noSelf
    *
@@ -4616,7 +4616,7 @@ declare module 'PipeWrench' {
    * Method Parameters: 
    *  - (String arg0): void
    */
-  export function openURl(arg0: string): void;
+  export function openUrl(arg0: string): void;
   /**
    * @noSelf
    *
@@ -4798,7 +4798,7 @@ declare module 'PipeWrench' {
    * Method Parameters: 
    *  - (String arg0, String arg1, String arg2): boolean
    */
-  export function renameSaveFile(arg0: string, arg1: string, arg2: string): boolean;
+  export function renameSavefile(arg0: string, arg1: string, arg2: string): boolean;
   /**
    * @noSelf
    *
@@ -5325,7 +5325,7 @@ declare module 'PipeWrench' {
    * Method Parameters: 
    *  - (Empty): number
    */
-  export function steamRequestInternetServersCount(): number;
+  export function steamGetInternetServersCount(): number;
   /**
    * @noSelf
    *

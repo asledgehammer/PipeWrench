@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-01T11:49Z
+ * File generated at 2022-08-02T00:45Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -401,10 +401,10 @@ declare module 'PipeWrench' {
       exposeAll(): void;
       /**
        * Method Parameters: 
-       *  - (KahluaTable arg0, Class arg1, Constructor arg2, String arg3): void
        *  - (KahluaTable arg0, Class arg1, Method arg2, String arg3): void
+       *  - (KahluaTable arg0, Class arg1, Constructor arg2, String arg3): void
        */
-      exposeGlobalClassFunction(arg0: se.krka.kahlua.vm.KahluaTable, arg1: java.lang.Class<any>, arg2: java.lang.reflect.Constructor<any> | java.lang.reflect.Method, arg3: string): void;
+      exposeGlobalClassFunction(arg0: se.krka.kahlua.vm.KahluaTable, arg1: java.lang.Class<any>, arg2: java.lang.reflect.Method | java.lang.reflect.Constructor<any>, arg3: string): void;
       /**
        * Method Parameters: 
        *  - (Object arg0): void
@@ -443,7 +443,7 @@ declare module 'PipeWrench' {
        * Method Parameters: 
        *  - (Object arg0): string
        */
-      getDefinition(arg0: any): string;
+      definition(arg0: any): string;
       /**
        * Method Parameters: 
        *  - (Class arg0): boolean
@@ -520,7 +520,7 @@ declare module 'PipeWrench' {
        * Method Parameters: 
        *  - (Empty): number
        */
-      getAverageFSP(): number;
+      getAverageFPS(): number;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.iso.ContainerOverlays
@@ -580,21 +580,21 @@ declare module 'PipeWrench' {
        * Method Parameters: 
        *  - (String arg0): void
        */
-      static ProceedFactionMessage(arg0: string): void;
+      static proceedFactionMessage(arg0: string): void;
       /**
        * @noSelf
        *
        * Method Parameters: 
        *  - (String arg0): void
        */
-      static ProcessAdminChatMessage(arg0: string): void;
+      static processAdminChatMessage(arg0: string): void;
       /**
        * @noSelf
        *
        * Method Parameters: 
        *  - (String arg0): void
        */
-      static ProcessSafehouseMessage(arg0: string): void;
+      static processSafehouseMessage(arg0: string): void;
       /**
        * @noSelf
        *
@@ -2356,7 +2356,7 @@ declare module 'PipeWrench' {
        * Method Parameters: 
        *  - (Empty): se.krka.kahlua.vm.KahluaTable
        */
-      static getStatistics(): se.krka.kahlua.vm.KahluaTable;
+      static getMPStatistics(): se.krka.kahlua.vm.KahluaTable;
       /**
        * @noSelf
        *
@@ -2497,7 +2497,7 @@ declare module 'PipeWrench' {
        * Method Parameters: 
        *  - (Empty): se.krka.kahlua.vm.KahluaTable
        */
-      static getTime(): se.krka.kahlua.vm.KahluaTable;
+      static getMPStatus(): se.krka.kahlua.vm.KahluaTable;
       /**
        * @noSelf
        *
@@ -2635,17 +2635,17 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (Item arg0): zombie.inventory.InventoryItem
        *  - (String arg0): zombie.inventory.InventoryItem
+       *  - (Item arg0): zombie.inventory.InventoryItem
        */
-      static instanceItem(arg0: zombie.scripting.objects.Item | string): zombie.inventory.InventoryItem;
+      static instanceItem(arg0: string | zombie.scripting.objects.Item): zombie.inventory.InventoryItem;
       /**
        * @noSelf
        *
        * Method Parameters: 
        *  - (Object arg0, String arg1): boolean
        */
-      static instof(arg0: any, arg1: string): boolean;
+      static _instanceof_(arg0: any, arg1: string): boolean;
       /**
        * @noSelf
        *
@@ -2953,7 +2953,7 @@ declare module 'PipeWrench' {
        * Method Parameters: 
        *  - (Object arg0, String arg1): boolean
        */
-      static isType(arg0: any, arg1: string): boolean;
+      static istype(arg0: any, arg1: string): boolean;
       /**
        * @noSelf
        *
@@ -3058,7 +3058,7 @@ declare module 'PipeWrench' {
        * Method Parameters: 
        *  - (String arg0): void
        */
-      static openURl(arg0: string): void;
+      static openUrl(arg0: string): void;
       /**
        * @noSelf
        *
@@ -3240,7 +3240,7 @@ declare module 'PipeWrench' {
        * Method Parameters: 
        *  - (String arg0, String arg1, String arg2): boolean
        */
-      static renameSaveFile(arg0: string, arg1: string, arg2: string): boolean;
+      static renameSavefile(arg0: string, arg1: string, arg2: string): boolean;
       /**
        * @noSelf
        *
@@ -3767,7 +3767,7 @@ declare module 'PipeWrench' {
        * Method Parameters: 
        *  - (Empty): number
        */
-      static steamRequestInternetServersCount(): number;
+      static steamGetInternetServersCount(): number;
       /**
        * @noSelf
        *

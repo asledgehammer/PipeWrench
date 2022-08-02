@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-01T11:49Z
+ * File generated at 2022-08-02T00:45Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -116,10 +116,10 @@ declare module 'PipeWrench' {
       resetJobDelta(): void;
       /**
        * Method Parameters: 
-       *  - (CharacterActionAnims arg0): void
        *  - (String arg0): void
+       *  - (CharacterActionAnims arg0): void
        */
-      setActionAnim(arg0: zombie.characters.CharacterActionAnims | string): void;
+      setActionAnim(arg0: string | zombie.characters.CharacterActionAnims): void;
       /**
        * Method Parameters: 
        *  - (String arg0, String arg1): void
@@ -285,10 +285,10 @@ declare module 'PipeWrench' {
       resetJobDelta(): void;
       /**
        * Method Parameters: 
-       *  - (CharacterActionAnims arg0): void
        *  - (String arg0): void
+       *  - (CharacterActionAnims arg0): void
        */
-      setActionAnim(arg0: zombie.characters.CharacterActionAnims | string): void;
+      setActionAnim(arg0: string | zombie.characters.CharacterActionAnims): void;
       /**
        * Method Parameters: 
        *  - (String arg0, String arg1): void
@@ -476,10 +476,10 @@ declare module 'PipeWrench' {
       resetJobDelta(): void;
       /**
        * Method Parameters: 
-       *  - (CharacterActionAnims arg0): void
        *  - (String arg0): void
+       *  - (CharacterActionAnims arg0): void
        */
-      setActionAnim(arg0: zombie.characters.CharacterActionAnims | string): void;
+      setActionAnim(arg0: string | zombie.characters.CharacterActionAnims): void;
       /**
        * Method Parameters: 
        *  - (String arg0, String arg1): void

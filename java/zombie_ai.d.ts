@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-01T11:49Z
+ * File generated at 2022-08-02T00:45Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -173,10 +173,10 @@ declare module 'PipeWrench' {
       getOrCreateKnownBlockedEdges(arg0: number, arg1: number, arg2: number): zombie.ai.KnownBlockedEdges;
       /**
        * Method Parameters: 
-       *  - (IsoThumpable arg0, boolean arg1): void
        *  - (IsoDoor arg0, boolean arg1): void
+       *  - (IsoThumpable arg0, boolean arg1): void
        */
-      setKnownBlockedDoor(arg0: zombie.iso.objects.IsoThumpable | zombie.iso.objects.IsoDoor, arg1: boolean): void;
+      setKnownBlockedDoor(arg0: zombie.iso.objects.IsoDoor | zombie.iso.objects.IsoThumpable, arg1: boolean): void;
       /**
        * Method Parameters: 
        *  - (int arg0, int arg1, int arg2, boolean arg3): void
