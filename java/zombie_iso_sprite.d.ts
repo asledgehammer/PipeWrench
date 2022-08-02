@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-02T00:45Z
+ * File generated at 2022-08-02T01:49Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -180,10 +180,10 @@ declare module 'PipeWrench' {
       LoadFramesReverseAltName(arg0: string, arg1: string, arg2: string, arg3: number): void;
       /**
        * Method Parameters: 
-       *  - (String arg0): void
        *  - (IsoAnim arg0): void
+       *  - (String arg0): void
        */
-      PlayAnim(arg0: string | zombie.iso.sprite.IsoAnim): void;
+      PlayAnim(arg0: zombie.iso.sprite.IsoAnim | string): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -294,11 +294,11 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (IsoObject arg0, float arg1, float arg2, float arg3, IsoDirections arg4, float arg5, float arg6, ColorInfo arg7, boolean arg8): void
-       *  - (IsoObject arg0, float arg1, float arg2, float arg3, IsoDirections arg4, float arg5, float arg6, ColorInfo arg7, boolean arg8, Consumer arg9): void
        *  - (IsoSpriteInstance arg0, IsoObject arg1, float arg2, float arg3, float arg4, IsoDirections arg5, float arg6, float arg7, ColorInfo arg8, boolean arg9): void
+       *  - (IsoObject arg0, float arg1, float arg2, float arg3, IsoDirections arg4, float arg5, float arg6, ColorInfo arg7, boolean arg8, Consumer arg9): void
        *  - (IsoSpriteInstance arg0, IsoObject arg1, float arg2, float arg3, float arg4, IsoDirections arg5, float arg6, float arg7, ColorInfo arg8, boolean arg9, Consumer arg10): void
        */
-      render(arg0: zombie.iso.IsoObject | zombie.iso.sprite.IsoSpriteInstance, arg1: number | zombie.iso.IsoObject, arg2: number, arg3: number, arg4: zombie.iso.IsoDirections | number, arg5: number | zombie.iso.IsoDirections, arg6: number, arg7: zombie.core.textures.ColorInfo | number, arg8: boolean | zombie.core.textures.ColorInfo, arg9?: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | boolean, arg10?: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): void;
+      render(arg0: zombie.iso.IsoObject | zombie.iso.sprite.IsoSpriteInstance, arg1: number | zombie.iso.IsoObject, arg2: number, arg3: number, arg4: zombie.iso.IsoDirections | number, arg5: number | zombie.iso.IsoDirections, arg6: number, arg7: zombie.core.textures.ColorInfo | number, arg8: boolean | zombie.core.textures.ColorInfo, arg9?: boolean | java.util._function_.Consumer<zombie.core.textures.TextureDraw>, arg10?: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): void;
       /**
        * Method Parameters: 
        *  - (Empty): void

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-02T00:45Z
+ * File generated at 2022-08-02T01:49Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -2023,10 +2023,10 @@ declare module 'PipeWrench' {
       AddItemBlind(arg0: zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (InventoryItem arg0, int arg1): void
        *  - (String arg0, int arg1): java.util.ArrayList<zombie.inventory.InventoryItem>
+       *  - (InventoryItem arg0, int arg1): void
        */
-      AddItems(arg0: zombie.inventory.InventoryItem | string, arg1: number): void | java.util.ArrayList<zombie.inventory.InventoryItem>;
+      AddItems(arg0: string | zombie.inventory.InventoryItem, arg1: number): java.util.ArrayList<zombie.inventory.InventoryItem> | void;
       /**
        * Method Parameters: 
        *  - (InventoryItem arg0): zombie.inventory.InventoryItem
@@ -2127,8 +2127,8 @@ declare module 'PipeWrench' {
        * Method Parameters: 
        *  - (String arg0): boolean
        *  - (InventoryItem arg0): boolean
-       *  - (String arg0, boolean arg1): boolean
        *  - (InventoryItem arg0, boolean arg1): boolean
+       *  - (String arg0, boolean arg1): boolean
        *  - (String arg0, boolean arg1, boolean arg2): boolean
        */
       contains(arg0: string | zombie.inventory.InventoryItem, arg1?: boolean, arg2?: boolean): boolean;
@@ -2390,10 +2390,10 @@ declare module 'PipeWrench' {
       getBestConditionEvalRecurse(arg0: se.krka.kahlua.vm.LuaClosure): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (String arg0): zombie.inventory.InventoryItem
        *  - (Predicate arg0): zombie.inventory.InventoryItem
+       *  - (String arg0): zombie.inventory.InventoryItem
        */
-      getBestConditionRecurse(arg0: string | java.util._function_.Predicate<zombie.inventory.InventoryItem>): zombie.inventory.InventoryItem;
+      getBestConditionRecurse(arg0: java.util._function_.Predicate<zombie.inventory.InventoryItem> | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (LuaClosure arg0, LuaClosure arg1): zombie.inventory.InventoryItem
@@ -2779,10 +2779,10 @@ declare module 'PipeWrench' {
        * Method Parameters: 
        *  - (String arg0): number
        *  - (String arg0, boolean arg1): number
-       *  - (String arg0, boolean arg1, ArrayList arg2): number
        *  - (String arg0, boolean arg1, boolean arg2): number
+       *  - (String arg0, boolean arg1, ArrayList arg2): number
        */
-      getNumberOfItem(arg0: string, arg1?: boolean, arg2?: java.util.ArrayList<zombie.inventory.ItemContainer> | boolean): number;
+      getNumberOfItem(arg0: string, arg1?: boolean, arg2?: boolean | java.util.ArrayList<zombie.inventory.ItemContainer>): number;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -2980,10 +2980,10 @@ declare module 'PipeWrench' {
       getWeightReduction(): number;
       /**
        * Method Parameters: 
-       *  - (IsoGameCharacter arg0, InventoryItem arg1): boolean
        *  - (IsoGameCharacter arg0, float arg1): boolean
+       *  - (IsoGameCharacter arg0, InventoryItem arg1): boolean
        */
-      hasRoomFor(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.inventory.InventoryItem | number): boolean;
+      hasRoomFor(arg0: zombie.characters.IsoGameCharacter, arg1: number | zombie.inventory.InventoryItem): boolean;
       /**
        * Method Parameters: 
        *  - (int arg0): zombie.inventory.InventoryItem

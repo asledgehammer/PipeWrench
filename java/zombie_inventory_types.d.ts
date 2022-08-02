@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-02T00:45Z
+ * File generated at 2022-08-02T01:49Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -13061,10 +13061,10 @@ declare module 'PipeWrench' {
     export class HandWeapon {
       /**
        * Constructors: 
-       *  - (String arg0, String arg1, String arg2, Item arg3)
        *  - (String arg0, String arg1, String arg2, String arg3)
+       *  - (String arg0, String arg1, String arg2, Item arg3)
        */
-      constructor(arg0: string, arg1: string, arg2: string, arg3: zombie.scripting.objects.Item | string);
+      constructor(arg0: string, arg1: string, arg2: string, arg3: string | zombie.scripting.objects.Item);
       /**
        * Method Parameters: 
        *  - (InventoryItem arg0): boolean
@@ -14493,10 +14493,10 @@ declare module 'PipeWrench' {
       getWeaponPart(arg0: string): zombie.inventory.types.WeaponPart;
       /**
        * Method Parameters: 
-       *  - (WeaponPart arg0): number
        *  - (String arg0): number
+       *  - (WeaponPart arg0): number
        */
-      getWeaponPartWeightModifier(arg0: zombie.inventory.types.WeaponPart | string): number;
+      getWeaponPartWeightModifier(arg0: string | zombie.inventory.types.WeaponPart): number;
       /**
        * Method Parameters: 
        *  - (Empty): string
