@@ -1699,6 +1699,8 @@ declare module 'PipeWrench' {
     /** [ENUM] zombie.characters.BodyDamage.BodyPartType */
     export class BodyPartType {
       protected constructor();
+      static ToIndex(bodyPartType: zombie.characters.BodyDamage.BodyPartType): number;
+      static FromIndex(index: number): zombie.characters.BodyDamage.BodyPartType;
       static readonly Foot_L: zombie.characters.BodyDamage.BodyPartType;
       static readonly Foot_R: zombie.characters.BodyDamage.BodyPartType;
       static readonly ForeArm_L: zombie.characters.BodyDamage.BodyPartType;
