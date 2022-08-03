@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-02T01:49Z
+ * File generated at 2022-08-03T13:26Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -401,10 +401,10 @@ declare module 'PipeWrench' {
       exposeAll(): void;
       /**
        * Method Parameters: 
-       *  - (KahluaTable arg0, Class arg1, Constructor arg2, String arg3): void
        *  - (KahluaTable arg0, Class arg1, Method arg2, String arg3): void
+       *  - (KahluaTable arg0, Class arg1, Constructor arg2, String arg3): void
        */
-      exposeGlobalClassFunction(arg0: se.krka.kahlua.vm.KahluaTable, arg1: java.lang.Class<any>, arg2: java.lang.reflect.Constructor<any> | java.lang.reflect.Method, arg3: string): void;
+      exposeGlobalClassFunction(arg0: se.krka.kahlua.vm.KahluaTable, arg1: java.lang.Class<any>, arg2: java.lang.reflect.Method | java.lang.reflect.Constructor<any>, arg3: string): void;
       /**
        * Method Parameters: 
        *  - (Object arg0): void
@@ -4075,10 +4075,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (String arg0, LuaClosure arg1, int arg2): void
        *  - (KahluaTable arg0, LuaClosure arg1, int arg2): void
+       *  - (String arg0, LuaClosure arg1, int arg2): void
        */
-      static OnLoadWithSprite(arg0: string | se.krka.kahlua.vm.KahluaTable, arg1: se.krka.kahlua.vm.LuaClosure, arg2: number): void;
+      static OnLoadWithSprite(arg0: se.krka.kahlua.vm.KahluaTable | string, arg1: se.krka.kahlua.vm.LuaClosure, arg2: number): void;
       /**
        * @noSelf
        *

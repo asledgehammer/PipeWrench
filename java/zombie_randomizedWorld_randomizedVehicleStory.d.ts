@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-02T01:49Z
+ * File generated at 2022-08-03T13:26Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -5311,9 +5311,9 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0, Object arg1): void
+       *  - (String arg0, boolean arg1): void
        *  - (String arg0, float arg1): void
        *  - (String arg0, int arg1): void
-       *  - (String arg0, boolean arg1): void
        */
       setParameter<E>(arg0: string, arg1: any): void;
       /**

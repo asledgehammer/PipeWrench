@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-02T01:49Z
+ * File generated at 2022-08-03T13:26Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -367,10 +367,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (ModelSlotRenderData arg0, Vector3 arg1): void
        *  - (IsoGameCharacter arg0, Vector3 arg1): void
+       *  - (ModelSlotRenderData arg0, Vector3 arg1): void
        */
-      static VectorToWorldCoords(arg0: zombie.core.skinnedmodel.model.ModelSlotRenderData | zombie.characters.IsoGameCharacter, arg1: zombie.iso.Vector3): void;
+      static VectorToWorldCoords(arg0: zombie.characters.IsoGameCharacter | zombie.core.skinnedmodel.model.ModelSlotRenderData, arg1: zombie.iso.Vector3): void;
       /**
        * @noSelf
        *
@@ -473,10 +473,10 @@ declare module 'PipeWrench' {
       getAttachmentById(arg0: string): zombie.scripting.objects.ModelAttachment;
       /**
        * Method Parameters: 
-       *  - (int arg0, Matrix4f arg1): org.joml.Matrix4f
        *  - (ModelAttachment arg0, Matrix4f arg1): org.joml.Matrix4f
+       *  - (int arg0, Matrix4f arg1): org.joml.Matrix4f
        */
-      getAttachmentMatrix(arg0: number | zombie.scripting.objects.ModelAttachment, arg1: org.joml.Matrix4f): org.joml.Matrix4f;
+      getAttachmentMatrix(arg0: zombie.scripting.objects.ModelAttachment | number, arg1: org.joml.Matrix4f): org.joml.Matrix4f;
       /**
        * Method Parameters: 
        *  - (String arg0, Matrix4f arg1): org.joml.Matrix4f

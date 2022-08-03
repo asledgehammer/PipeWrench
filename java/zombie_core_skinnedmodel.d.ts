@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-02T01:49Z
+ * File generated at 2022-08-03T13:26Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -56,10 +56,10 @@ declare module 'PipeWrench' {
       ContainsChar(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * Method Parameters: 
-       *  - (IsoGameCharacter arg0): void
        *  - (BaseVehicle arg0): void
+       *  - (IsoGameCharacter arg0): void
        */
-      Remove(arg0: zombie.characters.IsoGameCharacter | zombie.vehicles.BaseVehicle): void;
+      Remove(arg0: zombie.vehicles.BaseVehicle | zombie.characters.IsoGameCharacter): void;
       /**
        * Method Parameters: 
        *  - (TextureDraw arg0, int arg1, int arg2): void

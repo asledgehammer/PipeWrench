@@ -21,14 +21,14 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-02T01:50Z
+ * File generated at 2022-08-03T13:26Z
  */
 
 /////////////////////////////////////////////
 // [PARTIAL] : Java.reference.partial.d.ts //
 /////////////////////////////////////////////
 
-/// <reference path="./PipeWrench.d.ts" />
+/// <reference path="PipeWrench.d.ts" />
 /// <reference path="java/fmod_fmod.d.ts" />
 /// <reference path="java/gnu_trove_function.d.ts" />
 /// <reference path="java/gnu_trove_iterator.d.ts" />

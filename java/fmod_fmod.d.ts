@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-02T01:49Z
+ * File generated at 2022-08-03T13:26Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -32,9 +32,9 @@ declare module 'PipeWrench' {
     /** [ENUM] fmod.fmod.EmitterType */
     export class EmitterType {
       protected constructor();
-      static readonly Extra: fmod.fmod.EmitterType;
-      static readonly Footstep: fmod.fmod.EmitterType;
-      static readonly Voice: fmod.fmod.EmitterType;
+      static readonly Extra: fmod.EmitterType;
+      static readonly Footstep: fmod.EmitterType;
+      static readonly Voice: fmod.EmitterType;
       name(): string;
       ordinal(): number;
     }
@@ -111,12 +111,12 @@ declare module 'PipeWrench' {
        * Method Parameters: 
        *  - (String arg0): fmod.fmod.FMODFootstep
        */
-      getFootstep(arg0: string): fmod.fmod.FMODFootstep;
+      getFootstep(arg0: string): fmod.FMODFootstep;
       /**
        * Method Parameters: 
        *  - (String arg0): fmod.fmod.FMODVoice
        */
-      getVoice(arg0: string): fmod.fmod.FMODVoice;
+      getVoice(arg0: string): fmod.FMODVoice;
     }
     /**
      * @customConstructor FMODSoundEmitter.new
@@ -156,10 +156,10 @@ declare module 'PipeWrench' {
       isEmpty(): boolean;
       /**
        * Method Parameters: 
-       *  - (long arg0): boolean
        *  - (String arg0): boolean
+       *  - (long arg0): boolean
        */
-      isPlaying(arg0: number | string): boolean;
+      isPlaying(arg0: string | number): boolean;
       /**
        * Method Parameters: 
        *  - (String arg0): number
@@ -178,13 +178,13 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): number
-       *  - (String arg0, IsoObject arg1): number
-       *  - (String arg0, IsoGameCharacter arg1): number
        *  - (String arg0, boolean arg1): number
+       *  - (String arg0, IsoGameCharacter arg1): number
+       *  - (String arg0, IsoObject arg1): number
        *  - (String arg0, IsoGridSquare arg1): number
        *  - (String arg0, int arg1, int arg2, int arg3): number
        */
-      playSound(arg0: string, arg1?: zombie.iso.IsoObject | zombie.characters.IsoGameCharacter | boolean | zombie.iso.IsoGridSquare | number, arg2?: number, arg3?: number): number;
+      playSound(arg0: string, arg1?: boolean | zombie.characters.IsoGameCharacter | zombie.iso.IsoObject | zombie.iso.IsoGridSquare | number, arg2?: number, arg3?: number): number;
       /**
        * Method Parameters: 
        *  - (String arg0, IsoGridSquare arg1): number
@@ -221,7 +221,7 @@ declare module 'PipeWrench' {
        * Method Parameters: 
        *  - (long arg0, FMOD_STUDIO_PARAMETER_DESCRIPTION arg1, float arg2): void
        */
-      setParameterValue(arg0: number, arg1: fmod.fmod.FMOD_STUDIO_PARAMETER_DESCRIPTION, arg2: number): void;
+      setParameterValue(arg0: number, arg1: fmod.FMOD_STUDIO_PARAMETER_DESCRIPTION, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (long arg0, float arg1): void

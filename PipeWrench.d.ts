@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-02T01:50Z
+ * File generated at 2022-08-03T13:26Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -60,7 +60,7 @@ declare module 'PipeWrench' {
   /** @customConstructor AlarmClockClothing.new */
   export class AlarmClockClothing extends zombie.inventory.types.AlarmClockClothing {}
   /** @customConstructor Allocator.new */
-  export class Allocator<any> extends zombie.popman.ObjectPool$Allocator<any> {}
+  export class Allocator extends zombie.popman.ObjectPool$Allocator<any> {}
   /** @customConstructor AlphaOp.new */
   export class AlphaOp extends zombie.core.Styles.AlphaOp {}
   /** @customConstructor Alternate.new */
@@ -138,7 +138,7 @@ declare module 'PipeWrench' {
   /** @customConstructor Area.new */
   export class Area extends zombie.scripting.objects.VehicleScript$Area {}
   /** @customConstructor ArrayList.new */
-  export class ArrayList<any> extends java.util.ArrayList<any> {}
+  export class ArrayList extends java.util.ArrayList<any> {}
   /** @customConstructor Asset.new */
   export class Asset extends zombie.asset.Asset {}
   /** @customConstructor AssetManager.new */
@@ -486,7 +486,7 @@ declare module 'PipeWrench' {
   /** @customConstructor EnumConfigOption.new */
   export class EnumConfigOption extends zombie.config.EnumConfigOption {}
   /** @customConstructor EnumMap.new */
-  export class EnumMap<any, any> extends java.util.EnumMap<any, any> {}
+  export class EnumMap extends java.util.EnumMap<any, any> {}
   /** @customConstructor EnumSandboxOption.new */
   export class EnumSandboxOption extends zombie.SandboxOptions$EnumSandboxOption {}
   /** @customConstructor ErosionConfig.new */
@@ -628,7 +628,7 @@ declare module 'PipeWrench' {
   /** @customConstructor HandWeapon.new */
   export class HandWeapon extends zombie.inventory.types.HandWeapon {}
   /** @customConstructor HashMap.new */
-  export class HashMap<any, any> extends java.util.HashMap<any, any> {}
+  export class HashMap extends java.util.HashMap<any, any> {}
   /** @customConstructor HitCharacterPacket.new */
   export class HitCharacterPacket extends zombie.network.packets.hit.HitCharacterPacket {}
   /** @customConstructor HitInfo.new */
@@ -910,7 +910,7 @@ declare module 'PipeWrench' {
   /** @customConstructor ItemVisuals.new */
   export class ItemVisuals extends zombie.core.skinnedmodel.visual.ItemVisuals {}
   /** @customConstructor Iterator.new */
-  export class Iterator<any> extends java.util.Iterator<any> {}
+  export class Iterator extends java.util.Iterator<any> {}
   /** @customConstructor JobType.new */
   export class JobType extends zombie.iso.IsoChunk$JobType {}
   /** @customConstructor Joypad.new */
@@ -946,7 +946,7 @@ declare module 'PipeWrench' {
   /** @customConstructor Line.new */
   export class Line extends zombie.iso.WorldMarkers$Line {}
   /** @customConstructor LinkedList.new */
-  export class LinkedList<any> extends java.util.LinkedList<any> {}
+  export class LinkedList extends java.util.LinkedList<any> {}
   /** @customConstructor Literature.new */
   export class Literature extends zombie.inventory.types.Literature {}
   /** @customConstructor LiveAnimNode.new */
@@ -1094,7 +1094,7 @@ declare module 'PipeWrench' {
   /** @customConstructor NoCircleStencilShader.new */
   export class NoCircleStencilShader extends zombie.iso.IsoGridSquare$NoCircleStencilShader {}
   /** @customConstructor NonBlockingHashMap.new */
-  export class NonBlockingHashMap<any, any> extends zombie.core.Collections.NonBlockingHashMap<any, any> {}
+  export class NonBlockingHashMap extends zombie.core.Collections.NonBlockingHashMap<any, any> {}
   /** @customConstructor NonPvpZone.new */
   export class NonPvpZone extends zombie.iso.areas.NonPvpZone {}
   /** @customConstructor Nutrition.new */
@@ -1104,7 +1104,7 @@ declare module 'PipeWrench' {
   /** @customConstructor ObjectAmbientEmitters.new */
   export class ObjectAmbientEmitters extends zombie.audio.ObjectAmbientEmitters {}
   /** @customConstructor ObjectPool.new */
-  export class ObjectPool<any> extends zombie.popman.ObjectPool<any> {}
+  export class ObjectPool extends zombie.popman.ObjectPool<any> {}
   /** @customConstructor ObjectRenderEffects.new */
   export class ObjectRenderEffects extends zombie.iso.objects.ObjectRenderEffects {}
   /** @customConstructor ObjectTooltip.new */
@@ -1128,7 +1128,7 @@ declare module 'PipeWrench' {
   /** @customConstructor OutlineShader.new */
   export class OutlineShader extends zombie.iso.IsoObject$OutlineShader {}
   /** @customConstructor PZArrayList.new */
-  export class PZArrayList<any> extends zombie.util.list.PZArrayList<any> {}
+  export class PZArrayList extends zombie.util.list.PZArrayList<any> {}
   /** @customConstructor PZCalendar.new */
   export class PZCalendar extends zombie.util.PZCalendar {}
   /** @customConstructor PZFileformat.new */
@@ -1220,7 +1220,7 @@ declare module 'PipeWrench' {
   /** @customConstructor PolygonalMap2.new */
   export class PolygonalMap2 extends zombie.vehicles.PolygonalMap2 {}
   /** @customConstructor Pool.new */
-  export class Pool<any> extends zombie.util.Pool<any> {}
+  export class Pool extends zombie.util.Pool<any> {}
   /** @customConstructor Position.new */
   export class Position extends zombie.scripting.objects.VehicleScript$Position {}
   /** @customConstructor PredictionTypes.new */
@@ -1558,7 +1558,7 @@ declare module 'PipeWrench' {
   /** @customConstructor Square.new */
   export class Square extends zombie.erosion.ErosionData$Square {}
   /** @customConstructor Stack.new */
-  export class Stack<any> extends java.util.Stack<any> {}
+  export class Stack extends java.util.Stack<any> {}
   /** @customConstructor Stage.new */
   export class Stage extends zombie.iso.MultiStageBuilding$Stage {}
   /** @customConstructor StaggerBackState.new */
@@ -1748,7 +1748,7 @@ declare module 'PipeWrench' {
   /** @customConstructor ValidateState.new */
   export class ValidateState extends zombie.network.packets.ValidatePacket$ValidateState {}
   /** @customConstructor Vector.new */
-  export class Vector<any> extends java.util.Vector<any> {}
+  export class Vector extends java.util.Vector<any> {}
   /** @customConstructor Vector2.new */
   export class Vector2 extends zombie.iso.Vector2 {}
   /** @customConstructor Vector2ObjectPool.new */
@@ -5960,7 +5960,7 @@ declare module 'PipeWrench' {
   /** @customConstructor AnimationClipViewer_Timeline:new */
   export class AnimationClipViewer_Timeline extends lua.client.DebugUIs.AnimationClipViewer_Timeline {}
   /** @noSelf */
-  export const AnimationViewerState_InitUI = lua.client.DebugUIs.AnimationClipViewer.AnimationViewerState_InitUI;
+  export const AnimationViewerState_InitUI: (() => any) | any;
 
   // [client/DebugUIs/AttachmentEditorUI.d.ts]
   /** @customConstructor AttachmentEditorUI:new */
@@ -5979,7 +5979,7 @@ declare module 'PipeWrench' {
   export class AttachmentEditorUI_WorldAttachmentPanel extends lua.client.DebugUIs
     .AttachmentEditorUI_WorldAttachmentPanel {}
   /** @noSelf */
-  export const AttachmentEditorState_InitUI = lua.client.DebugUIs.AttachmentEditorUI.AttachmentEditorState_InitUI;
+  export const AttachmentEditorState_InitUI: (() => any) | any;
 
   // [client/DebugUIs/BrushTool/BrushToolChooseTileUI.d.ts]
   /** @customConstructor BrushToolChooseTileUI:new */
@@ -6052,7 +6052,7 @@ declare module 'PipeWrench' {
   /** @customConstructor DebuggerContextMenu:new */
   export class DebuggerContextMenu extends lua.client.DebugUIs.DebuggerContextMenu {}
   /** @noSelf */
-  export const getDebuggerContextMenu = lua.client.DebugUIs.DebuggerContextMenu.getDebuggerContextMenu;
+  export const getDebuggerContextMenu: (() => any) | any;
 
   // [client/DebugUIs/DebugGlobalObjectState/DebugGlobalObjectState_PropertiesPanel.d.ts]
   /** @customConstructor DebugGlobalObjectState_BasePropertiesPanel:new */
@@ -6229,7 +6229,7 @@ declare module 'PipeWrench' {
   /** @customConstructor IsoRegionsWindow:new */
   export class IsoRegionsWindow extends lua.client.DebugUIs.DebugMenu.IsoRegions.IsoRegionsWindow {}
   /** @noSelf */
-  export const newIsoRegionsWindow = lua.client.DebugUIs.DebugMenu.IsoRegions.IsoRegionsWindow.newIsoRegionsWindow;
+  export const newIsoRegionsWindow: (() => any) | any;
 
   // [client/DebugUIs/DebugMenu/Puddles/PuddlesControl.d.ts]
   /** @customConstructor PuddlesControl:new */
@@ -6284,7 +6284,7 @@ declare module 'PipeWrench' {
   /** @customConstructor DebugScenarios:new */
   export class DebugScenarios extends lua.client.DebugUIs.DebugScenarios {}
   /** @noSelf */
-  export const doDebugScenarios = lua.client.DebugUIs.DebugScenarios.doDebugScenarios;
+  export const doDebugScenarios: (() => any) | any;
 
   // [client/DebugUIs/DebugToolstrip.d.ts]
   /** @customConstructor DebugToolstrip:new */
@@ -6784,7 +6784,7 @@ declare module 'PipeWrench' {
   /** @customConstructor ISDemoPopup:new */
   export class ISDemoPopup extends lua.client.ISUI.ISDemoPopup {}
   /** @noSelf */
-  export const DoDemoPopup = lua.client.ISUI.ISDemoPopup.DoDemoPopup;
+  export const DoDemoPopup: (() => any) | any;
 
   // [client/ISUI/ISDigitalCode.d.ts]
   /** @customConstructor ISDigitalCode:new */
@@ -6971,7 +6971,7 @@ declare module 'PipeWrench' {
   /** @customConstructor ISRainPanel:new */
   export class ISRainPanel extends lua.client.ISUI.ISRainPanel {}
   /** @noSelf */
-  export const addRainPanel = lua.client.ISUI.ISRainPanel.addRainPanel;
+  export const addRainPanel: (() => any) | any;
 
   // [client/ISUI/ISRect.d.ts]
   /** @customConstructor ISRect:new */
@@ -7221,7 +7221,7 @@ declare module 'PipeWrench' {
   // [client/ISUI/PlayerData/ISPlayerData.d.ts]
   export class ISPlayerData {}
   /** @noSelf */
-  export const destroyAllPlayerData = lua.client.ISUI.PlayerData.ISPlayerData.destroyAllPlayerData;
+  export const destroyAllPlayerData: (() => any) | any;
 
   // [client/ISUI/PlayerData/ISPlayerDataObject.d.ts]
   /** @customConstructor ISPlayerDataObject:new */
@@ -7302,7 +7302,7 @@ declare module 'PipeWrench' {
   /** @customConstructor ZombiePopulationWindow:new */
   export class ZombiePopulationWindow extends lua.client.ISUI.ZombiePopulationWindow {}
   /** @noSelf */
-  export const newZombiePopulationWindow = lua.client.ISUI.ZombiePopulationWindow.newZombiePopulationWindow;
+  export const newZombiePopulationWindow: (() => any) | any;
 
   // [server/Items/AcceptItemFunction.d.ts]
   export class AcceptItemFunction {}
@@ -7325,7 +7325,7 @@ declare module 'PipeWrench' {
 
   // [shared/iwbumstempmodelcompat.d.ts]
   /** @noSelf */
-  export const getDir = lua.shared.iwbumstempmodelcompat.getDir;
+  export const getDir: (() => any) | any;
 
   // [client/JoyPad/ISJoypadDebugUI.d.ts]
   /** @customConstructor ISJoypadDebugUI:new */
@@ -7369,9 +7369,9 @@ declare module 'PipeWrench' {
   // [client/LastStand/Insomnia.d.ts]
   export class InsomniaChallenge {}
   /** @noSelf */
-  export const injectInsomnia = lua.client.LastStand.Insomnia.injectInsomnia;
+  export const injectInsomnia: (() => any) | any;
   /** @noSelf */
-  export const removeInsomnia = lua.client.LastStand.Insomnia.removeInsomnia;
+  export const removeInsomnia: (() => any) | any;
 
   // [client/LastStand/ISUI/ISChallenge2PlayerUpWindow.d.ts]
   /** @customConstructor ISChallenge2PlayerUpWindow:new */
@@ -7402,11 +7402,11 @@ declare module 'PipeWrench' {
   // [client/LastStand/LastStandSetup.d.ts]
   export class LastStandData {}
   /** @noSelf */
-  export const doLastStandDraw = lua.client.LastStand.LastStandSetup.doLastStandDraw;
+  export const doLastStandDraw: (() => any) | any;
   /** @noSelf */
-  export const doLastStandInit = lua.client.LastStand.LastStandSetup.doLastStandInit;
+  export const doLastStandInit: (() => any) | any;
   /** @noSelf */
-  export const preLoadLastStandInit = lua.client.LastStand.LastStandSetup.preLoadLastStandInit;
+  export const preLoadLastStandInit: (() => any) | any;
 
   // [client/LastStand/OpeningHours.d.ts]
   export class OpeningHours {}
@@ -7475,9 +7475,9 @@ declare module 'PipeWrench' {
 
   // [server/metazones/metazoneHandler.d.ts]
   /** @noSelf */
-  export const doMapZones = lua.server.metazones.metazoneHandler.doMapZones;
+  export const doMapZones: (() => any) | any;
   /** @noSelf */
-  export const doSpawnOrigins = lua.server.metazones.metazoneHandler.doSpawnOrigins;
+  export const doSpawnOrigins: (() => any) | any;
 
   // [client/Moveables/ISMoveableDefinitions.d.ts]
   export class ISMoveableDefinitions {}
@@ -7519,7 +7519,7 @@ declare module 'PipeWrench' {
   /** @customConstructor Rabbit:new */
   export class Rabbit extends lua.server.Movers.Rabbit {}
   /** @noSelf */
-  export const testCreateRabbit = lua.server.Movers.Rabbit.testCreateRabbit;
+  export const testCreateRabbit: (() => any) | any;
 
   // [client/Music/MusicChoices.d.ts]
   export class MusicChoices {}
@@ -7534,8 +7534,7 @@ declare module 'PipeWrench' {
   /** @customConstructor SadisticMusicDirector:new */
   export class SadisticMusicDirector extends lua.server.NPCs.SadisticAIDirector.SadisticMusicDirector {}
   /** @noSelf */
-  export const SadisticMusicDirectorTick =
-    lua.server.NPCs.SadisticAIDirector.SadisticMusicDirector.SadisticMusicDirectorTick;
+  export const SadisticMusicDirectorTick: (() => any) | any;
 
   // [client/NPCs/UI/CharacterInfoPage.d.ts]
   /** @customConstructor CharacterInfoPage:new */
@@ -7629,13 +7628,13 @@ declare module 'PipeWrench' {
   /** @customConstructor LoadGameScreen:new */
   export class LoadGameScreen extends lua.client.OptionScreens.LoadGameScreen {}
   /** @noSelf */
-  export const LoadGameScreen_onModsModified = lua.client.OptionScreens.LoadGameScreen.LoadGameScreen_onModsModified;
+  export const LoadGameScreen_onModsModified: (() => any) | any;
 
   // [client/OptionScreens/LoginScreen.d.ts]
   /** @customConstructor LoginScreen:new */
   export class LoginScreen extends lua.client.OptionScreens.LoginScreen {}
   /** @noSelf */
-  export const deleteLoginScreen = lua.client.OptionScreens.LoginScreen.deleteLoginScreen;
+  export const deleteLoginScreen: (() => any) | any;
 
   // [client/OptionScreens/MainOptions.d.ts]
   /** @customConstructor MainOptions:new */
@@ -7673,7 +7672,7 @@ declare module 'PipeWrench' {
   /** @customConstructor ModThumbnailPanel:new */
   export class ModThumbnailPanel extends lua.client.OptionScreens.ModThumbnailPanel {}
   /** @noSelf */
-  export const ModSelector_onModsModified = lua.client.OptionScreens.ModSelector.ModSelector_onModsModified;
+  export const ModSelector_onModsModified: (() => any) | any;
 
   // [client/OptionScreens/NewGameScreen.d.ts]
   /** @customConstructor NewGameScreen:new */
@@ -7918,7 +7917,7 @@ declare module 'PipeWrench' {
   // [shared/Reloading/stormysReload.d.ts]
   export class ReloadManager {}
   /** @noSelf */
-  export const addShotgun = lua.shared.Reloading.stormysReload.addShotgun;
+  export const addShotgun: (() => any) | any;
 
   // [client/Seasons/ISUI/ISWeather.d.ts]
   /** @customConstructor ISWeather:new */
@@ -7937,7 +7936,7 @@ declare module 'PipeWrench' {
   export class globalSoundTable {}
   export class voiceTable {}
   /** @noSelf */
-  export const doLoadSoundbanks = lua.shared.SoundBanks.SoundBanks.doLoadSoundbanks;
+  export const doLoadSoundbanks: (() => any) | any;
 
   // [shared/SpawnRegions.d.ts]
   export class SpawnRegionMgr {}
@@ -7968,28 +7967,28 @@ declare module 'PipeWrench' {
   /** @customConstructor SurvivalGuideManager:new */
   export class SurvivalGuideManager extends lua.client.SurvivalGuide.SurvivalGuideManager {}
   /** @noSelf */
-  export const doSurvivalGuide = lua.client.SurvivalGuide.SurvivalGuideManager.doSurvivalGuide;
+  export const doSurvivalGuide: (() => any) | any;
 
   // [server/TemplateReplacers.d.ts]
   export class TemplateReplacers {}
 
   // [client/Tests/MapObjectTests.d.ts]
   /** @noSelf */
-  export const MapObjectTestCampfire = lua.client.Tests.MapObjectTests.MapObjectTestCampfire;
+  export const MapObjectTestCampfire: (() => any) | any;
   /** @noSelf */
-  export const MapObjectTestFarming = lua.client.Tests.MapObjectTests.MapObjectTestFarming;
+  export const MapObjectTestFarming: (() => any) | any;
   /** @noSelf */
-  export const MapObjectTestRainBarrel = lua.client.Tests.MapObjectTests.MapObjectTestRainBarrel;
+  export const MapObjectTestRainBarrel: (() => any) | any;
 
   // [client/Tests/RecipeTests.d.ts]
   /** @noSelf */
-  export const RecipeTestAll = lua.client.Tests.RecipeTests.RecipeTestAll;
+  export const RecipeTestAll: (() => any) | any;
   /** @noSelf */
-  export const RecipeTestAvailableItems = lua.client.Tests.RecipeTests.RecipeTestAvailableItems;
+  export const RecipeTestAvailableItems: (() => any) | any;
   /** @noSelf */
-  export const RecipeTestNumberOfTimes = lua.client.Tests.RecipeTests.RecipeTestNumberOfTimes;
+  export const RecipeTestNumberOfTimes: (() => any) | any;
   /** @noSelf */
-  export const RecipeTestSelectedItem = lua.client.Tests.RecipeTests.RecipeTestSelectedItem;
+  export const RecipeTestSelectedItem: (() => any) | any;
 
   // [client/Tests/RecipeUtils.d.ts]
   export class RecipeUtils {}
@@ -8605,9 +8604,9 @@ declare module 'PipeWrench' {
   // [server/TurnBased/TurnBasedMain.d.ts]
   export class TurnbasedDummyChr {}
   /** @noSelf */
-  export const InitTurnbasedEngine = lua.server.TurnBased.TurnBasedMain.InitTurnbasedEngine;
+  export const InitTurnbasedEngine: (() => any) | any;
   /** @noSelf */
-  export const PrepareTurnbasedEngine = lua.server.TurnBased.TurnBasedMain.PrepareTurnbasedEngine;
+  export const PrepareTurnbasedEngine: (() => any) | any;
 
   // [client/Tutorial/ISUI/TutorialFocus.d.ts]
   /** @customConstructor TutorialFocus:new */
@@ -8642,11 +8641,11 @@ declare module 'PipeWrench' {
   // [client/Tutorial/TutorialSetup.d.ts]
   export class TutorialData {}
   /** @noSelf */
-  export const doTutorialDraw = lua.client.Tutorial.TutorialSetup.doTutorialDraw;
+  export const doTutorialDraw: (() => any) | any;
   /** @noSelf */
-  export const doTutorialInit = lua.client.Tutorial.TutorialSetup.doTutorialInit;
+  export const doTutorialInit: (() => any) | any;
   /** @noSelf */
-  export const preLoadTutorialInit = lua.client.Tutorial.TutorialSetup.preLoadTutorialInit;
+  export const preLoadTutorialInit: (() => any) | any;
 
   // [client/Tutorial/TutorialStep.d.ts]
   /** @customConstructor TutorialStep:new */
@@ -8698,7 +8697,7 @@ declare module 'PipeWrench' {
   /** @customConstructor EditVehicleUI_SwitchView:new */
   export class EditVehicleUI_SwitchView extends lua.client.Vehicles.ISUI.EditVehicleUI_SwitchView {}
   /** @noSelf */
-  export const EditVehicleState_InitUI = lua.client.Vehicles.ISUI.EditVehicleState.EditVehicleState_InitUI;
+  export const EditVehicleState_InitUI: (() => any) | any;
 
   // [client/Vehicles/ISUI/ISCarMechanicsOverlay.d.ts]
   export class ISCarMechanicsOverlay {}
