@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:46.668Z
+ * File generated at: 2022-08-04T20:14:50.756Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,7 +36,7 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static LowerCondition: ((vehicle: any, part: any, elapsedMinutes: any) => any) | any;
+      static LowerCondition: (vehicle: any, part: any, elapsedMinutes: any) => any;
     }
 
     export class VehicleUtils {
@@ -44,59 +44,59 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static anyWorkingHeadlights: ((vehicle: any) => any) | any;
+      static anyWorkingHeadlights: (vehicle: any) => any;
 
-      static calculateInstallationSuccess: ((perks: any, chr: any, chrPerks: any) => any) | any;
+      static calculateInstallationSuccess: (perks: any, chr: any, chrPerks: any) => any;
 
-      static callLua: ((functionName: any, arg1: any, arg2: any, arg3: any, arg4: any) => any) | any;
+      static callLua: (functionName: any, arg1: any, arg2: any, arg3: any, arg4: any) => any;
 
-      static chargeBattery: ((vehicle: any, delta: any) => any) | any;
+      static chargeBattery: (vehicle: any, delta: any) => any;
 
-      static CheckForUnlockedDoorsWindows: ((vehicle: any) => any) | any;
+      static CheckForUnlockedDoorsWindows: (vehicle: any) => any;
 
-      static compareFloats: ((a: any, b: any, precision: any) => any) | any;
+      static compareFloats: (a: any, b: any, precision: any) => any;
 
-      static createPartInventoryItem: ((part: any) => any) | any;
+      static createPartInventoryItem: (part: any) => any;
 
-      static createPartInventoryItem_HAMRadio: ((part: any) => any) | any;
+      static createPartInventoryItem_HAMRadio: (part: any) => any;
 
-      static createPartInventoryItem_Radio: ((part: any) => any) | any;
+      static createPartInventoryItem_Radio: (part: any) => any;
 
-      static getChildWindow: ((part: any) => any) | any;
+      static getChildWindow: (part: any) => any;
 
-      static getContainers: ((playerNum: any) => any) | any;
+      static getContainers: (playerNum: any) => any;
 
-      static getInsideTemperature: ((player: any) => any) | any;
+      static getInsideTemperature: (player: any) => any;
 
-      static getItems: ((playerNum: any) => any) | any;
+      static getItems: (playerNum: any) => any;
 
-      static getPerksTableForChr: ((perks: any, chr: any) => any) | any;
+      static getPerksTableForChr: (perks: any, chr: any) => any;
 
-      static InstallPart: ((part: any, item: any, chr: any) => any) | any;
+      static InstallPart: (part: any, item: any, chr: any) => any;
 
-      static lowerUninstalledItemCondition: ((part: any, item: any, mechanicSkill: any, chr: any) => any) | any;
+      static lowerUninstalledItemCondition: (part: any, item: any, mechanicSkill: any, chr: any) => any;
 
-      static OnUseVehicle: ((character: any, vehicle: any, pressedNotTapped: any) => any) | any;
+      static OnUseVehicle: (character: any, vehicle: any, pressedNotTapped: any) => any;
 
-      static OnVehicleHorn: ((character: any, vehicle: any, pressed: any) => any) | any;
+      static OnVehicleHorn: (character: any, vehicle: any, pressed: any) => any;
 
-      static RemoveTire: ((part: any, explosion: any) => any) | any;
+      static RemoveTire: (part: any, explosion: any) => any;
 
-      static RequiredKeyNotFound: ((part: any, chr: any) => any) | any;
+      static RequiredKeyNotFound: (part: any, chr: any) => any;
 
-      static split: ((string: any, pattern: any) => any) | any;
+      static split: (string: any, pattern: any) => any;
 
-      static testItems: ((chr: any, items: any, typeToItem: any) => any) | any;
+      static testItems: (chr: any, items: any, typeToItem: any) => any;
 
-      static testPerks: ((chr: any, perks: any) => any) | any;
+      static testPerks: (chr: any, perks: any) => any;
 
-      static testProfession: ((chr: any, professions: any) => any) | any;
+      static testProfession: (chr: any, professions: any) => any;
 
-      static testRecipes: ((chr: any, recipes: any) => any) | any;
+      static testRecipes: (chr: any, recipes: any) => any;
 
-      static testTraits: ((chr: any, traits: any) => any) | any;
+      static testTraits: (chr: any, traits: any) => any;
 
-      static UninstallPart: ((part: any, chr: any) => any) | any;
+      static UninstallPart: (part: any, chr: any) => any;
     }
   }
   export namespace lua.server.Vehicles.Vehicles {}

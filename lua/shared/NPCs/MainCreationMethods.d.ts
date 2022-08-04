@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:44.543Z
+ * File generated at: 2022-08-04T20:14:46.574Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,31 +36,31 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static CreateCharacterInstance: ((s: any) => any) | any;
+      static CreateCharacterInstance: (s: any) => any;
 
-      static CreateCharacterStats: ((desc: any) => any) | any;
+      static CreateCharacterStats: (desc: any) => any;
 
-      static DoFemaleForename: (() => any) | any;
+      static DoFemaleForename: () => any;
 
-      static DoHairColor: (() => any) | any;
+      static DoHairColor: () => any;
 
-      static DoMaleForename: (() => any) | any;
+      static DoMaleForename: () => any;
 
-      static DoObservations: (() => any) | any;
+      static DoObservations: () => any;
 
-      static DoProfessions: (() => any) | any;
+      static DoProfessions: () => any;
 
-      static DoSpawnPoint: (() => any) | any;
+      static DoSpawnPoint: () => any;
 
-      static DoSurname: (() => any) | any;
+      static DoSurname: () => any;
 
-      static DoTraits: (() => any) | any;
+      static DoTraits: () => any;
 
-      static DoTrouserColor: (() => any) | any;
+      static DoTrouserColor: () => any;
 
-      static SetProfessionDescription: ((prof: any) => any) | any;
+      static SetProfessionDescription: (prof: any) => any;
 
-      static SetTraitDescription: ((trait: any) => any) | any;
+      static SetTraitDescription: (trait: any) => any;
     }
   }
   export namespace lua.shared.NPCs.MainCreationMethods {}

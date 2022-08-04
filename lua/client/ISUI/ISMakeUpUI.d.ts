@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:43.237Z
+ * File generated at: 2022-08-04T20:14:43.670Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -130,7 +130,7 @@ declare module 'PipeWrench' {
 
       updateLayout: (() => any) | any;
 
-      static OnPlayerDeath: ((playerObj: any) => any) | any;
+      static OnPlayerDeath: (playerObj: any) => any;
     }
   }
   export namespace lua.client.ISUI.ISMakeUpUI {}

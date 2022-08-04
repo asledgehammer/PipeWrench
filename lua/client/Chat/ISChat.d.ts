@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:41.040Z
+ * File generated at: 2022-08-04T20:14:40.266Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -152,45 +152,45 @@ declare module 'PipeWrench' {
 
       updateChatPrefixSettings: (() => any) | any;
 
-      static addLineInChat: ((message: any, tabID: any) => any) | any;
+      static addLineInChat: (message: any, tabID: any) => any;
 
-      static createChat: (() => any) | any;
+      static createChat: () => any;
 
-      static initChat: (() => any) | any;
+      static initChat: () => any;
 
-      static ISTabPanelOnMouseDown: ((target: any, x: any, y: any) => any) | any;
+      static ISTabPanelOnMouseDown: (target: any, x: any, y: any) => any;
 
-      static onFadeTimeChange: ((target: any, value: any) => any) | any;
+      static onFadeTimeChange: (target: any, value: any) => any;
 
-      static onFocusOpaqueChange: ((target: any, value: any) => any) | any;
+      static onFocusOpaqueChange: (target: any, value: any) => any;
 
-      static onFontSizeChange: ((target: any, value: any) => any) | any;
+      static onFontSizeChange: (target: any, value: any) => any;
 
-      static onKeyKeepPressed: ((key: any) => any) | any;
+      static onKeyKeepPressed: (key: any) => any;
 
-      static onMaxOpaqueChange: ((target: any, value: any) => any) | any;
+      static onMaxOpaqueChange: (target: any, value: any) => any;
 
-      static onMinOpaqueChange: ((target: any, value: any) => any) | any;
+      static onMinOpaqueChange: (target: any, value: any) => any;
 
-      static onSetDefaultTab: ((defaultTabTitle: any) => any) | any;
+      static onSetDefaultTab: (defaultTabTitle: any) => any;
 
-      static onSwitchStream: (() => any) | any;
+      static onSwitchStream: () => any;
 
-      static onTabAdded: ((tabTitle: any, tabID: any) => any) | any;
+      static onTabAdded: (tabTitle: any, tabID: any) => any;
 
-      static onTabRemoved: ((tabTitle: any, tabID: any) => any) | any;
+      static onTabRemoved: (tabTitle: any, tabID: any) => any;
 
-      static onTextChange: (() => any) | any;
+      static onTextChange: () => any;
 
-      static ontick: (() => any) | any;
+      static ontick: () => any;
 
-      static onToggleChatBox: ((key: any) => any) | any;
+      static onToggleChatBox: (key: any) => any;
 
-      static onToggleTagPrefix: (() => any) | any;
+      static onToggleTagPrefix: () => any;
 
-      static onToggleTimestampPrefix: (() => any) | any;
+      static onToggleTimestampPrefix: () => any;
 
-      static unfocusEvent: (() => any) | any;
+      static unfocusEvent: () => any;
     }
   }
   export namespace lua.client.Chat.ISChat {}

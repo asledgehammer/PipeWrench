@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-03T13:26Z
+ * File generated at 2022-08-04T16:17Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -46,10 +46,10 @@ declare module 'PipeWrench' {
       addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
        *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
+       *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
        */
-      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
+      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (IsoGridSquare arg0, ArrayList arg1): zombie.inventory.InventoryItem
@@ -57,10 +57,10 @@ declare module 'PipeWrench' {
       addRandomItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: java.util.ArrayList<string>): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (RoomDef arg0, ArrayList arg1, int arg2): void
        *  - (RoomDef arg0, String arg1, int arg2): void
+       *  - (RoomDef arg0, ArrayList arg1, int arg2): void
        */
-      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: java.util.ArrayList<string> | string, arg2: number): void;
+      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: string | java.util.ArrayList<string>, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0, int arg1, int arg2): zombie.iso.IsoObject

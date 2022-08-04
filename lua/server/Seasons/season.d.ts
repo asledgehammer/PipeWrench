@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:45.240Z
+ * File generated at: 2022-08-04T20:14:48.042Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,31 +36,31 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static EveryTenMinutes: (() => any) | any;
+      static EveryTenMinutes: () => any;
 
-      static load: (() => any) | any;
+      static load: () => any;
 
-      static OnGameStart: (() => any) | any;
+      static OnGameStart: () => any;
 
-      static OnGameTimeLoaded: (() => any) | any;
+      static OnGameTimeLoaded: () => any;
 
-      static save: (() => any) | any;
+      static save: () => any;
 
-      static startRain: (() => any) | any;
+      static startRain: () => any;
 
-      static updateAmbient: (() => any) | any;
+      static updateAmbient: () => any;
 
-      static updateBodyTemperature: (() => any) | any;
+      static updateBodyTemperature: () => any;
 
-      static updateMoonPhase: (() => any) | any;
+      static updateMoonPhase: () => any;
 
-      static updateMoonState: ((currentHour: any, month: any) => any) | any;
+      static updateMoonState: (currentHour: any, month: any) => any;
 
-      static updateRain: (() => any) | any;
+      static updateRain: () => any;
 
-      static updateWeather: ((month: any, currentHour: any) => any) | any;
+      static updateWeather: (month: any, currentHour: any) => any;
 
-      static updateWeatherIcon: (() => any) | any;
+      static updateWeatherIcon: () => any;
     }
   }
   export namespace lua.server.Seasons.season {}

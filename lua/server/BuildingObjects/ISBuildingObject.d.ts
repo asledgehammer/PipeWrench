@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:40.443Z
+ * File generated at: 2022-08-04T20:14:39.487Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -174,9 +174,9 @@ declare module 'PipeWrench' {
 
       walkTo: ((x: any, y: any, z: any) => any) | any;
 
-      static onDestroy: ((thump: any, player: any) => any) | any;
+      static onDestroy: (thump: any, player: any) => any;
 
-      static removeFromGround: ((square: any) => any) | any;
+      static removeFromGround: (square: any) => any;
     }
   }
   export namespace lua.server.BuildingObjects.ISBuildingObject {}

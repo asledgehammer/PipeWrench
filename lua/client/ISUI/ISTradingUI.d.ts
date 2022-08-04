@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:43.507Z
+ * File generated at: 2022-08-04T20:14:44.190Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -116,15 +116,15 @@ declare module 'PipeWrench' {
 
       yourOfferMouseUp: ((x: any, y: any) => any) | any;
 
-      static AcceptedTrade: ((accepted: any) => any) | any;
+      static AcceptedTrade: (accepted: any) => any;
 
-      static OtherAddNewItem: ((player: any, item: any) => any) | any;
+      static OtherAddNewItem: (player: any, item: any) => any;
 
-      static ReceiveTradeRequest: ((requester: any) => any) | any;
+      static ReceiveTradeRequest: (requester: any) => any;
 
-      static RemoveItem: ((player: any, index: any) => any) | any;
+      static RemoveItem: (player: any, index: any) => any;
 
-      static UpdateState: ((player: any, state: any) => any) | any;
+      static UpdateState: (player: any, state: any) => any;
     }
   }
   export namespace lua.client.ISUI.ISTradingUI {}

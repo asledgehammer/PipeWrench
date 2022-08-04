@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:43.460Z
+ * File generated at: 2022-08-04T20:14:44.086Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -130,7 +130,7 @@ declare module 'PipeWrench' {
 
       updateSmoothScrolling: (() => any) | any;
 
-      static redoTab: ((self: any) => any) | any;
+      static redoTab: (self: any) => any;
     }
   }
   export namespace lua.client.ISUI.ISTabPanel {}

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:42.699Z
+ * File generated at: 2022-08-04T20:14:42.726Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -56,7 +56,7 @@ declare module 'PipeWrench' {
 
       setKeyboardFocus: (() => any) | any;
 
-      static OnOpenPanel: (() => any) | any;
+      static OnOpenPanel: () => any;
     }
   }
   export namespace lua.client.ISUI.AdminPanel.ISItemsListViewer {}

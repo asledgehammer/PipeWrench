@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:40.551Z
+ * File generated at: 2022-08-04T20:14:39.585Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -68,15 +68,15 @@ declare module 'PipeWrench' {
 
       setInfo: ((square: any, north: any, sprite: any, cell: any, spriteType: any) => any) | any;
 
-      static canDigHere: ((worldObjects: any) => any) | any;
+      static canDigHere: (worldObjects: any) => any;
 
-      static getMaxCorpses: ((grave: any) => any) | any;
+      static getMaxCorpses: (grave: any) => any;
 
-      static isGraveFilledIn: ((grave: any) => any) | any;
+      static isGraveFilledIn: (grave: any) => any;
 
-      static isGraveFullOfCorpses: ((grave: any) => any) | any;
+      static isGraveFullOfCorpses: (grave: any) => any;
 
-      static shovelledFloorCanDig: ((square: any) => any) | any;
+      static shovelledFloorCanDig: (square: any) => any;
     }
   }
   export namespace lua.server.BuildingObjects.ISEmptyGraves {}

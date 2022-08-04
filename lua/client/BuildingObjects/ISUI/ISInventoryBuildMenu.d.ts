@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:40.727Z
+ * File generated at: 2022-08-04T20:14:39.803Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,15 +36,15 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static doBuildMenu: ((player: any, context: any, worldobjects: any, test: any) => any) | any;
+      static doBuildMenu: (player: any, context: any, worldobjects: any, test: any) => any;
 
-      static onSpillDirt: ((playerObj: any) => any) | any;
+      static onSpillDirt: (playerObj: any) => any;
 
-      static onSpillGravel: ((playerObj: any) => any) | any;
+      static onSpillGravel: (playerObj: any) => any;
 
-      static onSpillSand: ((playerObj: any) => any) | any;
+      static onSpillSand: (playerObj: any) => any;
 
-      static onTakeThing: ((playerObj: any, groundType: any) => any) | any;
+      static onTakeThing: (playerObj: any, groundType: any) => any;
     }
   }
   export namespace lua.client.BuildingObjects.ISUI.ISInventoryBuildMenu {}

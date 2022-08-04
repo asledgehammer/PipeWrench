@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:46.446Z
+ * File generated at: 2022-08-04T20:14:50.307Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,59 +36,67 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static doAddFuelMenu: ((playerObj: any, part: any, context: any) => any) | any;
+      static doAddFuelMenu: (playerObj: any, part: any, context: any) => any;
 
-      static doSiphonFuelMenu: ((playerObj: any, part: any, context: any) => any) | any;
+      static doSiphonFuelMenu: (playerObj: any, part: any, context: any) => any;
 
-      static equipRequiredItems: ((playerObj: any, part: any, tbl: any) => any) | any;
+      static equipRequiredItems: (playerObj: any, part: any, tbl: any) => any;
 
-      static getGasCanNotEmpty: ((playerObj: any, typeToItem: any) => any) | any;
+      static getGasCanNotEmpty: (playerObj: any, typeToItem: any) => any;
 
-      static getGasCanNotFull: ((playerObj: any, typeToItem: any) => any) | any;
+      static getGasCanNotFull: (playerObj: any, typeToItem: any) => any;
 
-      static getNearbyFuelPump: ((vehicle: any) => any) | any;
+      static getNearbyFuelPump: (vehicle: any) => any;
 
-      static onAddFuelNew:
-        | ((worldobjects: any, part: any, fuelContainerList: any, fuelContainer: any, player: any) => any)
-        | any;
+      static onAddFuelNew: (
+        worldobjects: any,
+        part: any,
+        fuelContainerList: any,
+        fuelContainer: any,
+        player: any
+      ) => any;
 
-      static onAddGasoline: ((playerObj: any, part: any) => any) | any;
+      static onAddGasoline: (playerObj: any, part: any) => any;
 
-      static onDebugFill: ((playerObj: any, part: any) => any) | any;
+      static onDebugFill: (playerObj: any, part: any) => any;
 
-      static onDeflateTire: ((playerObj: any, part: any) => any) | any;
+      static onDeflateTire: (playerObj: any, part: any) => any;
 
-      static onDeviceOptions: ((playerObj: any, part: any) => any) | any;
+      static onDeviceOptions: (playerObj: any, part: any) => any;
 
-      static onInflateTire: ((playerObj: any, part: any) => any) | any;
+      static onInflateTire: (playerObj: any, part: any) => any;
 
-      static onInstallPart: ((playerObj: any, part: any, item: any) => any) | any;
+      static onInstallPart: (playerObj: any, part: any, item: any) => any;
 
-      static onLockDoor: ((playerObj: any, part: any) => any) | any;
+      static onLockDoor: (playerObj: any, part: any) => any;
 
-      static onLockDoors: ((playerObj: any, vehicle: any, lock: any) => any) | any;
+      static onLockDoors: (playerObj: any, vehicle: any, lock: any) => any;
 
-      static onOpenCloseWindow: ((playerObj: any, part: any, open: any) => any) | any;
+      static onOpenCloseWindow: (playerObj: any, part: any, open: any) => any;
 
-      static onPumpGasoline: ((playerObj: any, part: any) => any) | any;
+      static onPumpGasoline: (playerObj: any, part: any) => any;
 
-      static onPumpGasolinePathFail: ((playerObj: any) => any) | any;
+      static onPumpGasolinePathFail: (playerObj: any) => any;
 
-      static onSmashWindow: ((playerObj: any, part: any, open: any) => any) | any;
+      static onSmashWindow: (playerObj: any, part: any, open: any) => any;
 
-      static onTakeFuelNew:
-        | ((worldobjects: any, part: any, fuelContainerList: any, fuelContainer: any, player: any) => any)
-        | any;
+      static onTakeFuelNew: (
+        worldobjects: any,
+        part: any,
+        fuelContainerList: any,
+        fuelContainer: any,
+        player: any
+      ) => any;
 
-      static onTakeGasoline: ((playerObj: any, part: any) => any) | any;
+      static onTakeGasoline: (playerObj: any, part: any) => any;
 
-      static onUninstallPart: ((playerObj: any, part: any) => any) | any;
+      static onUninstallPart: (playerObj: any, part: any) => any;
 
-      static onUnlockDoor: ((playerObj: any, part: any) => any) | any;
+      static onUnlockDoor: (playerObj: any, part: any) => any;
 
-      static toPlayerInventory: ((playerObj: any, item: any) => any) | any;
+      static toPlayerInventory: (playerObj: any, item: any) => any;
 
-      static transferRequiredItems: ((playerObj: any, part: any, tbl: any) => any) | any;
+      static transferRequiredItems: (playerObj: any, part: any, tbl: any) => any;
     }
   }
   export namespace lua.client.Vehicles.ISUI.ISVehiclePartMenu {}

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:44.197Z
+ * File generated at: 2022-08-04T20:14:45.703Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,17 +36,17 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static Add: (() => any) | any;
+      static Add: () => any;
 
-      static AddPlayer: ((playerNum: any, playerObj: any) => any) | any;
+      static AddPlayer: (playerNum: any, playerObj: any) => any;
 
-      static OnGameStart: (() => any) | any;
+      static OnGameStart: () => any;
 
-      static OnInitWorld: (() => any) | any;
+      static OnInitWorld: () => any;
 
-      static RemovePlayer: ((p: any) => any) | any;
+      static RemovePlayer: (p: any) => any;
 
-      static Render: (() => any) | any;
+      static Render: () => any;
     }
   }
   export namespace lua.client.LastStand.AReallyCDDAy {}

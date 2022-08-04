@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-03T13:26Z
+ * File generated at 2022-08-04T16:17Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -132,7 +132,31 @@ declare module 'PipeWrench' {
       static readonly windowW: zombie.iso.SpriteDetails.IsoFlagType;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): IsoFlagType
+       */
+      static FromString(arg0: string | null): zombie.iso.SpriteDetails.IsoFlagType;
+
+      /**
+       * @noSelf
+       *
+       * (int arg0): IsoFlagType
+       */
+      static fromIndex(arg0: number): zombie.iso.SpriteDetails.IsoFlagType;
+
       index(): number;
+
+      /**
+       * @noSelf
+       *
+       * (String arg0): IsoFlagType
+       */
+      static valueOf(arg0: string | null): zombie.iso.SpriteDetails.IsoFlagType;
+
+      /** @noSelf */
+      static values(): zombie.iso.SpriteDetails.IsoFlagType[];
 
     }
     /** [ENUM] zombie.iso.SpriteDetails.IsoObjectType */
@@ -170,7 +194,31 @@ declare module 'PipeWrench' {
       static readonly windowFW: zombie.iso.SpriteDetails.IsoObjectType;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): IsoObjectType
+       */
+      static FromString(arg0: string | null): zombie.iso.SpriteDetails.IsoObjectType;
+
+      /**
+       * @noSelf
+       *
+       * (int arg0): IsoObjectType
+       */
+      static fromIndex(arg0: number): zombie.iso.SpriteDetails.IsoObjectType;
+
       index(): number;
+
+      /**
+       * @noSelf
+       *
+       * (String arg0): IsoObjectType
+       */
+      static valueOf(arg0: string | null): zombie.iso.SpriteDetails.IsoObjectType;
+
+      /** @noSelf */
+      static values(): zombie.iso.SpriteDetails.IsoObjectType[];
 
     }
   }

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:42.461Z
+ * File generated at: 2022-08-04T20:14:42.355Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,23 +36,23 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static addZone: ((_zoneData: any) => any) | any;
+      static addZone: (_zoneData: any) => any;
 
-      static clearData: (() => any) | any;
+      static clearData: () => any;
 
-      static getZones: (() => any) | any;
+      static getZones: () => any;
 
-      static init: (() => any) | any;
+      static init: () => any;
 
-      static removeZone: ((_zoneData: any) => any) | any;
+      static removeZone: (_zoneData: any) => any;
 
-      static syncForageData: (() => any) | any;
+      static syncForageData: () => any;
 
-      static updateData: (() => any) | any;
+      static updateData: () => any;
 
-      static updateIcon: ((_zoneData: any, _iconID: any, _icon: any) => any) | any;
+      static updateIcon: (_zoneData: any, _iconID: any, _icon: any) => any;
 
-      static updateZone: ((_zoneData: any) => any) | any;
+      static updateZone: (_zoneData: any) => any;
     }
 
     export class forageData {

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:41.236Z
+ * File generated at: 2022-08-04T20:14:40.535Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -50,7 +50,7 @@ declare module 'PipeWrench' {
 
       onClick: ((button: any) => any) | any;
 
-      static openPanel: ((playerObj: any) => any) | any;
+      static openPanel: (playerObj: any) => any;
     }
   }
   export namespace lua.client.DebugUIs.BrushTool.BrushToolManager {}

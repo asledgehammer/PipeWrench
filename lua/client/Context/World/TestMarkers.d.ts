@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:41.146Z
+ * File generated at: 2022-08-04T20:14:40.437Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,11 +36,11 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static add: ((_circle: any, _pointer: any) => any) | any;
+      static add: (_circle: any, _pointer: any) => any;
 
-      static enableCurrent: (() => any) | any;
+      static enableCurrent: () => any;
 
-      static ontick: (() => any) | any;
+      static ontick: () => any;
     }
   }
   export namespace lua.client.Context.World.TestMarkers {}

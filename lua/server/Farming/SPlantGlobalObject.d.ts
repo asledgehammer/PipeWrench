@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:42.368Z
+ * File generated at: 2022-08-04T20:14:42.161Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -132,7 +132,7 @@ declare module 'PipeWrench' {
 
       water: ((waterSource: any, uses: any) => any) | any;
 
-      static initModData: ((modData: any) => any) | any;
+      static initModData: (modData: any) => any;
     }
   }
   export namespace lua.server.Farming.SPlantGlobalObject {}

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:44.495Z
+ * File generated at: 2022-08-04T20:14:46.448Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,17 +36,17 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static canPlayerPickUpMoveable: ((_char: any, _square: any, _object: any, _moveProps: any) => any) | any;
+      static canPlayerPickUpMoveable: (_char: any, _square: any, _object: any, _moveProps: any) => any;
 
-      static canPlayerPickUpObject: ((_char: any, _square: any, _object: any) => any) | any;
+      static canPlayerPickUpObject: (_char: any, _square: any, _object: any) => any;
 
-      static getMoveableList: ((_square: any) => any) | any;
+      static getMoveableList: (_square: any) => any;
 
-      static getObjectList: ((_square: any) => any) | any;
+      static getObjectList: (_square: any) => any;
 
-      static getScrapableObjects: ((_char: any, _square: any) => any) | any;
+      static getScrapableObjects: (_char: any, _square: any) => any;
 
-      static isObjectMoveable: ((_object: any) => any) | any;
+      static isObjectMoveable: (_object: any) => any;
     }
   }
   export namespace lua.client.Moveables.ISMoveableTools {}

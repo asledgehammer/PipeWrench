@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:41.905Z
+ * File generated at: 2022-08-04T20:14:41.421Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,13 +36,13 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static moveXY: ((player: any, dx: any, dy: any) => any) | any;
+      static moveXY: (player: any, dx: any, dy: any) => any;
 
-      static moveZ: ((player: any, dz: any) => any) | any;
+      static moveZ: (player: any, dz: any) => any;
 
-      static OnKeyKeepPressed: ((key: any) => any) | any;
+      static OnKeyKeepPressed: (key: any) => any;
 
-      static OnKeyStartPressed: ((key: any) => any) | any;
+      static OnKeyStartPressed: (key: any) => any;
     }
   }
   export namespace lua.client.DebugUIs.ISFastTeleportMove {}

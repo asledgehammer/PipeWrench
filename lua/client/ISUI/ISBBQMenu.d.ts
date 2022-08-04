@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:42.874Z
+ * File generated at: 2022-08-04T20:14:43.039Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,33 +36,31 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static FindPropaneTank: ((player: any, bbq: any) => any) | any;
+      static FindPropaneTank: (player: any, bbq: any) => any;
 
-      static onAddAllFuel: ((playerObj: any, bbq: any) => any) | any;
+      static onAddAllFuel: (playerObj: any, bbq: any) => any;
 
-      static onAddFuel: ((playerObj: any, bbq: any, fuelType: any) => any) | any;
+      static onAddFuel: (playerObj: any, bbq: any, fuelType: any) => any;
 
-      static onAddMultipleFuel: ((playerObj: any, bbq: any, fuelType: any) => any) | any;
+      static onAddMultipleFuel: (playerObj: any, bbq: any, fuelType: any) => any;
 
-      static onDisplayInfo: ((worldobjects: any, player: any, bbq: any) => any) | any;
+      static onDisplayInfo: (worldobjects: any, player: any, bbq: any) => any;
 
-      static onExtinguish: ((worldobjects: any, player: any, bbq: any) => any) | any;
+      static onExtinguish: (worldobjects: any, player: any, bbq: any) => any;
 
-      static OnFillWorldObjectContextMenu: ((player: any, context: any, worldobjects: any, test: any) => any) | any;
+      static OnFillWorldObjectContextMenu: (player: any, context: any, worldobjects: any, test: any) => any;
 
-      static onInsertPropaneTank: ((worldobjects: any, player: any, bbq: any, tank: any) => any) | any;
+      static onInsertPropaneTank: (worldobjects: any, player: any, bbq: any, tank: any) => any;
 
-      static onLightFromKindle:
-        | ((worldobjects: any, player: any, percedWood: any, stickOrBranch: any, bbq: any) => any)
-        | any;
+      static onLightFromKindle: (worldobjects: any, player: any, percedWood: any, stickOrBranch: any, bbq: any) => any;
 
-      static onLightFromLiterature: ((playerObj: any, itemType: any, lighter: any, bbq: any) => any) | any;
+      static onLightFromLiterature: (playerObj: any, itemType: any, lighter: any, bbq: any) => any;
 
-      static onLightFromPetrol: ((worldobjects: any, player: any, lighter: any, petrol: any, bbq: any) => any) | any;
+      static onLightFromPetrol: (worldobjects: any, player: any, lighter: any, petrol: any, bbq: any) => any;
 
-      static onRemovePropaneTank: ((worldobjects: any, player: any, bbq: any, tank: any) => any) | any;
+      static onRemovePropaneTank: (worldobjects: any, player: any, bbq: any, tank: any) => any;
 
-      static onToggle: ((worldobjects: any, player: any, bbq: any, tank: any) => any) | any;
+      static onToggle: (worldobjects: any, player: any, bbq: any, tank: any) => any;
     }
   }
   export namespace lua.client.ISUI.ISBBQMenu {}

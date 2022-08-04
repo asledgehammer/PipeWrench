@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:44.743Z
+ * File generated at: 2022-08-04T20:14:46.978Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -214,25 +214,25 @@ declare module 'PipeWrench' {
 
       toUI: (() => any) | any;
 
-      static doLanguageToolTip: ((languages: any) => any) | any;
+      static doLanguageToolTip: (languages: any) => any;
 
-      static getAvailableLanguage: (() => any) | any;
+      static getAvailableLanguage: () => any;
 
-      static getGeneralTranslators: ((_language: any) => any) | any;
+      static getGeneralTranslators: (_language: any) => any;
 
-      static keyPressHandler: ((key: any) => any) | any;
+      static keyPressHandler: (key: any) => any;
 
-      static loadKeys: (() => any) | any;
+      static loadKeys: () => any;
 
-      static OnGamepadConnect: ((index: any) => any) | any;
+      static OnGamepadConnect: (index: any) => any;
 
-      static OnGamepadDisconnect: ((index: any) => any) | any;
+      static OnGamepadDisconnect: (index: any) => any;
 
-      static saveKeys: (() => any) | any;
+      static saveKeys: () => any;
 
-      static sortModes: ((a: any, b: any) => any) | any;
+      static sortModes: (a: any, b: any) => any;
 
-      static upgradeKeysIni: ((name: any, key: any, defaultKey: any, version: any) => any) | any;
+      static upgradeKeysIni: (name: any, key: any, defaultKey: any, version: any) => any;
     }
   }
   export namespace lua.client.OptionScreens.MainOptions {}

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:46.679Z
+ * File generated at: 2022-08-04T20:14:50.782Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -94,9 +94,9 @@ declare module 'PipeWrench' {
 
       updateTooltipForJoypad: (() => any) | any;
 
-      static loadPerk: ((self: any) => any) | any;
+      static loadPerk: (self: any) => any;
 
-      static onResolutionChange: ((oldw: any, oldh: any, neww: any, newh: any) => any) | any;
+      static onResolutionChange: (oldw: any, oldh: any, neww: any, newh: any) => any;
     }
   }
   export namespace lua.client.XpSystem.ISUI.ISCharacterInfo {}

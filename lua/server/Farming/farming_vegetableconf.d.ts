@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:42.305Z
+ * File generated at: 2022-08-04T20:14:42.053Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,27 +36,27 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static calcDisease: ((diseaseLvl: any) => any) | any;
+      static calcDisease: (diseaseLvl: any) => any;
 
-      static calcWater: ((waterMin: any, waterLvl: any) => any) | any;
+      static calcWater: (waterMin: any, waterLvl: any) => any;
 
-      static getObjectName: ((plant: any) => any) | any;
+      static getObjectName: (plant: any) => any;
 
-      static getSpriteName: ((plant: any) => any) | any;
+      static getSpriteName: (plant: any) => any;
 
-      static growBroccoli: ((planting: any, nextGrowing: any, updateNbOfGrow: any) => any) | any;
+      static growBroccoli: (planting: any, nextGrowing: any, updateNbOfGrow: any) => any;
 
-      static growCabbage: ((planting: any, nextGrowing: any, updateNbOfGrow: any) => any) | any;
+      static growCabbage: (planting: any, nextGrowing: any, updateNbOfGrow: any) => any;
 
-      static growCarrots: ((planting: any, nextGrowing: any, updateNbOfGrow: any) => any) | any;
+      static growCarrots: (planting: any, nextGrowing: any, updateNbOfGrow: any) => any;
 
-      static growPotato: ((planting: any, nextGrowing: any, updateNbOfGrow: any) => any) | any;
+      static growPotato: (planting: any, nextGrowing: any, updateNbOfGrow: any) => any;
 
-      static growRedRadish: ((planting: any, nextGrowing: any, updateNbOfGrow: any) => any) | any;
+      static growRedRadish: (planting: any, nextGrowing: any, updateNbOfGrow: any) => any;
 
-      static growStrewberries: ((planting: any, nextGrowing: any, updateNbOfGrow: any) => any) | any;
+      static growStrewberries: (planting: any, nextGrowing: any, updateNbOfGrow: any) => any;
 
-      static growTomato: ((planting: any, nextGrowing: any, updateNbOfGrow: any) => any) | any;
+      static growTomato: (planting: any, nextGrowing: any, updateNbOfGrow: any) => any;
     }
   }
   export namespace lua.server.Farming.farming_vegetableconf {}

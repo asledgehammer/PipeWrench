@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:42.553Z
+ * File generated at: 2022-08-04T20:14:42.485Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -118,17 +118,17 @@ declare module 'PipeWrench' {
 
       updateSearchFocusCategories: (() => any) | any;
 
-      static createUI: ((_player: any) => any) | any;
+      static createUI: (_player: any) => any;
 
-      static destroyUI: ((_character: any) => any) | any;
+      static destroyUI: (_character: any) => any;
 
-      static onEnableSearchMode: ((_character: any, _isSearchMode: any) => any) | any;
+      static onEnableSearchMode: (_character: any, _isSearchMode: any) => any;
 
-      static OnFillWorldObjectContextMenu: ((_player: any, _context: any) => any) | any;
+      static OnFillWorldObjectContextMenu: (_player: any, _context: any) => any;
 
-      static showWindow: ((_character: any) => any) | any;
+      static showWindow: (_character: any) => any;
 
-      static toggleWindow: ((_character: any) => any) | any;
+      static toggleWindow: (_character: any) => any;
     }
   }
   export namespace lua.client.Foraging.ISSearchWindow {}

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:43.153Z
+ * File generated at: 2022-08-04T20:14:43.539Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -252,19 +252,19 @@ declare module 'PipeWrench' {
 
       updateTooltip: (() => any) | any;
 
-      static getActualItems: ((items: any) => any) | any;
+      static getActualItems: (items: any) => any;
 
-      static itemSortByCatDesc: ((a: any, b: any) => any) | any;
+      static itemSortByCatDesc: (a: any, b: any) => any;
 
-      static itemSortByCatInc: ((a: any, b: any) => any) | any;
+      static itemSortByCatInc: (a: any, b: any) => any;
 
-      static itemSortByNameDesc: ((a: any, b: any) => any) | any;
+      static itemSortByNameDesc: (a: any, b: any) => any;
 
-      static itemSortByNameInc: ((a: any, b: any) => any) | any;
+      static itemSortByNameInc: (a: any, b: any) => any;
 
-      static itemSortByWeightAsc: ((a: any, b: any) => any) | any;
+      static itemSortByWeightAsc: (a: any, b: any) => any;
 
-      static itemSortByWeightDesc: ((a: any, b: any) => any) | any;
+      static itemSortByWeightDesc: (a: any, b: any) => any;
     }
 
     export class ISInventoryPaneDraggedItems {

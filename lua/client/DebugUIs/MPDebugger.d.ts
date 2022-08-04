@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:42.003Z
+ * File generated at: 2022-08-04T20:14:41.572Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,7 +36,7 @@ declare module 'PipeWrench' {
       [id: string]: any;
       static [id: string]: any;
 
-      static onKeyPressed: ((key: any) => any) | any;
+      static onKeyPressed: (key: any) => any;
     }
   }
   export namespace lua.client.DebugUIs.MPDebugger {}

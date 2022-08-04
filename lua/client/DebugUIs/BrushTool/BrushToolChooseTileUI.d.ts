@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:41.227Z
+ * File generated at: 2022-08-04T20:14:40.524Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -54,11 +54,11 @@ declare module 'PipeWrench' {
 
       populateList: (() => any) | any;
 
-      static OnKeyPressed: ((key: any) => any) | any;
+      static OnKeyPressed: (key: any) => any;
 
-      static onSelectImage: ((arg0: any, item: any) => any) | any;
+      static onSelectImage: (arg0: any, item: any) => any;
 
-      static openPanel: ((x: any, y: any, playerObj: any) => any) | any;
+      static openPanel: (x: any, y: any, playerObj: any) => any;
     }
 
     /** @customConstructor BrushToolTilePickerList:new */

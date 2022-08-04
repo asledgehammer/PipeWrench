@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:40.866Z
+ * File generated at: 2022-08-04T20:14:40.049Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,23 +36,23 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static addTent: ((grid: any, sprite: any) => any) | any;
+      static addTent: (grid: any, sprite: any) => any;
 
-      static destroyTent: ((tent: any) => any) | any;
+      static destroyTent: (tent: any) => any;
 
-      static findTentObject: ((square: any) => any) | any;
+      static findTentObject: (square: any) => any;
 
-      static findTentSprites: ((sprite: any) => any) | any;
+      static findTentSprites: (sprite: any) => any;
 
-      static getCurrentTent: ((grid: any) => any) | any;
+      static getCurrentTent: (grid: any) => any;
 
-      static getTentObjects: ((tent: any) => any) | any;
+      static getTentObjects: (tent: any) => any;
 
-      static isTentObject: ((object: any) => any) | any;
+      static isTentObject: (object: any) => any;
 
-      static removeTent: ((tent: any) => any) | any;
+      static removeTent: (tent: any) => any;
 
-      static tentAt: ((x: any, y: any, z: any) => any) | any;
+      static tentAt: (x: any, y: any, z: any) => any;
     }
   }
   export namespace lua.server.Camping.camping_tent {}

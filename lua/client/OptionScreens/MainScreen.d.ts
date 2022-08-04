@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:44.756Z
+ * File generated at: 2022-08-04T20:14:47.005Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -254,37 +254,37 @@ declare module 'PipeWrench' {
 
       updateBottomPanelButtons: (() => any) | any;
 
-      static checkMapsAvailable: ((mapName: any, activeMods: any, mapAvailable: any) => any) | any;
+      static checkMapsAvailable: (mapName: any, activeMods: any, mapAvailable: any) => any;
 
-      static checkSaveFile: (() => any) | any;
+      static checkSaveFile: () => any;
 
-      static checkTutorial: ((button: any) => any) | any;
+      static checkTutorial: (button: any) => any;
 
-      static continueLatestSave: ((gameMode: any, saveName: any) => any) | any;
+      static continueLatestSave: (gameMode: any, saveName: any) => any;
 
-      static continueLatestSaveAux: ((fromResetLua: any) => any) | any;
+      static continueLatestSaveAux: (fromResetLua: any) => any;
 
-      static displayCheckSavefileModal: ((text: any) => any) | any;
+      static displayCheckSavefileModal: (text: any) => any;
 
-      static onAcceptInvite: ((connectionString: any) => any) | any;
+      static onAcceptInvite: (connectionString: any) => any;
 
-      static onCheckSavefileModalClick: ((button: any) => any) | any;
+      static onCheckSavefileModalClick: (button: any) => any;
 
-      static OnJoypadBeforeDeactivate: ((index: any) => any) | any;
+      static OnJoypadBeforeDeactivate: (index: any) => any;
 
-      static onMenuItemMouseDownMainMenu: ((item: any, x: any, y: any) => any) | any;
+      static onMenuItemMouseDownMainMenu: (item: any, x: any, y: any) => any;
 
-      static onResetLua: ((reason: any) => any) | any;
+      static onResetLua: (reason: any) => any;
 
-      static onResolutionChange: ((oldw: any, oldh: any, neww: any, newh: any) => any) | any;
+      static onResolutionChange: (oldw: any, oldh: any, neww: any, newh: any) => any;
 
-      static OnTick: ((totalTicks: any) => any) | any;
+      static OnTick: (totalTicks: any) => any;
 
-      static onTutorialControllerWarn: (() => any) | any;
+      static onTutorialControllerWarn: () => any;
 
-      static resetLuaIfNeeded: (() => any) | any;
+      static resetLuaIfNeeded: () => any;
 
-      static startTutorial: (() => any) | any;
+      static startTutorial: () => any;
     }
   }
   export namespace lua.client.OptionScreens.MainScreen {}

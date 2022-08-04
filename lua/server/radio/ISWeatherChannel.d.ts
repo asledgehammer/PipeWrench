@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:44.888Z
+ * File generated at: 2022-08-04T20:14:47.290Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,33 +36,33 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static AddExtremesForecasting: ((_c: any, _bc: any, offset: any, _len: any) => any) | any;
+      static AddExtremesForecasting: (_c: any, _bc: any, offset: any, _len: any) => any;
 
-      static AddForecast: ((_c: any, _bc: any, _forecast: any, _prefix: any, _doFog: any) => any) | any;
+      static AddForecast: (_c: any, _bc: any, _forecast: any, _prefix: any, _doFog: any) => any;
 
-      static AddForecasting: ((_c: any, _bc: any, _hour: any) => any) | any;
+      static AddForecasting: (_c: any, _bc: any, _hour: any) => any;
 
-      static AddFuzz: ((_c: any, _bc: any, _chance: any) => any) | any;
+      static AddFuzz: (_c: any, _bc: any, _chance: any) => any;
 
-      static AddPowerNotice: ((_c: any, _bc: any, _force: any) => any) | any;
+      static AddPowerNotice: (_c: any, _bc: any, _force: any) => any;
 
-      static CreateBroadcast: ((_gametime: any) => any) | any;
+      static CreateBroadcast: (_gametime: any) => any;
 
-      static FillBroadcast: ((_gametime: any, _bc: any) => any) | any;
+      static FillBroadcast: (_gametime: any, _bc: any) => any;
 
-      static GetDaySegmentForHour: ((_hour: any) => any) | any;
+      static GetDaySegmentForHour: (_hour: any) => any;
 
-      static GetForecastString: ((_type: any, _forecast: any) => any) | any;
+      static GetForecastString: (_type: any, _forecast: any) => any;
 
-      static GetRandomString: ((_c: any, _bc: any, _doItThreshold: any, _forceRand: any) => any) | any;
+      static GetRandomString: (_c: any, _bc: any, _doItThreshold: any, _forceRand: any) => any;
 
-      static Init: (() => any) | any;
+      static Init: () => any;
 
-      static OnEveryHour: ((_channel: any, _gametime: any, _radio: any) => any) | any;
+      static OnEveryHour: (_channel: any, _gametime: any, _radio: any) => any;
 
-      static OnLoadRadioScripts: (() => any) | any;
+      static OnLoadRadioScripts: () => any;
 
-      static TestAll: ((_gametime: any, _bc: any) => any) | any;
+      static TestAll: (_gametime: any, _bc: any) => any;
     }
   }
   export namespace lua.server.radio.ISWeatherChannel {}

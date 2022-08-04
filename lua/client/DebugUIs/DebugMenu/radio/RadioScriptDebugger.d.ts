@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:41.790Z
+ * File generated at: 2022-08-04T20:14:41.259Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -78,7 +78,7 @@ declare module 'PipeWrench' {
 
       update: (() => any) | any;
 
-      static OnOpenPanel: ((_radioChannel: any) => any) | any;
+      static OnOpenPanel: (_radioChannel: any) => any;
     }
   }
   export namespace lua.client.DebugUIs.DebugMenu.radio.RadioScriptDebugger {}

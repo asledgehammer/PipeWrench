@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-03T13:26Z
+ * File generated at 2022-08-04T16:17Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -956,10 +956,10 @@ declare module 'PipeWrench' {
       RenderOffScreenBuffer(): void;
       /**
        * Method Parameters: 
-       *  - (boolean arg0, String arg1): void
        *  - (String arg0, String arg1): void
+       *  - (boolean arg0, String arg1): void
        */
-      ResetLua(arg0: boolean | string, arg1: string): void;
+      ResetLua(arg0: string | boolean, arg1: string): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -3584,6 +3584,16 @@ declare module 'PipeWrench' {
       static readonly RightOnly: zombie.core.SpriteRenderer$WallShaderTexRender;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): WallShaderTexRender
+       */
+      static valueOf(arg0: string | null): zombie.core.SpriteRenderer$WallShaderTexRender;
+
+      /** @noSelf */
+      static values(): zombie.core.SpriteRenderer$WallShaderTexRender[];
+
     }
     /**
      * @customConstructor Translator.new

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:40.734Z
+ * File generated at: 2022-08-04T20:14:39.808Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,17 +36,15 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static addSignOption:
-        | ((subMenuPaint: any, name: any, wall: any, painting: any, r: any, g: any, b: any) => any)
-        | any;
+      static addSignOption: (subMenuPaint: any, name: any, wall: any, painting: any, r: any, g: any, b: any) => any;
 
-      static doPaintMenu: ((player: any, context: any, worldobjects: any, test: any) => any) | any;
+      static doPaintMenu: (player: any, context: any, worldobjects: any, test: any) => any;
 
-      static onPaint: ((worldobjects: any, player: any, thumpable: any, painting: any) => any) | any;
+      static onPaint: (worldobjects: any, player: any, thumpable: any, painting: any) => any;
 
-      static onPaintSign: ((wall: any, player: any, painting: any, sign: any, r: any, g: any, b: any) => any) | any;
+      static onPaintSign: (wall: any, player: any, painting: any, sign: any, r: any, g: any, b: any) => any;
 
-      static onPlaster: ((worldobjects: any, player: any, thumpable: any, square: any) => any) | any;
+      static onPlaster: (worldobjects: any, player: any, thumpable: any, square: any) => any;
     }
   }
   export namespace lua.client.BuildingObjects.ISUI.ISPaintMenu {}

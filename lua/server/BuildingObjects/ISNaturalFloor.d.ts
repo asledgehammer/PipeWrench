@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:40.585Z
+ * File generated at: 2022-08-04T20:14:39.639Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -64,7 +64,7 @@ declare module 'PipeWrench' {
 
       getFloorType: ((item: any) => any) | any;
 
-      static getFloorSpriteNames: ((square: any) => any) | any;
+      static getFloorSpriteNames: (square: any) => any;
     }
   }
   export namespace lua.server.BuildingObjects.ISNaturalFloor {}

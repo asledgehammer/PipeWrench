@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:41.544Z
+ * File generated at: 2022-08-04T20:14:40.920Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -80,7 +80,7 @@ declare module 'PipeWrench' {
 
       update: (() => any) | any;
 
-      static OnOpenPanel: (() => any) | any;
+      static OnOpenPanel: () => any;
     }
   }
   export namespace lua.client.DebugUIs.DebugMenu.Climate.ForecasterDebug {}

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:43.115Z
+ * File generated at: 2022-08-04T20:14:43.484Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -40,9 +40,9 @@ declare module 'PipeWrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      static doInfo: ((title: any, infopanel: any) => any) | any;
+      static doInfo: (title: any, infopanel: any) => any;
 
-      static get: ((title: any) => any) | any;
+      static get: (title: any) => any;
     }
   }
   export namespace lua.client.ISUI.ISInfoContainer {}

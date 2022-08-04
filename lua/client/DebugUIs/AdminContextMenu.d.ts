@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:41.156Z
+ * File generated at: 2022-08-04T20:14:40.452Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,37 +36,37 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static doMenu: ((player: any, context: any, worldobjects: any, test: any) => any) | any;
+      static doMenu: (player: any, context: any, worldobjects: any, test: any) => any;
 
-      static onDebugBlood: ((playerObj: any, vehicle: any) => any) | any;
+      static onDebugBlood: (playerObj: any, vehicle: any) => any;
 
-      static onDebugColor: ((playerObj: any, vehicle: any) => any) | any;
+      static onDebugColor: (playerObj: any, vehicle: any) => any;
 
-      static OnDoorLock: ((worldobjects: any, door: any) => any) | any;
+      static OnDoorLock: (worldobjects: any, door: any) => any;
 
-      static OnGetDoorKey: ((worldobjects: any, door: any, player: any) => any) | any;
+      static OnGetDoorKey: (worldobjects: any, door: any, player: any) => any;
 
-      static onHordeManager: ((square: any, player: any) => any) | any;
+      static onHordeManager: (square: any, player: any) => any;
 
-      static onMakeNoise: ((square: any, playerObj: any, radius: any, volume: any) => any) | any;
+      static onMakeNoise: (square: any, playerObj: any, radius: any, volume: any) => any;
 
-      static OnRemoveAllZombiesClient: ((zombie: any) => any) | any;
+      static OnRemoveAllZombiesClient: (zombie: any) => any;
 
-      static onRemoveItemTool: ((playerObj: any) => any) | any;
+      static onRemoveItemTool: (playerObj: any) => any;
 
-      static OnSetDoorKeyID: ((worldobjects: any, door: any) => any) | any;
+      static OnSetDoorKeyID: (worldobjects: any, door: any) => any;
 
-      static OnSetDoorKeyIDBuilding: ((worldobjects: any, door: any) => any) | any;
+      static OnSetDoorKeyIDBuilding: (worldobjects: any, door: any) => any;
 
-      static OnSetDoorKeyIDRandom: ((worldobjects: any, door: any) => any) | any;
+      static OnSetDoorKeyIDRandom: (worldobjects: any, door: any) => any;
 
-      static onSpawnVehicle: ((playerObj: any) => any) | any;
+      static onSpawnVehicle: (playerObj: any) => any;
 
-      static onTeleportUI: ((playerObj: any) => any) | any;
+      static onTeleportUI: (playerObj: any) => any;
 
-      static onTriggerThunderUI: ((playerObj: any) => any) | any;
+      static onTriggerThunderUI: (playerObj: any) => any;
 
-      static setForceLockDoor: ((worldobjects: any, door: any, player: any) => any) | any;
+      static setForceLockDoor: (worldobjects: any, door: any, player: any) => any;
     }
   }
   export namespace lua.client.DebugUIs.AdminContextMenu {}

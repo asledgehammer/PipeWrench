@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:42.769Z
+ * File generated at: 2022-08-04T20:14:42.841Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -100,11 +100,11 @@ declare module 'PipeWrench' {
 
       render: (() => any) | any;
 
-      static getTableResult: ((datas: any, rowId: any, tableName: any) => any) | any;
+      static getTableResult: (datas: any, rowId: any, tableName: any) => any;
 
-      static onFilterChange: ((entry: any, combo: any) => any) | any;
+      static onFilterChange: (entry: any, combo: any) => any;
 
-      static onNbrPerPageChange: ((entry: any) => any) | any;
+      static onNbrPerPageChange: (entry: any) => any;
     }
   }
   export namespace lua.client.ISUI.AdminPanel.ISWhitelistTable {}

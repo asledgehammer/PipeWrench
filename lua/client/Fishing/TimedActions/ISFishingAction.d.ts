@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:42.456Z
+ * File generated at: 2022-08-04T20:14:42.347Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -82,7 +82,7 @@ declare module 'PipeWrench' {
 
       getUsedInventory: ((item: any) => any) | any;
 
-      static getFishingZoneFixed: ((x: any, y: any, z: any) => any) | any;
+      static getFishingZoneFixed: (x: any, y: any, z: any) => any;
     }
   }
   export namespace lua.client.Fishing.TimedActions.ISFishingAction {}

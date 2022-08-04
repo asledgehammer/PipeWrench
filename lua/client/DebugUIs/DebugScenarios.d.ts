@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:41.869Z
+ * File generated at: 2022-08-04T20:14:41.373Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -54,9 +54,9 @@ declare module 'PipeWrench' {
 
       onResolutionChange: ((oldw: any, oldh: any, neww: any, newh: any) => any) | any;
 
-      static ongamestart: (() => any) | any;
+      static ongamestart: () => any;
 
-      static onloadgs: ((sq: any) => any) | any;
+      static onloadgs: (sq: any) => any;
     }
   }
   export namespace lua.client.DebugUIs.DebugScenarios {

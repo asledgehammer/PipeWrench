@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:46.754Z
+ * File generated at: 2022-08-04T20:14:50.904Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,29 +36,29 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static addXp: ((owner: any, type: any, amount: any) => any) | any;
+      static addXp: (owner: any, type: any, amount: any) => any;
 
-      static checkForLosingLevel: ((playerObj: any, perk: any) => any) | any;
+      static checkForLosingLevel: (playerObj: any, perk: any) => any;
 
-      static displayCharacterInfo: ((key: any) => any) | any;
+      static displayCharacterInfo: (key: any) => any;
 
-      static everyTenMinutes: (() => any) | any;
+      static everyTenMinutes: () => any;
 
-      static getModData: ((playerObj: any) => any) | any;
+      static getModData: (playerObj: any) => any;
 
-      static levelPerk: ((owner: any, perk: any, level: any, addBuffer: any) => any) | any;
+      static levelPerk: (owner: any, perk: any, level: any, addBuffer: any) => any;
 
-      static onMakeItem: ((item: any, resultItem: any, recipe: any) => any) | any;
+      static onMakeItem: (item: any, resultItem: any, recipe: any) => any;
 
-      static onNewGame: ((playerObj: any, square: any) => any) | any;
+      static onNewGame: (playerObj: any, square: any) => any;
 
-      static onPlayerMove: (() => any) | any;
+      static onPlayerMove: () => any;
 
-      static OnWeaponHitTree: ((owner: any, weapon: any) => any) | any;
+      static OnWeaponHitTree: (owner: any, weapon: any) => any;
 
-      static onWeaponHitXp: ((owner: any, weapon: any, hitObject: any, damage: any) => any) | any;
+      static onWeaponHitXp: (owner: any, weapon: any, hitObject: any, damage: any) => any;
 
-      static randXp: (() => any) | any;
+      static randXp: () => any;
     }
   }
   export namespace lua.server.XpSystem.XpUpdate {}

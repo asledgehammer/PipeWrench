@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:45.339Z
+ * File generated at: 2022-08-04T20:14:48.203Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -48,11 +48,11 @@ declare module 'PipeWrench' {
 
       update: (() => any) | any;
 
-      static OnGameStart: (() => any) | any;
+      static OnGameStart: () => any;
 
-      static onKeyPressed: ((key: any) => any) | any;
+      static onKeyPressed: (key: any) => any;
 
-      static OnNewGame: (() => any) | any;
+      static OnNewGame: () => any;
     }
   }
   export namespace lua.client.SurvivalGuide.SurvivalGuideManager {

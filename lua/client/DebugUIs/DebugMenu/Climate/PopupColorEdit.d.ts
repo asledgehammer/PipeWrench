@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:41.567Z
+ * File generated at: 2022-08-04T20:14:40.958Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -70,7 +70,7 @@ declare module 'PipeWrench' {
 
       update: (() => any) | any;
 
-      static OnOpenPanel: ((_colorInfo: any, _parent: any, _ambient: any, _desat: any) => any) | any;
+      static OnOpenPanel: (_colorInfo: any, _parent: any, _ambient: any, _desat: any) => any;
     }
   }
   export namespace lua.client.DebugUIs.DebugMenu.Climate.PopupColorEdit {}

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-03T13:26Z
+ * File generated at 2022-08-04T16:17Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -271,8 +271,8 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (Object arg0): void
        *  - (String arg0): void
+       *  - (Object arg0): void
        *  - (DebugType arg0, String arg1): void
        */
       static log(arg0: any, arg1?: string): void;
@@ -709,6 +709,23 @@ declare module 'PipeWrench' {
       static readonly Zombie: zombie.debug.DebugType;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (DebugType arg0): boolean
+       */
+      static Do(arg0: zombie.debug.DebugType | null): boolean;
+
+      /**
+       * @noSelf
+       *
+       * (String arg0): DebugType
+       */
+      static valueOf(arg0: string | null): zombie.debug.DebugType;
+
+      /** @noSelf */
+      static values(): zombie.debug.DebugType[];
+
     }
     /**
      * @customConstructor IDebugLogFormatter.new
@@ -752,6 +769,16 @@ declare module 'PipeWrench' {
       static readonly Warning: zombie.debug.LogSeverity;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): LogSeverity
+       */
+      static valueOf(arg0: string | null): zombie.debug.LogSeverity;
+
+      /** @noSelf */
+      static values(): zombie.debug.LogSeverity[];
+
     }
   }
 }

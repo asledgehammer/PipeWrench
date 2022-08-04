@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:44.825Z
+ * File generated at: 2022-08-04T20:14:47.142Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -142,7 +142,7 @@ declare module 'PipeWrench' {
 
       syncStartDay: (() => any) | any;
 
-      static load: (() => any) | any;
+      static load: () => any;
     }
   }
   export namespace lua.client.OptionScreens.SandboxOptions {}

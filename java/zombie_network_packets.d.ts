@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-03T13:26Z
+ * File generated at 2022-08-04T16:17Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -243,6 +243,16 @@ declare module 'PipeWrench' {
       static readonly Success: zombie.network.packets.ValidatePacket$ValidateState;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): ValidateState
+       */
+      static valueOf(arg0: string | null): zombie.network.packets.ValidatePacket$ValidateState;
+
+      /** @noSelf */
+      static values(): zombie.network.packets.ValidatePacket$ValidateState[];
+
     }
   }
 }

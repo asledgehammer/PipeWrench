@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:41.835Z
+ * File generated at: 2022-08-04T20:14:41.321Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,9 +36,9 @@ declare module 'PipeWrench' {
       [id: string]: any;
       static [id: string]: any;
 
-      static doInstance: (() => any) | any;
+      static doInstance: () => any;
 
-      static OnOpenPanel: (() => any) | any;
+      static OnOpenPanel: () => any;
     }
   }
   export namespace lua.client.DebugUIs.DebugMenu.Statistic.StatisticChartMemory {}

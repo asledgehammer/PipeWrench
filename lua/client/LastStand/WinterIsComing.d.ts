@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:44.309Z
+ * File generated at: 2022-08-04T20:14:45.971Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,21 +36,21 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static Add: (() => any) | any;
+      static Add: () => any;
 
-      static AddPlayer: ((playerNum: any, playerObj: any) => any) | any;
+      static AddPlayer: (playerNum: any, playerObj: any) => any;
 
-      static EveryHours: (() => any) | any;
+      static EveryHours: () => any;
 
-      static OnGameStart: (() => any) | any;
+      static OnGameStart: () => any;
 
-      static OnInitSeasons: ((_season: any) => any) | any;
+      static OnInitSeasons: (_season: any) => any;
 
-      static OnInitWorld: (() => any) | any;
+      static OnInitWorld: () => any;
 
-      static RemovePlayer: ((p: any) => any) | any;
+      static RemovePlayer: (p: any) => any;
 
-      static Render: (() => any) | any;
+      static Render: () => any;
     }
   }
   export namespace lua.client.LastStand.WinterIsComing {}

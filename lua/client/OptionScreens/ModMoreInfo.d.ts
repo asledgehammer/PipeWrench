@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:44.770Z
+ * File generated at: 2022-08-04T20:14:47.037Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -48,7 +48,7 @@ declare module 'PipeWrench' {
 
       instantiate: (() => any) | any;
 
-      static onOptionMouseDown: ((button: any, x: any, y: any) => any) | any;
+      static onOptionMouseDown: (button: any, x: any, y: any) => any;
     }
   }
   export namespace lua.client.OptionScreens.ModMoreInfo {}

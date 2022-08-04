@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-03T13:26Z
+ * File generated at 2022-08-04T16:17Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -218,6 +218,16 @@ declare module 'PipeWrench' {
       static readonly Waist: zombie.core.skinnedmodel.model.CharacterMask$Part;
       name(): string;
       ordinal(): number;
+      /** @noSelf */
+      static count(): number;
+
+      /**
+       * @noSelf
+       *
+       * (int arg0): Part
+       */
+      static fromInt(arg0: number): zombie.core.skinnedmodel.model.CharacterMask$Part;
+
       getBloodBodyPartTypes(): zombie.characterTextures.BloodBodyPartType[];
 
       getParent(): zombie.core.skinnedmodel.model.CharacterMask$Part;
@@ -228,7 +238,20 @@ declare module 'PipeWrench' {
 
       isSubdivision(): boolean;
 
+      /** @noSelf */
+      static leaves(): zombie.core.skinnedmodel.model.CharacterMask$Part[];
+
       subDivisions(): zombie.core.skinnedmodel.model.CharacterMask$Part[];
+
+      /**
+       * @noSelf
+       *
+       * (String arg0): Part
+       */
+      static valueOf(arg0: string | null): zombie.core.skinnedmodel.model.CharacterMask$Part;
+
+      /** @noSelf */
+      static values(): zombie.core.skinnedmodel.model.CharacterMask$Part[];
 
     }
     /**
@@ -473,10 +496,10 @@ declare module 'PipeWrench' {
       getAttachmentById(arg0: string): zombie.scripting.objects.ModelAttachment;
       /**
        * Method Parameters: 
-       *  - (ModelAttachment arg0, Matrix4f arg1): org.joml.Matrix4f
        *  - (int arg0, Matrix4f arg1): org.joml.Matrix4f
+       *  - (ModelAttachment arg0, Matrix4f arg1): org.joml.Matrix4f
        */
-      getAttachmentMatrix(arg0: zombie.scripting.objects.ModelAttachment | number, arg1: org.joml.Matrix4f): org.joml.Matrix4f;
+      getAttachmentMatrix(arg0: number | zombie.scripting.objects.ModelAttachment, arg1: org.joml.Matrix4f): org.joml.Matrix4f;
       /**
        * Method Parameters: 
        *  - (String arg0, Matrix4f arg1): org.joml.Matrix4f
@@ -568,6 +591,16 @@ declare module 'PipeWrench' {
       static readonly Out: zombie.core.skinnedmodel.model.ModelInstance$FrameLightBlendStatus;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): FrameLightBlendStatus
+       */
+      static valueOf(arg0: string | null): zombie.core.skinnedmodel.model.ModelInstance$FrameLightBlendStatus;
+
+      /** @noSelf */
+      static values(): zombie.core.skinnedmodel.model.ModelInstance$FrameLightBlendStatus[];
+
     }
     /**
      * @customConstructor FrameLightInfo.new

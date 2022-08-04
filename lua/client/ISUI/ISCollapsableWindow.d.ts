@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:42.916Z
+ * File generated at: 2022-08-04T20:14:43.133Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -124,7 +124,7 @@ declare module 'PipeWrench' {
 
       uncollapse: (() => any) | any;
 
-      static TitleBarHeight: (() => any) | any;
+      static TitleBarHeight: () => any;
     }
   }
   export namespace lua.client.ISUI.ISCollapsableWindow {}

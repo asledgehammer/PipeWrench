@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-03T13:26Z
+ * File generated at 2022-08-04T16:17Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -125,10 +125,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (Matrix4f arg0, Matrix4f arg1): org.lwjgl.util.vector.Matrix4f
        *  - (Matrix4f arg0, Matrix4f arg1): org.joml.Matrix4f
+       *  - (Matrix4f arg0, Matrix4f arg1): org.lwjgl.util.vector.Matrix4f
        */
-      static convertMatrix(arg0: org.joml.Matrix4f | org.lwjgl.util.vector.Matrix4f, arg1: org.lwjgl.util.vector.Matrix4f | org.joml.Matrix4f): org.lwjgl.util.vector.Matrix4f | org.joml.Matrix4f;
+      static convertMatrix(arg0: org.lwjgl.util.vector.Matrix4f | org.joml.Matrix4f, arg1: org.joml.Matrix4f | org.lwjgl.util.vector.Matrix4f): org.joml.Matrix4f | org.lwjgl.util.vector.Matrix4f;
       /**
        * @noSelf
        *
@@ -348,6 +348,16 @@ declare module 'PipeWrench' {
       static readonly Right: zombie.core.math.PZMath$SideOfLine;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): SideOfLine
+       */
+      static valueOf(arg0: string | null): zombie.core.math.PZMath$SideOfLine;
+
+      /** @noSelf */
+      static values(): zombie.core.math.PZMath$SideOfLine[];
+
     }
     /**
      * @customConstructor vector2.new

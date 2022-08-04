@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:44.019Z
+ * File generated at: 2022-08-04T20:14:45.273Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -112,11 +112,11 @@ declare module 'PipeWrench' {
 
       updateButtons: (() => any) | any;
 
-      static AcceptedFactionInvite: ((factionName: any, host: any) => any) | any;
+      static AcceptedFactionInvite: (factionName: any, host: any) => any;
 
-      static ReceiveFactionInvite: ((factionName: any, host: any) => any) | any;
+      static ReceiveFactionInvite: (factionName: any, host: any) => any;
 
-      static SyncFaction: ((factionName: any) => any) | any;
+      static SyncFaction: (factionName: any) => any;
     }
   }
   export namespace lua.client.ISUI.UserPanel.ISFactionUI {}

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:46.271Z
+ * File generated at: 2022-08-04T20:14:49.954Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -52,53 +52,51 @@ declare module 'PipeWrench' {
 
       static DeadMouse: any;
 
-      static Add: (() => any) | any;
+      static Add: () => any;
 
-      static addBarricade: ((x: any, y: any, z: any) => any) | any;
+      static addBarricade: (x: any, y: any, z: any) => any;
 
-      static addMetalBarricade: ((x: any, y: any, z: any) => any) | any;
+      static addMetalBarricade: (x: any, y: any, z: any) => any;
 
-      static AddPlayer: ((p: any) => any) | any;
+      static AddPlayer: (p: any) => any;
 
-      static closeBothInv: (() => any) | any;
+      static closeBothInv: () => any;
 
-      static closeInv: (() => any) | any;
+      static closeInv: () => any;
 
-      static closeLoot: (() => any) | any;
+      static closeLoot: () => any;
 
-      static collapseInv: ((inv: any) => any) | any;
+      static collapseInv: (inv: any) => any;
 
-      static createInventoryContextMenu:
-        | ((player: any, isInPlayerInventory: any, items: any, x: any, y: any) => any)
-        | any;
+      static createInventoryContextMenu: (player: any, isInPlayerInventory: any, items: any, x: any, y: any) => any;
 
-      static createWorldContextMenu: ((player: any, worldobjects: any, x: any, y: any) => any) | any;
+      static createWorldContextMenu: (player: any, worldobjects: any, x: any, y: any) => any;
 
-      static createWorldContextMenuFromContext: ((context: any, worldobjects: any) => any) | any;
+      static createWorldContextMenuFromContext: (context: any, worldobjects: any) => any;
 
-      static doubleClickInventory: ((inventoryPane: any, x: any, y: any, mouseOverOption: any) => any) | any;
+      static doubleClickInventory: (inventoryPane: any, x: any, y: any, mouseOverOption: any) => any;
 
-      static FillContainers: (() => any) | any;
+      static FillContainers: () => any;
 
-      static Init: (() => any) | any;
+      static Init: () => any;
 
-      static lockDoor: ((x: any, y: any, z: any) => any) | any;
+      static lockDoor: (x: any, y: any, z: any) => any;
 
-      static openDoor: ((x: any, y: any, z: any, north: any) => any) | any;
+      static openDoor: (x: any, y: any, z: any, north: any) => any;
 
-      static PreloadInit: (() => any) | any;
+      static PreloadInit: () => any;
 
-      static removeFences: (() => any) | any;
+      static removeFences: () => any;
 
-      static Render: (() => any) | any;
+      static Render: () => any;
 
-      static replaceFence: ((sq: any, north: any) => any) | any;
+      static replaceFence: (sq: any, north: any) => any;
 
-      static SpawnZombies: ((count: any) => any) | any;
+      static SpawnZombies: (count: any) => any;
 
-      static Tick: (() => any) | any;
+      static Tick: () => any;
 
-      static unlockDoor: ((x: any, y: any, z: any) => any) | any;
+      static unlockDoor: (x: any, y: any, z: any) => any;
     }
   }
   export namespace lua.client.Tutorial.Tutorial1 {}

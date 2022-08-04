@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:46.056Z
+ * File generated at: 2022-08-04T20:14:49.542Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,18 +31,23 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.TimedActions {
-    /** @customConstructor ISTimedActionQueue:new */
+    /**
+     * @customConstructor ISTimedActionQueue:new
+     * @docAuthors [Konijima]
+     *
+     * Manage player timed action queue.
+     */
     export class ISTimedActionQueue extends lua.shared.ISBaseObject.ISBaseObject {
       [id: string]: any;
       static [id: string]: any;
 
-      character: any;
+      character: IsoPlayer;
 
       current: any;
 
       queue: any;
 
-      constructor(character: any);
+      constructor(character: IsoPlayer);
 
       addToQueue: ((action: any) => any) | any;
 
@@ -58,36 +63,52 @@ declare module 'PipeWrench' {
 
       tick: (() => any) | any;
 
-      static add: ((action: any) => any) | any;
+      static add: (action: any) => any;
 
-      static addAfter: ((previousAction: any, action: any) => any) | any;
+      /** @noSelf */
+      static addAfter: (previousAction: any, action: any) => any;
 
-      static clear: ((character: any) => any) | any;
+      /**
+       * @noSelf
+       *
+       * Clear the player action queue
+       */
+      static clear: (character: IsoPlayer) => any;
 
-      static getTimedActionQueue: ((character: any) => any) | any;
+      /**
+       * @noSelf
+       *
+       * Get the player current action queue
+       */
+      static getTimedActionQueue: (character: IsoPlayer) => any;
 
-      static hasAction: ((action: any) => any) | any;
+      static hasAction: (action: any) => any;
 
-      static isPlayerDoingAction: ((playerObj: any) => any) | any;
+      /**
+       * @noSelf
+       *
+       * Check if a player is doing an action
+       */
+      static isPlayerDoingAction: (playerObj: IsoPlayer) => any;
 
-      static onTick: (() => any) | any;
+      /** @noSelf */
+      static onTick: () => any;
 
-      static queueActions:
-        | ((
-            character: any,
-            addActionsFunction: any,
-            arg1: any,
-            arg2: any,
-            arg3: any,
-            arg4: any,
-            arg5: any,
-            arg6: any,
-            arg7: any,
-            arg8: any,
-            arg9: any,
-            arg10: any
-          ) => any)
-        | any;
+      /** @noSelf */
+      static queueActions: (
+        character: any,
+        addActionsFunction: any,
+        arg1: any,
+        arg2: any,
+        arg3: any,
+        arg4: any,
+        arg5: any,
+        arg6: any,
+        arg7: any,
+        arg8: any,
+        arg9: any,
+        arg10: any
+      ) => any;
     }
   }
   export namespace lua.client.TimedActions.ISTimedActionQueue {}

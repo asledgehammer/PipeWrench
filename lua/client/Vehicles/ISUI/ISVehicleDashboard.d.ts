@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:46.401Z
+ * File generated at: 2022-08-04T20:14:50.217Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -150,21 +150,21 @@ declare module 'PipeWrench' {
 
       setVehicle: ((vehicle: any) => any) | any;
 
-      static damageChecker: (() => any) | any;
+      static damageChecker: () => any;
 
-      static damageFlick: ((character: any) => any) | any;
+      static damageFlick: (character: any) => any;
 
-      static getVehicleCondition: ((vehicle: any) => any) | any;
+      static getVehicleCondition: (vehicle: any) => any;
 
-      static onEnterVehicle: ((character: any) => any) | any;
+      static onEnterVehicle: (character: any) => any;
 
-      static onExitVehicle: ((character: any) => any) | any;
+      static onExitVehicle: (character: any) => any;
 
-      static onGameStart: (() => any) | any;
+      static onGameStart: () => any;
 
-      static OnGameStart: (() => any) | any;
+      static OnGameStart: () => any;
 
-      static onSwitchVehicleSeat: ((character: any) => any) | any;
+      static onSwitchVehicleSeat: (character: any) => any;
     }
   }
   export namespace lua.client.Vehicles.ISUI.ISVehicleDashboard {}

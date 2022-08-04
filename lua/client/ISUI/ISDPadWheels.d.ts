@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:43.009Z
+ * File generated at: 2022-08-04T20:14:43.291Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,19 +36,19 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static onDisplayDown: ((joypadData: any) => any) | any;
+      static onDisplayDown: (joypadData: any) => any;
 
-      static onDisplayLeft: ((joypadData: any) => any) | any;
+      static onDisplayLeft: (joypadData: any) => any;
 
-      static onDisplayRight: ((joypadData: any) => any) | any;
+      static onDisplayRight: (joypadData: any) => any;
 
-      static onDisplayUp: ((joypadData: any) => any) | any;
+      static onDisplayUp: (joypadData: any) => any;
 
-      static onEquipPrimary: ((playerObj: any, item: any) => any) | any;
+      static onEquipPrimary: (playerObj: any, item: any) => any;
 
-      static onShout: ((playerObj: any) => any) | any;
+      static onShout: (playerObj: any) => any;
 
-      static onToggleLight: ((playerObj: any, item: any) => any) | any;
+      static onToggleLight: (playerObj: any, item: any) => any;
     }
   }
   export namespace lua.client.ISUI.ISDPadWheels {}

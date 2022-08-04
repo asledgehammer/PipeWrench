@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:43.195Z
+ * File generated at: 2022-08-04T20:14:43.587Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,19 +36,19 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static displayLeft: ((joypadData: any) => any) | any;
+      static displayLeft: (joypadData: any) => any;
 
-      static onJoypadButtonReleased: ((button: any, joypadData: any) => any) | any;
+      static onJoypadButtonReleased: (button: any, joypadData: any) => any;
 
-      static onJoypadDown: ((button: any, joypadData: any) => any) | any;
+      static onJoypadDown: (button: any, joypadData: any) => any;
 
-      static onRepeatLeftStickButton: ((joypadData: any) => any) | any;
+      static onRepeatLeftStickButton: (joypadData: any) => any;
 
-      static onToggleAutoWalk: ((playerObj: any) => any) | any;
+      static onToggleAutoWalk: (playerObj: any) => any;
 
-      static onToggleCrouch: ((playerObj: any) => any) | any;
+      static onToggleCrouch: (playerObj: any) => any;
 
-      static onToggleSit: ((playerObj: any) => any) | any;
+      static onToggleSit: (playerObj: any) => any;
     }
   }
   export namespace lua.client.ISUI.ISJoystickButtonRadialMenu {}

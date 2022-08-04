@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-03T13:26Z
+ * File generated at 2022-08-04T16:17Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -46,6 +46,16 @@ declare module 'PipeWrench' {
       getTitleID(): string;
 
       getValue(): number;
+
+      /**
+       * @noSelf
+       *
+       * (String arg0): ChatType
+       */
+      static valueOf(arg0: string | null): zombie.network.chat.ChatType;
+
+      /** @noSelf */
+      static values(): zombie.network.chat.ChatType[];
 
     }
   }

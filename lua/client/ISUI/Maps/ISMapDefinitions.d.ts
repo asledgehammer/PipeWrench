@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:43.853Z
+ * File generated at: 2022-08-04T20:14:44.887Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,7 +36,7 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static callLua: ((functionName: any, mapUI: any, arg1: any, arg2: any, arg3: any, arg4: any) => any) | any;
+      static callLua: (functionName: any, mapUI: any, arg1: any, arg2: any, arg3: any, arg4: any) => any;
     }
 
     export class MapUtils {
@@ -44,15 +44,15 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static initDefaultMapData: ((mapUI: any) => any) | any;
+      static initDefaultMapData: (mapUI: any) => any;
 
-      static initDefaultStyleV1: ((mapUI: any) => any) | any;
+      static initDefaultStyleV1: (mapUI: any) => any;
 
-      static initDirectoryMapData: ((mapUI: any, directory: any) => any) | any;
+      static initDirectoryMapData: (mapUI: any, directory: any) => any;
 
-      static overlayPaper: ((mapUI: any) => any) | any;
+      static overlayPaper: (mapUI: any) => any;
 
-      static revealKnownArea: ((mapUI: any) => any) | any;
+      static revealKnownArea: (mapUI: any) => any;
     }
   }
   export namespace lua.client.ISUI.Maps.ISMapDefinitions {}

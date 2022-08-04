@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:46.132Z
+ * File generated at: 2022-08-04T20:14:49.687Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -54,11 +54,11 @@ declare module 'PipeWrench' {
 
       useSoap: ((item: any, part: any) => any) | any;
 
-      static GetRequiredSoap: ((item: any) => any) | any;
+      static GetRequiredSoap: (item: any) => any;
 
-      static GetRequiredWater: ((item: any) => any) | any;
+      static GetRequiredWater: (item: any) => any;
 
-      static GetSoapRemaining: ((soaps: any) => any) | any;
+      static GetSoapRemaining: (soaps: any) => any;
     }
   }
   export namespace lua.client.TimedActions.ISWashClothing {}

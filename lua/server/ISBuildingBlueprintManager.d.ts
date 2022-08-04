@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:42.593Z
+ * File generated at: 2022-08-04T20:14:42.560Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,11 +36,11 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static MouseDown: ((x: any, y: any) => any) | any;
+      static MouseDown: (x: any, y: any) => any;
 
-      static MouseMove: ((x: any, y: any, wx: any, wy: any) => any) | any;
+      static MouseMove: (x: any, y: any, wx: any, wy: any) => any;
 
-      static RenderUI: (() => any) | any;
+      static RenderUI: () => any;
     }
   }
   export namespace lua.server.ISBuildingBlueprintManager {}

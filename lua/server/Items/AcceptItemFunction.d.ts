@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:44.057Z
+ * File generated at: 2022-08-04T20:14:45.376Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,9 +36,9 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static FirstAidKit: ((container: any, item: any) => any) | any;
+      static FirstAidKit: (container: any, item: any) => any;
 
-      static KeyRing: ((container: any, item: any) => any) | any;
+      static KeyRing: (container: any, item: any) => any;
     }
   }
   export namespace lua.server.Items.AcceptItemFunction {}

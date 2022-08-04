@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:44.489Z
+ * File generated at: 2022-08-04T20:14:46.438Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -216,15 +216,23 @@ declare module 'PipeWrench' {
 
       walkToAndEquip: ((_character: any, _square: any, _mode: any) => any) | any;
 
-      static addLineToInfoTable:
-        | ((_table: any, _lineA: any, _rA: any, _gA: any, _bA: any, _lineB: any, _rB: any, _gB: any, _bB: any) => any)
-        | any;
+      static addLineToInfoTable: (
+        _table: any,
+        _lineA: any,
+        _rA: any,
+        _gA: any,
+        _bA: any,
+        _lineB: any,
+        _rB: any,
+        _gB: any,
+        _bB: any
+      ) => any;
 
-      static fromObject: ((_object: any) => any) | any;
+      static fromObject: (_object: any) => any;
 
-      static new: ((_sprite: any) => any) | any;
+      static new: (_sprite: any) => any;
 
-      static OnDynamicMovableRecipe: ((_sprite: any, _recipe: any, _item: any, _player: any) => any) | any;
+      static OnDynamicMovableRecipe: (_sprite: any, _recipe: any, _item: any, _player: any) => any;
     }
 
     export class ISThumpableSpriteProps {
@@ -250,7 +258,7 @@ declare module 'PipeWrench' {
 
       walkToAndEquip: ((_character: any, _square: any, _mode: any) => any) | any;
 
-      static new: ((object: any) => any) | any;
+      static new: (object: any) => any;
     }
 
     export class SpriteGridCache {

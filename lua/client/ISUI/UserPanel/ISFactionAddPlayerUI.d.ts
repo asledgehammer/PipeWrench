@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:44.012Z
+ * File generated at: 2022-08-04T20:14:45.245Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -56,9 +56,9 @@ declare module 'PipeWrench' {
 
       populateList: (() => any) | any;
 
-      static OnMiniScoreboardUpdate: (() => any) | any;
+      static OnMiniScoreboardUpdate: () => any;
 
-      static OnScoreboardUpdate: ((usernames: any, displayNames: any, steamIDs: any) => any) | any;
+      static OnScoreboardUpdate: (usernames: any, displayNames: any, steamIDs: any) => any;
     }
   }
   export namespace lua.client.ISUI.UserPanel.ISFactionAddPlayerUI {}

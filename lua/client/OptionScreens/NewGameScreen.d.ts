@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:44.798Z
+ * File generated at: 2022-08-04T20:14:47.089Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -108,19 +108,19 @@ declare module 'PipeWrench' {
 
       updateBottomPanelButtons: (() => any) | any;
 
-      static dblClickChallenge: ((item: any, x: any, y: any) => any) | any;
+      static dblClickChallenge: (item: any, x: any, y: any) => any;
 
-      static dblClickDifficulty: ((item: any, x: any, y: any) => any) | any;
+      static dblClickDifficulty: (item: any, x: any, y: any) => any;
 
-      static dblClickPlaystyle: ((item: any, x: any, y: any) => any) | any;
+      static dblClickPlaystyle: (item: any, x: any, y: any) => any;
 
-      static dblClickSurvival: ((item: any, x: any, y: any) => any) | any;
+      static dblClickSurvival: (item: any, x: any, y: any) => any;
 
-      static dblClickTutorial: ((item: any, x: any, y: any) => any) | any;
+      static dblClickTutorial: (item: any, x: any, y: any) => any;
 
-      static onChooseDifficulty: ((item: any, x: any, y: any) => any) | any;
+      static onChooseDifficulty: (item: any, x: any, y: any) => any;
 
-      static onMenuItemMouseDown: ((item: any, x: any, y: any) => any) | any;
+      static onMenuItemMouseDown: (item: any, x: any, y: any) => any;
     }
   }
   export namespace lua.client.OptionScreens.NewGameScreen {}

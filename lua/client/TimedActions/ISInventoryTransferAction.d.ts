@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:45.777Z
+ * File generated at: 2022-08-04T20:14:49.001Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -98,7 +98,7 @@ declare module 'PipeWrench' {
 
       transferItem: ((item: any) => any) | any;
 
-      static GetDropItemOffset: ((character: any, square: any, item: any) => any) | any;
+      static GetDropItemOffset: (character: any, square: any, item: any) => any;
     }
   }
   export namespace lua.client.TimedActions.ISInventoryTransferAction {}

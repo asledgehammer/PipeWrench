@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-03T13:26Z
+ * File generated at 2022-08-04T16:17Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -104,8 +104,8 @@ declare module 'PipeWrench' {
        *  - (Vector2fc arg0): org.joml.Vector2f
        *  - (float arg0): org.joml.Vector2f
        *  - (float arg0, float arg1): org.joml.Vector2f
-       *  - (Vector2fc arg0, Vector2f arg1): org.joml.Vector2f
        *  - (float arg0, Vector2f arg1): org.joml.Vector2f
+       *  - (Vector2fc arg0, Vector2f arg1): org.joml.Vector2f
        *  - (float arg0, float arg1, Vector2f arg2): org.joml.Vector2f
        */
       div(arg0: org.joml.Vector2fc | number, arg1?: number | org.joml.Vector2f, arg2?: org.joml.Vector2f): org.joml.Vector2f;
@@ -202,18 +202,18 @@ declare module 'PipeWrench' {
       minComponent(): number;
       /**
        * Method Parameters: 
-       *  - (float arg0): org.joml.Vector2f
-       *  - (Matrix2dc arg0): org.joml.Vector2f
-       *  - (Matrix2fc arg0): org.joml.Vector2f
        *  - (Vector2fc arg0): org.joml.Vector2f
-       *  - (Matrix2dc arg0, Vector2f arg1): org.joml.Vector2f
+       *  - (Matrix2dc arg0): org.joml.Vector2f
+       *  - (float arg0): org.joml.Vector2f
+       *  - (Matrix2fc arg0): org.joml.Vector2f
        *  - (float arg0, Vector2f arg1): org.joml.Vector2f
-       *  - (Vector2fc arg0, Vector2f arg1): org.joml.Vector2f
        *  - (float arg0, float arg1): org.joml.Vector2f
+       *  - (Matrix2dc arg0, Vector2f arg1): org.joml.Vector2f
        *  - (Matrix2fc arg0, Vector2f arg1): org.joml.Vector2f
+       *  - (Vector2fc arg0, Vector2f arg1): org.joml.Vector2f
        *  - (float arg0, float arg1, Vector2f arg2): org.joml.Vector2f
        */
-      mul(arg0: number | org.joml.Matrix2dc | org.joml.Matrix2fc | org.joml.Vector2fc, arg1?: org.joml.Vector2f | number, arg2?: org.joml.Vector2f): org.joml.Vector2f;
+      mul(arg0: org.joml.Vector2fc | org.joml.Matrix2dc | number | org.joml.Matrix2fc, arg1?: org.joml.Vector2f | number, arg2?: org.joml.Vector2f): org.joml.Vector2f;
       /**
        * Method Parameters: 
        *  - (Matrix3x2fc arg0): org.joml.Vector2f
@@ -436,14 +436,14 @@ declare module 'PipeWrench' {
       distanceSquared(arg0: org.joml.Vector3fc | number, arg1?: number, arg2?: number): number;
       /**
        * Method Parameters: 
-       *  - (float arg0): org.joml.Vector3f
        *  - (Vector3fc arg0): org.joml.Vector3f
-       *  - (float arg0, Vector3f arg1): org.joml.Vector3f
+       *  - (float arg0): org.joml.Vector3f
        *  - (Vector3fc arg0, Vector3f arg1): org.joml.Vector3f
+       *  - (float arg0, Vector3f arg1): org.joml.Vector3f
        *  - (float arg0, float arg1, float arg2): org.joml.Vector3f
        *  - (float arg0, float arg1, float arg2, Vector3f arg3): org.joml.Vector3f
        */
-      div(arg0: number | org.joml.Vector3fc, arg1?: org.joml.Vector3f | number, arg2?: number, arg3?: org.joml.Vector3f): org.joml.Vector3f;
+      div(arg0: org.joml.Vector3fc | number, arg1?: org.joml.Vector3f | number, arg2?: number, arg3?: org.joml.Vector3f): org.joml.Vector3f;
       /**
        * Method Parameters: 
        *  - (Vector3fc arg0): number
@@ -551,44 +551,44 @@ declare module 'PipeWrench' {
       minComponent(): number;
       /**
        * Method Parameters: 
-       *  - (Matrix3dc arg0): org.joml.Vector3f
        *  - (Vector3fc arg0): org.joml.Vector3f
-       *  - (Matrix3fc arg0): org.joml.Vector3f
        *  - (Matrix3x2fc arg0): org.joml.Vector3f
+       *  - (Matrix3dc arg0): org.joml.Vector3f
        *  - (float arg0): org.joml.Vector3f
-       *  - (Matrix3dc arg0, Vector3f arg1): org.joml.Vector3f
+       *  - (Matrix3fc arg0): org.joml.Vector3f
        *  - (Vector3fc arg0, Vector3f arg1): org.joml.Vector3f
+       *  - (Matrix3dc arg0, Vector3f arg1): org.joml.Vector3f
        *  - (Matrix3fc arg0, Vector3f arg1): org.joml.Vector3f
-       *  - (Matrix3x2fc arg0, Vector3f arg1): org.joml.Vector3f
        *  - (float arg0, Vector3f arg1): org.joml.Vector3f
+       *  - (Matrix3x2fc arg0, Vector3f arg1): org.joml.Vector3f
        *  - (float arg0, float arg1, float arg2): org.joml.Vector3f
        *  - (float arg0, float arg1, float arg2, Vector3f arg3): org.joml.Vector3f
        */
-      mul(arg0: org.joml.Matrix3dc | org.joml.Vector3fc | org.joml.Matrix3fc | org.joml.Matrix3x2fc | number, arg1?: org.joml.Vector3f | number, arg2?: number, arg3?: org.joml.Vector3f): org.joml.Vector3f;
+      mul(arg0: org.joml.Vector3fc | org.joml.Matrix3x2fc | org.joml.Matrix3dc | number | org.joml.Matrix3fc, arg1?: org.joml.Vector3f | number, arg2?: number, arg3?: org.joml.Vector3f): org.joml.Vector3f;
       /**
        * Method Parameters: 
-       *  - (float arg0, Vector3fc arg1): org.joml.Vector3f
        *  - (Vector3fc arg0, Vector3fc arg1): org.joml.Vector3f
-       *  - (float arg0, Vector3fc arg1, Vector3f arg2): org.joml.Vector3f
+       *  - (float arg0, Vector3fc arg1): org.joml.Vector3f
        *  - (Vector3fc arg0, Vector3fc arg1, Vector3f arg2): org.joml.Vector3f
+       *  - (float arg0, Vector3fc arg1, Vector3f arg2): org.joml.Vector3f
        */
-      mulAdd(arg0: number | org.joml.Vector3fc, arg1: org.joml.Vector3fc, arg2?: org.joml.Vector3f): org.joml.Vector3f;
+      mulAdd(arg0: org.joml.Vector3fc | number, arg1: org.joml.Vector3fc, arg2?: org.joml.Vector3f): org.joml.Vector3f;
       /**
        * Method Parameters: 
+       *  - (Matrix4x3fc arg0): org.joml.Vector3f
        *  - (Matrix4dc arg0): org.joml.Vector3f
        *  - (Matrix4fc arg0): org.joml.Vector3f
-       *  - (Matrix4x3fc arg0): org.joml.Vector3f
        *  - (Matrix4x3fc arg0, Vector3f arg1): org.joml.Vector3f
        *  - (Matrix4dc arg0, Vector3f arg1): org.joml.Vector3f
        *  - (Matrix4fc arg0, Vector3f arg1): org.joml.Vector3f
        */
-      mulDirection(arg0: org.joml.Matrix4dc | org.joml.Matrix4fc | org.joml.Matrix4x3fc, arg1?: org.joml.Vector3f): org.joml.Vector3f;
+      mulDirection(arg0: org.joml.Matrix4x3fc | org.joml.Matrix4dc | org.joml.Matrix4fc, arg1?: org.joml.Vector3f): org.joml.Vector3f;
       /**
        * Method Parameters: 
        *  - (Matrix4x3fc arg0): org.joml.Vector3f
        *  - (Matrix4fc arg0): org.joml.Vector3f
-       *  - (Matrix4fc arg0, Vector3f arg1): org.joml.Vector3f
        *  - (Matrix4x3fc arg0, Vector3f arg1): org.joml.Vector3f
+       *  - (Matrix4fc arg0, Vector3f arg1): org.joml.Vector3f
        */
       mulPosition(arg0: org.joml.Matrix4x3fc | org.joml.Matrix4fc, arg1?: org.joml.Vector3f): org.joml.Vector3f;
       /**

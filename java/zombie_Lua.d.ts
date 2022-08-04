@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-03T13:26Z
+ * File generated at 2022-08-04T16:17Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -401,10 +401,10 @@ declare module 'PipeWrench' {
       exposeAll(): void;
       /**
        * Method Parameters: 
-       *  - (KahluaTable arg0, Class arg1, Method arg2, String arg3): void
        *  - (KahluaTable arg0, Class arg1, Constructor arg2, String arg3): void
+       *  - (KahluaTable arg0, Class arg1, Method arg2, String arg3): void
        */
-      exposeGlobalClassFunction(arg0: se.krka.kahlua.vm.KahluaTable, arg1: java.lang.Class<any>, arg2: java.lang.reflect.Method | java.lang.reflect.Constructor<any>, arg3: string): void;
+      exposeGlobalClassFunction(arg0: se.krka.kahlua.vm.KahluaTable, arg1: java.lang.Class<any>, arg2: java.lang.reflect.Constructor<any> | java.lang.reflect.Method, arg3: string): void;
       /**
        * Method Parameters: 
        *  - (Object arg0): void

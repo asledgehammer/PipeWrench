@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:41.707Z
+ * File generated at: 2022-08-04T20:14:41.169Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,35 +36,41 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static addButton:
-        | ((_self: any, _data: any, _x: any, _y: any, _w: any, _h: any, _title: any, _func: any) => any)
-        | any;
+      static addButton: (_self: any, _data: any, _x: any, _y: any, _w: any, _h: any, _title: any, _func: any) => any;
 
-      static addComboBox: ((_self: any, _data: any, _x: any, _y: any, _w: any, _font: any, _func: any) => any) | any;
+      static addComboBox: (_self: any, _data: any, _x: any, _y: any, _w: any, _font: any, _func: any) => any;
 
-      static addHorzBar: ((_self: any, _y: any) => any) | any;
+      static addHorzBar: (_self: any, _y: any) => any;
 
-      static addLabel: ((_self: any, _data: any, _x: any, _y: any, _title: any, _font: any, _bLeft: any) => any) | any;
+      static addLabel: (_self: any, _data: any, _x: any, _y: any, _title: any, _font: any, _bLeft: any) => any;
 
-      static addSlider: ((_self: any, _data: any, _x: any, _y: any, _w: any, _h: any, _func: any) => any) | any;
+      static addSlider: (_self: any, _data: any, _x: any, _y: any, _w: any, _h: any, _func: any) => any;
 
-      static addTextEntryBox: ((_self: any, _data: any, _title: any, _x: any, _y: any, _w: any, _h: any) => any) | any;
+      static addTextEntryBox: (_self: any, _data: any, _title: any, _x: any, _y: any, _w: any, _h: any) => any;
 
-      static addTickBox:
-        | ((_self: any, _data: any, _x: any, _y: any, _w: any, _h: any, _title: any, options: any, _func: any) => any)
-        | any;
+      static addTickBox: (
+        _self: any,
+        _data: any,
+        _x: any,
+        _y: any,
+        _w: any,
+        _h: any,
+        _title: any,
+        options: any,
+        _func: any
+      ) => any;
 
-      static clamp01: ((_n: any) => any) | any;
+      static clamp01: (_n: any) => any;
 
-      static initHorzBars: ((_self: any, _x: any, _width: any) => any) | any;
+      static initHorzBars: (_self: any, _x: any, _width: any) => any;
 
-      static onMouseWheel: ((self: any, del: any) => any) | any;
+      static onMouseWheel: (self: any, del: any) => any;
 
-      static printval: ((_v: any, _d: any) => any) | any;
+      static printval: (_v: any, _d: any) => any;
 
-      static renderHorzBars: ((_self: any) => any) | any;
+      static renderHorzBars: (_self: any) => any;
 
-      static roundNum: ((num: any, numDecimalPlaces: any) => any) | any;
+      static roundNum: (num: any, numDecimalPlaces: any) => any;
     }
   }
   export namespace lua.client.DebugUIs.DebugMenu.ISDebugUtils {}

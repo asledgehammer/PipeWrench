@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:44.289Z
+ * File generated at: 2022-08-04T20:14:45.927Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,31 +36,35 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static Add: (() => any) | any;
+      static Add: () => any;
 
-      static AddPlayer: ((playerNum: any, playerObj: any) => any) | any;
+      static AddPlayer: (playerNum: any, playerObj: any) => any;
 
-      static CheckHordeSpawn:
-        | ((regionName: any, regionSpawn: any, regionSpawnX: any, regionSpawnY: any, regionSpawnZ: any) => any)
-        | any;
+      static CheckHordeSpawn: (
+        regionName: any,
+        regionSpawn: any,
+        regionSpawnX: any,
+        regionSpawnY: any,
+        regionSpawnZ: any
+      ) => any;
 
-      static CheckMetalGates: ((area: any) => any) | any;
+      static CheckMetalGates: (area: any) => any;
 
-      static EveryDays: (() => any) | any;
+      static EveryDays: () => any;
 
-      static EveryTenMinutes: (() => any) | any;
+      static EveryTenMinutes: () => any;
 
-      static OnGameStart: (() => any) | any;
+      static OnGameStart: () => any;
 
-      static OnInitWorld: (() => any) | any;
+      static OnInitWorld: () => any;
 
-      static OnPlayerUpdate: (() => any) | any;
+      static OnPlayerUpdate: () => any;
 
-      static RemovePlayer: ((p: any) => any) | any;
+      static RemovePlayer: (p: any) => any;
 
-      static Render: (() => any) | any;
+      static Render: () => any;
 
-      static ResetMetalGates: ((area: any) => any) | any;
+      static ResetMetalGates: (area: any) => any;
     }
   }
   export namespace lua.client.LastStand.OpeningHours {}

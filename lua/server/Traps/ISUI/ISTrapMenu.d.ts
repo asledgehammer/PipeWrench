@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:46.176Z
+ * File generated at: 2022-08-04T20:14:49.772Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,17 +36,17 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static doTrapMenu: ((player: any, context: any, worldobjects: any, test: any) => any) | any;
+      static doTrapMenu: (player: any, context: any, worldobjects: any, test: any) => any;
 
-      static onAddBait: ((worldobjects: any, bait: any, trap: any, player: any) => any) | any;
+      static onAddBait: (worldobjects: any, bait: any, trap: any, player: any) => any;
 
-      static onCheckTrap: ((worldobjects: any, trap: any, player: any) => any) | any;
+      static onCheckTrap: (worldobjects: any, trap: any, player: any) => any;
 
-      static onPlaceTrap: ((worldobjects: any, trap: any, player: any) => any) | any;
+      static onPlaceTrap: (worldobjects: any, trap: any, player: any) => any;
 
-      static onRemoveBait: ((worldobjects: any, trap: any, player: any) => any) | any;
+      static onRemoveBait: (worldobjects: any, trap: any, player: any) => any;
 
-      static onRemoveTrap: ((worldobjects: any, trap: any, player: any) => any) | any;
+      static onRemoveTrap: (worldobjects: any, trap: any, player: any) => any;
     }
   }
   export namespace lua.server.Traps.ISUI.ISTrapMenu {}

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:44.615Z
+ * File generated at: 2022-08-04T20:14:46.728Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -220,9 +220,9 @@ declare module 'PipeWrench' {
 
       update: (() => any) | any;
 
-      static initWorld: (() => any) | any;
+      static initWorld: () => any;
 
-      static loadBuild: ((self: any, box: any) => any) | any;
+      static loadBuild: (self: any, box: any) => any;
     }
 
     export class BCRC {
@@ -230,28 +230,26 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static dump: ((o: any, lvl: any) => any) | any;
+      static dump: (o: any, lvl: any) => any;
 
-      static inputModal:
-        | ((
-            _centered: any,
-            _width: any,
-            _height: any,
-            _posX: any,
-            _posY: any,
-            _text: any,
-            _onclick: any,
-            target: any,
-            param1: any,
-            param2: any
-          ) => any)
-        | any;
+      static inputModal: (
+        _centered: any,
+        _width: any,
+        _height: any,
+        _posX: any,
+        _posY: any,
+        _text: any,
+        _onclick: any,
+        target: any,
+        param1: any,
+        param2: any
+      ) => any;
 
-      static pline: ((text: any) => any) | any;
+      static pline: (text: any) => any;
 
-      static readSaveFile: (() => any) | any;
+      static readSaveFile: () => any;
 
-      static writeSaveFile: ((options: any) => any) | any;
+      static writeSaveFile: (options: any) => any;
     }
   }
   export namespace lua.client.OptionScreens.CharacterCreationProfession {}

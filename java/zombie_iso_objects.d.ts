@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-03T13:26Z
+ * File generated at 2022-08-04T16:17Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -960,10 +960,10 @@ declare module 'PipeWrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -1275,10 +1275,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -2286,10 +2286,10 @@ declare module 'PipeWrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -2596,10 +2596,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -3648,10 +3648,10 @@ declare module 'PipeWrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -3901,10 +3901,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (BarricadeAble arg0, boolean arg1): zombie.iso.objects.IsoBarricade
        *  - (BarricadeAble arg0, IsoGameCharacter arg1): zombie.iso.objects.IsoBarricade
+       *  - (BarricadeAble arg0, boolean arg1): zombie.iso.objects.IsoBarricade
        */
-      static AddBarricadeToObject(arg0: zombie.iso.objects.interfaces.BarricadeAble, arg1: boolean | zombie.characters.IsoGameCharacter): zombie.iso.objects.IsoBarricade;
+      static AddBarricadeToObject(arg0: zombie.iso.objects.interfaces.BarricadeAble, arg1: zombie.characters.IsoGameCharacter | boolean): zombie.iso.objects.IsoBarricade;
       /**
        * @noSelf
        *
@@ -3952,10 +3952,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -4912,10 +4912,10 @@ declare module 'PipeWrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -5187,10 +5187,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -6183,10 +6183,10 @@ declare module 'PipeWrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -6463,10 +6463,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -7434,10 +7434,10 @@ declare module 'PipeWrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -7709,10 +7709,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -8680,10 +8680,10 @@ declare module 'PipeWrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -8955,10 +8955,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -9936,10 +9936,10 @@ declare module 'PipeWrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -10221,10 +10221,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -11197,10 +11197,10 @@ declare module 'PipeWrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -11482,10 +11482,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -12495,10 +12495,10 @@ declare module 'PipeWrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -12771,10 +12771,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -12858,11 +12858,11 @@ declare module 'PipeWrench' {
 
       /**
        * Constructors: 
-       *  - (IsoCell arg0)
        *  - (IsoGameCharacter arg0)
+       *  - (IsoCell arg0)
        *  - (IsoGameCharacter arg0, boolean arg1)
        */
-      constructor(arg0: zombie.iso.IsoCell | zombie.characters.IsoGameCharacter, arg1?: boolean);
+      constructor(arg0: zombie.characters.IsoGameCharacter | zombie.iso.IsoCell, arg1?: boolean);
       /**
        * Method Parameters: 
        *  - (String arg0, String arg1, int arg2, float arg3, int arg4, int arg5, boolean arg6, int arg7, boolean arg8, float arg9, ColorInfo arg10): void
@@ -14383,10 +14383,10 @@ declare module 'PipeWrench' {
       setDestroyed(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ArrayList arg0): void
@@ -14912,10 +14912,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -16125,10 +16125,10 @@ declare module 'PipeWrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -16459,10 +16459,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -16605,6 +16605,16 @@ declare module 'PipeWrench' {
       static readonly WeakWooden: zombie.iso.objects.IsoDoor$DoorType;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): DoorType
+       */
+      static valueOf(arg0: string | null): zombie.iso.objects.IsoDoor$DoorType;
+
+      /** @noSelf */
+      static values(): zombie.iso.objects.IsoDoor$DoorType[];
+
     }
     /**
      * @customConstructor IsoFire.new
@@ -17542,10 +17552,10 @@ declare module 'PipeWrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -17859,10 +17869,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -19034,10 +19044,10 @@ declare module 'PipeWrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -19324,10 +19334,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -20341,10 +20351,10 @@ declare module 'PipeWrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -20655,10 +20665,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -21643,10 +21653,10 @@ declare module 'PipeWrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -21918,10 +21928,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -23001,10 +23011,10 @@ declare module 'PipeWrench' {
       setDelta(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -23329,10 +23339,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -24355,10 +24365,10 @@ declare module 'PipeWrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -24645,10 +24655,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -26356,10 +26366,10 @@ declare module 'PipeWrench' {
       setDestroyed(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ArrayList arg0): void
@@ -26831,10 +26841,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -26935,8 +26945,8 @@ declare module 'PipeWrench' {
       constructor(arg0: zombie.iso.IsoCell, arg1?: zombie.iso.IsoGridSquare, arg2?: zombie.iso.sprite.IsoSprite);
       /**
        * Method Parameters: 
-       *  - (String arg0, float arg1, float arg2, float arg3, String arg4, String arg5, int arg6): void
        *  - (String arg0, int arg1, int arg2, int arg3, String arg4, String arg5, int arg6): void
+       *  - (String arg0, float arg1, float arg2, float arg3, String arg4, String arg5, int arg6): void
        *  - (String arg0, float arg1, float arg2, float arg3, String arg4, String arg5, int arg6, boolean arg7): void
        *  - (String arg0, int arg1, int arg2, int arg3, String arg4, String arg5, int arg6, boolean arg7): void
        *  - (IsoPlayer arg0, String arg1, float arg2, float arg3, float arg4, String arg5, String arg6, int arg7): void
@@ -27887,10 +27897,10 @@ declare module 'PipeWrench' {
       setDeviceData(arg0: zombie.radio.devices.DeviceData): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -28174,10 +28184,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -29140,10 +29150,10 @@ declare module 'PipeWrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -29415,10 +29425,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -30381,10 +30391,10 @@ declare module 'PipeWrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -30656,10 +30666,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -31627,10 +31637,10 @@ declare module 'PipeWrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -31912,10 +31922,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -32933,10 +32943,10 @@ declare module 'PipeWrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -33228,10 +33238,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -33311,8 +33321,8 @@ declare module 'PipeWrench' {
       constructor(arg0: zombie.iso.IsoCell, arg1?: zombie.iso.IsoGridSquare, arg2?: zombie.iso.sprite.IsoSprite);
       /**
        * Method Parameters: 
-       *  - (String arg0, float arg1, float arg2, float arg3, String arg4, String arg5, int arg6): void
        *  - (String arg0, int arg1, int arg2, int arg3, String arg4, String arg5, int arg6): void
+       *  - (String arg0, float arg1, float arg2, float arg3, String arg4, String arg5, int arg6): void
        *  - (String arg0, float arg1, float arg2, float arg3, String arg4, String arg5, int arg6, boolean arg7): void
        *  - (String arg0, int arg1, int arg2, int arg3, String arg4, String arg5, int arg6, boolean arg7): void
        *  - (IsoPlayer arg0, String arg1, float arg2, float arg3, float arg4, String arg5, String arg6, int arg7): void
@@ -34283,10 +34293,10 @@ declare module 'PipeWrench' {
       setDeviceData(arg0: zombie.radio.devices.DeviceData): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -34570,10 +34580,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -35895,10 +35905,10 @@ declare module 'PipeWrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -35938,8 +35948,8 @@ declare module 'PipeWrench' {
       setIsDismantable(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (Boolean arg0): void
        *  - (boolean arg0): void
+       *  - (Boolean arg0): void
        */
       setIsDoor(arg0: boolean): void;
       /**
@@ -36332,10 +36342,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -37378,10 +37388,10 @@ declare module 'PipeWrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -37718,10 +37728,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -37803,6 +37813,16 @@ declare module 'PipeWrench' {
       static readonly Smoke: zombie.iso.objects.IsoTrap$ExplosionMode;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): ExplosionMode
+       */
+      static valueOf(arg0: string | null): zombie.iso.objects.IsoTrap$ExplosionMode;
+
+      /** @noSelf */
+      static values(): zombie.iso.objects.IsoTrap$ExplosionMode[];
+
     }
     /**
      * @customConstructor IsoTree.new
@@ -38726,10 +38746,10 @@ declare module 'PipeWrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -39006,10 +39026,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -39139,8 +39159,8 @@ declare module 'PipeWrench' {
       constructor(arg0: zombie.iso.IsoCell, arg1?: zombie.iso.IsoGridSquare, arg2?: zombie.iso.sprite.IsoSprite);
       /**
        * Method Parameters: 
-       *  - (String arg0, float arg1, float arg2, float arg3, String arg4, String arg5, int arg6): void
        *  - (String arg0, int arg1, int arg2, int arg3, String arg4, String arg5, int arg6): void
+       *  - (String arg0, float arg1, float arg2, float arg3, String arg4, String arg5, int arg6): void
        *  - (String arg0, float arg1, float arg2, float arg3, String arg4, String arg5, int arg6, boolean arg7): void
        *  - (String arg0, int arg1, int arg2, int arg3, String arg4, String arg5, int arg6, boolean arg7): void
        *  - (IsoPlayer arg0, String arg1, float arg2, float arg3, float arg4, String arg5, String arg6, int arg7): void
@@ -40091,10 +40111,10 @@ declare module 'PipeWrench' {
       setDeviceData(arg0: zombie.radio.devices.DeviceData): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -40378,10 +40398,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -41814,10 +41834,10 @@ declare module 'PipeWrench' {
       setDestroyed(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ArrayList arg0): void
@@ -42289,10 +42309,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -43436,10 +43456,10 @@ declare module 'PipeWrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -43783,10 +43803,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -43881,6 +43901,16 @@ declare module 'PipeWrench' {
       static readonly SinglePane: zombie.iso.objects.IsoWindow$WindowType;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): WindowType
+       */
+      static valueOf(arg0: string | null): zombie.iso.objects.IsoWindow$WindowType;
+
+      /** @noSelf */
+      static values(): zombie.iso.objects.IsoWindow$WindowType[];
+
     }
     /**
      * @customConstructor IsoWindowFrame.new
@@ -44911,10 +44941,10 @@ declare module 'PipeWrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -45201,10 +45231,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -46654,10 +46684,10 @@ declare module 'PipeWrench' {
       setDestroyed(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ArrayList arg0): void
@@ -47129,10 +47159,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -47227,6 +47257,16 @@ declare module 'PipeWrench' {
       static readonly Eye: zombie.iso.objects.IsoZombieGiblets$GibletType;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): GibletType
+       */
+      static valueOf(arg0: string | null): zombie.iso.objects.IsoZombieGiblets$GibletType;
+
+      /** @noSelf */
+      static values(): zombie.iso.objects.IsoZombieGiblets$GibletType[];
+
     }
     /**
      * @customConstructor ObjectRenderEffects.new
@@ -47509,6 +47549,16 @@ declare module 'PipeWrench' {
       static readonly Vegetation_Rustle: zombie.iso.objects.RenderEffectType;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): RenderEffectType
+       */
+      static valueOf(arg0: string | null): zombie.iso.objects.RenderEffectType;
+
+      /** @noSelf */
+      static values(): zombie.iso.objects.RenderEffectType[];
+
     }
   }
 }

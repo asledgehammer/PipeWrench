@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:43.602Z
+ * File generated at: 2022-08-04T20:14:44.395Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,13 +36,13 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static onKeyPressed: ((key: any) => any) | any;
+      static onKeyPressed: (key: any) => any;
 
-      static onKeyStartPressed: ((key: any) => any) | any;
+      static onKeyStartPressed: (key: any) => any;
 
-      static setVisibleAllUI: ((visible: any) => any) | any;
+      static setVisibleAllUI: (visible: any) => any;
 
-      static toggleUI: (() => any) | any;
+      static toggleUI: () => any;
     }
   }
   export namespace lua.client.ISUI.ISUIHandler {}

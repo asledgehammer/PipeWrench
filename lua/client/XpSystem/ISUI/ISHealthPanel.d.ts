@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:46.725Z
+ * File generated at: 2022-08-04T20:14:50.868Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -157,23 +157,21 @@ declare module 'PipeWrench' {
 
       updateBodyPartList: (() => any) | any;
 
-      static DidPatientMove: ((doctor: any, patient: any, patientX: any, patientY: any) => any) | any;
+      static DidPatientMove: (doctor: any, patient: any, patientX: any, patientY: any) => any;
 
-      static getBandageType: ((bodyPart: any) => any) | any;
+      static getBandageType: (bodyPart: any) => any;
 
-      static onCheat: ((bodyPart: any, action: any, player: any, otherPlayer: any) => any) | any;
+      static onCheat: (bodyPart: any, action: any, player: any, otherPlayer: any) => any;
 
-      static onCheatCurrentPlayer: ((bodyPart: any, action: any, player: any) => any) | any;
+      static onCheatCurrentPlayer: (bodyPart: any, action: any, player: any) => any;
 
-      static onCheatHealthCommand: ((module: any, command: any, args: any) => any) | any;
+      static onCheatHealthCommand: (module: any, command: any, args: any) => any;
 
-      static onCheatItem: ((itemType: any, playerObj: any) => any) | any;
+      static onCheatItem: (itemType: any, playerObj: any) => any;
 
-      static onCheatOtherPlayer: ((bodyPart: any, action: any, player: any, otherPlayer: any) => any) | any;
+      static onCheatOtherPlayer: (bodyPart: any, action: any, player: any, otherPlayer: any) => any;
 
-      static setBodyPartActionForPlayer:
-        | ((playerObj: any, bodyPart: any, action: any, jobType: any, args: any) => any)
-        | any;
+      static setBodyPartActionForPlayer: (playerObj: any, bodyPart: any, action: any, jobType: any, args: any) => any;
     }
 
     /** @customConstructor ISNewHealthPanel:new */

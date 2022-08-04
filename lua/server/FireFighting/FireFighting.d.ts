@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:42.423Z
+ * File generated at: 2022-08-04T20:14:42.291Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,15 +36,15 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static getExtinguisher: ((playerObj: any) => any) | any;
+      static getExtinguisher: (playerObj: any) => any;
 
-      static getExtinguisherUses: ((item: any) => any) | any;
+      static getExtinguisherUses: (item: any) => any;
 
-      static getSquareToExtinguish: ((square: any) => any) | any;
+      static getSquareToExtinguish: (square: any) => any;
 
-      static isExtinguisher: ((item: any) => any) | any;
+      static isExtinguisher: (item: any) => any;
 
-      static isSquareToExtinguish: ((square: any) => any) | any;
+      static isSquareToExtinguish: (square: any) => any;
     }
   }
   export namespace lua.server.FireFighting.FireFighting {}

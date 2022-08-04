@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:41.919Z
+ * File generated at: 2022-08-04T20:14:41.452Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -78,9 +78,9 @@ declare module 'PipeWrench' {
 
       titleBarHeight: (() => any) | any;
 
-      static removeItem: ((item: any, player: any) => any) | any;
+      static removeItem: (item: any, player: any) => any;
 
-      static removeItems: ((items: any, player: any) => any) | any;
+      static removeItems: (items: any, player: any) => any;
     }
   }
   export namespace lua.client.DebugUIs.ISRemoveItemTool {}

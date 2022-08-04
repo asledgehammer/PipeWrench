@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-03T13:26Z
+ * File generated at 2022-08-04T16:17Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -147,10 +147,10 @@ declare module 'PipeWrench' {
       removeMember(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (ServerChatMessage arg0): void
        *  - (ChatMessage arg0): void
+       *  - (ServerChatMessage arg0): void
        */
-      sendMessageToChatMembers(arg0: zombie.chat.ServerChatMessage | zombie.chat.ChatMessage): void;
+      sendMessageToChatMembers(arg0: zombie.chat.ChatMessage | zombie.chat.ServerChatMessage): void;
       /**
        * Method Parameters: 
        *  - (short arg0, ChatMessage arg1): void
@@ -576,6 +576,16 @@ declare module 'PipeWrench' {
       static readonly SinglePlayer: zombie.chat.ChatMode;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): ChatMode
+       */
+      static valueOf(arg0: string | null): zombie.chat.ChatMode;
+
+      /** @noSelf */
+      static values(): zombie.chat.ChatMode[];
+
     }
     /**
      * @customConstructor ChatSettings.new
@@ -778,6 +788,16 @@ declare module 'PipeWrench' {
       static readonly Small: zombie.chat.ChatSettings$FontSize;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): FontSize
+       */
+      static valueOf(arg0: string | null): zombie.chat.ChatSettings$FontSize;
+
+      /** @noSelf */
+      static values(): zombie.chat.ChatSettings$FontSize[];
+
     }
     /**
      * @customConstructor ChatTab.new

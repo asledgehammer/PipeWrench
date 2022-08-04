@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:42.603Z
+ * File generated at: 2022-08-04T20:14:42.584Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,35 +36,35 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static doClick: ((object: any, x: any, y: any) => any) | any;
+      static doClick: (object: any, x: any, y: any) => any;
 
-      static doClickCurtain: ((object: any, playerNum: any, playerObj: any) => any) | any;
+      static doClickCurtain: (object: any, playerNum: any, playerObj: any) => any;
 
-      static doClickDoor: ((object: any, playerNum: any, playerObj: any) => any) | any;
+      static doClickDoor: (object: any, playerNum: any, playerObj: any) => any;
 
-      static doClickLightSwitch: ((object: any, playerNum: any, playerObj: any) => any) | any;
+      static doClickLightSwitch: (object: any, playerNum: any, playerObj: any) => any;
 
-      static doClickSpecificObject: ((object: any, playerNum: any, playerObj: any) => any) | any;
+      static doClickSpecificObject: (object: any, playerNum: any, playerObj: any) => any;
 
-      static doClickThumpable: ((object: any, playerNum: any, playerObj: any) => any) | any;
+      static doClickThumpable: (object: any, playerNum: any, playerObj: any) => any;
 
-      static doClickWindow: ((object: any, playerNum: any, playerObj: any) => any) | any;
+      static doClickWindow: (object: any, playerNum: any, playerObj: any) => any;
 
-      static doDoubleClick: ((object: any, x: any, y: any) => any) | any;
+      static doDoubleClick: (object: any, x: any, y: any) => any;
 
-      static doRClick: ((object: any, x: any, y: any) => any) | any;
+      static doRClick: (object: any, x: any, y: any) => any;
 
-      static doRDoubleClick: ((object: any, x: any, y: any) => any) | any;
+      static doRDoubleClick: (object: any, x: any, y: any) => any;
 
-      static onObjectLeftMouseButtonDown: ((object: any, x: any, y: any) => any) | any;
+      static onObjectLeftMouseButtonDown: (object: any, x: any, y: any) => any;
 
-      static onObjectLeftMouseButtonUp: ((object: any, x: any, y: any) => any) | any;
+      static onObjectLeftMouseButtonUp: (object: any, x: any, y: any) => any;
 
-      static onObjectRightMouseButtonDown: ((object: any, x: any, y: any) => any) | any;
+      static onObjectRightMouseButtonDown: (object: any, x: any, y: any) => any;
 
-      static onObjectRightMouseButtonUp: ((object: any, x: any, y: any) => any) | any;
+      static onObjectRightMouseButtonUp: (object: any, x: any, y: any) => any;
 
-      static onTick: (() => any) | any;
+      static onTick: () => any;
     }
   }
   export namespace lua.server.ISObjectClickHandler {}

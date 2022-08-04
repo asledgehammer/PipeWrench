@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:42.326Z
+ * File generated at: 2022-08-04T20:14:42.076Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -72,33 +72,33 @@ declare module 'PipeWrench' {
 
       update: (() => any) | any;
 
-      static getCurrentGrowingPhase: ((info: any, farmingLevel: any) => any) | any;
+      static getCurrentGrowingPhase: (info: any, farmingLevel: any) => any;
 
-      static getDiseaseName: ((info: any) => any) | any;
+      static getDiseaseName: (info: any) => any;
 
-      static getFertilizerColor: ((info: any) => any) | any;
+      static getFertilizerColor: (info: any) => any;
 
-      static getHealth: ((info: any, farmingLevel: any) => any) | any;
+      static getHealth: (info: any, farmingLevel: any) => any;
 
-      static getHealthColor: ((info: any, farmingLevel: any) => any) | any;
+      static getHealthColor: (info: any, farmingLevel: any) => any;
 
-      static getLastWatedHour: ((plant: any) => any) | any;
+      static getLastWatedHour: (plant: any) => any;
 
-      static getNextGrowingPhase: ((info: any) => any) | any;
+      static getNextGrowingPhase: (info: any) => any;
 
-      static getNoWateredSinceColor: ((plant: any, lastWatedHour: any, farmingLevel: any) => any) | any;
+      static getNoWateredSinceColor: (plant: any, lastWatedHour: any, farmingLevel: any) => any;
 
-      static getTitleColor: ((plant: any) => any) | any;
+      static getTitleColor: (plant: any) => any;
 
-      static getWaterBarWidth: ((info: any) => any) | any;
+      static getWaterBarWidth: (info: any) => any;
 
-      static getWaterLvl: ((plant: any, farmingLevel: any) => any) | any;
+      static getWaterLvl: (plant: any, farmingLevel: any) => any;
 
-      static getWaterLvlBarColor: ((info: any, farmingLevel: any) => any) | any;
+      static getWaterLvlBarColor: (info: any, farmingLevel: any) => any;
 
-      static getWaterLvlColor: ((plant: any, farmingLevel: any) => any) | any;
+      static getWaterLvlColor: (plant: any, farmingLevel: any) => any;
 
-      static RequiredWidth: (() => any) | any;
+      static RequiredWidth: () => any;
     }
 
     export class disease {

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-03T13:26Z
+ * File generated at 2022-08-04T16:17Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -830,6 +830,16 @@ declare module 'PipeWrench' {
       static readonly Z: zombie.core.skinnedmodel.animation.BoneAxis;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): BoneAxis
+       */
+      static valueOf(arg0: string | null): zombie.core.skinnedmodel.animation.BoneAxis;
+
+      /** @noSelf */
+      static values(): zombie.core.skinnedmodel.animation.BoneAxis[];
+
     }
     /**
      * @customConstructor IAnimListener.new

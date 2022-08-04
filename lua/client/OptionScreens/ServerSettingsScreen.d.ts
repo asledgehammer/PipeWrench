@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:44.845Z
+ * File generated at: 2022-08-04T20:14:47.197Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -74,7 +74,7 @@ declare module 'PipeWrench' {
 
       onResolutionChange: ((oldw: any, oldh: any, neww: any, newh: any) => any) | any;
 
-      static getSandboxSettingsTable: (() => any) | any;
+      static getSandboxSettingsTable: () => any;
     }
 
     /** @customConstructor SpawnRegionsNameFilePanel:new */

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:41.531Z
+ * File generated at: 2022-08-04T20:14:40.896Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -56,9 +56,9 @@ declare module 'PipeWrench' {
 
       update: (() => any) | any;
 
-      static OnSimulationButton: (() => any) | any;
+      static OnSimulationButton: () => any;
 
-      static OnSimulationButtonOverride: ((_rainModOverride: any) => any) | any;
+      static OnSimulationButtonOverride: (_rainModOverride: any) => any;
     }
   }
   export namespace lua.client.DebugUIs.DebugMenu.Climate.ClimDebuggersPanel {}

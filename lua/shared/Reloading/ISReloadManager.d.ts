@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:45.167Z
+ * File generated at: 2022-08-04T20:14:47.859Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -108,13 +108,13 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static checkLoadedHook: ((character: any, chargeDelta: any) => any) | any;
+      static checkLoadedHook: (character: any, chargeDelta: any) => any;
 
-      static fireShotHook: ((wielder: any, weapon: any) => any) | any;
+      static fireShotHook: (wielder: any, weapon: any) => any;
 
-      static startRackingHook: ((pl: any) => any) | any;
+      static startRackingHook: (pl: any) => any;
 
-      static startReloadHook: ((pl: any) => any) | any;
+      static startReloadHook: (pl: any) => any;
     }
   }
   export namespace lua.shared.Reloading.ISReloadManager {}

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:43.865Z
+ * File generated at: 2022-08-04T20:14:44.918Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -152,7 +152,7 @@ declare module 'PipeWrench' {
 
       titleBarHeight: (() => any) | any;
 
-      static TitleBarHeight: (() => any) | any;
+      static TitleBarHeight: () => any;
     }
 
     export class ISMiniMap {
@@ -160,15 +160,15 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static FocusMiniMap: ((playerNum: any) => any) | any;
+      static FocusMiniMap: (playerNum: any) => any;
 
-      static InitPlayer: ((playerNum: any) => any) | any;
+      static InitPlayer: (playerNum: any) => any;
 
-      static IsAllowed: (() => any) | any;
+      static IsAllowed: () => any;
 
-      static Recreate: ((playerNum: any) => any) | any;
+      static Recreate: (playerNum: any) => any;
 
-      static ToggleMiniMap: ((playerNum: any) => any) | any;
+      static ToggleMiniMap: (playerNum: any) => any;
     }
   }
   export namespace lua.client.ISUI.Maps.ISMiniMap {}

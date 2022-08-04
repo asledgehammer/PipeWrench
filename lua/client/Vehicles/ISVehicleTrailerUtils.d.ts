@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:46.469Z
+ * File generated at: 2022-08-04T20:14:50.354Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,13 +36,11 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static getTowableVehicleNear:
-        | ((square: any, ignoreVehicle: any, attachmentA: any, attachmentB: any) => any)
-        | any;
+      static getTowableVehicleNear: (square: any, ignoreVehicle: any, attachmentA: any, attachmentB: any) => any;
 
-      static onTrailerPathFail: ((playerObj: any) => any) | any;
+      static onTrailerPathFail: (playerObj: any) => any;
 
-      static walkToTrailer: ((playerObj: any, vehicle: any, attachment: any, nextAction: any) => any) | any;
+      static walkToTrailer: (playerObj: any, vehicle: any, attachment: any, nextAction: any) => any;
     }
   }
   export namespace lua.client.Vehicles.ISVehicleTrailerUtils {}

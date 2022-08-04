@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:45.320Z
+ * File generated at: 2022-08-04T20:14:48.186Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -38,13 +38,13 @@ declare module 'PipeWrench' {
 
       static useJoypad: any;
 
-      static addEntry11: (() => any) | any;
+      static addEntry11: () => any;
 
-      static addSurvivalGuideEntry: ((index: any) => any) | any;
+      static addSurvivalGuideEntry: (index: any) => any;
 
-      static getEntry: ((num: any) => any) | any;
+      static getEntry: (num: any) => any;
 
-      static getEntryCount: (() => any) | any;
+      static getEntryCount: () => any;
     }
   }
   export namespace lua.client.SurvivalGuide.SurvivalGuideEntries {}

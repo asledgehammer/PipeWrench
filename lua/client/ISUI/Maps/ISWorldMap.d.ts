@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:43.890Z
+ * File generated at: 2022-08-04T20:14:44.983Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -178,23 +178,23 @@ declare module 'PipeWrench' {
 
       updateJoypad: (() => any) | any;
 
-      static checkKey: ((key: any) => any) | any;
+      static checkKey: (key: any) => any;
 
-      static HideWorldMap: ((playerNum: any) => any) | any;
+      static HideWorldMap: (playerNum: any) => any;
 
-      static IsAllowed: (() => any) | any;
+      static IsAllowed: () => any;
 
-      static onKeyKeepPressed: ((key: any) => any) | any;
+      static onKeyKeepPressed: (key: any) => any;
 
-      static onKeyReleased: ((key: any) => any) | any;
+      static onKeyReleased: (key: any) => any;
 
-      static onKeyStartPressed: ((key: any) => any) | any;
+      static onKeyStartPressed: (key: any) => any;
 
-      static OnPlayerDeath: ((playerObj: any) => any) | any;
+      static OnPlayerDeath: (playerObj: any) => any;
 
-      static ShowWorldMap: ((playerNum: any) => any) | any;
+      static ShowWorldMap: (playerNum: any) => any;
 
-      static ToggleWorldMap: ((playerNum: any) => any) | any;
+      static ToggleWorldMap: (playerNum: any) => any;
     }
 
     /** @customConstructor ISWorldMapButtonPanel:new */

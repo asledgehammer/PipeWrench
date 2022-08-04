@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-03T13:26Z
+ * File generated at 2022-08-04T16:17Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -83,10 +83,10 @@ declare module 'PipeWrench' {
     export class InventoryItem {
       /**
        * Constructors: 
-       *  - (String arg0, String arg1, String arg2, Item arg3)
        *  - (String arg0, String arg1, String arg2, String arg3)
+       *  - (String arg0, String arg1, String arg2, Item arg3)
        */
-      constructor(arg0: string, arg1: string, arg2: string, arg3: zombie.scripting.objects.Item | string);
+      constructor(arg0: string, arg1: string, arg2: string, arg3: string | zombie.scripting.objects.Item);
       /**
        * Method Parameters: 
        *  - (InventoryItem arg0): boolean
@@ -2011,11 +2011,11 @@ declare module 'PipeWrench' {
       constructor(arg0?: number | string, arg1?: zombie.iso.IsoGridSquare | string, arg2?: zombie.iso.IsoObject | zombie.iso.IsoGridSquare, arg3?: zombie.iso.IsoObject);
       /**
        * Method Parameters: 
-       *  - (String arg0): zombie.inventory.InventoryItem
        *  - (InventoryItem arg0): zombie.inventory.InventoryItem
+       *  - (String arg0): zombie.inventory.InventoryItem
        *  - (String arg0, float arg1): boolean
        */
-      AddItem(arg0: string | zombie.inventory.InventoryItem, arg1?: number): zombie.inventory.InventoryItem | boolean;
+      AddItem(arg0: zombie.inventory.InventoryItem | string, arg1?: number): zombie.inventory.InventoryItem | boolean;
       /**
        * Method Parameters: 
        *  - (InventoryItem arg0): zombie.inventory.InventoryItem
@@ -2087,11 +2087,11 @@ declare module 'PipeWrench' {
       HasType(arg0: zombie.inventory.ItemType): boolean;
       /**
        * Method Parameters: 
-       *  - (String arg0): void
        *  - (ItemType arg0): zombie.inventory.InventoryItem
        *  - (InventoryItem arg0): void
+       *  - (String arg0): void
        */
-      Remove(arg0: string | zombie.inventory.ItemType | zombie.inventory.InventoryItem): void | zombie.inventory.InventoryItem;
+      Remove(arg0: zombie.inventory.ItemType | zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem | void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -2125,13 +2125,13 @@ declare module 'PipeWrench' {
       clear(): void;
       /**
        * Method Parameters: 
-       *  - (InventoryItem arg0): boolean
        *  - (String arg0): boolean
+       *  - (InventoryItem arg0): boolean
        *  - (InventoryItem arg0, boolean arg1): boolean
        *  - (String arg0, boolean arg1): boolean
        *  - (String arg0, boolean arg1, boolean arg2): boolean
        */
-      contains(arg0: zombie.inventory.InventoryItem | string, arg1?: boolean, arg2?: boolean): boolean;
+      contains(arg0: string | zombie.inventory.InventoryItem, arg1?: boolean, arg2?: boolean): boolean;
       /**
        * Method Parameters: 
        *  - (LuaClosure arg0): boolean
@@ -2364,10 +2364,10 @@ declare module 'PipeWrench' {
       getBestBandage(arg0: zombie.characters.SurvivorDesc): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (String arg0): zombie.inventory.InventoryItem
        *  - (Predicate arg0): zombie.inventory.InventoryItem
+       *  - (String arg0): zombie.inventory.InventoryItem
        */
-      getBestCondition(arg0: string | java.util._function_.Predicate<zombie.inventory.InventoryItem>): zombie.inventory.InventoryItem;
+      getBestCondition(arg0: java.util._function_.Predicate<zombie.inventory.InventoryItem> | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (LuaClosure arg0): zombie.inventory.InventoryItem
@@ -3430,7 +3430,24 @@ declare module 'PipeWrench' {
       static readonly Weapon: zombie.inventory.ItemType;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (int arg0): ItemType
+       */
+      static fromIndex(arg0: number): zombie.inventory.ItemType;
+
       index(): number;
+
+      /**
+       * @noSelf
+       *
+       * (String arg0): ItemType
+       */
+      static valueOf(arg0: string | null): zombie.inventory.ItemType;
+
+      /** @noSelf */
+      static values(): zombie.inventory.ItemType[];
 
     }
     /**

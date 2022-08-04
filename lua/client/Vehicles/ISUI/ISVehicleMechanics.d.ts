@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:46.423Z
+ * File generated at: 2022-08-04T20:14:50.269Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -162,41 +162,46 @@ declare module 'PipeWrench' {
 
       updateLayout: (() => any) | any;
 
-      static onCheatGetKey: ((playerObj: any, vehicle: any) => any) | any;
+      static onCheatGetKey: (playerObj: any, vehicle: any) => any;
 
-      static onCheatHotwire: ((playerObj: any, vehicle: any, hotwired: any, broken: any) => any) | any;
+      static onCheatHotwire: (playerObj: any, vehicle: any, hotwired: any, broken: any) => any;
 
-      static onCheatRemove: ((playerObj: any, vehicle: any) => any) | any;
+      static onCheatRemove: (playerObj: any, vehicle: any) => any;
 
-      static onCheatRemoveAux: ((dummy: any, button: any, playerObj: any, vehicle: any) => any) | any;
+      static onCheatRemoveAux: (dummy: any, button: any, playerObj: any, vehicle: any) => any;
 
-      static onCheatRepair: ((playerObj: any, vehicle: any) => any) | any;
+      static onCheatRepair: (playerObj: any, vehicle: any) => any;
 
-      static onCheatRepairPart: ((playerObj: any, part: any) => any) | any;
+      static onCheatRepairPart: (playerObj: any, part: any) => any;
 
-      static onCheatSetCondition: ((playerObj: any, part: any) => any) | any;
+      static onCheatSetCondition: (playerObj: any, part: any) => any;
 
-      static onCheatSetConditionAux: ((target: any, button: any, playerObj: any, part: any) => any) | any;
+      static onCheatSetConditionAux: (target: any, button: any, playerObj: any, part: any) => any;
 
-      static onCheatSetContentAmount: ((playerObj: any, part: any) => any) | any;
+      static onCheatSetContentAmount: (playerObj: any, part: any) => any;
 
-      static onCheatSetContentAmountAux: ((target: any, button: any, playerObj: any, part: any) => any) | any;
+      static onCheatSetContentAmountAux: (target: any, button: any, playerObj: any, part: any) => any;
 
-      static onCheatSetRust: ((playerObj: any, vehicle: any) => any) | any;
+      static onCheatSetRust: (playerObj: any, vehicle: any) => any;
 
-      static onCheatSetRustAux: ((target: any, button: any, playerObj: any, vehicle: any) => any) | any;
+      static onCheatSetRustAux: (target: any, button: any, playerObj: any, vehicle: any) => any;
 
-      static onCheatToggle: ((playerObj: any) => any) | any;
+      static onCheatToggle: (playerObj: any) => any;
 
-      static onConfigHeadlight: ((playerObj: any, part: any, dir: any) => any) | any;
+      static onConfigHeadlight: (playerObj: any, part: any, dir: any) => any;
 
-      static OnMechanicActionDone:
-        | ((chr: any, success: any, vehicleId: any, partId: any, itemId: any, installing: any) => any)
-        | any;
+      static OnMechanicActionDone: (
+        chr: any,
+        success: any,
+        vehicleId: any,
+        partId: any,
+        itemId: any,
+        installing: any
+      ) => any;
 
-      static onRepairEngine: ((playerObj: any, part: any) => any) | any;
+      static onRepairEngine: (playerObj: any, part: any) => any;
 
-      static onTakeEngineParts: ((playerObj: any, part: any) => any) | any;
+      static onTakeEngineParts: (playerObj: any, part: any) => any;
     }
   }
   export namespace lua.client.Vehicles.ISUI.ISVehicleMechanics {}

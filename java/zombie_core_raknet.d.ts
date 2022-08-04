@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-03T13:26Z
+ * File generated at 2022-08-04T16:17Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -471,6 +471,16 @@ declare module 'PipeWrench' {
       static readonly Success: zombie.core.raknet.UdpConnection$CheckState;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): CheckState
+       */
+      static valueOf(arg0: string | null): zombie.core.raknet.UdpConnection$CheckState;
+
+      /** @noSelf */
+      static values(): zombie.core.raknet.UdpConnection$CheckState[];
+
     }
     /** [ENUM] zombie.core.raknet.UdpConnection$ChecksumState */
     export class UdpConnection$ChecksumState {
@@ -480,6 +490,16 @@ declare module 'PipeWrench' {
       static readonly Init: zombie.core.raknet.UdpConnection$ChecksumState;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): ChecksumState
+       */
+      static valueOf(arg0: string | null): zombie.core.raknet.UdpConnection$ChecksumState;
+
+      /** @noSelf */
+      static values(): zombie.core.raknet.UdpConnection$ChecksumState[];
+
     }
     /**
      * @customConstructor MPClientStatistic.new

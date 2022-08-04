@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:42.336Z
+ * File generated at: 2022-08-04T20:14:42.095Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -58,51 +58,51 @@ declare module 'PipeWrench' {
 
       onWaterSquareSelected: (() => any) | any;
 
-      static canDigHere: ((worldObjects: any) => any) | any;
+      static canDigHere: (worldObjects: any) => any;
 
-      static canPlow: ((seedAvailable: any, typeOfSeed: any, option: any) => any) | any;
+      static canPlow: (seedAvailable: any, typeOfSeed: any, option: any) => any;
 
-      static doFarmingMenu: ((player: any, context: any, worldobjects: any, test: any) => any) | any;
+      static doFarmingMenu: (player: any, context: any, worldobjects: any, test: any) => any;
 
-      static doFarmingMenu2: ((player: any, context: any, worldobjects: any, test: any) => any) | any;
+      static doFarmingMenu2: (player: any, context: any, worldobjects: any, test: any) => any;
 
-      static getPlantName: ((plant: any) => any) | any;
+      static getPlantName: (plant: any) => any;
 
-      static getShovel: ((player: any) => any) | any;
+      static getShovel: (player: any) => any;
 
-      static getShovelAnim: ((item: any) => any) | any;
+      static getShovelAnim: (item: any) => any;
 
-      static isValidPlant: ((plant: any) => any) | any;
+      static isValidPlant: (plant: any) => any;
 
-      static itemSortByName: ((a: any, b: any) => any) | any;
+      static itemSortByName: (a: any, b: any) => any;
 
-      static onCheat: ((worldobjects: any, plant: any, args: any) => any) | any;
+      static onCheat: (worldobjects: any, plant: any, args: any) => any;
 
-      static onCheatGrow: ((worldobjects: any, plant: any) => any) | any;
+      static onCheatGrow: (worldobjects: any, plant: any) => any;
 
-      static onCheatWater: ((worldobjects: any, plant: any) => any) | any;
+      static onCheatWater: (worldobjects: any, plant: any) => any;
 
-      static onFertilize: ((worldobjects: any, handItem: any, plant: any, sq: any, playerObj: any) => any) | any;
+      static onFertilize: (worldobjects: any, handItem: any, plant: any, sq: any, playerObj: any) => any;
 
-      static onFliesCure: ((worldobjects: any, uses: any, sq: any, playerObj: any) => any) | any;
+      static onFliesCure: (worldobjects: any, uses: any, sq: any, playerObj: any) => any;
 
-      static onHarvest: ((worldobjects: any, plantToharvest: any, sq: any, playerObj: any) => any) | any;
+      static onHarvest: (worldobjects: any, plantToharvest: any, sq: any, playerObj: any) => any;
 
-      static onInfo: ((worldobjects: any, plant: any, sq: any, playerObj: any) => any) | any;
+      static onInfo: (worldobjects: any, plant: any, sq: any, playerObj: any) => any;
 
-      static onJoypadFarming: ((square: any, player: any) => any) | any;
+      static onJoypadFarming: (square: any, player: any) => any;
 
-      static onMildewCure: ((worldobjects: any, uses: any, sq: any, playerObj: any) => any) | any;
+      static onMildewCure: (worldobjects: any, uses: any, sq: any, playerObj: any) => any;
 
-      static onPlow: ((worldobjects: any, player: any, handItem: any) => any) | any;
+      static onPlow: (worldobjects: any, player: any, handItem: any) => any;
 
-      static onSeed: ((playerObj: any, typeOfSeed: any, plant: any, sq: any) => any) | any;
+      static onSeed: (playerObj: any, typeOfSeed: any, plant: any, sq: any) => any;
 
-      static onShovel: ((worldobjects: any, plant: any, player: any, sq: any) => any) | any;
+      static onShovel: (worldobjects: any, plant: any, player: any, sq: any) => any;
 
-      static onWater: ((worldobjects: any, uses: any, handItem: any, playerObj: any, plant: any, sq: any) => any) | any;
+      static onWater: (worldobjects: any, uses: any, handItem: any, playerObj: any, plant: any, sq: any) => any;
 
-      static walkToPlant: ((playerObj: any, square: any) => any) | any;
+      static walkToPlant: (playerObj: any, square: any) => any;
     }
   }
   export namespace lua.client.Farming.ISUI.ISFarmingMenu {}

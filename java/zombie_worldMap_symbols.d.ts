@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-03T13:26Z
+ * File generated at 2022-08-04T16:17Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -231,6 +231,16 @@ declare module 'PipeWrench' {
       static readonly Texture: zombie.worldMap.symbols.WorldMapSymbols$WorldMapSymbolType;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): WorldMapSymbolType
+       */
+      static valueOf(arg0: string | null): zombie.worldMap.symbols.WorldMapSymbols$WorldMapSymbolType;
+
+      /** @noSelf */
+      static values(): zombie.worldMap.symbols.WorldMapSymbols$WorldMapSymbolType[];
+
     }
     /**
      * @customConstructor WorldMapSymbolsV1.new

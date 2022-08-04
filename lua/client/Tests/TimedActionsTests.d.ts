@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:45.371Z
+ * File generated at: 2022-08-04T20:14:48.242Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,11 +36,11 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static runAll: (() => any) | any;
+      static runAll: () => any;
 
-      static runOne: ((name: any) => any) | any;
+      static runOne: (name: any) => any;
 
-      static stop: (() => any) | any;
+      static stop: () => any;
     }
   }
   export namespace lua.client.Tests.TimedActionsTests {}

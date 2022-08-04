@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:42.572Z
+ * File generated at: 2022-08-04T20:14:42.519Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,11 +36,11 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static getBrokenWindow: ((feeler: any) => any) | any;
+      static getBrokenWindow: (feeler: any) => any;
 
-      static scratchFromWindow: ((feeler: any) => any) | any;
+      static scratchFromWindow: (feeler: any) => any;
 
-      static update: (() => any) | any;
+      static update: () => any;
     }
   }
   export namespace lua.server.HealthSystem.HealthUpdate {}

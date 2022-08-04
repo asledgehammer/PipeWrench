@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:42.645Z
+ * File generated at: 2022-08-04T20:14:42.644Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -74,7 +74,7 @@ declare module 'PipeWrench' {
 
       update: (() => any) | any;
 
-      static gotTickets: ((tickets: any) => any) | any;
+      static gotTickets: (tickets: any) => any;
     }
   }
   export namespace lua.client.ISUI.AdminPanel.ISAdminTicketsUI {}

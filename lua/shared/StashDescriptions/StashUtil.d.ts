@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:45.283Z
+ * File generated at: 2022-08-04T20:14:48.128Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -42,7 +42,7 @@ declare module 'PipeWrench' {
 
       addStamp: ((symbol: any, text: any, mapX: any, mapY: any, r: any, g: any, b: any) => any) | any;
 
-      static newStash: ((name: any, type: any, item: any, customName: any) => any) | any;
+      static newStash: (name: any, type: any, item: any, customName: any) => any;
     }
   }
   export namespace lua.shared.StashDescriptions.StashUtil {}

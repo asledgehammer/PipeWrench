@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-03T13:26Z
+ * File generated at 2022-08-04T16:17Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -173,6 +173,16 @@ declare module 'PipeWrench' {
       static readonly ZombieHitPlayer: zombie.network.packets.hit.HitCharacterPacket$HitType;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): HitType
+       */
+      static valueOf(arg0: string | null): zombie.network.packets.hit.HitCharacterPacket$HitType;
+
+      /** @noSelf */
+      static values(): zombie.network.packets.hit.HitCharacterPacket$HitType[];
+
     }
     /**
      * @customConstructor HitInfo.new

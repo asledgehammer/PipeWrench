@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:44.189Z
+ * File generated at: 2022-08-04T20:14:45.680Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -148,25 +148,25 @@ declare module 'PipeWrench' {
 
       static forceActivate: any;
 
-      static getMainMenuJoypad: (() => any) | any;
+      static getMainMenuJoypad: () => any;
 
-      static onCoopJoinFailed: ((playerNum: any) => any) | any;
+      static onCoopJoinFailed: (playerNum: any) => any;
 
-      static onGamepadConnect: ((id: any) => any) | any;
+      static onGamepadConnect: (id: any) => any;
 
-      static onGamepadDisconnect: ((id: any) => any) | any;
+      static onGamepadDisconnect: (id: any) => any;
 
-      static onGameStart: (() => any) | any;
+      static onGameStart: () => any;
 
-      static onPlayerDeath: ((playerObj: any) => any) | any;
+      static onPlayerDeath: (playerObj: any) => any;
 
-      static onRenderUI: (() => any) | any;
+      static onRenderUI: () => any;
 
-      static restoreAllFocus: (() => any) | any;
+      static restoreAllFocus: () => any;
 
-      static saveAllFocus: (() => any) | any;
+      static saveAllFocus: () => any;
 
-      static useKeyboardMouse: (() => any) | any;
+      static useKeyboardMouse: () => any;
     }
   }
   export namespace lua.shared.JoyPad.JoyPadSetup {}

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:43.206Z
+ * File generated at: 2022-08-04T20:14:43.610Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -38,29 +38,29 @@ declare module 'PipeWrench' {
 
       static enableLog: any;
 
-      static CallRestoreLayout: ((name: any, layout: any) => any) | any;
+      static CallRestoreLayout: (name: any, layout: any) => any;
 
-      static CallSaveLayout: ((name: any, layout: any) => any) | any;
+      static CallSaveLayout: (name: any, layout: any) => any;
 
-      static DefaultRestoreWindow: ((window: any, layout: any) => any) | any;
+      static DefaultRestoreWindow: (window: any, layout: any) => any;
 
-      static DefaultSaveWindow: ((window: any, layout: any) => any) | any;
+      static DefaultSaveWindow: (window: any, layout: any) => any;
 
-      static FindResizeWidget: ((window: any) => any) | any;
+      static FindResizeWidget: (window: any) => any;
 
-      static OnPostSave: (() => any) | any;
+      static OnPostSave: () => any;
 
-      static ReadIni: (() => any) | any;
+      static ReadIni: () => any;
 
-      static RegisterWindow: ((name: any, funcs: any, target: any) => any) | any;
+      static RegisterWindow: (name: any, funcs: any, target: any) => any;
 
-      static SaveLayout: ((name: any, window: any) => any) | any;
+      static SaveLayout: (name: any, window: any) => any;
 
-      static SaveWindowVisible: ((window: any, layout: any) => any) | any;
+      static SaveWindowVisible: (window: any, layout: any) => any;
 
-      static TryRestore: ((name: any) => any) | any;
+      static TryRestore: (name: any) => any;
 
-      static WriteIni: (() => any) | any;
+      static WriteIni: () => any;
     }
   }
   export namespace lua.client.ISUI.ISLayoutManager {}

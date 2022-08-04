@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:43.055Z
+ * File generated at: 2022-08-04T20:14:43.380Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,31 +36,31 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static onAddAllFuel: ((playerObj: any, fireplace: any) => any) | any;
+      static onAddAllFuel: (playerObj: any, fireplace: any) => any;
 
-      static onAddFuel: ((playerObj: any, fireplace: any, fuelType: any) => any) | any;
+      static onAddFuel: (playerObj: any, fireplace: any, fuelType: any) => any;
 
-      static onAddMultipleFuel: ((playerObj: any, fireplace: any, fuelType: any) => any) | any;
+      static onAddMultipleFuel: (playerObj: any, fireplace: any, fuelType: any) => any;
 
-      static onDisplayInfo: ((worldobjects: any, player: any, bbq: any) => any) | any;
+      static onDisplayInfo: (worldobjects: any, player: any, bbq: any) => any;
 
-      static onExtinguish: ((worldobjects: any, player: any, fireplace: any) => any) | any;
+      static onExtinguish: (worldobjects: any, player: any, fireplace: any) => any;
 
-      static OnFillWorldObjectContextMenu: ((player: any, context: any, worldobjects: any, test: any) => any) | any;
+      static OnFillWorldObjectContextMenu: (player: any, context: any, worldobjects: any, test: any) => any;
 
-      static onLightFromKindle:
-        | ((worldobjects: any, player: any, percedWood: any, stickOrBranch: any, fireplace: any) => any)
-        | any;
+      static onLightFromKindle: (
+        worldobjects: any,
+        player: any,
+        percedWood: any,
+        stickOrBranch: any,
+        fireplace: any
+      ) => any;
 
-      static onLightFromLiterature:
-        | ((playerObj: any, itemType: any, lighter: any, fireplace: any, fuelAmt: any) => any)
-        | any;
+      static onLightFromLiterature: (playerObj: any, itemType: any, lighter: any, fireplace: any, fuelAmt: any) => any;
 
-      static onLightFromPetrol:
-        | ((worldobjects: any, player: any, lighter: any, petrol: any, fireplace: any) => any)
-        | any;
+      static onLightFromPetrol: (worldobjects: any, player: any, lighter: any, petrol: any, fireplace: any) => any;
 
-      static toPlayerInventory: ((playerObj: any, item: any) => any) | any;
+      static toPlayerInventory: (playerObj: any, item: any) => any;
     }
   }
   export namespace lua.client.ISUI.ISFireplaceMenu {}

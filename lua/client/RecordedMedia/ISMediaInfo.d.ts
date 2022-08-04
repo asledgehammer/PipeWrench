@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:45.122Z
+ * File generated at: 2022-08-04T20:14:47.757Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -68,7 +68,7 @@ declare module 'PipeWrench' {
 
       render: (() => any) | any;
 
-      static openPanel: ((_playerNum: any, _text: any) => any) | any;
+      static openPanel: (_playerNum: any, _text: any) => any;
     }
   }
   export namespace lua.client.RecordedMedia.ISMediaInfo {}

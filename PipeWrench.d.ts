@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-03T13:26Z
+ * File generated at 2022-08-04T16:17Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -8482,7 +8482,12 @@ declare module 'PipeWrench' {
   export class ISTakeWaterAction extends lua.client.TimedActions.ISTakeWaterAction {}
 
   // [client/TimedActions/ISTimedActionQueue.d.ts]
-  /** @customConstructor ISTimedActionQueue:new */
+  /**
+   * @customConstructor ISTimedActionQueue:new
+   * @docAuthors [Konijima]
+   *
+   * Manage player timed action queue.
+   */
   export class ISTimedActionQueue extends lua.client.TimedActions.ISTimedActionQueue {}
 
   // [client/TimedActions/ISToggleClothingDryer.d.ts]

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-03T13:26Z
+ * File generated at 2022-08-04T16:17Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -287,6 +287,16 @@ declare module 'PipeWrench' {
       static readonly READY: zombie.asset.Asset$State;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): State
+       */
+      static valueOf(arg0: string | null): zombie.asset.Asset$State;
+
+      /** @noSelf */
+      static values(): zombie.asset.Asset$State[];
+
     }
     /**
      * @customConstructor AssetManager.new

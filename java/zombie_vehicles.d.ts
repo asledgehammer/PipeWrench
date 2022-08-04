@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-03T13:26Z
+ * File generated at 2022-08-04T16:17Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -2911,10 +2911,10 @@ declare module 'PipeWrench' {
       setDestroyed(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -3488,10 +3488,10 @@ declare module 'PipeWrench' {
       shouldCollideWithObjects(): boolean;
       /**
        * Method Parameters: 
-       *  - (int arg0): boolean
        *  - (IsoGameCharacter arg0): boolean
+       *  - (int arg0): boolean
        */
-      showPassenger(arg0: number | zombie.characters.IsoGameCharacter): boolean;
+      showPassenger(arg0: zombie.characters.IsoGameCharacter | number): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -3862,10 +3862,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -3984,6 +3984,16 @@ declare module 'PipeWrench' {
       name(): string;
       ordinal(): number;
       index(): number;
+
+      /**
+       * @noSelf
+       *
+       * (String arg0): Authorization
+       */
+      static valueOf(arg0: string | null): zombie.vehicles.BaseVehicle$Authorization;
+
+      /** @noSelf */
+      static values(): zombie.vehicles.BaseVehicle$Authorization[];
 
     }
     /**
@@ -4277,6 +4287,16 @@ declare module 'PipeWrench' {
       static readonly StartingSuccess: zombie.vehicles.BaseVehicle$engineStateTypes;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): engineStateTypes
+       */
+      static valueOf(arg0: string | null): zombie.vehicles.BaseVehicle$engineStateTypes;
+
+      /** @noSelf */
+      static values(): zombie.vehicles.BaseVehicle$engineStateTypes[];
+
     }
     /**
      * @customConstructor EditVehicleState.new
@@ -4569,6 +4589,16 @@ declare module 'PipeWrench' {
       static readonly Working: zombie.vehicles.PathFindBehavior2$BehaviorResult;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): BehaviorResult
+       */
+      static valueOf(arg0: string | null): zombie.vehicles.PathFindBehavior2$BehaviorResult;
+
+      /** @noSelf */
+      static values(): zombie.vehicles.PathFindBehavior2$BehaviorResult[];
+
     }
     /**
      * @customConstructor NPCData.new
@@ -4961,6 +4991,13 @@ declare module 'PipeWrench' {
       static readonly Speed8: zombie.vehicles.TransmissionNumber;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (int arg0): TransmissionNumber
+       */
+      static fromIndex(arg0: number): zombie.vehicles.TransmissionNumber;
+
       getIndex(): number;
 
       /** (int arg0): TransmissionNumber */
@@ -4970,6 +5007,16 @@ declare module 'PipeWrench' {
       getPrev(arg0: number): zombie.vehicles.TransmissionNumber;
 
       getString(): string;
+
+      /**
+       * @noSelf
+       *
+       * (String arg0): TransmissionNumber
+       */
+      static valueOf(arg0: string | null): zombie.vehicles.TransmissionNumber;
+
+      /** @noSelf */
+      static values(): zombie.vehicles.TransmissionNumber[];
 
     }
     /**

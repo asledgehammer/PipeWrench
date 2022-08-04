@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:43.045Z
+ * File generated at: 2022-08-04T20:14:43.352Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -50,23 +50,23 @@ declare module 'PipeWrench' {
 
       getWeapon: (() => any) | any;
 
-      static checkKey: ((key: any) => any) | any;
+      static checkKey: (key: any) => any;
 
-      static checkWeapon: ((playerObj: any) => any) | any;
+      static checkWeapon: (playerObj: any) => any;
 
-      static getBestLBButtonAction: ((buttonPrompt: any) => any) | any;
+      static getBestLBButtonAction: (buttonPrompt: any) => any;
 
-      static getBestRBButtonAction: ((buttonPrompt: any) => any) | any;
+      static getBestRBButtonAction: (buttonPrompt: any) => any;
 
-      static onJoypadButtonReleased: ((buttonPrompt: any, button: any) => any) | any;
+      static onJoypadButtonReleased: (buttonPrompt: any, button: any) => any;
 
-      static onKeyPressed: ((key: any) => any) | any;
+      static onKeyPressed: (key: any) => any;
 
-      static onKeyReleased: ((key: any) => any) | any;
+      static onKeyReleased: (key: any) => any;
 
-      static onKeyRepeat: ((key: any) => any) | any;
+      static onKeyRepeat: (key: any) => any;
 
-      static onRepeatRBumper: ((buttonPrompt: any) => any) | any;
+      static onRepeatRBumper: (buttonPrompt: any) => any;
     }
   }
   export namespace lua.client.ISUI.ISFirearmRadialMenu {}

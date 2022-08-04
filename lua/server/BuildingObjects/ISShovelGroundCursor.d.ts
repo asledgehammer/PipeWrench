@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:40.656Z
+ * File generated at: 2022-08-04T20:14:39.741Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -56,11 +56,11 @@ declare module 'PipeWrench' {
 
       getEmptyItem: (() => any) | any;
 
-      static GetDirtGravelSand: ((square: any) => any) | any;
+      static GetDirtGravelSand: (square: any) => any;
 
-      static GetEmptyItem: ((playerObj: any, groundType: any) => any) | any;
+      static GetEmptyItem: (playerObj: any, groundType: any) => any;
 
-      static GetEmptyItemCounts: ((playerObj: any) => any) | any;
+      static GetEmptyItemCounts: (playerObj: any) => any;
     }
   }
   export namespace lua.server.BuildingObjects.ISShovelGroundCursor {}

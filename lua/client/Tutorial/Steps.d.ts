@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:46.263Z
+ * File generated at: 2022-08-04T20:14:49.940Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -76,21 +76,21 @@ declare module 'PipeWrench' {
 
       OnBrothersDead: (() => any) | any;
 
-      static BandageYourself: (() => any) | any;
+      static BandageYourself: () => any;
 
-      static CheckWindow: (() => any) | any;
+      static CheckWindow: () => any;
 
-      static HealthOpen: (() => any) | any;
+      static HealthOpen: () => any;
 
-      static OpenCurtain: (() => any) | any;
+      static OpenCurtain: () => any;
 
-      static spawnBrothers: (() => any) | any;
+      static spawnBrothers: () => any;
 
-      static ThroughDoor: (() => any) | any;
+      static ThroughDoor: () => any;
 
-      static ThroughWindow: (() => any) | any;
+      static ThroughWindow: () => any;
 
-      static Vault: (() => any) | any;
+      static Vault: () => any;
     }
 
     /** @customConstructor FightStep:new */
@@ -202,7 +202,7 @@ declare module 'PipeWrench' {
 
       selectInventory: (() => any) | any;
 
-      static spawnPan: (() => any) | any;
+      static spawnPan: () => any;
     }
 
     /** @customConstructor ShotgunStep:new */
@@ -248,21 +248,21 @@ declare module 'PipeWrench' {
 
       Shout: (() => any) | any;
 
-      static BackOverFence: (() => any) | any;
+      static BackOverFence: () => any;
 
-      static BrothersDead: (() => any) | any;
+      static BrothersDead: () => any;
 
-      static ClimbedFence: (() => any) | any;
+      static ClimbedFence: () => any;
 
-      static OnSquare: (() => any) | any;
+      static OnSquare: () => any;
 
-      static Outhouse: (() => any) | any;
+      static Outhouse: () => any;
 
-      static Sprinted: (() => any) | any;
+      static Sprinted: () => any;
 
-      static SurvivalGuideOpen: (() => any) | any;
+      static SurvivalGuideOpen: () => any;
 
-      static TheEnd: (() => any) | any;
+      static TheEnd: () => any;
     }
 
     /** @customConstructor SneakStep:new */
@@ -306,13 +306,13 @@ declare module 'PipeWrench' {
 
       spawnDad: (() => any) | any;
 
-      static OnSwingAtDad: ((owner: any, weapon: any, zed: any, dmg: any) => any) | any;
+      static OnSwingAtDad: (owner: any, weapon: any, zed: any, dmg: any) => any;
 
-      static setZoom: ((depth: any) => any) | any;
+      static setZoom: (depth: any) => any;
 
-      static Sneak: (() => any) | any;
+      static Sneak: () => any;
 
-      static spawnShotgun: (() => any) | any;
+      static spawnShotgun: () => any;
     }
 
     /** @customConstructor WalkToAdjacent:new */
@@ -354,29 +354,29 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static addHoming: ((sq: any, yoffset: any, xoffset: any, color: any) => any) | any;
+      static addHoming: (sq: any, yoffset: any, xoffset: any, color: any) => any;
 
-      static addMarker: ((sq: any, size: any) => any) | any;
+      static addMarker: (sq: any, size: any) => any;
 
-      static HealthOpen: (() => any) | any;
+      static HealthOpen: () => any;
 
-      static highlight: ((obj: any, thickness: any) => any) | any;
+      static highlight: (obj: any, thickness: any) => any;
 
-      static LookedAround: (() => any) | any;
+      static LookedAround: () => any;
 
-      static NotSkillsPage: (() => any) | any;
+      static NotSkillsPage: () => any;
 
-      static PlayerInfoOpen: (() => any) | any;
+      static PlayerInfoOpen: () => any;
 
-      static RemoveMarkers: (() => any) | any;
+      static RemoveMarkers: () => any;
 
-      static SkillsPage: (() => any) | any;
+      static SkillsPage: () => any;
 
-      static stopHighlight: ((obj: any) => any) | any;
+      static stopHighlight: (obj: any) => any;
 
-      static ZoomedIn: (() => any) | any;
+      static ZoomedIn: () => any;
 
-      static ZoomedOut: (() => any) | any;
+      static ZoomedOut: () => any;
     }
   }
   export namespace lua.client.Tutorial.Steps {}

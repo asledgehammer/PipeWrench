@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:46.290Z
+ * File generated at: 2022-08-04T20:14:50.004Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,31 +36,31 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static Find: ((gridSquare: any, playerObj: any) => any) | any;
+      static Find: (gridSquare: any, playerObj: any) => any;
 
-      static FindClosest: ((gridSquare: any, playerObj: any) => any) | any;
+      static FindClosest: (gridSquare: any, playerObj: any) => any;
 
-      static FindEdge: ((gridSquare: any, dir: any, playerObj: any, preferSameSquare: any) => any) | any;
+      static FindEdge: (gridSquare: any, dir: any, playerObj: any, preferSameSquare: any) => any;
 
-      static FindWall: ((gridSquare: any, north: any, playerObj: any) => any) | any;
+      static FindWall: (gridSquare: any, north: any, playerObj: any) => any;
 
-      static FindWindowOrDoor: ((gridSquare: any, window: any, playerObj: any) => any) | any;
+      static FindWindowOrDoor: (gridSquare: any, window: any, playerObj: any) => any;
 
-      static isTileOrAdjacent: ((a: any, b: any) => any) | any;
+      static isTileOrAdjacent: (a: any, b: any) => any;
 
-      static isTileOrAdjacent8: ((a: any, b: any) => any) | any;
+      static isTileOrAdjacent8: (a: any, b: any) => any;
 
-      static privCanStand: ((test: any) => any) | any;
+      static privCanStand: (test: any) => any;
 
-      static privGetNorth: ((gridSquare: any, object: any) => any) | any;
+      static privGetNorth: (gridSquare: any, object: any) => any;
 
-      static privTrySquare: ((src: any, test: any) => any) | any;
+      static privTrySquare: (src: any, test: any) => any;
 
-      static privTrySquareForWalls: ((src: any, test: any) => any) | any;
+      static privTrySquareForWalls: (src: any, test: any) => any;
 
-      static privTrySquareForWalls2: ((src: any, x: any, y: any, z: any) => any) | any;
+      static privTrySquareForWalls2: (src: any, x: any, y: any, z: any) => any;
 
-      static privTrySquareWindow: ((src: any, test: any) => any) | any;
+      static privTrySquareWindow: (src: any, test: any) => any;
     }
   }
   export namespace lua.shared.Util.AdjacentFreeTileFinder {}

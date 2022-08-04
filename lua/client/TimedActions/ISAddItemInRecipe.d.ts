@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:45.394Z
+ * File generated at: 2022-08-04T20:14:48.293Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -48,9 +48,9 @@ declare module 'PipeWrench' {
 
       constructor(character: any, recipe: any, baseItem: any, usedItem: any, time: any);
 
-      static checkName: ((baseItem: any, recipe: any) => any) | any;
+      static checkName: (baseItem: any, recipe: any) => any;
 
-      static checkTemperature: ((baseItem: any, usedItem: any, recipe: any) => any) | any;
+      static checkTemperature: (baseItem: any, usedItem: any, recipe: any) => any;
     }
   }
   export namespace lua.client.TimedActions.ISAddItemInRecipe {}

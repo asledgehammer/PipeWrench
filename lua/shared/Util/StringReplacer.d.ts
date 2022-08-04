@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:46.316Z
+ * File generated at: 2022-08-04T20:14:50.041Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,7 +36,7 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static DoCharacter: ((str: any, desc: any) => any) | any;
+      static DoCharacter: (str: any, desc: any) => any;
     }
   }
   export namespace lua.shared.Util.StringReplacer {}

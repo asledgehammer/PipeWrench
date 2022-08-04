@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:46.187Z
+ * File generated at: 2022-08-04T20:14:49.805Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -42,13 +42,13 @@ declare module 'PipeWrench' {
 
       convertOldModData: (() => any) | any;
 
-      static addSound: (() => any) | any;
+      static addSound: () => any;
 
-      static checkTrap: (() => any) | any;
+      static checkTrap: () => any;
 
-      static EveryDays: (() => any) | any;
+      static EveryDays: () => any;
 
-      static isValidModData: ((modData: any) => any) | any;
+      static isValidModData: (modData: any) => any;
     }
   }
   export namespace lua.server.Traps.STrapSystem {}

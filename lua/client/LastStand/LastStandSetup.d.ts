@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:44.281Z
+ * File generated at: 2022-08-04T20:14:45.908Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -38,7 +38,7 @@ declare module 'PipeWrench' {
 
       static chosenChallenge: any;
 
-      static getSpawnRegion: (() => any) | any;
+      static getSpawnRegion: () => any;
     }
   }
   export namespace lua.client.LastStand.LastStandSetup {

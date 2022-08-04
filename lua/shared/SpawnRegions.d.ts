@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:45.256Z
+ * File generated at: 2022-08-04T20:14:48.083Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,15 +36,15 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static getSpawnRegions: (() => any) | any;
+      static getSpawnRegions: () => any;
 
-      static getSpawnRegionsAux: (() => any) | any;
+      static getSpawnRegionsAux: () => any;
 
-      static loadSpawnPointsFile: ((filename: any, server: any) => any) | any;
+      static loadSpawnPointsFile: (filename: any, server: any) => any;
 
-      static loadSpawnRegions: ((regions: any) => any) | any;
+      static loadSpawnRegions: (regions: any) => any;
 
-      static loadSpawnRegionsFile: ((filename: any, server: any) => any) | any;
+      static loadSpawnRegionsFile: (filename: any, server: any) => any;
     }
   }
   export namespace lua.shared.SpawnRegions {}

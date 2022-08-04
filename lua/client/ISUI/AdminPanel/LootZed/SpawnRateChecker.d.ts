@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-03T17:20:42.789Z
+ * File generated at: 2022-08-04T20:14:42.877Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -36,21 +36,35 @@ declare module 'PipeWrench' {
 
       static [id: string]: any;
 
-      static doRollItem_CalcChances:
-        | ((containerDist: any, arg1: any, arg2: any, character: any, arg4: any, isJunk: any, arg6: any) => any)
-        | any;
+      static doRollItem_CalcChances: (
+        containerDist: any,
+        arg1: any,
+        arg2: any,
+        character: any,
+        arg4: any,
+        isJunk: any,
+        arg6: any
+      ) => any;
 
-      static fillContainer_CalcChances: ((container: any, player: any) => any) | any;
+      static fillContainer_CalcChances: (container: any, player: any) => any;
 
-      static fillContainerType_CalcChances: ((roomDist: any, container: any, roomName: any, player: any) => any) | any;
+      static fillContainerType_CalcChances: (roomDist: any, container: any, roomName: any, player: any) => any;
 
-      static rollItem_CalcChances:
-        | ((containerDist: any, container: any, doItemContainer: any, player: any, roomDist: any) => any)
-        | any;
+      static rollItem_CalcChances: (
+        containerDist: any,
+        container: any,
+        doItemContainer: any,
+        player: any,
+        roomDist: any
+      ) => any;
 
-      static rollProceduralItem_CalcChances:
-        | ((proceduralItems: any, container: any, arg2: any, character: any, roomDist: any) => any)
-        | any;
+      static rollProceduralItem_CalcChances: (
+        proceduralItems: any,
+        container: any,
+        arg2: any,
+        character: any,
+        roomDist: any
+      ) => any;
     }
   }
   export namespace lua.client.ISUI.AdminPanel.LootZed.SpawnRateChecker {}
