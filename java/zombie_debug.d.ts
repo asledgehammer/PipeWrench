@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-04T19:16Z
+ * File generated at 2022-08-04T22:13Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -256,10 +256,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (LogSeverity arg0, DebugType arg1): boolean
        *  - (DebugType arg0, LogSeverity arg1): boolean
+       *  - (LogSeverity arg0, DebugType arg1): boolean
        */
-      static isLogEnabled(arg0: zombie.debug.LogSeverity | zombie.debug.DebugType, arg1: zombie.debug.DebugType | zombie.debug.LogSeverity): boolean;
+      static isLogEnabled(arg0: zombie.debug.DebugType | zombie.debug.LogSeverity, arg1: zombie.debug.LogSeverity | zombie.debug.DebugType): boolean;
       /**
        * @noSelf
        *
@@ -271,8 +271,8 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (String arg0): void
        *  - (Object arg0): void
+       *  - (String arg0): void
        *  - (DebugType arg0, String arg1): void
        */
       static log(arg0: any, arg1?: string): void;

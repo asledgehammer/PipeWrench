@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:33.324Z
+ * File generated at: 2022-08-05T02:36:29.082Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,23 +31,28 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.DebugUIs.DebugMenu {
-    export class ISDebugUtils {
-      private constructor();
-
+    export abstract class ISDebugUtils {
       static [id: string]: any;
 
+      /** @noSelf */
       static addButton: (_self: any, _data: any, _x: any, _y: any, _w: any, _h: any, _title: any, _func: any) => any;
 
+      /** @noSelf */
       static addComboBox: (_self: any, _data: any, _x: any, _y: any, _w: any, _font: any, _func: any) => any;
 
+      /** @noSelf */
       static addHorzBar: (_self: any, _y: any) => any;
 
+      /** @noSelf */
       static addLabel: (_self: any, _data: any, _x: any, _y: any, _title: any, _font: any, _bLeft: any) => any;
 
+      /** @noSelf */
       static addSlider: (_self: any, _data: any, _x: any, _y: any, _w: any, _h: any, _func: any) => any;
 
+      /** @noSelf */
       static addTextEntryBox: (_self: any, _data: any, _title: any, _x: any, _y: any, _w: any, _h: any) => any;
 
+      /** @noSelf */
       static addTickBox: (
         _self: any,
         _data: any,
@@ -60,16 +65,22 @@ declare module 'PipeWrench' {
         _func: any
       ) => any;
 
+      /** @noSelf */
       static clamp01: (_n: any) => any;
 
+      /** @noSelf */
       static initHorzBars: (_self: any, _x: any, _width: any) => any;
 
+      /** @noSelf */
       static onMouseWheel: (self: any, del: any) => any;
 
+      /** @noSelf */
       static printval: (_v: any, _d: any) => any;
 
+      /** @noSelf */
       static renderHorzBars: (_self: any) => any;
 
+      /** @noSelf */
       static roundNum: (num: any, numDecimalPlaces: any) => any;
     }
   }

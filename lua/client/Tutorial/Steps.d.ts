@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:37.783Z
+ * File generated at: 2022-08-05T02:36:33.139Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -370,33 +370,43 @@ declare module 'PipeWrench' {
       constructor();
     }
 
-    export class TutorialTests {
-      private constructor();
-
+    export abstract class TutorialTests {
       static [id: string]: any;
 
+      /** @noSelf */
       static addHoming: (sq: any, yoffset: any, xoffset: any, color: any) => any;
 
+      /** @noSelf */
       static addMarker: (sq: any, size: any) => any;
 
+      /** @noSelf */
       static HealthOpen: () => any;
 
+      /** @noSelf */
       static highlight: (obj: any, thickness: any) => any;
 
+      /** @noSelf */
       static LookedAround: () => any;
 
+      /** @noSelf */
       static NotSkillsPage: () => any;
 
+      /** @noSelf */
       static PlayerInfoOpen: () => any;
 
+      /** @noSelf */
       static RemoveMarkers: () => any;
 
+      /** @noSelf */
       static SkillsPage: () => any;
 
+      /** @noSelf */
       static stopHighlight: (obj: any) => any;
 
+      /** @noSelf */
       static ZoomedIn: () => any;
 
+      /** @noSelf */
       static ZoomedOut: () => any;
     }
   }

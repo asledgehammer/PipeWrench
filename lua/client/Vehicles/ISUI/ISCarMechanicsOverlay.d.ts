@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:37.864Z
+ * File generated at: 2022-08-05T02:36:33.206Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,7 +31,7 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.Vehicles.ISUI {
-    export class ISCarMechanicsOverlay {
+    export abstract class ISCarMechanicsOverlay {
       static [id: string]: any;
     }
   }

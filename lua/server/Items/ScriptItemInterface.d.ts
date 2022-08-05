@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:35.606Z
+ * File generated at: 2022-08-05T02:36:31.426Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,15 +31,16 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.server.Items {
-    export class ScriptItemInterface {
-      private constructor();
-
+    export abstract class ScriptItemInterface {
       static [id: string]: any;
 
+      /** @noSelf */
       static cloneItemType: (newName: any, originalFullName: any) => any;
 
+      /** @noSelf */
       static instanceItemType: (item: any) => any;
 
+      /** @noSelf */
       static newItemType: (name: any, displayname: any, type: any, inventoryIcon: any) => any;
     }
   }

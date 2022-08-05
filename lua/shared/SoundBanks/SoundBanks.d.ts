@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:36.819Z
+ * File generated at: 2022-08-05T02:36:32.369Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,28 +31,28 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.shared.SoundBanks {
-    export class ambientSoundTable {
+    export abstract class ambientSoundTable {
       static [id: string]: any;
     }
 
-    export class baseSoundTable {
+    export abstract class baseSoundTable {
       static [id: string]: any;
     }
 
-    export class footStepTable {
+    export abstract class footStepTable {
       static [id: string]: any;
     }
 
-    export class globalSoundTable {
+    export abstract class globalSoundTable {
       static [id: string]: any;
     }
 
-    export class voiceTable {
+    export abstract class voiceTable {
       static [id: string]: any;
     }
   }
   export namespace lua.shared.SoundBanks.SoundBanks {
     /** @noSelf */
-    export const doLoadSoundbanks: (() => any) | any;
+    export const doLoadSoundbanks: () => any;
   }
 }

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:37.749Z
+ * File generated at: 2022-08-05T02:36:33.109Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,15 +31,15 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.server.TurnBased {
-    export class TurnbasedDummyChr {
+    export abstract class TurnbasedDummyChr {
       static [id: string]: any;
     }
   }
   export namespace lua.server.TurnBased.TurnBasedMain {
     /** @noSelf */
-    export const InitTurnbasedEngine: (() => any) | any;
+    export const InitTurnbasedEngine: () => any;
 
     /** @noSelf */
-    export const PrepareTurnbasedEngine: (() => any) | any;
+    export const PrepareTurnbasedEngine: () => any;
   }
 }

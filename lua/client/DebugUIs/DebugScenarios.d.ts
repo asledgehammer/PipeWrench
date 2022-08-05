@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:33.479Z
+ * File generated at: 2022-08-05T02:36:29.287Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -63,6 +63,6 @@ declare module 'PipeWrench' {
   }
   export namespace lua.client.DebugUIs.DebugScenarios {
     /** @noSelf */
-    export const doDebugScenarios: (() => any) | any;
+    export const doDebugScenarios: () => any;
   }
 }

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:36.019Z
+ * File generated at: 2022-08-05T02:36:31.753Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,13 +31,13 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.server.NewSelectionSystem {
-    export class GridSquareSelector {
-      private constructor();
-
+    export abstract class GridSquareSelector {
       static [id: string]: any;
 
+      /** @noSelf */
       static MouseUp: () => any;
 
+      /** @noSelf */
       static RenderUI: () => any;
     }
   }

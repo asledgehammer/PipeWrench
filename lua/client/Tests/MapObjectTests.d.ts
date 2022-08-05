@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:36.891Z
+ * File generated at: 2022-08-05T02:36:32.441Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -33,12 +33,12 @@ declare module 'PipeWrench' {
   export namespace lua.client.Tests {}
   export namespace lua.client.Tests.MapObjectTests {
     /** @noSelf */
-    export const MapObjectTestCampfire: (() => any) | any;
+    export const MapObjectTestCampfire: () => any;
 
     /** @noSelf */
-    export const MapObjectTestFarming: (() => any) | any;
+    export const MapObjectTestFarming: () => any;
 
     /** @noSelf */
-    export const MapObjectTestRainBarrel: (() => any) | any;
+    export const MapObjectTestRainBarrel: () => any;
   }
 }

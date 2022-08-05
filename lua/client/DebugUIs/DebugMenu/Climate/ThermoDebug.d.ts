@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:33.160Z
+ * File generated at: 2022-08-05T02:36:28.937Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -82,7 +82,7 @@ declare module 'PipeWrench' {
       static OnOpenPanel: () => any;
     }
 
-    export class ThermoDebug {
+    export abstract class ThermoDebug {
       static [id: string]: any;
     }
   }

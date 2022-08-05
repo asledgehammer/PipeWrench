@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:35.786Z
+ * File generated at: 2022-08-05T02:36:31.565Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,25 +31,31 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.LastStand {
-    export class WinterIsComing {
-      private constructor();
-
+    export abstract class WinterIsComing {
       static [id: string]: any;
 
+      /** @noSelf */
       static Add: () => any;
 
+      /** @noSelf */
       static AddPlayer: (playerNum: any, playerObj: any) => any;
 
+      /** @noSelf */
       static EveryHours: () => any;
 
+      /** @noSelf */
       static OnGameStart: () => any;
 
+      /** @noSelf */
       static OnInitSeasons: (_season: any) => any;
 
+      /** @noSelf */
       static OnInitWorld: () => any;
 
+      /** @noSelf */
       static RemovePlayer: (p: any) => any;
 
+      /** @noSelf */
       static Render: () => any;
     }
   }

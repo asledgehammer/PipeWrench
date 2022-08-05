@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:35.978Z
+ * File generated at: 2022-08-05T02:36:31.718Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,21 +31,25 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.Moveables {
-    export class ISMoveableTools {
-      private constructor();
-
+    export abstract class ISMoveableTools {
       static [id: string]: any;
 
+      /** @noSelf */
       static canPlayerPickUpMoveable: (_char: any, _square: any, _object: any, _moveProps: any) => any;
 
+      /** @noSelf */
       static canPlayerPickUpObject: (_char: any, _square: any, _object: any) => any;
 
+      /** @noSelf */
       static getMoveableList: (_square: any) => any;
 
+      /** @noSelf */
       static getObjectList: (_square: any) => any;
 
+      /** @noSelf */
       static getScrapableObjects: (_char: any, _square: any) => any;
 
+      /** @noSelf */
       static isObjectMoveable: (_object: any) => any;
     }
   }

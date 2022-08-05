@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:35.345Z
+ * File generated at: 2022-08-05T02:36:31.182Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,27 +31,29 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.ISUI.Maps {
-    export class LootMaps {
-      private constructor();
-
+    export abstract class LootMaps {
       static [id: string]: any;
 
+      /** @noSelf */
       static callLua: (functionName: any, mapUI: any, arg1: any, arg2: any, arg3: any, arg4: any) => any;
     }
 
-    export class MapUtils {
-      private constructor();
-
+    export abstract class MapUtils {
       static [id: string]: any;
 
+      /** @noSelf */
       static initDefaultMapData: (mapUI: any) => any;
 
+      /** @noSelf */
       static initDefaultStyleV1: (mapUI: any) => any;
 
+      /** @noSelf */
       static initDirectoryMapData: (mapUI: any, directory: any) => any;
 
+      /** @noSelf */
       static overlayPaper: (mapUI: any) => any;
 
+      /** @noSelf */
       static revealKnownArea: (mapUI: any) => any;
     }
   }

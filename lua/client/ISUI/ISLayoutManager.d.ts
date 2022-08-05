@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:34.823Z
+ * File generated at: 2022-08-05T02:36:30.704Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,35 +31,45 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.ISUI {
-    export class ISLayoutManager {
-      private constructor();
-
+    export abstract class ISLayoutManager {
       static [id: string]: any;
 
       static enableLog: any;
 
+      /** @noSelf */
       static CallRestoreLayout: (name: any, layout: any) => any;
 
+      /** @noSelf */
       static CallSaveLayout: (name: any, layout: any) => any;
 
+      /** @noSelf */
       static DefaultRestoreWindow: (window: any, layout: any) => any;
 
+      /** @noSelf */
       static DefaultSaveWindow: (window: any, layout: any) => any;
 
+      /** @noSelf */
       static FindResizeWidget: (window: any) => any;
 
+      /** @noSelf */
       static OnPostSave: () => any;
 
+      /** @noSelf */
       static ReadIni: () => any;
 
+      /** @noSelf */
       static RegisterWindow: (name: any, funcs: any, target: any) => any;
 
+      /** @noSelf */
       static SaveLayout: (name: any, window: any) => any;
 
+      /** @noSelf */
       static SaveWindowVisible: (window: any, layout: any) => any;
 
+      /** @noSelf */
       static TryRestore: (name: any) => any;
 
+      /** @noSelf */
       static WriteIni: () => any;
     }
   }

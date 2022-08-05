@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:34.910Z
+ * File generated at: 2022-08-05T02:36:30.793Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -191,19 +191,21 @@ declare module 'PipeWrench' {
       renderButton: (() => any) | any;
     }
 
-    export class OnScreenKeyboard {
-      private constructor();
-
+    export abstract class OnScreenKeyboard {
       static [id: string]: any;
 
       static instance: any;
 
+      /** @noSelf */
       static GetCurrentText: () => any;
 
+      /** @noSelf */
       static Hide: () => any;
 
+      /** @noSelf */
       static IsVisible: () => any;
 
+      /** @noSelf */
       static Show: (playerNum: any, textEntryBox: any, joypadData: any) => any;
     }
   }

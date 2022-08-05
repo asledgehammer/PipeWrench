@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:32.743Z
+ * File generated at: 2022-08-05T02:36:28.573Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -157,6 +157,6 @@ declare module 'PipeWrench' {
   }
   export namespace lua.client.DebugUIs.AnimationClipViewer {
     /** @noSelf */
-    export const AnimationViewerState_InitUI: (() => any) | any;
+    export const AnimationViewerState_InitUI: () => any;
   }
 }

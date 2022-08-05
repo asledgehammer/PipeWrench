@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:35.793Z
+ * File generated at: 2022-08-05T02:36:31.570Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,31 +31,40 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.LastStand {
-    export class YouHaveOneDay {
-      private constructor();
-
+    export abstract class YouHaveOneDay {
       static [id: string]: any;
 
+      /** @noSelf */
       static Add: () => any;
 
+      /** @noSelf */
       static AddPlayer: (playerNum: any, playerObj: any) => any;
 
+      /** @noSelf */
       static EveryDays: () => any;
 
+      /** @noSelf */
       static EveryHours: () => any;
 
+      /** @noSelf */
       static Init: () => any;
 
+      /** @noSelf */
       static OnGameStart: () => any;
 
+      /** @noSelf */
       static OnInitWorld: () => any;
 
+      /** @noSelf */
       static OnPlayerUpdate: (zombie: any) => any;
 
+      /** @noSelf */
       static OnZombieUpdate: (zombie: any) => any;
 
+      /** @noSelf */
       static RemovePlayer: (playerObj: any) => any;
 
+      /** @noSelf */
       static Render: () => any;
     }
   }

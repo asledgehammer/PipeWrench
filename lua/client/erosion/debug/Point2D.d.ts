@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:33.842Z
+ * File generated at: 2022-08-05T02:36:29.814Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,9 +31,7 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.erosion.debug {
-    export class Point2D {
-      private constructor();
-
+    export abstract class Point2D {
       static [id: string]: any;
 
       new: ((_x: any, _y: any) => any) | any;

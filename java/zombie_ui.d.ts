@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-04T19:16Z
+ * File generated at 2022-08-04T22:13Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -8509,8 +8509,8 @@ declare module 'PipeWrench' {
       setCustomTag(arg0: string): void;
       /**
        * Method Parameters: 
-       *  - (int arg0, int arg1, int arg2): void
        *  - (float arg0, float arg1, float arg2): void
+       *  - (int arg0, int arg1, int arg2): void
        *  - (int arg0, int arg1, int arg2, int arg3): void
        *  - (float arg0, float arg1, float arg2, float arg3): void
        */
@@ -8542,10 +8542,10 @@ declare module 'PipeWrench' {
       setHearRange(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (String arg0): void
        *  - (TextDrawHorizontal arg0): void
+       *  - (String arg0): void
        */
-      setHorizontalAlign(arg0: string | zombie.ui.TextDrawHorizontal): void;
+      setHorizontalAlign(arg0: zombie.ui.TextDrawHorizontal | string): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void

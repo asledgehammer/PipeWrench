@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:36.873Z
+ * File generated at: 2022-08-05T02:36:32.421Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,19 +31,21 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.SurvivalGuide {
-    export class SurvivalGuideEntries {
-      private constructor();
-
+    export abstract class SurvivalGuideEntries {
       static [id: string]: any;
 
       static useJoypad: any;
 
+      /** @noSelf */
       static addEntry11: () => any;
 
+      /** @noSelf */
       static addSurvivalGuideEntry: (index: any) => any;
 
+      /** @noSelf */
       static getEntry: (num: any) => any;
 
+      /** @noSelf */
       static getEntryCount: () => any;
     }
   }

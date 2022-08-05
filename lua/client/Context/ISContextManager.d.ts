@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:32.648Z
+ * File generated at: 2022-08-05T02:36:28.493Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,11 +31,10 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.Context {
-    export class ISContextManager {
-      private constructor();
-
+    export abstract class ISContextManager {
       static [id: string]: any;
 
+      /** @noSelf */
       static getInstance: () => any;
     }
   }

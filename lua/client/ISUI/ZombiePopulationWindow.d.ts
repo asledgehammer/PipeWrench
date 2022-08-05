@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:35.540Z
+ * File generated at: 2022-08-05T02:36:31.369Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -88,6 +88,6 @@ declare module 'PipeWrench' {
   }
   export namespace lua.client.ISUI.ZombiePopulationWindow {
     /** @noSelf */
-    export const newZombiePopulationWindow: (() => any) | any;
+    export const newZombiePopulationWindow: () => any;
   }
 }

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:36.107Z
+ * File generated at: 2022-08-05T02:36:31.835Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -227,13 +227,13 @@ declare module 'PipeWrench' {
       static loadBuild: (self: any, box: any) => any;
     }
 
-    export class BCRC {
-      private constructor();
-
+    export abstract class BCRC {
       static [id: string]: any;
 
+      /** @noSelf */
       static dump: (o: any, lvl: any) => any;
 
+      /** @noSelf */
       static inputModal: (
         _centered: any,
         _width: any,
@@ -247,10 +247,13 @@ declare module 'PipeWrench' {
         param2: any
       ) => any;
 
+      /** @noSelf */
       static pline: (text: any) => any;
 
+      /** @noSelf */
       static readSaveFile: () => any;
 
+      /** @noSelf */
       static writeSaveFile: (options: any) => any;
     }
   }

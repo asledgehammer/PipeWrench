@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:33.514Z
+ * File generated at: 2022-08-05T02:36:29.340Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,17 +31,19 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.DebugUIs {
-    export class ISFastTeleportMove {
-      private constructor();
-
+    export abstract class ISFastTeleportMove {
       static [id: string]: any;
 
+      /** @noSelf */
       static moveXY: (player: any, dx: any, dy: any) => any;
 
+      /** @noSelf */
       static moveZ: (player: any, dz: any) => any;
 
+      /** @noSelf */
       static OnKeyKeepPressed: (key: any) => any;
 
+      /** @noSelf */
       static OnKeyStartPressed: (key: any) => any;
     }
   }

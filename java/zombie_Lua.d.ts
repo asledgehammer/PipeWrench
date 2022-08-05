@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-04T19:16Z
+ * File generated at 2022-08-04T22:13Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -2635,10 +2635,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (String arg0): zombie.inventory.InventoryItem
        *  - (Item arg0): zombie.inventory.InventoryItem
+       *  - (String arg0): zombie.inventory.InventoryItem
        */
-      static instanceItem(arg0: string | zombie.scripting.objects.Item): zombie.inventory.InventoryItem;
+      static instanceItem(arg0: zombie.scripting.objects.Item | string): zombie.inventory.InventoryItem;
       /**
        * @noSelf
        *
@@ -4083,10 +4083,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (KahluaTable arg0, LuaClosure arg1, int arg2): void
        *  - (String arg0, LuaClosure arg1, int arg2): void
+       *  - (KahluaTable arg0, LuaClosure arg1, int arg2): void
        */
-      static OnNewWithSprite(arg0: se.krka.kahlua.vm.KahluaTable | string, arg1: se.krka.kahlua.vm.LuaClosure, arg2: number): void;
+      static OnNewWithSprite(arg0: string | se.krka.kahlua.vm.KahluaTable, arg1: se.krka.kahlua.vm.LuaClosure, arg2: number): void;
       /**
        * @noSelf
        *

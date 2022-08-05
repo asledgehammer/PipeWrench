@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:36.803Z
+ * File generated at: 2022-08-05T02:36:32.353Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,35 +31,46 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.server.Seasons {
-    export class season {
-      private constructor();
-
+    export abstract class season {
       static [id: string]: any;
 
+      /** @noSelf */
       static EveryTenMinutes: () => any;
 
+      /** @noSelf */
       static load: () => any;
 
+      /** @noSelf */
       static OnGameStart: () => any;
 
+      /** @noSelf */
       static OnGameTimeLoaded: () => any;
 
+      /** @noSelf */
       static save: () => any;
 
+      /** @noSelf */
       static startRain: () => any;
 
+      /** @noSelf */
       static updateAmbient: () => any;
 
+      /** @noSelf */
       static updateBodyTemperature: () => any;
 
+      /** @noSelf */
       static updateMoonPhase: () => any;
 
+      /** @noSelf */
       static updateMoonState: (currentHour: any, month: any) => any;
 
+      /** @noSelf */
       static updateRain: () => any;
 
+      /** @noSelf */
       static updateWeather: (month: any, currentHour: any) => any;
 
+      /** @noSelf */
       static updateWeatherIcon: () => any;
     }
   }

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:36.040Z
+ * File generated at: 2022-08-05T02:36:31.777Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -63,6 +63,6 @@ declare module 'PipeWrench' {
   }
   export namespace lua.server.NPCs.SadisticAIDirector.SadisticMusicDirector {
     /** @noSelf */
-    export const SadisticMusicDirectorTick: (() => any) | any;
+    export const SadisticMusicDirectorTick: () => any;
   }
 }

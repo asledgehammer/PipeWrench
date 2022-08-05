@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:37.792Z
+ * File generated at: 2022-08-05T02:36:33.148Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,18 +31,18 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.Tutorial {
-    export class TutorialData {
+    export abstract class TutorialData {
       static [id: string]: any;
     }
   }
   export namespace lua.client.Tutorial.TutorialSetup {
     /** @noSelf */
-    export const doTutorialDraw: (() => any) | any;
+    export const doTutorialDraw: () => any;
 
     /** @noSelf */
-    export const doTutorialInit: (() => any) | any;
+    export const doTutorialInit: () => any;
 
     /** @noSelf */
-    export const preLoadTutorialInit: (() => any) | any;
+    export const preLoadTutorialInit: () => any;
   }
 }

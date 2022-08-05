@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:34.200Z
+ * File generated at: 2022-08-05T02:36:30.083Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,15 +31,16 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.server.HealthSystem {
-    export class healthUpdate {
-      private constructor();
-
+    export abstract class healthUpdate {
       static [id: string]: any;
 
+      /** @noSelf */
       static getBrokenWindow: (feeler: any) => any;
 
+      /** @noSelf */
       static scratchFromWindow: (feeler: any) => any;
 
+      /** @noSelf */
       static update: () => any;
     }
   }

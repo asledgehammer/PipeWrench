@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:35.941Z
+ * File generated at: 2022-08-05T02:36:31.678Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -33,9 +33,9 @@ declare module 'PipeWrench' {
   export namespace lua.server.metazones {}
   export namespace lua.server.metazones.metazoneHandler {
     /** @noSelf */
-    export const doMapZones: (() => any) | any;
+    export const doMapZones: () => any;
 
     /** @noSelf */
-    export const doSpawnOrigins: (() => any) | any;
+    export const doSpawnOrigins: () => any;
   }
 }

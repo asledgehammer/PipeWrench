@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:34.092Z
+ * File generated at: 2022-08-05T02:36:29.992Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,27 +31,27 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.shared.Foraging {
-    export class forageCategories {
+    export abstract class forageCategories {
       static [id: string]: any;
     }
 
-    export class forageDefaultDefs {
+    export abstract class forageDefaultDefs {
       static [id: string]: any;
     }
 
-    export class forageDefs {
+    export abstract class forageDefs {
       static [id: string]: any;
     }
 
-    export class forageSkills {
+    export abstract class forageSkills {
       static [id: string]: any;
     }
 
-    export class forageZones {
+    export abstract class forageZones {
       static [id: string]: any;
     }
 
-    export class scavenges {
+    export abstract class scavenges {
       static [id: string]: any;
     }
   }

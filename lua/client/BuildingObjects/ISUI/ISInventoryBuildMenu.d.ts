@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:32.191Z
+ * File generated at: 2022-08-05T02:36:28.209Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,19 +31,22 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.BuildingObjects.ISUI {
-    export class ISInventoryBuildMenu {
-      private constructor();
-
+    export abstract class ISInventoryBuildMenu {
       static [id: string]: any;
 
+      /** @noSelf */
       static doBuildMenu: (player: any, context: any, worldobjects: any, test: any) => any;
 
+      /** @noSelf */
       static onSpillDirt: (playerObj: any) => any;
 
+      /** @noSelf */
       static onSpillGravel: (playerObj: any) => any;
 
+      /** @noSelf */
       static onSpillSand: (playerObj: any) => any;
 
+      /** @noSelf */
       static onTakeThing: (playerObj: any, groundType: any) => any;
     }
   }

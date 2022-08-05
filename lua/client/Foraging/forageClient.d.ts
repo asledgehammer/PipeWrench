@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:34.086Z
+ * File generated at: 2022-08-05T02:36:29.988Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,31 +31,38 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.Foraging {
-    export class forageClient {
-      private constructor();
-
+    export abstract class forageClient {
       static [id: string]: any;
 
+      /** @noSelf */
       static addZone: (_zoneData: any) => any;
 
+      /** @noSelf */
       static clearData: () => any;
 
+      /** @noSelf */
       static getZones: () => any;
 
+      /** @noSelf */
       static init: () => any;
 
+      /** @noSelf */
       static removeZone: (_zoneData: any) => any;
 
+      /** @noSelf */
       static syncForageData: () => any;
 
+      /** @noSelf */
       static updateData: () => any;
 
+      /** @noSelf */
       static updateIcon: (_zoneData: any, _iconID: any, _icon: any) => any;
 
+      /** @noSelf */
       static updateZone: (_zoneData: any) => any;
     }
 
-    export class forageData {
+    export abstract class forageData {
       static [id: string]: any;
     }
   }

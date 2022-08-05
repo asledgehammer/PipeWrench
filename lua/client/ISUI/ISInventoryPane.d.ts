@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:34.775Z
+ * File generated at: 2022-08-05T02:36:30.656Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -274,7 +274,7 @@ declare module 'PipeWrench' {
       static itemSortByWeightDesc: (a: any, b: any) => any;
     }
 
-    export class ISInventoryPaneDraggedItems {
+    export abstract class ISInventoryPaneDraggedItems {
       static [id: string]: any;
     }
   }

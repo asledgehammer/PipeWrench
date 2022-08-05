@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:37.816Z
+ * File generated at: 2022-08-05T02:36:33.170Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,11 +31,10 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.shared.Util {
-    export class ISPriorityTable {
-      private constructor();
-
+    export abstract class ISPriorityTable {
       static [id: string]: any;
 
+      /** @noSelf */
       static new: () => any;
     }
   }

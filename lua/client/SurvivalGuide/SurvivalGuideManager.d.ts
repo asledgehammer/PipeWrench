@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:36.878Z
+ * File generated at: 2022-08-05T02:36:32.430Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -60,6 +60,6 @@ declare module 'PipeWrench' {
   }
   export namespace lua.client.SurvivalGuide.SurvivalGuideManager {
     /** @noSelf */
-    export const doSurvivalGuide: (() => any) | any;
+    export const doSurvivalGuide: () => any;
   }
 }

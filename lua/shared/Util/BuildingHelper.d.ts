@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:37.812Z
+ * File generated at: 2022-08-05T02:36:33.167Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,13 +31,13 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.shared.Util {
-    export class BuildingHelper {
-      private constructor();
-
+    export abstract class BuildingHelper {
       static [id: string]: any;
 
+      /** @noSelf */
       static getFreeTileFromBuilding: (building: any) => any;
 
+      /** @noSelf */
       static getFreeTilesFromRandomRoomInBuilding: (building: any, count: any) => any;
     }
   }

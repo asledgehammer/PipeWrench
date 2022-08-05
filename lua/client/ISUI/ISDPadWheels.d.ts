@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:34.642Z
+ * File generated at: 2022-08-05T02:36:30.539Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,23 +31,28 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.ISUI {
-    export class ISDPadWheels {
-      private constructor();
-
+    export abstract class ISDPadWheels {
       static [id: string]: any;
 
+      /** @noSelf */
       static onDisplayDown: (joypadData: any) => any;
 
+      /** @noSelf */
       static onDisplayLeft: (joypadData: any) => any;
 
+      /** @noSelf */
       static onDisplayRight: (joypadData: any) => any;
 
+      /** @noSelf */
       static onDisplayUp: (joypadData: any) => any;
 
+      /** @noSelf */
       static onEquipPrimary: (playerObj: any, item: any) => any;
 
+      /** @noSelf */
       static onShout: (playerObj: any) => any;
 
+      /** @noSelf */
       static onToggleLight: (playerObj: any, item: any) => any;
     }
   }

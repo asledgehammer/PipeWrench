@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-04T19:16Z
+ * File generated at 2022-08-04T22:13Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -390,10 +390,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (ModelSlotRenderData arg0, Vector3 arg1): void
        *  - (IsoGameCharacter arg0, Vector3 arg1): void
+       *  - (ModelSlotRenderData arg0, Vector3 arg1): void
        */
-      static VectorToWorldCoords(arg0: zombie.core.skinnedmodel.model.ModelSlotRenderData | zombie.characters.IsoGameCharacter, arg1: zombie.iso.Vector3): void;
+      static VectorToWorldCoords(arg0: zombie.characters.IsoGameCharacter | zombie.core.skinnedmodel.model.ModelSlotRenderData, arg1: zombie.iso.Vector3): void;
       /**
        * @noSelf
        *

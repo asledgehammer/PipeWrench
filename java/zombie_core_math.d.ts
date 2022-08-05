@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-04T19:16Z
+ * File generated at 2022-08-04T22:13Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -148,8 +148,8 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (float arg0): number
        *  - (double arg0): number
+       *  - (float arg0): number
        */
       static fastfloor(arg0: number): number;
       /**
@@ -192,10 +192,10 @@ declare module 'PipeWrench' {
        *
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2): number
-       *  - (Vector2 arg0, Vector2 arg1, Vector2 arg2, float arg3): zombie.iso.Vector2
        *  - (Vector3f arg0, Vector3f arg1, Vector3f arg2, float arg3): org.lwjgl.util.vector.Vector3f
+       *  - (Vector2 arg0, Vector2 arg1, Vector2 arg2, float arg3): zombie.iso.Vector2
        */
-      static lerp(arg0: number | zombie.iso.Vector2 | org.lwjgl.util.vector.Vector3f, arg1: number | zombie.iso.Vector2 | org.lwjgl.util.vector.Vector3f, arg2: number | zombie.iso.Vector2 | org.lwjgl.util.vector.Vector3f, arg3?: number): number | zombie.iso.Vector2 | org.lwjgl.util.vector.Vector3f;
+      static lerp(arg0: number | org.lwjgl.util.vector.Vector3f | zombie.iso.Vector2, arg1: number | org.lwjgl.util.vector.Vector3f | zombie.iso.Vector2, arg2: number | org.lwjgl.util.vector.Vector3f | zombie.iso.Vector2, arg3?: number): number | org.lwjgl.util.vector.Vector3f | zombie.iso.Vector2;
       /**
        * @noSelf
        *
@@ -236,8 +236,8 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (float arg0, float arg1): number
        *  - (int arg0, int arg1): number
+       *  - (float arg0, float arg1): number
        */
       static min(arg0: number, arg1: number): number;
       /**

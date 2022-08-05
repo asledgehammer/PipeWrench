@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:37.860Z
+ * File generated at: 2022-08-05T02:36:33.203Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -408,6 +408,6 @@ declare module 'PipeWrench' {
   }
   export namespace lua.client.Vehicles.ISUI.EditVehicleState {
     /** @noSelf */
-    export const EditVehicleState_InitUI: (() => any) | any;
+    export const EditVehicleState_InitUI: () => any;
   }
 }

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:35.358Z
+ * File generated at: 2022-08-05T02:36:31.190Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -156,19 +156,22 @@ declare module 'PipeWrench' {
       static TitleBarHeight: () => any;
     }
 
-    export class ISMiniMap {
-      private constructor();
-
+    export abstract class ISMiniMap {
       static [id: string]: any;
 
+      /** @noSelf */
       static FocusMiniMap: (playerNum: any) => any;
 
+      /** @noSelf */
       static InitPlayer: (playerNum: any) => any;
 
+      /** @noSelf */
       static IsAllowed: () => any;
 
+      /** @noSelf */
       static Recreate: (playerNum: any) => any;
 
+      /** @noSelf */
       static ToggleMiniMap: (playerNum: any) => any;
     }
   }

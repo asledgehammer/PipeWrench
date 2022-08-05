@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:35.680Z
+ * File generated at: 2022-08-05T02:36:31.477Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -115,17 +115,15 @@ declare module 'PipeWrench' {
       setController: ((controller: any) => any) | any;
     }
 
-    export class joypad {
+    export abstract class joypad {
       static [id: string]: any;
     }
 
-    export class Joypad {
+    export abstract class Joypad {
       static [id: string]: any;
     }
 
-    export class JoypadState {
-      private constructor();
-
+    export abstract class JoypadState {
       static [id: string]: any;
 
       static controllerTest: any;
@@ -148,24 +146,34 @@ declare module 'PipeWrench' {
 
       static forceActivate: any;
 
+      /** @noSelf */
       static getMainMenuJoypad: () => any;
 
+      /** @noSelf */
       static onCoopJoinFailed: (playerNum: any) => any;
 
+      /** @noSelf */
       static onGamepadConnect: (id: any) => any;
 
+      /** @noSelf */
       static onGamepadDisconnect: (id: any) => any;
 
+      /** @noSelf */
       static onGameStart: () => any;
 
+      /** @noSelf */
       static onPlayerDeath: (playerObj: any) => any;
 
+      /** @noSelf */
       static onRenderUI: () => any;
 
+      /** @noSelf */
       static restoreAllFocus: () => any;
 
+      /** @noSelf */
       static saveAllFocus: () => any;
 
+      /** @noSelf */
       static useKeyboardMouse: () => any;
     }
   }

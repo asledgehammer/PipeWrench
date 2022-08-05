@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-04T19:16Z
+ * File generated at 2022-08-04T22:13Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -1368,10 +1368,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoGameCharacter arg0): void
        *  - (IsoGridSquare arg0): void
+       *  - (IsoGameCharacter arg0): void
        */
-      static sendStopFire(arg0: zombie.characters.IsoGameCharacter | zombie.iso.IsoGridSquare): void;
+      static sendStopFire(arg0: zombie.iso.IsoGridSquare | zombie.characters.IsoGameCharacter): void;
       /**
        * @noSelf
        *

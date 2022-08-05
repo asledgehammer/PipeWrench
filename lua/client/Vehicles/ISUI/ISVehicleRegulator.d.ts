@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:37.968Z
+ * File generated at: 2022-08-05T02:36:33.288Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,17 +31,19 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.Vehicles.ISUI {
-    export class ISVehicleRegulator {
-      private constructor();
-
+    export abstract class ISVehicleRegulator {
       static [id: string]: any;
 
+      /** @noSelf */
       static onJoypadPressDown: (joypadData: any) => any;
 
+      /** @noSelf */
       static onJoypadPressUp: (joypadData: any) => any;
 
+      /** @noSelf */
       static onJoypadPressX: (buttonPrompt: any, joypadData: any) => any;
 
+      /** @noSelf */
       static onJoypadReleaseX: (joypadData: any) => any;
     }
   }

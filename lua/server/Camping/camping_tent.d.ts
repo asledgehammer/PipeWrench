@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:32.423Z
+ * File generated at: 2022-08-05T02:36:28.341Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,27 +31,34 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.server.Camping {
-    export class camping {
-      private constructor();
-
+    export abstract class camping {
       static [id: string]: any;
 
+      /** @noSelf */
       static addTent: (grid: any, sprite: any) => any;
 
+      /** @noSelf */
       static destroyTent: (tent: any) => any;
 
+      /** @noSelf */
       static findTentObject: (square: any) => any;
 
+      /** @noSelf */
       static findTentSprites: (sprite: any) => any;
 
+      /** @noSelf */
       static getCurrentTent: (grid: any) => any;
 
+      /** @noSelf */
       static getTentObjects: (tent: any) => any;
 
+      /** @noSelf */
       static isTentObject: (object: any) => any;
 
+      /** @noSelf */
       static removeTent: (tent: any) => any;
 
+      /** @noSelf */
       static tentAt: (x: any, y: any, z: any) => any;
     }
   }

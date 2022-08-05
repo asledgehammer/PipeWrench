@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:36.031Z
+ * File generated at: 2022-08-05T02:36:31.766Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,35 +31,46 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.shared.NPCs {
-    export class BaseGameCharacterDetails {
-      private constructor();
-
+    export abstract class BaseGameCharacterDetails {
       static [id: string]: any;
 
+      /** @noSelf */
       static CreateCharacterInstance: (s: any) => any;
 
+      /** @noSelf */
       static CreateCharacterStats: (desc: any) => any;
 
+      /** @noSelf */
       static DoFemaleForename: () => any;
 
+      /** @noSelf */
       static DoHairColor: () => any;
 
+      /** @noSelf */
       static DoMaleForename: () => any;
 
+      /** @noSelf */
       static DoObservations: () => any;
 
+      /** @noSelf */
       static DoProfessions: () => any;
 
+      /** @noSelf */
       static DoSpawnPoint: () => any;
 
+      /** @noSelf */
       static DoSurname: () => any;
 
+      /** @noSelf */
       static DoTraits: () => any;
 
+      /** @noSelf */
       static DoTrouserColor: () => any;
 
+      /** @noSelf */
       static SetProfessionDescription: (prof: any) => any;
 
+      /** @noSelf */
       static SetTraitDescription: (trait: any) => any;
     }
   }

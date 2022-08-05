@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:36.335Z
+ * File generated at: 2022-08-05T02:36:32.021Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -112,9 +112,7 @@ declare module 'PipeWrench' {
       setJoypadFocused: ((focused: any, joypadData: any) => any) | any;
     }
 
-    export class DefaultServerSettings {
-      private constructor();
-
+    export abstract class DefaultServerSettings {
       static [id: string]: any;
 
       insertUnique: ((_table: any, value: any) => any) | any;

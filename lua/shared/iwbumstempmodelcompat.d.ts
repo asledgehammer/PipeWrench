@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:35.648Z
+ * File generated at: 2022-08-05T02:36:31.455Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -33,6 +33,6 @@ declare module 'PipeWrench' {
   export namespace lua.shared {}
   export namespace lua.shared.iwbumstempmodelcompat {
     /** @noSelf */
-    export const getDir: (() => any) | any;
+    export const getDir: () => any;
   }
 }

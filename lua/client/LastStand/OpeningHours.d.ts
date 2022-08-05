@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:35.769Z
+ * File generated at: 2022-08-05T02:36:31.552Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,15 +31,16 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.LastStand {
-    export class OpeningHours {
-      private constructor();
-
+    export abstract class OpeningHours {
       static [id: string]: any;
 
+      /** @noSelf */
       static Add: () => any;
 
+      /** @noSelf */
       static AddPlayer: (playerNum: any, playerObj: any) => any;
 
+      /** @noSelf */
       static CheckHordeSpawn: (
         regionName: any,
         regionSpawn: any,
@@ -48,22 +49,31 @@ declare module 'PipeWrench' {
         regionSpawnZ: any
       ) => any;
 
+      /** @noSelf */
       static CheckMetalGates: (area: any) => any;
 
+      /** @noSelf */
       static EveryDays: () => any;
 
+      /** @noSelf */
       static EveryTenMinutes: () => any;
 
+      /** @noSelf */
       static OnGameStart: () => any;
 
+      /** @noSelf */
       static OnInitWorld: () => any;
 
+      /** @noSelf */
       static OnPlayerUpdate: () => any;
 
+      /** @noSelf */
       static RemovePlayer: (p: any) => any;
 
+      /** @noSelf */
       static Render: () => any;
 
+      /** @noSelf */
       static ResetMetalGates: (area: any) => any;
     }
   }

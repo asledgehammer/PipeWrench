@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:36.373Z
+ * File generated at: 2022-08-05T02:36:32.048Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,13 +31,13 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.server.radio {
-    export class DynamicRadio {
-      private constructor();
-
+    export abstract class DynamicRadio {
       static [id: string]: any;
 
+      /** @noSelf */
       static OnEveryHour: () => any;
 
+      /** @noSelf */
       static OnLoadRadioScripts: (_scriptManager: any, _isNewGame: any) => any;
     }
   }

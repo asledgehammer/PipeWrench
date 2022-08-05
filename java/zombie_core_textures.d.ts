@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-04T19:16Z
+ * File generated at 2022-08-04T22:13Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -510,11 +510,11 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (Empty): void
-       *  - (BooleanGrid arg0): void
        *  - (WrappedBuffer arg0): void
+       *  - (BooleanGrid arg0): void
        *  - (boolean[] arg0): void
        */
-      createMask(arg0?: zombie.core.utils.BooleanGrid | zombie.core.utils.WrappedBuffer | boolean[]): void;
+      createMask(arg0?: zombie.core.utils.WrappedBuffer | zombie.core.utils.BooleanGrid | boolean[]): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -1777,10 +1777,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (InputStream arg0): number
        *  - (ByteBuffer arg0): number
+       *  - (InputStream arg0): number
        */
-      static readInt(arg0: java.io.InputStream | java.nio.ByteBuffer): number;
+      static readInt(arg0: java.nio.ByteBuffer | java.io.InputStream): number;
       /**
        * @noSelf
        *

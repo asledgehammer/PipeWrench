@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:34.686Z
+ * File generated at: 2022-08-05T02:36:30.578Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,23 +31,28 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.ISUI {
-    export class ISFireplaceMenu {
-      private constructor();
-
+    export abstract class ISFireplaceMenu {
       static [id: string]: any;
 
+      /** @noSelf */
       static onAddAllFuel: (playerObj: any, fireplace: any) => any;
 
+      /** @noSelf */
       static onAddFuel: (playerObj: any, fireplace: any, fuelType: any) => any;
 
+      /** @noSelf */
       static onAddMultipleFuel: (playerObj: any, fireplace: any, fuelType: any) => any;
 
+      /** @noSelf */
       static onDisplayInfo: (worldobjects: any, player: any, bbq: any) => any;
 
+      /** @noSelf */
       static onExtinguish: (worldobjects: any, player: any, fireplace: any) => any;
 
+      /** @noSelf */
       static OnFillWorldObjectContextMenu: (player: any, context: any, worldobjects: any, test: any) => any;
 
+      /** @noSelf */
       static onLightFromKindle: (
         worldobjects: any,
         player: any,
@@ -56,10 +61,13 @@ declare module 'PipeWrench' {
         fireplace: any
       ) => any;
 
+      /** @noSelf */
       static onLightFromLiterature: (playerObj: any, itemType: any, lighter: any, fireplace: any, fuelAmt: any) => any;
 
+      /** @noSelf */
       static onLightFromPetrol: (worldobjects: any, player: any, lighter: any, petrol: any, fireplace: any) => any;
 
+      /** @noSelf */
       static toPlayerInventory: (playerObj: any, item: any) => any;
     }
   }

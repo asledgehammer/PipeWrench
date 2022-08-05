@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:36.723Z
+ * File generated at: 2022-08-05T02:36:32.283Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -103,17 +103,19 @@ declare module 'PipeWrench' {
       stopReloadSuccess: (() => any) | any;
     }
 
-    export class aaa {
-      private constructor();
-
+    export abstract class aaa {
       static [id: string]: any;
 
+      /** @noSelf */
       static checkLoadedHook: (character: any, chargeDelta: any) => any;
 
+      /** @noSelf */
       static fireShotHook: (wielder: any, weapon: any) => any;
 
+      /** @noSelf */
       static startRackingHook: (pl: any) => any;
 
+      /** @noSelf */
       static startReloadHook: (pl: any) => any;
     }
   }

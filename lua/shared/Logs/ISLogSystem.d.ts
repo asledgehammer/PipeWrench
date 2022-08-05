@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:35.799Z
+ * File generated at: 2022-08-05T02:36:31.574Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,23 +31,28 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.shared.Logs {
-    export class ISLogSystem {
-      private constructor();
-
+    export abstract class ISLogSystem {
       static [id: string]: any;
 
+      /** @noSelf */
       static getGenericLogText: (_character: any, _actionType: any) => any;
 
+      /** @noSelf */
       static getObjectPosition: (_object: any) => any;
 
+      /** @noSelf */
       static init: () => any;
 
+      /** @noSelf */
       static logAction: (_action: any) => any;
 
+      /** @noSelf */
       static OnClientCommand: (_module: any, _command: any, _plObj: any, _packet: any) => any;
 
+      /** @noSelf */
       static sendLog: (_character: any, _loggerName: any, _logText: any) => any;
 
+      /** @noSelf */
       static writeLog: (_character: any, _packet: any) => any;
     }
   }

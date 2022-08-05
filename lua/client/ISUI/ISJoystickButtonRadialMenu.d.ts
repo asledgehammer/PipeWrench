@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:34.811Z
+ * File generated at: 2022-08-05T02:36:30.691Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,23 +31,28 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.ISUI {
-    export class ISJoystickButtonRadialMenu {
-      private constructor();
-
+    export abstract class ISJoystickButtonRadialMenu {
       static [id: string]: any;
 
+      /** @noSelf */
       static displayLeft: (joypadData: any) => any;
 
+      /** @noSelf */
       static onJoypadButtonReleased: (button: any, joypadData: any) => any;
 
+      /** @noSelf */
       static onJoypadDown: (button: any, joypadData: any) => any;
 
+      /** @noSelf */
       static onRepeatLeftStickButton: (joypadData: any) => any;
 
+      /** @noSelf */
       static onToggleAutoWalk: (playerObj: any) => any;
 
+      /** @noSelf */
       static onToggleCrouch: (playerObj: any) => any;
 
+      /** @noSelf */
       static onToggleSit: (playerObj: any) => any;
     }
   }

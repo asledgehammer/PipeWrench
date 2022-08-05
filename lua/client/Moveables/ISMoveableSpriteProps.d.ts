@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:35.974Z
+ * File generated at: 2022-08-05T02:36:31.713Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,13 +31,11 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.Moveables {
-    export class InfoPanelFlags {
+    export abstract class InfoPanelFlags {
       static [id: string]: any;
     }
 
-    export class ISMoveableSpriteProps {
-      private constructor();
-
+    export abstract class ISMoveableSpriteProps {
       static [id: string]: any;
 
       addAllScrapItemsToInventory: ((_character: any, _list: any) => any) | any;
@@ -216,6 +214,7 @@ declare module 'PipeWrench' {
 
       walkToAndEquip: ((_character: any, _square: any, _mode: any) => any) | any;
 
+      /** @noSelf */
       static addLineToInfoTable: (
         _table: any,
         _lineA: any,
@@ -228,16 +227,17 @@ declare module 'PipeWrench' {
         _bB: any
       ) => any;
 
+      /** @noSelf */
       static fromObject: (_object: any) => any;
 
+      /** @noSelf */
       static new: (_sprite: any) => any;
 
+      /** @noSelf */
       static OnDynamicMovableRecipe: (_sprite: any, _recipe: any, _item: any, _player: any) => any;
     }
 
-    export class ISThumpableSpriteProps {
-      private constructor();
-
+    export abstract class ISThumpableSpriteProps {
       static [id: string]: any;
 
       addToolString: ((infoTable: any, tag: any, hasTool: any) => any) | any;
@@ -258,10 +258,11 @@ declare module 'PipeWrench' {
 
       walkToAndEquip: ((_character: any, _square: any, _mode: any) => any) | any;
 
+      /** @noSelf */
       static new: (object: any) => any;
     }
 
-    export class SpriteGridCache {
+    export abstract class SpriteGridCache {
       static [id: string]: any;
     }
   }

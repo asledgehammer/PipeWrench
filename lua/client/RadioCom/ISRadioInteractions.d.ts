@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:36.416Z
+ * File generated at: 2022-08-05T02:36:32.063Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,9 +31,7 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.RadioCom {
-    export class ISRadioInteractions {
-      private constructor();
-
+    export abstract class ISRadioInteractions {
       static [id: string]: any;
 
       getInstance: (() => any) | any;

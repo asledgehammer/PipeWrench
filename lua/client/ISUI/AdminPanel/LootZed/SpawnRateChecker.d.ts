@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:34.428Z
+ * File generated at: 2022-08-05T02:36:30.341Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,11 +31,10 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.ISUI.AdminPanel.LootZed {
-    export class LootZedTool {
-      private constructor();
-
+    export abstract class LootZedTool {
       static [id: string]: any;
 
+      /** @noSelf */
       static doRollItem_CalcChances: (
         containerDist: any,
         arg1: any,
@@ -46,10 +45,13 @@ declare module 'PipeWrench' {
         arg6: any
       ) => any;
 
+      /** @noSelf */
       static fillContainer_CalcChances: (container: any, player: any) => any;
 
+      /** @noSelf */
       static fillContainerType_CalcChances: (roomDist: any, container: any, roomName: any, player: any) => any;
 
+      /** @noSelf */
       static rollItem_CalcChances: (
         containerDist: any,
         container: any,
@@ -58,6 +60,7 @@ declare module 'PipeWrench' {
         roomDist: any
       ) => any;
 
+      /** @noSelf */
       static rollProceduralItem_CalcChances: (
         proceduralItems: any,
         container: any,

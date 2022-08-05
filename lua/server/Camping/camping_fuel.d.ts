@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:32.412Z
+ * File generated at: 2022-08-05T02:36:28.335Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,19 +31,19 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.server.Camping {
-    export class campingFuelCategory {
+    export abstract class campingFuelCategory {
       static [id: string]: any;
     }
 
-    export class campingFuelType {
+    export abstract class campingFuelType {
       static [id: string]: any;
     }
 
-    export class campingLightFireCategory {
+    export abstract class campingLightFireCategory {
       static [id: string]: any;
     }
 
-    export class campingLightFireType {
+    export abstract class campingLightFireType {
       static [id: string]: any;
     }
   }

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:36.849Z
+ * File generated at: 2022-08-05T02:36:32.397Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,9 +31,7 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.shared.StashDescriptions {
-    export class StashUtil {
-      private constructor();
-
+    export abstract class StashUtil {
       static [id: string]: any;
 
       addContainer:
@@ -42,6 +40,7 @@ declare module 'PipeWrench' {
 
       addStamp: ((symbol: any, text: any, mapX: any, mapY: any, r: any, g: any, b: any) => any) | any;
 
+      /** @noSelf */
       static newStash: (name: any, type: any, item: any, customName: any) => any;
     }
   }

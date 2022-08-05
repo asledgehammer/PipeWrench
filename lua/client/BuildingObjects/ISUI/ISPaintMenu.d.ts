@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:32.201Z
+ * File generated at: 2022-08-05T02:36:28.218Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,19 +31,22 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.BuildingObjects.ISUI {
-    export class ISPaintMenu {
-      private constructor();
-
+    export abstract class ISPaintMenu {
       static [id: string]: any;
 
+      /** @noSelf */
       static addSignOption: (subMenuPaint: any, name: any, wall: any, painting: any, r: any, g: any, b: any) => any;
 
+      /** @noSelf */
       static doPaintMenu: (player: any, context: any, worldobjects: any, test: any) => any;
 
+      /** @noSelf */
       static onPaint: (worldobjects: any, player: any, thumpable: any, painting: any) => any;
 
+      /** @noSelf */
       static onPaintSign: (wall: any, player: any, painting: any, sign: any, r: any, g: any, b: any) => any;
 
+      /** @noSelf */
       static onPlaster: (worldobjects: any, player: any, thumpable: any, square: any) => any;
     }
   }

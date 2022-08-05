@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-04T19:16Z
+ * File generated at 2022-08-04T22:13Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -322,14 +322,14 @@ declare module 'PipeWrench' {
       setSamplerUnit(arg0: string, arg1: number): void;
       /**
        * Method Parameters: 
-       *  - (String arg0, float arg1): void
-       *  - (String arg0, int arg1): void
-       *  - (String arg0, Vector3 arg1): void
-       *  - (String arg0, Matrix4f arg1): void
        *  - (String arg0, Vector2 arg1): void
+       *  - (String arg0, int arg1): void
+       *  - (String arg0, Matrix4f arg1): void
+       *  - (String arg0, Vector3 arg1): void
+       *  - (String arg0, float arg1): void
        *  - (String arg0, Texture arg1, int arg2): void
        */
-      setValue(arg0: string, arg1: number | zombie.iso.Vector3 | org.lwjgl.util.vector.Matrix4f | zombie.iso.Vector2 | zombie.core.textures.Texture, arg2?: number): void;
+      setValue(arg0: string, arg1: zombie.iso.Vector2 | number | org.lwjgl.util.vector.Matrix4f | zombie.iso.Vector3 | zombie.core.textures.Texture, arg2?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, int arg1): void
@@ -342,10 +342,10 @@ declare module 'PipeWrench' {
       setValueColorRGB(arg0: string, arg1: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0, float arg1, float arg2): void
        *  - (String arg0, float arg1, float arg2): void
+       *  - (int arg0, float arg1, float arg2): void
        */
-      setVector2(arg0: number | string, arg1: number, arg2: number): void;
+      setVector2(arg0: string | number, arg1: number, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, float arg1, float arg2, float arg3): void

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:33.914Z
+ * File generated at: 2022-08-05T02:36:29.870Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -115,35 +115,35 @@ declare module 'PipeWrench' {
       static RequiredWidth: () => any;
     }
 
-    export class disease {
+    export abstract class disease {
       static [id: string]: any;
     }
 
-    export class disease_rgb {
+    export abstract class disease_rgb {
       static [id: string]: any;
     }
 
-    export class fertilizer_rgb {
+    export abstract class fertilizer_rgb {
       static [id: string]: any;
     }
 
-    export class health_rgb {
+    export abstract class health_rgb {
       static [id: string]: any;
     }
 
-    export class nowateredsince_rgb {
+    export abstract class nowateredsince_rgb {
       static [id: string]: any;
     }
 
-    export class title_rgb {
+    export abstract class title_rgb {
       static [id: string]: any;
     }
 
-    export class water_rgb {
+    export abstract class water_rgb {
       static [id: string]: any;
     }
 
-    export class waterbar_rgb {
+    export abstract class waterbar_rgb {
       static [id: string]: any;
     }
   }

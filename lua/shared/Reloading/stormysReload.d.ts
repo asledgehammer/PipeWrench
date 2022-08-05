@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:36.753Z
+ * File generated at: 2022-08-05T02:36:32.310Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,12 +31,12 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.shared.Reloading {
-    export class ReloadManager {
+    export abstract class ReloadManager {
       static [id: string]: any;
     }
   }
   export namespace lua.shared.Reloading.stormysReload {
     /** @noSelf */
-    export const addShotgun: (() => any) | any;
+    export const addShotgun: () => any;
   }
 }

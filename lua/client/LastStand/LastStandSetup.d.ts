@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:35.762Z
+ * File generated at: 2022-08-05T02:36:31.547Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,24 +31,23 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.LastStand {
-    export class LastStandData {
-      private constructor();
-
+    export abstract class LastStandData {
       static [id: string]: any;
 
       static chosenChallenge: any;
 
+      /** @noSelf */
       static getSpawnRegion: () => any;
     }
   }
   export namespace lua.client.LastStand.LastStandSetup {
     /** @noSelf */
-    export const doLastStandDraw: (() => any) | any;
+    export const doLastStandDraw: () => any;
 
     /** @noSelf */
-    export const doLastStandInit: (() => any) | any;
+    export const doLastStandInit: () => any;
 
     /** @noSelf */
-    export const preLoadLastStandInit: (() => any) | any;
+    export const preLoadLastStandInit: () => any;
   }
 }

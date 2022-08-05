@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T23:00:35.169Z
+ * File generated at: 2022-08-05T02:36:31.016Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,17 +31,19 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.ISUI {
-    export class ISUIHandler {
-      private constructor();
-
+    export abstract class ISUIHandler {
       static [id: string]: any;
 
+      /** @noSelf */
       static onKeyPressed: (key: any) => any;
 
+      /** @noSelf */
       static onKeyStartPressed: (key: any) => any;
 
+      /** @noSelf */
       static setVisibleAllUI: (visible: any) => any;
 
+      /** @noSelf */
       static toggleUI: () => any;
     }
   }
