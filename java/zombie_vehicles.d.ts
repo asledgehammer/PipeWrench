@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-04T16:17Z
+ * File generated at 2022-08-04T19:16Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -2712,10 +2712,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -3488,10 +3488,10 @@ declare module 'PipeWrench' {
       shouldCollideWithObjects(): boolean;
       /**
        * Method Parameters: 
-       *  - (IsoGameCharacter arg0): boolean
        *  - (int arg0): boolean
+       *  - (IsoGameCharacter arg0): boolean
        */
-      showPassenger(arg0: zombie.characters.IsoGameCharacter | number): boolean;
+      showPassenger(arg0: number | zombie.characters.IsoGameCharacter): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): void

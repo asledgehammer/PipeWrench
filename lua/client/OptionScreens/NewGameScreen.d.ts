@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:47.089Z
+ * File generated at: 2022-08-04T23:00:36.280Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -108,18 +108,25 @@ declare module 'PipeWrench' {
 
       updateBottomPanelButtons: (() => any) | any;
 
+      /** @noSelf */
       static dblClickChallenge: (item: any, x: any, y: any) => any;
 
+      /** @noSelf */
       static dblClickDifficulty: (item: any, x: any, y: any) => any;
 
+      /** @noSelf */
       static dblClickPlaystyle: (item: any, x: any, y: any) => any;
 
+      /** @noSelf */
       static dblClickSurvival: (item: any, x: any, y: any) => any;
 
+      /** @noSelf */
       static dblClickTutorial: (item: any, x: any, y: any) => any;
 
+      /** @noSelf */
       static onChooseDifficulty: (item: any, x: any, y: any) => any;
 
+      /** @noSelf */
       static onMenuItemMouseDown: (item: any, x: any, y: any) => any;
     }
   }

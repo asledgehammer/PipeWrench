@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-04T16:17Z
+ * File generated at 2022-08-04T19:16Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -509,10 +509,10 @@ declare module 'PipeWrench' {
       addPlayer(arg0: string): void;
       /**
        * Method Parameters: 
-       *  - (String arg0): zombie.iso.areas.SafeHouse
        *  - (IsoPlayer arg0): zombie.iso.areas.SafeHouse
+       *  - (String arg0): zombie.iso.areas.SafeHouse
        */
-      alreadyHaveSafehouse(arg0: string | zombie.characters.IsoPlayer): zombie.iso.areas.SafeHouse;
+      alreadyHaveSafehouse(arg0: zombie.characters.IsoPlayer | string): zombie.iso.areas.SafeHouse;
       /**
        * Method Parameters: 
        *  - (IsoPlayer arg0): void

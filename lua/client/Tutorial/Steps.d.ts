@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:49.940Z
+ * File generated at: 2022-08-04T23:00:37.783Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -76,20 +76,28 @@ declare module 'PipeWrench' {
 
       OnBrothersDead: (() => any) | any;
 
+      /** @noSelf */
       static BandageYourself: () => any;
 
+      /** @noSelf */
       static CheckWindow: () => any;
 
+      /** @noSelf */
       static HealthOpen: () => any;
 
+      /** @noSelf */
       static OpenCurtain: () => any;
 
+      /** @noSelf */
       static spawnBrothers: () => any;
 
+      /** @noSelf */
       static ThroughDoor: () => any;
 
+      /** @noSelf */
       static ThroughWindow: () => any;
 
+      /** @noSelf */
       static Vault: () => any;
     }
 
@@ -202,6 +210,7 @@ declare module 'PipeWrench' {
 
       selectInventory: (() => any) | any;
 
+      /** @noSelf */
       static spawnPan: () => any;
     }
 
@@ -248,20 +257,28 @@ declare module 'PipeWrench' {
 
       Shout: (() => any) | any;
 
+      /** @noSelf */
       static BackOverFence: () => any;
 
+      /** @noSelf */
       static BrothersDead: () => any;
 
+      /** @noSelf */
       static ClimbedFence: () => any;
 
+      /** @noSelf */
       static OnSquare: () => any;
 
+      /** @noSelf */
       static Outhouse: () => any;
 
+      /** @noSelf */
       static Sprinted: () => any;
 
+      /** @noSelf */
       static SurvivalGuideOpen: () => any;
 
+      /** @noSelf */
       static TheEnd: () => any;
     }
 
@@ -306,12 +323,16 @@ declare module 'PipeWrench' {
 
       spawnDad: (() => any) | any;
 
+      /** @noSelf */
       static OnSwingAtDad: (owner: any, weapon: any, zed: any, dmg: any) => any;
 
+      /** @noSelf */
       static setZoom: (depth: any) => any;
 
+      /** @noSelf */
       static Sneak: () => any;
 
+      /** @noSelf */
       static spawnShotgun: () => any;
     }
 

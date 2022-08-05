@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:45.290Z
+ * File generated at: 2022-08-04T23:00:35.506Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -60,8 +60,10 @@ declare module 'PipeWrench' {
 
       populateList: (() => any) | any;
 
+      /** @noSelf */
       static OnMiniScoreboardUpdate: () => any;
 
+      /** @noSelf */
       static OnScoreboardUpdate: (usernames: any, displayNames: any, steamIDs: any) => any;
     }
   }

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:43.520Z
+ * File generated at: 2022-08-04T23:00:34.760Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -262,22 +262,31 @@ declare module 'PipeWrench' {
 
       update: (() => any) | any;
 
+      /** @noSelf */
       static ContainerSizeChanged: () => any;
 
+      /** @noSelf */
       static dirtyUI: () => any;
 
+      /** @noSelf */
       static GetFloorContainer: (playerNum: any) => any;
 
+      /** @noSelf */
       static loadWeight: (inv: any) => any;
 
+      /** @noSelf */
       static OnContainerUpdate: (object: any) => any;
 
+      /** @noSelf */
       static ongamestart: () => any;
 
+      /** @noSelf */
       static onInventoryFontChanged: () => any;
 
+      /** @noSelf */
       static onKeyPressed: (key: any) => any;
 
+      /** @noSelf */
       static toggleInventory: () => any;
     }
   }

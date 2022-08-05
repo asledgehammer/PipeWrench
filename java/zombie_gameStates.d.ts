@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-04T16:17Z
+ * File generated at 2022-08-04T19:16Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -1220,10 +1220,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (Texture arg0, int arg1, int arg2, int arg3, int arg4, Color arg5): void
        *  - (Texture arg0, int arg1, int arg2, int arg3, int arg4, float arg5): void
+       *  - (Texture arg0, int arg1, int arg2, int arg3, int arg4, Color arg5): void
        */
-      static DrawTexture(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color | number): void;
+      static DrawTexture(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number | zombie.core.Color): void;
       /**
        * @noSelf
        *

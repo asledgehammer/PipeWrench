@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:44.086Z
+ * File generated at: 2022-08-04T23:00:35.072Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -130,6 +130,7 @@ declare module 'PipeWrench' {
 
       updateSmoothScrolling: (() => any) | any;
 
+      /** @noSelf */
       static redoTab: (self: any) => any;
     }
   }

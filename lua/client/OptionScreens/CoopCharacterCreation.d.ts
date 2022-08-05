@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:46.756Z
+ * File generated at: 2022-08-04T23:00:36.120Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -70,10 +70,13 @@ declare module 'PipeWrench' {
 
       OnJoypadBeforeDeactivate: ((index: any) => any) | any;
 
+      /** @noSelf */
       static getJoypad: () => any;
 
+      /** @noSelf */
       static newPlayer: (joypadIndex: any, joypadData: any) => any;
 
+      /** @noSelf */
       static setVisibleAllUI: (visible: any) => any;
     }
   }

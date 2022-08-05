@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:42.076Z
+ * File generated at: 2022-08-04T23:00:33.914Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -72,32 +72,46 @@ declare module 'PipeWrench' {
 
       update: (() => any) | any;
 
+      /** @noSelf */
       static getCurrentGrowingPhase: (info: any, farmingLevel: any) => any;
 
+      /** @noSelf */
       static getDiseaseName: (info: any) => any;
 
+      /** @noSelf */
       static getFertilizerColor: (info: any) => any;
 
+      /** @noSelf */
       static getHealth: (info: any, farmingLevel: any) => any;
 
+      /** @noSelf */
       static getHealthColor: (info: any, farmingLevel: any) => any;
 
+      /** @noSelf */
       static getLastWatedHour: (plant: any) => any;
 
+      /** @noSelf */
       static getNextGrowingPhase: (info: any) => any;
 
+      /** @noSelf */
       static getNoWateredSinceColor: (plant: any, lastWatedHour: any, farmingLevel: any) => any;
 
+      /** @noSelf */
       static getTitleColor: (plant: any) => any;
 
+      /** @noSelf */
       static getWaterBarWidth: (info: any) => any;
 
+      /** @noSelf */
       static getWaterLvl: (plant: any, farmingLevel: any) => any;
 
+      /** @noSelf */
       static getWaterLvlBarColor: (info: any, farmingLevel: any) => any;
 
+      /** @noSelf */
       static getWaterLvlColor: (plant: any, farmingLevel: any) => any;
 
+      /** @noSelf */
       static RequiredWidth: () => any;
     }
 

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:50.733Z
+ * File generated at: 2022-08-04T23:00:38.162Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -56,12 +56,16 @@ declare module 'PipeWrench' {
 
       useWater: ((units: any) => any) | any;
 
+      /** @noSelf */
       static chooseArea: (character: any, vehicle: any) => any;
 
+      /** @noSelf */
       static getWaterAmountForArea: (vehicle: any, id: any) => any;
 
+      /** @noSelf */
       static getWaterAmountForPlayer: (character: any) => any;
 
+      /** @noSelf */
       static hasBlood: (vehicle: any) => any;
     }
   }

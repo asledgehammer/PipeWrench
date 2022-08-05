@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:41.156Z
+ * File generated at: 2022-08-04T23:00:33.311Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -70,10 +70,13 @@ declare module 'PipeWrench' {
 
       setupButtons: (() => any) | any;
 
+      /** @noSelf */
       static OnOpenPanel: () => any;
 
+      /** @noSelf */
       static OnPlayerDeath: (playerObj: any) => any;
 
+      /** @noSelf */
       static RegisterClass: (_class: any) => any;
     }
   }

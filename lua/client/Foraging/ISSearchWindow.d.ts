@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:42.485Z
+ * File generated at: 2022-08-04T23:00:34.180Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -118,16 +118,22 @@ declare module 'PipeWrench' {
 
       updateSearchFocusCategories: (() => any) | any;
 
+      /** @noSelf */
       static createUI: (_player: any) => any;
 
+      /** @noSelf */
       static destroyUI: (_character: any) => any;
 
+      /** @noSelf */
       static onEnableSearchMode: (_character: any, _isSearchMode: any) => any;
 
+      /** @noSelf */
       static OnFillWorldObjectContextMenu: (_player: any, _context: any) => any;
 
+      /** @noSelf */
       static showWindow: (_character: any) => any;
 
+      /** @noSelf */
       static toggleWindow: (_character: any) => any;
     }
   }

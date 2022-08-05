@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:46.602Z
+ * File generated at: 2022-08-04T23:00:36.045Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -50,6 +50,7 @@ declare module 'PipeWrench' {
 
       drawAvatar: (() => any) | any;
 
+      /** @noSelf */
       static doInfo: (desc: any) => any;
     }
   }

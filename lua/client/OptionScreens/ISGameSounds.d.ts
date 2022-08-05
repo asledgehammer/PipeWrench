@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:46.857Z
+ * File generated at: 2022-08-04T23:00:36.165Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -84,6 +84,7 @@ declare module 'PipeWrench' {
 
       onVolumeChanged: ((control: any, volume: any) => any) | any;
 
+      /** @noSelf */
       static onPlaySound: (args: any) => any;
     }
   }

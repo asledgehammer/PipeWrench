@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:40.266Z
+ * File generated at: 2022-08-04T23:00:32.619Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -152,44 +152,64 @@ declare module 'PipeWrench' {
 
       updateChatPrefixSettings: (() => any) | any;
 
+      /** @noSelf */
       static addLineInChat: (message: any, tabID: any) => any;
 
+      /** @noSelf */
       static createChat: () => any;
 
+      /** @noSelf */
       static initChat: () => any;
 
+      /** @noSelf */
       static ISTabPanelOnMouseDown: (target: any, x: any, y: any) => any;
 
+      /** @noSelf */
       static onFadeTimeChange: (target: any, value: any) => any;
 
+      /** @noSelf */
       static onFocusOpaqueChange: (target: any, value: any) => any;
 
+      /** @noSelf */
       static onFontSizeChange: (target: any, value: any) => any;
 
+      /** @noSelf */
       static onKeyKeepPressed: (key: any) => any;
 
+      /** @noSelf */
       static onMaxOpaqueChange: (target: any, value: any) => any;
 
+      /** @noSelf */
       static onMinOpaqueChange: (target: any, value: any) => any;
 
+      /** @noSelf */
       static onSetDefaultTab: (defaultTabTitle: any) => any;
 
+      /** @noSelf */
       static onSwitchStream: () => any;
 
+      /** @noSelf */
       static onTabAdded: (tabTitle: any, tabID: any) => any;
 
+      /** @noSelf */
       static onTabRemoved: (tabTitle: any, tabID: any) => any;
 
+      /** @noSelf */
       static onTextChange: () => any;
 
+      /** @noSelf */
       static ontick: () => any;
 
+      /** @noSelf */
       static onToggleChatBox: (key: any) => any;
 
+      /** @noSelf */
       static onToggleTagPrefix: () => any;
 
+      /** @noSelf */
       static onToggleTimestampPrefix: () => any;
 
+      /** @noSelf */
       static unfocusEvent: () => any;
     }
   }

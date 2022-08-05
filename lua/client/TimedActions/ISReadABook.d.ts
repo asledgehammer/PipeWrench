@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:49.208Z
+ * File generated at: 2022-08-04T23:00:37.431Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -50,8 +50,10 @@ declare module 'PipeWrench' {
 
       animEvent: ((event: any, parameter: any) => any) | any;
 
+      /** @noSelf */
       static checkLevel: (character: any, item: any) => any;
 
+      /** @noSelf */
       static checkMultiplier: (self: any) => any;
     }
   }

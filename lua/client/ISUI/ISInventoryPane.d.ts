@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:43.539Z
+ * File generated at: 2022-08-04T23:00:34.775Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -252,18 +252,25 @@ declare module 'PipeWrench' {
 
       updateTooltip: (() => any) | any;
 
+      /** @noSelf */
       static getActualItems: (items: any) => any;
 
+      /** @noSelf */
       static itemSortByCatDesc: (a: any, b: any) => any;
 
+      /** @noSelf */
       static itemSortByCatInc: (a: any, b: any) => any;
 
+      /** @noSelf */
       static itemSortByNameDesc: (a: any, b: any) => any;
 
+      /** @noSelf */
       static itemSortByNameInc: (a: any, b: any) => any;
 
+      /** @noSelf */
       static itemSortByWeightAsc: (a: any, b: any) => any;
 
+      /** @noSelf */
       static itemSortByWeightDesc: (a: any, b: any) => any;
     }
 

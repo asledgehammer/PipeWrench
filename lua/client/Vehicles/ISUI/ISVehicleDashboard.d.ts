@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:50.217Z
+ * File generated at: 2022-08-04T23:00:37.919Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -150,20 +150,28 @@ declare module 'PipeWrench' {
 
       setVehicle: ((vehicle: any) => any) | any;
 
+      /** @noSelf */
       static damageChecker: () => any;
 
+      /** @noSelf */
       static damageFlick: (character: any) => any;
 
+      /** @noSelf */
       static getVehicleCondition: (vehicle: any) => any;
 
+      /** @noSelf */
       static onEnterVehicle: (character: any) => any;
 
+      /** @noSelf */
       static onExitVehicle: (character: any) => any;
 
+      /** @noSelf */
       static onGameStart: () => any;
 
+      /** @noSelf */
       static OnGameStart: () => any;
 
+      /** @noSelf */
       static onSwitchVehicleSeat: (character: any) => any;
     }
   }

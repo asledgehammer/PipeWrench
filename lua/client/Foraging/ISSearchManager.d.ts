@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:42.472Z
+ * File generated at: 2022-08-04T23:00:34.172Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -364,22 +364,31 @@ declare module 'PipeWrench' {
 
       worldItemTest: ((_itemObj: any) => any) | any;
 
+      /** @noSelf */
       static createUI: (_player: any) => any;
 
+      /** @noSelf */
       static destroyUI: (_character: any) => any;
 
+      /** @noSelf */
       static getManager: (_character: any) => any;
 
+      /** @noSelf */
       static handleKeyPressed: (_keyPressed: any) => any;
 
+      /** @noSelf */
       static initBinds: () => any;
 
+      /** @noSelf */
       static OnFillWorldObjectContextMenu: (_player: any, _context: any, _worldObjects: any) => any;
 
+      /** @noSelf */
       static OnGameStart: () => any;
 
+      /** @noSelf */
       static onUpdateIcon: (_zoneData: any, _iconID: any, _icon: any) => any;
 
+      /** @noSelf */
       static setManager: (_character: any, _manager: any) => any;
     }
   }

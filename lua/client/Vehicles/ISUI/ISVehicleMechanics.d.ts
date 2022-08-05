@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:50.269Z
+ * File generated at: 2022-08-04T23:00:37.945Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -162,34 +162,49 @@ declare module 'PipeWrench' {
 
       updateLayout: (() => any) | any;
 
+      /** @noSelf */
       static onCheatGetKey: (playerObj: any, vehicle: any) => any;
 
+      /** @noSelf */
       static onCheatHotwire: (playerObj: any, vehicle: any, hotwired: any, broken: any) => any;
 
+      /** @noSelf */
       static onCheatRemove: (playerObj: any, vehicle: any) => any;
 
+      /** @noSelf */
       static onCheatRemoveAux: (dummy: any, button: any, playerObj: any, vehicle: any) => any;
 
+      /** @noSelf */
       static onCheatRepair: (playerObj: any, vehicle: any) => any;
 
+      /** @noSelf */
       static onCheatRepairPart: (playerObj: any, part: any) => any;
 
+      /** @noSelf */
       static onCheatSetCondition: (playerObj: any, part: any) => any;
 
+      /** @noSelf */
       static onCheatSetConditionAux: (target: any, button: any, playerObj: any, part: any) => any;
 
+      /** @noSelf */
       static onCheatSetContentAmount: (playerObj: any, part: any) => any;
 
+      /** @noSelf */
       static onCheatSetContentAmountAux: (target: any, button: any, playerObj: any, part: any) => any;
 
+      /** @noSelf */
       static onCheatSetRust: (playerObj: any, vehicle: any) => any;
 
+      /** @noSelf */
       static onCheatSetRustAux: (target: any, button: any, playerObj: any, vehicle: any) => any;
 
+      /** @noSelf */
       static onCheatToggle: (playerObj: any) => any;
 
+      /** @noSelf */
       static onConfigHeadlight: (playerObj: any, part: any, dir: any) => any;
 
+      /** @noSelf */
       static OnMechanicActionDone: (
         chr: any,
         success: any,
@@ -199,8 +214,10 @@ declare module 'PipeWrench' {
         installing: any
       ) => any;
 
+      /** @noSelf */
       static onRepairEngine: (playerObj: any, part: any) => any;
 
+      /** @noSelf */
       static onTakeEngineParts: (playerObj: any, part: any) => any;
     }
   }

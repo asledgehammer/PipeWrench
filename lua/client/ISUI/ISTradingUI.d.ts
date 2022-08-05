@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:44.190Z
+ * File generated at: 2022-08-04T23:00:35.119Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -116,14 +116,19 @@ declare module 'PipeWrench' {
 
       yourOfferMouseUp: ((x: any, y: any) => any) | any;
 
+      /** @noSelf */
       static AcceptedTrade: (accepted: any) => any;
 
+      /** @noSelf */
       static OtherAddNewItem: (player: any, item: any) => any;
 
+      /** @noSelf */
       static ReceiveTradeRequest: (requester: any) => any;
 
+      /** @noSelf */
       static RemoveItem: (player: any, index: any) => any;
 
+      /** @noSelf */
       static UpdateState: (player: any, state: any) => any;
     }
   }

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:50.878Z
+ * File generated at: 2022-08-04T23:00:38.229Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -80,12 +80,16 @@ declare module 'PipeWrench' {
 
       updateTooltip: ((lvlSelected: any) => any) | any;
 
+      /** @noSelf */
       static getPerkXp: (self: any) => any;
 
+      /** @noSelf */
       static getPreviousXpLvl: (perk: any, level: any) => any;
 
+      /** @noSelf */
       static getXpForLvl: (perk: any, level: any) => any;
 
+      /** @noSelf */
       static updateAlpha: () => any;
     }
   }

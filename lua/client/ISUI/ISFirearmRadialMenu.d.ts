@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:43.352Z
+ * File generated at: 2022-08-04T23:00:34.674Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -50,22 +50,31 @@ declare module 'PipeWrench' {
 
       getWeapon: (() => any) | any;
 
+      /** @noSelf */
       static checkKey: (key: any) => any;
 
+      /** @noSelf */
       static checkWeapon: (playerObj: any) => any;
 
+      /** @noSelf */
       static getBestLBButtonAction: (buttonPrompt: any) => any;
 
+      /** @noSelf */
       static getBestRBButtonAction: (buttonPrompt: any) => any;
 
+      /** @noSelf */
       static onJoypadButtonReleased: (buttonPrompt: any, button: any) => any;
 
+      /** @noSelf */
       static onKeyPressed: (key: any) => any;
 
+      /** @noSelf */
       static onKeyReleased: (key: any) => any;
 
+      /** @noSelf */
       static onKeyRepeat: (key: any) => any;
 
+      /** @noSelf */
       static onRepeatRBumper: (buttonPrompt: any) => any;
     }
   }

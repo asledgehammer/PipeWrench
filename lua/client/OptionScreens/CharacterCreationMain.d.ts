@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:46.701Z
+ * File generated at: 2022-08-04T23:00:36.095Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -258,16 +258,22 @@ declare module 'PipeWrench' {
 
       updateSelectedClothingCombo: (() => any) | any;
 
+      /** @noSelf */
       static invertSort: (list: any) => any;
 
+      /** @noSelf */
       static readSavedOutfitFile: () => any;
 
+      /** @noSelf */
       static sort: (list: any) => any;
 
+      /** @noSelf */
       static sortByCost: (a: any, b: any) => any;
 
+      /** @noSelf */
       static sortByInvertCost: (a: any, b: any) => any;
 
+      /** @noSelf */
       static writeSaveFile: (options: any) => any;
     }
 

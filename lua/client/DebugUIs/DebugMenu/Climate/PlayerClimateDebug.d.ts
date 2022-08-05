@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:40.942Z
+ * File generated at: 2022-08-04T23:00:33.126Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -118,8 +118,10 @@ declare module 'PipeWrench' {
 
       updateOLD: (() => any) | any;
 
+      /** @noSelf */
       static onClimateTickDebug: () => any;
 
+      /** @noSelf */
       static OnOpenPanel: () => any;
     }
   }

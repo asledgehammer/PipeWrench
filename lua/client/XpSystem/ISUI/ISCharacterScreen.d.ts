@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:50.836Z
+ * File generated at: 2022-08-04T23:00:38.206Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -104,20 +104,28 @@ declare module 'PipeWrench' {
 
       updateAvatar: (() => any) | any;
 
+      /** @noSelf */
       static loadBeardAndHairStyle: (self: any) => any;
 
+      /** @noSelf */
       static loadFavouriteWeapon: (self: any) => any;
 
+      /** @noSelf */
       static loadProfession: (self: any) => any;
 
+      /** @noSelf */
       static loadTraits: (self: any) => any;
 
+      /** @noSelf */
       static onCutHair: (playerObj: any, hairStyle: any, time: any) => any;
 
+      /** @noSelf */
       static onTrimBeard: (playerObj: any, beardStyle: any) => any;
 
+      /** @noSelf */
       static setDisplayedTraits: (self: any) => any;
 
+      /** @noSelf */
       static traitsChanged: (self: any) => any;
     }
 

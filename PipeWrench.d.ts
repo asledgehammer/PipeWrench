@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-04T16:17Z
+ * File generated at 2022-08-04T21:05Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -7066,12 +7066,7 @@ declare module 'PipeWrench' {
   export class ISUI3DModel extends lua.client.ISUI.ISUI3DModel {}
 
   // [client/ISUI/ISUIElement.d.ts]
-  /**
-   * @customConstructor ISUIElement:new
-   * @docAuthors [JabDoesThings]
-   *
-   * **ISUIElement** is the base UI class in the Project Zomboid Lua codebase.
-   */
+  /** @customConstructor ISUIElement:new */
   export class ISUIElement extends lua.client.ISUI.ISUIElement {}
 
   // [client/ISUI/ISUIEmoteConfig.d.ts]
@@ -8482,12 +8477,7 @@ declare module 'PipeWrench' {
   export class ISTakeWaterAction extends lua.client.TimedActions.ISTakeWaterAction {}
 
   // [client/TimedActions/ISTimedActionQueue.d.ts]
-  /**
-   * @customConstructor ISTimedActionQueue:new
-   * @docAuthors [Konijima]
-   *
-   * Manage player timed action queue.
-   */
+  /** @customConstructor ISTimedActionQueue:new */
   export class ISTimedActionQueue extends lua.client.TimedActions.ISTimedActionQueue {}
 
   // [client/TimedActions/ISToggleClothingDryer.d.ts]

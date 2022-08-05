@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:49.805Z
+ * File generated at: 2022-08-04T23:00:37.710Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -42,12 +42,16 @@ declare module 'PipeWrench' {
 
       convertOldModData: (() => any) | any;
 
+      /** @noSelf */
       static addSound: () => any;
 
+      /** @noSelf */
       static checkTrap: () => any;
 
+      /** @noSelf */
       static EveryDays: () => any;
 
+      /** @noSelf */
       static isValidModData: (modData: any) => any;
     }
   }

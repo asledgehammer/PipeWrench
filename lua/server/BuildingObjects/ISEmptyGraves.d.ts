@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:39.585Z
+ * File generated at: 2022-08-04T23:00:32.049Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -68,14 +68,19 @@ declare module 'PipeWrench' {
 
       setInfo: ((square: any, north: any, sprite: any, cell: any, spriteType: any) => any) | any;
 
+      /** @noSelf */
       static canDigHere: (worldObjects: any) => any;
 
+      /** @noSelf */
       static getMaxCorpses: (grave: any) => any;
 
+      /** @noSelf */
       static isGraveFilledIn: (grave: any) => any;
 
+      /** @noSelf */
       static isGraveFullOfCorpses: (grave: any) => any;
 
+      /** @noSelf */
       static shovelledFloorCanDig: (square: any) => any;
     }
   }

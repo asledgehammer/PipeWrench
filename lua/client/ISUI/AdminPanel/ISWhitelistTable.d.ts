@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:42.841Z
+ * File generated at: 2022-08-04T23:00:34.407Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -100,10 +100,13 @@ declare module 'PipeWrench' {
 
       render: (() => any) | any;
 
+      /** @noSelf */
       static getTableResult: (datas: any, rowId: any, tableName: any) => any;
 
+      /** @noSelf */
       static onFilterChange: (entry: any, combo: any) => any;
 
+      /** @noSelf */
       static onNbrPerPageChange: (entry: any) => any;
     }
   }

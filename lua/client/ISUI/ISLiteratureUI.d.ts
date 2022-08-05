@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:43.656Z
+ * File generated at: 2022-08-04T23:00:34.845Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -96,6 +96,7 @@ declare module 'PipeWrench' {
 
       setMediaLists: ((scriptItems: any) => any) | any;
 
+      /** @noSelf */
       static SetItemHidden: (fullType: any, hidden: any) => any;
     }
   }

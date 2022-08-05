@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-04T16:17Z
+ * File generated at 2022-08-04T19:16Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -2023,10 +2023,10 @@ declare module 'PipeWrench' {
       AddItemBlind(arg0: zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (InventoryItem arg0, int arg1): void
        *  - (String arg0, int arg1): java.util.ArrayList<zombie.inventory.InventoryItem>
+       *  - (InventoryItem arg0, int arg1): void
        */
-      AddItems(arg0: zombie.inventory.InventoryItem | string, arg1: number): void | java.util.ArrayList<zombie.inventory.InventoryItem>;
+      AddItems(arg0: string | zombie.inventory.InventoryItem, arg1: number): java.util.ArrayList<zombie.inventory.InventoryItem> | void;
       /**
        * Method Parameters: 
        *  - (InventoryItem arg0): zombie.inventory.InventoryItem
@@ -2055,10 +2055,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): zombie.inventory.InventoryItem
-       *  - (String arg0, ArrayList arg1): zombie.inventory.InventoryItem
        *  - (String arg0, int arg1): java.util.ArrayList<zombie.inventory.InventoryItem>
+       *  - (String arg0, ArrayList arg1): zombie.inventory.InventoryItem
        */
-      FindAndReturn(arg0: string, arg1?: java.util.ArrayList<zombie.inventory.InventoryItem> | number): zombie.inventory.InventoryItem | java.util.ArrayList<zombie.inventory.InventoryItem>;
+      FindAndReturn(arg0: string, arg1?: number | java.util.ArrayList<zombie.inventory.InventoryItem>): zombie.inventory.InventoryItem | java.util.ArrayList<zombie.inventory.InventoryItem>;
       /**
        * Method Parameters: 
        *  - (String arg0): zombie.inventory.InventoryItem
@@ -2087,11 +2087,11 @@ declare module 'PipeWrench' {
       HasType(arg0: zombie.inventory.ItemType): boolean;
       /**
        * Method Parameters: 
+       *  - (String arg0): void
        *  - (ItemType arg0): zombie.inventory.InventoryItem
        *  - (InventoryItem arg0): void
-       *  - (String arg0): void
        */
-      Remove(arg0: zombie.inventory.ItemType | zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem | void;
+      Remove(arg0: string | zombie.inventory.ItemType | zombie.inventory.InventoryItem): void | zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -2364,10 +2364,10 @@ declare module 'PipeWrench' {
       getBestBandage(arg0: zombie.characters.SurvivorDesc): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (Predicate arg0): zombie.inventory.InventoryItem
        *  - (String arg0): zombie.inventory.InventoryItem
+       *  - (Predicate arg0): zombie.inventory.InventoryItem
        */
-      getBestCondition(arg0: java.util._function_.Predicate<zombie.inventory.InventoryItem> | string): zombie.inventory.InventoryItem;
+      getBestCondition(arg0: string | java.util._function_.Predicate<zombie.inventory.InventoryItem>): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (LuaClosure arg0): zombie.inventory.InventoryItem

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:46.978Z
+ * File generated at: 2022-08-04T23:00:36.219Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -214,24 +214,34 @@ declare module 'PipeWrench' {
 
       toUI: (() => any) | any;
 
+      /** @noSelf */
       static doLanguageToolTip: (languages: any) => any;
 
+      /** @noSelf */
       static getAvailableLanguage: () => any;
 
+      /** @noSelf */
       static getGeneralTranslators: (_language: any) => any;
 
+      /** @noSelf */
       static keyPressHandler: (key: any) => any;
 
+      /** @noSelf */
       static loadKeys: () => any;
 
+      /** @noSelf */
       static OnGamepadConnect: (index: any) => any;
 
+      /** @noSelf */
       static OnGamepadDisconnect: (index: any) => any;
 
+      /** @noSelf */
       static saveKeys: () => any;
 
+      /** @noSelf */
       static sortModes: (a: any, b: any) => any;
 
+      /** @noSelf */
       static upgradeKeysIni: (name: any, key: any, defaultKey: any, version: any) => any;
     }
   }

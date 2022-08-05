@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-04T16:17Z
+ * File generated at 2022-08-04T19:16Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -510,11 +510,11 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (Empty): void
-       *  - (boolean[] arg0): void
        *  - (BooleanGrid arg0): void
        *  - (WrappedBuffer arg0): void
+       *  - (boolean[] arg0): void
        */
-      createMask(arg0?: boolean[] | zombie.core.utils.BooleanGrid | zombie.core.utils.WrappedBuffer): void;
+      createMask(arg0?: zombie.core.utils.BooleanGrid | zombie.core.utils.WrappedBuffer | boolean[]): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -940,11 +940,11 @@ declare module 'PipeWrench' {
        *
        * Method Parameters: 
        *  - (String arg0): zombie.core.textures.Texture
-       *  - (String arg0, int arg1): zombie.core.textures.Texture
        *  - (String arg0, String arg1): zombie.core.textures.Texture
+       *  - (String arg0, int arg1): zombie.core.textures.Texture
        *  - (String arg0, int[] arg1, String arg2): zombie.core.textures.Texture
        */
-      static getSharedTexture(arg0: string, arg1?: number | string | number[], arg2?: string): zombie.core.textures.Texture;
+      static getSharedTexture(arg0: string, arg1?: string | number | number[], arg2?: string): zombie.core.textures.Texture;
       /**
        * @noSelf
        *
@@ -1074,8 +1074,8 @@ declare module 'PipeWrench' {
        * Method Parameters: 
        *  - (TextureDraw arg0, Texture arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, Consumer arg10): zombie.core.textures.TextureDraw
        *  - (TextureDraw arg0, Texture arg1, WallShaderTexRender arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10, Consumer arg11): zombie.core.textures.TextureDraw
-       *  - (TextureDraw arg0, Texture arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, int arg10, int arg11, int arg12, int arg13): void
        *  - (TextureDraw arg0, Texture arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10, float arg11, float arg12, float arg13): void
+       *  - (TextureDraw arg0, Texture arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, int arg10, int arg11, int arg12, int arg13): void
        *  - (TextureDraw arg0, Texture arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, int arg10, int arg11, int arg12, int arg13, Consumer arg14): zombie.core.textures.TextureDraw
        *  - (TextureDraw arg0, Texture arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10, float arg11, float arg12, float arg13, float arg14, float arg15, float arg16, float arg17, Consumer arg18): zombie.core.textures.TextureDraw
        *  - (TextureDraw arg0, Texture arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, int arg10, int arg11, int arg12, int arg13, float arg14, float arg15, float arg16, float arg17, float arg18, float arg19, float arg20, float arg21, Consumer arg22): zombie.core.textures.TextureDraw
@@ -1777,10 +1777,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (ByteBuffer arg0): number
        *  - (InputStream arg0): number
+       *  - (ByteBuffer arg0): number
        */
-      static readInt(arg0: java.nio.ByteBuffer | java.io.InputStream): number;
+      static readInt(arg0: java.io.InputStream | java.nio.ByteBuffer): number;
       /**
        * @noSelf
        *

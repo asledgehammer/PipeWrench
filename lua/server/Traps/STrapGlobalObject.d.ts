@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:49.801Z
+ * File generated at: 2022-08-04T23:00:37.706Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -108,6 +108,7 @@ declare module 'PipeWrench' {
 
       toObject: ((object: any, transmitData: any) => any) | any;
 
+      /** @noSelf */
       static SpawnDestroyItems: (trapType: any, square: any, object: any) => any;
     }
   }

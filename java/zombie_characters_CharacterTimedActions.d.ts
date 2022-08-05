@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-04T16:17Z
+ * File generated at 2022-08-04T19:16Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -116,16 +116,16 @@ declare module 'PipeWrench' {
       resetJobDelta(): void;
       /**
        * Method Parameters: 
-       *  - (String arg0): void
        *  - (CharacterActionAnims arg0): void
+       *  - (String arg0): void
        */
-      setActionAnim(arg0: string | zombie.characters.CharacterActionAnims): void;
+      setActionAnim(arg0: zombie.characters.CharacterActionAnims | string): void;
       /**
        * Method Parameters: 
-       *  - (String arg0, String arg1): void
        *  - (String arg0, boolean arg1): void
+       *  - (String arg0, String arg1): void
        */
-      setAnimVariable(arg0: string, arg1: string | boolean): void;
+      setAnimVariable(arg0: string, arg1: boolean | string): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -285,16 +285,16 @@ declare module 'PipeWrench' {
       resetJobDelta(): void;
       /**
        * Method Parameters: 
-       *  - (String arg0): void
        *  - (CharacterActionAnims arg0): void
+       *  - (String arg0): void
        */
-      setActionAnim(arg0: string | zombie.characters.CharacterActionAnims): void;
+      setActionAnim(arg0: zombie.characters.CharacterActionAnims | string): void;
       /**
        * Method Parameters: 
-       *  - (String arg0, String arg1): void
        *  - (String arg0, boolean arg1): void
+       *  - (String arg0, String arg1): void
        */
-      setAnimVariable(arg0: string, arg1: string | boolean): void;
+      setAnimVariable(arg0: string, arg1: boolean | string): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -476,16 +476,16 @@ declare module 'PipeWrench' {
       resetJobDelta(): void;
       /**
        * Method Parameters: 
-       *  - (String arg0): void
        *  - (CharacterActionAnims arg0): void
+       *  - (String arg0): void
        */
-      setActionAnim(arg0: string | zombie.characters.CharacterActionAnims): void;
+      setActionAnim(arg0: zombie.characters.CharacterActionAnims | string): void;
       /**
        * Method Parameters: 
-       *  - (String arg0, String arg1): void
        *  - (String arg0, boolean arg1): void
+       *  - (String arg0, String arg1): void
        */
-      setAnimVariable(arg0: string, arg1: string | boolean): void;
+      setAnimVariable(arg0: string, arg1: boolean | string): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void

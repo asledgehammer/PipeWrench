@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:49.699Z
+ * File generated at: 2022-08-04T23:00:37.671Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -54,8 +54,10 @@ declare module 'PipeWrench' {
 
       washPart: ((visual: any, part: any) => any) | any;
 
+      /** @noSelf */
       static GetRequiredSoap: (character: any) => any;
 
+      /** @noSelf */
       static GetRequiredWater: (character: any) => any;
     }
   }

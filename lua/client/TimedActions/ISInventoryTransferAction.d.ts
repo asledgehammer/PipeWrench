@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:49.001Z
+ * File generated at: 2022-08-04T23:00:37.306Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -98,6 +98,7 @@ declare module 'PipeWrench' {
 
       transferItem: ((item: any) => any) | any;
 
+      /** @noSelf */
       static GetDropItemOffset: (character: any, square: any, item: any) => any;
     }
   }

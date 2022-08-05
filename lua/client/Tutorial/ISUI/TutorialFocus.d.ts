@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:49.893Z
+ * File generated at: 2022-08-04T23:00:37.755Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -60,8 +60,10 @@ declare module 'PipeWrench' {
 
       onRightMouseUp: ((x: any, y: any) => any) | any;
 
+      /** @noSelf */
       static set: (x: any, y: any, w: any, h: any) => any;
 
+      /** @noSelf */
       static unset: () => any;
     }
   }

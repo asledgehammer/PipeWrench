@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-04T16:17Z
+ * File generated at 2022-08-04T19:16Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -51,10 +51,10 @@ declare module 'PipeWrench' {
       addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
+       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        */
-      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
+      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (IsoGridSquare arg0, ArrayList arg1): zombie.inventory.InventoryItem
@@ -62,10 +62,10 @@ declare module 'PipeWrench' {
       addRandomItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: java.util.ArrayList<string>): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (RoomDef arg0, String arg1, int arg2): void
        *  - (RoomDef arg0, ArrayList arg1, int arg2): void
+       *  - (RoomDef arg0, String arg1, int arg2): void
        */
-      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: string | java.util.ArrayList<string>, arg2: number): void;
+      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: java.util.ArrayList<string> | string, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (ItemContainer arg0, boolean arg1, boolean arg2, boolean arg3): zombie.inventory.types.HandWeapon
@@ -424,10 +424,10 @@ declare module 'PipeWrench' {
       addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
+       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        */
-      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
+      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (IsoGridSquare arg0, ArrayList arg1): zombie.inventory.InventoryItem
@@ -435,10 +435,10 @@ declare module 'PipeWrench' {
       addRandomItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: java.util.ArrayList<string>): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (RoomDef arg0, String arg1, int arg2): void
        *  - (RoomDef arg0, ArrayList arg1, int arg2): void
+       *  - (RoomDef arg0, String arg1, int arg2): void
        */
-      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: string | java.util.ArrayList<string>, arg2: number): void;
+      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: java.util.ArrayList<string> | string, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (ItemContainer arg0, boolean arg1, boolean arg2, boolean arg3): zombie.inventory.types.HandWeapon
@@ -819,10 +819,10 @@ declare module 'PipeWrench' {
       addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
+       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        */
-      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
+      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (IsoGridSquare arg0, ArrayList arg1): zombie.inventory.InventoryItem
@@ -830,10 +830,10 @@ declare module 'PipeWrench' {
       addRandomItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: java.util.ArrayList<string>): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (RoomDef arg0, String arg1, int arg2): void
        *  - (RoomDef arg0, ArrayList arg1, int arg2): void
+       *  - (RoomDef arg0, String arg1, int arg2): void
        */
-      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: string | java.util.ArrayList<string>, arg2: number): void;
+      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: java.util.ArrayList<string> | string, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (ItemContainer arg0, boolean arg1, boolean arg2, boolean arg3): zombie.inventory.types.HandWeapon
@@ -1187,10 +1187,10 @@ declare module 'PipeWrench' {
       addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
+       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        */
-      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
+      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (IsoGridSquare arg0, ArrayList arg1): zombie.inventory.InventoryItem
@@ -1198,10 +1198,10 @@ declare module 'PipeWrench' {
       addRandomItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: java.util.ArrayList<string>): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (RoomDef arg0, String arg1, int arg2): void
        *  - (RoomDef arg0, ArrayList arg1, int arg2): void
+       *  - (RoomDef arg0, String arg1, int arg2): void
        */
-      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: string | java.util.ArrayList<string>, arg2: number): void;
+      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: java.util.ArrayList<string> | string, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (ItemContainer arg0, boolean arg1, boolean arg2, boolean arg3): zombie.inventory.types.HandWeapon
@@ -1555,10 +1555,10 @@ declare module 'PipeWrench' {
       addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
+       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        */
-      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
+      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (IsoGridSquare arg0, ArrayList arg1): zombie.inventory.InventoryItem
@@ -1566,10 +1566,10 @@ declare module 'PipeWrench' {
       addRandomItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: java.util.ArrayList<string>): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (RoomDef arg0, String arg1, int arg2): void
        *  - (RoomDef arg0, ArrayList arg1, int arg2): void
+       *  - (RoomDef arg0, String arg1, int arg2): void
        */
-      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: string | java.util.ArrayList<string>, arg2: number): void;
+      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: java.util.ArrayList<string> | string, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (ItemContainer arg0, boolean arg1, boolean arg2, boolean arg3): zombie.inventory.types.HandWeapon
@@ -1923,10 +1923,10 @@ declare module 'PipeWrench' {
       addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
+       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        */
-      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
+      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (IsoGridSquare arg0, ArrayList arg1): zombie.inventory.InventoryItem
@@ -1934,10 +1934,10 @@ declare module 'PipeWrench' {
       addRandomItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: java.util.ArrayList<string>): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (RoomDef arg0, String arg1, int arg2): void
        *  - (RoomDef arg0, ArrayList arg1, int arg2): void
+       *  - (RoomDef arg0, String arg1, int arg2): void
        */
-      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: string | java.util.ArrayList<string>, arg2: number): void;
+      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: java.util.ArrayList<string> | string, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (ItemContainer arg0, boolean arg1, boolean arg2, boolean arg3): zombie.inventory.types.HandWeapon
@@ -2296,10 +2296,10 @@ declare module 'PipeWrench' {
       addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
+       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        */
-      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
+      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (IsoGridSquare arg0, ArrayList arg1): zombie.inventory.InventoryItem
@@ -2307,10 +2307,10 @@ declare module 'PipeWrench' {
       addRandomItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: java.util.ArrayList<string>): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (RoomDef arg0, String arg1, int arg2): void
        *  - (RoomDef arg0, ArrayList arg1, int arg2): void
+       *  - (RoomDef arg0, String arg1, int arg2): void
        */
-      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: string | java.util.ArrayList<string>, arg2: number): void;
+      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: java.util.ArrayList<string> | string, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (ItemContainer arg0, boolean arg1, boolean arg2, boolean arg3): zombie.inventory.types.HandWeapon
@@ -2669,10 +2669,10 @@ declare module 'PipeWrench' {
       addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
+       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        */
-      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
+      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (IsoGridSquare arg0, ArrayList arg1): zombie.inventory.InventoryItem
@@ -2680,10 +2680,10 @@ declare module 'PipeWrench' {
       addRandomItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: java.util.ArrayList<string>): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (RoomDef arg0, String arg1, int arg2): void
        *  - (RoomDef arg0, ArrayList arg1, int arg2): void
+       *  - (RoomDef arg0, String arg1, int arg2): void
        */
-      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: string | java.util.ArrayList<string>, arg2: number): void;
+      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: java.util.ArrayList<string> | string, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (ItemContainer arg0, boolean arg1, boolean arg2, boolean arg3): zombie.inventory.types.HandWeapon
@@ -3042,10 +3042,10 @@ declare module 'PipeWrench' {
       addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
+       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        */
-      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
+      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (IsoGridSquare arg0, ArrayList arg1): zombie.inventory.InventoryItem
@@ -3053,10 +3053,10 @@ declare module 'PipeWrench' {
       addRandomItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: java.util.ArrayList<string>): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (RoomDef arg0, String arg1, int arg2): void
        *  - (RoomDef arg0, ArrayList arg1, int arg2): void
+       *  - (RoomDef arg0, String arg1, int arg2): void
        */
-      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: string | java.util.ArrayList<string>, arg2: number): void;
+      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: java.util.ArrayList<string> | string, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (ItemContainer arg0, boolean arg1, boolean arg2, boolean arg3): zombie.inventory.types.HandWeapon
@@ -3410,10 +3410,10 @@ declare module 'PipeWrench' {
       addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
+       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        */
-      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
+      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (IsoGridSquare arg0, ArrayList arg1): zombie.inventory.InventoryItem
@@ -3421,10 +3421,10 @@ declare module 'PipeWrench' {
       addRandomItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: java.util.ArrayList<string>): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (RoomDef arg0, String arg1, int arg2): void
        *  - (RoomDef arg0, ArrayList arg1, int arg2): void
+       *  - (RoomDef arg0, String arg1, int arg2): void
        */
-      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: string | java.util.ArrayList<string>, arg2: number): void;
+      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: java.util.ArrayList<string> | string, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (ItemContainer arg0, boolean arg1, boolean arg2, boolean arg3): zombie.inventory.types.HandWeapon
@@ -3778,10 +3778,10 @@ declare module 'PipeWrench' {
       addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
+       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        */
-      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
+      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (IsoGridSquare arg0, ArrayList arg1): zombie.inventory.InventoryItem
@@ -3789,10 +3789,10 @@ declare module 'PipeWrench' {
       addRandomItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: java.util.ArrayList<string>): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (RoomDef arg0, String arg1, int arg2): void
        *  - (RoomDef arg0, ArrayList arg1, int arg2): void
+       *  - (RoomDef arg0, String arg1, int arg2): void
        */
-      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: string | java.util.ArrayList<string>, arg2: number): void;
+      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: java.util.ArrayList<string> | string, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (ItemContainer arg0, boolean arg1, boolean arg2, boolean arg3): zombie.inventory.types.HandWeapon
@@ -4151,10 +4151,10 @@ declare module 'PipeWrench' {
       addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
+       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        */
-      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
+      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (IsoGridSquare arg0, ArrayList arg1): zombie.inventory.InventoryItem
@@ -4162,10 +4162,10 @@ declare module 'PipeWrench' {
       addRandomItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: java.util.ArrayList<string>): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (RoomDef arg0, String arg1, int arg2): void
        *  - (RoomDef arg0, ArrayList arg1, int arg2): void
+       *  - (RoomDef arg0, String arg1, int arg2): void
        */
-      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: string | java.util.ArrayList<string>, arg2: number): void;
+      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: java.util.ArrayList<string> | string, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (ItemContainer arg0, boolean arg1, boolean arg2, boolean arg3): zombie.inventory.types.HandWeapon
@@ -4519,10 +4519,10 @@ declare module 'PipeWrench' {
       addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
+       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        */
-      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
+      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (IsoGridSquare arg0, ArrayList arg1): zombie.inventory.InventoryItem
@@ -4530,10 +4530,10 @@ declare module 'PipeWrench' {
       addRandomItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: java.util.ArrayList<string>): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (RoomDef arg0, String arg1, int arg2): void
        *  - (RoomDef arg0, ArrayList arg1, int arg2): void
+       *  - (RoomDef arg0, String arg1, int arg2): void
        */
-      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: string | java.util.ArrayList<string>, arg2: number): void;
+      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: java.util.ArrayList<string> | string, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (ItemContainer arg0, boolean arg1, boolean arg2, boolean arg3): zombie.inventory.types.HandWeapon
@@ -4892,10 +4892,10 @@ declare module 'PipeWrench' {
       addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
+       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        */
-      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
+      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (IsoGridSquare arg0, ArrayList arg1): zombie.inventory.InventoryItem
@@ -4903,10 +4903,10 @@ declare module 'PipeWrench' {
       addRandomItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: java.util.ArrayList<string>): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (RoomDef arg0, String arg1, int arg2): void
        *  - (RoomDef arg0, ArrayList arg1, int arg2): void
+       *  - (RoomDef arg0, String arg1, int arg2): void
        */
-      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: string | java.util.ArrayList<string>, arg2: number): void;
+      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: java.util.ArrayList<string> | string, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (ItemContainer arg0, boolean arg1, boolean arg2, boolean arg3): zombie.inventory.types.HandWeapon
@@ -5265,10 +5265,10 @@ declare module 'PipeWrench' {
       addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
+       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        */
-      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
+      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (IsoGridSquare arg0, ArrayList arg1): zombie.inventory.InventoryItem
@@ -5276,10 +5276,10 @@ declare module 'PipeWrench' {
       addRandomItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: java.util.ArrayList<string>): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (RoomDef arg0, String arg1, int arg2): void
        *  - (RoomDef arg0, ArrayList arg1, int arg2): void
+       *  - (RoomDef arg0, String arg1, int arg2): void
        */
-      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: string | java.util.ArrayList<string>, arg2: number): void;
+      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: java.util.ArrayList<string> | string, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (ItemContainer arg0, boolean arg1, boolean arg2, boolean arg3): zombie.inventory.types.HandWeapon
@@ -5633,10 +5633,10 @@ declare module 'PipeWrench' {
       addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
+       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        */
-      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
+      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (IsoGridSquare arg0, ArrayList arg1): zombie.inventory.InventoryItem
@@ -5644,10 +5644,10 @@ declare module 'PipeWrench' {
       addRandomItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: java.util.ArrayList<string>): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (RoomDef arg0, String arg1, int arg2): void
        *  - (RoomDef arg0, ArrayList arg1, int arg2): void
+       *  - (RoomDef arg0, String arg1, int arg2): void
        */
-      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: string | java.util.ArrayList<string>, arg2: number): void;
+      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: java.util.ArrayList<string> | string, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (ItemContainer arg0, boolean arg1, boolean arg2, boolean arg3): zombie.inventory.types.HandWeapon
@@ -6006,10 +6006,10 @@ declare module 'PipeWrench' {
       addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
+       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        */
-      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
+      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (IsoGridSquare arg0, ArrayList arg1): zombie.inventory.InventoryItem
@@ -6017,10 +6017,10 @@ declare module 'PipeWrench' {
       addRandomItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: java.util.ArrayList<string>): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (RoomDef arg0, String arg1, int arg2): void
        *  - (RoomDef arg0, ArrayList arg1, int arg2): void
+       *  - (RoomDef arg0, String arg1, int arg2): void
        */
-      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: string | java.util.ArrayList<string>, arg2: number): void;
+      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: java.util.ArrayList<string> | string, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (ItemContainer arg0, boolean arg1, boolean arg2, boolean arg3): zombie.inventory.types.HandWeapon
@@ -6374,10 +6374,10 @@ declare module 'PipeWrench' {
       addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
+       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        */
-      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
+      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (IsoGridSquare arg0, ArrayList arg1): zombie.inventory.InventoryItem
@@ -6385,10 +6385,10 @@ declare module 'PipeWrench' {
       addRandomItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: java.util.ArrayList<string>): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (RoomDef arg0, String arg1, int arg2): void
        *  - (RoomDef arg0, ArrayList arg1, int arg2): void
+       *  - (RoomDef arg0, String arg1, int arg2): void
        */
-      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: string | java.util.ArrayList<string>, arg2: number): void;
+      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: java.util.ArrayList<string> | string, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (ItemContainer arg0, boolean arg1, boolean arg2, boolean arg3): zombie.inventory.types.HandWeapon
@@ -6747,10 +6747,10 @@ declare module 'PipeWrench' {
       addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
+       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        */
-      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
+      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (IsoGridSquare arg0, ArrayList arg1): zombie.inventory.InventoryItem
@@ -6758,10 +6758,10 @@ declare module 'PipeWrench' {
       addRandomItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: java.util.ArrayList<string>): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (RoomDef arg0, String arg1, int arg2): void
        *  - (RoomDef arg0, ArrayList arg1, int arg2): void
+       *  - (RoomDef arg0, String arg1, int arg2): void
        */
-      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: string | java.util.ArrayList<string>, arg2: number): void;
+      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: java.util.ArrayList<string> | string, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (ItemContainer arg0, boolean arg1, boolean arg2, boolean arg3): zombie.inventory.types.HandWeapon
@@ -7115,10 +7115,10 @@ declare module 'PipeWrench' {
       addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
+       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        */
-      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
+      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (IsoGridSquare arg0, ArrayList arg1): zombie.inventory.InventoryItem
@@ -7126,10 +7126,10 @@ declare module 'PipeWrench' {
       addRandomItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: java.util.ArrayList<string>): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (RoomDef arg0, String arg1, int arg2): void
        *  - (RoomDef arg0, ArrayList arg1, int arg2): void
+       *  - (RoomDef arg0, String arg1, int arg2): void
        */
-      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: string | java.util.ArrayList<string>, arg2: number): void;
+      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: java.util.ArrayList<string> | string, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (ItemContainer arg0, boolean arg1, boolean arg2, boolean arg3): zombie.inventory.types.HandWeapon
@@ -7603,10 +7603,10 @@ declare module 'PipeWrench' {
       DoFloorSplat(arg0: zombie.iso.IsoGridSquare, arg1: string, arg2: boolean, arg3: number, arg4: number): void;
       /**
        * Method Parameters: 
-       *  - (float arg0): void
        *  - (String arg0): void
+       *  - (float arg0): void
        */
-      DoFootstepSound(arg0: number | string): void;
+      DoFootstepSound(arg0: string | number): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -7691,11 +7691,11 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (Vector2 arg0, IsoObject arg1, float arg2): void
-       *  - (BaseVehicle arg0, float arg1, boolean arg2, float arg3, float arg4): number
        *  - (HandWeapon arg0, IsoGameCharacter arg1, float arg2, boolean arg3, float arg4): number
+       *  - (BaseVehicle arg0, float arg1, boolean arg2, float arg3, float arg4): number
        *  - (HandWeapon arg0, IsoGameCharacter arg1, float arg2, boolean arg3, float arg4, boolean arg5): number
        */
-      Hit(arg0: zombie.iso.Vector2 | zombie.vehicles.BaseVehicle | zombie.inventory.types.HandWeapon, arg1: zombie.iso.IsoObject | number | zombie.characters.IsoGameCharacter, arg2: number | boolean, arg3?: number | boolean, arg4?: number, arg5?: boolean): void | number;
+      Hit(arg0: zombie.iso.Vector2 | zombie.inventory.types.HandWeapon | zombie.vehicles.BaseVehicle, arg1: zombie.iso.IsoObject | zombie.characters.IsoGameCharacter | number, arg2: number | boolean, arg3?: boolean | number, arg4?: number, arg5?: boolean): void | number;
       /**
        * Method Parameters: 
        *  - (BaseVehicle arg0, float arg1): void
@@ -8204,12 +8204,12 @@ declare module 'PipeWrench' {
       climbSheetRope(): void;
       /**
        * Method Parameters: 
-       *  - (IsoWindow arg0): void
        *  - (IsoThumpable arg0): void
+       *  - (IsoWindow arg0): void
        *  - (IsoWindow arg0, Integer arg1): void
        *  - (IsoThumpable arg0, Integer arg1): void
        */
-      climbThroughWindow(arg0: zombie.iso.objects.IsoWindow | zombie.iso.objects.IsoThumpable, arg1?: number): void;
+      climbThroughWindow(arg0: zombie.iso.objects.IsoThumpable | zombie.iso.objects.IsoWindow, arg1?: number): void;
       /**
        * Method Parameters: 
        *  - (IsoObject arg0): void
@@ -10914,10 +10914,10 @@ declare module 'PipeWrench' {
       isReanim(): boolean;
       /**
        * Method Parameters: 
-       *  - (Recipe arg0): boolean
        *  - (String arg0): boolean
+       *  - (Recipe arg0): boolean
        */
-      isRecipeKnown(arg0: zombie.scripting.objects.Recipe | string): boolean;
+      isRecipeKnown(arg0: string | zombie.scripting.objects.Recipe): boolean;
       /**
        * Method Parameters: 
        *  - (ItemContainer arg0, InventoryItem arg1): boolean
@@ -11461,10 +11461,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -12777,19 +12777,19 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (IAnimationVariableSlot arg0): void
+       *  - (String arg0, float arg1): void
        *  - (String arg0, String arg1): void
        *  - (String arg0, boolean arg1): void
-       *  - (String arg0, float arg1): void
+       *  - (String arg0, String arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, float arg1, CallbackGetStrongTyped arg2): void
-       *  - (String arg0, String arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, int arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, float arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
-       *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        *  - (String arg0, String arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
+       *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        *  - (String arg0, int arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        */
-      setVariable(arg0: zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot | string, arg1?: string | boolean | number, arg2?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackGetStrongTyped, arg3?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackSetStrongTyped): void;
+      setVariable(arg0: zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot | string, arg1?: number | string | boolean, arg2?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackGetStrongTyped, arg3?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackSetStrongTyped): void;
       /**
        * Method Parameters: 
        *  - (BaseVehicle arg0): void

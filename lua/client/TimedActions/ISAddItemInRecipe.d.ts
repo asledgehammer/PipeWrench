@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:48.293Z
+ * File generated at: 2022-08-04T23:00:36.936Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -48,8 +48,10 @@ declare module 'PipeWrench' {
 
       constructor(character: any, recipe: any, baseItem: any, usedItem: any, time: any);
 
+      /** @noSelf */
       static checkName: (baseItem: any, recipe: any) => any;
 
+      /** @noSelf */
       static checkTemperature: (baseItem: any, usedItem: any, recipe: any) => any;
     }
   }

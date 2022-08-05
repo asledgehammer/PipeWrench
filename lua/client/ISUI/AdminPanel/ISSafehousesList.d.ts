@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:42.770Z
+ * File generated at: 2022-08-04T23:00:34.374Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -58,6 +58,7 @@ declare module 'PipeWrench' {
 
       populateList: (() => any) | any;
 
+      /** @noSelf */
       static OnSafehousesChanged: () => any;
     }
   }

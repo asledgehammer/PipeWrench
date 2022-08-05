@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:46.256Z
+ * File generated at: 2022-08-04T23:00:35.908Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -98,6 +98,7 @@ declare module 'PipeWrench' {
 
       sendCommand: ((command: any, args: any) => any) | any;
 
+      /** @noSelf */
       static RegisterSystemClass: (luaClass: any) => any;
     }
   }

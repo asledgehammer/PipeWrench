@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:45.130Z
+ * File generated at: 2022-08-04T23:00:35.440Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -72,6 +72,7 @@ declare module 'PipeWrench' {
 
       requestDatas: (() => any) | any;
 
+      /** @noSelf */
       static ReceiveItems: (itemtable: any) => any;
     }
   }

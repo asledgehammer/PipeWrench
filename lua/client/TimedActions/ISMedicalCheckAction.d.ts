@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:49.038Z
+ * File generated at: 2022-08-04T23:00:37.326Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -46,6 +46,7 @@ declare module 'PipeWrench' {
 
       constructor(character: any, otherPlayer: any);
 
+      /** @noSelf */
       static getHealthWindowForPlayer: (playerObj: any) => any;
     }
   }

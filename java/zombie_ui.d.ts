@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-04T16:17Z
+ * File generated at 2022-08-04T19:16Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -4260,8 +4260,8 @@ declare module 'PipeWrench' {
       DrawValueRight(arg0: number, arg1: number, arg2: number, arg3: boolean): void;
       /**
        * Method Parameters: 
-       *  - (int arg0, int arg1, int arg2): void
        *  - (float arg0, int arg1, int arg2): void
+       *  - (int arg0, int arg1, int arg2): void
        */
       DrawValueRightNoPlus(arg0: number, arg1: number, arg2: number): void;
       /**
@@ -8511,8 +8511,8 @@ declare module 'PipeWrench' {
        * Method Parameters: 
        *  - (int arg0, int arg1, int arg2): void
        *  - (float arg0, float arg1, float arg2): void
-       *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, int arg1, int arg2, int arg3): void
+       *  - (float arg0, float arg1, float arg2, float arg3): void
        */
       setDefaultColors(arg0: number, arg1: number, arg2: number, arg3?: number): void;
       /**
@@ -8542,10 +8542,10 @@ declare module 'PipeWrench' {
       setHearRange(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (TextDrawHorizontal arg0): void
        *  - (String arg0): void
+       *  - (TextDrawHorizontal arg0): void
        */
-      setHorizontalAlign(arg0: zombie.ui.TextDrawHorizontal | string): void;
+      setHorizontalAlign(arg0: string | zombie.ui.TextDrawHorizontal): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -8560,8 +8560,8 @@ declare module 'PipeWrench' {
        * Method Parameters: 
        *  - (int arg0, int arg1, int arg2): void
        *  - (float arg0, float arg1, float arg2): void
-       *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, int arg1, int arg2, int arg3): void
+       *  - (float arg0, float arg1, float arg2, float arg3): void
        */
       setOutlineColors(arg0: number, arg1: number, arg2: number, arg3?: number): void;
       /**

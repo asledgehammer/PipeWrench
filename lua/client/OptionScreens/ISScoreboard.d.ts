@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:46.889Z
+ * File generated at: 2022-08-04T23:00:36.176Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -96,8 +96,10 @@ declare module 'PipeWrench' {
 
       update: (() => any) | any;
 
+      /** @noSelf */
       static onScoreboardUpdate: (usernames: any, displayNames: any, steamIDs: any) => any;
 
+      /** @noSelf */
       static recreate: () => any;
     }
   }

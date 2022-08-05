@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:44.983Z
+ * File generated at: 2022-08-04T23:00:35.384Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -178,22 +178,31 @@ declare module 'PipeWrench' {
 
       updateJoypad: (() => any) | any;
 
+      /** @noSelf */
       static checkKey: (key: any) => any;
 
+      /** @noSelf */
       static HideWorldMap: (playerNum: any) => any;
 
+      /** @noSelf */
       static IsAllowed: () => any;
 
+      /** @noSelf */
       static onKeyKeepPressed: (key: any) => any;
 
+      /** @noSelf */
       static onKeyReleased: (key: any) => any;
 
+      /** @noSelf */
       static onKeyStartPressed: (key: any) => any;
 
+      /** @noSelf */
       static OnPlayerDeath: (playerObj: any) => any;
 
+      /** @noSelf */
       static ShowWorldMap: (playerNum: any) => any;
 
+      /** @noSelf */
       static ToggleWorldMap: (playerNum: any) => any;
     }
 

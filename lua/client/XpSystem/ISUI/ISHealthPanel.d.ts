@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:50.868Z
+ * File generated at: 2022-08-04T23:00:38.224Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -157,20 +157,28 @@ declare module 'PipeWrench' {
 
       updateBodyPartList: (() => any) | any;
 
+      /** @noSelf */
       static DidPatientMove: (doctor: any, patient: any, patientX: any, patientY: any) => any;
 
+      /** @noSelf */
       static getBandageType: (bodyPart: any) => any;
 
+      /** @noSelf */
       static onCheat: (bodyPart: any, action: any, player: any, otherPlayer: any) => any;
 
+      /** @noSelf */
       static onCheatCurrentPlayer: (bodyPart: any, action: any, player: any) => any;
 
+      /** @noSelf */
       static onCheatHealthCommand: (module: any, command: any, args: any) => any;
 
+      /** @noSelf */
       static onCheatItem: (itemType: any, playerObj: any) => any;
 
+      /** @noSelf */
       static onCheatOtherPlayer: (bodyPart: any, action: any, player: any, otherPlayer: any) => any;
 
+      /** @noSelf */
       static setBodyPartActionForPlayer: (playerObj: any, bodyPart: any, action: any, jobType: any, args: any) => any;
     }
 

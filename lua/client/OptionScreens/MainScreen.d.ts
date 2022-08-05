@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:47.005Z
+ * File generated at: 2022-08-04T23:00:36.238Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -254,36 +254,52 @@ declare module 'PipeWrench' {
 
       updateBottomPanelButtons: (() => any) | any;
 
+      /** @noSelf */
       static checkMapsAvailable: (mapName: any, activeMods: any, mapAvailable: any) => any;
 
+      /** @noSelf */
       static checkSaveFile: () => any;
 
+      /** @noSelf */
       static checkTutorial: (button: any) => any;
 
+      /** @noSelf */
       static continueLatestSave: (gameMode: any, saveName: any) => any;
 
+      /** @noSelf */
       static continueLatestSaveAux: (fromResetLua: any) => any;
 
+      /** @noSelf */
       static displayCheckSavefileModal: (text: any) => any;
 
+      /** @noSelf */
       static onAcceptInvite: (connectionString: any) => any;
 
+      /** @noSelf */
       static onCheckSavefileModalClick: (button: any) => any;
 
+      /** @noSelf */
       static OnJoypadBeforeDeactivate: (index: any) => any;
 
+      /** @noSelf */
       static onMenuItemMouseDownMainMenu: (item: any, x: any, y: any) => any;
 
+      /** @noSelf */
       static onResetLua: (reason: any) => any;
 
+      /** @noSelf */
       static onResolutionChange: (oldw: any, oldh: any, neww: any, newh: any) => any;
 
+      /** @noSelf */
       static OnTick: (totalTicks: any) => any;
 
+      /** @noSelf */
       static onTutorialControllerWarn: () => any;
 
+      /** @noSelf */
       static resetLuaIfNeeded: () => any;
 
+      /** @noSelf */
       static startTutorial: () => any;
     }
   }

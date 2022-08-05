@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:49.245Z
+ * File generated at: 2022-08-04T23:00:37.442Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -60,24 +60,34 @@ declare module 'PipeWrench' {
 
       loadAmmo: (() => any) | any;
 
+      /** @noSelf */
       static attackHook: (character: any, chargeDelta: any, weapon: any) => any;
 
+      /** @noSelf */
       static BeginAutomaticReload: (playerObj: any, gun: any) => any;
 
+      /** @noSelf */
       static canRack: (weapon: any) => any;
 
+      /** @noSelf */
       static canShoot: (weapon: any) => any;
 
+      /** @noSelf */
       static OnPlayerAttackFinished: (playerObj: any, weapon: any) => any;
 
+      /** @noSelf */
       static OnPressRackButton: (player: any, gun: any) => any;
 
+      /** @noSelf */
       static OnPressReloadButton: (player: any, gun: any) => any;
 
+      /** @noSelf */
       static onShoot: (player: any, weapon: any) => any;
 
+      /** @noSelf */
       static ReloadBestMagazine: (playerObj: any, gun: any) => any;
 
+      /** @noSelf */
       static setReloadSpeed: (character: any, rack: any) => any;
     }
   }

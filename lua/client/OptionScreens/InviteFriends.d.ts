@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:46.839Z
+ * File generated at: 2022-08-04T23:00:36.159Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -94,6 +94,7 @@ declare module 'PipeWrench' {
 
       toggleAllowDeny: ((index: any) => any) | any;
 
+      /** @noSelf */
       static OnSteamFriendStatusChanged: (steamID: any) => any;
     }
   }

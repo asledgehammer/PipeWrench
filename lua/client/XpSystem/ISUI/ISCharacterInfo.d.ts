@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:50.782Z
+ * File generated at: 2022-08-04T23:00:38.186Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -94,8 +94,10 @@ declare module 'PipeWrench' {
 
       updateTooltipForJoypad: (() => any) | any;
 
+      /** @noSelf */
       static loadPerk: (self: any) => any;
 
+      /** @noSelf */
       static onResolutionChange: (oldw: any, oldh: any, neww: any, newh: any) => any;
     }
   }

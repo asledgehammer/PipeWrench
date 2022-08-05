@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-04T20:14:46.814Z
+ * File generated at: 2022-08-04T23:00:36.147Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -130,12 +130,16 @@ declare module 'PipeWrench' {
 
       saveOptions: (() => any) | any;
 
+      /** @noSelf */
       static OnConnected: () => any;
 
+      /** @noSelf */
       static OnConnectFailed: (message: any) => any;
 
+      /** @noSelf */
       static OnConnectionStateChanged: (state: any, message: any) => any;
 
+      /** @noSelf */
       static onCoopServerMessage: (tag: any, cookie: any, payload: any) => any;
     }
 
