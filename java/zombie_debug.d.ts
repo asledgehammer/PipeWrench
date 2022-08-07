@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
+ * File generated at 2022-08-07T14:28Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -142,8 +142,6 @@ declare module 'PipeWrench' {
       /** zombie.debug.DebugLogStream */
       static readonly Combat?: zombie.debug.DebugLogStream;
       /** zombie.debug.DebugLogStream */
-      static readonly Craftboid?: zombie.debug.DebugLogStream;
-      /** zombie.debug.DebugLogStream */
       static readonly FileIO?: zombie.debug.DebugLogStream;
       /** zombie.debug.DebugLogStream */
       static readonly Fireplace?: zombie.debug.DebugLogStream;
@@ -176,11 +174,7 @@ declare module 'PipeWrench' {
       /** zombie.debug.DebugLogStream */
       static readonly Script?: zombie.debug.DebugLogStream;
       /** zombie.debug.DebugLogStream */
-      static readonly Security?: zombie.debug.DebugLogStream;
-      /** zombie.debug.DebugLogStream */
       static readonly Shader?: zombie.debug.DebugLogStream;
-      /** zombie.debug.DebugLogStream */
-      static readonly Sledgehammer?: zombie.debug.DebugLogStream;
       /** zombie.debug.DebugLogStream */
       static readonly Sound?: zombie.debug.DebugLogStream;
       /** zombie.debug.DebugLogStream */
@@ -195,8 +189,6 @@ declare module 'PipeWrench' {
       static readonly Voice?: zombie.debug.DebugLogStream;
       /** zombie.debug.DebugLogStream */
       static readonly Zombie?: zombie.debug.DebugLogStream;
-      /** java.util.Map<java.util.UUID, java.util.List<com.asledgehammer.crafthammer.api.event.log.LogListener>> */
-      static readonly listeners?: java.util.Map<java.util.UUID, java.util.List<com.asledgehammer.crafthammer.api.event.log.LogListener>>;
       /** boolean */
       static printServerTime: boolean;
 
@@ -205,13 +197,6 @@ declare module 'PipeWrench' {
        *  - (Empty Constructor)
        */
       constructor();
-      /**
-       * @noSelf
-       *
-       * Method Parameters: 
-       *  - (UUID arg0, LogListener arg1): void
-       */
-      static addListener(arg0: java.util.UUID, arg1: com.asledgehammer.crafthammer.api.event.log.LogListener): void;
       /**
        * @noSelf
        *
@@ -288,25 +273,11 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (String arg0): void
        *  - (Object arg0): void
+       *  - (String arg0): void
        *  - (DebugType arg0, String arg1): void
        */
       static log(arg0: any, arg1?: string): void;
-      /**
-       * @noSelf
-       *
-       * Method Parameters: 
-       *  - (UUID arg0, LogListener arg1): void
-       */
-      static removeListener(arg0: java.util.UUID, arg1: com.asledgehammer.crafthammer.api.event.log.LogListener): void;
-      /**
-       * @noSelf
-       *
-       * Method Parameters: 
-       *  - (UUID arg0): void
-       */
-      static removeListeners(arg0: java.util.UUID): void;
       /**
        * @noSelf
        *
@@ -687,7 +658,6 @@ declare module 'PipeWrench' {
       static readonly Asset: zombie.debug.DebugType;
       static readonly Clothing: zombie.debug.DebugType;
       static readonly Combat: zombie.debug.DebugType;
-      static readonly CraftHammer: zombie.debug.DebugType;
       static readonly Damage: zombie.debug.DebugType;
       static readonly Death: zombie.debug.DebugType;
       static readonly FileIO: zombie.debug.DebugType;
@@ -707,9 +677,7 @@ declare module 'PipeWrench' {
       static readonly Radio: zombie.debug.DebugType;
       static readonly Recipe: zombie.debug.DebugType;
       static readonly Script: zombie.debug.DebugType;
-      static readonly Security: zombie.debug.DebugType;
       static readonly Shader: zombie.debug.DebugType;
-      static readonly Sledgehammer: zombie.debug.DebugType;
       static readonly Sound: zombie.debug.DebugType;
       static readonly Statistic: zombie.debug.DebugType;
       static readonly UnitTests: zombie.debug.DebugType;
@@ -718,9 +686,22 @@ declare module 'PipeWrench' {
       static readonly Zombie: zombie.debug.DebugType;
       name(): string;
       ordinal(): number;
-      getColor(): string;
+      /**
+       * @noSelf
+       *
+       * (DebugType arg0): boolean
+       */
+      static Do(arg0: zombie.debug.DebugType | null): boolean;
 
-      getLabel(): string;
+      /**
+       * @noSelf
+       *
+       * (String arg0): DebugType
+       */
+      static valueOf(arg0: string | null): zombie.debug.DebugType;
+
+      /** @noSelf */
+      static values(): zombie.debug.DebugType[];
 
     }
     /**
@@ -759,6 +740,16 @@ declare module 'PipeWrench' {
       static readonly Warning: zombie.debug.LogSeverity;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): LogSeverity
+       */
+      static valueOf(arg0: string | null): zombie.debug.LogSeverity;
+
+      /** @noSelf */
+      static values(): zombie.debug.LogSeverity[];
+
     }
   }
 }

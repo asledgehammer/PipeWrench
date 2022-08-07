@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:38:58.801Z
+ * File generated at: 2022-08-07T18:22:53.174Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,64 +31,86 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.Camping.ISUI {
-    export class ISCampingMenu {
-      private constructor();
-
+    export abstract class ISCampingMenu {
       static [id: string]: any;
 
-      static doCampingMenu: ((player: any, context: any, worldobjects: any, test: any) => any) | any;
+      /** @noSelf */
+      static doCampingMenu: (player: any, context: any, worldobjects: any, test: any) => any;
 
-      static doSleepOption: ((context: any, bed: any, player: any, playerObj: any) => any) | any;
+      /** @noSelf */
+      static doSleepOption: (context: any, bed: any, player: any, playerObj: any) => any;
 
-      static getFuelDurationForItem: ((item: any) => any) | any;
+      /** @noSelf */
+      static getFuelDurationForItem: (item: any) => any;
 
-      static getFuelItemUses: ((item: any) => any) | any;
+      /** @noSelf */
+      static getFuelItemUses: (item: any) => any;
 
-      static isValidCampfire: ((campfire: any) => any) | any;
+      /** @noSelf */
+      static isValidCampfire: (campfire: any) => any;
 
-      static isValidFuel: ((item: any) => any) | any;
+      /** @noSelf */
+      static isValidFuel: (item: any) => any;
 
-      static isValidTinder: ((item: any) => any) | any;
+      /** @noSelf */
+      static isValidTinder: (item: any) => any;
 
-      static onAddAllFuel: ((playerObj: any, campfire: any) => any) | any;
+      /** @noSelf */
+      static onAddAllFuel: (playerObj: any, campfire: any) => any;
 
-      static onAddFuel: ((playerObj: any, campfire: any, fuelType: any) => any) | any;
+      /** @noSelf */
+      static onAddFuel: (playerObj: any, campfire: any, fuelType: any) => any;
 
-      static onAddMultipleFuel: ((playerObj: any, campfire: any, fuelType: any) => any) | any;
+      /** @noSelf */
+      static onAddMultipleFuel: (playerObj: any, campfire: any, fuelType: any) => any;
 
-      static onAddTent: ((worldobjects: any, player: any, tentKit: any) => any) | any;
+      /** @noSelf */
+      static onAddTent: (worldobjects: any, player: any, tentKit: any) => any;
 
-      static onDisplayInfo: ((worldobjects: any, player: any, isoCampfireObject: any, campfire: any) => any) | any;
+      /** @noSelf */
+      static onDisplayInfo: (worldobjects: any, player: any, isoCampfireObject: any, campfire: any) => any;
 
-      static onLightFromKindle:
-        | ((worldobjects: any, player: any, percedWood: any, stickOrBranch: any, campfire: any) => any)
-        | any;
+      /** @noSelf */
+      static onLightFromKindle: (
+        worldobjects: any,
+        player: any,
+        percedWood: any,
+        stickOrBranch: any,
+        campfire: any
+      ) => any;
 
-      static onLightFromLiterature:
-        | ((playerObj: any, itemType: any, lighter: any, campfire: any, fuelAmt: any) => any)
-        | any;
+      /** @noSelf */
+      static onLightFromLiterature: (playerObj: any, itemType: any, lighter: any, campfire: any, fuelAmt: any) => any;
 
-      static onLightFromPetrol:
-        | ((worldobjects: any, player: any, lighter: any, petrol: any, campfire: any) => any)
-        | any;
+      /** @noSelf */
+      static onLightFromPetrol: (worldobjects: any, player: any, lighter: any, petrol: any, campfire: any) => any;
 
-      static onPlaceCampfire: ((worldobjects: any, player: any, campfireKit: any) => any) | any;
+      /** @noSelf */
+      static onPlaceCampfire: (worldobjects: any, player: any, campfireKit: any) => any;
 
-      static onPutOutCampfire: ((worldobjects: any, player: any, campfire: any) => any) | any;
+      /** @noSelf */
+      static onPutOutCampfire: (worldobjects: any, player: any, campfire: any) => any;
 
-      static onRemoveCampfire: ((worldobjects: any, player: any, campfire: any) => any) | any;
+      /** @noSelf */
+      static onRemoveCampfire: (worldobjects: any, player: any, campfire: any) => any;
 
-      static onRemoveTent: ((worldobjects: any, player: any, tent: any) => any) | any;
+      /** @noSelf */
+      static onRemoveTent: (worldobjects: any, player: any, tent: any) => any;
 
-      static onRest: ((worldobjects: any, player: any, tent: any) => any) | any;
+      /** @noSelf */
+      static onRest: (worldobjects: any, player: any, tent: any) => any;
 
-      static onSleep: ((worldobjects: any, player: any, tent: any) => any) | any;
+      /** @noSelf */
+      static onSleep: (worldobjects: any, player: any, tent: any) => any;
 
-      static timeString: ((timeInMinutes: any) => any) | any;
+      /** @noSelf */
+      static timeString: (timeInMinutes: any) => any;
 
-      static toPlayerInventory: ((playerObj: any, item: any) => any) | any;
+      /** @noSelf */
+      static toPlayerInventory: (playerObj: any, item: any) => any;
 
-      static walkToCampfire: ((playerObj: any, square: any) => any) | any;
+      /** @noSelf */
+      static walkToCampfire: (playerObj: any, square: any) => any;
     }
   }
   export namespace lua.client.Camping.ISUI.ISCampingMenu {}

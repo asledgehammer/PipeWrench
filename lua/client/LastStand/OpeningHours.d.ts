@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:01.237Z
+ * File generated at: 2022-08-07T18:22:57.304Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,36 +31,50 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.LastStand {
-    export class OpeningHours {
-      private constructor();
-
+    export abstract class OpeningHours {
       static [id: string]: any;
 
-      static Add: (() => any) | any;
+      /** @noSelf */
+      static Add: () => any;
 
-      static AddPlayer: ((playerNum: any, playerObj: any) => any) | any;
+      /** @noSelf */
+      static AddPlayer: (playerNum: any, playerObj: any) => any;
 
-      static CheckHordeSpawn:
-        | ((regionName: any, regionSpawn: any, regionSpawnX: any, regionSpawnY: any, regionSpawnZ: any) => any)
-        | any;
+      /** @noSelf */
+      static CheckHordeSpawn: (
+        regionName: any,
+        regionSpawn: any,
+        regionSpawnX: any,
+        regionSpawnY: any,
+        regionSpawnZ: any
+      ) => any;
 
-      static CheckMetalGates: ((area: any) => any) | any;
+      /** @noSelf */
+      static CheckMetalGates: (area: any) => any;
 
-      static EveryDays: (() => any) | any;
+      /** @noSelf */
+      static EveryDays: () => any;
 
-      static EveryTenMinutes: (() => any) | any;
+      /** @noSelf */
+      static EveryTenMinutes: () => any;
 
-      static OnGameStart: (() => any) | any;
+      /** @noSelf */
+      static OnGameStart: () => any;
 
-      static OnInitWorld: (() => any) | any;
+      /** @noSelf */
+      static OnInitWorld: () => any;
 
-      static OnPlayerUpdate: (() => any) | any;
+      /** @noSelf */
+      static OnPlayerUpdate: () => any;
 
-      static RemovePlayer: ((p: any) => any) | any;
+      /** @noSelf */
+      static RemovePlayer: (p: any) => any;
 
-      static Render: (() => any) | any;
+      /** @noSelf */
+      static Render: () => any;
 
-      static ResetMetalGates: ((area: any) => any) | any;
+      /** @noSelf */
+      static ResetMetalGates: (area: any) => any;
     }
   }
   export namespace lua.client.LastStand.OpeningHours {}

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
+ * File generated at 2022-08-07T14:28Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -41,21 +41,6 @@ declare module 'PipeWrench' {
       protected constructor();
       /**
        * Method Parameters: 
-       *  - (Empty): number
-       */
-      getAngle(): number;
-      /**
-       * Method Parameters: 
-       *  - (Empty): zombie.characters.IsoGameCharacter
-       */
-      getCharacter(): zombie.characters.IsoGameCharacter;
-      /**
-       * Method Parameters: 
-       *  - (Empty): number
-       */
-      getCharacterFlags(): number;
-      /**
-       * Method Parameters: 
        *  - (Empty): string
        */
       getDeathDescription(): string;
@@ -66,39 +51,9 @@ declare module 'PipeWrench' {
       getDescription(): string;
       /**
        * Method Parameters: 
-       *  - (Empty): zombie.iso.IsoDirections
-       */
-      getDirection(): zombie.iso.IsoDirections;
-      /**
-       * Method Parameters: 
-       *  - (Empty): number
-       */
-      getId(): number;
-      /**
-       * Method Parameters: 
-       *  - (Empty): zombie.characters.IsoGameCharacter
-       */
-      getKiller(): zombie.characters.IsoGameCharacter;
-      /**
-       * Method Parameters: 
        *  - (Empty): number
        */
       getPacketSizeBytes(): number;
-      /**
-       * Method Parameters: 
-       *  - (Empty): number
-       */
-      getX(): number;
-      /**
-       * Method Parameters: 
-       *  - (Empty): number
-       */
-      getY(): number;
-      /**
-       * Method Parameters: 
-       *  - (Empty): number
-       */
-      getZ(): number;
       /**
        * Method Parameters: 
        *  - (Empty): boolean

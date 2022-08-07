@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:01.188Z
+ * File generated at: 2022-08-07T18:22:57.214Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,30 +31,38 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.LastStand {
-    export class Challenge1 {
-      private constructor();
-
+    export abstract class Challenge1 {
       static [id: string]: any;
 
-      static Add: (() => any) | any;
+      /** @noSelf */
+      static Add: () => any;
 
-      static AddPlayer: ((playerNum: any, playerObj: any) => any) | any;
+      /** @noSelf */
+      static AddPlayer: (playerNum: any, playerObj: any) => any;
 
-      static FillContainers: (() => any) | any;
+      /** @noSelf */
+      static FillContainers: () => any;
 
-      static Init: (() => any) | any;
+      /** @noSelf */
+      static Init: () => any;
 
-      static onBackButtonWheel: ((playerNum: any, dir: any) => any) | any;
+      /** @noSelf */
+      static onBackButtonWheel: (playerNum: any, dir: any) => any;
 
-      static OnInitWorld: (() => any) | any;
+      /** @noSelf */
+      static OnInitWorld: () => any;
 
-      static RemovePlayer: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static RemovePlayer: (playerObj: any) => any;
 
-      static Render: (() => any) | any;
+      /** @noSelf */
+      static Render: () => any;
 
-      static SpawnZombies: ((count: any) => any) | any;
+      /** @noSelf */
+      static SpawnZombies: (count: any) => any;
 
-      static Tick: (() => any) | any;
+      /** @noSelf */
+      static Tick: () => any;
     }
   }
   export namespace lua.client.LastStand.Challenge1 {}

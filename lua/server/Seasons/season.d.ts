@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:01.916Z
+ * File generated at: 2022-08-07T18:22:58.717Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,36 +31,47 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.server.Seasons {
-    export class season {
-      private constructor();
-
+    export abstract class season {
       static [id: string]: any;
 
-      static EveryTenMinutes: (() => any) | any;
+      /** @noSelf */
+      static EveryTenMinutes: () => any;
 
-      static load: (() => any) | any;
+      /** @noSelf */
+      static load: () => any;
 
-      static OnGameStart: (() => any) | any;
+      /** @noSelf */
+      static OnGameStart: () => any;
 
-      static OnGameTimeLoaded: (() => any) | any;
+      /** @noSelf */
+      static OnGameTimeLoaded: () => any;
 
-      static save: (() => any) | any;
+      /** @noSelf */
+      static save: () => any;
 
-      static startRain: (() => any) | any;
+      /** @noSelf */
+      static startRain: () => any;
 
-      static updateAmbient: (() => any) | any;
+      /** @noSelf */
+      static updateAmbient: () => any;
 
-      static updateBodyTemperature: (() => any) | any;
+      /** @noSelf */
+      static updateBodyTemperature: () => any;
 
-      static updateMoonPhase: (() => any) | any;
+      /** @noSelf */
+      static updateMoonPhase: () => any;
 
-      static updateMoonState: ((currentHour: any, month: any) => any) | any;
+      /** @noSelf */
+      static updateMoonState: (currentHour: any, month: any) => any;
 
-      static updateRain: (() => any) | any;
+      /** @noSelf */
+      static updateRain: () => any;
 
-      static updateWeather: ((month: any, currentHour: any) => any) | any;
+      /** @noSelf */
+      static updateWeather: (month: any, currentHour: any) => any;
 
-      static updateWeatherIcon: (() => any) | any;
+      /** @noSelf */
+      static updateWeatherIcon: () => any;
     }
   }
   export namespace lua.server.Seasons.season {}

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:02.812Z
+ * File generated at: 2022-08-07T18:23:00.241Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -62,7 +62,8 @@ declare module 'PipeWrench' {
 
       toggleView: ((viewName: any) => any) | any;
 
-      static OnClothingUpdated: ((chr: any) => any) | any;
+      /** @noSelf */
+      static OnClothingUpdated: (chr: any) => any;
     }
   }
   export namespace lua.client.XpSystem.ISUI.ISCharacterInfoWindow {}

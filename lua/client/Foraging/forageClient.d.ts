@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:38:59.828Z
+ * File generated at: 2022-08-07T18:22:54.977Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,31 +31,38 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.Foraging {
-    export class forageClient {
-      private constructor();
-
+    export abstract class forageClient {
       static [id: string]: any;
 
-      static addZone: ((_zoneData: any) => any) | any;
+      /** @noSelf */
+      static addZone: (_zoneData: any) => any;
 
-      static clearData: (() => any) | any;
+      /** @noSelf */
+      static clearData: () => any;
 
-      static getZones: (() => any) | any;
+      /** @noSelf */
+      static getZones: () => any;
 
-      static init: (() => any) | any;
+      /** @noSelf */
+      static init: () => any;
 
-      static removeZone: ((_zoneData: any) => any) | any;
+      /** @noSelf */
+      static removeZone: (_zoneData: any) => any;
 
-      static syncForageData: (() => any) | any;
+      /** @noSelf */
+      static syncForageData: () => any;
 
-      static updateData: (() => any) | any;
+      /** @noSelf */
+      static updateData: () => any;
 
-      static updateIcon: ((_zoneData: any, _iconID: any, _icon: any) => any) | any;
+      /** @noSelf */
+      static updateIcon: (_zoneData: any, _iconID: any, _icon: any) => any;
 
-      static updateZone: ((_zoneData: any) => any) | any;
+      /** @noSelf */
+      static updateZone: (_zoneData: any) => any;
     }
 
-    export class forageData {
+    export abstract class forageData {
       static [id: string]: any;
     }
   }

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:00.076Z
+ * File generated at: 2022-08-07T18:22:55.460Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -58,7 +58,8 @@ declare module 'PipeWrench' {
 
       populateList: (() => any) | any;
 
-      static OnSafehousesChanged: (() => any) | any;
+      /** @noSelf */
+      static OnSafehousesChanged: () => any;
     }
   }
   export namespace lua.client.ISUI.AdminPanel.ISSafehousesList {}

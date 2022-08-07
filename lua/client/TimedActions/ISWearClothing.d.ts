@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:02.447Z
+ * File generated at: 2022-08-07T18:22:59.647Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -43,7 +43,7 @@ declare module 'PipeWrench' {
       constructor(character: any, item: any, time: any);
     }
 
-    export class WearClothingAnimations {
+    export abstract class WearClothingAnimations {
       static [id: string]: any;
     }
   }

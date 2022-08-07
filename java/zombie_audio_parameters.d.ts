@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
+ * File generated at 2022-08-07T14:28Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -109,6 +109,16 @@ declare module 'PipeWrench' {
 
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): MovementType
+       */
+      static valueOf(arg0: string | null): zombie.audio.parameters.ParameterCharacterMovementSpeed$MovementType;
+
+      /** @noSelf */
+      static values(): zombie.audio.parameters.ParameterCharacterMovementSpeed$MovementType[];
+
     }
     /** [ENUM] zombie.audio.parameters.ParameterMeleeHitSurface$Material */
     export class ParameterMeleeHitSurface$Material {
@@ -132,6 +142,16 @@ declare module 'PipeWrench' {
       static readonly WoodGate: zombie.audio.parameters.ParameterMeleeHitSurface$Material;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): Material
+       */
+      static valueOf(arg0: string | null): zombie.audio.parameters.ParameterMeleeHitSurface$Material;
+
+      /** @noSelf */
+      static values(): zombie.audio.parameters.ParameterMeleeHitSurface$Material[];
+
     }
   }
 }

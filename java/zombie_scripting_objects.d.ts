@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
+ * File generated at 2022-08-07T14:28Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -1619,6 +1619,16 @@ declare module 'PipeWrench' {
       static readonly WeaponPart: zombie.scripting.objects.Item$Type;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): Type
+       */
+      static valueOf(arg0: string | null): zombie.scripting.objects.Item$Type;
+
+      /** @noSelf */
+      static values(): zombie.scripting.objects.Item$Type[];
+
     }
     /**
      * @customConstructor ItemRecipe.new

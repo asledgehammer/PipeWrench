@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:02.846Z
+ * File generated at: 2022-08-07T18:23:00.289Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -80,13 +80,17 @@ declare module 'PipeWrench' {
 
       updateTooltip: ((lvlSelected: any) => any) | any;
 
-      static getPerkXp: ((self: any) => any) | any;
+      /** @noSelf */
+      static getPerkXp: (self: any) => any;
 
-      static getPreviousXpLvl: ((perk: any, level: any) => any) | any;
+      /** @noSelf */
+      static getPreviousXpLvl: (perk: any, level: any) => any;
 
-      static getXpForLvl: ((perk: any, level: any) => any) | any;
+      /** @noSelf */
+      static getXpForLvl: (perk: any, level: any) => any;
 
-      static updateAlpha: (() => any) | any;
+      /** @noSelf */
+      static updateAlpha: () => any;
     }
   }
   export namespace lua.client.XpSystem.ISUI.ISSkillProgressBar {}

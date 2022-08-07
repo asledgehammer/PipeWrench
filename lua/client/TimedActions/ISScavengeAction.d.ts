@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:02.350Z
+ * File generated at: 2022-08-07T18:22:59.478Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -68,7 +68,8 @@ declare module 'PipeWrench' {
 
       scavenge: (() => any) | any;
 
-      static getScavengingZone: ((x: any, y: any) => any) | any;
+      /** @noSelf */
+      static getScavengingZone: (x: any, y: any) => any;
     }
   }
   export namespace lua.client.TimedActions.ISScavengeAction {}

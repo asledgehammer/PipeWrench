@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:01.518Z
+ * File generated at: 2022-08-07T18:22:57.871Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -84,7 +84,8 @@ declare module 'PipeWrench' {
 
       onVolumeChanged: ((control: any, volume: any) => any) | any;
 
-      static onPlaySound: ((args: any) => any) | any;
+      /** @noSelf */
+      static onPlaySound: (args: any) => any;
     }
   }
   export namespace lua.client.OptionScreens.ISGameSounds {}

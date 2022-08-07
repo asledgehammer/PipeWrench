@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:01.548Z
+ * File generated at: 2022-08-07T18:22:57.928Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -75,6 +75,6 @@ declare module 'PipeWrench' {
   }
   export namespace lua.client.OptionScreens.LoginScreen {
     /** @noSelf */
-    export const deleteLoginScreen: (() => any) | any;
+    export const deleteLoginScreen: () => any;
   }
 }

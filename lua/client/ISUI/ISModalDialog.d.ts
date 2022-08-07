@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:00.469Z
+ * File generated at: 2022-08-07T18:22:56.128Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -84,7 +84,8 @@ declare module 'PipeWrench' {
 
       render: (() => any) | any;
 
-      static CalcSize: ((width: any, height: any, text: any) => any) | any;
+      /** @noSelf */
+      static CalcSize: (width: any, height: any, text: any) => any;
     }
   }
   export namespace lua.client.ISUI.ISModalDialog {}

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:01.531Z
+ * File generated at: 2022-08-07T18:22:57.899Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,7 +31,7 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.OptionScreens {
-    export class LastStandChallenge {
+    export abstract class LastStandChallenge {
       static [id: string]: any;
     }
   }

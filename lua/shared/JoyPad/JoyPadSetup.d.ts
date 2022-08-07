@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:01.171Z
+ * File generated at: 2022-08-07T18:22:57.188Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -115,17 +115,15 @@ declare module 'PipeWrench' {
       setController: ((controller: any) => any) | any;
     }
 
-    export class joypad {
+    export abstract class joypad {
       static [id: string]: any;
     }
 
-    export class Joypad {
+    export abstract class Joypad {
       static [id: string]: any;
     }
 
-    export class JoypadState {
-      private constructor();
-
+    export abstract class JoypadState {
       static [id: string]: any;
 
       static controllerTest: any;
@@ -148,25 +146,35 @@ declare module 'PipeWrench' {
 
       static forceActivate: any;
 
-      static getMainMenuJoypad: (() => any) | any;
+      /** @noSelf */
+      static getMainMenuJoypad: () => any;
 
-      static onCoopJoinFailed: ((playerNum: any) => any) | any;
+      /** @noSelf */
+      static onCoopJoinFailed: (playerNum: any) => any;
 
-      static onGamepadConnect: ((id: any) => any) | any;
+      /** @noSelf */
+      static onGamepadConnect: (id: any) => any;
 
-      static onGamepadDisconnect: ((id: any) => any) | any;
+      /** @noSelf */
+      static onGamepadDisconnect: (id: any) => any;
 
-      static onGameStart: (() => any) | any;
+      /** @noSelf */
+      static onGameStart: () => any;
 
-      static onPlayerDeath: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static onPlayerDeath: (playerObj: any) => any;
 
-      static onRenderUI: (() => any) | any;
+      /** @noSelf */
+      static onRenderUI: () => any;
 
-      static restoreAllFocus: (() => any) | any;
+      /** @noSelf */
+      static restoreAllFocus: () => any;
 
-      static saveAllFocus: (() => any) | any;
+      /** @noSelf */
+      static saveAllFocus: () => any;
 
-      static useKeyboardMouse: (() => any) | any;
+      /** @noSelf */
+      static useKeyboardMouse: () => any;
     }
   }
   export namespace lua.shared.JoyPad.JoyPadSetup {}

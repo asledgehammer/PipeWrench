@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:01.537Z
+ * File generated at: 2022-08-07T18:22:57.908Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -92,11 +92,14 @@ declare module 'PipeWrench' {
 
       render: (() => any) | any;
 
-      static clickPlay: (() => any) | any;
+      /** @noSelf */
+      static clickPlay: () => any;
 
-      static initWorld: (() => any) | any;
+      /** @noSelf */
+      static initWorld: () => any;
 
-      static newGame: ((player: any, square: any) => any) | any;
+      /** @noSelf */
+      static newGame: (player: any, square: any) => any;
     }
   }
   export namespace lua.client.OptionScreens.LastStandPlayerSelect {}

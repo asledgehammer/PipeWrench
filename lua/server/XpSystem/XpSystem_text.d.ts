@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:02.852Z
+ * File generated at: 2022-08-07T18:23:00.300Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,7 +31,7 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.server.XpSystem {
-    export class xpSystemText {
+    export abstract class xpSystemText {
       static [id: string]: any;
     }
   }

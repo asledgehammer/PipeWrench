@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:38:59.706Z
+ * File generated at: 2022-08-07T18:22:54.742Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -62,7 +62,8 @@ declare module 'PipeWrench' {
 
       renderTooltip: (() => any) | any;
 
-      static IsVisible: (() => any) | any;
+      /** @noSelf */
+      static IsVisible: () => any;
     }
   }
   export namespace lua.server.Farming.BuildingObjects.ISFarmingCursorMouse {}

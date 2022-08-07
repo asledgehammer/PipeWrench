@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:01.380Z
+ * File generated at: 2022-08-07T18:22:57.568Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,13 +31,11 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.Moveables {
-    export class InfoPanelFlags {
+    export abstract class InfoPanelFlags {
       static [id: string]: any;
     }
 
-    export class ISMoveableSpriteProps {
-      private constructor();
-
+    export abstract class ISMoveableSpriteProps {
       static [id: string]: any;
 
       addAllScrapItemsToInventory: ((_character: any, _list: any) => any) | any;
@@ -214,20 +212,30 @@ declare module 'PipeWrench' {
 
       walkToAndEquip: ((_character: any, _square: any, _mode: any) => any) | any;
 
-      static addLineToInfoTable:
-        | ((_table: any, _lineA: any, _rA: any, _gA: any, _bA: any, _lineB: any, _rB: any, _gB: any, _bB: any) => any)
-        | any;
+      /** @noSelf */
+      static addLineToInfoTable: (
+        _table: any,
+        _lineA: any,
+        _rA: any,
+        _gA: any,
+        _bA: any,
+        _lineB: any,
+        _rB: any,
+        _gB: any,
+        _bB: any
+      ) => any;
 
-      static fromObject: ((_object: any) => any) | any;
+      /** @noSelf */
+      static fromObject: (_object: any) => any;
 
-      static new: ((_sprite: any) => any) | any;
+      /** @noSelf */
+      static new: (_sprite: any) => any;
 
-      static OnDynamicMovableRecipe: ((_sprite: any, _recipe: any, _item: any, _player: any) => any) | any;
+      /** @noSelf */
+      static OnDynamicMovableRecipe: (_sprite: any, _recipe: any, _item: any, _player: any) => any;
     }
 
-    export class ISThumpableSpriteProps {
-      private constructor();
-
+    export abstract class ISThumpableSpriteProps {
       static [id: string]: any;
 
       addToolString: ((infoTable: any, tag: any, hasTool: any) => any) | any;
@@ -248,10 +256,11 @@ declare module 'PipeWrench' {
 
       walkToAndEquip: ((_character: any, _square: any, _mode: any) => any) | any;
 
-      static new: ((object: any) => any) | any;
+      /** @noSelf */
+      static new: (object: any) => any;
     }
 
-    export class SpriteGridCache {
+    export abstract class SpriteGridCache {
       static [id: string]: any;
     }
   }

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:01.602Z
+ * File generated at: 2022-08-07T18:22:58.015Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -180,7 +180,8 @@ declare module 'PipeWrench' {
 
       updateButtons: (() => any) | any;
 
-      static showNagPanel: (() => any) | any;
+      /** @noSelf */
+      static showNagPanel: () => any;
     }
 
     /** @customConstructor ModThumbnailPanel:new */
@@ -215,6 +216,6 @@ declare module 'PipeWrench' {
   }
   export namespace lua.client.OptionScreens.ModSelector {
     /** @noSelf */
-    export const ModSelector_onModsModified: (() => any) | any;
+    export const ModSelector_onModsModified: () => any;
   }
 }

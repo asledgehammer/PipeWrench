@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:02.472Z
+ * File generated at: 2022-08-07T18:22:59.688Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -104,7 +104,8 @@ declare module 'PipeWrench' {
 
       toObject: ((object: any, transmitData: any) => any) | any;
 
-      static SpawnDestroyItems: ((trapType: any, square: any, object: any) => any) | any;
+      /** @noSelf */
+      static SpawnDestroyItems: (trapType: any, square: any, object: any) => any;
     }
   }
   export namespace lua.server.Traps.STrapGlobalObject {}

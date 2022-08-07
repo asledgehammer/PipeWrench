@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:02.658Z
+ * File generated at: 2022-08-07T18:22:59.979Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,52 +31,71 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.Vehicles.ISUI {
-    export class ISVehiclePartMenu {
-      private constructor();
-
+    export abstract class ISVehiclePartMenu {
       static [id: string]: any;
 
-      static equipRequiredItems: ((playerObj: any, part: any, tbl: any) => any) | any;
+      /** @noSelf */
+      static equipRequiredItems: (playerObj: any, part: any, tbl: any) => any;
 
-      static getGasCanNotEmpty: ((playerObj: any, typeToItem: any) => any) | any;
+      /** @noSelf */
+      static getGasCanNotEmpty: (playerObj: any, typeToItem: any) => any;
 
-      static getGasCanNotFull: ((playerObj: any, typeToItem: any) => any) | any;
+      /** @noSelf */
+      static getGasCanNotFull: (playerObj: any, typeToItem: any) => any;
 
-      static getNearbyFuelPump: ((vehicle: any) => any) | any;
+      /** @noSelf */
+      static getNearbyFuelPump: (vehicle: any) => any;
 
-      static onAddGasoline: ((playerObj: any, part: any) => any) | any;
+      /** @noSelf */
+      static onAddGasoline: (playerObj: any, part: any) => any;
 
-      static onDebugFill: ((playerObj: any, part: any) => any) | any;
+      /** @noSelf */
+      static onDebugFill: (playerObj: any, part: any) => any;
 
-      static onDeflateTire: ((playerObj: any, part: any) => any) | any;
+      /** @noSelf */
+      static onDeflateTire: (playerObj: any, part: any) => any;
 
-      static onDeviceOptions: ((playerObj: any, part: any) => any) | any;
+      /** @noSelf */
+      static onDeviceOptions: (playerObj: any, part: any) => any;
 
-      static onInflateTire: ((playerObj: any, part: any) => any) | any;
+      /** @noSelf */
+      static onInflateTire: (playerObj: any, part: any) => any;
 
-      static onInstallPart: ((playerObj: any, part: any, item: any) => any) | any;
+      /** @noSelf */
+      static onInstallPart: (playerObj: any, part: any, item: any) => any;
 
-      static onLockDoor: ((playerObj: any, part: any) => any) | any;
+      /** @noSelf */
+      static onLockDoor: (playerObj: any, part: any) => any;
 
-      static onLockDoors: ((playerObj: any, vehicle: any, lock: any) => any) | any;
+      /** @noSelf */
+      static onLockDoors: (playerObj: any, vehicle: any, lock: any) => any;
 
-      static onOpenCloseWindow: ((playerObj: any, part: any, open: any) => any) | any;
+      /** @noSelf */
+      static onOpenCloseWindow: (playerObj: any, part: any, open: any) => any;
 
-      static onPumpGasoline: ((playerObj: any, part: any) => any) | any;
+      /** @noSelf */
+      static onPumpGasoline: (playerObj: any, part: any) => any;
 
-      static onPumpGasolinePathFail: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static onPumpGasolinePathFail: (playerObj: any) => any;
 
-      static onSmashWindow: ((playerObj: any, part: any, open: any) => any) | any;
+      /** @noSelf */
+      static onSmashWindow: (playerObj: any, part: any, open: any) => any;
 
-      static onTakeGasoline: ((playerObj: any, part: any) => any) | any;
+      /** @noSelf */
+      static onTakeGasoline: (playerObj: any, part: any) => any;
 
-      static onUninstallPart: ((playerObj: any, part: any) => any) | any;
+      /** @noSelf */
+      static onUninstallPart: (playerObj: any, part: any) => any;
 
-      static onUnlockDoor: ((playerObj: any, part: any) => any) | any;
+      /** @noSelf */
+      static onUnlockDoor: (playerObj: any, part: any) => any;
 
-      static toPlayerInventory: ((playerObj: any, item: any) => any) | any;
+      /** @noSelf */
+      static toPlayerInventory: (playerObj: any, item: any) => any;
 
-      static transferRequiredItems: ((playerObj: any, part: any, tbl: any) => any) | any;
+      /** @noSelf */
+      static transferRequiredItems: (playerObj: any, part: any, tbl: any) => any;
     }
   }
   export namespace lua.client.Vehicles.ISUI.ISVehiclePartMenu {}

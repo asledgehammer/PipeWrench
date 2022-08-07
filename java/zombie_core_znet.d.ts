@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
+ * File generated at 2022-08-07T14:28Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -301,6 +301,23 @@ declare module 'PipeWrench' {
 
       /** (long arg0): boolean */
       not(arg0: number): boolean;
+
+      /**
+       * @noSelf
+       *
+       * (long arg0): String
+       */
+      static toString(arg0: number): string;
+
+      /**
+       * @noSelf
+       *
+       * (String arg0): ItemState
+       */
+      static valueOf(arg0: string | null): zombie.core.znet.SteamWorkshopItem$ItemState;
+
+      /** @noSelf */
+      static values(): zombie.core.znet.SteamWorkshopItem$ItemState[];
 
     }
     /**

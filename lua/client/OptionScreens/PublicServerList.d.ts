@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:01.618Z
+ * File generated at: 2022-08-07T18:22:58.041Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -186,11 +186,14 @@ declare module 'PipeWrench' {
 
       writeServerOnFile: ((server: any, append: any) => any) | any;
 
-      static OnSteamRefreshInternetServers: (() => any) | any;
+      /** @noSelf */
+      static OnSteamRefreshInternetServers: () => any;
 
-      static OnSteamRulesRefreshComplete: ((host: any, port: any, rules: any) => any) | any;
+      /** @noSelf */
+      static OnSteamRulesRefreshComplete: (host: any, port: any, rules: any) => any;
 
-      static OnSteamServerResponded: ((serverIndex: any) => any) | any;
+      /** @noSelf */
+      static OnSteamServerResponded: (serverIndex: any) => any;
     }
   }
   export namespace lua.client.OptionScreens.PublicServerList {}

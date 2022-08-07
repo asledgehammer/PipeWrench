@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:01.404Z
+ * File generated at: 2022-08-07T18:22:57.617Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -41,6 +41,6 @@ declare module 'PipeWrench' {
   }
   export namespace lua.server.Movers.Rabbit {
     /** @noSelf */
-    export const testCreateRabbit: (() => any) | any;
+    export const testCreateRabbit: () => any;
   }
 }

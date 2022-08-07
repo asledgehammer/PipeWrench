@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
+ * File generated at 2022-08-07T14:28Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -1099,8 +1099,8 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (float arg0, float arg1, float arg2): number
        *  - (int arg0, int arg1, int arg2): number
+       *  - (float arg0, float arg1, float arg2): number
        */
       static clamp(arg0: number, arg1: number, arg2: number): number;
       /**
@@ -1459,10 +1459,10 @@ declare module 'PipeWrench' {
       setModdedValue(arg0: zombie.iso.weather.ClimateColorInfo): void;
       /**
        * Method Parameters: 
-       *  - (ClimateColorInfo arg0, float arg1): void
        *  - (ByteBuffer arg0, float arg1): void
+       *  - (ClimateColorInfo arg0, float arg1): void
        */
-      setOverride(arg0: zombie.iso.weather.ClimateColorInfo | java.nio.ByteBuffer, arg1: number): void;
+      setOverride(arg0: java.nio.ByteBuffer | zombie.iso.weather.ClimateColorInfo, arg1: number): void;
     }
     /**
      * @customConstructor ClimateFloat.new
@@ -1590,6 +1590,16 @@ declare module 'PipeWrench' {
       static readonly ServerOnly: zombie.iso.weather.ClimateManager$ClimateNetAuth;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): ClimateNetAuth
+       */
+      static valueOf(arg0: string | null): zombie.iso.weather.ClimateManager$ClimateNetAuth;
+
+      /** @noSelf */
+      static values(): zombie.iso.weather.ClimateManager$ClimateNetAuth[];
+
     }
     /**
      * @customConstructor DayInfo.new
@@ -2486,7 +2496,24 @@ declare module 'PipeWrench' {
       static readonly Target: zombie.iso.weather.WeatherPeriod$StrLerpVal;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (int arg0): StrLerpVal
+       */
+      static fromValue(arg0: number): zombie.iso.weather.WeatherPeriod$StrLerpVal;
+
       getValue(): number;
+
+      /**
+       * @noSelf
+       *
+       * (String arg0): StrLerpVal
+       */
+      static valueOf(arg0: string | null): zombie.iso.weather.WeatherPeriod$StrLerpVal;
+
+      /** @noSelf */
+      static values(): zombie.iso.weather.WeatherPeriod$StrLerpVal[];
 
     }
     /**

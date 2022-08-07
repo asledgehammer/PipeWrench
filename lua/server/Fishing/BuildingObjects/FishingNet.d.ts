@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:38:59.810Z
+ * File generated at: 2022-08-07T18:22:54.951Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -48,11 +48,14 @@ declare module 'PipeWrench' {
 
       create: ((x: any, y: any, z: any, north: any, sprite: any) => any) | any;
 
-      static checkTrap: ((player: any, trap: any, hours: any) => any) | any;
+      /** @noSelf */
+      static checkTrap: (player: any, trap: any, hours: any) => any;
 
-      static doTimestamp: ((net: any) => any) | any;
+      /** @noSelf */
+      static doTimestamp: (net: any) => any;
 
-      static remove: ((net: any, player: any) => any) | any;
+      /** @noSelf */
+      static remove: (net: any, player: any) => any;
     }
   }
   export namespace lua.server.Fishing.BuildingObjects.FishingNet {}

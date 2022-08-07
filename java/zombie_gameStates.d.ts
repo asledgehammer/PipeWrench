@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
+ * File generated at 2022-08-07T14:28Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -1067,6 +1067,16 @@ declare module 'PipeWrench' {
       static readonly Yield: zombie.gameStates.GameStateMachine$StateAction;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): StateAction
+       */
+      static valueOf(arg0: string | null): zombie.gameStates.GameStateMachine$StateAction;
+
+      /** @noSelf */
+      static values(): zombie.gameStates.GameStateMachine$StateAction[];
+
     }
     /**
      * @customConstructor LoadingQueueState.new

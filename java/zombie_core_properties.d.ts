@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
+ * File generated at 2022-08-07T14:28Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -69,8 +69,8 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (IsoFlagType arg0): void
-       *  - (String arg0, String arg1): void
        *  - (IsoFlagType arg0, String arg1): void
+       *  - (String arg0, String arg1): void
        *  - (String arg0, String arg1, boolean arg2): void
        */
       Set(arg0: zombie.iso.SpriteDetails.IsoFlagType | string, arg1?: string, arg2?: boolean): void;

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:00.503Z
+ * File generated at: 2022-08-07T18:22:56.177Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -191,20 +191,22 @@ declare module 'PipeWrench' {
       renderButton: (() => any) | any;
     }
 
-    export class OnScreenKeyboard {
-      private constructor();
-
+    export abstract class OnScreenKeyboard {
       static [id: string]: any;
 
       static instance: any;
 
-      static GetCurrentText: (() => any) | any;
+      /** @noSelf */
+      static GetCurrentText: () => any;
 
-      static Hide: (() => any) | any;
+      /** @noSelf */
+      static Hide: () => any;
 
-      static IsVisible: (() => any) | any;
+      /** @noSelf */
+      static IsVisible: () => any;
 
-      static Show: ((playerNum: any, textEntryBox: any, joypadData: any) => any) | any;
+      /** @noSelf */
+      static Show: (playerNum: any, textEntryBox: any, joypadData: any) => any;
     }
   }
   export namespace lua.client.ISUI.ISOnScreenKeyboard {}

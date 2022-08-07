@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
+ * File generated at 2022-08-07T14:28Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -218,6 +218,16 @@ declare module 'PipeWrench' {
       static readonly Waist: zombie.core.skinnedmodel.model.CharacterMask$Part;
       name(): string;
       ordinal(): number;
+      /** @noSelf */
+      static count(): number;
+
+      /**
+       * @noSelf
+       *
+       * (int arg0): Part
+       */
+      static fromInt(arg0: number): zombie.core.skinnedmodel.model.CharacterMask$Part;
+
       getBloodBodyPartTypes(): zombie.characterTextures.BloodBodyPartType[];
 
       getParent(): zombie.core.skinnedmodel.model.CharacterMask$Part;
@@ -228,7 +238,20 @@ declare module 'PipeWrench' {
 
       isSubdivision(): boolean;
 
+      /** @noSelf */
+      static leaves(): zombie.core.skinnedmodel.model.CharacterMask$Part[];
+
       subDivisions(): zombie.core.skinnedmodel.model.CharacterMask$Part[];
+
+      /**
+       * @noSelf
+       *
+       * (String arg0): Part
+       */
+      static valueOf(arg0: string | null): zombie.core.skinnedmodel.model.CharacterMask$Part;
+
+      /** @noSelf */
+      static values(): zombie.core.skinnedmodel.model.CharacterMask$Part[];
 
     }
     /**
@@ -367,10 +390,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (ModelSlotRenderData arg0, Vector3 arg1): void
        *  - (IsoGameCharacter arg0, Vector3 arg1): void
+       *  - (ModelSlotRenderData arg0, Vector3 arg1): void
        */
-      static VectorToWorldCoords(arg0: zombie.core.skinnedmodel.model.ModelSlotRenderData | zombie.characters.IsoGameCharacter, arg1: zombie.iso.Vector3): void;
+      static VectorToWorldCoords(arg0: zombie.characters.IsoGameCharacter | zombie.core.skinnedmodel.model.ModelSlotRenderData, arg1: zombie.iso.Vector3): void;
       /**
        * @noSelf
        *
@@ -568,6 +591,16 @@ declare module 'PipeWrench' {
       static readonly Out: zombie.core.skinnedmodel.model.ModelInstance$FrameLightBlendStatus;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): FrameLightBlendStatus
+       */
+      static valueOf(arg0: string | null): zombie.core.skinnedmodel.model.ModelInstance$FrameLightBlendStatus;
+
+      /** @noSelf */
+      static values(): zombie.core.skinnedmodel.model.ModelInstance$FrameLightBlendStatus[];
+
     }
     /**
      * @customConstructor FrameLightInfo.new

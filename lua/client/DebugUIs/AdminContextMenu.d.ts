@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:38:58.972Z
+ * File generated at: 2022-08-07T18:22:53.416Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,26 +31,32 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.DebugUIs {
-    export class AdminContextMenu {
-      private constructor();
-
+    export abstract class AdminContextMenu {
       static [id: string]: any;
 
-      static doMenu: ((player: any, context: any, worldobjects: any, test: any) => any) | any;
+      /** @noSelf */
+      static doMenu: (player: any, context: any, worldobjects: any, test: any) => any;
 
-      static onDebugBlood: ((playerObj: any, vehicle: any) => any) | any;
+      /** @noSelf */
+      static onDebugBlood: (playerObj: any, vehicle: any) => any;
 
-      static onDebugColor: ((playerObj: any, vehicle: any) => any) | any;
+      /** @noSelf */
+      static onDebugColor: (playerObj: any, vehicle: any) => any;
 
-      static OnGetDoorKey: ((worldobjects: any, door: any, player: any) => any) | any;
+      /** @noSelf */
+      static OnGetDoorKey: (worldobjects: any, door: any, player: any) => any;
 
-      static onHordeManager: ((square: any, player: any) => any) | any;
+      /** @noSelf */
+      static onHordeManager: (square: any, player: any) => any;
 
-      static onRemoveItemTool: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static onRemoveItemTool: (playerObj: any) => any;
 
-      static onSpawnVehicle: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static onSpawnVehicle: (playerObj: any) => any;
 
-      static onTeleportUI: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static onTeleportUI: (playerObj: any) => any;
     }
   }
   export namespace lua.client.DebugUIs.AdminContextMenu {}

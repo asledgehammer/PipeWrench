@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:38:59.577Z
+ * File generated at: 2022-08-07T18:22:54.465Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -60,11 +60,14 @@ declare module 'PipeWrench' {
 
       storePos: (() => any) | any;
 
-      static onDataRead: ((data: any) => any) | any;
+      /** @noSelf */
+      static onDataRead: (data: any) => any;
 
-      static onDataWrite: ((data: any) => any) | any;
+      /** @noSelf */
+      static onDataWrite: (data: any) => any;
 
-      static onWatch: ((item: any) => any) | any;
+      /** @noSelf */
+      static onWatch: (item: any) => any;
     }
   }
   export namespace lua.client.DebugUIs.ObjectViewer {}

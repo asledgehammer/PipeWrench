@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:02.565Z
+ * File generated at: 2022-08-07T18:22:59.847Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,14 +31,14 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.shared.Util {
-    export class Vector2 {
-      private constructor();
-
+    export abstract class Vector2 {
       static [id: string]: any;
 
-      static getLength: ((x: any, y: any) => any) | any;
+      /** @noSelf */
+      static getLength: (x: any, y: any) => any;
 
-      static normalize: ((x: any, y: any) => any) | any;
+      /** @noSelf */
+      static normalize: (x: any, y: any) => any;
     }
   }
   export namespace lua.shared.Util.Vector2 {}

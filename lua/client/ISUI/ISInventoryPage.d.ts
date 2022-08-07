@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:00.367Z
+ * File generated at: 2022-08-07T18:22:55.995Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -262,23 +262,32 @@ declare module 'PipeWrench' {
 
       update: (() => any) | any;
 
-      static ContainerSizeChanged: (() => any) | any;
+      /** @noSelf */
+      static ContainerSizeChanged: () => any;
 
-      static dirtyUI: (() => any) | any;
+      /** @noSelf */
+      static dirtyUI: () => any;
 
-      static GetFloorContainer: ((playerNum: any) => any) | any;
+      /** @noSelf */
+      static GetFloorContainer: (playerNum: any) => any;
 
-      static loadWeight: ((inv: any) => any) | any;
+      /** @noSelf */
+      static loadWeight: (inv: any) => any;
 
-      static OnContainerUpdate: ((object: any) => any) | any;
+      /** @noSelf */
+      static OnContainerUpdate: (object: any) => any;
 
-      static ongamestart: (() => any) | any;
+      /** @noSelf */
+      static ongamestart: () => any;
 
-      static onInventoryFontChanged: (() => any) | any;
+      /** @noSelf */
+      static onInventoryFontChanged: () => any;
 
-      static onKeyPressed: ((key: any) => any) | any;
+      /** @noSelf */
+      static onKeyPressed: (key: any) => any;
 
-      static toggleInventory: (() => any) | any;
+      /** @noSelf */
+      static toggleInventory: () => any;
     }
   }
   export namespace lua.client.ISUI.ISInventoryPage {}

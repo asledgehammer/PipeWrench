@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:00.380Z
+ * File generated at: 2022-08-07T18:22:56.013Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -252,22 +252,29 @@ declare module 'PipeWrench' {
 
       updateTooltip: (() => any) | any;
 
-      static getActualItems: ((items: any) => any) | any;
+      /** @noSelf */
+      static getActualItems: (items: any) => any;
 
-      static itemSortByCatDesc: ((a: any, b: any) => any) | any;
+      /** @noSelf */
+      static itemSortByCatDesc: (a: any, b: any) => any;
 
-      static itemSortByCatInc: ((a: any, b: any) => any) | any;
+      /** @noSelf */
+      static itemSortByCatInc: (a: any, b: any) => any;
 
-      static itemSortByNameDesc: ((a: any, b: any) => any) | any;
+      /** @noSelf */
+      static itemSortByNameDesc: (a: any, b: any) => any;
 
-      static itemSortByNameInc: ((a: any, b: any) => any) | any;
+      /** @noSelf */
+      static itemSortByNameInc: (a: any, b: any) => any;
 
-      static itemSortByWeightAsc: ((a: any, b: any) => any) | any;
+      /** @noSelf */
+      static itemSortByWeightAsc: (a: any, b: any) => any;
 
-      static itemSortByWeightDesc: ((a: any, b: any) => any) | any;
+      /** @noSelf */
+      static itemSortByWeightDesc: (a: any, b: any) => any;
     }
 
-    export class ISInventoryPaneDraggedItems {
+    export abstract class ISInventoryPaneDraggedItems {
       static [id: string]: any;
     }
   }

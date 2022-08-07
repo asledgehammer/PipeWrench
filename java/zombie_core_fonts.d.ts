@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
+ * File generated at 2022-08-07T14:28Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -172,11 +172,11 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (Empty): void
-       *  - (boolean[] arg0): void
        *  - (BooleanGrid arg0): void
+       *  - (boolean[] arg0): void
        *  - (WrappedBuffer arg0): void
        */
-      createMask(arg0?: boolean[] | zombie.core.utils.BooleanGrid | zombie.core.utils.WrappedBuffer): void;
+      createMask(arg0?: zombie.core.utils.BooleanGrid | boolean[] | zombie.core.utils.WrappedBuffer): void;
       /**
        * Method Parameters: 
        *  - (Empty): void

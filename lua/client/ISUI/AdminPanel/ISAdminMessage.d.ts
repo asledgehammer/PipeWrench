@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:38:59.960Z
+ * File generated at: 2022-08-07T18:22:55.340Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -64,9 +64,11 @@ declare module 'PipeWrench' {
 
       updateButtons: (() => any) | any;
 
-      static AddAdminMessage: ((message: any, x: any, y: any, z: any) => any) | any;
+      /** @noSelf */
+      static AddAdminMessage: (message: any, x: any, y: any, z: any) => any;
 
-      static RecalculPositions: (() => any) | any;
+      /** @noSelf */
+      static RecalculPositions: () => any;
     }
   }
   export namespace lua.client.ISUI.AdminPanel.ISAdminMessage {}

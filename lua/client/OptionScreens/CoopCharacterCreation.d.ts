@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:01.484Z
+ * File generated at: 2022-08-07T18:22:57.782Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -70,11 +70,14 @@ declare module 'PipeWrench' {
 
       OnJoypadBeforeDeactivate: ((index: any) => any) | any;
 
-      static getJoypad: (() => any) | any;
+      /** @noSelf */
+      static getJoypad: () => any;
 
-      static newPlayer: ((joypadIndex: any, joypadData: any) => any) | any;
+      /** @noSelf */
+      static newPlayer: (joypadIndex: any, joypadData: any) => any;
 
-      static setVisibleAllUI: ((visible: any) => any) | any;
+      /** @noSelf */
+      static setVisibleAllUI: (visible: any) => any;
     }
   }
   export namespace lua.client.OptionScreens.CoopCharacterCreation {}

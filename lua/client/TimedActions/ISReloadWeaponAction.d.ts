@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:02.303Z
+ * File generated at: 2022-08-07T18:22:59.388Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -60,25 +60,35 @@ declare module 'PipeWrench' {
 
       loadAmmo: (() => any) | any;
 
-      static attackHook: ((character: any, chargeDelta: any, weapon: any) => any) | any;
+      /** @noSelf */
+      static attackHook: (character: any, chargeDelta: any, weapon: any) => any;
 
-      static BeginAutomaticReload: ((playerObj: any, gun: any) => any) | any;
+      /** @noSelf */
+      static BeginAutomaticReload: (playerObj: any, gun: any) => any;
 
-      static canRack: ((weapon: any) => any) | any;
+      /** @noSelf */
+      static canRack: (weapon: any) => any;
 
-      static canShoot: ((weapon: any) => any) | any;
+      /** @noSelf */
+      static canShoot: (weapon: any) => any;
 
-      static OnPlayerAttackFinished: ((playerObj: any, weapon: any) => any) | any;
+      /** @noSelf */
+      static OnPlayerAttackFinished: (playerObj: any, weapon: any) => any;
 
-      static OnPressRackButton: ((player: any, gun: any) => any) | any;
+      /** @noSelf */
+      static OnPressRackButton: (player: any, gun: any) => any;
 
-      static OnPressReloadButton: ((player: any, gun: any) => any) | any;
+      /** @noSelf */
+      static OnPressReloadButton: (player: any, gun: any) => any;
 
-      static onShoot: ((player: any, weapon: any) => any) | any;
+      /** @noSelf */
+      static onShoot: (player: any, weapon: any) => any;
 
-      static ReloadBestMagazine: ((playerObj: any, gun: any) => any) | any;
+      /** @noSelf */
+      static ReloadBestMagazine: (playerObj: any, gun: any) => any;
 
-      static setReloadSpeed: ((character: any, rack: any) => any) | any;
+      /** @noSelf */
+      static setReloadSpeed: (character: any, rack: any) => any;
     }
   }
   export namespace lua.client.TimedActions.ISReloadWeaponAction {}
