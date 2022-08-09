@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:02.673Z
+ * File generated at: 2022-08-07T18:23:00.002Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,18 +31,17 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.Vehicles {
-    export class ISVehicleTrailerUtils {
-      private constructor();
-
+    export abstract class ISVehicleTrailerUtils {
       static [id: string]: any;
 
-      static getTowableVehicleNear:
-        | ((square: any, ignoreVehicle: any, attachmentA: any, attachmentB: any) => any)
-        | any;
+      /** @noSelf */
+      static getTowableVehicleNear: (square: any, ignoreVehicle: any, attachmentA: any, attachmentB: any) => any;
 
-      static onTrailerPathFail: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static onTrailerPathFail: (playerObj: any) => any;
 
-      static walkToTrailer: ((playerObj: any, vehicle: any, attachment: any, nextAction: any) => any) | any;
+      /** @noSelf */
+      static walkToTrailer: (playerObj: any, vehicle: any, attachment: any, nextAction: any) => any;
     }
   }
   export namespace lua.client.Vehicles.ISVehicleTrailerUtils {}

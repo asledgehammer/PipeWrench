@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:02.784Z
+ * File generated at: 2022-08-07T18:23:00.201Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -56,13 +56,17 @@ declare module 'PipeWrench' {
 
       useWater: ((units: any) => any) | any;
 
-      static chooseArea: ((character: any, vehicle: any) => any) | any;
+      /** @noSelf */
+      static chooseArea: (character: any, vehicle: any) => any;
 
-      static getWaterAmountForArea: ((vehicle: any, id: any) => any) | any;
+      /** @noSelf */
+      static getWaterAmountForArea: (vehicle: any, id: any) => any;
 
-      static getWaterAmountForPlayer: ((character: any) => any) | any;
+      /** @noSelf */
+      static getWaterAmountForPlayer: (character: any) => any;
 
-      static hasBlood: ((vehicle: any) => any) | any;
+      /** @noSelf */
+      static hasBlood: (vehicle: any) => any;
     }
   }
   export namespace lua.client.Vehicles.TimedActions.ISWashVehicle {}

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:01.839Z
+ * File generated at: 2022-08-07T18:22:58.523Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,12 +31,11 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.shared.RecordedMedia {
-    export class ISRecordedMedia {
-      private constructor();
-
+    export abstract class ISRecordedMedia {
       static [id: string]: any;
 
-      static init: ((_rc: any) => any) | any;
+      /** @noSelf */
+      static init: (_rc: any) => any;
     }
   }
   export namespace lua.shared.RecordedMedia.ISRecordeMedia {}

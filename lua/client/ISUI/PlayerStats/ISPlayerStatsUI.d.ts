@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:01.022Z
+ * File generated at: 2022-08-07T18:22:56.845Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -144,17 +144,23 @@ declare module 'PipeWrench' {
 
       updateColumns: (() => any) | any;
 
-      static loadPerks: ((self: any) => any) | any;
+      /** @noSelf */
+      static loadPerks: (self: any) => any;
 
-      static loadProfession: ((self: any) => any) | any;
+      /** @noSelf */
+      static loadProfession: (self: any) => any;
 
-      static loadTraits: ((self: any) => any) | any;
+      /** @noSelf */
+      static loadTraits: (self: any) => any;
 
-      static loadUserlog: ((self: any) => any) | any;
+      /** @noSelf */
+      static loadUserlog: (self: any) => any;
 
-      static OnOpenPanel: (() => any) | any;
+      /** @noSelf */
+      static OnOpenPanel: () => any;
 
-      static receiveUserLog: ((username: any, logs: any) => any) | any;
+      /** @noSelf */
+      static receiveUserLog: (username: any, logs: any) => any;
     }
   }
   export namespace lua.client.ISUI.PlayerStats.ISPlayerStatsUI {}

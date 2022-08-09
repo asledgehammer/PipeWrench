@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
+ * File generated at 2022-08-07T14:28Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -1366,10 +1366,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoGridSquare arg0): void
        *  - (IsoGameCharacter arg0): void
+       *  - (IsoGridSquare arg0): void
        */
-      static sendStopFire(arg0: zombie.iso.IsoGridSquare | zombie.characters.IsoGameCharacter): void;
+      static sendStopFire(arg0: zombie.characters.IsoGameCharacter | zombie.iso.IsoGridSquare): void;
       /**
        * @noSelf
        *
@@ -1470,6 +1470,23 @@ declare module 'PipeWrench' {
       static readonly WalkHalf: zombie.network.NetworkVariables$PredictionTypes;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (byte arg0): PredictionTypes
+       */
+      static fromByte(arg0: number): zombie.network.NetworkVariables$PredictionTypes;
+
+      /**
+       * @noSelf
+       *
+       * (String arg0): PredictionTypes
+       */
+      static valueOf(arg0: string | null): zombie.network.NetworkVariables$PredictionTypes;
+
+      /** @noSelf */
+      static values(): zombie.network.NetworkVariables$PredictionTypes[];
+
     }
     /** [ENUM] zombie.network.PacketTypes$PacketType */
     export class PacketTypes$PacketType {
@@ -1704,6 +1721,16 @@ declare module 'PipeWrench' {
 
       /** (UdpConnection arg0): void */
       send(arg0: zombie.core.raknet.UdpConnection | null): void;
+
+      /**
+       * @noSelf
+       *
+       * (String arg0): PacketType
+       */
+      static valueOf(arg0: string | null): zombie.network.PacketTypes$PacketType;
+
+      /** @noSelf */
+      static values(): zombie.network.PacketTypes$PacketType[];
 
     }
     /**
@@ -2741,7 +2768,31 @@ declare module 'PipeWrench' {
       static readonly WarningPoint: zombie.network.Userlog$UserlogType;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): UserlogType
+       */
+      static FromString(arg0: string | null): zombie.network.Userlog$UserlogType;
+
+      /**
+       * @noSelf
+       *
+       * (int arg0): UserlogType
+       */
+      static fromIndex(arg0: number): zombie.network.Userlog$UserlogType;
+
       index(): number;
+
+      /**
+       * @noSelf
+       *
+       * (String arg0): UserlogType
+       */
+      static valueOf(arg0: string | null): zombie.network.Userlog$UserlogType;
+
+      /** @noSelf */
+      static values(): zombie.network.Userlog$UserlogType[];
 
     }
   }

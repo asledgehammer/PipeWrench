@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:01.384Z
+ * File generated at: 2022-08-07T18:22:57.575Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,22 +31,26 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.Moveables {
-    export class ISMoveableTools {
-      private constructor();
-
+    export abstract class ISMoveableTools {
       static [id: string]: any;
 
-      static canPlayerPickUpMoveable: ((_char: any, _square: any, _object: any, _moveProps: any) => any) | any;
+      /** @noSelf */
+      static canPlayerPickUpMoveable: (_char: any, _square: any, _object: any, _moveProps: any) => any;
 
-      static canPlayerPickUpObject: ((_char: any, _square: any, _object: any) => any) | any;
+      /** @noSelf */
+      static canPlayerPickUpObject: (_char: any, _square: any, _object: any) => any;
 
-      static getMoveableList: ((_square: any) => any) | any;
+      /** @noSelf */
+      static getMoveableList: (_square: any) => any;
 
-      static getObjectList: ((_square: any) => any) | any;
+      /** @noSelf */
+      static getObjectList: (_square: any) => any;
 
-      static getScrapableObjects: ((_char: any, _square: any) => any) | any;
+      /** @noSelf */
+      static getScrapableObjects: (_char: any, _square: any) => any;
 
-      static isObjectMoveable: ((_object: any) => any) | any;
+      /** @noSelf */
+      static isObjectMoveable: (_object: any) => any;
     }
   }
   export namespace lua.client.Moveables.ISMoveableTools {}

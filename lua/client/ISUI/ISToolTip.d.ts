@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:00.642Z
+ * File generated at: 2022-08-07T18:22:56.400Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -96,7 +96,8 @@ declare module 'PipeWrench' {
 
       setTexture: ((textureName: any) => any) | any;
 
-      static GetFont: (() => any) | any;
+      /** @noSelf */
+      static GetFont: () => any;
     }
   }
   export namespace lua.client.ISUI.ISToolTip {}

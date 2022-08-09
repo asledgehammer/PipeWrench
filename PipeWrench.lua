@@ -20,7 +20,7 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --
--- File generated at 2022-07-29T23:58Z
+-- File generated at 2022-08-07T14:28Z
 
 local Exports = {}
 
@@ -35,20 +35,20 @@ function Exports.loadstring(lua) return loadstring(lua) end
 function Exports.execute(lua) return loadstring(lua)() end
 function Exports.addEventListener(id, func) Events[id].Add(func) end
 function Exports.removeEventListener(id, func) Events[id].Add(func) end
-function Exports.AddNoiseToken(arg1, arg2) return AddNoiseToken(arg1, arg2) end
-function Exports.AddWorldSound(arg1, arg2, arg3) return AddWorldSound(arg1, arg2, arg3) end
-function Exports.InvMngGetItem(arg1, arg2, arg3) return InvMngGetItem(arg1, arg2, arg3) end
-function Exports.InvMngRemoveItem(arg1, arg2) return InvMngRemoveItem(arg1, arg2) end
-function Exports.ProceedFactionMessage(arg1) return ProceedFactionMessage(arg1) end
-function Exports.ProcessAdminChatMessage(arg1) return ProcessAdminChatMessage(arg1) end
-function Exports.ProcessSafehouseMessage(arg1) return ProcessSafehouseMessage(arg1) end
+function Exports.AddNoiseToken(arg1,arg2) return AddNoiseToken(arg1,arg2) end
+function Exports.AddWorldSound(arg1,arg2,arg3) return AddWorldSound(arg1,arg2,arg3) end
+function Exports.InvMngGetItem(arg1,arg2,arg3) return InvMngGetItem(arg1,arg2,arg3) end
+function Exports.InvMngRemoveItem(arg1,arg2) return InvMngRemoveItem(arg1,arg2) end
+function Exports.proceedFactionMessage(arg1) return proceedFactionMessage(arg1) end
+function Exports.processAdminChatMessage(arg1) return processAdminChatMessage(arg1) end
+function Exports.processSafehouseMessage(arg1) return processSafehouseMessage(arg1) end
 function Exports.SendCommandToServer(arg1) return SendCommandToServer(arg1) end
-function Exports.ZombRand(arg1, arg2) return ZombRand(arg1, arg2) end
-function Exports.ZombRandBetween(arg1, arg2) return ZombRandBetween(arg1, arg2) end
-function Exports.ZombRandFloat(arg1, arg2) return ZombRandFloat(arg1, arg2) end
-function Exports.acceptFactionInvite(arg1, arg2) return acceptFactionInvite(arg1, arg2) end
-function Exports.acceptSafehouseInvite(arg1, arg2) return acceptSafehouseInvite(arg1, arg2) end
-function Exports.acceptTrading(arg1, arg2, arg3) return acceptTrading(arg1, arg2, arg3) end
+function Exports.ZombRand(arg1,arg2) return ZombRand(arg1,arg2) end
+function Exports.ZombRandBetween(arg1,arg2) return ZombRandBetween(arg1,arg2) end
+function Exports.ZombRandFloat(arg1,arg2) return ZombRandFloat(arg1,arg2) end
+function Exports.acceptFactionInvite(arg1,arg2) return acceptFactionInvite(arg1,arg2) end
+function Exports.acceptSafehouseInvite(arg1,arg2) return acceptSafehouseInvite(arg1,arg2) end
+function Exports.acceptTrading(arg1,arg2,arg3) return acceptTrading(arg1,arg2,arg3) end
 function Exports.activateJoypadOnSteamDeck() return activateJoypadOnSteamDeck() end
 function Exports.activateSteamOverlayToWebPage(arg1) return activateSteamOverlayToWebPage(arg1) end
 function Exports.activateSteamOverlayToWorkshop() return activateSteamOverlayToWorkshop() end
@@ -59,13 +59,13 @@ function Exports.addAllSmashedVehicles() return addAllSmashedVehicles() end
 function Exports.addAllVehicles(arg1) return addAllVehicles(arg1) end
 function Exports.addCarCrash() return addCarCrash() end
 function Exports.addPhysicsObject() return addPhysicsObject() end
-function Exports.addTicket(arg1, arg2, arg3) return addTicket(arg1, arg2, arg3) end
-function Exports.addUserlog(arg1, arg2, arg3) return addUserlog(arg1, arg2, arg3) end
+function Exports.addTicket(arg1,arg2,arg3) return addTicket(arg1,arg2,arg3) end
+function Exports.addUserlog(arg1,arg2,arg3) return addUserlog(arg1,arg2,arg3) end
 function Exports.addVehicle(arg1) return addVehicle(arg1) end
-function Exports.addVehicleDebug(arg1, arg2, arg3, arg4) return addVehicleDebug(arg1, arg2, arg3, arg4) end
-function Exports.addVirtualZombie(arg1, arg2) return addVirtualZombie(arg1, arg2) end
-function Exports.addWarningPoint(arg1, arg2, arg3) return addWarningPoint(arg1, arg2, arg3) end
-function Exports.addZombiesInOutfit(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11) return addZombiesInOutfit(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11) end
+function Exports.addVehicleDebug(arg1,arg2,arg3,arg4) return addVehicleDebug(arg1,arg2,arg3,arg4) end
+function Exports.addVirtualZombie(arg1,arg2) return addVirtualZombie(arg1,arg2) end
+function Exports.addWarningPoint(arg1,arg2,arg3) return addWarningPoint(arg1,arg2,arg3) end
+function Exports.addZombiesInOutfit(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10,arg11) return addZombiesInOutfit(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10,arg11) end
 function Exports.assaultPlayer() return assaultPlayer() end
 function Exports.attachTrailerToPlayerVehicle(arg1) return attachTrailerToPlayerVehicle(arg1) end
 function Exports.backToSinglePlayer() return backToSinglePlayer() end
@@ -79,22 +79,22 @@ function Exports.checkPlayerCanUseChat(arg1) return checkPlayerCanUseChat(arg1) 
 function Exports.checkSaveFileExists(arg1) return checkSaveFileExists(arg1) end
 function Exports.checkSaveFolderExists(arg1) return checkSaveFolderExists(arg1) end
 function Exports.checkSavePlayerExists() return checkSavePlayerExists() end
-function Exports.cloneItemType(arg1, arg2) return cloneItemType(arg1, arg2) end
+function Exports.cloneItemType(arg1,arg2) return cloneItemType(arg1,arg2) end
 function Exports.configureLighting(arg1) return configureLighting(arg1) end
 function Exports.connectToServerStateCallback(arg1) return connectToServerStateCallback(arg1) end
-function Exports.copyTable(arg1, arg2) return copyTable(arg1, arg2) end
-function Exports.createHordeFromTo(arg1, arg2, arg3, arg4, arg5) return createHordeFromTo(arg1, arg2, arg3, arg4, arg5) end
-function Exports.createHordeInAreaTo(arg1, arg2, arg3, arg4, arg5, arg6, arg7) return createHordeInAreaTo(arg1, arg2, arg3, arg4, arg5, arg6, arg7) end
-function Exports.createItemTransaction(arg1, arg2, arg3) return createItemTransaction(arg1, arg2, arg3) end
-function Exports.createNewScriptItem(arg1, arg2, arg3, arg4, arg5) return createNewScriptItem(arg1, arg2, arg3, arg4, arg5) end
-function Exports.createRandomDeadBody(arg1, arg2) return createRandomDeadBody(arg1, arg2) end
+function Exports.copyTable(arg1,arg2) return copyTable(arg1,arg2) end
+function Exports.createHordeFromTo(arg1,arg2,arg3,arg4,arg5) return createHordeFromTo(arg1,arg2,arg3,arg4,arg5) end
+function Exports.createHordeInAreaTo(arg1,arg2,arg3,arg4,arg5,arg6,arg7) return createHordeInAreaTo(arg1,arg2,arg3,arg4,arg5,arg6,arg7) end
+function Exports.createItemTransaction(arg1,arg2,arg3) return createItemTransaction(arg1,arg2,arg3) end
+function Exports.createNewScriptItem(arg1,arg2,arg3,arg4,arg5) return createNewScriptItem(arg1,arg2,arg3,arg4,arg5) end
+function Exports.createRandomDeadBody(arg1,arg2) return createRandomDeadBody(arg1,arg2) end
 function Exports.createRegionFile() return createRegionFile() end
 function Exports.createStory(arg1) return createStory(arg1) end
-function Exports.createTile(arg1, arg2) return createTile(arg1, arg2) end
+function Exports.createTile(arg1,arg2) return createTile(arg1,arg2) end
 function Exports.createWorld(arg1) return createWorld(arg1) end
-function Exports.createZombie(arg1, arg2, arg3, arg4, arg5, arg6) return createZombie(arg1, arg2, arg3, arg4, arg5, arg6) end
-function Exports.debugFullyStreamedIn(arg1, arg2) return debugFullyStreamedIn(arg1, arg2) end
-function Exports.debugLuaTable(arg1, arg2) return debugLuaTable(arg1, arg2) end
+function Exports.createZombie(arg1,arg2,arg3,arg4,arg5,arg6) return createZombie(arg1,arg2,arg3,arg4,arg5,arg6) end
+function Exports.debugFullyStreamedIn(arg1,arg2) return debugFullyStreamedIn(arg1,arg2) end
+function Exports.debugLuaTable(arg1,arg2) return debugLuaTable(arg1,arg2) end
 function Exports.debugSetRoomType(arg1) return debugSetRoomType(arg1) end
 function Exports.deleteAllGameModeSaves(arg1) return deleteAllGameModeSaves(arg1) end
 function Exports.deletePlayerSave(arg1) return deletePlayerSave(arg1) end
@@ -104,12 +104,12 @@ function Exports.disconnect() return disconnect() end
 function Exports.doChallenge(arg1) return doChallenge(arg1) end
 function Exports.doKeyPress(arg1) return doKeyPress(arg1) end
 function Exports.doTutorial(arg1) return doTutorial(arg1) end
-function Exports.drawOverheadMap(arg1, arg2, arg3, arg4) return drawOverheadMap(arg1, arg2, arg3, arg4) end
+function Exports.drawOverheadMap(arg1,arg2,arg3,arg4) return drawOverheadMap(arg1,arg2,arg3,arg4) end
 function Exports.endFileInput() return endFileInput() end
 function Exports.endFileOutput() return endFileOutput() end
 function Exports.endHelicopter() return endHelicopter() end
 function Exports.endTextFileInput() return endTextFileInput() end
-function Exports.executeQuery(arg1, arg2) return executeQuery(arg1, arg2) end
+function Exports.executeQuery(arg1,arg2) return executeQuery(arg1,arg2) end
 function Exports.fileExists(arg1) return fileExists(arg1) end
 function Exports.focusOnTab(arg1) return focusOnTab(arg1) end
 function Exports.forceChangeState(arg1) return forceChangeState(arg1) end
@@ -137,26 +137,26 @@ function Exports.getCallframeTop(arg1) return getCallframeTop(arg1) end
 function Exports.getCameraOffX() return getCameraOffX() end
 function Exports.getCameraOffY() return getCameraOffY() end
 function Exports.getCell() return getCell() end
-function Exports.getClassField(arg1, arg2) return getClassField(arg1, arg2) end
-function Exports.getClassFieldVal(arg1, arg2) return getClassFieldVal(arg1, arg2) end
-function Exports.getClassFunction(arg1, arg2) return getClassFunction(arg1, arg2) end
+function Exports.getClassField(arg1,arg2) return getClassField(arg1,arg2) end
+function Exports.getClassFieldVal(arg1,arg2) return getClassFieldVal(arg1,arg2) end
+function Exports.getClassFunction(arg1,arg2) return getClassFunction(arg1,arg2) end
 function Exports.getClientUsername() return getClientUsername() end
 function Exports.getClimateManager() return getClimateManager() end
 function Exports.getClimateMoon() return getClimateMoon() end
 function Exports.getConnectedPlayers() return getConnectedPlayers() end
 function Exports.getControllerAxisCount(arg1) return getControllerAxisCount(arg1) end
-function Exports.getControllerAxisValue(arg1, arg2) return getControllerAxisValue(arg1, arg2) end
+function Exports.getControllerAxisValue(arg1,arg2) return getControllerAxisValue(arg1,arg2) end
 function Exports.getControllerButtonCount(arg1) return getControllerButtonCount(arg1) end
 function Exports.getControllerCount() return getControllerCount() end
-function Exports.getControllerDeadZone(arg1, arg2) return getControllerDeadZone(arg1, arg2) end
+function Exports.getControllerDeadZone(arg1,arg2) return getControllerDeadZone(arg1,arg2) end
 function Exports.getControllerGUID(arg1) return getControllerGUID(arg1) end
 function Exports.getControllerName(arg1) return getControllerName(arg1) end
 function Exports.getControllerPovX(arg1) return getControllerPovX(arg1) end
 function Exports.getControllerPovY(arg1) return getControllerPovY(arg1) end
 function Exports.getCore() return getCore() end
-function Exports.getCoroutineCallframeStack(arg1, arg2) return getCoroutineCallframeStack(arg1, arg2) end
-function Exports.getCoroutineObjStack(arg1, arg2) return getCoroutineObjStack(arg1, arg2) end
-function Exports.getCoroutineObjStackWithBase(arg1, arg2) return getCoroutineObjStackWithBase(arg1, arg2) end
+function Exports.getCoroutineCallframeStack(arg1,arg2) return getCoroutineCallframeStack(arg1,arg2) end
+function Exports.getCoroutineObjStack(arg1,arg2) return getCoroutineObjStack(arg1,arg2) end
+function Exports.getCoroutineObjStackWithBase(arg1,arg2) return getCoroutineObjStackWithBase(arg1,arg2) end
 function Exports.getCoroutineTop(arg1) return getCoroutineTop(arg1) end
 function Exports.getCurrentCoroutine() return getCurrentCoroutine() end
 function Exports.getCurrentUserProfileName() return getCurrentUserProfileName() end
@@ -164,16 +164,16 @@ function Exports.getCurrentUserSteamID() return getCurrentUserSteamID() end
 function Exports.getDBSchema() return getDBSchema() end
 function Exports.getDebug() return getDebug() end
 function Exports.getDebugOptions() return getDebugOptions() end
-function Exports.getDirectionTo(arg1, arg2) return getDirectionTo(arg1, arg2) end
+function Exports.getDirectionTo(arg1,arg2) return getDirectionTo(arg1,arg2) end
 function Exports.getEditVehicleState() return getEditVehicleState() end
 function Exports.getErosion() return getErosion() end
 function Exports.getEvolvedRecipes() return getEvolvedRecipes() end
 function Exports.getFMODSoundBank() return getFMODSoundBank() end
 function Exports.getFileInput(arg1) return getFileInput(arg1) end
 function Exports.getFileOutput(arg1) return getFileOutput(arg1) end
-function Exports.getFileReader(arg1, arg2) return getFileReader(arg1, arg2) end
+function Exports.getFileReader(arg1,arg2) return getFileReader(arg1,arg2) end
 function Exports.getFileSeparator() return getFileSeparator() end
-function Exports.getFileWriter(arg1, arg2, arg3) return getFileWriter(arg1, arg2, arg3) end
+function Exports.getFileWriter(arg1,arg2,arg3) return getFileWriter(arg1,arg2,arg3) end
 function Exports.getFilenameOfCallframe(arg1) return getFilenameOfCallframe(arg1) end
 function Exports.getFilenameOfClosure(arg1) return getFilenameOfClosure(arg1) end
 function Exports.getFirstLineOfClosure(arg1) return getFirstLineOfClosure(arg1) end
@@ -214,8 +214,8 @@ function Exports.getLineNumber(arg1) return getLineNumber(arg1) end
 function Exports.getLoadedLua(arg1) return getLoadedLua(arg1) end
 function Exports.getLoadedLuaCount() return getLoadedLuaCount() end
 function Exports.getLocalVarCount(arg1) return getLocalVarCount(arg1) end
-function Exports.getLocalVarName(arg1, arg2) return getLocalVarName(arg1, arg2) end
-function Exports.getLocalVarStack(arg1, arg2) return getLocalVarStack(arg1, arg2) end
+function Exports.getLocalVarName(arg1,arg2) return getLocalVarName(arg1,arg2) end
+function Exports.getLocalVarStack(arg1,arg2) return getLocalVarStack(arg1,arg2) end
 function Exports.getLotDirectories() return getLotDirectories() end
 function Exports.getLuaDebuggerErrorCount() return getLuaDebuggerErrorCount() end
 function Exports.getLuaDebuggerErrors() return getLuaDebuggerErrors() end
@@ -224,11 +224,11 @@ function Exports.getMapFoldersForMod(arg1) return getMapFoldersForMod(arg1) end
 function Exports.getMapInfo(arg1) return getMapInfo(arg1) end
 function Exports.getMaxActivePlayers() return getMaxActivePlayers() end
 function Exports.getMaxPlayers() return getMaxPlayers() end
-function Exports.getMethodParameter(arg1, arg2) return getMethodParameter(arg1, arg2) end
+function Exports.getMethodParameter(arg1,arg2) return getMethodParameter(arg1,arg2) end
 function Exports.getMethodParameterCount(arg1) return getMethodParameterCount(arg1) end
 function Exports.getModDirectoryTable() return getModDirectoryTable() end
-function Exports.getModFileReader(arg1, arg2, arg3) return getModFileReader(arg1, arg2, arg3) end
-function Exports.getModFileWriter(arg1, arg2, arg3, arg4) return getModFileWriter(arg1, arg2, arg3, arg4) end
+function Exports.getModFileReader(arg1,arg2,arg3) return getModFileReader(arg1,arg2,arg3) end
+function Exports.getModFileWriter(arg1,arg2,arg3,arg4) return getModFileWriter(arg1,arg2,arg3,arg4) end
 function Exports.getModInfo(arg1) return getModInfo(arg1) end
 function Exports.getModInfoByID(arg1) return getModInfoByID(arg1) end
 function Exports.getMods() return getMods() end
@@ -262,7 +262,7 @@ function Exports.getRecipeDisplayName(arg1) return getRecipeDisplayName(arg1) en
 function Exports.getReconnectCountdownTimer() return getReconnectCountdownTimer() end
 function Exports.getRenderer() return getRenderer() end
 function Exports.getSLSoundManager() return getSLSoundManager() end
-function Exports.getSandboxFileWriter(arg1, arg2, arg3) return getSandboxFileWriter(arg1, arg2, arg3) end
+function Exports.getSandboxFileWriter(arg1,arg2,arg3) return getSandboxFileWriter(arg1,arg2,arg3) end
 function Exports.getSandboxOptions() return getSandboxOptions() end
 function Exports.getSandboxPresets() return getSandboxPresets() end
 function Exports.getSaveDirectory(arg1) return getSaveDirectory(arg1) end
@@ -289,8 +289,8 @@ function Exports.getSoundManager() return getSoundManager() end
 function Exports.getSpecificPlayer(arg1) return getSpecificPlayer(arg1) end
 function Exports.getSprite(arg1) return getSprite(arg1) end
 function Exports.getSpriteManager(arg1) return getSpriteManager(arg1) end
-function Exports.getSquare(arg1, arg2, arg3) return getSquare(arg1, arg2, arg3) end
-function Exports.getStatistics() return getStatistics() end
+function Exports.getSquare(arg1,arg2,arg3) return getSquare(arg1,arg2,arg3) end
+function Exports.getMPStatistics() return getMPStatistics() end
 function Exports.getSteamAvatarFromSteamID(arg1) return getSteamAvatarFromSteamID(arg1) end
 function Exports.getSteamAvatarFromUsername(arg1) return getSteamAvatarFromUsername(arg1) end
 function Exports.getSteamIDFromUsername(arg1) return getSteamIDFromUsername(arg1) end
@@ -301,15 +301,15 @@ function Exports.getSteamScoreboard() return getSteamScoreboard() end
 function Exports.getSteamWorkshopItemIDs() return getSteamWorkshopItemIDs() end
 function Exports.getSteamWorkshopItemMods(arg1) return getSteamWorkshopItemMods(arg1) end
 function Exports.getSteamWorkshopStagedItems() return getSteamWorkshopStagedItems() end
-function Exports.getTableResult(arg1, arg2) return getTableResult(arg1, arg2) end
-function Exports.getText(arg1, arg2, arg3, arg4, arg5) return getText(arg1, arg2, arg3, arg4, arg5) end
+function Exports.getTableResult(arg1,arg2) return getTableResult(arg1,arg2) end
+function Exports.getText(arg1,arg2,arg3,arg4,arg5) return getText(arg1,arg2,arg3,arg4,arg5) end
 function Exports.getTextManager() return getTextManager() end
 function Exports.getTextMediaEN(arg1) return getTextMediaEN(arg1) end
-function Exports.getTextOrNull(arg1, arg2, arg3, arg4, arg5) return getTextOrNull(arg1, arg2, arg3, arg4, arg5) end
+function Exports.getTextOrNull(arg1,arg2,arg3,arg4,arg5) return getTextOrNull(arg1,arg2,arg3,arg4,arg5) end
 function Exports.getTexture(arg1) return getTexture(arg1) end
-function Exports.getTextureFromSaveDir(arg1, arg2) return getTextureFromSaveDir(arg1, arg2) end
+function Exports.getTextureFromSaveDir(arg1,arg2) return getTextureFromSaveDir(arg1,arg2) end
 function Exports.getTickets(arg1) return getTickets(arg1) end
-function Exports.getTime() return getTime() end
+function Exports.getMPStatus() return getMPStatus() end
 function Exports.getTimeInMillis() return getTimeInMillis() end
 function Exports.getTimestamp() return getTimestamp() end
 function Exports.getTimestampMs() return getTimestampMs() end
@@ -317,20 +317,20 @@ function Exports.getTranslatorCredits(arg1) return getTranslatorCredits(arg1) en
 function Exports.getUrlInputStream(arg1) return getUrlInputStream(arg1) end
 function Exports.getVehicleById(arg1) return getVehicleById(arg1) end
 function Exports.getVehicleInfo(arg1) return getVehicleInfo(arg1) end
-function Exports.getVehicleZoneAt(arg1, arg2, arg3) return getVehicleZoneAt(arg1, arg2, arg3) end
+function Exports.getVehicleZoneAt(arg1,arg2,arg3) return getVehicleZoneAt(arg1,arg2,arg3) end
 function Exports.getWorld() return getWorld() end
 function Exports.getWorldMarkers() return getWorldMarkers() end
 function Exports.getWorldSoundManager() return getWorldSoundManager() end
 function Exports.getZombieInfo(arg1) return getZombieInfo(arg1) end
 function Exports.getZomboidRadio() return getZomboidRadio() end
-function Exports.getZone(arg1, arg2, arg3) return getZone(arg1, arg2, arg3) end
-function Exports.getZones(arg1, arg2, arg3) return getZones(arg1, arg2, arg3) end
-function Exports.hasBreakpoint(arg1, arg2) return hasBreakpoint(arg1, arg2) end
-function Exports.hasDataBreakpoint(arg1, arg2) return hasDataBreakpoint(arg1, arg2) end
-function Exports.hasDataReadBreakpoint(arg1, arg2) return hasDataReadBreakpoint(arg1, arg2) end
+function Exports.getZone(arg1,arg2,arg3) return getZone(arg1,arg2,arg3) end
+function Exports.getZones(arg1,arg2,arg3) return getZones(arg1,arg2,arg3) end
+function Exports.hasBreakpoint(arg1,arg2) return hasBreakpoint(arg1,arg2) end
+function Exports.hasDataBreakpoint(arg1,arg2) return hasDataBreakpoint(arg1,arg2) end
+function Exports.hasDataReadBreakpoint(arg1,arg2) return hasDataReadBreakpoint(arg1,arg2) end
 function Exports.initUISystem() return initUISystem() end
 function Exports.instanceItem(arg1) return instanceItem(arg1) end
-function Exports.instof(arg1, arg2) return instof(arg1, arg2) end
+function Exports._instanceof_(arg1,arg2) return instanceof(arg1,arg2) end
 function Exports.inviteFriend(arg1) return inviteFriend(arg1) end
 function Exports.is64bit() return is64bit() end
 function Exports.isAccessLevel(arg1) return isAccessLevel(arg1) end
@@ -340,21 +340,21 @@ function Exports.isClient() return isClient() end
 function Exports.isControllerConnected(arg1) return isControllerConnected(arg1) end
 function Exports.isCoopHost() return isCoopHost() end
 function Exports.isCtrlKeyDown() return isCtrlKeyDown() end
-function Exports.isCurrentExecutionPoint(arg1, arg2) return isCurrentExecutionPoint(arg1, arg2) end
+function Exports.isCurrentExecutionPoint(arg1,arg2) return isCurrentExecutionPoint(arg1,arg2) end
 function Exports.isDebugEnabled() return isDebugEnabled() end
 function Exports.isDemo() return isDemo() end
 function Exports.isDesktopOpenSupported() return isDesktopOpenSupported() end
 function Exports.isFloatingGamepadTextInputVisible() return isFloatingGamepadTextInputVisible() end
 function Exports.isGamePaused() return isGamePaused() end
 function Exports.isIngameState() return isIngameState() end
-function Exports.isItemTransactionConsistent(arg1, arg2, arg3) return isItemTransactionConsistent(arg1, arg2, arg3) end
+function Exports.isItemTransactionConsistent(arg1,arg2,arg3) return isItemTransactionConsistent(arg1,arg2,arg3) end
 function Exports.isJoypadConnected(arg1) return isJoypadConnected(arg1) end
 function Exports.isJoypadDown(arg1) return isJoypadDown(arg1) end
 function Exports.isJoypadLBPressed(arg1) return isJoypadLBPressed(arg1) end
 function Exports.isJoypadLTPressed(arg1) return isJoypadLTPressed(arg1) end
 function Exports.isJoypadLeft(arg1) return isJoypadLeft(arg1) end
 function Exports.isJoypadLeftStickButtonPressed(arg1) return isJoypadLeftStickButtonPressed(arg1) end
-function Exports.isJoypadPressed(arg1, arg2) return isJoypadPressed(arg1, arg2) end
+function Exports.isJoypadPressed(arg1,arg2) return isJoypadPressed(arg1,arg2) end
 function Exports.isJoypadRBPressed(arg1) return isJoypadRBPressed(arg1) end
 function Exports.isJoypadRTPressed(arg1) return isJoypadRTPressed(arg1) end
 function Exports.isJoypadRight(arg1) return isJoypadRight(arg1) end
@@ -374,33 +374,33 @@ function Exports.isSteamRunningOnSteamDeck() return isSteamRunningOnSteamDeck() 
 function Exports.isSystemLinux() return isSystemLinux() end
 function Exports.isSystemMacOS() return isSystemMacOS() end
 function Exports.isSystemWindows() return isSystemWindows() end
-function Exports.isType(arg1, arg2) return isType(arg1, arg2) end
+function Exports.istype(arg1,arg2) return istype(arg1,arg2) end
 function Exports.isValidSteamID(arg1) return isValidSteamID(arg1) end
 function Exports.isValidUserName(arg1) return isValidUserName(arg1) end
 function Exports.isXBOXController() return isXBOXController() end
 function Exports.isoRegionsRenderer() return isoRegionsRenderer() end
-function Exports.isoToScreenX(arg1, arg2, arg3, arg4) return isoToScreenX(arg1, arg2, arg3, arg4) end
-function Exports.isoToScreenY(arg1, arg2, arg3, arg4) return isoToScreenY(arg1, arg2, arg3, arg4) end
-function Exports.loadSkinnedZomboidModel(arg1, arg2, arg3) return loadSkinnedZomboidModel(arg1, arg2, arg3) end
-function Exports.loadStaticZomboidModel(arg1, arg2, arg3) return loadStaticZomboidModel(arg1, arg2, arg3) end
-function Exports.loadVehicleModel(arg1, arg2, arg3) return loadVehicleModel(arg1, arg2, arg3) end
-function Exports.loadZomboidModel(arg1, arg2, arg3, arg4, arg5) return loadZomboidModel(arg1, arg2, arg3, arg4, arg5) end
-function Exports.localVarName(arg1, arg2) return localVarName(arg1, arg2) end
+function Exports.isoToScreenX(arg1,arg2,arg3,arg4) return isoToScreenX(arg1,arg2,arg3,arg4) end
+function Exports.isoToScreenY(arg1,arg2,arg3,arg4) return isoToScreenY(arg1,arg2,arg3,arg4) end
+function Exports.loadSkinnedZomboidModel(arg1,arg2,arg3) return loadSkinnedZomboidModel(arg1,arg2,arg3) end
+function Exports.loadStaticZomboidModel(arg1,arg2,arg3) return loadStaticZomboidModel(arg1,arg2,arg3) end
+function Exports.loadVehicleModel(arg1,arg2,arg3) return loadVehicleModel(arg1,arg2,arg3) end
+function Exports.loadZomboidModel(arg1,arg2,arg3,arg4,arg5) return loadZomboidModel(arg1,arg2,arg3,arg4,arg5) end
+function Exports.localVarName(arg1,arg2) return localVarName(arg1,arg2) end
 function Exports.luaDebug() return luaDebug() end
-function Exports.manipulateSavefile(arg1, arg2) return manipulateSavefile(arg1, arg2) end
-function Exports.moduleDotType(arg1, arg2) return moduleDotType(arg1, arg2) end
-function Exports.openURl(arg1) return openURl(arg1) end
+function Exports.manipulateSavefile(arg1,arg2) return manipulateSavefile(arg1,arg2) end
+function Exports.moduleDotType(arg1,arg2) return moduleDotType(arg1,arg2) end
+function Exports.openUrl(arg1) return openUrl(arg1) end
 function Exports.pauseSoundAndMusic() return pauseSoundAndMusic() end
-function Exports.ping(arg1, arg2, arg3, arg4) return ping(arg1, arg2, arg3, arg4) end
-function Exports.playServerSound(arg1, arg2) return playServerSound(arg1, arg2) end
+function Exports.ping(arg1,arg2,arg3,arg4) return ping(arg1,arg2,arg3,arg4) end
+function Exports.playServerSound(arg1,arg2) return playServerSound(arg1,arg2) end
 function Exports.proceedPM(arg1) return proceedPM(arg1) end
 function Exports.processGeneralMessage(arg1) return processGeneralMessage(arg1) end
 function Exports.processSayMessage(arg1) return processSayMessage(arg1) end
 function Exports.processShoutMessage(arg1) return processShoutMessage(arg1) end
-function Exports.querySteamWorkshopItemDetails(arg1, arg2, arg3) return querySteamWorkshopItemDetails(arg1, arg2, arg3) end
+function Exports.querySteamWorkshopItemDetails(arg1,arg2,arg3) return querySteamWorkshopItemDetails(arg1,arg2,arg3) end
 function Exports.queueCharEvent(arg1) return queueCharEvent(arg1) end
 function Exports.queueKeyEvent(arg1) return queueKeyEvent(arg1) end
-function Exports.rainConfig(arg1, arg2) return rainConfig(arg1, arg2) end
+function Exports.rainConfig(arg1,arg2) return rainConfig(arg1,arg2) end
 function Exports.reactivateJoypadAfterResetLua() return reactivateJoypadAfterResetLua() end
 function Exports.refreshAnimSets(arg1) return refreshAnimSets(arg1) end
 function Exports.reloadActionGroups() return reloadActionGroups() end
@@ -412,13 +412,13 @@ function Exports.reloadServerLuaFile(arg1) return reloadServerLuaFile(arg1) end
 function Exports.reloadSoundFiles() return reloadSoundFiles() end
 function Exports.reloadVehicleTextures(arg1) return reloadVehicleTextures(arg1) end
 function Exports.reloadVehicles() return reloadVehicles() end
-function Exports.removeItemTransaction(arg1, arg2, arg3) return removeItemTransaction(arg1, arg2, arg3) end
+function Exports.removeItemTransaction(arg1,arg2,arg3) return removeItemTransaction(arg1,arg2,arg3) end
 function Exports.removeTicket(arg1) return removeTicket(arg1) end
-function Exports.removeUserlog(arg1, arg2, arg3) return removeUserlog(arg1, arg2, arg3) end
-function Exports.renderIsoCircle(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9) return renderIsoCircle(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9) end
-function Exports.replaceWith(arg1, arg2, arg3) return replaceWith(arg1, arg2, arg3) end
+function Exports.removeUserlog(arg1,arg2,arg3) return removeUserlog(arg1,arg2,arg3) end
+function Exports.renderIsoCircle(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9) return renderIsoCircle(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9) end
+function Exports.replaceWith(arg1,arg2,arg3) return replaceWith(arg1,arg2,arg3) end
 function Exports.requestPacketCounts() return requestPacketCounts() end
-function Exports.requestTrading(arg1, arg2) return requestTrading(arg1, arg2) end
+function Exports.requestTrading(arg1,arg2) return requestTrading(arg1,arg2) end
 function Exports.requestUserlog(arg1) return requestUserlog(arg1) end
 function Exports.require(arg1) return require(arg1) end
 function Exports.resetRegionFile() return resetRegionFile() end
@@ -430,47 +430,47 @@ function Exports.saveControllerSettings(arg1) return saveControllerSettings(arg1
 function Exports.saveGame() return saveGame() end
 function Exports.saveModsFile() return saveModsFile() end
 function Exports.scoreboardUpdate() return scoreboardUpdate() end
-function Exports.screenToIsoX(arg1, arg2, arg3, arg4) return screenToIsoX(arg1, arg2, arg3, arg4) end
-function Exports.screenToIsoY(arg1, arg2, arg3, arg4) return screenToIsoY(arg1, arg2, arg3, arg4) end
-function Exports.sendBandage(arg1, arg2, arg3, arg4, arg5, arg6) return sendBandage(arg1, arg2, arg3, arg4, arg5, arg6) end
-function Exports.sendCataplasm(arg1, arg2, arg3, arg4, arg5) return sendCataplasm(arg1, arg2, arg3, arg4, arg5) end
-function Exports.sendCleanBurn(arg1, arg2, arg3, arg4) return sendCleanBurn(arg1, arg2, arg3, arg4) end
-function Exports.sendClientCommand(arg1, arg2, arg3, arg4) return sendClientCommand(arg1, arg2, arg3, arg4) end
+function Exports.screenToIsoX(arg1,arg2,arg3,arg4) return screenToIsoX(arg1,arg2,arg3,arg4) end
+function Exports.screenToIsoY(arg1,arg2,arg3,arg4) return screenToIsoY(arg1,arg2,arg3,arg4) end
+function Exports.sendBandage(arg1,arg2,arg3,arg4,arg5,arg6) return sendBandage(arg1,arg2,arg3,arg4,arg5,arg6) end
+function Exports.sendCataplasm(arg1,arg2,arg3,arg4,arg5) return sendCataplasm(arg1,arg2,arg3,arg4,arg5) end
+function Exports.sendCleanBurn(arg1,arg2,arg3,arg4) return sendCleanBurn(arg1,arg2,arg3,arg4) end
+function Exports.sendClientCommand(arg1,arg2,arg3,arg4) return sendClientCommand(arg1,arg2,arg3,arg4) end
 function Exports.sendClothing(arg1) return sendClothing(arg1) end
-function Exports.sendDisinfect(arg1, arg2, arg3, arg4) return sendDisinfect(arg1, arg2, arg3, arg4) end
-function Exports.sendFactionInvite(arg1, arg2, arg3) return sendFactionInvite(arg1, arg2, arg3) end
-function Exports.sendItemListNet(arg1, arg2, arg3, arg4, arg5) return sendItemListNet(arg1, arg2, arg3, arg4, arg5) end
-function Exports.sendItemsInContainer(arg1, arg2) return sendItemsInContainer(arg1, arg2) end
+function Exports.sendDisinfect(arg1,arg2,arg3,arg4) return sendDisinfect(arg1,arg2,arg3,arg4) end
+function Exports.sendFactionInvite(arg1,arg2,arg3) return sendFactionInvite(arg1,arg2,arg3) end
+function Exports.sendItemListNet(arg1,arg2,arg3,arg4,arg5) return sendItemListNet(arg1,arg2,arg3,arg4,arg5) end
+function Exports.sendItemsInContainer(arg1,arg2) return sendItemsInContainer(arg1,arg2) end
 function Exports.sendPersonalColor(arg1) return sendPersonalColor(arg1) end
 function Exports.sendPing() return sendPing() end
 function Exports.sendPlayerExtraInfo(arg1) return sendPlayerExtraInfo(arg1) end
 function Exports.sendPlayerStatsChange(arg1) return sendPlayerStatsChange(arg1) end
-function Exports.sendRemoveBullet(arg1, arg2, arg3) return sendRemoveBullet(arg1, arg2, arg3) end
-function Exports.sendRemoveGlass(arg1, arg2, arg3, arg4) return sendRemoveGlass(arg1, arg2, arg3, arg4) end
+function Exports.sendRemoveBullet(arg1,arg2,arg3) return sendRemoveBullet(arg1,arg2,arg3) end
+function Exports.sendRemoveGlass(arg1,arg2,arg3,arg4) return sendRemoveGlass(arg1,arg2,arg3,arg4) end
 function Exports.sendRequestInventory(arg1) return sendRequestInventory(arg1) end
-function Exports.sendSafehouseInvite(arg1, arg2, arg3) return sendSafehouseInvite(arg1, arg2, arg3) end
-function Exports.sendServerCommand(arg1, arg2, arg3, arg4) return sendServerCommand(arg1, arg2, arg3, arg4) end
-function Exports.sendSplint(arg1, arg2, arg3, arg4, arg5) return sendSplint(arg1, arg2, arg3, arg4, arg5) end
-function Exports.sendStitch(arg1, arg2, arg3, arg4, arg5) return sendStitch(arg1, arg2, arg3, arg4, arg5) end
+function Exports.sendSafehouseInvite(arg1,arg2,arg3) return sendSafehouseInvite(arg1,arg2,arg3) end
+function Exports.sendServerCommand(arg1,arg2,arg3,arg4) return sendServerCommand(arg1,arg2,arg3,arg4) end
+function Exports.sendSplint(arg1,arg2,arg3,arg4,arg5) return sendSplint(arg1,arg2,arg3,arg4,arg5) end
+function Exports.sendStitch(arg1,arg2,arg3,arg4,arg5) return sendStitch(arg1,arg2,arg3,arg4,arg5) end
 function Exports.sendVisual(arg1) return sendVisual(arg1) end
-function Exports.serverConnect(arg1, arg2, arg3, arg4, arg5, arg6) return serverConnect(arg1, arg2, arg3, arg4, arg5, arg6) end
+function Exports.serverConnect(arg1,arg2,arg3,arg4,arg5,arg6) return serverConnect(arg1,arg2,arg3,arg4,arg5,arg6) end
 function Exports.serverConnectCoop(arg1) return serverConnectCoop(arg1) end
 function Exports.serverFileExists(arg1) return serverFileExists(arg1) end
 function Exports.setActivePlayer(arg1) return setActivePlayer(arg1) end
 function Exports.setAdmin() return setAdmin() end
-function Exports.setAggroTarget(arg1, arg2, arg3) return setAggroTarget(arg1, arg2, arg3) end
+function Exports.setAggroTarget(arg1,arg2,arg3) return setAggroTarget(arg1,arg2,arg3) end
 function Exports.setBehaviorStep(arg1) return setBehaviorStep(arg1) end
-function Exports.setControllerDeadZone(arg1, arg2, arg3) return setControllerDeadZone(arg1, arg2, arg3) end
+function Exports.setControllerDeadZone(arg1,arg2,arg3) return setControllerDeadZone(arg1,arg2,arg3) end
 function Exports.setDebugToggleControllerPluggedIn(arg1) return setDebugToggleControllerPluggedIn(arg1) end
 function Exports.setGameSpeed(arg1) return setGameSpeed(arg1) end
-function Exports.setModelMetaData(arg1, arg2, arg3, arg4, arg5) return setModelMetaData(arg1, arg2, arg3, arg4, arg5) end
-function Exports.setMouseXY(arg1, arg2) return setMouseXY(arg1, arg2) end
-function Exports.setPlayerJoypad(arg1, arg2, arg3, arg4) return setPlayerJoypad(arg1, arg2, arg3, arg4) end
+function Exports.setModelMetaData(arg1,arg2,arg3,arg4,arg5) return setModelMetaData(arg1,arg2,arg3,arg4,arg5) end
+function Exports.setMouseXY(arg1,arg2) return setMouseXY(arg1,arg2) end
+function Exports.setPlayerJoypad(arg1,arg2,arg3,arg4) return setPlayerJoypad(arg1,arg2,arg3,arg4) end
 function Exports.setPlayerMouse(arg1) return setPlayerMouse(arg1) end
-function Exports.setPlayerMovementActive(arg1, arg2) return setPlayerMovementActive(arg1, arg2) end
-function Exports.setProgressBarValue(arg1, arg2) return setProgressBarValue(arg1, arg2) end
+function Exports.setPlayerMovementActive(arg1,arg2) return setPlayerMovementActive(arg1,arg2) end
+function Exports.setProgressBarValue(arg1,arg2) return setProgressBarValue(arg1,arg2) end
 function Exports.setPuddles(arg1) return setPuddles(arg1) end
-function Exports.setSavefilePlayer1(arg1, arg2, arg3) return setSavefilePlayer1(arg1, arg2, arg3) end
+function Exports.setSavefilePlayer1(arg1,arg2,arg3) return setSavefilePlayer1(arg1,arg2,arg3) end
 function Exports.setServerStatisticEnable(arg1) return setServerStatisticEnable(arg1) end
 function Exports.setShowPausedMessage(arg1) return setShowPausedMessage(arg1) end
 function Exports.showAnimationViewer() return showAnimationViewer() end
@@ -478,54 +478,54 @@ function Exports.showAttachmentEditor() return showAttachmentEditor() end
 function Exports.showChunkDebugger() return showChunkDebugger() end
 function Exports.showFolderInDesktop(arg1) return showFolderInDesktop(arg1) end
 function Exports.showGlobalObjectDebugger() return showGlobalObjectDebugger() end
-function Exports.showSteamFloatingGamepadTextInput(arg1, arg2, arg3, arg4, arg5) return showSteamFloatingGamepadTextInput(arg1, arg2, arg3, arg4, arg5) end
-function Exports.showSteamGamepadTextInput(arg1, arg2, arg3, arg4, arg5) return showSteamGamepadTextInput(arg1, arg2, arg3, arg4, arg5) end
+function Exports.showSteamFloatingGamepadTextInput(arg1,arg2,arg3,arg4,arg5) return showSteamFloatingGamepadTextInput(arg1,arg2,arg3,arg4,arg5) end
+function Exports.showSteamGamepadTextInput(arg1,arg2,arg3,arg4,arg5) return showSteamGamepadTextInput(arg1,arg2,arg3,arg4,arg5) end
 function Exports.showVehicleEditor(arg1) return showVehicleEditor(arg1) end
 function Exports.showWorldMapEditor(arg1) return showWorldMapEditor(arg1) end
-function Exports.showWrongChatTabMessage(arg1, arg2, arg3) return showWrongChatTabMessage(arg1, arg2, arg3) end
+function Exports.showWrongChatTabMessage(arg1,arg2,arg3) return showWrongChatTabMessage(arg1,arg2,arg3) end
 function Exports.sledgeDestroy(arg1) return sledgeDestroy(arg1) end
-function Exports.spawnHorde(arg1, arg2, arg3, arg4, arg5, arg6) return spawnHorde(arg1, arg2, arg3, arg4, arg5, arg6) end
-function Exports.spawnpointsExistsForMod(arg1, arg2) return spawnpointsExistsForMod(arg1, arg2) end
+function Exports.spawnHorde(arg1,arg2,arg3,arg4,arg5,arg6) return spawnHorde(arg1,arg2,arg3,arg4,arg5,arg6) end
+function Exports.spawnpointsExistsForMod(arg1,arg2) return spawnpointsExistsForMod(arg1,arg2) end
 function Exports.steamGetInternetServerDetails(arg1) return steamGetInternetServerDetails(arg1) end
 function Exports.steamReleaseInternetServersRequest() return steamReleaseInternetServersRequest() end
-function Exports.steamRequestInternetServersCount() return steamRequestInternetServersCount() end
+function Exports.steamGetInternetServersCount() return steamGetInternetServersCount() end
 function Exports.steamRequestInternetServersList() return steamRequestInternetServersList() end
-function Exports.steamRequestServerDetails(arg1, arg2) return steamRequestServerDetails(arg1, arg2) end
-function Exports.steamRequestServerRules(arg1, arg2) return steamRequestServerRules(arg1, arg2) end
+function Exports.steamRequestServerDetails(arg1,arg2) return steamRequestServerDetails(arg1,arg2) end
+function Exports.steamRequestServerRules(arg1,arg2) return steamRequestServerRules(arg1,arg2) end
 function Exports.stopPing() return stopPing() end
 function Exports.stopSound(arg1) return stopSound(arg1) end
-function Exports.tabToX(arg1, arg2) return tabToX(arg1, arg2) end
+function Exports.tabToX(arg1,arg2) return tabToX(arg1,arg2) end
 function Exports.takeScreenshot(arg1) return takeScreenshot(arg1) end
 function Exports.testHelicopter() return testHelicopter() end
 function Exports.testSound() return testSound() end
-function Exports.timSort(arg1, arg2) return timSort(arg1, arg2) end
+function Exports.timSort(arg1,arg2) return timSort(arg1,arg2) end
 function Exports.toInt(arg1) return toInt(arg1) end
-function Exports.toggleBreakOnChange(arg1, arg2) return toggleBreakOnChange(arg1, arg2) end
-function Exports.toggleBreakOnRead(arg1, arg2) return toggleBreakOnRead(arg1, arg2) end
-function Exports.toggleBreakpoint(arg1, arg2) return toggleBreakpoint(arg1, arg2) end
-function Exports.toggleModActive(arg1, arg2) return toggleModActive(arg1, arg2) end
+function Exports.toggleBreakOnChange(arg1,arg2) return toggleBreakOnChange(arg1,arg2) end
+function Exports.toggleBreakOnRead(arg1,arg2) return toggleBreakOnRead(arg1,arg2) end
+function Exports.toggleBreakpoint(arg1,arg2) return toggleBreakpoint(arg1,arg2) end
+function Exports.toggleModActive(arg1,arg2) return toggleModActive(arg1,arg2) end
 function Exports.toggleSafetyServer(arg1) return toggleSafetyServer(arg1) end
 function Exports.toggleVehicleRenderToTexture() return toggleVehicleRenderToTexture() end
-function Exports.tradingUISendAddItem(arg1, arg2, arg3) return tradingUISendAddItem(arg1, arg2, arg3) end
-function Exports.tradingUISendRemoveItem(arg1, arg2, arg3) return tradingUISendRemoveItem(arg1, arg2, arg3) end
-function Exports.tradingUISendUpdateState(arg1, arg2, arg3) return tradingUISendUpdateState(arg1, arg2, arg3) end
+function Exports.tradingUISendAddItem(arg1,arg2,arg3) return tradingUISendAddItem(arg1,arg2,arg3) end
+function Exports.tradingUISendRemoveItem(arg1,arg2,arg3) return tradingUISendRemoveItem(arg1,arg2,arg3) end
+function Exports.tradingUISendUpdateState(arg1,arg2,arg3) return tradingUISendUpdateState(arg1,arg2,arg3) end
 function Exports.transformIntoKahluaTable(arg1) return transformIntoKahluaTable(arg1) end
-function Exports.translatePointXInOverheadMapToWindow(arg1, arg2, arg3, arg4) return translatePointXInOverheadMapToWindow(arg1, arg2, arg3, arg4) end
-function Exports.translatePointXInOverheadMapToWorld(arg1, arg2, arg3, arg4) return translatePointXInOverheadMapToWorld(arg1, arg2, arg3, arg4) end
-function Exports.translatePointYInOverheadMapToWindow(arg1, arg2, arg3, arg4) return translatePointYInOverheadMapToWindow(arg1, arg2, arg3, arg4) end
-function Exports.translatePointYInOverheadMapToWorld(arg1, arg2, arg3, arg4) return translatePointYInOverheadMapToWorld(arg1, arg2, arg3, arg4) end
-function Exports.triggerEvent(arg1, arg2, arg3, arg4, arg5) return triggerEvent(arg1, arg2, arg3, arg4, arg5) end
-function Exports.updateChatSettings(arg1, arg2, arg3) return updateChatSettings(arg1, arg2, arg3) end
+function Exports.translatePointXInOverheadMapToWindow(arg1,arg2,arg3,arg4) return translatePointXInOverheadMapToWindow(arg1,arg2,arg3,arg4) end
+function Exports.translatePointXInOverheadMapToWorld(arg1,arg2,arg3,arg4) return translatePointXInOverheadMapToWorld(arg1,arg2,arg3,arg4) end
+function Exports.translatePointYInOverheadMapToWindow(arg1,arg2,arg3,arg4) return translatePointYInOverheadMapToWindow(arg1,arg2,arg3,arg4) end
+function Exports.translatePointYInOverheadMapToWorld(arg1,arg2,arg3,arg4) return translatePointYInOverheadMapToWorld(arg1,arg2,arg3,arg4) end
+function Exports.triggerEvent(arg1,arg2,arg3,arg4,arg5) return triggerEvent(arg1,arg2,arg3,arg4,arg5) end
+function Exports.updateChatSettings(arg1,arg2,arg3) return updateChatSettings(arg1,arg2,arg3) end
 function Exports.updateFire() return updateFire() end
 function Exports.useStaticErosionRand(arg1) return useStaticErosionRand(arg1) end
 function Exports.useTextureFiltering(arg1) return useTextureFiltering(arg1) end
 function Exports.wasKeyDown(arg1) return wasKeyDown(arg1) end
 function Exports.wasMouseActiveMoreRecentlyThanJoypad() return wasMouseActiveMoreRecentlyThanJoypad() end
-function Exports.writeLog(arg1, arg2) return writeLog(arg1, arg2) end
-function Exports.zpopClearZombies(arg1, arg2) return zpopClearZombies(arg1, arg2) end
+function Exports.writeLog(arg1,arg2) return writeLog(arg1,arg2) end
+function Exports.zpopClearZombies(arg1,arg2) return zpopClearZombies(arg1,arg2) end
 function Exports.zpopNewRenderer() return zpopNewRenderer() end
-function Exports.zpopSpawnNow(arg1, arg2) return zpopSpawnNow(arg1, arg2) end
-function Exports.zpopSpawnTimeToZero(arg1, arg2) return zpopSpawnTimeToZero(arg1, arg2) end
+function Exports.zpopSpawnNow(arg1,arg2) return zpopSpawnNow(arg1,arg2) end
+function Exports.zpopSpawnTimeToZero(arg1,arg2) return zpopSpawnTimeToZero(arg1,arg2) end
 Exports.AStarPathFinderResult = loadstring("return _G['AStarPathFinderResult']")()
 Exports.AbstractStyle = loadstring("return _G['AbstractStyle']")()
 Exports.ActionContext = loadstring("return _G['ActionContext']")()
@@ -1518,7 +1518,6 @@ Exports.vector2 = loadstring("return _G['vector2']")()
 
 _G.PIPEWRENCH_READY = false
 triggerEvent('OnPipeWrenchBoot', false)
-
 Events.OnGameBoot.Add(function()
 
 --[client/Blacksmith/ISUI/ISBlacksmithMenu.d.ts]
@@ -2600,7 +2599,7 @@ Events.OnGameBoot.Add(function()
   Exports.ISUI3DModel = loadstring("return _G['ISUI3DModel']")()
 
 --[client/ISUI/ISUIElement.d.ts]
-  Exports.ISUIElement = ISUIElement
+  Exports.ISUIElement = loadstring("return _G['ISUIElement']")()
 
 --[client/ISUI/ISUIEmoteConfig.d.ts]
   Exports.ISUIEmoteConfig = loadstring("return _G['ISUIEmoteConfig']")()
@@ -3985,7 +3984,6 @@ Events.OnGameBoot.Add(function()
   Exports.xpUpdate = loadstring("return _G['xpUpdate']")()
 
   _G.PIPEWRENCH_READY = true
-  
   -- Trigger reimport blocks for all compiled PipeWrench TypeScript file(s).
   triggerEvent('OnPipeWrenchBoot', true)
 end)

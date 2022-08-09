@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:00.964Z
+ * File generated at: 2022-08-07T18:22:56.752Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -170,23 +170,32 @@ declare module 'PipeWrench' {
 
       updateJoypad: (() => any) | any;
 
-      static checkKey: ((key: any) => any) | any;
+      /** @noSelf */
+      static checkKey: (key: any) => any;
 
-      static HideWorldMap: ((playerNum: any) => any) | any;
+      /** @noSelf */
+      static HideWorldMap: (playerNum: any) => any;
 
-      static IsAllowed: (() => any) | any;
+      /** @noSelf */
+      static IsAllowed: () => any;
 
-      static onKeyKeepPressed: ((key: any) => any) | any;
+      /** @noSelf */
+      static onKeyKeepPressed: (key: any) => any;
 
-      static onKeyReleased: ((key: any) => any) | any;
+      /** @noSelf */
+      static onKeyReleased: (key: any) => any;
 
-      static onKeyStartPressed: ((key: any) => any) | any;
+      /** @noSelf */
+      static onKeyStartPressed: (key: any) => any;
 
-      static OnPlayerDeath: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static OnPlayerDeath: (playerObj: any) => any;
 
-      static ShowWorldMap: ((playerNum: any) => any) | any;
+      /** @noSelf */
+      static ShowWorldMap: (playerNum: any) => any;
 
-      static ToggleWorldMap: ((playerNum: any) => any) | any;
+      /** @noSelf */
+      static ToggleWorldMap: (playerNum: any) => any;
     }
 
     /** @customConstructor ISWorldMapButtonPanel:new */

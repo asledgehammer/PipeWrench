@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:00.122Z
+ * File generated at: 2022-08-07T18:22:55.539Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,28 +31,45 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.ISUI.AdminPanel.LootZed {
-    export class LootZedTool {
-      private constructor();
-
+    export abstract class LootZedTool {
       static [id: string]: any;
 
       static SpawnItemCheckerList: any;
 
-      static doRollItem_CalcChances:
-        | ((containerDist: any, arg1: any, arg2: any, character: any, arg4: any, isJunk: any, arg6: any) => any)
-        | any;
+      /** @noSelf */
+      static doRollItem_CalcChances: (
+        containerDist: any,
+        arg1: any,
+        arg2: any,
+        character: any,
+        arg4: any,
+        isJunk: any,
+        arg6: any
+      ) => any;
 
-      static fillContainer_CalcChances: ((container: any, player: any) => any) | any;
+      /** @noSelf */
+      static fillContainer_CalcChances: (container: any, player: any) => any;
 
-      static fillContainerType_CalcChances: ((roomDist: any, container: any, roomName: any, player: any) => any) | any;
+      /** @noSelf */
+      static fillContainerType_CalcChances: (roomDist: any, container: any, roomName: any, player: any) => any;
 
-      static rollItem_CalcChances:
-        | ((containerDist: any, container: any, doItemContainer: any, player: any, roomDist: any) => any)
-        | any;
+      /** @noSelf */
+      static rollItem_CalcChances: (
+        containerDist: any,
+        container: any,
+        doItemContainer: any,
+        player: any,
+        roomDist: any
+      ) => any;
 
-      static rollProceduralItem_CalcChances:
-        | ((proceduralItems: any, container: any, arg2: any, character: any, roomDist: any) => any)
-        | any;
+      /** @noSelf */
+      static rollProceduralItem_CalcChances: (
+        proceduralItems: any,
+        container: any,
+        arg2: any,
+        character: any,
+        roomDist: any
+      ) => any;
     }
   }
   export namespace lua.client.ISUI.AdminPanel.LootZed.SpawnRateChecker {}

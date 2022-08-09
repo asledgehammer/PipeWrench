@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:02.245Z
+ * File generated at: 2022-08-07T18:22:59.286Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -46,7 +46,8 @@ declare module 'PipeWrench' {
 
       constructor(character: any, otherPlayer: any);
 
-      static getHealthWindowForPlayer: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static getHealthWindowForPlayer: (playerObj: any) => any;
     }
   }
   export namespace lua.client.TimedActions.ISMedicalCheckAction {}

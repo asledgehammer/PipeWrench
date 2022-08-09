@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:01.196Z
+ * File generated at: 2022-08-07T18:22:57.230Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,24 +31,29 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.LastStand {
-    export class EightMonthsLater {
-      private constructor();
-
+    export abstract class EightMonthsLater {
       static [id: string]: any;
 
-      static AddPlayer: ((playerNum: any, playerObj: any) => any) | any;
+      /** @noSelf */
+      static AddPlayer: (playerNum: any, playerObj: any) => any;
 
-      static Init: (() => any) | any;
+      /** @noSelf */
+      static Init: () => any;
 
-      static onBackButtonWheel: ((playerNum: any, dir: any) => any) | any;
+      /** @noSelf */
+      static onBackButtonWheel: (playerNum: any, dir: any) => any;
 
-      static PreloadInit: (() => any) | any;
+      /** @noSelf */
+      static PreloadInit: () => any;
 
-      static RemovePlayer: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static RemovePlayer: (playerObj: any) => any;
 
-      static Render: (() => any) | any;
+      /** @noSelf */
+      static Render: () => any;
 
-      static Tick: (() => any) | any;
+      /** @noSelf */
+      static Tick: () => any;
     }
   }
   export namespace lua.client.LastStand.EightMonthsLater {}

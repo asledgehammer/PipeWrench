@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:38:59.901Z
+ * File generated at: 2022-08-07T18:22:55.211Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -364,23 +364,32 @@ declare module 'PipeWrench' {
 
       worldItemTest: ((_itemObj: any) => any) | any;
 
-      static createUI: ((_player: any) => any) | any;
+      /** @noSelf */
+      static createUI: (_player: any) => any;
 
-      static destroyUI: ((_character: any) => any) | any;
+      /** @noSelf */
+      static destroyUI: (_character: any) => any;
 
-      static getManager: ((_character: any) => any) | any;
+      /** @noSelf */
+      static getManager: (_character: any) => any;
 
-      static handleKeyPressed: ((_keyPressed: any) => any) | any;
+      /** @noSelf */
+      static handleKeyPressed: (_keyPressed: any) => any;
 
-      static initBinds: (() => any) | any;
+      /** @noSelf */
+      static initBinds: () => any;
 
-      static OnFillWorldObjectContextMenu: ((_player: any, _context: any, _worldObjects: any) => any) | any;
+      /** @noSelf */
+      static OnFillWorldObjectContextMenu: (_player: any, _context: any, _worldObjects: any) => any;
 
-      static OnGameStart: (() => any) | any;
+      /** @noSelf */
+      static OnGameStart: () => any;
 
-      static onUpdateIcon: ((_zoneData: any, _iconID: any, _icon: any) => any) | any;
+      /** @noSelf */
+      static onUpdateIcon: (_zoneData: any, _iconID: any, _icon: any) => any;
 
-      static setManager: ((_character: any, _manager: any) => any) | any;
+      /** @noSelf */
+      static setManager: (_character: any, _manager: any) => any;
     }
   }
   export namespace lua.client.Foraging.ISSearchManager {}

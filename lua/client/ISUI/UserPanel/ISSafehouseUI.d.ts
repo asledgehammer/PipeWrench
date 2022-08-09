@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:01.068Z
+ * File generated at: 2022-08-07T18:22:56.959Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -108,11 +108,14 @@ declare module 'PipeWrench' {
 
       updatePlayerList: (() => any) | any;
 
-      static AcceptedSafehouseInvite: ((safehouseName: any, host: any) => any) | any;
+      /** @noSelf */
+      static AcceptedSafehouseInvite: (safehouseName: any, host: any) => any;
 
-      static OnSafehousesChanged: (() => any) | any;
+      /** @noSelf */
+      static OnSafehousesChanged: () => any;
 
-      static ReceiveSafehouseInvite: ((safehouse: any, host: any) => any) | any;
+      /** @noSelf */
+      static ReceiveSafehouseInvite: (safehouse: any, host: any) => any;
     }
   }
   export namespace lua.client.ISUI.UserPanel.ISSafehouseUI {}

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:02.387Z
+ * File generated at: 2022-08-07T18:22:59.545Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -54,7 +54,8 @@ declare module 'PipeWrench' {
 
       stopSound: (() => any) | any;
 
-      static SendTakeWaterCommand: ((playerObj: any, object: any, units: any) => any) | any;
+      /** @noSelf */
+      static SendTakeWaterCommand: (playerObj: any, object: any, units: any) => any;
     }
   }
   export namespace lua.client.TimedActions.ISTakeWaterAction {}

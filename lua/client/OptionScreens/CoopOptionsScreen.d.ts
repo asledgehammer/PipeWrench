@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:01.503Z
+ * File generated at: 2022-08-07T18:22:57.839Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -130,13 +130,17 @@ declare module 'PipeWrench' {
 
       saveOptions: (() => any) | any;
 
-      static OnConnected: (() => any) | any;
+      /** @noSelf */
+      static OnConnected: () => any;
 
-      static OnConnectFailed: ((message: any) => any) | any;
+      /** @noSelf */
+      static OnConnectFailed: (message: any) => any;
 
-      static OnConnectionStateChanged: ((state: any, message: any) => any) | any;
+      /** @noSelf */
+      static OnConnectionStateChanged: (state: any, message: any) => any;
 
-      static onCoopServerMessage: ((tag: any, cookie: any, payload: any) => any) | any;
+      /** @noSelf */
+      static onCoopServerMessage: (tag: any, cookie: any, payload: any) => any;
     }
 
     /** @customConstructor CoopOptionsScreenPanel:new */
@@ -155,9 +159,7 @@ declare module 'PipeWrench' {
       onLoseJoypadFocus: ((joypadData: any) => any) | any;
     }
 
-    export class CoopConnection {
-      private constructor();
-
+    export abstract class CoopConnection {
       static [id: string]: any;
 
       static memory: any;

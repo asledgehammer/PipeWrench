@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:38:58.637Z
+ * File generated at: 2022-08-07T18:22:52.950Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,22 +31,23 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.BuildingObjects.ISUI {
-    export class ISPaintMenu {
-      private constructor();
-
+    export abstract class ISPaintMenu {
       static [id: string]: any;
 
-      static addSignOption:
-        | ((subMenuPaint: any, name: any, wall: any, painting: any, r: any, g: any, b: any) => any)
-        | any;
+      /** @noSelf */
+      static addSignOption: (subMenuPaint: any, name: any, wall: any, painting: any, r: any, g: any, b: any) => any;
 
-      static doPaintMenu: ((player: any, context: any, worldobjects: any, test: any) => any) | any;
+      /** @noSelf */
+      static doPaintMenu: (player: any, context: any, worldobjects: any, test: any) => any;
 
-      static onPaint: ((worldobjects: any, player: any, thumpable: any, painting: any) => any) | any;
+      /** @noSelf */
+      static onPaint: (worldobjects: any, player: any, thumpable: any, painting: any) => any;
 
-      static onPaintSign: ((wall: any, player: any, painting: any, sign: any, r: any, g: any, b: any) => any) | any;
+      /** @noSelf */
+      static onPaintSign: (wall: any, player: any, painting: any, sign: any, r: any, g: any, b: any) => any;
 
-      static onPlaster: ((worldobjects: any, player: any, thumpable: any, square: any) => any) | any;
+      /** @noSelf */
+      static onPlaster: (worldobjects: any, player: any, thumpable: any, square: any) => any;
     }
   }
   export namespace lua.client.BuildingObjects.ISUI.ISPaintMenu {}

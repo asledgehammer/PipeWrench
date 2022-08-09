@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:38:59.660Z
+ * File generated at: 2022-08-07T18:22:54.645Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,7 +31,7 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.shared.Definitions {
-    export class ClothingRecipesDefinitions {
+    export abstract class ClothingRecipesDefinitions {
       static [id: string]: any;
     }
   }

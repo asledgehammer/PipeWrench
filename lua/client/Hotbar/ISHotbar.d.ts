@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:38:59.931Z
+ * File generated at: 2022-08-07T18:22:55.269Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -118,15 +118,20 @@ declare module 'PipeWrench' {
 
       update: (() => any) | any;
 
-      static doMenuFromInventory: ((playerNum: any, item: any, context: any) => any) | any;
+      /** @noSelf */
+      static doMenuFromInventory: (playerNum: any, item: any, context: any) => any;
 
-      static onClothingUpdated: ((player: any) => any) | any;
+      /** @noSelf */
+      static onClothingUpdated: (player: any) => any;
 
-      static onKeyKeepPressed: ((key: any) => any) | any;
+      /** @noSelf */
+      static onKeyKeepPressed: (key: any) => any;
 
-      static onKeyPressed: ((key: any) => any) | any;
+      /** @noSelf */
+      static onKeyPressed: (key: any) => any;
 
-      static onKeyStartPressed: ((key: any) => any) | any;
+      /** @noSelf */
+      static onKeyStartPressed: (key: any) => any;
     }
   }
   export namespace lua.client.Hotbar.ISHotbar {}

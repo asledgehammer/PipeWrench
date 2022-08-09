@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:01.864Z
+ * File generated at: 2022-08-07T18:22:58.593Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -103,18 +103,20 @@ declare module 'PipeWrench' {
       stopReloadSuccess: (() => any) | any;
     }
 
-    export class aaa {
-      private constructor();
-
+    export abstract class aaa {
       static [id: string]: any;
 
-      static checkLoadedHook: ((character: any, chargeDelta: any) => any) | any;
+      /** @noSelf */
+      static checkLoadedHook: (character: any, chargeDelta: any) => any;
 
-      static fireShotHook: ((wielder: any, weapon: any) => any) | any;
+      /** @noSelf */
+      static fireShotHook: (wielder: any, weapon: any) => any;
 
-      static startRackingHook: ((pl: any) => any) | any;
+      /** @noSelf */
+      static startRackingHook: (pl: any) => any;
 
-      static startReloadHook: ((pl: any) => any) | any;
+      /** @noSelf */
+      static startReloadHook: (pl: any) => any;
     }
   }
   export namespace lua.shared.Reloading.ISReloadManager {}

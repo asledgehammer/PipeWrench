@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:02.296Z
+ * File generated at: 2022-08-07T18:22:59.377Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -50,9 +50,11 @@ declare module 'PipeWrench' {
 
       animEvent: ((event: any, parameter: any) => any) | any;
 
-      static checkLevel: ((character: any, item: any) => any) | any;
+      /** @noSelf */
+      static checkLevel: (character: any, item: any) => any;
 
-      static checkMultiplier: ((self: any) => any) | any;
+      /** @noSelf */
+      static checkMultiplier: (self: any) => any;
     }
   }
   export namespace lua.client.TimedActions.ISReadABook {}

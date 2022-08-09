@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
+ * File generated at 2022-08-07T14:28Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -85,6 +85,16 @@ declare module 'PipeWrench' {
       ordinal(): number;
       /** (ReadableColor arg0, int arg1, FloatBuffer arg2): void */
       op(arg0: org.lwjgl.util.ReadableColor | null, arg1: number, arg2: java.nio.FloatBuffer | null): void;
+
+      /**
+       * @noSelf
+       *
+       * (String arg0): AlphaOp
+       */
+      static valueOf(arg0: string | null): zombie.core.Styles.AlphaOp;
+
+      /** @noSelf */
+      static values(): zombie.core.Styles.AlphaOp[];
 
     }
     /**

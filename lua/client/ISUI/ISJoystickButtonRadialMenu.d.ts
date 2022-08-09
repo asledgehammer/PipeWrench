@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:00.423Z
+ * File generated at: 2022-08-07T18:22:56.061Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,24 +31,29 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.ISUI {
-    export class ISJoystickButtonRadialMenu {
-      private constructor();
-
+    export abstract class ISJoystickButtonRadialMenu {
       static [id: string]: any;
 
-      static displayLeft: ((joypadData: any) => any) | any;
+      /** @noSelf */
+      static displayLeft: (joypadData: any) => any;
 
-      static onJoypadButtonReleased: ((button: any, joypadData: any) => any) | any;
+      /** @noSelf */
+      static onJoypadButtonReleased: (button: any, joypadData: any) => any;
 
-      static onJoypadDown: ((button: any, joypadData: any) => any) | any;
+      /** @noSelf */
+      static onJoypadDown: (button: any, joypadData: any) => any;
 
-      static onRepeatLeftStickButton: ((joypadData: any) => any) | any;
+      /** @noSelf */
+      static onRepeatLeftStickButton: (joypadData: any) => any;
 
-      static onToggleAutoWalk: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static onToggleAutoWalk: (playerObj: any) => any;
 
-      static onToggleCrouch: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static onToggleCrouch: (playerObj: any) => any;
 
-      static onToggleSit: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static onToggleSit: (playerObj: any) => any;
     }
   }
   export namespace lua.client.ISUI.ISJoystickButtonRadialMenu {}

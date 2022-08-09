@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:02.326Z
+ * File generated at: 2022-08-07T18:22:59.430Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -44,7 +44,8 @@ declare module 'PipeWrench' {
 
       constructor(character: any, clothing: any, part: any, needle: any);
 
-      static chanceToGetPatchBack: ((character: any) => any) | any;
+      /** @noSelf */
+      static chanceToGetPatchBack: (character: any) => any;
     }
   }
   export namespace lua.client.TimedActions.ISRemovePatch {}

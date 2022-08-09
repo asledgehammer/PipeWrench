@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:00.290Z
+ * File generated at: 2022-08-07T18:22:55.854Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -62,13 +62,17 @@ declare module 'PipeWrench' {
 
       init: (() => any) | any;
 
-      static checkKey: ((key: any) => any) | any;
+      /** @noSelf */
+      static checkKey: (key: any) => any;
 
-      static onKeyPressed: ((key: any) => any) | any;
+      /** @noSelf */
+      static onKeyPressed: (key: any) => any;
 
-      static onKeyReleased: ((key: any) => any) | any;
+      /** @noSelf */
+      static onKeyReleased: (key: any) => any;
 
-      static onKeyRepeat: ((key: any) => any) | any;
+      /** @noSelf */
+      static onKeyRepeat: (key: any) => any;
     }
   }
   export namespace lua.client.ISUI.ISEmoteRadialMenu {}

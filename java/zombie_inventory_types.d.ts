@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
+ * File generated at 2022-08-07T14:28Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -6674,7 +6674,31 @@ declare module 'PipeWrench' {
 
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (int arg0): ClothingPatchFabricType
+       */
+      static fromIndex(arg0: number): zombie.inventory.types.Clothing$ClothingPatchFabricType;
+
+      /**
+       * @noSelf
+       *
+       * (String arg0): ClothingPatchFabricType
+       */
+      static fromType(arg0: string | null): zombie.inventory.types.Clothing$ClothingPatchFabricType;
+
       getType(): string;
+
+      /**
+       * @noSelf
+       *
+       * (String arg0): ClothingPatchFabricType
+       */
+      static valueOf(arg0: string | null): zombie.inventory.types.Clothing$ClothingPatchFabricType;
+
+      /** @noSelf */
+      static values(): zombie.inventory.types.Clothing$ClothingPatchFabricType[];
 
     }
     /**
@@ -13056,10 +13080,10 @@ declare module 'PipeWrench' {
     export class HandWeapon {
       /**
        * Constructors: 
-       *  - (String arg0, String arg1, String arg2, String arg3)
        *  - (String arg0, String arg1, String arg2, Item arg3)
+       *  - (String arg0, String arg1, String arg2, String arg3)
        */
-      constructor(arg0: string, arg1: string, arg2: string, arg3: string | zombie.scripting.objects.Item);
+      constructor(arg0: string, arg1: string, arg2: string, arg3: zombie.scripting.objects.Item | string);
       /**
        * Method Parameters: 
        *  - (InventoryItem arg0): boolean
@@ -23998,10 +24022,10 @@ declare module 'PipeWrench' {
 
       /**
        * Constructors: 
-       *  - (String arg0, String arg1, String arg2, Item arg3)
        *  - (String arg0, String arg1, String arg2, String arg3)
+       *  - (String arg0, String arg1, String arg2, Item arg3)
        */
-      constructor(arg0: string, arg1: string, arg2: string, arg3: zombie.scripting.objects.Item | string);
+      constructor(arg0: string, arg1: string, arg2: string, arg3: string | zombie.scripting.objects.Item);
       /**
        * Method Parameters: 
        *  - (InventoryItem arg0): boolean
@@ -27966,11 +27990,11 @@ declare module 'PipeWrench' {
       constructor(arg0: string, arg1: string, arg2: string, arg3: string);
       /**
        * Method Parameters: 
-       *  - (ChatMessage arg0, float arg1, float arg2, float arg3, String arg4, String arg5, int arg6): void
        *  - (String arg0, float arg1, float arg2, float arg3, String arg4, String arg5, int arg6): void
+       *  - (ChatMessage arg0, float arg1, float arg2, float arg3, String arg4, String arg5, int arg6): void
        *  - (IsoPlayer arg0, String arg1, float arg2, float arg3, float arg4, String arg5, String arg6, int arg7): void
        */
-      AddDeviceText(arg0: zombie.chat.ChatMessage | string | zombie.characters.IsoPlayer, arg1: number | string, arg2: number, arg3: number, arg4: string | number, arg5: string, arg6: number | string, arg7?: number): void;
+      AddDeviceText(arg0: string | zombie.chat.ChatMessage | zombie.characters.IsoPlayer, arg1: number | string, arg2: number, arg3: number, arg4: string | number, arg5: string, arg6: number | string, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -32115,6 +32139,23 @@ declare module 'PipeWrench' {
       name(): string;
       ordinal(): number;
       getType(): string;
+
+      /**
+       * @noSelf
+       *
+       * (HandWeapon arg0): WeaponType
+       */
+      static getWeaponType(arg0: zombie.inventory.types.HandWeapon | null): zombie.inventory.types.WeaponType;
+
+      /**
+       * @noSelf
+       *
+       * (String arg0): WeaponType
+       */
+      static valueOf(arg0: string | null): zombie.inventory.types.WeaponType;
+
+      /** @noSelf */
+      static values(): zombie.inventory.types.WeaponType[];
 
     }
   }

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:02.822Z
+ * File generated at: 2022-08-07T18:23:00.257Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -104,21 +104,29 @@ declare module 'PipeWrench' {
 
       updateAvatar: (() => any) | any;
 
-      static loadBeardAndHairStyle: ((self: any) => any) | any;
+      /** @noSelf */
+      static loadBeardAndHairStyle: (self: any) => any;
 
-      static loadFavouriteWeapon: ((self: any) => any) | any;
+      /** @noSelf */
+      static loadFavouriteWeapon: (self: any) => any;
 
-      static loadProfession: ((self: any) => any) | any;
+      /** @noSelf */
+      static loadProfession: (self: any) => any;
 
-      static loadTraits: ((self: any) => any) | any;
+      /** @noSelf */
+      static loadTraits: (self: any) => any;
 
-      static onCutHair: ((playerObj: any, hairStyle: any, time: any) => any) | any;
+      /** @noSelf */
+      static onCutHair: (playerObj: any, hairStyle: any, time: any) => any;
 
-      static onTrimBeard: ((playerObj: any, beardStyle: any) => any) | any;
+      /** @noSelf */
+      static onTrimBeard: (playerObj: any, beardStyle: any) => any;
 
-      static setDisplayedTraits: ((self: any) => any) | any;
+      /** @noSelf */
+      static setDisplayedTraits: (self: any) => any;
 
-      static traitsChanged: ((self: any) => any) | any;
+      /** @noSelf */
+      static traitsChanged: (self: any) => any;
     }
 
     /** @customConstructor ISCharacterScreenAvatar:new */

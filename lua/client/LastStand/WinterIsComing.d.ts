@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:01.250Z
+ * File generated at: 2022-08-07T18:22:57.323Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,26 +31,32 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.LastStand {
-    export class WinterIsComing {
-      private constructor();
-
+    export abstract class WinterIsComing {
       static [id: string]: any;
 
-      static Add: (() => any) | any;
+      /** @noSelf */
+      static Add: () => any;
 
-      static AddPlayer: ((playerNum: any, playerObj: any) => any) | any;
+      /** @noSelf */
+      static AddPlayer: (playerNum: any, playerObj: any) => any;
 
-      static EveryHours: (() => any) | any;
+      /** @noSelf */
+      static EveryHours: () => any;
 
-      static OnGameStart: (() => any) | any;
+      /** @noSelf */
+      static OnGameStart: () => any;
 
-      static OnInitSeasons: ((_season: any) => any) | any;
+      /** @noSelf */
+      static OnInitSeasons: (_season: any) => any;
 
-      static OnInitWorld: (() => any) | any;
+      /** @noSelf */
+      static OnInitWorld: () => any;
 
-      static RemovePlayer: ((p: any) => any) | any;
+      /** @noSelf */
+      static RemovePlayer: (p: any) => any;
 
-      static Render: (() => any) | any;
+      /** @noSelf */
+      static Render: () => any;
     }
   }
   export namespace lua.client.LastStand.WinterIsComing {}

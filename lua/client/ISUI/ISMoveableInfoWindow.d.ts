@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:00.484Z
+ * File generated at: 2022-08-07T18:22:56.154Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -106,9 +106,11 @@ declare module 'PipeWrench' {
 
       stayOnSplitScreen: (() => any) | any;
 
-      static moveablePanelModeKey: ((_key: any) => any) | any;
+      /** @noSelf */
+      static moveablePanelModeKey: (_key: any) => any;
 
-      static setDisplayPosition: ((_position: any) => any) | any;
+      /** @noSelf */
+      static setDisplayPosition: (_position: any) => any;
     }
   }
   export namespace lua.client.ISUI.ISMoveableInfoWindow {}

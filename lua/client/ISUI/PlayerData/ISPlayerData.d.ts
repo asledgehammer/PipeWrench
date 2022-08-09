@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:00.985Z
+ * File generated at: 2022-08-07T18:22:56.783Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,12 +31,12 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.client.ISUI.PlayerData {
-    export class ISPlayerData {
+    export abstract class ISPlayerData {
       static [id: string]: any;
     }
   }
   export namespace lua.client.ISUI.PlayerData.ISPlayerData {
     /** @noSelf */
-    export const destroyAllPlayerData: (() => any) | any;
+    export const destroyAllPlayerData: () => any;
   }
 }

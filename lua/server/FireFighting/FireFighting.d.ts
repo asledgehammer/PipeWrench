@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:38:59.799Z
+ * File generated at: 2022-08-07T18:22:54.927Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,20 +31,23 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.server.FireFighting {
-    export class FireFighting {
-      private constructor();
-
+    export abstract class FireFighting {
       static [id: string]: any;
 
-      static getExtinguisher: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static getExtinguisher: (playerObj: any) => any;
 
-      static getExtinguisherUses: ((item: any) => any) | any;
+      /** @noSelf */
+      static getExtinguisherUses: (item: any) => any;
 
-      static getSquareToExtinguish: ((square: any) => any) | any;
+      /** @noSelf */
+      static getSquareToExtinguish: (square: any) => any;
 
-      static isExtinguisher: ((item: any) => any) | any;
+      /** @noSelf */
+      static isExtinguisher: (item: any) => any;
 
-      static isSquareToExtinguish: ((square: any) => any) | any;
+      /** @noSelf */
+      static isSquareToExtinguish: (square: any) => any;
     }
   }
   export namespace lua.server.FireFighting.FireFighting {}

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:02.463Z
+ * File generated at: 2022-08-07T18:22:59.673Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -38,7 +38,8 @@ declare module 'PipeWrench' {
 
       constructor();
 
-      static initObjectModData: ((isoObject: any, trapDef: any, north: any, player: any) => any) | any;
+      /** @noSelf */
+      static initObjectModData: (isoObject: any, trapDef: any, north: any, player: any) => any;
     }
   }
   export namespace lua.client.Traps.CTrapSystem {}

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
+ * File generated at 2022-08-07T14:28Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -111,6 +111,58 @@ declare module 'PipeWrench' {
       static readonly Zombie: zombie.characters.Moodles.MoodleType;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (int arg0): MoodleType
+       */
+      static FromIndex(arg0: number): zombie.characters.Moodles.MoodleType;
+
+      /**
+       * @noSelf
+       *
+       * (String arg0): MoodleType
+       */
+      static FromString(arg0: string | null): zombie.characters.Moodles.MoodleType;
+
+      /**
+       * @noSelf
+       *
+       * (MoodleType arg0): int
+       */
+      static GoodBadNeutral(arg0: zombie.characters.Moodles.MoodleType | null): number;
+
+      /**
+       * @noSelf
+       *
+       * (MoodleType arg0): int
+       */
+      static ToIndex(arg0: zombie.characters.Moodles.MoodleType | null): number;
+
+      /**
+       * @noSelf
+       *
+       * (MoodleType arg0, int arg1): String
+       */
+      static getDescriptionText(arg0: zombie.characters.Moodles.MoodleType | null, arg1: number): string;
+
+      /**
+       * @noSelf
+       *
+       * (MoodleType arg0, int arg1): String
+       */
+      static getDisplayName(arg0: zombie.characters.Moodles.MoodleType | null, arg1: number): string;
+
+      /**
+       * @noSelf
+       *
+       * (String arg0): MoodleType
+       */
+      static valueOf(arg0: string | null): zombie.characters.Moodles.MoodleType;
+
+      /** @noSelf */
+      static values(): zombie.characters.Moodles.MoodleType[];
+
     }
     /**
      * @customConstructor Moodles.new

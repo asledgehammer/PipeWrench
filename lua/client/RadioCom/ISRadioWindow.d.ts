@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:01.692Z
+ * File generated at: 2022-08-07T18:22:58.179Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -108,9 +108,11 @@ declare module 'PipeWrench' {
 
       update: (() => any) | any;
 
-      static activate: ((_player: any, _deviceObject: any) => any) | any;
+      /** @noSelf */
+      static activate: (_player: any, _deviceObject: any) => any;
 
-      static onEquip: ((_player: any, _item: any) => any) | any;
+      /** @noSelf */
+      static onEquip: (_player: any, _item: any) => any;
     }
   }
   export namespace lua.client.RadioCom.ISRadioWindow {}

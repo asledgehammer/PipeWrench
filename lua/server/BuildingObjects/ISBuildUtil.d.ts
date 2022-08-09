@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:38:58.425Z
+ * File generated at: 2022-08-07T18:22:52.706Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -31,52 +31,71 @@ import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
   export namespace lua.server.BuildingObjects {
-    export class buildUtil {
-      private constructor();
-
+    export abstract class buildUtil {
       static [id: string]: any;
 
-      static addCorner: ((x: any, y: any, z: any, thumpable: any, item: any) => any) | any;
+      /** @noSelf */
+      static addCorner: (x: any, y: any, z: any, thumpable: any, item: any) => any;
 
-      static addWoodXp: ((ISItem: any) => any) | any;
+      /** @noSelf */
+      static addWoodXp: (ISItem: any) => any;
 
-      static canBePlace: ((ISItem: any, square: any) => any) | any;
+      /** @noSelf */
+      static canBePlace: (ISItem: any, square: any) => any;
 
-      static checkCorner: ((x: any, y: any, z: any, north: any, thumpable: any, item: any) => any) | any;
+      /** @noSelf */
+      static checkCorner: (x: any, y: any, z: any, north: any, thumpable: any, item: any) => any;
 
-      static checkMaterialOnGround: ((squareToCheck: any) => any) | any;
+      /** @noSelf */
+      static checkMaterialOnGround: (squareToCheck: any) => any;
 
-      static consumeMaterial: ((ISItem: any) => any) | any;
+      /** @noSelf */
+      static consumeMaterial: (ISItem: any) => any;
 
-      static getDoubleDoorObjects: ((object: any) => any) | any;
+      /** @noSelf */
+      static getDoubleDoorObjects: (object: any) => any;
 
-      static getGarageDoorObjects: ((object: any) => any) | any;
+      /** @noSelf */
+      static getGarageDoorObjects: (object: any) => any;
 
-      static getGraveObjects: ((object: any) => any) | any;
+      /** @noSelf */
+      static getGraveObjects: (object: any) => any;
 
-      static getMaterialOnGround: ((squareToCheck: any) => any) | any;
+      /** @noSelf */
+      static getMaterialOnGround: (squareToCheck: any) => any;
 
-      static getMaterialOnGroundCounts: ((itemMap: any) => any) | any;
+      /** @noSelf */
+      static getMaterialOnGroundCounts: (itemMap: any) => any;
 
-      static getMaterialOnGroundUses: ((itemMap: any) => any) | any;
+      /** @noSelf */
+      static getMaterialOnGroundUses: (itemMap: any) => any;
 
-      static getStairObjects: ((object: any) => any) | any;
+      /** @noSelf */
+      static getStairObjects: (object: any) => any;
 
-      static getWoodHealth: ((ISItem: any) => any) | any;
+      /** @noSelf */
+      static getWoodHealth: (ISItem: any) => any;
 
-      static openNailsBox: ((ISItem: any) => any) | any;
+      /** @noSelf */
+      static openNailsBox: (ISItem: any) => any;
 
-      static predicateMaterial: ((item: any) => any) | any;
+      /** @noSelf */
+      static predicateMaterial: (item: any) => any;
 
-      static removeFromGround: ((square: any) => any) | any;
+      /** @noSelf */
+      static removeFromGround: (square: any) => any;
 
-      static setHaveConstruction: ((_square: any, _hasConstruction: any) => any) | any;
+      /** @noSelf */
+      static setHaveConstruction: (_square: any, _hasConstruction: any) => any;
 
-      static setInfo: ((javaObject: any, ISItem: any) => any) | any;
+      /** @noSelf */
+      static setInfo: (javaObject: any, ISItem: any) => any;
 
-      static stairIsBlockingPlacement: ((_square: any, _doAdjacent: any, _north: any) => any) | any;
+      /** @noSelf */
+      static stairIsBlockingPlacement: (_square: any, _doAdjacent: any, _north: any) => any;
 
-      static useDrainable: ((item: any, uses: any) => any) | any;
+      /** @noSelf */
+      static useDrainable: (item: any, uses: any) => any;
     }
   }
   export namespace lua.server.BuildingObjects.ISBuildUtil {}

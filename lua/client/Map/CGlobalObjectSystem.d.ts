@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-07-29T08:39:01.285Z
+ * File generated at: 2022-08-07T18:22:57.381Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -78,7 +78,8 @@ declare module 'PipeWrench' {
 
       sendCommand: ((playerObj: any, command: any, args: any) => any) | any;
 
-      static RegisterSystemClass: ((luaClass: any) => any) | any;
+      /** @noSelf */
+      static RegisterSystemClass: (luaClass: any) => any;
     }
   }
   export namespace lua.client.Map.CGlobalObjectSystem {}
