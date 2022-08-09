@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-07T18:22:53.478Z
+ * File generated at: 2022-08-05T02:36:28.597Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -49,6 +49,8 @@ declare module 'PipeWrench' {
       scene: any;
 
       views: any;
+
+      worldAttachmentPanel: any;
 
       wroteScriptLabel: any;
 
@@ -286,6 +288,24 @@ declare module 'PipeWrench' {
       constructor(editor: any, x: any, y: any, width: any, height: any);
 
       onMouseMoveOutside: ((dx: any, dy: any) => any) | any;
+    }
+
+    /** @customConstructor AttachmentEditorUI_WorldAttachmentPanel:new */
+    export class AttachmentEditorUI_WorldAttachmentPanel extends lua.client.ISUI.ISPanel {
+      [id: string]: any;
+      static [id: string]: any;
+
+      scene: any;
+
+      weaponRotationHack: any;
+
+      constructor(x: any, y: any, width: any, height: any);
+
+      createChildren: (() => any) | any;
+
+      onTickBox: ((index: any, selected: any) => any) | any;
+
+      setModelScriptName: ((scriptName: any) => any) | any;
     }
   }
   export namespace lua.client.DebugUIs.AttachmentEditorUI {

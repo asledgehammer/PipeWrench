@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-07T14:28Z
+ * File generated at 2022-08-04T22:13Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -252,6 +252,11 @@ declare module 'PipeWrench' {
        *  - (Empty): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>
        */
       getChildSprites(): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.inventory.ItemContainer
@@ -901,10 +906,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -1113,10 +1118,10 @@ declare module 'PipeWrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -1568,6 +1573,11 @@ declare module 'PipeWrench' {
        *  - (Empty): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>
        */
       getChildSprites(): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.inventory.ItemContainer
@@ -2222,10 +2232,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -2932,6 +2942,11 @@ declare module 'PipeWrench' {
       getChildSprites(): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>;
       /**
        * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
+      /**
+       * Method Parameters: 
        *  - (Empty): zombie.inventory.ItemContainer
        */
       getContainer(): zombie.inventory.ItemContainer;
@@ -3579,10 +3594,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -3761,10 +3776,10 @@ declare module 'PipeWrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -4224,6 +4239,11 @@ declare module 'PipeWrench' {
        *  - (Empty): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>
        */
       getChildSprites(): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.inventory.ItemContainer
@@ -4838,10 +4858,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -5020,10 +5040,10 @@ declare module 'PipeWrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -5465,6 +5485,11 @@ declare module 'PipeWrench' {
        *  - (Empty): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>
        */
       getChildSprites(): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.inventory.ItemContainer
@@ -6089,10 +6114,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -6286,10 +6311,10 @@ declare module 'PipeWrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -6728,6 +6753,11 @@ declare module 'PipeWrench' {
       getChildSprites(): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>;
       /**
        * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
+      /**
+       * Method Parameters: 
        *  - (Empty): zombie.inventory.ItemContainer
        */
       getContainer(): zombie.inventory.ItemContainer;
@@ -7345,10 +7375,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -7532,10 +7562,10 @@ declare module 'PipeWrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -7969,6 +7999,11 @@ declare module 'PipeWrench' {
       getChildSprites(): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>;
       /**
        * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
+      /**
+       * Method Parameters: 
        *  - (Empty): zombie.inventory.ItemContainer
        */
       getContainer(): zombie.inventory.ItemContainer;
@@ -8586,10 +8621,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -8773,10 +8808,10 @@ declare module 'PipeWrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -9208,6 +9243,11 @@ declare module 'PipeWrench' {
        *  - (Empty): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>
        */
       getChildSprites(): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.inventory.ItemContainer
@@ -9837,10 +9877,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -10034,10 +10074,10 @@ declare module 'PipeWrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -10469,6 +10509,11 @@ declare module 'PipeWrench' {
        *  - (Empty): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>
        */
       getChildSprites(): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -11093,10 +11138,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -11280,10 +11325,10 @@ declare module 'PipeWrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -11746,6 +11791,11 @@ declare module 'PipeWrench' {
        *  - (Empty): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>
        */
       getChildSprites(): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.inventory.ItemContainer
@@ -12391,10 +12441,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -12573,10 +12623,10 @@ declare module 'PipeWrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -12808,11 +12858,11 @@ declare module 'PipeWrench' {
 
       /**
        * Constructors: 
-       *  - (IsoGameCharacter arg0)
        *  - (IsoCell arg0)
+       *  - (IsoGameCharacter arg0)
        *  - (IsoGameCharacter arg0, boolean arg1)
        */
-      constructor(arg0: zombie.characters.IsoGameCharacter | zombie.iso.IsoCell, arg1?: boolean);
+      constructor(arg0: zombie.iso.IsoCell | zombie.characters.IsoGameCharacter, arg1?: boolean);
       /**
        * Method Parameters: 
        *  - (String arg0, String arg1, int arg2, float arg3, int arg4, int arg5, boolean arg6, int arg7, boolean arg8, float arg9, ColorInfo arg10): void
@@ -13133,6 +13183,11 @@ declare module 'PipeWrench' {
        *  - (Empty): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>
        */
       getChildSprites(): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -14199,10 +14254,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -14636,10 +14691,10 @@ declare module 'PipeWrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -15287,6 +15342,11 @@ declare module 'PipeWrench' {
        *  - (Empty): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>
        */
       getChildSprites(): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.inventory.ItemContainer
@@ -16006,10 +16066,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -16223,10 +16283,10 @@ declare module 'PipeWrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -16789,6 +16849,11 @@ declare module 'PipeWrench' {
        *  - (Empty): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>
        */
       getChildSprites(): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.inventory.ItemContainer
@@ -17433,10 +17498,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -17635,10 +17700,10 @@ declare module 'PipeWrench' {
       setSpreadDelay(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -18283,6 +18348,11 @@ declare module 'PipeWrench' {
       getChildSprites(): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>;
       /**
        * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
+      /**
+       * Method Parameters: 
        *  - (Empty): zombie.inventory.ItemContainer
        */
       getContainer(): zombie.inventory.ItemContainer;
@@ -18920,10 +18990,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -19112,10 +19182,10 @@ declare module 'PipeWrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -19558,6 +19628,11 @@ declare module 'PipeWrench' {
        *  - (Empty): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>
        */
       getChildSprites(): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -20207,10 +20282,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -20414,10 +20489,10 @@ declare module 'PipeWrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -20905,6 +20980,11 @@ declare module 'PipeWrench' {
        *  - (Empty): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>
        */
       getChildSprites(): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.inventory.ItemContainer
@@ -21519,10 +21599,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -21701,10 +21781,10 @@ declare module 'PipeWrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -22166,6 +22246,11 @@ declare module 'PipeWrench' {
        *  - (Empty): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>
        */
       getChildSprites(): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.inventory.ItemContainer
@@ -22850,10 +22935,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): boolean
@@ -23079,10 +23164,10 @@ declare module 'PipeWrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -23557,6 +23642,11 @@ declare module 'PipeWrench' {
        *  - (Empty): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>
        */
       getChildSprites(): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.inventory.ItemContainer
@@ -24216,10 +24306,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -24413,10 +24503,10 @@ declare module 'PipeWrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -24755,6 +24845,11 @@ declare module 'PipeWrench' {
       getSquares(): java.util.ArrayList<zombie.iso.IsoGridSquare>;
       /**
        * Method Parameters: 
+       *  - (Empty): number
+       */
+      getTotalArea(): number;
+      /**
+       * Method Parameters: 
        *  - (Empty): string
        */
       getType(): string;
@@ -24773,6 +24868,11 @@ declare module 'PipeWrench' {
        *  - (Empty): number
        */
       getY(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getZ(): number;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -24808,6 +24908,11 @@ declare module 'PipeWrench' {
        *  - (Empty): boolean
        */
       isRectangle(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Location arg0): zombie.characters.IsoGameCharacter$Location
+       */
+      pickRandomLocation(arg0: zombie.characters.IsoGameCharacter$Location): zombie.characters.IsoGameCharacter$Location;
       /**
        * Method Parameters: 
        *  - (IsoGridSquare arg0): void
@@ -25196,6 +25301,11 @@ declare module 'PipeWrench' {
        *  - (Empty): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>
        */
       getChildSprites(): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -26137,10 +26247,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -26529,10 +26639,10 @@ declare module 'PipeWrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -27074,6 +27184,11 @@ declare module 'PipeWrench' {
        *  - (Empty): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>
        */
       getChildSprites(): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.inventory.ItemContainer
@@ -27718,10 +27833,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -27910,10 +28025,10 @@ declare module 'PipeWrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -28051,6 +28166,13 @@ declare module 'PipeWrench' {
        *  - (IsoGridSquare arg0): zombie.iso.IsoObject
        */
       static FindWaterSourceOnSquare(arg0: zombie.iso.IsoGridSquare): zombie.iso.IsoObject;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      static Reset(): void;
       /**
        * @noSelf
        *
@@ -28355,6 +28477,11 @@ declare module 'PipeWrench' {
        *  - (Empty): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>
        */
       getChildSprites(): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.inventory.ItemContainer
@@ -28969,10 +29096,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -29151,10 +29278,10 @@ declare module 'PipeWrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -29593,6 +29720,11 @@ declare module 'PipeWrench' {
       getChildSprites(): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>;
       /**
        * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
+      /**
+       * Method Parameters: 
        *  - (Empty): zombie.inventory.ItemContainer
        */
       getContainer(): zombie.inventory.ItemContainer;
@@ -30205,10 +30337,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -30387,10 +30519,10 @@ declare module 'PipeWrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -30822,6 +30954,11 @@ declare module 'PipeWrench' {
        *  - (Empty): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>
        */
       getChildSprites(): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.inventory.ItemContainer
@@ -31446,10 +31583,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -31633,10 +31770,10 @@ declare module 'PipeWrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -32088,6 +32225,11 @@ declare module 'PipeWrench' {
        *  - (Empty): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>
        */
       getChildSprites(): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.inventory.ItemContainer
@@ -32737,10 +32879,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -32934,10 +33076,10 @@ declare module 'PipeWrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -33428,6 +33570,11 @@ declare module 'PipeWrench' {
        *  - (Empty): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>
        */
       getChildSprites(): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.inventory.ItemContainer
@@ -34082,10 +34229,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -34274,10 +34421,10 @@ declare module 'PipeWrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -34415,6 +34562,13 @@ declare module 'PipeWrench' {
        *  - (IsoGridSquare arg0): zombie.iso.IsoObject
        */
       static FindWaterSourceOnSquare(arg0: zombie.iso.IsoGridSquare): zombie.iso.IsoObject;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      static Reset(): void;
       /**
        * @noSelf
        *
@@ -34818,6 +34972,11 @@ declare module 'PipeWrench' {
        *  - (Empty): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>
        */
       getChildSprites(): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.inventory.ItemContainer
@@ -35647,10 +35806,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -35789,8 +35948,8 @@ declare module 'PipeWrench' {
       setIsDismantable(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (Boolean arg0): void
        *  - (boolean arg0): void
+       *  - (Boolean arg0): void
        */
       setIsDoor(arg0: boolean): void;
       /**
@@ -36471,6 +36630,11 @@ declare module 'PipeWrench' {
        *  - (Empty): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>
        */
       getChildSprites(): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.inventory.ItemContainer
@@ -37165,10 +37329,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -37407,10 +37571,10 @@ declare module 'PipeWrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -37673,10 +37837,10 @@ declare module 'PipeWrench' {
        * Constructors: 
        *  - (Empty Constructor)
        *  - (IsoCell arg0)
-       *  - (IsoGridSquare arg0, IsoSprite arg1)
        *  - (IsoGridSquare arg0, String arg1)
+       *  - (IsoGridSquare arg0, IsoSprite arg1)
        */
-      constructor(arg0?: zombie.iso.IsoCell | zombie.iso.IsoGridSquare, arg1?: zombie.iso.sprite.IsoSprite | string);
+      constructor(arg0?: zombie.iso.IsoCell | zombie.iso.IsoGridSquare, arg1?: string | zombie.iso.sprite.IsoSprite);
       /**
        * Method Parameters: 
        *  - (String arg0, String arg1, int arg2, float arg3, int arg4, int arg5, boolean arg6, int arg7, boolean arg8, float arg9, ColorInfo arg10): void
@@ -37884,6 +38048,11 @@ declare module 'PipeWrench' {
        *  - (Empty): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>
        */
       getChildSprites(): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.inventory.ItemContainer
@@ -38523,10 +38692,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -39231,6 +39400,11 @@ declare module 'PipeWrench' {
       getChildSprites(): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>;
       /**
        * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
+      /**
+       * Method Parameters: 
        *  - (Empty): zombie.inventory.ItemContainer
        */
       getContainer(): zombie.inventory.ItemContainer;
@@ -39873,10 +40047,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -40065,10 +40239,10 @@ declare module 'PipeWrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -40206,6 +40380,13 @@ declare module 'PipeWrench' {
        *  - (IsoGridSquare arg0): zombie.iso.IsoObject
        */
       static FindWaterSourceOnSquare(arg0: zombie.iso.IsoGridSquare): zombie.iso.IsoObject;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      static Reset(): void;
       /**
        * @noSelf
        *
@@ -40588,6 +40769,11 @@ declare module 'PipeWrench' {
        *  - (Empty): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>
        */
       getChildSprites(): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -41529,10 +41715,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -41921,10 +42107,10 @@ declare module 'PipeWrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -42500,6 +42686,11 @@ declare module 'PipeWrench' {
        *  - (Empty): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>
        */
       getChildSprites(): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.inventory.ItemContainer
@@ -43211,10 +43402,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -43423,10 +43614,10 @@ declare module 'PipeWrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -44042,6 +44233,11 @@ declare module 'PipeWrench' {
        *  - (Empty): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>
        */
       getChildSprites(): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.inventory.ItemContainer
@@ -44691,10 +44887,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -44878,10 +45074,10 @@ declare module 'PipeWrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -45423,6 +45619,11 @@ declare module 'PipeWrench' {
        *  - (Empty): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>
        */
       getChildSprites(): java.util.ArrayList<zombie.iso.sprite.IsoSpriteInstance>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -46364,10 +46565,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -46756,10 +46957,10 @@ declare module 'PipeWrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void

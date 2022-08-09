@@ -20,7 +20,7 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --
--- File generated at 2022-08-07T14:28Z
+-- File generated at 2022-08-04T22:42Z
 
 local Exports = {}
 
@@ -79,6 +79,7 @@ function Exports.checkPlayerCanUseChat(arg1) return checkPlayerCanUseChat(arg1) 
 function Exports.checkSaveFileExists(arg1) return checkSaveFileExists(arg1) end
 function Exports.checkSaveFolderExists(arg1) return checkSaveFolderExists(arg1) end
 function Exports.checkSavePlayerExists() return checkSavePlayerExists() end
+function Exports.checkStringPattern(arg1) return checkStringPattern(arg1) end
 function Exports.cloneItemType(arg1,arg2) return cloneItemType(arg1,arg2) end
 function Exports.configureLighting(arg1) return configureLighting(arg1) end
 function Exports.connectToServerStateCallback(arg1) return connectToServerStateCallback(arg1) end
@@ -103,6 +104,7 @@ function Exports.deleteSave(arg1) return deleteSave(arg1) end
 function Exports.disconnect() return disconnect() end
 function Exports.doChallenge(arg1) return doChallenge(arg1) end
 function Exports.doKeyPress(arg1) return doKeyPress(arg1) end
+function Exports.doLuaDebuggerAction(arg1) return doLuaDebuggerAction(arg1) end
 function Exports.doTutorial(arg1) return doTutorial(arg1) end
 function Exports.drawOverheadMap(arg1,arg2,arg3,arg4) return drawOverheadMap(arg1,arg2,arg3,arg4) end
 function Exports.endFileInput() return endFileInput() end
@@ -415,6 +417,7 @@ function Exports.reloadVehicles() return reloadVehicles() end
 function Exports.removeItemTransaction(arg1,arg2,arg3) return removeItemTransaction(arg1,arg2,arg3) end
 function Exports.removeTicket(arg1) return removeTicket(arg1) end
 function Exports.removeUserlog(arg1,arg2,arg3) return removeUserlog(arg1,arg2,arg3) end
+function Exports.renameSavefile(arg1,arg2,arg3) return renameSavefile(arg1,arg2,arg3) end
 function Exports.renderIsoCircle(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9) return renderIsoCircle(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9) end
 function Exports.replaceWith(arg1,arg2,arg3) return replaceWith(arg1,arg2,arg3) end
 function Exports.requestPacketCounts() return requestPacketCounts() end
@@ -452,6 +455,7 @@ function Exports.sendSafehouseInvite(arg1,arg2,arg3) return sendSafehouseInvite(
 function Exports.sendServerCommand(arg1,arg2,arg3,arg4) return sendServerCommand(arg1,arg2,arg3,arg4) end
 function Exports.sendSplint(arg1,arg2,arg3,arg4,arg5) return sendSplint(arg1,arg2,arg3,arg4,arg5) end
 function Exports.sendStitch(arg1,arg2,arg3,arg4,arg5) return sendStitch(arg1,arg2,arg3,arg4,arg5) end
+function Exports.sendSwitchSeat(arg1,arg2,arg3,arg4) return sendSwitchSeat(arg1,arg2,arg3,arg4) end
 function Exports.sendVisual(arg1) return sendVisual(arg1) end
 function Exports.serverConnect(arg1,arg2,arg3,arg4,arg5,arg6) return serverConnect(arg1,arg2,arg3,arg4,arg5,arg6) end
 function Exports.serverConnectCoop(arg1) return serverConnectCoop(arg1) end
@@ -596,6 +600,7 @@ Exports.AttachedLocations = loadstring("return _G['AttachedLocations']")()
 Exports.AttachmentEditorState = loadstring("return _G['AttachmentEditorState']")()
 Exports.AttackState = loadstring("return _G['AttackState']")()
 Exports.AttackVars = loadstring("return _G['AttackVars']")()
+Exports.Authorization = loadstring("return _G['Authorization']")()
 Exports.BSFurnace = loadstring("return _G['BSFurnace']")()
 Exports.BarricadeAble = loadstring("return _G['BarricadeAble']")()
 Exports.BaseAction = loadstring("return _G['BaseAction']")()
@@ -669,6 +674,7 @@ Exports.ChatMode = loadstring("return _G['ChatMode']")()
 Exports.ChatSettings = loadstring("return _G['ChatSettings']")()
 Exports.ChatTab = loadstring("return _G['ChatTab']")()
 Exports.ChatType = loadstring("return _G['ChatType']")()
+Exports.CheckState = loadstring("return _G['CheckState']")()
 Exports.Checks = loadstring("return _G['Checks']")()
 Exports.ChecksumState = loadstring("return _G['ChecksumState']")()
 Exports.ChooseGameInfo = loadstring("return _G['ChooseGameInfo']")()
@@ -1327,6 +1333,7 @@ Exports.StorySound = loadstring("return _G['StorySound']")()
 Exports.StorySoundEvent = loadstring("return _G['StorySoundEvent']")()
 Exports.StrLerpVal = loadstring("return _G['StrLerpVal']")()
 Exports.StringConfigOption = loadstring("return _G['StringConfigOption']")()
+Exports.StringDrawer = loadstring("return _G['StringDrawer']")()
 Exports.StringSandboxOption = loadstring("return _G['StringSandboxOption']")()
 Exports.StringServerOption = loadstring("return _G['StringServerOption']")()
 Exports.SubLayerSlot = loadstring("return _G['SubLayerSlot']")()
@@ -1402,6 +1409,8 @@ Exports.UniqueRecipe = loadstring("return _G['UniqueRecipe']")()
 Exports.Updater = loadstring("return _G['Updater']")()
 Exports.Userlog = loadstring("return _G['Userlog']")()
 Exports.UserlogType = loadstring("return _G['UserlogType']")()
+Exports.ValidatePacket = loadstring("return _G['ValidatePacket']")()
+Exports.ValidateState = loadstring("return _G['ValidateState']")()
 Exports.Vector = loadstring("return _G['Vector']")()
 Exports.Vector2 = loadstring("return _G['Vector2']")()
 Exports.Vector2ObjectPool = loadstring("return _G['Vector2ObjectPool']")()
@@ -1576,6 +1585,9 @@ Events.OnGameBoot.Add(function()
 
 --[server/BuildingObjects/ISBarbedWire.d.ts]
   Exports.ISBarbedWire = loadstring("return _G['ISBarbedWire']")()
+
+--[server/BuildingObjects/ISBrushToolTileCursor.d.ts]
+  Exports.ISBrushToolTileCursor = loadstring("return _G['ISBrushToolTileCursor']")()
 
 --[server/BuildingObjects/ISBSFurnace.d.ts]
   Exports.ISBSFurnace = loadstring("return _G['ISBSFurnace']")()
@@ -1808,6 +1820,17 @@ Events.OnGameBoot.Add(function()
   Exports.AttachmentEditorUI_ListBox = loadstring("return _G['AttachmentEditorUI_ListBox']")()
   Exports.AttachmentEditorUI_Scene = loadstring("return _G['AttachmentEditorUI_Scene']")()
   Exports.AttachmentEditorUI_SwitchView = loadstring("return _G['AttachmentEditorUI_SwitchView']")()
+  Exports.AttachmentEditorUI_WorldAttachmentPanel = loadstring("return _G['AttachmentEditorUI_WorldAttachmentPanel']")()
+
+--[client/DebugUIs/BrushTool/BrushToolChooseTileUI.d.ts]
+  Exports.BrushToolChooseTileUI = loadstring("return _G['BrushToolChooseTileUI']")()
+  Exports.BrushToolTilePickerList = loadstring("return _G['BrushToolTilePickerList']")()
+
+--[client/DebugUIs/BrushTool/BrushToolManager.d.ts]
+  Exports.BrushToolManager = loadstring("return _G['BrushToolManager']")()
+
+--[client/DebugUIs/BrushTool/FireBrushUI.d.ts]
+  Exports.FireBrushUI = loadstring("return _G['FireBrushUI']")()
 
 --[client/DebugUIs/DebugChunkState/DebugChunkState_ObjectPickerPanel.d.ts]
   Exports.DebugChunkState_ObjectPickerPanel = loadstring("return _G['DebugChunkState_ObjectPickerPanel']")()
@@ -2017,6 +2040,9 @@ Events.OnGameBoot.Add(function()
 --[client/DebugUIs/ISAttachedItemsUI.d.ts]
   Exports.ISAttachedItemsUI = loadstring("return _G['ISAttachedItemsUI']")()
 
+--[client/DebugUIs/ISExtAnimListDebugUI.d.ts]
+  Exports.ISExtAnimListDebugUI = loadstring("return _G['ISExtAnimListDebugUI']")()
+
 --[client/DebugUIs/ISFastTeleportMove.d.ts]
   Exports.ISFastTeleportMove = loadstring("return _G['ISFastTeleportMove']")()
 
@@ -2044,6 +2070,9 @@ Events.OnGameBoot.Add(function()
 --[client/DebugUIs/ISTilesPickerDebugUI.d.ts]
   Exports.ISTilesPickerDebugUI = loadstring("return _G['ISTilesPickerDebugUI']")()
   Exports.ISTilesPickerTilesList = loadstring("return _G['ISTilesPickerTilesList']")()
+
+--[client/DebugUIs/ISTriggerThunderUI.d.ts]
+  Exports.ISTriggerThunderUI = loadstring("return _G['ISTriggerThunderUI']")()
 
 --[client/DebugUIs/LuaDebugger.d.ts]
   Exports.LuaDebugger = loadstring("return _G['LuaDebugger']")()
@@ -2510,6 +2539,10 @@ Events.OnGameBoot.Add(function()
 
 --[client/ISUI/ISPanelJoypad.d.ts]
   Exports.ISPanelJoypad = loadstring("return _G['ISPanelJoypad']")()
+
+--[client/ISUI/ISPauseModListUI.d.ts]
+  Exports.ISPauseModListUI = loadstring("return _G['ISPauseModListUI']")()
+  Exports.PauseBuggedModList = loadstring("return _G['PauseBuggedModList']")()
 
 --[client/ISUI/ISPostDeathUI.d.ts]
   Exports.ISPostDeathUI = loadstring("return _G['ISPostDeathUI']")()
@@ -3266,6 +3299,9 @@ Events.OnGameBoot.Add(function()
 --[client/SurvivalGuide/SurvivalGuideManager.d.ts]
   Exports.SurvivalGuideManager = loadstring("return _G['SurvivalGuideManager']")()
 
+--[server/TemplateReplacers.d.ts]
+  Exports.TemplateReplacers = loadstring("return _G['TemplateReplacers']")()
+
 --[client/Tests/MapObjectTests.d.ts]
 
 --[client/Tests/RecipeTests.d.ts]
@@ -3781,9 +3817,6 @@ Events.OnGameBoot.Add(function()
 --[shared/Util/StringReplacer.d.ts]
   Exports.StringReplacer = loadstring("return _G['StringReplacer']")()
 
---[shared/Util/Vector2.d.ts]
-  Exports.Vector2 = loadstring("return _G['Vector2']")()
-
 --[client/Vehicles/ISUI/EditVehicleState.d.ts]
   Exports.EditVehicleUI = loadstring("return _G['EditVehicleUI']")()
   Exports.EditVehicleUI_EditArea = loadstring("return _G['EditVehicleUI_EditArea']")()
@@ -3925,6 +3958,9 @@ Events.OnGameBoot.Add(function()
 
 --[client/Vehicles/TimedActions/ISStartVehicleEngine.d.ts]
   Exports.ISStartVehicleEngine = loadstring("return _G['ISStartVehicleEngine']")()
+
+--[client/Vehicles/TimedActions/ISStopVehicle.d.ts]
+  Exports.ISStopVehicle = loadstring("return _G['ISStopVehicle']")()
 
 --[client/Vehicles/TimedActions/ISSwitchVehicleSeat.d.ts]
   Exports.ISSwitchVehicleSeat = loadstring("return _G['ISSwitchVehicleSeat']")()

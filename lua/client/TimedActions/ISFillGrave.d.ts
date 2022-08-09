@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-07T18:22:59.165Z
+ * File generated at: 2022-08-05T02:36:32.708Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -39,6 +39,8 @@ declare module 'PipeWrench' {
       graves: any;
 
       shovel: any;
+
+      sound: any;
 
       constructor(character: any, graves: any, time: any, shovel: any);
 

@@ -21,25 +21,25 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-07T18:22:59.847Z
+ * File generated at: 2022-08-05T02:36:32.435Z
  */
 
 /** @noResolution @noSelfInFile */
-/// <reference path="../../../reference.d.ts" />
-/// <reference path="../../../PipeWrench.d.ts" />
+/// <reference path="../../reference.d.ts" />
+/// <reference path="../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
 declare module 'PipeWrench' {
-  export namespace lua.shared.Util {
-    export abstract class Vector2 {
+  export namespace lua.server {
+    export abstract class TemplateReplacers {
       static [id: string]: any;
 
       /** @noSelf */
-      static getLength: (x: any, y: any) => any;
+      static init: () => any;
 
       /** @noSelf */
-      static normalize: (x: any, y: any) => any;
+      static runExample: () => any;
     }
   }
-  export namespace lua.shared.Util.Vector2 {}
+  export namespace lua.server.TemplateReplacers {}
 }

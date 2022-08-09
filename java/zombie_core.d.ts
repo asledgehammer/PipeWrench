@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-07T14:28Z
+ * File generated at 2022-08-04T22:13Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -743,6 +743,8 @@ declare module 'PipeWrench' {
       static OptionFontSize: number;
       /** java.lang.String */
       static OptionInventoryFont?: string;
+      /** int */
+      static OptionJumpScareVolume: number;
       /** boolean */
       static OptionLockCursorToWindow: boolean;
       /** float */
@@ -954,10 +956,10 @@ declare module 'PipeWrench' {
       RenderOffScreenBuffer(): void;
       /**
        * Method Parameters: 
-       *  - (String arg0, String arg1): void
        *  - (boolean arg0, String arg1): void
+       *  - (String arg0, String arg1): void
        */
-      ResetLua(arg0: string | boolean, arg1: string): void;
+      ResetLua(arg0: boolean | string, arg1: string): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -1252,6 +1254,11 @@ declare module 'PipeWrench' {
        *  - (Empty): string
        */
       getOptionInventoryFont(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getOptionJumpScareVolume(): number;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -2112,6 +2119,11 @@ declare module 'PipeWrench' {
        *  - (String arg0): void
        */
       setOptionInventoryFont(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): void
+       */
+      setOptionJumpScareVolume(arg0: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -3697,6 +3709,13 @@ declare module 'PipeWrench' {
        *  - (String arg0): string
        */
       static getMoveableDisplayName(arg0: string): string;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): string
+       */
+      static getMoveableDisplayNameOrNull(arg0: string): string;
       /**
        * @noSelf
        *

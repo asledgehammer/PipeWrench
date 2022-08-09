@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-07T18:22:56.579Z
+ * File generated at: 2022-08-05T02:36:31.098Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -73,6 +73,18 @@ declare module 'PipeWrench' {
       static createMenu: (player: any, worldobjects: any, x: any, y: any, test: any) => any;
 
       /** @noSelf */
+      static doAddFuelGenerator: (
+        worldobjects: any,
+        generator: any,
+        fuelContainerList: any,
+        fuelContainer: any,
+        player: any
+      ) => any;
+
+      /** @noSelf */
+      static doBrushToolOptions: (context: any, worldobjects: any, player: any) => any;
+
+      /** @noSelf */
       static doChopTree: (playerObj: any, tree: any) => any;
 
       /** @noSelf */
@@ -80,6 +92,9 @@ declare module 'PipeWrench' {
 
       /** @noSelf */
       static doDrinkWaterMenu: (object: any, player: any, context: any) => any;
+
+      /** @noSelf */
+      static doFillFuelMenu: (source: any, playerNum: any, context: any) => any;
 
       /** @noSelf */
       static doFillWaterMenu: (sink: any, playerNum: any, context: any) => any;
@@ -209,6 +224,9 @@ declare module 'PipeWrench' {
 
       /** @noSelf */
       static onAddFuel: (worldobjects: any, petrolCan: any, generator: any, player: any) => any;
+
+      /** @noSelf */
+      static onAddFuelGenerator: (worldobjects: any, petrolCan: any, generator: any, player: any, context: any) => any;
 
       /** @noSelf */
       static onAddPlayerToSafehouse: (worldobjects: any, safehouse: any, player: any) => any;
@@ -437,6 +455,15 @@ declare module 'PipeWrench' {
 
       /** @noSelf */
       static onTakeFuel: (worldobjects: any, playerObj: any, fuelStation: any) => any;
+
+      /** @noSelf */
+      static onTakeFuelNew: (
+        worldobjects: any,
+        fuelObject: any,
+        fuelContainerList: any,
+        fuelContainer: any,
+        player: any
+      ) => any;
 
       /** @noSelf */
       static onTakeGenerator: (worldobjects: any, generator: any, player: any) => any;

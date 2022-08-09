@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-07T14:28Z
+ * File generated at 2022-08-04T22:13Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -118,16 +118,6 @@ declare module 'PipeWrench' {
       static readonly TL_vector3f_pool?: java.lang.ThreadLocal<zombie.vehicles.BaseVehicle$Vector3fObjectPool>;
       /** boolean */
       static readonly YURI_FORCE_FIELD: boolean;
-      /** byte */
-      static readonly authorizationOnServer: number;
-      /** byte */
-      static readonly authorizationOwner: number;
-      /** byte */
-      static readonly authorizationServerOwner: number;
-      /** byte */
-      static readonly authorizationServerSimulation: number;
-      /** byte */
-      static readonly authorizationSimulation: number;
       /** byte */
       static readonly noAuthorization: number;
       /** zombie.core.textures.Texture */
@@ -339,10 +329,10 @@ declare module 'PipeWrench' {
       addKeyToWorld(): void;
       /**
        * Method Parameters: 
-       *  - (BaseVehicle arg0, String arg1, String arg2): void
-       *  - (BaseVehicle arg0, String arg1, String arg2, Float arg3, Boolean arg4): void
+       *  - (IsoPlayer arg0, BaseVehicle arg1, String arg2, String arg3): void
+       *  - (IsoPlayer arg0, BaseVehicle arg1, String arg2, String arg3, Boolean arg4): void
        */
-      addPointConstraint(arg0: zombie.vehicles.BaseVehicle, arg1: string, arg2: string, arg3?: number, arg4?: boolean): void;
+      addPointConstraint(arg0: zombie.characters.IsoPlayer, arg1: zombie.vehicles.BaseVehicle, arg2: string, arg3: string, arg4?: boolean): void;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, float arg1): void
@@ -387,9 +377,14 @@ declare module 'PipeWrench' {
       attachmentExist(arg0: string): boolean;
       /**
        * Method Parameters: 
-       *  - (boolean arg0): void
+       *  - (IsoGameCharacter arg0): void
        */
-      authorizationClientForecast(arg0: boolean): void;
+      authorizationChanged(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (IsoPlayer arg0): void
+       */
+      authorizationClientCollide(arg0: zombie.characters.IsoPlayer): void;
       /**
        * Method Parameters: 
        *  - (short arg0, boolean arg1): void
@@ -397,14 +392,9 @@ declare module 'PipeWrench' {
       authorizationServerCollide(arg0: number, arg1: boolean): void;
       /**
        * Method Parameters: 
-       *  - (Empty): void
+       *  - (IsoPlayer arg0, boolean arg1): void
        */
-      authorizationServerOnSeat(): void;
-      /**
-       * Method Parameters: 
-       *  - (Empty): void
-       */
-      authorizationServerUpdate(): void;
+      authorizationServerOnSeat(arg0: zombie.characters.IsoPlayer, arg1: boolean): void;
       /**
        * Method Parameters: 
        *  - (int arg0, int arg1, int arg2): boolean
@@ -438,8 +428,9 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (BaseVehicle arg0, String arg1, String arg2): boolean
+       *  - (BaseVehicle arg0, String arg1, String arg2, boolean arg3): boolean
        */
-      canAttachTrailer(arg0: zombie.vehicles.BaseVehicle, arg1: string, arg2: string): boolean;
+      canAttachTrailer(arg0: zombie.vehicles.BaseVehicle, arg1: string, arg2: string, arg3?: boolean): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -590,11 +581,6 @@ declare module 'PipeWrench' {
        *  - (Empty): void
        */
       debugPrintout(): void;
-      /**
-       * Method Parameters: 
-       *  - (boolean arg0): void
-       */
-      debugSetStatic(arg0: boolean): void;
       /**
        * Method Parameters: 
        *  - (IsoDirections arg0): void
@@ -775,6 +761,11 @@ declare module 'PipeWrench' {
       getAttachmentWorldPos(arg0: string, arg1: org.joml.Vector3f): org.joml.Vector3f;
       /**
        * Method Parameters: 
+       *  - (Empty): string
+       */
+      getAuthorizationDescription(): string;
+      /**
+       * Method Parameters: 
        *  - (Empty): number
        */
       getBaseQuality(): number;
@@ -838,6 +829,11 @@ declare module 'PipeWrench' {
        *  - (Empty): java.util.HashMap<string, string>
        */
       getChoosenParts(): java.util.HashMap<string, string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -1029,6 +1025,11 @@ declare module 'PipeWrench' {
        *  - (Empty): number
        */
       getFeelersize(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getForce(): number;
       /**
        * Method Parameters: 
        *  - (Vector3f arg0): org.joml.Vector3f
@@ -1271,6 +1272,11 @@ declare module 'PipeWrench' {
        *  - (IsoGameCharacter arg0): zombie.vehicles.VehiclePart
        */
       getNearestBodyworkPart(arg0: zombie.characters.IsoGameCharacter): zombie.vehicles.VehiclePart;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getNetPlayerId(): number;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -2228,6 +2234,16 @@ declare module 'PipeWrench' {
       isMovedThumpable(): boolean;
       /**
        * Method Parameters: 
+       *  - (Authorization arg0): boolean
+       */
+      isNetPlayerAuthorization(arg0: zombie.vehicles.BaseVehicle$Authorization): boolean;
+      /**
+       * Method Parameters: 
+       *  - (short arg0): boolean
+       */
+      isNetPlayerId(arg0: number): boolean;
+      /**
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isNoPicking(): boolean;
@@ -2358,6 +2374,11 @@ declare module 'PipeWrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isStopped(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isTableSurface(): boolean;
       /**
        * Method Parameters: 
@@ -2428,9 +2449,9 @@ declare module 'PipeWrench' {
       needPartsUpdate(): boolean;
       /**
        * Method Parameters: 
-       *  - (byte arg0, short arg1): void
+       *  - (Authorization arg0, short arg1): void
        */
-      netPlayerFromServerUpdate(arg0: number, arg1: number): void;
+      netPlayerFromServerUpdate(arg0: zombie.vehicles.BaseVehicle$Authorization, arg1: number): void;
       /**
        * Method Parameters: 
        *  - (ByteBuffer arg0): void
@@ -2691,10 +2712,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -2921,6 +2942,11 @@ declare module 'PipeWrench' {
       setFirstUpdate(arg0: boolean): void;
       /**
        * Method Parameters: 
+       *  - (Empty): void
+       */
+      setForceBrake(): void;
+      /**
+       * Method Parameters: 
        *  - (float arg0, float arg1): void
        */
       setGeneralPartCondition(arg0: number, arg1: number): void;
@@ -3103,9 +3129,9 @@ declare module 'PipeWrench' {
       setNeedPartsUpdate(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (byte arg0): void
+       *  - (Authorization arg0, int arg1): void
        */
-      setNetPlayerAuthorization(arg0: number): void;
+      setNetPlayerAuthorization(arg0: zombie.vehicles.BaseVehicle$Authorization, arg1: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -3305,10 +3331,10 @@ declare module 'PipeWrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -3382,14 +3408,14 @@ declare module 'PipeWrench' {
       setUsesExternalWaterSource(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (BaseVehicle arg0, String arg1, String arg2, float arg3): void
+       *  - (BaseVehicle arg0, String arg1, String arg2): void
        */
-      setVehicleTowedBy(arg0: zombie.vehicles.BaseVehicle, arg1: string, arg2: string, arg3: number): void;
+      setVehicleTowedBy(arg0: zombie.vehicles.BaseVehicle, arg1: string, arg2: string): void;
       /**
        * Method Parameters: 
-       *  - (BaseVehicle arg0, String arg1, String arg2, float arg3): void
+       *  - (BaseVehicle arg0, String arg1, String arg2): void
        */
-      setVehicleTowing(arg0: zombie.vehicles.BaseVehicle, arg1: string, arg2: string, arg3: number): void;
+      setVehicleTowing(arg0: zombie.vehicles.BaseVehicle, arg1: string, arg2: string): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -3506,11 +3532,6 @@ declare module 'PipeWrench' {
        *  - (IsoGameCharacter arg0, int arg1): void
        */
       switchSeat(arg0: zombie.characters.IsoGameCharacter, arg1: number): void;
-      /**
-       * Method Parameters: 
-       *  - (IsoGameCharacter arg0, int arg1): void
-       */
-      switchSeatRSync(arg0: zombie.characters.IsoGameCharacter, arg1: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0, byte arg1, UdpConnection arg2, ByteBuffer arg3): void
@@ -3689,11 +3710,6 @@ declare module 'PipeWrench' {
        *  - (Empty): void
        */
       updateBulletStats(): void;
-      /**
-       * Method Parameters: 
-       *  - (BaseVehicle arg0): void
-       */
-      updateConstraint(arg0: zombie.vehicles.BaseVehicle): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -3956,6 +3972,29 @@ declare module 'PipeWrench' {
        *  - (IsoObject arg0): void
        */
       static setLastRenderedRendered(arg0: zombie.iso.IsoObject): void;
+    }
+    /** [ENUM] zombie.vehicles.BaseVehicle$Authorization */
+    export class BaseVehicle$Authorization {
+      protected constructor();
+      static readonly Local: zombie.vehicles.BaseVehicle$Authorization;
+      static readonly LocalCollide: zombie.vehicles.BaseVehicle$Authorization;
+      static readonly Remote: zombie.vehicles.BaseVehicle$Authorization;
+      static readonly RemoteCollide: zombie.vehicles.BaseVehicle$Authorization;
+      static readonly Server: zombie.vehicles.BaseVehicle$Authorization;
+      name(): string;
+      ordinal(): number;
+      index(): number;
+
+      /**
+       * @noSelf
+       *
+       * (String arg0): Authorization
+       */
+      static valueOf(arg0: string | null): zombie.vehicles.BaseVehicle$Authorization;
+
+      /** @noSelf */
+      static values(): zombie.vehicles.BaseVehicle$Authorization[];
+
     }
     /**
      * @customConstructor HitVars.new
@@ -6045,6 +6084,11 @@ declare module 'PipeWrench' {
        *  - (Empty): string
        */
       getCategory(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.chat.ChatElement
+       */
+      getChatElement(): zombie.chat.ChatElement;
       /**
        * Method Parameters: 
        *  - (int arg0): zombie.vehicles.VehiclePart

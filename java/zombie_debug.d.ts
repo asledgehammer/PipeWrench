@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-07T14:28Z
+ * File generated at 2022-08-04T22:13Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -142,6 +142,10 @@ declare module 'PipeWrench' {
       /** zombie.debug.DebugLogStream */
       static readonly Combat?: zombie.debug.DebugLogStream;
       /** zombie.debug.DebugLogStream */
+      static readonly Damage?: zombie.debug.DebugLogStream;
+      /** zombie.debug.DebugLogStream */
+      static readonly Death?: zombie.debug.DebugLogStream;
+      /** zombie.debug.DebugLogStream */
       static readonly FileIO?: zombie.debug.DebugLogStream;
       /** zombie.debug.DebugLogStream */
       static readonly Fireplace?: zombie.debug.DebugLogStream;
@@ -201,16 +205,9 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (DebugType arg0): void
+       *  - (DebugType arg0, LogSeverity arg1): void
        */
-      static disableLog(arg0: zombie.debug.DebugType): void;
-      /**
-       * @noSelf
-       *
-       * Method Parameters: 
-       *  - (DebugType arg0): void
-       */
-      static enableLog(arg0: zombie.debug.DebugType): void;
+      static enableLog(arg0: zombie.debug.DebugType, arg1: zombie.debug.LogSeverity): void;
       /**
        * @noSelf
        *
@@ -259,9 +256,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (DebugType arg0, LogSeverity arg1): boolean
        *  - (LogSeverity arg0, DebugType arg1): boolean
        */
-      static isLogEnabled(arg0: zombie.debug.LogSeverity, arg1: zombie.debug.DebugType): boolean;
+      static isLogEnabled(arg0: zombie.debug.DebugType | zombie.debug.LogSeverity, arg1: zombie.debug.LogSeverity | zombie.debug.DebugType): boolean;
       /**
        * @noSelf
        *
@@ -320,6 +318,8 @@ declare module 'PipeWrench' {
       /** java.lang.String */
       static readonly s_prefixOut?: string;
       /** java.lang.String */
+      static readonly s_prefixTrace?: string;
+      /** java.lang.String */
       static readonly s_prefixWarn?: string;
 
       /**
@@ -377,14 +377,25 @@ declare module 'PipeWrench' {
       format(arg0: string | java.util.Locale, arg1: any | string, arg2?: any): java.io.PrintStream;
       /**
        * Method Parameters: 
+       *  - (String arg0): void
+       *  - (String arg0, Object arg1): void
+       *  - (String arg0, Object arg1, Object arg2): void
+       *  - (String arg0, Object arg1, Object arg2, Object arg3): void
+       *  - (String arg0, Object arg1, Object arg2, Object arg3, Object arg4): void
+       *  - (String arg0, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5): void
+       *  - (String arg0, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6): void
+       */
+      noise(arg0: string, arg1?: any, arg2?: any, arg3?: any, arg4?: any, arg5?: any, arg6?: any): void;
+      /**
+       * Method Parameters: 
        *  - (Object arg0): void
        *  - (String arg0): void
        *  - (boolean arg0): void
        *  - (char arg0): void
        *  - (int arg0): void
        *  - (double arg0): void
-       *  - (float arg0): void
        *  - (long arg0): void
+       *  - (float arg0): void
        *  - (char[] arg0): void
        */
       print(arg0: any): void;
@@ -397,9 +408,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (Empty): void
-       *  - (int arg0): void
+       *  - (String arg0): void
+       *  - (int arg0, String arg1): void
        */
-      printStackTrace(arg0?: number): void;
+      printStackTrace(arg0?: string | number, arg1?: string): void;
       /**
        * Method Parameters: 
        *  - (String arg0, boolean arg1, Object... arg2): void
@@ -434,6 +446,17 @@ declare module 'PipeWrench' {
        *  - (String arg0, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7, Object arg8, Object arg9): void
        */
       println(arg0?: any, arg1?: any, arg2?: any, arg3?: any, arg4?: any, arg5?: any, arg6?: any, arg7?: any, arg8?: any, arg9?: any): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       *  - (String arg0, Object arg1): void
+       *  - (String arg0, Object arg1, Object arg2): void
+       *  - (String arg0, Object arg1, Object arg2, Object arg3): void
+       *  - (String arg0, Object arg1, Object arg2, Object arg3, Object arg4): void
+       *  - (String arg0, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5): void
+       *  - (String arg0, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6): void
+       */
+      trace(arg0: string, arg1?: any, arg2?: any, arg3?: any, arg4?: any, arg5?: any, arg6?: any): void;
       /**
        * Method Parameters: 
        *  - (Object arg0): void
@@ -730,10 +753,16 @@ declare module 'PipeWrench' {
        *  - (LogSeverity arg0): boolean
        */
       isLogEnabled(arg0: zombie.debug.LogSeverity): boolean;
+      /**
+       * Method Parameters: 
+       *  - (LogSeverity arg0): boolean
+       */
+      isLogSeverityEnabled(arg0: zombie.debug.LogSeverity): boolean;
     }
     /** [ENUM] zombie.debug.LogSeverity */
     export class LogSeverity {
       protected constructor();
+      static readonly Debug: zombie.debug.LogSeverity;
       static readonly Error: zombie.debug.LogSeverity;
       static readonly General: zombie.debug.LogSeverity;
       static readonly Trace: zombie.debug.LogSeverity;

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-07T14:28Z
+ * File generated at 2022-08-04T22:13Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -12497,6 +12497,11 @@ declare module 'PipeWrench' {
        * Method Parameters: 
        *  - (float arg0): void
        */
+      setEnduranceChange(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (float arg0): void
+       */
       setEngineLoudness(arg0: number): void;
       /**
        * Method Parameters: 
@@ -13291,8 +13296,9 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (Empty): java.util.ArrayList<zombie.inventory.types.WeaponPart>
+       *  - (ArrayList arg0): java.util.ArrayList<zombie.inventory.types.WeaponPart>
        */
-      getAllWeaponParts(): java.util.ArrayList<zombie.inventory.types.WeaponPart>;
+      getAllWeaponParts(arg0?: java.util.ArrayList<zombie.inventory.types.WeaponPart>): java.util.ArrayList<zombie.inventory.types.WeaponPart>;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -14509,6 +14515,12 @@ declare module 'PipeWrench' {
        *  - (String arg0): zombie.inventory.types.WeaponPart
        */
       getWeaponPart(arg0: string): zombie.inventory.types.WeaponPart;
+      /**
+       * Method Parameters: 
+       *  - (WeaponPart arg0): number
+       *  - (String arg0): number
+       */
+      getWeaponPartWeightModifier(arg0: zombie.inventory.types.WeaponPart | string): number;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -27990,11 +28002,11 @@ declare module 'PipeWrench' {
       constructor(arg0: string, arg1: string, arg2: string, arg3: string);
       /**
        * Method Parameters: 
-       *  - (String arg0, float arg1, float arg2, float arg3, String arg4, String arg5, int arg6): void
        *  - (ChatMessage arg0, float arg1, float arg2, float arg3, String arg4, String arg5, int arg6): void
+       *  - (String arg0, float arg1, float arg2, float arg3, String arg4, String arg5, int arg6): void
        *  - (IsoPlayer arg0, String arg1, float arg2, float arg3, float arg4, String arg5, String arg6, int arg7): void
        */
-      AddDeviceText(arg0: string | zombie.chat.ChatMessage | zombie.characters.IsoPlayer, arg1: number | string, arg2: number, arg3: number, arg4: string | number, arg5: string, arg6: number | string, arg7?: number): void;
+      AddDeviceText(arg0: zombie.chat.ChatMessage | string | zombie.characters.IsoPlayer, arg1: number | string, arg2: number, arg3: number, arg4: string | number, arg5: string, arg6: number | string, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): boolean

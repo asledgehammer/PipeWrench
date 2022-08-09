@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-07T18:22:59.264Z
+ * File generated at: 2022-08-05T02:36:32.778Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -49,8 +49,6 @@ declare module 'PipeWrench' {
       item: any;
 
       jobType: any;
-
-      loopedAction: any;
 
       onCompleteArgs: any;
 

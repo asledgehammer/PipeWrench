@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-07T14:28Z
+ * File generated at 2022-08-04T22:13Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -320,8 +320,8 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0, boolean arg1, float arg2): fmod.fmod.Audio
-       *  - (String arg0, boolean arg1, float arg2, float arg3): fmod.fmod.Audio
        *  - (String arg0, int arg1, boolean arg2, float arg3): fmod.fmod.Audio
+       *  - (String arg0, boolean arg1, float arg2, float arg3): fmod.fmod.Audio
        */
       PlaySoundWav(arg0: string, arg1: boolean | number, arg2: number | boolean, arg3?: number): fmod.fmod.Audio;
       /**
@@ -339,8 +339,8 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0, IsoGridSquare arg1, float arg2, float arg3, float arg4, boolean arg5): fmod.fmod.Audio
-       *  - (String arg0, IsoGridSquare arg1, float arg2, float arg3, float arg4, int arg5, boolean arg6): void
        *  - (String arg0, boolean arg1, IsoGridSquare arg2, float arg3, float arg4, float arg5, boolean arg6): fmod.fmod.Audio
+       *  - (String arg0, IsoGridSquare arg1, float arg2, float arg3, float arg4, int arg5, boolean arg6): void
        */
       PlayWorldSoundWav(arg0: string, arg1: zombie.iso.IsoGridSquare | boolean, arg2: number | zombie.iso.IsoGridSquare, arg3: number, arg4: number, arg5: boolean | number, arg6?: boolean): fmod.fmod.Audio | void;
       /**
@@ -637,8 +637,8 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0, boolean arg1, float arg2): fmod.fmod.Audio
-       *  - (String arg0, boolean arg1, float arg2, float arg3): fmod.fmod.Audio
        *  - (String arg0, int arg1, boolean arg2, float arg3): fmod.fmod.Audio
+       *  - (String arg0, boolean arg1, float arg2, float arg3): fmod.fmod.Audio
        */
       PlaySoundWav(arg0: string, arg1: boolean | number, arg2: number | boolean, arg3?: number): fmod.fmod.Audio;
       /**
@@ -1328,17 +1328,17 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (Empty): void
-       *  - (DataInputStream arg0): void
        *  - (ByteBuffer arg0): void
+       *  - (DataInputStream arg0): void
        */
-      load(arg0?: java.io.DataInputStream | java.nio.ByteBuffer): void;
+      load(arg0?: java.nio.ByteBuffer | java.io.DataInputStream): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
-       *  - (ByteBuffer arg0): void
        *  - (DataOutputStream arg0): void
+       *  - (ByteBuffer arg0): void
        */
-      save(arg0?: java.nio.ByteBuffer | java.io.DataOutputStream): void;
+      save(arg0?: java.io.DataOutputStream | java.nio.ByteBuffer): void;
       /**
        * Method Parameters: 
        *  - (ByteBuffer arg0): void
@@ -3201,15 +3201,15 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0, boolean arg1, float arg2): fmod.fmod.Audio
-       *  - (String arg0, boolean arg1, float arg2, float arg3): fmod.fmod.Audio
        *  - (String arg0, int arg1, boolean arg2, float arg3): fmod.fmod.Audio
+       *  - (String arg0, boolean arg1, float arg2, float arg3): fmod.fmod.Audio
        */
       PlaySoundWav(arg0: string, arg1: boolean | number, arg2: number | boolean, arg3?: number): fmod.fmod.Audio;
       /**
        * Method Parameters: 
        *  - (String arg0, IsoGridSquare arg1, float arg2, float arg3, float arg4, boolean arg5): fmod.fmod.Audio
-       *  - (String arg0, boolean arg1, IsoGridSquare arg2, float arg3, float arg4, float arg5, boolean arg6): fmod.fmod.Audio
        *  - (String arg0, IsoGridSquare arg1, float arg2, float arg3, float arg4, int arg5, boolean arg6): fmod.fmod.Audio
+       *  - (String arg0, boolean arg1, IsoGridSquare arg2, float arg3, float arg4, float arg5, boolean arg6): fmod.fmod.Audio
        */
       PlayWorldSound(arg0: string, arg1: zombie.iso.IsoGridSquare | boolean, arg2: number | zombie.iso.IsoGridSquare, arg3: number, arg4: number, arg5: boolean | number, arg6?: boolean): fmod.fmod.Audio;
       /**
@@ -3220,8 +3220,8 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0, IsoGridSquare arg1, float arg2, float arg3, float arg4, boolean arg5): fmod.fmod.Audio
-       *  - (String arg0, IsoGridSquare arg1, float arg2, float arg3, float arg4, int arg5, boolean arg6): void
        *  - (String arg0, boolean arg1, IsoGridSquare arg2, float arg3, float arg4, float arg5, boolean arg6): fmod.fmod.Audio
+       *  - (String arg0, IsoGridSquare arg1, float arg2, float arg3, float arg4, int arg5, boolean arg6): void
        */
       PlayWorldSoundWav(arg0: string, arg1: zombie.iso.IsoGridSquare | boolean, arg2: number | zombie.iso.IsoGridSquare, arg3: number, arg4: number, arg5: boolean | number, arg6?: boolean): fmod.fmod.Audio | void;
       /**
@@ -3321,10 +3321,10 @@ declare module 'PipeWrench' {
       isPlayingMusic(): boolean;
       /**
        * Method Parameters: 
-       *  - (String arg0): boolean
        *  - (long arg0): boolean
+       *  - (String arg0): boolean
        */
-      isPlayingUISound(arg0: string | number): boolean;
+      isPlayingUISound(arg0: number | string): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean

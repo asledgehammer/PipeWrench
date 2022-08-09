@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-07T18:22:52.800Z
+ * File generated at: 2022-08-05T02:36:28.113Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -123,6 +123,8 @@ declare module 'PipeWrench' {
       getScrapObjectList: (() => any) | any;
 
       getXPrompt: (() => any) | any;
+
+      onObjectLeftMouseButtonDown: ((object: any, x: any, y: any) => any) | any;
 
       rotateWhilePlacing: (() => any) | any;
 

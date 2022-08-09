@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-07T14:28Z
+ * File generated at 2022-08-04T22:13Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -861,6 +861,13 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (String arg0): boolean
+       */
+      static checkStringPattern(arg0: string): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (String arg0, String arg1): zombie.scripting.objects.Item
        */
       static cloneItemType(arg0: string, arg1: string): zombie.scripting.objects.Item;
@@ -1027,6 +1034,13 @@ declare module 'PipeWrench' {
        *  - (boolean arg0): void
        */
       static doKeyPress(arg0: boolean): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      static doLuaDebuggerAction(arg0: string): void;
       /**
        * @noSelf
        *
@@ -3224,6 +3238,13 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (String arg0, String arg1, String arg2): boolean
+       */
+      static renameSavefile(arg0: string, arg1: string, arg2: string): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, int arg8): void
        */
       static renderIsoCircle(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
@@ -3481,6 +3502,13 @@ declare module 'PipeWrench' {
        *  - (IsoGameCharacter arg0, IsoGameCharacter arg1, BodyPart arg2, InventoryItem arg3, boolean arg4): void
        */
       static sendStitch(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.IsoGameCharacter, arg2: zombie.characters.BodyDamage.BodyPart, arg3: zombie.inventory.InventoryItem, arg4: boolean): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (BaseVehicle arg0, IsoGameCharacter arg1, int arg2, int arg3): void
+       */
+      static sendSwitchSeat(arg0: zombie.vehicles.BaseVehicle, arg1: zombie.characters.IsoGameCharacter, arg2: number, arg3: number): void;
       /**
        * @noSelf
        *

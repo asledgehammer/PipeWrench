@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-07T14:28Z
+ * File generated at 2022-08-04T22:13Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -164,10 +164,10 @@ declare module 'PipeWrench' {
       sendPlayerJoinChatPacket(arg0: zombie.core.raknet.UdpConnection): void;
       /**
        * Method Parameters: 
-       *  - (short arg0): void
        *  - (UdpConnection arg0): void
+       *  - (short arg0): void
        */
-      sendPlayerLeaveChatPacket(arg0: number | zombie.core.raknet.UdpConnection): void;
+      sendPlayerLeaveChatPacket(arg0: zombie.core.raknet.UdpConnection | number): void;
       /**
        * Method Parameters: 
        *  - (ChatMessage arg0, DeviceData arg1): void

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-07T18:22:59.688Z
+ * File generated at: 2022-08-05T02:36:33.073Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -88,11 +88,15 @@ declare module 'PipeWrench' {
 
       isMetalTrap: (() => any) | any;
 
+      isWoodenTrap: (() => any) | any;
+
       reinitModData: ((square: any) => any) | any;
 
       removeAnimal: ((character: any) => any) | any;
 
       removeBait: ((character: any) => any) | any;
+
+      sendSound: ((soundName: any, square: any) => any) | any;
 
       setAnimal: ((animal: any) => any) | any;
 

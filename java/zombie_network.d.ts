@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-07T14:28Z
+ * File generated at 2022-08-04T22:13Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -502,7 +502,7 @@ declare module 'PipeWrench' {
       /** int */
       static port: number;
       /** java.util.Map<java.lang.Short, zombie.iso.Vector2> */
-      static positions?: java.util.Map<number, zombie.iso.Vector2>;
+      static readonly positions?: java.util.Map<number, zombie.iso.Vector2>;
       /** java.lang.String */
       static serverPassword?: string;
       /** java.util.Calendar */
@@ -640,11 +640,6 @@ declare module 'PipeWrench' {
        *  - (Empty): void
        */
       getDBSchema(): void;
-      /**
-       * Method Parameters: 
-       *  - (int arg0): se.krka.kahlua.vm.KahluaTable
-       */
-      getPacketCounts(arg0: number): se.krka.kahlua.vm.KahluaTable;
       /**
        * Method Parameters: 
        *  - (short arg0): zombie.characters.IsoPlayer
@@ -1072,6 +1067,13 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (short arg0): void
+       */
+      static receivePlayerTimeout(arg0: number): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (ByteBuffer arg0, short arg1): void
        */
       static receiveRadioDeviceDataState(arg0: java.nio.ByteBuffer, arg1: number): void;
@@ -1366,10 +1368,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoGameCharacter arg0): void
        *  - (IsoGridSquare arg0): void
+       *  - (IsoGameCharacter arg0): void
        */
-      static sendStopFire(arg0: zombie.characters.IsoGameCharacter | zombie.iso.IsoGridSquare): void;
+      static sendStopFire(arg0: zombie.iso.IsoGridSquare | zombie.characters.IsoGameCharacter): void;
       /**
        * @noSelf
        *
@@ -1384,6 +1386,13 @@ declare module 'PipeWrench' {
        *  - (IsoGameCharacter arg0, Thumpable arg1): void
        */
       static sendThump(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.iso.objects.interfaces.Thumpable): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (ValidatePacket arg0): void
+       */
+      static sendValidatePacket(arg0: zombie.network.packets.ValidatePacket): void;
       /**
        * @noSelf
        *
@@ -1425,6 +1434,30 @@ declare module 'PipeWrench' {
       static readonly CHARACTER_PREDICTION_INTERVAL_MS: number;
       /** int */
       static readonly CHARACTER_UPDATE_RATE_MS: number;
+      /** long */
+      static readonly CHECKSUM_VALIDATION_INTERVAL_MAX: number;
+      /** long */
+      static readonly CHECKSUM_VALIDATION_INTERVAL_MIN: number;
+      /** long */
+      static readonly CHECKSUM_VALIDATION_TIMEOUT: number;
+      /** float */
+      static readonly MAX_RECONNECT_DISTANCE_SQ: number;
+      /** float */
+      static readonly MAX_TOWING_CAR_DISTANCE_SQ: number;
+      /** float */
+      static readonly MAX_TOWING_TRAILER_DISTANCE_SQ: number;
+      /** long */
+      static readonly TIME_VALIDATION_TIMEOUT: number;
+      /** float */
+      static readonly TOWING_DISTANCE: number;
+      /** int */
+      static readonly VEHICLE_BUFFER_DELAY_MS: number;
+      /** int */
+      static readonly VEHICLE_BUFFER_HISTORY_MS: number;
+      /** int */
+      static readonly VEHICLE_MOVING_MP_PHYSIC_UPDATE_RATE: number;
+      /** int */
+      static readonly VEHICLE_MP_PHYSIC_UPDATE_RATE: number;
       /** int */
       static readonly VEHICLE_SPEED_CAP: number;
       /** float */
@@ -1580,6 +1613,7 @@ declare module 'PipeWrench' {
       static readonly PlayerConnectedToChat: zombie.network.PacketTypes$PacketType;
       static readonly PlayerDamage: zombie.network.PacketTypes$PacketType;
       static readonly PlayerDamageFromCarCrash: zombie.network.PacketTypes$PacketType;
+      static readonly PlayerDataRequest: zombie.network.PacketTypes$PacketType;
       static readonly PlayerDeath: zombie.network.PacketTypes$PacketType;
       static readonly PlayerJoinChat: zombie.network.PacketTypes$PacketType;
       static readonly PlayerLeaveChat: zombie.network.PacketTypes$PacketType;
@@ -1676,6 +1710,8 @@ declare module 'PipeWrench' {
       static readonly UpdateItemSprite: zombie.network.PacketTypes$PacketType;
       static readonly UpdateOverlaySprite: zombie.network.PacketTypes$PacketType;
       static readonly Userlog: zombie.network.PacketTypes$PacketType;
+      static readonly Validate: zombie.network.PacketTypes$PacketType;
+      static readonly VehicleAuthorization: zombie.network.PacketTypes$PacketType;
       static readonly Vehicles: zombie.network.PacketTypes$PacketType;
       static readonly VehiclesUnreliable: zombie.network.PacketTypes$PacketType;
       static readonly ViewTickets: zombie.network.PacketTypes$PacketType;

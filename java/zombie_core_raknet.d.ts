@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-07T14:28Z
+ * File generated at 2022-08-04T22:13Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -462,6 +462,25 @@ declare module 'PipeWrench' {
        *  - (Empty): zombie.core.network.ByteBufferWriter
        */
       startPingPacket(): zombie.core.network.ByteBufferWriter;
+    }
+    /** [ENUM] zombie.core.raknet.UdpConnection$CheckState */
+    export class UdpConnection$CheckState {
+      protected constructor();
+      static readonly None: zombie.core.raknet.UdpConnection$CheckState;
+      static readonly Sent: zombie.core.raknet.UdpConnection$CheckState;
+      static readonly Success: zombie.core.raknet.UdpConnection$CheckState;
+      name(): string;
+      ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): CheckState
+       */
+      static valueOf(arg0: string | null): zombie.core.raknet.UdpConnection$CheckState;
+
+      /** @noSelf */
+      static values(): zombie.core.raknet.UdpConnection$CheckState[];
+
     }
     /** [ENUM] zombie.core.raknet.UdpConnection$ChecksumState */
     export class UdpConnection$ChecksumState {

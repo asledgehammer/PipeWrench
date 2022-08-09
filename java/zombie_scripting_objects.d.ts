@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-07T14:28Z
+ * File generated at 2022-08-04T22:13Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -1937,10 +1937,10 @@ declare module 'PipeWrench' {
       getTextureName(arg0?: boolean): string;
       /**
        * Method Parameters: 
-       *  - (int arg0): zombie.scripting.objects.ModelAttachment
        *  - (ModelAttachment arg0): zombie.scripting.objects.ModelAttachment
+       *  - (int arg0): zombie.scripting.objects.ModelAttachment
        */
-      removeAttachment(arg0: number | zombie.scripting.objects.ModelAttachment): zombie.scripting.objects.ModelAttachment;
+      removeAttachment(arg0: zombie.scripting.objects.ModelAttachment | number): zombie.scripting.objects.ModelAttachment;
       /**
        * Method Parameters: 
        *  - (Empty): void

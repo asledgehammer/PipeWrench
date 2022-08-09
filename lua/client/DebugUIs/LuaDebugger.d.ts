@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-07T18:22:54.423Z
+ * File generated at: 2022-08-05T02:36:29.437Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -39,6 +39,8 @@ declare module 'PipeWrench' {
       threadPanel: any;
 
       constructor(x: any, y: any, width: any, height: any);
+
+      onResolutionChange: ((oldw: any, oldh: any, neww: any, newh: any) => any) | any;
     }
   }
   export namespace lua.client.DebugUIs.LuaDebugger {}

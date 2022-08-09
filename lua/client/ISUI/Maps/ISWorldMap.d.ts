@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-07T18:22:56.752Z
+ * File generated at: 2022-08-05T02:36:31.216Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -98,7 +98,11 @@ declare module 'PipeWrench' {
 
       showCellGrid: any;
 
+      showPlayerNames: any;
+
       showPlayers: any;
+
+      showRemotePlayers: any;
 
       showTileGrid: any;
 
@@ -164,7 +168,11 @@ declare module 'PipeWrench' {
 
       setShowCellGrid: ((show: any) => any) | any;
 
+      setShowPlayerNames: ((show: any) => any) | any;
+
       setShowPlayers: ((show: any) => any) | any;
+
+      setShowRemotePlayers: ((show: any) => any) | any;
 
       setShowTileGrid: ((show: any) => any) | any;
 
@@ -213,19 +221,39 @@ declare module 'PipeWrench' {
     }
 
     /** @customConstructor WorldMapOptions:new */
-    export class WorldMapOptions extends lua.client.ISUI.ISCollapsableWindow {
+    export class WorldMapOptions extends lua.client.ISUI.ISCollapsableWindowJoypad {
       [id: string]: any;
       static [id: string]: any;
 
       doubleBoxes: any;
 
+      joypadButtonsY: any;
+
+      joypadIndex: any;
+
+      joypadIndexY: any;
+
       map: any;
+
+      screenHeight: any;
+
+      showAllOptions: any;
 
       tickBoxes: any;
 
       constructor(x: any, y: any, width: any, height: any, map: any);
 
+      createChildren: (() => any) | any;
+
+      getVisibleOptions: (() => any) | any;
+
+      isMultiplayerOption: ((optionName: any) => any) | any;
+
       onCommandEntered: ((entry: any, option: any) => any) | any;
+
+      onGainJoypadFocus: ((joypadData: any) => any) | any;
+
+      onJoypadDown: ((button: any, joypadData: any) => any) | any;
 
       onMouseDownOutside: ((x: any, y: any) => any) | any;
 

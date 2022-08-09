@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-07T14:28Z
+ * File generated at 2022-08-04T22:13Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -128,23 +128,23 @@ declare module 'PipeWrench' {
       /**
        * @noSelf
        *
-       * (int arg0, HumanVisual arg1, ArrayList arg2, boolean arg3): void
-       */
-      static addBlood(arg0: number, arg1: zombie.core.skinnedmodel.visual.HumanVisual | null, arg2: java.util.ArrayList<zombie.core.skinnedmodel.visual.ItemVisual> | null, arg3: boolean): void;
-
-      /**
-       * @noSelf
-       *
        * (BloodBodyPartType arg0, float arg1, HumanVisual arg2, ArrayList arg3, boolean arg4): void
        */
-      static addDirt(arg0: zombie.characterTextures.BloodBodyPartType | null, arg1: number, arg2: zombie.core.skinnedmodel.visual.HumanVisual | null, arg3: java.util.ArrayList<zombie.core.skinnedmodel.visual.ItemVisual> | null, arg4: boolean): void;
+      static addBlood(arg0: zombie.characterTextures.BloodBodyPartType | null, arg1: number, arg2: zombie.core.skinnedmodel.visual.HumanVisual | null, arg3: java.util.ArrayList<zombie.core.skinnedmodel.visual.ItemVisual> | null, arg4: boolean): void;
 
       /**
        * @noSelf
        *
-       * (BloodBodyPartType arg0, HumanVisual arg1, ArrayList arg2, boolean arg3): boolean
+       * (BloodBodyPartType arg0, HumanVisual arg1, ArrayList arg2, boolean arg3): void
        */
-      static addHole(arg0: zombie.characterTextures.BloodBodyPartType | null, arg1: zombie.core.skinnedmodel.visual.HumanVisual | null, arg2: java.util.ArrayList<zombie.core.skinnedmodel.visual.ItemVisual> | null, arg3: boolean): boolean;
+      static addDirt(arg0: zombie.characterTextures.BloodBodyPartType | null, arg1: zombie.core.skinnedmodel.visual.HumanVisual | null, arg2: java.util.ArrayList<zombie.core.skinnedmodel.visual.ItemVisual> | null, arg3: boolean): void;
+
+      /**
+       * @noSelf
+       *
+       * (BloodBodyPartType arg0, HumanVisual arg1, ArrayList arg2): void
+       */
+      static addHole(arg0: zombie.characterTextures.BloodBodyPartType | null, arg1: zombie.core.skinnedmodel.visual.HumanVisual | null, arg2: java.util.ArrayList<zombie.core.skinnedmodel.visual.ItemVisual> | null): void;
 
       /**
        * @noSelf

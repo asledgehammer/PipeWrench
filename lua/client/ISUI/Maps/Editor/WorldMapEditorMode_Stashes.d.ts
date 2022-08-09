@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-07T18:22:56.647Z
+ * File generated at: 2022-08-05T02:36:31.151Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -53,6 +53,10 @@ declare module 'PipeWrench' {
       cancelMode: (() => any) | any;
 
       createChildren: (() => any) | any;
+
+      onBuildingClear: (() => any) | any;
+
+      onBuildingSet: (() => any) | any;
 
       onBuildingXEntered: (() => any) | any;
 

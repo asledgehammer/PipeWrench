@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at: 2022-08-07T18:22:57.973Z
+ * File generated at: 2022-08-05T02:36:31.952Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -84,6 +84,8 @@ declare module 'PipeWrench' {
 
       firstFrame: any;
 
+      infoModList: any;
+
       infoRichText: any;
 
       inGame: any;
@@ -113,6 +115,8 @@ declare module 'PipeWrench' {
       mapSpawnSelect: any;
 
       maxMenuItemWidth: any;
+
+      modListDetail: any;
 
       modSelect: any;
 
@@ -197,6 +201,8 @@ declare module 'PipeWrench' {
       getLatestSave: (() => any) | any;
 
       instantiate: (() => any) | any;
+
+      onClickModList: (() => any) | any;
 
       OnClickNews: (() => any) | any;
 
