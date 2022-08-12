@@ -21,7 +21,6 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-04T22:13Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -956,10 +955,10 @@ declare module 'PipeWrench' {
       RenderOffScreenBuffer(): void;
       /**
        * Method Parameters: 
-       *  - (boolean arg0, String arg1): void
        *  - (String arg0, String arg1): void
+       *  - (boolean arg0, String arg1): void
        */
-      ResetLua(arg0: boolean | string, arg1: string): void;
+      ResetLua(arg0: string | boolean, arg1: string): void;
       /**
        * Method Parameters: 
        *  - (Empty): void

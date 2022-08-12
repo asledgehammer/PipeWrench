@@ -20,8 +20,6 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-08-05T02:36:28.937Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -80,10 +78,6 @@ declare module 'PipeWrench' {
 
       /** @noSelf */
       static OnOpenPanel: () => any;
-    }
-
-    export abstract class ThermoDebug {
-      static [id: string]: any;
     }
   }
   export namespace lua.client.DebugUIs.DebugMenu.Climate.ThermoDebug {}
