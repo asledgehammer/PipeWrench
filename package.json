@@ -4,7 +4,9 @@
   "description": "",
   "types": "PipeWrench.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "lint": "eslint --ext .ts",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -26,5 +28,19 @@
   "bugs": {
     "url": "https://github.com/asledgehammer/PipeWrench/issues"
   },
-  "homepage": "https://github.com/asledgehammer/PipeWrench#readme"
+  "homepage": "https://github.com/asledgehammer/PipeWrench#readme",
+  "dependencies": {
+    "husky": "^8.0.1",
+    "lua-types": "^2.12.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "@typescript-eslint/parser": "^5.33.0",
+    "eslint": "^8.21.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-promise": "^6.0.0",
+    "typescript": "^4.7.4"
+  }
 }
