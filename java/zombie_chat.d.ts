@@ -21,7 +21,6 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-04T22:13Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -147,10 +146,10 @@ declare module 'PipeWrench' {
       removeMember(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (ServerChatMessage arg0): void
        *  - (ChatMessage arg0): void
+       *  - (ServerChatMessage arg0): void
        */
-      sendMessageToChatMembers(arg0: zombie.chat.ServerChatMessage | zombie.chat.ChatMessage): void;
+      sendMessageToChatMembers(arg0: zombie.chat.ChatMessage | zombie.chat.ServerChatMessage): void;
       /**
        * Method Parameters: 
        *  - (UdpConnection arg0, ChatMessage arg1): void

@@ -21,7 +21,6 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-04T22:13Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -2011,11 +2010,11 @@ declare module 'PipeWrench' {
       constructor(arg0?: number | string, arg1?: zombie.iso.IsoGridSquare | string, arg2?: zombie.iso.IsoObject | zombie.iso.IsoGridSquare, arg3?: zombie.iso.IsoObject);
       /**
        * Method Parameters: 
-       *  - (String arg0): zombie.inventory.InventoryItem
        *  - (InventoryItem arg0): zombie.inventory.InventoryItem
+       *  - (String arg0): zombie.inventory.InventoryItem
        *  - (String arg0, float arg1): boolean
        */
-      AddItem(arg0: string | zombie.inventory.InventoryItem, arg1?: number): zombie.inventory.InventoryItem | boolean;
+      AddItem(arg0: zombie.inventory.InventoryItem | string, arg1?: number): zombie.inventory.InventoryItem | boolean;
       /**
        * Method Parameters: 
        *  - (InventoryItem arg0): zombie.inventory.InventoryItem
@@ -2023,10 +2022,10 @@ declare module 'PipeWrench' {
       AddItemBlind(arg0: zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (InventoryItem arg0, int arg1): void
        *  - (String arg0, int arg1): java.util.ArrayList<zombie.inventory.InventoryItem>
+       *  - (InventoryItem arg0, int arg1): void
        */
-      AddItems(arg0: zombie.inventory.InventoryItem | string, arg1: number): void | java.util.ArrayList<zombie.inventory.InventoryItem>;
+      AddItems(arg0: string | zombie.inventory.InventoryItem, arg1: number): java.util.ArrayList<zombie.inventory.InventoryItem> | void;
       /**
        * Method Parameters: 
        *  - (InventoryItem arg0): zombie.inventory.InventoryItem
@@ -2055,10 +2054,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): zombie.inventory.InventoryItem
-       *  - (String arg0, ArrayList arg1): zombie.inventory.InventoryItem
        *  - (String arg0, int arg1): java.util.ArrayList<zombie.inventory.InventoryItem>
+       *  - (String arg0, ArrayList arg1): zombie.inventory.InventoryItem
        */
-      FindAndReturn(arg0: string, arg1?: java.util.ArrayList<zombie.inventory.InventoryItem> | number): zombie.inventory.InventoryItem | java.util.ArrayList<zombie.inventory.InventoryItem>;
+      FindAndReturn(arg0: string, arg1?: number | java.util.ArrayList<zombie.inventory.InventoryItem>): zombie.inventory.InventoryItem | java.util.ArrayList<zombie.inventory.InventoryItem>;
       /**
        * Method Parameters: 
        *  - (String arg0): zombie.inventory.InventoryItem
@@ -2066,10 +2065,10 @@ declare module 'PipeWrench' {
       FindAndReturnCategory(arg0: string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (String arg0): zombie.inventory.InventoryItem
        *  - (InventoryItem arg0): zombie.inventory.InventoryItem
+       *  - (String arg0): zombie.inventory.InventoryItem
        */
-      FindAndReturnStack(arg0: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
+      FindAndReturnStack(arg0: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (int arg0): zombie.inventory.InventoryItem
@@ -2127,8 +2126,8 @@ declare module 'PipeWrench' {
        * Method Parameters: 
        *  - (String arg0): boolean
        *  - (InventoryItem arg0): boolean
-       *  - (String arg0, boolean arg1): boolean
        *  - (InventoryItem arg0, boolean arg1): boolean
+       *  - (String arg0, boolean arg1): boolean
        *  - (String arg0, boolean arg1, boolean arg2): boolean
        */
       contains(arg0: string | zombie.inventory.InventoryItem, arg1?: boolean, arg2?: boolean): boolean;
@@ -2779,10 +2778,10 @@ declare module 'PipeWrench' {
        * Method Parameters: 
        *  - (String arg0): number
        *  - (String arg0, boolean arg1): number
-       *  - (String arg0, boolean arg1, boolean arg2): number
        *  - (String arg0, boolean arg1, ArrayList arg2): number
+       *  - (String arg0, boolean arg1, boolean arg2): number
        */
-      getNumberOfItem(arg0: string, arg1?: boolean, arg2?: boolean | java.util.ArrayList<zombie.inventory.ItemContainer>): number;
+      getNumberOfItem(arg0: string, arg1?: boolean, arg2?: java.util.ArrayList<zombie.inventory.ItemContainer> | boolean): number;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -2980,10 +2979,10 @@ declare module 'PipeWrench' {
       getWeightReduction(): number;
       /**
        * Method Parameters: 
-       *  - (IsoGameCharacter arg0, float arg1): boolean
        *  - (IsoGameCharacter arg0, InventoryItem arg1): boolean
+       *  - (IsoGameCharacter arg0, float arg1): boolean
        */
-      hasRoomFor(arg0: zombie.characters.IsoGameCharacter, arg1: number | zombie.inventory.InventoryItem): boolean;
+      hasRoomFor(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.inventory.InventoryItem | number): boolean;
       /**
        * Method Parameters: 
        *  - (int arg0): zombie.inventory.InventoryItem

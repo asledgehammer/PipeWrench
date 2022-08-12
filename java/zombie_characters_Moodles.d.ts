@@ -21,7 +21,6 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-04T22:13Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -222,10 +221,10 @@ declare module 'PipeWrench' {
       getMoodleDisplayString(arg0: number): string;
       /**
        * Method Parameters: 
-       *  - (MoodleType arg0): number
        *  - (int arg0): number
+       *  - (MoodleType arg0): number
        */
-      getMoodleLevel(arg0: zombie.characters.Moodles.MoodleType | number): number;
+      getMoodleLevel(arg0: number | zombie.characters.Moodles.MoodleType): number;
       /**
        * Method Parameters: 
        *  - (int arg0): zombie.characters.Moodles.MoodleType

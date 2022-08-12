@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-04T22:42Z
+ * File generated at 2022-08-12T04:08Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -255,10 +255,6 @@ declare module 'PipeWrench' {
   export class BurntToDeath extends zombie.ai.states.BurntToDeath {}
   /** @customConstructor ByteBufferWriter.new */
   export class ByteBufferWriter extends zombie.core.network.ByteBufferWriter {}
-  /** @customConstructor CGlobalObject.new */
-  export class CGlobalObject extends zombie.globalObjects.CGlobalObject {}
-  /** @customConstructor CGlobalObjectSystem.new */
-  export class CGlobalObjectSystem extends zombie.globalObjects.CGlobalObjectSystem {}
   /** @customConstructor CGlobalObjects.new */
   export class CGlobalObjects extends zombie.globalObjects.CGlobalObjects {}
   /** @customConstructor CallbackGetStrongTyped.new */
@@ -913,8 +909,6 @@ declare module 'PipeWrench' {
   export class Iterator extends java.util.Iterator<any> {}
   /** @customConstructor JobType.new */
   export class JobType extends zombie.iso.IsoChunk$JobType {}
-  /** @customConstructor Joypad.new */
-  export class Joypad extends zombie.input.JoypadManager$Joypad {}
   /** @customConstructor JoypadManager.new */
   export class JoypadManager extends zombie.input.JoypadManager {}
   /** @customConstructor KahluaUtil.new */
@@ -1423,8 +1417,6 @@ declare module 'PipeWrench' {
   export class Ray extends zombie.vehicles.UI3DScene$Ray {}
   /** @customConstructor RayObjectPool.new */
   export class RayObjectPool extends zombie.vehicles.UI3DScene$RayObjectPool {}
-  /** @customConstructor Recipe.new */
-  export class Recipe extends zombie.scripting.objects.Recipe {}
   /** @customConstructor RecipeManager.new */
   export class RecipeManager extends zombie.inventory.RecipeManager {}
   /** @customConstructor RecordedMedia.new */
@@ -1457,10 +1449,6 @@ declare module 'PipeWrench' {
   export class RuntimeAnimationScript extends zombie.core.skinnedmodel.runtime.RuntimeAnimationScript {}
   /** @customConstructor SCButton.new */
   export class SCButton extends zombie.ui.SpeedControls$SCButton {}
-  /** @customConstructor SGlobalObject.new */
-  export class SGlobalObject extends zombie.globalObjects.SGlobalObject {}
-  /** @customConstructor SGlobalObjectSystem.new */
-  export class SGlobalObjectSystem extends zombie.globalObjects.SGlobalObjectSystem {}
   /** @customConstructor SGlobalObjects.new */
   export class SGlobalObjects extends zombie.globalObjects.SGlobalObjects {}
   /** @customConstructor SLSoundManager.new */
@@ -6150,7 +6138,6 @@ declare module 'PipeWrench' {
   // [client/DebugUIs/DebugMenu/Climate/ThermoDebug.d.ts]
   /** @customConstructor ThermoDebug:new */
   export class ThermoDebug extends lua.client.DebugUIs.DebugMenu.Climate.ThermoDebug {}
-  export abstract class ThermoDebug extends lua.client.DebugUIs.DebugMenu.Climate.ThermoDebug {}
 
   // [client/DebugUIs/DebugMenu/Climate/ThunderDebug.d.ts]
   /** @customConstructor ThunderDebug:new */
@@ -6447,9 +6434,6 @@ declare module 'PipeWrench' {
   // [client/Farming/ISUI/ISFarmingWindow.d.ts]
   /** @customConstructor ISFarmingWindow:new */
   export class ISFarmingWindow extends lua.client.Farming.ISUI.ISFarmingWindow {}
-
-  // [server/Farming/ScavengeDefinition.d.ts]
-  export abstract class scavenges extends lua.server.Farming.scavenges {}
 
   // [server/Farming/SFarmingSystem.d.ts]
   /** @customConstructor SFarmingSystem:new */
