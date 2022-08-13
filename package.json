@@ -4,7 +4,8 @@
   "description": "",
   "types": "PipeWrench.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "patch": "node patch.js",
+    "test": "npm install && tsc"
   },
   "repository": {
     "type": "git",
@@ -26,5 +27,9 @@
   "bugs": {
     "url": "https://github.com/asledgehammer/PipeWrench/issues"
   },
-  "homepage": "https://github.com/asledgehammer/PipeWrench#readme"
+  "homepage": "https://github.com/asledgehammer/PipeWrench#readme",
+  "devDependencies": {
+    "lua-types": "^2.12.0",
+    "typescript": "^4.7.4"
+  }
 }
