@@ -12,4 +12,5 @@ jobs:
           node-version: 18
           cache: npm
           cache-dependency-path: package-lock.json
-      - run: npm run test
+      - run: npm install
+      - run: npm run build

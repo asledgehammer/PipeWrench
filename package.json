@@ -5,7 +5,7 @@
   "types": "PipeWrench.d.ts",
   "scripts": {
     "patch": "node patch.js",
-    "test": "npm install && tsc"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
