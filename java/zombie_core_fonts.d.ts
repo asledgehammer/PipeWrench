@@ -606,11 +606,11 @@ declare module 'PipeWrench' {
        *
        * Method Parameters: 
        *  - (String arg0): zombie.core.textures.Texture
-       *  - (String arg0, String arg1): zombie.core.textures.Texture
        *  - (String arg0, int arg1): zombie.core.textures.Texture
+       *  - (String arg0, String arg1): zombie.core.textures.Texture
        *  - (String arg0, int[] arg1, String arg2): zombie.core.textures.Texture
        */
-      static getSharedTexture(arg0: string, arg1?: string | number | number[], arg2?: string): zombie.core.textures.Texture;
+      static getSharedTexture(arg0: string, arg1?: number | string | number[], arg2?: string): zombie.core.textures.Texture;
       /**
        * @noSelf
        *

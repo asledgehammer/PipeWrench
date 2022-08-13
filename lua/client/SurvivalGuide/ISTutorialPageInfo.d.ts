@@ -30,7 +30,7 @@ import * as PipeWrench from 'PipeWrench';
 declare module 'PipeWrench' {
   export namespace lua.client.SurvivalGuide {
     /** @customConstructor ISTutorialPageInfo:new */
-    export class ISTutorialPageInfo extends lua.shared.ISBaseObject.ISBaseObject {
+    export class ISTutorialPageInfo extends lua.shared.ISBaseObject {
       [id: string]: any;
       static [id: string]: any;
 
@@ -48,7 +48,7 @@ declare module 'PipeWrench' {
     }
 
     /** @customConstructor ISTutorialSetInfo:new */
-    export class ISTutorialSetInfo extends lua.shared.ISBaseObject.ISBaseObject {
+    export class ISTutorialSetInfo extends lua.shared.ISBaseObject {
       [id: string]: any;
       static [id: string]: any;
 

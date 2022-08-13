@@ -30,7 +30,7 @@ import * as PipeWrench from 'PipeWrench';
 declare module 'PipeWrench' {
   export namespace lua.shared.Reloading {
     /** @customConstructor ISReloadable:new */
-    export class ISReloadable extends lua.shared.ISBaseObject.ISBaseObject {
+    export class ISReloadable extends lua.shared.ISBaseObject {
       [id: string]: any;
       static [id: string]: any;
 

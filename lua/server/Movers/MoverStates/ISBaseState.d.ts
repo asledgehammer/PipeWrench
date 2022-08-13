@@ -30,7 +30,7 @@ import * as PipeWrench from 'PipeWrench';
 declare module 'PipeWrench' {
   export namespace lua.server.Movers.MoverStates {
     /** @customConstructor ISBaseState:new */
-    export class ISBaseState extends lua.shared.ISBaseObject.ISBaseObject {
+    export class ISBaseState extends lua.shared.ISBaseObject {
       [id: string]: any;
       static [id: string]: any;
 

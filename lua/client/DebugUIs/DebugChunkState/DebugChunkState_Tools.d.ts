@@ -48,7 +48,7 @@ declare module 'PipeWrench' {
     }
 
     /** @customConstructor DebugChunkStateUI_Tool:new */
-    export class DebugChunkStateUI_Tool extends lua.shared.ISBaseObject.ISBaseObject {
+    export class DebugChunkStateUI_Tool extends lua.shared.ISBaseObject {
       [id: string]: any;
       static [id: string]: any;
 

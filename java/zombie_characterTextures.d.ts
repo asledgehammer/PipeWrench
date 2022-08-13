@@ -134,9 +134,9 @@ declare module 'PipeWrench' {
       /**
        * @noSelf
        *
-       * (BloodBodyPartType arg0, float arg1, HumanVisual arg2, ArrayList arg3, boolean arg4): void
+       * (BloodBodyPartType arg0, HumanVisual arg1, ArrayList arg2, boolean arg3): void
        */
-      static addDirt(arg0: zombie.characterTextures.BloodBodyPartType | null, arg1: number, arg2: zombie.core.skinnedmodel.visual.HumanVisual | null, arg3: java.util.ArrayList<zombie.core.skinnedmodel.visual.ItemVisual> | null, arg4: boolean): void;
+      static addDirt(arg0: zombie.characterTextures.BloodBodyPartType | null, arg1: zombie.core.skinnedmodel.visual.HumanVisual | null, arg2: java.util.ArrayList<zombie.core.skinnedmodel.visual.ItemVisual> | null, arg3: boolean): void;
 
       /**
        * @noSelf

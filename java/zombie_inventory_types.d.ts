@@ -14516,10 +14516,10 @@ declare module 'PipeWrench' {
       getWeaponPart(arg0: string): zombie.inventory.types.WeaponPart;
       /**
        * Method Parameters: 
-       *  - (String arg0): number
        *  - (WeaponPart arg0): number
+       *  - (String arg0): number
        */
-      getWeaponPartWeightModifier(arg0: string | zombie.inventory.types.WeaponPart): number;
+      getWeaponPartWeightModifier(arg0: zombie.inventory.types.WeaponPart | string): number;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -28001,11 +28001,11 @@ declare module 'PipeWrench' {
       constructor(arg0: string, arg1: string, arg2: string, arg3: string);
       /**
        * Method Parameters: 
-       *  - (String arg0, float arg1, float arg2, float arg3, String arg4, String arg5, int arg6): void
        *  - (ChatMessage arg0, float arg1, float arg2, float arg3, String arg4, String arg5, int arg6): void
+       *  - (String arg0, float arg1, float arg2, float arg3, String arg4, String arg5, int arg6): void
        *  - (IsoPlayer arg0, String arg1, float arg2, float arg3, float arg4, String arg5, String arg6, int arg7): void
        */
-      AddDeviceText(arg0: string | zombie.chat.ChatMessage | zombie.characters.IsoPlayer, arg1: number | string, arg2: number, arg3: number, arg4: string | number, arg5: string, arg6: number | string, arg7?: number): void;
+      AddDeviceText(arg0: zombie.chat.ChatMessage | string | zombie.characters.IsoPlayer, arg1: number | string, arg2: number, arg3: number, arg4: string | number, arg5: string, arg6: number | string, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): boolean

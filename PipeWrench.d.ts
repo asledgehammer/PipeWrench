@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-08-12T04:08Z
+ * File generated at 2022-08-12T21:26Z
  */
 
 /** @noResolution @noSelfInFile */
@@ -255,6 +255,10 @@ declare module 'PipeWrench' {
   export class BurntToDeath extends zombie.ai.states.BurntToDeath {}
   /** @customConstructor ByteBufferWriter.new */
   export class ByteBufferWriter extends zombie.core.network.ByteBufferWriter {}
+  
+  
+  
+  
   /** @customConstructor CGlobalObjects.new */
   export class CGlobalObjects extends zombie.globalObjects.CGlobalObjects {}
   /** @customConstructor CallbackGetStrongTyped.new */
@@ -909,6 +913,8 @@ declare module 'PipeWrench' {
   export class Iterator extends java.util.Iterator<any> {}
   /** @customConstructor JobType.new */
   export class JobType extends zombie.iso.IsoChunk$JobType {}
+  /** @customConstructor Joypad.new */
+  export class Joypad extends zombie.input.JoypadManager$Joypad {}
   /** @customConstructor JoypadManager.new */
   export class JoypadManager extends zombie.input.JoypadManager {}
   /** @customConstructor KahluaUtil.new */
@@ -1417,6 +1423,8 @@ declare module 'PipeWrench' {
   export class Ray extends zombie.vehicles.UI3DScene$Ray {}
   /** @customConstructor RayObjectPool.new */
   export class RayObjectPool extends zombie.vehicles.UI3DScene$RayObjectPool {}
+  /** @customConstructor Recipe.new */
+  export class Recipe extends zombie.scripting.objects.Recipe {}
   /** @customConstructor RecipeManager.new */
   export class RecipeManager extends zombie.inventory.RecipeManager {}
   /** @customConstructor RecordedMedia.new */
@@ -1449,6 +1457,10 @@ declare module 'PipeWrench' {
   export class RuntimeAnimationScript extends zombie.core.skinnedmodel.runtime.RuntimeAnimationScript {}
   /** @customConstructor SCButton.new */
   export class SCButton extends zombie.ui.SpeedControls$SCButton {}
+  
+  
+  
+  
   /** @customConstructor SGlobalObjects.new */
   export class SGlobalObjects extends zombie.globalObjects.SGlobalObjects {}
   /** @customConstructor SLSoundManager.new */
@@ -4181,10 +4193,10 @@ declare module 'PipeWrench' {
    * @noSelf
    *
    * Method Parameters: 
-   *  - (Item arg0): zombie.inventory.InventoryItem
    *  - (String arg0): zombie.inventory.InventoryItem
+   *  - (Item arg0): zombie.inventory.InventoryItem
    */
-  export function instanceItem(arg0: zombie.scripting.objects.Item | string): zombie.inventory.InventoryItem;
+  export function instanceItem(arg0: string | zombie.scripting.objects.Item): zombie.inventory.InventoryItem;
   /**
    * @noSelf
    *
@@ -6139,6 +6151,7 @@ declare module 'PipeWrench' {
   /** @customConstructor ThermoDebug:new */
   export class ThermoDebug extends lua.client.DebugUIs.DebugMenu.Climate.ThermoDebug {}
 
+
   // [client/DebugUIs/DebugMenu/Climate/ThunderDebug.d.ts]
   /** @customConstructor ThunderDebug:new */
   export class ThunderDebug extends lua.client.DebugUIs.DebugMenu.Climate.ThunderDebug {}
@@ -6435,6 +6448,9 @@ declare module 'PipeWrench' {
   /** @customConstructor ISFarmingWindow:new */
   export class ISFarmingWindow extends lua.client.Farming.ISUI.ISFarmingWindow {}
 
+  // [server/Farming/ScavengeDefinition.d.ts]
+  export abstract class scavenges extends lua.server.Farming.scavenges {}
+
   // [server/Farming/SFarmingSystem.d.ts]
   /** @customConstructor SFarmingSystem:new */
   export class SFarmingSystem extends lua.server.Farming.SFarmingSystem {}
@@ -6508,7 +6524,7 @@ declare module 'PipeWrench' {
   export abstract class forageDefs extends lua.shared.Foraging.forageDefs {}
   export abstract class forageSkills extends lua.shared.Foraging.forageSkills {}
   export abstract class forageZones extends lua.shared.Foraging.forageZones {}
-  export abstract class scavenges extends lua.shared.Foraging.scavenges {}
+
 
   // [shared/Foraging/forageSystem.d.ts]
   export abstract class forageSystem extends lua.shared.Foraging.forageSystem {}
@@ -6550,7 +6566,7 @@ declare module 'PipeWrench' {
 
   // [shared/ISBaseObject.d.ts]
   /** @customConstructor ISBaseObject:new */
-  export class ISBaseObject extends lua.shared.ISBaseObject.ISBaseObject {}
+  export class ISBaseObject extends lua.shared.ISBaseObject {}
 
   // [server/ISBuildingBlueprintManager.d.ts]
   export abstract class ISBuildingBlueprintManager extends lua.server.ISBuildingBlueprintManager {}
@@ -7324,7 +7340,7 @@ declare module 'PipeWrench' {
   /** @customConstructor JoypadData:new */
   export class JoypadData extends lua.shared.JoyPad.JoypadData {}
   export abstract class joypad extends lua.shared.JoyPad.joypad {}
-  export abstract class Joypad extends lua.shared.JoyPad.Joypad {}
+  
   export abstract class JoypadState extends lua.shared.JoyPad.JoypadState {}
 
   // [shared/keyBinding.d.ts]
@@ -7842,8 +7858,8 @@ declare module 'PipeWrench' {
   /** @customConstructor SRainBarrelSystem:new */
   export class SRainBarrelSystem extends lua.server.RainBarrel.SRainBarrelSystem {}
 
-  // [server/recipecode.d.ts]
-  export abstract class Recipe extends lua.server.Recipe {}
+
+
 
   // [client/RecordedMedia/ISMediaInfo.d.ts]
   /** @customConstructor ISMediaInfo:new */

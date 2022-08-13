@@ -955,10 +955,10 @@ declare module 'PipeWrench' {
       RenderOffScreenBuffer(): void;
       /**
        * Method Parameters: 
-       *  - (String arg0, String arg1): void
        *  - (boolean arg0, String arg1): void
+       *  - (String arg0, String arg1): void
        */
-      ResetLua(arg0: string | boolean, arg1: string): void;
+      ResetLua(arg0: boolean | string, arg1: string): void;
       /**
        * Method Parameters: 
        *  - (Empty): void

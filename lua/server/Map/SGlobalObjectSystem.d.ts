@@ -30,7 +30,7 @@ import * as PipeWrench from 'PipeWrench';
 declare module 'PipeWrench' {
   export namespace lua.server.Map {
     /** @customConstructor SGlobalObjectSystem:new */
-    export class SGlobalObjectSystem extends lua.shared.ISBaseObject.ISBaseObject {
+    export class SGlobalObjectSystem extends lua.shared.ISBaseObject {
       [id: string]: any;
       static [id: string]: any;
 

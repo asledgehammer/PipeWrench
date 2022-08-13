@@ -30,7 +30,7 @@ import * as PipeWrench from 'PipeWrench';
 declare module 'PipeWrench' {
   export namespace lua.shared.TimedActions {
     /** @customConstructor ISBaseTimedAction:new */
-    export class ISBaseTimedAction extends lua.shared.ISBaseObject.ISBaseObject {
+    export class ISBaseTimedAction extends lua.shared.ISBaseObject {
       [id: string]: any;
       static [id: string]: any;
 

@@ -49,7 +49,7 @@ declare module 'PipeWrench' {
     }
 
     /** @customConstructor DebugGlobalObjectStateUI_Tool:new */
-    export class DebugGlobalObjectStateUI_Tool extends lua.shared.ISBaseObject.ISBaseObject {
+    export class DebugGlobalObjectStateUI_Tool extends lua.shared.ISBaseObject {
       [id: string]: any;
       static [id: string]: any;
 

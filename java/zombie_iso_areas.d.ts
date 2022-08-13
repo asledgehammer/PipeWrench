@@ -508,10 +508,10 @@ declare module 'PipeWrench' {
       addPlayer(arg0: string): void;
       /**
        * Method Parameters: 
-       *  - (String arg0): zombie.iso.areas.SafeHouse
        *  - (IsoPlayer arg0): zombie.iso.areas.SafeHouse
+       *  - (String arg0): zombie.iso.areas.SafeHouse
        */
-      alreadyHaveSafehouse(arg0: string | zombie.characters.IsoPlayer): zombie.iso.areas.SafeHouse;
+      alreadyHaveSafehouse(arg0: zombie.characters.IsoPlayer | string): zombie.iso.areas.SafeHouse;
       /**
        * Method Parameters: 
        *  - (IsoPlayer arg0): void
@@ -604,10 +604,10 @@ declare module 'PipeWrench' {
       kickOutOfSafehouse(arg0: zombie.characters.IsoPlayer): void;
       /**
        * Method Parameters: 
-       *  - (String arg0): boolean
        *  - (IsoPlayer arg0): boolean
+       *  - (String arg0): boolean
        */
-      playerAllowed(arg0: string | zombie.characters.IsoPlayer): boolean;
+      playerAllowed(arg0: zombie.characters.IsoPlayer | string): boolean;
       /**
        * Method Parameters: 
        *  - (String arg0): void

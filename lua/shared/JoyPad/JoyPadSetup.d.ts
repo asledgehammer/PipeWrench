@@ -30,7 +30,7 @@ import * as PipeWrench from 'PipeWrench';
 declare module 'PipeWrench' {
   export namespace lua.shared.JoyPad {
     /** @customConstructor JoypadControllerData:new */
-    export class JoypadControllerData extends lua.shared.ISBaseObject.ISBaseObject {
+    export class JoypadControllerData extends lua.shared.ISBaseObject {
       [id: string]: any;
       static [id: string]: any;
 
@@ -78,7 +78,7 @@ declare module 'PipeWrench' {
     }
 
     /** @customConstructor JoypadData:new */
-    export class JoypadData extends lua.shared.ISBaseObject.ISBaseObject {
+    export class JoypadData extends lua.shared.ISBaseObject {
       [id: string]: any;
       static [id: string]: any;
 

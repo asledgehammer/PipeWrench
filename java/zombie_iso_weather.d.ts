@@ -1098,8 +1098,8 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (int arg0, int arg1, int arg2): number
        *  - (float arg0, float arg1, float arg2): number
+       *  - (int arg0, int arg1, int arg2): number
        */
       static clamp(arg0: number, arg1: number, arg2: number): number;
       /**
@@ -1458,10 +1458,10 @@ declare module 'PipeWrench' {
       setModdedValue(arg0: zombie.iso.weather.ClimateColorInfo): void;
       /**
        * Method Parameters: 
-       *  - (ByteBuffer arg0, float arg1): void
        *  - (ClimateColorInfo arg0, float arg1): void
+       *  - (ByteBuffer arg0, float arg1): void
        */
-      setOverride(arg0: java.nio.ByteBuffer | zombie.iso.weather.ClimateColorInfo, arg1: number): void;
+      setOverride(arg0: zombie.iso.weather.ClimateColorInfo | java.nio.ByteBuffer, arg1: number): void;
     }
     /**
      * @customConstructor ClimateFloat.new

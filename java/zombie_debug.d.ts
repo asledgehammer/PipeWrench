@@ -255,10 +255,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (DebugType arg0, LogSeverity arg1): boolean
        *  - (LogSeverity arg0, DebugType arg1): boolean
+       *  - (DebugType arg0, LogSeverity arg1): boolean
        */
-      static isLogEnabled(arg0: zombie.debug.DebugType | zombie.debug.LogSeverity, arg1: zombie.debug.LogSeverity | zombie.debug.DebugType): boolean;
+      static isLogEnabled(arg0: zombie.debug.LogSeverity | zombie.debug.DebugType, arg1: zombie.debug.DebugType | zombie.debug.LogSeverity): boolean;
       /**
        * @noSelf
        *

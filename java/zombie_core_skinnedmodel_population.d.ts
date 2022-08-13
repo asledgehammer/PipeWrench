@@ -277,10 +277,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (ClothingItem arg0, CharacterMask arg1): void
        *  - (ClothingItemReference arg0, CharacterMask arg1): void
+       *  - (ClothingItem arg0, CharacterMask arg1): void
        */
-      static tryGetCombinedMask(arg0: zombie.core.skinnedmodel.population.ClothingItem | zombie.core.skinnedmodel.population.ClothingItemReference, arg1: zombie.core.skinnedmodel.model.CharacterMask): void;
+      static tryGetCombinedMask(arg0: zombie.core.skinnedmodel.population.ClothingItemReference | zombie.core.skinnedmodel.population.ClothingItem, arg1: zombie.core.skinnedmodel.model.CharacterMask): void;
     }
     /**
      * @customConstructor ClothingItemReference.new
@@ -502,8 +502,8 @@ declare module 'PipeWrench' {
       Randomize(): void;
       /**
        * Method Parameters: 
-       *  - (Empty): any
        *  - (Empty): zombie.core.skinnedmodel.population.Outfit
+       *  - (Empty): any
        */
       clone(): any;
       /**

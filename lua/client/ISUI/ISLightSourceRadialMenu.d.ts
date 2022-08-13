@@ -30,7 +30,7 @@ import * as PipeWrench from 'PipeWrench';
 declare module 'PipeWrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISLightSourceRadialMenu:new */
-    export class ISLightSourceRadialMenu extends lua.shared.ISBaseObject.ISBaseObject {
+    export class ISLightSourceRadialMenu extends lua.shared.ISBaseObject {
       [id: string]: any;
       static [id: string]: any;
 
