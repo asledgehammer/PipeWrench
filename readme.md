@@ -31,6 +31,7 @@ We automate the release process using github actions. Version numbers are based 
 
 ```shell
 npm version 41.73.1
+git push --tags && git push
 ```
 
 # Support
