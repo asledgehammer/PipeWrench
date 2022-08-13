@@ -1,4 +1,7 @@
+
 # PipeWrench
+[![Test](https://github.com/asledgehammer/PipeWrench/actions/workflows/test.yml/badge.svg)](https://github.com/asledgehammer/PipeWrench/actions/workflows/test.yml)
+
 PipeWrench is a set of TypeScript definitions for both the Java API and Lua codebase for the game Project Zomboid.
 
 ## Advantages
