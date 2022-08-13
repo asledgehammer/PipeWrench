@@ -44,6 +44,23 @@ function patch_pipewrench() {
     }
 }
 
+function patch_ThermoDebug() {
+    console.log("Patching ThermoDebug.d.ts ...")
+    try {
+        const file = path.join(__dirname, "lua/client/DebugUIs/DebugMenu/Climate/ThermoDebug.d.ts")
+        let content = fs.readFileSync(file, 'utf-8')
+        let remove = `    export abstract class ThermoDebug {\n`
+           remove += `      static [id: string]: any;\n`
+           remove += `    }`
+        content = content.replace(remove, ``)
+
+        fs.writeFileSync(file, content)
+    }
+    catch(error) {
+        console.error(error)
+    }
+}
+
 function getAllFiles(dirPath, arrayOfFiles) {
     files = fs.readdirSync(dirPath)
 
@@ -90,4 +107,5 @@ function patch_ISBaseObject() {
 // Run
 patch_fmod_fmod()
 patch_pipewrench()
+patch_ThermoDebug()
 patch_ISBaseObject()

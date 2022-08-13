@@ -80,9 +80,7 @@ declare module 'PipeWrench' {
       static OnOpenPanel: () => any;
     }
 
-    export abstract class ThermoDebug {
-      static [id: string]: any;
-    }
+
   }
   export namespace lua.client.DebugUIs.DebugMenu.Climate.ThermoDebug {}
 }
