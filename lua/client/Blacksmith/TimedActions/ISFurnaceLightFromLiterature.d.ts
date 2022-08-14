@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Blacksmith.TimedActions {
     /** @customConstructor ISFurnaceLightFromLiterature:new */
     export class ISFurnaceLightFromLiterature extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -45,5 +45,5 @@ declare module 'PipeWrench' {
       constructor(character: any, item: any, lighter: any, furnace: any, fuelAmt: any, time: any);
     }
   }
-  export namespace lua.client.Blacksmith.TimedActions.ISFurnaceLightFromLiterature {}
+  export namespace lua.client.Blacksmith.TimedActions.ISFurnaceLightFromLiterature { }
 }

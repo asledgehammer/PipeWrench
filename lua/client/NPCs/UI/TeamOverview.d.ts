@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.NPCs.UI {
     /** @customConstructor TeamOverview:new */
     export class TeamOverview extends lua.client.ISUI.ISCollapsableWindow {
@@ -51,5 +51,5 @@ declare module 'PipeWrench' {
       drawMember: ((y: any, item: any, alt: any) => any) | any;
     }
   }
-  export namespace lua.client.NPCs.UI.TeamOverview {}
+  export namespace lua.client.NPCs.UI.TeamOverview { }
 }

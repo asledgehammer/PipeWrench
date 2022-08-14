@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.MetalDrum {
     /** @customConstructor SMetalDrumGlobalObject:new */
     export class SMetalDrumGlobalObject extends lua.server.Map.SGlobalObject {
@@ -69,5 +69,5 @@ declare module 'PipeWrench' {
       update: (() => any) | any;
     }
   }
-  export namespace lua.server.MetalDrum.SMetalDrumGlobalObject {}
+  export namespace lua.server.MetalDrum.SMetalDrumGlobalObject { }
 }

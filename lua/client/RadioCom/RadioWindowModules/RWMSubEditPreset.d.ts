@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.RadioCom.RadioWindowModules {
     /** @customConstructor RWMSubEditPreset:new */
     export class RWMSubEditPreset extends lua.client.ISUI.ISPanel {
@@ -85,5 +85,5 @@ declare module 'PipeWrench' {
       setValues: ((name: any, freq: any, min: any, max: any, step: any, shift: any) => any) | any;
     }
   }
-  export namespace lua.client.RadioCom.RadioWindowModules.RWMSubEditPreset {}
+  export namespace lua.client.RadioCom.RadioWindowModules.RWMSubEditPreset { }
 }

@@ -27,7 +27,7 @@
 /// <reference path="../../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.DebugUIs.DebugMenu.Puddles {
     /** @customConstructor PuddlesControl:new */
     export class PuddlesControl extends lua.client.DebugUIs.DebugMenu.Base.ISDebugSubPanelBase {
@@ -77,5 +77,5 @@ declare module 'PipeWrench' {
       update: (() => any) | any;
     }
   }
-  export namespace lua.client.DebugUIs.DebugMenu.Puddles.PuddlesControl {}
+  export namespace lua.client.DebugUIs.DebugMenu.Puddles.PuddlesControl { }
 }

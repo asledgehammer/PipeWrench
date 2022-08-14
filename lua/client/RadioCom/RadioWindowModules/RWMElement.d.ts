@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.RadioCom.RadioWindowModules {
     /** @customConstructor RWMElement:new */
     export class RWMElement extends lua.client.ISUI.ISPanelJoypad {
@@ -95,5 +95,5 @@ declare module 'PipeWrench' {
       setFocus: ((_playerNum: any, _radioParent: any) => any) | any;
     }
   }
-  export namespace lua.client.RadioCom.RadioWindowModules.RWMElement {}
+  export namespace lua.client.RadioCom.RadioWindowModules.RWMElement { }
 }

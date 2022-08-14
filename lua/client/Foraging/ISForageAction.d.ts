@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Foraging {
     /** @customConstructor ISForageAction:new */
     export class ISForageAction extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -55,5 +55,5 @@ declare module 'PipeWrench' {
       forage: (() => any) | any;
     }
   }
-  export namespace lua.client.Foraging.ISForageAction {}
+  export namespace lua.client.Foraging.ISForageAction { }
 }

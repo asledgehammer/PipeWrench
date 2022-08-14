@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISColorPicker:new */
     export class ISColorPicker extends lua.client.ISUI.ISPanelJoypad {
@@ -71,5 +71,5 @@ declare module 'PipeWrench' {
       setPickedFunc: ((func: any, arg1: any, arg2: any, arg3: any, arg4: any) => any) | any;
     }
   }
-  export namespace lua.client.ISUI.ISColorPicker {}
+  export namespace lua.client.ISUI.ISColorPicker { }
 }

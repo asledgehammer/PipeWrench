@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor CoopOptionsScreen:new */
     export class CoopOptionsScreen extends lua.client.ISUI.ISPanelJoypad {
@@ -169,5 +169,5 @@ declare module 'PipeWrench' {
       static username: any;
     }
   }
-  export namespace lua.client.OptionScreens.CoopOptionsScreen {}
+  export namespace lua.client.OptionScreens.CoopOptionsScreen { }
 }

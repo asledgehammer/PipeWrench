@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor CoopCharacterCreationProfession:new */
     export class CoopCharacterCreationProfession extends lua.client.OptionScreens.CharacterCreationProfession {
@@ -37,5 +37,5 @@ declare module 'PipeWrench' {
       constructor(x: any, y: any, width: any, height: any);
     }
   }
-  export namespace lua.client.OptionScreens.CoopCharacterCreationProfession {}
+  export namespace lua.client.OptionScreens.CoopCharacterCreationProfession { }
 }

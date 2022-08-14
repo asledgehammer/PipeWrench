@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI.PlayerStats {
     /** @customConstructor ISPlayerStatsManageInvUI:new */
     export class ISPlayerStatsManageInvUI extends lua.client.ISUI.ISPanel {
@@ -74,5 +74,5 @@ declare module 'PipeWrench' {
       static ReceiveItems: (itemtable: any) => any;
     }
   }
-  export namespace lua.client.ISUI.PlayerStats.ISPlayerStatsManageInvUI {}
+  export namespace lua.client.ISUI.PlayerStats.ISPlayerStatsManageInvUI { }
 }

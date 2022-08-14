@@ -27,7 +27,7 @@
 /// <reference path="../../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI.Maps.Editor {
     /** @customConstructor WorldMapEditorResizer:new */
     export class WorldMapEditorResizer extends lua.shared.ISBaseObject {
@@ -73,5 +73,5 @@ declare module 'PipeWrench' {
       startResizing: (() => any) | any;
     }
   }
-  export namespace lua.client.ISUI.Maps.Editor.WorldMapEditorResizer {}
+  export namespace lua.client.ISUI.Maps.Editor.WorldMapEditorResizer { }
 }

@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.TimedActions {
     /** @customConstructor ISDumpWaterAction:new */
     export class ISDumpWaterAction extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -45,5 +45,5 @@ declare module 'PipeWrench' {
       stopSound: (() => any) | any;
     }
   }
-  export namespace lua.client.TimedActions.ISDumpWaterAction {}
+  export namespace lua.client.TimedActions.ISDumpWaterAction { }
 }

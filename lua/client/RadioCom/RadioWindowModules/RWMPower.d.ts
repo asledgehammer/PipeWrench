@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.RadioCom.RadioWindowModules {
     /** @customConstructor RWMPower:new */
     export class RWMPower extends lua.client.RadioCom.RadioWindowModules.RWMPanel {
@@ -59,5 +59,5 @@ declare module 'PipeWrench' {
       verifyItem: ((_item: any) => any) | any;
     }
   }
-  export namespace lua.client.RadioCom.RadioWindowModules.RWMPower {}
+  export namespace lua.client.RadioCom.RadioWindowModules.RWMPower { }
 }

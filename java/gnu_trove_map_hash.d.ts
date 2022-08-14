@@ -25,7 +25,7 @@
 
 /**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace gnu.trove.map.hash {
     export type THashMap<K, V> = any;
     export type TShortObjectHashMap<V> = any;

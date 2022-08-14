@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISRainPanel:new */
     export class ISRainPanel extends lua.client.ISUI.ISPanel {

@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Fishing.TimedActions {
     /** @customConstructor ISFishingAction:new */
     export class ISFishingAction extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -84,5 +84,5 @@ declare module 'PipeWrench' {
       static getFishingZoneFixed: (x: any, y: any, z: any) => any;
     }
   }
-  export namespace lua.client.Fishing.TimedActions.ISFishingAction {}
+  export namespace lua.client.Fishing.TimedActions.ISFishingAction { }
 }

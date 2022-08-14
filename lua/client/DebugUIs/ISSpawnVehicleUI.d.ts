@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.DebugUIs {
     /** @customConstructor ISSpawnVehicleUI:new */
     export class ISSpawnVehicleUI extends lua.client.ISUI.ISPanelJoypad {
@@ -73,5 +73,5 @@ declare module 'PipeWrench' {
       update: (() => any) | any;
     }
   }
-  export namespace lua.client.DebugUIs.ISSpawnVehicleUI {}
+  export namespace lua.client.DebugUIs.ISSpawnVehicleUI { }
 }

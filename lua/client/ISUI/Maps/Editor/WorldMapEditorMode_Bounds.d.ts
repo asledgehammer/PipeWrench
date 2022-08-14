@@ -27,7 +27,7 @@
 /// <reference path="../../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI.Maps.Editor {
     /** @customConstructor WorldMapEditorMode_Bounds:new */
     export class WorldMapEditorMode_Bounds extends lua.client.ISUI.Maps.Editor.WorldMapEditorMode {
@@ -69,5 +69,5 @@ declare module 'PipeWrench' {
       snap: ((xy: any) => any) | any;
     }
   }
-  export namespace lua.client.ISUI.Maps.Editor.WorldMapEditorMode_Bounds {}
+  export namespace lua.client.ISUI.Maps.Editor.WorldMapEditorMode_Bounds { }
 }

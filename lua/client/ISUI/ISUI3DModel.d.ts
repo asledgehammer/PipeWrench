@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISUI3DModel:new */
     export class ISUI3DModel extends lua.client.ISUI.ISUIElement {
@@ -73,5 +73,5 @@ declare module 'PipeWrench' {
       setZoom: ((zoom: any) => any) | any;
     }
   }
-  export namespace lua.client.ISUI.ISUI3DModel {}
+  export namespace lua.client.ISUI.ISUI3DModel { }
 }

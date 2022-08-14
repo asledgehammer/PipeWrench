@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.DebugUIs.DebugChunkState {
     /** @customConstructor DebugChunkStateUI:new */
     export class DebugChunkStateUI extends lua.client.ISUI.ISPanel {
@@ -129,5 +129,5 @@ declare module 'PipeWrench' {
       onTickBox: ((index: any, selected: any) => any) | any;
     }
   }
-  export namespace lua.client.DebugUIs.DebugChunkState.DebugChunkStateUI {}
+  export namespace lua.client.DebugUIs.DebugChunkState.DebugChunkStateUI { }
 }

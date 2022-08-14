@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
-  export namespace lua.client.DebugUIs.Scenarios {}
-  export namespace lua.client.DebugUIs.Scenarios.TurboSaveTest {}
+declare module '@shughesuk/pipewrench' {
+  export namespace lua.client.DebugUIs.Scenarios { }
+  export namespace lua.client.DebugUIs.Scenarios.TurboSaveTest { }
 }

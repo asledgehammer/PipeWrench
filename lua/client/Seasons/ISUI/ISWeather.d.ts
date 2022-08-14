@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Seasons.ISUI {
     /** @customConstructor ISWeather:new */
     export class ISWeather extends lua.client.ISUI.ISPanel {
@@ -49,5 +49,5 @@ declare module 'PipeWrench' {
       removeMoon: (() => any) | any;
     }
   }
-  export namespace lua.client.Seasons.ISUI.ISWeather {}
+  export namespace lua.client.Seasons.ISUI.ISWeather { }
 }

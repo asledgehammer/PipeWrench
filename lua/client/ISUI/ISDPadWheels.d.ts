@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI {
     export abstract class ISDPadWheels {
       static [id: string]: any;
@@ -54,5 +54,5 @@ declare module 'PipeWrench' {
       static onToggleLight: (playerObj: any, item: any) => any;
     }
   }
-  export namespace lua.client.ISUI.ISDPadWheels {}
+  export namespace lua.client.ISUI.ISDPadWheels { }
 }

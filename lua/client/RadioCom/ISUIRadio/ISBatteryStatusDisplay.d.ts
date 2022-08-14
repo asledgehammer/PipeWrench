@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.RadioCom.ISUIRadio {
     /** @customConstructor ISBatteryStatusDisplay:new */
     export class ISBatteryStatusDisplay extends lua.client.ISUI.ISPanel {
@@ -63,5 +63,5 @@ declare module 'PipeWrench' {
       update: (() => any) | any;
     }
   }
-  export namespace lua.client.RadioCom.ISUIRadio.ISBatteryStatusDisplay {}
+  export namespace lua.client.RadioCom.ISUIRadio.ISBatteryStatusDisplay { }
 }

@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.BuildingObjects.ISUI {
     export abstract class ISInventoryBuildMenu {
       static [id: string]: any;
@@ -48,5 +48,5 @@ declare module 'PipeWrench' {
       static onTakeThing: (playerObj: any, groundType: any) => any;
     }
   }
-  export namespace lua.client.BuildingObjects.ISUI.ISInventoryBuildMenu {}
+  export namespace lua.client.BuildingObjects.ISUI.ISInventoryBuildMenu { }
 }

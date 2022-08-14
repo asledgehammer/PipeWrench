@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.Camping {
     export abstract class campingFuelCategory {
       static [id: string]: any;
@@ -45,5 +45,5 @@ declare module 'PipeWrench' {
       static [id: string]: any;
     }
   }
-  export namespace lua.server.Camping.camping_fuel {}
+  export namespace lua.server.Camping.camping_fuel { }
 }

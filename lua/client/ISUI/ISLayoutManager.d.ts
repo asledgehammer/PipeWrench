@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI {
     export abstract class ISLayoutManager {
       static [id: string]: any;
@@ -71,5 +71,5 @@ declare module 'PipeWrench' {
       static WriteIni: () => any;
     }
   }
-  export namespace lua.client.ISUI.ISLayoutManager {}
+  export namespace lua.client.ISUI.ISLayoutManager { }
 }

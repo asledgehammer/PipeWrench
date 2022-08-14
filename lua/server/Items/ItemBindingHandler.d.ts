@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.Items {
     export abstract class ItemBindingHandler {
       static [id: string]: any;
@@ -39,5 +39,5 @@ declare module 'PipeWrench' {
       static toggleLight: (key: any) => any;
     }
   }
-  export namespace lua.server.Items.ItemBindingHandler {}
+  export namespace lua.server.Items.ItemBindingHandler { }
 }

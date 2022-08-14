@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI.AdminPanel {
     /** @customConstructor ISServerSandboxOptionsUI:new */
     export class ISServerSandboxOptionsUI extends lua.client.ISUI.ISPanelJoypad {
@@ -69,5 +69,5 @@ declare module 'PipeWrench' {
       settingsToUI: ((options: any) => any) | any;
     }
   }
-  export namespace lua.client.ISUI.AdminPanel.ISServerSandboxOptionsUI {}
+  export namespace lua.client.ISUI.AdminPanel.ISServerSandboxOptionsUI { }
 }

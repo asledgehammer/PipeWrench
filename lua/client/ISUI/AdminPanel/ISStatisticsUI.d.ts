@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI.AdminPanel {
     /** @customConstructor ISStatisticsUI:new */
     export class ISStatisticsUI extends lua.client.ISUI.ISCollapsableWindow {
@@ -45,5 +45,5 @@ declare module 'PipeWrench' {
       constructor(x: any, y: any, player: any);
     }
   }
-  export namespace lua.client.ISUI.AdminPanel.ISStatisticsUI {}
+  export namespace lua.client.ISUI.AdminPanel.ISStatisticsUI { }
 }

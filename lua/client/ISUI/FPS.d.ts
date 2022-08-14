@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI {
     export abstract class ISFPS {
       static [id: string]: any;
@@ -38,5 +38,5 @@ declare module 'PipeWrench' {
       static onKeyPressed: (key: any) => any;
     }
   }
-  export namespace lua.client.ISUI.FPS {}
+  export namespace lua.client.ISUI.FPS { }
 }

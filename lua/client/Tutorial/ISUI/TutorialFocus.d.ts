@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Tutorial.ISUI {
     /** @customConstructor TutorialFocus:new */
     export class TutorialFocus extends lua.client.ISUI.ISPanel {
@@ -65,5 +65,5 @@ declare module 'PipeWrench' {
       static unset: () => any;
     }
   }
-  export namespace lua.client.Tutorial.ISUI.TutorialFocus {}
+  export namespace lua.client.Tutorial.ISUI.TutorialFocus { }
 }

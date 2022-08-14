@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor PublicServerList:new */
     export class PublicServerList extends lua.client.ISUI.ISPanelJoypad {
@@ -194,5 +194,5 @@ declare module 'PipeWrench' {
       static OnSteamServerResponded: (serverIndex: any) => any;
     }
   }
-  export namespace lua.client.OptionScreens.PublicServerList {}
+  export namespace lua.client.OptionScreens.PublicServerList { }
 }

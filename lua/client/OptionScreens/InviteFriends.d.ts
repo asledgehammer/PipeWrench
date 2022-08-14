@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor InviteFriends:new */
     export class InviteFriends extends lua.client.ISUI.ISPanelJoypad {
@@ -96,5 +96,5 @@ declare module 'PipeWrench' {
       static OnSteamFriendStatusChanged: (steamID: any) => any;
     }
   }
-  export namespace lua.client.OptionScreens.InviteFriends {}
+  export namespace lua.client.OptionScreens.InviteFriends { }
 }

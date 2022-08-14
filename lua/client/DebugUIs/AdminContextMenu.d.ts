@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.DebugUIs {
     export abstract class AdminContextMenu {
       static [id: string]: any;
@@ -81,5 +81,5 @@ declare module 'PipeWrench' {
       static setForceLockDoor: (worldobjects: any, door: any, player: any) => any;
     }
   }
-  export namespace lua.client.DebugUIs.AdminContextMenu {}
+  export namespace lua.client.DebugUIs.AdminContextMenu { }
 }

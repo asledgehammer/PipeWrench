@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.TimedActions {
     /** @customConstructor ISAddFuel:new */
     export class ISAddFuel extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -43,5 +43,5 @@ declare module 'PipeWrench' {
       constructor(character: any, generator: any, petrolCan: any, time: any);
     }
   }
-  export namespace lua.client.TimedActions.ISAddFuel {}
+  export namespace lua.client.TimedActions.ISAddFuel { }
 }

@@ -25,7 +25,7 @@
 
 /**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace fmod.fmod {
     export type Audio = any;
     /** [ENUM] fmod.fmod.EmitterType */

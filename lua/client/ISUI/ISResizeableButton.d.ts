@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISResizableButton:new */
     export class ISResizableButton extends lua.client.ISUI.ISButton {
@@ -53,5 +53,5 @@ declare module 'PipeWrench' {
       resize: ((width: any) => any) | any;
     }
   }
-  export namespace lua.client.ISUI.ISResizeableButton {}
+  export namespace lua.client.ISUI.ISResizeableButton { }
 }

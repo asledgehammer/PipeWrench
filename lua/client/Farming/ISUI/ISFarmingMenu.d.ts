@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Farming.ISUI {
     export abstract class ISFarmingMenu {
       static [id: string]: any;
@@ -124,5 +124,5 @@ declare module 'PipeWrench' {
       static walkToPlant: (playerObj: any, square: any) => any;
     }
   }
-  export namespace lua.client.Farming.ISUI.ISFarmingMenu {}
+  export namespace lua.client.Farming.ISUI.ISFarmingMenu { }
 }

@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.TimedActions {
     /** @customConstructor ISReadABook:new */
     export class ISReadABook extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -55,5 +55,5 @@ declare module 'PipeWrench' {
       static checkMultiplier: (self: any) => any;
     }
   }
-  export namespace lua.client.TimedActions.ISReadABook {}
+  export namespace lua.client.TimedActions.ISReadABook { }
 }

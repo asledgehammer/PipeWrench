@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI.Maps {
     /** @customConstructor ISMap:new */
     export class ISMap extends lua.client.ISUI.ISPanelJoypad {
@@ -145,5 +145,5 @@ declare module 'PipeWrench' {
       setVisible: ((bVisible: any) => any) | any;
     }
   }
-  export namespace lua.client.ISUI.Maps.ISMap {}
+  export namespace lua.client.ISUI.Maps.ISMap { }
 }

@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.HealthSystem {
     export abstract class healthUpdate {
       static [id: string]: any;
@@ -42,5 +42,5 @@ declare module 'PipeWrench' {
       static update: () => any;
     }
   }
-  export namespace lua.server.HealthSystem.HealthUpdate {}
+  export namespace lua.server.HealthSystem.HealthUpdate { }
 }

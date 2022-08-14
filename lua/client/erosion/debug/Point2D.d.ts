@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.erosion.debug {
     export abstract class Point2D {
       static [id: string]: any;
@@ -35,5 +35,5 @@ declare module 'PipeWrench' {
       new: ((_x: any, _y: any) => any) | any;
     }
   }
-  export namespace lua.client.erosion.debug.Point2D {}
+  export namespace lua.client.erosion.debug.Point2D { }
 }

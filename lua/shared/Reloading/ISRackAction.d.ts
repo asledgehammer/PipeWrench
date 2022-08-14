@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.shared.Reloading {
     /** @customConstructor ISRackAction:new */
     export class ISRackAction extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -45,5 +45,5 @@ declare module 'PipeWrench' {
       constructor(reloadManager: any, char: any, square: any, time: any);
     }
   }
-  export namespace lua.shared.Reloading.ISRackAction {}
+  export namespace lua.shared.Reloading.ISRackAction { }
 }

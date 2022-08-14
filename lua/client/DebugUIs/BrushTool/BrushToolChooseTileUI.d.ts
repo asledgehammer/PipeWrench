@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.DebugUIs.BrushTool {
     /** @customConstructor BrushToolChooseTileUI:new */
     export class BrushToolChooseTileUI extends lua.client.ISUI.ISCollapsableWindow {
@@ -80,5 +80,5 @@ declare module 'PipeWrench' {
       render: (() => any) | any;
     }
   }
-  export namespace lua.client.DebugUIs.BrushTool.BrushToolChooseTileUI {}
+  export namespace lua.client.DebugUIs.BrushTool.BrushToolChooseTileUI { }
 }

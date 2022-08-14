@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.shared.Foraging {
     export abstract class forageSystem {
       static [id: string]: any;
@@ -276,5 +276,5 @@ declare module 'PipeWrench' {
       static zoneIntersects: (_zoneData: any, _x: any, _y: any, _z: any, _w: any, _h: any) => any;
     }
   }
-  export namespace lua.shared.Foraging.forageSystem {}
+  export namespace lua.shared.Foraging.forageSystem { }
 }

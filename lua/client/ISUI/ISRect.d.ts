@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISRect:new */
     export class ISRect extends lua.client.ISUI.ISUIElement {
@@ -45,5 +45,5 @@ declare module 'PipeWrench' {
       constructor(x: any, y: any, width: any, height: any, a: any, r: any, g: any, b: any);
     }
   }
-  export namespace lua.client.ISUI.ISRect {}
+  export namespace lua.client.ISUI.ISRect { }
 }

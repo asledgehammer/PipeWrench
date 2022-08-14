@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.JoyPad {
     /** @customConstructor ISJoypadDebugUI:new */
     export class ISJoypadDebugUI extends lua.client.ISUI.ISUIElement {
@@ -39,5 +39,5 @@ declare module 'PipeWrench' {
       addLine: ((x1: any, x2: any, y: any, label: any, value: any) => any) | any;
     }
   }
-  export namespace lua.client.JoyPad.ISJoypadDebugUI {}
+  export namespace lua.client.JoyPad.ISJoypadDebugUI { }
 }

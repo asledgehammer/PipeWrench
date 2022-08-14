@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISPostDeathUI:new */
     export class ISPostDeathUI extends lua.client.ISUI.ISPanelJoypad {
@@ -84,5 +84,5 @@ declare module 'PipeWrench' {
       static OnPlayerDeath: (playerObj: any) => any;
     }
   }
-  export namespace lua.client.ISUI.ISPostDeathUI {}
+  export namespace lua.client.ISUI.ISPostDeathUI { }
 }

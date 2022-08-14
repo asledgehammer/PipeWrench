@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI.AdminPanel {
     /** @customConstructor ISAdmPanelWeather:new */
     export class ISAdmPanelWeather extends lua.client.DebugUIs.DebugMenu.Base.ISDebugSubPanelBase {
@@ -67,5 +67,5 @@ declare module 'PipeWrench' {
       onTicked: ((_index: any, _selected: any, _arg1: any, _arg2: any, _tickbox: any) => any) | any;
     }
   }
-  export namespace lua.client.ISUI.AdminPanel.ISAdmPanelWeather {}
+  export namespace lua.client.ISUI.AdminPanel.ISAdmPanelWeather { }
 }

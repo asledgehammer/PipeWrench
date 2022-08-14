@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
-  export namespace lua.shared.StashDescriptions {}
-  export namespace lua.shared.StashDescriptions.MulStashDesc {}
+declare module '@shughesuk/pipewrench' {
+  export namespace lua.shared.StashDescriptions { }
+  export namespace lua.shared.StashDescriptions.MulStashDesc { }
 }

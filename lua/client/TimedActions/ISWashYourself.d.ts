@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.TimedActions {
     /** @customConstructor ISWashYourself:new */
     export class ISWashYourself extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -59,5 +59,5 @@ declare module 'PipeWrench' {
       static GetRequiredWater: (character: any) => any;
     }
   }
-  export namespace lua.client.TimedActions.ISWashYourself {}
+  export namespace lua.client.TimedActions.ISWashYourself { }
 }

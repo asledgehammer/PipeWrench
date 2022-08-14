@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Traps {
     /** @customConstructor CTrapGlobalObject:new */
     export class CTrapGlobalObject extends lua.client.Map.CGlobalObject {
@@ -43,5 +43,5 @@ declare module 'PipeWrench' {
       checkForWallExploit: ((square: any) => any) | any;
     }
   }
-  export namespace lua.client.Traps.CTrapGlobalObject {}
+  export namespace lua.client.Traps.CTrapGlobalObject { }
 }

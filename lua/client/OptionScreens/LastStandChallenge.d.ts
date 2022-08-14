@@ -27,11 +27,11 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.OptionScreens {
     export abstract class LastStandChallenge {
       static [id: string]: any;
     }
   }
-  export namespace lua.client.OptionScreens.LastStandChallenge {}
+  export namespace lua.client.OptionScreens.LastStandChallenge { }
 }

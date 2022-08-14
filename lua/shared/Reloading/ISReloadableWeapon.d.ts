@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.shared.Reloading {
     /** @customConstructor ISReloadableWeapon:new */
     export class ISReloadableWeapon extends lua.shared.Reloading.ISReloadable {
@@ -39,5 +39,5 @@ declare module 'PipeWrench' {
       constructor();
     }
   }
-  export namespace lua.shared.Reloading.ISReloadableWeapon {}
+  export namespace lua.shared.Reloading.ISReloadableWeapon { }
 }

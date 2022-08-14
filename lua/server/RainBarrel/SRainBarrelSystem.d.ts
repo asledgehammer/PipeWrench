@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.RainBarrel {
     /** @customConstructor SRainBarrelSystem:new */
     export class SRainBarrelSystem extends lua.server.Map.SGlobalObjectSystem {
@@ -41,5 +41,5 @@ declare module 'PipeWrench' {
       convertOldModData: (() => any) | any;
     }
   }
-  export namespace lua.server.RainBarrel.SRainBarrelSystem {}
+  export namespace lua.server.RainBarrel.SRainBarrelSystem { }
 }

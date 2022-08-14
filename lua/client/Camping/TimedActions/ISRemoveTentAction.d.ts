@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Camping.TimedActions {
     /** @customConstructor ISRemoveTentAction:new */
     export class ISRemoveTentAction extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -39,5 +39,5 @@ declare module 'PipeWrench' {
       constructor(character: any, tent: any, time: any);
     }
   }
-  export namespace lua.client.Camping.TimedActions.ISRemoveTentAction {}
+  export namespace lua.client.Camping.TimedActions.ISRemoveTentAction { }
 }

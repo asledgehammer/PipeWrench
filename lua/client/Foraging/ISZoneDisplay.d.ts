@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Foraging {
     /** @customConstructor ISZoneDisplay:new */
     export class ISZoneDisplay extends lua.client.ISUI.ISPanel {
@@ -151,5 +151,5 @@ declare module 'PipeWrench' {
       updateTooltip: (() => any) | any;
     }
   }
-  export namespace lua.client.Foraging.ISZoneDisplay {}
+  export namespace lua.client.Foraging.ISZoneDisplay { }
 }

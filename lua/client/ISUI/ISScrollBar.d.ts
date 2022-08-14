@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISScrollBar:new */
     export class ISScrollBar extends lua.client.ISUI.ISUIElement {
@@ -65,5 +65,5 @@ declare module 'PipeWrench' {
       updatePos: (() => any) | any;
     }
   }
-  export namespace lua.client.ISUI.ISScrollBar {}
+  export namespace lua.client.ISUI.ISScrollBar { }
 }

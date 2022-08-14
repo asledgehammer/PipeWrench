@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.RadioCom.StoryLineSounds {
     /** @customConstructor ISSLEvent:new */
     export class ISSLEvent extends lua.client.ISUI.ISPanel {
@@ -59,5 +59,5 @@ declare module 'PipeWrench' {
       update: (() => any) | any;
     }
   }
-  export namespace lua.client.RadioCom.StoryLineSounds.ISSLEvent {}
+  export namespace lua.client.RadioCom.StoryLineSounds.ISSLEvent { }
 }

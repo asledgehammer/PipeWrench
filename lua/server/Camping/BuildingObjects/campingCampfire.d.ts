@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.Camping.BuildingObjects {
     /** @customConstructor campingCampfire:new */
     export class campingCampfire extends lua.server.BuildingObjects.ISBuildingObject {
@@ -47,5 +47,5 @@ declare module 'PipeWrench' {
       isSquareFree: ((square: any) => any) | any;
     }
   }
-  export namespace lua.server.Camping.BuildingObjects.campingCampfire {}
+  export namespace lua.server.Camping.BuildingObjects.campingCampfire { }
 }

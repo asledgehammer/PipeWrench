@@ -27,7 +27,7 @@
 /// <reference path="../../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.DebugUIs.DebugMenu.General {
     /** @customConstructor ISDebugBlood:new */
     export class ISDebugBlood extends lua.client.DebugUIs.DebugMenu.Base.ISDebugSubPanelBase {
@@ -55,5 +55,5 @@ declare module 'PipeWrench' {
       setSliderValues: (() => any) | any;
     }
   }
-  export namespace lua.client.DebugUIs.DebugMenu.General.ISDebugBlood {}
+  export namespace lua.client.DebugUIs.DebugMenu.General.ISDebugBlood { }
 }

@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISServerSavingMessage:new */
     export class ISServerSavingMessage extends lua.client.ISUI.ISPanelJoypad {
@@ -51,5 +51,5 @@ declare module 'PipeWrench' {
       static showSavingFinishMessage: () => any;
     }
   }
-  export namespace lua.client.ISUI.ISServerSavingMessage {}
+  export namespace lua.client.ISUI.ISServerSavingMessage { }
 }

@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Map {
     /** @customConstructor CGlobalObject:new */
     export class CGlobalObject extends lua.shared.ISBaseObject {
@@ -57,5 +57,5 @@ declare module 'PipeWrench' {
       updateFromIsoObject: (() => any) | any;
     }
   }
-  export namespace lua.client.Map.CGlobalObject {}
+  export namespace lua.client.Map.CGlobalObject { }
 }

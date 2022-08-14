@@ -27,7 +27,7 @@
 /// <reference path="../../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.DebugUIs.DebugMenu.IsoRegions {
     /** @customConstructor IsoRegionLogWindow:new */
     export class IsoRegionLogWindow extends lua.client.ISUI.ISPanel {
@@ -66,5 +66,5 @@ declare module 'PipeWrench' {
       static OnOpenPanel: () => any;
     }
   }
-  export namespace lua.client.DebugUIs.DebugMenu.IsoRegions.IsoRegionLogWindow {}
+  export namespace lua.client.DebugUIs.DebugMenu.IsoRegions.IsoRegionLogWindow { }
 }

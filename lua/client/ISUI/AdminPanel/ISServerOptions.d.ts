@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI.AdminPanel {
     /** @customConstructor ISServerOptions:new */
     export class ISServerOptions extends lua.client.ISUI.ISPanel {
@@ -77,5 +77,5 @@ declare module 'PipeWrench' {
       setVisible: ((visible: any) => any) | any;
     }
   }
-  export namespace lua.client.ISUI.AdminPanel.ISServerOptions {}
+  export namespace lua.client.ISUI.AdminPanel.ISServerOptions { }
 }

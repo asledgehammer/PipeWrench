@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.LastStand {
     export abstract class Studio {
       static [id: string]: any;
@@ -57,5 +57,5 @@ declare module 'PipeWrench' {
       static Render: () => any;
     }
   }
-  export namespace lua.client.LastStand.Studio {}
+  export namespace lua.client.LastStand.Studio { }
 }

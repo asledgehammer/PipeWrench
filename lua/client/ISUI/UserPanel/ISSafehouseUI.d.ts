@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI.UserPanel {
     /** @customConstructor ISSafehouseUI:new */
     export class ISSafehouseUI extends lua.client.ISUI.ISPanel {
@@ -116,5 +116,5 @@ declare module 'PipeWrench' {
       static ReceiveSafehouseInvite: (safehouse: any, host: any) => any;
     }
   }
-  export namespace lua.client.ISUI.UserPanel.ISSafehouseUI {}
+  export namespace lua.client.ISUI.UserPanel.ISSafehouseUI { }
 }

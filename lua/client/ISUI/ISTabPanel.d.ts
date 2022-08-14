@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISTabPanel:new */
     export class ISTabPanel extends lua.client.ISUI.ISPanel {
@@ -132,5 +132,5 @@ declare module 'PipeWrench' {
       static redoTab: (self: any) => any;
     }
   }
-  export namespace lua.client.ISUI.ISTabPanel {}
+  export namespace lua.client.ISUI.ISTabPanel { }
 }

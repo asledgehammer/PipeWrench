@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI.PlayerStats {
     /** @customConstructor ISPlayerStatsUserlogUI:new */
     export class ISPlayerStatsUserlogUI extends lua.client.ISUI.ISPanel {
@@ -81,5 +81,5 @@ declare module 'PipeWrench' {
       static receiveUserLog: (username: any, logs: any) => any;
     }
   }
-  export namespace lua.client.ISUI.PlayerStats.ISPlayerStatsUserlogUI {}
+  export namespace lua.client.ISUI.PlayerStats.ISPlayerStatsUserlogUI { }
 }

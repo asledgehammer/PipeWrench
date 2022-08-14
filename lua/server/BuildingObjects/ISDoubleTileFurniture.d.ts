@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.BuildingObjects {
     /** @customConstructor ISDoubleTileFurniture:new */
     export class ISDoubleTileFurniture extends lua.server.BuildingObjects.ISBuildingObject {
@@ -57,5 +57,5 @@ declare module 'PipeWrench' {
       setInfo: ((square: any, north: any, sprite: any) => any) | any;
     }
   }
-  export namespace lua.server.BuildingObjects.ISDoubleTileFurniture {}
+  export namespace lua.server.BuildingObjects.ISDoubleTileFurniture { }
 }

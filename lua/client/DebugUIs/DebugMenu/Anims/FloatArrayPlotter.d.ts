@@ -27,7 +27,7 @@
 /// <reference path="../../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.DebugUIs.DebugMenu.Anims {
     /** @customConstructor FloatArrayPlotter:new */
     export class FloatArrayPlotter extends lua.client.ISUI.ISPanel {
@@ -69,5 +69,5 @@ declare module 'PipeWrench' {
       update: (() => any) | any;
     }
   }
-  export namespace lua.client.DebugUIs.DebugMenu.Anims.FloatArrayPlotter {}
+  export namespace lua.client.DebugUIs.DebugMenu.Anims.FloatArrayPlotter { }
 }

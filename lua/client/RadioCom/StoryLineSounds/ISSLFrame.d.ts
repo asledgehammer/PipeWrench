@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.RadioCom.StoryLineSounds {
     /** @customConstructor ISSLFrame:new */
     export class ISSLFrame extends lua.client.ISUI.ISPanel {
@@ -89,5 +89,5 @@ declare module 'PipeWrench' {
       updateVisualGrid: (() => any) | any;
     }
   }
-  export namespace lua.client.RadioCom.StoryLineSounds.ISSLFrame {}
+  export namespace lua.client.RadioCom.StoryLineSounds.ISSLFrame { }
 }

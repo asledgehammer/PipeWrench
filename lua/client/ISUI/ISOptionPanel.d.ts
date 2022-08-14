@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISOptionPanel:new */
     export class ISOptionPanel extends lua.client.ISUI.ISPanel {
@@ -57,5 +57,5 @@ declare module 'PipeWrench' {
       addCombo: ((name: any, options: any, selected: any, target: any, onchange: any) => any) | any;
     }
   }
-  export namespace lua.client.ISUI.ISOptionPanel {}
+  export namespace lua.client.ISUI.ISOptionPanel { }
 }

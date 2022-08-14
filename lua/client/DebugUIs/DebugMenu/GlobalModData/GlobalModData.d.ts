@@ -27,7 +27,7 @@
 /// <reference path="../../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.DebugUIs.DebugMenu.GlobalModData {
     /** @customConstructor GlobalModDataDebug:new */
     export class GlobalModDataDebug extends lua.client.ISUI.ISPanel {
@@ -78,5 +78,5 @@ declare module 'PipeWrench' {
       static OnOpenPanel: () => any;
     }
   }
-  export namespace lua.client.DebugUIs.DebugMenu.GlobalModData.GlobalModData {}
+  export namespace lua.client.DebugUIs.DebugMenu.GlobalModData.GlobalModData { }
 }

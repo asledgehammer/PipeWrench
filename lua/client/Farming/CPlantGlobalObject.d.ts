@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Farming {
     /** @customConstructor CPlantGlobalObject:new */
     export class CPlantGlobalObject extends lua.client.Map.CGlobalObject {
@@ -43,5 +43,5 @@ declare module 'PipeWrench' {
       isAlive: (() => any) | any;
     }
   }
-  export namespace lua.client.Farming.CPlantGlobalObject {}
+  export namespace lua.client.Farming.CPlantGlobalObject { }
 }

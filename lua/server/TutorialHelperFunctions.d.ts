@@ -27,7 +27,7 @@
 /// <reference path="../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server {
     export abstract class TutorialHelperFunctions {
       static [id: string]: any;
@@ -36,5 +36,5 @@ declare module 'PipeWrench' {
       static replaceInContainer: (x: any, y: any, z: any, type: any, items: any) => any;
     }
   }
-  export namespace lua.server.TutorialHelperFunctions {}
+  export namespace lua.server.TutorialHelperFunctions { }
 }

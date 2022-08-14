@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.Movers.MoverStates {
     /** @customConstructor MoveToState:new */
     export class MoveToState extends lua.server.Movers.MoverStates.ISBaseState {
@@ -47,5 +47,5 @@ declare module 'PipeWrench' {
       setTarget: ((x: any, y: any, z: any) => any) | any;
     }
   }
-  export namespace lua.server.Movers.MoverStates.MoveToState {}
+  export namespace lua.server.Movers.MoverStates.MoveToState { }
 }

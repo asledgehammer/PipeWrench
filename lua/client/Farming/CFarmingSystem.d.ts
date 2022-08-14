@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Farming {
     /** @customConstructor CFarmingSystem:new */
     export class CFarmingSystem extends lua.client.Map.CGlobalObjectSystem {
@@ -45,5 +45,5 @@ declare module 'PipeWrench' {
       getXp: ((character: any) => any) | any;
     }
   }
-  export namespace lua.client.Farming.CFarmingSystem {}
+  export namespace lua.client.Farming.CFarmingSystem { }
 }

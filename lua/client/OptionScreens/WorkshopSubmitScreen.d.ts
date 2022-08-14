@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor WorkshopSubmitScreen:new */
     export class WorkshopSubmitScreen extends lua.client.ISUI.ISPanelJoypad {
@@ -79,5 +79,5 @@ declare module 'PipeWrench' {
       static OnSteamWorkshopItemUpdated: (bUserNeedsToAcceptWorkshopLegalAgreement: any) => any;
     }
   }
-  export namespace lua.client.OptionScreens.WorkshopSubmitScreen {}
+  export namespace lua.client.OptionScreens.WorkshopSubmitScreen { }
 }

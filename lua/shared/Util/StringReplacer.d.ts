@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.shared.Util {
     export abstract class StringReplacer {
       static [id: string]: any;
@@ -36,5 +36,5 @@ declare module 'PipeWrench' {
       static DoCharacter: (str: any, desc: any) => any;
     }
   }
-  export namespace lua.shared.Util.StringReplacer {}
+  export namespace lua.shared.Util.StringReplacer { }
 }

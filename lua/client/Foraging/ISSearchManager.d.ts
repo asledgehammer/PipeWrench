@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Foraging {
     /** @customConstructor ISSearchManager:new */
     export class ISSearchManager extends lua.client.ISUI.ISPanel {
@@ -390,5 +390,5 @@ declare module 'PipeWrench' {
       static setManager: (_character: any, _manager: any) => any;
     }
   }
-  export namespace lua.client.Foraging.ISSearchManager {}
+  export namespace lua.client.Foraging.ISSearchManager { }
 }

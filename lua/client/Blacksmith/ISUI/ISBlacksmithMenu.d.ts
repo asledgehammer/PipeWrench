@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Blacksmith.ISUI {
     export abstract class ISBlacksmithMenu {
       static [id: string]: any;
@@ -212,5 +212,5 @@ declare module 'PipeWrench' {
       static weldingRodUses: (torchUses: any) => any;
     }
   }
-  export namespace lua.client.Blacksmith.ISUI.ISBlacksmithMenu {}
+  export namespace lua.client.Blacksmith.ISUI.ISBlacksmithMenu { }
 }

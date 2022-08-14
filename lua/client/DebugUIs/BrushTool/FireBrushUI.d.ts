@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.DebugUIs.BrushTool {
     /** @customConstructor FireBrushUI:new */
     export class FireBrushUI extends lua.client.ISUI.ISPanelJoypad {
@@ -92,5 +92,5 @@ declare module 'PipeWrench' {
       static openPanel: (x: any, y: any, playerObj: any) => any;
     }
   }
-  export namespace lua.client.DebugUIs.BrushTool.FireBrushUI {}
+  export namespace lua.client.DebugUIs.BrushTool.FireBrushUI { }
 }

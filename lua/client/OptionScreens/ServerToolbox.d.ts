@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor ServerToolbox:new */
     export class ServerToolbox extends lua.client.ISUI.ISPanelJoypad {
@@ -71,5 +71,5 @@ declare module 'PipeWrench' {
       useDefaultSpawnRegion: (() => any) | any;
     }
   }
-  export namespace lua.client.OptionScreens.ServerToolbox {}
+  export namespace lua.client.OptionScreens.ServerToolbox { }
 }

@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Vehicles.TimedActions {
     /** @customConstructor ISOpenCloseVehicleWindow:new */
     export class ISOpenCloseVehicleWindow extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -45,5 +45,5 @@ declare module 'PipeWrench' {
       constructor(character: any, part: any, open: any, time: any);
     }
   }
-  export namespace lua.client.Vehicles.TimedActions.ISOpenCloseVehicleWindow {}
+  export namespace lua.client.Vehicles.TimedActions.ISOpenCloseVehicleWindow { }
 }

@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI.UserPanel {
     /** @customConstructor ISCreateFactionUI:new */
     export class ISCreateFactionUI extends lua.client.ISUI.ISPanel {
@@ -53,5 +53,5 @@ declare module 'PipeWrench' {
       updateButtons: (() => any) | any;
     }
   }
-  export namespace lua.client.ISUI.UserPanel.ISCreateFactionUI {}
+  export namespace lua.client.ISUI.UserPanel.ISCreateFactionUI { }
 }

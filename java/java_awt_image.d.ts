@@ -25,7 +25,7 @@
 
 /**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace java.awt.image {
     export type BufferedImage = any;
     export type Raster = any;

@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor InterpolationPlayerPeriodDebug:new */
     export class InterpolationPlayerPeriodDebug extends lua.client.ISUI.ISCollapsableWindow {
@@ -118,5 +118,5 @@ declare module 'PipeWrench' {
       static OnOpenPanel: (player: any) => any;
     }
   }
-  export namespace lua.client.ISUI.InterpolationPlayerPeriodDebug {}
+  export namespace lua.client.ISUI.InterpolationPlayerPeriodDebug { }
 }

@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISScrollingListBox:new */
     export class ISScrollingListBox extends lua.client.ISUI.ISPanelJoypad {
@@ -140,5 +140,5 @@ declare module 'PipeWrench' {
       static sortByName: (a: any, b: any) => any;
     }
   }
-  export namespace lua.client.ISUI.ISScrollingListBox {}
+  export namespace lua.client.ISUI.ISScrollingListBox { }
 }

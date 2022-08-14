@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISSleepDialog:new */
     export class ISSleepDialog extends lua.client.ISUI.ISPanelJoypad {
@@ -63,5 +63,5 @@ declare module 'PipeWrench' {
       update: (() => any) | any;
     }
   }
-  export namespace lua.client.ISUI.ISSleepDialog {}
+  export namespace lua.client.ISUI.ISSleepDialog { }
 }

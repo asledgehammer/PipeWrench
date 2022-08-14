@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.TimedActions {
     /** @customConstructor ISFitnessAction:new */
     export class ISFitnessAction extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -65,5 +65,5 @@ declare module 'PipeWrench' {
       showHandModel: (() => any) | any;
     }
   }
-  export namespace lua.client.TimedActions.ISFitnessAction {}
+  export namespace lua.client.TimedActions.ISFitnessAction { }
 }

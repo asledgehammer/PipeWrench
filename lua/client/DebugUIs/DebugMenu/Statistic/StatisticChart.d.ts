@@ -27,7 +27,7 @@
 /// <reference path="../../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.DebugUIs.DebugMenu.Statistic {
     /** @customConstructor StatisticChart:new */
     export class StatisticChart extends lua.client.ISUI.ISCollapsableWindow {
@@ -116,5 +116,5 @@ declare module 'PipeWrench' {
       static OnServerStatisticReceived: () => any;
     }
   }
-  export namespace lua.client.DebugUIs.DebugMenu.Statistic.StatisticChart {}
+  export namespace lua.client.DebugUIs.DebugMenu.Statistic.StatisticChart { }
 }

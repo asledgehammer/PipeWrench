@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.TimedActions {
     /** @customConstructor ISReloadWeaponAction:new */
     export class ISReloadWeaponAction extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -89,5 +89,5 @@ declare module 'PipeWrench' {
       static setReloadSpeed: (character: any, rack: any) => any;
     }
   }
-  export namespace lua.client.TimedActions.ISReloadWeaponAction {}
+  export namespace lua.client.TimedActions.ISReloadWeaponAction { }
 }

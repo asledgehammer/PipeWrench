@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISServerDisconnectUI:new */
     export class ISServerDisconnectUI extends lua.client.ISUI.ISPanelJoypad {
@@ -55,5 +55,5 @@ declare module 'PipeWrench' {
       onToMainMenu: (() => any) | any;
     }
   }
-  export namespace lua.client.ISUI.ISServerDisconnectUI {}
+  export namespace lua.client.ISUI.ISServerDisconnectUI { }
 }

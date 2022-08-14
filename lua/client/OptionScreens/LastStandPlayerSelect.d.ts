@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor LastStandPlayerSelect:new */
     export class LastStandPlayerSelect extends lua.client.ISUI.ISPanelJoypad {
@@ -100,5 +100,5 @@ declare module 'PipeWrench' {
       static newGame: (player: any, square: any) => any;
     }
   }
-  export namespace lua.client.OptionScreens.LastStandPlayerSelect {}
+  export namespace lua.client.OptionScreens.LastStandPlayerSelect { }
 }

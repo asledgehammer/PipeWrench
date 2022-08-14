@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.DebugUIs.DebugGlobalObjectState {
     /** @customConstructor DebugGlobalObjectStateUI:new */
     export class DebugGlobalObjectStateUI extends lua.client.ISUI.ISPanel {
@@ -113,5 +113,5 @@ declare module 'PipeWrench' {
       updateSelectedSystem: (() => any) | any;
     }
   }
-  export namespace lua.client.DebugUIs.DebugGlobalObjectState.DebugGlobalObjectStateUI {}
+  export namespace lua.client.DebugUIs.DebugGlobalObjectState.DebugGlobalObjectStateUI { }
 }

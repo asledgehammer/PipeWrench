@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor CoopMapSpawnSelect:new */
     export class CoopMapSpawnSelect extends lua.client.OptionScreens.MapSpawnSelect {
@@ -41,5 +41,5 @@ declare module 'PipeWrench' {
       canRespawnWithSelf: (() => any) | any;
     }
   }
-  export namespace lua.client.OptionScreens.CoopMapSpawnSelect {}
+  export namespace lua.client.OptionScreens.CoopMapSpawnSelect { }
 }

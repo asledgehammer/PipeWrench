@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI.BodyParts {
     /** @customConstructor ISBodyPartPanel:new */
     export class ISBodyPartPanel extends lua.client.ISUI.ISPanelJoypad {
@@ -114,12 +114,12 @@ declare module 'PipeWrench' {
 
       setAlphas:
         | ((
-            _defaultAlpha: any,
-            _nodeAlpha: any,
-            _selectedAlpha: any,
-            _deselectedAlpha: any,
-            _backgroundAlpha: any
-          ) => any)
+          _defaultAlpha: any,
+          _nodeAlpha: any,
+          _selectedAlpha: any,
+          _deselectedAlpha: any,
+          _backgroundAlpha: any
+        ) => any)
         | any;
 
       setColorForValue: ((_val: any, _color: any) => any) | any;
@@ -137,5 +137,5 @@ declare module 'PipeWrench' {
       setValue: ((_bodyPartType: any, _value: any, _force: any) => any) | any;
     }
   }
-  export namespace lua.client.ISUI.BodyParts.ISBodyPartPanel {}
+  export namespace lua.client.ISUI.BodyParts.ISBodyPartPanel { }
 }

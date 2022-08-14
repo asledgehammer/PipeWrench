@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.shared.TimedActions {
     /** @customConstructor ISBaseTimedAction:new */
     export class ISBaseTimedAction extends lua.shared.ISBaseObject {
@@ -91,5 +91,5 @@ declare module 'PipeWrench' {
       waitToStart: (() => any) | any;
     }
   }
-  export namespace lua.shared.TimedActions.ISBaseTimedAction {}
+  export namespace lua.shared.TimedActions.ISBaseTimedAction { }
 }

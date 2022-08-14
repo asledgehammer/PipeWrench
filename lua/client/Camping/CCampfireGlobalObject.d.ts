@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Camping {
     /** @customConstructor CCampfireGlobalObject:new */
     export class CCampfireGlobalObject extends lua.client.Map.CGlobalObject {
@@ -39,5 +39,5 @@ declare module 'PipeWrench' {
       getObject: (() => any) | any;
     }
   }
-  export namespace lua.client.Camping.CCampfireGlobalObject {}
+  export namespace lua.client.Camping.CCampfireGlobalObject { }
 }

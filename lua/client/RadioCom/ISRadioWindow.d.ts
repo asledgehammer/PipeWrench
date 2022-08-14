@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.RadioCom {
     /** @customConstructor ISRadioWindow:new */
     export class ISRadioWindow extends lua.client.ISUI.ISCollapsableWindow {
@@ -113,5 +113,5 @@ declare module 'PipeWrench' {
       static onEquip: (_player: any, _item: any) => any;
     }
   }
-  export namespace lua.client.RadioCom.ISRadioWindow {}
+  export namespace lua.client.RadioCom.ISRadioWindow { }
 }

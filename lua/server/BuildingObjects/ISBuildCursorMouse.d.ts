@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.BuildingObjects {
     /** @customConstructor ISBuildCursorMouse:new */
     export class ISBuildCursorMouse extends lua.server.BuildingObjects.ISBuildingObject {
@@ -66,5 +66,5 @@ declare module 'PipeWrench' {
       static IsVisible: () => any;
     }
   }
-  export namespace lua.server.BuildingObjects.ISBuildCursorMouse {}
+  export namespace lua.server.BuildingObjects.ISBuildCursorMouse { }
 }

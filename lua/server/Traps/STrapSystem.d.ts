@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.Traps {
     /** @customConstructor STrapSystem:new */
     export class STrapSystem extends lua.server.Map.SGlobalObjectSystem {
@@ -53,5 +53,5 @@ declare module 'PipeWrench' {
       static isValidModData: (modData: any) => any;
     }
   }
-  export namespace lua.server.Traps.STrapSystem {}
+  export namespace lua.server.Traps.STrapSystem { }
 }

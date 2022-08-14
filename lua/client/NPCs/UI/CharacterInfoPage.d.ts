@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.NPCs.UI {
     /** @customConstructor CharacterInfoPage:new */
     export class CharacterInfoPage extends lua.client.ISUI.ISPanel {
@@ -52,5 +52,5 @@ declare module 'PipeWrench' {
       static doInfo: (desc: any) => any;
     }
   }
-  export namespace lua.client.NPCs.UI.CharacterInfoPage {}
+  export namespace lua.client.NPCs.UI.CharacterInfoPage { }
 }

@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Context {
     export abstract class ISContextManager {
       static [id: string]: any;
@@ -36,5 +36,5 @@ declare module 'PipeWrench' {
       static getInstance: () => any;
     }
   }
-  export namespace lua.client.Context.ISContextManager {}
+  export namespace lua.client.Context.ISContextManager { }
 }

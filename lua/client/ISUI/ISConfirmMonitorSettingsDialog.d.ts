@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISConfirmMonitorSettingsDialog:new */
     export class ISConfirmMonitorSettingsDialog extends lua.client.ISUI.ISModalDialog {
@@ -41,5 +41,5 @@ declare module 'PipeWrench' {
       update: (() => any) | any;
     }
   }
-  export namespace lua.client.ISUI.ISConfirmMonitorSettingsDialog {}
+  export namespace lua.client.ISUI.ISConfirmMonitorSettingsDialog { }
 }

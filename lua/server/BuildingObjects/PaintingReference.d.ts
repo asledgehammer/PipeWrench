@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.BuildingObjects {
     export abstract class OtherPainting {
       static [id: string]: any;
@@ -37,5 +37,5 @@ declare module 'PipeWrench' {
       static [id: string]: any;
     }
   }
-  export namespace lua.server.BuildingObjects.PaintingReference {}
+  export namespace lua.server.BuildingObjects.PaintingReference { }
 }

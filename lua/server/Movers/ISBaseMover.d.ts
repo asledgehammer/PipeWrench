@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.Movers {
     /** @customConstructor ISBaseMover:new */
     export class ISBaseMover extends lua.shared.ISBaseObject {
@@ -59,5 +59,5 @@ declare module 'PipeWrench' {
       update: (() => any) | any;
     }
   }
-  export namespace lua.server.Movers.ISBaseMover {}
+  export namespace lua.server.Movers.ISBaseMover { }
 }

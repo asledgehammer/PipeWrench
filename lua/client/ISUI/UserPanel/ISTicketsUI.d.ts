@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI.UserPanel {
     /** @customConstructor ISTicketsUI:new */
     export class ISTicketsUI extends lua.client.ISUI.ISPanel {
@@ -66,5 +66,5 @@ declare module 'PipeWrench' {
       static gotTickets: (tickets: any) => any;
     }
   }
-  export namespace lua.client.ISUI.UserPanel.ISTicketsUI {}
+  export namespace lua.client.ISUI.UserPanel.ISTicketsUI { }
 }

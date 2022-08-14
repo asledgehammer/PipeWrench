@@ -27,7 +27,7 @@
 /// <reference path="../../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.DebugUIs.DebugMenu.General {
     /** @customConstructor ISCheatPanelUI:new */
     export class ISCheatPanelUI extends lua.client.ISUI.ISPanel {
@@ -60,5 +60,5 @@ declare module 'PipeWrench' {
       static OnOpenPanel: () => any;
     }
   }
-  export namespace lua.client.DebugUIs.DebugMenu.General.ISCheatPanelUI {}
+  export namespace lua.client.DebugUIs.DebugMenu.General.ISCheatPanelUI { }
 }

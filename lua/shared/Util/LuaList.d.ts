@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.shared.Util {
     /** @customConstructor LuaList:new */
     export class LuaList extends lua.shared.ISBaseObject {
@@ -67,5 +67,5 @@ declare module 'PipeWrench' {
       sort: ((f: any) => any) | any;
     }
   }
-  export namespace lua.shared.Util.LuaList {}
+  export namespace lua.shared.Util.LuaList { }
 }

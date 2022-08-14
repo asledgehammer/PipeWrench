@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.Movers {
     /** @customConstructor Rabbit:new */
     export class Rabbit extends lua.server.Movers.ISBaseMover {

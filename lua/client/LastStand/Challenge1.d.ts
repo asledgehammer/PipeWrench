@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.LastStand {
     export abstract class Challenge1 {
       static [id: string]: any;
@@ -63,5 +63,5 @@ declare module 'PipeWrench' {
       static Tick: () => any;
     }
   }
-  export namespace lua.client.LastStand.Challenge1 {}
+  export namespace lua.client.LastStand.Challenge1 { }
 }

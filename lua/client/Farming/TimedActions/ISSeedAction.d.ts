@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Farming.TimedActions {
     /** @customConstructor ISSeedAction:new */
     export class ISSeedAction extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -47,5 +47,5 @@ declare module 'PipeWrench' {
       constructor(character: any, seeds: any, nbOfSeed: any, typeOfSeed: any, plant: any, time: any);
     }
   }
-  export namespace lua.client.Farming.TimedActions.ISSeedAction {}
+  export namespace lua.client.Farming.TimedActions.ISSeedAction { }
 }

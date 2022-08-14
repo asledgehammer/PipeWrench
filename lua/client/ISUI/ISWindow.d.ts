@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISWindow:new */
     export class ISWindow extends lua.client.ISUI.ISUIElement {
@@ -71,5 +71,5 @@ declare module 'PipeWrench' {
       removeToolbar: ((toolbar: any) => any) | any;
     }
   }
-  export namespace lua.client.ISUI.ISWindow {}
+  export namespace lua.client.ISUI.ISWindow { }
 }

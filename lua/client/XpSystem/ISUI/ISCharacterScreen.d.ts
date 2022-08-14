@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.XpSystem.ISUI {
     /** @customConstructor ISCharacterScreen:new */
     export class ISCharacterScreen extends lua.client.ISUI.ISPanelJoypad {
@@ -135,5 +135,5 @@ declare module 'PipeWrench' {
       constructor(x: any, y: any, width: any, height: any);
     }
   }
-  export namespace lua.client.XpSystem.ISUI.ISCharacterScreen {}
+  export namespace lua.client.XpSystem.ISUI.ISCharacterScreen { }
 }

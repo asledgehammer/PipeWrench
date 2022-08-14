@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.DebugUIs {
     /** @customConstructor MPDebugger:new */
     export class MPDebugger extends lua.client.ISUI.ISCollapsableWindow {
@@ -38,5 +38,5 @@ declare module 'PipeWrench' {
       static onKeyPressed: (key: any) => any;
     }
   }
-  export namespace lua.client.DebugUIs.MPDebugger {}
+  export namespace lua.client.DebugUIs.MPDebugger { }
 }

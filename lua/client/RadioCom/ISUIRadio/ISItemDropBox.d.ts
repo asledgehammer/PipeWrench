@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.RadioCom.ISUIRadio {
     /** @customConstructor ISItemDropBox:new */
     export class ISItemDropBox extends lua.client.ISUI.ISPanel {
@@ -138,5 +138,5 @@ declare module 'PipeWrench' {
         | any;
     }
   }
-  export namespace lua.client.RadioCom.ISUIRadio.ISItemDropBox {}
+  export namespace lua.client.RadioCom.ISUIRadio.ISItemDropBox { }
 }

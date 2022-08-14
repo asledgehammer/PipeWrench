@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
-  export namespace lua.client.Context.World {}
-  export namespace lua.client.Context.World.ISContextTelevision {}
+declare module '@shughesuk/pipewrench' {
+  export namespace lua.client.Context.World { }
+  export namespace lua.client.Context.World.ISContextTelevision { }
 }

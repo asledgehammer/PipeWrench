@@ -27,7 +27,7 @@
 /// <reference path="../../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI.AdminPanel.LootZed {
     /** @customConstructor ISLootZed:new */
     export class ISLootZed extends lua.client.ISUI.ISPanelJoypad {
@@ -67,5 +67,5 @@ declare module 'PipeWrench' {
       updateContent: (() => any) | any;
     }
   }
-  export namespace lua.client.ISUI.AdminPanel.LootZed.ISLootZed {}
+  export namespace lua.client.ISUI.AdminPanel.LootZed.ISLootZed { }
 }

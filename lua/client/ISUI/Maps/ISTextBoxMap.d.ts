@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI.Maps {
     /** @customConstructor ISTextBoxMap:new */
     export class ISTextBoxMap extends lua.client.ISUI.ISCollapsableWindowJoypad {
@@ -149,5 +149,5 @@ declare module 'PipeWrench' {
       updateButtons: (() => any) | any;
     }
   }
-  export namespace lua.client.ISUI.Maps.ISTextBoxMap {}
+  export namespace lua.client.ISUI.Maps.ISTextBoxMap { }
 }

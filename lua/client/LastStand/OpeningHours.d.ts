@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.LastStand {
     export abstract class OpeningHours {
       static [id: string]: any;
@@ -75,5 +75,5 @@ declare module 'PipeWrench' {
       static ResetMetalGates: (area: any) => any;
     }
   }
-  export namespace lua.client.LastStand.OpeningHours {}
+  export namespace lua.client.LastStand.OpeningHours { }
 }

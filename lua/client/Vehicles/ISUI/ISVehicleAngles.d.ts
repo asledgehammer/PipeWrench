@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Vehicles.ISUI {
     /** @customConstructor ISVehicleAngles:new */
     export class ISVehicleAngles extends lua.client.ISUI.ISCollapsableWindow {
@@ -75,5 +75,5 @@ declare module 'PipeWrench' {
       setVehicle: ((vehicle: any) => any) | any;
     }
   }
-  export namespace lua.client.Vehicles.ISUI.ISVehicleAngles {}
+  export namespace lua.client.Vehicles.ISUI.ISVehicleAngles { }
 }

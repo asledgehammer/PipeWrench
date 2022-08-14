@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.TimedActions {
     /** @customConstructor ISPlantainCataplasm:new */
     export class ISPlantainCataplasm extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -49,5 +49,5 @@ declare module 'PipeWrench' {
       constructor(doctor: any, otherPlayer: any, item: any, bodyPart: any);
     }
   }
-  export namespace lua.client.TimedActions.ISPlantainCataplasm {}
+  export namespace lua.client.TimedActions.ISPlantainCataplasm { }
 }

@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor ConnectToServer:new */
     export class ConnectToServer extends lua.client.ISUI.ISPanelJoypad {
@@ -70,15 +70,15 @@ declare module 'PipeWrench' {
 
       connect:
         | ((
-            previousScreen: any,
-            serverName: any,
-            userName: any,
-            password: any,
-            IP: any,
-            localIP: any,
-            port: any,
-            serverPassword: any
-          ) => any)
+          previousScreen: any,
+          serverName: any,
+          userName: any,
+          password: any,
+          IP: any,
+          localIP: any,
+          port: any,
+          serverPassword: any
+        ) => any)
         | any;
 
       connectCoop: ((previousScreen: any, serverSteamID: any) => any) | any;
@@ -100,5 +100,5 @@ declare module 'PipeWrench' {
       render: (() => any) | any;
     }
   }
-  export namespace lua.client.OptionScreens.ConnectToServer {}
+  export namespace lua.client.OptionScreens.ConnectToServer { }
 }

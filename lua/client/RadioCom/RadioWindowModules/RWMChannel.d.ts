@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.RadioCom.RadioWindowModules {
     /** @customConstructor RWMChannel:new */
     export class RWMChannel extends lua.client.RadioCom.RadioWindowModules.RWMPanel {
@@ -93,5 +93,5 @@ declare module 'PipeWrench' {
       setParent: ((_parent: any) => any) | any;
     }
   }
-  export namespace lua.client.RadioCom.RadioWindowModules.RWMChannel {}
+  export namespace lua.client.RadioCom.RadioWindowModules.RWMChannel { }
 }

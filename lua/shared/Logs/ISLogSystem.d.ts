@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.shared.Logs {
     export abstract class ISLogSystem {
       static [id: string]: any;
@@ -54,5 +54,5 @@ declare module 'PipeWrench' {
       static writeLog: (_character: any, _packet: any) => any;
     }
   }
-  export namespace lua.shared.Logs.ISLogSystem {}
+  export namespace lua.shared.Logs.ISLogSystem { }
 }

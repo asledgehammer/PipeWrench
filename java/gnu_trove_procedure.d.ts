@@ -25,7 +25,7 @@
 
 /**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace gnu.trove.procedure {
     export type TLongObjectProcedure<T> = any;
     export type TLongProcedure = any;

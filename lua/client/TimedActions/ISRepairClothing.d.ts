@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.TimedActions {
     /** @customConstructor ISRepairClothing:new */
     export class ISRepairClothing extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -47,5 +47,5 @@ declare module 'PipeWrench' {
       constructor(character: any, clothing: any, part: any, fabric: any, thread: any, needle: any);
     }
   }
-  export namespace lua.client.TimedActions.ISRepairClothing {}
+  export namespace lua.client.TimedActions.ISRepairClothing { }
 }

@@ -27,8 +27,8 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
-  export namespace lua.server.metazones {}
+declare module '@shughesuk/pipewrench' {
+  export namespace lua.server.metazones { }
   export namespace lua.server.metazones.metazoneHandler {
     /** @noSelf */
     export const doMapZones: () => any;

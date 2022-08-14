@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Vehicles.TimedActions {
     /** @customConstructor ISWashVehicle:new */
     export class ISWashVehicle extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -67,5 +67,5 @@ declare module 'PipeWrench' {
       static hasBlood: (vehicle: any) => any;
     }
   }
-  export namespace lua.client.Vehicles.TimedActions.ISWashVehicle {}
+  export namespace lua.client.Vehicles.TimedActions.ISWashVehicle { }
 }

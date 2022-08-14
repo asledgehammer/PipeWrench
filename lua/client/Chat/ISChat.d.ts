@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Chat {
     /** @customConstructor ISChat:new */
     export class ISChat extends lua.client.ISUI.ISCollapsableWindow {
@@ -211,5 +211,5 @@ declare module 'PipeWrench' {
       static unfocusEvent: () => any;
     }
   }
-  export namespace lua.client.Chat.ISChat {}
+  export namespace lua.client.Chat.ISChat { }
 }

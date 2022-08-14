@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor MainOptions:new */
     export class MainOptions extends lua.client.ISUI.ISPanelJoypad {
@@ -243,5 +243,5 @@ declare module 'PipeWrench' {
       static upgradeKeysIni: (name: any, key: any, defaultKey: any, version: any) => any;
     }
   }
-  export namespace lua.client.OptionScreens.MainOptions {}
+  export namespace lua.client.OptionScreens.MainOptions { }
 }

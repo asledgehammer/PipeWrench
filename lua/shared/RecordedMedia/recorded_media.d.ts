@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
-  export namespace lua.shared.RecordedMedia {}
-  export namespace lua.shared.RecordedMedia.recorded_media {}
+declare module '@shughesuk/pipewrench' {
+  export namespace lua.shared.RecordedMedia { }
+  export namespace lua.shared.RecordedMedia.recorded_media { }
 }

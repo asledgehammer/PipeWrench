@@ -27,7 +27,7 @@
 /// <reference path="../../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.DebugUIs.DebugMenu.radio {
     /** @customConstructor ZomboidRadioDebug:new */
     export class ZomboidRadioDebug extends lua.client.ISUI.ISPanel {
@@ -88,5 +88,5 @@ declare module 'PipeWrench' {
       static OnOpenPanel: () => any;
     }
   }
-  export namespace lua.client.DebugUIs.DebugMenu.radio.ZomboidRadioDebug {}
+  export namespace lua.client.DebugUIs.DebugMenu.radio.ZomboidRadioDebug { }
 }

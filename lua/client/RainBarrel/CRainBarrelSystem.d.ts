@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.RainBarrel {
     /** @customConstructor CRainBarrelSystem:new */
     export class CRainBarrelSystem extends lua.client.Map.CGlobalObjectSystem {
@@ -37,5 +37,5 @@ declare module 'PipeWrench' {
       constructor();
     }
   }
-  export namespace lua.client.RainBarrel.CRainBarrelSystem {}
+  export namespace lua.client.RainBarrel.CRainBarrelSystem { }
 }

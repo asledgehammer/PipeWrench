@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISUIWriteJournal:new */
     export class ISUIWriteJournal extends lua.client.ISUI.ISCollapsableWindowJoypad {
@@ -133,5 +133,5 @@ declare module 'PipeWrench' {
       setJoypadButtons: ((joypadData: any) => any) | any;
     }
   }
-  export namespace lua.client.ISUI.ISUIWriteJournal {}
+  export namespace lua.client.ISUI.ISUIWriteJournal { }
 }

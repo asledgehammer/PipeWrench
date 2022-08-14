@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.TimedActions {
     /** @customConstructor ISFillGrave:new */
     export class ISFillGrave extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -45,5 +45,5 @@ declare module 'PipeWrench' {
       changeSprite: ((square: any) => any) | any;
     }
   }
-  export namespace lua.client.TimedActions.ISFillGrave {}
+  export namespace lua.client.TimedActions.ISFillGrave { }
 }

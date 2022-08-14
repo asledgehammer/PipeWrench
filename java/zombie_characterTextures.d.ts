@@ -25,7 +25,7 @@
 
 /**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace zombie.characterTextures {
     /** [ENUM] zombie.characterTextures.BloodBodyPartType */
     export class BloodBodyPartType {

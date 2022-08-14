@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.DebugUIs {
     /** @customConstructor ISRunningDebugUI:new */
     export class ISRunningDebugUI extends lua.client.ISUI.ISCollapsableWindow {
@@ -71,5 +71,5 @@ declare module 'PipeWrench' {
       update: (() => any) | any;
     }
   }
-  export namespace lua.client.DebugUIs.ISRunningDebugUI {}
+  export namespace lua.client.DebugUIs.ISRunningDebugUI { }
 }

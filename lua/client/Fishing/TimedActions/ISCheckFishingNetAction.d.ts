@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Fishing.TimedActions {
     /** @customConstructor ISCheckFishingNetAction:new */
     export class ISCheckFishingNetAction extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -41,5 +41,5 @@ declare module 'PipeWrench' {
       constructor(player: any, trap: any, hours: any);
     }
   }
-  export namespace lua.client.Fishing.TimedActions.ISCheckFishingNetAction {}
+  export namespace lua.client.Fishing.TimedActions.ISCheckFishingNetAction { }
 }

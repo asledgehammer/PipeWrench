@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.TimedActions {
     /** @customConstructor ISWalkToTimedAction:new */
     export class ISWalkToTimedAction extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -53,5 +53,5 @@ declare module 'PipeWrench' {
       setOnComplete: ((func: any, arg1: any, arg2: any, arg3: any, arg4: any) => any) | any;
     }
   }
-  export namespace lua.client.TimedActions.WalkToTimedAction {}
+  export namespace lua.client.TimedActions.WalkToTimedAction { }
 }

@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.DebugUIs {
     /** @customConstructor LuaDebugger:new */
     export class LuaDebugger extends lua.client.ISUI.ISCollapsableWindow {
@@ -41,5 +41,5 @@ declare module 'PipeWrench' {
       onResolutionChange: ((oldw: any, oldh: any, neww: any, newh: any) => any) | any;
     }
   }
-  export namespace lua.client.DebugUIs.LuaDebugger {}
+  export namespace lua.client.DebugUIs.LuaDebugger { }
 }

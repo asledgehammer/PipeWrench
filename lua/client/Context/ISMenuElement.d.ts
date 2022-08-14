@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Context {
     export abstract class ISMenuElement {
       static [id: string]: any;
@@ -36,5 +36,5 @@ declare module 'PipeWrench' {
       static new: () => any;
     }
   }
-  export namespace lua.client.Context.ISMenuElement {}
+  export namespace lua.client.Context.ISMenuElement { }
 }

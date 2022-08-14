@@ -27,11 +27,11 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.Items {
     export abstract class debris {
       static [id: string]: any;
     }
   }
-  export namespace lua.server.Items.BrokenFences {}
+  export namespace lua.server.Items.BrokenFences { }
 }

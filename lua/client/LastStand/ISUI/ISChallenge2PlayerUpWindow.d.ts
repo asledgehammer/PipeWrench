@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.LastStand.ISUI {
     /** @customConstructor ISChallenge2PlayerUpWindow:new */
     export class ISChallenge2PlayerUpWindow extends lua.client.ISUI.ISPanelJoypad {
@@ -55,5 +55,5 @@ declare module 'PipeWrench' {
       updateButtonLevel: (() => any) | any;
     }
   }
-  export namespace lua.client.LastStand.ISUI.ISChallenge2PlayerUpWindow {}
+  export namespace lua.client.LastStand.ISUI.ISChallenge2PlayerUpWindow { }
 }

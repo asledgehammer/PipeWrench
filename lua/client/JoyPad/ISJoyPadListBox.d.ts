@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.JoyPad {
     /** @customConstructor ISJoypadListBox:new */
     export class ISJoypadListBox extends lua.client.ISUI.ISScrollingListBox {
@@ -58,5 +58,5 @@ declare module 'PipeWrench' {
       static Create: (playerNum: any, joypadData: any) => any;
     }
   }
-  export namespace lua.client.JoyPad.ISJoyPadListBox {}
+  export namespace lua.client.JoyPad.ISJoyPadListBox { }
 }

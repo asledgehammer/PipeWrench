@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISUIElement:new */
     export class ISUIElement extends lua.shared.ISBaseObject {
@@ -142,20 +142,20 @@ declare module 'PipeWrench' {
 
       drawTextureAllPoint:
         | ((
-            texture: any,
-            tlx: any,
-            tly: any,
-            trx: any,
-            _try_: any,
-            brx: any,
-            bry: any,
-            blx: any,
-            bly: any,
-            r: any,
-            g: any,
-            b: any,
-            a: any
-          ) => any)
+          texture: any,
+          tlx: any,
+          tly: any,
+          trx: any,
+          _try_: any,
+          brx: any,
+          bry: any,
+          blx: any,
+          bly: any,
+          r: any,
+          g: any,
+          b: any,
+          a: any
+        ) => any)
         | any;
 
       DrawTextureAngle: ((tex: any, centerX: any, centerY: any, angle: any) => any) | any;
@@ -395,5 +395,5 @@ declare module 'PipeWrench' {
       wrapInCollapsableWindow: ((title: any, resizable: any, subClass: any) => any) | any;
     }
   }
-  export namespace lua.client.ISUI.ISUIElement {}
+  export namespace lua.client.ISUI.ISUIElement { }
 }

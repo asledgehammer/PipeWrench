@@ -27,11 +27,11 @@
 /// <reference path="../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.shared {
     export abstract class keyBinding {
       static [id: string]: any;
     }
   }
-  export namespace lua.shared.keyBinding {}
+  export namespace lua.shared.keyBinding { }
 }

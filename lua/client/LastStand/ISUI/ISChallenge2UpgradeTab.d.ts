@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.LastStand.ISUI {
     /** @customConstructor ISChallenge2UpgradeTab:new */
     export class ISChallenge2UpgradeTab extends lua.client.ISUI.ISCollapsableWindow {
@@ -55,5 +55,5 @@ declare module 'PipeWrench' {
       reloadButtons: (() => any) | any;
     }
   }
-  export namespace lua.client.LastStand.ISUI.ISChallenge2UpgradeTab {}
+  export namespace lua.client.LastStand.ISUI.ISChallenge2UpgradeTab { }
 }

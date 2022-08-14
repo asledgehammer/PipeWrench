@@ -27,11 +27,11 @@
 /// <reference path="../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.shared {
     export abstract class ZomboidGlobals {
       static [id: string]: any;
     }
   }
-  export namespace lua.shared.defines {}
+  export namespace lua.shared.defines { }
 }

@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.TimedActions {
     /** @customConstructor ISLoadBulletsInMagazine:new */
     export class ISLoadBulletsInMagazine extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -55,5 +55,5 @@ declare module 'PipeWrench' {
       isLoadFinished: (() => any) | any;
     }
   }
-  export namespace lua.client.TimedActions.ISLoadBulletsInMagazine {}
+  export namespace lua.client.TimedActions.ISLoadBulletsInMagazine { }
 }

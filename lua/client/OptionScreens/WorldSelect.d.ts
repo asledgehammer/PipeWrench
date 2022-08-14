@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor WorldSelect:new */
     export class WorldSelect extends lua.client.ISUI.ISPanelJoypad {
@@ -77,5 +77,5 @@ declare module 'PipeWrench' {
       render: (() => any) | any;
     }
   }
-  export namespace lua.client.OptionScreens.WorldSelect {}
+  export namespace lua.client.OptionScreens.WorldSelect { }
 }

@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
-  export namespace lua.shared.Sandbox {}
-  export namespace lua.shared.Sandbox.SandboxVars {}
+declare module '@shughesuk/pipewrench' {
+  export namespace lua.shared.Sandbox { }
+  export namespace lua.shared.Sandbox.SandboxVars { }
 }

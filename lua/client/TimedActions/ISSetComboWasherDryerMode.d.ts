@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.TimedActions {
     /** @customConstructor ISSetComboWasherDryerMode:new */
     export class ISSetComboWasherDryerMode extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -41,5 +41,5 @@ declare module 'PipeWrench' {
       constructor(character: any, object: any, mode: any);
     }
   }
-  export namespace lua.client.TimedActions.ISSetComboWasherDryerMode {}
+  export namespace lua.client.TimedActions.ISSetComboWasherDryerMode { }
 }

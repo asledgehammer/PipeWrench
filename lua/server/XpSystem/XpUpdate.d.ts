@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.XpSystem {
     export abstract class xpUpdate {
       static [id: string]: any;
@@ -69,5 +69,5 @@ declare module 'PipeWrench' {
       static randXp: () => any;
     }
   }
-  export namespace lua.server.XpSystem.XpUpdate {}
+  export namespace lua.server.XpSystem.XpUpdate { }
 }

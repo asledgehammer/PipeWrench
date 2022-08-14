@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI.AdminPanel {
     /** @customConstructor ISItemsListTable:new */
     export class ISItemsListTable extends lua.client.ISUI.ISPanel {
@@ -90,5 +90,5 @@ declare module 'PipeWrench' {
       static onFilterChange: (widget: any) => any;
     }
   }
-  export namespace lua.client.ISUI.AdminPanel.ISItemsListTable {}
+  export namespace lua.client.ISUI.AdminPanel.ISItemsListTable { }
 }

@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.Seasons {
     export abstract class season {
       static [id: string]: any;
@@ -72,5 +72,5 @@ declare module 'PipeWrench' {
       static updateWeatherIcon: () => any;
     }
   }
-  export namespace lua.server.Seasons.season {}
+  export namespace lua.server.Seasons.season { }
 }

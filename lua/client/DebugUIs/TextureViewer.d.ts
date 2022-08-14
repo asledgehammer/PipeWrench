@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.DebugUIs {
     /** @customConstructor TextureWindow:new */
     export class TextureWindow extends lua.client.ISUI.ISCollapsableWindow {
@@ -43,5 +43,5 @@ declare module 'PipeWrench' {
       renderTex: (() => any) | any;
     }
   }
-  export namespace lua.client.DebugUIs.TextureViewer {}
+  export namespace lua.client.DebugUIs.TextureViewer { }
 }

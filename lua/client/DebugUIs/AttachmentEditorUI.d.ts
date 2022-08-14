@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.DebugUIs {
     /** @customConstructor AttachmentEditorUI:new */
     export class AttachmentEditorUI extends lua.client.ISUI.ISPanel {
@@ -194,17 +194,17 @@ declare module 'PipeWrench' {
 
       java9:
         | ((
-            func: any,
-            arg0: any,
-            arg1: any,
-            arg2: any,
-            arg3: any,
-            arg4: any,
-            arg5: any,
-            arg6: any,
-            arg7: any,
-            arg8: any
-          ) => any)
+          func: any,
+          arg0: any,
+          arg1: any,
+          arg2: any,
+          arg3: any,
+          arg4: any,
+          arg5: any,
+          arg6: any,
+          arg7: any,
+          arg8: any
+        ) => any)
         | any;
 
       onGizmoAccept: (() => any) | any;

@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISPanel:new */
     export class ISPanel extends lua.client.ISUI.ISUIElement {
@@ -59,5 +59,5 @@ declare module 'PipeWrench' {
       onMouseDown: ((x: any, y: any) => any) | any;
     }
   }
-  export namespace lua.client.ISUI.ISPanel {}
+  export namespace lua.client.ISUI.ISPanel { }
 }

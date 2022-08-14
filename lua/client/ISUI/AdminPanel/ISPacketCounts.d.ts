@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI.AdminPanel {
     /** @customConstructor ISPacketCounts:new */
     export class ISPacketCounts extends lua.client.ISUI.ISPanel {
@@ -71,5 +71,5 @@ declare module 'PipeWrench' {
       onMouseWheel: ((del: any) => any) | any;
     }
   }
-  export namespace lua.client.ISUI.AdminPanel.ISPacketCounts {}
+  export namespace lua.client.ISUI.AdminPanel.ISPacketCounts { }
 }

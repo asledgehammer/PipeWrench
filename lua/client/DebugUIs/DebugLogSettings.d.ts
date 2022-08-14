@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.DebugUIs {
     /** @customConstructor DebugLogSettings:new */
     export class DebugLogSettings extends lua.client.ISUI.ISCollapsableWindow {
@@ -41,5 +41,5 @@ declare module 'PipeWrench' {
       onTickBox: ((index: any, selected: any, debugType: any) => any) | any;
     }
   }
-  export namespace lua.client.DebugUIs.DebugLogSettings {}
+  export namespace lua.client.DebugUIs.DebugLogSettings { }
 }

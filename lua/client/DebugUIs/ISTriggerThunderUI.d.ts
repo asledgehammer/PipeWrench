@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.DebugUIs {
     /** @customConstructor ISTriggerThunderUI:new */
     export class ISTriggerThunderUI extends lua.client.ISUI.ISCollapsableWindow {
@@ -49,5 +49,5 @@ declare module 'PipeWrench' {
       onClick: ((button: any) => any) | any;
     }
   }
-  export namespace lua.client.DebugUIs.ISTriggerThunderUI {}
+  export namespace lua.client.DebugUIs.ISTriggerThunderUI { }
 }

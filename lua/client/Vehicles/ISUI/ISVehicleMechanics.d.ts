@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Vehicles.ISUI {
     /** @customConstructor ISVehicleMechanics:new */
     export class ISVehicleMechanics extends lua.client.ISUI.ISCollapsableWindow {
@@ -219,5 +219,5 @@ declare module 'PipeWrench' {
       static onTakeEngineParts: (playerObj: any, part: any) => any;
     }
   }
-  export namespace lua.client.Vehicles.ISUI.ISVehicleMechanics {}
+  export namespace lua.client.Vehicles.ISUI.ISVehicleMechanics { }
 }

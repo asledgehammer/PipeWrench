@@ -27,7 +27,7 @@
 /// <reference path="../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI.AdminPanel {
     /** @customConstructor ISAdminMessage:new */
     export class ISAdminMessage extends lua.client.ISUI.ISPanel {
@@ -69,5 +69,5 @@ declare module 'PipeWrench' {
       static RecalculPositions: () => any;
     }
   }
-  export namespace lua.client.ISUI.AdminPanel.ISAdminMessage {}
+  export namespace lua.client.ISUI.AdminPanel.ISAdminMessage { }
 }

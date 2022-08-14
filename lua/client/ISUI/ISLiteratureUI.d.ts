@@ -27,7 +27,7 @@
 /// <reference path="../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISLiteratureList:new */
     export class ISLiteratureList extends lua.client.ISUI.ISScrollingListBox {
@@ -98,5 +98,5 @@ declare module 'PipeWrench' {
       static SetItemHidden: (fullType: any, hidden: any) => any;
     }
   }
-  export namespace lua.client.ISUI.ISLiteratureUI {}
+  export namespace lua.client.ISUI.ISLiteratureUI { }
 }

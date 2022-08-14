@@ -27,7 +27,7 @@
 /// <reference path="../../../../../PipeWrench.d.ts" />
 import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.DebugUIs.DebugMenu.Climate {
     /** @customConstructor PopupColorEdit:new */
     export class PopupColorEdit extends lua.client.ISUI.ISPanel {
@@ -72,5 +72,5 @@ declare module 'PipeWrench' {
       static OnOpenPanel: (_colorInfo: any, _parent: any, _ambient: any, _desat: any) => any;
     }
   }
-  export namespace lua.client.DebugUIs.DebugMenu.Climate.PopupColorEdit {}
+  export namespace lua.client.DebugUIs.DebugMenu.Climate.PopupColorEdit { }
 }
