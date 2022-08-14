@@ -2,7 +2,7 @@
   "name": "@shughesuk/pipewrench",
   "version": "41.73.4",
   "description": "",
-  "types": "PipeWrench.d.ts",
+  "types": "PipeWrench",
   "scripts": {
     "patch": "node patch.js",
     "build": "tsc"
