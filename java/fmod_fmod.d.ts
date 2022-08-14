@@ -23,7 +23,7 @@
  *
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
 declare module 'PipeWrench' {
   export namespace fmod.fmod {
