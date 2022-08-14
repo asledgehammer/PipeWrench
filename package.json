@@ -1,6 +1,6 @@
 {
   "name": "@shughesuk/pipewrench",
-  "version": "41.73.8",
+  "version": "41.73.9",
   "description": "",
   "scripts": {
     "patch": "node patch.js",
