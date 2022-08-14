@@ -28,7 +28,6 @@
 // [PARTIAL] : Java.reference.partial.d.ts //
 /////////////////////////////////////////////
 
-/// <reference path="PipeWrench.d.ts" />
 /// <reference path="java/fmod_fmod.d.ts" />
 /// <reference path="java/gnu_trove_function.d.ts" />
 /// <reference path="java/gnu_trove_iterator.d.ts" />

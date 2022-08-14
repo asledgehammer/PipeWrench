@@ -25,7 +25,6 @@
 /**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
 declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Farming.TimedActions {

@@ -24,10 +24,11 @@
  * File generated at 2022-08-12T21:26Z
  */
 
+
 /**  @noSelfInFile */
 /// <reference path="reference.d.ts" />
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
 
   ///////////////////////////////////////
   // [PARTIAL] : Java.api.partial.d.ts //
