@@ -14,7 +14,10 @@
   "types": "./PipeWrench",
   "files": [
     "PipeWrench.d.ts",
-    "PipeWrench.lua"
+    "PipeWrench.lua",
+    "reference.d.ts",
+    "lua",
+    "java"
   ],
   "keywords": [
     "pipewrench",
