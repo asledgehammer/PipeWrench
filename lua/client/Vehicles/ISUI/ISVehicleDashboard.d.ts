@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Vehicles.ISUI {
     /** @customConstructor ISVehicleDashboard:new */
     export class ISVehicleDashboard extends lua.client.ISUI.ISPanel {
@@ -173,5 +172,5 @@ declare module 'PipeWrench' {
       static onSwitchVehicleSeat: (character: any) => any;
     }
   }
-  export namespace lua.client.Vehicles.ISUI.ISVehicleDashboard {}
+  export namespace lua.client.Vehicles.ISUI.ISVehicleDashboard { }
 }

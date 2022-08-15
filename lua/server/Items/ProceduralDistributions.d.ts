@@ -22,16 +22,15 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.Items {
     export abstract class ProceduralDistributions {
       static [id: string]: any;
     }
   }
-  export namespace lua.server.Items.ProceduralDistributions {}
+  export namespace lua.server.Items.ProceduralDistributions { }
 }

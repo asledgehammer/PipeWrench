@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI.Maps {
     export abstract class LootMaps {
       static [id: string]: any;
@@ -55,5 +54,5 @@ declare module 'PipeWrench' {
       static revealKnownArea: (mapUI: any) => any;
     }
   }
-  export namespace lua.client.ISUI.Maps.ISMapDefinitions {}
+  export namespace lua.client.ISUI.Maps.ISMapDefinitions { }
 }

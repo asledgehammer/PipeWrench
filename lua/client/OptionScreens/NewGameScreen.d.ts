@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor NewGameScreen:new */
     export class NewGameScreen extends lua.client.ISUI.ISPanelJoypad {
@@ -128,5 +127,5 @@ declare module 'PipeWrench' {
       static onMenuItemMouseDown: (item: any, x: any, y: any) => any;
     }
   }
-  export namespace lua.client.OptionScreens.NewGameScreen {}
+  export namespace lua.client.OptionScreens.NewGameScreen { }
 }

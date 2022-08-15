@@ -23,9 +23,9 @@
  *
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace java.net {
     export type InetSocketAddress = any;
     export type URI = any;

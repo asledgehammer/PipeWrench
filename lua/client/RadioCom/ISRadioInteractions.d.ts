@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.RadioCom {
     export abstract class ISRadioInteractions {
       static [id: string]: any;
@@ -35,5 +34,5 @@ declare module 'PipeWrench' {
       getInstance: (() => any) | any;
     }
   }
-  export namespace lua.client.RadioCom.ISRadioInteractions {}
+  export namespace lua.client.RadioCom.ISRadioInteractions { }
 }

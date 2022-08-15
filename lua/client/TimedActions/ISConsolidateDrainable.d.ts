@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.TimedActions {
     /** @customConstructor ISConsolidateDrainable:new */
     export class ISConsolidateDrainable extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -57,5 +56,5 @@ declare module 'PipeWrench' {
       runAgain: ((drainable: any, intoItem: any) => any) | any;
     }
   }
-  export namespace lua.client.TimedActions.ISConsolidateDrainable {}
+  export namespace lua.client.TimedActions.ISConsolidateDrainable { }
 }

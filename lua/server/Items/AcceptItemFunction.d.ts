@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.Items {
     export abstract class AcceptItemFunction {
       static [id: string]: any;
@@ -39,5 +38,5 @@ declare module 'PipeWrench' {
       static KeyRing: (container: any, item: any) => any;
     }
   }
-  export namespace lua.server.Items.AcceptItemFunction {}
+  export namespace lua.server.Items.AcceptItemFunction { }
 }

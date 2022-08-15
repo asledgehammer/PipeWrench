@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.radio {
     export abstract class WeatherChannel {
       static [id: string]: any;
@@ -75,5 +74,5 @@ declare module 'PipeWrench' {
       static TestAll: (_gametime: any, _bc: any) => any;
     }
   }
-  export namespace lua.server.radio.ISWeatherChannel {}
+  export namespace lua.server.radio.ISWeatherChannel { }
 }

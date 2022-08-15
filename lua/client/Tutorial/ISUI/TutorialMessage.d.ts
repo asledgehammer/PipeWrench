@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Tutorial.ISUI {
     /** @customConstructor TutorialMessage:new */
     export class TutorialMessage extends lua.client.ISUI.ISPanelJoypad {
@@ -78,5 +77,5 @@ declare module 'PipeWrench' {
       static onKeyPressed: (key: any) => any;
     }
   }
-  export namespace lua.client.Tutorial.ISUI.TutorialMessage {}
+  export namespace lua.client.Tutorial.ISUI.TutorialMessage { }
 }

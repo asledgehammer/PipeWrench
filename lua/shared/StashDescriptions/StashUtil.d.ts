@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.shared.StashDescriptions {
     export abstract class StashUtil {
       static [id: string]: any;
@@ -42,5 +41,5 @@ declare module 'PipeWrench' {
       static newStash: (name: any, type: any, item: any, customName: any) => any;
     }
   }
-  export namespace lua.shared.StashDescriptions.StashUtil {}
+  export namespace lua.shared.StashDescriptions.StashUtil { }
 }

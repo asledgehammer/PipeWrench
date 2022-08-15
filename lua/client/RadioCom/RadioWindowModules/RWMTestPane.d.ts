@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.RadioCom.RadioWindowModules {
     /** @customConstructor RWMTestPane:new */
     export class RWMTestPane extends lua.client.RadioCom.RadioWindowModules.RWMPanel {
@@ -43,5 +42,5 @@ declare module 'PipeWrench' {
       verifyItem: ((_item: any) => any) | any;
     }
   }
-  export namespace lua.client.RadioCom.RadioWindowModules.RWMTestPane {}
+  export namespace lua.client.RadioCom.RadioWindowModules.RWMTestPane { }
 }

@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI.Maps {
     /** @customConstructor ISWorldMapSymbols:new */
     export class ISWorldMapSymbols extends lua.client.ISUI.ISPanelJoypad {
@@ -284,5 +283,5 @@ declare module 'PipeWrench' {
       removeAnnotation: (() => any) | any;
     }
   }
-  export namespace lua.client.ISUI.Maps.ISWorldMapSymbols {}
+  export namespace lua.client.ISUI.Maps.ISWorldMapSymbols { }
 }

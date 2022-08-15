@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.shared.Logs {
     export abstract class ISPerkLog {
       static [id: string]: any;
@@ -51,5 +50,5 @@ declare module 'PipeWrench' {
       static logPerkLevelChange: (_character: any, _perk: any, _perkLevel: any) => any;
     }
   }
-  export namespace lua.shared.Logs.ISPerkLog {}
+  export namespace lua.shared.Logs.ISPerkLog { }
 }

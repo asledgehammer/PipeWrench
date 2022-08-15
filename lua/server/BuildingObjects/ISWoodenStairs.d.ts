@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.BuildingObjects {
     /** @customConstructor ISWoodenStairs:new */
     export class ISWoodenStairs extends lua.server.BuildingObjects.ISBuildingObject {
@@ -72,5 +71,5 @@ declare module 'PipeWrench' {
       setInfo: ((square: any, level: any, north: any, sprite: any, luaobject: any) => any) | any;
     }
   }
-  export namespace lua.server.BuildingObjects.ISWoodenStairs {}
+  export namespace lua.server.BuildingObjects.ISWoodenStairs { }
 }

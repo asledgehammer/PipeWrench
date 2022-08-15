@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.TimedActions {
     /** @customConstructor ISPlugGenerator:new */
     export class ISPlugGenerator extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -43,5 +42,5 @@ declare module 'PipeWrench' {
       constructor(character: any, generator: any, plug: any, time: any);
     }
   }
-  export namespace lua.client.TimedActions.ISPlugGenerator {}
+  export namespace lua.client.TimedActions.ISPlugGenerator { }
 }

@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.TimedActions {
     /** @customConstructor ISRackFirearm:new */
     export class ISRackFirearm extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -53,5 +52,5 @@ declare module 'PipeWrench' {
       removeBullet: (() => any) | any;
     }
   }
-  export namespace lua.client.TimedActions.ISRackFirearm {}
+  export namespace lua.client.TimedActions.ISRackFirearm { }
 }

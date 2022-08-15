@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Vehicles.TimedActions {
     /** @customConstructor ISTakeGasolineFromVehicle:new */
     export class ISTakeGasolineFromVehicle extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -57,5 +56,5 @@ declare module 'PipeWrench' {
       constructor(character: any, part: any, item: any, time: any);
     }
   }
-  export namespace lua.client.Vehicles.TimedActions.ISTakeGasolineFromVehicle {}
+  export namespace lua.client.Vehicles.TimedActions.ISTakeGasolineFromVehicle { }
 }

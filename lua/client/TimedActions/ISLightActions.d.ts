@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.TimedActions {
     /** @customConstructor ISLightActions:new */
     export class ISLightActions extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -63,5 +62,5 @@ declare module 'PipeWrench' {
       performRemoveLightBulb: (() => any) | any;
     }
   }
-  export namespace lua.client.TimedActions.ISLightActions {}
+  export namespace lua.client.TimedActions.ISLightActions { }
 }

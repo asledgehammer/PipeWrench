@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.shared.Util {
     export abstract class ISPriorityTable {
       static [id: string]: any;
@@ -36,5 +35,5 @@ declare module 'PipeWrench' {
       static new: () => any;
     }
   }
-  export namespace lua.shared.Util.ISPriorityTable {}
+  export namespace lua.shared.Util.ISPriorityTable { }
 }

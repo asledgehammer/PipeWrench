@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.DebugUIs.DebugMenu {
     export abstract class ISDebugUtils {
       static [id: string]: any;
@@ -82,5 +81,5 @@ declare module 'PipeWrench' {
       static roundNum: (num: any, numDecimalPlaces: any) => any;
     }
   }
-  export namespace lua.client.DebugUIs.DebugMenu.ISDebugUtils {}
+  export namespace lua.client.DebugUIs.DebugMenu.ISDebugUtils { }
 }

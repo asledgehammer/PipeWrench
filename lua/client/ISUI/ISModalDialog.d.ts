@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISModalDialog:new */
     export class ISModalDialog extends lua.client.ISUI.ISPanelJoypad {
@@ -86,5 +85,5 @@ declare module 'PipeWrench' {
       static CalcSize: (width: any, height: any, text: any) => any;
     }
   }
-  export namespace lua.client.ISUI.ISModalDialog {}
+  export namespace lua.client.ISUI.ISModalDialog { }
 }

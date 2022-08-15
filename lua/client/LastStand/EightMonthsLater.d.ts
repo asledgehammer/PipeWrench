@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.LastStand {
     export abstract class EightMonthsLater {
       static [id: string]: any;
@@ -54,5 +53,5 @@ declare module 'PipeWrench' {
       static Tick: () => any;
     }
   }
-  export namespace lua.client.LastStand.EightMonthsLater {}
+  export namespace lua.client.LastStand.EightMonthsLater { }
 }

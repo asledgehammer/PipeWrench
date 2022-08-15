@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
-  export namespace lua.client.Hotbar {}
-  export namespace lua.client.Hotbar.ISHotbarAttachDefinition {}
+declare module '@shughesuk/pipewrench' {
+  export namespace lua.client.Hotbar { }
+  export namespace lua.client.Hotbar.ISHotbarAttachDefinition { }
 }

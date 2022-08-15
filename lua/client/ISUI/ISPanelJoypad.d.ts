@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISPanelJoypad:new */
     export class ISPanelJoypad extends lua.client.ISUI.ISUIElement {
@@ -84,17 +83,17 @@ declare module 'PipeWrench' {
 
       insertNewLineOfButtons:
         | ((
-            button1: any,
-            button2: any,
-            button3: any,
-            button4: any,
-            button5: any,
-            button6: any,
-            button7: any,
-            button8: any,
-            button9: any,
-            button10: any
-          ) => any)
+          button1: any,
+          button2: any,
+          button3: any,
+          button4: any,
+          button5: any,
+          button6: any,
+          button7: any,
+          button8: any,
+          button9: any,
+          button10: any
+        ) => any)
         | any;
 
       insertNewListOfButtons: ((list: any) => any) | any;
@@ -120,5 +119,5 @@ declare module 'PipeWrench' {
       setJoypadFocus: ((child: any, joypadData: any) => any) | any;
     }
   }
-  export namespace lua.client.ISUI.ISPanelJoypad {}
+  export namespace lua.client.ISUI.ISPanelJoypad { }
 }

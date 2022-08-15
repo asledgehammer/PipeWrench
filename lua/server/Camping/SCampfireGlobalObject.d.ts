@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.Camping {
     /** @customConstructor SCampfireGlobalObject:new */
     export class SCampfireGlobalObject extends lua.server.Map.SGlobalObject {
@@ -111,5 +110,5 @@ declare module 'PipeWrench' {
       transferItemsToGround: (() => any) | any;
     }
   }
-  export namespace lua.server.Camping.SCampfireGlobalObject {}
+  export namespace lua.server.Camping.SCampfireGlobalObject { }
 }

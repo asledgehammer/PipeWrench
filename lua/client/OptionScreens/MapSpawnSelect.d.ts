@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor MapSpawnSelect:new */
     export class MapSpawnSelect extends lua.client.ISUI.ISPanelJoypad {
@@ -131,5 +130,5 @@ declare module 'PipeWrench' {
       onJoypadBeforeDeactivate: ((joypadData: any) => any) | any;
     }
   }
-  export namespace lua.client.OptionScreens.MapSpawnSelect {}
+  export namespace lua.client.OptionScreens.MapSpawnSelect { }
 }

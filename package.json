@@ -1,8 +1,7 @@
 {
-  "name": "pipewrench",
-  "version": "1.0.0",
+  "name": "@shughesuk/pipewrench",
+  "version": "41.73.12",
   "description": "",
-  "types": "PipeWrench.d.ts",
   "scripts": {
     "patch": "node patch.js",
     "build": "tsc"
@@ -11,6 +10,15 @@
     "type": "git",
     "url": "git+https://github.com/asledgehammer/PipeWrench.git"
   },
+  "main": "./PipeWrench",
+  "types": "./PipeWrench",
+  "files": [
+    "PipeWrench.d.ts",
+    "PipeWrench.lua",
+    "reference.d.ts",
+    "lua",
+    "java"
+  ],
   "keywords": [
     "pipewrench",
     "projectzomboid",

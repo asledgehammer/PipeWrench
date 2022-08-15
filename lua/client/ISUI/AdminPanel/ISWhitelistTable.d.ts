@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI.AdminPanel {
     /** @customConstructor ISWhitelistTable:new */
     export class ISWhitelistTable extends lua.client.ISUI.ISPanel {
@@ -108,5 +107,5 @@ declare module 'PipeWrench' {
       static onNbrPerPageChange: (entry: any) => any;
     }
   }
-  export namespace lua.client.ISUI.AdminPanel.ISWhitelistTable {}
+  export namespace lua.client.ISUI.AdminPanel.ISWhitelistTable { }
 }

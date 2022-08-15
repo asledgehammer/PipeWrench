@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Blacksmith.TimedActions {
     /** @customConstructor ISAddLogsInDrum:new */
     export class ISAddLogsInDrum extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -41,5 +40,5 @@ declare module 'PipeWrench' {
       constructor(character: any, metalDrum: any, add: any);
     }
   }
-  export namespace lua.client.Blacksmith.TimedActions.ISAddLogsInDrum {}
+  export namespace lua.client.Blacksmith.TimedActions.ISAddLogsInDrum { }
 }

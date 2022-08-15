@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../../reference.d.ts" />
 /// <reference path="../../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.DebugUIs.DebugMenu.Climate {
     /** @customConstructor PlayerClimateDebug:new */
     export class PlayerClimateDebug extends lua.client.ISUI.ISCollapsableWindow {
@@ -100,14 +99,14 @@ declare module 'PipeWrench' {
 
       registerVariable:
         | ((
-            _variable: any,
-            _title: any,
-            _isValue: any,
-            _javaInstance: any,
-            _defaultVal: any,
-            _color: any,
-            _postfix: any
-          ) => any)
+          _variable: any,
+          _title: any,
+          _isValue: any,
+          _javaInstance: any,
+          _defaultVal: any,
+          _color: any,
+          _postfix: any
+        ) => any)
         | any;
 
       stayOnSplitScreen: (() => any) | any;
@@ -123,5 +122,5 @@ declare module 'PipeWrench' {
       static OnOpenPanel: () => any;
     }
   }
-  export namespace lua.client.DebugUIs.DebugMenu.Climate.PlayerClimateDebug {}
+  export namespace lua.client.DebugUIs.DebugMenu.Climate.PlayerClimateDebug { }
 }

@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.DebugUIs.DebugChunkState {
     /** @customConstructor DebugChunkStateUI_SquarePanel:new */
     export class DebugChunkStateUI_SquarePanel extends lua.client.DebugUIs.DebugChunkState.ISSectionedPanel {
@@ -91,5 +90,5 @@ declare module 'PipeWrench' {
       setSquare: ((square: any, x: any, y: any, z: any) => any) | any;
     }
   }
-  export namespace lua.client.DebugUIs.DebugChunkState.DebugChunkState_SquarePanel {}
+  export namespace lua.client.DebugUIs.DebugChunkState.DebugChunkState_SquarePanel { }
 }

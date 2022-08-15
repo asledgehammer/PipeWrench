@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../../reference.d.ts" />
 /// <reference path="../../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.DebugUIs.DebugMenu.Statistic {
     /** @customConstructor StatisticChartPackets:new */
     export class StatisticChartPackets extends lua.client.DebugUIs.DebugMenu.Statistic.StatisticChart {
@@ -41,5 +40,5 @@ declare module 'PipeWrench' {
       static OnOpenPanel: () => any;
     }
   }
-  export namespace lua.client.DebugUIs.DebugMenu.Statistic.StatisticChartPackets {}
+  export namespace lua.client.DebugUIs.DebugMenu.Statistic.StatisticChartPackets { }
 }

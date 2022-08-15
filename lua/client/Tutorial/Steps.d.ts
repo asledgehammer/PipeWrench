@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Tutorial {
     /** @customConstructor BandageStep:new */
     export class BandageStep extends lua.client.Tutorial.TutorialStep {
@@ -408,5 +407,5 @@ declare module 'PipeWrench' {
       static ZoomedOut: () => any;
     }
   }
-  export namespace lua.client.Tutorial.Steps {}
+  export namespace lua.client.Tutorial.Steps { }
 }

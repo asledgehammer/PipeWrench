@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISEmoteRadialMenu:new */
     export class ISEmoteRadialMenu extends lua.shared.ISBaseObject {
@@ -73,5 +72,5 @@ declare module 'PipeWrench' {
       static onKeyRepeat: (key: any) => any;
     }
   }
-  export namespace lua.client.ISUI.ISEmoteRadialMenu {}
+  export namespace lua.client.ISUI.ISEmoteRadialMenu { }
 }

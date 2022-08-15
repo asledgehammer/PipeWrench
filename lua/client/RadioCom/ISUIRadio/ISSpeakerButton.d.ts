@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.RadioCom.ISUIRadio {
     /** @customConstructor ISSpeakerButton:new */
     export class ISSpeakerButton extends lua.client.ISUI.ISPanel {
@@ -59,5 +58,5 @@ declare module 'PipeWrench' {
       setEnableControls: ((_b: any) => any) | any;
     }
   }
-  export namespace lua.client.RadioCom.ISUIRadio.ISSpeakerButton {}
+  export namespace lua.client.RadioCom.ISUIRadio.ISSpeakerButton { }
 }

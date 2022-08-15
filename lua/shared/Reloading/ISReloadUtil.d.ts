@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.shared.Reloading {
     /** @customConstructor ISReloadUtil:new */
     export class ISReloadUtil extends lua.shared.ISBaseObject {
@@ -61,5 +60,5 @@ declare module 'PipeWrench' {
       syncItemToReloadable: ((item: any, player: any) => any) | any;
     }
   }
-  export namespace lua.shared.Reloading.ISReloadUtil {}
+  export namespace lua.shared.Reloading.ISReloadUtil { }
 }

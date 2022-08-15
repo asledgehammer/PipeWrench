@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.BuildingObjects {
     /** @customConstructor ISDestroyCursor:new */
     export class ISDestroyCursor extends lua.server.BuildingObjects.ISBuildingObject {
@@ -89,5 +88,5 @@ declare module 'PipeWrench' {
       isFloorAtTopOfStairs: ((object: any) => any) | any;
     }
   }
-  export namespace lua.server.BuildingObjects.ISDestroyCursor {}
+  export namespace lua.server.BuildingObjects.ISDestroyCursor { }
 }

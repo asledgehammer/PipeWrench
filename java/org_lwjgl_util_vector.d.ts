@@ -23,9 +23,9 @@
  *
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace org.lwjgl.util.vector {
     export type Matrix4f = any;
     export type Quaternion = any;

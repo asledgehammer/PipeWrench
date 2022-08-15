@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.TimedActions {
     /** @customConstructor ISDrinkFromBottle:new */
     export class ISDrinkFromBottle extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -51,5 +50,5 @@ declare module 'PipeWrench' {
       drink: ((food: any, percentage: any) => any) | any;
     }
   }
-  export namespace lua.client.TimedActions.ISDrinkFromBottle {}
+  export namespace lua.client.TimedActions.ISDrinkFromBottle { }
 }

@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../../reference.d.ts" />
 /// <reference path="../../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.DebugUIs.DebugMenu.Climate {
     /** @customConstructor ClimDebuggersPanel:new */
     export class ClimDebuggersPanel extends lua.client.DebugUIs.DebugMenu.Base.ISDebugSubPanelBase {
@@ -61,5 +60,5 @@ declare module 'PipeWrench' {
       static OnSimulationButtonOverride: (_rainModOverride: any) => any;
     }
   }
-  export namespace lua.client.DebugUIs.DebugMenu.Climate.ClimDebuggersPanel {}
+  export namespace lua.client.DebugUIs.DebugMenu.Climate.ClimDebuggersPanel { }
 }

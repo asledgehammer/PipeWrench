@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.shared.NPCs {
     export abstract class BaseGameCharacterDetails {
       static [id: string]: any;
@@ -72,5 +71,5 @@ declare module 'PipeWrench' {
       static SetTraitDescription: (trait: any) => any;
     }
   }
-  export namespace lua.shared.NPCs.MainCreationMethods {}
+  export namespace lua.shared.NPCs.MainCreationMethods { }
 }

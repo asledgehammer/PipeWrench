@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.BuildingObjects.ISUI {
     export abstract class ISBuildMenu {
       static [id: string]: any;
@@ -302,5 +301,5 @@ declare module 'PipeWrench' {
       static requireHammer: (option: any) => any;
     }
   }
-  export namespace lua.client.BuildingObjects.ISUI.ISBuildMenu {}
+  export namespace lua.client.BuildingObjects.ISUI.ISBuildMenu { }
 }

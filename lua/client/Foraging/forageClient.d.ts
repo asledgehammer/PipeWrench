@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Foraging {
     export abstract class forageClient {
       static [id: string]: any;
@@ -64,5 +63,5 @@ declare module 'PipeWrench' {
       static [id: string]: any;
     }
   }
-  export namespace lua.client.Foraging.forageClient {}
+  export namespace lua.client.Foraging.forageClient { }
 }

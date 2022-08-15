@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.Items {
     export abstract class ScriptItemInterface {
       static [id: string]: any;
@@ -42,5 +41,5 @@ declare module 'PipeWrench' {
       static newItemType: (name: any, displayname: any, type: any, inventoryIcon: any) => any;
     }
   }
-  export namespace lua.server.Items.ScriptItemInterface {}
+  export namespace lua.server.Items.ScriptItemInterface { }
 }

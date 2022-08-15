@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor CharacterCreationHeader:new */
     export class CharacterCreationHeader extends lua.client.ISUI.ISPanel {
@@ -75,5 +74,5 @@ declare module 'PipeWrench' {
       setAvatarFromUI: (() => any) | any;
     }
   }
-  export namespace lua.client.OptionScreens.CharacterCreationHeader {}
+  export namespace lua.client.OptionScreens.CharacterCreationHeader { }
 }

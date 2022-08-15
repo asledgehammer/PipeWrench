@@ -22,16 +22,15 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.XpSystem {
     export abstract class SkillBook {
       static [id: string]: any;
     }
   }
-  export namespace lua.server.XpSystem.XPSystem_SkillBook {}
+  export namespace lua.server.XpSystem.XPSystem_SkillBook { }
 }

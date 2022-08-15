@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.Fishing.BuildingObjects {
     /** @customConstructor fishingNet:new */
     export class fishingNet extends lua.server.BuildingObjects.ISBuildingObject {
@@ -56,5 +55,5 @@ declare module 'PipeWrench' {
       static remove: (net: any, player: any) => any;
     }
   }
-  export namespace lua.server.Fishing.BuildingObjects.FishingNet {}
+  export namespace lua.server.Fishing.BuildingObjects.FishingNet { }
 }

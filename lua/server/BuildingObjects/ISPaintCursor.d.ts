@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.BuildingObjects {
     /** @customConstructor ISPaintCursor:new */
     export class ISPaintCursor extends lua.server.BuildingObjects.ISBuildingObject {
@@ -81,5 +80,5 @@ declare module 'PipeWrench' {
       hasItems: (() => any) | any;
     }
   }
-  export namespace lua.server.BuildingObjects.ISPaintCursor {}
+  export namespace lua.server.BuildingObjects.ISPaintCursor { }
 }

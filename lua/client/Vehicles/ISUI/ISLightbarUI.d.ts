@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Vehicles.ISUI {
     /** @customConstructor ISLightbarUI:new */
     export class ISLightbarUI extends lua.client.ISUI.ISPanelJoypad {
@@ -71,5 +70,5 @@ declare module 'PipeWrench' {
       setVehicle: ((vehicle: any) => any) | any;
     }
   }
-  export namespace lua.client.Vehicles.ISUI.ISLightbarUI {}
+  export namespace lua.client.Vehicles.ISUI.ISLightbarUI { }
 }

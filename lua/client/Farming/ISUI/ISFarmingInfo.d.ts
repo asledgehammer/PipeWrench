@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Farming.ISUI {
     /** @customConstructor ISFarmingInfo:new */
     export class ISFarmingInfo extends lua.client.ISUI.ISPanelJoypad {
@@ -145,5 +144,5 @@ declare module 'PipeWrench' {
       static [id: string]: any;
     }
   }
-  export namespace lua.client.Farming.ISUI.ISFarmingInfo {}
+  export namespace lua.client.Farming.ISUI.ISFarmingInfo { }
 }

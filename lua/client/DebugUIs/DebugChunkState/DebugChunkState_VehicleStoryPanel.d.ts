@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.DebugUIs.DebugChunkState {
     /** @customConstructor DebugChunkState_VehicleStoryPanel:new */
     export class DebugChunkState_VehicleStoryPanel extends lua.client.ISUI.ISPanel {
@@ -49,5 +48,5 @@ declare module 'PipeWrench' {
       update: (() => any) | any;
     }
   }
-  export namespace lua.client.DebugUIs.DebugChunkState.DebugChunkState_VehicleStoryPanel {}
+  export namespace lua.client.DebugUIs.DebugChunkState.DebugChunkState_VehicleStoryPanel { }
 }

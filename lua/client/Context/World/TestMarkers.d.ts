@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Context.World {
     export abstract class TestMarkers {
       static [id: string]: any;
@@ -42,5 +41,5 @@ declare module 'PipeWrench' {
       static ontick: () => any;
     }
   }
-  export namespace lua.client.Context.World.TestMarkers {}
+  export namespace lua.client.Context.World.TestMarkers { }
 }

@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Foraging {
     /** @customConstructor ISWorldItemIcon:new */
     export class ISWorldItemIcon extends lua.client.Foraging.ISBaseIcon {
@@ -47,5 +46,5 @@ declare module 'PipeWrench' {
       isValidWorldItem: (() => any) | any;
     }
   }
-  export namespace lua.client.Foraging.ISWorldItemIcon {}
+  export namespace lua.client.Foraging.ISWorldItemIcon { }
 }

@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.BuildingObjects {
     /** @customConstructor ISBuildingObject:new */
     export class ISBuildingObject extends lua.shared.ISBaseObject {
@@ -179,5 +178,5 @@ declare module 'PipeWrench' {
       static removeFromGround: (square: any) => any;
     }
   }
-  export namespace lua.server.BuildingObjects.ISBuildingObject {}
+  export namespace lua.server.BuildingObjects.ISBuildingObject { }
 }

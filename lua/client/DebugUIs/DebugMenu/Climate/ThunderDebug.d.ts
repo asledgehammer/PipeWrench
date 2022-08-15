@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../../reference.d.ts" />
 /// <reference path="../../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.DebugUIs.DebugMenu.Climate {
     /** @customConstructor ThunderDebug:new */
     export class ThunderDebug extends lua.client.ISUI.ISCollapsableWindow {
@@ -104,5 +103,5 @@ declare module 'PipeWrench' {
       static OnThunderEvent: (x: any, y: any, strike: any, light: any, rumble: any) => any;
     }
   }
-  export namespace lua.client.DebugUIs.DebugMenu.Climate.ThunderDebug {}
+  export namespace lua.client.DebugUIs.DebugMenu.Climate.ThunderDebug { }
 }

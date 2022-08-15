@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor ModMoreInfo:new */
     export class ModMoreInfo extends lua.client.ISUI.ISPanel {
@@ -50,5 +49,5 @@ declare module 'PipeWrench' {
       static onOptionMouseDown: (button: any, x: any, y: any) => any;
     }
   }
-  export namespace lua.client.OptionScreens.ModMoreInfo {}
+  export namespace lua.client.OptionScreens.ModMoreInfo { }
 }

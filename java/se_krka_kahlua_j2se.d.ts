@@ -23,9 +23,9 @@
  *
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace se.krka.kahlua.j2se {
     export type J2SEPlatform = any;
     export type KahluaTableImpl = any;

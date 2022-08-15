@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor ServerList:new */
     export class ServerList extends lua.client.ISUI.ISPanelJoypad {
@@ -172,5 +171,5 @@ declare module 'PipeWrench' {
       static ServerPinged: (ip: any, users: any) => any;
     }
   }
-  export namespace lua.client.OptionScreens.ServerList {}
+  export namespace lua.client.OptionScreens.ServerList { }
 }

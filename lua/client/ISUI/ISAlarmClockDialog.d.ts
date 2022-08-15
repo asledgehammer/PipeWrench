@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISAlarmClockDialog:new */
     export class ISAlarmClockDialog extends lua.client.ISUI.ISPanelJoypad {
@@ -85,5 +84,5 @@ declare module 'PipeWrench' {
       update: (() => any) | any;
     }
   }
-  export namespace lua.client.ISUI.ISAlarmClockDialog {}
+  export namespace lua.client.ISUI.ISAlarmClockDialog { }
 }

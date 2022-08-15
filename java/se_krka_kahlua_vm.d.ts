@@ -23,9 +23,9 @@
  *
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace se.krka.kahlua.vm {
     export type Coroutine = any;
     export type KahluaTable = any;

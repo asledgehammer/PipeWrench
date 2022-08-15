@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISGeneratorInfoWindow:new */
     export class ISGeneratorInfoWindow extends lua.client.ISUI.ISCollapsableWindow {
@@ -62,5 +61,5 @@ declare module 'PipeWrench' {
       static getRichText: (object: any, displayStats: any) => any;
     }
   }
-  export namespace lua.client.ISUI.ISGeneratorInfoWindow {}
+  export namespace lua.client.ISUI.ISGeneratorInfoWindow { }
 }

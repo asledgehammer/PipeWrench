@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Camping {
     /** @customConstructor CCampfireSystem:new */
     export class CCampfireSystem extends lua.client.Map.CGlobalObjectSystem {
@@ -37,5 +36,5 @@ declare module 'PipeWrench' {
       constructor();
     }
   }
-  export namespace lua.client.Camping.CCampfireSystem {}
+  export namespace lua.client.Camping.CCampfireSystem { }
 }

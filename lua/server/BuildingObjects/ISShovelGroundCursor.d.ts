@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.BuildingObjects {
     /** @customConstructor ISShovelGroundCursor:new */
     export class ISShovelGroundCursor extends lua.server.BuildingObjects.ISBuildingObject {
@@ -64,5 +63,5 @@ declare module 'PipeWrench' {
       static GetEmptyItemCounts: (playerObj: any) => any;
     }
   }
-  export namespace lua.server.BuildingObjects.ISShovelGroundCursor {}
+  export namespace lua.server.BuildingObjects.ISShovelGroundCursor { }
 }

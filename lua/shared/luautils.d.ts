@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../reference.d.ts" />
 /// <reference path="../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.shared {
     export abstract class luautils {
       static [id: string]: any;
@@ -99,5 +98,5 @@ declare module 'PipeWrench' {
       static weaponLowerCondition: (_weapon: any, _character: any, _replace: any, _chance: any) => any;
     }
   }
-  export namespace lua.shared.luautils {}
+  export namespace lua.shared.luautils { }
 }

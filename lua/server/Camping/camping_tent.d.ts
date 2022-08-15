@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.Camping {
     export abstract class camping {
       static [id: string]: any;
@@ -60,5 +59,5 @@ declare module 'PipeWrench' {
       static tentAt: (x: any, y: any, z: any) => any;
     }
   }
-  export namespace lua.server.Camping.camping_tent {}
+  export namespace lua.server.Camping.camping_tent { }
 }

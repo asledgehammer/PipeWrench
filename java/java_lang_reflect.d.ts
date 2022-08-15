@@ -23,9 +23,9 @@
  *
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace java.lang.reflect {
     export type Constructor<T> = any;
     export type Field = any;

@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.TimedActions {
     /** @customConstructor ISApplyBandage:new */
     export class ISApplyBandage extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -51,5 +50,5 @@ declare module 'PipeWrench' {
       constructor(doctor: any, otherPlayer: any, item: any, bodyPart: any, doIt: any);
     }
   }
-  export namespace lua.client.TimedActions.ISApplyBandage {}
+  export namespace lua.client.TimedActions.ISApplyBandage { }
 }

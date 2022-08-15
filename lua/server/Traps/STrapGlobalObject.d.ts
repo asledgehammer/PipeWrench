@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.Traps {
     /** @customConstructor STrapGlobalObject:new */
     export class STrapGlobalObject extends lua.server.Map.SGlobalObject {
@@ -110,5 +109,5 @@ declare module 'PipeWrench' {
       static SpawnDestroyItems: (trapType: any, square: any, object: any) => any;
     }
   }
-  export namespace lua.server.Traps.STrapGlobalObject {}
+  export namespace lua.server.Traps.STrapGlobalObject { }
 }

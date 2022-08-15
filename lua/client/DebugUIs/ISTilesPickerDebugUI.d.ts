@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.DebugUIs {
     /** @customConstructor ISTilesPickerDebugUI:new */
     export class ISTilesPickerDebugUI extends lua.client.ISUI.ISCollapsableWindow {
@@ -85,5 +84,5 @@ declare module 'PipeWrench' {
       render: (() => any) | any;
     }
   }
-  export namespace lua.client.DebugUIs.ISTilesPickerDebugUI {}
+  export namespace lua.client.DebugUIs.ISTilesPickerDebugUI { }
 }

@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.Camping.BuildingObjects {
     /** @customConstructor campingTent:new */
     export class campingTent extends lua.server.BuildingObjects.ISBuildingObject {
@@ -53,5 +52,5 @@ declare module 'PipeWrench' {
       isSquareFree: ((square: any) => any) | any;
     }
   }
-  export namespace lua.server.Camping.BuildingObjects.campingTent {}
+  export namespace lua.server.Camping.BuildingObjects.campingTent { }
 }

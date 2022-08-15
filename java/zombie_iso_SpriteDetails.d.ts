@@ -23,9 +23,9 @@
  *
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace zombie.iso.SpriteDetails {
     /** [ENUM] zombie.iso.SpriteDetails.IsoFlagType */
     export class IsoFlagType {

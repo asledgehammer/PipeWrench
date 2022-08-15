@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.XpSystem.ISUI {
     /** @customConstructor ISCharacterInfoWindow:new */
     export class ISCharacterInfoWindow extends lua.client.ISUI.ISCollapsableWindow {
@@ -64,5 +63,5 @@ declare module 'PipeWrench' {
       static OnClothingUpdated: (chr: any) => any;
     }
   }
-  export namespace lua.client.XpSystem.ISUI.ISCharacterInfoWindow {}
+  export namespace lua.client.XpSystem.ISUI.ISCharacterInfoWindow { }
 }

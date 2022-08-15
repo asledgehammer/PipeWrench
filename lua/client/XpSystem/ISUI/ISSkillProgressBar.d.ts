@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.XpSystem.ISUI {
     /** @customConstructor ISSkillProgressBar:new */
     export class ISSkillProgressBar extends lua.client.ISUI.ISPanel {
@@ -91,5 +90,5 @@ declare module 'PipeWrench' {
       static updateAlpha: () => any;
     }
   }
-  export namespace lua.client.XpSystem.ISUI.ISSkillProgressBar {}
+  export namespace lua.client.XpSystem.ISUI.ISSkillProgressBar { }
 }

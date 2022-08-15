@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.Farming {
     export abstract class farming_vegetableconf {
       static [id: string]: any;
@@ -66,5 +65,5 @@ declare module 'PipeWrench' {
       static growTomato: (planting: any, nextGrowing: any, updateNbOfGrow: any) => any;
     }
   }
-  export namespace lua.server.Farming.farming_vegetableconf {}
+  export namespace lua.server.Farming.farming_vegetableconf { }
 }

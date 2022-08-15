@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.RadioCom.RadioWindowModules {
     /** @customConstructor RWMMicrophone:new */
     export class RWMMicrophone extends lua.client.RadioCom.RadioWindowModules.RWMPanel {
@@ -47,5 +46,5 @@ declare module 'PipeWrench' {
       setMuteButtonText: (() => any) | any;
     }
   }
-  export namespace lua.client.RadioCom.RadioWindowModules.RWMMicrophone {}
+  export namespace lua.client.RadioCom.RadioWindowModules.RWMMicrophone { }
 }

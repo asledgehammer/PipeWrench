@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Hotbar {
     /** @customConstructor ISHotbar:new */
     export class ISHotbar extends lua.client.ISUI.ISPanelJoypad {
@@ -132,5 +131,5 @@ declare module 'PipeWrench' {
       static onKeyStartPressed: (key: any) => any;
     }
   }
-  export namespace lua.client.Hotbar.ISHotbar {}
+  export namespace lua.client.Hotbar.ISHotbar { }
 }

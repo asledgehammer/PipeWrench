@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.TimedActions {
     /** @customConstructor ISPadlockAction:new */
     export class ISPadlockAction extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -45,5 +44,5 @@ declare module 'PipeWrench' {
       constructor(character: any, thump: any, padlock: any, pdata: any, lock: any);
     }
   }
-  export namespace lua.client.TimedActions.ISPadlockAction {}
+  export namespace lua.client.TimedActions.ISPadlockAction { }
 }

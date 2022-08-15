@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.Farming {
     /** @customConstructor SPlantGlobalObject:new */
     export class SPlantGlobalObject extends lua.server.Map.SGlobalObject {
@@ -134,5 +133,5 @@ declare module 'PipeWrench' {
       static initModData: (modData: any) => any;
     }
   }
-  export namespace lua.server.Farming.SPlantGlobalObject {}
+  export namespace lua.server.Farming.SPlantGlobalObject { }
 }

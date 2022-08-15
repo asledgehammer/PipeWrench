@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.shared.Reloading {
     /** @customConstructor ISShotgunWeapon:new */
     export class ISShotgunWeapon extends lua.shared.Reloading.ISReloadableWeapon {
@@ -57,5 +56,5 @@ declare module 'PipeWrench' {
       rackingStart: ((char: any, square: any, weapon: any) => any) | any;
     }
   }
-  export namespace lua.shared.Reloading.ISShotgunWeapon {}
+  export namespace lua.shared.Reloading.ISShotgunWeapon { }
 }

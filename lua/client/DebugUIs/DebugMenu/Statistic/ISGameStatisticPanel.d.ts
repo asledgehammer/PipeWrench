@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../../reference.d.ts" />
 /// <reference path="../../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.DebugUIs.DebugMenu.Statistic {
     /** @customConstructor ISGameStatisticPanel:new */
     export class ISGameStatisticPanel extends lua.client.ISUI.ISPanel {
@@ -165,5 +164,5 @@ declare module 'PipeWrench' {
       static OnServerStatisticReceived: () => any;
     }
   }
-  export namespace lua.client.DebugUIs.DebugMenu.Statistic.ISGameStatisticPanel {}
+  export namespace lua.client.DebugUIs.DebugMenu.Statistic.ISGameStatisticPanel { }
 }

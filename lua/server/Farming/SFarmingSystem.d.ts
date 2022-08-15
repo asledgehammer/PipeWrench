@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.Farming {
     /** @customConstructor SFarmingSystem:new */
     export class SFarmingSystem extends lua.server.Map.SGlobalObjectSystem {
@@ -77,5 +76,5 @@ declare module 'PipeWrench' {
       removeTallGrass: ((sq: any) => any) | any;
     }
   }
-  export namespace lua.server.Farming.SFarmingSystem {}
+  export namespace lua.server.Farming.SFarmingSystem { }
 }

@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.RainBarrel.BuildingObjects {
     /** @customConstructor RainCollectorBarrel:new */
     export class RainCollectorBarrel extends lua.server.BuildingObjects.ISBuildingObject {
@@ -51,5 +50,5 @@ declare module 'PipeWrench' {
       getHealth: (() => any) | any;
     }
   }
-  export namespace lua.server.RainBarrel.BuildingObjects.RainCollectorBarrel {}
+  export namespace lua.server.RainBarrel.BuildingObjects.RainCollectorBarrel { }
 }

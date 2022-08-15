@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.FireFighting {
     export abstract class FireFighting {
       static [id: string]: any;
@@ -48,5 +47,5 @@ declare module 'PipeWrench' {
       static isSquareToExtinguish: (square: any) => any;
     }
   }
-  export namespace lua.server.FireFighting.FireFighting {}
+  export namespace lua.server.FireFighting.FireFighting { }
 }

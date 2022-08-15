@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Traps {
     /** @customConstructor CTrapSystem:new */
     export class CTrapSystem extends lua.client.Map.CGlobalObjectSystem {
@@ -40,5 +39,5 @@ declare module 'PipeWrench' {
       static initObjectModData: (isoObject: any, trapDef: any, north: any, player: any) => any;
     }
   }
-  export namespace lua.client.Traps.CTrapSystem {}
+  export namespace lua.client.Traps.CTrapSystem { }
 }

@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.DebugUIs {
     /** @customConstructor WatchWindow:new */
     export class WatchWindow extends lua.client.ISUI.ISCollapsableWindow {
@@ -69,5 +68,5 @@ declare module 'PipeWrench' {
       static onDataWrite: (data: any) => any;
     }
   }
-  export namespace lua.client.DebugUIs.WatchWindow {}
+  export namespace lua.client.DebugUIs.WatchWindow { }
 }

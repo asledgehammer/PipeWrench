@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.MetalDrum {
     /** @customConstructor CMetalDrumSystem:new */
     export class CMetalDrumSystem extends lua.client.Map.CGlobalObjectSystem {
@@ -37,5 +36,5 @@ declare module 'PipeWrench' {
       constructor();
     }
   }
-  export namespace lua.client.MetalDrum.CMetalDrumSystem {}
+  export namespace lua.client.MetalDrum.CMetalDrumSystem { }
 }

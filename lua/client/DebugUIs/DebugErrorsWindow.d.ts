@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.DebugUIs {
     /** @customConstructor DebugErrorsWindow:new */
     export class DebugErrorsWindow extends lua.client.ISUI.ISCollapsableWindow {
@@ -43,5 +42,5 @@ declare module 'PipeWrench' {
       refresh: (() => any) | any;
     }
   }
-  export namespace lua.client.DebugUIs.DebugErrorsWindow {}
+  export namespace lua.client.DebugUIs.DebugErrorsWindow { }
 }

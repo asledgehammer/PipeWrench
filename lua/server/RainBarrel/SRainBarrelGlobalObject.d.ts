@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.RainBarrel {
     /** @customConstructor SRainBarrelGlobalObject:new */
     export class SRainBarrelGlobalObject extends lua.server.Map.SGlobalObject {
@@ -47,5 +46,5 @@ declare module 'PipeWrench' {
       changeSprite: (() => any) | any;
     }
   }
-  export namespace lua.server.RainBarrel.SRainBarrelGlobalObject {}
+  export namespace lua.server.RainBarrel.SRainBarrelGlobalObject { }
 }

@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.FireFighting {
     /** @customConstructor ISExtinguishCursor:new */
     export class ISExtinguishCursor extends lua.server.BuildingObjects.ISBuildingObject {
@@ -67,5 +66,5 @@ declare module 'PipeWrench' {
       isValidArea: ((x: any, y: any, z: any) => any) | any;
     }
   }
-  export namespace lua.server.FireFighting.ISExtinguishCursor {}
+  export namespace lua.server.FireFighting.ISExtinguishCursor { }
 }

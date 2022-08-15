@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.RecordedMedia {
     /** @customConstructor ISMediaInfo:new */
     export class ISMediaInfo extends lua.client.ISUI.ISCollapsableWindowJoypad {
@@ -70,5 +69,5 @@ declare module 'PipeWrench' {
       static openPanel: (_playerNum: any, _text: any) => any;
     }
   }
-  export namespace lua.client.RecordedMedia.ISMediaInfo {}
+  export namespace lua.client.RecordedMedia.ISMediaInfo { }
 }

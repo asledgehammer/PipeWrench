@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISRichTextPanel:new */
     export class ISRichTextPanel extends lua.client.ISUI.ISPanel {
@@ -127,5 +126,5 @@ declare module 'PipeWrench' {
       setText: ((text: any) => any) | any;
     }
   }
-  export namespace lua.client.ISUI.ISRichTextPanel {}
+  export namespace lua.client.ISUI.ISRichTextPanel { }
 }

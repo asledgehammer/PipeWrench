@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server.BuildingObjects {
     /** @customConstructor ISRemovePlantCursor:new */
     export class ISRemovePlantCursor extends lua.server.BuildingObjects.ISBuildingObject {
@@ -55,5 +54,5 @@ declare module 'PipeWrench' {
       getRemovableObject: ((square: any) => any) | any;
     }
   }
-  export namespace lua.server.BuildingObjects.ISRemovePlantCursor {}
+  export namespace lua.server.BuildingObjects.ISRemovePlantCursor { }
 }

@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../reference.d.ts" />
 /// <reference path="../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.server {
     export abstract class TemplateReplacers {
       static [id: string]: any;
@@ -39,5 +38,5 @@ declare module 'PipeWrench' {
       static runExample: () => any;
     }
   }
-  export namespace lua.server.TemplateReplacers {}
+  export namespace lua.server.TemplateReplacers { }
 }

@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../reference.d.ts" />
 /// <reference path="../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.shared {
     export abstract class SpawnRegionMgr {
       static [id: string]: any;
@@ -48,5 +47,5 @@ declare module 'PipeWrench' {
       static loadSpawnRegionsFile: (filename: any, server: any) => any;
     }
   }
-  export namespace lua.shared.SpawnRegions {}
+  export namespace lua.shared.SpawnRegions { }
 }

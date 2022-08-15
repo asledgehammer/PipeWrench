@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISTickBox:new */
     export class ISTickBox extends lua.client.ISUI.ISPanel {
@@ -133,5 +132,5 @@ declare module 'PipeWrench' {
       setWidthToFit: (() => any) | any;
     }
   }
-  export namespace lua.client.ISUI.ISTickBox {}
+  export namespace lua.client.ISUI.ISTickBox { }
 }

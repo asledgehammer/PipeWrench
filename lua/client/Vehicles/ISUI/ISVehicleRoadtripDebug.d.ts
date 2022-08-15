@@ -22,12 +22,11 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@shughesuk/pipewrench' {
   export namespace lua.client.Vehicles.ISUI {
     /** @customConstructor ISVehicleRoadtripDebug:new */
     export class ISVehicleRoadtripDebug extends lua.client.ISUI.ISCollapsableWindow {
@@ -73,5 +72,5 @@ declare module 'PipeWrench' {
       updateXY: ((x: any, y: any, startingListY: any) => any) | any;
     }
   }
-  export namespace lua.client.Vehicles.ISUI.ISVehicleRoadtripDebug {}
+  export namespace lua.client.Vehicles.ISUI.ISVehicleRoadtripDebug { }
 }
