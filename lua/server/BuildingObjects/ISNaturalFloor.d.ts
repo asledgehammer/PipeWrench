@@ -26,7 +26,7 @@
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
 
-declare module '@shughesuk/pipewrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.server.BuildingObjects {
     /** @customConstructor ISNaturalFloor:new */
     export class ISNaturalFloor extends lua.server.BuildingObjects.ISBuildingObject {

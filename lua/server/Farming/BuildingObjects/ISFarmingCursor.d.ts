@@ -26,7 +26,7 @@
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
 
-declare module '@shughesuk/pipewrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.server.Farming.BuildingObjects {
     /** @customConstructor ISFarmingCursor:new */
     export class ISFarmingCursor extends lua.server.BuildingObjects.ISBuildingObject {

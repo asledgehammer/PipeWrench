@@ -26,7 +26,7 @@
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
 
-declare module '@shughesuk/pipewrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.BuildingObjects.TimedActions {
     /** @customConstructor ISShovelGround:new */
     export class ISShovelGround extends lua.shared.TimedActions.ISBaseTimedAction {

@@ -26,7 +26,7 @@
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
 
-declare module '@shughesuk/pipewrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.Blacksmith.TimedActions {
     /** @customConstructor ISPutOutFireDrum:new */
     export class ISPutOutFireDrum extends lua.shared.TimedActions.ISBaseTimedAction {

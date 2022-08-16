@@ -26,7 +26,7 @@
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
 
-declare module '@shughesuk/pipewrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.ISUI.BodyParts {
     /** @customConstructor ISBodyPartPanel:new */
     export class ISBodyPartPanel extends lua.client.ISUI.ISPanelJoypad {

@@ -26,7 +26,7 @@
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
 
-declare module '@shughesuk/pipewrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.ISUI.AdminPanel {
     /** @customConstructor ISAdmPanelWeather:new */
     export class ISAdmPanelWeather extends lua.client.DebugUIs.DebugMenu.Base.ISDebugSubPanelBase {

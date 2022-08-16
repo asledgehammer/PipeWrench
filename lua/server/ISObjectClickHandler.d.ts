@@ -26,7 +26,7 @@
 /// <reference path="../../reference.d.ts" />
 /// <reference path="../../PipeWrench.d.ts" />
 
-declare module '@shughesuk/pipewrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.server {
     export abstract class ISObjectClickHandler {
       static [id: string]: any;

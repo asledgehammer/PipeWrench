@@ -25,7 +25,7 @@
 
 /**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module '@shughesuk/pipewrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace zombie.core.skinnedmodel.advancedanimation.debug {
     /**
      * @customConstructor AnimatorDebugMonitor.new

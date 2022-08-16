@@ -26,7 +26,7 @@
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
 
-declare module '@shughesuk/pipewrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.server.Fishing.BuildingObjects {
     /** @customConstructor fishingNet:new */
     export class fishingNet extends lua.server.BuildingObjects.ISBuildingObject {

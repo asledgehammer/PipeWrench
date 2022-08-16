@@ -26,7 +26,7 @@
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
 
-declare module '@shughesuk/pipewrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.TimedActions {
     /** @customConstructor ISPlantainCataplasm:new */
     export class ISPlantainCataplasm extends lua.shared.TimedActions.ISBaseTimedAction {

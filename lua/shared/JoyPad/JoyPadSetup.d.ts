@@ -26,7 +26,7 @@
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
 
-declare module '@shughesuk/pipewrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.shared.JoyPad {
     /** @customConstructor JoypadControllerData:new */
     export class JoypadControllerData extends lua.shared.ISBaseObject {

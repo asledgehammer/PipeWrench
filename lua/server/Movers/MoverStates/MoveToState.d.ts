@@ -26,7 +26,7 @@
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
 
-declare module '@shughesuk/pipewrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.server.Movers.MoverStates {
     /** @customConstructor MoveToState:new */
     export class MoveToState extends lua.server.Movers.MoverStates.ISBaseState {

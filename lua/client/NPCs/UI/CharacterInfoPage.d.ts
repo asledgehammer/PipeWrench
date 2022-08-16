@@ -26,7 +26,7 @@
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
 
-declare module '@shughesuk/pipewrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.NPCs.UI {
     /** @customConstructor CharacterInfoPage:new */
     export class CharacterInfoPage extends lua.client.ISUI.ISPanel {

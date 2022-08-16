@@ -26,7 +26,7 @@
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
 
-declare module '@shughesuk/pipewrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.ISUI.Fireplace {
     /** @customConstructor ISMicrowaveUI:new */
     export class ISMicrowaveUI extends lua.client.ISUI.ISPanelJoypad {

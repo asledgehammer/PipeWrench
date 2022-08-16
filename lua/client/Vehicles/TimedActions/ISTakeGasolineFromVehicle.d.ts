@@ -26,7 +26,7 @@
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
 
-declare module '@shughesuk/pipewrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.Vehicles.TimedActions {
     /** @customConstructor ISTakeGasolineFromVehicle:new */
     export class ISTakeGasolineFromVehicle extends lua.shared.TimedActions.ISBaseTimedAction {

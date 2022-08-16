@@ -26,7 +26,7 @@
 /// <reference path="../../../../../reference.d.ts" />
 /// <reference path="../../../../../PipeWrench.d.ts" />
 
-declare module '@shughesuk/pipewrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.DebugUIs.DebugMenu.radio {
     /** @customConstructor ZomboidRadioDebug:new */
     export class ZomboidRadioDebug extends lua.client.ISUI.ISPanel {

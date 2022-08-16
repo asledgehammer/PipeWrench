@@ -25,7 +25,7 @@
 
 /**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module '@shughesuk/pipewrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace java.util._function_ {
     export type BiConsumer<T, U> = any;
     export type BiFunction<T, U, R> = any;

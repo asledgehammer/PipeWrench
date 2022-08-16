@@ -26,7 +26,7 @@
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
 
-declare module '@shughesuk/pipewrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.Traps.TimedActions {
     /** @customConstructor ISRemoveBaitAction:new */
     export class ISRemoveBaitAction extends lua.shared.TimedActions.ISBaseTimedAction {

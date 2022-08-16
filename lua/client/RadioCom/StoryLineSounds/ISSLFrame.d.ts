@@ -26,7 +26,7 @@
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
 
-declare module '@shughesuk/pipewrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.RadioCom.StoryLineSounds {
     /** @customConstructor ISSLFrame:new */
     export class ISSLFrame extends lua.client.ISUI.ISPanel {

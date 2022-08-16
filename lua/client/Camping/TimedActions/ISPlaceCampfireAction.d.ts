@@ -26,7 +26,7 @@
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
 
-declare module '@shughesuk/pipewrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.Camping.TimedActions {
     /** @customConstructor ISPlaceCampfireAction:new */
     export class ISPlaceCampfireAction extends lua.shared.TimedActions.ISBaseTimedAction {

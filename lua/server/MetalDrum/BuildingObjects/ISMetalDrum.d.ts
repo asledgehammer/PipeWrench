@@ -26,7 +26,7 @@
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
 
-declare module '@shughesuk/pipewrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.server.MetalDrum.BuildingObjects {
     /** @customConstructor ISMetalDrum:new */
     export class ISMetalDrum extends lua.server.BuildingObjects.ISBuildingObject {

@@ -26,7 +26,7 @@
 /// <reference path="../../../../../reference.d.ts" />
 /// <reference path="../../../../../PipeWrench.d.ts" />
 
-declare module '@shughesuk/pipewrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.DebugUIs.DebugMenu.WorldFlares {
     /** @customConstructor WorldFlaresDebug:new */
     export class WorldFlaresDebug extends lua.client.ISUI.ISPanel {
