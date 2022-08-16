@@ -1,6 +1,6 @@
 {
   "name": "@asledgehammer/pipewrench",
-  "version": "41.73.12",
+  "version": "41.73.21",
   "description": "",
   "scripts": {
     "patch": "node patch.js",
