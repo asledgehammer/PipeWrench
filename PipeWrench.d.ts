@@ -28,7 +28,7 @@
 /**  @noSelfInFile */
 /// <reference path="reference.d.ts" />
 
-declare module '@asledgehammer' {
+declare module '@asledgehammer/pipewrench' {
 
   ///////////////////////////////////////
   // [PARTIAL] : Java.api.partial.d.ts //
