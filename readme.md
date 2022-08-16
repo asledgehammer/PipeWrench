@@ -23,7 +23,7 @@ PipeWrench is a set of TypeScript definitions for both the Java API and Lua code
 
 ### Versioning
 
-We automate the release process using github actions. Version numbers are based on PZ versions, with an additional patch release version at the end. For example `41.73.3` would be the `41.73` PZ version, but with 3 updates to correct typing issues. Note this is not strictly semver and there may be breaking fixes in a minor patch version!
+We automate the release process using github actions. Version numbers are based on PZ versions, with an additional patch release version at the end. For example `41.73.3` would be the `41.73` PZ version, but with 3 updates to correct typing issues. Note this is not strictly semver and there may be breaking fixes in a minor patch version.
 
 ### Creating a release
 
