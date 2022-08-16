@@ -21,12 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace zombie.iso.weather.fog {
     /**
      * @customConstructor ImprovedFog.new
@@ -172,6 +171,13 @@ declare module 'PipeWrench' {
        *  - (Empty): number
        */
       static getTopAlphaHeight(): number;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      static init(): void;
       /**
        * @noSelf
        *

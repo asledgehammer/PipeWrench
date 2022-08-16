@@ -20,40 +20,39 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:00.935Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.ISUI.Maps {
-    export class LootMaps {
-      private constructor();
-
+    export abstract class LootMaps {
       static [id: string]: any;
 
-      static callLua: ((functionName: any, mapUI: any, arg1: any, arg2: any, arg3: any, arg4: any) => any) | any;
+      /** @noSelf */
+      static callLua: (functionName: any, mapUI: any, arg1: any, arg2: any, arg3: any, arg4: any) => any;
     }
 
-    export class MapUtils {
-      private constructor();
-
+    export abstract class MapUtils {
       static [id: string]: any;
 
-      static initDefaultMapData: ((mapUI: any) => any) | any;
+      /** @noSelf */
+      static initDefaultMapData: (mapUI: any) => any;
 
-      static initDefaultStyleV1: ((mapUI: any) => any) | any;
+      /** @noSelf */
+      static initDefaultStyleV1: (mapUI: any) => any;
 
-      static initDirectoryMapData: ((mapUI: any, directory: any) => any) | any;
+      /** @noSelf */
+      static initDirectoryMapData: (mapUI: any, directory: any) => any;
 
-      static overlayPaper: ((mapUI: any) => any) | any;
+      /** @noSelf */
+      static overlayPaper: (mapUI: any) => any;
 
-      static revealKnownArea: ((mapUI: any) => any) | any;
+      /** @noSelf */
+      static revealKnownArea: (mapUI: any) => any;
     }
   }
-  export namespace lua.client.ISUI.Maps.ISMapDefinitions {}
+  export namespace lua.client.ISUI.Maps.ISMapDefinitions { }
 }

@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:02.812Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.XpSystem.ISUI {
     /** @customConstructor ISCharacterInfoWindow:new */
     export class ISCharacterInfoWindow extends lua.client.ISUI.ISCollapsableWindow {
@@ -62,8 +59,9 @@ declare module 'PipeWrench' {
 
       toggleView: ((viewName: any) => any) | any;
 
-      static OnClothingUpdated: ((chr: any) => any) | any;
+      /** @noSelf */
+      static OnClothingUpdated: (chr: any) => any;
     }
   }
-  export namespace lua.client.XpSystem.ISUI.ISCharacterInfoWindow {}
+  export namespace lua.client.XpSystem.ISUI.ISCharacterInfoWindow { }
 }

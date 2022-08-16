@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.503Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor CoopOptionsScreen:new */
     export class CoopOptionsScreen extends lua.client.ISUI.ISPanelJoypad {
@@ -130,13 +127,17 @@ declare module 'PipeWrench' {
 
       saveOptions: (() => any) | any;
 
-      static OnConnected: (() => any) | any;
+      /** @noSelf */
+      static OnConnected: () => any;
 
-      static OnConnectFailed: ((message: any) => any) | any;
+      /** @noSelf */
+      static OnConnectFailed: (message: any) => any;
 
-      static OnConnectionStateChanged: ((state: any, message: any) => any) | any;
+      /** @noSelf */
+      static OnConnectionStateChanged: (state: any, message: any) => any;
 
-      static onCoopServerMessage: ((tag: any, cookie: any, payload: any) => any) | any;
+      /** @noSelf */
+      static onCoopServerMessage: (tag: any, cookie: any, payload: any) => any;
     }
 
     /** @customConstructor CoopOptionsScreenPanel:new */
@@ -155,9 +156,7 @@ declare module 'PipeWrench' {
       onLoseJoypadFocus: ((joypadData: any) => any) | any;
     }
 
-    export class CoopConnection {
-      private constructor();
-
+    export abstract class CoopConnection {
       static [id: string]: any;
 
       static memory: any;
@@ -169,5 +168,5 @@ declare module 'PipeWrench' {
       static username: any;
     }
   }
-  export namespace lua.client.OptionScreens.CoopOptionsScreen {}
+  export namespace lua.client.OptionScreens.CoopOptionsScreen { }
 }

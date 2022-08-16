@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:38:59.960Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.ISUI.AdminPanel {
     /** @customConstructor ISAdminMessage:new */
     export class ISAdminMessage extends lua.client.ISUI.ISPanel {
@@ -64,10 +61,12 @@ declare module 'PipeWrench' {
 
       updateButtons: (() => any) | any;
 
-      static AddAdminMessage: ((message: any, x: any, y: any, z: any) => any) | any;
+      /** @noSelf */
+      static AddAdminMessage: (message: any, x: any, y: any, z: any) => any;
 
-      static RecalculPositions: (() => any) | any;
+      /** @noSelf */
+      static RecalculPositions: () => any;
     }
   }
-  export namespace lua.client.ISUI.AdminPanel.ISAdminMessage {}
+  export namespace lua.client.ISUI.AdminPanel.ISAdminMessage { }
 }

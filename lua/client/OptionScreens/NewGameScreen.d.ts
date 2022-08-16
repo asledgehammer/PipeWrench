@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.610Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor NewGameScreen:new */
     export class NewGameScreen extends lua.client.ISUI.ISPanelJoypad {
@@ -108,20 +105,27 @@ declare module 'PipeWrench' {
 
       updateBottomPanelButtons: (() => any) | any;
 
-      static dblClickChallenge: ((item: any, x: any, y: any) => any) | any;
+      /** @noSelf */
+      static dblClickChallenge: (item: any, x: any, y: any) => any;
 
-      static dblClickDifficulty: ((item: any, x: any, y: any) => any) | any;
+      /** @noSelf */
+      static dblClickDifficulty: (item: any, x: any, y: any) => any;
 
-      static dblClickPlaystyle: ((item: any, x: any, y: any) => any) | any;
+      /** @noSelf */
+      static dblClickPlaystyle: (item: any, x: any, y: any) => any;
 
-      static dblClickSurvival: ((item: any, x: any, y: any) => any) | any;
+      /** @noSelf */
+      static dblClickSurvival: (item: any, x: any, y: any) => any;
 
-      static dblClickTutorial: ((item: any, x: any, y: any) => any) | any;
+      /** @noSelf */
+      static dblClickTutorial: (item: any, x: any, y: any) => any;
 
-      static onChooseDifficulty: ((item: any, x: any, y: any) => any) | any;
+      /** @noSelf */
+      static onChooseDifficulty: (item: any, x: any, y: any) => any;
 
-      static onMenuItemMouseDown: ((item: any, x: any, y: any) => any) | any;
+      /** @noSelf */
+      static onMenuItemMouseDown: (item: any, x: any, y: any) => any;
     }
   }
-  export namespace lua.client.OptionScreens.NewGameScreen {}
+  export namespace lua.client.OptionScreens.NewGameScreen { }
 }

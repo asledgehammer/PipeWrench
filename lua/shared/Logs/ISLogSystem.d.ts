@@ -20,36 +20,38 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.259Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.shared.Logs {
-    export class ISLogSystem {
-      private constructor();
-
+    export abstract class ISLogSystem {
       static [id: string]: any;
 
-      static getGenericLogText: ((_character: any, _actionType: any) => any) | any;
+      /** @noSelf */
+      static getGenericLogText: (_character: any, _actionType: any) => any;
 
-      static getObjectPosition: ((_object: any) => any) | any;
+      /** @noSelf */
+      static getObjectPosition: (_object: any) => any;
 
-      static init: (() => any) | any;
+      /** @noSelf */
+      static init: () => any;
 
-      static logAction: ((_action: any) => any) | any;
+      /** @noSelf */
+      static logAction: (_action: any) => any;
 
-      static OnClientCommand: ((_module: any, _command: any, _plObj: any, _packet: any) => any) | any;
+      /** @noSelf */
+      static OnClientCommand: (_module: any, _command: any, _plObj: any, _packet: any) => any;
 
-      static sendLog: ((_character: any, _loggerName: any, _logText: any) => any) | any;
+      /** @noSelf */
+      static sendLog: (_character: any, _loggerName: any, _logText: any) => any;
 
-      static writeLog: ((_character: any, _packet: any) => any) | any;
+      /** @noSelf */
+      static writeLog: (_character: any, _packet: any) => any;
     }
   }
-  export namespace lua.shared.Logs.ISLogSystem {}
+  export namespace lua.shared.Logs.ISLogSystem { }
 }

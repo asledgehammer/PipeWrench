@@ -21,12 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace java.util {
     export type AbstractList<E> = any;
     export type ArrayDeque<E> = any;
@@ -1070,7 +1069,6 @@ declare module 'PipeWrench' {
       trimToSize<T>(): void;
     }
     export type TimeZone = any;
-    export type UUID = any;
     /**
      * @customConstructor Vector.new
      * @

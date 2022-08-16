@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:00.503Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISOnScreenKeyboard:new */
     export class ISOnScreenKeyboard extends lua.client.ISUI.ISPanelJoypad {
@@ -191,21 +188,23 @@ declare module 'PipeWrench' {
       renderButton: (() => any) | any;
     }
 
-    export class OnScreenKeyboard {
-      private constructor();
-
+    export abstract class OnScreenKeyboard {
       static [id: string]: any;
 
       static instance: any;
 
-      static GetCurrentText: (() => any) | any;
+      /** @noSelf */
+      static GetCurrentText: () => any;
 
-      static Hide: (() => any) | any;
+      /** @noSelf */
+      static Hide: () => any;
 
-      static IsVisible: (() => any) | any;
+      /** @noSelf */
+      static IsVisible: () => any;
 
-      static Show: ((playerNum: any, textEntryBox: any, joypadData: any) => any) | any;
+      /** @noSelf */
+      static Show: (playerNum: any, textEntryBox: any, joypadData: any) => any;
     }
   }
-  export namespace lua.client.ISUI.ISOnScreenKeyboard {}
+  export namespace lua.client.ISUI.ISOnScreenKeyboard { }
 }

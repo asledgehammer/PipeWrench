@@ -20,40 +20,37 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:38:59.832Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.shared.Foraging {
-    export class forageCategories {
+    export abstract class forageCategories {
       static [id: string]: any;
     }
 
-    export class forageDefaultDefs {
+    export abstract class forageDefaultDefs {
       static [id: string]: any;
     }
 
-    export class forageDefs {
+    export abstract class forageDefs {
       static [id: string]: any;
     }
 
-    export class forageSkills {
+    export abstract class forageSkills {
       static [id: string]: any;
     }
 
-    export class forageZones {
+    export abstract class forageZones {
       static [id: string]: any;
     }
 
-    export class scavenges {
+    export abstract class scavenges {
       static [id: string]: any;
     }
   }
-  export namespace lua.shared.Foraging.forageDefinitions {}
+  export namespace lua.shared.Foraging.forageDefinitions { }
 }

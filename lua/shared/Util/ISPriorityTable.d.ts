@@ -20,24 +20,20 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:02.549Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.shared.Util {
-    export class ISPriorityTable {
-      private constructor();
-
+    export abstract class ISPriorityTable {
       static [id: string]: any;
 
-      static new: (() => any) | any;
+      /** @noSelf */
+      static new: () => any;
     }
   }
-  export namespace lua.shared.Util.ISPriorityTable {}
+  export namespace lua.shared.Util.ISPriorityTable { }
 }

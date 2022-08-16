@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:38:59.023Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.DebugUIs {
     /** @customConstructor AttachmentEditorUI:new */
     export class AttachmentEditorUI extends lua.client.ISUI.ISPanel {
@@ -49,6 +46,8 @@ declare module 'PipeWrench' {
       scene: any;
 
       views: any;
+
+      worldAttachmentPanel: any;
 
       wroteScriptLabel: any;
 
@@ -194,17 +193,17 @@ declare module 'PipeWrench' {
 
       java9:
         | ((
-            func: any,
-            arg0: any,
-            arg1: any,
-            arg2: any,
-            arg3: any,
-            arg4: any,
-            arg5: any,
-            arg6: any,
-            arg7: any,
-            arg8: any
-          ) => any)
+          func: any,
+          arg0: any,
+          arg1: any,
+          arg2: any,
+          arg3: any,
+          arg4: any,
+          arg5: any,
+          arg6: any,
+          arg7: any,
+          arg8: any
+        ) => any)
         | any;
 
       onGizmoAccept: (() => any) | any;
@@ -287,9 +286,27 @@ declare module 'PipeWrench' {
 
       onMouseMoveOutside: ((dx: any, dy: any) => any) | any;
     }
+
+    /** @customConstructor AttachmentEditorUI_WorldAttachmentPanel:new */
+    export class AttachmentEditorUI_WorldAttachmentPanel extends lua.client.ISUI.ISPanel {
+      [id: string]: any;
+      static [id: string]: any;
+
+      scene: any;
+
+      weaponRotationHack: any;
+
+      constructor(x: any, y: any, width: any, height: any);
+
+      createChildren: (() => any) | any;
+
+      onTickBox: ((index: any, selected: any) => any) | any;
+
+      setModelScriptName: ((scriptName: any) => any) | any;
+    }
   }
   export namespace lua.client.DebugUIs.AttachmentEditorUI {
     /** @noSelf */
-    export const AttachmentEditorState_InitUI: (() => any) | any;
+    export const AttachmentEditorState_InitUI: () => any;
   }
 }

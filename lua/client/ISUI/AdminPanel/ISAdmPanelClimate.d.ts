@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:38:59.999Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.ISUI.AdminPanel {
     /** @customConstructor ISAdmPanelClimate:new */
     export class ISAdmPanelClimate extends lua.client.DebugUIs.DebugMenu.Base.ISDebugSubPanelBase {
@@ -67,5 +64,5 @@ declare module 'PipeWrench' {
       onTicked: ((_index: any, _selected: any, _arg1: any, _arg2: any, _tickbox: any) => any) | any;
     }
   }
-  export namespace lua.client.ISUI.AdminPanel.ISAdmPanelClimate {}
+  export namespace lua.client.ISUI.AdminPanel.ISAdmPanelClimate { }
 }

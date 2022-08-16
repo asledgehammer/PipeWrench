@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.057Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.ISUI.UserPanel {
     /** @customConstructor ISFactionUI:new */
     export class ISFactionUI extends lua.client.ISUI.ISPanel {
@@ -112,12 +109,15 @@ declare module 'PipeWrench' {
 
       updateButtons: (() => any) | any;
 
-      static AcceptedFactionInvite: ((factionName: any, host: any) => any) | any;
+      /** @noSelf */
+      static AcceptedFactionInvite: (factionName: any, host: any) => any;
 
-      static ReceiveFactionInvite: ((factionName: any, host: any) => any) | any;
+      /** @noSelf */
+      static ReceiveFactionInvite: (factionName: any, host: any) => any;
 
-      static SyncFaction: ((factionName: any) => any) | any;
+      /** @noSelf */
+      static SyncFaction: (factionName: any) => any;
     }
   }
-  export namespace lua.client.ISUI.UserPanel.ISFactionUI {}
+  export namespace lua.client.ISUI.UserPanel.ISFactionUI { }
 }

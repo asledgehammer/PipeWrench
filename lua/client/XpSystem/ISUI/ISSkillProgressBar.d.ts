@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:02.846Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.XpSystem.ISUI {
     /** @customConstructor ISSkillProgressBar:new */
     export class ISSkillProgressBar extends lua.client.ISUI.ISPanel {
@@ -80,14 +77,18 @@ declare module 'PipeWrench' {
 
       updateTooltip: ((lvlSelected: any) => any) | any;
 
-      static getPerkXp: ((self: any) => any) | any;
+      /** @noSelf */
+      static getPerkXp: (self: any) => any;
 
-      static getPreviousXpLvl: ((perk: any, level: any) => any) | any;
+      /** @noSelf */
+      static getPreviousXpLvl: (perk: any, level: any) => any;
 
-      static getXpForLvl: ((perk: any, level: any) => any) | any;
+      /** @noSelf */
+      static getXpForLvl: (perk: any, level: any) => any;
 
-      static updateAlpha: (() => any) | any;
+      /** @noSelf */
+      static updateAlpha: () => any;
     }
   }
-  export namespace lua.client.XpSystem.ISUI.ISSkillProgressBar {}
+  export namespace lua.client.XpSystem.ISUI.ISSkillProgressBar { }
 }

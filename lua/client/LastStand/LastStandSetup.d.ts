@@ -20,35 +20,31 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.231Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.LastStand {
-    export class LastStandData {
-      private constructor();
-
+    export abstract class LastStandData {
       static [id: string]: any;
 
       static chosenChallenge: any;
 
-      static getSpawnRegion: (() => any) | any;
+      /** @noSelf */
+      static getSpawnRegion: () => any;
     }
   }
   export namespace lua.client.LastStand.LastStandSetup {
     /** @noSelf */
-    export const doLastStandDraw: (() => any) | any;
+    export const doLastStandDraw: () => any;
 
     /** @noSelf */
-    export const doLastStandInit: (() => any) | any;
+    export const doLastStandInit: () => any;
 
     /** @noSelf */
-    export const preLoadLastStandInit: (() => any) | any;
+    export const preLoadLastStandInit: () => any;
   }
 }

@@ -20,52 +20,66 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:38:59.384Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.DebugUIs.DebugMenu {
-    export class ISDebugUtils {
-      private constructor();
-
+    export abstract class ISDebugUtils {
       static [id: string]: any;
 
-      static addButton:
-        | ((_self: any, _data: any, _x: any, _y: any, _w: any, _h: any, _title: any, _func: any) => any)
-        | any;
+      /** @noSelf */
+      static addButton: (_self: any, _data: any, _x: any, _y: any, _w: any, _h: any, _title: any, _func: any) => any;
 
-      static addComboBox: ((_self: any, _data: any, _x: any, _y: any, _w: any, _font: any, _func: any) => any) | any;
+      /** @noSelf */
+      static addComboBox: (_self: any, _data: any, _x: any, _y: any, _w: any, _font: any, _func: any) => any;
 
-      static addHorzBar: ((_self: any, _y: any) => any) | any;
+      /** @noSelf */
+      static addHorzBar: (_self: any, _y: any) => any;
 
-      static addLabel: ((_self: any, _data: any, _x: any, _y: any, _title: any, _font: any, _bLeft: any) => any) | any;
+      /** @noSelf */
+      static addLabel: (_self: any, _data: any, _x: any, _y: any, _title: any, _font: any, _bLeft: any) => any;
 
-      static addSlider: ((_self: any, _data: any, _x: any, _y: any, _w: any, _h: any, _func: any) => any) | any;
+      /** @noSelf */
+      static addSlider: (_self: any, _data: any, _x: any, _y: any, _w: any, _h: any, _func: any) => any;
 
-      static addTextEntryBox: ((_self: any, _data: any, _title: any, _x: any, _y: any, _w: any, _h: any) => any) | any;
+      /** @noSelf */
+      static addTextEntryBox: (_self: any, _data: any, _title: any, _x: any, _y: any, _w: any, _h: any) => any;
 
-      static addTickBox:
-        | ((_self: any, _data: any, _x: any, _y: any, _w: any, _h: any, _title: any, options: any, _func: any) => any)
-        | any;
+      /** @noSelf */
+      static addTickBox: (
+        _self: any,
+        _data: any,
+        _x: any,
+        _y: any,
+        _w: any,
+        _h: any,
+        _title: any,
+        options: any,
+        _func: any
+      ) => any;
 
-      static clamp01: ((_n: any) => any) | any;
+      /** @noSelf */
+      static clamp01: (_n: any) => any;
 
-      static initHorzBars: ((_self: any, _x: any, _width: any) => any) | any;
+      /** @noSelf */
+      static initHorzBars: (_self: any, _x: any, _width: any) => any;
 
-      static onMouseWheel: ((self: any, del: any) => any) | any;
+      /** @noSelf */
+      static onMouseWheel: (self: any, del: any) => any;
 
-      static printval: ((_v: any, _d: any) => any) | any;
+      /** @noSelf */
+      static printval: (_v: any, _d: any) => any;
 
-      static renderHorzBars: ((_self: any) => any) | any;
+      /** @noSelf */
+      static renderHorzBars: (_self: any) => any;
 
-      static roundNum: ((num: any, numDecimalPlaces: any) => any) | any;
+      /** @noSelf */
+      static roundNum: (num: any, numDecimalPlaces: any) => any;
     }
   }
-  export namespace lua.client.DebugUIs.DebugMenu.ISDebugUtils {}
+  export namespace lua.client.DebugUIs.DebugMenu.ISDebugUtils { }
 }

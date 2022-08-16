@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:38:58.674Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.server.BuildingObjects {
     /** @customConstructor ISWoodenStairs:new */
     export class ISWoodenStairs extends lua.server.BuildingObjects.ISBuildingObject {
@@ -69,8 +66,10 @@ declare module 'PipeWrench' {
 
       getSquare3Pos: ((square: any, north: any) => any) | any;
 
+      getSquareTopPos: ((square: any, north: any) => any) | any;
+
       setInfo: ((square: any, level: any, north: any, sprite: any, luaobject: any) => any) | any;
     }
   }
-  export namespace lua.server.BuildingObjects.ISWoodenStairs {}
+  export namespace lua.server.BuildingObjects.ISWoodenStairs { }
 }

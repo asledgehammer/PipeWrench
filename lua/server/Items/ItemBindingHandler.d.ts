@@ -20,26 +20,23 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.114Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.server.Items {
-    export class ItemBindingHandler {
-      private constructor();
-
+    export abstract class ItemBindingHandler {
       static [id: string]: any;
 
-      static onKeyPressed: ((key: any) => any) | any;
+      /** @noSelf */
+      static onKeyPressed: (key: any) => any;
 
-      static toggleLight: ((key: any) => any) | any;
+      /** @noSelf */
+      static toggleLight: (key: any) => any;
     }
   }
-  export namespace lua.server.Items.ItemBindingHandler {}
+  export namespace lua.server.Items.ItemBindingHandler { }
 }

@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:38:59.644Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.DebugUIs {
     /** @customConstructor TextureWindow:new */
     export class TextureWindow extends lua.client.ISUI.ISCollapsableWindow {
@@ -45,5 +42,5 @@ declare module 'PipeWrench' {
       renderTex: (() => any) | any;
     }
   }
-  export namespace lua.client.DebugUIs.TextureViewer {}
+  export namespace lua.client.DebugUIs.TextureViewer { }
 }

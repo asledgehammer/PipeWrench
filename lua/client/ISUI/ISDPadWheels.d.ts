@@ -20,36 +20,38 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:00.281Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.ISUI {
-    export class ISDPadWheels {
-      private constructor();
-
+    export abstract class ISDPadWheels {
       static [id: string]: any;
 
-      static onDisplayDown: ((joypadData: any) => any) | any;
+      /** @noSelf */
+      static onDisplayDown: (joypadData: any) => any;
 
-      static onDisplayLeft: ((joypadData: any) => any) | any;
+      /** @noSelf */
+      static onDisplayLeft: (joypadData: any) => any;
 
-      static onDisplayRight: ((joypadData: any) => any) | any;
+      /** @noSelf */
+      static onDisplayRight: (joypadData: any) => any;
 
-      static onDisplayUp: ((joypadData: any) => any) | any;
+      /** @noSelf */
+      static onDisplayUp: (joypadData: any) => any;
 
-      static onEquipPrimary: ((playerObj: any, item: any) => any) | any;
+      /** @noSelf */
+      static onEquipPrimary: (playerObj: any, item: any) => any;
 
-      static onShout: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static onShout: (playerObj: any) => any;
 
-      static onToggleLight: ((playerObj: any, item: any) => any) | any;
+      /** @noSelf */
+      static onToggleLight: (playerObj: any, item: any) => any;
     }
   }
-  export namespace lua.client.ISUI.ISDPadWheels {}
+  export namespace lua.client.ISUI.ISDPadWheels { }
 }

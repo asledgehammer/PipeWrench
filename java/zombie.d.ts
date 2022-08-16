@@ -21,12 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace zombie {
     /**
      * @customConstructor AmbientStreamManager.new
@@ -435,10 +434,10 @@ declare module 'PipeWrench' {
       isPlayingMusic(): boolean;
       /**
        * Method Parameters: 
-       *  - (long arg0): boolean
        *  - (String arg0): boolean
+       *  - (long arg0): boolean
        */
-      isPlayingUISound(arg0: number | string): boolean;
+      isPlayingUISound(arg0: string | number): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -637,8 +636,8 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0, boolean arg1, float arg2): fmod.fmod.Audio
-       *  - (String arg0, int arg1, boolean arg2, float arg3): fmod.fmod.Audio
        *  - (String arg0, boolean arg1, float arg2, float arg3): fmod.fmod.Audio
+       *  - (String arg0, int arg1, boolean arg2, float arg3): fmod.fmod.Audio
        */
       PlaySoundWav(arg0: string, arg1: boolean | number, arg2: number | boolean, arg3?: number): fmod.fmod.Audio;
       /**
@@ -752,10 +751,10 @@ declare module 'PipeWrench' {
       isPlayingMusic(): boolean;
       /**
        * Method Parameters: 
-       *  - (String arg0): boolean
        *  - (long arg0): boolean
+       *  - (String arg0): boolean
        */
-      isPlayingUISound(arg0: string | number): boolean;
+      isPlayingUISound(arg0: number | string): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -1328,17 +1327,17 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (Empty): void
-       *  - (DataInputStream arg0): void
        *  - (ByteBuffer arg0): void
+       *  - (DataInputStream arg0): void
        */
-      load(arg0?: java.io.DataInputStream | java.nio.ByteBuffer): void;
+      load(arg0?: java.nio.ByteBuffer | java.io.DataInputStream): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
-       *  - (ByteBuffer arg0): void
        *  - (DataOutputStream arg0): void
+       *  - (ByteBuffer arg0): void
        */
-      save(arg0?: java.nio.ByteBuffer | java.io.DataOutputStream): void;
+      save(arg0?: java.io.DataOutputStream | java.nio.ByteBuffer): void;
       /**
        * Method Parameters: 
        *  - (ByteBuffer arg0): void
@@ -3173,10 +3172,10 @@ declare module 'PipeWrench' {
       IsMusicPlaying(): boolean;
       /**
        * Method Parameters: 
-       *  - (String arg0, Audio arg1, float arg2, boolean arg3): void
        *  - (String arg0, Audio arg1, boolean arg2, float arg3): void
+       *  - (String arg0, Audio arg1, float arg2, boolean arg3): void
        */
-      PlayAsMusic(arg0: string, arg1: fmod.fmod.Audio, arg2: number | boolean, arg3: boolean | number): void;
+      PlayAsMusic(arg0: string, arg1: fmod.fmod.Audio, arg2: boolean | number, arg3: number | boolean): void;
       /**
        * Method Parameters: 
        *  - (String arg0, boolean arg1, float arg2): fmod.fmod.Audio
@@ -3201,8 +3200,8 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0, boolean arg1, float arg2): fmod.fmod.Audio
-       *  - (String arg0, boolean arg1, float arg2, float arg3): fmod.fmod.Audio
        *  - (String arg0, int arg1, boolean arg2, float arg3): fmod.fmod.Audio
+       *  - (String arg0, boolean arg1, float arg2, float arg3): fmod.fmod.Audio
        */
       PlaySoundWav(arg0: string, arg1: boolean | number, arg2: number | boolean, arg3?: number): fmod.fmod.Audio;
       /**
@@ -3321,10 +3320,10 @@ declare module 'PipeWrench' {
       isPlayingMusic(): boolean;
       /**
        * Method Parameters: 
-       *  - (long arg0): boolean
        *  - (String arg0): boolean
+       *  - (long arg0): boolean
        */
-      isPlayingUISound(arg0: number | string): boolean;
+      isPlayingUISound(arg0: string | number): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -3738,10 +3737,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (int arg0, boolean arg1): zombie.characters.IsoZombie
-       *  - (int arg0, int arg1, boolean arg2): zombie.characters.IsoZombie
        *  - (int arg0, boolean arg1, int arg2): zombie.characters.IsoZombie
+       *  - (int arg0, int arg1, boolean arg2): zombie.characters.IsoZombie
        */
-      createRealZombieAlways(arg0: number, arg1: boolean | number, arg2?: boolean | number): zombie.characters.IsoZombie;
+      createRealZombieAlways(arg0: number, arg1: boolean | number, arg2?: number | boolean): zombie.characters.IsoZombie;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2): zombie.characters.IsoZombie
@@ -3927,11 +3926,11 @@ declare module 'PipeWrench' {
       getFromLong(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): boolean
        *  - (IsoObjectType arg0): boolean
        *  - (IsoFlagType arg0): boolean
+       *  - (int arg0): boolean
        */
-      isSet(arg0: number | zombie.iso.SpriteDetails.IsoObjectType | zombie.iso.SpriteDetails.IsoFlagType): boolean;
+      isSet(arg0: zombie.iso.SpriteDetails.IsoObjectType | zombie.iso.SpriteDetails.IsoFlagType | number): boolean;
       /**
        * Method Parameters: 
        *  - (DataInputStream arg0): void
@@ -3945,10 +3944,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (IsoObjectType arg0, boolean arg1): void
-       *  - (IsoFlagType arg0, boolean arg1): void
        *  - (int arg0, boolean arg1): void
+       *  - (IsoFlagType arg0, boolean arg1): void
        */
-      set(arg0: zombie.iso.SpriteDetails.IsoObjectType | zombie.iso.SpriteDetails.IsoFlagType | number, arg1: boolean): void;
+      set(arg0: zombie.iso.SpriteDetails.IsoObjectType | number | zombie.iso.SpriteDetails.IsoFlagType, arg1: boolean): void;
     }
   }
 }

@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:00.380Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISInventoryPane:new */
     export class ISInventoryPane extends lua.client.ISUI.ISPanel {
@@ -252,24 +249,31 @@ declare module 'PipeWrench' {
 
       updateTooltip: (() => any) | any;
 
-      static getActualItems: ((items: any) => any) | any;
+      /** @noSelf */
+      static getActualItems: (items: any) => any;
 
-      static itemSortByCatDesc: ((a: any, b: any) => any) | any;
+      /** @noSelf */
+      static itemSortByCatDesc: (a: any, b: any) => any;
 
-      static itemSortByCatInc: ((a: any, b: any) => any) | any;
+      /** @noSelf */
+      static itemSortByCatInc: (a: any, b: any) => any;
 
-      static itemSortByNameDesc: ((a: any, b: any) => any) | any;
+      /** @noSelf */
+      static itemSortByNameDesc: (a: any, b: any) => any;
 
-      static itemSortByNameInc: ((a: any, b: any) => any) | any;
+      /** @noSelf */
+      static itemSortByNameInc: (a: any, b: any) => any;
 
-      static itemSortByWeightAsc: ((a: any, b: any) => any) | any;
+      /** @noSelf */
+      static itemSortByWeightAsc: (a: any, b: any) => any;
 
-      static itemSortByWeightDesc: ((a: any, b: any) => any) | any;
+      /** @noSelf */
+      static itemSortByWeightDesc: (a: any, b: any) => any;
     }
 
-    export class ISInventoryPaneDraggedItems {
+    export abstract class ISInventoryPaneDraggedItems {
       static [id: string]: any;
     }
   }
-  export namespace lua.client.ISUI.ISInventoryPane {}
+  export namespace lua.client.ISUI.ISInventoryPane { }
 }

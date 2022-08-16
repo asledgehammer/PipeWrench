@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:38:59.765Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.server.Farming {
     /** @customConstructor SPlantGlobalObject:new */
     export class SPlantGlobalObject extends lua.server.Map.SGlobalObject {
@@ -132,8 +129,9 @@ declare module 'PipeWrench' {
 
       water: ((waterSource: any, uses: any) => any) | any;
 
-      static initModData: ((modData: any) => any) | any;
+      /** @noSelf */
+      static initModData: (modData: any) => any;
     }
   }
-  export namespace lua.server.Farming.SPlantGlobalObject {}
+  export namespace lua.server.Farming.SPlantGlobalObject { }
 }

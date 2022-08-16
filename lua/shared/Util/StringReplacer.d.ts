@@ -20,24 +20,20 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:02.559Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.shared.Util {
-    export class StringReplacer {
-      private constructor();
-
+    export abstract class StringReplacer {
       static [id: string]: any;
 
-      static DoCharacter: ((str: any, desc: any) => any) | any;
+      /** @noSelf */
+      static DoCharacter: (str: any, desc: any) => any;
     }
   }
-  export namespace lua.shared.Util.StringReplacer {}
+  export namespace lua.shared.Util.StringReplacer { }
 }

@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.544Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor LoadGameScreen:new */
     export class LoadGameScreen extends lua.client.ISUI.ISPanelJoypad {
@@ -126,13 +123,15 @@ declare module 'PipeWrench' {
 
       showConfigPanel: (() => any) | any;
 
-      static onClickWorld: (() => any) | any;
+      /** @noSelf */
+      static onClickWorld: () => any;
 
-      static OnKeyPressed: ((key: any) => any) | any;
+      /** @noSelf */
+      static OnKeyPressed: (key: any) => any;
     }
   }
   export namespace lua.client.OptionScreens.LoadGameScreen {
     /** @noSelf */
-    export const LoadGameScreen_onModsModified: (() => any) | any;
+    export const LoadGameScreen_onModsModified: () => any;
   }
 }

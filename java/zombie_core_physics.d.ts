@@ -21,12 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace zombie.core.physics {
     /**
      * @customConstructor CarController.new
@@ -57,6 +56,11 @@ declare module 'PipeWrench' {
        *  - (Empty): void
        */
       checkShouldBeActive(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      control_NoControl(): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -99,11 +103,6 @@ declare module 'PipeWrench' {
        *  - (Empty): void
        */
       park(): void;
-      /**
-       * Method Parameters: 
-       *  - (Empty): void
-       */
-      render(): void;
       /**
        * Method Parameters: 
        *  - (Empty): void

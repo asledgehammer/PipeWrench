@@ -21,12 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace zombie.core.raknet {
     /**
      * @customConstructor RakNetPeerInterface.new
@@ -463,6 +462,25 @@ declare module 'PipeWrench' {
        */
       startPingPacket(): zombie.core.network.ByteBufferWriter;
     }
+    /** [ENUM] zombie.core.raknet.UdpConnection$CheckState */
+    export class UdpConnection$CheckState {
+      protected constructor();
+      static readonly None: zombie.core.raknet.UdpConnection$CheckState;
+      static readonly Sent: zombie.core.raknet.UdpConnection$CheckState;
+      static readonly Success: zombie.core.raknet.UdpConnection$CheckState;
+      name(): string;
+      ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): CheckState
+       */
+      static valueOf(arg0: string | null): zombie.core.raknet.UdpConnection$CheckState;
+
+      /** @noSelf */
+      static values(): zombie.core.raknet.UdpConnection$CheckState[];
+
+    }
     /** [ENUM] zombie.core.raknet.UdpConnection$ChecksumState */
     export class UdpConnection$ChecksumState {
       protected constructor();
@@ -471,6 +489,16 @@ declare module 'PipeWrench' {
       static readonly Init: zombie.core.raknet.UdpConnection$ChecksumState;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): ChecksumState
+       */
+      static valueOf(arg0: string | null): zombie.core.raknet.UdpConnection$ChecksumState;
+
+      /** @noSelf */
+      static values(): zombie.core.raknet.UdpConnection$ChecksumState[];
+
     }
     /**
      * @customConstructor MPClientStatistic.new

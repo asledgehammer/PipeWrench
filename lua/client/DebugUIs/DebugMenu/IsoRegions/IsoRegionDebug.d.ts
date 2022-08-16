@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:38:59.390Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../../reference.d.ts" />
 /// <reference path="../../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.DebugUIs.DebugMenu.IsoRegions {
     /** @customConstructor IsoRegionDebug:new */
     export class IsoRegionDebug extends lua.client.ISUI.ISCollapsableWindow {
@@ -112,8 +109,9 @@ declare module 'PipeWrench' {
 
       update: (() => any) | any;
 
-      static OnOpenPanel: (() => any) | any;
+      /** @noSelf */
+      static OnOpenPanel: () => any;
     }
   }
-  export namespace lua.client.DebugUIs.DebugMenu.IsoRegions.IsoRegionDebug {}
+  export namespace lua.client.DebugUIs.DebugMenu.IsoRegions.IsoRegionDebug { }
 }

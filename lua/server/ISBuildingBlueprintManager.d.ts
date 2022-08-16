@@ -20,28 +20,26 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:38:59.939Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../reference.d.ts" />
 /// <reference path="../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.server {
-    export class ISBuildingBlueprintManager {
-      private constructor();
-
+    export abstract class ISBuildingBlueprintManager {
       static [id: string]: any;
 
-      static MouseDown: ((x: any, y: any) => any) | any;
+      /** @noSelf */
+      static MouseDown: (x: any, y: any) => any;
 
-      static MouseMove: ((x: any, y: any, wx: any, wy: any) => any) | any;
+      /** @noSelf */
+      static MouseMove: (x: any, y: any, wx: any, wy: any) => any;
 
-      static RenderUI: (() => any) | any;
+      /** @noSelf */
+      static RenderUI: () => any;
     }
   }
-  export namespace lua.server.ISBuildingBlueprintManager {}
+  export namespace lua.server.ISBuildingBlueprintManager { }
 }

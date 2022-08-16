@@ -21,12 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace zombie.core.skinnedmodel.model {
     /**
      * @customConstructor AnimationAsset.new
@@ -218,6 +217,16 @@ declare module 'PipeWrench' {
       static readonly Waist: zombie.core.skinnedmodel.model.CharacterMask$Part;
       name(): string;
       ordinal(): number;
+      /** @noSelf */
+      static count(): number;
+
+      /**
+       * @noSelf
+       *
+       * (int arg0): Part
+       */
+      static fromInt(arg0: number): zombie.core.skinnedmodel.model.CharacterMask$Part;
+
       getBloodBodyPartTypes(): zombie.characterTextures.BloodBodyPartType[];
 
       getParent(): zombie.core.skinnedmodel.model.CharacterMask$Part;
@@ -228,7 +237,20 @@ declare module 'PipeWrench' {
 
       isSubdivision(): boolean;
 
+      /** @noSelf */
+      static leaves(): zombie.core.skinnedmodel.model.CharacterMask$Part[];
+
       subDivisions(): zombie.core.skinnedmodel.model.CharacterMask$Part[];
+
+      /**
+       * @noSelf
+       *
+       * (String arg0): Part
+       */
+      static valueOf(arg0: string | null): zombie.core.skinnedmodel.model.CharacterMask$Part;
+
+      /** @noSelf */
+      static values(): zombie.core.skinnedmodel.model.CharacterMask$Part[];
 
     }
     /**
@@ -568,6 +590,16 @@ declare module 'PipeWrench' {
       static readonly Out: zombie.core.skinnedmodel.model.ModelInstance$FrameLightBlendStatus;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): FrameLightBlendStatus
+       */
+      static valueOf(arg0: string | null): zombie.core.skinnedmodel.model.ModelInstance$FrameLightBlendStatus;
+
+      /** @noSelf */
+      static values(): zombie.core.skinnedmodel.model.ModelInstance$FrameLightBlendStatus[];
+
     }
     /**
      * @customConstructor FrameLightInfo.new

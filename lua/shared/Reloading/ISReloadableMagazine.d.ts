@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.853Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.shared.Reloading {
     /** @customConstructor ISReloadableMagazine:new */
     export class ISReloadableMagazine extends lua.shared.Reloading.ISReloadable {
@@ -49,5 +46,5 @@ declare module 'PipeWrench' {
       rackingStart: ((char: any, square: any, weapon: any) => any) | any;
     }
   }
-  export namespace lua.shared.Reloading.ISReloadableMagazine {}
+  export namespace lua.shared.Reloading.ISReloadableMagazine { }
 }

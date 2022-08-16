@@ -21,12 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace zombie.core.properties {
     /**
      * @customConstructor PropertyContainer.new
@@ -69,8 +68,8 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (IsoFlagType arg0): void
-       *  - (String arg0, String arg1): void
        *  - (IsoFlagType arg0, String arg1): void
+       *  - (String arg0, String arg1): void
        *  - (String arg0, String arg1, boolean arg2): void
        */
       Set(arg0: zombie.iso.SpriteDetails.IsoFlagType | string, arg1?: string, arg2?: boolean): void;

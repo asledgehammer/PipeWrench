@@ -20,24 +20,19 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.380Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.Moveables {
-    export class InfoPanelFlags {
+    export abstract class InfoPanelFlags {
       static [id: string]: any;
     }
 
-    export class ISMoveableSpriteProps {
-      private constructor();
-
+    export abstract class ISMoveableSpriteProps {
       static [id: string]: any;
 
       addAllScrapItemsToInventory: ((_character: any, _list: any) => any) | any;
@@ -148,6 +143,8 @@ declare module 'PipeWrench' {
 
       instanceItem: ((_spriteNameOverride: any) => any) | any;
 
+      isFloorAtTopOfStairs: ((object: any) => any) | any;
+
       isFreeTile: ((_square: any) => any) | any;
 
       isSquareAtTopOfStairs: ((_square: any) => any) | any;
@@ -160,14 +157,14 @@ declare module 'PipeWrench' {
 
       pickUpMoveableInternal:
         | ((
-            _character: any,
-            _square: any,
-            _object: any,
-            _sprInstance: any,
-            _spriteName: any,
-            _createItem: any,
-            _rotating: any
-          ) => any)
+          _character: any,
+          _square: any,
+          _object: any,
+          _sprInstance: any,
+          _spriteName: any,
+          _createItem: any,
+          _rotating: any
+        ) => any)
         | any;
 
       pickUpMoveableViaCursor: ((_character: any, _square: any, _origSpriteName: any, _moveCursor: any) => any) | any;
@@ -194,14 +191,14 @@ declare module 'PipeWrench' {
 
       scrapObjectInternal:
         | ((
-            _character: any,
-            _scrapDef: any,
-            _square: any,
-            _object: any,
-            _scrapResult: any,
-            _chance: any,
-            _perkName: any
-          ) => any)
+          _character: any,
+          _scrapDef: any,
+          _square: any,
+          _object: any,
+          _scrapResult: any,
+          _chance: any,
+          _perkName: any
+        ) => any)
         | any;
 
       scrapObjectViaCursor: ((_character: any, _square: any, _origSpriteName: any, _moveCursor: any) => any) | any;
@@ -214,20 +211,30 @@ declare module 'PipeWrench' {
 
       walkToAndEquip: ((_character: any, _square: any, _mode: any) => any) | any;
 
-      static addLineToInfoTable:
-        | ((_table: any, _lineA: any, _rA: any, _gA: any, _bA: any, _lineB: any, _rB: any, _gB: any, _bB: any) => any)
-        | any;
+      /** @noSelf */
+      static addLineToInfoTable: (
+        _table: any,
+        _lineA: any,
+        _rA: any,
+        _gA: any,
+        _bA: any,
+        _lineB: any,
+        _rB: any,
+        _gB: any,
+        _bB: any
+      ) => any;
 
-      static fromObject: ((_object: any) => any) | any;
+      /** @noSelf */
+      static fromObject: (_object: any) => any;
 
-      static new: ((_sprite: any) => any) | any;
+      /** @noSelf */
+      static new: (_sprite: any) => any;
 
-      static OnDynamicMovableRecipe: ((_sprite: any, _recipe: any, _item: any, _player: any) => any) | any;
+      /** @noSelf */
+      static OnDynamicMovableRecipe: (_sprite: any, _recipe: any, _item: any, _player: any) => any;
     }
 
-    export class ISThumpableSpriteProps {
-      private constructor();
-
+    export abstract class ISThumpableSpriteProps {
       static [id: string]: any;
 
       addToolString: ((infoTable: any, tag: any, hasTool: any) => any) | any;
@@ -248,12 +255,13 @@ declare module 'PipeWrench' {
 
       walkToAndEquip: ((_character: any, _square: any, _mode: any) => any) | any;
 
-      static new: ((object: any) => any) | any;
+      /** @noSelf */
+      static new: (object: any) => any;
     }
 
-    export class SpriteGridCache {
+    export abstract class SpriteGridCache {
       static [id: string]: any;
     }
   }
-  export namespace lua.client.Moveables.ISMoveableSpriteProps {}
+  export namespace lua.client.Moveables.ISMoveableSpriteProps { }
 }

@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.404Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.server.Movers {
     /** @customConstructor Rabbit:new */
     export class Rabbit extends lua.server.Movers.ISBaseMover {
@@ -41,6 +38,6 @@ declare module 'PipeWrench' {
   }
   export namespace lua.server.Movers.Rabbit {
     /** @noSelf */
-    export const testCreateRabbit: (() => any) | any;
+    export const testCreateRabbit: () => any;
   }
 }

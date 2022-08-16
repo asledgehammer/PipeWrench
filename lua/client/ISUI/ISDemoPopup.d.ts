@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:00.272Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISDemoPopup:new */
     export class ISDemoPopup extends lua.client.ISUI.ISPanel {
@@ -54,13 +51,15 @@ declare module 'PipeWrench' {
 
       setInfo: ((item: any) => any) | any;
 
-      static getInstance: (() => any) | any;
+      /** @noSelf */
+      static getInstance: () => any;
 
-      static OnJoypadActivate: ((id: any) => any) | any;
+      /** @noSelf */
+      static OnJoypadActivate: (id: any) => any;
     }
   }
   export namespace lua.client.ISUI.ISDemoPopup {
     /** @noSelf */
-    export const DoDemoPopup: (() => any) | any;
+    export const DoDemoPopup: () => any;
   }
 }

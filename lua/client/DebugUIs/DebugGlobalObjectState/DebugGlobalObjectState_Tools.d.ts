@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:38:59.142Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.DebugUIs.DebugGlobalObjectState {
     /** @customConstructor DebugGlobalObjectStateUI_DragCameraTool:new */
     export class DebugGlobalObjectStateUI_DragCameraTool extends lua.client.DebugUIs.DebugChunkState
@@ -51,7 +48,7 @@ declare module 'PipeWrench' {
     }
 
     /** @customConstructor DebugGlobalObjectStateUI_Tool:new */
-    export class DebugGlobalObjectStateUI_Tool extends lua.shared.ISBaseObject.ISBaseObject {
+    export class DebugGlobalObjectStateUI_Tool extends lua.shared.ISBaseObject {
       [id: string]: any;
       static [id: string]: any;
 
@@ -72,5 +69,5 @@ declare module 'PipeWrench' {
       onMouseUp: ((x: any, y: any) => any) | any;
     }
   }
-  export namespace lua.client.DebugUIs.DebugGlobalObjectState.DebugGlobalObjectState_Tools {}
+  export namespace lua.client.DebugUIs.DebugGlobalObjectState.DebugGlobalObjectState_Tools { }
 }

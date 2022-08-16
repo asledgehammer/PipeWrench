@@ -20,80 +20,105 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:02.798Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.server.Vehicles {
-    export class Vehicles {
-      private constructor();
-
+    export abstract class Vehicles {
       static [id: string]: any;
 
-      static LowerCondition: ((vehicle: any, part: any, elapsedMinutes: any) => any) | any;
+      /** @noSelf */
+      static LowerCondition: (vehicle: any, part: any, elapsedMinutes: any) => any;
     }
 
-    export class VehicleUtils {
-      private constructor();
-
+    export abstract class VehicleUtils {
       static [id: string]: any;
 
-      static anyWorkingHeadlights: ((vehicle: any) => any) | any;
+      /** @noSelf */
+      static anyWorkingHeadlights: (vehicle: any) => any;
 
-      static calculateInstallationSuccess: ((perks: any, chr: any, chrPerks: any) => any) | any;
+      /** @noSelf */
+      static calculateInstallationSuccess: (perks: any, chr: any, chrPerks: any) => any;
 
-      static callLua: ((functionName: any, arg1: any, arg2: any, arg3: any, arg4: any) => any) | any;
+      /** @noSelf */
+      static callLua: (functionName: any, arg1: any, arg2: any, arg3: any, arg4: any) => any;
 
-      static chargeBattery: ((vehicle: any, delta: any) => any) | any;
+      /** @noSelf */
+      static chargeBattery: (vehicle: any, delta: any) => any;
 
-      static CheckForUnlockedDoorsWindows: ((vehicle: any) => any) | any;
+      /** @noSelf */
+      static CheckForUnlockedDoorsWindows: (vehicle: any) => any;
 
-      static compareFloats: ((a: any, b: any, precision: any) => any) | any;
+      /** @noSelf */
+      static compareFloats: (a: any, b: any, precision: any) => any;
 
-      static createPartInventoryItem: ((part: any) => any) | any;
+      /** @noSelf */
+      static createPartInventoryItem: (part: any) => any;
 
-      static getChildWindow: ((part: any) => any) | any;
+      /** @noSelf */
+      static createPartInventoryItem_HAMRadio: (part: any) => any;
 
-      static getContainers: ((playerNum: any) => any) | any;
+      /** @noSelf */
+      static createPartInventoryItem_Radio: (part: any) => any;
 
-      static getInsideTemperature: ((player: any) => any) | any;
+      /** @noSelf */
+      static getChildWindow: (part: any) => any;
 
-      static getItems: ((playerNum: any) => any) | any;
+      /** @noSelf */
+      static getContainers: (playerNum: any) => any;
 
-      static getPerksTableForChr: ((perks: any, chr: any) => any) | any;
+      /** @noSelf */
+      static getInsideTemperature: (player: any) => any;
 
-      static InstallPart: ((part: any, item: any, chr: any) => any) | any;
+      /** @noSelf */
+      static getItems: (playerNum: any) => any;
 
-      static lowerUninstalledItemCondition: ((part: any, item: any, mechanicSkill: any, chr: any) => any) | any;
+      /** @noSelf */
+      static getPerksTableForChr: (perks: any, chr: any) => any;
 
-      static OnUseVehicle: ((character: any, vehicle: any, pressedNotTapped: any) => any) | any;
+      /** @noSelf */
+      static InstallPart: (part: any, item: any, chr: any) => any;
 
-      static OnVehicleHorn: ((character: any, vehicle: any, pressed: any) => any) | any;
+      /** @noSelf */
+      static lowerUninstalledItemCondition: (part: any, item: any, mechanicSkill: any, chr: any) => any;
 
-      static RemoveTire: ((part: any, explosion: any) => any) | any;
+      /** @noSelf */
+      static OnUseVehicle: (character: any, vehicle: any, pressedNotTapped: any) => any;
 
-      static RequiredKeyNotFound: ((part: any, chr: any) => any) | any;
+      /** @noSelf */
+      static OnVehicleHorn: (character: any, vehicle: any, pressed: any) => any;
 
-      static split: ((string: any, pattern: any) => any) | any;
+      /** @noSelf */
+      static RemoveTire: (part: any, explosion: any) => any;
 
-      static testItems: ((chr: any, items: any, typeToItem: any) => any) | any;
+      /** @noSelf */
+      static RequiredKeyNotFound: (part: any, chr: any) => any;
 
-      static testPerks: ((chr: any, perks: any) => any) | any;
+      /** @noSelf */
+      static split: (string: any, pattern: any) => any;
 
-      static testProfession: ((chr: any, professions: any) => any) | any;
+      /** @noSelf */
+      static testItems: (chr: any, items: any, typeToItem: any) => any;
 
-      static testRecipes: ((chr: any, recipes: any) => any) | any;
+      /** @noSelf */
+      static testPerks: (chr: any, perks: any) => any;
 
-      static testTraits: ((chr: any, traits: any) => any) | any;
+      /** @noSelf */
+      static testProfession: (chr: any, professions: any) => any;
 
-      static UninstallPart: ((part: any, chr: any) => any) | any;
+      /** @noSelf */
+      static testRecipes: (chr: any, recipes: any) => any;
+
+      /** @noSelf */
+      static testTraits: (chr: any, traits: any) => any;
+
+      /** @noSelf */
+      static UninstallPart: (part: any, chr: any) => any;
     }
   }
-  export namespace lua.server.Vehicles.Vehicles {}
+  export namespace lua.server.Vehicles.Vehicles { }
 }

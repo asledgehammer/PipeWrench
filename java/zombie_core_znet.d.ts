@@ -21,12 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace zombie.core.znet {
     /**
      * @customConstructor SteamFriend.new
@@ -301,6 +300,23 @@ declare module 'PipeWrench' {
 
       /** (long arg0): boolean */
       not(arg0: number): boolean;
+
+      /**
+       * @noSelf
+       *
+       * (long arg0): String
+       */
+      static toString(arg0: number): string;
+
+      /**
+       * @noSelf
+       *
+       * (String arg0): ItemState
+       */
+      static valueOf(arg0: string | null): zombie.core.znet.SteamWorkshopItem$ItemState;
+
+      /** @noSelf */
+      static values(): zombie.core.znet.SteamWorkshopItem$ItemState[];
 
     }
     /**

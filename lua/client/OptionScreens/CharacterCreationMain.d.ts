@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.462Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor CharacterCreationMain:new */
     export class CharacterCreationMain extends lua.client.ISUI.ISPanelJoypad {
@@ -258,17 +255,23 @@ declare module 'PipeWrench' {
 
       updateSelectedClothingCombo: (() => any) | any;
 
-      static invertSort: ((list: any) => any) | any;
+      /** @noSelf */
+      static invertSort: (list: any) => any;
 
-      static readSavedOutfitFile: (() => any) | any;
+      /** @noSelf */
+      static readSavedOutfitFile: () => any;
 
-      static sort: ((list: any) => any) | any;
+      /** @noSelf */
+      static sort: (list: any) => any;
 
-      static sortByCost: ((a: any, b: any) => any) | any;
+      /** @noSelf */
+      static sortByCost: (a: any, b: any) => any;
 
-      static sortByInvertCost: ((a: any, b: any) => any) | any;
+      /** @noSelf */
+      static sortByInvertCost: (a: any, b: any) => any;
 
-      static writeSaveFile: ((options: any) => any) | any;
+      /** @noSelf */
+      static writeSaveFile: (options: any) => any;
     }
 
     /** @customConstructor CharacterCreationMainCharacterPanel:new */
@@ -301,5 +304,5 @@ declare module 'PipeWrench' {
       render: (() => any) | any;
     }
   }
-  export namespace lua.client.OptionScreens.CharacterCreationMain {}
+  export namespace lua.client.OptionScreens.CharacterCreationMain { }
 }

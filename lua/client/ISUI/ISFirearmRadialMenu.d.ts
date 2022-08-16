@@ -20,19 +20,16 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:00.304Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISFirearmRadialMenu:new */
-    export class ISFirearmRadialMenu extends lua.shared.ISBaseObject.ISBaseObject {
+    export class ISFirearmRadialMenu extends lua.shared.ISBaseObject {
       [id: string]: any;
       static [id: string]: any;
 
@@ -50,24 +47,33 @@ declare module 'PipeWrench' {
 
       getWeapon: (() => any) | any;
 
-      static checkKey: ((key: any) => any) | any;
+      /** @noSelf */
+      static checkKey: (key: any) => any;
 
-      static checkWeapon: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static checkWeapon: (playerObj: any) => any;
 
-      static getBestLBButtonAction: ((buttonPrompt: any) => any) | any;
+      /** @noSelf */
+      static getBestLBButtonAction: (buttonPrompt: any) => any;
 
-      static getBestRBButtonAction: ((buttonPrompt: any) => any) | any;
+      /** @noSelf */
+      static getBestRBButtonAction: (buttonPrompt: any) => any;
 
-      static onJoypadButtonReleased: ((buttonPrompt: any, button: any) => any) | any;
+      /** @noSelf */
+      static onJoypadButtonReleased: (buttonPrompt: any, button: any) => any;
 
-      static onKeyPressed: ((key: any) => any) | any;
+      /** @noSelf */
+      static onKeyPressed: (key: any) => any;
 
-      static onKeyReleased: ((key: any) => any) | any;
+      /** @noSelf */
+      static onKeyReleased: (key: any) => any;
 
-      static onKeyRepeat: ((key: any) => any) | any;
+      /** @noSelf */
+      static onKeyRepeat: (key: any) => any;
 
-      static onRepeatRBumper: ((buttonPrompt: any) => any) | any;
+      /** @noSelf */
+      static onRepeatRBumper: (buttonPrompt: any) => any;
     }
   }
-  export namespace lua.client.ISUI.ISFirearmRadialMenu {}
+  export namespace lua.client.ISUI.ISFirearmRadialMenu { }
 }

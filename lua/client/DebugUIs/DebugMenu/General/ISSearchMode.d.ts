@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:38:59.357Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../../reference.d.ts" />
 /// <reference path="../../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.DebugUIs.DebugMenu.General {
     /** @customConstructor ISSearchMode:new */
     export class ISSearchMode extends lua.client.DebugUIs.DebugMenu.Base.ISDebugSubPanelBase {
@@ -54,18 +51,18 @@ declare module 'PipeWrench' {
 
       addFloatOption:
         | ((
-            _id: any,
-            _x: any,
-            _y: any,
-            _w: any,
-            _java: any,
-            _min: any,
-            _max: any,
-            _stepsize: any,
-            _get: any,
-            _set: any,
-            _reqIdx: any
-          ) => any)
+          _id: any,
+          _x: any,
+          _y: any,
+          _w: any,
+          _java: any,
+          _min: any,
+          _max: any,
+          _stepsize: any,
+          _get: any,
+          _set: any,
+          _reqIdx: any
+        ) => any)
         | any;
 
       createChildren: (() => any) | any;
@@ -83,5 +80,5 @@ declare module 'PipeWrench' {
       update: (() => any) | any;
     }
   }
-  export namespace lua.client.DebugUIs.DebugMenu.General.ISSearchMode {}
+  export namespace lua.client.DebugUIs.DebugMenu.General.ISSearchMode { }
 }

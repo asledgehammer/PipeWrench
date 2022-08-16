@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:02.822Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.XpSystem.ISUI {
     /** @customConstructor ISCharacterScreen:new */
     export class ISCharacterScreen extends lua.client.ISUI.ISPanelJoypad {
@@ -104,21 +101,29 @@ declare module 'PipeWrench' {
 
       updateAvatar: (() => any) | any;
 
-      static loadBeardAndHairStyle: ((self: any) => any) | any;
+      /** @noSelf */
+      static loadBeardAndHairStyle: (self: any) => any;
 
-      static loadFavouriteWeapon: ((self: any) => any) | any;
+      /** @noSelf */
+      static loadFavouriteWeapon: (self: any) => any;
 
-      static loadProfession: ((self: any) => any) | any;
+      /** @noSelf */
+      static loadProfession: (self: any) => any;
 
-      static loadTraits: ((self: any) => any) | any;
+      /** @noSelf */
+      static loadTraits: (self: any) => any;
 
-      static onCutHair: ((playerObj: any, hairStyle: any, time: any) => any) | any;
+      /** @noSelf */
+      static onCutHair: (playerObj: any, hairStyle: any, time: any) => any;
 
-      static onTrimBeard: ((playerObj: any, beardStyle: any) => any) | any;
+      /** @noSelf */
+      static onTrimBeard: (playerObj: any, beardStyle: any) => any;
 
-      static setDisplayedTraits: ((self: any) => any) | any;
+      /** @noSelf */
+      static setDisplayedTraits: (self: any) => any;
 
-      static traitsChanged: ((self: any) => any) | any;
+      /** @noSelf */
+      static traitsChanged: (self: any) => any;
     }
 
     /** @customConstructor ISCharacterScreenAvatar:new */
@@ -129,5 +134,5 @@ declare module 'PipeWrench' {
       constructor(x: any, y: any, width: any, height: any);
     }
   }
-  export namespace lua.client.XpSystem.ISUI.ISCharacterScreen {}
+  export namespace lua.client.XpSystem.ISUI.ISCharacterScreen { }
 }

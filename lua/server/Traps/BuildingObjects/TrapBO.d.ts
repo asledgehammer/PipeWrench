@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:02.457Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.server.Traps.BuildingObjects {
     /** @customConstructor TrapBO:new */
     export class TrapBO extends lua.server.BuildingObjects.ISBuildingObject {
@@ -57,5 +54,5 @@ declare module 'PipeWrench' {
       create: ((x: any, y: any, z: any, north: any, sprite: any) => any) | any;
     }
   }
-  export namespace lua.server.Traps.BuildingObjects.TrapBO {}
+  export namespace lua.server.Traps.BuildingObjects.TrapBO { }
 }

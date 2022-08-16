@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.796Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.RadioCom.StoryLineSounds {
     /** @customConstructor ISSLFrame:new */
     export class ISSLFrame extends lua.client.ISUI.ISPanel {
@@ -91,5 +88,5 @@ declare module 'PipeWrench' {
       updateVisualGrid: (() => any) | any;
     }
   }
-  export namespace lua.client.RadioCom.StoryLineSounds.ISSLFrame {}
+  export namespace lua.client.RadioCom.StoryLineSounds.ISSLFrame { }
 }

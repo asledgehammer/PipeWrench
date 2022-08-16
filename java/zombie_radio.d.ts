@@ -21,12 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace zombie.radio {
     /** [ENUM] zombie.radio.ChannelCategory */
     export class ChannelCategory {
@@ -41,6 +40,16 @@ declare module 'PipeWrench' {
       static readonly Undefined: zombie.radio.ChannelCategory;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): ChannelCategory
+       */
+      static valueOf(arg0: string | null): zombie.radio.ChannelCategory;
+
+      /** @noSelf */
+      static values(): zombie.radio.ChannelCategory[];
+
     }
     /** [ENUM] zombie.radio.GameMode */
     export class GameMode {
@@ -50,6 +59,16 @@ declare module 'PipeWrench' {
       static readonly SinglePlayer: zombie.radio.GameMode;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): GameMode
+       */
+      static valueOf(arg0: string | null): zombie.radio.GameMode;
+
+      /** @noSelf */
+      static values(): zombie.radio.GameMode[];
+
     }
     /**
      * @customConstructor RadioAPI.new

@@ -21,12 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace zombie.iso.weather {
     /**
      * @customConstructor ClimateColorInfo.new
@@ -1590,6 +1589,16 @@ declare module 'PipeWrench' {
       static readonly ServerOnly: zombie.iso.weather.ClimateManager$ClimateNetAuth;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): ClimateNetAuth
+       */
+      static valueOf(arg0: string | null): zombie.iso.weather.ClimateManager$ClimateNetAuth;
+
+      /** @noSelf */
+      static values(): zombie.iso.weather.ClimateManager$ClimateNetAuth[];
+
     }
     /**
      * @customConstructor DayInfo.new
@@ -2486,7 +2495,24 @@ declare module 'PipeWrench' {
       static readonly Target: zombie.iso.weather.WeatherPeriod$StrLerpVal;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (int arg0): StrLerpVal
+       */
+      static fromValue(arg0: number): zombie.iso.weather.WeatherPeriod$StrLerpVal;
+
       getValue(): number;
+
+      /**
+       * @noSelf
+       *
+       * (String arg0): StrLerpVal
+       */
+      static valueOf(arg0: string | null): zombie.iso.weather.WeatherPeriod$StrLerpVal;
+
+      /** @noSelf */
+      static values(): zombie.iso.weather.WeatherPeriod$StrLerpVal[];
 
     }
     /**

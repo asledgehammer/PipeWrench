@@ -20,32 +20,31 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.960Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.SurvivalGuide {
-    export class SurvivalGuideEntries {
-      private constructor();
-
+    export abstract class SurvivalGuideEntries {
       static [id: string]: any;
 
       static useJoypad: any;
 
-      static addEntry11: (() => any) | any;
+      /** @noSelf */
+      static addEntry11: () => any;
 
-      static addSurvivalGuideEntry: ((index: any) => any) | any;
+      /** @noSelf */
+      static addSurvivalGuideEntry: (index: any) => any;
 
-      static getEntry: ((num: any) => any) | any;
+      /** @noSelf */
+      static getEntry: (num: any) => any;
 
-      static getEntryCount: (() => any) | any;
+      /** @noSelf */
+      static getEntryCount: () => any;
     }
   }
-  export namespace lua.client.SurvivalGuide.SurvivalGuideEntries {}
+  export namespace lua.client.SurvivalGuide.SurvivalGuideEntries { }
 }

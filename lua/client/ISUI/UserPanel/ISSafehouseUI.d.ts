@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.068Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.ISUI.UserPanel {
     /** @customConstructor ISSafehouseUI:new */
     export class ISSafehouseUI extends lua.client.ISUI.ISPanel {
@@ -108,12 +105,15 @@ declare module 'PipeWrench' {
 
       updatePlayerList: (() => any) | any;
 
-      static AcceptedSafehouseInvite: ((safehouseName: any, host: any) => any) | any;
+      /** @noSelf */
+      static AcceptedSafehouseInvite: (safehouseName: any, host: any) => any;
 
-      static OnSafehousesChanged: (() => any) | any;
+      /** @noSelf */
+      static OnSafehousesChanged: () => any;
 
-      static ReceiveSafehouseInvite: ((safehouse: any, host: any) => any) | any;
+      /** @noSelf */
+      static ReceiveSafehouseInvite: (safehouse: any, host: any) => any;
     }
   }
-  export namespace lua.client.ISUI.UserPanel.ISSafehouseUI {}
+  export namespace lua.client.ISUI.UserPanel.ISSafehouseUI { }
 }

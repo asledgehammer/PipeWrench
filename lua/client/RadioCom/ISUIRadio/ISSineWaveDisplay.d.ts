@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.714Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.RadioCom.ISUIRadio {
     /** @customConstructor ISSineWaveDisplay:new */
     export class ISSineWaveDisplay extends lua.client.ISUI.ISPanel {
@@ -74,15 +71,15 @@ declare module 'PipeWrench' {
 
       setWaveParameters:
         | ((
-            _minLen: any,
-            _maxLen: any,
-            _minHeight: any,
-            _maxHeight: any,
-            _minUpdFreq: any,
-            _maxUpdFreq: any,
-            _minScrollSpeed: any,
-            _maxScrollSpeed: any
-          ) => any)
+          _minLen: any,
+          _maxLen: any,
+          _minHeight: any,
+          _maxHeight: any,
+          _minUpdFreq: any,
+          _maxUpdFreq: any,
+          _minScrollSpeed: any,
+          _maxScrollSpeed: any
+        ) => any)
         | any;
 
       toggleOn: ((_b: any) => any) | any;
@@ -90,5 +87,5 @@ declare module 'PipeWrench' {
       update: (() => any) | any;
     }
   }
-  export namespace lua.client.RadioCom.ISUIRadio.ISSineWaveDisplay {}
+  export namespace lua.client.RadioCom.ISUIRadio.ISSineWaveDisplay { }
 }

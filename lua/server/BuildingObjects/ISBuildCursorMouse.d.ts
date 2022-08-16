@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:38:58.372Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.server.BuildingObjects {
     /** @customConstructor ISBuildCursorMouse:new */
     export class ISBuildCursorMouse extends lua.server.BuildingObjects.ISBuildingObject {
@@ -64,8 +61,9 @@ declare module 'PipeWrench' {
 
       renderTooltip: (() => any) | any;
 
-      static IsVisible: (() => any) | any;
+      /** @noSelf */
+      static IsVisible: () => any;
     }
   }
-  export namespace lua.server.BuildingObjects.ISBuildCursorMouse {}
+  export namespace lua.server.BuildingObjects.ISBuildCursorMouse { }
 }

@@ -20,26 +20,23 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.673Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.server.radio {
-    export class DynamicRadio {
-      private constructor();
-
+    export abstract class DynamicRadio {
       static [id: string]: any;
 
-      static OnEveryHour: (() => any) | any;
+      /** @noSelf */
+      static OnEveryHour: () => any;
 
-      static OnLoadRadioScripts: ((_scriptManager: any, _isNewGame: any) => any) | any;
+      /** @noSelf */
+      static OnLoadRadioScripts: (_scriptManager: any, _isNewGame: any) => any;
     }
   }
-  export namespace lua.server.radio.ISDynamicRadio {}
+  export namespace lua.server.radio.ISDynamicRadio { }
 }

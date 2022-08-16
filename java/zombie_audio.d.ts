@@ -21,12 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace zombie.audio {
     /**
      * @customConstructor BaseSoundBank.new
@@ -113,13 +112,13 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): number
+       *  - (String arg0, IsoGameCharacter arg1): number
+       *  - (String arg0, IsoObject arg1): number
        *  - (String arg0, IsoGridSquare arg1): number
        *  - (String arg0, boolean arg1): number
-       *  - (String arg0, IsoObject arg1): number
-       *  - (String arg0, IsoGameCharacter arg1): number
        *  - (String arg0, int arg1, int arg2, int arg3): number
        */
-      playSound(arg0: string, arg1?: zombie.iso.IsoGridSquare | boolean | zombie.iso.IsoObject | zombie.characters.IsoGameCharacter | number, arg2?: number, arg3?: number): number;
+      playSound(arg0: string, arg1?: zombie.characters.IsoGameCharacter | zombie.iso.IsoObject | zombie.iso.IsoGridSquare | boolean | number, arg2?: number, arg3?: number): number;
       /**
        * Method Parameters: 
        *  - (String arg0, IsoGridSquare arg1): number
@@ -207,6 +206,11 @@ declare module 'PipeWrench' {
        *  - (String arg0): number
        */
       stopSoundByName(arg0: string): number;
+      /**
+       * Method Parameters: 
+       *  - (long arg0): void
+       */
+      stopSoundLocal(arg0: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -300,13 +304,13 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): number
+       *  - (String arg0, IsoGameCharacter arg1): number
+       *  - (String arg0, IsoObject arg1): number
        *  - (String arg0, IsoGridSquare arg1): number
        *  - (String arg0, boolean arg1): number
-       *  - (String arg0, IsoObject arg1): number
-       *  - (String arg0, IsoGameCharacter arg1): number
        *  - (String arg0, int arg1, int arg2, int arg3): number
        */
-      playSound(arg0: string, arg1?: zombie.iso.IsoGridSquare | boolean | zombie.iso.IsoObject | zombie.characters.IsoGameCharacter | number, arg2?: number, arg3?: number): number;
+      playSound(arg0: string, arg1?: zombie.characters.IsoGameCharacter | zombie.iso.IsoObject | zombie.iso.IsoGridSquare | boolean | number, arg2?: number, arg3?: number): number;
       /**
        * Method Parameters: 
        *  - (String arg0, IsoGridSquare arg1): number
@@ -394,6 +398,11 @@ declare module 'PipeWrench' {
        *  - (String arg0): number
        */
       stopSoundByName(arg0: string): number;
+      /**
+       * Method Parameters: 
+       *  - (long arg0): void
+       */
+      stopSoundLocal(arg0: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -537,6 +546,11 @@ declare module 'PipeWrench' {
       isLooped(): boolean;
       /**
        * Method Parameters: 
+       *  - (String arg0): number
+       */
+      numClipsUsingParameter(arg0: string): number;
+      /**
+       * Method Parameters: 
        *  - (Empty): void
        */
       reset(): void;
@@ -555,6 +569,16 @@ declare module 'PipeWrench' {
       static readonly VehicleEngine: zombie.audio.GameSound$MasterVolume;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): MasterVolume
+       */
+      static valueOf(arg0: string | null): zombie.audio.GameSound$MasterVolume;
+
+      /** @noSelf */
+      static values(): zombie.audio.GameSound$MasterVolume[];
+
     }
     /**
      * @customConstructor GameSoundClip.new
@@ -627,6 +651,11 @@ declare module 'PipeWrench' {
        *  - (Empty): boolean
        */
       hasMinDistance(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (FMOD_STUDIO_PARAMETER_DESCRIPTION arg0): boolean
+       */
+      hasParameter(arg0: fmod.fmod.FMOD_STUDIO_PARAMETER_DESCRIPTION): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -723,6 +752,11 @@ declare module 'PipeWrench' {
        *  - (IsoObject arg0, PerObjectLogic arg1): void
        */
       addObject(arg0: zombie.iso.IsoObject, arg1: zombie.audio.ObjectAmbientEmitters$PerObjectLogic): void;
+      /**
+       * Method Parameters: 
+       *  - (IsoObject arg0): boolean
+       */
+      hasObject(arg0: zombie.iso.IsoObject): boolean;
       /**
        * Method Parameters: 
        *  - (IsoObject arg0): void

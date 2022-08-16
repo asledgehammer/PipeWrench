@@ -20,150 +20,199 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:02.652Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.Vehicles.ISUI {
-    export class ISVehicleMenu {
-      private constructor();
-
+    export abstract class ISVehicleMenu {
       static [id: string]: any;
 
-      static addSetScriptMenu: ((context: any, playerObj: any, vehicle: any) => any) | any;
+      /** @noSelf */
+      static addSetScriptMenu: (context: any, playerObj: any, vehicle: any) => any;
 
-      static doTowingMenu: ((playerObj: any, vehicle: any, menu: any) => any) | any;
+      /** @noSelf */
+      static doTowingMenu: (playerObj: any, vehicle: any, menu: any) => any;
 
-      static FillMenuOutsideVehicle: ((player: any, context: any, vehicle: any, test: any) => any) | any;
+      /** @noSelf */
+      static FillMenuOutsideVehicle: (player: any, context: any, vehicle: any, test: any) => any;
 
-      static FillPartMenu: ((playerIndex: any, context: any, slice: any, vehicle: any) => any) | any;
+      /** @noSelf */
+      static FillPartMenu: (playerIndex: any, context: any, slice: any, vehicle: any) => any;
 
-      static getBestSwitchSeatEnter: ((playerObj: any, vehicle: any, seat: any) => any) | any;
+      /** @noSelf */
+      static getBestSwitchSeatEnter: (playerObj: any, vehicle: any, seat: any) => any;
 
-      static getBestSwitchSeatExit: ((playerObj: any, vehicle: any, seat: any) => any) | any;
+      /** @noSelf */
+      static getBestSwitchSeatExit: (playerObj: any, vehicle: any, seat: any) => any;
 
-      static getNextTire: ((currentTire: any) => any) | any;
+      /** @noSelf */
+      static getNextTire: (currentTire: any) => any;
 
-      static getVehicleDisplayName: ((vehicle: any) => any) | any;
+      /** @noSelf */
+      static getVehicleDisplayName: (vehicle: any) => any;
 
-      static getVehicleToInteractWith: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static getVehicleToInteractWith: (playerObj: any) => any;
 
-      static moveItemsFromSeat: ((playerObj: any, vehicle: any, seat: any, moveThem: any, doEnter: any) => any) | any;
+      /** @noSelf */
+      static moveItemsFromSeat: (playerObj: any, vehicle: any, seat: any, moveThem: any, doEnter: any) => any;
 
-      static moveItemsOnSeat:
-        | ((seat: any, newSeat: any, playerObj: any, moveThem: any, itemListIndex: any) => any)
-        | any;
+      /** @noSelf */
+      static moveItemsOnSeat: (seat: any, newSeat: any, playerObj: any, moveThem: any, itemListIndex: any) => any;
 
-      static onAttachTrailer: ((playerObj: any, vehicle: any, attachmentA: any, attachmentB: any) => any) | any;
+      /** @noSelf */
+      static onAttachTrailer: (playerObj: any, vehicle: any, attachmentA: any, attachmentB: any) => any;
 
-      static onCloseDoor: ((playerObj: any, part: any) => any) | any;
+      /** @noSelf */
+      static onCloseDoor: (playerObj: any, part: any) => any;
 
-      static onConfirmSleep: ((this: any, button: any, player: any, bed: any) => any) | any;
+      /** @noSelf */
+      static onConfirmSleep: (this: any, button: any, player: any, bed: any) => any;
 
-      static onDebugAngles: ((playerObj: any, vehicle: any) => any) | any;
+      /** @noSelf */
+      static onDebugAngles: (playerObj: any, vehicle: any) => any;
 
-      static onDebugBlood: ((playerObj: any, vehicle: any) => any) | any;
+      /** @noSelf */
+      static onDebugBlood: (playerObj: any, vehicle: any) => any;
 
-      static onDebugColor: ((playerObj: any, vehicle: any) => any) | any;
+      /** @noSelf */
+      static onDebugColor: (playerObj: any, vehicle: any) => any;
 
-      static onDebugEditor: ((playerObj: any, vehicle: any) => any) | any;
+      /** @noSelf */
+      static onDebugEditor: (playerObj: any, vehicle: any) => any;
 
-      static onDebugSetScript: ((playerObj: any, vehicle: any, scriptName: any) => any) | any;
+      /** @noSelf */
+      static onDebugSetScript: (playerObj: any, vehicle: any, scriptName: any) => any;
 
-      static onDetachTrailer: ((playerObj: any, vehicle: any, attachmentA: any) => any) | any;
+      /** @noSelf */
+      static onDetachTrailer: (playerObj: any, vehicle: any, attachmentA: any) => any;
 
-      static onEnter: ((playerObj: any, vehicle: any, seat: any) => any) | any;
+      /** @noSelf */
+      static onEnter: (playerObj: any, vehicle: any, seat: any) => any;
 
-      static onEnter2: ((playerObj: any, vehicle: any, seat: any) => any) | any;
+      /** @noSelf */
+      static onEnter2: (playerObj: any, vehicle: any, seat: any) => any;
 
-      static onEnterAux: ((playerObj: any, vehicle: any, seat: any) => any) | any;
+      /** @noSelf */
+      static onEnterAux: (playerObj: any, vehicle: any, seat: any) => any;
 
-      static onEnterAux2: ((playerObj: any, vehicle: any, seat: any) => any) | any;
+      /** @noSelf */
+      static onEnterAux2: (playerObj: any, vehicle: any, seat: any) => any;
 
-      static onExit: ((playerObj: any, seatFrom: any) => any) | any;
+      /** @noSelf */
+      static onExit: (playerObj: any, seatFrom: any) => any;
 
-      static onExitAux: ((playerObj: any, seat: any) => any) | any;
+      /** @noSelf */
+      static onExitAux: (playerObj: any, seat: any) => any;
 
-      static OnFillWorldObjectContextMenu: ((player: any, context: any, worldobjects: any, test: any) => any) | any;
+      /** @noSelf */
+      static OnFillWorldObjectContextMenu: (player: any, context: any, worldobjects: any, test: any) => any;
 
-      static onHorn: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static onHorn: (playerObj: any) => any;
 
-      static onHornStart: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static onHornStart: (playerObj: any) => any;
 
-      static onHornStop: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static onHornStop: (playerObj: any) => any;
 
-      static onHotwire: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static onHotwire: (playerObj: any) => any;
 
-      static onInfo: ((playerObj: any, vehicle: any) => any) | any;
+      /** @noSelf */
+      static onInfo: (playerObj: any, vehicle: any) => any;
 
-      static onKeyPressed: ((key: any) => any) | any;
+      /** @noSelf */
+      static onKeyPressed: (key: any) => any;
 
-      static onKeyStartPressed: ((key: any) => any) | any;
+      /** @noSelf */
+      static onKeyStartPressed: (key: any) => any;
 
-      static onLightbar: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static onLightbar: (playerObj: any) => any;
 
-      static onLockDoor: ((playerObj: any, part: any) => any) | any;
+      /** @noSelf */
+      static onLockDoor: (playerObj: any, part: any) => any;
 
-      static onMechanic: ((playerObj: any, vehicle: any) => any) | any;
+      /** @noSelf */
+      static onMechanic: (playerObj: any, vehicle: any) => any;
 
-      static onOpenDoor: ((playerObj: any, part: any) => any) | any;
+      /** @noSelf */
+      static onOpenDoor: (playerObj: any, part: any) => any;
 
-      static onRemoveBurntVehicle: ((player: any, vehicle: any) => any) | any;
+      /** @noSelf */
+      static onRemoveBurntVehicle: (player: any, vehicle: any) => any;
 
-      static onRoadtrip: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static onRoadtrip: (playerObj: any) => any;
 
-      static onShowSeatUI: ((playerObj: any, vehicle: any) => any) | any;
+      /** @noSelf */
+      static onShowSeatUI: (playerObj: any, vehicle: any) => any;
 
-      static onShutOff: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static onShutOff: (playerObj: any) => any;
 
-      static onSignalDevice: ((playerObj: any, part: any) => any) | any;
+      /** @noSelf */
+      static onSignalDevice: (playerObj: any, part: any) => any;
 
-      static onSleep: ((playerObj: any, vehicle: any) => any) | any;
+      /** @noSelf */
+      static onSleep: (playerObj: any, vehicle: any) => any;
 
-      static onStartEngine: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static onStartEngine: (playerObj: any) => any;
 
-      static onSwitchSeat: ((playerObj: any, seatTo: any) => any) | any;
+      /** @noSelf */
+      static onSwitchSeat: (playerObj: any, seatTo: any) => any;
 
-      static onToggleHeadlights: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static onToggleHeadlights: (playerObj: any) => any;
 
-      static onToggleHeater: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static onToggleHeater: (playerObj: any) => any;
 
-      static onToggleTrunkLocked: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static onToggleTrunkLocked: (playerObj: any) => any;
 
-      static onUnlockDoor: ((playerObj: any, part: any) => any) | any;
+      /** @noSelf */
+      static onUnlockDoor: (playerObj: any, part: any) => any;
 
-      static onWalkPath: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static onWalkPath: (playerObj: any) => any;
 
-      static onWash: ((playerObj: any, vehicle: any) => any) | any;
+      /** @noSelf */
+      static onWash: (playerObj: any, vehicle: any) => any;
 
-      static processEnter: ((playerObj: any, vehicle: any, seat: any) => any) | any;
+      /** @noSelf */
+      static processEnter: (playerObj: any, vehicle: any, seat: any) => any;
 
-      static processEnter2: ((playerObj: any, vehicle: any, seat: any) => any) | any;
+      /** @noSelf */
+      static processEnter2: (playerObj: any, vehicle: any, seat: any) => any;
 
-      static processShiftEnter: ((playerObj: any, vehicle: any, seat: any) => any) | any;
+      /** @noSelf */
+      static processShiftEnter: (playerObj: any, vehicle: any, seat: any) => any;
 
-      static showRadialMenu: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static showRadialMenu: (playerObj: any) => any;
 
-      static showRadialMenuOutside: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static showRadialMenuOutside: (playerObj: any) => any;
 
-      static tryMoveItemsFromSeat:
-        | ((
-            playerObj: any,
-            vehicle: any,
-            seat: any,
-            moveThem: any,
-            doEnter: any,
-            seatTo: any,
-            itemListIndex: any
-          ) => any)
-        | any;
+      /** @noSelf */
+      static tryMoveItemsFromSeat: (
+        playerObj: any,
+        vehicle: any,
+        seat: any,
+        moveThem: any,
+        doEnter: any,
+        seatTo: any,
+        itemListIndex: any
+      ) => any;
     }
   }
-  export namespace lua.client.Vehicles.ISUI.ISVehicleMenu {}
+  export namespace lua.client.Vehicles.ISUI.ISVehicleMenu { }
 }

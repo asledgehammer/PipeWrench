@@ -20,66 +20,83 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.271Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../reference.d.ts" />
 /// <reference path="../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.shared {
-    export class luautils {
-      private constructor();
-
+    export abstract class luautils {
       static [id: string]: any;
 
-      static equipItems: ((_player: any, _primItemToEquip: any, _scndItemToEquip: any) => any) | any;
+      /** @noSelf */
+      static equipItems: (_player: any, _primItemToEquip: any, _scndItemToEquip: any) => any;
 
-      static getConditionRGB: ((condition: any) => any) | any;
+      /** @noSelf */
+      static getConditionRGB: (condition: any) => any;
 
-      static getCorrectSquareForWall: ((playerObj: any, square: any) => any) | any;
+      /** @noSelf */
+      static getCorrectSquareForWall: (playerObj: any, square: any) => any;
 
-      static getNextTiles: ((cell: any, startingGrid: any, range: any) => any) | any;
+      /** @noSelf */
+      static getNextTiles: (cell: any, startingGrid: any, range: any) => any;
 
-      static haveToBeTransfered: ((player: any, item: any, dontWalk: any) => any) | any;
+      /** @noSelf */
+      static haveToBeTransfered: (player: any, item: any, dontWalk: any) => any;
 
-      static indexOf: ((table1: any, value: any) => any) | any;
+      /** @noSelf */
+      static indexOf: (table1: any, value: any) => any;
 
-      static isEquipped: ((_item: any, _player: any) => any) | any;
+      /** @noSelf */
+      static isEquipped: (_item: any, _player: any) => any;
 
-      static isSquareAdjacentToSquare: ((_square1: any, _square2: any) => any) | any;
+      /** @noSelf */
+      static isSquareAdjacentToSquare: (_square1: any, _square2: any) => any;
 
-      static okModal: ((_text: any, _centered: any, _width: any, _height: any, _posX: any, _posY: any) => any) | any;
+      /** @noSelf */
+      static okModal: (_text: any, _centered: any, _width: any, _height: any, _posX: any, _posY: any) => any;
 
-      static round: ((num: any, idp: any) => any) | any;
+      /** @noSelf */
+      static round: (num: any, idp: any) => any;
 
-      static split: ((inputstr: any, sep: any) => any) | any;
+      /** @noSelf */
+      static split: (inputstr: any, sep: any) => any;
 
-      static stringEnds: ((String: any, End: any) => any) | any;
+      /** @noSelf */
+      static stringEnds: (String: any, End: any) => any;
 
-      static stringStarts: ((String: any, Start: any) => any) | any;
+      /** @noSelf */
+      static stringStarts: (String: any, Start: any) => any;
 
-      static trim: ((s: any) => any) | any;
+      /** @noSelf */
+      static trim: (s: any) => any;
 
-      static updatePerksXp: ((perks: any, player: any) => any) | any;
+      /** @noSelf */
+      static updatePerksXp: (perks: any, player: any) => any;
 
-      static walkAdj: ((playerObj: any, square: any, keepActions: any) => any) | any;
+      /** @noSelf */
+      static walkAdj: (playerObj: any, square: any, keepActions: any) => any;
 
-      static walkAdjAltTest: ((playerObj: any, square: any, altSquare: any, keepActions: any) => any) | any;
+      /** @noSelf */
+      static walkAdjAltTest: (playerObj: any, square: any, altSquare: any, keepActions: any) => any;
 
-      static walkAdjWall: ((playerObj: any, square: any, north: any, keepActions: any) => any) | any;
+      /** @noSelf */
+      static walkAdjWall: (playerObj: any, square: any, north: any, keepActions: any) => any;
 
-      static walkAdjWindowOrDoor: ((playerObj: any, square: any, item: any, keepActions: any) => any) | any;
+      /** @noSelf */
+      static walkAdjWindowOrDoor: (playerObj: any, square: any, item: any, keepActions: any) => any;
 
-      static walkToContainer: ((container: any, playerNum: any) => any) | any;
+      /** @noSelf */
+      static walkToContainer: (container: any, playerNum: any) => any;
 
-      static walkToObject: ((_player: any, _object: any, _cancelTA: any) => any) | any;
+      /** @noSelf */
+      static walkToObject: (_player: any, _object: any, _cancelTA: any) => any;
 
-      static weaponLowerCondition: ((_weapon: any, _character: any, _replace: any, _chance: any) => any) | any;
+      /** @noSelf */
+      static weaponLowerCondition: (_weapon: any, _character: any, _replace: any, _chance: any) => any;
     }
   }
-  export namespace lua.shared.luautils {}
+  export namespace lua.shared.luautils { }
 }

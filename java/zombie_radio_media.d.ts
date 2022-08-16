@@ -21,12 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace zombie.radio.media {
     /**
      * @customConstructor MediaData.new
@@ -355,11 +354,11 @@ declare module 'PipeWrench' {
       reversed<U>(): java.util.Comparator<any>;
       /**
        * Method Parameters: 
-       *  - (Comparator arg0): java.util.Comparator<T>
        *  - (Function arg0): java.util.Comparator<T>
+       *  - (Comparator arg0): java.util.Comparator<T>
        *  - (Function arg0, Comparator arg1): java.util.Comparator<T>
        */
-      thenComparing<U>(arg0: java.util.Comparator<any> | java.util._function_.Function<any, U>, arg1?: java.util.Comparator<U>): java.util.Comparator<any>;
+      thenComparing<U>(arg0: java.util._function_.Function<any, U> | java.util.Comparator<any>, arg1?: java.util.Comparator<U>): java.util.Comparator<any>;
       /**
        * Method Parameters: 
        *  - (ToDoubleFunction arg0): java.util.Comparator<T>

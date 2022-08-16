@@ -21,12 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace zombie.iso.areas {
     /**
      * @customConstructor BuildingScore.new
@@ -509,10 +508,10 @@ declare module 'PipeWrench' {
       addPlayer(arg0: string): void;
       /**
        * Method Parameters: 
-       *  - (String arg0): zombie.iso.areas.SafeHouse
        *  - (IsoPlayer arg0): zombie.iso.areas.SafeHouse
+       *  - (String arg0): zombie.iso.areas.SafeHouse
        */
-      alreadyHaveSafehouse(arg0: string | zombie.characters.IsoPlayer): zombie.iso.areas.SafeHouse;
+      alreadyHaveSafehouse(arg0: zombie.characters.IsoPlayer | string): zombie.iso.areas.SafeHouse;
       /**
        * Method Parameters: 
        *  - (IsoPlayer arg0): void
@@ -743,10 +742,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (String arg0): zombie.iso.areas.SafeHouse
        *  - (IsoPlayer arg0): zombie.iso.areas.SafeHouse
+       *  - (String arg0): zombie.iso.areas.SafeHouse
        */
-      static hasSafehouse(arg0: string | zombie.characters.IsoPlayer): zombie.iso.areas.SafeHouse;
+      static hasSafehouse(arg0: zombie.characters.IsoPlayer | string): zombie.iso.areas.SafeHouse;
       /**
        * @noSelf
        *

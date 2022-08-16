@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:38:58.510Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.server.BuildingObjects {
     /** @customConstructor ISMoveableCursor:new */
     export class ISMoveableCursor extends lua.server.BuildingObjects.ISBuildingObject {
@@ -124,6 +121,8 @@ declare module 'PipeWrench' {
 
       getXPrompt: (() => any) | any;
 
+      onObjectLeftMouseButtonDown: ((object: any, x: any, y: any) => any) | any;
+
       rotateWhilePlacing: (() => any) | any;
 
       setInfoPanel: ((_square: any, _object: any, _moveProps: any, _customTexture: any) => any) | any;
@@ -136,12 +135,15 @@ declare module 'PipeWrench' {
 
       tryInitialItem: ((_item: any) => any) | any;
 
-      static changeModeKey: ((_key: any, _playerNum: any, _joyPadTriggered: any) => any) | any;
+      /** @noSelf */
+      static changeModeKey: (_key: any, _playerNum: any, _joyPadTriggered: any) => any;
 
-      static clearCacheForAllPlayers: (() => any) | any;
+      /** @noSelf */
+      static clearCacheForAllPlayers: () => any;
 
-      static exitCursorKey: ((_key: any) => any) | any;
+      /** @noSelf */
+      static exitCursorKey: (_key: any) => any;
     }
   }
-  export namespace lua.server.BuildingObjects.ISMoveableCursor {}
+  export namespace lua.server.BuildingObjects.ISMoveableCursor { }
 }

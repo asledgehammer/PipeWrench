@@ -20,19 +20,16 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:00.442Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISLightSourceRadialMenu:new */
-    export class ISLightSourceRadialMenu extends lua.shared.ISBaseObject.ISBaseObject {
+    export class ISLightSourceRadialMenu extends lua.shared.ISBaseObject {
       [id: string]: any;
       static [id: string]: any;
 
@@ -66,14 +63,18 @@ declare module 'PipeWrench' {
 
       onToggle: ((item: any) => any) | any;
 
-      static checkKey: ((key: any) => any) | any;
+      /** @noSelf */
+      static checkKey: (key: any) => any;
 
-      static onKeyPressed: ((key: any) => any) | any;
+      /** @noSelf */
+      static onKeyPressed: (key: any) => any;
 
-      static onKeyReleased: ((key: any) => any) | any;
+      /** @noSelf */
+      static onKeyReleased: (key: any) => any;
 
-      static onKeyRepeat: ((key: any) => any) | any;
+      /** @noSelf */
+      static onKeyRepeat: (key: any) => any;
     }
   }
-  export namespace lua.client.ISUI.ISLightSourceRadialMenu {}
+  export namespace lua.client.ISUI.ISLightSourceRadialMenu { }
 }

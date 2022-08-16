@@ -20,30 +20,29 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:02.661Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.Vehicles.ISUI {
-    export class ISVehicleRegulator {
-      private constructor();
-
+    export abstract class ISVehicleRegulator {
       static [id: string]: any;
 
-      static onJoypadPressDown: ((joypadData: any) => any) | any;
+      /** @noSelf */
+      static onJoypadPressDown: (joypadData: any) => any;
 
-      static onJoypadPressUp: ((joypadData: any) => any) | any;
+      /** @noSelf */
+      static onJoypadPressUp: (joypadData: any) => any;
 
-      static onJoypadPressX: ((buttonPrompt: any, joypadData: any) => any) | any;
+      /** @noSelf */
+      static onJoypadPressX: (buttonPrompt: any, joypadData: any) => any;
 
-      static onJoypadReleaseX: ((joypadData: any) => any) | any;
+      /** @noSelf */
+      static onJoypadReleaseX: (joypadData: any) => any;
     }
   }
-  export namespace lua.client.Vehicles.ISUI.ISVehicleRegulator {}
+  export namespace lua.client.Vehicles.ISUI.ISVehicleRegulator { }
 }

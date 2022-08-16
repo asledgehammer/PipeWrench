@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:38:59.823Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.Fishing.TimedActions {
     /** @customConstructor ISFishingAction:new */
     export class ISFishingAction extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -82,8 +79,9 @@ declare module 'PipeWrench' {
 
       getUsedInventory: ((item: any) => any) | any;
 
-      static getFishingZoneFixed: ((x: any, y: any, z: any) => any) | any;
+      /** @noSelf */
+      static getFishingZoneFixed: (x: any, y: any, z: any) => any;
     }
   }
-  export namespace lua.client.Fishing.TimedActions.ISFishingAction {}
+  export namespace lua.client.Fishing.TimedActions.ISFishingAction { }
 }

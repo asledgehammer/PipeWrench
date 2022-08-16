@@ -20,30 +20,26 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:02.673Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.Vehicles {
-    export class ISVehicleTrailerUtils {
-      private constructor();
-
+    export abstract class ISVehicleTrailerUtils {
       static [id: string]: any;
 
-      static getTowableVehicleNear:
-        | ((square: any, ignoreVehicle: any, attachmentA: any, attachmentB: any) => any)
-        | any;
+      /** @noSelf */
+      static getTowableVehicleNear: (square: any, ignoreVehicle: any, attachmentA: any, attachmentB: any) => any;
 
-      static onTrailerPathFail: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static onTrailerPathFail: (playerObj: any) => any;
 
-      static walkToTrailer: ((playerObj: any, vehicle: any, attachment: any, nextAction: any) => any) | any;
+      /** @noSelf */
+      static walkToTrailer: (playerObj: any, vehicle: any, attachment: any, nextAction: any) => any;
     }
   }
-  export namespace lua.client.Vehicles.ISVehicleTrailerUtils {}
+  export namespace lua.client.Vehicles.ISVehicleTrailerUtils { }
 }

@@ -20,166 +20,245 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:38:59.101Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.DebugUIs {
-    export class DebugContextMenu {
-      private constructor();
-
+    export abstract class DebugContextMenu {
       static [id: string]: any;
 
-      static addRBDebugMenu: ((context: any, building: any) => any) | any;
+      /** @noSelf */
+      static addRBDebugMenu: (context: any, building: any) => any;
 
-      static addRVSDebugMenu: ((context: any, square: any) => any) | any;
+      /** @noSelf */
+      static addRVSDebugMenu: (context: any, square: any) => any;
 
-      static addRZSDebugMenu: ((context: any, square: any) => any) | any;
+      /** @noSelf */
+      static addRZSDebugMenu: (context: any, square: any) => any;
 
-      static do3DItem: (() => any) | any;
+      /** @noSelf */
+      static do3DItem: () => any;
 
-      static doCheatMenu: ((context: any, playerObj: any) => any) | any;
+      /** @noSelf */
+      static doCheatMenu: (context: any, playerObj: any) => any;
 
-      static doDebugCorpseMenu: ((player: any, context: any, worldobjects: any, test: any) => any) | any;
+      /** @noSelf */
+      static doDebugCorpseMenu: (player: any, context: any, worldobjects: any, test: any) => any;
 
-      static doDebugMenu: ((player: any, context: any, worldobjects: any, test: any) => any) | any;
+      /** @noSelf */
+      static doDebugMenu: (player: any, context: any, worldobjects: any, test: any) => any;
 
-      static doDebugObjectMenu: ((player: any, context: any, worldobjects: any, test: any) => any) | any;
+      /** @noSelf */
+      static doDebugObjectMenu: (player: any, context: any, worldobjects: any, test: any) => any;
 
-      static doDebugZombieMenu: ((player: any, context: any, worldobjects: any, test: any) => any) | any;
+      /** @noSelf */
+      static doDebugZombieMenu: (player: any, context: any, worldobjects: any, test: any) => any;
 
-      static doRandomizedBuilding: ((building: any, RBdef: any) => any) | any;
+      /** @noSelf */
+      static doRandomizedBuilding: (building: any, RBdef: any) => any;
 
-      static doRandomizedVehicleStory: ((square: any, rvs: any) => any) | any;
+      /** @noSelf */
+      static doRandomizedVehicleStory: (square: any, rvs: any) => any;
 
-      static doRandomizedZoneStory: ((square: any, rzs: any) => any) | any;
+      /** @noSelf */
+      static doRandomizedZoneStory: (square: any, rzs: any) => any;
 
-      static onAttachedItems: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static onAttachedItems: (playerObj: any) => any;
 
-      static OnBBQSetFuel: ((obj: any) => any) | any;
+      /** @noSelf */
+      static OnBBQSetFuel: (obj: any) => any;
 
-      static OnBBQZeroFuel: ((obj: any) => any) | any;
+      /** @noSelf */
+      static OnBBQZeroFuel: (obj: any) => any;
 
-      static OnBendFence: ((worldobjects: any, fence: any) => any) | any;
+      /** @noSelf */
+      static OnBendFence: (worldobjects: any, fence: any) => any;
 
-      static OnBreakFence: ((worldobjects: any, fence: any) => any) | any;
+      /** @noSelf */
+      static OnBreakFence: (worldobjects: any, fence: any) => any;
 
-      static OnCampfireSetFuel: ((obj: any) => any) | any;
+      /** @noSelf */
+      static OnCampfireSetFuel: (obj: any) => any;
 
-      static OnCampfireZeroFuel: ((obj: any) => any) | any;
+      /** @noSelf */
+      static OnCampfireZeroFuel: (obj: any) => any;
 
-      static onCheat: ((player: any, cheat: any) => any) | any;
+      /** @noSelf */
+      static onCheat: (player: any, cheat: any) => any;
 
-      static OnDeadBodyRemove: ((body: any) => any) | any;
+      /** @noSelf */
+      static OnDeadBodyRemove: (body: any) => any;
 
-      static OnDeadBodyToggleCrawling: ((body: any) => any) | any;
+      /** @noSelf */
+      static OnDeadBodyToggleCrawling: (body: any) => any;
 
-      static OnDeadBodyToggleFakeDead: ((body: any) => any) | any;
+      /** @noSelf */
+      static OnDeadBodyToggleFakeDead: (body: any) => any;
 
-      static onDebugInterpolationUI: ((square: any) => any) | any;
+      /** @noSelf */
+      static onDebugInterpolationUI: (square: any) => any;
 
-      static onDebugPlayerInterpolationUI: ((square: any) => any) | any;
+      /** @noSelf */
+      static onDebugPlayerInterpolationUI: (square: any) => any;
 
-      static OnDoorLock: ((worldobjects: any, door: any) => any) | any;
+      /** @noSelf */
+      static OnDoorLock: (worldobjects: any, door: any) => any;
 
-      static OnFireplaceSetFuel: ((obj: any) => any) | any;
+      /** @noSelf */
+      static onExtList: (playerObj: any) => any;
 
-      static OnFireplaceZeroFuel: ((obj: any) => any) | any;
+      /** @noSelf */
+      static OnFireplaceSetFuel: (obj: any) => any;
 
-      static onGenerateLootUI: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static OnFireplaceZeroFuel: (obj: any) => any;
 
-      static OnGeneratorSetFuel: ((obj: any) => any) | any;
+      /** @noSelf */
+      static onGenerateLootUI: (playerObj: any) => any;
 
-      static OnGetBuildingKey: ((worldobjects: any, player: any) => any) | any;
+      /** @noSelf */
+      static OnGeneratorSetFuel: (obj: any) => any;
 
-      static OnGetDoorKey: ((worldobjects: any, door: any, player: any) => any) | any;
+      /** @noSelf */
+      static OnGetBuildingKey: (worldobjects: any, player: any) => any;
 
-      static onHordeManager: ((square: any, player: any) => any) | any;
+      /** @noSelf */
+      static OnGetDoorKey: (worldobjects: any, door: any, player: any) => any;
 
-      static onMakeNoise: ((square: any, playerObj: any) => any) | any;
+      /** @noSelf */
+      static onHordeManager: (square: any, player: any) => any;
 
-      static OnMannequinCreateItem: ((script: any) => any) | any;
+      /** @noSelf */
+      static onMakeNoise: (square: any, playerObj: any, radius: any, volume: any) => any;
 
-      static OnMannequinSetScript: ((obj: any, script: any) => any) | any;
+      /** @noSelf */
+      static OnMannequinCreateItem: (script: any) => any;
 
-      static OnMetalDrumSetWater: ((obj: any) => any) | any;
+      /** @noSelf */
+      static OnMannequinSetScript: (obj: any, script: any) => any;
 
-      static OnMetalDrumZeroWater: ((obj: any) => any) | any;
+      /** @noSelf */
+      static OnMetalDrumSetWater: (obj: any) => any;
 
-      static OnRainBarrelSetWater: ((obj: any) => any) | any;
+      /** @noSelf */
+      static OnMetalDrumZeroWater: (obj: any) => any;
 
-      static OnRainBarrelZeroWater: ((obj: any) => any) | any;
+      /** @noSelf */
+      static OnRainBarrelSetWater: (obj: any) => any;
 
-      static OnReanimateCorpse: ((body: any) => any) | any;
+      /** @noSelf */
+      static OnRainBarrelZeroWater: (obj: any) => any;
 
-      static OnRemoveAllZombies: ((zombie: any) => any) | any;
+      /** @noSelf */
+      static OnReanimateCorpse: (body: any) => any;
 
-      static OnRemoveAllZombiesClient: ((zombie: any) => any) | any;
+      /** @noSelf */
+      static OnRemoveAllZombies: (zombie: any) => any;
 
-      static onRemoveItemTool: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static OnRemoveAllZombiesClient: (zombie: any) => any;
 
-      static onRemoveVehicles: ((zone: any) => any) | any;
+      /** @noSelf */
+      static onRemoveItemTool: (playerObj: any) => any;
 
-      static onRunningUI: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static onRemoveVehicles: (zone: any) => any;
 
-      static OnSelectedZombieKnockDown: ((hitFromBehind: any) => any) | any;
+      /** @noSelf */
+      static onRunningUI: (playerObj: any) => any;
 
-      static OnSelectedZombieToggleCanCrawlUnderVehicle: (() => any) | any;
+      /** @noSelf */
+      static OnSelectedZombieKnockDown: (hitFromBehind: any) => any;
 
-      static OnSelectedZombieToggleCanWalk: (() => any) | any;
+      /** @noSelf */
+      static OnSelectedZombieToggleCanCrawlUnderVehicle: () => any;
 
-      static OnSelectedZombieToggleCrawling: (() => any) | any;
+      /** @noSelf */
+      static OnSelectedZombieToggleCanWalk: () => any;
 
-      static OnSelectedZombieToggleFakeDead: (() => any) | any;
+      /** @noSelf */
+      static OnSelectedZombieToggleCrawling: () => any;
 
-      static OnSelectedZombieToggleUseless: (() => any) | any;
+      /** @noSelf */
+      static OnSelectedZombieToggleFakeDead: () => any;
 
-      static OnSelectedZombieWalk: ((square: any) => any) | any;
+      /** @noSelf */
+      static OnSelectedZombieToggleUseless: () => any;
 
-      static OnSelectZombie: ((zombie: any) => any) | any;
+      /** @noSelf */
+      static OnSelectedZombieWalk: (square: any) => any;
 
-      static onSetAlarm: ((def: any) => any) | any;
+      /** @noSelf */
+      static OnSelectZombie: (zombie: any) => any;
 
-      static OnSetCompost: ((worldobjects: any, obj: any) => any) | any;
+      /** @noSelf */
+      static onSetAlarm: (def: any) => any;
 
-      static OnSetDoorKeyID: ((worldobjects: any, door: any) => any) | any;
+      /** @noSelf */
+      static OnSetCompost: (worldobjects: any, obj: any) => any;
 
-      static OnSetZombieOnFire: ((zombie: any) => any) | any;
+      /** @noSelf */
+      static OnSetDoorKeyID: (worldobjects: any, door: any) => any;
 
-      static onSpawnPoints: ((square: any, player: any) => any) | any;
+      /** @noSelf */
+      static OnSetDoorKeyIDBuilding: (worldobjects: any, door: any) => any;
 
-      static onSpawnSurvivorHorde: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static OnSetDoorKeyIDRandom: (worldobjects: any, door: any) => any;
 
-      static onSpawnVehicle: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static OnSetZombieOnFire: (zombie: any) => any;
 
-      static onTeleportUI: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static onSpawnPoints: (square: any, player: any) => any;
 
-      static onTeleportValid: ((button: any, x: any, y: any, z: any) => any) | any;
+      /** @noSelf */
+      static onSpawnSurvivorHorde: (playerObj: any) => any;
 
-      static onTick: (() => any) | any;
+      /** @noSelf */
+      static onSpawnVehicle: (playerObj: any) => any;
 
-      static onTilesPicker: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static onTeleportUI: (playerObj: any) => any;
 
-      static OnUnbendFence: ((worldobjects: any, fence: any) => any) | any;
+      /** @noSelf */
+      static onTeleportValid: (button: any, x: any, y: any, z: any) => any;
 
-      static OnWindowGlassRemoved: ((worldobjects: any, window: any) => any) | any;
+      /** @noSelf */
+      static onTick: () => any;
 
-      static OnWindowLock: ((worldobjects: any, window: any) => any) | any;
+      /** @noSelf */
+      static onTilesPicker: (playerObj: any) => any;
 
-      static OnWindowPermLock: ((worldobjects: any, window: any) => any) | any;
+      /** @noSelf */
+      static OnUnbendFence: (worldobjects: any, fence: any) => any;
 
-      static OnWindowSmash: ((worldobjects: any, window: any) => any) | any;
+      /** @noSelf */
+      static OnWindowGlassRemoved: (worldobjects: any, window: any) => any;
 
-      static pickSquare: ((x: any, y: any) => any) | any;
+      /** @noSelf */
+      static OnWindowLock: (worldobjects: any, window: any) => any;
 
-      static stagger: ((player: any, stag: any) => any) | any;
+      /** @noSelf */
+      static OnWindowPermLock: (worldobjects: any, window: any) => any;
+
+      /** @noSelf */
+      static OnWindowSmash: (worldobjects: any, window: any) => any;
+
+      /** @noSelf */
+      static pickSquare: (x: any, y: any) => any;
+
+      /** @noSelf */
+      static setForceLockDoor: (worldobjects: any, door: any, player: any) => any;
+
+      /** @noSelf */
+      static stagger: (player: any, stag: any) => any;
     }
   }
-  export namespace lua.client.DebugUIs.DebugContextMenu {}
+  export namespace lua.client.DebugUIs.DebugContextMenu { }
 }

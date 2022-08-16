@@ -20,38 +20,41 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.241Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.LastStand {
-    export class Studio {
-      private constructor();
-
+    export abstract class Studio {
       static [id: string]: any;
 
-      static Add: (() => any) | any;
+      /** @noSelf */
+      static Add: () => any;
 
-      static AddPlayer: ((playerNum: any, playerObj: any) => any) | any;
+      /** @noSelf */
+      static AddPlayer: (playerNum: any, playerObj: any) => any;
 
-      static Init: (() => any) | any;
+      /** @noSelf */
+      static Init: () => any;
 
-      static OnGameStart: (() => any) | any;
+      /** @noSelf */
+      static OnGameStart: () => any;
 
-      static OnInitWorld: (() => any) | any;
+      /** @noSelf */
+      static OnInitWorld: () => any;
 
-      static OnNewGame: (() => any) | any;
+      /** @noSelf */
+      static OnNewGame: () => any;
 
-      static RemovePlayer: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static RemovePlayer: (playerObj: any) => any;
 
-      static Render: (() => any) | any;
+      /** @noSelf */
+      static Render: () => any;
     }
   }
-  export namespace lua.client.LastStand.Studio {}
+  export namespace lua.client.LastStand.Studio { }
 }

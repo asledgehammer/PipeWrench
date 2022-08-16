@@ -21,12 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace zombie.characters.BodyDamage {
     /**
      * @customConstructor BodyDamage.new
@@ -44,10 +43,10 @@ declare module 'PipeWrench' {
       constructor(arg0: zombie.characters.IsoGameCharacter);
       /**
        * Method Parameters: 
-       *  - (BodyPartType arg0, float arg1): void
        *  - (int arg0, float arg1): void
+       *  - (BodyPartType arg0, float arg1): void
        */
-      AddDamage(arg0: zombie.characters.BodyDamage.BodyPartType | number, arg1: number): void;
+      AddDamage(arg0: number | zombie.characters.BodyDamage.BodyPartType, arg1: number): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -95,10 +94,10 @@ declare module 'PipeWrench' {
       IncreasePanicFloat(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (BodyPartType arg0): boolean
        *  - (int arg0): boolean
+       *  - (BodyPartType arg0): boolean
        */
-      IsBandaged(arg0: zombie.characters.BodyDamage.BodyPartType | number): boolean;
+      IsBandaged(arg0: number | zombie.characters.BodyDamage.BodyPartType): boolean;
       /**
        * Method Parameters: 
        *  - (BodyPartType arg0): boolean
@@ -107,10 +106,10 @@ declare module 'PipeWrench' {
       IsBitten(arg0: zombie.characters.BodyDamage.BodyPartType | number): boolean;
       /**
        * Method Parameters: 
-       *  - (int arg0): boolean
        *  - (BodyPartType arg0): boolean
+       *  - (int arg0): boolean
        */
-      IsBleeding(arg0: number | zombie.characters.BodyDamage.BodyPartType): boolean;
+      IsBleeding(arg0: zombie.characters.BodyDamage.BodyPartType | number): boolean;
       /**
        * Method Parameters: 
        *  - (int arg0): boolean
@@ -170,10 +169,10 @@ declare module 'PipeWrench' {
       IsStitched(arg0: number | zombie.characters.BodyDamage.BodyPartType): boolean;
       /**
        * Method Parameters: 
-       *  - (BodyPartType arg0): boolean
        *  - (int arg0): boolean
+       *  - (BodyPartType arg0): boolean
        */
-      IsWounded(arg0: zombie.characters.BodyDamage.BodyPartType | number): boolean;
+      IsWounded(arg0: number | zombie.characters.BodyDamage.BodyPartType): boolean;
       /**
        * Method Parameters: 
        *  - (Food arg0): void
@@ -227,17 +226,17 @@ declare module 'PipeWrench' {
       SetBandaged(arg0: number, arg1: boolean, arg2: number, arg3: boolean, arg4: string): void;
       /**
        * Method Parameters: 
-       *  - (BodyPartType arg0, boolean arg1): void
        *  - (int arg0, boolean arg1): void
+       *  - (BodyPartType arg0, boolean arg1): void
        *  - (int arg0, boolean arg1, boolean arg2): void
        */
-      SetBitten(arg0: zombie.characters.BodyDamage.BodyPartType | number, arg1: boolean, arg2?: boolean): void;
+      SetBitten(arg0: number | zombie.characters.BodyDamage.BodyPartType, arg1: boolean, arg2?: boolean): void;
       /**
        * Method Parameters: 
-       *  - (BodyPartType arg0, boolean arg1): void
        *  - (int arg0, boolean arg1): void
+       *  - (BodyPartType arg0, boolean arg1): void
        */
-      SetBleeding(arg0: zombie.characters.BodyDamage.BodyPartType | number, arg1: boolean): void;
+      SetBleeding(arg0: number | zombie.characters.BodyDamage.BodyPartType, arg1: boolean): void;
       /**
        * Method Parameters: 
        *  - (BodyPartType arg0, boolean arg1): void
@@ -246,10 +245,10 @@ declare module 'PipeWrench' {
       SetBleedingStemmed(arg0: zombie.characters.BodyDamage.BodyPartType | number, arg1: boolean): void;
       /**
        * Method Parameters: 
-       *  - (int arg0, boolean arg1): void
        *  - (BodyPartType arg0, boolean arg1): void
+       *  - (int arg0, boolean arg1): void
        */
-      SetCortorised(arg0: number | zombie.characters.BodyDamage.BodyPartType, arg1: boolean): void;
+      SetCortorised(arg0: zombie.characters.BodyDamage.BodyPartType | number, arg1: boolean): void;
       /**
        * Method Parameters: 
        *  - (int arg0, boolean arg1): void
@@ -1719,18 +1718,122 @@ declare module 'PipeWrench' {
       static readonly UpperLeg_R: zombie.characters.BodyDamage.BodyPartType;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (int arg0): BodyPartType
+       */
+      static FromIndex(arg0: number): zombie.characters.BodyDamage.BodyPartType;
+
+      /**
+       * @noSelf
+       *
+       * (String arg0): BodyPartType
+       */
+      static FromString(arg0: string | null): zombie.characters.BodyDamage.BodyPartType;
+
+      /**
+       * @noSelf
+       *
+       * (BodyPartType arg0): float
+       */
+      static GetDistToCore(arg0: zombie.characters.BodyDamage.BodyPartType | null): number;
+
+      /**
+       * @noSelf
+       *
+       * (BodyPartType arg0): float
+       */
+      static GetMaxActionPenalty(arg0: zombie.characters.BodyDamage.BodyPartType | null): number;
+
+      /**
+       * @noSelf
+       *
+       * (BodyPartType arg0): float
+       */
+      static GetMaxMovementPenalty(arg0: zombie.characters.BodyDamage.BodyPartType | null): number;
+
+      /**
+       * @noSelf
+       *
+       * (BodyPartType arg0): float
+       */
+      static GetSkinSurface(arg0: zombie.characters.BodyDamage.BodyPartType | null): number;
+
+      /**
+       * @noSelf
+       *
+       * (BodyPartType arg0): float
+       */
+      static GetUmbrellaMod(arg0: zombie.characters.BodyDamage.BodyPartType | null): number;
+
+      /**
+       * @noSelf
+       *
+       * (BodyPartType arg0): int
+       */
+      static ToIndex(arg0: zombie.characters.BodyDamage.BodyPartType | null): number;
+
+      /**
+       * @noSelf
+       *
+       * (BodyPartType arg0): String
+       */
+      static ToString(arg0: zombie.characters.BodyDamage.BodyPartType | null): string;
+
       getBandageModel(): string;
 
       /** (boolean arg0): String */
       getBiteWoundModel(arg0: boolean): string;
 
+      /**
+       * @noSelf
+       *
+       * (int arg0): float
+       */
+      static getBleedingTimeModifyer(arg0: number): number;
+
       /** (boolean arg0): String */
       getCutWoundModel(arg0: boolean): string;
+
+      /**
+       * @noSelf
+       *
+       * (int arg0): float
+       */
+      static getDamageModifyer(arg0: number): number;
+
+      /**
+       * @noSelf
+       *
+       * (BodyPartType arg0): String
+       */
+      static getDisplayName(arg0: zombie.characters.BodyDamage.BodyPartType | null): string;
+
+      /**
+       * @noSelf
+       *
+       * (int arg0): float
+       */
+      static getPainModifyer(arg0: number): number;
+
+      /** @noSelf */
+      static getRandom(): zombie.characters.BodyDamage.BodyPartType;
 
       /** (boolean arg0): String */
       getScratchWoundModel(arg0: boolean): string;
 
       index(): number;
+
+      /**
+       * @noSelf
+       *
+       * (String arg0): BodyPartType
+       */
+      static valueOf(arg0: string | null): zombie.characters.BodyDamage.BodyPartType;
+
+      /** @noSelf */
+      static values(): zombie.characters.BodyDamage.BodyPartType[];
 
     }
     /**
@@ -1891,6 +1994,27 @@ declare module 'PipeWrench' {
       static readonly Walking5kmh: zombie.characters.BodyDamage.Metabolics;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (float arg0): float
+       */
+      static MetToBtuHr(arg0: number): number;
+
+      /**
+       * @noSelf
+       *
+       * (float arg0): float
+       */
+      static MetToW(arg0: number): number;
+
+      /**
+       * @noSelf
+       *
+       * (float arg0): float
+       */
+      static MetToWm2(arg0: number): number;
+
       getBtuHr(): number;
 
       getMet(): number;
@@ -1898,6 +2022,16 @@ declare module 'PipeWrench' {
       getW(): number;
 
       getWm2(): number;
+
+      /**
+       * @noSelf
+       *
+       * (String arg0): Metabolics
+       */
+      static valueOf(arg0: string | null): zombie.characters.BodyDamage.Metabolics;
+
+      /** @noSelf */
+      static values(): zombie.characters.BodyDamage.Metabolics[];
 
     }
     /**
@@ -2018,7 +2152,7 @@ declare module 'PipeWrench' {
       setProteins(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (float arg0): void
+       *  - (double arg0): void
        */
       setWeight(arg0: number): void;
       /**

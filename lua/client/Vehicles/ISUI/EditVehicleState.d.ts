@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:02.589Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.Vehicles.ISUI {
     /** @customConstructor EditVehicleUI:new */
     export class EditVehicleUI extends lua.client.ISUI.ISPanel {
@@ -228,17 +225,17 @@ declare module 'PipeWrench' {
 
       java9:
         | ((
-            func: any,
-            arg0: any,
-            arg1: any,
-            arg2: any,
-            arg3: any,
-            arg4: any,
-            arg5: any,
-            arg6: any,
-            arg7: any,
-            arg8: any
-          ) => any)
+          func: any,
+          arg0: any,
+          arg1: any,
+          arg2: any,
+          arg3: any,
+          arg4: any,
+          arg5: any,
+          arg6: any,
+          arg7: any,
+          arg8: any
+        ) => any)
         | any;
 
       onGizmoAccept: (() => any) | any;
@@ -408,6 +405,6 @@ declare module 'PipeWrench' {
   }
   export namespace lua.client.Vehicles.ISUI.EditVehicleState {
     /** @noSelf */
-    export const EditVehicleState_InitUI: (() => any) | any;
+    export const EditVehicleState_InitUI: () => any;
   }
 }

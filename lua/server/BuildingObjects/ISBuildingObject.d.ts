@@ -20,19 +20,16 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:38:58.412Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.server.BuildingObjects {
     /** @customConstructor ISBuildingObject:new */
-    export class ISBuildingObject extends lua.shared.ISBaseObject.ISBaseObject {
+    export class ISBuildingObject extends lua.shared.ISBaseObject {
       [id: string]: any;
       static [id: string]: any;
 
@@ -174,10 +171,12 @@ declare module 'PipeWrench' {
 
       walkTo: ((x: any, y: any, z: any) => any) | any;
 
-      static onDestroy: ((thump: any, player: any) => any) | any;
+      /** @noSelf */
+      static onDestroy: (thump: any, player: any) => any;
 
-      static removeFromGround: ((square: any) => any) | any;
+      /** @noSelf */
+      static removeFromGround: (square: any) => any;
     }
   }
-  export namespace lua.server.BuildingObjects.ISBuildingObject {}
+  export namespace lua.server.BuildingObjects.ISBuildingObject { }
 }

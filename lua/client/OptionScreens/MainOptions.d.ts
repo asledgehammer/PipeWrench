@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.562Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor MainOptions:new */
     export class MainOptions extends lua.client.ISUI.ISPanelJoypad {
@@ -214,26 +211,36 @@ declare module 'PipeWrench' {
 
       toUI: (() => any) | any;
 
-      static doLanguageToolTip: ((languages: any) => any) | any;
+      /** @noSelf */
+      static doLanguageToolTip: (languages: any) => any;
 
-      static getAvailableLanguage: (() => any) | any;
+      /** @noSelf */
+      static getAvailableLanguage: () => any;
 
-      static getGeneralTranslators: ((_language: any) => any) | any;
+      /** @noSelf */
+      static getGeneralTranslators: (_language: any) => any;
 
-      static keyPressHandler: ((key: any) => any) | any;
+      /** @noSelf */
+      static keyPressHandler: (key: any) => any;
 
-      static loadKeys: (() => any) | any;
+      /** @noSelf */
+      static loadKeys: () => any;
 
-      static OnGamepadConnect: ((index: any) => any) | any;
+      /** @noSelf */
+      static OnGamepadConnect: (index: any) => any;
 
-      static OnGamepadDisconnect: ((index: any) => any) | any;
+      /** @noSelf */
+      static OnGamepadDisconnect: (index: any) => any;
 
-      static saveKeys: (() => any) | any;
+      /** @noSelf */
+      static saveKeys: () => any;
 
-      static sortModes: ((a: any, b: any) => any) | any;
+      /** @noSelf */
+      static sortModes: (a: any, b: any) => any;
 
-      static upgradeKeysIni: ((name: any, key: any, defaultKey: any, version: any) => any) | any;
+      /** @noSelf */
+      static upgradeKeysIni: (name: any, key: any, defaultKey: any, version: any) => any;
     }
   }
-  export namespace lua.client.OptionScreens.MainOptions {}
+  export namespace lua.client.OptionScreens.MainOptions { }
 }

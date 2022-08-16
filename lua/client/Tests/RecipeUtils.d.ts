@@ -20,34 +20,29 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.978Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.Tests {
-    export class RecipeUtils {
-      private constructor();
-
+    export abstract class RecipeUtils {
       static [id: string]: any;
 
-      static CreateSourceItem:
-        | ((recipe: any, source: any, sourceFullType: any, options: any, result: any) => any)
-        | any;
+      /** @noSelf */
+      static CreateSourceItem: (recipe: any, source: any, sourceFullType: any, options: any, result: any) => any;
 
-      static CreateSourceItem1: ((recipe: any, source: any, sourceFullType: any, options: any) => any) | any;
+      /** @noSelf */
+      static CreateSourceItem1: (recipe: any, source: any, sourceFullType: any, options: any) => any;
 
-      static CreateSourceItem2:
-        | ((recipe: any, source: any, sourceFullType: any, options: any, result: any) => any)
-        | any;
+      /** @noSelf */
+      static CreateSourceItem2: (recipe: any, source: any, sourceFullType: any, options: any, result: any) => any;
 
-      static CreateSourceItems: ((recipe: any, options: any, result: any) => any) | any;
+      /** @noSelf */
+      static CreateSourceItems: (recipe: any, options: any, result: any) => any;
     }
   }
-  export namespace lua.client.Tests.RecipeUtils {}
+  export namespace lua.client.Tests.RecipeUtils { }
 }

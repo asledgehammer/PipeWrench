@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:38:59.286Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../../reference.d.ts" />
 /// <reference path="../../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.DebugUIs.DebugMenu.Climate {
     /** @customConstructor ThunderDebug:new */
     export class ThunderDebug extends lua.client.ISUI.ISCollapsableWindow {
@@ -96,12 +93,15 @@ declare module 'PipeWrench' {
 
       updateValues: ((_mgr: any) => any) | any;
 
-      static OnClimateTickDebug: ((mgr: any) => any) | any;
+      /** @noSelf */
+      static OnClimateTickDebug: (mgr: any) => any;
 
-      static OnOpenPanel: (() => any) | any;
+      /** @noSelf */
+      static OnOpenPanel: () => any;
 
-      static OnThunderEvent: ((x: any, y: any, strike: any, light: any, rumble: any) => any) | any;
+      /** @noSelf */
+      static OnThunderEvent: (x: any, y: any, strike: any, light: any, rumble: any) => any;
     }
   }
-  export namespace lua.client.DebugUIs.DebugMenu.Climate.ThunderDebug {}
+  export namespace lua.client.DebugUIs.DebugMenu.Climate.ThunderDebug { }
 }

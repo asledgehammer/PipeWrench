@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.156Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.JoyPad {
     /** @customConstructor ISJoypadListBox:new */
     export class ISJoypadListBox extends lua.client.ISUI.ISScrollingListBox {
@@ -56,8 +53,9 @@ declare module 'PipeWrench' {
 
       invoke: (() => any) | any;
 
-      static Create: ((playerNum: any, joypadData: any) => any) | any;
+      /** @noSelf */
+      static Create: (playerNum: any, joypadData: any) => any;
     }
   }
-  export namespace lua.client.JoyPad.ISJoyPadListBox {}
+  export namespace lua.client.JoyPad.ISJoyPadListBox { }
 }

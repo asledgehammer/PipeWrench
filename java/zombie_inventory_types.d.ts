@@ -21,12 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace zombie.inventory.types {
     /**
      * @customConstructor AlarmClock.new
@@ -6674,7 +6673,31 @@ declare module 'PipeWrench' {
 
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (int arg0): ClothingPatchFabricType
+       */
+      static fromIndex(arg0: number): zombie.inventory.types.Clothing$ClothingPatchFabricType;
+
+      /**
+       * @noSelf
+       *
+       * (String arg0): ClothingPatchFabricType
+       */
+      static fromType(arg0: string | null): zombie.inventory.types.Clothing$ClothingPatchFabricType;
+
       getType(): string;
+
+      /**
+       * @noSelf
+       *
+       * (String arg0): ClothingPatchFabricType
+       */
+      static valueOf(arg0: string | null): zombie.inventory.types.Clothing$ClothingPatchFabricType;
+
+      /** @noSelf */
+      static values(): zombie.inventory.types.Clothing$ClothingPatchFabricType[];
 
     }
     /**
@@ -12473,6 +12496,11 @@ declare module 'PipeWrench' {
        * Method Parameters: 
        *  - (float arg0): void
        */
+      setEnduranceChange(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (float arg0): void
+       */
       setEngineLoudness(arg0: number): void;
       /**
        * Method Parameters: 
@@ -13267,8 +13295,9 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (Empty): java.util.ArrayList<zombie.inventory.types.WeaponPart>
+       *  - (ArrayList arg0): java.util.ArrayList<zombie.inventory.types.WeaponPart>
        */
-      getAllWeaponParts(): java.util.ArrayList<zombie.inventory.types.WeaponPart>;
+      getAllWeaponParts(arg0?: java.util.ArrayList<zombie.inventory.types.WeaponPart>): java.util.ArrayList<zombie.inventory.types.WeaponPart>;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -14485,6 +14514,12 @@ declare module 'PipeWrench' {
        *  - (String arg0): zombie.inventory.types.WeaponPart
        */
       getWeaponPart(arg0: string): zombie.inventory.types.WeaponPart;
+      /**
+       * Method Parameters: 
+       *  - (WeaponPart arg0): number
+       *  - (String arg0): number
+       */
+      getWeaponPartWeightModifier(arg0: zombie.inventory.types.WeaponPart | string): number;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -23998,10 +24033,10 @@ declare module 'PipeWrench' {
 
       /**
        * Constructors: 
-       *  - (String arg0, String arg1, String arg2, Item arg3)
        *  - (String arg0, String arg1, String arg2, String arg3)
+       *  - (String arg0, String arg1, String arg2, Item arg3)
        */
-      constructor(arg0: string, arg1: string, arg2: string, arg3: zombie.scripting.objects.Item | string);
+      constructor(arg0: string, arg1: string, arg2: string, arg3: string | zombie.scripting.objects.Item);
       /**
        * Method Parameters: 
        *  - (InventoryItem arg0): boolean
@@ -32115,6 +32150,23 @@ declare module 'PipeWrench' {
       name(): string;
       ordinal(): number;
       getType(): string;
+
+      /**
+       * @noSelf
+       *
+       * (HandWeapon arg0): WeaponType
+       */
+      static getWeaponType(arg0: zombie.inventory.types.HandWeapon | null): zombie.inventory.types.WeaponType;
+
+      /**
+       * @noSelf
+       *
+       * (String arg0): WeaponType
+       */
+      static valueOf(arg0: string | null): zombie.inventory.types.WeaponType;
+
+      /** @noSelf */
+      static values(): zombie.inventory.types.WeaponType[];
 
     }
   }

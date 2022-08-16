@@ -21,12 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace zombie.fileSystem {
     /**
      * @customConstructor DeviceList.new
@@ -63,6 +62,16 @@ declare module 'PipeWrench' {
       static readonly END: zombie.fileSystem.FileSeekMode;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): FileSeekMode
+       */
+      static valueOf(arg0: string | null): zombie.fileSystem.FileSeekMode;
+
+      /** @noSelf */
+      static values(): zombie.fileSystem.FileSeekMode[];
+
     }
     /**
      * @customConstructor FileSystem.new

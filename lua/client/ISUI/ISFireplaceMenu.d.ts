@@ -20,48 +20,53 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:00.312Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.ISUI {
-    export class ISFireplaceMenu {
-      private constructor();
-
+    export abstract class ISFireplaceMenu {
       static [id: string]: any;
 
-      static onAddAllFuel: ((playerObj: any, fireplace: any) => any) | any;
+      /** @noSelf */
+      static onAddAllFuel: (playerObj: any, fireplace: any) => any;
 
-      static onAddFuel: ((playerObj: any, fireplace: any, fuelType: any) => any) | any;
+      /** @noSelf */
+      static onAddFuel: (playerObj: any, fireplace: any, fuelType: any) => any;
 
-      static onAddMultipleFuel: ((playerObj: any, fireplace: any, fuelType: any) => any) | any;
+      /** @noSelf */
+      static onAddMultipleFuel: (playerObj: any, fireplace: any, fuelType: any) => any;
 
-      static onDisplayInfo: ((worldobjects: any, player: any, bbq: any) => any) | any;
+      /** @noSelf */
+      static onDisplayInfo: (worldobjects: any, player: any, bbq: any) => any;
 
-      static onExtinguish: ((worldobjects: any, player: any, fireplace: any) => any) | any;
+      /** @noSelf */
+      static onExtinguish: (worldobjects: any, player: any, fireplace: any) => any;
 
-      static OnFillWorldObjectContextMenu: ((player: any, context: any, worldobjects: any, test: any) => any) | any;
+      /** @noSelf */
+      static OnFillWorldObjectContextMenu: (player: any, context: any, worldobjects: any, test: any) => any;
 
-      static onLightFromKindle:
-        | ((worldobjects: any, player: any, percedWood: any, stickOrBranch: any, fireplace: any) => any)
-        | any;
+      /** @noSelf */
+      static onLightFromKindle: (
+        worldobjects: any,
+        player: any,
+        percedWood: any,
+        stickOrBranch: any,
+        fireplace: any
+      ) => any;
 
-      static onLightFromLiterature:
-        | ((playerObj: any, itemType: any, lighter: any, fireplace: any, fuelAmt: any) => any)
-        | any;
+      /** @noSelf */
+      static onLightFromLiterature: (playerObj: any, itemType: any, lighter: any, fireplace: any, fuelAmt: any) => any;
 
-      static onLightFromPetrol:
-        | ((worldobjects: any, player: any, lighter: any, petrol: any, fireplace: any) => any)
-        | any;
+      /** @noSelf */
+      static onLightFromPetrol: (worldobjects: any, player: any, lighter: any, petrol: any, fireplace: any) => any;
 
-      static toPlayerInventory: ((playerObj: any, item: any) => any) | any;
+      /** @noSelf */
+      static toPlayerInventory: (playerObj: any, item: any) => any;
     }
   }
-  export namespace lua.client.ISUI.ISFireplaceMenu {}
+  export namespace lua.client.ISUI.ISFireplaceMenu { }
 }

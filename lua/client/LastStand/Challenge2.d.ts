@@ -20,48 +20,56 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.192Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.LastStand {
-    export class Challenge2 {
-      private constructor();
-
+    export abstract class Challenge2 {
       static [id: string]: any;
 
-      static Add: (() => any) | any;
+      /** @noSelf */
+      static Add: () => any;
 
-      static AddPlayer: ((playerNum: any, playerObj: any) => any) | any;
+      /** @noSelf */
+      static AddPlayer: (playerNum: any, playerObj: any) => any;
 
-      static endWave: (() => any) | any;
+      /** @noSelf */
+      static endWave: () => any;
 
-      static Init: (() => any) | any;
+      /** @noSelf */
+      static Init: () => any;
 
-      static onBackButtonWheel: ((playerNum: any, dir: any) => any) | any;
+      /** @noSelf */
+      static onBackButtonWheel: (playerNum: any, dir: any) => any;
 
-      static onCreatePlayer: ((playerId: any) => any) | any;
+      /** @noSelf */
+      static onCreatePlayer: (playerId: any) => any;
 
-      static OnInitWorld: (() => any) | any;
+      /** @noSelf */
+      static OnInitWorld: () => any;
 
-      static onKeyPressed: ((key: any) => any) | any;
+      /** @noSelf */
+      static onKeyPressed: (key: any) => any;
 
-      static onZombieDead: (() => any) | any;
+      /** @noSelf */
+      static onZombieDead: () => any;
 
-      static RemovePlayer: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static RemovePlayer: (playerObj: any) => any;
 
-      static Render: (() => any) | any;
+      /** @noSelf */
+      static Render: () => any;
 
-      static SpawnZombies: ((count: any) => any) | any;
+      /** @noSelf */
+      static SpawnZombies: (count: any) => any;
 
-      static Tick: (() => any) | any;
+      /** @noSelf */
+      static Tick: () => any;
     }
   }
-  export namespace lua.client.LastStand.Challenge2 {}
+  export namespace lua.client.LastStand.Challenge2 { }
 }

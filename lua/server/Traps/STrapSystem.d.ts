@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:02.476Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.server.Traps {
     /** @customConstructor STrapSystem:new */
     export class STrapSystem extends lua.server.Map.SGlobalObjectSystem {
@@ -42,14 +39,18 @@ declare module 'PipeWrench' {
 
       convertOldModData: (() => any) | any;
 
-      static addSound: (() => any) | any;
+      /** @noSelf */
+      static addSound: () => any;
 
-      static checkTrap: (() => any) | any;
+      /** @noSelf */
+      static checkTrap: () => any;
 
-      static EveryDays: (() => any) | any;
+      /** @noSelf */
+      static EveryDays: () => any;
 
-      static isValidModData: ((modData: any) => any) | any;
+      /** @noSelf */
+      static isValidModData: (modData: any) => any;
     }
   }
-  export namespace lua.server.Traps.STrapSystem {}
+  export namespace lua.server.Traps.STrapSystem { }
 }

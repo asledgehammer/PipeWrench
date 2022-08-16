@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:02.784Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.Vehicles.TimedActions {
     /** @customConstructor ISWashVehicle:new */
     export class ISWashVehicle extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -56,14 +53,18 @@ declare module 'PipeWrench' {
 
       useWater: ((units: any) => any) | any;
 
-      static chooseArea: ((character: any, vehicle: any) => any) | any;
+      /** @noSelf */
+      static chooseArea: (character: any, vehicle: any) => any;
 
-      static getWaterAmountForArea: ((vehicle: any, id: any) => any) | any;
+      /** @noSelf */
+      static getWaterAmountForArea: (vehicle: any, id: any) => any;
 
-      static getWaterAmountForPlayer: ((character: any) => any) | any;
+      /** @noSelf */
+      static getWaterAmountForPlayer: (character: any) => any;
 
-      static hasBlood: ((vehicle: any) => any) | any;
+      /** @noSelf */
+      static hasBlood: (vehicle: any) => any;
     }
   }
-  export namespace lua.client.Vehicles.TimedActions.ISWashVehicle {}
+  export namespace lua.client.Vehicles.TimedActions.ISWashVehicle { }
 }

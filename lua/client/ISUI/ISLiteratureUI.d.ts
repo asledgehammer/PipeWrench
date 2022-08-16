@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:00.449Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISLiteratureList:new */
     export class ISLiteratureList extends lua.client.ISUI.ISScrollingListBox {
@@ -96,8 +93,9 @@ declare module 'PipeWrench' {
 
       setMediaLists: ((scriptItems: any) => any) | any;
 
-      static SetItemHidden: ((fullType: any, hidden: any) => any) | any;
+      /** @noSelf */
+      static SetItemHidden: (fullType: any, hidden: any) => any;
     }
   }
-  export namespace lua.client.ISUI.ISLiteratureUI {}
+  export namespace lua.client.ISUI.ISLiteratureUI { }
 }

@@ -20,34 +20,35 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:02.467Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.server.Traps.ISUI {
-    export class ISTrapMenu {
-      private constructor();
-
+    export abstract class ISTrapMenu {
       static [id: string]: any;
 
-      static doTrapMenu: ((player: any, context: any, worldobjects: any, test: any) => any) | any;
+      /** @noSelf */
+      static doTrapMenu: (player: any, context: any, worldobjects: any, test: any) => any;
 
-      static onAddBait: ((worldobjects: any, bait: any, trap: any, player: any) => any) | any;
+      /** @noSelf */
+      static onAddBait: (worldobjects: any, bait: any, trap: any, player: any) => any;
 
-      static onCheckTrap: ((worldobjects: any, trap: any, player: any) => any) | any;
+      /** @noSelf */
+      static onCheckTrap: (worldobjects: any, trap: any, player: any) => any;
 
-      static onPlaceTrap: ((worldobjects: any, trap: any, player: any) => any) | any;
+      /** @noSelf */
+      static onPlaceTrap: (worldobjects: any, trap: any, player: any) => any;
 
-      static onRemoveBait: ((worldobjects: any, trap: any, player: any) => any) | any;
+      /** @noSelf */
+      static onRemoveBait: (worldobjects: any, trap: any, player: any) => any;
 
-      static onRemoveTrap: ((worldobjects: any, trap: any, player: any) => any) | any;
+      /** @noSelf */
+      static onRemoveTrap: (worldobjects: any, trap: any, player: any) => any;
     }
   }
-  export namespace lua.server.Traps.ISUI.ISTrapMenu {}
+  export namespace lua.server.Traps.ISUI.ISTrapMenu { }
 }

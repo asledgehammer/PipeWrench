@@ -21,12 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace zombie.core.opengl {
     /**
      * @customConstructor IShaderProgramListener.new
@@ -322,14 +321,14 @@ declare module 'PipeWrench' {
       setSamplerUnit(arg0: string, arg1: number): void;
       /**
        * Method Parameters: 
-       *  - (String arg0, Vector3 arg1): void
-       *  - (String arg0, Matrix4f arg1): void
        *  - (String arg0, Vector2 arg1): void
        *  - (String arg0, int arg1): void
        *  - (String arg0, float arg1): void
+       *  - (String arg0, Matrix4f arg1): void
+       *  - (String arg0, Vector3 arg1): void
        *  - (String arg0, Texture arg1, int arg2): void
        */
-      setValue(arg0: string, arg1: zombie.iso.Vector3 | org.lwjgl.util.vector.Matrix4f | zombie.iso.Vector2 | number | zombie.core.textures.Texture, arg2?: number): void;
+      setValue(arg0: string, arg1: zombie.iso.Vector2 | number | org.lwjgl.util.vector.Matrix4f | zombie.iso.Vector3 | zombie.core.textures.Texture, arg2?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, int arg1): void
@@ -348,16 +347,16 @@ declare module 'PipeWrench' {
       setVector2(arg0: string | number, arg1: number, arg2: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0, float arg1, float arg2, float arg3): void
        *  - (String arg0, float arg1, float arg2, float arg3): void
+       *  - (int arg0, float arg1, float arg2, float arg3): void
        */
-      setVector3(arg0: number | string, arg1: number, arg2: number, arg3: number): void;
+      setVector3(arg0: string | number, arg1: number, arg2: number, arg3: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
+       *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setVector4(arg0: number | string, arg1: number, arg2: number, arg3: number, arg4: number): void;
+      setVector4(arg0: string | number, arg1: number, arg2: number, arg3: number, arg4: number): void;
       /**
        * @noSelf
        *
@@ -460,6 +459,16 @@ declare module 'PipeWrench' {
       static readonly Vert: zombie.core.opengl.ShaderUnit$Type;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): Type
+       */
+      static valueOf(arg0: string | null): zombie.core.opengl.ShaderUnit$Type;
+
+      /** @noSelf */
+      static values(): zombie.core.opengl.ShaderUnit$Type[];
+
     }
     /**
      * @customConstructor SharedVertexBufferObjects.new

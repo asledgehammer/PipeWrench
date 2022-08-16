@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.474Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor CharacterCreationProfession:new */
     export class CharacterCreationProfession extends lua.client.ISUI.ISPanelJoypad {
@@ -220,39 +217,42 @@ declare module 'PipeWrench' {
 
       update: (() => any) | any;
 
-      static initWorld: (() => any) | any;
+      /** @noSelf */
+      static initWorld: () => any;
 
-      static loadBuild: ((self: any, box: any) => any) | any;
+      /** @noSelf */
+      static loadBuild: (self: any, box: any) => any;
     }
 
-    export class BCRC {
-      private constructor();
-
+    export abstract class BCRC {
       static [id: string]: any;
 
-      static dump: ((o: any, lvl: any) => any) | any;
+      /** @noSelf */
+      static dump: (o: any, lvl: any) => any;
 
-      static inputModal:
-        | ((
-            _centered: any,
-            _width: any,
-            _height: any,
-            _posX: any,
-            _posY: any,
-            _text: any,
-            _onclick: any,
-            target: any,
-            param1: any,
-            param2: any
-          ) => any)
-        | any;
+      /** @noSelf */
+      static inputModal: (
+        _centered: any,
+        _width: any,
+        _height: any,
+        _posX: any,
+        _posY: any,
+        _text: any,
+        _onclick: any,
+        target: any,
+        param1: any,
+        param2: any
+      ) => any;
 
-      static pline: ((text: any) => any) | any;
+      /** @noSelf */
+      static pline: (text: any) => any;
 
-      static readSaveFile: (() => any) | any;
+      /** @noSelf */
+      static readSaveFile: () => any;
 
-      static writeSaveFile: ((options: any) => any) | any;
+      /** @noSelf */
+      static writeSaveFile: (options: any) => any;
     }
   }
-  export namespace lua.client.OptionScreens.CharacterCreationProfession {}
+  export namespace lua.client.OptionScreens.CharacterCreationProfession { }
 }

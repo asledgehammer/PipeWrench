@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:38:58.731Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.BuildingObjects.TimedActions {
     /** @customConstructor ISShovelGround:new */
     export class ISShovelGround extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -49,5 +46,5 @@ declare module 'PipeWrench' {
       constructor(character: any, emptyBag: any, sandTile: any, newSprite: any, newBag: any);
     }
   }
-  export namespace lua.client.BuildingObjects.TimedActions.ISShovelGround {}
+  export namespace lua.client.BuildingObjects.TimedActions.ISShovelGround { }
 }

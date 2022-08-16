@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.998Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.TimedActions {
     /** @customConstructor ISAddItemInRecipe:new */
     export class ISAddItemInRecipe extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -48,10 +45,12 @@ declare module 'PipeWrench' {
 
       constructor(character: any, recipe: any, baseItem: any, usedItem: any, time: any);
 
-      static checkName: ((baseItem: any, recipe: any) => any) | any;
+      /** @noSelf */
+      static checkName: (baseItem: any, recipe: any) => any;
 
-      static checkTemperature: ((baseItem: any, usedItem: any, recipe: any) => any) | any;
+      /** @noSelf */
+      static checkTemperature: (baseItem: any, usedItem: any, recipe: any) => any;
     }
   }
-  export namespace lua.client.TimedActions.ISAddItemInRecipe {}
+  export namespace lua.client.TimedActions.ISAddItemInRecipe { }
 }

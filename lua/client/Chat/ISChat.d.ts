@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:38:58.892Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.Chat {
     /** @customConstructor ISChat:new */
     export class ISChat extends lua.client.ISUI.ISCollapsableWindow {
@@ -152,46 +149,66 @@ declare module 'PipeWrench' {
 
       updateChatPrefixSettings: (() => any) | any;
 
-      static addLineInChat: ((message: any, tabID: any) => any) | any;
+      /** @noSelf */
+      static addLineInChat: (message: any, tabID: any) => any;
 
-      static createChat: (() => any) | any;
+      /** @noSelf */
+      static createChat: () => any;
 
-      static initChat: (() => any) | any;
+      /** @noSelf */
+      static initChat: () => any;
 
-      static ISTabPanelOnMouseDown: ((target: any, x: any, y: any) => any) | any;
+      /** @noSelf */
+      static ISTabPanelOnMouseDown: (target: any, x: any, y: any) => any;
 
-      static onFadeTimeChange: ((target: any, value: any) => any) | any;
+      /** @noSelf */
+      static onFadeTimeChange: (target: any, value: any) => any;
 
-      static onFocusOpaqueChange: ((target: any, value: any) => any) | any;
+      /** @noSelf */
+      static onFocusOpaqueChange: (target: any, value: any) => any;
 
-      static onFontSizeChange: ((target: any, value: any) => any) | any;
+      /** @noSelf */
+      static onFontSizeChange: (target: any, value: any) => any;
 
-      static onKeyKeepPressed: ((key: any) => any) | any;
+      /** @noSelf */
+      static onKeyKeepPressed: (key: any) => any;
 
-      static onMaxOpaqueChange: ((target: any, value: any) => any) | any;
+      /** @noSelf */
+      static onMaxOpaqueChange: (target: any, value: any) => any;
 
-      static onMinOpaqueChange: ((target: any, value: any) => any) | any;
+      /** @noSelf */
+      static onMinOpaqueChange: (target: any, value: any) => any;
 
-      static onSetDefaultTab: ((defaultTabTitle: any) => any) | any;
+      /** @noSelf */
+      static onSetDefaultTab: (defaultTabTitle: any) => any;
 
-      static onSwitchStream: (() => any) | any;
+      /** @noSelf */
+      static onSwitchStream: () => any;
 
-      static onTabAdded: ((tabTitle: any, tabID: any) => any) | any;
+      /** @noSelf */
+      static onTabAdded: (tabTitle: any, tabID: any) => any;
 
-      static onTabRemoved: ((tabTitle: any, tabID: any) => any) | any;
+      /** @noSelf */
+      static onTabRemoved: (tabTitle: any, tabID: any) => any;
 
-      static onTextChange: (() => any) | any;
+      /** @noSelf */
+      static onTextChange: () => any;
 
-      static ontick: (() => any) | any;
+      /** @noSelf */
+      static ontick: () => any;
 
-      static onToggleChatBox: ((key: any) => any) | any;
+      /** @noSelf */
+      static onToggleChatBox: (key: any) => any;
 
-      static onToggleTagPrefix: (() => any) | any;
+      /** @noSelf */
+      static onToggleTagPrefix: () => any;
 
-      static onToggleTimestampPrefix: (() => any) | any;
+      /** @noSelf */
+      static onToggleTimestampPrefix: () => any;
 
-      static unfocusEvent: (() => any) | any;
+      /** @noSelf */
+      static unfocusEvent: () => any;
     }
   }
-  export namespace lua.client.Chat.ISChat {}
+  export namespace lua.client.Chat.ISChat { }
 }

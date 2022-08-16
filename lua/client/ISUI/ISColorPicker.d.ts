@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:00.221Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISColorPicker:new */
     export class ISColorPicker extends lua.client.ISUI.ISPanelJoypad {
@@ -73,5 +70,5 @@ declare module 'PipeWrench' {
       setPickedFunc: ((func: any, arg1: any, arg2: any, arg3: any, arg4: any) => any) | any;
     }
   }
-  export namespace lua.client.ISUI.ISColorPicker {}
+  export namespace lua.client.ISUI.ISColorPicker { }
 }

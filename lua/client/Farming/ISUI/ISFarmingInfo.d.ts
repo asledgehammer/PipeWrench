@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:38:59.735Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.Farming.ISUI {
     /** @customConstructor ISFarmingInfo:new */
     export class ISFarmingInfo extends lua.client.ISUI.ISPanelJoypad {
@@ -72,66 +69,80 @@ declare module 'PipeWrench' {
 
       update: (() => any) | any;
 
-      static getCurrentGrowingPhase: ((info: any, farmingLevel: any) => any) | any;
+      /** @noSelf */
+      static getCurrentGrowingPhase: (info: any, farmingLevel: any) => any;
 
-      static getDiseaseName: ((info: any) => any) | any;
+      /** @noSelf */
+      static getDiseaseName: (info: any) => any;
 
-      static getFertilizerColor: ((info: any) => any) | any;
+      /** @noSelf */
+      static getFertilizerColor: (info: any) => any;
 
-      static getHealth: ((info: any, farmingLevel: any) => any) | any;
+      /** @noSelf */
+      static getHealth: (info: any, farmingLevel: any) => any;
 
-      static getHealthColor: ((info: any, farmingLevel: any) => any) | any;
+      /** @noSelf */
+      static getHealthColor: (info: any, farmingLevel: any) => any;
 
-      static getLastWatedHour: ((plant: any) => any) | any;
+      /** @noSelf */
+      static getLastWatedHour: (plant: any) => any;
 
-      static getNextGrowingPhase: ((info: any) => any) | any;
+      /** @noSelf */
+      static getNextGrowingPhase: (info: any) => any;
 
-      static getNoWateredSinceColor: ((plant: any, lastWatedHour: any, farmingLevel: any) => any) | any;
+      /** @noSelf */
+      static getNoWateredSinceColor: (plant: any, lastWatedHour: any, farmingLevel: any) => any;
 
-      static getTitleColor: ((plant: any) => any) | any;
+      /** @noSelf */
+      static getTitleColor: (plant: any) => any;
 
-      static getWaterBarWidth: ((info: any) => any) | any;
+      /** @noSelf */
+      static getWaterBarWidth: (info: any) => any;
 
-      static getWaterLvl: ((plant: any, farmingLevel: any) => any) | any;
+      /** @noSelf */
+      static getWaterLvl: (plant: any, farmingLevel: any) => any;
 
-      static getWaterLvlBarColor: ((info: any, farmingLevel: any) => any) | any;
+      /** @noSelf */
+      static getWaterLvlBarColor: (info: any, farmingLevel: any) => any;
 
-      static getWaterLvlColor: ((plant: any, farmingLevel: any) => any) | any;
+      /** @noSelf */
+      static getWaterLvlColor: (plant: any, farmingLevel: any) => any;
 
-      static RequiredWidth: (() => any) | any;
+      /** @noSelf */
+      static RequiredWidth: () => any;
     }
 
-    export class disease {
+    export abstract class disease {
       static [id: string]: any;
     }
 
-    export class disease_rgb {
+    export abstract class disease_rgb {
       static [id: string]: any;
     }
 
-    export class fertilizer_rgb {
+    export abstract class fertilizer_rgb {
       static [id: string]: any;
     }
 
-    export class health_rgb {
+    export abstract class health_rgb {
       static [id: string]: any;
     }
 
-    export class nowateredsince_rgb {
+    export abstract class nowateredsince_rgb {
       static [id: string]: any;
     }
 
-    export class title_rgb {
+    export abstract class title_rgb {
       static [id: string]: any;
     }
 
-    export class water_rgb {
+    export abstract class water_rgb {
       static [id: string]: any;
     }
 
-    export class waterbar_rgb {
+    export abstract class waterbar_rgb {
       static [id: string]: any;
     }
   }
-  export namespace lua.client.Farming.ISUI.ISFarmingInfo {}
+  export namespace lua.client.Farming.ISUI.ISFarmingInfo { }
 }

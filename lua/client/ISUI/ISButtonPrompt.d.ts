@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:00.204Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISButtonPrompt:new */
     export class ISButtonPrompt extends lua.client.ISUI.ISUIElement {
@@ -221,5 +218,5 @@ declare module 'PipeWrench' {
       testBButtonAction: ((dir: any) => any) | any;
     }
   }
-  export namespace lua.client.ISUI.ISButtonPrompt {}
+  export namespace lua.client.ISUI.ISButtonPrompt { }
 }

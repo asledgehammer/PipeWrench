@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.659Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor WorkshopSubmitScreen:new */
     export class WorkshopSubmitScreen extends lua.client.ISUI.ISPanelJoypad {
@@ -68,14 +65,18 @@ declare module 'PipeWrench' {
 
       render: (() => any) | any;
 
-      static OnSteamWorkshopItemCreated: ((itemID: any, bUserNeedsToAcceptWorkshopLegalAgreement: any) => any) | any;
+      /** @noSelf */
+      static OnSteamWorkshopItemCreated: (itemID: any, bUserNeedsToAcceptWorkshopLegalAgreement: any) => any;
 
-      static OnSteamWorkshopItemNotCreated: ((result: any) => any) | any;
+      /** @noSelf */
+      static OnSteamWorkshopItemNotCreated: (result: any) => any;
 
-      static OnSteamWorkshopItemNotUpdated: ((result: any) => any) | any;
+      /** @noSelf */
+      static OnSteamWorkshopItemNotUpdated: (result: any) => any;
 
-      static OnSteamWorkshopItemUpdated: ((bUserNeedsToAcceptWorkshopLegalAgreement: any) => any) | any;
+      /** @noSelf */
+      static OnSteamWorkshopItemUpdated: (bUserNeedsToAcceptWorkshopLegalAgreement: any) => any;
     }
   }
-  export namespace lua.client.OptionScreens.WorkshopSubmitScreen {}
+  export namespace lua.client.OptionScreens.WorkshopSubmitScreen { }
 }

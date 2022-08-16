@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:00.106Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.ISUI.AdminPanel {
     /** @customConstructor ISWhitelistTable:new */
     export class ISWhitelistTable extends lua.client.ISUI.ISPanel {
@@ -100,12 +97,15 @@ declare module 'PipeWrench' {
 
       render: (() => any) | any;
 
-      static getTableResult: ((datas: any, rowId: any, tableName: any) => any) | any;
+      /** @noSelf */
+      static getTableResult: (datas: any, rowId: any, tableName: any) => any;
 
-      static onFilterChange: ((entry: any, combo: any) => any) | any;
+      /** @noSelf */
+      static onFilterChange: (entry: any, combo: any) => any;
 
-      static onNbrPerPageChange: ((entry: any) => any) | any;
+      /** @noSelf */
+      static onNbrPerPageChange: (entry: any) => any;
     }
   }
-  export namespace lua.client.ISUI.AdminPanel.ISWhitelistTable {}
+  export namespace lua.client.ISUI.AdminPanel.ISWhitelistTable { }
 }

@@ -20,32 +20,29 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:38:58.753Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.server.Camping {
-    export class campingFuelCategory {
+    export abstract class campingFuelCategory {
       static [id: string]: any;
     }
 
-    export class campingFuelType {
+    export abstract class campingFuelType {
       static [id: string]: any;
     }
 
-    export class campingLightFireCategory {
+    export abstract class campingLightFireCategory {
       static [id: string]: any;
     }
 
-    export class campingLightFireType {
+    export abstract class campingLightFireType {
       static [id: string]: any;
     }
   }
-  export namespace lua.server.Camping.camping_fuel {}
+  export namespace lua.server.Camping.camping_fuel { }
 }

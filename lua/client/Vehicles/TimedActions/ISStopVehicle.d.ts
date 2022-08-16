@@ -20,26 +20,21 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:02.565Z
  */
 
-/** @noResolution @noSelfInFile */
-/// <reference path="../../../reference.d.ts" />
-/// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
+/**  @noSelfInFile */
+/// <reference path="../../../../reference.d.ts" />
+/// <reference path="../../../../PipeWrench.d.ts" />
 
-declare module 'PipeWrench' {
-  export namespace lua.shared.Util {
-    export class Vector2 {
-      private constructor();
-
+declare module '@asledgehammer/pipewrench' {
+  export namespace lua.client.Vehicles.TimedActions {
+    /** @customConstructor ISStopVehicle:new */
+    export class ISStopVehicle extends lua.shared.TimedActions.ISBaseTimedAction {
+      [id: string]: any;
       static [id: string]: any;
 
-      static getLength: ((x: any, y: any) => any) | any;
-
-      static normalize: ((x: any, y: any) => any) | any;
+      constructor(character: any);
     }
   }
-  export namespace lua.shared.Util.Vector2 {}
+  export namespace lua.client.Vehicles.TimedActions.ISStopVehicle { }
 }

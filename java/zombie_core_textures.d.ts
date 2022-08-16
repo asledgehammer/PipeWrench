@@ -21,12 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace zombie.core.textures {
     /**
      * @customConstructor ColorInfo.new
@@ -312,10 +311,10 @@ declare module 'PipeWrench' {
       makeTransp(arg0: number, arg1: number, arg2: number, arg3?: number): void;
       /**
        * Method Parameters: 
-       *  - (Raster arg0): void
        *  - (BufferedImage arg0): void
+       *  - (Raster arg0): void
        */
-      setData(arg0: java.awt.image.Raster | java.awt.image.BufferedImage): void;
+      setData(arg0: java.awt.image.BufferedImage | java.awt.image.Raster): void;
       /**
        * @noSelf
        *
@@ -510,11 +509,11 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (Empty): void
+       *  - (WrappedBuffer arg0): void
        *  - (boolean[] arg0): void
        *  - (BooleanGrid arg0): void
-       *  - (WrappedBuffer arg0): void
        */
-      createMask(arg0?: boolean[] | zombie.core.utils.BooleanGrid | zombie.core.utils.WrappedBuffer): void;
+      createMask(arg0?: zombie.core.utils.WrappedBuffer | boolean[] | zombie.core.utils.BooleanGrid): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -1009,6 +1008,16 @@ declare module 'PipeWrench' {
       static readonly PNG: zombie.core.textures.Texture$PZFileformat;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): PZFileformat
+       */
+      static valueOf(arg0: string | null): zombie.core.textures.Texture$PZFileformat;
+
+      /** @noSelf */
+      static values(): zombie.core.textures.Texture$PZFileformat[];
+
     }
     /**
      * @customConstructor TextureAssetParams.new
@@ -1389,6 +1398,16 @@ declare module 'PipeWrench' {
       static readonly glViewport: zombie.core.textures.TextureDraw$Type;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): Type
+       */
+      static valueOf(arg0: string | null): zombie.core.textures.TextureDraw$Type;
+
+      /** @noSelf */
+      static values(): zombie.core.textures.TextureDraw$Type[];
+
     }
     /**
      * @customConstructor TextureFBO.new

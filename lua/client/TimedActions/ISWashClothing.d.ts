@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:02.440Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.TimedActions {
     /** @customConstructor ISWashClothing:new */
     export class ISWashClothing extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -54,12 +51,15 @@ declare module 'PipeWrench' {
 
       useSoap: ((item: any, part: any) => any) | any;
 
-      static GetRequiredSoap: ((item: any) => any) | any;
+      /** @noSelf */
+      static GetRequiredSoap: (item: any) => any;
 
-      static GetRequiredWater: ((item: any) => any) | any;
+      /** @noSelf */
+      static GetRequiredWater: (item: any) => any;
 
-      static GetSoapRemaining: ((soaps: any) => any) | any;
+      /** @noSelf */
+      static GetSoapRemaining: (soaps: any) => any;
     }
   }
-  export namespace lua.client.TimedActions.ISWashClothing {}
+  export namespace lua.client.TimedActions.ISWashClothing { }
 }

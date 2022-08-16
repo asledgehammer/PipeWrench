@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:38:59.520Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.DebugUIs {
     /** @customConstructor ISRemoveItemTool:new */
     export class ISRemoveItemTool extends lua.client.ISUI.ISPanelJoypad {
@@ -68,8 +65,6 @@ declare module 'PipeWrench' {
 
       constructor(x: any, y: any, width: any, height: any, player: any);
 
-      clickedRadio: ((buttons: any, index: any) => any) | any;
-
       destroy: (() => any) | any;
 
       onClick: ((button: any) => any) | any;
@@ -80,8 +75,12 @@ declare module 'PipeWrench' {
 
       titleBarHeight: (() => any) | any;
 
-      updateButtons: (() => any) | any;
+      /** @noSelf */
+      static removeItem: (item: any, player: any) => any;
+
+      /** @noSelf */
+      static removeItems: (items: any, player: any) => any;
     }
   }
-  export namespace lua.client.DebugUIs.ISRemoveItemTool {}
+  export namespace lua.client.DebugUIs.ISRemoveItemTool { }
 }

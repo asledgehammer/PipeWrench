@@ -20,40 +20,44 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:38:58.761Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.server.Camping {
-    export class camping {
-      private constructor();
-
+    export abstract class camping {
       static [id: string]: any;
 
-      static addTent: ((grid: any, sprite: any) => any) | any;
+      /** @noSelf */
+      static addTent: (grid: any, sprite: any) => any;
 
-      static destroyTent: ((tent: any) => any) | any;
+      /** @noSelf */
+      static destroyTent: (tent: any) => any;
 
-      static findTentObject: ((square: any) => any) | any;
+      /** @noSelf */
+      static findTentObject: (square: any) => any;
 
-      static findTentSprites: ((sprite: any) => any) | any;
+      /** @noSelf */
+      static findTentSprites: (sprite: any) => any;
 
-      static getCurrentTent: ((grid: any) => any) | any;
+      /** @noSelf */
+      static getCurrentTent: (grid: any) => any;
 
-      static getTentObjects: ((tent: any) => any) | any;
+      /** @noSelf */
+      static getTentObjects: (tent: any) => any;
 
-      static isTentObject: ((object: any) => any) | any;
+      /** @noSelf */
+      static isTentObject: (object: any) => any;
 
-      static removeTent: ((tent: any) => any) | any;
+      /** @noSelf */
+      static removeTent: (tent: any) => any;
 
-      static tentAt: ((x: any, y: any, z: any) => any) | any;
+      /** @noSelf */
+      static tentAt: (x: any, y: any, z: any) => any;
     }
   }
-  export namespace lua.server.Camping.camping_tent {}
+  export namespace lua.server.Camping.camping_tent { }
 }

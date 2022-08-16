@@ -21,12 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace se.krka.kahlua.vm {
     export type Coroutine = any;
     export type KahluaTable = any;
@@ -235,8 +234,8 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (double arg0): number
        *  - (long arg0): number
+       *  - (double arg0): number
        */
       static toDouble(arg0: number): number;
       /**

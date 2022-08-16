@@ -20,178 +20,260 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:38:59.853Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.shared.Foraging {
-    export class forageSystem {
-      private constructor();
-
+    export abstract class forageSystem {
       static [id: string]: any;
 
-      static addCatDef: ((_catDef: any, _overwrite: any) => any) | any;
+      /** @noSelf */
+      static addCatDef: (_catDef: any, _overwrite: any) => any;
 
-      static addItemDef: ((_itemDef: any) => any) | any;
+      /** @noSelf */
+      static addItemDef: (_itemDef: any) => any;
 
-      static addOrDropItems: ((_character: any, _inventory: any, _items: any, _discardItems: any) => any) | any;
+      /** @noSelf */
+      static addOrDropItems: (_character: any, _inventory: any, _items: any, _discardItems: any) => any;
 
-      static addSkillDef: ((_skillDef: any, _overwrite: any) => any) | any;
+      /** @noSelf */
+      static addSkillDef: (_skillDef: any, _overwrite: any) => any;
 
-      static addZoneDef: ((_zoneDef: any, _overwrite: any) => any) | any;
+      /** @noSelf */
+      static addZoneDef: (_zoneDef: any, _overwrite: any) => any;
 
-      static checkIfRecreateIcons: (() => any) | any;
+      /** @noSelf */
+      static checkIfRecreateIcons: () => any;
 
-      static checkRefillZone: ((_zoneData: any) => any) | any;
+      /** @noSelf */
+      static checkMetaZone: (_zoneData: any) => any;
 
-      static createForageIcons: ((_zoneData: any, _recreate: any, _count: any) => any) | any;
+      /** @noSelf */
+      static checkRefillZone: (_zoneData: any) => any;
 
-      static createForageZone: ((_x: any, _y: any, _defZone: any) => any) | any;
+      /** @noSelf */
+      static createForageIcons: (_zoneData: any, _recreate: any, _count: any) => any;
 
-      static createZoneData: ((_forageZone: any, _zoneDef: any) => any) | any;
+      /** @noSelf */
+      static createForageZone: (_x: any, _y: any, _defZone: any) => any;
 
-      static doEndurancePenalty: ((_character: any, _amount: any) => any) | any;
+      /** @noSelf */
+      static createZoneData: (_forageZone: any, _zoneDef: any) => any;
 
-      static doFatiguePenalty: ((_character: any, _amount: any) => any) | any;
+      /** @noSelf */
+      static doEndurancePenalty: (_character: any, _amount: any) => any;
 
-      static fillZone: ((_zoneData: any) => any) | any;
+      /** @noSelf */
+      static doFatiguePenalty: (_character: any, _amount: any) => any;
 
-      static generateLootTable: (() => any) | any;
+      /** @noSelf */
+      static fillZone: (_zoneData: any) => any;
 
-      static getAimVisionBonus: ((_character: any) => any) | any;
+      /** @noSelf */
+      static generateLootTable: () => any;
 
-      static getBodyPenalty: ((_character: any) => any) | any;
+      /** @noSelf */
+      static getAimVisionBonus: (_character: any) => any;
 
-      static getCategoryBonus: ((_character: any, _catDef: any) => any) | any;
+      /** @noSelf */
+      static getBodyPenalty: (_character: any) => any;
 
-      static getClothingPenalty: ((_character: any) => any) | any;
+      /** @noSelf */
+      static getCategoryBonus: (_character: any, _catDef: any) => any;
 
-      static getDarknessEffectReduction: ((_character: any) => any) | any;
+      /** @noSelf */
+      static getClothingPenalty: (_character: any) => any;
 
-      static getDefinedZoneAt: ((_x: any, _y: any) => any) | any;
+      /** @noSelf */
+      static getDarknessEffectReduction: (_character: any) => any;
 
-      static getDifficultyPenalty: ((_perkLevel: any) => any) | any;
+      /** @noSelf */
+      static getDefinedZoneAt: (_x: any, _y: any) => any;
 
-      static getExhaustionPenalty: ((_character: any) => any) | any;
+      /** @noSelf */
+      static getDifficultyPenalty: (_perkLevel: any) => any;
 
-      static getForageZoneAt: ((_x: any, _y: any) => any) | any;
+      /** @noSelf */
+      static getExhaustionPenalty: (_character: any) => any;
 
-      static getHungerBonus: ((_character: any, _itemDef: any) => any) | any;
+      /** @noSelf */
+      static getForageZoneAt: (_x: any, _y: any) => any;
 
-      static getItemDefSize: ((_itemDef: any) => any) | any;
+      /** @noSelf */
+      static getHungerBonus: (_character: any, _itemDef: any) => any;
 
-      static getItemSizePenalty: ((_itemSize: any) => any) | any;
+      /** @noSelf */
+      static getItemDefSize: (_itemDef: any) => any;
 
-      static getLevelVisionBonus: ((_perkLevel: any) => any) | any;
+      /** @noSelf */
+      static getItemSizePenalty: (_itemSize: any) => any;
 
-      static getLightLevelPenalty: ((_character: any, _square: any, _doReduction: any) => any) | any;
+      /** @noSelf */
+      static getLevelVisionBonus: (_perkLevel: any) => any;
 
-      static getMonthBonus: ((_itemDef: any, _month: any) => any) | any;
+      /** @noSelf */
+      static getLightLevelPenalty: (_character: any, _square: any, _doReduction: any) => any;
 
-      static getMovementVisionPenalty: ((_character: any) => any) | any;
+      /** @noSelf */
+      static getMonthBonus: (_itemDef: any, _month: any) => any;
 
-      static getPanicPenalty: ((_character: any) => any) | any;
+      /** @noSelf */
+      static getMovementVisionPenalty: (_character: any) => any;
 
-      static getPerkLevel: ((_character: any, _itemDef: any) => any) | any;
+      /** @noSelf */
+      static getPanicPenalty: (_character: any) => any;
 
-      static getProfessionVisionBonus: ((_character: any) => any) | any;
+      /** @noSelf */
+      static getPerkLevel: (_character: any, _itemDef: any) => any;
 
-      static getRandomCoord: ((_x1: any, _x2: any, _y1: any, _y2: any) => any) | any;
+      /** @noSelf */
+      static getProfessionVisionBonus: (_character: any) => any;
 
-      static getRefillBonus: ((_zoneData: any) => any) | any;
+      /** @noSelf */
+      static getRandomCoord: (_x1: any, _x2: any, _y1: any, _y2: any) => any;
 
-      static getSneakVisionBonus: ((_character: any) => any) | any;
+      /** @noSelf */
+      static getRefillBonus: (_zoneData: any) => any;
 
-      static getTimeOfDay: (() => any) | any;
+      /** @noSelf */
+      static getSneakVisionBonus: (_character: any) => any;
 
-      static getTimeOfDayBonus: ((_def: any, _isDay: any) => any) | any;
+      /** @noSelf */
+      static getTimeOfDay: () => any;
 
-      static getTraitVisionBonus: ((_character: any) => any) | any;
+      /** @noSelf */
+      static getTimeOfDayBonus: (_def: any, _isDay: any) => any;
 
-      static getWeatherBonus: ((_def: any, _isRaining: any, _isSnowing: any, _hasRained: any) => any) | any;
+      /** @noSelf */
+      static getTraitVisionBonus: (_character: any) => any;
 
-      static getWeatherEffectReduction: ((_character: any) => any) | any;
+      /** @noSelf */
+      static getWeatherBonus: (_def: any, _isRaining: any, _isSnowing: any, _hasRained: any) => any;
 
-      static getWeatherPenalty: ((_character: any, _square: any) => any) | any;
+      /** @noSelf */
+      static getWeatherEffectReduction: (_character: any) => any;
 
-      static getWeatherType: (() => any) | any;
+      /** @noSelf */
+      static getWeatherPenalty: (_character: any, _square: any) => any;
 
-      static getWorldAge: (() => any) | any;
+      /** @noSelf */
+      static getWeatherType: () => any;
 
-      static getZoneData: ((_forageZone: any, _zoneDef: any, _x: any, _y: any) => any) | any;
+      /** @noSelf */
+      static getWorldAge: () => any;
 
-      static getZoneDef: ((_definedZone: any) => any) | any;
+      /** @noSelf */
+      static getZoneData: (_forageZone: any, _zoneDef: any, _x: any, _y: any) => any;
 
-      static getZoneDefByType: ((_zoneName: any) => any) | any;
+      /** @noSelf */
+      static getZoneDef: (_definedZone: any) => any;
 
-      static getZoneRandomCoord: ((_zoneData: any) => any) | any;
+      /** @noSelf */
+      static getZoneDefByType: (_zoneName: any) => any;
 
-      static getZoneRandomCoordNearPoint: ((_zoneData: any, _minDist: any, _x: any, _y: any) => any) | any;
+      /** @noSelf */
+      static getZoneRandomCoord: (_zoneData: any) => any;
 
-      static giveItemXP: ((_character: any, _itemDef: any, _amount: any) => any) | any;
+      /** @noSelf */
+      static getZoneRandomCoordNearPoint: (_zoneData: any, _minDist: any, _x: any, _y: any) => any;
 
-      static hasNeededPerks: ((_character: any, _itemDef: any, _zoneDef: any) => any) | any;
+      /** @noSelf */
+      static giveItemXP: (_character: any, _itemDef: any, _amount: any) => any;
 
-      static hasNeededRecipes: ((_character: any, _itemDef: any) => any) | any;
+      /** @noSelf */
+      static hasNeededPerks: (_character: any, _itemDef: any, _zoneDef: any) => any;
 
-      static hasNeededTraits: ((_character: any, _itemDef: any) => any) | any;
+      /** @noSelf */
+      static hasNeededRecipes: (_character: any, _itemDef: any) => any;
 
-      static hasRequiredItems: ((_character: any, _itemDef: any) => any) | any;
+      /** @noSelf */
+      static hasNeededTraits: (_character: any, _itemDef: any) => any;
 
-      static importDef: ((_def: any, _defaultDef: any) => any) | any;
+      /** @noSelf */
+      static hasRequiredItems: (_character: any, _itemDef: any) => any;
 
-      static init: (() => any) | any;
+      /** @noSelf */
+      static importDef: (_def: any, _defaultDef: any) => any;
 
-      static integrityCheck: (() => any) | any;
+      /** @noSelf */
+      static init: () => any;
 
-      static isForageable: ((_character: any, _itemDef: any, _zoneDef: any) => any) | any;
+      /** @noSelf */
+      static integrityCheck: () => any;
 
-      static isItemExist: ((_character: any, _itemDef: any, _zoneDef: any) => any) | any;
+      /** @noSelf */
+      static isForageable: (_character: any, _itemDef: any, _zoneDef: any) => any;
 
-      static isItemInZone: ((_character: any, _itemDef: any, _zoneDef: any) => any) | any;
+      /** @noSelf */
+      static isItemExist: (_character: any, _itemDef: any, _zoneDef: any) => any;
 
-      static isItemTypeExist: ((_itemType: any) => any) | any;
+      /** @noSelf */
+      static isItemInZone: (_character: any, _itemDef: any, _zoneDef: any) => any;
 
-      static isValidFloor: ((_square: any, _itemDef: any, _catDef: any) => any) | any;
+      /** @noSelf */
+      static isItemTypeExist: (_itemType: any) => any;
 
-      static isValidMonth: ((arg0: any, _itemDef: any, _zoneDef: any, _month: any) => any) | any;
+      /** @noSelf */
+      static isValidFloor: (_square: any, _itemDef: any, _catDef: any) => any;
 
-      static isValidSkillDefEffect: ((_character: any, _skillDef: any, _bonusEffect: any) => any) | any;
+      /** @noSelf */
+      static isValidMonth: (arg0: any, _itemDef: any, _zoneDef: any, _month: any) => any;
 
-      static isValidSquare: ((_square: any, _itemDef: any, _catDef: any) => any) | any;
+      /** @noSelf */
+      static isValidSkillDefEffect: (_character: any, _skillDef: any, _bonusEffect: any) => any;
 
-      static lootTableUpdate: (() => any) | any;
+      /** @noSelf */
+      static isValidSquare: (_square: any, _itemDef: any, _catDef: any) => any;
 
-      static modifyItemDef: ((_itemDef: any) => any) | any;
+      /** @noSelf */
+      static lootTableUpdate: () => any;
 
-      static pickRandomItemType: ((_lootTable: any) => any) | any;
+      /** @noSelf */
+      static modifyItemDef: (_itemDef: any) => any;
 
-      static populateCatDefs: ((_catDefs: any) => any) | any;
+      /** @noSelf */
+      static pickRandomItemType: (_lootTable: any) => any;
 
-      static populateItemDefs: ((_itemDefs: any, _clearAllExisting: any) => any) | any;
+      /** @noSelf */
+      static populateCatDefs: (_catDefs: any) => any;
 
-      static populateScavengeDefs: (() => any) | any;
+      /** @noSelf */
+      static populateItemDefs: (_itemDefs: any, _clearAllExisting: any) => any;
 
-      static populateSkillDefs: ((_skillDefs: any) => any) | any;
+      /** @noSelf */
+      static populateScavengeDefs: () => any;
 
-      static populateZoneDefs: ((_zoneDefs: any) => any) | any;
+      /** @noSelf */
+      static populateSkillDefs: (_skillDefs: any) => any;
 
-      static recreateIcons: (() => any) | any;
+      /** @noSelf */
+      static populateZoneDefs: (_zoneDefs: any) => any;
 
-      static removeItemDef: ((_itemDef: any) => any) | any;
+      /** @noSelf */
+      static recreateIcons: () => any;
 
-      static takeItem: ((_zoneData: any, _number: any) => any) | any;
+      /** @noSelf */
+      static removeItemDef: (_itemDef: any) => any;
 
-      static updateTimeValues: (() => any) | any;
+      /** @noSelf */
+      static takeItem: (_zoneData: any, _number: any) => any;
 
-      static updateZone: ((_zoneData: any) => any) | any;
+      /** @noSelf */
+      static updateTimeValues: () => any;
+
+      /** @noSelf */
+      static updateZone: (_zoneData: any) => any;
+
+      /** @noSelf */
+      static zoneContains: (_zoneData: any, _x: any, _y: any, _z: any) => any;
+
+      /** @noSelf */
+      static zoneIntersects: (_zoneData: any, _x: any, _y: any, _z: any, _w: any, _h: any) => any;
     }
   }
-  export namespace lua.shared.Foraging.forageSystem {}
+  export namespace lua.shared.Foraging.forageSystem { }
 }

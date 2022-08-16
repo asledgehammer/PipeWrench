@@ -20,48 +20,56 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:02.544Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.shared.Util {
-    export class AdjacentFreeTileFinder {
-      private constructor();
-
+    export abstract class AdjacentFreeTileFinder {
       static [id: string]: any;
 
-      static Find: ((gridSquare: any, playerObj: any) => any) | any;
+      /** @noSelf */
+      static Find: (gridSquare: any, playerObj: any) => any;
 
-      static FindClosest: ((gridSquare: any, playerObj: any) => any) | any;
+      /** @noSelf */
+      static FindClosest: (gridSquare: any, playerObj: any) => any;
 
-      static FindEdge: ((gridSquare: any, dir: any, playerObj: any, preferSameSquare: any) => any) | any;
+      /** @noSelf */
+      static FindEdge: (gridSquare: any, dir: any, playerObj: any, preferSameSquare: any) => any;
 
-      static FindWall: ((gridSquare: any, north: any, playerObj: any) => any) | any;
+      /** @noSelf */
+      static FindWall: (gridSquare: any, north: any, playerObj: any) => any;
 
-      static FindWindowOrDoor: ((gridSquare: any, window: any, playerObj: any) => any) | any;
+      /** @noSelf */
+      static FindWindowOrDoor: (gridSquare: any, window: any, playerObj: any) => any;
 
-      static isTileOrAdjacent: ((a: any, b: any) => any) | any;
+      /** @noSelf */
+      static isTileOrAdjacent: (a: any, b: any) => any;
 
-      static isTileOrAdjacent8: ((a: any, b: any) => any) | any;
+      /** @noSelf */
+      static isTileOrAdjacent8: (a: any, b: any) => any;
 
-      static privCanStand: ((test: any) => any) | any;
+      /** @noSelf */
+      static privCanStand: (test: any) => any;
 
-      static privGetNorth: ((gridSquare: any, object: any) => any) | any;
+      /** @noSelf */
+      static privGetNorth: (gridSquare: any, object: any) => any;
 
-      static privTrySquare: ((src: any, test: any) => any) | any;
+      /** @noSelf */
+      static privTrySquare: (src: any, test: any) => any;
 
-      static privTrySquareForWalls: ((src: any, test: any) => any) | any;
+      /** @noSelf */
+      static privTrySquareForWalls: (src: any, test: any) => any;
 
-      static privTrySquareForWalls2: ((src: any, x: any, y: any, z: any) => any) | any;
+      /** @noSelf */
+      static privTrySquareForWalls2: (src: any, x: any, y: any, z: any) => any;
 
-      static privTrySquareWindow: ((src: any, test: any) => any) | any;
+      /** @noSelf */
+      static privTrySquareWindow: (src: any, test: any) => any;
     }
   }
-  export namespace lua.shared.Util.AdjacentFreeTileFinder {}
+  export namespace lua.shared.Util.AdjacentFreeTileFinder { }
 }

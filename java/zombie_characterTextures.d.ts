@@ -21,12 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace zombie.characterTextures {
     /** [ENUM] zombie.characterTextures.BloodBodyPartType */
     export class BloodBodyPartType {
@@ -52,11 +51,42 @@ declare module 'PipeWrench' {
       static readonly UpperLeg_R: zombie.characterTextures.BloodBodyPartType;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (int arg0): BloodBodyPartType
+       */
+      static FromIndex(arg0: number): zombie.characterTextures.BloodBodyPartType;
+
+      /**
+       * @noSelf
+       *
+       * (String arg0): BloodBodyPartType
+       */
+      static FromString(arg0: string | null): zombie.characterTextures.BloodBodyPartType;
+
+      /**
+       * @noSelf
+       *
+       * (BloodBodyPartType arg0): int
+       */
+      static ToIndex(arg0: zombie.characterTextures.BloodBodyPartType | null): number;
+
       getCharacterMaskParts(): zombie.core.skinnedmodel.model.CharacterMask$Part[];
 
       getDisplayName(): string;
 
       index(): number;
+
+      /**
+       * @noSelf
+       *
+       * (String arg0): BloodBodyPartType
+       */
+      static valueOf(arg0: string | null): zombie.characterTextures.BloodBodyPartType;
+
+      /** @noSelf */
+      static values(): zombie.characterTextures.BloodBodyPartType[];
 
     }
     /** [ENUM] zombie.characterTextures.BloodClothingType */
@@ -87,6 +117,79 @@ declare module 'PipeWrench' {
       static readonly UpperLegs: zombie.characterTextures.BloodClothingType;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (BloodBodyPartType arg0, HumanVisual arg1, ArrayList arg2): void
+       */
+      static addBasicPatch(arg0: zombie.characterTextures.BloodBodyPartType | null, arg1: zombie.core.skinnedmodel.visual.HumanVisual | null, arg2: java.util.ArrayList<zombie.core.skinnedmodel.visual.ItemVisual> | null): void;
+
+      /**
+       * @noSelf
+       *
+       * (int arg0, HumanVisual arg1, ArrayList arg2, boolean arg3): void
+       */
+      static addBlood(arg0: number, arg1: zombie.core.skinnedmodel.visual.HumanVisual | null, arg2: java.util.ArrayList<zombie.core.skinnedmodel.visual.ItemVisual> | null, arg3: boolean): void;
+
+      /**
+       * @noSelf
+       *
+       * (BloodBodyPartType arg0, HumanVisual arg1, ArrayList arg2, boolean arg3): void
+       */
+      static addDirt(arg0: zombie.characterTextures.BloodBodyPartType | null, arg1: zombie.core.skinnedmodel.visual.HumanVisual | null, arg2: java.util.ArrayList<zombie.core.skinnedmodel.visual.ItemVisual> | null, arg3: boolean): void;
+
+      /**
+       * @noSelf
+       *
+       * (BloodBodyPartType arg0, HumanVisual arg1, ArrayList arg2, boolean arg3): boolean
+       */
+      static addHole(arg0: zombie.characterTextures.BloodBodyPartType | null, arg1: zombie.core.skinnedmodel.visual.HumanVisual | null, arg2: java.util.ArrayList<zombie.core.skinnedmodel.visual.ItemVisual> | null, arg3: boolean): boolean;
+
+      /**
+       * @noSelf
+       *
+       * (Clothing arg0): void
+       */
+      static calcTotalBloodLevel(arg0: zombie.inventory.types.Clothing | null): void;
+
+      /**
+       * @noSelf
+       *
+       * (Clothing arg0): void
+       */
+      static calcTotalDirtLevel(arg0: zombie.inventory.types.Clothing | null): void;
+
+      /**
+       * @noSelf
+       *
+       * (String arg0): BloodClothingType
+       */
+      static fromString(arg0: string | null): zombie.characterTextures.BloodClothingType;
+
+      /**
+       * @noSelf
+       *
+       * (ArrayList arg0): int
+       */
+      static getCoveredPartCount(arg0: java.util.ArrayList<zombie.characterTextures.BloodClothingType> | null): number;
+
+      /**
+       * @noSelf
+       *
+       * (ArrayList arg0): ArrayList
+       */
+      static getCoveredParts(arg0: java.util.ArrayList<zombie.characterTextures.BloodClothingType> | null): java.util.ArrayList<zombie.characterTextures.BloodBodyPartType>;
+
+      /**
+       * @noSelf
+       *
+       * (String arg0): BloodClothingType
+       */
+      static valueOf(arg0: string | null): zombie.characterTextures.BloodClothingType;
+
+      /** @noSelf */
+      static values(): zombie.characterTextures.BloodClothingType[];
+
     }
   }
 }

@@ -20,20 +20,15 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:02.529Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.Tutorial {
-    export class Tutorial1 {
-      private constructor();
-
+    export abstract class Tutorial1 {
       static [id: string]: any;
 
       static contextMenuEat: any;
@@ -52,54 +47,75 @@ declare module 'PipeWrench' {
 
       static DeadMouse: any;
 
-      static Add: (() => any) | any;
+      /** @noSelf */
+      static Add: () => any;
 
-      static addBarricade: ((x: any, y: any, z: any) => any) | any;
+      /** @noSelf */
+      static addBarricade: (x: any, y: any, z: any) => any;
 
-      static addMetalBarricade: ((x: any, y: any, z: any) => any) | any;
+      /** @noSelf */
+      static addMetalBarricade: (x: any, y: any, z: any) => any;
 
-      static AddPlayer: ((p: any) => any) | any;
+      /** @noSelf */
+      static AddPlayer: (p: any) => any;
 
-      static closeBothInv: (() => any) | any;
+      /** @noSelf */
+      static closeBothInv: () => any;
 
-      static closeInv: (() => any) | any;
+      /** @noSelf */
+      static closeInv: () => any;
 
-      static closeLoot: (() => any) | any;
+      /** @noSelf */
+      static closeLoot: () => any;
 
-      static collapseInv: ((inv: any) => any) | any;
+      /** @noSelf */
+      static collapseInv: (inv: any) => any;
 
-      static createInventoryContextMenu:
-        | ((player: any, isInPlayerInventory: any, items: any, x: any, y: any) => any)
-        | any;
+      /** @noSelf */
+      static createInventoryContextMenu: (player: any, isInPlayerInventory: any, items: any, x: any, y: any) => any;
 
-      static createWorldContextMenu: ((player: any, worldobjects: any, x: any, y: any) => any) | any;
+      /** @noSelf */
+      static createWorldContextMenu: (player: any, worldobjects: any, x: any, y: any) => any;
 
-      static createWorldContextMenuFromContext: ((context: any, worldobjects: any) => any) | any;
+      /** @noSelf */
+      static createWorldContextMenuFromContext: (context: any, worldobjects: any) => any;
 
-      static doubleClickInventory: ((inventoryPane: any, x: any, y: any, mouseOverOption: any) => any) | any;
+      /** @noSelf */
+      static doubleClickInventory: (inventoryPane: any, x: any, y: any, mouseOverOption: any) => any;
 
-      static FillContainers: (() => any) | any;
+      /** @noSelf */
+      static FillContainers: () => any;
 
-      static Init: (() => any) | any;
+      /** @noSelf */
+      static Init: () => any;
 
-      static lockDoor: ((x: any, y: any, z: any) => any) | any;
+      /** @noSelf */
+      static lockDoor: (x: any, y: any, z: any) => any;
 
-      static openDoor: ((x: any, y: any, z: any, north: any) => any) | any;
+      /** @noSelf */
+      static openDoor: (x: any, y: any, z: any, north: any) => any;
 
-      static PreloadInit: (() => any) | any;
+      /** @noSelf */
+      static PreloadInit: () => any;
 
-      static removeFences: (() => any) | any;
+      /** @noSelf */
+      static removeFences: () => any;
 
-      static Render: (() => any) | any;
+      /** @noSelf */
+      static Render: () => any;
 
-      static replaceFence: ((sq: any, north: any) => any) | any;
+      /** @noSelf */
+      static replaceFence: (sq: any, north: any) => any;
 
-      static SpawnZombies: ((count: any) => any) | any;
+      /** @noSelf */
+      static SpawnZombies: (count: any) => any;
 
-      static Tick: (() => any) | any;
+      /** @noSelf */
+      static Tick: () => any;
 
-      static unlockDoor: ((x: any, y: any, z: any) => any) | any;
+      /** @noSelf */
+      static unlockDoor: (x: any, y: any, z: any) => any;
     }
   }
-  export namespace lua.client.Tutorial.Tutorial1 {}
+  export namespace lua.client.Tutorial.Tutorial1 { }
 }

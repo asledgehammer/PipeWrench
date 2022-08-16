@@ -20,22 +20,19 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.354Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
-  export namespace lua.server.metazones {}
+declare module '@asledgehammer/pipewrench' {
+  export namespace lua.server.metazones { }
   export namespace lua.server.metazones.metazoneHandler {
     /** @noSelf */
-    export const doMapZones: (() => any) | any;
+    export const doMapZones: () => any;
 
     /** @noSelf */
-    export const doSpawnOrigins: (() => any) | any;
+    export const doSpawnOrigins: () => any;
   }
 }

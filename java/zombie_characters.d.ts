@@ -21,12 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace zombie.characters {
     /**
      * @customConstructor BaseCharacterSoundEmitter.new
@@ -44,6 +43,331 @@ declare module 'PipeWrench' {
        *  - (Empty): boolean
        */
       hasSoundsToStart(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isClear(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): boolean
+       *  - (long arg0): boolean
+       */
+      isPlaying(arg0: string | number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, float arg1): void
+       */
+      playFootsteps(arg0: string, arg1: number): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): number
+       *  - (String arg0, IsoObject arg1): number
+       */
+      playSound(arg0: string, arg1?: zombie.iso.IsoObject): number;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, IsoObject arg1): number
+       */
+      playSoundImpl(arg0: string, arg1: zombie.iso.IsoObject): number;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): number
+       */
+      playVocals(arg0: string): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      register(): void;
+      /**
+       * Method Parameters: 
+       *  - (float arg0, float arg1, float arg2): void
+       */
+      set(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (long arg0, FMOD_STUDIO_PARAMETER_DESCRIPTION arg1, float arg2): void
+       */
+      setParameterValue(arg0: number, arg1: fmod.fmod.FMOD_STUDIO_PARAMETER_DESCRIPTION, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (long arg0, float arg1): void
+       */
+      setPitch(arg0: number, arg1: number): void;
+      /**
+       * Method Parameters: 
+       *  - (long arg0, float arg1): void
+       */
+      setVolume(arg0: number, arg1: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      stopAll(): void;
+      /**
+       * Method Parameters: 
+       *  - (long arg0): void
+       */
+      stopOrTriggerSound(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      stopOrTriggerSoundByName(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (long arg0): number
+       */
+      stopSound(arg0: number): number;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): number
+       */
+      stopSoundByName(arg0: string): number;
+      /**
+       * Method Parameters: 
+       *  - (long arg0): void
+       */
+      stopSoundLocal(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      tick(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      unregister(): void;
+    }
+    /** [ENUM] zombie.characters.CharacterActionAnims */
+    export class CharacterActionAnims {
+      protected constructor();
+      static readonly Bandage: zombie.characters.CharacterActionAnims;
+      static readonly Build: zombie.characters.CharacterActionAnims;
+      static readonly BuildLow: zombie.characters.CharacterActionAnims;
+      static readonly Chop_tree: zombie.characters.CharacterActionAnims;
+      static readonly Craft: zombie.characters.CharacterActionAnims;
+      static readonly Destroy: zombie.characters.CharacterActionAnims;
+      static readonly Dig: zombie.characters.CharacterActionAnims;
+      static readonly DigHoe: zombie.characters.CharacterActionAnims;
+      static readonly DigPickAxe: zombie.characters.CharacterActionAnims;
+      static readonly DigShovel: zombie.characters.CharacterActionAnims;
+      static readonly DigTrowel: zombie.characters.CharacterActionAnims;
+      static readonly Disassemble: zombie.characters.CharacterActionAnims;
+      static readonly Drink: zombie.characters.CharacterActionAnims;
+      static readonly Eat: zombie.characters.CharacterActionAnims;
+      static readonly InsertBullets: zombie.characters.CharacterActionAnims;
+      static readonly None: zombie.characters.CharacterActionAnims;
+      static readonly Paint: zombie.characters.CharacterActionAnims;
+      static readonly Pour: zombie.characters.CharacterActionAnims;
+      static readonly Read: zombie.characters.CharacterActionAnims;
+      static readonly Reload: zombie.characters.CharacterActionAnims;
+      static readonly RemoveBullets: zombie.characters.CharacterActionAnims;
+      static readonly Shave: zombie.characters.CharacterActionAnims;
+      static readonly TakePills: zombie.characters.CharacterActionAnims;
+      name(): string;
+      ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): CharacterActionAnims
+       */
+      static valueOf(arg0: string | null): zombie.characters.CharacterActionAnims;
+
+      /** @noSelf */
+      static values(): zombie.characters.CharacterActionAnims[];
+
+    }
+    /**
+     * @customConstructor CharacterSoundEmitter.new
+     * @
+     * [CLASS] zombie.characters.CharacterSoundEmitter extends zombie.characters.BaseCharacterSoundEmitter
+     */
+    export class CharacterSoundEmitter {
+      /**
+       * Constructors: 
+       *  - (IsoGameCharacter arg0)
+       */
+      constructor(arg0: zombie.characters.IsoGameCharacter);
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      hasSoundsToStart(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (long arg0): boolean
+       */
+      hasSustainPoints(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isClear(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEmpty(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (long arg0): boolean
+       *  - (String arg0): boolean
+       */
+      isPlaying(arg0: number | string): boolean;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, float arg1): void
+       */
+      playFootsteps(arg0: string, arg1: number): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): number
+       *  - (String arg0, IsoObject arg1): number
+       *  - (String arg0, boolean arg1): number
+       */
+      playSound(arg0: string, arg1?: zombie.iso.IsoObject | boolean): number;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, IsoObject arg1): number
+       */
+      playSoundImpl(arg0: string, arg1: zombie.iso.IsoObject): number;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): number
+       */
+      playVocals(arg0: string): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      register(): void;
+      /**
+       * Method Parameters: 
+       *  - (float arg0, float arg1, float arg2): void
+       */
+      set(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (long arg0, FMOD_STUDIO_PARAMETER_DESCRIPTION arg1, float arg2): void
+       */
+      setParameterValue(arg0: number, arg1: fmod.fmod.FMOD_STUDIO_PARAMETER_DESCRIPTION, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (long arg0, float arg1): void
+       */
+      setPitch(arg0: number, arg1: number): void;
+      /**
+       * Method Parameters: 
+       *  - (float arg0, float arg1, float arg2): void
+       */
+      setPos(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (long arg0, float arg1): void
+       */
+      setVolume(arg0: number, arg1: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      stopAll(): void;
+      /**
+       * Method Parameters: 
+       *  - (long arg0): void
+       */
+      stopOrTriggerSound(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      stopOrTriggerSoundByName(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (long arg0): number
+       */
+      stopSound(arg0: number): number;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): number
+       */
+      stopSoundByName(arg0: string): number;
+      /**
+       * Method Parameters: 
+       *  - (long arg0): void
+       */
+      stopSoundLocal(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      tick(): void;
+      /**
+       * Method Parameters: 
+       *  - (long arg0): void
+       */
+      triggerCue(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      unregister(): void;
+    }
+    /**
+     * @customConstructor ClothingWetness.new
+     * @
+     * [CLASS] zombie.characters.ClothingWetness
+     */
+    export class ClothingWetness {
+      /**
+       * Constructors: 
+       *  - (IsoGameCharacter arg0)
+       */
+      constructor(arg0: zombie.characters.IsoGameCharacter);
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      calculateExposedItems(): void;
+      /**
+       * Method Parameters: 
+       *  - (float arg0): void
+       */
+      decreaseWetness(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (float arg0): void
+       */
+      increaseWetness(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (float arg0, float arg1): void
+       */
+      updateWetness(arg0: number, arg1: number): void;
+    }
+    /**
+     * @customConstructor DummyCharacterSoundEmitter.new
+     * @
+     * [CLASS] zombie.characters.DummyCharacterSoundEmitter extends zombie.characters.BaseCharacterSoundEmitter
+     */
+    export class DummyCharacterSoundEmitter {
+      /**
+       * Constructors: 
+       *  - (IsoGameCharacter arg0)
+       */
+      constructor(arg0: zombie.characters.IsoGameCharacter);
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      hasSoundsToStart(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (long arg0): boolean
+       */
+      hasSustainPoints(arg0: number): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -128,309 +452,9 @@ declare module 'PipeWrench' {
       stopSoundByName(arg0: string): number;
       /**
        * Method Parameters: 
-       *  - (Empty): void
-       */
-      tick(): void;
-      /**
-       * Method Parameters: 
-       *  - (Empty): void
-       */
-      unregister(): void;
-    }
-    /** [ENUM] zombie.characters.CharacterActionAnims */
-    export class CharacterActionAnims {
-      protected constructor();
-      static readonly Bandage: zombie.characters.CharacterActionAnims;
-      static readonly Build: zombie.characters.CharacterActionAnims;
-      static readonly BuildLow: zombie.characters.CharacterActionAnims;
-      static readonly Chop_tree: zombie.characters.CharacterActionAnims;
-      static readonly Craft: zombie.characters.CharacterActionAnims;
-      static readonly Destroy: zombie.characters.CharacterActionAnims;
-      static readonly Dig: zombie.characters.CharacterActionAnims;
-      static readonly DigHoe: zombie.characters.CharacterActionAnims;
-      static readonly DigPickAxe: zombie.characters.CharacterActionAnims;
-      static readonly DigShovel: zombie.characters.CharacterActionAnims;
-      static readonly DigTrowel: zombie.characters.CharacterActionAnims;
-      static readonly Disassemble: zombie.characters.CharacterActionAnims;
-      static readonly Drink: zombie.characters.CharacterActionAnims;
-      static readonly Eat: zombie.characters.CharacterActionAnims;
-      static readonly InsertBullets: zombie.characters.CharacterActionAnims;
-      static readonly None: zombie.characters.CharacterActionAnims;
-      static readonly Paint: zombie.characters.CharacterActionAnims;
-      static readonly Pour: zombie.characters.CharacterActionAnims;
-      static readonly Read: zombie.characters.CharacterActionAnims;
-      static readonly Reload: zombie.characters.CharacterActionAnims;
-      static readonly RemoveBullets: zombie.characters.CharacterActionAnims;
-      static readonly Shave: zombie.characters.CharacterActionAnims;
-      static readonly TakePills: zombie.characters.CharacterActionAnims;
-      name(): string;
-      ordinal(): number;
-    }
-    /**
-     * @customConstructor CharacterSoundEmitter.new
-     * @
-     * [CLASS] zombie.characters.CharacterSoundEmitter extends zombie.characters.BaseCharacterSoundEmitter
-     */
-    export class CharacterSoundEmitter {
-      /**
-       * Constructors: 
-       *  - (IsoGameCharacter arg0)
-       */
-      constructor(arg0: zombie.characters.IsoGameCharacter);
-      /**
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      hasSoundsToStart(): boolean;
-      /**
-       * Method Parameters: 
-       *  - (long arg0): boolean
-       */
-      hasSustainPoints(arg0: number): boolean;
-      /**
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      isClear(): boolean;
-      /**
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      isEmpty(): boolean;
-      /**
-       * Method Parameters: 
-       *  - (String arg0): boolean
-       *  - (long arg0): boolean
-       */
-      isPlaying(arg0: string | number): boolean;
-      /**
-       * Method Parameters: 
-       *  - (String arg0, float arg1): void
-       */
-      playFootsteps(arg0: string, arg1: number): void;
-      /**
-       * Method Parameters: 
-       *  - (String arg0): number
-       *  - (String arg0, boolean arg1): number
-       *  - (String arg0, IsoObject arg1): number
-       */
-      playSound(arg0: string, arg1?: boolean | zombie.iso.IsoObject): number;
-      /**
-       * Method Parameters: 
-       *  - (String arg0, IsoObject arg1): number
-       */
-      playSoundImpl(arg0: string, arg1: zombie.iso.IsoObject): number;
-      /**
-       * Method Parameters: 
-       *  - (String arg0): number
-       */
-      playVocals(arg0: string): number;
-      /**
-       * Method Parameters: 
-       *  - (Empty): void
-       */
-      register(): void;
-      /**
-       * Method Parameters: 
-       *  - (float arg0, float arg1, float arg2): void
-       */
-      set(arg0: number, arg1: number, arg2: number): void;
-      /**
-       * Method Parameters: 
-       *  - (long arg0, FMOD_STUDIO_PARAMETER_DESCRIPTION arg1, float arg2): void
-       */
-      setParameterValue(arg0: number, arg1: fmod.fmod.FMOD_STUDIO_PARAMETER_DESCRIPTION, arg2: number): void;
-      /**
-       * Method Parameters: 
-       *  - (long arg0, float arg1): void
-       */
-      setPitch(arg0: number, arg1: number): void;
-      /**
-       * Method Parameters: 
-       *  - (float arg0, float arg1, float arg2): void
-       */
-      setPos(arg0: number, arg1: number, arg2: number): void;
-      /**
-       * Method Parameters: 
-       *  - (long arg0, float arg1): void
-       */
-      setVolume(arg0: number, arg1: number): void;
-      /**
-       * Method Parameters: 
-       *  - (Empty): void
-       */
-      stopAll(): void;
-      /**
-       * Method Parameters: 
        *  - (long arg0): void
        */
-      stopOrTriggerSound(arg0: number): void;
-      /**
-       * Method Parameters: 
-       *  - (String arg0): void
-       */
-      stopOrTriggerSoundByName(arg0: string): void;
-      /**
-       * Method Parameters: 
-       *  - (long arg0): number
-       */
-      stopSound(arg0: number): number;
-      /**
-       * Method Parameters: 
-       *  - (String arg0): number
-       */
-      stopSoundByName(arg0: string): number;
-      /**
-       * Method Parameters: 
-       *  - (Empty): void
-       */
-      tick(): void;
-      /**
-       * Method Parameters: 
-       *  - (long arg0): void
-       */
-      triggerCue(arg0: number): void;
-      /**
-       * Method Parameters: 
-       *  - (Empty): void
-       */
-      unregister(): void;
-    }
-    /**
-     * @customConstructor ClothingWetness.new
-     * @
-     * [CLASS] zombie.characters.ClothingWetness
-     */
-    export class ClothingWetness {
-      /**
-       * Constructors: 
-       *  - (IsoGameCharacter arg0)
-       */
-      constructor(arg0: zombie.characters.IsoGameCharacter);
-      /**
-       * Method Parameters: 
-       *  - (Empty): void
-       */
-      calculateExposedItems(): void;
-      /**
-       * Method Parameters: 
-       *  - (float arg0): void
-       */
-      decreaseWetness(arg0: number): void;
-      /**
-       * Method Parameters: 
-       *  - (float arg0): void
-       */
-      increaseWetness(arg0: number): void;
-      /**
-       * Method Parameters: 
-       *  - (float arg0, float arg1): void
-       */
-      updateWetness(arg0: number, arg1: number): void;
-    }
-    /**
-     * @customConstructor DummyCharacterSoundEmitter.new
-     * @
-     * [CLASS] zombie.characters.DummyCharacterSoundEmitter extends zombie.characters.BaseCharacterSoundEmitter
-     */
-    export class DummyCharacterSoundEmitter {
-      /**
-       * Constructors: 
-       *  - (IsoGameCharacter arg0)
-       */
-      constructor(arg0: zombie.characters.IsoGameCharacter);
-      /**
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      hasSoundsToStart(): boolean;
-      /**
-       * Method Parameters: 
-       *  - (long arg0): boolean
-       */
-      hasSustainPoints(arg0: number): boolean;
-      /**
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      isClear(): boolean;
-      /**
-       * Method Parameters: 
-       *  - (String arg0): boolean
-       *  - (long arg0): boolean
-       */
-      isPlaying(arg0: string | number): boolean;
-      /**
-       * Method Parameters: 
-       *  - (String arg0, float arg1): void
-       */
-      playFootsteps(arg0: string, arg1: number): void;
-      /**
-       * Method Parameters: 
-       *  - (String arg0): number
-       *  - (String arg0, IsoObject arg1): number
-       */
-      playSound(arg0: string, arg1?: zombie.iso.IsoObject): number;
-      /**
-       * Method Parameters: 
-       *  - (String arg0, IsoObject arg1): number
-       */
-      playSoundImpl(arg0: string, arg1: zombie.iso.IsoObject): number;
-      /**
-       * Method Parameters: 
-       *  - (String arg0): number
-       */
-      playVocals(arg0: string): number;
-      /**
-       * Method Parameters: 
-       *  - (Empty): void
-       */
-      register(): void;
-      /**
-       * Method Parameters: 
-       *  - (float arg0, float arg1, float arg2): void
-       */
-      set(arg0: number, arg1: number, arg2: number): void;
-      /**
-       * Method Parameters: 
-       *  - (long arg0, FMOD_STUDIO_PARAMETER_DESCRIPTION arg1, float arg2): void
-       */
-      setParameterValue(arg0: number, arg1: fmod.fmod.FMOD_STUDIO_PARAMETER_DESCRIPTION, arg2: number): void;
-      /**
-       * Method Parameters: 
-       *  - (long arg0, float arg1): void
-       */
-      setPitch(arg0: number, arg1: number): void;
-      /**
-       * Method Parameters: 
-       *  - (long arg0, float arg1): void
-       */
-      setVolume(arg0: number, arg1: number): void;
-      /**
-       * Method Parameters: 
-       *  - (Empty): void
-       */
-      stopAll(): void;
-      /**
-       * Method Parameters: 
-       *  - (long arg0): void
-       */
-      stopOrTriggerSound(arg0: number): void;
-      /**
-       * Method Parameters: 
-       *  - (String arg0): void
-       */
-      stopOrTriggerSoundByName(arg0: string): void;
-      /**
-       * Method Parameters: 
-       *  - (long arg0): number
-       */
-      stopSound(arg0: number): number;
-      /**
-       * Method Parameters: 
-       *  - (String arg0): number
-       */
-      stopSoundByName(arg0: string): number;
+      stopSoundLocal(arg0: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -1521,12 +1545,12 @@ declare module 'PipeWrench' {
       climbSheetRope(): void;
       /**
        * Method Parameters: 
-       *  - (IsoThumpable arg0): void
        *  - (IsoWindow arg0): void
-       *  - (IsoThumpable arg0, Integer arg1): void
+       *  - (IsoThumpable arg0): void
        *  - (IsoWindow arg0, Integer arg1): void
+       *  - (IsoThumpable arg0, Integer arg1): void
        */
-      climbThroughWindow(arg0: zombie.iso.objects.IsoThumpable | zombie.iso.objects.IsoWindow, arg1?: number): void;
+      climbThroughWindow(arg0: zombie.iso.objects.IsoWindow | zombie.iso.objects.IsoThumpable, arg1?: number): void;
       /**
        * Method Parameters: 
        *  - (IsoObject arg0): void
@@ -1998,6 +2022,11 @@ declare module 'PipeWrench' {
        *  - (Empty): number
        */
       getChopTreeSpeed(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -2776,6 +2805,11 @@ declare module 'PipeWrench' {
        *  - (Empty): zombie.characters.NetworkCharacterAI
        */
       getNetworkCharacterAI(): zombie.characters.NetworkCharacterAI;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getNextAnimationTranslationLength(): number;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -4757,10 +4791,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -5518,10 +5552,10 @@ declare module 'PipeWrench' {
       setMeleeDelay(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (Metabolics arg0): void
        *  - (float arg0): void
+       *  - (Metabolics arg0): void
        */
-      setMetabolicTarget(arg0: zombie.characters.BodyDamage.Metabolics | number): void;
+      setMetabolicTarget(arg0: number | zombie.characters.BodyDamage.Metabolics): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -6073,19 +6107,19 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (IAnimationVariableSlot arg0): void
+       *  - (String arg0, float arg1): void
        *  - (String arg0, boolean arg1): void
        *  - (String arg0, String arg1): void
-       *  - (String arg0, float arg1): void
-       *  - (String arg0, float arg1, CallbackGetStrongTyped arg2): void
-       *  - (String arg0, String arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, int arg1, CallbackGetStrongTyped arg2): void
-       *  - (String arg0, float arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
+       *  - (String arg0, float arg1, CallbackGetStrongTyped arg2): void
+       *  - (String arg0, String arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
-       *  - (String arg0, String arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        *  - (String arg0, int arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
+       *  - (String arg0, float arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
+       *  - (String arg0, String arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        */
-      setVariable(arg0: zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot | string, arg1?: boolean | string | number, arg2?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackGetStrongTyped, arg3?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackSetStrongTyped): void;
+      setVariable(arg0: zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot | string, arg1?: number | boolean | string, arg2?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackGetStrongTyped, arg3?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackSetStrongTyped): void;
       /**
        * Method Parameters: 
        *  - (BaseVehicle arg0): void
@@ -6434,10 +6468,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -7303,12 +7337,12 @@ declare module 'PipeWrench' {
       climbSheetRope(): void;
       /**
        * Method Parameters: 
-       *  - (IsoThumpable arg0): void
        *  - (IsoWindow arg0): void
-       *  - (IsoThumpable arg0, Integer arg1): void
+       *  - (IsoThumpable arg0): void
        *  - (IsoWindow arg0, Integer arg1): void
+       *  - (IsoThumpable arg0, Integer arg1): void
        */
-      climbThroughWindow(arg0: zombie.iso.objects.IsoThumpable | zombie.iso.objects.IsoWindow, arg1?: number): void;
+      climbThroughWindow(arg0: zombie.iso.objects.IsoWindow | zombie.iso.objects.IsoThumpable, arg1?: number): void;
       /**
        * Method Parameters: 
        *  - (IsoObject arg0): void
@@ -7780,6 +7814,11 @@ declare module 'PipeWrench' {
        *  - (Empty): number
        */
       getChopTreeSpeed(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -8558,6 +8597,11 @@ declare module 'PipeWrench' {
        *  - (Empty): zombie.characters.NetworkCharacterAI
        */
       getNetworkCharacterAI(): zombie.characters.NetworkCharacterAI;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getNextAnimationTranslationLength(): number;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -10539,10 +10583,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -11300,10 +11344,10 @@ declare module 'PipeWrench' {
       setMeleeDelay(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (Metabolics arg0): void
        *  - (float arg0): void
+       *  - (Metabolics arg0): void
        */
-      setMetabolicTarget(arg0: zombie.characters.BodyDamage.Metabolics | number): void;
+      setMetabolicTarget(arg0: number | zombie.characters.BodyDamage.Metabolics): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -11855,19 +11899,19 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (IAnimationVariableSlot arg0): void
+       *  - (String arg0, float arg1): void
        *  - (String arg0, boolean arg1): void
        *  - (String arg0, String arg1): void
-       *  - (String arg0, float arg1): void
-       *  - (String arg0, float arg1, CallbackGetStrongTyped arg2): void
-       *  - (String arg0, String arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, int arg1, CallbackGetStrongTyped arg2): void
-       *  - (String arg0, float arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
+       *  - (String arg0, float arg1, CallbackGetStrongTyped arg2): void
+       *  - (String arg0, String arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
-       *  - (String arg0, String arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        *  - (String arg0, int arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
+       *  - (String arg0, float arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
+       *  - (String arg0, String arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        */
-      setVariable(arg0: zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot | string, arg1?: boolean | string | number, arg2?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackGetStrongTyped, arg3?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackSetStrongTyped): void;
+      setVariable(arg0: zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot | string, arg1?: number | boolean | string, arg2?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackGetStrongTyped, arg3?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackSetStrongTyped): void;
       /**
        * Method Parameters: 
        *  - (BaseVehicle arg0): void
@@ -12216,10 +12260,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -12346,6 +12390,16 @@ declare module 'PipeWrench' {
       static readonly Stomach: zombie.characters.IsoGameCharacter$BodyLocation;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): BodyLocation
+       */
+      static valueOf(arg0: string | null): zombie.characters.IsoGameCharacter$BodyLocation;
+
+      /** @noSelf */
+      static values(): zombie.characters.IsoGameCharacter$BodyLocation[];
+
     }
     /**
      * @customConstructor CharacterTraits.new
@@ -12451,14 +12505,35 @@ declare module 'PipeWrench' {
     export class IsoGameCharacter$Location {
       /**
        * Constructors: 
+       *  - (Empty Constructor)
        *  - (int arg0, int arg1, int arg2)
        */
-      constructor(arg0: number, arg1: number, arg2: number);
+      constructor(arg0?: number, arg1?: number, arg2?: number);
       /**
        * Method Parameters: 
        *  - (Object arg0): boolean
        */
       equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getX(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getY(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getZ(): number;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, int arg1, int arg2): zombie.characters.IsoGameCharacter$Location
+       */
+      set(arg0: number, arg1: number, arg2: number): zombie.characters.IsoGameCharacter$Location;
     }
     /**
      * @customConstructor PerkInfo.new
@@ -12525,11 +12600,11 @@ declare module 'PipeWrench' {
       constructor(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.IsoGameCharacter);
       /**
        * Method Parameters: 
-       *  - (Perk arg0, float arg1): void
        *  - (HandWeapon arg0, int arg1): void
+       *  - (Perk arg0, float arg1): void
        *  - (Perk arg0, float arg1, boolean arg2, boolean arg3, boolean arg4): void
        */
-      AddXP(arg0: zombie.characters.skills.PerkFactory$Perk | zombie.inventory.types.HandWeapon, arg1: number, arg2?: boolean, arg3?: boolean, arg4?: boolean): void;
+      AddXP(arg0: zombie.inventory.types.HandWeapon | zombie.characters.skills.PerkFactory$Perk, arg1: number, arg2?: boolean, arg3?: boolean, arg4?: boolean): void;
       /**
        * Method Parameters: 
        *  - (Perk arg0, float arg1): void
@@ -13377,12 +13452,12 @@ declare module 'PipeWrench' {
       climbSheetRope(): void;
       /**
        * Method Parameters: 
-       *  - (IsoThumpable arg0): void
        *  - (IsoWindow arg0): void
-       *  - (IsoThumpable arg0, Integer arg1): void
+       *  - (IsoThumpable arg0): void
        *  - (IsoWindow arg0, Integer arg1): void
+       *  - (IsoThumpable arg0, Integer arg1): void
        */
-      climbThroughWindow(arg0: zombie.iso.objects.IsoThumpable | zombie.iso.objects.IsoWindow, arg1?: number): void;
+      climbThroughWindow(arg0: zombie.iso.objects.IsoWindow | zombie.iso.objects.IsoThumpable, arg1?: number): void;
       /**
        * Method Parameters: 
        *  - (IsoObject arg0): void
@@ -13854,6 +13929,11 @@ declare module 'PipeWrench' {
        *  - (Empty): number
        */
       getChopTreeSpeed(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -14632,6 +14712,11 @@ declare module 'PipeWrench' {
        *  - (Empty): zombie.characters.NetworkCharacterAI
        */
       getNetworkCharacterAI(): zombie.characters.NetworkCharacterAI;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getNextAnimationTranslationLength(): number;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -16623,10 +16708,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -17389,10 +17474,10 @@ declare module 'PipeWrench' {
       setMeleeDelay(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (Metabolics arg0): void
        *  - (float arg0): void
+       *  - (Metabolics arg0): void
        */
-      setMetabolicTarget(arg0: zombie.characters.BodyDamage.Metabolics | number): void;
+      setMetabolicTarget(arg0: number | zombie.characters.BodyDamage.Metabolics): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -17944,19 +18029,19 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (IAnimationVariableSlot arg0): void
+       *  - (String arg0, float arg1): void
        *  - (String arg0, boolean arg1): void
        *  - (String arg0, String arg1): void
-       *  - (String arg0, float arg1): void
-       *  - (String arg0, float arg1, CallbackGetStrongTyped arg2): void
-       *  - (String arg0, String arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, int arg1, CallbackGetStrongTyped arg2): void
-       *  - (String arg0, float arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
+       *  - (String arg0, float arg1, CallbackGetStrongTyped arg2): void
+       *  - (String arg0, String arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
-       *  - (String arg0, String arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        *  - (String arg0, int arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
+       *  - (String arg0, float arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
+       *  - (String arg0, String arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        */
-      setVariable(arg0: zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot | string, arg1?: boolean | string | number, arg2?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackGetStrongTyped, arg3?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackSetStrongTyped): void;
+      setVariable(arg0: zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot | string, arg1?: number | boolean | string, arg2?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackGetStrongTyped, arg3?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackSetStrongTyped): void;
       /**
        * Method Parameters: 
        *  - (BaseVehicle arg0): void
@@ -18305,10 +18390,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -19182,8 +19267,9 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (IsoPlayer arg0): boolean
+       *  - (UdpConnection arg0): boolean
        */
-      checkCanSeeClient(arg0: zombie.characters.IsoPlayer): boolean;
+      checkCanSeeClient(arg0: zombie.characters.IsoPlayer | zombie.core.raknet.UdpConnection): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -19261,12 +19347,12 @@ declare module 'PipeWrench' {
       climbSheetRope(): void;
       /**
        * Method Parameters: 
-       *  - (IsoThumpable arg0): void
        *  - (IsoWindow arg0): void
-       *  - (IsoThumpable arg0, Integer arg1): void
+       *  - (IsoThumpable arg0): void
        *  - (IsoWindow arg0, Integer arg1): void
+       *  - (IsoThumpable arg0, Integer arg1): void
        */
-      climbThroughWindow(arg0: zombie.iso.objects.IsoThumpable | zombie.iso.objects.IsoWindow, arg1?: number): void;
+      climbThroughWindow(arg0: zombie.iso.objects.IsoWindow | zombie.iso.objects.IsoThumpable, arg1?: number): void;
       /**
        * Method Parameters: 
        *  - (IsoObject arg0): void
@@ -19793,6 +19879,11 @@ declare module 'PipeWrench' {
        *  - (Empty): number
        */
       getChopTreeSpeed(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -20706,6 +20797,11 @@ declare module 'PipeWrench' {
        *  - (Empty): zombie.characters.NetworkCharacterAI
        */
       getNetworkCharacterAI(): zombie.characters.NetworkCharacterAI;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getNextAnimationTranslationLength(): number;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -23136,10 +23232,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -24112,16 +24208,16 @@ declare module 'PipeWrench' {
       setMeleeDelay(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (String arg0): void
        *  - (Material arg0): void
+       *  - (String arg0): void
        */
-      setMeleeHitSurface(arg0: string | zombie.audio.parameters.ParameterMeleeHitSurface$Material): void;
+      setMeleeHitSurface(arg0: zombie.audio.parameters.ParameterMeleeHitSurface$Material | string): void;
       /**
        * Method Parameters: 
-       *  - (Metabolics arg0): void
        *  - (float arg0): void
+       *  - (Metabolics arg0): void
        */
-      setMetabolicTarget(arg0: zombie.characters.BodyDamage.Metabolics | number): void;
+      setMetabolicTarget(arg0: number | zombie.characters.BodyDamage.Metabolics): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -24798,19 +24894,19 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (IAnimationVariableSlot arg0): void
+       *  - (String arg0, float arg1): void
        *  - (String arg0, boolean arg1): void
        *  - (String arg0, String arg1): void
-       *  - (String arg0, float arg1): void
-       *  - (String arg0, float arg1, CallbackGetStrongTyped arg2): void
-       *  - (String arg0, String arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, int arg1, CallbackGetStrongTyped arg2): void
-       *  - (String arg0, float arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
+       *  - (String arg0, float arg1, CallbackGetStrongTyped arg2): void
+       *  - (String arg0, String arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
-       *  - (String arg0, String arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        *  - (String arg0, int arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
+       *  - (String arg0, float arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
+       *  - (String arg0, String arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        */
-      setVariable(arg0: zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot | string, arg1?: boolean | string | number, arg2?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackGetStrongTyped, arg3?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackSetStrongTyped): void;
+      setVariable(arg0: zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot | string, arg1?: number | boolean | string, arg2?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackGetStrongTyped, arg3?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackSetStrongTyped): void;
       /**
        * Method Parameters: 
        *  - (BaseVehicle arg0): void
@@ -25137,6 +25233,11 @@ declare module 'PipeWrench' {
        * Method Parameters: 
        *  - (Empty): void
        */
+      updateEnduranceWhileSitting(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
       updateEquippedRadioFreq(): void;
       /**
        * Method Parameters: 
@@ -25267,10 +25368,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -26261,12 +26362,12 @@ declare module 'PipeWrench' {
       climbSheetRope(): void;
       /**
        * Method Parameters: 
-       *  - (IsoThumpable arg0): void
        *  - (IsoWindow arg0): void
-       *  - (IsoThumpable arg0, Integer arg1): void
+       *  - (IsoThumpable arg0): void
        *  - (IsoWindow arg0, Integer arg1): void
+       *  - (IsoThumpable arg0, Integer arg1): void
        */
-      climbThroughWindow(arg0: zombie.iso.objects.IsoThumpable | zombie.iso.objects.IsoWindow, arg1?: number): void;
+      climbThroughWindow(arg0: zombie.iso.objects.IsoWindow | zombie.iso.objects.IsoThumpable, arg1?: number): void;
       /**
        * Method Parameters: 
        *  - (IsoObject arg0): void
@@ -26738,6 +26839,11 @@ declare module 'PipeWrench' {
        *  - (Empty): number
        */
       getChopTreeSpeed(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -27516,6 +27622,11 @@ declare module 'PipeWrench' {
        *  - (Empty): zombie.characters.NetworkCharacterAI
        */
       getNetworkCharacterAI(): zombie.characters.NetworkCharacterAI;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getNextAnimationTranslationLength(): number;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -29512,10 +29623,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -30278,10 +30389,10 @@ declare module 'PipeWrench' {
       setMeleeDelay(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (Metabolics arg0): void
        *  - (float arg0): void
+       *  - (Metabolics arg0): void
        */
-      setMetabolicTarget(arg0: zombie.characters.BodyDamage.Metabolics | number): void;
+      setMetabolicTarget(arg0: number | zombie.characters.BodyDamage.Metabolics): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -30833,19 +30944,19 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (IAnimationVariableSlot arg0): void
+       *  - (String arg0, float arg1): void
        *  - (String arg0, boolean arg1): void
        *  - (String arg0, String arg1): void
-       *  - (String arg0, float arg1): void
-       *  - (String arg0, float arg1, CallbackGetStrongTyped arg2): void
-       *  - (String arg0, String arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, int arg1, CallbackGetStrongTyped arg2): void
-       *  - (String arg0, float arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
+       *  - (String arg0, float arg1, CallbackGetStrongTyped arg2): void
+       *  - (String arg0, String arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
-       *  - (String arg0, String arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        *  - (String arg0, int arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
+       *  - (String arg0, float arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
+       *  - (String arg0, String arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        */
-      setVariable(arg0: zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot | string, arg1?: boolean | string | number, arg2?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackGetStrongTyped, arg3?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackSetStrongTyped): void;
+      setVariable(arg0: zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot | string, arg1?: number | boolean | string, arg2?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackGetStrongTyped, arg3?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackSetStrongTyped): void;
       /**
        * Method Parameters: 
        *  - (BaseVehicle arg0): void
@@ -31194,10 +31305,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -31498,10 +31609,10 @@ declare module 'PipeWrench' {
       DoFloorSplat(arg0: zombie.iso.IsoGridSquare, arg1: string, arg2: boolean, arg3: number, arg4: number): void;
       /**
        * Method Parameters: 
-       *  - (float arg0): void
        *  - (String arg0): void
+       *  - (float arg0): void
        */
-      DoFootstepSound(arg0: number | string): void;
+      DoFootstepSound(arg0: string | number): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -32187,12 +32298,12 @@ declare module 'PipeWrench' {
       climbSheetRope(): void;
       /**
        * Method Parameters: 
-       *  - (IsoThumpable arg0): void
        *  - (IsoWindow arg0): void
-       *  - (IsoThumpable arg0, Integer arg1): void
+       *  - (IsoThumpable arg0): void
        *  - (IsoWindow arg0, Integer arg1): void
+       *  - (IsoThumpable arg0, Integer arg1): void
        */
-      climbThroughWindow(arg0: zombie.iso.objects.IsoThumpable | zombie.iso.objects.IsoWindow, arg1?: number): void;
+      climbThroughWindow(arg0: zombie.iso.objects.IsoWindow | zombie.iso.objects.IsoThumpable, arg1?: number): void;
       /**
        * Method Parameters: 
        *  - (IsoObject arg0): void
@@ -32664,6 +32775,11 @@ declare module 'PipeWrench' {
        *  - (Empty): number
        */
       getChopTreeSpeed(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk
+       */
+      getChunk(): zombie.iso.IsoChunk;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -33482,6 +33598,11 @@ declare module 'PipeWrench' {
        *  - (Empty): zombie.characters.NetworkCharacterAI
        */
       getNetworkCharacterAI(): zombie.characters.NetworkCharacterAI;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getNextAnimationTranslationLength(): number;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -35674,10 +35795,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, Object... arg1): void
        *  - (String arg0, KahluaTable arg1): void
+       *  - (String arg0, Object... arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
+      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -36541,10 +36662,10 @@ declare module 'PipeWrench' {
       setMeleeDelay(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (Metabolics arg0): void
        *  - (float arg0): void
+       *  - (Metabolics arg0): void
        */
-      setMetabolicTarget(arg0: zombie.characters.BodyDamage.Metabolics | number): void;
+      setMetabolicTarget(arg0: number | zombie.characters.BodyDamage.Metabolics): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -37172,19 +37293,19 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (IAnimationVariableSlot arg0): void
+       *  - (String arg0, float arg1): void
        *  - (String arg0, boolean arg1): void
        *  - (String arg0, String arg1): void
-       *  - (String arg0, float arg1): void
-       *  - (String arg0, float arg1, CallbackGetStrongTyped arg2): void
-       *  - (String arg0, String arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, int arg1, CallbackGetStrongTyped arg2): void
-       *  - (String arg0, float arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
+       *  - (String arg0, float arg1, CallbackGetStrongTyped arg2): void
+       *  - (String arg0, String arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
-       *  - (String arg0, String arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        *  - (String arg0, int arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
+       *  - (String arg0, float arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
+       *  - (String arg0, String arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        */
-      setVariable(arg0: zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot | string, arg1?: boolean | string | number, arg2?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackGetStrongTyped, arg3?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackSetStrongTyped): void;
+      setVariable(arg0: zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot | string, arg1?: number | boolean | string, arg2?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackGetStrongTyped, arg3?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackSetStrongTyped): void;
       /**
        * Method Parameters: 
        *  - (BaseVehicle arg0): void
@@ -37598,10 +37719,10 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        *  - (IsoCell arg0, byte arg1): zombie.iso.IsoObject
+       *  - (IsoCell arg0, ByteBuffer arg1): zombie.iso.IsoObject
        */
-      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: java.nio.ByteBuffer | number): zombie.iso.IsoObject;
+      static factoryFromFileInput(arg0: zombie.iso.IsoCell, arg1: number | java.nio.ByteBuffer): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -37728,7 +37849,24 @@ declare module 'PipeWrench' {
       static readonly MAX: zombie.characters.IsoZombie$ZombieSound;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (int arg0): ZombieSound
+       */
+      static fromIndex(arg0: number): zombie.characters.IsoZombie$ZombieSound;
+
       radius(): number;
+
+      /**
+       * @noSelf
+       *
+       * (String arg0): ZombieSound
+       */
+      static valueOf(arg0: string | null): zombie.characters.IsoZombie$ZombieSound;
+
+      /** @noSelf */
+      static values(): zombie.characters.IsoZombie$ZombieSound[];
 
     }
     /**
@@ -37774,6 +37912,11 @@ declare module 'PipeWrench' {
        *  - (Empty): zombie.characters.CharacterTimedActions.BaseAction
        */
       getAction(): zombie.characters.CharacterTimedActions.BaseAction;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getPerformingAction(): string;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.characters.NetworkTeleport$NetworkTeleportDebug
@@ -37854,6 +37997,11 @@ declare module 'PipeWrench' {
        *  - (boolean arg0, String arg1, String arg2): void
        */
       setOverride(arg0: boolean, arg1: string, arg2: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      setPerformingAction(arg0: string): void;
       /**
        * Method Parameters: 
        *  - (NetworkTeleportDebug arg0): void
@@ -37953,6 +38101,16 @@ declare module 'PipeWrench' {
       static readonly teleportation: zombie.characters.NetworkTeleport$Type;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): Type
+       */
+      static valueOf(arg0: string | null): zombie.characters.NetworkTeleport$Type;
+
+      /** @noSelf */
+      static values(): zombie.characters.NetworkTeleport$Type[];
+
     }
     /**
      * @customConstructor Safety.new
@@ -38209,10 +38367,10 @@ declare module 'PipeWrench' {
       resetStats(): void;
       /**
        * Method Parameters: 
-       *  - (ByteBuffer arg0): void
        *  - (DataOutputStream arg0): void
+       *  - (ByteBuffer arg0): void
        */
-      save(arg0: java.nio.ByteBuffer | java.io.DataOutputStream): void;
+      save(arg0: java.io.DataOutputStream | java.nio.ByteBuffer): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -38343,10 +38501,10 @@ declare module 'PipeWrench' {
       /**
        * Constructors: 
        *  - (Empty Constructor)
-       *  - (boolean arg0)
        *  - (SurvivorDesc arg0)
+       *  - (boolean arg0)
        */
-      constructor(arg0?: boolean | zombie.characters.SurvivorDesc);
+      constructor(arg0?: zombie.characters.SurvivorDesc | boolean);
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -38774,6 +38932,20 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (boolean arg0): string
+       */
+      static getRandomForename(arg0: boolean): string;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      static getRandomSurname(): string;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (SurvivorDesc arg0): void
        */
       static randomName(arg0: zombie.characters.SurvivorDesc): void;
@@ -38793,6 +38965,16 @@ declare module 'PipeWrench' {
       static readonly Neutral: zombie.characters.SurvivorFactory$SurvivorType;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): SurvivorType
+       */
+      static valueOf(arg0: string | null): zombie.characters.SurvivorFactory$SurvivorType;
+
+      /** @noSelf */
+      static values(): zombie.characters.SurvivorFactory$SurvivorType[];
+
     }
     /**
      * @customConstructor SurvivorGroup.new

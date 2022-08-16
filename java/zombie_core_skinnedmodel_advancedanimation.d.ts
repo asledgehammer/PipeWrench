@@ -21,12 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace zombie.core.skinnedmodel.advancedanimation {
     /**
      * @customConstructor AdvancedAnimator.new
@@ -250,6 +249,16 @@ declare module 'PipeWrench' {
       static readonly Start: zombie.core.skinnedmodel.advancedanimation.AnimEvent$AnimEventTime;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): AnimEventTime
+       */
+      static valueOf(arg0: string | null): zombie.core.skinnedmodel.advancedanimation.AnimEvent$AnimEventTime;
+
+      /** @noSelf */
+      static values(): zombie.core.skinnedmodel.advancedanimation.AnimEvent$AnimEventTime[];
+
     }
     /**
      * @customConstructor AnimLayer.new
@@ -1036,10 +1045,10 @@ declare module 'PipeWrench' {
       getOrCreateVariable(arg0: string): zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot;
       /**
        * Method Parameters: 
-       *  - (String arg0): zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot
        *  - (AnimationVariableHandle arg0): zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot
+       *  - (String arg0): zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot
        */
-      getVariable(arg0: string | zombie.core.skinnedmodel.advancedanimation.AnimationVariableHandle): zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot;
+      getVariable(arg0: zombie.core.skinnedmodel.advancedanimation.AnimationVariableHandle | string): zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot;
       /**
        * Method Parameters: 
        *  - (String arg0): boolean
@@ -1095,6 +1104,16 @@ declare module 'PipeWrench' {
       static readonly Void: zombie.core.skinnedmodel.advancedanimation.AnimationVariableType;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): AnimationVariableType
+       */
+      static valueOf(arg0: string | null): zombie.core.skinnedmodel.advancedanimation.AnimationVariableType;
+
+      /** @noSelf */
+      static values(): zombie.core.skinnedmodel.advancedanimation.AnimationVariableType[];
+
     }
     /**
      * @customConstructor IAnimEventCallback.new
@@ -1518,10 +1537,10 @@ declare module 'PipeWrench' {
       setTransitionOut(arg0: zombie.core.skinnedmodel.advancedanimation.AnimTransition): void;
       /**
        * Method Parameters: 
-       *  - (LiveAnimNode arg0, AnimTransition arg1, AnimationTrack arg2): void
        *  - (AnimNode arg0, AnimTransition arg1, AnimationTrack arg2): void
+       *  - (LiveAnimNode arg0, AnimTransition arg1, AnimationTrack arg2): void
        */
-      startTransitionIn(arg0: zombie.core.skinnedmodel.advancedanimation.LiveAnimNode | zombie.core.skinnedmodel.advancedanimation.AnimNode, arg1: zombie.core.skinnedmodel.advancedanimation.AnimTransition, arg2: zombie.core.skinnedmodel.animation.AnimationTrack): void;
+      startTransitionIn(arg0: zombie.core.skinnedmodel.advancedanimation.AnimNode | zombie.core.skinnedmodel.advancedanimation.LiveAnimNode, arg1: zombie.core.skinnedmodel.advancedanimation.AnimTransition, arg2: zombie.core.skinnedmodel.animation.AnimationTrack): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void

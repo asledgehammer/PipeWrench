@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:00.527Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISRadialMenu:new */
     export class ISRadialMenu extends lua.client.ISUI.ISPanelJoypad {
@@ -52,16 +49,16 @@ declare module 'PipeWrench' {
 
       addSlice:
         | ((
-            text: any,
-            texture: any,
-            command: any,
-            arg1: any,
-            arg2: any,
-            arg3: any,
-            arg4: any,
-            arg5: any,
-            arg6: any
-          ) => any)
+          text: any,
+          texture: any,
+          command: any,
+          arg1: any,
+          arg2: any,
+          arg3: any,
+          arg4: any,
+          arg5: any,
+          arg6: any
+        ) => any)
         | any;
 
       center: (() => any) | any;
@@ -87,5 +84,5 @@ declare module 'PipeWrench' {
       undisplay: (() => any) | any;
     }
   }
-  export namespace lua.client.ISUI.ISRadialMenu {}
+  export namespace lua.client.ISUI.ISRadialMenu { }
 }

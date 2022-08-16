@@ -20,30 +20,29 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:38:59.509Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.DebugUIs {
-    export class ISFastTeleportMove {
-      private constructor();
-
+    export abstract class ISFastTeleportMove {
       static [id: string]: any;
 
-      static moveXY: ((player: any, dx: any, dy: any) => any) | any;
+      /** @noSelf */
+      static moveXY: (player: any, dx: any, dy: any) => any;
 
-      static moveZ: ((player: any, dz: any) => any) | any;
+      /** @noSelf */
+      static moveZ: (player: any, dz: any) => any;
 
-      static OnKeyKeepPressed: ((key: any) => any) | any;
+      /** @noSelf */
+      static OnKeyKeepPressed: (key: any) => any;
 
-      static OnKeyStartPressed: ((key: any) => any) | any;
+      /** @noSelf */
+      static OnKeyStartPressed: (key: any) => any;
     }
   }
-  export namespace lua.client.DebugUIs.ISFastTeleportMove {}
+  export namespace lua.client.DebugUIs.ISFastTeleportMove { }
 }

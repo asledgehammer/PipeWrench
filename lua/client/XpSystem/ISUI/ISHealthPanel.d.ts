@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:02.841Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.XpSystem.ISUI {
     /** @customConstructor HealthPanelAction:new */
     export class HealthPanelAction extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -157,17 +154,29 @@ declare module 'PipeWrench' {
 
       updateBodyPartList: (() => any) | any;
 
-      static DidPatientMove: ((doctor: any, patient: any, patientX: any, patientY: any) => any) | any;
+      /** @noSelf */
+      static DidPatientMove: (doctor: any, patient: any, patientX: any, patientY: any) => any;
 
-      static getBandageType: ((bodyPart: any) => any) | any;
+      /** @noSelf */
+      static getBandageType: (bodyPart: any) => any;
 
-      static onCheat: ((bodyPart: any, action: any, player: any, otherPlayer: any) => any) | any;
+      /** @noSelf */
+      static onCheat: (bodyPart: any, action: any, player: any, otherPlayer: any) => any;
 
-      static onCheatItem: ((itemType: any, playerObj: any) => any) | any;
+      /** @noSelf */
+      static onCheatCurrentPlayer: (bodyPart: any, action: any, player: any) => any;
 
-      static setBodyPartActionForPlayer:
-        | ((playerObj: any, bodyPart: any, action: any, jobType: any, args: any) => any)
-        | any;
+      /** @noSelf */
+      static onCheatHealthCommand: (module: any, command: any, args: any) => any;
+
+      /** @noSelf */
+      static onCheatItem: (itemType: any, playerObj: any) => any;
+
+      /** @noSelf */
+      static onCheatOtherPlayer: (bodyPart: any, action: any, player: any, otherPlayer: any) => any;
+
+      /** @noSelf */
+      static setBodyPartActionForPlayer: (playerObj: any, bodyPart: any, action: any, jobType: any, args: any) => any;
     }
 
     /** @customConstructor ISNewHealthPanel:new */
@@ -182,5 +191,5 @@ declare module 'PipeWrench' {
       onClick: ((button: any) => any) | any;
     }
   }
-  export namespace lua.client.XpSystem.ISUI.ISHealthPanel {}
+  export namespace lua.client.XpSystem.ISUI.ISHealthPanel { }
 }

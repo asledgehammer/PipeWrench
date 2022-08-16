@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.821Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.server.RainBarrel {
     /** @customConstructor SRainBarrelGlobalObject:new */
     export class SRainBarrelGlobalObject extends lua.server.Map.SGlobalObject {
@@ -49,5 +46,5 @@ declare module 'PipeWrench' {
       changeSprite: (() => any) | any;
     }
   }
-  export namespace lua.server.RainBarrel.SRainBarrelGlobalObject {}
+  export namespace lua.server.RainBarrel.SRainBarrelGlobalObject { }
 }

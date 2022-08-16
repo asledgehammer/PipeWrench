@@ -20,38 +20,65 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:38:58.972Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.DebugUIs {
-    export class AdminContextMenu {
-      private constructor();
-
+    export abstract class AdminContextMenu {
       static [id: string]: any;
 
-      static doMenu: ((player: any, context: any, worldobjects: any, test: any) => any) | any;
+      /** @noSelf */
+      static doMenu: (player: any, context: any, worldobjects: any, test: any) => any;
 
-      static onDebugBlood: ((playerObj: any, vehicle: any) => any) | any;
+      /** @noSelf */
+      static onDebugBlood: (playerObj: any, vehicle: any) => any;
 
-      static onDebugColor: ((playerObj: any, vehicle: any) => any) | any;
+      /** @noSelf */
+      static onDebugColor: (playerObj: any, vehicle: any) => any;
 
-      static OnGetDoorKey: ((worldobjects: any, door: any, player: any) => any) | any;
+      /** @noSelf */
+      static OnDoorLock: (worldobjects: any, door: any) => any;
 
-      static onHordeManager: ((square: any, player: any) => any) | any;
+      /** @noSelf */
+      static OnGetDoorKey: (worldobjects: any, door: any, player: any) => any;
 
-      static onRemoveItemTool: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static onHordeManager: (square: any, player: any) => any;
 
-      static onSpawnVehicle: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static onMakeNoise: (square: any, playerObj: any, radius: any, volume: any) => any;
 
-      static onTeleportUI: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static OnRemoveAllZombiesClient: (zombie: any) => any;
+
+      /** @noSelf */
+      static onRemoveItemTool: (playerObj: any) => any;
+
+      /** @noSelf */
+      static OnSetDoorKeyID: (worldobjects: any, door: any) => any;
+
+      /** @noSelf */
+      static OnSetDoorKeyIDBuilding: (worldobjects: any, door: any) => any;
+
+      /** @noSelf */
+      static OnSetDoorKeyIDRandom: (worldobjects: any, door: any) => any;
+
+      /** @noSelf */
+      static onSpawnVehicle: (playerObj: any) => any;
+
+      /** @noSelf */
+      static onTeleportUI: (playerObj: any) => any;
+
+      /** @noSelf */
+      static onTriggerThunderUI: (playerObj: any) => any;
+
+      /** @noSelf */
+      static setForceLockDoor: (worldobjects: any, door: any, player: any) => any;
     }
   }
-  export namespace lua.client.DebugUIs.AdminContextMenu {}
+  export namespace lua.client.DebugUIs.AdminContextMenu { }
 }

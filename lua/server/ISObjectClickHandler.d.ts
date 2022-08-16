@@ -20,52 +20,62 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:38:59.947Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../reference.d.ts" />
 /// <reference path="../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.server {
-    export class ISObjectClickHandler {
-      private constructor();
-
+    export abstract class ISObjectClickHandler {
       static [id: string]: any;
 
-      static doClick: ((object: any, x: any, y: any) => any) | any;
+      /** @noSelf */
+      static doClick: (object: any, x: any, y: any) => any;
 
-      static doClickCurtain: ((object: any, playerNum: any, playerObj: any) => any) | any;
+      /** @noSelf */
+      static doClickCurtain: (object: any, playerNum: any, playerObj: any) => any;
 
-      static doClickDoor: ((object: any, playerNum: any, playerObj: any) => any) | any;
+      /** @noSelf */
+      static doClickDoor: (object: any, playerNum: any, playerObj: any) => any;
 
-      static doClickLightSwitch: ((object: any, playerNum: any, playerObj: any) => any) | any;
+      /** @noSelf */
+      static doClickLightSwitch: (object: any, playerNum: any, playerObj: any) => any;
 
-      static doClickSpecificObject: ((object: any, playerNum: any, playerObj: any) => any) | any;
+      /** @noSelf */
+      static doClickSpecificObject: (object: any, playerNum: any, playerObj: any) => any;
 
-      static doClickThumpable: ((object: any, playerNum: any, playerObj: any) => any) | any;
+      /** @noSelf */
+      static doClickThumpable: (object: any, playerNum: any, playerObj: any) => any;
 
-      static doClickWindow: ((object: any, playerNum: any, playerObj: any) => any) | any;
+      /** @noSelf */
+      static doClickWindow: (object: any, playerNum: any, playerObj: any) => any;
 
-      static doDoubleClick: ((object: any, x: any, y: any) => any) | any;
+      /** @noSelf */
+      static doDoubleClick: (object: any, x: any, y: any) => any;
 
-      static doRClick: ((object: any, x: any, y: any) => any) | any;
+      /** @noSelf */
+      static doRClick: (object: any, x: any, y: any) => any;
 
-      static doRDoubleClick: ((object: any, x: any, y: any) => any) | any;
+      /** @noSelf */
+      static doRDoubleClick: (object: any, x: any, y: any) => any;
 
-      static onObjectLeftMouseButtonDown: ((object: any, x: any, y: any) => any) | any;
+      /** @noSelf */
+      static onObjectLeftMouseButtonDown: (object: any, x: any, y: any) => any;
 
-      static onObjectLeftMouseButtonUp: ((object: any, x: any, y: any) => any) | any;
+      /** @noSelf */
+      static onObjectLeftMouseButtonUp: (object: any, x: any, y: any) => any;
 
-      static onObjectRightMouseButtonDown: ((object: any, x: any, y: any) => any) | any;
+      /** @noSelf */
+      static onObjectRightMouseButtonDown: (object: any, x: any, y: any) => any;
 
-      static onObjectRightMouseButtonUp: ((object: any, x: any, y: any) => any) | any;
+      /** @noSelf */
+      static onObjectRightMouseButtonUp: (object: any, x: any, y: any) => any;
 
-      static onTick: (() => any) | any;
+      /** @noSelf */
+      static onTick: () => any;
     }
   }
-  export namespace lua.server.ISObjectClickHandler {}
+  export namespace lua.server.ISObjectClickHandler { }
 }

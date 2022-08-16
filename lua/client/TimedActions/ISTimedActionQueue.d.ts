@@ -20,19 +20,16 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:02.391Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.TimedActions {
     /** @customConstructor ISTimedActionQueue:new */
-    export class ISTimedActionQueue extends lua.shared.ISBaseObject.ISBaseObject {
+    export class ISTimedActionQueue extends lua.shared.ISBaseObject {
       [id: string]: any;
       static [id: string]: any;
 
@@ -58,37 +55,43 @@ declare module 'PipeWrench' {
 
       tick: (() => any) | any;
 
-      static add: ((action: any) => any) | any;
+      /** @noSelf */
+      static add: (action: any) => any;
 
-      static addAfter: ((previousAction: any, action: any) => any) | any;
+      /** @noSelf */
+      static addAfter: (previousAction: any, action: any) => any;
 
-      static clear: ((character: any) => any) | any;
+      /** @noSelf */
+      static clear: (character: any) => any;
 
-      static getTimedActionQueue: ((character: any) => any) | any;
+      /** @noSelf */
+      static getTimedActionQueue: (character: any) => any;
 
-      static hasAction: ((action: any) => any) | any;
+      /** @noSelf */
+      static hasAction: (action: any) => any;
 
-      static isPlayerDoingAction: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static isPlayerDoingAction: (playerObj: any) => any;
 
-      static onTick: (() => any) | any;
+      /** @noSelf */
+      static onTick: () => any;
 
-      static queueActions:
-        | ((
-            character: any,
-            addActionsFunction: any,
-            arg1: any,
-            arg2: any,
-            arg3: any,
-            arg4: any,
-            arg5: any,
-            arg6: any,
-            arg7: any,
-            arg8: any,
-            arg9: any,
-            arg10: any
-          ) => any)
-        | any;
+      /** @noSelf */
+      static queueActions: (
+        character: any,
+        addActionsFunction: any,
+        arg1: any,
+        arg2: any,
+        arg3: any,
+        arg4: any,
+        arg5: any,
+        arg6: any,
+        arg7: any,
+        arg8: any,
+        arg9: any,
+        arg10: any
+      ) => any;
     }
   }
-  export namespace lua.client.TimedActions.ISTimedActionQueue {}
+  export namespace lua.client.TimedActions.ISTimedActionQueue { }
 }

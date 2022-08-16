@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:02.523Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.Tutorial {
     /** @customConstructor BandageStep:new */
     export class BandageStep extends lua.client.Tutorial.TutorialStep {
@@ -76,21 +73,29 @@ declare module 'PipeWrench' {
 
       OnBrothersDead: (() => any) | any;
 
-      static BandageYourself: (() => any) | any;
+      /** @noSelf */
+      static BandageYourself: () => any;
 
-      static CheckWindow: (() => any) | any;
+      /** @noSelf */
+      static CheckWindow: () => any;
 
-      static HealthOpen: (() => any) | any;
+      /** @noSelf */
+      static HealthOpen: () => any;
 
-      static OpenCurtain: (() => any) | any;
+      /** @noSelf */
+      static OpenCurtain: () => any;
 
-      static spawnBrothers: (() => any) | any;
+      /** @noSelf */
+      static spawnBrothers: () => any;
 
-      static ThroughDoor: (() => any) | any;
+      /** @noSelf */
+      static ThroughDoor: () => any;
 
-      static ThroughWindow: (() => any) | any;
+      /** @noSelf */
+      static ThroughWindow: () => any;
 
-      static Vault: (() => any) | any;
+      /** @noSelf */
+      static Vault: () => any;
     }
 
     /** @customConstructor FightStep:new */
@@ -202,7 +207,8 @@ declare module 'PipeWrench' {
 
       selectInventory: (() => any) | any;
 
-      static spawnPan: (() => any) | any;
+      /** @noSelf */
+      static spawnPan: () => any;
     }
 
     /** @customConstructor ShotgunStep:new */
@@ -248,21 +254,29 @@ declare module 'PipeWrench' {
 
       Shout: (() => any) | any;
 
-      static BackOverFence: (() => any) | any;
+      /** @noSelf */
+      static BackOverFence: () => any;
 
-      static BrothersDead: (() => any) | any;
+      /** @noSelf */
+      static BrothersDead: () => any;
 
-      static ClimbedFence: (() => any) | any;
+      /** @noSelf */
+      static ClimbedFence: () => any;
 
-      static OnSquare: (() => any) | any;
+      /** @noSelf */
+      static OnSquare: () => any;
 
-      static Outhouse: (() => any) | any;
+      /** @noSelf */
+      static Outhouse: () => any;
 
-      static Sprinted: (() => any) | any;
+      /** @noSelf */
+      static Sprinted: () => any;
 
-      static SurvivalGuideOpen: (() => any) | any;
+      /** @noSelf */
+      static SurvivalGuideOpen: () => any;
 
-      static TheEnd: (() => any) | any;
+      /** @noSelf */
+      static TheEnd: () => any;
     }
 
     /** @customConstructor SneakStep:new */
@@ -306,13 +320,17 @@ declare module 'PipeWrench' {
 
       spawnDad: (() => any) | any;
 
-      static OnSwingAtDad: ((owner: any, weapon: any, zed: any, dmg: any) => any) | any;
+      /** @noSelf */
+      static OnSwingAtDad: (owner: any, weapon: any, zed: any, dmg: any) => any;
 
-      static setZoom: ((depth: any) => any) | any;
+      /** @noSelf */
+      static setZoom: (depth: any) => any;
 
-      static Sneak: (() => any) | any;
+      /** @noSelf */
+      static Sneak: () => any;
 
-      static spawnShotgun: (() => any) | any;
+      /** @noSelf */
+      static spawnShotgun: () => any;
     }
 
     /** @customConstructor WalkToAdjacent:new */
@@ -349,35 +367,45 @@ declare module 'PipeWrench' {
       constructor();
     }
 
-    export class TutorialTests {
-      private constructor();
-
+    export abstract class TutorialTests {
       static [id: string]: any;
 
-      static addHoming: ((sq: any, yoffset: any, xoffset: any, color: any) => any) | any;
+      /** @noSelf */
+      static addHoming: (sq: any, yoffset: any, xoffset: any, color: any) => any;
 
-      static addMarker: ((sq: any, size: any) => any) | any;
+      /** @noSelf */
+      static addMarker: (sq: any, size: any) => any;
 
-      static HealthOpen: (() => any) | any;
+      /** @noSelf */
+      static HealthOpen: () => any;
 
-      static highlight: ((obj: any, thickness: any) => any) | any;
+      /** @noSelf */
+      static highlight: (obj: any, thickness: any) => any;
 
-      static LookedAround: (() => any) | any;
+      /** @noSelf */
+      static LookedAround: () => any;
 
-      static NotSkillsPage: (() => any) | any;
+      /** @noSelf */
+      static NotSkillsPage: () => any;
 
-      static PlayerInfoOpen: (() => any) | any;
+      /** @noSelf */
+      static PlayerInfoOpen: () => any;
 
-      static RemoveMarkers: (() => any) | any;
+      /** @noSelf */
+      static RemoveMarkers: () => any;
 
-      static SkillsPage: (() => any) | any;
+      /** @noSelf */
+      static SkillsPage: () => any;
 
-      static stopHighlight: ((obj: any) => any) | any;
+      /** @noSelf */
+      static stopHighlight: (obj: any) => any;
 
-      static ZoomedIn: (() => any) | any;
+      /** @noSelf */
+      static ZoomedIn: () => any;
 
-      static ZoomedOut: (() => any) | any;
+      /** @noSelf */
+      static ZoomedOut: () => any;
     }
   }
-  export namespace lua.client.Tutorial.Steps {}
+  export namespace lua.client.Tutorial.Steps { }
 }

@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.625Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor SandboxOptionsScreen:new */
     export class SandboxOptionsScreen extends lua.client.ISUI.ISPanelJoypad {
@@ -142,8 +139,9 @@ declare module 'PipeWrench' {
 
       syncStartDay: (() => any) | any;
 
-      static load: (() => any) | any;
+      /** @noSelf */
+      static load: () => any;
     }
   }
-  export namespace lua.client.OptionScreens.SandboxOptions {}
+  export namespace lua.client.OptionScreens.SandboxOptions { }
 }

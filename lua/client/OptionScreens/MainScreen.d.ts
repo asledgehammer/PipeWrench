@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.573Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor MainScreen:new */
     export class MainScreen extends lua.client.ISUI.ISPanelJoypad {
@@ -84,6 +81,8 @@ declare module 'PipeWrench' {
 
       firstFrame: any;
 
+      infoModList: any;
+
       infoRichText: any;
 
       inGame: any;
@@ -113,6 +112,8 @@ declare module 'PipeWrench' {
       mapSpawnSelect: any;
 
       maxMenuItemWidth: any;
+
+      modListDetail: any;
 
       modSelect: any;
 
@@ -198,6 +199,8 @@ declare module 'PipeWrench' {
 
       instantiate: (() => any) | any;
 
+      onClickModList: (() => any) | any;
+
       OnClickNews: (() => any) | any;
 
       onClickVersionDetail: (() => any) | any;
@@ -248,38 +251,54 @@ declare module 'PipeWrench' {
 
       updateBottomPanelButtons: (() => any) | any;
 
-      static checkMapsAvailable: ((mapName: any, activeMods: any, mapAvailable: any) => any) | any;
+      /** @noSelf */
+      static checkMapsAvailable: (mapName: any, activeMods: any, mapAvailable: any) => any;
 
-      static checkSaveFile: (() => any) | any;
+      /** @noSelf */
+      static checkSaveFile: () => any;
 
-      static checkTutorial: ((button: any) => any) | any;
+      /** @noSelf */
+      static checkTutorial: (button: any) => any;
 
-      static continueLatestSave: ((gameMode: any, saveName: any) => any) | any;
+      /** @noSelf */
+      static continueLatestSave: (gameMode: any, saveName: any) => any;
 
-      static continueLatestSaveAux: ((fromResetLua: any) => any) | any;
+      /** @noSelf */
+      static continueLatestSaveAux: (fromResetLua: any) => any;
 
-      static displayCheckSavefileModal: ((text: any) => any) | any;
+      /** @noSelf */
+      static displayCheckSavefileModal: (text: any) => any;
 
-      static onAcceptInvite: ((connectionString: any) => any) | any;
+      /** @noSelf */
+      static onAcceptInvite: (connectionString: any) => any;
 
-      static onCheckSavefileModalClick: ((button: any) => any) | any;
+      /** @noSelf */
+      static onCheckSavefileModalClick: (button: any) => any;
 
-      static OnJoypadBeforeDeactivate: ((index: any) => any) | any;
+      /** @noSelf */
+      static OnJoypadBeforeDeactivate: (index: any) => any;
 
-      static onMenuItemMouseDownMainMenu: ((item: any, x: any, y: any) => any) | any;
+      /** @noSelf */
+      static onMenuItemMouseDownMainMenu: (item: any, x: any, y: any) => any;
 
-      static onResetLua: ((reason: any) => any) | any;
+      /** @noSelf */
+      static onResetLua: (reason: any) => any;
 
-      static onResolutionChange: ((oldw: any, oldh: any, neww: any, newh: any) => any) | any;
+      /** @noSelf */
+      static onResolutionChange: (oldw: any, oldh: any, neww: any, newh: any) => any;
 
-      static OnTick: ((totalTicks: any) => any) | any;
+      /** @noSelf */
+      static OnTick: (totalTicks: any) => any;
 
-      static onTutorialControllerWarn: (() => any) | any;
+      /** @noSelf */
+      static onTutorialControllerWarn: () => any;
 
-      static resetLuaIfNeeded: (() => any) | any;
+      /** @noSelf */
+      static resetLuaIfNeeded: () => any;
 
-      static startTutorial: (() => any) | any;
+      /** @noSelf */
+      static startTutorial: () => any;
     }
   }
-  export namespace lua.client.OptionScreens.MainScreen {}
+  export namespace lua.client.OptionScreens.MainScreen { }
 }

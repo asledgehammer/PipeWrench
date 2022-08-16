@@ -20,32 +20,32 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.926Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../reference.d.ts" />
 /// <reference path="../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.shared {
-    export class SpawnRegionMgr {
-      private constructor();
-
+    export abstract class SpawnRegionMgr {
       static [id: string]: any;
 
-      static getSpawnRegions: (() => any) | any;
+      /** @noSelf */
+      static getSpawnRegions: () => any;
 
-      static getSpawnRegionsAux: (() => any) | any;
+      /** @noSelf */
+      static getSpawnRegionsAux: () => any;
 
-      static loadSpawnPointsFile: ((filename: any, server: any) => any) | any;
+      /** @noSelf */
+      static loadSpawnPointsFile: (filename: any, server: any) => any;
 
-      static loadSpawnRegions: ((regions: any) => any) | any;
+      /** @noSelf */
+      static loadSpawnRegions: (regions: any) => any;
 
-      static loadSpawnRegionsFile: ((filename: any, server: any) => any) | any;
+      /** @noSelf */
+      static loadSpawnRegionsFile: (filename: any, server: any) => any;
     }
   }
-  export namespace lua.shared.SpawnRegions {}
+  export namespace lua.shared.SpawnRegions { }
 }

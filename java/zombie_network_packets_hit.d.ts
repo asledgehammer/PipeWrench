@@ -21,12 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace zombie.network.packets.hit {
     /**
      * @customConstructor AttackVars.new
@@ -108,11 +107,6 @@ declare module 'PipeWrench' {
       getDescription(): string;
       /**
        * Method Parameters: 
-       *  - (Empty): string
-       */
-      getHitDescription(): string;
-      /**
-       * Method Parameters: 
        *  - (Empty): number
        */
       getPacketSizeBytes(): number;
@@ -178,6 +172,16 @@ declare module 'PipeWrench' {
       static readonly ZombieHitPlayer: zombie.network.packets.hit.HitCharacterPacket$HitType;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): HitType
+       */
+      static valueOf(arg0: string | null): zombie.network.packets.hit.HitCharacterPacket$HitType;
+
+      /** @noSelf */
+      static values(): zombie.network.packets.hit.HitCharacterPacket$HitType[];
+
     }
     /**
      * @customConstructor HitInfo.new
@@ -306,11 +310,6 @@ declare module 'PipeWrench' {
        *  - (Empty): string
        */
       getDescription(): string;
-      /**
-       * Method Parameters: 
-       *  - (Empty): string
-       */
-      getHitDescription(): string;
       /**
        * Method Parameters: 
        *  - (Empty): number

@@ -20,34 +20,35 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.265Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.shared.Logs {
-    export class ISPerkLog {
-      private constructor();
-
+    export abstract class ISPerkLog {
       static [id: string]: any;
 
-      static init: (() => any) | any;
+      /** @noSelf */
+      static init: () => any;
 
-      static logAllPerks: ((_character: any) => any) | any;
+      /** @noSelf */
+      static logAllPerks: (_character: any) => any;
 
-      static logCreatePlayer: ((_player: any) => any) | any;
+      /** @noSelf */
+      static logCreatePlayer: (_player: any) => any;
 
-      static logDeath: ((_character: any) => any) | any;
+      /** @noSelf */
+      static logDeath: (_character: any) => any;
 
-      static logLogin: ((_character: any) => any) | any;
+      /** @noSelf */
+      static logLogin: (_character: any) => any;
 
-      static logPerkLevelChange: ((_character: any, _perk: any, _perkLevel: any) => any) | any;
+      /** @noSelf */
+      static logPerkLevelChange: (_character: any, _perk: any, _perkLevel: any) => any;
     }
   }
-  export namespace lua.shared.Logs.ISPerkLog {}
+  export namespace lua.shared.Logs.ISPerkLog { }
 }

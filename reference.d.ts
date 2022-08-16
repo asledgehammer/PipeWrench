@@ -21,15 +21,13 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T23:58Z
+ * File generated at 2022-08-12T21:26Z
  */
 
 /////////////////////////////////////////////
 // [PARTIAL] : Java.reference.partial.d.ts //
 /////////////////////////////////////////////
 
-/// <reference path="../PipeWrench.d.ts" />
-/// <reference path="java/com_asledgehammer_crafthammer_api_event_log.d.ts" />
 /// <reference path="java/fmod_fmod.d.ts" />
 /// <reference path="java/gnu_trove_function.d.ts" />
 /// <reference path="java/gnu_trove_iterator.d.ts" />
@@ -234,6 +232,9 @@
 /// <reference path="lua/client/DebugUIs/AdminContextMenu.d.ts" />
 /// <reference path="lua/client/DebugUIs/AnimationClipViewer.d.ts" />
 /// <reference path="lua/client/DebugUIs/AttachmentEditorUI.d.ts" />
+/// <reference path="lua/client/DebugUIs/BrushTool/BrushToolChooseTileUI.d.ts" />
+/// <reference path="lua/client/DebugUIs/BrushTool/BrushToolManager.d.ts" />
+/// <reference path="lua/client/DebugUIs/BrushTool/FireBrushUI.d.ts" />
 /// <reference path="lua/client/DebugUIs/DebugChunkState/DebugChunkState_ObjectPickerPanel.d.ts" />
 /// <reference path="lua/client/DebugUIs/DebugChunkState/DebugChunkState_ObjectProperties.d.ts" />
 /// <reference path="lua/client/DebugUIs/DebugChunkState/DebugChunkState_SquarePanel.d.ts" />
@@ -301,6 +302,7 @@
 /// <reference path="lua/client/DebugUIs/DebugToolstrip.d.ts" />
 /// <reference path="lua/client/DebugUIs/DeviceInspector.d.ts" />
 /// <reference path="lua/client/DebugUIs/ISAttachedItemsUI.d.ts" />
+/// <reference path="lua/client/DebugUIs/ISExtAnimListDebugUI.d.ts" />
 /// <reference path="lua/client/DebugUIs/ISFastTeleportMove.d.ts" />
 /// <reference path="lua/client/DebugUIs/ISLootStressTestUI.d.ts" />
 /// <reference path="lua/client/DebugUIs/ISRemoveItemTool.d.ts" />
@@ -310,6 +312,7 @@
 /// <reference path="lua/client/DebugUIs/ISSpawnVehicleUI.d.ts" />
 /// <reference path="lua/client/DebugUIs/ISTeleportDebugUI.d.ts" />
 /// <reference path="lua/client/DebugUIs/ISTilesPickerDebugUI.d.ts" />
+/// <reference path="lua/client/DebugUIs/ISTriggerThunderUI.d.ts" />
 /// <reference path="lua/client/DebugUIs/LuaDebugger.d.ts" />
 /// <reference path="lua/client/DebugUIs/LuaDebugOutput.d.ts" />
 /// <reference path="lua/client/DebugUIs/LuaFileBrowser.d.ts" />
@@ -458,6 +461,7 @@
 /// <reference path="lua/client/ISUI/ISOptionPanel.d.ts" />
 /// <reference path="lua/client/ISUI/ISPanel.d.ts" />
 /// <reference path="lua/client/ISUI/ISPanelJoypad.d.ts" />
+/// <reference path="lua/client/ISUI/ISPauseModListUI.d.ts" />
 /// <reference path="lua/client/ISUI/ISPostDeathUI.d.ts" />
 /// <reference path="lua/client/ISUI/ISRadialMenu.d.ts" />
 /// <reference path="lua/client/ISUI/ISRadialProgressBar.d.ts" />
@@ -639,6 +643,7 @@
 /// <reference path="lua/client/RecordedMedia/ISMediaInfo.d.ts" />
 /// <reference path="lua/client/RecordedMedia/ISRecMediaAction.d.ts" />
 /// <reference path="lua/client/Seasons/ISUI/ISWeather.d.ts" />
+/// <reference path="lua/client/ServerCommands.d.ts" />
 /// <reference path="lua/client/SurvivalGuide/ISTutorialPageInfo.d.ts" />
 /// <reference path="lua/client/SurvivalGuide/ISTutorialPanel.d.ts" />
 /// <reference path="lua/client/SurvivalGuide/SurvivalGuideEntries.d.ts" />
@@ -842,6 +847,7 @@
 /// <reference path="lua/client/Vehicles/TimedActions/ISShutOffVehicleEngine.d.ts" />
 /// <reference path="lua/client/Vehicles/TimedActions/ISSmashVehicleWindow.d.ts" />
 /// <reference path="lua/client/Vehicles/TimedActions/ISStartVehicleEngine.d.ts" />
+/// <reference path="lua/client/Vehicles/TimedActions/ISStopVehicle.d.ts" />
 /// <reference path="lua/client/Vehicles/TimedActions/ISSwitchVehicleSeat.d.ts" />
 /// <reference path="lua/client/Vehicles/TimedActions/ISTakeEngineParts.d.ts" />
 /// <reference path="lua/client/Vehicles/TimedActions/ISTakeGasolineFromVehicle.d.ts" />
@@ -857,6 +863,7 @@
 /// <reference path="lua/client/XpSystem/ISUI/ISSkillProgressBar.d.ts" />
 /// <reference path="lua/server/BuildingObjects/ISAnvil.d.ts" />
 /// <reference path="lua/server/BuildingObjects/ISBarbedWire.d.ts" />
+/// <reference path="lua/server/BuildingObjects/ISBrushToolTileCursor.d.ts" />
 /// <reference path="lua/server/BuildingObjects/ISBSFurnace.d.ts" />
 /// <reference path="lua/server/BuildingObjects/ISBuildCursorMouse.d.ts" />
 /// <reference path="lua/server/BuildingObjects/ISBuildingObject.d.ts" />
@@ -968,6 +975,7 @@
 /// <reference path="lua/server/recipecode.d.ts" />
 /// <reference path="lua/server/Seasons/season.d.ts" />
 /// <reference path="lua/server/Seasons/seasonProps.d.ts" />
+/// <reference path="lua/server/TemplateReplacers.d.ts" />
 /// <reference path="lua/server/Traps/BuildingObjects/TrapBO.d.ts" />
 /// <reference path="lua/server/Traps/ISUI/ISTrapMenu.d.ts" />
 /// <reference path="lua/server/Traps/STrapGlobalObject.d.ts" />
@@ -1034,8 +1042,10 @@
 /// <reference path="lua/shared/Sandbox/Survivor.d.ts" />
 /// <reference path="lua/shared/SoundBanks/SoundBanks.d.ts" />
 /// <reference path="lua/shared/SpawnRegions.d.ts" />
+/// <reference path="lua/shared/StashDescriptions/LouisvilleStashDesc.d.ts" />
 /// <reference path="lua/shared/StashDescriptions/MarchRidgeStashDesc.d.ts" />
 /// <reference path="lua/shared/StashDescriptions/MulStashDesc.d.ts" />
+/// <reference path="lua/shared/StashDescriptions/RiversideStashDesc.d.ts" />
 /// <reference path="lua/shared/StashDescriptions/RosewoodStashDesc.d.ts" />
 /// <reference path="lua/shared/StashDescriptions/StashUtil.d.ts" />
 /// <reference path="lua/shared/StashDescriptions/WpStashDesc.d.ts" />
@@ -1046,5 +1056,4 @@
 /// <reference path="lua/shared/Util/LuaList.d.ts" />
 /// <reference path="lua/shared/Util/LuaNet.d.ts" />
 /// <reference path="lua/shared/Util/StringReplacer.d.ts" />
-/// <reference path="lua/shared/Util/Vector2.d.ts" />
 /// <reference path="lua/shared/VehicleZoneDefinition.d.ts" />

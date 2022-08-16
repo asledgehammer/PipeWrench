@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:02.504Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.Tutorial.ISUI {
     /** @customConstructor TutorialFocus:new */
     export class TutorialFocus extends lua.client.ISUI.ISPanel {
@@ -60,10 +57,12 @@ declare module 'PipeWrench' {
 
       onRightMouseUp: ((x: any, y: any) => any) | any;
 
-      static set: ((x: any, y: any, w: any, h: any) => any) | any;
+      /** @noSelf */
+      static set: (x: any, y: any, w: any, h: any) => any;
 
-      static unset: (() => any) | any;
+      /** @noSelf */
+      static unset: () => any;
     }
   }
-  export namespace lua.client.Tutorial.ISUI.TutorialFocus {}
+  export namespace lua.client.Tutorial.ISUI.TutorialFocus { }
 }

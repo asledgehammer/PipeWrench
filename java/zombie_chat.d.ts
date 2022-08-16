@@ -21,12 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace zombie.chat {
     /**
      * @customConstructor ChatBase.new
@@ -153,10 +152,10 @@ declare module 'PipeWrench' {
       sendMessageToChatMembers(arg0: zombie.chat.ChatMessage | zombie.chat.ServerChatMessage): void;
       /**
        * Method Parameters: 
-       *  - (UdpConnection arg0, ChatMessage arg1): void
        *  - (short arg0, ChatMessage arg1): void
+       *  - (UdpConnection arg0, ChatMessage arg1): void
        */
-      sendMessageToPlayer(arg0: zombie.core.raknet.UdpConnection | number, arg1: zombie.chat.ChatMessage): void;
+      sendMessageToPlayer(arg0: number | zombie.core.raknet.UdpConnection, arg1: zombie.chat.ChatMessage): void;
       /**
        * Method Parameters: 
        *  - (UdpConnection arg0): void
@@ -164,10 +163,10 @@ declare module 'PipeWrench' {
       sendPlayerJoinChatPacket(arg0: zombie.core.raknet.UdpConnection): void;
       /**
        * Method Parameters: 
-       *  - (short arg0): void
        *  - (UdpConnection arg0): void
+       *  - (short arg0): void
        */
-      sendPlayerLeaveChatPacket(arg0: number | zombie.core.raknet.UdpConnection): void;
+      sendPlayerLeaveChatPacket(arg0: zombie.core.raknet.UdpConnection | number): void;
       /**
        * Method Parameters: 
        *  - (ChatMessage arg0, DeviceData arg1): void
@@ -576,6 +575,16 @@ declare module 'PipeWrench' {
       static readonly SinglePlayer: zombie.chat.ChatMode;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): ChatMode
+       */
+      static valueOf(arg0: string | null): zombie.chat.ChatMode;
+
+      /** @noSelf */
+      static values(): zombie.chat.ChatMode[];
+
     }
     /**
      * @customConstructor ChatSettings.new
@@ -778,6 +787,16 @@ declare module 'PipeWrench' {
       static readonly Small: zombie.chat.ChatSettings$FontSize;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): FontSize
+       */
+      static valueOf(arg0: string | null): zombie.chat.ChatSettings$FontSize;
+
+      /** @noSelf */
+      static values(): zombie.chat.ChatSettings$FontSize[];
+
     }
     /**
      * @customConstructor ChatTab.new

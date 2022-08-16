@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:02.472Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.server.Traps {
     /** @customConstructor STrapGlobalObject:new */
     export class STrapGlobalObject extends lua.server.Map.SGlobalObject {
@@ -88,11 +85,15 @@ declare module 'PipeWrench' {
 
       isMetalTrap: (() => any) | any;
 
+      isWoodenTrap: (() => any) | any;
+
       reinitModData: ((square: any) => any) | any;
 
       removeAnimal: ((character: any) => any) | any;
 
       removeBait: ((character: any) => any) | any;
+
+      sendSound: ((soundName: any, square: any) => any) | any;
 
       setAnimal: ((animal: any) => any) | any;
 
@@ -104,8 +105,9 @@ declare module 'PipeWrench' {
 
       toObject: ((object: any, transmitData: any) => any) | any;
 
-      static SpawnDestroyItems: ((trapType: any, square: any, object: any) => any) | any;
+      /** @noSelf */
+      static SpawnDestroyItems: (trapType: any, square: any, object: any) => any;
     }
   }
-  export namespace lua.server.Traps.STrapGlobalObject {}
+  export namespace lua.server.Traps.STrapGlobalObject { }
 }

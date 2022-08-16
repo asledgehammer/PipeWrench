@@ -21,12 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace zombie.asset {
     /**
      * @customConstructor Asset.new
@@ -287,6 +286,16 @@ declare module 'PipeWrench' {
       static readonly READY: zombie.asset.Asset$State;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): State
+       */
+      static valueOf(arg0: string | null): zombie.asset.Asset$State;
+
+      /** @noSelf */
+      static values(): zombie.asset.Asset$State[];
+
     }
     /**
      * @customConstructor AssetManager.new

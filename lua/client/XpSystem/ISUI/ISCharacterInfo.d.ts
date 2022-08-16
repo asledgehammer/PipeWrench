@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:02.807Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.XpSystem.ISUI {
     /** @customConstructor ISCharacterInfo:new */
     export class ISCharacterInfo extends lua.client.ISUI.ISPanelJoypad {
@@ -94,10 +91,12 @@ declare module 'PipeWrench' {
 
       updateTooltipForJoypad: (() => any) | any;
 
-      static loadPerk: ((self: any) => any) | any;
+      /** @noSelf */
+      static loadPerk: (self: any) => any;
 
-      static onResolutionChange: ((oldw: any, oldh: any, neww: any, newh: any) => any) | any;
+      /** @noSelf */
+      static onResolutionChange: (oldw: any, oldh: any, neww: any, newh: any) => any;
     }
   }
-  export namespace lua.client.XpSystem.ISUI.ISCharacterInfo {}
+  export namespace lua.client.XpSystem.ISUI.ISCharacterInfo { }
 }

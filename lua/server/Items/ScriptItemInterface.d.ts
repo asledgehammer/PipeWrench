@@ -20,28 +20,26 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.121Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.server.Items {
-    export class ScriptItemInterface {
-      private constructor();
-
+    export abstract class ScriptItemInterface {
       static [id: string]: any;
 
-      static cloneItemType: ((newName: any, originalFullName: any) => any) | any;
+      /** @noSelf */
+      static cloneItemType: (newName: any, originalFullName: any) => any;
 
-      static instanceItemType: ((item: any) => any) | any;
+      /** @noSelf */
+      static instanceItemType: (item: any) => any;
 
-      static newItemType: ((name: any, displayname: any, type: any, inventoryIcon: any) => any) | any;
+      /** @noSelf */
+      static newItemType: (name: any, displayname: any, type: any, inventoryIcon: any) => any;
     }
   }
-  export namespace lua.server.Items.ScriptItemInterface {}
+  export namespace lua.server.Items.ScriptItemInterface { }
 }

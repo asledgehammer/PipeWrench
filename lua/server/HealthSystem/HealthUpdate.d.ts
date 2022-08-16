@@ -20,28 +20,26 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:38:59.923Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.server.HealthSystem {
-    export class healthUpdate {
-      private constructor();
-
+    export abstract class healthUpdate {
       static [id: string]: any;
 
-      static getBrokenWindow: ((feeler: any) => any) | any;
+      /** @noSelf */
+      static getBrokenWindow: (feeler: any) => any;
 
-      static scratchFromWindow: ((feeler: any) => any) | any;
+      /** @noSelf */
+      static scratchFromWindow: (feeler: any) => any;
 
-      static update: (() => any) | any;
+      /** @noSelf */
+      static update: () => any;
     }
   }
-  export namespace lua.server.HealthSystem.HealthUpdate {}
+  export namespace lua.server.HealthSystem.HealthUpdate { }
 }

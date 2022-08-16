@@ -20,19 +20,16 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.864Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.shared.Reloading {
     /** @customConstructor ISReloadManager:new */
-    export class ISReloadManager extends lua.shared.ISBaseObject.ISBaseObject {
+    export class ISReloadManager extends lua.shared.ISBaseObject {
       [id: string]: any;
       static [id: string]: any;
 
@@ -103,19 +100,21 @@ declare module 'PipeWrench' {
       stopReloadSuccess: (() => any) | any;
     }
 
-    export class aaa {
-      private constructor();
-
+    export abstract class aaa {
       static [id: string]: any;
 
-      static checkLoadedHook: ((character: any, chargeDelta: any) => any) | any;
+      /** @noSelf */
+      static checkLoadedHook: (character: any, chargeDelta: any) => any;
 
-      static fireShotHook: ((wielder: any, weapon: any) => any) | any;
+      /** @noSelf */
+      static fireShotHook: (wielder: any, weapon: any) => any;
 
-      static startRackingHook: ((pl: any) => any) | any;
+      /** @noSelf */
+      static startRackingHook: (pl: any) => any;
 
-      static startReloadHook: ((pl: any) => any) | any;
+      /** @noSelf */
+      static startReloadHook: (pl: any) => any;
     }
   }
-  export namespace lua.shared.Reloading.ISReloadManager {}
+  export namespace lua.shared.Reloading.ISReloadManager { }
 }

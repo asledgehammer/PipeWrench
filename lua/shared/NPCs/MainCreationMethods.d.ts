@@ -20,48 +20,56 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.420Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.shared.NPCs {
-    export class BaseGameCharacterDetails {
-      private constructor();
-
+    export abstract class BaseGameCharacterDetails {
       static [id: string]: any;
 
-      static CreateCharacterInstance: ((s: any) => any) | any;
+      /** @noSelf */
+      static CreateCharacterInstance: (s: any) => any;
 
-      static CreateCharacterStats: ((desc: any) => any) | any;
+      /** @noSelf */
+      static CreateCharacterStats: (desc: any) => any;
 
-      static DoFemaleForename: (() => any) | any;
+      /** @noSelf */
+      static DoFemaleForename: () => any;
 
-      static DoHairColor: (() => any) | any;
+      /** @noSelf */
+      static DoHairColor: () => any;
 
-      static DoMaleForename: (() => any) | any;
+      /** @noSelf */
+      static DoMaleForename: () => any;
 
-      static DoObservations: (() => any) | any;
+      /** @noSelf */
+      static DoObservations: () => any;
 
-      static DoProfessions: (() => any) | any;
+      /** @noSelf */
+      static DoProfessions: () => any;
 
-      static DoSpawnPoint: (() => any) | any;
+      /** @noSelf */
+      static DoSpawnPoint: () => any;
 
-      static DoSurname: (() => any) | any;
+      /** @noSelf */
+      static DoSurname: () => any;
 
-      static DoTraits: (() => any) | any;
+      /** @noSelf */
+      static DoTraits: () => any;
 
-      static DoTrouserColor: (() => any) | any;
+      /** @noSelf */
+      static DoTrouserColor: () => any;
 
-      static SetProfessionDescription: ((prof: any) => any) | any;
+      /** @noSelf */
+      static SetProfessionDescription: (prof: any) => any;
 
-      static SetTraitDescription: ((trait: any) => any) | any;
+      /** @noSelf */
+      static SetTraitDescription: (trait: any) => any;
     }
   }
-  export namespace lua.shared.NPCs.MainCreationMethods {}
+  export namespace lua.shared.NPCs.MainCreationMethods { }
 }

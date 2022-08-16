@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:02.628Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.Vehicles.ISUI {
     /** @customConstructor ISVehicleDashboard:new */
     export class ISVehicleDashboard extends lua.client.ISUI.ISPanel {
@@ -150,20 +147,30 @@ declare module 'PipeWrench' {
 
       setVehicle: ((vehicle: any) => any) | any;
 
-      static damageChecker: (() => any) | any;
+      /** @noSelf */
+      static damageChecker: () => any;
 
-      static damageFlick: ((character: any) => any) | any;
+      /** @noSelf */
+      static damageFlick: (character: any) => any;
 
-      static getVehicleCondition: ((vehicle: any) => any) | any;
+      /** @noSelf */
+      static getVehicleCondition: (vehicle: any) => any;
 
-      static onEnterVehicle: ((character: any) => any) | any;
+      /** @noSelf */
+      static onEnterVehicle: (character: any) => any;
 
-      static onExitVehicle: ((character: any) => any) | any;
+      /** @noSelf */
+      static onExitVehicle: (character: any) => any;
 
-      static OnGameStart: (() => any) | any;
+      /** @noSelf */
+      static onGameStart: () => any;
 
-      static onSwitchVehicleSeat: ((character: any) => any) | any;
+      /** @noSelf */
+      static OnGameStart: () => any;
+
+      /** @noSelf */
+      static onSwitchVehicleSeat: (character: any) => any;
     }
   }
-  export namespace lua.client.Vehicles.ISUI.ISVehicleDashboard {}
+  export namespace lua.client.Vehicles.ISUI.ISVehicleDashboard { }
 }

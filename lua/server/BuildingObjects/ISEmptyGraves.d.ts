@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:38:58.491Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.server.BuildingObjects {
     /** @customConstructor ISEmptyGraves:new */
     export class ISEmptyGraves extends lua.server.BuildingObjects.ISBuildingObject {
@@ -68,16 +65,21 @@ declare module 'PipeWrench' {
 
       setInfo: ((square: any, north: any, sprite: any, cell: any, spriteType: any) => any) | any;
 
-      static canDigHere: ((worldObjects: any) => any) | any;
+      /** @noSelf */
+      static canDigHere: (worldObjects: any) => any;
 
-      static getMaxCorpses: ((grave: any) => any) | any;
+      /** @noSelf */
+      static getMaxCorpses: (grave: any) => any;
 
-      static isGraveFilledIn: ((grave: any) => any) | any;
+      /** @noSelf */
+      static isGraveFilledIn: (grave: any) => any;
 
-      static isGraveFullOfCorpses: ((grave: any) => any) | any;
+      /** @noSelf */
+      static isGraveFullOfCorpses: (grave: any) => any;
 
-      static shovelledFloorCanDig: ((square: any) => any) | any;
+      /** @noSelf */
+      static shovelledFloorCanDig: (square: any) => any;
     }
   }
-  export namespace lua.server.BuildingObjects.ISEmptyGraves {}
+  export namespace lua.server.BuildingObjects.ISEmptyGraves { }
 }

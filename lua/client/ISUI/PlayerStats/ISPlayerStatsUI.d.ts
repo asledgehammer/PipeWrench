@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.022Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.ISUI.PlayerStats {
     /** @customConstructor ISPlayerStatsUI:new */
     export class ISPlayerStatsUI extends lua.client.ISUI.ISPanel {
@@ -100,6 +97,8 @@ declare module 'PipeWrench' {
 
       warningPointsBtn: any;
 
+      weightBtn: any;
+
       windows: any;
 
       xoffset: any;
@@ -126,6 +125,8 @@ declare module 'PipeWrench' {
 
       onChangeProfession: ((button: any, prof: any) => any) | any;
 
+      onChangeWeight: ((button: any, player: any) => any) | any;
+
       onMouseWheelXXX: ((del: any) => any) | any;
 
       onOptionMouseDown: ((button: any, x: any, y: any) => any) | any;
@@ -144,18 +145,24 @@ declare module 'PipeWrench' {
 
       updateColumns: (() => any) | any;
 
-      static loadPerks: ((self: any) => any) | any;
+      /** @noSelf */
+      static loadPerks: (self: any) => any;
 
-      static loadProfession: ((self: any) => any) | any;
+      /** @noSelf */
+      static loadProfession: (self: any) => any;
 
-      static loadTraits: ((self: any) => any) | any;
+      /** @noSelf */
+      static loadTraits: (self: any) => any;
 
-      static loadUserlog: ((self: any) => any) | any;
+      /** @noSelf */
+      static loadUserlog: (self: any) => any;
 
-      static OnOpenPanel: (() => any) | any;
+      /** @noSelf */
+      static OnOpenPanel: () => any;
 
-      static receiveUserLog: ((username: any, logs: any) => any) | any;
+      /** @noSelf */
+      static receiveUserLog: (username: any, logs: any) => any;
     }
   }
-  export namespace lua.client.ISUI.PlayerStats.ISPlayerStatsUI {}
+  export namespace lua.client.ISUI.PlayerStats.ISPlayerStatsUI { }
 }

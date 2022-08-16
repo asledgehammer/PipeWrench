@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.646Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor BaseServerSettingsPanel:new */
     export class BaseServerSettingsPanel extends lua.client.ISUI.ISPanelJoypad {
@@ -74,7 +71,8 @@ declare module 'PipeWrench' {
 
       onResolutionChange: ((oldw: any, oldh: any, neww: any, newh: any) => any) | any;
 
-      static getSandboxSettingsTable: (() => any) | any;
+      /** @noSelf */
+      static getSandboxSettingsTable: () => any;
     }
 
     /** @customConstructor SpawnRegionsNameFilePanel:new */
@@ -111,9 +109,7 @@ declare module 'PipeWrench' {
       setJoypadFocused: ((focused: any, joypadData: any) => any) | any;
     }
 
-    export class DefaultServerSettings {
-      private constructor();
-
+    export abstract class DefaultServerSettings {
       static [id: string]: any;
 
       insertUnique: ((_table: any, value: any) => any) | any;
@@ -123,5 +119,5 @@ declare module 'PipeWrench' {
       setServerOptionValue: ((settings: any, option: any, _table: any) => any) | any;
     }
   }
-  export namespace lua.client.OptionScreens.ServerSettingsScreen {}
+  export namespace lua.client.OptionScreens.ServerSettingsScreen { }
 }

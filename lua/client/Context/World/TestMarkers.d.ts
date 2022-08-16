@@ -20,28 +20,26 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:38:58.965Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.Context.World {
-    export class TestMarkers {
-      private constructor();
-
+    export abstract class TestMarkers {
       static [id: string]: any;
 
-      static add: ((_circle: any, _pointer: any) => any) | any;
+      /** @noSelf */
+      static add: (_circle: any, _pointer: any) => any;
 
-      static enableCurrent: (() => any) | any;
+      /** @noSelf */
+      static enableCurrent: () => any;
 
-      static ontick: (() => any) | any;
+      /** @noSelf */
+      static ontick: () => any;
     }
   }
-  export namespace lua.client.Context.World.TestMarkers {}
+  export namespace lua.client.Context.World.TestMarkers { }
 }

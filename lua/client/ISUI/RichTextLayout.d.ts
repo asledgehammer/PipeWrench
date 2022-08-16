@@ -20,19 +20,16 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.036Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISRichTextLayout:new */
-    export class ISRichTextLayout extends lua.shared.ISBaseObject.ISBaseObject {
+    export class ISRichTextLayout extends lua.shared.ISBaseObject {
       [id: string]: any;
       static [id: string]: any;
 
@@ -113,5 +110,5 @@ declare module 'PipeWrench' {
       setWidth: ((width: any) => any) | any;
     }
   }
-  export namespace lua.client.ISUI.RichTextLayout {}
+  export namespace lua.client.ISUI.RichTextLayout { }
 }

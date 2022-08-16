@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.479Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor ConnectToServer:new */
     export class ConnectToServer extends lua.client.ISUI.ISPanelJoypad {
@@ -72,15 +69,15 @@ declare module 'PipeWrench' {
 
       connect:
         | ((
-            previousScreen: any,
-            serverName: any,
-            userName: any,
-            password: any,
-            IP: any,
-            localIP: any,
-            port: any,
-            serverPassword: any
-          ) => any)
+          previousScreen: any,
+          serverName: any,
+          userName: any,
+          password: any,
+          IP: any,
+          localIP: any,
+          port: any,
+          serverPassword: any
+        ) => any)
         | any;
 
       connectCoop: ((previousScreen: any, serverSteamID: any) => any) | any;
@@ -102,5 +99,5 @@ declare module 'PipeWrench' {
       render: (() => any) | any;
     }
   }
-  export namespace lua.client.OptionScreens.ConnectToServer {}
+  export namespace lua.client.OptionScreens.ConnectToServer { }
 }

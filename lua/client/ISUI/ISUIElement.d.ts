@@ -20,128 +20,78 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:00.718Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.ISUI {
-    /**
-     * @customConstructor ISUIElement:new
-     * @author [JabDoesThings]
-     *
-     * **ISUIElement** is the base UI class in the Project Zomboid Lua codebase.
-     */
-    export class ISUIElement extends lua.shared.ISBaseObject.ISBaseObject {
+    /** @customConstructor ISUIElement:new */
+    export class ISUIElement extends lua.shared.ISBaseObject {
       [id: string]: any;
       static [id: string]: any;
 
-      /** A counter for assigning to new UI elements. */
-      static IDMax: number;
+      static IDMax: any;
 
-      anchorBottom: boolean;
+      anchorBottom: any;
 
-      anchorLeft: boolean;
+      anchorLeft: any;
 
-      anchorRight: boolean;
+      anchorRight: any;
 
-      anchorTop: boolean;
+      anchorTop: any;
 
-      children: { [id: string]: ISUIElement };
+      children: any;
 
-      /** Unknown Type */
       controller: any;
 
-      dock: string;
+      dock: any;
 
-      enabled: boolean;
+      enabled: any;
 
-      forceCursorVisible: boolean;
+      forceCursorVisible: any;
 
-      /** The height of the UI element. (In pixels) */
-      height: boolean;
+      height: any;
 
-      /** Horizontal Scrollbar. */
-      hscroll: ISScrollBar;
+      hscroll: any;
 
-      /** The internal ID of the UI element. */
-      ID: number;
+      ID: any;
 
-      /**
-       * The Java instance of the UI element.
-       *
-       * This is used to communicate with the game's UI engine.
-       */
-      javaObject: PipeWrench.UIElement;
+      javaObject: any;
 
-      /** Some kind of Joypad data. */
       joyfocus: any;
 
-      /** The minimum height of the UI element. (In pixels) */
-      minimumHeight: number;
+      minimumHeight: any;
 
-      /** The minimum width of the UI element. (In pixels) */
-      minimumWidth: number;
+      minimumWidth: any;
 
-      /** A callback function for double clicking. */
       onMouseDoubleClick: any;
 
-      /** True if the UI element is removed from the UI manager. */
-      removed: boolean;
+      removed: any;
 
-      scrollwidth: number;
+      scrollwidth: any;
 
-      /** Related to 'onMouseDoubleClick'. */
       target: any;
 
-      /** Vertical Scrollbar. */
-      vscroll: ISScrollBar;
+      vscroll: any;
 
-      wantKeyEvents: boolean;
+      wantKeyEvents: any;
 
-      /** The width of the UI element. (In pixels) */
-      width: number;
+      width: any;
 
-      /** The x coordinate on the screen. (In pixels) */
-      x: number;
+      x: any;
 
-      /** The y coordinate on the screen. (In pixels) */
-      y: number;
+      y: any;
 
-      /**
-       * @param x - The x coordinate on the screen. (In pixels)
-       * @param y - The y coordinate on the screen. (In pixels)
-       * @param width - The width of the UI element. (In pixels)
-       * @param height - The height of the UI element. (In pixels)
-       */
-      constructor(x: number, y: number, width: number, height: number);
+      constructor(x: any, y: any, width: any, height: any);
 
-      /**
-       * Adds a child UI element to this UI element.
-       *
-       * @param other - The UI element to add as a child to this UI element.
-       */
-      addChild: (other: ISUIElement) => void;
+      addChild: ((otherElement: any) => any) | any;
 
-      /**
-       * Adds a vertical ISScrollBar to the UI element.
-       *
-       * @param addHorizontal - If true, a horizontal ISScrollBar is initialized as well.
-       */
-      addScrollBars: (addHorizontal: boolean) => void;
+      addScrollBars: ((addHorizontal: any) => any) | any;
 
-      /**
-       * Adds this UI element to the UI manager for the game.
-       *
-       * (NOTE: This means that this element is a root element with no parent)
-       *
-       */
-      addToUIManager: () => void;
+      addToUIManager: (() => any) | any;
 
       backMost: (() => any) | any;
 
@@ -191,20 +141,20 @@ declare module 'PipeWrench' {
 
       drawTextureAllPoint:
         | ((
-            texture: any,
-            tlx: any,
-            tly: any,
-            trx: any,
-            _try_: any,
-            brx: any,
-            bry: any,
-            blx: any,
-            bly: any,
-            r: any,
-            g: any,
-            b: any,
-            a: any
-          ) => any)
+          texture: any,
+          tlx: any,
+          tly: any,
+          trx: any,
+          _try_: any,
+          brx: any,
+          bry: any,
+          blx: any,
+          bly: any,
+          r: any,
+          g: any,
+          b: any,
+          a: any
+        ) => any)
         | any;
 
       DrawTextureAngle: ((tex: any, centerX: any, centerY: any, angle: any) => any) | any;
@@ -444,5 +394,5 @@ declare module 'PipeWrench' {
       wrapInCollapsableWindow: ((title: any, resizable: any, subClass: any) => any) | any;
     }
   }
-  export namespace lua.client.ISUI.ISUIElement {}
+  export namespace lua.client.ISUI.ISUIElement { }
 }

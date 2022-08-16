@@ -21,12 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace zombie.core.fonts {
     /**
      * @customConstructor AngelCodeFont.new
@@ -172,11 +171,11 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (Empty): void
+       *  - (WrappedBuffer arg0): void
        *  - (boolean[] arg0): void
        *  - (BooleanGrid arg0): void
-       *  - (WrappedBuffer arg0): void
        */
-      createMask(arg0?: boolean[] | zombie.core.utils.BooleanGrid | zombie.core.utils.WrappedBuffer): void;
+      createMask(arg0?: zombie.core.utils.WrappedBuffer | boolean[] | zombie.core.utils.BooleanGrid): void;
       /**
        * Method Parameters: 
        *  - (Empty): void

@@ -21,12 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace zombie.util {
     /**
      * @customConstructor BufferedRandomAccessFile.new
@@ -160,11 +159,11 @@ declare module 'PipeWrench' {
       skipBytes(arg0: number): number;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (byte[] arg0): void
+       *  - (int arg0): void
        *  - (byte[] arg0, int arg1, int arg2): void
        */
-      write(arg0: number | number[], arg1?: number, arg2?: number): void;
+      write(arg0: number[] | number, arg1?: number, arg2?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void

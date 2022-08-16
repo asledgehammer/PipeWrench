@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:00.654Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISTradingUI:new */
     export class ISTradingUI extends lua.client.ISUI.ISPanel {
@@ -116,16 +113,21 @@ declare module 'PipeWrench' {
 
       yourOfferMouseUp: ((x: any, y: any) => any) | any;
 
-      static AcceptedTrade: ((accepted: any) => any) | any;
+      /** @noSelf */
+      static AcceptedTrade: (accepted: any) => any;
 
-      static OtherAddNewItem: ((player: any, item: any) => any) | any;
+      /** @noSelf */
+      static OtherAddNewItem: (player: any, item: any) => any;
 
-      static ReceiveTradeRequest: ((requester: any) => any) | any;
+      /** @noSelf */
+      static ReceiveTradeRequest: (requester: any) => any;
 
-      static RemoveItem: ((player: any, index: any) => any) | any;
+      /** @noSelf */
+      static RemoveItem: (player: any, index: any) => any;
 
-      static UpdateState: ((player: any, state: any) => any) | any;
+      /** @noSelf */
+      static UpdateState: (player: any, state: any) => any;
     }
   }
-  export namespace lua.client.ISUI.ISTradingUI {}
+  export namespace lua.client.ISUI.ISTradingUI { }
 }

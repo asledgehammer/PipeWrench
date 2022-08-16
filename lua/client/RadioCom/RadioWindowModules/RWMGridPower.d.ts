@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.754Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.RadioCom.RadioWindowModules {
     /** @customConstructor RWMGridPower:new */
     export class RWMGridPower extends lua.client.RadioCom.RadioWindowModules.RWMPanel {
@@ -45,5 +42,5 @@ declare module 'PipeWrench' {
       toggleOnOff: (() => any) | any;
     }
   }
-  export namespace lua.client.RadioCom.RadioWindowModules.RWMGridPower {}
+  export namespace lua.client.RadioCom.RadioWindowModules.RWMGridPower { }
 }

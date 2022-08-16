@@ -20,19 +20,16 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:02.536Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.Tutorial {
     /** @customConstructor TutorialStep:new */
-    export class TutorialStep extends lua.shared.ISBaseObject.ISBaseObject {
+    export class TutorialStep extends lua.shared.ISBaseObject {
       [id: string]: any;
       static [id: string]: any;
 
@@ -42,18 +39,18 @@ declare module 'PipeWrench' {
 
       addMessage:
         | ((
-            text: any,
-            x: any,
-            y: any,
-            w: any,
-            h: any,
-            clickToSkip: any,
-            test: any,
-            focusx: any,
-            focusy: any,
-            focusw: any,
-            focush: any
-          ) => any)
+          text: any,
+          x: any,
+          y: any,
+          w: any,
+          h: any,
+          clickToSkip: any,
+          test: any,
+          focusx: any,
+          focusy: any,
+          focusw: any,
+          focush: any
+        ) => any)
         | any;
 
       begin: (() => any) | any;
@@ -69,5 +66,5 @@ declare module 'PipeWrench' {
       onClose: ((message: any) => any) | any;
     }
   }
-  export namespace lua.client.Tutorial.TutorialStep {}
+  export namespace lua.client.Tutorial.TutorialStep { }
 }

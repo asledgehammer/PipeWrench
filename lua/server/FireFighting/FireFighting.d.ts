@@ -20,32 +20,32 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:38:59.799Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.server.FireFighting {
-    export class FireFighting {
-      private constructor();
-
+    export abstract class FireFighting {
       static [id: string]: any;
 
-      static getExtinguisher: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static getExtinguisher: (playerObj: any) => any;
 
-      static getExtinguisherUses: ((item: any) => any) | any;
+      /** @noSelf */
+      static getExtinguisherUses: (item: any) => any;
 
-      static getSquareToExtinguish: ((square: any) => any) | any;
+      /** @noSelf */
+      static getSquareToExtinguish: (square: any) => any;
 
-      static isExtinguisher: ((item: any) => any) | any;
+      /** @noSelf */
+      static isExtinguisher: (item: any) => any;
 
-      static isSquareToExtinguish: ((square: any) => any) | any;
+      /** @noSelf */
+      static isSquareToExtinguish: (square: any) => any;
     }
   }
-  export namespace lua.server.FireFighting.FireFighting {}
+  export namespace lua.server.FireFighting.FireFighting { }
 }

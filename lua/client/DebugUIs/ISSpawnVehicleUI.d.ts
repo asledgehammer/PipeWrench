@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:38:59.538Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.DebugUIs {
     /** @customConstructor ISSpawnVehicleUI:new */
     export class ISSpawnVehicleUI extends lua.client.ISUI.ISPanelJoypad {
@@ -40,34 +37,40 @@ declare module 'PipeWrench' {
 
       close: any;
 
+      getKey: any;
+
       name: any;
 
       player: any;
 
-      spawn: any;
+      repair: any;
 
-      target: any;
+      spawn: any;
 
       titlebarbkg: any;
 
       vehicle: any;
 
-      vehicles: any;
+      vehicleComboBox: any;
 
-      constructor(x: any, y: any, width: any, height: any, player: any, target: any);
+      constructor(x: any, y: any, width: any, height: any, player: any);
 
       destroy: (() => any) | any;
 
       getVehicle: (() => any) | any;
 
-      onBoolOptionsChange: ((index: any, selected: any) => any) | any;
-
       onClick: ((button: any) => any) | any;
+
+      onSelectOption: (() => any) | any;
+
+      populateList: (() => any) | any;
 
       render: (() => any) | any;
 
       titleBarHeight: (() => any) | any;
+
+      update: (() => any) | any;
     }
   }
-  export namespace lua.client.DebugUIs.ISSpawnVehicleUI {}
+  export namespace lua.client.DebugUIs.ISSpawnVehicleUI { }
 }

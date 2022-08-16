@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:00.981Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.ISUI.Maps {
     /** @customConstructor ISWorldMapSymbols:new */
     export class ISWorldMapSymbols extends lua.client.ISUI.ISPanelJoypad {
@@ -162,11 +159,12 @@ declare module 'PipeWrench' {
 
       updateSymbolColors: (() => any) | any;
 
-      static RequiredWidth: (() => any) | any;
+      /** @noSelf */
+      static RequiredWidth: () => any;
     }
 
     /** @customConstructor ISWorldMapSymbolTool:new */
-    export class ISWorldMapSymbolTool extends lua.shared.ISBaseObject.ISBaseObject {
+    export class ISWorldMapSymbolTool extends lua.shared.ISBaseObject {
       [id: string]: any;
       static [id: string]: any;
 
@@ -285,5 +283,5 @@ declare module 'PipeWrench' {
       removeAnnotation: (() => any) | any;
     }
   }
-  export namespace lua.client.ISUI.Maps.ISWorldMapSymbols {}
+  export namespace lua.client.ISUI.Maps.ISWorldMapSymbols { }
 }

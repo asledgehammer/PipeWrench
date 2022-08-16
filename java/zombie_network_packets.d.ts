@@ -21,12 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace zombie.network.packets {
     /**
      * @customConstructor DeadCharacterPacket.new
@@ -41,21 +40,6 @@ declare module 'PipeWrench' {
       protected constructor();
       /**
        * Method Parameters: 
-       *  - (Empty): number
-       */
-      getAngle(): number;
-      /**
-       * Method Parameters: 
-       *  - (Empty): zombie.characters.IsoGameCharacter
-       */
-      getCharacter(): zombie.characters.IsoGameCharacter;
-      /**
-       * Method Parameters: 
-       *  - (Empty): number
-       */
-      getCharacterFlags(): number;
-      /**
-       * Method Parameters: 
        *  - (Empty): string
        */
       getDeathDescription(): string;
@@ -66,39 +50,9 @@ declare module 'PipeWrench' {
       getDescription(): string;
       /**
        * Method Parameters: 
-       *  - (Empty): zombie.iso.IsoDirections
-       */
-      getDirection(): zombie.iso.IsoDirections;
-      /**
-       * Method Parameters: 
-       *  - (Empty): number
-       */
-      getId(): number;
-      /**
-       * Method Parameters: 
-       *  - (Empty): zombie.characters.IsoGameCharacter
-       */
-      getKiller(): zombie.characters.IsoGameCharacter;
-      /**
-       * Method Parameters: 
        *  - (Empty): number
        */
       getPacketSizeBytes(): number;
-      /**
-       * Method Parameters: 
-       *  - (Empty): number
-       */
-      getX(): number;
-      /**
-       * Method Parameters: 
-       *  - (Empty): number
-       */
-      getY(): number;
-      /**
-       * Method Parameters: 
-       *  - (Empty): number
-       */
-      getZ(): number;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -116,11 +70,6 @@ declare module 'PipeWrench' {
       parse(arg0: java.nio.ByteBuffer, arg1: zombie.core.raknet.UdpConnection): void;
       /**
        * Method Parameters: 
-       *  - (ByteBuffer arg0): void
-       */
-      parseDeadBodyInventory(arg0: java.nio.ByteBuffer): void;
-      /**
-       * Method Parameters: 
        *  - (Empty): void
        */
       process(): void;
@@ -134,11 +83,6 @@ declare module 'PipeWrench' {
        *  - (ByteBufferWriter arg0): void
        */
       write(arg0: zombie.core.network.ByteBufferWriter): void;
-      /**
-       * Method Parameters: 
-       *  - (ByteBufferWriter arg0): void
-       */
-      writeCharacterInventory(arg0: zombie.core.network.ByteBufferWriter): void;
     }
     /**
      * @customConstructor PlayerPacket.new
@@ -224,6 +168,90 @@ declare module 'PipeWrench' {
        *  - (Empty Constructor)
        */
       constructor();
+    }
+    /**
+     * @customConstructor ValidatePacket.new
+     * @
+     * [CLASS] zombie.network.packets.ValidatePacket
+     */
+    export class ValidatePacket {
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       */
+      constructor();
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getDescription(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getPacketSizeBytes(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isConsistent(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      log(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (ByteBuffer arg0, UdpConnection arg1): void
+       */
+      parse(arg0: java.nio.ByteBuffer, arg1: zombie.core.raknet.UdpConnection): void;
+      /**
+       * Method Parameters: 
+       *  - (UdpConnection arg0): void
+       */
+      process(arg0: zombie.core.raknet.UdpConnection): void;
+      /**
+       * Method Parameters: 
+       *  - (UdpConnection arg0): void
+       */
+      setSalt(arg0: zombie.core.raknet.UdpConnection): void;
+      /**
+       * Method Parameters: 
+       *  - (ByteBufferWriter arg0): void
+       */
+      write(arg0: zombie.core.network.ByteBufferWriter): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (UdpConnection arg0): boolean
+       */
+      static isUntouchable(arg0: zombie.core.raknet.UdpConnection): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (UdpConnection arg0): void
+       */
+      static update(arg0: zombie.core.raknet.UdpConnection): void;
+    }
+    /** [ENUM] zombie.network.packets.ValidatePacket$ValidateState */
+    export class ValidatePacket$ValidateState {
+      protected constructor();
+      static readonly Request: zombie.network.packets.ValidatePacket$ValidateState;
+      static readonly Success: zombie.network.packets.ValidatePacket$ValidateState;
+      name(): string;
+      ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): ValidateState
+       */
+      static valueOf(arg0: string | null): zombie.network.packets.ValidatePacket$ValidateState;
+
+      /** @noSelf */
+      static values(): zombie.network.packets.ValidatePacket$ValidateState[];
+
     }
   }
 }

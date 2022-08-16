@@ -21,12 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace zombie.iso.areas.isoregion {
     /** [ENUM] zombie.iso.areas.isoregion.IsoRegionLogType */
     export class IsoRegionLogType {
@@ -35,6 +34,16 @@ declare module 'PipeWrench' {
       static readonly Warn: zombie.iso.areas.isoregion.IsoRegionLogType;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): IsoRegionLogType
+       */
+      static valueOf(arg0: string | null): zombie.iso.areas.isoregion.IsoRegionLogType;
+
+      /** @noSelf */
+      static values(): zombie.iso.areas.isoregion.IsoRegionLogType[];
+
     }
     /**
      * @customConstructor IsoRegions.new

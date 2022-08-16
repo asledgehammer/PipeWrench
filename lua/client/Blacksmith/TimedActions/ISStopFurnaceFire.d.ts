@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:38:58.318Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.Blacksmith.TimedActions {
     /** @customConstructor ISStopFurnaceFire:new */
     export class ISStopFurnaceFire extends lua.shared.TimedActions.ISBaseTimedAction {
@@ -41,5 +38,5 @@ declare module 'PipeWrench' {
       constructor(furnace: any, character: any);
     }
   }
-  export namespace lua.client.Blacksmith.TimedActions.ISStopFurnaceFire {}
+  export namespace lua.client.Blacksmith.TimedActions.ISStopFurnaceFire { }
 }

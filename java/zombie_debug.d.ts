@@ -21,12 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace zombie.debug {
     /**
      * @customConstructor BooleanDebugOption.new
@@ -142,7 +141,9 @@ declare module 'PipeWrench' {
       /** zombie.debug.DebugLogStream */
       static readonly Combat?: zombie.debug.DebugLogStream;
       /** zombie.debug.DebugLogStream */
-      static readonly Craftboid?: zombie.debug.DebugLogStream;
+      static readonly Damage?: zombie.debug.DebugLogStream;
+      /** zombie.debug.DebugLogStream */
+      static readonly Death?: zombie.debug.DebugLogStream;
       /** zombie.debug.DebugLogStream */
       static readonly FileIO?: zombie.debug.DebugLogStream;
       /** zombie.debug.DebugLogStream */
@@ -176,11 +177,7 @@ declare module 'PipeWrench' {
       /** zombie.debug.DebugLogStream */
       static readonly Script?: zombie.debug.DebugLogStream;
       /** zombie.debug.DebugLogStream */
-      static readonly Security?: zombie.debug.DebugLogStream;
-      /** zombie.debug.DebugLogStream */
       static readonly Shader?: zombie.debug.DebugLogStream;
-      /** zombie.debug.DebugLogStream */
-      static readonly Sledgehammer?: zombie.debug.DebugLogStream;
       /** zombie.debug.DebugLogStream */
       static readonly Sound?: zombie.debug.DebugLogStream;
       /** zombie.debug.DebugLogStream */
@@ -195,8 +192,6 @@ declare module 'PipeWrench' {
       static readonly Voice?: zombie.debug.DebugLogStream;
       /** zombie.debug.DebugLogStream */
       static readonly Zombie?: zombie.debug.DebugLogStream;
-      /** java.util.Map<java.util.UUID, java.util.List<com.asledgehammer.crafthammer.api.event.log.LogListener>> */
-      static readonly listeners?: java.util.Map<java.util.UUID, java.util.List<com.asledgehammer.crafthammer.api.event.log.LogListener>>;
       /** boolean */
       static printServerTime: boolean;
 
@@ -209,23 +204,9 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (UUID arg0, LogListener arg1): void
+       *  - (DebugType arg0, LogSeverity arg1): void
        */
-      static addListener(arg0: java.util.UUID, arg1: com.asledgehammer.crafthammer.api.event.log.LogListener): void;
-      /**
-       * @noSelf
-       *
-       * Method Parameters: 
-       *  - (DebugType arg0): void
-       */
-      static disableLog(arg0: zombie.debug.DebugType): void;
-      /**
-       * @noSelf
-       *
-       * Method Parameters: 
-       *  - (DebugType arg0): void
-       */
-      static enableLog(arg0: zombie.debug.DebugType): void;
+      static enableLog(arg0: zombie.debug.DebugType, arg1: zombie.debug.LogSeverity): void;
       /**
        * @noSelf
        *
@@ -275,8 +256,9 @@ declare module 'PipeWrench' {
        *
        * Method Parameters: 
        *  - (LogSeverity arg0, DebugType arg1): boolean
+       *  - (DebugType arg0, LogSeverity arg1): boolean
        */
-      static isLogEnabled(arg0: zombie.debug.LogSeverity, arg1: zombie.debug.DebugType): boolean;
+      static isLogEnabled(arg0: zombie.debug.LogSeverity | zombie.debug.DebugType, arg1: zombie.debug.DebugType | zombie.debug.LogSeverity): boolean;
       /**
        * @noSelf
        *
@@ -288,25 +270,11 @@ declare module 'PipeWrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (String arg0): void
        *  - (Object arg0): void
+       *  - (String arg0): void
        *  - (DebugType arg0, String arg1): void
        */
       static log(arg0: any, arg1?: string): void;
-      /**
-       * @noSelf
-       *
-       * Method Parameters: 
-       *  - (UUID arg0, LogListener arg1): void
-       */
-      static removeListener(arg0: java.util.UUID, arg1: com.asledgehammer.crafthammer.api.event.log.LogListener): void;
-      /**
-       * @noSelf
-       *
-       * Method Parameters: 
-       *  - (UUID arg0): void
-       */
-      static removeListeners(arg0: java.util.UUID): void;
       /**
        * @noSelf
        *
@@ -348,6 +316,8 @@ declare module 'PipeWrench' {
       static readonly s_prefixErr?: string;
       /** java.lang.String */
       static readonly s_prefixOut?: string;
+      /** java.lang.String */
+      static readonly s_prefixTrace?: string;
       /** java.lang.String */
       static readonly s_prefixWarn?: string;
 
@@ -406,14 +376,25 @@ declare module 'PipeWrench' {
       format(arg0: string | java.util.Locale, arg1: any | string, arg2?: any): java.io.PrintStream;
       /**
        * Method Parameters: 
+       *  - (String arg0): void
+       *  - (String arg0, Object arg1): void
+       *  - (String arg0, Object arg1, Object arg2): void
+       *  - (String arg0, Object arg1, Object arg2, Object arg3): void
+       *  - (String arg0, Object arg1, Object arg2, Object arg3, Object arg4): void
+       *  - (String arg0, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5): void
+       *  - (String arg0, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6): void
+       */
+      noise(arg0: string, arg1?: any, arg2?: any, arg3?: any, arg4?: any, arg5?: any, arg6?: any): void;
+      /**
+       * Method Parameters: 
        *  - (Object arg0): void
        *  - (String arg0): void
        *  - (boolean arg0): void
        *  - (char arg0): void
        *  - (int arg0): void
        *  - (double arg0): void
-       *  - (float arg0): void
        *  - (long arg0): void
+       *  - (float arg0): void
        *  - (char[] arg0): void
        */
       print(arg0: any): void;
@@ -426,9 +407,10 @@ declare module 'PipeWrench' {
       /**
        * Method Parameters: 
        *  - (Empty): void
-       *  - (int arg0): void
+       *  - (String arg0): void
+       *  - (int arg0, String arg1): void
        */
-      printStackTrace(arg0?: number): void;
+      printStackTrace(arg0?: string | number, arg1?: string): void;
       /**
        * Method Parameters: 
        *  - (String arg0, boolean arg1, Object... arg2): void
@@ -463,6 +445,17 @@ declare module 'PipeWrench' {
        *  - (String arg0, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7, Object arg8, Object arg9): void
        */
       println(arg0?: any, arg1?: any, arg2?: any, arg3?: any, arg4?: any, arg5?: any, arg6?: any, arg7?: any, arg8?: any, arg9?: any): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       *  - (String arg0, Object arg1): void
+       *  - (String arg0, Object arg1, Object arg2): void
+       *  - (String arg0, Object arg1, Object arg2, Object arg3): void
+       *  - (String arg0, Object arg1, Object arg2, Object arg3, Object arg4): void
+       *  - (String arg0, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5): void
+       *  - (String arg0, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6): void
+       */
+      trace(arg0: string, arg1?: any, arg2?: any, arg3?: any, arg4?: any, arg5?: any, arg6?: any): void;
       /**
        * Method Parameters: 
        *  - (Object arg0): void
@@ -687,7 +680,6 @@ declare module 'PipeWrench' {
       static readonly Asset: zombie.debug.DebugType;
       static readonly Clothing: zombie.debug.DebugType;
       static readonly Combat: zombie.debug.DebugType;
-      static readonly CraftHammer: zombie.debug.DebugType;
       static readonly Damage: zombie.debug.DebugType;
       static readonly Death: zombie.debug.DebugType;
       static readonly FileIO: zombie.debug.DebugType;
@@ -707,9 +699,7 @@ declare module 'PipeWrench' {
       static readonly Radio: zombie.debug.DebugType;
       static readonly Recipe: zombie.debug.DebugType;
       static readonly Script: zombie.debug.DebugType;
-      static readonly Security: zombie.debug.DebugType;
       static readonly Shader: zombie.debug.DebugType;
-      static readonly Sledgehammer: zombie.debug.DebugType;
       static readonly Sound: zombie.debug.DebugType;
       static readonly Statistic: zombie.debug.DebugType;
       static readonly UnitTests: zombie.debug.DebugType;
@@ -718,9 +708,22 @@ declare module 'PipeWrench' {
       static readonly Zombie: zombie.debug.DebugType;
       name(): string;
       ordinal(): number;
-      getColor(): string;
+      /**
+       * @noSelf
+       *
+       * (DebugType arg0): boolean
+       */
+      static Do(arg0: zombie.debug.DebugType | null): boolean;
 
-      getLabel(): string;
+      /**
+       * @noSelf
+       *
+       * (String arg0): DebugType
+       */
+      static valueOf(arg0: string | null): zombie.debug.DebugType;
+
+      /** @noSelf */
+      static values(): zombie.debug.DebugType[];
 
     }
     /**
@@ -749,16 +752,32 @@ declare module 'PipeWrench' {
        *  - (LogSeverity arg0): boolean
        */
       isLogEnabled(arg0: zombie.debug.LogSeverity): boolean;
+      /**
+       * Method Parameters: 
+       *  - (LogSeverity arg0): boolean
+       */
+      isLogSeverityEnabled(arg0: zombie.debug.LogSeverity): boolean;
     }
     /** [ENUM] zombie.debug.LogSeverity */
     export class LogSeverity {
       protected constructor();
+      static readonly Debug: zombie.debug.LogSeverity;
       static readonly Error: zombie.debug.LogSeverity;
       static readonly General: zombie.debug.LogSeverity;
       static readonly Trace: zombie.debug.LogSeverity;
       static readonly Warning: zombie.debug.LogSeverity;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): LogSeverity
+       */
+      static valueOf(arg0: string | null): zombie.debug.LogSeverity;
+
+      /** @noSelf */
+      static values(): zombie.debug.LogSeverity[];
+
     }
   }
 }

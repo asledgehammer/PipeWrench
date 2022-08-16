@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:00.944Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.ISUI.Maps {
     /** @customConstructor ISMiniMapInner:new */
     export class ISMiniMapInner extends lua.client.ISUI.ISUIElement {
@@ -152,24 +149,28 @@ declare module 'PipeWrench' {
 
       titleBarHeight: (() => any) | any;
 
-      static TitleBarHeight: (() => any) | any;
+      /** @noSelf */
+      static TitleBarHeight: () => any;
     }
 
-    export class ISMiniMap {
-      private constructor();
-
+    export abstract class ISMiniMap {
       static [id: string]: any;
 
-      static FocusMiniMap: ((playerNum: any) => any) | any;
+      /** @noSelf */
+      static FocusMiniMap: (playerNum: any) => any;
 
-      static InitPlayer: ((playerNum: any) => any) | any;
+      /** @noSelf */
+      static InitPlayer: (playerNum: any) => any;
 
-      static IsAllowed: (() => any) | any;
+      /** @noSelf */
+      static IsAllowed: () => any;
 
-      static Recreate: ((playerNum: any) => any) | any;
+      /** @noSelf */
+      static Recreate: (playerNum: any) => any;
 
-      static ToggleMiniMap: ((playerNum: any) => any) | any;
+      /** @noSelf */
+      static ToggleMiniMap: (playerNum: any) => any;
     }
   }
-  export namespace lua.client.ISUI.Maps.ISMiniMap {}
+  export namespace lua.client.ISUI.Maps.ISMiniMap { }
 }

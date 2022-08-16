@@ -20,50 +20,59 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:01.678Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../reference.d.ts" />
 /// <reference path="../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.server.radio {
-    export class WeatherChannel {
-      private constructor();
-
+    export abstract class WeatherChannel {
       static [id: string]: any;
 
-      static AddExtremesForecasting: ((_c: any, _bc: any, offset: any, _len: any) => any) | any;
+      /** @noSelf */
+      static AddExtremesForecasting: (_c: any, _bc: any, offset: any, _len: any) => any;
 
-      static AddForecast: ((_c: any, _bc: any, _forecast: any, _prefix: any, _doFog: any) => any) | any;
+      /** @noSelf */
+      static AddForecast: (_c: any, _bc: any, _forecast: any, _prefix: any, _doFog: any) => any;
 
-      static AddForecasting: ((_c: any, _bc: any, _hour: any) => any) | any;
+      /** @noSelf */
+      static AddForecasting: (_c: any, _bc: any, _hour: any) => any;
 
-      static AddFuzz: ((_c: any, _bc: any, _chance: any) => any) | any;
+      /** @noSelf */
+      static AddFuzz: (_c: any, _bc: any, _chance: any) => any;
 
-      static AddPowerNotice: ((_c: any, _bc: any, _force: any) => any) | any;
+      /** @noSelf */
+      static AddPowerNotice: (_c: any, _bc: any, _force: any) => any;
 
-      static CreateBroadcast: ((_gametime: any) => any) | any;
+      /** @noSelf */
+      static CreateBroadcast: (_gametime: any) => any;
 
-      static FillBroadcast: ((_gametime: any, _bc: any) => any) | any;
+      /** @noSelf */
+      static FillBroadcast: (_gametime: any, _bc: any) => any;
 
-      static GetDaySegmentForHour: ((_hour: any) => any) | any;
+      /** @noSelf */
+      static GetDaySegmentForHour: (_hour: any) => any;
 
-      static GetForecastString: ((_type: any, _forecast: any) => any) | any;
+      /** @noSelf */
+      static GetForecastString: (_type: any, _forecast: any) => any;
 
-      static GetRandomString: ((_c: any, _bc: any, _doItThreshold: any, _forceRand: any) => any) | any;
+      /** @noSelf */
+      static GetRandomString: (_c: any, _bc: any, _doItThreshold: any, _forceRand: any) => any;
 
-      static Init: (() => any) | any;
+      /** @noSelf */
+      static Init: () => any;
 
-      static OnEveryHour: ((_channel: any, _gametime: any, _radio: any) => any) | any;
+      /** @noSelf */
+      static OnEveryHour: (_channel: any, _gametime: any, _radio: any) => any;
 
-      static OnLoadRadioScripts: (() => any) | any;
+      /** @noSelf */
+      static OnLoadRadioScripts: () => any;
 
-      static TestAll: ((_gametime: any, _bc: any) => any) | any;
+      /** @noSelf */
+      static TestAll: (_gametime: any, _bc: any) => any;
     }
   }
-  export namespace lua.server.radio.ISWeatherChannel {}
+  export namespace lua.server.radio.ISWeatherChannel { }
 }

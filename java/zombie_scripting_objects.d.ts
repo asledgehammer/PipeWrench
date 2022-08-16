@@ -21,12 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace zombie.scripting.objects {
     /**
      * @customConstructor AnimationsMesh.new
@@ -1619,6 +1618,16 @@ declare module 'PipeWrench' {
       static readonly WeaponPart: zombie.scripting.objects.Item$Type;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): Type
+       */
+      static valueOf(arg0: string | null): zombie.scripting.objects.Item$Type;
+
+      /** @noSelf */
+      static values(): zombie.scripting.objects.Item$Type[];
+
     }
     /**
      * @customConstructor ItemRecipe.new
@@ -3449,10 +3458,10 @@ declare module 'PipeWrench' {
       globMatch(arg0: string, arg1: string): boolean;
       /**
        * Method Parameters: 
-       *  - (int arg0): zombie.scripting.objects.ModelAttachment
        *  - (ModelAttachment arg0): zombie.scripting.objects.ModelAttachment
+       *  - (int arg0): zombie.scripting.objects.ModelAttachment
        */
-      removeAttachment(arg0: number | zombie.scripting.objects.ModelAttachment): zombie.scripting.objects.ModelAttachment;
+      removeAttachment(arg0: zombie.scripting.objects.ModelAttachment | number): zombie.scripting.objects.ModelAttachment;
       /**
        * Method Parameters: 
        *  - (String arg0): void

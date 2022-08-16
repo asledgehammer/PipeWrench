@@ -21,12 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File generated at 2022-07-29T02:33Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../reference.d.ts" />
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace zombie.core {
     /**
      * @customConstructor Clipboard.new
@@ -743,6 +742,8 @@ declare module 'PipeWrench' {
       static OptionFontSize: number;
       /** java.lang.String */
       static OptionInventoryFont?: string;
+      /** int */
+      static OptionJumpScareVolume: number;
       /** boolean */
       static OptionLockCursorToWindow: boolean;
       /** float */
@@ -954,10 +955,10 @@ declare module 'PipeWrench' {
       RenderOffScreenBuffer(): void;
       /**
        * Method Parameters: 
-       *  - (String arg0, String arg1): void
        *  - (boolean arg0, String arg1): void
+       *  - (String arg0, String arg1): void
        */
-      ResetLua(arg0: string | boolean, arg1: string): void;
+      ResetLua(arg0: boolean | string, arg1: string): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -1252,6 +1253,11 @@ declare module 'PipeWrench' {
        *  - (Empty): string
        */
       getOptionInventoryFont(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getOptionJumpScareVolume(): number;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -2112,6 +2118,11 @@ declare module 'PipeWrench' {
        *  - (String arg0): void
        */
       setOptionInventoryFont(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): void
+       */
+      setOptionJumpScareVolume(arg0: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -3572,6 +3583,16 @@ declare module 'PipeWrench' {
       static readonly RightOnly: zombie.core.SpriteRenderer$WallShaderTexRender;
       name(): string;
       ordinal(): number;
+      /**
+       * @noSelf
+       *
+       * (String arg0): WallShaderTexRender
+       */
+      static valueOf(arg0: string | null): zombie.core.SpriteRenderer$WallShaderTexRender;
+
+      /** @noSelf */
+      static values(): zombie.core.SpriteRenderer$WallShaderTexRender[];
+
     }
     /**
      * @customConstructor Translator.new
@@ -3687,6 +3708,13 @@ declare module 'PipeWrench' {
        *  - (String arg0): string
        */
       static getMoveableDisplayName(arg0: string): string;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): string
+       */
+      static getMoveableDisplayNameOrNull(arg0: string): string;
       /**
        * @noSelf
        *

@@ -20,16 +20,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * File generated at: 2022-07-29T08:39:00.964Z
  */
 
-/** @noResolution @noSelfInFile */
+/**  @noSelfInFile */
 /// <reference path="../../../../reference.d.ts" />
 /// <reference path="../../../../PipeWrench.d.ts" />
-import * as PipeWrench from 'PipeWrench';
 
-declare module 'PipeWrench' {
+declare module '@asledgehammer/pipewrench' {
   export namespace lua.client.ISUI.Maps {
     /** @customConstructor ISWorldMap:new */
     export class ISWorldMap extends lua.client.ISUI.ISPanelJoypad {
@@ -98,7 +95,11 @@ declare module 'PipeWrench' {
 
       showCellGrid: any;
 
+      showPlayerNames: any;
+
       showPlayers: any;
+
+      showRemotePlayers: any;
 
       showTileGrid: any;
 
@@ -164,29 +165,42 @@ declare module 'PipeWrench' {
 
       setShowCellGrid: ((show: any) => any) | any;
 
+      setShowPlayerNames: ((show: any) => any) | any;
+
       setShowPlayers: ((show: any) => any) | any;
+
+      setShowRemotePlayers: ((show: any) => any) | any;
 
       setShowTileGrid: ((show: any) => any) | any;
 
       updateJoypad: (() => any) | any;
 
-      static checkKey: ((key: any) => any) | any;
+      /** @noSelf */
+      static checkKey: (key: any) => any;
 
-      static HideWorldMap: ((playerNum: any) => any) | any;
+      /** @noSelf */
+      static HideWorldMap: (playerNum: any) => any;
 
-      static IsAllowed: (() => any) | any;
+      /** @noSelf */
+      static IsAllowed: () => any;
 
-      static onKeyKeepPressed: ((key: any) => any) | any;
+      /** @noSelf */
+      static onKeyKeepPressed: (key: any) => any;
 
-      static onKeyReleased: ((key: any) => any) | any;
+      /** @noSelf */
+      static onKeyReleased: (key: any) => any;
 
-      static onKeyStartPressed: ((key: any) => any) | any;
+      /** @noSelf */
+      static onKeyStartPressed: (key: any) => any;
 
-      static OnPlayerDeath: ((playerObj: any) => any) | any;
+      /** @noSelf */
+      static OnPlayerDeath: (playerObj: any) => any;
 
-      static ShowWorldMap: ((playerNum: any) => any) | any;
+      /** @noSelf */
+      static ShowWorldMap: (playerNum: any) => any;
 
-      static ToggleWorldMap: ((playerNum: any) => any) | any;
+      /** @noSelf */
+      static ToggleWorldMap: (playerNum: any) => any;
     }
 
     /** @customConstructor ISWorldMapButtonPanel:new */
@@ -204,19 +218,39 @@ declare module 'PipeWrench' {
     }
 
     /** @customConstructor WorldMapOptions:new */
-    export class WorldMapOptions extends lua.client.ISUI.ISCollapsableWindow {
+    export class WorldMapOptions extends lua.client.ISUI.ISCollapsableWindowJoypad {
       [id: string]: any;
       static [id: string]: any;
 
       doubleBoxes: any;
 
+      joypadButtonsY: any;
+
+      joypadIndex: any;
+
+      joypadIndexY: any;
+
       map: any;
+
+      screenHeight: any;
+
+      showAllOptions: any;
 
       tickBoxes: any;
 
       constructor(x: any, y: any, width: any, height: any, map: any);
 
+      createChildren: (() => any) | any;
+
+      getVisibleOptions: (() => any) | any;
+
+      isMultiplayerOption: ((optionName: any) => any) | any;
+
       onCommandEntered: ((entry: any, option: any) => any) | any;
+
+      onGainJoypadFocus: ((joypadData: any) => any) | any;
+
+      onJoypadDown: ((button: any, joypadData: any) => any) | any;
 
       onMouseDownOutside: ((x: any, y: any) => any) | any;
 
@@ -225,5 +259,5 @@ declare module 'PipeWrench' {
       synchUI: (() => any) | any;
     }
   }
-  export namespace lua.client.ISUI.Maps.ISWorldMap {}
+  export namespace lua.client.ISUI.Maps.ISWorldMap { }
 }
