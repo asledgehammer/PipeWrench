@@ -1458,10 +1458,10 @@ declare module '@asledgehammer/pipewrench' {
       setModdedValue(arg0: zombie.iso.weather.ClimateColorInfo): void;
       /**
        * Method Parameters: 
-       *  - (ClimateColorInfo arg0, float arg1): void
        *  - (ByteBuffer arg0, float arg1): void
+       *  - (ClimateColorInfo arg0, float arg1): void
        */
-      setOverride(arg0: zombie.iso.weather.ClimateColorInfo | java.nio.ByteBuffer, arg1: number): void;
+      setOverride(arg0: java.nio.ByteBuffer | zombie.iso.weather.ClimateColorInfo, arg1: number): void;
     }
     /**
      * @customConstructor ClimateFloat.new

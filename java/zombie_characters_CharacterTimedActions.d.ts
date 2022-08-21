@@ -115,10 +115,10 @@ declare module '@asledgehammer/pipewrench' {
       resetJobDelta(): void;
       /**
        * Method Parameters: 
-       *  - (String arg0): void
        *  - (CharacterActionAnims arg0): void
+       *  - (String arg0): void
        */
-      setActionAnim(arg0: string | zombie.characters.CharacterActionAnims): void;
+      setActionAnim(arg0: zombie.characters.CharacterActionAnims | string): void;
       /**
        * Method Parameters: 
        *  - (String arg0, boolean arg1): void
@@ -284,10 +284,10 @@ declare module '@asledgehammer/pipewrench' {
       resetJobDelta(): void;
       /**
        * Method Parameters: 
-       *  - (String arg0): void
        *  - (CharacterActionAnims arg0): void
+       *  - (String arg0): void
        */
-      setActionAnim(arg0: string | zombie.characters.CharacterActionAnims): void;
+      setActionAnim(arg0: zombie.characters.CharacterActionAnims | string): void;
       /**
        * Method Parameters: 
        *  - (String arg0, boolean arg1): void
@@ -475,10 +475,10 @@ declare module '@asledgehammer/pipewrench' {
       resetJobDelta(): void;
       /**
        * Method Parameters: 
-       *  - (String arg0): void
        *  - (CharacterActionAnims arg0): void
+       *  - (String arg0): void
        */
-      setActionAnim(arg0: string | zombie.characters.CharacterActionAnims): void;
+      setActionAnim(arg0: zombie.characters.CharacterActionAnims | string): void;
       /**
        * Method Parameters: 
        *  - (String arg0, boolean arg1): void

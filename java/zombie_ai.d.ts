@@ -172,10 +172,10 @@ declare module '@asledgehammer/pipewrench' {
       getOrCreateKnownBlockedEdges(arg0: number, arg1: number, arg2: number): zombie.ai.KnownBlockedEdges;
       /**
        * Method Parameters: 
-       *  - (IsoThumpable arg0, boolean arg1): void
        *  - (IsoDoor arg0, boolean arg1): void
+       *  - (IsoThumpable arg0, boolean arg1): void
        */
-      setKnownBlockedDoor(arg0: zombie.iso.objects.IsoThumpable | zombie.iso.objects.IsoDoor, arg1: boolean): void;
+      setKnownBlockedDoor(arg0: zombie.iso.objects.IsoDoor | zombie.iso.objects.IsoThumpable, arg1: boolean): void;
       /**
        * Method Parameters: 
        *  - (int arg0, int arg1, int arg2, boolean arg3): void

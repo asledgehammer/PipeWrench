@@ -955,10 +955,10 @@ declare module '@asledgehammer/pipewrench' {
       RenderOffScreenBuffer(): void;
       /**
        * Method Parameters: 
-       *  - (boolean arg0, String arg1): void
        *  - (String arg0, String arg1): void
+       *  - (boolean arg0, String arg1): void
        */
-      ResetLua(arg0: boolean | string, arg1: string): void;
+      ResetLua(arg0: string | boolean, arg1: string): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -3790,10 +3790,10 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (Language arg0): void
        *  - (int arg0): void
+       *  - (Language arg0): void
        */
-      static setLanguage(arg0: zombie.core.Language | number): void;
+      static setLanguage(arg0: number | zombie.core.Language): void;
     }
   }
 }

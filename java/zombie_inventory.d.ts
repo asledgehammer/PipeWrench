@@ -2010,11 +2010,11 @@ declare module '@asledgehammer/pipewrench' {
       constructor(arg0?: number | string, arg1?: zombie.iso.IsoGridSquare | string, arg2?: zombie.iso.IsoObject | zombie.iso.IsoGridSquare, arg3?: zombie.iso.IsoObject);
       /**
        * Method Parameters: 
-       *  - (String arg0): zombie.inventory.InventoryItem
        *  - (InventoryItem arg0): zombie.inventory.InventoryItem
+       *  - (String arg0): zombie.inventory.InventoryItem
        *  - (String arg0, float arg1): boolean
        */
-      AddItem(arg0: string | zombie.inventory.InventoryItem, arg1?: number): zombie.inventory.InventoryItem | boolean;
+      AddItem(arg0: zombie.inventory.InventoryItem | string, arg1?: number): zombie.inventory.InventoryItem | boolean;
       /**
        * Method Parameters: 
        *  - (InventoryItem arg0): zombie.inventory.InventoryItem
@@ -2022,10 +2022,10 @@ declare module '@asledgehammer/pipewrench' {
       AddItemBlind(arg0: zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (String arg0, int arg1): java.util.ArrayList<zombie.inventory.InventoryItem>
        *  - (InventoryItem arg0, int arg1): void
+       *  - (String arg0, int arg1): java.util.ArrayList<zombie.inventory.InventoryItem>
        */
-      AddItems(arg0: string | zombie.inventory.InventoryItem, arg1: number): java.util.ArrayList<zombie.inventory.InventoryItem> | void;
+      AddItems(arg0: zombie.inventory.InventoryItem | string, arg1: number): void | java.util.ArrayList<zombie.inventory.InventoryItem>;
       /**
        * Method Parameters: 
        *  - (InventoryItem arg0): zombie.inventory.InventoryItem
@@ -2054,10 +2054,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): zombie.inventory.InventoryItem
-       *  - (String arg0, ArrayList arg1): zombie.inventory.InventoryItem
        *  - (String arg0, int arg1): java.util.ArrayList<zombie.inventory.InventoryItem>
+       *  - (String arg0, ArrayList arg1): zombie.inventory.InventoryItem
        */
-      FindAndReturn(arg0: string, arg1?: java.util.ArrayList<zombie.inventory.InventoryItem> | number): zombie.inventory.InventoryItem | java.util.ArrayList<zombie.inventory.InventoryItem>;
+      FindAndReturn(arg0: string, arg1?: number | java.util.ArrayList<zombie.inventory.InventoryItem>): zombie.inventory.InventoryItem | java.util.ArrayList<zombie.inventory.InventoryItem>;
       /**
        * Method Parameters: 
        *  - (String arg0): zombie.inventory.InventoryItem
@@ -2065,10 +2065,10 @@ declare module '@asledgehammer/pipewrench' {
       FindAndReturnCategory(arg0: string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (InventoryItem arg0): zombie.inventory.InventoryItem
        *  - (String arg0): zombie.inventory.InventoryItem
+       *  - (InventoryItem arg0): zombie.inventory.InventoryItem
        */
-      FindAndReturnStack(arg0: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
+      FindAndReturnStack(arg0: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (int arg0): zombie.inventory.InventoryItem
@@ -2086,11 +2086,11 @@ declare module '@asledgehammer/pipewrench' {
       HasType(arg0: zombie.inventory.ItemType): boolean;
       /**
        * Method Parameters: 
-       *  - (InventoryItem arg0): void
        *  - (ItemType arg0): zombie.inventory.InventoryItem
+       *  - (InventoryItem arg0): void
        *  - (String arg0): void
        */
-      Remove(arg0: zombie.inventory.InventoryItem | zombie.inventory.ItemType | string): void | zombie.inventory.InventoryItem;
+      Remove(arg0: zombie.inventory.ItemType | zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem | void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -2389,10 +2389,10 @@ declare module '@asledgehammer/pipewrench' {
       getBestConditionEvalRecurse(arg0: se.krka.kahlua.vm.LuaClosure): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (String arg0): zombie.inventory.InventoryItem
        *  - (Predicate arg0): zombie.inventory.InventoryItem
+       *  - (String arg0): zombie.inventory.InventoryItem
        */
-      getBestConditionRecurse(arg0: string | java.util._function_.Predicate<zombie.inventory.InventoryItem>): zombie.inventory.InventoryItem;
+      getBestConditionRecurse(arg0: java.util._function_.Predicate<zombie.inventory.InventoryItem> | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (LuaClosure arg0, LuaClosure arg1): zombie.inventory.InventoryItem

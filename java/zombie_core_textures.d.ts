@@ -510,10 +510,10 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): void
        *  - (WrappedBuffer arg0): void
-       *  - (boolean[] arg0): void
        *  - (BooleanGrid arg0): void
+       *  - (boolean[] arg0): void
        */
-      createMask(arg0?: zombie.core.utils.WrappedBuffer | boolean[] | zombie.core.utils.BooleanGrid): void;
+      createMask(arg0?: zombie.core.utils.WrappedBuffer | zombie.core.utils.BooleanGrid | boolean[]): void;
       /**
        * Method Parameters: 
        *  - (Empty): void

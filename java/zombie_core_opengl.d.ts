@@ -322,13 +322,13 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0, Vector2 arg1): void
-       *  - (String arg0, int arg1): void
-       *  - (String arg0, float arg1): void
        *  - (String arg0, Matrix4f arg1): void
        *  - (String arg0, Vector3 arg1): void
+       *  - (String arg0, float arg1): void
+       *  - (String arg0, int arg1): void
        *  - (String arg0, Texture arg1, int arg2): void
        */
-      setValue(arg0: string, arg1: zombie.iso.Vector2 | number | org.lwjgl.util.vector.Matrix4f | zombie.iso.Vector3 | zombie.core.textures.Texture, arg2?: number): void;
+      setValue(arg0: string, arg1: zombie.iso.Vector2 | org.lwjgl.util.vector.Matrix4f | zombie.iso.Vector3 | number | zombie.core.textures.Texture, arg2?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, int arg1): void
@@ -341,16 +341,16 @@ declare module '@asledgehammer/pipewrench' {
       setValueColorRGB(arg0: string, arg1: number): void;
       /**
        * Method Parameters: 
-       *  - (String arg0, float arg1, float arg2): void
        *  - (int arg0, float arg1, float arg2): void
+       *  - (String arg0, float arg1, float arg2): void
        */
-      setVector2(arg0: string | number, arg1: number, arg2: number): void;
+      setVector2(arg0: number | string, arg1: number, arg2: number): void;
       /**
        * Method Parameters: 
-       *  - (String arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3): void
+       *  - (String arg0, float arg1, float arg2, float arg3): void
        */
-      setVector3(arg0: string | number, arg1: number, arg2: number, arg3: number): void;
+      setVector3(arg0: number | string, arg1: number, arg2: number, arg3: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void

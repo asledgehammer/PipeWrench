@@ -1,0 +1,29 @@
+name: ExtractAPI
+on:
+  push:
+jobs:
+  test:
+    strategy:
+      matrix:
+        version: [stable, unstable]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: npm
+          cache-dependency-path: package-lock.json
+      - run: npm install
+      - run: npm link
+      - name: Setup steamcmd
+        uses: CyberAndrii/setup-steamcmd@v1
+      - run: npm run build
+      - run: bash ./scripts/install_pz.sh ${{ matrix.version }}
+      - run: npm run extract
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          base: ${{ matrix.version }}
+          title: ${{ matrix.version }} latest
+          branch: bot/${{ matrix.version }}

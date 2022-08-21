@@ -234,8 +234,8 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (long arg0): number
        *  - (double arg0): number
+       *  - (long arg0): number
        */
       static toDouble(arg0: number): number;
       /**

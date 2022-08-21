@@ -55,10 +55,10 @@ declare module '@asledgehammer/pipewrench' {
       ContainsChar(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * Method Parameters: 
-       *  - (BaseVehicle arg0): void
        *  - (IsoGameCharacter arg0): void
+       *  - (BaseVehicle arg0): void
        */
-      Remove(arg0: zombie.vehicles.BaseVehicle | zombie.characters.IsoGameCharacter): void;
+      Remove(arg0: zombie.characters.IsoGameCharacter | zombie.vehicles.BaseVehicle): void;
       /**
        * Method Parameters: 
        *  - (TextureDraw arg0, int arg1, int arg2): void

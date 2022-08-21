@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "patch": "node patch.js",
-    "build": "tsc"
+    "build": "tsc",
+    "extract": "pwm-cli luapath=./pzserver/media/lua outDir=. && npx ts-node scripts/stitch.ts && npm run patch && npx prettier --write ."
   },
   "repository": {
     "type": "git",
@@ -37,7 +38,12 @@
   },
   "homepage": "https://github.com/asledgehammer/PipeWrench#readme",
   "devDependencies": {
+    "@shughesuk/pipewrench-modeler": "^1.0.11",
+    "@types/node": "^18.7.8",
+    "@types/prettier": "^2.7.0",
     "lua-types": "^2.12.0",
+    "nodejs": "^0.0.0",
+    "prettier": "2.7.1",
     "typescript": "^4.7.4"
   }
 }

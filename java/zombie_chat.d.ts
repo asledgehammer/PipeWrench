@@ -146,10 +146,10 @@ declare module '@asledgehammer/pipewrench' {
       removeMember(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (ChatMessage arg0): void
        *  - (ServerChatMessage arg0): void
+       *  - (ChatMessage arg0): void
        */
-      sendMessageToChatMembers(arg0: zombie.chat.ChatMessage | zombie.chat.ServerChatMessage): void;
+      sendMessageToChatMembers(arg0: zombie.chat.ServerChatMessage | zombie.chat.ChatMessage): void;
       /**
        * Method Parameters: 
        *  - (short arg0, ChatMessage arg1): void

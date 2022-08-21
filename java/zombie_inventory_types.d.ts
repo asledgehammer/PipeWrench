@@ -10694,10 +10694,10 @@ declare module '@asledgehammer/pipewrench' {
 
       /**
        * Constructors: 
-       *  - (String arg0, String arg1, String arg2, Item arg3)
        *  - (String arg0, String arg1, String arg2, String arg3)
+       *  - (String arg0, String arg1, String arg2, Item arg3)
        */
-      constructor(arg0: string, arg1: string, arg2: string, arg3: zombie.scripting.objects.Item | string);
+      constructor(arg0: string, arg1: string, arg2: string, arg3: string | zombie.scripting.objects.Item);
       /**
        * Method Parameters: 
        *  - (InventoryItem arg0): boolean
@@ -13084,10 +13084,10 @@ declare module '@asledgehammer/pipewrench' {
     export class HandWeapon {
       /**
        * Constructors: 
-       *  - (String arg0, String arg1, String arg2, String arg3)
        *  - (String arg0, String arg1, String arg2, Item arg3)
+       *  - (String arg0, String arg1, String arg2, String arg3)
        */
-      constructor(arg0: string, arg1: string, arg2: string, arg3: string | zombie.scripting.objects.Item);
+      constructor(arg0: string, arg1: string, arg2: string, arg3: zombie.scripting.objects.Item | string);
       /**
        * Method Parameters: 
        *  - (InventoryItem arg0): boolean
@@ -14516,10 +14516,10 @@ declare module '@asledgehammer/pipewrench' {
       getWeaponPart(arg0: string): zombie.inventory.types.WeaponPart;
       /**
        * Method Parameters: 
-       *  - (WeaponPart arg0): number
        *  - (String arg0): number
+       *  - (WeaponPart arg0): number
        */
-      getWeaponPartWeightModifier(arg0: zombie.inventory.types.WeaponPart | string): number;
+      getWeaponPartWeightModifier(arg0: string | zombie.inventory.types.WeaponPart): number;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -28001,11 +28001,11 @@ declare module '@asledgehammer/pipewrench' {
       constructor(arg0: string, arg1: string, arg2: string, arg3: string);
       /**
        * Method Parameters: 
-       *  - (ChatMessage arg0, float arg1, float arg2, float arg3, String arg4, String arg5, int arg6): void
        *  - (String arg0, float arg1, float arg2, float arg3, String arg4, String arg5, int arg6): void
+       *  - (ChatMessage arg0, float arg1, float arg2, float arg3, String arg4, String arg5, int arg6): void
        *  - (IsoPlayer arg0, String arg1, float arg2, float arg3, float arg4, String arg5, String arg6, int arg7): void
        */
-      AddDeviceText(arg0: zombie.chat.ChatMessage | string | zombie.characters.IsoPlayer, arg1: number | string, arg2: number, arg3: number, arg4: string | number, arg5: string, arg6: number | string, arg7?: number): void;
+      AddDeviceText(arg0: string | zombie.chat.ChatMessage | zombie.characters.IsoPlayer, arg1: number | string, arg2: number, arg3: number, arg4: string | number, arg5: string, arg6: number | string, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): boolean

@@ -94,10 +94,10 @@ declare module '@asledgehammer/pipewrench' {
       IncreasePanicFloat(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): boolean
        *  - (BodyPartType arg0): boolean
+       *  - (int arg0): boolean
        */
-      IsBandaged(arg0: number | zombie.characters.BodyDamage.BodyPartType): boolean;
+      IsBandaged(arg0: zombie.characters.BodyDamage.BodyPartType | number): boolean;
       /**
        * Method Parameters: 
        *  - (BodyPartType arg0): boolean
@@ -106,10 +106,10 @@ declare module '@asledgehammer/pipewrench' {
       IsBitten(arg0: zombie.characters.BodyDamage.BodyPartType | number): boolean;
       /**
        * Method Parameters: 
-       *  - (BodyPartType arg0): boolean
        *  - (int arg0): boolean
+       *  - (BodyPartType arg0): boolean
        */
-      IsBleeding(arg0: zombie.characters.BodyDamage.BodyPartType | number): boolean;
+      IsBleeding(arg0: number | zombie.characters.BodyDamage.BodyPartType): boolean;
       /**
        * Method Parameters: 
        *  - (int arg0): boolean
@@ -226,11 +226,11 @@ declare module '@asledgehammer/pipewrench' {
       SetBandaged(arg0: number, arg1: boolean, arg2: number, arg3: boolean, arg4: string): void;
       /**
        * Method Parameters: 
-       *  - (int arg0, boolean arg1): void
        *  - (BodyPartType arg0, boolean arg1): void
+       *  - (int arg0, boolean arg1): void
        *  - (int arg0, boolean arg1, boolean arg2): void
        */
-      SetBitten(arg0: number | zombie.characters.BodyDamage.BodyPartType, arg1: boolean, arg2?: boolean): void;
+      SetBitten(arg0: zombie.characters.BodyDamage.BodyPartType | number, arg1: boolean, arg2?: boolean): void;
       /**
        * Method Parameters: 
        *  - (int arg0, boolean arg1): void
@@ -245,10 +245,10 @@ declare module '@asledgehammer/pipewrench' {
       SetBleedingStemmed(arg0: zombie.characters.BodyDamage.BodyPartType | number, arg1: boolean): void;
       /**
        * Method Parameters: 
-       *  - (BodyPartType arg0, boolean arg1): void
        *  - (int arg0, boolean arg1): void
+       *  - (BodyPartType arg0, boolean arg1): void
        */
-      SetCortorised(arg0: zombie.characters.BodyDamage.BodyPartType | number, arg1: boolean): void;
+      SetCortorised(arg0: number | zombie.characters.BodyDamage.BodyPartType, arg1: boolean): void;
       /**
        * Method Parameters: 
        *  - (int arg0, boolean arg1): void
@@ -256,10 +256,10 @@ declare module '@asledgehammer/pipewrench' {
       SetCut(arg0: number, arg1: boolean): void;
       /**
        * Method Parameters: 
-       *  - (BodyPartType arg0, boolean arg1): void
        *  - (int arg0, boolean arg1): void
+       *  - (BodyPartType arg0, boolean arg1): void
        */
-      SetScratched(arg0: zombie.characters.BodyDamage.BodyPartType | number, arg1: boolean): void;
+      SetScratched(arg0: number | zombie.characters.BodyDamage.BodyPartType, arg1: boolean): void;
       /**
        * Method Parameters: 
        *  - (int arg0, boolean arg1): void
@@ -353,10 +353,10 @@ declare module '@asledgehammer/pipewrench' {
       getBodyPart(arg0: zombie.characters.BodyDamage.BodyPartType): zombie.characters.BodyDamage.BodyPart;
       /**
        * Method Parameters: 
-       *  - (int arg0): number
        *  - (BodyPartType arg0): number
+       *  - (int arg0): number
        */
-      getBodyPartHealth(arg0: number | zombie.characters.BodyDamage.BodyPartType): number;
+      getBodyPartHealth(arg0: zombie.characters.BodyDamage.BodyPartType | number): number;
       /**
        * Method Parameters: 
        *  - (BodyPartType arg0): string
@@ -2394,10 +2394,10 @@ declare module '@asledgehammer/pipewrench' {
       save(arg0: java.nio.ByteBuffer): void;
       /**
        * Method Parameters: 
-       *  - (Metabolics arg0): void
        *  - (float arg0): void
+       *  - (Metabolics arg0): void
        */
-      setMetabolicTarget(arg0: zombie.characters.BodyDamage.Metabolics | number): void;
+      setMetabolicTarget(arg0: number | zombie.characters.BodyDamage.Metabolics): void;
       /**
        * Method Parameters: 
        *  - (Empty): number
