@@ -1,30 +1,4 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
-/**  @noSelfInFile */
-/// <reference path="../reference.d.ts" />
+/** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.scripting.objects {
     /**
@@ -39,18 +13,18 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, String arg1): void
        *  - (String arg0, String[] arg1): void
        */
       Load(arg0: string, arg1: string | string[]): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.scripting.objects.ScriptModule
        */
       getModule(): zombie.scripting.objects.ScriptModule;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       reset(): void;
@@ -67,117 +41,117 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: string);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, String[] arg1): void
        */
       Load(arg0: string, arg1: string[]): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (InventoryItem arg0, InventoryItem arg1, IsoGameCharacter arg2): zombie.inventory.InventoryItem
        */
       addItem(arg0: zombie.inventory.InventoryItem, arg1: zombie.inventory.InventoryItem, arg2: zombie.characters.IsoGameCharacter): zombie.inventory.InventoryItem;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getAddIngredientSound(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getBaseItem(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getFullResultItem(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (InventoryItem arg0): zombie.scripting.objects.ItemRecipe
        */
       getItemRecipe(arg0: zombie.inventory.InventoryItem): zombie.scripting.objects.ItemRecipe;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoGameCharacter arg0, InventoryItem arg1, ArrayList arg2): java.util.ArrayList<zombie.inventory.InventoryItem>
        */
       getItemsCanBeUse(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.inventory.InventoryItem, arg2: java.util.ArrayList<zombie.inventory.ItemContainer>): java.util.ArrayList<zombie.inventory.InventoryItem>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.Map<string, zombie.scripting.objects.ItemRecipe>
        */
       getItemsList(): java.util.Map<string, zombie.scripting.objects.ItemRecipe>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getMaxItems(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.scripting.objects.ScriptModule
        */
       getModule(): zombie.scripting.objects.ScriptModule;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getOriginalname(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.ArrayList<zombie.scripting.objects.ItemRecipe>
        */
       getPossibleItems(): java.util.ArrayList<zombie.scripting.objects.ItemRecipe>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getResultItem(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getUntranslatedName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isAllowFrozenItem(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isCookable(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isHidden(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (InventoryItem arg0): boolean
        */
       isResultItem(arg0: zombie.inventory.InventoryItem): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (InventoryItem arg0, InventoryItem arg1): boolean
        */
       isSpiceAdded(arg0: zombie.inventory.InventoryItem, arg1: zombie.inventory.InventoryItem): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (InventoryItem arg0): boolean
        */
       needToBeCooked(arg0: zombie.inventory.InventoryItem): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setAllowFrozenItem(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setIsHidden(arg0: boolean): void;
@@ -194,87 +168,87 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, String[] arg1): void
        */
       Load(arg0: string, arg1: string[]): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       addRequiredItem(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoGameCharacter arg0, Fixer arg1, InventoryItem arg2): number
        */
       countUses(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.scripting.objects.Fixing$Fixer, arg2: zombie.inventory.InventoryItem): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getConditionModifier(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.LinkedList<zombie.scripting.objects.Fixing$Fixer>
        */
       getFixers(): java.util.LinkedList<zombie.scripting.objects.Fixing$Fixer>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.scripting.objects.Fixing$Fixer
        */
       getGlobalItem(): zombie.scripting.objects.Fixing$Fixer;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.scripting.objects.ScriptModule
        */
       getModule(): zombie.scripting.objects.ScriptModule;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoGameCharacter arg0, Fixer arg1, InventoryItem arg2, ArrayList arg3): java.util.ArrayList<zombie.inventory.InventoryItem>
        */
       getRequiredFixerItems(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.scripting.objects.Fixing$Fixer, arg2: zombie.inventory.InventoryItem, arg3: java.util.ArrayList<zombie.inventory.InventoryItem>): java.util.ArrayList<zombie.inventory.InventoryItem>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.ArrayList<string>
        */
       getRequiredItem(): java.util.ArrayList<string>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoGameCharacter arg0, Fixer arg1, InventoryItem arg2): java.util.ArrayList<zombie.inventory.InventoryItem>
        */
       getRequiredItems(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.scripting.objects.Fixing$Fixer, arg2: zombie.inventory.InventoryItem): java.util.ArrayList<zombie.inventory.InventoryItem>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoGameCharacter arg0): zombie.inventory.InventoryItem
        */
       haveGlobalItem(arg0: zombie.characters.IsoGameCharacter): zombie.inventory.InventoryItem;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoGameCharacter arg0, Fixer arg1, InventoryItem arg2): zombie.inventory.InventoryItem
        */
       haveThisFixer(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.scripting.objects.Fixing$Fixer, arg2: zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setConditionModifier(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Fixer arg0): void
        */
       setGlobalItem(arg0: zombie.scripting.objects.Fixing$Fixer): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setName(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (InventoryItem arg0, IsoGameCharacter arg1): zombie.scripting.objects.Fixing$Fixer
        */
       usedInFixer(arg0: zombie.inventory.InventoryItem, arg1: zombie.characters.IsoGameCharacter): zombie.scripting.objects.Fixing$Fixer;
@@ -291,17 +265,17 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: string, arg1: java.util.LinkedList<zombie.scripting.objects.Fixing$FixerSkill>, arg2: number);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getFixerName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.LinkedList<zombie.scripting.objects.Fixing$FixerSkill>
        */
       getFixerSkills(): java.util.LinkedList<zombie.scripting.objects.Fixing$FixerSkill>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getNumberOfUse(): number;
@@ -318,12 +292,12 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: string, arg1: number);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getSkillLevel(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getSkillName(): string;
@@ -340,18 +314,18 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, String arg1): void
        *  - (String arg0, String[] arg1): void
        */
       Load(arg0: string, arg1: string | string[]): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.scripting.objects.ScriptModule
        */
       getModule(): zombie.scripting.objects.ScriptModule;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       reset(): void;
@@ -373,1227 +347,1227 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       DoParam(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.inventory.InventoryItem
        */
       InstanceItem(arg0: string): zombie.inventory.InventoryItem;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, String[] arg1): void
        */
       Load(arg0: string, arg1: string[]): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getAcceptItemFunction(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getActualWeight(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getAmmoType(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.ArrayList<zombie.characterTextures.BloodClothingType>
        */
       getBloodClothingType(): java.util.ArrayList<zombie.characterTextures.BloodClothingType>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getBodyLocation(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getBoredomChange(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getBreakSound(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getBringToBearSound(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getBulletOutSound(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       getCanStoreWater(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.ArrayList<string>
        */
       getCategories(): java.util.ArrayList<string>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getChanceToFall(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getCloseSound(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getClothingItem(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.core.skinnedmodel.population.ClothingItem
        */
       getClothingItemAsset(): zombie.core.skinnedmodel.population.ClothingItem;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.ArrayList<string>
        */
       getClothingItemExtra(): java.util.ArrayList<string>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.ArrayList<string>
        */
       getClothingItemExtraOption(): java.util.ArrayList<string>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getConditionLowerChance(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getConditionMax(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getCookingSound(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getCount(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getCountDownSound(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getCustomEatSound(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getDaysFresh(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getDaysTotallyRotten(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getDisplayCategory(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getDisplayName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getDoorDamage(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getDoorHitSound(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getEatType(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getEjectAmmoSound(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getEjectAmmoStartSound(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getEjectAmmoStopSound(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getEnduranceChange(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getEnduranceMod(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getEquipSound(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       getExistsAsVanilla(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getExplosionSound(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getFabricType(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getFileAbsPath(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getFillFromDispenserSound(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getFillFromTapSound(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getFullName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getHungerChange(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getIcon(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.ArrayList<string>
        */
       getIconsForTexture(): java.util.ArrayList<string>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getImpactSound(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getInsertAmmoSound(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getInsertAmmoStartSound(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getInsertAmmoStopSound(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getInsulation(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getKnockdownMod(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getLevelSkillTrained(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getLuaCreate(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getMapID(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getMaxDamage(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getMaxHitCount(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getMaxLevelTrained(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getMaxRange(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getMinAngle(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getMinDamage(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getMinimumSwingTime(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getMinutesToBurn(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getMinutesToCook(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getModID(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.scripting.objects.ScriptModule
        */
       getModule(): zombie.scripting.objects.ScriptModule;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getModuleName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getNPCSoundBoost(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getNoiseDuration(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.core.textures.Texture
        */
       getNormalTexture(): zombie.core.textures.Texture;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getNumLevelsTrained(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getNumberOfPages(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       getObsolete(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getOpenSound(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getOtherCharacterVolumeBoost(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getOtherHandRequire(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.Stack<string>
        */
       getPaletteChoices(): java.util.Stack<string>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getPalettesStart(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getPhysicsObject(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getPlaceMultipleSound(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getPlaceOneSound(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getPushBackMod(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getPutInSound(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getRainFactor(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getRecordedMediaCat(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getRegistry_id(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getReplaceOnDeplete(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getReplaceOnUse(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): string
        */
       getReplaceType(arg0: string): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getReplaceTypes(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.HashMap<string, string>
        */
       getReplaceTypesMap(): java.util.HashMap<string, string>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getReplaceWhenUnequip(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getShellFallSound(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getSkillTrained(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): string
        */
       getSoundByID(arg0: string): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): string
        */
       getSoundParameter(arg0: string): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getSoundRadius(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getSoundVolume(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getSplatNumber(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getSpriteName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getStaticModel(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getStressChange(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getSwingAmountBeforeImpact(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getSwingAnim(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getSwingSound(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getSwingTime(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.ArrayList<string>
        */
       getTags(): java.util.ArrayList<string>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.List<string>
        */
       getTeachedRecipes(): java.util.List<string>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getTemperature(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getThirstChange(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getTicksPerEquipUse(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getToHitModifier(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.scripting.objects.Item$Type
        */
       getType(): zombie.scripting.objects.Item$Type;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getTypeString(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getUnequipSound(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getUnhappyChange(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getUseDelta(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getWaterresist(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getWeaponSprite(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getWeaponWeight(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getWeightEmpty(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getWeightWet(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getWindresist(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): boolean
        */
       hasReplaceType(arg0: string): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isAlcoholic(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isAlwaysKnockdown(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isAlwaysWelcomeGift(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isAngleFalloff(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isCanBandage(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isCanBarricade(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isCantAttackWithLowestEndurance(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isCantEat(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isConditionAffectsCapacity(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isCosmetic(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isDangerousUncooked(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isDisappearOnUse(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isHidden(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isIsCookable(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isKnockBackOnNoDeath(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isManuallyRemoveSpentRounds(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isMultipleHitConditionAffected(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isOtherHandUse(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isRangeFalloff(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isRanged(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isShareDamage(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isShareEndurance(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isSplatBloodOnNoDeath(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isUseEndurance(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isUseSelf(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isUseWhileEquipped(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isUseWhileUnequipped(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isWorldRender(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       resolveItemTypes(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       resolveModelScripts(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setActualWeight(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setAlcoholic(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setAlwaysKnockdown(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setAlwaysWelcomeGift(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setAmmoType(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setAngleFalloff(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setBodyLocation(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setBoredomChange(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setCanBandage(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setCanBarricade(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setCantAttackWithLowestEndurance(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ArrayList arg0): void
        */
       setCategories(arg0: java.util.ArrayList<string>): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ClothingItem arg0): void
        */
       setClothingItemAsset(arg0: zombie.core.skinnedmodel.population.ClothingItem): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       setConditionLowerChance(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       setConditionMax(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       setCount(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setDangerousUncooked(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       setDaysFresh(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       setDaysTotallyRotten(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setDisappearOnUse(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setDisplayName(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       setDoorDamage(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setDoorHitSound(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setEnduranceChange(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setEnduranceMod(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setHungerChange(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setIcon(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setImpactSound(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setInsulation(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setIsCookable(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setKnockBackOnNoDeath(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setKnockdownMod(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setLuaCreate(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setMaxDamage(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       setMaxHitCount(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setMaxRange(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setMinAngle(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setMinDamage(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setMinimumSwingTime(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       setMinutesToBurn(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       setMinutesToCook(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setModID(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setMultipleHitConditionAffected(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setNPCSoundBoost(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setName(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setOtherCharacterVolumeBoost(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setOtherHandRequire(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setOtherHandUse(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Stack arg0): void
        */
       setPaletteChoices(arg0: java.util.Stack<string>): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setPalettesStart(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setPhysicsObject(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setPushBackMod(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setRangeFalloff(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setRanged(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (short arg0): void
        */
       setRegistry_id(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setReplaceOnDeplete(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setReplaceOnUse(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setShareDamage(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setShareEndurance(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       setSoundRadius(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       setSoundVolume(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setSplatBloodOnNoDeath(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       setSplatNumber(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setSpriteName(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setStressChange(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setSwingAmountBeforeImpact(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setSwingAnim(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setSwingSound(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setSwingTime(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setTemperature(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setThirstChange(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       setTicksPerEquipUse(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setToHitModifier(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Type arg0): void
        */
       setType(arg0: zombie.scripting.objects.Item$Type): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setUnhappyChange(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setUseDelta(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setUseEndurance(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setUseSelf(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setUseWhileEquipped(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setUseWhileUnequipped(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setWaterresist(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setWeaponSprite(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setWeaponWeight(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setWeightEmpty(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setWeightWet(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setWindresist(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       toString(): string;
@@ -1641,27 +1615,27 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: string, arg1: string, arg2: number);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getFullType(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getModule(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getUse(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setModule(arg0: string): void;
@@ -1690,93 +1664,93 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, String arg1): void
        *  - (String arg0, String[] arg1): void
        */
       Load(arg0: string, arg1: string | string[]): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getAnimSet(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getAnimState(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getModelScriptName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.scripting.objects.ScriptModule
        */
       getModule(): zombie.scripting.objects.ScriptModule;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getOutfit(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getPose(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getTexture(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isFemale(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       reset(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setAnimSet(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setAnimState(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setFemale(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setModelScriptName(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setOutfit(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setPose(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setTexture(arg0: string): void;
@@ -1793,62 +1767,62 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: string);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getBone(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.ArrayList<string>
        */
       getCanAttach(): java.util.ArrayList<string>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getId(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): org.joml.Vector3f
        */
       getOffset(): org.joml.Vector3f;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): org.joml.Vector3f
        */
       getRotate(): org.joml.Vector3f;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getZOffset(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isUpdateConstraint(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setBone(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ArrayList arg0): void
        */
       setCanAttach(arg0: java.util.ArrayList<string>): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setId(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setUpdateConstraint(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setZOffset(arg0: number): void;
@@ -1868,87 +1842,87 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, String arg1): void
        *  - (String arg0, String[] arg1): void
        */
       Load(arg0: string, arg1: string | string[]): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ModelAttachment arg0): zombie.scripting.objects.ModelAttachment
        */
       addAttachment(arg0: zombie.scripting.objects.ModelAttachment): zombie.scripting.objects.ModelAttachment;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0, ModelAttachment arg1): zombie.scripting.objects.ModelAttachment
        */
       addAttachmentAt(arg0: number, arg1: zombie.scripting.objects.ModelAttachment): zombie.scripting.objects.ModelAttachment;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): zombie.scripting.objects.ModelAttachment
        */
       getAttachment(arg0: number): zombie.scripting.objects.ModelAttachment;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.scripting.objects.ModelAttachment
        */
       getAttachmentById(arg0: string): zombie.scripting.objects.ModelAttachment;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getAttachmentCount(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getFileName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getFullType(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getMeshName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.scripting.objects.ScriptModule
        */
       getModule(): zombie.scripting.objects.ScriptModule;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getShaderName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        *  - (boolean arg0): string
        */
       getTextureName(arg0?: boolean): string;
       /**
-       * Method Parameters: 
-       *  - (int arg0): zombie.scripting.objects.ModelAttachment
+       * Method Parameters:
        *  - (ModelAttachment arg0): zombie.scripting.objects.ModelAttachment
+       *  - (int arg0): zombie.scripting.objects.ModelAttachment
        */
-      removeAttachment(arg0: number | zombie.scripting.objects.ModelAttachment): zombie.scripting.objects.ModelAttachment;
+      removeAttachment(arg0: zombie.scripting.objects.ModelAttachment | number): zombie.scripting.objects.ModelAttachment;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       reset(): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       static ScriptsLoaded(): void;
@@ -1977,402 +1951,402 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       DoResult(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       DoSource(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (InventoryItem arg0): number
        */
       FindIndexOf(arg0: zombie.inventory.InventoryItem): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, String[] arg1): void
        */
       Load(arg0: string, arg1: string[]): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Perk arg0, int arg1): void
        */
       addRequiredSkill(arg0: zombie.characters.skills.PerkFactory$Perk, arg1: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       clearRequiredSkills(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.scripting.objects.Recipe$Source
        */
       findSource(arg0: string): zombie.scripting.objects.Recipe$Source;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getAnimNode(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getCanPerform(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getCategory(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getFullType(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getHeat(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getLuaCreate(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getLuaGiveXP(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getLuaGrab(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getLuaTest(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.scripting.objects.ScriptModule
        */
       getModule(): zombie.scripting.objects.ScriptModule;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getNearItem(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getNumberOfNeededItem(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getOriginalname(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.scripting.objects.Recipe$Source
        */
       getPrimaryTools(): zombie.scripting.objects.Recipe$Source;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getProp1(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getProp2(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): zombie.scripting.objects.Recipe$RequiredSkill
        */
       getRequiredSkill(arg0: number): zombie.scripting.objects.Recipe$RequiredSkill;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getRequiredSkillCount(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.ArrayList<string>
        */
       getRequiredSkills(): java.util.ArrayList<string>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.scripting.objects.Recipe$Result
        */
       getResult(): zombie.scripting.objects.Recipe$Result;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.scripting.objects.Recipe$Source
        */
       getSecondaryTools(): zombie.scripting.objects.Recipe$Source;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getSound(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.ArrayList<zombie.scripting.objects.Recipe$Source>
        */
       getSource(): java.util.ArrayList<zombie.scripting.objects.Recipe$Source>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getTimeToMake(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getTooltip(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getWaterAmountNeeded(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getWorldSprite(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.characters.skills.PerkFactory$Perk
        */
       getXpPerk(): zombie.characters.skills.PerkFactory$Perk;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       hasXpPerk(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isAllowDestroyedItem(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isAllowFrozenItem(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isCanBeDoneFromFloor(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): boolean
        */
       isDestroy(arg0: string): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isHidden(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): boolean
        */
       isKeep(arg0: string): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isRemoveResultItem(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isStopOnRun(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isStopOnWalk(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isValid(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       needToBeLearn(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       noBrokenItems(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setAllowDestroyedItem(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setAllowFrozenItem(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setAnimNode(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setCanBeDoneFromFloor(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setCanPerform(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setCategory(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setIsHidden(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setLuaCreate(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setLuaGiveXP(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setLuaGrab(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setLuaTest(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setName(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setNearItem(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setNeedToBeLearn(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setOnCreate(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setOnXP(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setOriginalname(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setProp1(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setProp2(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setRemoveResultItem(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Perk arg0, int arg1): void
        */
       setRequiredSkill(arg0: zombie.characters.skills.PerkFactory$Perk, arg1: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, int arg1): void
        */
       setResult(arg0: string, arg1: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setSound(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setSource(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setStopOnRun(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setStopOnWalk(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setTime(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, boolean arg1): void
        */
       setTool(arg0: string, arg1: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setValid(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setWorldSprite(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Perk arg0): void
        */
       setXpPerk(arg0: zombie.characters.skills.PerkFactory$Perk): void;
@@ -2389,317 +2363,317 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       DoResult(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       DoSource(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (InventoryItem arg0): number
        */
       FindIndexOf(arg0: zombie.inventory.InventoryItem): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, String[] arg1): void
        */
       Load(arg0: string, arg1: string[]): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Perk arg0, int arg1): void
        */
       addRequiredSkill(arg0: zombie.characters.skills.PerkFactory$Perk, arg1: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       clearRequiredSkills(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.scripting.objects.Recipe$Source
        */
       findSource(arg0: string): zombie.scripting.objects.Recipe$Source;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getAnimNode(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getCanPerform(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getCategory(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getFullType(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getHeat(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getLuaCreate(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getLuaGiveXP(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getLuaGrab(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getLuaTest(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.scripting.objects.ScriptModule
        */
       getModule(): zombie.scripting.objects.ScriptModule;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getNearItem(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getNumberOfNeededItem(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getOriginalname(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getProp1(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getProp2(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): zombie.scripting.objects.Recipe$RequiredSkill
        */
       getRequiredSkill(arg0: number): zombie.scripting.objects.Recipe$RequiredSkill;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getRequiredSkillCount(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.ArrayList<string>
        */
       getRequiredSkills(): java.util.ArrayList<string>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.scripting.objects.Recipe$Result
        */
       getResult(): zombie.scripting.objects.Recipe$Result;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getSound(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.ArrayList<zombie.scripting.objects.Recipe$Source>
        */
       getSource(): java.util.ArrayList<zombie.scripting.objects.Recipe$Source>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getTimeToMake(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getTooltip(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getWaterAmountNeeded(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isAllowDestroyedItem(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isAllowFrozenItem(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isCanBeDoneFromFloor(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): boolean
        */
       isDestroy(arg0: string): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isHidden(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): boolean
        */
       isKeep(arg0: string): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isRemoveResultItem(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isStopOnRun(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isStopOnWalk(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       needToBeLearn(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       noBrokenItems(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setAllowDestroyedItem(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setAllowFrozenItem(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setAnimNode(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setCanBeDoneFromFloor(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setCanPerform(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setCategory(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setIsHidden(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setLuaCreate(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setLuaGiveXP(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setLuaGrab(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setLuaTest(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setNearItem(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setNeedToBeLearn(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setOriginalname(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setProp1(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setProp2(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setRemoveResultItem(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setSound(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setStopOnRun(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setStopOnWalk(arg0: boolean): void;
@@ -2716,12 +2690,12 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: zombie.characters.skills.PerkFactory$Perk, arg1: number);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getLevel(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.characters.skills.PerkFactory$Perk
        */
       getPerk(): zombie.characters.skills.PerkFactory$Perk;
@@ -2738,47 +2712,47 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getCount(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getDrainableCount(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getFullType(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getModule(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getType(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       setCount(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       setDrainableCount(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setModule(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setType(arg0: string): void;
@@ -2795,52 +2769,52 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getCount(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.ArrayList<string>
        */
       getItems(): java.util.ArrayList<string>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getOnlyItem(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getUse(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isDestroy(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isKeep(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setCount(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setDestroy(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setKeep(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setUse(arg0: number): void;
@@ -2857,68 +2831,68 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       CheckExitPoints(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, String arg1): void
        *  - (String arg0, String[] arg1): void
        */
       Load(arg0: string, arg1: string | string[]): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       ParseScript(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       ParseScriptPP(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       Reset(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.scripting.objects.Item
        */
       getItem(arg0: string): zombie.scripting.objects.Item;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.scripting.objects.ModelScript
        */
       getModelScript(arg0: string): zombie.scripting.objects.ModelScript;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.scripting.objects.ScriptModule
        */
       getModule(): zombie.scripting.objects.ScriptModule;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.scripting.objects.Recipe
        */
       getRecipe(arg0: string): zombie.scripting.objects.Recipe;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.scripting.objects.VehicleScript
        */
       getVehicle(arg0: string): zombie.scripting.objects.VehicleScript;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.vehicles.VehicleEngineRPM
        */
       getVehicleEngineRPM(arg0: string): zombie.vehicles.VehicleEngineRPM;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.scripting.objects.VehicleTemplate
        */
       getVehicleTemplate(arg0: string): zombie.scripting.objects.VehicleTemplate;
@@ -2935,28 +2909,28 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, String arg1): void
        *  - (String arg0, String[] arg1): void
        */
       Load(arg0: string, arg1: string | string[]): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getEventName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.scripting.objects.ScriptModule
        */
       getModule(): zombie.scripting.objects.ScriptModule;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): number
        */
       getPosition(arg0: string): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       reset(): void;
@@ -2973,67 +2947,67 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: string);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, String[] arg1): void
        */
       Load(arg0: string, arg1: string[]): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getBaseRecipe(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getBoredomBonus(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getHapinessBonus(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getHungerBonus(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.ArrayList<string>
        */
       getItems(): java.util.ArrayList<string>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.scripting.objects.ScriptModule
        */
       getModule(): zombie.scripting.objects.ScriptModule;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setBaseRecipe(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       setBoredomBonus(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       setHapinessBonus(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       setHungerBonus(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setName(arg0: string): void;
@@ -3050,470 +3024,470 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, String arg1): void
        *  - (String arg0, String[] arg1): void
        */
       Load(arg0: string, arg1: string | string[]): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       Loaded(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ModelAttachment arg0): zombie.scripting.objects.ModelAttachment
        */
       addAttachment(arg0: zombie.scripting.objects.ModelAttachment): zombie.scripting.objects.ModelAttachment;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0, ModelAttachment arg1): zombie.scripting.objects.ModelAttachment
        */
       addAttachmentAt(arg0: number, arg1: zombie.scripting.objects.ModelAttachment): zombie.scripting.objects.ModelAttachment;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (VehicleScript arg0, String arg1): void
        */
       copyAreasFrom(arg0: zombie.scripting.objects.VehicleScript, arg1: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (VehicleScript arg0, String arg1): void
        */
       copyPartsFrom(arg0: zombie.scripting.objects.VehicleScript, arg1: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (VehicleScript arg0, String arg1): void
        */
       copyPassengersFrom(arg0: zombie.scripting.objects.VehicleScript, arg1: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (VehicleScript arg0, String arg1): void
        */
       copyWheelsFrom(arg0: zombie.scripting.objects.VehicleScript, arg1: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): zombie.scripting.objects.VehicleScript$Area
        */
       getArea(arg0: number): zombie.scripting.objects.VehicleScript$Area;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.scripting.objects.VehicleScript$Area
        */
       getAreaById(arg0: string): zombie.scripting.objects.VehicleScript$Area;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getAreaCount(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): zombie.scripting.objects.ModelAttachment
        */
       getAttachment(arg0: number): zombie.scripting.objects.ModelAttachment;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.scripting.objects.ModelAttachment
        */
       getAttachmentById(arg0: string): zombie.scripting.objects.ModelAttachment;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getAttachmentCount(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): org.joml.Vector3f
        */
       getCenterOfMassOffset(): org.joml.Vector3f;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): gnu.trove.list.array.TFloatArrayList
        */
       getCrawlOffsets(): gnu.trove.list.array.TFloatArrayList;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getEngineForce(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getEngineIdleSpeed(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getEngineLoudness(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getEngineQuality(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getEngineRPMType(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getEngineRepairLevel(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): org.joml.Vector3f
        */
       getExtents(): org.joml.Vector3f;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): org.joml.Vector2f
        */
       getExtentsOffset(): org.joml.Vector2f;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getFileName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getForcedHue(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getForcedSat(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getForcedVal(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getFrontEndHealth(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getFullName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getGearRatioCount(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       getHasSiren(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getHeadlightConfigLevel(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): number
        */
       getIndexOfAreaById(arg0: string): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): number
        */
       getIndexOfPartById(arg0: string): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): number
        */
       getIndexOfWheelById(arg0: string): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.scripting.objects.VehicleScript$LightBar
        */
       getLightbar(): zombie.scripting.objects.VehicleScript$LightBar;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getMass(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getMechanicType(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.scripting.objects.VehicleScript$Model
        */
       getModel(): zombie.scripting.objects.VehicleScript$Model;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.scripting.objects.VehicleScript$Model
        *  - (String arg0, ArrayList arg1): zombie.scripting.objects.VehicleScript$Model
        */
       getModelById(arg0: string, arg1?: java.util.ArrayList<zombie.scripting.objects.VehicleScript$Model>): zombie.scripting.objects.VehicleScript$Model;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): zombie.scripting.objects.VehicleScript$Model
        */
       getModelByIndex(arg0: number): zombie.scripting.objects.VehicleScript$Model;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getModelCount(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): org.joml.Vector3f
        */
       getModelOffset(): org.joml.Vector3f;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getModelScale(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.scripting.objects.ScriptModule
        */
       getModule(): zombie.scripting.objects.ScriptModule;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getOffroadEfficiency(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): zombie.scripting.objects.VehicleScript$Part
        */
       getPart(arg0: number): zombie.scripting.objects.VehicleScript$Part;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.scripting.objects.VehicleScript$Part
        */
       getPartById(arg0: string): zombie.scripting.objects.VehicleScript$Part;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getPartCount(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): zombie.scripting.objects.VehicleScript$Passenger
        */
       getPassenger(arg0: number): zombie.scripting.objects.VehicleScript$Passenger;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.scripting.objects.VehicleScript$Passenger
        */
       getPassengerById(arg0: string): zombie.scripting.objects.VehicleScript$Passenger;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getPassengerCount(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): number
        */
       getPassengerIndex(arg0: string): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): org.joml.Vector3f
        */
       getPhysicsChassisShape(): org.joml.Vector3f;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): zombie.scripting.objects.VehicleScript$PhysicsShape
        */
       getPhysicsShape(arg0: number): zombie.scripting.objects.VehicleScript$PhysicsShape;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getPhysicsShapeCount(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getPlayerDamageProtection(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getRearEndHealth(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getRollInfluence(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getSeats(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): org.joml.Vector2f
        */
       getShadowExtents(): org.joml.Vector2f;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): org.joml.Vector2f
        */
       getShadowOffset(): org.joml.Vector2f;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): zombie.scripting.objects.VehicleScript$Skin
        */
       getSkin(arg0: number): zombie.scripting.objects.VehicleScript$Skin;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getSkinCount(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.scripting.objects.VehicleScript$Sounds
        */
       getSounds(): zombie.scripting.objects.VehicleScript$Sounds;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): number
        */
       getSteeringClamp(arg0: number): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getSteeringIncrement(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getStorageCapacity(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getSuspensionCompression(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getSuspensionDamping(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getSuspensionRestLength(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getSuspensionStiffness(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getSuspensionTravel(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.scripting.objects.VehicleScript$Skin
        */
       getTextures(): zombie.scripting.objects.VehicleScript$Skin;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): zombie.scripting.objects.VehicleScript$Wheel
        */
       getWheel(arg0: number): zombie.scripting.objects.VehicleScript$Wheel;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.scripting.objects.VehicleScript$Wheel
        */
       getWheelById(arg0: string): zombie.scripting.objects.VehicleScript$Wheel;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getWheelCount(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getWheelFriction(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, String arg1): boolean
        */
       globMatch(arg0: string, arg1: string): boolean;
       /**
-       * Method Parameters: 
-       *  - (int arg0): zombie.scripting.objects.ModelAttachment
+       * Method Parameters:
        *  - (ModelAttachment arg0): zombie.scripting.objects.ModelAttachment
+       *  - (int arg0): zombie.scripting.objects.ModelAttachment
        */
-      removeAttachment(arg0: number | zombie.scripting.objects.ModelAttachment): zombie.scripting.objects.ModelAttachment;
+      removeAttachment(arg0: zombie.scripting.objects.ModelAttachment | number): zombie.scripting.objects.ModelAttachment;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setEngineRPMType(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       setEngineRepairLevel(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setForcedHue(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setForcedSat(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setForcedVal(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       setMechanicType(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setModelScale(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setOffroadEfficiency(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setPlayerDamageProtection(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       setSeats(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       toBullet(): void;
@@ -3542,47 +3516,47 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getH(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getId(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getW(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getX(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getY(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Double arg0): void
        */
       setH(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Double arg0): void
        */
       setW(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Double arg0): void
        */
       setX(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Double arg0): void
        */
       setY(arg0: number): void;
@@ -3635,17 +3609,17 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getId(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): org.joml.Vector3f
        */
       getOffset(): org.joml.Vector3f;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): org.joml.Vector3f
        */
       getRotate(): org.joml.Vector3f;
@@ -3662,22 +3636,22 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isMechanicRequireKey(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isRepairMechanic(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setMechanicRequireKey(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setRepairMechanic(arg0: boolean): void;
@@ -3694,32 +3668,32 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getId(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): zombie.scripting.objects.VehicleScript$Position
        */
       getPosition(arg0: number): zombie.scripting.objects.VehicleScript$Position;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.scripting.objects.VehicleScript$Position
        */
       getPositionById(arg0: string): zombie.scripting.objects.VehicleScript$Position;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getPositionCount(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.scripting.objects.VehicleScript$Passenger$SwitchSeat
        */
       getSwitchSeatById(arg0: string): zombie.scripting.objects.VehicleScript$Passenger$SwitchSeat;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.scripting.objects.VehicleScript$Passenger
        */
       makeCopy(): zombie.scripting.objects.VehicleScript$Passenger;
@@ -3736,12 +3710,12 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getId(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.scripting.objects.VehicleScript$Passenger$SwitchSeat
        */
       makeCopy(): zombie.scripting.objects.VehicleScript$Passenger$SwitchSeat;
@@ -3758,32 +3732,32 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): org.joml.Vector3f
        */
       getExtents(): org.joml.Vector3f;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): org.joml.Vector3f
        */
       getOffset(): org.joml.Vector3f;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getRadius(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): org.joml.Vector3f
        */
       getRotate(): org.joml.Vector3f;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getTypeString(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setRadius(arg0: number): void;
@@ -3800,22 +3774,22 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getArea(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getId(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): org.joml.Vector3f
        */
       getOffset(): org.joml.Vector3f;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): org.joml.Vector3f
        */
       getRotate(): org.joml.Vector3f;
@@ -3832,7 +3806,7 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Skin arg0): void
        */
       copyMissingFrom(arg0: zombie.scripting.objects.VehicleScript$Skin): void;
@@ -3861,12 +3835,12 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getId(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): org.joml.Vector3f
        */
       getOffset(): org.joml.Vector3f;
@@ -3895,17 +3869,17 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: zombie.scripting.objects.ScriptModule, arg1: string, arg2: string);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, String[] arg1): void
        */
       Load(arg0: string, arg1: string[]): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.scripting.objects.ScriptModule
        */
       getModule(): zombie.scripting.objects.ScriptModule;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.scripting.objects.VehicleScript
        */
       getScript(): zombie.scripting.objects.VehicleScript;

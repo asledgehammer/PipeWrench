@@ -1,6 +1,6 @@
 /** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
-  export namespace java.time {
-    export type LocalDateTime = any;
+  export namespace java.nio.charset {
+    export type Charset = any;
   }
 }

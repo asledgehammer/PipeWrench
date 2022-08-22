@@ -1,30 +1,4 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
-/**  @noSelfInFile */
-/// <reference path="../reference.d.ts" />
+/** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.debug {
     /**
@@ -39,87 +13,87 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: string, arg1: boolean, arg2: boolean);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       getDefaultValue(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.debug.options.IDebugOptionGroup
        */
       getParent(): zombie.debug.options.IDebugOptionGroup;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getTooltip(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getType(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       getValue(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getValueAsLuaString(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): any
        */
       getValueAsObject(): any;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getValueAsString(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isDebugOnly(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): boolean
        */
       isValidString(arg0: string): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       parse(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       resetToDefault(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       setDefaultToCurrentValue(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IDebugOptionGroup arg0): void
        */
       setParent(arg0: zombie.debug.options.IDebugOptionGroup): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setValue(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Object arg0): void
        */
       setValueFromObject(arg0: any): void;
@@ -203,14 +177,14 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (DebugType arg0, LogSeverity arg1): void
        */
       static enableLog(arg0: zombie.debug.DebugType, arg1: zombie.debug.LogSeverity): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (DebugType arg0, LogSeverity arg1, String arg2, Object arg3, String arg4): string
        *  - (DebugType arg0, LogSeverity arg1, String arg2, Object arg3, String arg4, Object arg5): string
        *  - (DebugType arg0, LogSeverity arg1, String arg2, Object arg3, String arg4, Object arg5, Object arg6): string
@@ -226,80 +200,80 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (DebugType arg0, LogSeverity arg1, String arg2, Object arg3, String arg4, Object... arg5): string
        */
       static formatStringVarArgs(arg0: zombie.debug.DebugType, arg1: zombie.debug.LogSeverity, arg2: string, arg3: any, arg4: string, arg5: any): string;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.ArrayList<zombie.debug.DebugType>
        */
       static getDebugTypes(): java.util.ArrayList<zombie.debug.DebugType>;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       static init(): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (DebugType arg0): boolean
        */
       static isEnabled(arg0: zombie.debug.DebugType): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters: 
-       *  - (LogSeverity arg0, DebugType arg1): boolean
+       * Method Parameters:
        *  - (DebugType arg0, LogSeverity arg1): boolean
+       *  - (LogSeverity arg0, DebugType arg1): boolean
        */
-      static isLogEnabled(arg0: zombie.debug.LogSeverity | zombie.debug.DebugType, arg1: zombie.debug.DebugType | zombie.debug.LogSeverity): boolean;
+      static isLogEnabled(arg0: zombie.debug.DebugType | zombie.debug.LogSeverity, arg1: zombie.debug.LogSeverity | zombie.debug.DebugType): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       static load(): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
-       *  - (Object arg0): void
+       * Method Parameters:
        *  - (String arg0): void
+       *  - (Object arg0): void
        *  - (DebugType arg0, String arg1): void
        */
       static log(arg0: any, arg1?: string): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       static save(): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (DebugType arg0, boolean arg1): void
        */
       static setLogEnabled(arg0: zombie.debug.DebugType, arg1: boolean): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (OutputStream arg0): void
        */
       static setStdErr(arg0: java.io.OutputStream): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (OutputStream arg0): void
        */
       static setStdOut(arg0: java.io.OutputStream): void;
@@ -327,7 +301,7 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: java.io.PrintStream, arg1: java.io.PrintStream, arg2: java.io.PrintStream, arg3: zombie.debug.IDebugLogFormatter);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (CharSequence arg0): java.lang.Appendable
        *  - (CharSequence arg0): java.io.PrintStream
        *  - (char arg0): java.lang.Appendable
@@ -337,17 +311,22 @@ declare module '@asledgehammer/pipewrench' {
        */
       append(arg0: java.lang.CharSequence | string, arg1?: number, arg2?: number): java.lang.Appendable | java.io.PrintStream;
       /**
-       * Method Parameters: 
+       * Method Parameters:
+       *  - (Empty): java.nio.charset.Charset
+       */
+      charset(): java.nio.charset.Charset;
+      /**
+       * Method Parameters:
        *  - (Empty): boolean
        */
       checkError(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       close(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        *  - (String arg0, Object arg1): void
        *  - (String arg0, Object arg1, Object arg2): void
@@ -358,24 +337,24 @@ declare module '@asledgehammer/pipewrench' {
        */
       debugln(arg0: string, arg1?: any, arg2?: any, arg3?: any, arg4?: any, arg5?: any, arg6?: any): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Object arg0): void
        *  - (String arg0, Object... arg1): void
        */
       error(arg0: any, arg1?: any): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       flush(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, Object... arg1): java.io.PrintStream
        *  - (Locale arg0, String arg1, Object... arg2): java.io.PrintStream
        */
       format(arg0: string | java.util.Locale, arg1: any | string, arg2?: any): java.io.PrintStream;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        *  - (String arg0, Object arg1): void
        *  - (String arg0, Object arg1, Object arg2): void
@@ -386,54 +365,54 @@ declare module '@asledgehammer/pipewrench' {
        */
       noise(arg0: string, arg1?: any, arg2?: any, arg3?: any, arg4?: any, arg5?: any, arg6?: any): void;
       /**
-       * Method Parameters: 
-       *  - (Object arg0): void
-       *  - (String arg0): void
-       *  - (boolean arg0): void
-       *  - (char arg0): void
-       *  - (int arg0): void
-       *  - (double arg0): void
-       *  - (long arg0): void
+       * Method Parameters:
        *  - (float arg0): void
+       *  - (long arg0): void
+       *  - (int arg0): void
+       *  - (char arg0): void
+       *  - (double arg0): void
+       *  - (String arg0): void
+       *  - (Object arg0): void
+       *  - (boolean arg0): void
        *  - (char[] arg0): void
        */
       print(arg0: any): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Throwable arg0, String arg1, LogSeverity arg2): void
        *  - (Throwable arg0, String arg1, String arg2, LogSeverity arg3): void
        */
       printException(arg0: java.lang.Throwable, arg1: string, arg2: zombie.debug.LogSeverity | string, arg3?: zombie.debug.LogSeverity): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        *  - (String arg0): void
        *  - (int arg0, String arg1): void
        */
       printStackTrace(arg0?: string | number, arg1?: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, boolean arg1, Object... arg2): void
        */
       printUnitTest(arg0: string, arg1: boolean, arg2: any): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, Object... arg1): java.io.PrintStream
        *  - (Locale arg0, String arg1, Object... arg2): java.io.PrintStream
        */
       printf(arg0: string | java.util.Locale, arg1: any | string, arg2?: any): java.io.PrintStream;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
+       *  - (Object arg0): void
+       *  - (String arg0): void
        *  - (char[] arg0): void
        *  - (double arg0): void
-       *  - (float arg0): void
-       *  - (String arg0): void
-       *  - (Object arg0): void
        *  - (boolean arg0): void
        *  - (char arg0): void
-       *  - (int arg0): void
+       *  - (float arg0): void
        *  - (long arg0): void
+       *  - (int arg0): void
        *  - (String arg0, Object arg1): void
        *  - (String arg0, Object arg1, Object arg2): void
        *  - (String arg0, Object arg1, Object arg2, Object arg3): void
@@ -446,7 +425,7 @@ declare module '@asledgehammer/pipewrench' {
        */
       println(arg0?: any, arg1?: any, arg2?: any, arg3?: any, arg4?: any, arg5?: any, arg6?: any, arg7?: any, arg8?: any, arg9?: any): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        *  - (String arg0, Object arg1): void
        *  - (String arg0, Object arg1, Object arg2): void
@@ -457,55 +436,55 @@ declare module '@asledgehammer/pipewrench' {
        */
       trace(arg0: string, arg1?: any, arg2?: any, arg3?: any, arg4?: any, arg5?: any, arg6?: any): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Object arg0): void
        *  - (String arg0, Object... arg1): void
        */
       warn(arg0: any, arg1?: any): void;
       /**
-       * Method Parameters: 
-       *  - (int arg0): void
+       * Method Parameters:
        *  - (byte[] arg0): void
+       *  - (int arg0): void
        *  - (byte[] arg0, int arg1, int arg2): void
        */
-      write(arg0: number | number[], arg1?: number, arg2?: number): void;
+      write(arg0: number[] | number, arg1?: number, arg2?: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (byte[] arg0): void
        */
       writeBytes(arg0: number[]): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       static generateCallerPrefix(): string;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (StackTraceElement arg0, boolean arg1): string
        */
       static getStackTraceElementString(arg0: java.lang.StackTraceElement, arg1: boolean): string;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Throwable arg0): string
        */
       static getTopStackTraceString(arg0: java.lang.Throwable): string;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.io.OutputStream
        */
       static nullOutputStream(): java.io.OutputStream;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): java.lang.StackTraceElement
        */
       static tryGetCallerTraceElement(arg0: number): java.lang.StackTraceElement;
@@ -527,84 +506,84 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IDebugOption arg0): void
        */
       addChild(arg0: zombie.debug.options.IDebugOption): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): boolean
        */
       getBoolean(arg0: string): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.lang.Iterable<zombie.debug.options.IDebugOption>
        */
       getChildren(): java.lang.Iterable<zombie.debug.options.IDebugOption>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): zombie.debug.BooleanDebugOption
        */
       getOptionByIndex(arg0: number): zombie.debug.BooleanDebugOption;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.debug.BooleanDebugOption
        */
       getOptionByName(arg0: string): zombie.debug.BooleanDebugOption;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getOptionCount(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.debug.options.IDebugOptionGroup
        */
       getParent(): zombie.debug.options.IDebugOptionGroup;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       init(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       load(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IDebugOption arg0): void
        */
       onChildAdded(arg0: zombie.debug.options.IDebugOption): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IDebugOption arg0): void
        */
       onDescendantAdded(arg0: zombie.debug.options.IDebugOption): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       save(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, boolean arg1): void
        */
       setBoolean(arg0: string, arg1: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IDebugOptionGroup arg0): void
        */
       setParent(arg0: zombie.debug.options.IDebugOptionGroup): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       static testThreadCrash(arg0: number): void;
@@ -621,44 +600,44 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IDebugOption arg0): void
        */
       addChild(arg0: zombie.debug.options.IDebugOption): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.lang.Iterable<zombie.debug.options.IDebugOption>
        */
       getChildren(): java.lang.Iterable<zombie.debug.options.IDebugOption>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.debug.options.IDebugOptionGroup
        */
       getParent(): zombie.debug.options.IDebugOptionGroup;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IDebugOption arg0): void
        */
       onChildAdded(arg0: zombie.debug.options.IDebugOption): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IDebugOption arg0): void
        */
       onDescendantAdded(arg0: zombie.debug.options.IDebugOption): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IDebugOptionGroup arg0): void
        */
       setParent(arg0: zombie.debug.options.IDebugOptionGroup): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, boolean arg1): zombie.debug.BooleanDebugOption
        *  - (IDebugOptionGroup arg0, String arg1, boolean arg2): zombie.debug.BooleanDebugOption
        */
@@ -666,7 +645,7 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, boolean arg1): zombie.debug.BooleanDebugOption
        *  - (IDebugOptionGroup arg0, String arg1, boolean arg2): zombie.debug.BooleanDebugOption
        */
@@ -734,7 +713,7 @@ declare module '@asledgehammer/pipewrench' {
     export class IDebugLogFormatter {
       protected constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (LogSeverity arg0, String arg1, String arg2, String arg3): string
        *  - (LogSeverity arg0, String arg1, String arg2, String arg3, Object arg4): string
        *  - (LogSeverity arg0, String arg1, String arg2, String arg3, Object arg4, Object arg5): string
@@ -748,12 +727,12 @@ declare module '@asledgehammer/pipewrench' {
        */
       format(arg0: zombie.debug.LogSeverity, arg1: string, arg2: string, arg3: string, arg4?: any, arg5?: any, arg6?: any, arg7?: any, arg8?: any, arg9?: any, arg10?: any, arg11?: any, arg12?: any): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (LogSeverity arg0): boolean
        */
       isLogEnabled(arg0: zombie.debug.LogSeverity): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (LogSeverity arg0): boolean
        */
       isLogSeverityEnabled(arg0: zombie.debug.LogSeverity): boolean;

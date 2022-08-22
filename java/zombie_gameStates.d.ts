@@ -1,30 +1,4 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
-/**  @noSelfInFile */
-/// <reference path="../reference.d.ts" />
+/** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.gameStates {
     /**
@@ -42,94 +16,94 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       enter(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       exit(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): any
        */
       fromLua0(arg0: string): any;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, Object arg1): any
        */
       fromLua1(arg0: string, arg1: any): any;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): boolean
        */
       getBoolean(arg0: string): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): zombie.config.ConfigOption
        */
       getOptionByIndex(arg0: number): zombie.config.ConfigOption;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.config.ConfigOption
        */
       getOptionByName(arg0: string): zombie.config.ConfigOption;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getOptionCount(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       load(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.gameStates.GameState
        */
       redirectState(): zombie.gameStates.GameState;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       reenter(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       render(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       save(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, boolean arg1): void
        */
       setBoolean(arg0: string, arg1: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (KahluaTable arg0): void
        */
       setTable(arg0: se.krka.kahlua.vm.KahluaTable): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.gameStates.GameStateMachine$StateAction
        */
       update(): zombie.gameStates.GameStateMachine$StateAction;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       yield(): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.gameStates.AnimationViewerState
        */
       static checkInstance(): zombie.gameStates.AnimationViewerState;
@@ -146,72 +120,72 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: zombie.gameStates.AnimationViewerState, arg1: string, arg2: boolean);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       getDefaultValue(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getTooltip(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getType(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       getValue(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getValueAsLuaString(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): any
        */
       getValueAsObject(): any;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getValueAsString(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): boolean
        */
       isValidString(arg0: string): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       parse(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       resetToDefault(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       setDefaultToCurrentValue(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setValue(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Object arg0): void
        */
       setValueFromObject(arg0: any): void;
@@ -231,59 +205,59 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       enter(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       exit(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): any
        */
       fromLua0(arg0: string): any;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, Object arg1): any
        */
       fromLua1(arg0: string, arg1: any): any;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.gameStates.GameState
        */
       redirectState(): zombie.gameStates.GameState;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       reenter(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       render(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (KahluaTable arg0): void
        */
       setTable(arg0: se.krka.kahlua.vm.KahluaTable): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.gameStates.GameStateMachine$StateAction
        */
       update(): zombie.gameStates.GameStateMachine$StateAction;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       yield(): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.gameStates.AttachmentEditorState
        */
       static checkInstance(): zombie.gameStates.AttachmentEditorState;
@@ -298,35 +272,35 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       static Reset(): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.gameStates.ChooseGameInfo$Mod
        */
       static getAvailableModDetails(arg0: string): zombie.gameStates.ChooseGameInfo$Mod;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.gameStates.ChooseGameInfo$Map
        */
       static getMapDetails(arg0: string): zombie.gameStates.ChooseGameInfo$Map;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.gameStates.ChooseGameInfo$Mod
        */
       static getModDetails(arg0: string): zombie.gameStates.ChooseGameInfo$Mod;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.gameStates.ChooseGameInfo$Mod
        */
       static readModInfo(arg0: string): zombie.gameStates.ChooseGameInfo$Mod;
@@ -343,57 +317,57 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getDescription(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getDirectory(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.ArrayList<string>
        */
       getLotDirectories(): java.util.ArrayList<string>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.core.textures.Texture
        */
       getThumbnail(): zombie.core.textures.Texture;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getTitle(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isFixed2x(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setDescription(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setDirectory(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setFixed2x(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Texture arg0): void
        */
       setThumbnail(arg0: zombie.core.textures.Texture): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setTitle(arg0: string): void;
@@ -410,117 +384,117 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: string);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, int arg1): void
        */
       addPack(arg0: string, arg1: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, int arg1): void
        */
       addTileDef(arg0: string, arg1: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getDescription(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getDir(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getId(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.ArrayList<zombie.gameStates.ChooseGameInfo$PackFile>
        */
       getPacks(): java.util.ArrayList<zombie.gameStates.ChooseGameInfo$PackFile>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): string
        */
       getPoster(arg0: number): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getPosterCount(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.ArrayList<string>
        */
       getRequire(): java.util.ArrayList<string>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.core.textures.Texture
        */
       getTexture(): zombie.core.textures.Texture;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.ArrayList<zombie.gameStates.ChooseGameInfo$TileDef>
        */
       getTileDefs(): java.util.ArrayList<zombie.gameStates.ChooseGameInfo$TileDef>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getUrl(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.core.GameVersion
        */
       getVersionMax(): zombie.core.GameVersion;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.core.GameVersion
        */
       getVersionMin(): zombie.core.GameVersion;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getWorkshopID(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isAvailable(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setAvailable(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setId(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setName(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ArrayList arg0): void
        */
       setRequire(arg0: java.util.ArrayList<string>): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Texture arg0): void
        */
       setTexture(arg0: zombie.core.textures.Texture): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setUrl(arg0: string): void;
@@ -576,42 +550,42 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: java.nio.ByteBuffer);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       FromLua(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       enter(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       exit(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.gameStates.GameState
        */
       redirectState(): zombie.gameStates.GameState;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       reenter(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       render(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.gameStates.GameStateMachine$StateAction
        */
       update(): zombie.gameStates.GameStateMachine$StateAction;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       yield(): void;
@@ -631,114 +605,114 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       enter(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       exit(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): any
        */
       fromLua0(arg0: string): any;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, Object arg1): any
        */
       fromLua1(arg0: string, arg1: any): any;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, Object arg1, Object arg2): any
        */
       fromLua2(arg0: string, arg1: any, arg2: any): any;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): boolean
        */
       getBoolean(arg0: string): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): zombie.config.ConfigOption
        */
       getOptionByIndex(arg0: number): zombie.config.ConfigOption;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.config.ConfigOption
        */
       getOptionByName(arg0: string): zombie.config.ConfigOption;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getOptionCount(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoCell arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, boolean arg7): zombie.iso.LosUtil$TestResults
        */
       lineClearCached(arg0: zombie.iso.IsoCell, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: boolean): zombie.iso.LosUtil$TestResults;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       load(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.gameStates.GameState
        */
       redirectState(): zombie.gameStates.GameState;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       reenter(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       render(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       renderScene(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       save(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, boolean arg1): void
        */
       setBoolean(arg0: string, arg1: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (KahluaTable arg0): void
        */
       setTable(arg0: se.krka.kahlua.vm.KahluaTable): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.gameStates.GameStateMachine$StateAction
        */
       update(): zombie.gameStates.GameStateMachine$StateAction;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.gameStates.GameStateMachine$StateAction
        */
       updateScene(): zombie.gameStates.GameStateMachine$StateAction;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       yield(): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.gameStates.DebugChunkState
        */
       static checkInstance(): zombie.gameStates.DebugChunkState;
@@ -755,72 +729,72 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: zombie.gameStates.DebugChunkState, arg1: string, arg2: boolean);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       getDefaultValue(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getTooltip(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getType(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       getValue(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getValueAsLuaString(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): any
        */
       getValueAsObject(): any;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getValueAsString(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): boolean
        */
       isValidString(arg0: string): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       parse(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       resetToDefault(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       setDefaultToCurrentValue(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setValue(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Object arg0): void
        */
       setValueFromObject(arg0: any): void;
@@ -840,67 +814,67 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       enter(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       exit(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): any
        */
       fromLua0(arg0: string): any;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, Object arg1): any
        */
       fromLua1(arg0: string, arg1: any): any;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, Object arg1, Object arg2): any
        */
       fromLua2(arg0: string, arg1: any, arg2: any): any;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.gameStates.GameState
        */
       redirectState(): zombie.gameStates.GameState;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       reenter(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       render(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       renderScene(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (KahluaTable arg0): void
        */
       setTable(arg0: se.krka.kahlua.vm.KahluaTable): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.gameStates.GameStateMachine$StateAction
        */
       update(): zombie.gameStates.GameStateMachine$StateAction;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.gameStates.GameStateMachine$StateAction
        */
       updateScene(): zombie.gameStates.GameStateMachine$StateAction;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       yield(): void;
@@ -942,51 +916,51 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       enter(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       exit(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.gameStates.GameState
        */
       redirectState(): zombie.gameStates.GameState;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       reenter(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       render(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.gameStates.GameStateMachine$StateAction
        */
       update(): zombie.gameStates.GameStateMachine$StateAction;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       yield(): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       static Done(): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       static SendDone(): void;
@@ -1003,37 +977,37 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       enter(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       exit(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.gameStates.GameState
        */
       redirectState(): zombie.gameStates.GameState;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       reenter(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       render(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.gameStates.GameStateMachine$StateAction
        */
       update(): zombie.gameStates.GameStateMachine$StateAction;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       yield(): void;
@@ -1050,17 +1024,17 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (GameState arg0): void
        */
       forceNextState(arg0: zombie.gameStates.GameState): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       render(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       update(): void;
@@ -1096,51 +1070,51 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       enter(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       exit(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.gameStates.GameState
        */
       redirectState(): zombie.gameStates.GameState;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       reenter(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       render(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.gameStates.GameStateMachine$StateAction
        */
       update(): zombie.gameStates.GameStateMachine$StateAction;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       yield(): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       static onConnectionImmediate(): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       static onPlaceInQueue(arg0: number): void;
@@ -1166,59 +1140,59 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       ShouldShowLogo(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       enter(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       exit(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.gameStates.GameState
        */
       redirectState(): zombie.gameStates.GameState;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       reenter(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       render(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       renderBackground(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ConnectToServerState arg0): void
        */
       setConnectToServerState(arg0: zombie.gameStates.ConnectToServerState): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.gameStates.GameStateMachine$StateAction
        */
       update(): zombie.gameStates.GameStateMachine$StateAction;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       yield(): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Texture arg0, int arg1, int arg2, int arg3, int arg4, float arg5): void
        *  - (Texture arg0, int arg1, int arg2, int arg3, int arg4, Color arg5): void
        */
@@ -1226,28 +1200,28 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (BufferedImage arg0): java.nio.ByteBuffer
        */
       static convertToByteBuffer(arg0: java.awt.image.BufferedImage): java.nio.ByteBuffer;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.gameStates.MainScreenState
        */
       static getInstance(): zombie.gameStates.MainScreenState;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): org.lwjgl.glfw.GLFWImage$Buffer
        */
       static loadIcons(): org.lwjgl.glfw.GLFWImage$Buffer;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String[] arg0): void
        */
       static main(arg0: string[]): void;
@@ -1276,17 +1250,17 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       render(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setY(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       update(): void;

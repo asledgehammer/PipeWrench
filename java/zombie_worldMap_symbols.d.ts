@@ -1,30 +1,4 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
-/**  @noSelfInFile */
-/// <reference path="../reference.d.ts" />
+/** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.worldMap.symbols {
     /**
@@ -42,82 +16,82 @@ declare module '@asledgehammer/pipewrench' {
        */
       protected constructor(arg0: zombie.worldMap.symbols.WorldMapSymbols);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (UIWorldMap arg0): number
        */
       getDisplayScale(arg0: zombie.worldMap.UIWorldMap): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.worldMap.symbols.WorldMapSymbols$WorldMapSymbolType
        */
       getType(): zombie.worldMap.symbols.WorldMapSymbols$WorldMapSymbolType;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (UIWorldMap arg0): number
        */
       heightScaled(arg0: zombie.worldMap.UIWorldMap): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isVisible(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (UIWorldMap arg0, WorldMapSymbolCollisions arg1, float arg2, float arg3): void
        */
       layout(arg0: zombie.worldMap.UIWorldMap, arg1: zombie.worldMap.symbols.WorldMapSymbolCollisions, arg2: number, arg3: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ByteBuffer arg0, int arg1, int arg2): void
        */
       load(arg0: java.nio.ByteBuffer, arg1: number, arg2: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       release(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (UIWorldMap arg0, float arg1, float arg2): void
        */
       render(arg0: zombie.worldMap.UIWorldMap, arg1: number, arg2: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ByteBuffer arg0): void
        */
       save(arg0: java.nio.ByteBuffer): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0, float arg1): void
        */
       setAnchor(arg0: number, arg1: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setCollide(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0, float arg1): void
        */
       setPosition(arg0: number, arg1: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0, float arg1, float arg2, float arg3): void
        */
       setRGBA(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setScale(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setVisible(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (UIWorldMap arg0): number
        */
       widthScaled(arg0: zombie.worldMap.UIWorldMap): number;
@@ -151,73 +125,73 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, boolean arg1, UIFont arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10, float arg11): zombie.worldMap.symbols.WorldMapTextSymbol
        */
       addText(arg0: string, arg1: boolean, arg2: zombie.ui.UIFont, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number): zombie.worldMap.symbols.WorldMapTextSymbol;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6): zombie.worldMap.symbols.WorldMapTextureSymbol
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9): zombie.worldMap.symbols.WorldMapTextureSymbol
        */
       addTexture(arg0: string, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number, arg9?: number): zombie.worldMap.symbols.WorldMapTextureSymbol;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, UIFont arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7): zombie.worldMap.symbols.WorldMapTextSymbol
        */
       addTranslatedText(arg0: string, arg1: zombie.ui.UIFont, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number): zombie.worldMap.symbols.WorldMapTextSymbol;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, UIFont arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7): zombie.worldMap.symbols.WorldMapTextSymbol
        */
       addUntranslatedText(arg0: string, arg1: zombie.ui.UIFont, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number): zombie.worldMap.symbols.WorldMapTextSymbol;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       clear(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getLayoutWorldScale(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       getMiniMapSymbols(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): zombie.worldMap.symbols.WorldMapBaseSymbol
        */
       getSymbolByIndex(arg0: number): zombie.worldMap.symbols.WorldMapBaseSymbol;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getSymbolCount(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       invalidateLayout(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ByteBuffer arg0, int arg1): void
        */
       load(arg0: java.nio.ByteBuffer, arg1: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       removeSymbolByIndex(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (UIWorldMap arg0): void
        */
       render(arg0: zombie.worldMap.UIWorldMap): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ByteBuffer arg0): void
        */
       save(arg0: java.nio.ByteBuffer): void;
@@ -253,49 +227,49 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: zombie.worldMap.UIWorldMap, arg1: zombie.worldMap.symbols.WorldMapSymbols);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, float arg1, float arg2): zombie.worldMap.symbols.WorldMapSymbolsV1$WorldMapTextureSymbolV1
        */
       addTexture(arg0: string, arg1: number, arg2: number): zombie.worldMap.symbols.WorldMapSymbolsV1$WorldMapTextureSymbolV1;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, UIFont arg1, float arg2, float arg3): zombie.worldMap.symbols.WorldMapSymbolsV1$WorldMapTextSymbolV1
        */
       addTranslatedText(arg0: string, arg1: zombie.ui.UIFont, arg2: number, arg3: number): zombie.worldMap.symbols.WorldMapSymbolsV1$WorldMapTextSymbolV1;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, UIFont arg1, float arg2, float arg3): zombie.worldMap.symbols.WorldMapSymbolsV1$WorldMapTextSymbolV1
        */
       addUntranslatedText(arg0: string, arg1: zombie.ui.UIFont, arg2: number, arg3: number): zombie.worldMap.symbols.WorldMapSymbolsV1$WorldMapTextSymbolV1;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       clear(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): zombie.worldMap.symbols.WorldMapSymbolsV1$WorldMapBaseSymbolV1
        */
       getSymbolByIndex(arg0: number): zombie.worldMap.symbols.WorldMapSymbolsV1$WorldMapBaseSymbolV1;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getSymbolCount(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0, float arg1): number
        */
       hitTest(arg0: number, arg1: number): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       removeSymbolByIndex(arg0: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Exposer arg0): void
        */
       static setExposed(arg0: zombie.Lua.LuaManager$Exposer): void;
@@ -308,127 +282,127 @@ declare module '@asledgehammer/pipewrench' {
     export class WorldMapSymbolsV1$WorldMapBaseSymbolV1 {
 
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getAlpha(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getBlue(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getDisplayHeight(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getDisplayWidth(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getDisplayX(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getDisplayY(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getGreen(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.util.Pool<zombie.util.IPooledObject>
        */
       getPool(): zombie.util.Pool<zombie.util.IPooledObject>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getRed(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getWorldX(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getWorldY(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isFree(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isText(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isTexture(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isVisible(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       onReleased(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       release(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0, float arg1): void
        */
       setAnchor(arg0: number, arg1: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setCollide(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setFree(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Pool arg0): void
        */
       setPool(arg0: zombie.util.Pool<zombie.util.IPooledObject>): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0, float arg1): void
        */
       setPosition(arg0: number, arg1: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0, float arg1, float arg2, float arg3): void
        */
       setRGBA(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setScale(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setVisible(arg0: boolean): void;
@@ -445,147 +419,147 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getAlpha(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getBlue(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getDisplayHeight(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getDisplayWidth(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getDisplayX(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getDisplayY(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getGreen(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.util.Pool<zombie.util.IPooledObject>
        */
       getPool(): zombie.util.Pool<zombie.util.IPooledObject>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getRed(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getTranslatedText(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getUntranslatedText(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getWorldX(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getWorldY(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isFree(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isText(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isTexture(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isVisible(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       onReleased(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       release(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0, float arg1): void
        */
       setAnchor(arg0: number, arg1: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setCollide(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setFree(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Pool arg0): void
        */
       setPool(arg0: zombie.util.Pool<zombie.util.IPooledObject>): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0, float arg1): void
        */
       setPosition(arg0: number, arg1: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0, float arg1, float arg2, float arg3): void
        */
       setRGBA(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setScale(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setTranslatedText(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setUntranslatedText(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setVisible(arg0: boolean): void;
@@ -602,132 +576,132 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getAlpha(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getBlue(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getDisplayHeight(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getDisplayWidth(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getDisplayX(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getDisplayY(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getGreen(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.util.Pool<zombie.util.IPooledObject>
        */
       getPool(): zombie.util.Pool<zombie.util.IPooledObject>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getRed(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getSymbolID(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getWorldX(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getWorldY(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isFree(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isText(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isTexture(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isVisible(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       onReleased(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       release(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0, float arg1): void
        */
       setAnchor(arg0: number, arg1: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setCollide(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setFree(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Pool arg0): void
        */
       setPool(arg0: zombie.util.Pool<zombie.util.IPooledObject>): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0, float arg1): void
        */
       setPosition(arg0: number, arg1: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0, float arg1, float arg2, float arg3): void
        */
       setRGBA(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setScale(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setVisible(arg0: boolean): void;
@@ -744,102 +718,102 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: zombie.worldMap.symbols.WorldMapSymbols);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (UIWorldMap arg0): number
        */
       getDisplayScale(arg0: zombie.worldMap.UIWorldMap): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getTranslatedText(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.worldMap.symbols.WorldMapSymbols$WorldMapSymbolType
        */
       getType(): zombie.worldMap.symbols.WorldMapSymbols$WorldMapSymbolType;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getUntranslatedText(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (UIWorldMap arg0): number
        */
       heightScaled(arg0: zombie.worldMap.UIWorldMap): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isVisible(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (UIWorldMap arg0, WorldMapSymbolCollisions arg1, float arg2, float arg3): void
        */
       layout(arg0: zombie.worldMap.UIWorldMap, arg1: zombie.worldMap.symbols.WorldMapSymbolCollisions, arg2: number, arg3: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ByteBuffer arg0, int arg1, int arg2): void
        */
       load(arg0: java.nio.ByteBuffer, arg1: number, arg2: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       release(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (UIWorldMap arg0, float arg1, float arg2): void
        */
       render(arg0: zombie.worldMap.UIWorldMap, arg1: number, arg2: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ByteBuffer arg0): void
        */
       save(arg0: java.nio.ByteBuffer): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0, float arg1): void
        */
       setAnchor(arg0: number, arg1: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setCollide(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0, float arg1): void
        */
       setPosition(arg0: number, arg1: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0, float arg1, float arg2, float arg3): void
        */
       setRGBA(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setScale(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setTranslatedText(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setUntranslatedText(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setVisible(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (UIWorldMap arg0): number
        */
       widthScaled(arg0: zombie.worldMap.UIWorldMap): number;
@@ -856,97 +830,97 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: zombie.worldMap.symbols.WorldMapSymbols);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       checkTexture(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (UIWorldMap arg0): number
        */
       getDisplayScale(arg0: zombie.worldMap.UIWorldMap): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getSymbolID(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.worldMap.symbols.WorldMapSymbols$WorldMapSymbolType
        */
       getType(): zombie.worldMap.symbols.WorldMapSymbols$WorldMapSymbolType;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (UIWorldMap arg0): number
        */
       heightScaled(arg0: zombie.worldMap.UIWorldMap): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isVisible(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (UIWorldMap arg0, WorldMapSymbolCollisions arg1, float arg2, float arg3): void
        */
       layout(arg0: zombie.worldMap.UIWorldMap, arg1: zombie.worldMap.symbols.WorldMapSymbolCollisions, arg2: number, arg3: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ByteBuffer arg0, int arg1, int arg2): void
        */
       load(arg0: java.nio.ByteBuffer, arg1: number, arg2: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       release(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (UIWorldMap arg0, float arg1, float arg2): void
        */
       render(arg0: zombie.worldMap.UIWorldMap, arg1: number, arg2: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ByteBuffer arg0): void
        */
       save(arg0: java.nio.ByteBuffer): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0, float arg1): void
        */
       setAnchor(arg0: number, arg1: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setCollide(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0, float arg1): void
        */
       setPosition(arg0: number, arg1: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0, float arg1, float arg2, float arg3): void
        */
       setRGBA(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setScale(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setSymbolID(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setVisible(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (UIWorldMap arg0): number
        */
       widthScaled(arg0: zombie.worldMap.UIWorldMap): number;

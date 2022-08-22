@@ -15,6 +15,7 @@
 /// <reference path="java/java_net.d.ts" />
 /// <reference path="java/java_nio.d.ts" />
 /// <reference path="java/java_nio_channels.d.ts" />
+/// <reference path="java/java_nio_charset.d.ts" />
 /// <reference path="java/java_nio_file.d.ts" />
 /// <reference path="java/java_text.d.ts" />
 /// <reference path="java/java_time.d.ts" />

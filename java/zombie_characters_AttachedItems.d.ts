@@ -1,30 +1,4 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
-/**  @noSelfInFile */
-/// <reference path="../reference.d.ts" />
+/** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.characters.AttachedItems {
     /**
@@ -39,12 +13,12 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: string, arg1: zombie.inventory.InventoryItem);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.inventory.InventoryItem
        */
       getItem(): zombie.inventory.InventoryItem;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getLocation(): string;
@@ -62,67 +36,67 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: zombie.characters.AttachedItems.AttachedLocationGroup | zombie.characters.AttachedItems.AttachedItems);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       clear(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (InventoryItem arg0): boolean
        */
       contains(arg0: zombie.inventory.InventoryItem): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (AttachedItems arg0): void
        */
       copyFrom(arg0: zombie.characters.AttachedItems.AttachedItems): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Consumer arg0): void
        */
       forEach(arg0: java.util._function_.Consumer<zombie.characters.AttachedItems.AttachedItem>): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): zombie.characters.AttachedItems.AttachedItem
        */
       get(arg0: number): zombie.characters.AttachedItems.AttachedItem;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.characters.AttachedItems.AttachedLocationGroup
        */
       getGroup(): zombie.characters.AttachedItems.AttachedLocationGroup;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.inventory.InventoryItem
        */
       getItem(arg0: string): zombie.inventory.InventoryItem;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): zombie.inventory.InventoryItem
        */
       getItemByIndex(arg0: number): zombie.inventory.InventoryItem;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (InventoryItem arg0): string
        */
       getLocation(arg0: zombie.inventory.InventoryItem): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isEmpty(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (InventoryItem arg0): void
        */
       remove(arg0: zombie.inventory.InventoryItem): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, InventoryItem arg1): void
        */
       setItem(arg0: string, arg1: zombie.inventory.InventoryItem): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       size(): number;
@@ -139,17 +113,17 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: zombie.characters.AttachedItems.AttachedLocationGroup, arg1: string);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getAttachmentName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getId(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setAttachmentName(arg0: string): void;
@@ -166,32 +140,32 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: string);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       checkValid(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.characters.AttachedItems.AttachedLocation
        */
       getLocation(arg0: string): zombie.characters.AttachedItems.AttachedLocation;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): zombie.characters.AttachedItems.AttachedLocation
        */
       getLocationByIndex(arg0: number): zombie.characters.AttachedItems.AttachedLocation;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.characters.AttachedItems.AttachedLocation
        */
       getOrCreateLocation(arg0: string): zombie.characters.AttachedItems.AttachedLocation;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): number
        */
       indexOf(arg0: string): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       size(): number;
@@ -210,14 +184,14 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       static Reset(): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.characters.AttachedItems.AttachedLocationGroup
        */
       static getGroup(arg0: string): zombie.characters.AttachedItems.AttachedLocationGroup;

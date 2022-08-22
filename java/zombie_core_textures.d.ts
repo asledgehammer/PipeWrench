@@ -1,30 +1,4 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
-/**  @noSelfInFile */
-/// <reference path="../reference.d.ts" />
+/** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.core.textures {
     /**
@@ -40,53 +14,53 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0?: number, arg1?: number, arg2?: number, arg3?: number);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       desaturate(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getA(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getB(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getG(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getR(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ColorInfo arg0, float arg1, ColorInfo arg2): void
        */
       interp(arg0: zombie.core.textures.ColorInfo, arg1: number, arg2: zombie.core.textures.ColorInfo): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ColorInfo arg0): zombie.core.textures.ColorInfo
        *  - (float arg0, float arg1, float arg2, float arg3): zombie.core.textures.ColorInfo
        */
       set(arg0: zombie.core.textures.ColorInfo | number, arg1?: number, arg2?: number, arg3?: number): zombie.core.textures.ColorInfo;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.core.Color
        */
       toColor(): zombie.core.Color;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.core.ImmutableColor
        */
       toImmutableColor(): zombie.core.ImmutableColor;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       toString(): string;
@@ -99,137 +73,137 @@ declare module '@asledgehammer/pipewrench' {
     export class IGLFramebufferObject {
       protected constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       GL_COLOR_ATTACHMENT0(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       GL_DEPTH24_STENCIL8(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       GL_DEPTH_ATTACHMENT(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       GL_DEPTH_STENCIL(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       GL_FRAMEBUFFER(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       GL_FRAMEBUFFER_COMPLETE(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       GL_FRAMEBUFFER_INCOMPLETE_ATTACHMENT(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       GL_FRAMEBUFFER_INCOMPLETE_DIMENSIONS(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       GL_FRAMEBUFFER_INCOMPLETE_DRAW_BUFFER(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       GL_FRAMEBUFFER_INCOMPLETE_FORMATS(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       GL_FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       GL_FRAMEBUFFER_INCOMPLETE_READ_BUFFER(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       GL_FRAMEBUFFER_UNDEFINED(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       GL_FRAMEBUFFER_UNSUPPORTED(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       GL_RENDERBUFFER(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       GL_STENCIL_ATTACHMENT(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0, int arg1): void
        */
       glBindFramebuffer(arg0: number, arg1: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0, int arg1): void
        */
       glBindRenderbuffer(arg0: number, arg1: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): number
        */
       glCheckFramebufferStatus(arg0: number): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       glDeleteFramebuffers(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       glDeleteRenderbuffers(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0, int arg1, int arg2, int arg3): void
        */
       glFramebufferRenderbuffer(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0, int arg1, int arg2, int arg3, int arg4): void
        */
       glFramebufferTexture2D(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       glGenFramebuffers(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       glGenRenderbuffers(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0, int arg1, int arg2, int arg3): void
        */
       glRenderbufferStorage(arg0: number, arg1: number, arg2: number, arg3: number): void;
@@ -254,63 +228,63 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: string | java.io.InputStream | zombie.core.textures.TextureID | number | java.io.BufferedInputStream, arg1?: boolean | zombie.core.utils.WrappedBuffer | number, arg2?: zombie.core.textures.Texture$PZFileformat | zombie.core.utils.WrappedBuffer);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       dispose(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.core.textures.MipMapLevel
        */
       getData(): zombie.core.textures.MipMapLevel;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getHeight(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getHeightHW(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getMipMapCount(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): zombie.core.textures.MipMapLevel
        */
       getMipMapData(arg0: number): zombie.core.textures.MipMapLevel;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getWidth(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getWidthHW(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       initMipMaps(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isSolid(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (byte arg0, byte arg1, byte arg2): void
        *  - (byte arg0, byte arg1, byte arg2, byte arg3): void
        */
       makeTransp(arg0: number, arg1: number, arg2: number, arg3?: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (BufferedImage arg0): void
        *  - (Raster arg0): void
        */
@@ -318,42 +292,42 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0, int arg1): number
        */
       static calculateNumMips(arg0: number, arg1: number): number;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (long arg0): zombie.core.textures.ImageData
        */
       static createSteamAvatar(arg0: number): zombie.core.textures.ImageData;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): number
        */
       static getNextMipDimension(arg0: number): number;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ByteBuffer arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5): number[]
        */
       static getPixelClamped(arg0: java.nio.ByteBuffer, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number[]): number[];
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ByteBuffer arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5): number
        */
       static getPixelDiscard(arg0: java.nio.ByteBuffer, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number[]): number;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ByteBuffer arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5): void
        */
       static setPixel(arg0: java.nio.ByteBuffer, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number[]): void;
@@ -368,37 +342,37 @@ declare module '@asledgehammer/pipewrench' {
        * Constructors: 
        *  - (ITexture arg0)
        *  - (Mask arg0)
-       *  - (ITexture arg0, boolean[] arg1)
        *  - (ITexture arg0, BooleanGrid arg1)
+       *  - (ITexture arg0, boolean[] arg1)
        *  - (int arg0, int arg1)
        *  - (Mask arg0, int arg1, int arg2, int arg3, int arg4)
        *  - (Texture arg0, Texture arg1, int arg2, int arg3, int arg4, int arg5)
        *  - (BooleanGrid arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
        *  - (boolean[] arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
        */
-      constructor(arg0: zombie.interfaces.ITexture | zombie.core.textures.Mask | number | zombie.core.textures.Texture | zombie.core.utils.BooleanGrid | boolean[], arg1?: boolean[] | zombie.core.utils.BooleanGrid | number | zombie.core.textures.Texture, arg2?: number, arg3?: number, arg4?: number, arg5?: number, arg6?: number);
+      constructor(arg0: zombie.interfaces.ITexture | zombie.core.textures.Mask | number | zombie.core.textures.Texture | zombie.core.utils.BooleanGrid | boolean[], arg1?: zombie.core.utils.BooleanGrid | boolean[] | number | zombie.core.textures.Texture, arg2?: number, arg3?: number, arg4?: number, arg5?: number, arg6?: number);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): any
        */
       clone(): any;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       full(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0, int arg1): boolean
        */
       get(arg0: number, arg1: number): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       save(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0, int arg1, boolean arg2): void
        */
       set(arg0: number, arg1: number, arg2: boolean): void;
@@ -416,27 +390,27 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: number, arg1: number, arg2?: zombie.core.utils.WrappedBuffer);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       dispose(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.nio.ByteBuffer
        */
       getBuffer(): java.nio.ByteBuffer;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getDataSize(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isDisposed(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       rewind(): void;
@@ -478,255 +452,255 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Texture arg0)
        *  - (String arg0)
        *  - (String arg0, boolean arg1)
-       *  - (TextureID arg0, String arg1)
        *  - (String arg0, int[] arg1)
        *  - (String arg0, String arg1)
+       *  - (TextureID arg0, String arg1)
+       *  - (String arg0, boolean arg1, boolean arg2)
        *  - (int arg0, int arg1, int arg2)
        *  - (AssetPath arg0, AssetManager arg1, TextureAssetParams arg2)
        *  - (String arg0, BufferedInputStream arg1, boolean arg2)
-       *  - (String arg0, boolean arg1, boolean arg2)
        *  - (String arg0, int arg1, int arg2, int arg3)
        *  - (int arg0, int arg1, String arg2, int arg3)
        *  - (String arg0, BufferedInputStream arg1, boolean arg2, PZFileformat arg3)
        */
-      constructor(arg0?: zombie.core.textures.Texture | string | zombie.core.textures.TextureID | number | zombie.asset.AssetPath, arg1?: boolean | string | number[] | number | zombie.asset.AssetManager | java.io.BufferedInputStream, arg2?: number | zombie.core.textures.Texture$TextureAssetParams | boolean | string, arg3?: number | zombie.core.textures.Texture$PZFileformat);
+      constructor(arg0?: zombie.core.textures.Texture | string | zombie.core.textures.TextureID | number | zombie.asset.AssetPath, arg1?: boolean | number[] | string | number | zombie.asset.AssetManager | java.io.BufferedInputStream, arg2?: boolean | number | zombie.core.textures.Texture$TextureAssetParams | string, arg3?: number | zombie.core.textures.Texture$PZFileformat);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Asset arg0): void
        */
       addDependency(arg0: zombie.asset.Asset): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        *  - (int arg0): void
        */
       bind(arg0?: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Texture arg0, int arg1, int arg2, int arg3, int arg4): void
        */
       copyMaskRegion(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
-       *  - (WrappedBuffer arg0): void
        *  - (BooleanGrid arg0): void
        *  - (boolean[] arg0): void
+       *  - (WrappedBuffer arg0): void
        */
-      createMask(arg0?: zombie.core.utils.WrappedBuffer | zombie.core.utils.BooleanGrid | boolean[]): void;
+      createMask(arg0?: zombie.core.utils.BooleanGrid | boolean[] | zombie.core.utils.WrappedBuffer): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       destroy(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Texture arg0): boolean
        *  - (Object arg0): boolean
        */
       equals(arg0: any): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.asset.AssetManager
        */
       getAssetManager(): zombie.asset.AssetManager;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.core.utils.WrappedBuffer
        */
       getData(): zombie.core.utils.WrappedBuffer;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getHeight(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getHeightHW(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getHeightOrig(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getID(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.core.textures.Mask
        */
       getMask(): zombie.core.textures.Mask;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.asset.Asset$ObserverCallback
        */
       getObserverCb(): zombie.asset.Asset$ObserverCallback;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getOffsetX(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getOffsetY(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.asset.AssetPath
        */
       getPath(): zombie.asset.AssetPath;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getRealHeight(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getRealWidth(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getRefCount(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.asset.Asset$State
        */
       getState(): zombie.asset.Asset$State;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.core.textures.TextureID
        */
       getTextureId(): zombie.core.textures.TextureID;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.asset.AssetType
        */
       getType(): zombie.asset.AssetType;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Vector2 arg0): zombie.iso.Vector2
        */
       getUVScale(arg0: zombie.iso.Vector2): zombie.iso.Vector2;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       getUseAlphaChannel(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getWidth(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getWidthHW(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getWidthOrig(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getXEnd(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getXStart(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getYEnd(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getYStart(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isCollisionable(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isDestroyed(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isEmpty(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isFailure(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isReady(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isSolid(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isValid(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ByteBuffer arg0): void
        */
       loadMaskRegion(arg0: java.nio.ByteBuffer): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0, int arg1, int arg2): void
        */
       makeTransp(arg0: number, arg1: number, arg2: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       onBeforeReady(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (State arg0): void
        */
       onCreated(arg0: zombie.asset.Asset$State): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       reloadFromFile(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Asset arg0): void
        */
       removeDependency(arg0: zombie.asset.Asset): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0, float arg1): void
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, Consumer arg8): void
@@ -734,269 +708,269 @@ declare module '@asledgehammer/pipewrench' {
        */
       render(arg0: number | zombie.iso.objects.ObjectRenderEffects, arg1: number, arg2?: number, arg3?: number, arg4?: number, arg5?: number, arg6?: number, arg7?: number, arg8?: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg9?: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0, float arg1, float arg2, float arg3, int arg4, int arg5, int arg6, int arg7): void
        */
       renderdiamond(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0, float arg1, float arg2, float arg3, int arg4, int arg5, int arg6, int arg7, float arg8, float arg9, float arg10, float arg11): void
        */
       rendershader2(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0, int arg1, int arg2, int arg3, float arg4, float arg5, float arg6, float arg7, Consumer arg8): void
        */
       renderstrip(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0, float arg1, float arg2, float arg3, int arg4, int arg5, int arg6, int arg7): void
        */
       renderwalln(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0, float arg1, float arg2, float arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9): void
        */
       renderwallnw(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0, float arg1, float arg2, float arg3, int arg4, int arg5, int arg6, int arg7): void
        */
       renderwallw(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       saveMask(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ByteBuffer arg0): void
        */
       saveMaskRegion(arg0: java.nio.ByteBuffer): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       saveOnRenderThread(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       saveToCurrentSavefileDirectory(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       saveToZomboidDirectory(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0, int arg1, int arg2, int arg3): void
        */
       setAlphaForeach(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (AssetParams arg0): void
        */
       setAssetParams(arg0: zombie.asset.AssetManager$AssetParams): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       setCustomizedTexture(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ByteBuffer arg0): void
        */
       setData(arg0: java.nio.ByteBuffer): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       setHeight(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Mask arg0): void
        */
       setMask(arg0: zombie.core.textures.Mask): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setName(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setNameOnly(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       setOffsetX(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       setOffsetY(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       setRealHeight(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       setRealWidth(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0, int arg1, int arg2, int arg3): void
        */
       setRegion(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setUseAlphaChannel(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       setWidth(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0, int arg1, int arg2, int arg3): zombie.core.textures.Texture
        *  - (String arg0, int arg1, int arg2, int arg3, int arg4): zombie.core.textures.Texture
        *  - (int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7): zombie.core.textures.Texture[]
        */
       split(arg0: number | string, arg1: number, arg2: number, arg3: number, arg4?: number, arg5?: number, arg6?: number, arg7?: number): zombie.core.textures.Texture | zombie.core.textures.Texture[];
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int[] arg0, int[] arg1): zombie.core.textures.Texture[][]
        */
       split2D(arg0: number[], arg1: number[]): zombie.core.textures.Texture[][];
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.core.textures.Texture
        */
       splitIcon(): zombie.core.textures.Texture;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       toString(): string;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       static bindNone(): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       static clearTextures(): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (HashMap arg0, HashMap arg1): void
        */
       static collectAllIcons(arg0: java.util.HashMap<string, string>, arg1: java.util.HashMap<string, string>): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int[] arg0, int arg1, int arg2): number[]
        */
       static flipPixels(arg0: number[], arg1: number, arg2: number): number[];
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       static forgetTexture(arg0: string): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.core.textures.Texture
        */
       static getEngineMipmapTexture(): zombie.core.textures.Texture;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.core.textures.Texture
        */
       static getErrorTexture(): zombie.core.textures.Texture;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.core.textures.Texture
-       *  - (String arg0, int arg1): zombie.core.textures.Texture
        *  - (String arg0, String arg1): zombie.core.textures.Texture
+       *  - (String arg0, int arg1): zombie.core.textures.Texture
        *  - (String arg0, int[] arg1, String arg2): zombie.core.textures.Texture
        */
-      static getSharedTexture(arg0: string, arg1?: number | string | number[], arg2?: string): zombie.core.textures.Texture;
+      static getSharedTexture(arg0: string, arg1?: string | number | number[], arg2?: string): zombie.core.textures.Texture;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (long arg0): zombie.core.textures.Texture
        */
       static getSteamAvatar(arg0: number): zombie.core.textures.Texture;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.core.textures.Texture
        */
       static getTexture(arg0: string): zombie.core.textures.Texture;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.core.textures.Texture
        */
       static getWhite(): zombie.core.textures.Texture;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       static onTexturePacksChanged(): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): string
        */
       static processFilePath(arg0: string): string;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       static reload(arg0: string): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (long arg0): void
        */
       static steamAvatarChanged(arg0: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.core.textures.Texture
        */
       static trygetTexture(arg0: string): zombie.core.textures.Texture;
@@ -1043,34 +1017,34 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): number
        */
       getColor(arg0: number): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       postRender(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       reset(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       run(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       toString(): string;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0, Texture arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, Consumer arg10): zombie.core.textures.TextureDraw
        *  - (TextureDraw arg0, Texture arg1, WallShaderTexRender arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10, Consumer arg11): zombie.core.textures.TextureDraw
        *  - (TextureDraw arg0, Texture arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10, float arg11, float arg12, float arg13): void
@@ -1084,182 +1058,182 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0, int arg1, int arg2, float arg3): void
        */
       static ShaderUpdate1f(arg0: zombie.core.textures.TextureDraw, arg1: number, arg2: number, arg3: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0, int arg1, int arg2, int arg3): void
        */
       static ShaderUpdate1i(arg0: zombie.core.textures.TextureDraw, arg1: number, arg2: number, arg3: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0, int arg1, int arg2, float arg3, float arg4): void
        */
       static ShaderUpdate2f(arg0: zombie.core.textures.TextureDraw, arg1: number, arg2: number, arg3: number, arg4: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0, int arg1, int arg2, float arg3, float arg4, float arg5): void
        */
       static ShaderUpdate3f(arg0: zombie.core.textures.TextureDraw, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0, int arg1, int arg2, float arg3, float arg4, float arg5, float arg6): void
        */
       static ShaderUpdate4f(arg0: zombie.core.textures.TextureDraw, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0, int arg1): void
        */
       static StartShader(arg0: zombie.core.textures.TextureDraw, arg1: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0, int arg1, float arg2): void
        */
       static doCoreIntParam(arg0: zombie.core.textures.TextureDraw, arg1: number, arg2: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0, ModelSlot arg1): void
        */
       static drawModel(arg0: zombie.core.textures.TextureDraw, arg1: zombie.core.skinnedmodel.ModelManager$ModelSlot): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0, int arg1, int arg2, int arg3): void
        */
       static drawParticles(arg0: zombie.core.textures.TextureDraw, arg1: number, arg2: number, arg3: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0, Shader arg1, int arg2, int arg3, int arg4): void
        */
       static drawPuddles(arg0: zombie.core.textures.TextureDraw, arg1: zombie.core.opengl.Shader, arg2: number, arg3: number, arg4: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0, Shader arg1, int arg2, int arg3, int arg4): void
        */
       static drawSkyBox(arg0: zombie.core.textures.TextureDraw, arg1: zombie.core.opengl.Shader, arg2: number, arg3: number, arg4: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0, Shader arg1, int arg2, int arg3, boolean arg4): void
        */
       static drawWater(arg0: zombie.core.textures.TextureDraw, arg1: zombie.core.opengl.Shader, arg2: number, arg3: number, arg4: boolean): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0, int arg1, float arg2): void
        */
       static glAlphaFunc(arg0: zombie.core.textures.TextureDraw, arg1: number, arg2: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0, int arg1): void
        */
       static glBind(arg0: zombie.core.textures.TextureDraw, arg1: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0, int arg1): void
        */
       static glBlendEquation(arg0: zombie.core.textures.TextureDraw, arg1: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0, int arg1, int arg2): void
        */
       static glBlendFunc(arg0: zombie.core.textures.TextureDraw, arg1: number, arg2: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0, int arg1, int arg2, int arg3, int arg4): void
        */
       static glBlendFuncSeparate(arg0: zombie.core.textures.TextureDraw, arg1: number, arg2: number, arg3: number, arg4: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0, int arg1, int arg2): void
        */
       static glBuffer(arg0: zombie.core.textures.TextureDraw, arg1: number, arg2: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0, int arg1): void
        */
       static glClear(arg0: zombie.core.textures.TextureDraw, arg1: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0, int arg1, int arg2, int arg3, int arg4): void
        */
       static glClearColor(arg0: zombie.core.textures.TextureDraw, arg1: number, arg2: number, arg3: number, arg4: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0, int arg1, int arg2, int arg3, int arg4): void
        */
       static glColorMask(arg0: zombie.core.textures.TextureDraw, arg1: number, arg2: number, arg3: number, arg4: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0, boolean arg1): void
        */
       static glDepthMask(arg0: zombie.core.textures.TextureDraw, arg1: boolean): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0, int arg1): void
        */
       static glDisable(arg0: zombie.core.textures.TextureDraw, arg1: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0): void
        */
       static glDoEndFrame(arg0: zombie.core.textures.TextureDraw): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0, int arg1): void
        */
       static glDoEndFrameFx(arg0: zombie.core.textures.TextureDraw, arg1: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0, int arg1, int arg2, float arg3, int arg4): void
        *  - (TextureDraw arg0, int arg1, int arg2, float arg3, int arg4, boolean arg5): void
        */
@@ -1267,70 +1241,70 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0, int arg1, int arg2, int arg3): void
        */
       static glDoStartFrameFx(arg0: zombie.core.textures.TextureDraw, arg1: number, arg2: number, arg3: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0, int arg1): void
        */
       static glEnable(arg0: zombie.core.textures.TextureDraw, arg1: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0, int arg1): void
        */
       static glGenerateMipMaps(arg0: zombie.core.textures.TextureDraw, arg1: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0, boolean arg1): void
        */
       static glIgnoreStyles(arg0: zombie.core.textures.TextureDraw, arg1: boolean): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0): void
        */
       static glLoadIdentity(arg0: zombie.core.textures.TextureDraw): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0, int arg1, int arg2, int arg3): void
        */
       static glStencilFunc(arg0: zombie.core.textures.TextureDraw, arg1: number, arg2: number, arg3: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0, int arg1): void
        */
       static glStencilMask(arg0: zombie.core.textures.TextureDraw, arg1: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0, int arg1, int arg2, int arg3): void
        */
       static glStencilOp(arg0: zombie.core.textures.TextureDraw, arg1: number, arg2: number, arg3: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0, int arg1, int arg2, int arg3): void
        */
       static glTexParameteri(arg0: zombie.core.textures.TextureDraw, arg1: number, arg2: number, arg3: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (TextureDraw arg0, int arg1, int arg2, int arg3, int arg4): void
        */
       static glViewport(arg0: zombie.core.textures.TextureDraw, arg1: number, arg2: number, arg3: number, arg4: number): void;
@@ -1347,12 +1321,12 @@ declare module '@asledgehammer/pipewrench' {
        */
       protected constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       postRender(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       render(): void;
@@ -1422,91 +1396,91 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: zombie.interfaces.ITexture, arg1?: boolean);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       destroy(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       destroyLeaveTexture(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       endDrawing(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getBufferId(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getHeight(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.interfaces.ITexture
        */
       getTexture(): zombie.interfaces.ITexture;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getWidth(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isDestroyed(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       releaseTexture(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Texture arg0): void
        */
       setTexture(arg0: zombie.core.textures.Texture): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        *  - (boolean arg0, boolean arg1): void
        */
       startDrawing(arg0?: boolean, arg1?: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ITexture arg0): void
        */
       swapTexture(arg0: zombie.interfaces.ITexture): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       static checkFBOSupport(): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       static getCurrentID(): number;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.core.textures.IGLFramebufferObject
        */
       static getFuncs(): zombie.core.textures.IGLFramebufferObject;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       static reset(): void;
@@ -1538,157 +1512,157 @@ declare module '@asledgehammer/pipewrench' {
        *  - (ImageData arg0)
        *  - (String arg0, int[] arg1)
        *  - (String arg0, String arg1)
+       *  - (int arg0, int arg1, int arg2)
        *  - (BufferedInputStream arg0, String arg1, boolean arg2)
        *  - (AssetPath arg0, AssetManager arg1, TextureIDAssetParams arg2)
-       *  - (int arg0, int arg1, int arg2)
        *  - (String arg0, int arg1, int arg2, int arg3)
        *  - (BufferedInputStream arg0, String arg1, boolean arg2, PZFileformat arg3)
        */
-      constructor(arg0: string | zombie.core.textures.ImageData | java.io.BufferedInputStream | zombie.asset.AssetPath | number, arg1?: number[] | string | zombie.asset.AssetManager | number, arg2?: boolean | zombie.core.textures.TextureID$TextureIDAssetParams | number, arg3?: number | zombie.core.textures.Texture$PZFileformat);
+      constructor(arg0: string | zombie.core.textures.ImageData | number | java.io.BufferedInputStream | zombie.asset.AssetPath, arg1?: number[] | string | number | zombie.asset.AssetManager, arg2?: number | boolean | zombie.core.textures.TextureID$TextureIDAssetParams, arg3?: number | zombie.core.textures.Texture$PZFileformat);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Asset arg0): void
        */
       addDependency(arg0: zombie.asset.Asset): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       bind(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       bindalways(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       destroy(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       freeMemory(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.asset.AssetManager
        */
       getAssetManager(): zombie.asset.AssetManager;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.core.utils.WrappedBuffer
        */
       getData(): zombie.core.utils.WrappedBuffer;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getID(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.core.textures.ImageData
        */
       getImageData(): zombie.core.textures.ImageData;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.asset.Asset$ObserverCallback
        */
       getObserverCb(): zombie.asset.Asset$ObserverCallback;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.asset.AssetPath
        */
       getPath(): zombie.asset.AssetPath;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getPathFileName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getRefCount(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.asset.Asset$State
        */
       getState(): zombie.asset.Asset$State;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.asset.AssetType
        */
       getType(): zombie.asset.AssetType;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       hasMipMaps(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isDestroyed(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isEmpty(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isFailure(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isReady(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isSolid(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (State arg0): void
        */
       onCreated(arg0: zombie.asset.Asset$State): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Asset arg0): void
        */
       removeDependency(arg0: zombie.asset.Asset): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (AssetParams arg0): void
        */
       setAssetParams(arg0: zombie.asset.AssetManager$AssetParams): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ByteBuffer arg0): void
        */
       setData(arg0: java.nio.ByteBuffer): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ImageData arg0): void
        */
       setImageData(arg0: zombie.core.textures.ImageData): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       setMagFilter(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       setMinFilter(arg0: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (long arg0): zombie.core.textures.TextureID
        */
       static createSteamAvatar(arg0: number): zombie.core.textures.TextureID;
@@ -1742,40 +1716,40 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (BufferedInputStream arg0): void
        */
       loadFromPackFile(arg0: java.io.BufferedInputStream): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (BufferedInputStream arg0): void
        */
       loadFromPackFileDDS(arg0: java.io.BufferedInputStream): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       static LoadDir(arg0: string): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (InputStream arg0): string
        */
       static ReadString(arg0: java.io.InputStream): string;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.core.textures.Texture
        */
       static getTexture(arg0: string): zombie.core.textures.Texture;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (InputStream arg0): number
        *  - (ByteBuffer arg0): number
        */
@@ -1783,14 +1757,14 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (InputStream arg0): number
        */
       static readIntByte(arg0: java.io.InputStream): number;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (File arg0): void
        */
       static searchFolders(arg0: java.io.File): void;

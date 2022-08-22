@@ -1,30 +1,4 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
-/**  @noSelfInFile */
-/// <reference path="../reference.d.ts" />
+/** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.characters.skills {
     /**
@@ -44,52 +18,52 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Perk arg0, String arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9, int arg10, int arg11): zombie.characters.skills.PerkFactory$Perk
-       *  - (Perk arg0, String arg1, Perk arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9, int arg10, int arg11, int arg12): zombie.characters.skills.PerkFactory$Perk
        *  - (Perk arg0, String arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9, int arg10, int arg11, boolean arg12): zombie.characters.skills.PerkFactory$Perk
+       *  - (Perk arg0, String arg1, Perk arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9, int arg10, int arg11, int arg12): zombie.characters.skills.PerkFactory$Perk
        *  - (Perk arg0, String arg1, Perk arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9, int arg10, int arg11, int arg12, boolean arg13): zombie.characters.skills.PerkFactory$Perk
        */
-      static AddPerk(arg0: zombie.characters.skills.PerkFactory$Perk, arg1: string, arg2: number | zombie.characters.skills.PerkFactory$Perk, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number, arg12?: number | boolean, arg13?: boolean): zombie.characters.skills.PerkFactory$Perk;
+      static AddPerk(arg0: zombie.characters.skills.PerkFactory$Perk, arg1: string, arg2: number | zombie.characters.skills.PerkFactory$Perk, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number, arg12?: boolean | number, arg13?: boolean): zombie.characters.skills.PerkFactory$Perk;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       static Reset(): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Perk arg0): zombie.characters.skills.PerkFactory$Perk
        */
       static getPerk(arg0: zombie.characters.skills.PerkFactory$Perk): zombie.characters.skills.PerkFactory$Perk;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.characters.skills.PerkFactory$Perk
        */
       static getPerkFromName(arg0: string): zombie.characters.skills.PerkFactory$Perk;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Perk arg0): string
        */
       static getPerkName(arg0: zombie.characters.skills.PerkFactory$Perk): string;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       static init(): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       static initTranslations(): void;
@@ -107,107 +81,107 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: string, arg1?: zombie.characters.skills.PerkFactory$Perk);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getId(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.characters.skills.PerkFactory$Perk
        */
       getParent(): zombie.characters.skills.PerkFactory$Perk;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): number
        */
       getTotalXpForLevel(arg0: number): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.characters.skills.PerkFactory$Perk
        */
       getType(): zombie.characters.skills.PerkFactory$Perk;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getXp1(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getXp10(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getXp2(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getXp3(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getXp4(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getXp5(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getXp6(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getXp7(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getXp8(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getXp9(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): number
        */
       getXpForLevel(arg0: number): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       index(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isCustom(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isPassiv(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       setCustom(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       toString(): string;
@@ -301,21 +275,21 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.characters.skills.PerkFactory$Perk
        */
       static FromString(arg0: string): zombie.characters.skills.PerkFactory$Perk;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): zombie.characters.skills.PerkFactory$Perk
        */
       static fromIndex(arg0: number): zombie.characters.skills.PerkFactory$Perk;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       static getMaxIndex(): number;

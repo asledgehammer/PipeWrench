@@ -1,30 +1,4 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
-/**  @noSelfInFile */
-/// <reference path="../reference.d.ts" />
+/** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.radio.StorySounds {
     /**
@@ -39,22 +13,22 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: number, arg1: number);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getIntensity(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getTime(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setIntensity(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setTime(arg0: number): void;
@@ -72,42 +46,42 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0?: string);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.core.Color
        */
       getColor(): zombie.core.Color;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.ArrayList<zombie.radio.StorySounds.DataPoint>
        */
       getDataPoints(): java.util.ArrayList<zombie.radio.StorySounds.DataPoint>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.ArrayList<zombie.radio.StorySounds.StorySound>
        */
       getStorySounds(): java.util.ArrayList<zombie.radio.StorySounds.StorySound>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Color arg0): void
        */
       setColor(arg0: zombie.core.Color): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ArrayList arg0): void
        */
       setDataPoints(arg0: java.util.ArrayList<zombie.radio.StorySounds.DataPoint>): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setName(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ArrayList arg0): void
        */
       setStorySounds(arg0: java.util.ArrayList<zombie.radio.StorySounds.StorySound>): void;
@@ -129,74 +103,74 @@ declare module '@asledgehammer/pipewrench' {
 
 
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       getDebug(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       getLuaDebug(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.iso.Vector2
        */
       getRandomBorderPosition(): zombie.iso.Vector2;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getRandomBorderRange(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.ArrayList<zombie.radio.StorySounds.StorySound>
        */
       getStorySounds(): java.util.ArrayList<zombie.radio.StorySounds.StorySound>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       init(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       loadSounds(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       print(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       render(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       renderDebug(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       thunderTest(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0, int arg1, int arg2): void
        */
       update(arg0: number, arg1: number, arg2: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       updateKeys(): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.radio.StorySounds.SLSoundManager
        */
       static getInstance(): zombie.radio.StorySounds.SLSoundManager;
@@ -213,17 +187,17 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6): number
        */
       playSound(arg0: string, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (long arg0): number
        */
       stopSound(arg0: number): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       tick(): void;
@@ -252,22 +226,22 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: string, arg1: number);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getBaseVolume(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.radio.StorySounds.StorySound
        */
       getClone(): zombie.radio.StorySounds.StorySound;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        *  - (float arg0): number
        *  - (float arg0, float arg1, float arg2, float arg3, float arg4): number
@@ -275,12 +249,12 @@ declare module '@asledgehammer/pipewrench' {
        */
       playSound(arg0?: number, arg1?: number, arg2?: number, arg3?: number, arg4?: number, arg5?: number): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setBaseVolume(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setName(arg0: string): void;
@@ -298,22 +272,22 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0?: string);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.ArrayList<zombie.radio.StorySounds.EventSound>
        */
       getEventSounds(): java.util.ArrayList<zombie.radio.StorySounds.EventSound>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ArrayList arg0): void
        */
       setEventSounds(arg0: java.util.ArrayList<zombie.radio.StorySounds.EventSound>): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setName(arg0: string): void;

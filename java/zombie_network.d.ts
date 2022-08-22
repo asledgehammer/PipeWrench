@@ -1,30 +1,4 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
-/**  @noSelfInFile */
-/// <reference path="../reference.d.ts" />
+/** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.network {
     /**
@@ -124,37 +98,37 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ByteBuffer arg0): void
        */
       clientPacket(arg0: java.nio.ByteBuffer): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ByteBuffer arg0): void
        */
       serverPacket(arg0: java.nio.ByteBuffer): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (short arg0): void
        */
       startReceivingUpdates(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (short arg0, short arg1): void
        */
       startSendingUpdates(arg0: number, arg1: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (short arg0): void
        */
       stopReceivingUpdates(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (short arg0, short arg1): void
        */
       stopSendingUpdates(arg0: number, arg1: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       update(): void;
@@ -171,12 +145,12 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
-       *  - (byte arg0, boolean arg1): void
+       * Method Parameters:
        *  - (byte arg0, String arg1): void
+       *  - (byte arg0, boolean arg1): void
        *  - (byte arg0, float arg1, float arg2): boolean
        */
-      updateField(arg0: number, arg1: boolean | string | number, arg2?: number): void | boolean;
+      updateField(arg0: number, arg1: string | boolean | number, arg2?: number): void | boolean;
     }
     /**
      * @customConstructor ClientChunkRequest.new
@@ -193,37 +167,37 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Chunk arg0): void
        */
       getByteBuffer(arg0: zombie.network.ClientChunkRequest$Chunk): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.network.ClientChunkRequest$Chunk
        */
       getChunk(): zombie.network.ClientChunkRequest$Chunk;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Chunk arg0): void
        */
       releaseBuffer(arg0: zombie.network.ClientChunkRequest$Chunk): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       releaseBuffers(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Chunk arg0): void
        */
       releaseChunk(arg0: zombie.network.ClientChunkRequest$Chunk): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ByteBuffer arg0, UdpConnection arg1): void
        */
       unpack(arg0: java.nio.ByteBuffer, arg1: zombie.core.raknet.UdpConnection): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ByteBuffer arg0, UdpConnection arg1): void
        */
       unpackLargeArea(arg0: java.nio.ByteBuffer, arg1: zombie.core.raknet.UdpConnection): void;
@@ -252,77 +226,77 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: number, arg1: number, arg2: number, arg3: number);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getMaxX(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getMaxY(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getMinX(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getMinY(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0, int arg1): boolean
        */
       isValidCell(arg0: number, arg1: number): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (UdpConnection arg0): void
        */
       sendPacket(arg0: zombie.core.raknet.UdpConnection): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       setLoaded(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0, int arg1): boolean
        */
       setPlayerPosition(arg0: number, arg1: number): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       static Reset(): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (UdpConnection arg0, int arg1): void
        */
       static characterIn(arg0: zombie.core.raknet.UdpConnection, arg1: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0, int arg1): boolean
        */
       static isChunkLoaded(arg0: number, arg1: number): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ByteBuffer arg0): void
        */
       static receivePacket(arg0: java.nio.ByteBuffer): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       static render(arg0: number): void;
@@ -339,37 +313,37 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.ArrayList<string>
        */
       getColumns(): java.util.ArrayList<string>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getTableName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getType(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.HashMap<string, string>
        */
       getValues(): java.util.HashMap<string, string>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ArrayList arg0): void
        */
       setColumns(arg0: java.util.ArrayList<string>): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setTableName(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setType(arg0: string): void;
@@ -386,62 +360,62 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: string, arg1: string, arg2: number);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.network.DBTicket
        */
       getAnswer(): zombie.network.DBTicket;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getAuthor(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getMessage(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getTicketID(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isAnswer(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isViewed(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (DBTicket arg0): void
        */
       setAnswer(arg0: zombie.network.DBTicket): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setAuthor(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setIsAnswer(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setMessage(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       setTicketID(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setViewed(arg0: boolean): void;
@@ -515,908 +489,908 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       GameLoadingRequestData(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, boolean arg1, IsoMovingObject arg2): void
        */
       PlaySound(arg0: string, arg1: boolean, arg2: zombie.iso.IsoMovingObject): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, int arg1, int arg2, byte arg3): void
        */
       PlayWorldSound(arg0: string, arg1: number, arg2: number, arg3: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       Shutdown(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoMovingObject arg0, String arg1, boolean arg2): void
        */
       StopSound(arg0: zombie.iso.IsoMovingObject, arg1: string, arg2: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0, IsoPlayer arg1, boolean arg2): void
        */
       acceptTrading(arg0: zombie.characters.IsoPlayer, arg1: zombie.characters.IsoPlayer, arg2: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       addDisconnectPacket(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (short arg0, ByteBuffer arg1): void
        */
       addIncoming(arg0: number, arg1: java.nio.ByteBuffer): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoObject arg0, ItemContainer arg1, InventoryItem arg2): void
        */
       addToItemRemoveSendBuffer(arg0: zombie.iso.IsoObject, arg1: zombie.inventory.ItemContainer, arg2: zombie.inventory.InventoryItem): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoObject arg0, ItemContainer arg1, InventoryItem arg2): void
        */
       addToItemSendBuffer(arg0: zombie.iso.IsoObject, arg1: zombie.inventory.ItemContainer, arg2: zombie.inventory.InventoryItem): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, String arg1, String arg2): void
        */
       addUserlog(arg0: string, arg1: string, arg2: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, String arg1, int arg2): void
        */
       addWarningPoint(arg0: string, arg1: string, arg2: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       canConnect(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoObject arg0): void
        */
       checkAddedRemovedItems(arg0: zombie.iso.IsoObject): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       connectionLost(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       disconnect(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, String arg1, String arg2, String arg3, String arg4, String arg5): void
        */
       doConnect(arg0: string, arg1: string, arg2: string, arg3: string, arg4: string, arg5: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       doConnectCoop(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       doDisconnect(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0, float arg1): void
        */
       drink(arg0: zombie.characters.IsoPlayer, arg1: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0, Food arg1, float arg2): void
        */
       eatFood(arg0: zombie.characters.IsoPlayer, arg1: zombie.inventory.types.Food, arg2: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0, int arg1): void
        */
       equip(arg0: zombie.characters.IsoPlayer, arg1: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, KahluaTable arg1): void
        */
       executeQuery(arg0: string, arg1: se.krka.kahlua.vm.KahluaTable): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.ArrayList<zombie.characters.IsoPlayer>
        */
       getConnectedPlayers(): java.util.ArrayList<zombie.characters.IsoPlayer>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       getDBSchema(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (short arg0): zombie.characters.IsoPlayer
        */
       getPlayerByOnlineID(arg0: number): zombie.characters.IsoPlayer;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.characters.IsoPlayer
        */
       getPlayerFromUsername(arg0: string): zombie.characters.IsoPlayer;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.ArrayList<zombie.characters.IsoPlayer>
        */
       getPlayers(): java.util.ArrayList<zombie.characters.IsoPlayer>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getReconnectCountdownTimer(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): se.krka.kahlua.vm.KahluaTable
        */
       getServerSpawnRegions(): se.krka.kahlua.vm.KahluaTable;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, int arg1): void
        */
       getTableResult(arg0: string, arg1: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       heartBeat(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       init(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       loadResetID(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ByteBuffer arg0): boolean
        */
       receivePlayerConnectWhileLoading(arg0: java.nio.ByteBuffer): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, String arg1, String arg2): void
        */
       removeUserlog(arg0: string, arg1: string, arg2: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoZombie arg0): void
        */
       removeZombieFromCache(arg0: zombie.characters.IsoZombie): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       requestPacketCounts(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0, IsoPlayer arg1): void
        */
       requestTrading(arg0: zombie.characters.IsoPlayer, arg1: zombie.characters.IsoPlayer): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       requestUserlog(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       resetDisconnectTimer(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       scoreboardUpdate(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0, Perk arg1, int arg2): void
        */
       sendAddXp(arg0: zombie.characters.IsoPlayer, arg1: zombie.characters.skills.PerkFactory$Perk, arg2: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       sendAddedRemovedItems(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0, int arg1, float arg2): void
        */
       sendAdditionalPain(arg0: number, arg1: number, arg2: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0, String arg1, InventoryItem arg2): void
        */
       sendAttachedItem(arg0: zombie.characters.IsoPlayer, arg1: string, arg2: zombie.inventory.InventoryItem): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0, int arg1, boolean arg2, float arg3, boolean arg4, String arg5): void
        */
       sendBandage(arg0: number, arg1: number, arg2: boolean, arg3: number, arg4: boolean, arg5: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0, int arg1, float arg2, float arg3, float arg4): void
        */
       sendCataplasm(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0): void
        */
       sendChangedPlayerStats(arg0: zombie.characters.IsoPlayer): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoGameCharacter arg0, IsoGameCharacter arg1, BodyPart arg2, InventoryItem arg3): void
        */
       sendCleanBurn(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.IsoGameCharacter, arg2: zombie.characters.BodyDamage.BodyPart, arg3: zombie.inventory.InventoryItem): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0, String arg1, String arg2, KahluaTable arg3): void
        */
       sendClientCommand(arg0: zombie.characters.IsoPlayer, arg1: string, arg2: string, arg3: se.krka.kahlua.vm.KahluaTable): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0, String arg1, String arg2, Object... arg3): void
        */
       sendClientCommandV(arg0: zombie.characters.IsoPlayer, arg1: string, arg2: string, arg3: any): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0, String arg1, InventoryItem arg2): void
        */
       sendClothing(arg0: zombie.characters.IsoPlayer, arg1: string, arg2: zombie.inventory.InventoryItem): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoObject arg0): void
        */
       sendCustomColor(arg0: zombie.iso.IsoObject): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoGameCharacter arg0, IsoGameCharacter arg1, BodyPart arg2, InventoryItem arg3): void
        */
       sendDisinfect(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.IsoGameCharacter, arg2: zombie.characters.BodyDamage.BodyPart, arg3: zombie.inventory.InventoryItem): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (InventoryItem arg0): void
        */
       sendItemStats(arg0: zombie.inventory.InventoryItem): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (long arg0): void
        */
       sendLoginQueueDone2(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       sendLoginQueueRequest2(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0): void
        */
       sendPersonalColor(arg0: zombie.characters.IsoPlayer): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0): void
        */
       sendPlayer(arg0: zombie.characters.IsoPlayer): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0): void
        */
       sendPlayer2(arg0: zombie.characters.IsoPlayer): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0): void
        */
       sendPlayerConnect(arg0: zombie.characters.IsoPlayer): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0): void
        */
       sendPlayerSave(arg0: zombie.characters.IsoPlayer): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoGameCharacter arg0, IsoGameCharacter arg1, BodyPart arg2): void
        */
       sendRemoveBullet(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.IsoGameCharacter, arg2: zombie.characters.BodyDamage.BodyPart): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoGameCharacter arg0, IsoGameCharacter arg1, BodyPart arg2, boolean arg3): void
        */
       sendRemoveGlass(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.IsoGameCharacter, arg2: zombie.characters.BodyDamage.BodyPart, arg3: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (InventoryItem arg0): void
        */
       sendReplaceOnCooked(arg0: zombie.inventory.InventoryItem): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (SandboxOptions arg0): void
        */
       sendSandboxOptionsToServer(arg0: zombie.SandboxOptions): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0, int arg1, boolean arg2, float arg3, String arg4): void
        */
       sendSplint(arg0: number, arg1: number, arg2: boolean, arg3: number, arg4: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (long arg0): void
        */
       sendSteamProfileName(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoGameCharacter arg0, IsoGameCharacter arg1, BodyPart arg2, InventoryItem arg3, boolean arg4): void
        */
       sendStitch(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.IsoGameCharacter, arg2: zombie.characters.BodyDamage.BodyPart, arg3: zombie.inventory.InventoryItem, arg4: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0): void
        */
       sendSyncXp(arg0: zombie.characters.IsoPlayer): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0): void
        */
       sendTransactionID(arg0: zombie.characters.IsoPlayer): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0): void
        */
       sendVisual(arg0: zombie.characters.IsoPlayer): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0, HandWeapon arg1, IsoObject arg2): void
        */
       sendWeaponHit(arg0: zombie.characters.IsoPlayer, arg1: zombie.inventory.types.HandWeapon, arg2: zombie.iso.IsoObject): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       sendWorldMessage(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (WorldSound arg0): void
        *  - (Object arg0, int arg1, int arg2, int arg3, int arg4, int arg5, boolean arg6, float arg7, float arg8): void
        */
       sendWorldSound(arg0: any, arg1?: number, arg2?: number, arg3?: number, arg4?: number, arg5?: number, arg6?: boolean, arg7?: number, arg8?: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0, int arg1, boolean arg2): void
        */
       sendWoundInfection(arg0: number, arg1: number, arg2: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       setResetID(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoWindow arg0, int arg1): void
        */
       smashWindow(arg0: zombie.iso.objects.IsoWindow, arg1: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       startClient(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       startLocalServer(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0, IsoPlayer arg1, InventoryItem arg2): void
        */
       tradingUISendAddItem(arg0: zombie.characters.IsoPlayer, arg1: zombie.characters.IsoPlayer, arg2: zombie.inventory.InventoryItem): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0, IsoPlayer arg1, int arg2): void
        */
       tradingUISendRemoveItem(arg0: zombie.characters.IsoPlayer, arg1: zombie.characters.IsoPlayer, arg2: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0, IsoPlayer arg1, int arg2): void
        */
       tradingUISendUpdateState(arg0: zombie.characters.IsoPlayer, arg1: zombie.characters.IsoPlayer, arg2: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       update(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0): void
        */
       wakeUpPlayer(arg0: zombie.characters.IsoPlayer): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ByteBufferWriter arg0, IsoPlayer arg1): void
        */
       writePlayerConnectData(arg0: zombie.core.network.ByteBufferWriter, arg1: zombie.characters.IsoPlayer): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       static IsClientPaused(): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       static SendCommandToServer(arg0: string): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Faction arg0, String arg1): void
        */
       static acceptFactionInvite(arg0: zombie.characters.Faction, arg1: string): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (SafeHouse arg0, String arg1): void
        */
       static acceptSafehouseInvite(arg0: zombie.iso.areas.SafeHouse, arg1: string): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, String arg1, int arg2): void
        */
       static addTicket(arg0: string, arg1: string, arg2: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       static canModifyPlayerStats(): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       static canSeePlayerStats(): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       static checksumServer(): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoObject arg0): void
        */
       static destroy(arg0: zombie.iso.IsoObject): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       static getCustomModData(): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       static getServerStatisticEnable(): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       static getTickets(arg0: string): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (short arg0): zombie.characters.IsoZombie
        */
       static getZombie(arg0: number): zombie.characters.IsoZombie;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0, String arg1, IsoPlayer arg2): void
        */
       static invMngRequestItem(arg0: number, arg1: string, arg2: zombie.characters.IsoPlayer): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0, IsoPlayer arg1): void
        */
       static invMngRequestRemoveItem(arg0: number, arg1: zombie.characters.IsoPlayer): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ByteBuffer arg0, short arg1): void
        */
       static receiveEatBody(arg0: java.nio.ByteBuffer, arg1: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (short arg0): void
        */
       static receivePlayerTimeout(arg0: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ByteBuffer arg0, short arg1): void
        */
       static receiveRadioDeviceDataState(arg0: java.nio.ByteBuffer, arg1: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ByteBuffer arg0, short arg1): void
        */
       static receiveRadioPostSilence(arg0: java.nio.ByteBuffer, arg1: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ByteBuffer arg0, short arg1): void
        */
       static receiveRadioServerData(arg0: java.nio.ByteBuffer, arg1: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ByteBuffer arg0, short arg1): void
        */
       static receiveSyncCustomLightSettings(arg0: java.nio.ByteBuffer, arg1: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ByteBuffer arg0, short arg1): void
        */
       static receiveSyncRadioData(arg0: java.nio.ByteBuffer, arg1: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ByteBuffer arg0, short arg1): void
        */
       static receiveThump(arg0: java.nio.ByteBuffer, arg1: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ByteBuffer arg0, short arg1): void
        */
       static receiveWaveSignal(arg0: java.nio.ByteBuffer, arg1: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Zone arg0, boolean arg1): void
        */
       static registerZone(arg0: zombie.iso.IsoMetaGrid$Zone, arg1: boolean): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       static removeTicket(arg0: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (BaseAction arg0, boolean arg1): void
        */
       static sendAction(arg0: zombie.characters.CharacterTimedActions.BaseAction, arg1: boolean): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       static sendBuildingStashToDo(arg0: string): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (short arg0, short arg1): void
        */
       static sendBurnCorpse(arg0: number, arg1: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Safety arg0): void
        */
       static sendChangeSafety(arg0: zombie.characters.Safety): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoCompost arg0): void
        */
       static sendCompost(arg0: zombie.iso.objects.IsoCompost): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoZombie arg0, IsoMovingObject arg1): void
        */
       static sendEatBody(arg0: zombie.characters.IsoZombie, arg1: zombie.iso.IsoMovingObject): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0): void
        */
       static sendEquippedRadioFreq(arg0: zombie.characters.IsoPlayer): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0, String arg1): void
        */
       static sendEvent(arg0: zombie.characters.IsoPlayer, arg1: string): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Faction arg0, boolean arg1): void
        */
       static sendFaction(arg0: zombie.characters.Faction, arg1: boolean): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Faction arg0, IsoPlayer arg1, String arg2): void
        */
       static sendFactionInvite(arg0: zombie.characters.Faction, arg1: zombie.characters.IsoPlayer, arg2: string): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (BSFurnace arg0): void
        */
       static sendFurnaceChange(arg0: zombie.iso.objects.BSFurnace): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (long arg0): void
        */
       static sendGetItemInvMng(arg0: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoGameCharacter arg0, IsoMovingObject arg1, HandWeapon arg2, float arg3, boolean arg4, float arg5, boolean arg6, boolean arg7, boolean arg8): boolean
        */
       static sendHitCharacter(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.iso.IsoMovingObject, arg2: zombie.inventory.types.HandWeapon, arg3: number, arg4: boolean, arg5: number, arg6: boolean, arg7: boolean, arg8: boolean): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0, IsoGameCharacter arg1, BaseVehicle arg2, float arg3, boolean arg4, int arg5, float arg6, boolean arg7): void
        */
       static sendHitVehicle(arg0: zombie.characters.IsoPlayer, arg1: zombie.characters.IsoGameCharacter, arg2: zombie.vehicles.BaseVehicle, arg3: number, arg4: boolean, arg5: number, arg6: number, arg7: boolean): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       static sendIsoRegionDataRequest(): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0, int arg1, int arg2, String arg3, String arg4, String arg5, float arg6, float arg7, float arg8, int arg9, boolean arg10): void
        */
       static sendIsoWaveSignal(arg0: number, arg1: number, arg2: number, arg3: string, arg4: string, arg5: string, arg6: number, arg7: number, arg8: number, arg9: number, arg10: boolean): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0, ArrayList arg1, IsoPlayer arg2, String arg3, String arg4): boolean
        */
       static sendItemListNet(arg0: zombie.characters.IsoPlayer, arg1: java.util.ArrayList<zombie.inventory.InventoryItem>, arg2: zombie.characters.IsoPlayer, arg3: string, arg4: string): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0): void
        */
       static sendKickOutOfSafehouse(arg0: zombie.characters.IsoPlayer): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (NonPvpZone arg0, boolean arg1): void
        */
       static sendNonPvpZone(arg0: zombie.iso.areas.NonPvpZone, arg1: boolean): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0): void
        */
       static sendPerks(arg0: zombie.characters.IsoPlayer): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       static sendPing(): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0): void
        */
       static sendPlayerDamage(arg0: zombie.characters.IsoPlayer): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0): void
        */
       static sendPlayerDeath(arg0: zombie.characters.IsoPlayer): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0): void
        */
       static sendPlayerExtraInfo(arg0: zombie.characters.IsoPlayer): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0): void
        */
       static sendPlayerInjuries(arg0: zombie.characters.IsoPlayer): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0, boolean arg1, boolean arg2): void
        */
       static sendPlayerListensChannel(arg0: number, arg1: boolean, arg2: boolean): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       static sendRadioServerDataRequest(): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoDeadBody arg0): void
        */
       static sendRemoveCorpseFromMap(arg0: zombie.iso.objects.IsoDeadBody): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0): void
        */
       static sendRequestInventory(arg0: zombie.characters.IsoPlayer): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (SafeHouse arg0, boolean arg1): void
        */
       static sendSafehouse(arg0: zombie.iso.areas.SafeHouse, arg1: boolean): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (SafeHouse arg0, IsoPlayer arg1, String arg2): void
        */
       static sendSafehouseInvite(arg0: zombie.iso.areas.SafeHouse, arg1: zombie.characters.IsoPlayer, arg2: string): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (long arg0): void
        */
       static sendServerPing(arg0: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (short arg0, int arg1, byte arg2): void
        */
       static sendSneezingCoughing(arg0: number, arg1: number, arg2: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
-       *  - (IsoGameCharacter arg0): void
+       * Method Parameters:
        *  - (IsoGridSquare arg0): void
+       *  - (IsoGameCharacter arg0): void
        */
-      static sendStopFire(arg0: zombie.characters.IsoGameCharacter | zombie.iso.IsoGridSquare): void;
+      static sendStopFire(arg0: zombie.iso.IsoGridSquare | zombie.characters.IsoGameCharacter): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0, float arg1, float arg2, float arg3): void
        */
       static sendTeleport(arg0: zombie.characters.IsoPlayer, arg1: number, arg2: number, arg3: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoGameCharacter arg0, Thumpable arg1): void
        */
       static sendThump(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.iso.objects.interfaces.Thumpable): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ValidatePacket arg0): void
        */
       static sendValidatePacket(arg0: zombie.network.packets.ValidatePacket): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0): void
        */
       static sendWeight(arg0: zombie.characters.IsoPlayer): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoZombie arg0): void
        */
       static sendZombieDeath(arg0: zombie.characters.IsoZombie): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (IsoPlayer arg0, IsoGameCharacter arg1, InventoryItem arg2): void
        */
       static sendZombieHelmetFall(arg0: zombie.characters.IsoPlayer, arg1: zombie.characters.IsoGameCharacter, arg2: zombie.inventory.InventoryItem): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       static setServerStatisticEnable(arg0: boolean): void;
@@ -1482,7 +1456,7 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       static Init(): void;
@@ -1780,192 +1754,192 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getDescription(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getIp(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getLastUpdate(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getLocalIP(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getMaxPlayers(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getMods(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getPing(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getPlayers(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getPort(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getPwd(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getServerPassword(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getSteamId(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getUserName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getVersion(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isHosted(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isOpen(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isPasswordProtected(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isPublic(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setDescription(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setHosted(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setIp(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       setLastUpdate(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setLocalIP(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setMaxPlayers(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setMods(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setName(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setOpen(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setPasswordProtected(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setPing(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setPlayers(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setPort(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setPublic(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setPwd(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setServerPassword(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setSteamId(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setUserName(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setVersion(arg0: string): void;
@@ -1991,125 +1965,125 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (ServerOption arg0): void
        */
       addOption(arg0: zombie.network.ServerOptions$ServerOption): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, String arg1): string
        */
       changeOption(arg0: string, arg1: string): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): boolean
        */
       getBoolean(arg0: string): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): number
        */
       getDouble(arg0: string): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): number
        */
       getFloat(arg0: string): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): number
        */
       getInteger(arg0: string): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getMaxPlayers(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getNumOptions(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): string
        */
       getOption(arg0: string): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): zombie.network.ServerOptions$ServerOption
        */
       getOptionByIndex(arg0: number): zombie.network.ServerOptions$ServerOption;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.network.ServerOptions$ServerOption
        */
       getOptionByName(arg0: string): zombie.network.ServerOptions$ServerOption;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.ArrayList<zombie.network.ServerOptions$ServerOption>
        */
       getOptions(): java.util.ArrayList<zombie.network.ServerOptions$ServerOption>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.ArrayList<string>
        */
       getPublicOptions(): java.util.ArrayList<string>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       init(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): boolean
        */
       loadServerTextFile(arg0: string): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, String arg1): void
        */
       putOption(arg0: string, arg1: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, String arg1): void
        */
       putSaveOption(arg0: string, arg1: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       resetRegionFile(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): boolean
        */
       saveServerTextFile(arg0: string): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): java.util.ArrayList<string>
        */
       static getClientCommandList(arg0: boolean): java.util.ArrayList<string>;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.network.ServerOptions
        */
       static getInstance(): zombie.network.ServerOptions;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       static getRandomCard(): string;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       static initClientCommandsHelp(): void;
@@ -2126,77 +2100,77 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: zombie.network.ServerOptions, arg1: string, arg2: boolean);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.config.ConfigOption
        */
       asConfigOption(): zombie.config.ConfigOption;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       getDefaultValue(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getTooltip(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getType(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       getValue(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getValueAsLuaString(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): any
        */
       getValueAsObject(): any;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getValueAsString(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): boolean
        */
       isValidString(arg0: string): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       parse(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       resetToDefault(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       setDefaultToCurrentValue(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setValue(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Object arg0): void
        */
       setValueFromObject(arg0: any): void;
@@ -2213,87 +2187,87 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: zombie.network.ServerOptions, arg1: string, arg2: number, arg3: number, arg4: number);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.config.ConfigOption
        */
       asConfigOption(): zombie.config.ConfigOption;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getDefaultValue(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getMax(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getMin(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getTooltip(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getType(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getValue(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getValueAsLuaString(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): any
        */
       getValueAsObject(): any;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getValueAsString(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): boolean
        */
       isValidString(arg0: string): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       parse(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       resetToDefault(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       setDefaultToCurrentValue(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (double arg0): void
        */
       setValue(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Object arg0): void
        */
       setValueFromObject(arg0: any): void;
@@ -2310,87 +2284,87 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: zombie.network.ServerOptions, arg1: string, arg2: number, arg3: number, arg4: number);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.config.ConfigOption
        */
       asConfigOption(): zombie.config.ConfigOption;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getDefaultValue(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getMax(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getMin(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getTooltip(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getType(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getValue(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getValueAsLuaString(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): any
        */
       getValueAsObject(): any;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getValueAsString(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): boolean
        */
       isValidString(arg0: string): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       parse(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       resetToDefault(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       setDefaultToCurrentValue(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       setValue(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Object arg0): void
        */
       setValueFromObject(arg0: any): void;
@@ -2403,12 +2377,12 @@ declare module '@asledgehammer/pipewrench' {
     export class ServerOptions$ServerOption {
       protected constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.config.ConfigOption
        */
       asConfigOption(): zombie.config.ConfigOption;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getTooltip(): string;
@@ -2425,77 +2399,77 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: zombie.network.ServerOptions, arg1: string, arg2: string, arg3: number);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.config.ConfigOption
        */
       asConfigOption(): zombie.config.ConfigOption;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getDefaultValue(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getTooltip(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getType(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getValue(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getValueAsLuaString(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): any
        */
       getValueAsObject(): any;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getValueAsString(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): boolean
        */
       isValidString(arg0: string): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       parse(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       resetToDefault(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       setDefaultToCurrentValue(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setValue(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Object arg0): void
        */
       setValueFromObject(arg0: any): void;
@@ -2512,77 +2486,77 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: zombie.network.ServerOptions, arg1: string, arg2: string, arg3: number);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.config.ConfigOption
        */
       asConfigOption(): zombie.config.ConfigOption;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getDefaultValue(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getTooltip(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getType(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getValue(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getValueAsLuaString(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): any
        */
       getValueAsObject(): any;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getValueAsString(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): boolean
        */
       isValidString(arg0: string): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       parse(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       resetToDefault(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       setDefaultToCurrentValue(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setValue(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Object arg0): void
        */
       setValueFromObject(arg0: any): void;
@@ -2599,97 +2573,97 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: string);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, String arg1): void
        */
       addSpawnRegion(arg0: string, arg1: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       clearSpawnRegions(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       deleteFiles(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): boolean
        */
       duplicateFiles(arg0: string): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getErrorMsg(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getNumSpawnRegions(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.SandboxOptions
        */
       getSandboxOptions(): zombie.SandboxOptions;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.network.ServerOptions
        */
       getServerOptions(): zombie.network.ServerOptions;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): string
        */
       getSpawnRegionFile(arg0: number): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): string
        */
       getSpawnRegionName(arg0: number): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isValid(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       loadFiles(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): se.krka.kahlua.vm.KahluaTable
        */
       loadSpawnPointsFile(arg0: string): se.krka.kahlua.vm.KahluaTable;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       removeSpawnRegion(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): boolean
        */
       rename(arg0: string): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       resetToDefault(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       saveFiles(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, KahluaTable arg1): boolean
        */
       saveSpawnPointsFile(arg0: string, arg1: se.krka.kahlua.vm.KahluaTable): boolean;
@@ -2709,42 +2683,42 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): string
        */
       getNameInSettingsFolder(arg0: string): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): zombie.network.ServerSettings
        */
       getSettingsByIndex(arg0: number): zombie.network.ServerSettings;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getSettingsCount(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getSettingsFolder(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.ArrayList<string>
        */
       getSuffixes(): java.util.ArrayList<string>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): boolean
        */
       isValidName(arg0: string): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): boolean
        */
       isValidNewName(arg0: string): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       readAllSettings(): void;
@@ -2761,32 +2735,32 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: string, arg1: string, arg2: string, arg3: string, arg4: number);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getAmount(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getIssuedBy(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getText(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getType(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getUsername(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): void
        */
       setAmount(arg0: number): void;

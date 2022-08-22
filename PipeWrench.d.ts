@@ -1958,6 +1958,7 @@ declare module '@asledgehammer/pipewrench' {
   export type Calendar = java.util.Calendar;
   export type CharBuffer = java.nio.CharBuffer;
   export type CharSequence = java.lang.CharSequence;
+  export type Charset = java.nio.charset.Charset;
   export type Class = java.lang.Class<any>;
   export type ClassDebugInformation = se.krka.kahlua.integration.expose.ClassDebugInformation;
   export type Collection = java.util.Collection<any>;

@@ -1,30 +1,4 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
-/**  @noSelfInFile */
-/// <reference path="../reference.d.ts" />
+/** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.characters.traits {
     /**
@@ -44,28 +18,28 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, String arg1, String arg2): void
        */
       static addObservation(arg0: string, arg1: string, arg2: string): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.characters.traits.ObservationFactory$Observation
        */
       static getObservation(arg0: string): zombie.characters.traits.ObservationFactory$Observation;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       static init(): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, String arg1): void
        */
       static setMutualExclusive(arg0: string, arg1: string): void;
@@ -82,47 +56,47 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: string, arg1: string, arg2: string);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getDescription(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getLabel(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getLeftLabel(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getRightLabel(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getTraitID(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setDescription(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setName(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setTraitID(arg0: string): void;
@@ -139,64 +113,64 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       add(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Collection arg0): void
        */
       addAll(arg0: java.util.Collection<string>): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       clear(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): boolean
        *  - (Object arg0): boolean
        */
       contains(arg0: any): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (int arg0): string
        */
       get(arg0: number): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.characters.traits.TraitCollection$TraitSlot
        */
       getTraitSlot(arg0: string): zombie.characters.traits.TraitCollection$TraitSlot;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isEmpty(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): boolean
        *  - (Object arg0): boolean
        */
       remove(arg0: any): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Collection arg0): void
        */
       removeAll(arg0: java.util.Collection<any>): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, boolean arg1): void
        */
       set(arg0: string, arg1: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       size(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       toString(): string;
@@ -209,22 +183,22 @@ declare module '@asledgehammer/pipewrench' {
     export class TraitCollection$TraitSlot {
 
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): boolean
        */
       isName(arg0: string): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isSet(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       set(arg0: boolean): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       toString(): string;
@@ -246,14 +220,14 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       static Reset(): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, String arg1, int arg2, String arg3, boolean arg4): zombie.characters.traits.TraitFactory$Trait
        *  - (String arg0, String arg1, int arg2, String arg3, boolean arg4, boolean arg5): zombie.characters.traits.TraitFactory$Trait
        */
@@ -261,35 +235,35 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): zombie.characters.traits.TraitFactory$Trait
        */
       static getTrait(arg0: string): zombie.characters.traits.TraitFactory$Trait;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.ArrayList<zombie.characters.traits.TraitFactory$Trait>
        */
       static getTraits(): java.util.ArrayList<zombie.characters.traits.TraitFactory$Trait>;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       static init(): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0, String arg1): void
        */
       static setMutualExclusive(arg0: string, arg1: string): void;
       /**
        * @noSelf
        *
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       static sortList(): void;
@@ -306,82 +280,82 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: string, arg1: string, arg2: number, arg3: string, arg4: boolean, arg5: boolean);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Perk arg0, int arg1): void
        */
       addXPBoost(arg0: zombie.characters.skills.PerkFactory$Perk, arg1: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getCost(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getDescription(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.List<string>
        */
       getFreeRecipes(): java.util.List<string>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getLabel(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getLeftLabel(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.ArrayList<string>
        */
       getMutuallyExclusiveTraits(): java.util.ArrayList<string>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getRightLabel(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): zombie.core.textures.Texture
        */
       getTexture(): zombie.core.textures.Texture;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getType(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): java.util.HashMap<zombie.characters.skills.PerkFactory$Perk, number>
        */
       getXPBoostMap(): java.util.HashMap<zombie.characters.skills.PerkFactory$Perk, number>;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isFree(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): boolean
        */
       isRemoveInMP(): boolean;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (String arg0): void
        */
       setDescription(arg0: string): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (List arg0): void
        */
       setFreeRecipes(arg0: java.util.List<string>): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (boolean arg0): void
        */
       setRemoveInMP(arg0: boolean): void;

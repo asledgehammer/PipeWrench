@@ -1,30 +1,4 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
-/**  @noSelfInFile */
-/// <reference path="../reference.d.ts" />
+/** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.audio.parameters {
     /**
@@ -39,57 +13,57 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: zombie.characters.IsoGameCharacter);
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       calculateCurrentValue(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): number
        */
       getCurrentValue(): number;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): fmod.fmod.FMOD_STUDIO_PARAMETER_DESCRIPTION
        */
       getParameterDescription(): fmod.fmod.FMOD_STUDIO_PARAMETER_DESCRIPTION;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): fmod.fmod.FMOD_STUDIO_PARAMETER_ID
        */
       getParameterID(): fmod.fmod.FMOD_STUDIO_PARAMETER_ID;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       resetToDefault(): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (float arg0): void
        */
       setCurrentValue(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (MovementType arg0): void
        */
       setMovementType(arg0: zombie.audio.parameters.ParameterCharacterMovementSpeed$MovementType): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (long arg0): void
        */
       startEventInstance(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (long arg0): void
        */
       stopEventInstance(arg0: number): void;
       /**
-       * Method Parameters: 
+       * Method Parameters:
        *  - (Empty): void
        */
       update(): void;
