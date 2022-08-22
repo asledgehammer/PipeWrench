@@ -1,6 +1,8 @@
 name: ExtractAPI
 on:
-  push:
+  schedule:
+    # every day at midnight
+    - cron: "0 0 * * *"
 jobs:
   test:
     strategy:
