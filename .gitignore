@@ -4,3 +4,6 @@ steamcmd
 **/.DS_Store
 **/*.js
 java-gen
+lua.api.partial.d.ts
+lua.interface.partial.lua
+lua.reference.partial.d.ts
