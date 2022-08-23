@@ -8,33 +8,33 @@ jobs:
     strategy:
       matrix:
         version: [stable, unstable]
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
+        with:
+          repository: asledgehammer/PipeWrench-Java-Generator
+          ref: shughes/java-gen-automation
+          path: java-gen
+          ssh-key: ${{ secrets.JAVA_GEN_KEY }}
       - name: Setup steamcmd
         uses: CyberAndrii/setup-steamcmd@v1
       - run: bash ./scripts/install_pz.sh ${{ matrix.version }}
-      # - uses: actions/checkout@v3
-      #   with:
-      #     repository: asledgehammer/PipeWrench-Java-Generator
-      #     ref: shughes/java-gen-automation
-      #     path: java-gen
-      # - uses: actions/setup-java@v3
-      #   with:
-      #     distribution: "temurin"
-      #     java-version: "17"
-      # - name: Setup Gradle
-      #   uses: gradle/gradle-build-action@v2
-      # - run: bash ./scripts/install_pz.sh
-      # - run: cd java-gen
-      # - run: bash ./scripts/prep_libs.sh
-      # - run: gradle run --args ../
-      # - run: cd ..
       - uses: actions/setup-node@v3
         with:
           node-version: 18
           cache: npm
           cache-dependency-path: package-lock.json
+      - uses: actions/setup-java@v3
+        with:
+          distribution: "temurin"
+          java-version: "17"
+      - name: Setup Gradle
+        uses: gradle/gradle-build-action@v2
+      - run: |
+          cd java-gen
+          bash ./scripts/prep_libs.sh ../pzserver
+          gradle run --args ../
       - run: npm install
       - run: npm link
       - run: npm run build
