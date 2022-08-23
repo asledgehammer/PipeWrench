@@ -1,3 +1,28 @@
+/**
+ * MIT License
+ *
+ * Copyright (c) 2022 JabDoesThings
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ *
+ */
+
 /** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.asset {
@@ -309,11 +334,11 @@ declare module '@asledgehammer/pipewrench' {
       getOwner(): zombie.asset.AssetManagers;
       /**
        * Method Parameters:
-       *  - (AssetPath arg0): zombie.asset.Asset
        *  - (Asset arg0): void
+       *  - (AssetPath arg0): zombie.asset.Asset
        *  - (AssetPath arg0, AssetParams arg1): zombie.asset.Asset
        */
-      load(arg0: zombie.asset.AssetPath | zombie.asset.Asset, arg1?: zombie.asset.AssetManager$AssetParams): zombie.asset.Asset | void;
+      load(arg0: zombie.asset.Asset | zombie.asset.AssetPath, arg1?: zombie.asset.AssetManager$AssetParams): void | zombie.asset.Asset;
       /**
        * Method Parameters:
        *  - (State arg0, State arg1, Asset arg2): void
@@ -321,11 +346,11 @@ declare module '@asledgehammer/pipewrench' {
       onStateChanged(arg0: zombie.asset.Asset$State, arg1: zombie.asset.Asset$State, arg2: zombie.asset.Asset): void;
       /**
        * Method Parameters:
-       *  - (Asset arg0): void
        *  - (AssetPath arg0): void
+       *  - (Asset arg0): void
        *  - (Asset arg0, AssetParams arg1): void
        */
-      reload(arg0: zombie.asset.Asset | zombie.asset.AssetPath, arg1?: zombie.asset.AssetManager$AssetParams): void;
+      reload(arg0: zombie.asset.AssetPath | zombie.asset.Asset, arg1?: zombie.asset.AssetManager$AssetParams): void;
       /**
        * Method Parameters:
        *  - (Empty): void
@@ -333,10 +358,10 @@ declare module '@asledgehammer/pipewrench' {
       removeUnreferenced(): void;
       /**
        * Method Parameters:
-       *  - (AssetPath arg0): void
        *  - (Asset arg0): void
+       *  - (AssetPath arg0): void
        */
-      unload(arg0: zombie.asset.AssetPath | zombie.asset.Asset): void;
+      unload(arg0: zombie.asset.Asset | zombie.asset.AssetPath): void;
     }
     /**
      * @customConstructor AssetParams.new

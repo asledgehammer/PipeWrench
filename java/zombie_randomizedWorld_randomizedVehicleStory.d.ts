@@ -1,3 +1,28 @@
+/**
+ * MIT License
+ *
+ * Copyright (c) 2022 JabDoesThings
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ *
+ */
+
 /** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.randomizedWorld.randomizedVehicleStory {
@@ -19,10 +44,10 @@ declare module '@asledgehammer/pipewrench' {
       addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
       /**
        * Method Parameters:
-       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
+       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        */
-      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
+      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters:
        *  - (IsoGridSquare arg0, ArrayList arg1): zombie.inventory.InventoryItem
@@ -390,10 +415,10 @@ declare module '@asledgehammer/pipewrench' {
       addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
       /**
        * Method Parameters:
-       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
+       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        */
-      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
+      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters:
        *  - (IsoGridSquare arg0, ArrayList arg1): zombie.inventory.InventoryItem
@@ -761,10 +786,10 @@ declare module '@asledgehammer/pipewrench' {
       addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
       /**
        * Method Parameters:
-       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
+       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        */
-      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
+      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters:
        *  - (IsoGridSquare arg0, ArrayList arg1): zombie.inventory.InventoryItem
@@ -1132,10 +1157,10 @@ declare module '@asledgehammer/pipewrench' {
       addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
       /**
        * Method Parameters:
-       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
+       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        */
-      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
+      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters:
        *  - (IsoGridSquare arg0, ArrayList arg1): zombie.inventory.InventoryItem
@@ -1503,10 +1528,10 @@ declare module '@asledgehammer/pipewrench' {
       addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
       /**
        * Method Parameters:
-       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
+       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        */
-      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
+      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters:
        *  - (IsoGridSquare arg0, ArrayList arg1): zombie.inventory.InventoryItem
@@ -1874,10 +1899,10 @@ declare module '@asledgehammer/pipewrench' {
       addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
       /**
        * Method Parameters:
-       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
+       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        */
-      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
+      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters:
        *  - (IsoGridSquare arg0, ArrayList arg1): zombie.inventory.InventoryItem
@@ -2245,10 +2270,10 @@ declare module '@asledgehammer/pipewrench' {
       addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
       /**
        * Method Parameters:
-       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
+       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        */
-      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
+      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters:
        *  - (IsoGridSquare arg0, ArrayList arg1): zombie.inventory.InventoryItem
@@ -2616,10 +2641,10 @@ declare module '@asledgehammer/pipewrench' {
       addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
       /**
        * Method Parameters:
-       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
+       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        */
-      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
+      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters:
        *  - (IsoGridSquare arg0, ArrayList arg1): zombie.inventory.InventoryItem
@@ -2987,10 +3012,10 @@ declare module '@asledgehammer/pipewrench' {
       addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
       /**
        * Method Parameters:
-       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
+       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        */
-      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
+      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters:
        *  - (IsoGridSquare arg0, ArrayList arg1): zombie.inventory.InventoryItem
@@ -3358,10 +3383,10 @@ declare module '@asledgehammer/pipewrench' {
       addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
       /**
        * Method Parameters:
-       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
+       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        */
-      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
+      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters:
        *  - (IsoGridSquare arg0, ArrayList arg1): zombie.inventory.InventoryItem
@@ -3729,10 +3754,10 @@ declare module '@asledgehammer/pipewrench' {
       addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
       /**
        * Method Parameters:
-       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
+       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        */
-      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
+      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters:
        *  - (IsoGridSquare arg0, ArrayList arg1): zombie.inventory.InventoryItem
@@ -4100,10 +4125,10 @@ declare module '@asledgehammer/pipewrench' {
       addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
       /**
        * Method Parameters:
-       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
+       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        */
-      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
+      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters:
        *  - (IsoGridSquare arg0, ArrayList arg1): zombie.inventory.InventoryItem
@@ -4471,10 +4496,10 @@ declare module '@asledgehammer/pipewrench' {
       addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
       /**
        * Method Parameters:
-       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
+       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        */
-      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
+      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters:
        *  - (IsoGridSquare arg0, ArrayList arg1): zombie.inventory.InventoryItem
@@ -4850,10 +4875,10 @@ declare module '@asledgehammer/pipewrench' {
       addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
       /**
        * Method Parameters:
-       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
+       *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
        */
-      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
+      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters:
        *  - (IsoGridSquare arg0, ArrayList arg1): zombie.inventory.InventoryItem
@@ -5283,10 +5308,10 @@ declare module '@asledgehammer/pipewrench' {
       rotate<E>(arg0: number, arg1: number, arg2: zombie.iso.Vector2, arg3: number): zombie.iso.Vector2;
       /**
        * Method Parameters:
-       *  - (String arg0, Object arg1): void
+       *  - (String arg0, boolean arg1): void
        *  - (String arg0, float arg1): void
        *  - (String arg0, int arg1): void
-       *  - (String arg0, boolean arg1): void
+       *  - (String arg0, Object arg1): void
        */
       setParameter<E>(arg0: string, arg1: any): void;
       /**

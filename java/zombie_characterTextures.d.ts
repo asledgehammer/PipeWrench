@@ -1,3 +1,28 @@
+/**
+ * MIT License
+ *
+ * Copyright (c) 2022 JabDoesThings
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ *
+ */
+
 /** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.characterTextures {
@@ -48,12 +73,7 @@ declare module '@asledgehammer/pipewrench' {
 
       getCharacterMaskParts(): zombie.core.skinnedmodel.model.CharacterMask$Part[];
 
-      /**
-       * @noSelf
-       *
-       * (BloodBodyPartType arg0): String
-       */
-      static getDisplayName(arg0: zombie.characterTextures.BloodBodyPartType | null): string;
+      getDisplayName(): string;
 
       index(): number;
 
@@ -113,16 +133,16 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * @noSelf
        *
-       * (BloodBodyPartType arg0, HumanVisual arg1, ArrayList arg2, boolean arg3): void
+       * (BloodBodyPartType arg0, float arg1, HumanVisual arg2, ArrayList arg3, boolean arg4): void
        */
-      static addDirt(arg0: zombie.characterTextures.BloodBodyPartType | null, arg1: zombie.core.skinnedmodel.visual.HumanVisual | null, arg2: java.util.ArrayList<zombie.core.skinnedmodel.visual.ItemVisual> | null, arg3: boolean): void;
+      static addDirt(arg0: zombie.characterTextures.BloodBodyPartType | null, arg1: number, arg2: zombie.core.skinnedmodel.visual.HumanVisual | null, arg3: java.util.ArrayList<zombie.core.skinnedmodel.visual.ItemVisual> | null, arg4: boolean): void;
 
       /**
        * @noSelf
        *
-       * (BloodBodyPartType arg0, HumanVisual arg1, ArrayList arg2): void
+       * (BloodBodyPartType arg0, HumanVisual arg1, ArrayList arg2, boolean arg3): boolean
        */
-      static addHole(arg0: zombie.characterTextures.BloodBodyPartType | null, arg1: zombie.core.skinnedmodel.visual.HumanVisual | null, arg2: java.util.ArrayList<zombie.core.skinnedmodel.visual.ItemVisual> | null): void;
+      static addHole(arg0: zombie.characterTextures.BloodBodyPartType | null, arg1: zombie.core.skinnedmodel.visual.HumanVisual | null, arg2: java.util.ArrayList<zombie.core.skinnedmodel.visual.ItemVisual> | null, arg3: boolean): boolean;
 
       /**
        * @noSelf
