@@ -1,3 +1,28 @@
+/**
+ * MIT License
+ *
+ * Copyright (c) 2022 JabDoesThings
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ *
+ */
+
 /** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.inventory {
@@ -1962,11 +1987,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): zombie.inventory.InventoryItem
        *  - (String arg0, float arg1): zombie.inventory.InventoryItem
        *  - (String arg0, Food arg1): zombie.inventory.InventoryItem
-       *  - (String arg0, float arg1, String arg2): zombie.inventory.InventoryItem
        *  - (String arg0, float arg1, boolean arg2): zombie.inventory.InventoryItem
+       *  - (String arg0, float arg1, String arg2): zombie.inventory.InventoryItem
        *  - (String arg0, String arg1, String arg2, String arg3): zombie.inventory.InventoryItem
        */
-      static CreateItem(arg0: number | string, arg1?: number | zombie.inventory.types.Food | string, arg2?: string | boolean, arg3?: string): zombie.inventory.InventoryItem;
+      static CreateItem(arg0: number | string, arg1?: number | zombie.inventory.types.Food | string, arg2?: boolean | string, arg3?: string): zombie.inventory.InventoryItem;
     }
     /**
      * @customConstructor ItemContainer.new
@@ -1984,11 +2009,11 @@ declare module '@asledgehammer/pipewrench' {
       constructor(arg0?: number | string, arg1?: zombie.iso.IsoGridSquare | string, arg2?: zombie.iso.IsoObject | zombie.iso.IsoGridSquare, arg3?: zombie.iso.IsoObject);
       /**
        * Method Parameters:
-       *  - (String arg0): zombie.inventory.InventoryItem
        *  - (InventoryItem arg0): zombie.inventory.InventoryItem
+       *  - (String arg0): zombie.inventory.InventoryItem
        *  - (String arg0, float arg1): boolean
        */
-      AddItem(arg0: string | zombie.inventory.InventoryItem, arg1?: number): zombie.inventory.InventoryItem | boolean;
+      AddItem(arg0: zombie.inventory.InventoryItem | string, arg1?: number): zombie.inventory.InventoryItem | boolean;
       /**
        * Method Parameters:
        *  - (InventoryItem arg0): zombie.inventory.InventoryItem
@@ -2060,11 +2085,11 @@ declare module '@asledgehammer/pipewrench' {
       HasType(arg0: zombie.inventory.ItemType): boolean;
       /**
        * Method Parameters:
-       *  - (String arg0): void
        *  - (ItemType arg0): zombie.inventory.InventoryItem
        *  - (InventoryItem arg0): void
+       *  - (String arg0): void
        */
-      Remove(arg0: string | zombie.inventory.ItemType | zombie.inventory.InventoryItem): void | zombie.inventory.InventoryItem;
+      Remove(arg0: zombie.inventory.ItemType | zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem | void;
       /**
        * Method Parameters:
        *  - (String arg0): void
@@ -2100,8 +2125,8 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters:
        *  - (InventoryItem arg0): boolean
        *  - (String arg0): boolean
-       *  - (InventoryItem arg0, boolean arg1): boolean
        *  - (String arg0, boolean arg1): boolean
+       *  - (InventoryItem arg0, boolean arg1): boolean
        *  - (String arg0, boolean arg1, boolean arg2): boolean
        */
       contains(arg0: zombie.inventory.InventoryItem | string, arg1?: boolean, arg2?: boolean): boolean;
@@ -2752,10 +2777,10 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters:
        *  - (String arg0): number
        *  - (String arg0, boolean arg1): number
-       *  - (String arg0, boolean arg1, boolean arg2): number
        *  - (String arg0, boolean arg1, ArrayList arg2): number
+       *  - (String arg0, boolean arg1, boolean arg2): number
        */
-      getNumberOfItem(arg0: string, arg1?: boolean, arg2?: boolean | java.util.ArrayList<zombie.inventory.ItemContainer>): number;
+      getNumberOfItem(arg0: string, arg1?: boolean, arg2?: java.util.ArrayList<zombie.inventory.ItemContainer> | boolean): number;
       /**
        * Method Parameters:
        *  - (Empty): string
@@ -2953,10 +2978,10 @@ declare module '@asledgehammer/pipewrench' {
       getWeightReduction(): number;
       /**
        * Method Parameters:
-       *  - (IsoGameCharacter arg0, InventoryItem arg1): boolean
        *  - (IsoGameCharacter arg0, float arg1): boolean
+       *  - (IsoGameCharacter arg0, InventoryItem arg1): boolean
        */
-      hasRoomFor(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.inventory.InventoryItem | number): boolean;
+      hasRoomFor(arg0: zombie.characters.IsoGameCharacter, arg1: number | zombie.inventory.InventoryItem): boolean;
       /**
        * Method Parameters:
        *  - (int arg0): zombie.inventory.InventoryItem

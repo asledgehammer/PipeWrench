@@ -1,3 +1,28 @@
+/**
+ * MIT License
+ *
+ * Copyright (c) 2022 JabDoesThings
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ *
+ */
+
 /** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.iso.areas {
@@ -482,10 +507,10 @@ declare module '@asledgehammer/pipewrench' {
       addPlayer(arg0: string): void;
       /**
        * Method Parameters:
-       *  - (String arg0): zombie.iso.areas.SafeHouse
        *  - (IsoPlayer arg0): zombie.iso.areas.SafeHouse
+       *  - (String arg0): zombie.iso.areas.SafeHouse
        */
-      alreadyHaveSafehouse(arg0: string | zombie.characters.IsoPlayer): zombie.iso.areas.SafeHouse;
+      alreadyHaveSafehouse(arg0: zombie.characters.IsoPlayer | string): zombie.iso.areas.SafeHouse;
       /**
        * Method Parameters:
        *  - (IsoPlayer arg0): void
@@ -578,10 +603,10 @@ declare module '@asledgehammer/pipewrench' {
       kickOutOfSafehouse(arg0: zombie.characters.IsoPlayer): void;
       /**
        * Method Parameters:
-       *  - (IsoPlayer arg0): boolean
        *  - (String arg0): boolean
+       *  - (IsoPlayer arg0): boolean
        */
-      playerAllowed(arg0: zombie.characters.IsoPlayer | string): boolean;
+      playerAllowed(arg0: string | zombie.characters.IsoPlayer): boolean;
       /**
        * Method Parameters:
        *  - (String arg0): void

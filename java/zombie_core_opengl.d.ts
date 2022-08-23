@@ -1,3 +1,28 @@
+/**
+ * MIT License
+ *
+ * Copyright (c) 2022 JabDoesThings
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ *
+ */
+
 /** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.core.opengl {
@@ -295,14 +320,14 @@ declare module '@asledgehammer/pipewrench' {
       setSamplerUnit(arg0: string, arg1: number): void;
       /**
        * Method Parameters:
+       *  - (String arg0, Matrix4f arg1): void
        *  - (String arg0, Vector2 arg1): void
-       *  - (String arg0, Vector3 arg1): void
        *  - (String arg0, int arg1): void
        *  - (String arg0, float arg1): void
-       *  - (String arg0, Matrix4f arg1): void
+       *  - (String arg0, Vector3 arg1): void
        *  - (String arg0, Texture arg1, int arg2): void
        */
-      setValue(arg0: string, arg1: zombie.iso.Vector2 | zombie.iso.Vector3 | number | org.lwjgl.util.vector.Matrix4f | zombie.core.textures.Texture, arg2?: number): void;
+      setValue(arg0: string, arg1: org.lwjgl.util.vector.Matrix4f | zombie.iso.Vector2 | number | zombie.iso.Vector3 | zombie.core.textures.Texture, arg2?: number): void;
       /**
        * Method Parameters:
        *  - (String arg0, int arg1): void
@@ -321,10 +346,10 @@ declare module '@asledgehammer/pipewrench' {
       setVector2(arg0: string | number, arg1: number, arg2: number): void;
       /**
        * Method Parameters:
-       *  - (String arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3): void
+       *  - (String arg0, float arg1, float arg2, float arg3): void
        */
-      setVector3(arg0: string | number, arg1: number, arg2: number, arg3: number): void;
+      setVector3(arg0: number | string, arg1: number, arg2: number, arg3: number): void;
       /**
        * Method Parameters:
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void

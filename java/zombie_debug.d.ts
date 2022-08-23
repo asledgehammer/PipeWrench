@@ -1,3 +1,28 @@
+/**
+ * MIT License
+ *
+ * Copyright (c) 2022 JabDoesThings
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ *
+ */
+
 /** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.debug {
@@ -244,8 +269,8 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters:
-       *  - (String arg0): void
        *  - (Object arg0): void
+       *  - (String arg0): void
        *  - (DebugType arg0, String arg1): void
        */
       static log(arg0: any, arg1?: string): void;
@@ -312,11 +337,6 @@ declare module '@asledgehammer/pipewrench' {
       append(arg0: java.lang.CharSequence | string, arg1?: number, arg2?: number): java.lang.Appendable | java.io.PrintStream;
       /**
        * Method Parameters:
-       *  - (Empty): java.nio.charset.Charset
-       */
-      charset(): java.nio.charset.Charset;
-      /**
-       * Method Parameters:
        *  - (Empty): boolean
        */
       checkError(): boolean;
@@ -366,14 +386,14 @@ declare module '@asledgehammer/pipewrench' {
       noise(arg0: string, arg1?: any, arg2?: any, arg3?: any, arg4?: any, arg5?: any, arg6?: any): void;
       /**
        * Method Parameters:
-       *  - (float arg0): void
        *  - (long arg0): void
        *  - (int arg0): void
        *  - (char arg0): void
-       *  - (double arg0): void
-       *  - (String arg0): void
-       *  - (Object arg0): void
        *  - (boolean arg0): void
+       *  - (Object arg0): void
+       *  - (String arg0): void
+       *  - (double arg0): void
+       *  - (float arg0): void
        *  - (char[] arg0): void
        */
       print(arg0: any): void;
@@ -404,15 +424,15 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters:
        *  - (Empty): void
-       *  - (Object arg0): void
-       *  - (String arg0): void
        *  - (char[] arg0): void
        *  - (double arg0): void
+       *  - (float arg0): void
+       *  - (String arg0): void
+       *  - (Object arg0): void
        *  - (boolean arg0): void
        *  - (char arg0): void
-       *  - (float arg0): void
-       *  - (long arg0): void
        *  - (int arg0): void
+       *  - (long arg0): void
        *  - (String arg0, Object arg1): void
        *  - (String arg0, Object arg1, Object arg2): void
        *  - (String arg0, Object arg1, Object arg2, Object arg3): void
@@ -443,11 +463,11 @@ declare module '@asledgehammer/pipewrench' {
       warn(arg0: any, arg1?: any): void;
       /**
        * Method Parameters:
-       *  - (byte[] arg0): void
        *  - (int arg0): void
+       *  - (byte[] arg0): void
        *  - (byte[] arg0, int arg1, int arg2): void
        */
-      write(arg0: number[] | number, arg1?: number, arg2?: number): void;
+      write(arg0: number | number[], arg1?: number, arg2?: number): void;
       /**
        * Method Parameters:
        *  - (byte[] arg0): void

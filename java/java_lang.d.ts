@@ -1,3 +1,28 @@
+/**
+ * MIT License
+ *
+ * Copyright (c) 2022 JabDoesThings
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ *
+ */
+
 /** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace java.lang {
@@ -30,18 +55,18 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters:
-       *  - (double arg0): number
-       *  - (float arg0): number
        *  - (int arg0): number
        *  - (long arg0): number
+       *  - (float arg0): number
+       *  - (double arg0): number
        */
       static abs(arg0: number): number;
       /**
        * @noSelf
        *
        * Method Parameters:
-       *  - (long arg0): number
        *  - (int arg0): number
+       *  - (long arg0): number
        */
       static absExact(arg0: number): number;
       /**
@@ -55,8 +80,8 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters:
-       *  - (long arg0, long arg1): number
        *  - (int arg0, int arg1): number
+       *  - (long arg0, long arg1): number
        */
       static addExact(arg0: number, arg1: number): number;
       /**
@@ -98,32 +123,6 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters:
-       *  - (int arg0, int arg1): number
-       *  - (long arg0, long arg1): number
-       *  - (long arg0, int arg1): number
-       */
-      static ceilDiv(arg0: number, arg1: number): number;
-      /**
-       * @noSelf
-       *
-       * Method Parameters:
-       *  - (long arg0, long arg1): number
-       *  - (int arg0, int arg1): number
-       */
-      static ceilDivExact(arg0: number, arg1: number): number;
-      /**
-       * @noSelf
-       *
-       * Method Parameters:
-       *  - (long arg0, int arg1): number
-       *  - (int arg0, int arg1): number
-       *  - (long arg0, long arg1): number
-       */
-      static ceilMod(arg0: number, arg1: number): number;
-      /**
-       * @noSelf
-       *
-       * Method Parameters:
        *  - (float arg0, float arg1): number
        *  - (double arg0, double arg1): number
        */
@@ -154,14 +153,6 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters:
-       *  - (int arg0, int arg1): number
-       *  - (long arg0, long arg1): number
-       */
-      static divideExact(arg0: number, arg1: number): number;
-      /**
-       * @noSelf
-       *
-       * Method Parameters:
        *  - (double arg0): number
        */
       static exp(arg0: number): number;
@@ -183,25 +174,17 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters:
-       *  - (long arg0, int arg1): number
-       *  - (int arg0, int arg1): number
        *  - (long arg0, long arg1): number
+       *  - (int arg0, int arg1): number
+       *  - (long arg0, int arg1): number
        */
       static floorDiv(arg0: number, arg1: number): number;
       /**
        * @noSelf
        *
        * Method Parameters:
-       *  - (int arg0, int arg1): number
-       *  - (long arg0, long arg1): number
-       */
-      static floorDivExact(arg0: number, arg1: number): number;
-      /**
-       * @noSelf
-       *
-       * Method Parameters:
-       *  - (int arg0, int arg1): number
        *  - (long arg0, int arg1): number
+       *  - (int arg0, int arg1): number
        *  - (long arg0, long arg1): number
        */
       static floorMod(arg0: number, arg1: number): number;
@@ -209,8 +192,8 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters:
-       *  - (float arg0, float arg1, float arg2): number
        *  - (double arg0, double arg1, double arg2): number
+       *  - (float arg0, float arg1, float arg2): number
        */
       static fma(arg0: number, arg1: number, arg2: number): number;
       /**
@@ -232,8 +215,8 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters:
-       *  - (long arg0): number
        *  - (int arg0): number
+       *  - (long arg0): number
        */
       static incrementExact(arg0: number): number;
       /**
@@ -261,20 +244,20 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters:
+       *  - (int arg0, int arg1): number
        *  - (float arg0, float arg1): number
        *  - (long arg0, long arg1): number
        *  - (double arg0, double arg1): number
-       *  - (int arg0, int arg1): number
        */
       static max(arg0: number, arg1: number): number;
       /**
        * @noSelf
        *
        * Method Parameters:
-       *  - (long arg0, long arg1): number
-       *  - (double arg0, double arg1): number
        *  - (int arg0, int arg1): number
        *  - (float arg0, float arg1): number
+       *  - (long arg0, long arg1): number
+       *  - (double arg0, double arg1): number
        */
       static min(arg0: number, arg1: number): number;
       /**
@@ -312,8 +295,8 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters:
-       *  - (float arg0, double arg1): number
        *  - (double arg0, double arg1): number
+       *  - (float arg0, double arg1): number
        */
       static nextAfter(arg0: number, arg1: number): number;
       /**
@@ -357,16 +340,16 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters:
-       *  - (float arg0): number
        *  - (double arg0): number
+       *  - (float arg0): number
        */
       static round(arg0: number): number;
       /**
        * @noSelf
        *
        * Method Parameters:
-       *  - (float arg0, int arg1): number
        *  - (double arg0, int arg1): number
+       *  - (float arg0, int arg1): number
        */
       static scalb(arg0: number, arg1: number): number;
       /**
@@ -402,8 +385,8 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters:
-       *  - (long arg0, long arg1): number
        *  - (int arg0, int arg1): number
+       *  - (long arg0, long arg1): number
        */
       static subtractExact(arg0: number, arg1: number): number;
       /**
@@ -449,13 +432,6 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0): number
        */
       static ulp(arg0: number): number;
-      /**
-       * @noSelf
-       *
-       * Method Parameters:
-       *  - (long arg0, long arg1): number
-       */
-      static unsignedMultiplyHigh(arg0: number, arg1: number): number;
     }
     export type Runnable = any;
     export type StackTraceElement = any;

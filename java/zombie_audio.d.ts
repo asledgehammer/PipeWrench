@@ -1,3 +1,28 @@
+/**
+ * MIT License
+ *
+ * Copyright (c) 2022 JabDoesThings
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ *
+ */
+
 /** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.audio {
@@ -64,10 +89,10 @@ declare module '@asledgehammer/pipewrench' {
       isEmpty(): boolean;
       /**
        * Method Parameters:
-       *  - (String arg0): boolean
        *  - (long arg0): boolean
+       *  - (String arg0): boolean
        */
-      isPlaying(arg0: string | number): boolean;
+      isPlaying(arg0: number | string): boolean;
       /**
        * Method Parameters:
        *  - (String arg0): number
@@ -86,20 +111,20 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters:
        *  - (String arg0): number
-       *  - (String arg0, boolean arg1): number
-       *  - (String arg0, IsoGridSquare arg1): number
-       *  - (String arg0, IsoGameCharacter arg1): number
        *  - (String arg0, IsoObject arg1): number
+       *  - (String arg0, IsoGameCharacter arg1): number
+       *  - (String arg0, IsoGridSquare arg1): number
+       *  - (String arg0, boolean arg1): number
        *  - (String arg0, int arg1, int arg2, int arg3): number
        */
-      playSound(arg0: string, arg1?: boolean | zombie.iso.IsoGridSquare | zombie.characters.IsoGameCharacter | zombie.iso.IsoObject | number, arg2?: number, arg3?: number): number;
+      playSound(arg0: string, arg1?: zombie.iso.IsoObject | zombie.characters.IsoGameCharacter | zombie.iso.IsoGridSquare | boolean | number, arg2?: number, arg3?: number): number;
       /**
        * Method Parameters:
-       *  - (String arg0, IsoGridSquare arg1): number
        *  - (String arg0, IsoObject arg1): number
+       *  - (String arg0, IsoGridSquare arg1): number
        *  - (String arg0, boolean arg1, IsoObject arg2): number
        */
-      playSoundImpl(arg0: string, arg1: zombie.iso.IsoGridSquare | zombie.iso.IsoObject | boolean, arg2?: zombie.iso.IsoObject): number;
+      playSoundImpl(arg0: string, arg1: zombie.iso.IsoObject | zombie.iso.IsoGridSquare | boolean, arg2?: zombie.iso.IsoObject): number;
       /**
        * Method Parameters:
        *  - (String arg0): number
@@ -256,10 +281,10 @@ declare module '@asledgehammer/pipewrench' {
       isEmpty(): boolean;
       /**
        * Method Parameters:
-       *  - (String arg0): boolean
        *  - (long arg0): boolean
+       *  - (String arg0): boolean
        */
-      isPlaying(arg0: string | number): boolean;
+      isPlaying(arg0: number | string): boolean;
       /**
        * Method Parameters:
        *  - (String arg0): number
@@ -278,13 +303,13 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters:
        *  - (String arg0): number
+       *  - (String arg0, IsoObject arg1): number
        *  - (String arg0, IsoGridSquare arg1): number
        *  - (String arg0, boolean arg1): number
-       *  - (String arg0, IsoObject arg1): number
        *  - (String arg0, IsoGameCharacter arg1): number
        *  - (String arg0, int arg1, int arg2, int arg3): number
        */
-      playSound(arg0: string, arg1?: zombie.iso.IsoGridSquare | boolean | zombie.iso.IsoObject | zombie.characters.IsoGameCharacter | number, arg2?: number, arg3?: number): number;
+      playSound(arg0: string, arg1?: zombie.iso.IsoObject | zombie.iso.IsoGridSquare | boolean | zombie.characters.IsoGameCharacter | number, arg2?: number, arg3?: number): number;
       /**
        * Method Parameters:
        *  - (String arg0, IsoObject arg1): number

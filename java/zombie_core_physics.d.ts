@@ -1,3 +1,28 @@
+/**
+ * MIT License
+ *
+ * Copyright (c) 2022 JabDoesThings
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ *
+ */
+
 /** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.core.physics {
@@ -139,11 +164,11 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Constructors: 
        *  - (Empty Constructor)
+       *  - (Transform arg0)
        *  - (Matrix4f arg0)
        *  - (Matrix3f arg0)
-       *  - (Transform arg0)
        */
-      constructor(arg0?: org.joml.Matrix4f | org.joml.Matrix3f | zombie.core.physics.Transform);
+      constructor(arg0?: zombie.core.physics.Transform | org.joml.Matrix4f | org.joml.Matrix3f);
       /**
        * Method Parameters:
        *  - (Object arg0): boolean
@@ -173,10 +198,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters:
        *  - (Transform arg0): void
-       *  - (Matrix4f arg0): void
        *  - (Matrix3f arg0): void
+       *  - (Matrix4f arg0): void
        */
-      set(arg0: zombie.core.physics.Transform | org.joml.Matrix4f | org.joml.Matrix3f): void;
+      set(arg0: zombie.core.physics.Transform | org.joml.Matrix3f | org.joml.Matrix4f): void;
       /**
        * Method Parameters:
        *  - (Empty): void
