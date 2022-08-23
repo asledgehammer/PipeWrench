@@ -31,7 +31,7 @@ jobs:
         uses: gradle/gradle-build-action@v2
       - run: |
           cd java-gen
-          bash ./scripts/prep_libs.sh
+          bash ./scripts/prep_libs.sh ../pzserver
           gradle run --args ../
       - run: npm install
       - run: npm link
