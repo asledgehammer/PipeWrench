@@ -1,7 +1,7 @@
 name: ExtractAPI
 on:
   schedule:
-    # every day at midnight
+    # every day at midnight:
     - cron: "0 0 * * *"
 jobs:
   test:
@@ -37,8 +37,8 @@ jobs:
           gradle run --args ../
       - run: npm install
       - run: npm link
-      - run: npm run build
       - run: npm run extract
+      - run: npm run build
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
         with:
