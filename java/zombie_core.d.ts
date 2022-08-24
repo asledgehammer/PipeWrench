@@ -1,28 +1,3 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
 /** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.core {
@@ -40,35 +15,35 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       static getClipboard(): string;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       static initMainThread(): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       static rememberCurrentValue(): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): void
        */
       static setClipboard(arg0: string): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       static updateMainThread(): void;
@@ -125,155 +100,155 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0, int arg1, int arg2, int arg3)
        *  - (float arg0, float arg1, float arg2, float arg3)
        */
-      constructor(arg0?: number | zombie.core.Color, arg1?: zombie.core.Color | number, arg2?: number, arg3?: number);
+      constructor(arg0?: zombie.core.Color | number, arg1?: zombie.core.Color | number, arg2?: number, arg3?: number);
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Color arg0): void
        */
       add(arg0: zombie.core.Color): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Color arg0): zombie.core.Color
        */
       addToCopy(arg0: zombie.core.Color): zombie.core.Color;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.core.Color
        *  - (float arg0): zombie.core.Color
        */
       brighter(arg0?: number): zombie.core.Color;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (float arg0, float arg1, float arg2): void
        */
       changeHSBValue(arg0: number, arg1: number, arg2: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.core.Color
        *  - (float arg0): zombie.core.Color
        */
       darker(arg0?: number): zombie.core.Color;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Object arg0): boolean
        */
       equals(arg0: any): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       fromColor(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getAlpha(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getAlphaByte(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getAlphaFloat(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getBlue(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getBlueByte(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getBlueFloat(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getGreen(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getGreenByte(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getGreenFloat(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getRed(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getRedByte(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getRedFloat(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       hashCode(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Color arg0, float arg1, Color arg2): void
        */
       interp(arg0: zombie.core.Color, arg1: number, arg2: zombie.core.Color): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Color arg0): zombie.core.Color
        */
       multiply(arg0: zombie.core.Color): zombie.core.Color;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (float arg0): zombie.core.Color
        */
       scale(arg0: number): zombie.core.Color;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (float arg0): zombie.core.Color
        */
       scaleCopy(arg0: number): zombie.core.Color;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Color arg0): zombie.core.Color
        *  - (float arg0, float arg1, float arg2): zombie.core.Color
        *  - (float arg0, float arg1, float arg2, float arg3): zombie.core.Color
        */
-      set(arg0: zombie.core.Color | number, arg1?: number, arg2?: number, arg3?: number): zombie.core.Color;
+      set(arg0: number | zombie.core.Color, arg1?: number, arg2?: number, arg3?: number): zombie.core.Color;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setABGR(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Color arg0, Color arg1, float arg2): void
        */
       setColor(arg0: zombie.core.Color, arg1: zombie.core.Color, arg2: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       toString(): string;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (float arg0, float arg1, float arg2): zombie.core.Color
        *  - (float arg0, float arg1, float arg2, Color arg3): zombie.core.Color
        */
@@ -281,28 +256,28 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, Color arg1): zombie.core.Color
        */
       static abgrToColor(arg0: number, arg1: zombie.core.Color): zombie.core.Color;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1): number
        */
       static blendABGR(arg0: number, arg1: number): number;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1): number
        */
       static blendBGR(arg0: number, arg1: number): number;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Color arg0): number
        *  - (float arg0, float arg1, float arg2, float arg3): number
        */
@@ -310,98 +285,98 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): zombie.core.Color
        */
       static decode(arg0: string): zombie.core.Color;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): number
        */
       static getAlphaChannelFromABGR(arg0: number): number;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): number
        */
       static getBlueChannelFromABGR(arg0: number): number;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): number
        */
       static getGreenChannelFromABGR(arg0: number): number;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): number
        */
       static getRedChannelFromABGR(arg0: number): number;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1, float arg2): number
        */
       static lerpABGR(arg0: number, arg1: number, arg2: number): number;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1): number
        */
       static multiplyABGR(arg0: number, arg1: number): number;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1): number
        */
       static multiplyBGR(arg0: number, arg1: number): number;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.core.Color
        */
       static random(): zombie.core.Color;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, float arg1): number
        */
       static setAlphaChannelToABGR(arg0: number, arg1: number): number;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, float arg1): number
        */
       static setBlueChannelToABGR(arg0: number, arg1: number): number;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, float arg1): number
        */
       static setGreenChannelToABGR(arg0: number, arg1: number): number;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, float arg1): number
        */
       static setRedChannelToABGR(arg0: number, arg1: number): number;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1): number
        */
       static tintABGR(arg0: number, arg1: number): number;
@@ -647,42 +622,42 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): boolean
        */
       static ColorExists(arg0: string): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): zombie.core.Color
        */
       static GetColorByName(arg0: string): zombie.core.Color;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): zombie.core.Color
        */
       static GetColorFromIndex(arg0: number): zombie.core.Color;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): java.util.ArrayList<string>
        */
       static GetColorNames(): java.util.ArrayList<string>;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       static GetColorsCount(): number;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.core.Color
        */
       static GetRandomColor(): zombie.core.Color;
@@ -876,1784 +851,1784 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       CheckDelayResetLua(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0, String arg1): void
        */
       DelayResetLua(arg0: string, arg1: string): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1): void
        */
       DoEndFrameStuff(arg0: number, arg1: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1, int arg2): void
        */
       DoEndFrameStuffFx(arg0: number, arg1: number, arg2: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       DoFrameReady(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       DoPopIsoStuff(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (float arg0, float arg1, float arg2): void
        */
       DoPushIsoParticleStuff(arg0: number, arg1: number, arg2: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3, boolean arg4): void
        */
       DoPushIsoStuff(arg0: number, arg1: number, arg2: number, arg3: number, arg4: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1, float arg2, int arg3): void
        *  - (int arg0, int arg1, float arg2, int arg3, boolean arg4): void
        */
       DoStartFrameStuff(arg0: number, arg1: number, arg2: number, arg3: number, arg4?: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1, int arg2): void
        */
       DoStartFrameStuffSmartTextureFx(arg0: number, arg1: number, arg2: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        *  - (int arg0): void
        */
       EndFrame(arg0?: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       EndFrameText(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       EndFrameUI(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       MoveMethodToggle(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       RenderOffScreenBuffer(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0, String arg1): void
        *  - (String arg0, String arg1): void
        */
       ResetLua(arg0: boolean | string, arg1: string): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        *  - (int arg0, boolean arg1): void
        */
       StartFrame(arg0?: number, arg1?: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       StartFrameText(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       StartFrameUI(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): void
        */
       TakeFullScreenshot(arg0: string): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        *  - (int arg0, int arg1, int arg2): void
        *  - (int arg0, int arg1, int arg2, int arg3, int arg4): void
        */
       TakeScreenshot(arg0?: number, arg1?: number, arg2?: number, arg3?: number, arg4?: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0, Integer arg1): void
        */
       addKeyBinding(arg0: string, arg1: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       countMissing3DItems(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1): void
        */
       doZoomScroll(arg0: number, arg1: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       exitToMenu(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): boolean
        */
       getAutoZoom(arg0: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getBlinkingMoodle(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getChallengeID(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getContentTranslationsEnabled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getCurrentPlayerZoom(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getDebug(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): java.util.ArrayList<number>
        */
       getDefaultZoomLevels(): java.util.ArrayList<number>;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getGameMode(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.core.GameVersion
        */
       getGameVersion(): zombie.core.GameVersion;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getIgnoreProneZombieRange(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getIsoCursorVisibility(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): number
        */
       getKey(arg0: string): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): java.util.Map<string, number>
        */
       getKeyMaps(): java.util.Map<string, number>;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getMaxZoom(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getMicVolumeError(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getMicVolumeIndicator(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getMinZoom(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.core.textures.ColorInfo
        */
       getMpTextColor(): zombie.core.textures.ColorInfo;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1): number
        */
       getNextZoom(arg0: number, arg1: number): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.core.textures.ColorInfo
        */
       getObjectHighlitedColor(): zombie.core.textures.ColorInfo;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.core.textures.TextureFBO
        *  - (int arg0): zombie.core.textures.TextureFBO
        */
       getOffscreenBuffer(arg0?: number): zombie.core.textures.TextureFBO;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): number
        */
       getOffscreenHeight(arg0: number): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getOffscreenTrueHeight(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getOffscreenTrueWidth(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): number
        */
       getOffscreenWidth(arg0: number): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): boolean
        */
       getOptionActiveController(arg0: string): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getOptionAimOutline(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getOptionAmbientVolume(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getOptionAutoDrink(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getOptionBloodDecals(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getOptionBorderlessWindow(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getOptionChatFadeTime(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getOptionChatFontSize(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getOptionChatOpaqueOnFocus(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getOptionClock24Hour(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getOptionClockFormat(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getOptionClockSize(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getOptionContextMenuFont(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getOptionCorpseShadows(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getOptionCycleContainerKey(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getOptionDisplayAsCelsius(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getOptionDoDoorSpriteEffects(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getOptionDoWindSpriteEffects(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getOptionDropItemsOnSquareCenter(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getOptionEnableLeftJoystickRadialMenu(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getOptionFontSize(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getOptionIgnoreProneZombieRange(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getOptionInventoryContainerSize(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getOptionInventoryFont(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getOptionJumpScareVolume(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getOptionLanguageName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getOptionLeaveKeyInIgnition(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getOptionLockCursorToWindow(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getOptionMaxChatOpaque(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getOptionMeasurementFormat(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getOptionMinChatOpaque(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getOptionModelTextureMipmaps(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getOptionModsEnabled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getOptionMusicActionStyle(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getOptionMusicLibrary(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getOptionMusicVolume(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): any
        */
       getOptionOnStartup(arg0: string): any;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getOptionPanCameraWhileAiming(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getOptionPanCameraWhileDriving(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getOptionRackProgress(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getOptionRadialMenuKeyToggle(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getOptionReloadDifficulty(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getOptionReloadRadialInstant(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getOptionRenderPrecipitation(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getOptionSearchModeOverlayEffect(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getOptionShoulderButtonContainerSwitch(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getOptionShowCursorWhileAiming(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getOptionShowItemModInfo(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getOptionShowSurvivalGuide(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getOptionSimpleClothingTextures(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getOptionSimpleWeaponTextures(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): boolean
        */
       getOptionSingleContextMenu(arg0: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getOptionSoundVolume(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getOptionTexture2x(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getOptionTextureCompression(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getOptionTieredZombieUpdates(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getOptionTimedActionGameSpeedReset(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getOptionTooltipFont(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getOptionUIFBO(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getOptionUIRenderFPS(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getOptionUpdateSneakButton(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getOptionVSync(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getOptionVehicleEngineVolume(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getOptionVoiceAGCMode(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getOptionVoiceEnable(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getOptionVoiceMode(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getOptionVoiceRecordDevice(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getOptionVoiceRecordDeviceName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getOptionVoiceVADMode(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getOptionVoiceVolumeMic(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getOptionVoiceVolumePlayers(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getOptionZoom(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getOptionZoomLevels1x(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getOptionZoomLevels2x(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getPerfPuddles(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getPerfPuddlesOnLoad(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getPerfReflections(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getPerfReflectionsOnLoad(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getPerfSkybox(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getPerfSkyboxOnLoad(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getPoisonousBerry(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getPoisonousMushroom(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getRealOptionSoundVolume(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getSaveFolder(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getScreenHeight(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): se.krka.kahlua.vm.KahluaTable
        */
       getScreenModes(): se.krka.kahlua.vm.KahluaTable;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getScreenWidth(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getSeenUpdateText(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getServerVOIPEnable(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getSteamServerVersion(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getUseShaders(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getVersionNumber(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getVidMem(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, float arg1): number
        */
       getXAngle(arg0: number, arg1: number): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, float arg1): number
        */
       getYAngle(arg0: number, arg1: number): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): number
        */
       getZoom(arg0: number): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       gotNewBelt(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1): void
        */
       init(arg0: number, arg1: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       initFBOs(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       initPoisonousBerry(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       initPoisonousMushroom(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       initShaders(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isAnimPopupDone(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isAzerty(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isCelsius(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isChallenge(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isCollideZombies(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDedicated(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDefaultOptions(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingTextEntry(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoneNewSaveFolder(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isFlashIsoCursor(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isForceSnow(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isFullScreen(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isInDebug(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isModsPopupDone(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isMultiThread(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isNewReloading(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isNoSave(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isOption3DGroundItem(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isOptionAutoProneAtk(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isOptionProgressBar(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isOptionShowChatTimestamp(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isOptionShowChatTitle(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): boolean
        */
       isOptionSimpleClothingTextures(arg0: boolean): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isOptiondblTapJogToSprint(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isRenderPrecipIndoors(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isRiversideDone(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isSelectingAll(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isShowFirstTimeSearchTutorial(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isShowFirstTimeSneakTutorial(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isShowFirstTimeVehicleTutorial(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isShowFirstTimeWeatherTutorial(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isShowPing(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isShowYourUsername(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isToggleToAim(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isToggleToRun(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isToggleToSprint(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isTutorialDone(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isVehiclesWarningShow(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isZombieGroupSound(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isZoomEnabled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       loadOptions(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       loadedShader(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       quit(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       quitToDesktop(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       reinitKeyMaps(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       saveOptions(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setAnimPopupDone(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, boolean arg1): void
        */
       setAutoZoom(arg0: number, arg1: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setAzerty(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): void
        */
       setBlinkingMoodle(arg0: string): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setCelsius(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setChallenge(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setCollideZombies(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setContentTranslationsEnabled(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setDoneNewSaveFolder(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setFlashIsoCursor(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setForceSnow(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setFramerate(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setGotNewBelt(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setIsSelectingAll(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setIsoCursorVisibility(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Map arg0): void
        */
       setKeyMaps(arg0: java.util.Map<string, number>): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (TextureFBO arg0): void
        */
       setLastRenderedFBO(arg0: zombie.core.textures.TextureFBO): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setModsPopupDone(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ColorInfo arg0): void
        */
       setMpTextColor(arg0: zombie.core.textures.ColorInfo): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setMultiThread(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setNewReloading(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setNoSave(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ColorInfo arg0): void
        */
       setObjectHighlitedColor(arg0: zombie.core.textures.ColorInfo): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOption3DGroundItem(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, boolean arg1): void
        */
       setOptionActiveController(arg0: number, arg1: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setOptionAimOutline(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setOptionAmbientVolume(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionAutoDrink(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionAutoProneAtk(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setOptionBloodDecals(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionBorderlessWindow(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (float arg0): void
        */
       setOptionChatFadeTime(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): void
        */
       setOptionChatFontSize(arg0: string): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionChatOpaqueOnFocus(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionClock24Hour(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setOptionClockFormat(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setOptionClockSize(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): void
        */
       setOptionContextMenuFont(arg0: string): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionCorpseShadows(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): void
        */
       setOptionCycleContainerKey(arg0: string): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionDisplayAsCelsius(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionDoDoorSpriteEffects(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionDoWindSpriteEffects(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionDropItemsOnSquareCenter(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionEnableLeftJoystickRadialMenu(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setOptionFontSize(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setOptionIgnoreProneZombieRange(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setOptionInventoryContainerSize(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): void
        */
       setOptionInventoryFont(arg0: string): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setOptionJumpScareVolume(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): void
        */
       setOptionLanguageName(arg0: string): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionLeaveKeyInIgnition(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionLockCursorToWindow(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (float arg0): void
        */
       setOptionMaxChatOpaque(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): void
        */
       setOptionMeasurementFormat(arg0: string): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (float arg0): void
        */
       setOptionMinChatOpaque(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionModelTextureMipmaps(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionModsEnabled(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setOptionMusicActionStyle(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setOptionMusicLibrary(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setOptionMusicVolume(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0, Object arg1): void
        */
       setOptionOnStartup(arg0: string, arg1: any): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionPanCameraWhileAiming(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionPanCameraWhileDriving(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionProgressBar(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionRackProgress(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionRadialMenuKeyToggle(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setOptionReloadDifficulty(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionReloadRadialInstant(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setOptionRenderPrecipitation(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setOptionSearchModeOverlayEffect(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setOptionShoulderButtonContainerSwitch(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionShowChatTimestamp(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionShowChatTitle(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionShowCursorWhileAiming(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionShowItemModInfo(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionShowSurvivalGuide(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setOptionSimpleClothingTextures(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionSimpleWeaponTextures(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, boolean arg1): void
        */
       setOptionSingleContextMenu(arg0: number, arg1: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setOptionSoundVolume(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionTexture2x(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionTextureCompression(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionTieredZombieUpdates(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionTimedActionGameSpeedReset(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): void
        */
       setOptionTooltipFont(arg0: string): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionUIFBO(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setOptionUIRenderFPS(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionUpdateSneakButton(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionVSync(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setOptionVehicleEngineVolume(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setOptionVoiceAGCMode(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionVoiceEnable(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setOptionVoiceMode(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setOptionVoiceRecordDevice(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): void
        */
       setOptionVoiceRecordDeviceName(arg0: string): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setOptionVoiceVADMode(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setOptionVoiceVolumeMic(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setOptionVoiceVolumePlayers(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionZoom(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): void
        */
       setOptionZoomLevels1x(arg0: string): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): void
        */
       setOptionZoomLevels2x(arg0: string): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptiondblTapJogToSprint(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setPerfPuddles(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setPerfReflections(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setPerfSkybox(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): void
        */
       setPoisonousBerry(arg0: string): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): void
        */
       setPoisonousMushroom(arg0: string): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setRenderPrecipIndoors(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): void
        */
       setResolution(arg0: string): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1, boolean arg2): void
        */
       setResolutionAndFullScreen(arg0: number, arg1: number, arg2: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setRiversideDone(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1): void
        */
       setScreenSize(arg0: number, arg1: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): void
        */
       setSeenUpdateText(arg0: string): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setShowFirstTimeSearchTutorial(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setShowFirstTimeSneakTutorial(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setShowFirstTimeVehicleTutorial(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setShowFirstTimeWeatherTutorial(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setShowPing(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setShowYourUsername(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setTestingMicrophone(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setToggleToAim(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setToggleToRun(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setToggleToSprint(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setTutorialDone(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setUseShaders(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setVehiclesWarningShow(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setVidMem(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setWindowed(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setZombieGroupSound(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       shadersOptionChanged(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1): boolean
        */
       supportRes(arg0: number, arg1: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       supportsFBO(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       updateKeyboard(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       zoomLevelsChanged(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       zoomOptionChanged(arg0: boolean): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       static UnfocusActiveTextEntryBox(): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int[] arg0, int arg1, int arg2): number[]
        */
       static flipPixels(arg0: number[], arg1: number, arg2: number): number[];
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       static getDifficulty(): string;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       static getGLMajorVersion(): number;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       static getGLVersion(): string;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.core.Core
        */
       static getInstance(): zombie.core.Core;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       static getMyDocumentFolder(): string;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       static getOpenGLVersions(): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       static getTileScale(): number;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       static isLastStand(): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): void
        */
       static setDifficulty(arg0: string): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1, boolean arg2): void
        */
       static setDisplayMode(arg0: number, arg1: number, arg2: boolean): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       static setFullScreen(arg0: boolean): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       static supportCompressedTextures(): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       static supportNPTTexture(): boolean;
@@ -2670,59 +2645,59 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: number, arg1: number, arg2: string);
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Object arg0): boolean
        */
       equals(arg0: any): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getInt(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getMajor(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getMinor(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getSuffix(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (GameVersion arg0): boolean
        */
       isGreaterThan(arg0: zombie.core.GameVersion): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (GameVersion arg0): boolean
        */
       isGreaterThanOrEqualTo(arg0: zombie.core.GameVersion): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (GameVersion arg0): boolean
        */
       isLessThan(arg0: zombie.core.GameVersion): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (GameVersion arg0): boolean
        */
       isLessThanOrEqualTo(arg0: zombie.core.GameVersion): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       toString(): string;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): zombie.core.GameVersion
        */
       static parse(arg0: string): zombie.core.GameVersion;
@@ -2779,137 +2754,137 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3)
        *  - (int arg0, int arg1, int arg2, int arg3)
        */
-      constructor(arg0: number | zombie.core.ImmutableColor | zombie.core.Color, arg1?: zombie.core.Color | number, arg2?: number, arg3?: number);
+      constructor(arg0: number | zombie.core.Color | zombie.core.ImmutableColor, arg1?: number | zombie.core.Color, arg2?: number, arg3?: number);
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ImmutableColor arg0): zombie.core.ImmutableColor
        */
       add(arg0: zombie.core.ImmutableColor): zombie.core.ImmutableColor;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.core.ImmutableColor
        *  - (float arg0): zombie.core.ImmutableColor
        */
       brighter(arg0?: number): zombie.core.ImmutableColor;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.core.ImmutableColor
        *  - (float arg0): zombie.core.ImmutableColor
        */
       darker(arg0?: number): zombie.core.ImmutableColor;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Object arg0): boolean
        */
       equals(arg0: any): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getAlphaByte(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getAlphaFloat(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getAlphaInt(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getBlueByte(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getBlueFloat(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getBlueInt(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getGreenByte(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getGreenFloat(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getGreenInt(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getRedByte(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getRedFloat(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getRedInt(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       hashCode(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ImmutableColor arg0, float arg1): zombie.core.ImmutableColor
        */
       interp(arg0: zombie.core.ImmutableColor, arg1: number): zombie.core.ImmutableColor;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Color arg0): zombie.core.ImmutableColor
        */
       multiply(arg0: zombie.core.Color): zombie.core.ImmutableColor;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (float arg0): zombie.core.ImmutableColor
        */
       scale(arg0: number): zombie.core.ImmutableColor;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.core.Color
        */
       toMutableColor(): zombie.core.Color;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       toString(): string;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (float arg0, float arg1, float arg2): number[]
        */
       static HSBtoRGB(arg0: number, arg1: number, arg2: number): number[];
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): zombie.core.ImmutableColor
        */
       static decode(arg0: string): zombie.core.ImmutableColor;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.core.ImmutableColor
        */
       static random(): zombie.core.ImmutableColor;
@@ -2922,51 +2897,51 @@ declare module '@asledgehammer/pipewrench' {
     export class Language {
 
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       base(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       charset(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       index(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isAzerty(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       name(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       text(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       toString(): string;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): zombie.core.Language
        */
       static FromString(arg0: string): zombie.core.Language;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): zombie.core.Language
        */
       static fromIndex(arg0: number): zombie.core.Language;
@@ -3020,115 +2995,115 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getFogQuality(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getFramerate(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getLightingFPS(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getLightingQuality(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getNewRoofHiding(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getPuddlesQuality(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getUIRenderFPS(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getWaterQuality(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isFramerateUncapped(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setFogQuality(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setFramerate(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setFramerateUncapped(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setLightingFPS(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setLightingQuality(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setNewRoofHiding(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setPuddlesQuality(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setWaterQuality(arg0: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       static getLockFPS(): number;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       static isUncappedFPS(): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       static setLockFPS(arg0: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       static setUncappedFPS(arg0: boolean): void;
@@ -3154,313 +3129,313 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       EndShader(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1, float arg2): void
        */
       ShaderUpdate1f(arg0: number, arg1: number, arg2: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1, int arg2): void
        */
       ShaderUpdate1i(arg0: number, arg1: number, arg2: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1, float arg2, float arg3): void
        */
       ShaderUpdate2f(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1, float arg2, float arg3, float arg4): void
        */
       ShaderUpdate3f(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1, float arg2, float arg3, float arg4, float arg5): void
        */
       ShaderUpdate4f(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1): void
        */
       StartShader(arg0: number, arg1: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (BooleanSupplier arg0): zombie.core.sprite.SpriteRenderState
        */
       acquireStateForRendering(arg0: java.util._function_.BooleanSupplier): zombie.core.sprite.SpriteRenderState;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       clearCutawayTexture(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       clearSprites(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       clearUseVertColorsArray(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       create(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, float arg1): void
        */
       doCoreIntParam(arg0: number, arg1: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (GenericDrawer arg0): void
        */
       drawGeneric(arg0: zombie.core.textures.TextureDraw$GenericDrawer): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ModelSlot arg0): void
        */
       drawModel(arg0: zombie.core.skinnedmodel.ModelManager$ModelSlot): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1, int arg2): void
        */
       drawParticles(arg0: number, arg1: number, arg2: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Shader arg0, int arg1, int arg2, int arg3): void
        */
       drawPuddles(arg0: zombie.core.opengl.Shader, arg1: number, arg2: number, arg3: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Shader arg0, int arg1, int arg2, int arg3): void
        */
       drawSkyBox(arg0: zombie.core.opengl.Shader, arg1: number, arg2: number, arg3: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Shader arg0, int arg1, int arg2, boolean arg3): void
        */
       drawWater(arg0: zombie.core.opengl.Shader, arg1: number, arg2: number, arg3: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getDoAdditive(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getMainStateIndex(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getPlayerMaxZoom(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getPlayerMinZoom(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getPlayerZoomLevel(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.core.sprite.SpriteRenderState
        */
       getPopulatingState(): zombie.core.sprite.SpriteRenderState;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getRenderStateIndex(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): zombie.iso.PlayerCamera
        */
       getRenderingPlayerCamera(arg0: number): zombie.iso.PlayerCamera;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getRenderingPlayerIndex(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.core.sprite.SpriteRenderState
        */
       getRenderingState(): zombie.core.sprite.SpriteRenderState;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, float arg1): void
        */
       glAlphaFunc(arg0: number, arg1: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       glBind(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       glBlendEquation(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1): void
        */
       glBlendFunc(arg0: number, arg1: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1, int arg2, int arg3): void
        */
       glBlendFuncSeparate(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1): void
        */
       glBuffer(arg0: number, arg1: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       glClear(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1, int arg2, int arg3): void
        */
       glClearColor(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1, int arg2, int arg3): void
        */
       glColorMask(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       glDepthMask(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       glDisable(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       glDoEndFrame(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       glDoEndFrameFx(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1, float arg2, int arg3): void
        *  - (int arg0, int arg1, float arg2, int arg3, boolean arg4): void
        */
       glDoStartFrame(arg0: number, arg1: number, arg2: number, arg3: number, arg4?: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1, int arg2): void
        */
       glDoStartFrameFx(arg0: number, arg1: number, arg2: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       glEnable(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       glGenerateMipMaps(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       glIgnoreStyles(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       glLoadIdentity(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1, int arg2): void
        */
       glStencilFunc(arg0: number, arg1: number, arg2: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       glStencilMask(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1, int arg2): void
        */
       glStencilOp(arg0: number, arg1: number, arg2: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1, int arg2): void
        */
       glTexParameteri(arg0: number, arg1: number, arg2: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1, int arg2, int arg3): void
        */
       glViewport(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       initFromIsoCamera(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isMaxZoomLevel(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isMinZoomLevel(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isWaitingForRenderState(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       notifyRenderStateQueue(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       postRender(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       prePopulating(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       pushFrameDown(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, Consumer arg9): void
        *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, int arg9, int arg10, int arg11, int arg12): void
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, float arg9, float arg10, float arg11, float arg12, Consumer arg13): void
@@ -3468,82 +3443,82 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10, float arg11, float arg12, float arg13, float arg14, float arg15, float arg16, Consumer arg17): void
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, float arg9, float arg10, float arg11, float arg12, float arg13, float arg14, float arg15, float arg16, float arg17, float arg18, float arg19, float arg20, float arg21, float arg22, float arg23, float arg24, Consumer arg25): void
        */
-      render(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg10?: number, arg11?: number, arg12?: number, arg13?: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg14?: number, arg15?: number, arg16?: number, arg17?: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg18?: number, arg19?: number, arg20?: number, arg21?: number, arg22?: number, arg23?: number, arg24?: number, arg25?: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): void;
+      render(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number | java.util._function_.Consumer<zombie.core.textures.TextureDraw>, arg10?: number, arg11?: number, arg12?: number, arg13?: number | java.util._function_.Consumer<zombie.core.textures.TextureDraw>, arg14?: number, arg15?: number, arg16?: number, arg17?: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg18?: number, arg19?: number, arg20?: number, arg21?: number, arg22?: number, arg23?: number, arg24?: number, arg25?: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Texture arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, float arg9, float arg10, float arg11, float arg12, Consumer arg13): void
        */
       renderClamped(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number, arg12: number, arg13: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10, float arg11): void
        *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10, float arg11, float arg12): void
        *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10, float arg11, float arg12, float arg13, float arg14, float arg15, float arg16, float arg17, float arg18, float arg19, float arg20): void
        */
-      renderPoly(arg0: number | zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number, arg12?: number, arg13?: number, arg14?: number, arg15?: number, arg16?: number, arg17?: number, arg18?: number, arg19?: number, arg20?: number): void;
+      renderPoly(arg0: zombie.core.textures.Texture | number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number, arg12?: number, arg13?: number, arg14?: number, arg15?: number, arg16?: number, arg17?: number, arg18?: number, arg19?: number, arg20?: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1, int arg2, int arg3, float arg4, float arg5, float arg6, float arg7): void
        */
       renderRect(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10, float arg11, float arg12, float arg13, float arg14, float arg15, float arg16, float arg17, float arg18, float arg19, float arg20, float arg21, float arg22, float arg23, float arg24, Consumer arg25): void
        */
       renderdebug(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number, arg12: number, arg13: number, arg14: number, arg15: number, arg16: number, arg17: number, arg18: number, arg19: number, arg20: number, arg21: number, arg22: number, arg23: number, arg24: number, arg25: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, Consumer arg9): void
        */
       renderflipped(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Texture arg0, int arg1, int arg2, int arg3, int arg4, float arg5, float arg6, float arg7, float arg8, Consumer arg9): void
        */
       renderi(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Texture arg0, int arg1, int arg2, int arg3, int arg4, float arg5, float arg6, float arg7, float arg8): void
        *  - (Texture arg0, int arg1, int arg2, int arg3, int arg4, float arg5, float arg6, float arg7, float arg8, int arg9): void
        */
       renderline(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9?: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Texture arg0, int arg1, int arg2, int arg3, int arg4): void
        */
       setCutawayTexture(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (AbstractStyle arg0): void
        */
       setDefaultStyle(arg0: zombie.core.Styles.AbstractStyle): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setDoAdditive(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (WallShaderTexRender arg0): void
        */
       setExtraWallShaderParams(arg0: zombie.core.SpriteRenderer$WallShaderTexRender): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setRenderingPlayerIndex(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (byte arg0, int arg1, int arg2, int arg3, int arg4): void
        */
       setUseVertColorsArray(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       startOffscreenUI(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       stopOffscreenUI(): void;
@@ -3559,17 +3534,17 @@ declare module '@asledgehammer/pipewrench' {
 
 
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       checkShaderChangedTexture1(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Texture arg0, int arg1): void
        */
       debugBoundTexture(arg0: zombie.core.textures.Texture, arg1: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       shaderChangedTexture1(): void;
@@ -3612,140 +3587,140 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Language arg0, ArrayList arg1): void
        */
       static addLanguageToList(arg0: zombie.core.Language, arg1: java.util.ArrayList<zombie.core.Language>): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       static debugItemEvolvedRecipeNames(): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       static debugItemNames(): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       static debugMultiStageBuildNames(): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       static debugRecipeNames(): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): java.util.ArrayList<zombie.core.Language>
        */
       static getAvailableLanguage(): java.util.ArrayList<zombie.core.Language>;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): java.util.ArrayList<string>
        */
       static getAzertyMap(): java.util.ArrayList<string>;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       static getCharset(): string;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.core.Language
        */
       static getDefaultLanguage(): zombie.core.Language;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): string
        */
       static getDisplayItemName(arg0: string): string;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): string
        */
       static getItemEvolvedRecipeName(arg0: string): string;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): string
        */
       static getItemNameFromFullType(arg0: string): string;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.core.Language
        */
       static getLanguage(): zombie.core.Language;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): string
        */
       static getMoveableDisplayName(arg0: string): string;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): string
        */
       static getMoveableDisplayNameOrNull(arg0: string): string;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): string
        */
       static getMultiStageBuild(arg0: string): string;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): java.util.ArrayList<string>
        */
       static getNewsVersions(): java.util.ArrayList<string>;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): string
        */
       static getRadioText(arg0: string): string;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): string
        */
       static getRecipeName(arg0: string): string;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): string
        *  - (String arg0, Object arg1): string
        *  - (String arg0, Object arg1, Object arg2): string
@@ -3756,14 +3731,14 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): string
        */
       static getTextMediaEN(arg0: string): string;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): string
        *  - (String arg0, Object arg1): string
        *  - (String arg0, Object arg1, Object arg2): string
@@ -3774,21 +3749,21 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       static loadFiles(): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0, String arg1): void
        */
       static setDefaultItemEvolvedRecipeName(arg0: string, arg1: string): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Language arg0): void
        *  - (int arg0): void
        */

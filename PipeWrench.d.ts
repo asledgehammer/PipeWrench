@@ -5040,9 +5040,9 @@ declare module '@asledgehammer/pipewrench' {
    *  - (IsoPlayer arg0, String arg1, String arg2, KahluaTable arg3): void
    */
   export function sendClientCommand(
-    arg0: string | zombie.characters.IsoPlayer,
+    arg0: zombie.characters.IsoPlayer | string,
     arg1: string,
-    arg2: se.krka.kahlua.vm.KahluaTable | string,
+    arg2: string | se.krka.kahlua.vm.KahluaTable,
     arg3?: se.krka.kahlua.vm.KahluaTable
   ): void;
   /**
@@ -5172,9 +5172,9 @@ declare module '@asledgehammer/pipewrench' {
    *  - (IsoPlayer arg0, String arg1, String arg2, KahluaTable arg3): void
    */
   export function sendServerCommand(
-    arg0: string | zombie.characters.IsoPlayer,
+    arg0: zombie.characters.IsoPlayer | string,
     arg1: string,
-    arg2: se.krka.kahlua.vm.KahluaTable | string,
+    arg2: string | se.krka.kahlua.vm.KahluaTable,
     arg3?: se.krka.kahlua.vm.KahluaTable
   ): void;
   /**

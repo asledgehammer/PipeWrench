@@ -1,28 +1,3 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
 /** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.erosion {
@@ -38,32 +13,32 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       consolePrint(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.erosion.ErosionConfig$Debug
        */
       getDebug(): zombie.erosion.ErosionConfig$Debug;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ByteBuffer arg0): void
        */
       load(arg0: java.nio.ByteBuffer): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): boolean
        */
       readFile(arg0: string): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ByteBuffer arg0): void
        */
       save(arg0: java.nio.ByteBuffer): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): void
        */
       writeFile(arg0: string): void;
@@ -80,17 +55,17 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getEnabled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getStartDay(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getStartMonth(): number;
@@ -158,17 +133,17 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ByteBuffer arg0, int arg1): void
        */
       load(arg0: java.nio.ByteBuffer, arg1: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ByteBuffer arg0): void
        */
       save(arg0: java.nio.ByteBuffer): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoChunk arg0): void
        */
       set(arg0: zombie.iso.IsoChunk): void;
@@ -185,22 +160,22 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ByteBuffer arg0, int arg1): void
        */
       load(arg0: java.nio.ByteBuffer, arg1: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1, int arg2): number
        */
       rand(arg0: number, arg1: number, arg2: number): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       reset(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ByteBuffer arg0): void
        */
       save(arg0: java.nio.ByteBuffer): void;
@@ -217,102 +192,102 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: zombie.iso.sprite.IsoSpriteManager, arg1: boolean);
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       DebugUpdateMapNow(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.erosion.ErosionConfig
        */
       getConfig(): zombie.erosion.ErosionConfig;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getEtick(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.erosion.season.ErosionSeason
        */
       getSeasons(): zombie.erosion.season.ErosionSeason;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getSnowFraction(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getSnowFractionYesterday(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.iso.sprite.IsoSpriteManager
        */
       getSpriteManager(): zombie.iso.sprite.IsoSpriteManager;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isSnow(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       mainTimer(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ByteBuffer arg0): void
        */
       receiveState(arg0: java.nio.ByteBuffer): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ByteBuffer arg0): void
        */
       sendState(arg0: java.nio.ByteBuffer): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       snowCheck(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       start(): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoChunk arg0): void
        */
       static ChunkLoaded(arg0: zombie.iso.IsoChunk): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       static EveryTenMinutes(): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGridSquare arg0): void
        */
       static LoadGridsquare(arg0: zombie.iso.IsoGridSquare): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       static Reset(): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.erosion.ErosionMain
        */
       static getInstance(): zombie.erosion.ErosionMain;

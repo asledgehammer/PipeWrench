@@ -1,28 +1,3 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
 /** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.ai.states {
@@ -38,64 +13,64 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.AttackState
        */
       static instance(): zombie.ai.states.AttackState;
@@ -112,64 +87,64 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.BurntToDeath
        */
       static instance(): zombie.ai.states.BurntToDeath;
@@ -189,69 +164,69 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): number
        */
       getClimbDownSheetRopeSpeed(arg0: zombie.characters.IsoGameCharacter): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.ClimbDownSheetRopeState
        */
       static instance(): zombie.ai.states.ClimbDownSheetRopeState;
@@ -279,69 +254,69 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, IsoDirections arg1): void
        */
       setParams(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.iso.IsoDirections): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.ClimbOverFenceState
        */
       static instance(): zombie.ai.states.ClimbOverFenceState;
@@ -358,69 +333,69 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, IsoDirections arg1): void
        */
       setParams(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.iso.IsoDirections): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.ClimbOverWallState
        */
       static instance(): zombie.ai.states.ClimbOverWallState;
@@ -440,69 +415,69 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): number
        */
       getClimbSheetRopeSpeed(arg0: zombie.characters.IsoGameCharacter): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.ClimbSheetRopeState
        */
       static instance(): zombie.ai.states.ClimbSheetRopeState;
@@ -519,99 +494,99 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): zombie.iso.IsoObject
        */
       getWindow(arg0: zombie.characters.IsoGameCharacter): zombie.iso.IsoObject;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, IsoDirections arg3): boolean
        */
       isPastInnerEdgeOfSquare(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: zombie.iso.IsoDirections): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, IsoDirections arg3): boolean
        */
       isPastOuterEdgeOfSquare(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: zombie.iso.IsoDirections): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isWindowClosing(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, IsoObject arg1): void
        */
       setParams(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.iso.IsoObject): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, float arg1): void
        */
       slideX(arg0: zombie.characters.IsoGameCharacter, arg1: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, float arg1): void
        */
       slideY(arg0: zombie.characters.IsoGameCharacter, arg1: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.ClimbThroughWindowState
        */
       static instance(): zombie.ai.states.ClimbThroughWindowState;
@@ -628,69 +603,69 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): zombie.iso.objects.IsoWindow
        */
       getWindow(arg0: zombie.characters.IsoGameCharacter): zombie.iso.objects.IsoWindow;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.CloseWindowState
        */
       static instance(): zombie.ai.states.CloseWindowState;
@@ -707,71 +682,71 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, IsoDirections arg1): boolean
        */
       static calculateDir(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.iso.IsoDirections): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.CrawlingZombieTurnState
        */
       static instance(): zombie.ai.states.CrawlingZombieTurnState;
@@ -788,64 +763,64 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.FakeDeadAttackState
        */
       static instance(): zombie.ai.states.FakeDeadAttackState;
@@ -862,64 +837,64 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.FakeDeadZombieState
        */
       static instance(): zombie.ai.states.FakeDeadZombieState;
@@ -936,64 +911,64 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.FishingState
        */
       static instance(): zombie.ai.states.FishingState;
@@ -1010,64 +985,64 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.FitnessState
        */
       static instance(): zombie.ai.states.FitnessState;
@@ -1084,64 +1059,64 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.IdleState
        */
       static instance(): zombie.ai.states.IdleState;
@@ -1158,64 +1133,64 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.LungeState
        */
       static instance(): zombie.ai.states.LungeState;
@@ -1232,69 +1207,69 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, IsoWindow arg1): void
        */
       setParams(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.iso.objects.IsoWindow): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.OpenWindowState
        */
       static instance(): zombie.ai.states.OpenWindowState;
@@ -1311,64 +1286,64 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.vehicles.PathFindState2
        */
       static instance(): zombie.vehicles.PathFindState2;
@@ -1385,64 +1360,64 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.PlayerActionsState
        */
       static instance(): zombie.ai.states.PlayerActionsState;
@@ -1459,64 +1434,64 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.PlayerAimState
        */
       static instance(): zombie.ai.states.PlayerAimState;
@@ -1533,64 +1508,64 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.PlayerEmoteState
        */
       static instance(): zombie.ai.states.PlayerEmoteState;
@@ -1607,64 +1582,64 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.PlayerExtState
        */
       static instance(): zombie.ai.states.PlayerExtState;
@@ -1681,64 +1656,64 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.PlayerFallDownState
        */
       static instance(): zombie.ai.states.PlayerFallDownState;
@@ -1755,64 +1730,64 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.PlayerFallingState
        */
       static instance(): zombie.ai.states.PlayerFallingState;
@@ -1829,64 +1804,64 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.PlayerGetUpState
        */
       static instance(): zombie.ai.states.PlayerGetUpState;
@@ -1903,64 +1878,64 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.PlayerHitReactionPVPState
        */
       static instance(): zombie.ai.states.PlayerHitReactionPVPState;
@@ -1977,64 +1952,64 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.PlayerHitReactionState
        */
       static instance(): zombie.ai.states.PlayerHitReactionState;
@@ -2051,64 +2026,64 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.PlayerKnockedDown
        */
       static instance(): zombie.ai.states.PlayerKnockedDown;
@@ -2125,64 +2100,64 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.PlayerOnGroundState
        */
       static instance(): zombie.ai.states.PlayerOnGroundState;
@@ -2199,64 +2174,64 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.PlayerSitOnGroundState
        */
       static instance(): zombie.ai.states.PlayerSitOnGroundState;
@@ -2273,64 +2248,64 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.PlayerStrafeState
        */
       static instance(): zombie.ai.states.PlayerStrafeState;
@@ -2347,64 +2322,64 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.SmashWindowState
        */
       static instance(): zombie.ai.states.SmashWindowState;
@@ -2421,64 +2396,64 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.StaggerBackState
        */
       static instance(): zombie.ai.states.StaggerBackState;
@@ -2495,141 +2470,141 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoLivingCharacter arg0, AttackVars arg1): void
        */
       CalcAttackVars(arg0: zombie.characters.IsoLivingCharacter, arg1: zombie.network.packets.hit.AttackVars): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, HandWeapon arg1, HitInfo arg2): number
        */
       CalcHitChance(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.inventory.types.HandWeapon, arg2: zombie.network.packets.hit.HitInfo): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, boolean arg1, AttackVars arg2, ArrayList arg3): void
        */
       CalcHitList(arg0: zombie.characters.IsoGameCharacter, arg1: boolean, arg2: zombie.network.packets.hit.AttackVars, arg3: java.util.ArrayList<zombie.network.packets.hit.HitInfo>): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, HandWeapon arg1): void
        */
       ConnectSwing(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.inventory.types.HandWeapon): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoLivingCharacter arg0, HandWeapon arg1, boolean arg2, ArrayList arg3, ArrayList arg4): void
        */
       calcValidTargets(arg0: zombie.characters.IsoLivingCharacter, arg1: zombie.inventory.types.HandWeapon, arg2: boolean, arg3: java.util.ArrayList<zombie.network.packets.hit.HitInfo>, arg4: java.util.ArrayList<zombie.network.packets.hit.HitInfo>): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (HandWeapon arg0, IsoGameCharacter arg1): void
        */
       changeWeapon(arg0: zombie.inventory.types.HandWeapon, arg1: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, HitInfo arg1, HitInfo arg2): boolean
        */
       isProneTargetBetter(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.network.packets.hit.HitInfo, arg2: zombie.network.packets.hit.HitInfo): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (HandWeapon arg0, IsoGameCharacter arg1): void
        */
       static WeaponLowerCondition(arg0: zombie.inventory.types.HandWeapon, arg1: zombie.characters.IsoGameCharacter): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, IsoMovingObject arg1): boolean
        */
       static checkPVP(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.iso.IsoMovingObject): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoMovingObject arg0, String arg1, Vector3 arg2): zombie.iso.Vector3
        */
       static getBoneWorldPos(arg0: zombie.iso.IsoMovingObject, arg1: string, arg2: zombie.iso.Vector3): zombie.iso.Vector3;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.SwipeStatePlayer
        */
       static instance(): zombie.ai.states.SwipeStatePlayer;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoMovingObject arg0): boolean
        */
       static isProne(arg0: zombie.iso.IsoMovingObject): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoMovingObject arg0): boolean
        */
       static isStanding(arg0: zombie.iso.IsoMovingObject): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoMovingObject arg0, HandWeapon arg1, IsoGameCharacter arg2): void
        */
       static splash(arg0: zombie.iso.IsoMovingObject, arg1: zombie.inventory.types.HandWeapon, arg2: zombie.characters.IsoGameCharacter): void;
@@ -2646,35 +2621,35 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (HitInfo arg0, HitInfo arg1): number
        *  - (Object arg0, Object arg1): number
        */
       compare<U>(arg0: any, arg1: any): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): java.util.Comparator<T>
        */
       reversed<U>(): java.util.Comparator<any>;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Comparator arg0): java.util.Comparator<T>
        *  - (Function arg0): java.util.Comparator<T>
        *  - (Function arg0, Comparator arg1): java.util.Comparator<T>
        */
       thenComparing<U>(arg0: java.util.Comparator<any> | java.util._function_.Function<any, U>, arg1?: java.util.Comparator<U>): java.util.Comparator<any>;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ToDoubleFunction arg0): java.util.Comparator<T>
        */
       thenComparingDouble<U>(arg0: java.util._function_.ToDoubleFunction<any>): java.util.Comparator<any>;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ToIntFunction arg0): java.util.Comparator<T>
        */
       thenComparingInt<U>(arg0: java.util._function_.ToIntFunction<any>): java.util.Comparator<any>;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ToLongFunction arg0): java.util.Comparator<T>
        */
       thenComparingLong<U>(arg0: java.util._function_.ToLongFunction<any>): java.util.Comparator<any>;
@@ -2691,71 +2666,71 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       static getFastForwardDamageMultiplier(): number;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.ThumpState
        */
       static instance(): zombie.ai.states.ThumpState;
@@ -2772,69 +2747,69 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoZombie arg0, Vector2 arg1): boolean
        */
       calculateTargetLocation(arg0: zombie.characters.IsoZombie, arg1: zombie.iso.Vector2): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.WalkTowardState
        */
       static instance(): zombie.ai.states.WalkTowardState;
@@ -2851,64 +2826,64 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.ZombieFallDownState
        */
       static instance(): zombie.ai.states.ZombieFallDownState;
@@ -2925,74 +2900,74 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isNearStartXY(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       setParams(arg0: zombie.characters.IsoGameCharacter): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.ZombieGetDownState
        */
       static instance(): zombie.ai.states.ZombieGetDownState;
@@ -3009,64 +2984,64 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.ZombieGetUpState
        */
       static instance(): zombie.ai.states.ZombieGetUpState;
@@ -3083,64 +3058,64 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.ZombieIdleState
        */
       static instance(): zombie.ai.states.ZombieIdleState;
@@ -3157,71 +3132,71 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.ZombieOnGroundState
        */
       static instance(): zombie.ai.states.ZombieOnGroundState;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, IsoGameCharacter arg1): boolean
        */
       static isCharacterStandingOnOther(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.IsoGameCharacter): boolean;
@@ -3238,64 +3213,64 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.ZombieReanimateState
        */
       static instance(): zombie.ai.states.ZombieReanimateState;
@@ -3312,64 +3287,64 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       enter(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       execute(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
        */
       getStatePermissions(): zombie.ai.permission.IStatePermissions;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoingActionThatCanBeCancelled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
        */
       isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): boolean
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.ai.states.ZombieSittingState
        */
       static instance(): zombie.ai.states.ZombieSittingState;

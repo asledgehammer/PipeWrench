@@ -1,28 +1,3 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
 /** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.core.skinnedmodel.model {
@@ -41,72 +16,72 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: zombie.asset.AssetPath, arg1: zombie.asset.AssetManager, arg2: zombie.core.skinnedmodel.model.AnimationAsset$AnimationAssetParams);
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Asset arg0): void
        */
       addDependency(arg0: zombie.asset.Asset): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.asset.AssetManager
        */
       getAssetManager(): zombie.asset.AssetManager;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.asset.Asset$ObserverCallback
        */
       getObserverCb(): zombie.asset.Asset$ObserverCallback;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.asset.AssetPath
        */
       getPath(): zombie.asset.AssetPath;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getRefCount(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.asset.Asset$State
        */
       getState(): zombie.asset.Asset$State;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.asset.AssetType
        */
       getType(): zombie.asset.AssetType;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isEmpty(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isFailure(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isReady(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       onBeforeReady(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (State arg0): void
        */
       onCreated(arg0: zombie.asset.Asset$State): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Asset arg0): void
        */
       removeDependency(arg0: zombie.asset.Asset): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (AssetParams arg0): void
        */
       setAssetParams(arg0: zombie.asset.AssetManager$AssetParams): void;
@@ -135,62 +110,62 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       contentsToString(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (CharacterMask arg0): void
        */
       copyFrom(arg0: zombie.core.skinnedmodel.model.CharacterMask): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Consumer arg0): void
        */
       forEachVisible(arg0: java.util._function_.Consumer<zombie.core.skinnedmodel.model.CharacterMask$Part>): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isAllVisible(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (BloodBodyPartType arg0): boolean
        */
       isBloodBodyPartVisible(arg0: zombie.characterTextures.BloodBodyPartType): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isNothingVisible(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Part arg0): boolean
        */
       isPartVisible(arg0: zombie.core.skinnedmodel.model.CharacterMask$Part): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isTorsoVisible(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setAllVisible(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Part arg0, boolean arg1): void
        */
       setPartVisible(arg0: zombie.core.skinnedmodel.model.CharacterMask$Part, arg1: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ArrayList arg0, boolean arg1): void
        */
       setPartsVisible(arg0: java.util.ArrayList<number>, arg1: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       toString(): string;
@@ -271,94 +246,94 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: zombie.asset.AssetPath, arg1: zombie.asset.AssetManager, arg2: zombie.core.skinnedmodel.model.Model$ModelAssetParams);
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): void
        */
       CreateShader(arg0: string): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ModelSlotRenderData arg0, ModelInstanceRenderData arg1): void
        */
       DrawChar(arg0: zombie.core.skinnedmodel.model.ModelSlotRenderData, arg1: zombie.core.skinnedmodel.model.ModelInstanceRenderData): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ModelSlotRenderData arg0, ModelInstanceRenderData arg1): void
        */
       DrawVehicle(arg0: zombie.core.skinnedmodel.model.ModelSlotRenderData, arg1: zombie.core.skinnedmodel.model.ModelInstanceRenderData): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Asset arg0): void
        */
       addDependency(arg0: zombie.asset.Asset): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoLightSource arg0, float arg1, float arg2, float arg3, float arg4): void
        */
       debugDrawLightSource(arg0: zombie.iso.IsoLightSource, arg1: number, arg2: number, arg3: number, arg4: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.asset.AssetManager
        */
       getAssetManager(): zombie.asset.AssetManager;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.asset.Asset$ObserverCallback
        */
       getObserverCb(): zombie.asset.Asset$ObserverCallback;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.asset.AssetPath
        */
       getPath(): zombie.asset.AssetPath;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getRefCount(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.asset.Asset$State
        */
       getState(): zombie.asset.Asset$State;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.asset.AssetType
        */
       getType(): zombie.asset.AssetType;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isEmpty(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isFailure(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isReady(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (State arg0): void
        */
       onCreated(arg0: zombie.asset.Asset$State): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Asset arg0): void
        */
       removeDependency(arg0: zombie.asset.Asset): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (AssetParams arg0): void
        */
       setAssetParams(arg0: zombie.asset.AssetManager$AssetParams): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ModelSlotRenderData arg0, int arg1, Vector3 arg2): void
        *  - (IsoGameCharacter arg0, int arg1, Vector3 arg2): void
        */
@@ -366,28 +341,28 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, int arg1, Vector3 arg2, float arg3): void
        */
       static BoneYDirectionToWorldCoords(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: zombie.iso.Vector3, arg3: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ModelSlotRenderData arg0): void
        */
       static CharacterModelCameraBegin(arg0: zombie.core.skinnedmodel.model.ModelSlotRenderData): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       static CharacterModelCameraEnd(): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ModelSlotRenderData arg0, Vector3 arg1): void
        *  - (IsoGameCharacter arg0, Vector3 arg1): void
        */
@@ -395,21 +370,21 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3, float arg4): void
        */
       static debugDrawAxis(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6): void
        */
       static debugDrawLightSource(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Matrix4f arg0): void
        */
       static drawBoneMtx(arg0: org.lwjgl.util.vector.Matrix4f): void;
@@ -443,123 +418,123 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): void
        */
       LoadTexture(arg0: string): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Vector2 arg0): void
        */
       SetForceDir(arg0: zombie.iso.Vector2): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       Update(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       UpdateDir(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): void
        */
       applyModelScriptScale(arg0: string): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Object arg0): void
        */
       clearOwner(arg0: any): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       destroySmartTextures(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       dismember(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): zombie.scripting.objects.ModelAttachment
        */
       getAttachment(arg0: number): zombie.scripting.objects.ModelAttachment;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): zombie.scripting.objects.ModelAttachment
        */
       getAttachmentById(arg0: string): zombie.scripting.objects.ModelAttachment;
       /**
-       * Method Parameters:
-       *  - (ModelAttachment arg0, Matrix4f arg1): org.joml.Matrix4f
+       * Method Parameters: 
        *  - (int arg0, Matrix4f arg1): org.joml.Matrix4f
+       *  - (ModelAttachment arg0, Matrix4f arg1): org.joml.Matrix4f
        */
-      getAttachmentMatrix(arg0: zombie.scripting.objects.ModelAttachment | number, arg1: org.joml.Matrix4f): org.joml.Matrix4f;
+      getAttachmentMatrix(arg0: number | zombie.scripting.objects.ModelAttachment, arg1: org.joml.Matrix4f): org.joml.Matrix4f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0, Matrix4f arg1): org.joml.Matrix4f
        */
       getAttachmentMatrixById(arg0: string, arg1: org.joml.Matrix4f): org.joml.Matrix4f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.core.skinnedmodel.visual.ItemVisual
        */
       getItemVisual(): zombie.core.skinnedmodel.visual.ItemVisual;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): any
        */
       getOwner(): any;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.core.skinnedmodel.model.ModelInstanceTextureInitializer
        */
       getTextureInitializer(): zombie.core.skinnedmodel.model.ModelInstanceTextureInitializer;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       hasTextureCreator(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Model arg0, IsoGameCharacter arg1, AnimationPlayer arg2): zombie.core.skinnedmodel.model.ModelInstance
        */
       init(arg0: zombie.core.skinnedmodel.model.Model, arg1: zombie.characters.IsoGameCharacter, arg2: zombie.core.skinnedmodel.animation.AnimationPlayer): zombie.core.skinnedmodel.model.ModelInstance;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isRendering(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       reset(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setInstanceSkip(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ItemVisual arg0): void
        */
       setItemVisual(arg0: zombie.core.skinnedmodel.visual.ItemVisual): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Object arg0): void
        */
       setOwner(arg0: any): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ModelInstanceTextureInitializer arg0): void
        */
       setTextureInitializer(arg0: zombie.core.skinnedmodel.model.ModelInstanceTextureInitializer): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       updateLights(): void;
@@ -576,7 +551,7 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, int arg6): void
        */
       set(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): void;
@@ -636,55 +611,55 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ModelSlotRenderData arg0): void
        */
       RenderCharacter(arg0: zombie.core.skinnedmodel.model.ModelSlotRenderData): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ModelSlotRenderData arg0): void
        */
       RenderVehicle(arg0: zombie.core.skinnedmodel.model.ModelSlotRenderData): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ModelInstance arg0): zombie.core.skinnedmodel.model.ModelInstanceRenderData
        */
       init(arg0: zombie.core.skinnedmodel.model.ModelInstance): zombie.core.skinnedmodel.model.ModelInstanceRenderData;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       renderDebug(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ModelInstanceRenderData arg0): zombie.core.skinnedmodel.model.ModelInstanceRenderData
        */
       transformToParent(arg0: zombie.core.skinnedmodel.model.ModelInstanceRenderData): zombie.core.skinnedmodel.model.ModelInstanceRenderData;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.core.skinnedmodel.model.ModelInstanceRenderData
        */
       static alloc(): zombie.core.skinnedmodel.model.ModelInstanceRenderData;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ModelInstance arg0, String arg1, Matrix4f arg2): void
        */
       static applyBoneTransform(arg0: zombie.core.skinnedmodel.model.ModelInstance, arg1: string, arg2: org.joml.Matrix4f): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ModelAttachment arg0, Matrix4f arg1): org.joml.Matrix4f
        */
       static makeAttachmentTransform(arg0: zombie.scripting.objects.ModelAttachment, arg1: org.joml.Matrix4f): org.joml.Matrix4f;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ArrayList arg0): void
        */
       static release(arg0: java.util.ArrayList<zombie.core.skinnedmodel.model.ModelInstanceRenderData>): void;
@@ -701,31 +676,31 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
        *  - (HumanVisual arg0, ItemVisuals arg1, ModelInstance arg2): void
        *  - (BaseVisual arg0, ItemVisuals arg1, ModelInstance arg2): void
        */
       init(arg0: zombie.characters.IsoGameCharacter | zombie.core.skinnedmodel.visual.HumanVisual | zombie.core.skinnedmodel.visual.BaseVisual, arg1?: zombie.core.skinnedmodel.visual.ItemVisuals, arg2?: zombie.core.skinnedmodel.model.ModelInstance): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isRendered(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       postRender(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       render(): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.core.skinnedmodel.model.ModelInstanceTextureCreator
        */
       static alloc(): zombie.core.skinnedmodel.model.ModelInstanceTextureCreator;
@@ -742,50 +717,50 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ModelInstance arg0, InventoryItem arg1): void
        *  - (ModelInstance arg0, float arg1): void
        */
       init(arg0: zombie.core.skinnedmodel.model.ModelInstance, arg1: zombie.inventory.InventoryItem | number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDirty(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isRendered(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       postRender(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       release(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       render(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       renderMain(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       setDirty(): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.core.skinnedmodel.model.ModelInstanceTextureInitializer
        */
       static alloc(): zombie.core.skinnedmodel.model.ModelInstanceTextureInitializer;
@@ -802,29 +777,29 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ModelSlot arg0): zombie.core.skinnedmodel.model.ModelSlotRenderData
        */
       init(arg0: zombie.core.skinnedmodel.ModelManager$ModelSlot): zombie.core.skinnedmodel.model.ModelSlotRenderData;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       postRender(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       render(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       renderDebug(): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.core.skinnedmodel.model.ModelSlotRenderData
        */
       static alloc(): zombie.core.skinnedmodel.model.ModelSlotRenderData;
@@ -841,12 +816,12 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Consumer arg0): void
        */
       forEachDescendant(arg0: java.util._function_.Consumer<zombie.core.skinnedmodel.model.SkinningBone>): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       toString(): string;
@@ -863,27 +838,27 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (SkinningData arg0): void
        */
       buildBoneHiearchy(arg0: zombie.core.skinnedmodel.model.SkinningData): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): zombie.core.skinnedmodel.model.SkinningBone
        */
       getBoneAt(arg0: number): zombie.core.skinnedmodel.model.SkinningBone;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): zombie.core.skinnedmodel.model.SkinningBone
        */
       getRootBoneAt(arg0: number): zombie.core.skinnedmodel.model.SkinningBone;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isValid(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       numRootBones(): number;
@@ -900,37 +875,37 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: java.util.HashMap<string, zombie.core.skinnedmodel.animation.AnimationClip>, arg1: java.util.List<org.lwjgl.util.vector.Matrix4f>, arg2: java.util.List<org.lwjgl.util.vector.Matrix4f>, arg3: java.util.List<org.lwjgl.util.vector.Matrix4f>, arg4: java.util.List<number>, arg5: java.util.HashMap<string, number>);
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): zombie.core.skinnedmodel.model.SkinningBone
        */
       getBone(arg0: string): zombie.core.skinnedmodel.model.SkinningBone;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): zombie.core.skinnedmodel.model.SkinningBone
        */
       getBoneAt(arg0: number): zombie.core.skinnedmodel.model.SkinningBone;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.core.skinnedmodel.model.SkinningBoneHierarchy
        */
       getBoneHieararchy(): zombie.core.skinnedmodel.model.SkinningBoneHierarchy;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): number
        */
       getParentBoneIdx(arg0: number): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): zombie.core.skinnedmodel.model.SkinningBone
        */
       getRootBoneAt(arg0: number): zombie.core.skinnedmodel.model.SkinningBone;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       numBones(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       numRootBones(): number;

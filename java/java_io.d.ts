@@ -1,28 +1,3 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
 /** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace java.io {
@@ -40,27 +15,27 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: java.io.Reader, arg1?: number);
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       close(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): java.util.stream.Stream<string>
        */
       lines(): java.util.stream.Stream<string>;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       mark(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       markSupported(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        *  - (char[] arg0): number
        *  - (CharBuffer arg0): number
@@ -68,34 +43,34 @@ declare module '@asledgehammer/pipewrench' {
        */
       read(arg0?: string[] | java.nio.CharBuffer, arg1?: number, arg2?: number): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       readLine(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       ready(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       reset(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (long arg0): number
        */
       skip(arg0: number): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Writer arg0): number
        */
       transferTo(arg0: java.io.Writer): number;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): java.io.Reader
        */
       static nullReader(): java.io.Reader;
@@ -113,7 +88,7 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: java.io.Writer, arg1?: number);
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (char arg0): java.io.Writer
        *  - (char arg0): java.lang.Appendable
        *  - (CharSequence arg0): java.lang.Appendable
@@ -121,35 +96,35 @@ declare module '@asledgehammer/pipewrench' {
        *  - (CharSequence arg0, int arg1, int arg2): java.io.Writer
        *  - (CharSequence arg0, int arg1, int arg2): java.lang.Appendable
        */
-      append(arg0: string | java.lang.CharSequence, arg1?: number, arg2?: number): java.io.Writer | java.lang.Appendable;
+      append(arg0: java.lang.CharSequence | string, arg1?: number, arg2?: number): java.io.Writer | java.lang.Appendable;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       close(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       flush(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       newLine(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        *  - (String arg0): void
        *  - (char[] arg0): void
        *  - (char[] arg0, int arg1, int arg2): void
        *  - (String arg0, int arg1, int arg2): void
        */
-      write(arg0: number | string | string[], arg1?: number, arg2?: number): void;
+      write(arg0: string[] | string | number, arg1?: number, arg2?: number): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): java.io.Writer
        */
       static nullWriter(): java.io.Writer;
@@ -167,145 +142,145 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: java.io.InputStream);
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       available(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       close(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       mark(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       markSupported(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        *  - (byte[] arg0): number
        *  - (byte[] arg0, int arg1, int arg2): number
        */
       read(arg0?: number[], arg1?: number, arg2?: number): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number[]
        */
       readAllBytes(): number[];
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       readBoolean(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       readByte(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       readChar(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       readDouble(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       readFloat(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (byte[] arg0): void
        *  - (byte[] arg0, int arg1, int arg2): void
        */
       readFully(arg0: number[], arg1?: number, arg2?: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       readInt(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       readLine(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       readLong(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): number[]
        *  - (byte[] arg0, int arg1, int arg2): number
        */
       readNBytes(arg0: number | number[], arg1?: number, arg2?: number): number[] | number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       readShort(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       readUTF(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       readUnsignedByte(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       readUnsignedShort(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       reset(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (long arg0): number
        */
       skip(arg0: number): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): number
        */
       skipBytes(arg0: number): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (long arg0): void
        */
       skipNBytes(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (OutputStream arg0): number
        */
       transferTo(arg0: java.io.OutputStream): number;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): java.io.InputStream
        */
       static nullInputStream(): java.io.InputStream;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (DataInput arg0): string
        */
       static readUTF(arg0: java.io.DataInput): string;
@@ -322,86 +297,86 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: java.io.OutputStream);
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       close(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       flush(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       size(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        *  - (byte[] arg0): void
        *  - (byte[] arg0, int arg1, int arg2): void
        */
-      write(arg0: number | number[], arg1?: number, arg2?: number): void;
+      write(arg0: number[] | number, arg1?: number, arg2?: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       writeBoolean(arg0: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       writeByte(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): void
        */
       writeBytes(arg0: string): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       writeChar(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): void
        */
       writeChars(arg0: string): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (double arg0): void
        */
       writeDouble(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (float arg0): void
        */
       writeFloat(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       writeInt(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (long arg0): void
        */
       writeLong(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       writeShort(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): void
        */
       writeUTF(arg0: string): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): java.io.OutputStream
        */
       static nullOutputStream(): java.io.OutputStream;

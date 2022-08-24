@@ -1,28 +1,3 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
 /** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace org.joml {
@@ -59,15 +34,15 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0, FloatBuffer arg1)
        *  - (float arg0, float arg1)
        */
-      constructor(arg0?: number[] | java.nio.ByteBuffer | java.nio.FloatBuffer | number | org.joml.Vector2fc | org.joml.Vector2ic, arg1?: java.nio.ByteBuffer | java.nio.FloatBuffer | number);
+      constructor(arg0?: number[] | java.nio.ByteBuffer | number | java.nio.FloatBuffer | org.joml.Vector2fc | org.joml.Vector2ic, arg1?: java.nio.ByteBuffer | java.nio.FloatBuffer | number);
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): org.joml.Vector2f
        *  - (Vector2f arg0): org.joml.Vector2f
        */
       absolute(arg0?: org.joml.Vector2f): org.joml.Vector2f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Vector2fc arg0): org.joml.Vector2f
        *  - (Vector2fc arg0, Vector2f arg1): org.joml.Vector2f
        *  - (float arg0, float arg1): org.joml.Vector2f
@@ -75,58 +50,58 @@ declare module '@asledgehammer/pipewrench' {
        */
       add(arg0: org.joml.Vector2fc | number, arg1?: org.joml.Vector2f | number, arg2?: org.joml.Vector2f): org.joml.Vector2f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Vector2fc arg0): number
        */
       angle(arg0: org.joml.Vector2fc): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): org.joml.Vector2f
        *  - (Vector2f arg0): org.joml.Vector2f
        */
       ceil(arg0?: org.joml.Vector2f): org.joml.Vector2f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Vector2fc arg0): number
        *  - (float arg0, float arg1): number
        */
       distance(arg0: org.joml.Vector2fc | number, arg1?: number): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Vector2fc arg0): number
        *  - (float arg0, float arg1): number
        */
       distanceSquared(arg0: org.joml.Vector2fc | number, arg1?: number): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Vector2fc arg0): org.joml.Vector2f
        *  - (float arg0): org.joml.Vector2f
-       *  - (Vector2fc arg0, Vector2f arg1): org.joml.Vector2f
        *  - (float arg0, float arg1): org.joml.Vector2f
        *  - (float arg0, Vector2f arg1): org.joml.Vector2f
+       *  - (Vector2fc arg0, Vector2f arg1): org.joml.Vector2f
        *  - (float arg0, float arg1, Vector2f arg2): org.joml.Vector2f
        */
-      div(arg0: org.joml.Vector2fc | number, arg1?: org.joml.Vector2f | number, arg2?: org.joml.Vector2f): org.joml.Vector2f;
+      div(arg0: number | org.joml.Vector2fc, arg1?: number | org.joml.Vector2f, arg2?: org.joml.Vector2f): org.joml.Vector2f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Vector2fc arg0): number
        */
       dot(arg0: org.joml.Vector2fc): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Object arg0): boolean
        *  - (float arg0, float arg1): boolean
        *  - (Vector2fc arg0, float arg1): boolean
        */
       equals(arg0: any, arg1?: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): org.joml.Vector2f
        *  - (Vector2f arg0): org.joml.Vector2f
        */
       floor(arg0?: org.joml.Vector2f): org.joml.Vector2f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (float arg0, Vector2fc arg1): org.joml.Vector2f
        *  - (Vector2fc arg0, Vector2fc arg1): org.joml.Vector2f
        *  - (float arg0, Vector2fc arg1, Vector2f arg2): org.joml.Vector2f
@@ -134,7 +109,7 @@ declare module '@asledgehammer/pipewrench' {
        */
       fma(arg0: number | org.joml.Vector2fc, arg1: org.joml.Vector2fc, arg2?: org.joml.Vector2f): org.joml.Vector2f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ByteBuffer arg0): java.nio.ByteBuffer
        *  - (Vector2d arg0): org.joml.Vector2d
        *  - (FloatBuffer arg0): java.nio.FloatBuffer
@@ -144,62 +119,62 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0, Vector2i arg1): org.joml.Vector2i
        *  - (int arg0, FloatBuffer arg1): java.nio.FloatBuffer
        */
-      get(arg0: java.nio.ByteBuffer | org.joml.Vector2d | java.nio.FloatBuffer | number | org.joml.Vector2f, arg1?: java.nio.ByteBuffer | org.joml.Vector2i | java.nio.FloatBuffer): java.nio.ByteBuffer | org.joml.Vector2d | java.nio.FloatBuffer | number | org.joml.Vector2f | org.joml.Vector2i;
+      get(arg0: java.nio.ByteBuffer | number | org.joml.Vector2d | java.nio.FloatBuffer | org.joml.Vector2f, arg1?: java.nio.ByteBuffer | org.joml.Vector2i | java.nio.FloatBuffer): java.nio.ByteBuffer | org.joml.Vector2d | java.nio.FloatBuffer | number | org.joml.Vector2i | org.joml.Vector2f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (long arg0): org.joml.Vector2fc
        */
       getToAddress(arg0: number): org.joml.Vector2fc;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       hashCode(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isFinite(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       length(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       lengthSquared(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Vector2fc arg0, float arg1): org.joml.Vector2f
        *  - (Vector2fc arg0, float arg1, Vector2f arg2): org.joml.Vector2f
        */
       lerp(arg0: org.joml.Vector2fc, arg1: number, arg2?: org.joml.Vector2f): org.joml.Vector2f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Vector2fc arg0): org.joml.Vector2f
        *  - (Vector2fc arg0, Vector2f arg1): org.joml.Vector2f
        */
       max(arg0: org.joml.Vector2fc, arg1?: org.joml.Vector2f): org.joml.Vector2f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       maxComponent(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Vector2fc arg0): org.joml.Vector2f
        *  - (Vector2fc arg0, Vector2f arg1): org.joml.Vector2f
        */
       min(arg0: org.joml.Vector2fc, arg1?: org.joml.Vector2f): org.joml.Vector2f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       minComponent(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (float arg0): org.joml.Vector2f
        *  - (Vector2fc arg0): org.joml.Vector2f
        *  - (Matrix2dc arg0): org.joml.Vector2f
@@ -213,31 +188,31 @@ declare module '@asledgehammer/pipewrench' {
        */
       mul(arg0: number | org.joml.Vector2fc | org.joml.Matrix2dc | org.joml.Matrix2fc, arg1?: org.joml.Vector2f | number, arg2?: org.joml.Vector2f): org.joml.Vector2f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Matrix3x2fc arg0): org.joml.Vector2f
        *  - (Matrix3x2fc arg0, Vector2f arg1): org.joml.Vector2f
        */
       mulDirection(arg0: org.joml.Matrix3x2fc, arg1?: org.joml.Vector2f): org.joml.Vector2f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Matrix3x2fc arg0): org.joml.Vector2f
        *  - (Matrix3x2fc arg0, Vector2f arg1): org.joml.Vector2f
        */
       mulPosition(arg0: org.joml.Matrix3x2fc, arg1?: org.joml.Vector2f): org.joml.Vector2f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Matrix2fc arg0): org.joml.Vector2f
        *  - (Matrix2fc arg0, Vector2f arg1): org.joml.Vector2f
        */
       mulTranspose(arg0: org.joml.Matrix2fc, arg1?: org.joml.Vector2f): org.joml.Vector2f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): org.joml.Vector2f
        *  - (Vector2f arg0): org.joml.Vector2f
        */
       negate(arg0?: org.joml.Vector2f): org.joml.Vector2f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): org.joml.Vector2f
        *  - (Vector2f arg0): org.joml.Vector2f
        *  - (float arg0): org.joml.Vector2f
@@ -245,23 +220,23 @@ declare module '@asledgehammer/pipewrench' {
        */
       normalize(arg0?: org.joml.Vector2f | number, arg1?: org.joml.Vector2f): org.joml.Vector2f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): org.joml.Vector2f
        */
       perpendicular(): org.joml.Vector2f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ObjectInput arg0): void
        */
       readExternal(arg0: java.io.ObjectInput): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): org.joml.Vector2f
        *  - (Vector2f arg0): org.joml.Vector2f
        */
       round(arg0?: org.joml.Vector2f): org.joml.Vector2f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (float arg0): org.joml.Vector2f
        *  - (double arg0): org.joml.Vector2f
        *  - (Vector2fc arg0): org.joml.Vector2f
@@ -277,17 +252,17 @@ declare module '@asledgehammer/pipewrench' {
        */
       set(arg0: number | org.joml.Vector2fc | org.joml.Vector2ic | org.joml.Vector2dc | number[] | java.nio.FloatBuffer | java.nio.ByteBuffer, arg1?: number | java.nio.ByteBuffer | java.nio.FloatBuffer): org.joml.Vector2f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, float arg1): org.joml.Vector2f
        */
       setComponent(arg0: number, arg1: number): org.joml.Vector2f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (long arg0): org.joml.Vector2f
        */
       setFromAddress(arg0: number): org.joml.Vector2f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Vector2fc arg0): org.joml.Vector2f
        *  - (Vector2fc arg0, Vector2f arg1): org.joml.Vector2f
        *  - (float arg0, float arg1): org.joml.Vector2f
@@ -295,56 +270,56 @@ declare module '@asledgehammer/pipewrench' {
        */
       sub(arg0: org.joml.Vector2fc | number, arg1?: org.joml.Vector2f | number, arg2?: org.joml.Vector2f): org.joml.Vector2f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        *  - (NumberFormat arg0): string
        */
       toString(arg0?: java.text.NumberFormat): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ObjectOutput arg0): void
        */
       writeExternal(arg0: java.io.ObjectOutput): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       x(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       y(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): org.joml.Vector2f
        */
       zero(): org.joml.Vector2f;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): number
        */
       static distance(arg0: number, arg1: number, arg2: number, arg3: number): number;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): number
        */
       static distanceSquared(arg0: number, arg1: number, arg2: number, arg3: number): number;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (float arg0, float arg1): number
        */
       static length(arg0: number, arg1: number): number;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (float arg0, float arg1): number
        */
       static lengthSquared(arg0: number, arg1: number): number;
@@ -375,65 +350,65 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Vector2fc arg0, float arg1)
        *  - (float arg0, float arg1, float arg2)
        */
-      constructor(arg0?: number[] | java.nio.ByteBuffer | java.nio.FloatBuffer | number | org.joml.Vector3ic | org.joml.Vector3fc | org.joml.Vector2ic | org.joml.Vector2fc, arg1?: number | java.nio.ByteBuffer | java.nio.FloatBuffer, arg2?: number);
+      constructor(arg0?: org.joml.Vector2ic | number[] | java.nio.ByteBuffer | number | java.nio.FloatBuffer | org.joml.Vector2fc | org.joml.Vector3ic | org.joml.Vector3fc, arg1?: number | java.nio.ByteBuffer | java.nio.FloatBuffer, arg2?: number);
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): org.joml.Vector3f
        *  - (Vector3f arg0): org.joml.Vector3f
        */
       absolute(arg0?: org.joml.Vector3f): org.joml.Vector3f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Vector3fc arg0): org.joml.Vector3f
        *  - (Vector3fc arg0, Vector3f arg1): org.joml.Vector3f
        *  - (float arg0, float arg1, float arg2): org.joml.Vector3f
        *  - (float arg0, float arg1, float arg2, Vector3f arg3): org.joml.Vector3f
        */
-      add(arg0: org.joml.Vector3fc | number, arg1?: org.joml.Vector3f | number, arg2?: number, arg3?: org.joml.Vector3f): org.joml.Vector3f;
+      add(arg0: number | org.joml.Vector3fc, arg1?: number | org.joml.Vector3f, arg2?: number, arg3?: org.joml.Vector3f): org.joml.Vector3f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Vector3fc arg0): number
        */
       angle(arg0: org.joml.Vector3fc): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Vector3fc arg0): number
        */
       angleCos(arg0: org.joml.Vector3fc): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Vector3fc arg0, Vector3fc arg1): number
        *  - (float arg0, float arg1, float arg2, float arg3, float arg4, float arg5): number
        */
       angleSigned(arg0: org.joml.Vector3fc | number, arg1: org.joml.Vector3fc | number, arg2?: number, arg3?: number, arg4?: number, arg5?: number): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): org.joml.Vector3f
        *  - (Vector3f arg0): org.joml.Vector3f
        */
       ceil(arg0?: org.joml.Vector3f): org.joml.Vector3f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Vector3fc arg0): org.joml.Vector3f
        *  - (Vector3fc arg0, Vector3f arg1): org.joml.Vector3f
        *  - (float arg0, float arg1, float arg2): org.joml.Vector3f
        *  - (float arg0, float arg1, float arg2, Vector3f arg3): org.joml.Vector3f
        */
-      cross(arg0: org.joml.Vector3fc | number, arg1?: org.joml.Vector3f | number, arg2?: number, arg3?: org.joml.Vector3f): org.joml.Vector3f;
+      cross(arg0: org.joml.Vector3fc | number, arg1?: number | org.joml.Vector3f, arg2?: number, arg3?: org.joml.Vector3f): org.joml.Vector3f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Vector3fc arg0): number
        *  - (float arg0, float arg1, float arg2): number
        */
-      distance(arg0: org.joml.Vector3fc | number, arg1?: number, arg2?: number): number;
+      distance(arg0: number | org.joml.Vector3fc, arg1?: number, arg2?: number): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Vector3fc arg0): number
        *  - (float arg0, float arg1, float arg2): number
        */
       distanceSquared(arg0: org.joml.Vector3fc | number, arg1?: number, arg2?: number): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Vector3fc arg0): org.joml.Vector3f
        *  - (float arg0): org.joml.Vector3f
        *  - (float arg0, Vector3f arg1): org.joml.Vector3f
@@ -443,26 +418,26 @@ declare module '@asledgehammer/pipewrench' {
        */
       div(arg0: org.joml.Vector3fc | number, arg1?: org.joml.Vector3f | number, arg2?: number, arg3?: org.joml.Vector3f): org.joml.Vector3f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Vector3fc arg0): number
        *  - (float arg0, float arg1, float arg2): number
        */
       dot(arg0: org.joml.Vector3fc | number, arg1?: number, arg2?: number): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Object arg0): boolean
        *  - (Vector3fc arg0, float arg1): boolean
        *  - (float arg0, float arg1, float arg2): boolean
        */
       equals(arg0: any, arg1?: number, arg2?: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): org.joml.Vector3f
        *  - (Vector3f arg0): org.joml.Vector3f
        */
       floor(arg0?: org.joml.Vector3f): org.joml.Vector3f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Vector3fc arg0, Vector3fc arg1): org.joml.Vector3f
        *  - (float arg0, Vector3fc arg1): org.joml.Vector3f
        *  - (float arg0, Vector3fc arg1, Vector3f arg2): org.joml.Vector3f
@@ -470,7 +445,7 @@ declare module '@asledgehammer/pipewrench' {
        */
       fma(arg0: org.joml.Vector3fc | number, arg1: org.joml.Vector3fc, arg2?: org.joml.Vector3f): org.joml.Vector3f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ByteBuffer arg0): java.nio.ByteBuffer
        *  - (FloatBuffer arg0): java.nio.FloatBuffer
        *  - (int arg0): number
@@ -480,154 +455,154 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0, FloatBuffer arg1): java.nio.FloatBuffer
        *  - (int arg0, Vector3i arg1): org.joml.Vector3i
        */
-      get(arg0: java.nio.ByteBuffer | java.nio.FloatBuffer | number | org.joml.Vector3f | org.joml.Vector3d, arg1?: java.nio.ByteBuffer | java.nio.FloatBuffer | org.joml.Vector3i): java.nio.ByteBuffer | java.nio.FloatBuffer | number | org.joml.Vector3f | org.joml.Vector3d | org.joml.Vector3i;
+      get(arg0: number | java.nio.ByteBuffer | java.nio.FloatBuffer | org.joml.Vector3f | org.joml.Vector3d, arg1?: java.nio.ByteBuffer | java.nio.FloatBuffer | org.joml.Vector3i): java.nio.ByteBuffer | java.nio.FloatBuffer | number | org.joml.Vector3i | org.joml.Vector3f | org.joml.Vector3d;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (long arg0): org.joml.Vector3fc
        */
       getToAddress(arg0: number): org.joml.Vector3fc;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Vector3fc arg0): org.joml.Vector3f
        *  - (Vector3fc arg0, Vector3f arg1): org.joml.Vector3f
        *  - (float arg0, float arg1, float arg2): org.joml.Vector3f
        *  - (float arg0, float arg1, float arg2, Vector3f arg3): org.joml.Vector3f
        */
-      half(arg0: org.joml.Vector3fc | number, arg1?: org.joml.Vector3f | number, arg2?: number, arg3?: org.joml.Vector3f): org.joml.Vector3f;
+      half(arg0: number | org.joml.Vector3fc, arg1?: number | org.joml.Vector3f, arg2?: number, arg3?: org.joml.Vector3f): org.joml.Vector3f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       hashCode(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Vector3fc arg0, Vector3fc arg1, Vector3fc arg2, float arg3, Vector3f arg4): org.joml.Vector3f
        */
       hermite(arg0: org.joml.Vector3fc, arg1: org.joml.Vector3fc, arg2: org.joml.Vector3fc, arg3: number, arg4: org.joml.Vector3f): org.joml.Vector3f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isFinite(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       length(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       lengthSquared(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Vector3fc arg0, float arg1): org.joml.Vector3f
        *  - (Vector3fc arg0, float arg1, Vector3f arg2): org.joml.Vector3f
        */
       lerp(arg0: org.joml.Vector3fc, arg1: number, arg2?: org.joml.Vector3f): org.joml.Vector3f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Vector3fc arg0): org.joml.Vector3f
        *  - (Vector3fc arg0, Vector3f arg1): org.joml.Vector3f
        */
       max(arg0: org.joml.Vector3fc, arg1?: org.joml.Vector3f): org.joml.Vector3f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       maxComponent(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Vector3fc arg0): org.joml.Vector3f
        *  - (Vector3fc arg0, Vector3f arg1): org.joml.Vector3f
        */
       min(arg0: org.joml.Vector3fc, arg1?: org.joml.Vector3f): org.joml.Vector3f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       minComponent(): number;
       /**
-       * Method Parameters:
-       *  - (Matrix3fc arg0): org.joml.Vector3f
-       *  - (Matrix3x2fc arg0): org.joml.Vector3f
-       *  - (Matrix3dc arg0): org.joml.Vector3f
+       * Method Parameters: 
        *  - (Vector3fc arg0): org.joml.Vector3f
+       *  - (Matrix3x2fc arg0): org.joml.Vector3f
        *  - (float arg0): org.joml.Vector3f
-       *  - (Vector3fc arg0, Vector3f arg1): org.joml.Vector3f
+       *  - (Matrix3fc arg0): org.joml.Vector3f
+       *  - (Matrix3dc arg0): org.joml.Vector3f
        *  - (Matrix3x2fc arg0, Vector3f arg1): org.joml.Vector3f
-       *  - (Matrix3fc arg0, Vector3f arg1): org.joml.Vector3f
        *  - (Matrix3dc arg0, Vector3f arg1): org.joml.Vector3f
+       *  - (Matrix3fc arg0, Vector3f arg1): org.joml.Vector3f
+       *  - (Vector3fc arg0, Vector3f arg1): org.joml.Vector3f
        *  - (float arg0, Vector3f arg1): org.joml.Vector3f
        *  - (float arg0, float arg1, float arg2): org.joml.Vector3f
        *  - (float arg0, float arg1, float arg2, Vector3f arg3): org.joml.Vector3f
        */
-      mul(arg0: org.joml.Matrix3fc | org.joml.Matrix3x2fc | org.joml.Matrix3dc | org.joml.Vector3fc | number, arg1?: org.joml.Vector3f | number, arg2?: number, arg3?: org.joml.Vector3f): org.joml.Vector3f;
+      mul(arg0: org.joml.Matrix3x2fc | org.joml.Vector3fc | org.joml.Matrix3dc | number | org.joml.Matrix3fc, arg1?: org.joml.Vector3f | number, arg2?: number, arg3?: org.joml.Vector3f): org.joml.Vector3f;
       /**
-       * Method Parameters:
-       *  - (Vector3fc arg0, Vector3fc arg1): org.joml.Vector3f
+       * Method Parameters: 
        *  - (float arg0, Vector3fc arg1): org.joml.Vector3f
-       *  - (Vector3fc arg0, Vector3fc arg1, Vector3f arg2): org.joml.Vector3f
+       *  - (Vector3fc arg0, Vector3fc arg1): org.joml.Vector3f
        *  - (float arg0, Vector3fc arg1, Vector3f arg2): org.joml.Vector3f
+       *  - (Vector3fc arg0, Vector3fc arg1, Vector3f arg2): org.joml.Vector3f
        */
-      mulAdd(arg0: org.joml.Vector3fc | number, arg1: org.joml.Vector3fc, arg2?: org.joml.Vector3f): org.joml.Vector3f;
+      mulAdd(arg0: number | org.joml.Vector3fc, arg1: org.joml.Vector3fc, arg2?: org.joml.Vector3f): org.joml.Vector3f;
       /**
-       * Method Parameters:
-       *  - (Matrix4x3fc arg0): org.joml.Vector3f
+       * Method Parameters: 
        *  - (Matrix4fc arg0): org.joml.Vector3f
+       *  - (Matrix4x3fc arg0): org.joml.Vector3f
        *  - (Matrix4dc arg0): org.joml.Vector3f
-       *  - (Matrix4x3fc arg0, Vector3f arg1): org.joml.Vector3f
-       *  - (Matrix4fc arg0, Vector3f arg1): org.joml.Vector3f
        *  - (Matrix4dc arg0, Vector3f arg1): org.joml.Vector3f
+       *  - (Matrix4fc arg0, Vector3f arg1): org.joml.Vector3f
+       *  - (Matrix4x3fc arg0, Vector3f arg1): org.joml.Vector3f
        */
-      mulDirection(arg0: org.joml.Matrix4x3fc | org.joml.Matrix4fc | org.joml.Matrix4dc, arg1?: org.joml.Vector3f): org.joml.Vector3f;
+      mulDirection(arg0: org.joml.Matrix4fc | org.joml.Matrix4x3fc | org.joml.Matrix4dc, arg1?: org.joml.Vector3f): org.joml.Vector3f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Matrix4x3fc arg0): org.joml.Vector3f
        *  - (Matrix4fc arg0): org.joml.Vector3f
-       *  - (Matrix4x3fc arg0, Vector3f arg1): org.joml.Vector3f
        *  - (Matrix4fc arg0, Vector3f arg1): org.joml.Vector3f
+       *  - (Matrix4x3fc arg0, Vector3f arg1): org.joml.Vector3f
        */
-      mulPosition(arg0: org.joml.Matrix4x3fc | org.joml.Matrix4fc, arg1?: org.joml.Vector3f): org.joml.Vector3f;
+      mulPosition(arg0: org.joml.Matrix4fc | org.joml.Matrix4x3fc, arg1?: org.joml.Vector3f): org.joml.Vector3f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Matrix4fc arg0): number
        *  - (Matrix4fc arg0, Vector3f arg1): number
        */
       mulPositionW(arg0: org.joml.Matrix4fc, arg1?: org.joml.Vector3f): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Matrix4fc arg0): org.joml.Vector3f
        *  - (Matrix4fc arg0, Vector3f arg1): org.joml.Vector3f
        *  - (Matrix4fc arg0, float arg1, Vector3f arg2): org.joml.Vector3f
        */
-      mulProject(arg0: org.joml.Matrix4fc, arg1?: org.joml.Vector3f | number, arg2?: org.joml.Vector3f): org.joml.Vector3f;
+      mulProject(arg0: org.joml.Matrix4fc, arg1?: number | org.joml.Vector3f, arg2?: org.joml.Vector3f): org.joml.Vector3f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Matrix3fc arg0): org.joml.Vector3f
        *  - (Matrix3fc arg0, Vector3f arg1): org.joml.Vector3f
        */
       mulTranspose(arg0: org.joml.Matrix3fc, arg1?: org.joml.Vector3f): org.joml.Vector3f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Matrix4fc arg0): org.joml.Vector3f
        *  - (Matrix4fc arg0, Vector3f arg1): org.joml.Vector3f
        */
       mulTransposeDirection(arg0: org.joml.Matrix4fc, arg1?: org.joml.Vector3f): org.joml.Vector3f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Matrix4fc arg0): org.joml.Vector3f
        *  - (Matrix4fc arg0, Vector3f arg1): org.joml.Vector3f
        */
       mulTransposePosition(arg0: org.joml.Matrix4fc, arg1?: org.joml.Vector3f): org.joml.Vector3f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): org.joml.Vector3f
        *  - (Vector3f arg0): org.joml.Vector3f
        */
       negate(arg0?: org.joml.Vector3f): org.joml.Vector3f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): org.joml.Vector3f
        *  - (Vector3f arg0): org.joml.Vector3f
        *  - (float arg0): org.joml.Vector3f
@@ -635,74 +610,74 @@ declare module '@asledgehammer/pipewrench' {
        */
       normalize(arg0?: org.joml.Vector3f | number, arg1?: org.joml.Vector3f): org.joml.Vector3f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Vector3fc arg0): org.joml.Vector3f
        *  - (Vector3fc arg0, Vector3f arg1): org.joml.Vector3f
        */
       orthogonalize(arg0: org.joml.Vector3fc, arg1?: org.joml.Vector3f): org.joml.Vector3f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Vector3fc arg0): org.joml.Vector3f
        *  - (Vector3fc arg0, Vector3f arg1): org.joml.Vector3f
        */
       orthogonalizeUnit(arg0: org.joml.Vector3fc, arg1?: org.joml.Vector3f): org.joml.Vector3f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ObjectInput arg0): void
        */
       readExternal(arg0: java.io.ObjectInput): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Vector3fc arg0): org.joml.Vector3f
        *  - (Vector3fc arg0, Vector3f arg1): org.joml.Vector3f
        *  - (float arg0, float arg1, float arg2): org.joml.Vector3f
        *  - (float arg0, float arg1, float arg2, Vector3f arg3): org.joml.Vector3f
        */
-      reflect(arg0: org.joml.Vector3fc | number, arg1?: org.joml.Vector3f | number, arg2?: number, arg3?: org.joml.Vector3f): org.joml.Vector3f;
+      reflect(arg0: number | org.joml.Vector3fc, arg1?: number | org.joml.Vector3f, arg2?: number, arg3?: org.joml.Vector3f): org.joml.Vector3f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Quaternionfc arg0): org.joml.Vector3f
        *  - (Quaternionfc arg0, Vector3f arg1): org.joml.Vector3f
        */
       rotate(arg0: org.joml.Quaternionfc, arg1?: org.joml.Vector3f): org.joml.Vector3f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): org.joml.Vector3f
        *  - (float arg0, float arg1, float arg2, float arg3, Vector3f arg4): org.joml.Vector3f
        */
       rotateAxis(arg0: number, arg1: number, arg2: number, arg3: number, arg4?: org.joml.Vector3f): org.joml.Vector3f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (float arg0): org.joml.Vector3f
        *  - (float arg0, Vector3f arg1): org.joml.Vector3f
        */
       rotateX(arg0: number, arg1?: org.joml.Vector3f): org.joml.Vector3f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (float arg0): org.joml.Vector3f
        *  - (float arg0, Vector3f arg1): org.joml.Vector3f
        */
       rotateY(arg0: number, arg1?: org.joml.Vector3f): org.joml.Vector3f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (float arg0): org.joml.Vector3f
        *  - (float arg0, Vector3f arg1): org.joml.Vector3f
        */
       rotateZ(arg0: number, arg1?: org.joml.Vector3f): org.joml.Vector3f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Vector3fc arg0, Quaternionf arg1): org.joml.Quaternionf
        *  - (float arg0, float arg1, float arg2, Quaternionf arg3): org.joml.Quaternionf
        */
-      rotationTo(arg0: org.joml.Vector3fc | number, arg1: org.joml.Quaternionf | number, arg2?: number, arg3?: org.joml.Quaternionf): org.joml.Quaternionf;
+      rotationTo(arg0: number | org.joml.Vector3fc, arg1: number | org.joml.Quaternionf, arg2?: number, arg3?: org.joml.Quaternionf): org.joml.Quaternionf;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): org.joml.Vector3f
        *  - (Vector3f arg0): org.joml.Vector3f
        */
       round(arg0?: org.joml.Vector3f): org.joml.Vector3f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (float[] arg0): org.joml.Vector3f
        *  - (float arg0): org.joml.Vector3f
        *  - (ByteBuffer arg0): org.joml.Vector3f
@@ -719,86 +694,86 @@ declare module '@asledgehammer/pipewrench' {
        *  - (double arg0, double arg1, double arg2): org.joml.Vector3f
        *  - (float arg0, float arg1, float arg2): org.joml.Vector3f
        */
-      set(arg0: number[] | number | java.nio.ByteBuffer | java.nio.FloatBuffer | org.joml.Vector3fc | org.joml.Vector3dc | org.joml.Vector3ic | org.joml.Vector2ic | org.joml.Vector2dc | org.joml.Vector2fc, arg1?: number | java.nio.ByteBuffer | java.nio.FloatBuffer, arg2?: number): org.joml.Vector3f;
+      set(arg0: number | number[] | org.joml.Vector2ic | java.nio.ByteBuffer | java.nio.FloatBuffer | org.joml.Vector3fc | org.joml.Vector3dc | org.joml.Vector3ic | org.joml.Vector2dc | org.joml.Vector2fc, arg1?: number | java.nio.ByteBuffer | java.nio.FloatBuffer, arg2?: number): org.joml.Vector3f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, float arg1): org.joml.Vector3f
        */
       setComponent(arg0: number, arg1: number): org.joml.Vector3f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (long arg0): org.joml.Vector3f
        */
       setFromAddress(arg0: number): org.joml.Vector3f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Vector3fc arg0, float arg1, Vector3f arg2): org.joml.Vector3f
        */
       smoothStep(arg0: org.joml.Vector3fc, arg1: number, arg2: org.joml.Vector3f): org.joml.Vector3f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Vector3fc arg0): org.joml.Vector3f
        *  - (Vector3fc arg0, Vector3f arg1): org.joml.Vector3f
        *  - (float arg0, float arg1, float arg2): org.joml.Vector3f
        *  - (float arg0, float arg1, float arg2, Vector3f arg3): org.joml.Vector3f
        */
-      sub(arg0: org.joml.Vector3fc | number, arg1?: org.joml.Vector3f | number, arg2?: number, arg3?: org.joml.Vector3f): org.joml.Vector3f;
+      sub(arg0: number | org.joml.Vector3fc, arg1?: number | org.joml.Vector3f, arg2?: number, arg3?: org.joml.Vector3f): org.joml.Vector3f;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        *  - (NumberFormat arg0): string
        */
       toString(arg0?: java.text.NumberFormat): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ObjectOutput arg0): void
        */
       writeExternal(arg0: java.io.ObjectOutput): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       x(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       y(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       z(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): org.joml.Vector3f
        */
       zero(): org.joml.Vector3f;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3, float arg4, float arg5): number
        */
       static distance(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): number;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3, float arg4, float arg5): number
        */
       static distanceSquared(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): number;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (float arg0, float arg1, float arg2): number
        */
       static length(arg0: number, arg1: number, arg2: number): number;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (float arg0, float arg1, float arg2): number
        */
       static lengthSquared(arg0: number, arg1: number, arg2: number): number;

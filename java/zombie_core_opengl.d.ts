@@ -1,28 +1,3 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
 /** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.core.opengl {
@@ -34,7 +9,7 @@ declare module '@asledgehammer/pipewrench' {
     export class IShaderProgramListener {
       protected constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ShaderProgram arg0): void
        */
       callback(arg0: zombie.core.opengl.ShaderProgram): void;
@@ -51,39 +26,39 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       applyRenderSettings(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): number
        */
       getAmbientForPlayer(arg0: number): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): zombie.core.Color
        */
       getMaskClearColorForPlayer(arg0: number): zombie.core.Color;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): zombie.core.opengl.RenderSettings$PlayerRenderSettings
        */
       getPlayerSettings(arg0: number): zombie.core.opengl.RenderSettings$PlayerRenderSettings;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       legacyPostRender(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       update(): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.core.opengl.RenderSettings
        */
       static getInstance(): zombie.core.opengl.RenderSettings;
@@ -100,82 +75,82 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getAmbient(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.core.Color
        */
       getBlendColor(): zombie.core.Color;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getBlendIntensity(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getBmod(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getDarkness(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getDesaturation(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getFogMod(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getGmod(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.core.Color
        */
       getMaskClearColor(): zombie.core.Color;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getNight(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getRmod(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getSM_Alpha(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getSM_Radius(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getViewDistance(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isApplyNightVisionGoggles(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isExterior(): boolean;
@@ -195,57 +170,57 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: string);
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       End(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       Start(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ShaderProgram arg0): void
        */
       callback(arg0: zombie.core.opengl.ShaderProgram): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       destroy(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getID(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.core.opengl.ShaderProgram
        */
       getProgram(): zombie.core.opengl.ShaderProgram;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isCompiled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (TextureDraw arg0): void
        */
       postRender(arg0: zombie.core.textures.TextureDraw): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Texture arg0): void
        */
       setTexture(arg0: zombie.core.textures.Texture): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (TextureDraw arg0, int arg1): void
        */
       startMainThread(arg0: zombie.core.textures.TextureDraw, arg1: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (TextureDraw arg0): void
        */
       startRenderThread(arg0: zombie.core.textures.TextureDraw): void;
@@ -258,68 +233,68 @@ declare module '@asledgehammer/pipewrench' {
     export class ShaderProgram {
 
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       End(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       Start(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IShaderProgramListener arg0): void
        */
       addCompileListener(arg0: zombie.core.opengl.IShaderProgramListener): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0, Type arg1): zombie.core.opengl.ShaderUnit
        */
       addShader(arg0: string, arg1: zombie.core.opengl.ShaderUnit$Type): zombie.core.opengl.ShaderUnit;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       compile(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       destroy(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getShaderID(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0, int arg1): zombie.core.opengl.ShaderProgram$Uniform
        *  - (String arg0, int arg1, boolean arg2): zombie.core.opengl.ShaderProgram$Uniform
        */
       getUniform(arg0: string, arg1: number, arg2?: boolean): zombie.core.opengl.ShaderProgram$Uniform;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isCompiled(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IShaderProgramListener arg0): void
        */
       removeCompileListener(arg0: zombie.core.opengl.IShaderProgramListener): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0, int arg1): void
        */
       setSamplerUnit(arg0: string, arg1: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0, Matrix4f arg1): void
        *  - (String arg0, Vector2 arg1): void
        *  - (String arg0, int arg1): void
@@ -327,31 +302,31 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, Vector3 arg1): void
        *  - (String arg0, Texture arg1, int arg2): void
        */
-      setValue(arg0: string, arg1: org.lwjgl.util.vector.Matrix4f | zombie.iso.Vector2 | number | zombie.iso.Vector3 | zombie.core.textures.Texture, arg2?: number): void;
+      setValue(arg0: string, arg1: org.lwjgl.util.vector.Matrix4f | zombie.core.textures.Texture | zombie.iso.Vector2 | number | zombie.iso.Vector3, arg2?: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0, int arg1): void
        */
       setValueColor(arg0: string, arg1: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0, int arg1): void
        */
       setValueColorRGB(arg0: string, arg1: number): void;
       /**
-       * Method Parameters:
-       *  - (String arg0, float arg1, float arg2): void
+       * Method Parameters: 
        *  - (int arg0, float arg1, float arg2): void
+       *  - (String arg0, float arg1, float arg2): void
        */
-      setVector2(arg0: string | number, arg1: number, arg2: number): void;
+      setVector2(arg0: number | string, arg1: number, arg2: number): void;
       /**
-       * Method Parameters:
-       *  - (int arg0, float arg1, float arg2, float arg3): void
+       * Method Parameters: 
        *  - (String arg0, float arg1, float arg2, float arg3): void
+       *  - (int arg0, float arg1, float arg2, float arg3): void
        */
-      setVector3(arg0: number | string, arg1: number, arg2: number, arg3: number): void;
+      setVector3(arg0: string | number, arg1: number, arg2: number, arg3: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
@@ -359,35 +334,35 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): number
        */
       static createFragShader(arg0: string): number;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0, boolean arg1, boolean arg2): zombie.core.opengl.ShaderProgram
        */
       static createShaderProgram(arg0: string, arg1: boolean, arg2: boolean): zombie.core.opengl.ShaderProgram;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): number
        */
       static createVertShader(arg0: string): number;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): string
        */
       static getLogInfo(arg0: number): string;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       static printLogInfo(arg0: number): void;
@@ -416,37 +391,37 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: zombie.core.opengl.ShaderProgram, arg1: string, arg2: zombie.core.opengl.ShaderUnit$Type);
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       attach(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       compile(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       destroy(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getFileName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getGLID(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getParentShaderProgramGLID(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isCompiled(): boolean;
@@ -481,17 +456,17 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: number);
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       next(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       startFrame(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       unmap(): void;
