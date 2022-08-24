@@ -35,7 +35,7 @@ jobs:
       - run: |
           cd java-gen
           bash ./scripts/prep_libs.sh ../pzserver
-          gradle run --args ../
+          gradle run --args "cli --out ../"
       - run: npm install
       - run: npm link
       - run: npm run extract
