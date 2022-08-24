@@ -24,8 +24,8 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Constructors: 
        *  - (Empty Constructor)
-       *  - (float[] arg0)
        *  - (float arg0)
+       *  - (float[] arg0)
        *  - (ByteBuffer arg0)
        *  - (FloatBuffer arg0)
        *  - (Vector2fc arg0)
@@ -34,7 +34,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0, ByteBuffer arg1)
        *  - (int arg0, FloatBuffer arg1)
        */
-      constructor(arg0?: number[] | number | java.nio.ByteBuffer | java.nio.FloatBuffer | org.joml.Vector2fc | org.joml.Vector2ic, arg1?: number | java.nio.ByteBuffer | java.nio.FloatBuffer);
+      constructor(arg0?: number | number[] | java.nio.ByteBuffer | java.nio.FloatBuffer | org.joml.Vector2fc | org.joml.Vector2ic, arg1?: number | java.nio.ByteBuffer | java.nio.FloatBuffer);
       /**
        * Method Parameters: 
        *  - (Empty): org.joml.Vector2f
@@ -237,9 +237,9 @@ declare module '@asledgehammer/pipewrench' {
       round(arg0?: org.joml.Vector2f): org.joml.Vector2f;
       /**
        * Method Parameters: 
-       *  - (float[] arg0): org.joml.Vector2f
        *  - (double arg0): org.joml.Vector2f
        *  - (float arg0): org.joml.Vector2f
+       *  - (float[] arg0): org.joml.Vector2f
        *  - (ByteBuffer arg0): org.joml.Vector2f
        *  - (FloatBuffer arg0): org.joml.Vector2f
        *  - (Vector2dc arg0): org.joml.Vector2f
@@ -250,7 +250,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0, ByteBuffer arg1): org.joml.Vector2f
        *  - (int arg0, FloatBuffer arg1): org.joml.Vector2f
        */
-      set(arg0: number[] | number | java.nio.ByteBuffer | java.nio.FloatBuffer | org.joml.Vector2dc | org.joml.Vector2fc | org.joml.Vector2ic, arg1?: number | java.nio.ByteBuffer | java.nio.FloatBuffer): org.joml.Vector2f;
+      set(arg0: number | number[] | java.nio.ByteBuffer | java.nio.FloatBuffer | org.joml.Vector2dc | org.joml.Vector2fc | org.joml.Vector2ic, arg1?: number | java.nio.ByteBuffer | java.nio.FloatBuffer): org.joml.Vector2f;
       /**
        * Method Parameters: 
        *  - (int arg0, float arg1): org.joml.Vector2f
@@ -338,8 +338,8 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Constructors: 
        *  - (Empty Constructor)
-       *  - (float[] arg0)
        *  - (float arg0)
+       *  - (float[] arg0)
        *  - (ByteBuffer arg0)
        *  - (FloatBuffer arg0)
        *  - (Vector3fc arg0)
@@ -350,7 +350,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Vector2ic arg0, float arg1)
        *  - (float arg0, float arg1, float arg2)
        */
-      constructor(arg0?: number[] | number | java.nio.ByteBuffer | java.nio.FloatBuffer | org.joml.Vector3fc | org.joml.Vector3ic | org.joml.Vector2fc | org.joml.Vector2ic, arg1?: java.nio.ByteBuffer | java.nio.FloatBuffer | number, arg2?: number);
+      constructor(arg0?: number | number[] | java.nio.ByteBuffer | java.nio.FloatBuffer | org.joml.Vector3fc | org.joml.Vector3ic | org.joml.Vector2fc | org.joml.Vector2ic, arg1?: java.nio.ByteBuffer | java.nio.FloatBuffer | number, arg2?: number);
       /**
        * Method Parameters: 
        *  - (Empty): org.joml.Vector3f
@@ -678,9 +678,9 @@ declare module '@asledgehammer/pipewrench' {
       round(arg0?: org.joml.Vector3f): org.joml.Vector3f;
       /**
        * Method Parameters: 
-       *  - (float[] arg0): org.joml.Vector3f
        *  - (double arg0): org.joml.Vector3f
        *  - (float arg0): org.joml.Vector3f
+       *  - (float[] arg0): org.joml.Vector3f
        *  - (ByteBuffer arg0): org.joml.Vector3f
        *  - (FloatBuffer arg0): org.joml.Vector3f
        *  - (Vector3dc arg0): org.joml.Vector3f
@@ -694,7 +694,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (double arg0, double arg1, double arg2): org.joml.Vector3f
        *  - (float arg0, float arg1, float arg2): org.joml.Vector3f
        */
-      set(arg0: number[] | number | java.nio.ByteBuffer | java.nio.FloatBuffer | org.joml.Vector3dc | org.joml.Vector3fc | org.joml.Vector3ic | org.joml.Vector2dc | org.joml.Vector2fc | org.joml.Vector2ic, arg1?: java.nio.ByteBuffer | java.nio.FloatBuffer | number, arg2?: number): org.joml.Vector3f;
+      set(arg0: number | number[] | java.nio.ByteBuffer | java.nio.FloatBuffer | org.joml.Vector3dc | org.joml.Vector3fc | org.joml.Vector3ic | org.joml.Vector2dc | org.joml.Vector2fc | org.joml.Vector2ic, arg1?: java.nio.ByteBuffer | java.nio.FloatBuffer | number, arg2?: number): org.joml.Vector3f;
       /**
        * Method Parameters: 
        *  - (int arg0, float arg1): org.joml.Vector3f

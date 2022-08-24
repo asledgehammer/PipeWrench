@@ -1975,6 +1975,7 @@ declare module '@asledgehammer/pipewrench' {
   export type Dimension = java.awt.Dimension;
   export type Entry = java.util.Map$Entry<any, any>;
   export type Enum = java.lang.Enum<any>;
+  export type EnumDesc = java.lang.Enum$EnumDesc<any>;
   export type Enumeration = java.util.Enumeration<any>;
   export type Exception = java.lang.Exception;
   export type FMODFootstep = fmod.fmod.FMODFootstep;
@@ -2024,6 +2025,7 @@ declare module '@asledgehammer/pipewrench' {
   export type ObjectInput = java.io.ObjectInput;
   export type ObjectOutput = java.io.ObjectOutput;
   export type ObjectOutputStream = java.io.ObjectOutputStream;
+  export type Optional = java.util.Optional<any>;
   export type OutputStream = java.io.OutputStream;
   export type ParsePosition = java.text.ParsePosition;
   export type Platform = se.krka.kahlua.vm.Platform;

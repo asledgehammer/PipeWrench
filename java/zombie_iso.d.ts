@@ -1446,15 +1446,61 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.iso.IsoCell$BuildingSearchCriteria>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.iso.IsoCell$BuildingSearchCriteria>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (String arg0): BuildingSearchCriteria
+       * Method Parameters: 
+       *  - (String arg0): zombie.iso.IsoCell$BuildingSearchCriteria
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.iso.IsoCell$BuildingSearchCriteria;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.iso.IsoCell$BuildingSearchCriteria | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoCell$BuildingSearchCriteria[]
+       */
       static values(): zombie.iso.IsoCell$BuildingSearchCriteria[];
-
     }
     /**
      * @customConstructor PerPlayerRender.new
@@ -1830,15 +1876,61 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.iso.IsoChunk$JobType>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.iso.IsoChunk$JobType>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (String arg0): JobType
+       * Method Parameters: 
+       *  - (String arg0): zombie.iso.IsoChunk$JobType
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.iso.IsoChunk$JobType;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.iso.IsoChunk$JobType | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoChunk$JobType[]
+       */
       static values(): zombie.iso.IsoChunk$JobType[];
-
     }
     /**
      * @customConstructor IsoChunkMap.new
@@ -2085,69 +2177,159 @@ declare module '@asledgehammer/pipewrench' {
       static readonly W: zombie.iso.IsoDirections;
       name(): string;
       ordinal(): number;
-      RotLeft(): zombie.iso.IsoDirections;
-
-      RotRight(): zombie.iso.IsoDirections;
-
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoDirections
+       *  - (int arg0): zombie.iso.IsoDirections
+       */
+      RotLeft(arg0?: number): zombie.iso.IsoDirections;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoDirections
+       *  - (int arg0): zombie.iso.IsoDirections
+       */
+      RotRight(arg0?: number): zombie.iso.IsoDirections;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.Vector2
+       */
       ToVector(): zombie.iso.Vector2;
-
       /**
-       * @noSelf
-       *
-       * (Vector2 arg0): IsoDirections
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
        */
-      static cardinalFromAngle(arg0: zombie.iso.Vector2 | null): zombie.iso.IsoDirections;
-
+      compareTo(arg0: any): number;
       /**
-       * @noSelf
-       *
-       * (float arg0, float arg1): IsoDirections
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
        */
-      static fromAngle(arg0: number, arg1: number): zombie.iso.IsoDirections;
-
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.iso.IsoDirections>>;
       /**
-       * @noSelf
-       *
-       * (Vector2 arg0): IsoDirections
+       * Method Parameters: 
+       *  - (Object arg0): boolean
        */
-      static fromAngleActual(arg0: zombie.iso.Vector2 | null): zombie.iso.IsoDirections;
-
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.iso.IsoDirections>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      index(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      toAngle(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toCompassString(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
       /**
        * @noSelf
        *
-       * (int arg0): IsoDirections
+       * Method Parameters: 
+       *  - (IsoDirections arg0): zombie.iso.IsoDirections
+       */
+      static RotLeft(arg0: zombie.iso.IsoDirections): zombie.iso.IsoDirections;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (IsoDirections arg0): zombie.iso.IsoDirections
+       */
+      static RotRight(arg0: zombie.iso.IsoDirections): zombie.iso.IsoDirections;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Vector2 arg0): zombie.iso.IsoDirections
+       */
+      static cardinalFromAngle(arg0: zombie.iso.Vector2): zombie.iso.IsoDirections;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (float arg0): zombie.iso.IsoDirections
+       *  - (Vector2 arg0): zombie.iso.IsoDirections
+       *  - (float arg0, float arg1): zombie.iso.IsoDirections
+       */
+      static fromAngle(arg0: number | zombie.iso.Vector2, arg1?: number): zombie.iso.IsoDirections;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Vector2 arg0): zombie.iso.IsoDirections
+       */
+      static fromAngleActual(arg0: zombie.iso.Vector2): zombie.iso.IsoDirections;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (int arg0): zombie.iso.IsoDirections
        */
       static fromIndex(arg0: number): zombie.iso.IsoDirections;
-
-      /** @noSelf */
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): void
+       */
       static generateTables(): void;
-
-      /** @noSelf */
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoDirections
+       */
       static getRandom(): zombie.iso.IsoDirections;
-
-      index(): number;
-
       /**
        * @noSelf
        *
-       * (IsoDirections arg0): IsoDirections
+       * Method Parameters: 
+       *  - (IsoDirections arg0): zombie.iso.IsoDirections
        */
-      static reverse(arg0: zombie.iso.IsoDirections | null): zombie.iso.IsoDirections;
-
-      toAngle(): number;
-
-      toCompassString(): string;
-
+      static reverse(arg0: zombie.iso.IsoDirections): zombie.iso.IsoDirections;
       /**
        * @noSelf
        *
-       * (String arg0): IsoDirections
+       * Method Parameters: 
+       *  - (String arg0): zombie.iso.IsoDirections
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.iso.IsoDirections;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.iso.IsoDirections | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoDirections[]
+       */
       static values(): zombie.iso.IsoDirections[];
-
     }
     /**
      * @customConstructor IsoGridOcclusionData.new
@@ -2195,15 +2377,61 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.iso.IsoGridOcclusionData$OccluderType>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.iso.IsoGridOcclusionData$OccluderType>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (String arg0): OccluderType
+       * Method Parameters: 
+       *  - (String arg0): zombie.iso.IsoGridOcclusionData$OccluderType
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.iso.IsoGridOcclusionData$OccluderType;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.iso.IsoGridOcclusionData$OccluderType | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoGridOcclusionData$OccluderType[]
+       */
       static values(): zombie.iso.IsoGridOcclusionData$OccluderType[];
-
     }
     /** [ENUM] zombie.iso.IsoGridOcclusionData$OcclusionFilter */
     export class IsoGridOcclusionData$OcclusionFilter {
@@ -2214,15 +2442,61 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.iso.IsoGridOcclusionData$OcclusionFilter>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.iso.IsoGridOcclusionData$OcclusionFilter>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (String arg0): OcclusionFilter
+       * Method Parameters: 
+       *  - (String arg0): zombie.iso.IsoGridOcclusionData$OcclusionFilter
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.iso.IsoGridOcclusionData$OcclusionFilter;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.iso.IsoGridOcclusionData$OcclusionFilter | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoGridOcclusionData$OcclusionFilter[]
+       */
       static values(): zombie.iso.IsoGridOcclusionData$OcclusionFilter[];
-
     }
     /**
      * @customConstructor IsoGridSquare.new
@@ -11712,15 +11986,61 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.iso.IsoMetaGrid$ZoneGeometryType>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.iso.IsoMetaGrid$ZoneGeometryType>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (String arg0): ZoneGeometryType
+       * Method Parameters: 
+       *  - (String arg0): zombie.iso.IsoMetaGrid$ZoneGeometryType
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.iso.IsoMetaGrid$ZoneGeometryType;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.iso.IsoMetaGrid$ZoneGeometryType | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoMetaGrid$ZoneGeometryType[]
+       */
       static values(): zombie.iso.IsoMetaGrid$ZoneGeometryType[];
-
     }
     /**
      * @customConstructor IsoMovingObject.new
@@ -15012,15 +15332,61 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.iso.IsoObject$VisionResult>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.iso.IsoObject$VisionResult>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (String arg0): VisionResult
+       * Method Parameters: 
+       *  - (String arg0): zombie.iso.IsoObject$VisionResult
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.iso.IsoObject$VisionResult;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.iso.IsoObject$VisionResult | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoObject$VisionResult[]
+       */
       static values(): zombie.iso.IsoObject$VisionResult[];
-
     }
     /**
      * @customConstructor IsoObjectPicker.new
@@ -18176,15 +18542,61 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.iso.LosUtil$TestResults>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.iso.LosUtil$TestResults>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (String arg0): TestResults
+       * Method Parameters: 
+       *  - (String arg0): zombie.iso.LosUtil$TestResults
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.iso.LosUtil$TestResults;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.iso.LosUtil$TestResults | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.LosUtil$TestResults[]
+       */
       static values(): zombie.iso.LosUtil$TestResults[];
-
     }
     /**
      * @customConstructor LotHeader.new

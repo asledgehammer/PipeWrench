@@ -3956,18 +3956,68 @@ declare module '@asledgehammer/pipewrench' {
       static readonly Server: zombie.vehicles.BaseVehicle$Authorization;
       name(): string;
       ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.vehicles.BaseVehicle$Authorization>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.vehicles.BaseVehicle$Authorization>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
       index(): number;
-
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
       /**
        * @noSelf
        *
-       * (String arg0): Authorization
+       * Method Parameters: 
+       *  - (byte arg0): zombie.vehicles.BaseVehicle$Authorization
+       *  - (String arg0): zombie.vehicles.BaseVehicle$Authorization
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.vehicles.BaseVehicle$Authorization;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: number | string | java.lang.Class<T>, arg1?: string): zombie.vehicles.BaseVehicle$Authorization | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.vehicles.BaseVehicle$Authorization[]
+       */
       static values(): zombie.vehicles.BaseVehicle$Authorization[];
-
     }
     /**
      * @customConstructor HitVars.new
@@ -4010,12 +4060,12 @@ declare module '@asledgehammer/pipewrench' {
       forEach(arg0: java.util._function_.Consumer<org.joml.Matrix4f>): void;
       /**
        * Method Parameters: 
+       *  - (Object arg0): void
        *  - (Object[] arg0): void
        *  - (Iterable arg0): void
-       *  - (Object arg0): void
        *  - (List arg0): void
        */
-      release(arg0: any | java.lang.Iterable<org.joml.Matrix4f> | any | java.util.List<org.joml.Matrix4f>): void;
+      release(arg0: any | any | java.lang.Iterable<org.joml.Matrix4f> | java.util.List<org.joml.Matrix4f>): void;
       /**
        * Method Parameters: 
        *  - (List arg0): void
@@ -4092,12 +4142,12 @@ declare module '@asledgehammer/pipewrench' {
       forEach(arg0: java.util._function_.Consumer<org.joml.Quaternionf>): void;
       /**
        * Method Parameters: 
+       *  - (Object arg0): void
        *  - (Object[] arg0): void
        *  - (Iterable arg0): void
-       *  - (Object arg0): void
        *  - (List arg0): void
        */
-      release(arg0: any | java.lang.Iterable<org.joml.Quaternionf> | any | java.util.List<org.joml.Quaternionf>): void;
+      release(arg0: any | any | java.lang.Iterable<org.joml.Quaternionf> | java.util.List<org.joml.Quaternionf>): void;
       /**
        * Method Parameters: 
        *  - (List arg0): void
@@ -4150,12 +4200,12 @@ declare module '@asledgehammer/pipewrench' {
       forEach(arg0: java.util._function_.Consumer<zombie.iso.Vector2>): void;
       /**
        * Method Parameters: 
+       *  - (Object arg0): void
        *  - (Object[] arg0): void
        *  - (Iterable arg0): void
-       *  - (Object arg0): void
        *  - (List arg0): void
        */
-      release(arg0: any | java.lang.Iterable<zombie.iso.Vector2> | any | java.util.List<zombie.iso.Vector2>): void;
+      release(arg0: any | any | java.lang.Iterable<zombie.iso.Vector2> | java.util.List<zombie.iso.Vector2>): void;
       /**
        * Method Parameters: 
        *  - (List arg0): void
@@ -4186,12 +4236,12 @@ declare module '@asledgehammer/pipewrench' {
       forEach(arg0: java.util._function_.Consumer<org.joml.Vector2f>): void;
       /**
        * Method Parameters: 
+       *  - (Object arg0): void
        *  - (Object[] arg0): void
        *  - (Iterable arg0): void
-       *  - (Object arg0): void
        *  - (List arg0): void
        */
-      release(arg0: any | java.lang.Iterable<org.joml.Vector2f> | any | java.util.List<org.joml.Vector2f>): void;
+      release(arg0: any | any | java.lang.Iterable<org.joml.Vector2f> | java.util.List<org.joml.Vector2f>): void;
       /**
        * Method Parameters: 
        *  - (List arg0): void
@@ -4222,12 +4272,12 @@ declare module '@asledgehammer/pipewrench' {
       forEach(arg0: java.util._function_.Consumer<org.joml.Vector3f>): void;
       /**
        * Method Parameters: 
+       *  - (Object arg0): void
        *  - (Object[] arg0): void
        *  - (Iterable arg0): void
-       *  - (Object arg0): void
        *  - (List arg0): void
        */
-      release(arg0: any | java.lang.Iterable<org.joml.Vector3f> | any | java.util.List<org.joml.Vector3f>): void;
+      release(arg0: any | any | java.lang.Iterable<org.joml.Vector3f> | java.util.List<org.joml.Vector3f>): void;
       /**
        * Method Parameters: 
        *  - (List arg0): void
@@ -4261,15 +4311,61 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.vehicles.BaseVehicle$engineStateTypes>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.vehicles.BaseVehicle$engineStateTypes>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (String arg0): engineStateTypes
+       * Method Parameters: 
+       *  - (String arg0): zombie.vehicles.BaseVehicle$engineStateTypes
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.vehicles.BaseVehicle$engineStateTypes;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.vehicles.BaseVehicle$engineStateTypes | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.vehicles.BaseVehicle$engineStateTypes[]
+       */
       static values(): zombie.vehicles.BaseVehicle$engineStateTypes[];
-
     }
     /**
      * @customConstructor EditVehicleState.new
@@ -4563,15 +4659,61 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.vehicles.PathFindBehavior2$BehaviorResult>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.vehicles.PathFindBehavior2$BehaviorResult>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (String arg0): BehaviorResult
+       * Method Parameters: 
+       *  - (String arg0): zombie.vehicles.PathFindBehavior2$BehaviorResult
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.vehicles.PathFindBehavior2$BehaviorResult;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.vehicles.PathFindBehavior2$BehaviorResult | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.vehicles.PathFindBehavior2$BehaviorResult[]
+       */
       static values(): zombie.vehicles.PathFindBehavior2$BehaviorResult[];
-
     }
     /**
      * @customConstructor NPCData.new
@@ -4965,32 +5107,88 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
-       * @noSelf
-       *
-       * (int arg0): TransmissionNumber
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
        */
-      static fromIndex(arg0: number): zombie.vehicles.TransmissionNumber;
-
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.vehicles.TransmissionNumber>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.vehicles.TransmissionNumber>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
       getIndex(): number;
-
-      /** (int arg0): TransmissionNumber */
+      /**
+       * Method Parameters: 
+       *  - (int arg0): zombie.vehicles.TransmissionNumber
+       */
       getNext(arg0: number): zombie.vehicles.TransmissionNumber;
-
-      /** (int arg0): TransmissionNumber */
+      /**
+       * Method Parameters: 
+       *  - (int arg0): zombie.vehicles.TransmissionNumber
+       */
       getPrev(arg0: number): zombie.vehicles.TransmissionNumber;
-
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
       getString(): string;
-
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
       /**
        * @noSelf
        *
-       * (String arg0): TransmissionNumber
+       * Method Parameters: 
+       *  - (int arg0): zombie.vehicles.TransmissionNumber
        */
-      static valueOf(arg0: string | null): zombie.vehicles.TransmissionNumber;
-
-      /** @noSelf */
+      static fromIndex(arg0: number): zombie.vehicles.TransmissionNumber;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): zombie.vehicles.TransmissionNumber
+       *  - (Class arg0, String arg1): T
+       */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.vehicles.TransmissionNumber | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.vehicles.TransmissionNumber[]
+       */
       static values(): zombie.vehicles.TransmissionNumber[];
-
     }
     /**
      * @customConstructor UI3DScene.new
@@ -5766,12 +5964,12 @@ declare module '@asledgehammer/pipewrench' {
       forEach(arg0: java.util._function_.Consumer<zombie.vehicles.UI3DScene$Plane>): void;
       /**
        * Method Parameters: 
+       *  - (Object arg0): void
        *  - (Object[] arg0): void
        *  - (Iterable arg0): void
-       *  - (Object arg0): void
        *  - (List arg0): void
        */
-      release(arg0: any | java.lang.Iterable<zombie.vehicles.UI3DScene$Plane> | any | java.util.List<zombie.vehicles.UI3DScene$Plane>): void;
+      release(arg0: any | any | java.lang.Iterable<zombie.vehicles.UI3DScene$Plane> | java.util.List<zombie.vehicles.UI3DScene$Plane>): void;
       /**
        * Method Parameters: 
        *  - (List arg0): void
@@ -5818,12 +6016,12 @@ declare module '@asledgehammer/pipewrench' {
       forEach(arg0: java.util._function_.Consumer<zombie.vehicles.UI3DScene$Ray>): void;
       /**
        * Method Parameters: 
+       *  - (Object arg0): void
        *  - (Object[] arg0): void
        *  - (Iterable arg0): void
-       *  - (Object arg0): void
        *  - (List arg0): void
        */
-      release(arg0: any | java.lang.Iterable<zombie.vehicles.UI3DScene$Ray> | any | java.util.List<zombie.vehicles.UI3DScene$Ray>): void;
+      release(arg0: any | any | java.lang.Iterable<zombie.vehicles.UI3DScene$Ray> | java.util.List<zombie.vehicles.UI3DScene$Ray>): void;
       /**
        * Method Parameters: 
        *  - (List arg0): void
@@ -5903,10 +6101,10 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
-       *  - (String arg0, String[] arg1): void
        *  - (String arg0, String arg1): void
+       *  - (String arg0, String[] arg1): void
        */
-      Load(arg0: string, arg1: string[] | string): void;
+      Load(arg0: string, arg1: string | string[]): void;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.scripting.objects.ScriptModule

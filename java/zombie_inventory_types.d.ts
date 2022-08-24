@@ -6648,31 +6648,80 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.inventory.types.Clothing$ClothingPatchFabricType>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.inventory.types.Clothing$ClothingPatchFabricType>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getType(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (int arg0): ClothingPatchFabricType
+       * Method Parameters: 
+       *  - (int arg0): zombie.inventory.types.Clothing$ClothingPatchFabricType
        */
       static fromIndex(arg0: number): zombie.inventory.types.Clothing$ClothingPatchFabricType;
-
       /**
        * @noSelf
        *
-       * (String arg0): ClothingPatchFabricType
+       * Method Parameters: 
+       *  - (String arg0): zombie.inventory.types.Clothing$ClothingPatchFabricType
        */
-      static fromType(arg0: string | null): zombie.inventory.types.Clothing$ClothingPatchFabricType;
-
-      getType(): string;
-
+      static fromType(arg0: string): zombie.inventory.types.Clothing$ClothingPatchFabricType;
       /**
        * @noSelf
        *
-       * (String arg0): ClothingPatchFabricType
+       * Method Parameters: 
+       *  - (String arg0): zombie.inventory.types.Clothing$ClothingPatchFabricType
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.inventory.types.Clothing$ClothingPatchFabricType;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.inventory.types.Clothing$ClothingPatchFabricType | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.inventory.types.Clothing$ClothingPatchFabricType[]
+       */
       static values(): zombie.inventory.types.Clothing$ClothingPatchFabricType[];
-
     }
     /**
      * @customConstructor ComboItem.new
@@ -32123,25 +32172,75 @@ declare module '@asledgehammer/pipewrench' {
 
       name(): string;
       ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.inventory.types.WeaponType>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.inventory.types.WeaponType>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
       getType(): string;
-
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
       /**
        * @noSelf
        *
-       * (HandWeapon arg0): WeaponType
+       * Method Parameters: 
+       *  - (IsoGameCharacter arg0): zombie.inventory.types.WeaponType
+       *  - (HandWeapon arg0): zombie.inventory.types.WeaponType
        */
-      static getWeaponType(arg0: zombie.inventory.types.HandWeapon | null): zombie.inventory.types.WeaponType;
-
+      static getWeaponType(arg0: zombie.characters.IsoGameCharacter | zombie.inventory.types.HandWeapon): zombie.inventory.types.WeaponType;
       /**
        * @noSelf
        *
-       * (String arg0): WeaponType
+       * Method Parameters: 
+       *  - (String arg0): zombie.inventory.types.WeaponType
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.inventory.types.WeaponType;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.inventory.types.WeaponType | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.inventory.types.WeaponType[]
+       */
       static values(): zombie.inventory.types.WeaponType[];
-
     }
   }
 }

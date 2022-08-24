@@ -16,20 +16,73 @@ declare module '@asledgehammer/pipewrench' {
       static readonly whisper: zombie.network.chat.ChatType;
       name(): string;
       ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.network.chat.ChatType>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.network.chat.ChatType>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
       getTitleID(): string;
-
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
       getValue(): number;
-
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
       /**
        * @noSelf
        *
-       * (String arg0): ChatType
+       * Method Parameters: 
+       *  - (Integer arg0): zombie.network.chat.ChatType
+       *  - (String arg0): zombie.network.chat.ChatType
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.network.chat.ChatType;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: number | string | java.lang.Class<T>, arg1?: string): zombie.network.chat.ChatType | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.network.chat.ChatType[]
+       */
       static values(): zombie.network.chat.ChatType[];
-
     }
   }
 }

@@ -14,10 +14,10 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
-       *  - (String arg0, String[] arg1): void
        *  - (String arg0, String arg1): void
+       *  - (String arg0, String[] arg1): void
        */
-      Load(arg0: string, arg1: string[] | string): void;
+      Load(arg0: string, arg1: string | string[]): void;
       /**
        * Method Parameters: 
        *  - (Empty): void

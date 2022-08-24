@@ -191,41 +191,113 @@ declare module '@asledgehammer/pipewrench' {
       static readonly Waist: zombie.core.skinnedmodel.model.CharacterMask$Part;
       name(): string;
       ordinal(): number;
-      /** @noSelf */
-      static count(): number;
-
+      /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.core.skinnedmodel.model.CharacterMask$Part>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.characterTextures.BloodBodyPartType[]
+       */
+      getBloodBodyPartTypes(): zombie.characterTextures.BloodBodyPartType[];
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.core.skinnedmodel.model.CharacterMask$Part>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.model.CharacterMask$Part
+       */
+      getParent(): zombie.core.skinnedmodel.model.CharacterMask$Part;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getValue(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      hasSubdivisions(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isSubdivision(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.model.CharacterMask$Part[]
+       */
+      subDivisions(): zombie.core.skinnedmodel.model.CharacterMask$Part[];
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
       /**
        * @noSelf
        *
-       * (int arg0): Part
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      static count(): number;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (int arg0): zombie.core.skinnedmodel.model.CharacterMask$Part
        */
       static fromInt(arg0: number): zombie.core.skinnedmodel.model.CharacterMask$Part;
-
-      getBloodBodyPartTypes(): zombie.characterTextures.BloodBodyPartType[];
-
-      getParent(): zombie.core.skinnedmodel.model.CharacterMask$Part;
-
-      getValue(): number;
-
-      hasSubdivisions(): boolean;
-
-      isSubdivision(): boolean;
-
-      /** @noSelf */
-      static leaves(): zombie.core.skinnedmodel.model.CharacterMask$Part[];
-
-      subDivisions(): zombie.core.skinnedmodel.model.CharacterMask$Part[];
-
       /**
        * @noSelf
        *
-       * (String arg0): Part
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.model.CharacterMask$Part[]
        */
-      static valueOf(arg0: string | null): zombie.core.skinnedmodel.model.CharacterMask$Part;
-
-      /** @noSelf */
+      static leaves(): zombie.core.skinnedmodel.model.CharacterMask$Part[];
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): zombie.core.skinnedmodel.model.CharacterMask$Part
+       *  - (Class arg0, String arg1): T
+       */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.core.skinnedmodel.model.CharacterMask$Part | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.model.CharacterMask$Part[]
+       */
       static values(): zombie.core.skinnedmodel.model.CharacterMask$Part[];
-
     }
     /**
      * @customConstructor Model.new
@@ -565,15 +637,61 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.core.skinnedmodel.model.ModelInstance$FrameLightBlendStatus>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.core.skinnedmodel.model.ModelInstance$FrameLightBlendStatus>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (String arg0): FrameLightBlendStatus
+       * Method Parameters: 
+       *  - (String arg0): zombie.core.skinnedmodel.model.ModelInstance$FrameLightBlendStatus
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.core.skinnedmodel.model.ModelInstance$FrameLightBlendStatus;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.core.skinnedmodel.model.ModelInstance$FrameLightBlendStatus | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.model.ModelInstance$FrameLightBlendStatus[]
+       */
       static values(): zombie.core.skinnedmodel.model.ModelInstance$FrameLightBlendStatus[];
-
     }
     /**
      * @customConstructor FrameLightInfo.new

@@ -1693,122 +1693,184 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.characters.BodyDamage.BodyPartType>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getBandageModel(): string;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): string
+       */
+      getBiteWoundModel(arg0: boolean): string;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): string
+       */
+      getCutWoundModel(arg0: boolean): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.characters.BodyDamage.BodyPartType>;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): string
+       */
+      getScratchWoundModel(arg0: boolean): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      index(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (int arg0): BodyPartType
+       * Method Parameters: 
+       *  - (int arg0): zombie.characters.BodyDamage.BodyPartType
        */
       static FromIndex(arg0: number): zombie.characters.BodyDamage.BodyPartType;
-
       /**
        * @noSelf
        *
-       * (String arg0): BodyPartType
+       * Method Parameters: 
+       *  - (String arg0): zombie.characters.BodyDamage.BodyPartType
        */
-      static FromString(arg0: string | null): zombie.characters.BodyDamage.BodyPartType;
-
+      static FromString(arg0: string): zombie.characters.BodyDamage.BodyPartType;
       /**
        * @noSelf
        *
-       * (BodyPartType arg0): float
+       * Method Parameters: 
+       *  - (BodyPartType arg0): number
        */
-      static GetDistToCore(arg0: zombie.characters.BodyDamage.BodyPartType | null): number;
-
+      static GetDistToCore(arg0: zombie.characters.BodyDamage.BodyPartType): number;
       /**
        * @noSelf
        *
-       * (BodyPartType arg0): float
+       * Method Parameters: 
+       *  - (BodyPartType arg0): number
        */
-      static GetMaxActionPenalty(arg0: zombie.characters.BodyDamage.BodyPartType | null): number;
-
+      static GetMaxActionPenalty(arg0: zombie.characters.BodyDamage.BodyPartType): number;
       /**
        * @noSelf
        *
-       * (BodyPartType arg0): float
+       * Method Parameters: 
+       *  - (BodyPartType arg0): number
        */
-      static GetMaxMovementPenalty(arg0: zombie.characters.BodyDamage.BodyPartType | null): number;
-
+      static GetMaxMovementPenalty(arg0: zombie.characters.BodyDamage.BodyPartType): number;
       /**
        * @noSelf
        *
-       * (BodyPartType arg0): float
+       * Method Parameters: 
+       *  - (BodyPartType arg0): number
        */
-      static GetSkinSurface(arg0: zombie.characters.BodyDamage.BodyPartType | null): number;
-
+      static GetSkinSurface(arg0: zombie.characters.BodyDamage.BodyPartType): number;
       /**
        * @noSelf
        *
-       * (BodyPartType arg0): float
+       * Method Parameters: 
+       *  - (BodyPartType arg0): number
        */
-      static GetUmbrellaMod(arg0: zombie.characters.BodyDamage.BodyPartType | null): number;
-
+      static GetUmbrellaMod(arg0: zombie.characters.BodyDamage.BodyPartType): number;
       /**
        * @noSelf
        *
-       * (BodyPartType arg0): int
+       * Method Parameters: 
+       *  - (BodyPartType arg0): number
        */
-      static ToIndex(arg0: zombie.characters.BodyDamage.BodyPartType | null): number;
-
+      static ToIndex(arg0: zombie.characters.BodyDamage.BodyPartType): number;
       /**
        * @noSelf
        *
-       * (BodyPartType arg0): String
+       * Method Parameters: 
+       *  - (BodyPartType arg0): string
        */
-      static ToString(arg0: zombie.characters.BodyDamage.BodyPartType | null): string;
-
-      getBandageModel(): string;
-
-      /** (boolean arg0): String */
-      getBiteWoundModel(arg0: boolean): string;
-
+      static ToString(arg0: zombie.characters.BodyDamage.BodyPartType): string;
       /**
        * @noSelf
        *
-       * (int arg0): float
+       * Method Parameters: 
+       *  - (int arg0): number
        */
       static getBleedingTimeModifyer(arg0: number): number;
-
-      /** (boolean arg0): String */
-      getCutWoundModel(arg0: boolean): string;
-
       /**
        * @noSelf
        *
-       * (int arg0): float
+       * Method Parameters: 
+       *  - (int arg0): number
        */
       static getDamageModifyer(arg0: number): number;
-
       /**
        * @noSelf
        *
-       * (BodyPartType arg0): String
+       * Method Parameters: 
+       *  - (BodyPartType arg0): string
        */
-      static getDisplayName(arg0: zombie.characters.BodyDamage.BodyPartType | null): string;
-
+      static getDisplayName(arg0: zombie.characters.BodyDamage.BodyPartType): string;
       /**
        * @noSelf
        *
-       * (int arg0): float
+       * Method Parameters: 
+       *  - (int arg0): number
        */
       static getPainModifyer(arg0: number): number;
-
-      /** @noSelf */
-      static getRandom(): zombie.characters.BodyDamage.BodyPartType;
-
-      /** (boolean arg0): String */
-      getScratchWoundModel(arg0: boolean): string;
-
-      index(): number;
-
       /**
        * @noSelf
        *
-       * (String arg0): BodyPartType
+       * Method Parameters: 
+       *  - (Empty): zombie.characters.BodyDamage.BodyPartType
        */
-      static valueOf(arg0: string | null): zombie.characters.BodyDamage.BodyPartType;
-
-      /** @noSelf */
+      static getRandom(): zombie.characters.BodyDamage.BodyPartType;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): zombie.characters.BodyDamage.BodyPartType
+       *  - (Class arg0, String arg1): T
+       */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.characters.BodyDamage.BodyPartType | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.characters.BodyDamage.BodyPartType[]
+       */
       static values(): zombie.characters.BodyDamage.BodyPartType[];
-
     }
     /**
      * @customConstructor Fitness.new
@@ -1969,44 +2031,102 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.characters.BodyDamage.Metabolics>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getBtuHr(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.characters.BodyDamage.Metabolics>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getMet(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getW(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getWm2(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (float arg0): float
+       * Method Parameters: 
+       *  - (float arg0): number
        */
       static MetToBtuHr(arg0: number): number;
-
       /**
        * @noSelf
        *
-       * (float arg0): float
+       * Method Parameters: 
+       *  - (float arg0): number
        */
       static MetToW(arg0: number): number;
-
       /**
        * @noSelf
        *
-       * (float arg0): float
+       * Method Parameters: 
+       *  - (float arg0): number
        */
       static MetToWm2(arg0: number): number;
-
-      getBtuHr(): number;
-
-      getMet(): number;
-
-      getW(): number;
-
-      getWm2(): number;
-
       /**
        * @noSelf
        *
-       * (String arg0): Metabolics
+       * Method Parameters: 
+       *  - (String arg0): zombie.characters.BodyDamage.Metabolics
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.characters.BodyDamage.Metabolics;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.characters.BodyDamage.Metabolics | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.characters.BodyDamage.Metabolics[]
+       */
       static values(): zombie.characters.BodyDamage.Metabolics[];
-
     }
     /**
      * @customConstructor Nutrition.new

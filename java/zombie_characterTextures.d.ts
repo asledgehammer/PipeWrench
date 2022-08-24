@@ -26,42 +26,104 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.characterTextures.BloodBodyPartType>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.model.CharacterMask$Part[]
+       */
+      getCharacterMaskParts(): zombie.core.skinnedmodel.model.CharacterMask$Part[];
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.characterTextures.BloodBodyPartType>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getDisplayName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      index(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (int arg0): BloodBodyPartType
+       * Method Parameters: 
+       *  - (int arg0): zombie.characterTextures.BloodBodyPartType
        */
       static FromIndex(arg0: number): zombie.characterTextures.BloodBodyPartType;
-
       /**
        * @noSelf
        *
-       * (String arg0): BloodBodyPartType
+       * Method Parameters: 
+       *  - (String arg0): zombie.characterTextures.BloodBodyPartType
        */
-      static FromString(arg0: string | null): zombie.characterTextures.BloodBodyPartType;
-
+      static FromString(arg0: string): zombie.characterTextures.BloodBodyPartType;
       /**
        * @noSelf
        *
-       * (BloodBodyPartType arg0): int
+       * Method Parameters: 
+       *  - (BloodBodyPartType arg0): number
        */
-      static ToIndex(arg0: zombie.characterTextures.BloodBodyPartType | null): number;
-
-      getCharacterMaskParts(): zombie.core.skinnedmodel.model.CharacterMask$Part[];
-
-      getDisplayName(): string;
-
-      index(): number;
-
+      static ToIndex(arg0: zombie.characterTextures.BloodBodyPartType): number;
       /**
        * @noSelf
        *
-       * (String arg0): BloodBodyPartType
+       * Method Parameters: 
+       *  - (BloodBodyPartType arg0): string
        */
-      static valueOf(arg0: string | null): zombie.characterTextures.BloodBodyPartType;
-
-      /** @noSelf */
+      static getDisplayName(arg0: zombie.characterTextures.BloodBodyPartType): string;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): zombie.characterTextures.BloodBodyPartType
+       *  - (Class arg0, String arg1): T
+       */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.characterTextures.BloodBodyPartType | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.characterTextures.BloodBodyPartType[]
+       */
       static values(): zombie.characterTextures.BloodBodyPartType[];
-
     }
     /** [ENUM] zombie.characterTextures.BloodClothingType */
     export class BloodClothingType {
@@ -92,78 +154,129 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
-       * @noSelf
-       *
-       * (BloodBodyPartType arg0, HumanVisual arg1, ArrayList arg2): void
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
        */
-      static addBasicPatch(arg0: zombie.characterTextures.BloodBodyPartType | null, arg1: zombie.core.skinnedmodel.visual.HumanVisual | null, arg2: java.util.ArrayList<zombie.core.skinnedmodel.visual.ItemVisual> | null): void;
-
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.characterTextures.BloodClothingType>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.characterTextures.BloodClothingType>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
       /**
        * @noSelf
        *
-       * (int arg0, HumanVisual arg1, ArrayList arg2, boolean arg3): void
+       * Method Parameters: 
+       *  - (BloodBodyPartType arg0, HumanVisual arg1, ArrayList arg2): void
        */
-      static addBlood(arg0: number, arg1: zombie.core.skinnedmodel.visual.HumanVisual | null, arg2: java.util.ArrayList<zombie.core.skinnedmodel.visual.ItemVisual> | null, arg3: boolean): void;
-
+      static addBasicPatch(arg0: zombie.characterTextures.BloodBodyPartType, arg1: zombie.core.skinnedmodel.visual.HumanVisual, arg2: java.util.ArrayList<zombie.core.skinnedmodel.visual.ItemVisual>): void;
       /**
        * @noSelf
        *
-       * (BloodBodyPartType arg0, float arg1, HumanVisual arg2, ArrayList arg3, boolean arg4): void
+       * Method Parameters: 
+       *  - (int arg0, HumanVisual arg1, ArrayList arg2, boolean arg3): void
+       *  - (BloodBodyPartType arg0, HumanVisual arg1, ArrayList arg2, boolean arg3): void
+       *  - (BloodBodyPartType arg0, float arg1, HumanVisual arg2, ArrayList arg3, boolean arg4): void
        */
-      static addDirt(arg0: zombie.characterTextures.BloodBodyPartType | null, arg1: number, arg2: zombie.core.skinnedmodel.visual.HumanVisual | null, arg3: java.util.ArrayList<zombie.core.skinnedmodel.visual.ItemVisual> | null, arg4: boolean): void;
-
+      static addBlood(arg0: number | zombie.characterTextures.BloodBodyPartType, arg1: zombie.core.skinnedmodel.visual.HumanVisual | number, arg2: java.util.ArrayList<zombie.core.skinnedmodel.visual.ItemVisual> | zombie.core.skinnedmodel.visual.HumanVisual, arg3: boolean | java.util.ArrayList<zombie.core.skinnedmodel.visual.ItemVisual>, arg4?: boolean): void;
       /**
        * @noSelf
        *
-       * (BloodBodyPartType arg0, HumanVisual arg1, ArrayList arg2): void
+       * Method Parameters: 
+       *  - (BloodBodyPartType arg0, HumanVisual arg1, ArrayList arg2, boolean arg3): void
+       *  - (BloodBodyPartType arg0, float arg1, HumanVisual arg2, ArrayList arg3, boolean arg4): void
        */
-      static addHole(arg0: zombie.characterTextures.BloodBodyPartType | null, arg1: zombie.core.skinnedmodel.visual.HumanVisual | null, arg2: java.util.ArrayList<zombie.core.skinnedmodel.visual.ItemVisual> | null): void;
-
+      static addDirt(arg0: zombie.characterTextures.BloodBodyPartType, arg1: zombie.core.skinnedmodel.visual.HumanVisual | number, arg2: java.util.ArrayList<zombie.core.skinnedmodel.visual.ItemVisual> | zombie.core.skinnedmodel.visual.HumanVisual, arg3: boolean | java.util.ArrayList<zombie.core.skinnedmodel.visual.ItemVisual>, arg4?: boolean): void;
       /**
        * @noSelf
        *
-       * (Clothing arg0): void
+       * Method Parameters: 
+       *  - (BloodBodyPartType arg0, HumanVisual arg1, ArrayList arg2): void
+       *  - (BloodBodyPartType arg0, HumanVisual arg1, ArrayList arg2, boolean arg3): boolean
        */
-      static calcTotalBloodLevel(arg0: zombie.inventory.types.Clothing | null): void;
-
+      static addHole(arg0: zombie.characterTextures.BloodBodyPartType, arg1: zombie.core.skinnedmodel.visual.HumanVisual, arg2: java.util.ArrayList<zombie.core.skinnedmodel.visual.ItemVisual>, arg3?: boolean): void | boolean;
       /**
        * @noSelf
        *
-       * (Clothing arg0): void
+       * Method Parameters: 
+       *  - (Clothing arg0): void
        */
-      static calcTotalDirtLevel(arg0: zombie.inventory.types.Clothing | null): void;
-
+      static calcTotalBloodLevel(arg0: zombie.inventory.types.Clothing): void;
       /**
        * @noSelf
        *
-       * (String arg0): BloodClothingType
+       * Method Parameters: 
+       *  - (Clothing arg0): void
        */
-      static fromString(arg0: string | null): zombie.characterTextures.BloodClothingType;
-
+      static calcTotalDirtLevel(arg0: zombie.inventory.types.Clothing): void;
       /**
        * @noSelf
        *
-       * (ArrayList arg0): int
+       * Method Parameters: 
+       *  - (String arg0): zombie.characterTextures.BloodClothingType
        */
-      static getCoveredPartCount(arg0: java.util.ArrayList<zombie.characterTextures.BloodClothingType> | null): number;
-
+      static fromString(arg0: string): zombie.characterTextures.BloodClothingType;
       /**
        * @noSelf
        *
-       * (ArrayList arg0): ArrayList
+       * Method Parameters: 
+       *  - (ArrayList arg0): number
        */
-      static getCoveredParts(arg0: java.util.ArrayList<zombie.characterTextures.BloodClothingType> | null): java.util.ArrayList<zombie.characterTextures.BloodBodyPartType>;
-
+      static getCoveredPartCount(arg0: java.util.ArrayList<zombie.characterTextures.BloodClothingType>): number;
       /**
        * @noSelf
        *
-       * (String arg0): BloodClothingType
+       * Method Parameters: 
+       *  - (ArrayList arg0): java.util.ArrayList<zombie.characterTextures.BloodBodyPartType>
+       *  - (ArrayList arg0, ArrayList arg1): java.util.ArrayList<zombie.characterTextures.BloodBodyPartType>
        */
-      static valueOf(arg0: string | null): zombie.characterTextures.BloodClothingType;
-
-      /** @noSelf */
+      static getCoveredParts(arg0: java.util.ArrayList<zombie.characterTextures.BloodClothingType>, arg1?: java.util.ArrayList<zombie.characterTextures.BloodBodyPartType>): java.util.ArrayList<zombie.characterTextures.BloodBodyPartType>;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): zombie.characterTextures.BloodClothingType
+       *  - (Class arg0, String arg1): T
+       */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.characterTextures.BloodClothingType | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.characterTextures.BloodClothingType[]
+       */
       static values(): zombie.characterTextures.BloodClothingType[];
-
     }
   }
 }

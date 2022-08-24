@@ -451,8 +451,8 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty Constructor)
        *  - (String arg0)
        *  - (Texture arg0)
-       *  - (String arg0, int[] arg1)
        *  - (String arg0, boolean arg1)
+       *  - (String arg0, int[] arg1)
        *  - (String arg0, String arg1)
        *  - (TextureID arg0, String arg1)
        *  - (int arg0, int arg1, int arg2)
@@ -463,7 +463,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, int arg1, int arg2, int arg3)
        *  - (String arg0, BufferedInputStream arg1, boolean arg2, PZFileformat arg3)
        */
-      constructor(arg0?: string | zombie.core.textures.Texture | zombie.core.textures.TextureID | number | zombie.asset.AssetPath, arg1?: number[] | boolean | string | number | java.io.BufferedInputStream | zombie.asset.AssetManager, arg2?: number | boolean | zombie.core.textures.Texture$TextureAssetParams | string, arg3?: number | zombie.core.textures.Texture$PZFileformat);
+      constructor(arg0?: string | zombie.core.textures.Texture | zombie.core.textures.TextureID | number | zombie.asset.AssetPath, arg1?: boolean | number[] | string | number | java.io.BufferedInputStream | zombie.asset.AssetManager, arg2?: number | boolean | zombie.core.textures.Texture$TextureAssetParams | string, arg3?: number | zombie.core.textures.Texture$PZFileformat);
       /**
        * Method Parameters: 
        *  - (Asset arg0): void
@@ -983,15 +983,61 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.core.textures.Texture$PZFileformat>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.core.textures.Texture$PZFileformat>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (String arg0): PZFileformat
+       * Method Parameters: 
+       *  - (String arg0): zombie.core.textures.Texture$PZFileformat
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.core.textures.Texture$PZFileformat;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.core.textures.Texture$PZFileformat | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.core.textures.Texture$PZFileformat[]
+       */
       static values(): zombie.core.textures.Texture$PZFileformat[];
-
     }
     /**
      * @customConstructor TextureAssetParams.new
@@ -1373,15 +1419,61 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.core.textures.TextureDraw$Type>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.core.textures.TextureDraw$Type>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (String arg0): Type
+       * Method Parameters: 
+       *  - (String arg0): zombie.core.textures.TextureDraw$Type
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.core.textures.TextureDraw$Type;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.core.textures.TextureDraw$Type | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.core.textures.TextureDraw$Type[]
+       */
       static values(): zombie.core.textures.TextureDraw$Type[];
-
     }
     /**
      * @customConstructor TextureFBO.new

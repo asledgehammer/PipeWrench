@@ -302,14 +302,14 @@ declare module '@asledgehammer/pipewrench' {
       constructor(arg0: java.io.PrintStream, arg1: java.io.PrintStream, arg2: java.io.PrintStream, arg3: zombie.debug.IDebugLogFormatter);
       /**
        * Method Parameters: 
-       *  - (char arg0): java.lang.Appendable
        *  - (char arg0): java.io.PrintStream
-       *  - (CharSequence arg0): java.lang.Appendable
+       *  - (char arg0): java.lang.Appendable
        *  - (CharSequence arg0): java.io.PrintStream
-       *  - (CharSequence arg0, int arg1, int arg2): java.lang.Appendable
+       *  - (CharSequence arg0): java.lang.Appendable
        *  - (CharSequence arg0, int arg1, int arg2): java.io.PrintStream
+       *  - (CharSequence arg0, int arg1, int arg2): java.lang.Appendable
        */
-      append(arg0: string | java.lang.CharSequence, arg1?: number, arg2?: number): java.lang.Appendable | java.io.PrintStream;
+      append(arg0: string | java.lang.CharSequence, arg1?: number, arg2?: number): java.io.PrintStream | java.lang.Appendable;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -361,9 +361,9 @@ declare module '@asledgehammer/pipewrench' {
       noise(arg0: string, arg1?: any, arg2?: any, arg3?: any, arg4?: any, arg5?: any, arg6?: any): void;
       /**
        * Method Parameters: 
-       *  - (char[] arg0): void
        *  - (boolean arg0): void
        *  - (char arg0): void
+       *  - (char[] arg0): void
        *  - (double arg0): void
        *  - (float arg0): void
        *  - (int arg0): void
@@ -399,9 +399,9 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Empty): void
-       *  - (char[] arg0): void
        *  - (boolean arg0): void
        *  - (char arg0): void
+       *  - (char[] arg0): void
        *  - (double arg0): void
        *  - (float arg0): void
        *  - (int arg0): void
@@ -683,22 +683,68 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
-       * @noSelf
-       *
-       * (DebugType arg0): boolean
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
        */
-      static Do(arg0: zombie.debug.DebugType | null): boolean;
-
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.debug.DebugType>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.debug.DebugType>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
       /**
        * @noSelf
        *
-       * (String arg0): DebugType
+       * Method Parameters: 
+       *  - (DebugType arg0): boolean
        */
-      static valueOf(arg0: string | null): zombie.debug.DebugType;
-
-      /** @noSelf */
+      static Do(arg0: zombie.debug.DebugType): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): zombie.debug.DebugType
+       *  - (Class arg0, String arg1): T
+       */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.debug.DebugType | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.debug.DebugType[]
+       */
       static values(): zombie.debug.DebugType[];
-
     }
     /**
      * @customConstructor IDebugLogFormatter.new
@@ -743,15 +789,61 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.debug.LogSeverity>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.debug.LogSeverity>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (String arg0): LogSeverity
+       * Method Parameters: 
+       *  - (String arg0): zombie.debug.LogSeverity
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.debug.LogSeverity;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.debug.LogSeverity | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.debug.LogSeverity[]
+       */
       static values(): zombie.debug.LogSeverity[];
-
     }
   }
 }

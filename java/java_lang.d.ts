@@ -5,6 +5,7 @@ declare module '@asledgehammer/pipewrench' {
     export type CharSequence = any;
     export type Class<T> = any;
     export type Enum<E> = any;
+    export type Enum$EnumDesc<E> = any;
     export type Exception = any;
     export type Iterable<T> = any;
     /**
