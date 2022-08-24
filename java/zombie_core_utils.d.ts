@@ -1,28 +1,3 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
 /** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.core.utils {
@@ -38,58 +13,58 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: number, arg1: number);
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ByteBuffer arg0): void
        */
       LoadFromByteBuffer(arg0: java.nio.ByteBuffer): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ByteBuffer arg0): void
        */
       PutToByteBuffer(arg0: java.nio.ByteBuffer): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       clear(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): any
        *  - (Empty): zombie.core.utils.BooleanGrid
        */
       clone(): any;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (BooleanGrid arg0): void
        */
       copy(arg0: zombie.core.utils.BooleanGrid): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       fill(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getHeight(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1): boolean
        */
       getValue(arg0: number, arg1: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getWidth(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, int arg1, boolean arg2): void
        */
       setValue(arg0: number, arg1: number, arg2: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       toString(): string;
@@ -107,21 +82,21 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: number, arg1?: boolean);
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       Check(): boolean;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       static getElapsedMillis(): number;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       static update(): void;
@@ -138,22 +113,22 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: number);
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       capacity(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       dispose(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): java.nio.ByteBuffer
        */
       getBuffer(): java.nio.ByteBuffer;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDisposed(): boolean;

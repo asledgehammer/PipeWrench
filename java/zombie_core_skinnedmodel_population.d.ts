@@ -1,28 +1,3 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
 /** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.core.skinnedmodel.population {
@@ -38,22 +13,22 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getLevel(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): java.util.ArrayList<string>
        */
       getTrimChoices(): java.util.ArrayList<string>;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isValid(): boolean;
@@ -73,50 +48,50 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): zombie.core.skinnedmodel.population.BeardStyle
        */
       FindStyle(arg0: string): zombie.core.skinnedmodel.population.BeardStyle;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): java.util.ArrayList<zombie.core.skinnedmodel.population.BeardStyle>
        */
       getAllStyles(): java.util.ArrayList<zombie.core.skinnedmodel.population.BeardStyle>;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.core.skinnedmodel.population.BeardStyles
        */
       getInstance(): zombie.core.skinnedmodel.population.BeardStyles;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): string
        */
       getRandomStyle(arg0: string): string;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): zombie.core.skinnedmodel.population.BeardStyles
        */
       static Parse(arg0: string): zombie.core.skinnedmodel.population.BeardStyles;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       static Reset(): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       static init(): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): zombie.core.skinnedmodel.population.BeardStyles
        */
       static parse(arg0: string): zombie.core.skinnedmodel.population.BeardStyles;
@@ -138,144 +113,144 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: zombie.asset.AssetPath, arg1: zombie.asset.AssetManager);
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       GetATexture(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Asset arg0): void
        */
       addDependency(arg0: zombie.asset.Asset): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getAllowRandomHue(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getAllowRandomTint(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.asset.AssetManager
        */
       getAssetManager(): zombie.asset.AssetManager;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): java.util.ArrayList<string>
        */
       getBaseTextures(): java.util.ArrayList<string>;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (CharacterMask arg0): void
        */
       getCombinedMask(arg0: zombie.core.skinnedmodel.model.CharacterMask): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getDecalGroup(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getFemaleModel(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getMaleModel(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): string
        */
       getModel(arg0: boolean): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.asset.Asset$ObserverCallback
        */
       getObserverCb(): zombie.asset.Asset$ObserverCallback;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.asset.AssetPath
        */
       getPath(): zombie.asset.AssetPath;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getRefCount(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.asset.Asset$State
        */
       getState(): zombie.asset.Asset$State;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): java.util.ArrayList<string>
        */
       getTextureChoices(): java.util.ArrayList<string>;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.asset.AssetType
        */
       getType(): zombie.asset.AssetType;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       hasModel(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isEmpty(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isFailure(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isHat(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isMask(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isReady(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (State arg0): void
        */
       onCreated(arg0: zombie.asset.Asset$State): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Asset arg0): void
        */
       removeDependency(arg0: zombie.asset.Asset): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (AssetParams arg0): void
        */
       setAssetParams(arg0: zombie.asset.AssetManager$AssetParams): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       toString(): string;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ClothingItemReference arg0, CharacterMask arg1): void
        *  - (ClothingItem arg0, CharacterMask arg1): void
        */
@@ -293,23 +268,23 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.core.skinnedmodel.population.ClothingItemReference
        *  - (Empty): any
        */
       clone(): any;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.core.skinnedmodel.population.ClothingItem
        */
       getClothingItem(): zombie.core.skinnedmodel.population.ClothingItem;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       randomize(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): void
        */
       setModID(arg0: string): void;
@@ -326,7 +301,7 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       reset(): void;
@@ -343,42 +318,42 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): string
        */
       getAlternate(arg0: string): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getLevel(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): java.util.ArrayList<string>
        */
       getTrimChoices(): java.util.ArrayList<string>;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isAttachedHair(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isGrowReference(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isNoChoose(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isValid(): boolean;
@@ -410,65 +385,65 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): zombie.core.skinnedmodel.population.HairStyle
        */
       FindFemaleStyle(arg0: string): zombie.core.skinnedmodel.population.HairStyle;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): zombie.core.skinnedmodel.population.HairStyle
        */
       FindMaleStyle(arg0: string): zombie.core.skinnedmodel.population.HairStyle;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): java.util.ArrayList<zombie.core.skinnedmodel.population.HairStyle>
        */
       getAllFemaleStyles(): java.util.ArrayList<zombie.core.skinnedmodel.population.HairStyle>;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): java.util.ArrayList<zombie.core.skinnedmodel.population.HairStyle>
        */
       getAllMaleStyles(): java.util.ArrayList<zombie.core.skinnedmodel.population.HairStyle>;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (HairStyle arg0, String arg1): zombie.core.skinnedmodel.population.HairStyle
        */
       getAlternateForHat(arg0: zombie.core.skinnedmodel.population.HairStyle, arg1: string): zombie.core.skinnedmodel.population.HairStyle;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): string
        */
       getRandomFemaleStyle(arg0: string): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): string
        */
       getRandomMaleStyle(arg0: string): string;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): zombie.core.skinnedmodel.population.HairStyles
        */
       static Parse(arg0: string): zombie.core.skinnedmodel.population.HairStyles;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       static Reset(): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       static init(): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): zombie.core.skinnedmodel.population.HairStyles
        */
       static parse(arg0: string): zombie.core.skinnedmodel.population.HairStyles;
@@ -485,58 +460,58 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ClothingItemReference arg0): void
        */
       AddItem(arg0: zombie.core.skinnedmodel.population.ClothingItemReference): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.core.skinnedmodel.model.CharacterMask
        */
       GetMask(): zombie.core.skinnedmodel.model.CharacterMask;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       Randomize(): void;
       /**
-       * Method Parameters:
-       *  - (Empty): any
+       * Method Parameters: 
        *  - (Empty): zombie.core.skinnedmodel.population.Outfit
+       *  - (Empty): any
        */
       clone(): any;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): boolean
        */
       containsItemGuid(arg0: string): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.core.skinnedmodel.population.ClothingItemReference
        */
       findHat(): zombie.core.skinnedmodel.population.ClothingItemReference;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): zombie.core.skinnedmodel.population.ClothingItemReference
        */
       findItemByGUID(arg0: string): zombie.core.skinnedmodel.population.ClothingItemReference;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isEmpty(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       loadItems(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): void
        */
       randomizeItem(arg0: string): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): void
        */
       setModID(arg0: string): void;

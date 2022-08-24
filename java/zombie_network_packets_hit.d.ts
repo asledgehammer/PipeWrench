@@ -1,28 +1,3 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
 /** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.network.packets.hit {
@@ -38,52 +13,52 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       clear(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (AttackVars arg0): void
        */
       copy(arg0: zombie.network.packets.hit.AttackVars): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getDescription(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getPacketSizeBytes(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoLivingCharacter arg0): zombie.inventory.types.HandWeapon
        */
       getWeapon(arg0: zombie.characters.IsoLivingCharacter): zombie.inventory.types.HandWeapon;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isConsistent(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): void
        */
       log(arg0: string): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ByteBuffer arg0, UdpConnection arg1): void
        */
       parse(arg0: java.nio.ByteBuffer, arg1: zombie.core.raknet.UdpConnection): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (HandWeapon arg0): void
        */
       setWeapon(arg0: zombie.inventory.types.HandWeapon): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ByteBufferWriter arg0): void
        */
       write(arg0: zombie.core.network.ByteBufferWriter): void;
@@ -100,59 +75,59 @@ declare module '@asledgehammer/pipewrench' {
        */
       protected constructor(arg0: zombie.network.packets.hit.HitCharacterPacket$HitType);
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getDescription(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getPacketSizeBytes(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isConsistent(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (UdpConnection arg0): boolean
        */
       isRelevant(arg0: zombie.core.raknet.UdpConnection): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): void
        */
       log(arg0: string): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ByteBuffer arg0, UdpConnection arg1): void
        */
       parse(arg0: java.nio.ByteBuffer, arg1: zombie.core.raknet.UdpConnection): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       tryProcess(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       tryProcessInternal(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (UdpConnection arg0): boolean
        */
       validate(arg0: zombie.core.raknet.UdpConnection): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ByteBufferWriter arg0): void
        */
       write(arg0: zombie.core.network.ByteBufferWriter): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ByteBuffer arg0): zombie.network.packets.hit.HitCharacterPacket
        */
       static process(arg0: java.nio.ByteBuffer): zombie.network.packets.hit.HitCharacterPacket;
@@ -194,43 +169,43 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getDescription(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.iso.IsoMovingObject
        */
       getObject(): zombie.iso.IsoMovingObject;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getPacketSizeBytes(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoWindow arg0, float arg1, float arg2): zombie.network.packets.hit.HitInfo
        *  - (IsoMovingObject arg0, float arg1, float arg2, float arg3, float arg4, float arg5): zombie.network.packets.hit.HitInfo
        */
       init(arg0: zombie.iso.objects.IsoWindow | zombie.iso.IsoMovingObject, arg1: number, arg2: number, arg3?: number, arg4?: number, arg5?: number): zombie.network.packets.hit.HitInfo;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isConsistent(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): void
        */
       log(arg0: string): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ByteBuffer arg0, UdpConnection arg1): void
        */
       parse(arg0: java.nio.ByteBuffer, arg1: zombie.core.raknet.UdpConnection): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ByteBufferWriter arg0): void
        */
       write(arg0: zombie.core.network.ByteBufferWriter): void;
@@ -247,48 +222,48 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor();
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getDescription(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getPacketSizeBytes(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getX(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getY(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isConsistent(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): void
        */
       log(arg0: string): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ByteBuffer arg0, UdpConnection arg1): void
        */
       parse(arg0: java.nio.ByteBuffer, arg1: zombie.core.raknet.UdpConnection): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (BaseVehicle arg0): void
        *  - (short arg0): void
        */
       set(arg0: zombie.vehicles.BaseVehicle | number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ByteBufferWriter arg0): void
        */
       write(arg0: zombie.core.network.ByteBufferWriter): void;
@@ -305,64 +280,64 @@ declare module '@asledgehammer/pipewrench' {
        */
       protected constructor(arg0: zombie.network.packets.hit.HitCharacterPacket$HitType);
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): string
        */
       getDescription(): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getPacketSizeBytes(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isConsistent(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (UdpConnection arg0): boolean
        */
       isRelevant(arg0: zombie.core.raknet.UdpConnection): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (String arg0): void
        */
       log(arg0: string): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ByteBuffer arg0, UdpConnection arg1): void
        */
       parse(arg0: java.nio.ByteBuffer, arg1: zombie.core.raknet.UdpConnection): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (IsoPlayer arg0, BaseVehicle arg1, boolean arg2): void
        */
       set(arg0: zombie.characters.IsoPlayer, arg1: zombie.vehicles.BaseVehicle, arg2: boolean): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       tryProcess(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       tryProcessInternal(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (UdpConnection arg0): boolean
        */
       validate(arg0: zombie.core.raknet.UdpConnection): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ByteBufferWriter arg0): void
        */
       write(arg0: zombie.core.network.ByteBufferWriter): void;
       /**
        * @noSelf
        *
-       * Method Parameters:
+       * Method Parameters: 
        *  - (ByteBuffer arg0): zombie.network.packets.hit.HitCharacterPacket
        */
       static process(arg0: java.nio.ByteBuffer): zombie.network.packets.hit.HitCharacterPacket;

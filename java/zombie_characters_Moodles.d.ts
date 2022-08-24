@@ -1,28 +1,3 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
 /** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.characters.Moodles {
@@ -39,42 +14,42 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: zombie.characters.Moodles.MoodleType, arg1: zombie.characters.IsoGameCharacter, arg2?: number);
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): void
        */
       SetLevel(arg0: number): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       Update(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, boolean arg1, Color arg2): boolean
        */
       chevronDifference(arg0: number, arg1: boolean, arg2: zombie.core.Color): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): zombie.core.Color
        */
       getChevronColor(): zombie.core.Color;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getChevronCount(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getLevel(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isChevronIsUp(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0, boolean arg1, Color arg2): void
        */
       setChevron(arg0: number, arg1: boolean, arg2: zombie.core.Color): void;
@@ -174,68 +149,68 @@ declare module '@asledgehammer/pipewrench' {
        */
       constructor(arg0: zombie.characters.IsoGameCharacter);
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       Randomise(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       UI_RefreshNeeded(): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): void
        */
       Update(): void;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): number
        */
       getGoodBadNeutral(arg0: number): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): zombie.core.Color
        */
       getMoodleChevronColor(arg0: number): zombie.core.Color;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): number
        */
       getMoodleChevronCount(arg0: number): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): boolean
        */
       getMoodleChevronIsUp(arg0: number): boolean;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): string
        */
       getMoodleDescriptionString(arg0: number): string;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): string
        */
       getMoodleDisplayString(arg0: number): string;
       /**
-       * Method Parameters:
-       *  - (int arg0): number
+       * Method Parameters: 
        *  - (MoodleType arg0): number
+       *  - (int arg0): number
        */
-      getMoodleLevel(arg0: number | zombie.characters.Moodles.MoodleType): number;
+      getMoodleLevel(arg0: zombie.characters.Moodles.MoodleType | number): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (int arg0): zombie.characters.Moodles.MoodleType
        */
       getMoodleType(arg0: number): zombie.characters.Moodles.MoodleType;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (Empty): number
        */
       getNumMoodles(): number;
       /**
-       * Method Parameters:
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setMoodlesStateChanged(arg0: boolean): void;
