@@ -1,0 +1,56 @@
+name: ExtractAPI
+on:
+  # push:
+  schedule:
+    # every day at midnight:
+    - cron: "0 0 * * *"
+jobs:
+  extract:
+    strategy:
+      matrix:
+        version: [stable, unstable]
+    runs-on: macos-latest
+    steps:
+      - name: Cache Pz
+        id: cache-pz
+        uses: actions/cache@v3
+        with:
+          path: pzserver
+          key: ${{ matrix.version }}
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ matrix.version }}
+      - uses: actions/checkout@v3
+        with:
+          repository: asledgehammer/PipeWrench-Java-Generator
+          ref: master
+          path: java-gen
+          ssh-key: ${{ secrets.JAVA_GEN_KEY }}
+      - name: Setup steamcmd
+        uses: CyberAndrii/setup-steamcmd@v1
+      - run: bash ./scripts/install_pz.sh ${{ matrix.version }}
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: npm
+          cache-dependency-path: package-lock.json
+      - uses: actions/setup-java@v3
+        with:
+          distribution: "temurin"
+          java-version: "17"
+      - name: Setup Gradle
+        uses: gradle/gradle-build-action@v2
+      - run: |
+          cd java-gen
+          bash ./scripts/prep_libs.sh ../pzserver
+          gradle run --args "cli --out ../"
+      - run: npm install
+      - run: npm link
+      - run: npm run extract
+      - run: npm run build
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          base: ${{ matrix.version }}
+          title: ${{ matrix.version }} latest
+          branch: bot/${{ matrix.version }}

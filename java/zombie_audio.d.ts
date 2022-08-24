@@ -1,30 +1,4 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
-/**  @noSelfInFile */
-/// <reference path="../reference.d.ts" />
+/** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.audio {
     /**
@@ -90,10 +64,10 @@ declare module '@asledgehammer/pipewrench' {
       isEmpty(): boolean;
       /**
        * Method Parameters: 
-       *  - (long arg0): boolean
        *  - (String arg0): boolean
+       *  - (long arg0): boolean
        */
-      isPlaying(arg0: number | string): boolean;
+      isPlaying(arg0: string | number): boolean;
       /**
        * Method Parameters: 
        *  - (String arg0): number
@@ -112,13 +86,13 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): number
-       *  - (String arg0, IsoGameCharacter arg1): number
-       *  - (String arg0, IsoObject arg1): number
-       *  - (String arg0, IsoGridSquare arg1): number
        *  - (String arg0, boolean arg1): number
+       *  - (String arg0, IsoGameCharacter arg1): number
+       *  - (String arg0, IsoGridSquare arg1): number
+       *  - (String arg0, IsoObject arg1): number
        *  - (String arg0, int arg1, int arg2, int arg3): number
        */
-      playSound(arg0: string, arg1?: zombie.characters.IsoGameCharacter | zombie.iso.IsoObject | zombie.iso.IsoGridSquare | boolean | number, arg2?: number, arg3?: number): number;
+      playSound(arg0: string, arg1?: boolean | zombie.characters.IsoGameCharacter | zombie.iso.IsoGridSquare | zombie.iso.IsoObject | number, arg2?: number, arg3?: number): number;
       /**
        * Method Parameters: 
        *  - (String arg0, IsoGridSquare arg1): number
@@ -282,10 +256,10 @@ declare module '@asledgehammer/pipewrench' {
       isEmpty(): boolean;
       /**
        * Method Parameters: 
-       *  - (long arg0): boolean
        *  - (String arg0): boolean
+       *  - (long arg0): boolean
        */
-      isPlaying(arg0: number | string): boolean;
+      isPlaying(arg0: string | number): boolean;
       /**
        * Method Parameters: 
        *  - (String arg0): number
@@ -304,13 +278,13 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): number
-       *  - (String arg0, IsoGameCharacter arg1): number
-       *  - (String arg0, IsoObject arg1): number
-       *  - (String arg0, IsoGridSquare arg1): number
        *  - (String arg0, boolean arg1): number
+       *  - (String arg0, IsoGameCharacter arg1): number
+       *  - (String arg0, IsoGridSquare arg1): number
+       *  - (String arg0, IsoObject arg1): number
        *  - (String arg0, int arg1, int arg2, int arg3): number
        */
-      playSound(arg0: string, arg1?: zombie.characters.IsoGameCharacter | zombie.iso.IsoObject | zombie.iso.IsoGridSquare | boolean | number, arg2?: number, arg3?: number): number;
+      playSound(arg0: string, arg1?: boolean | zombie.characters.IsoGameCharacter | zombie.iso.IsoGridSquare | zombie.iso.IsoObject | number, arg2?: number, arg3?: number): number;
       /**
        * Method Parameters: 
        *  - (String arg0, IsoGridSquare arg1): number
@@ -570,15 +544,61 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.audio.GameSound$MasterVolume>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.audio.GameSound$MasterVolume>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (String arg0): MasterVolume
+       * Method Parameters: 
+       *  - (String arg0): zombie.audio.GameSound$MasterVolume
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.audio.GameSound$MasterVolume;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.audio.GameSound$MasterVolume | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.audio.GameSound$MasterVolume[]
+       */
       static values(): zombie.audio.GameSound$MasterVolume[];
-
     }
     /**
      * @customConstructor GameSoundClip.new

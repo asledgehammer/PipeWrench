@@ -1,30 +1,4 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
-/**  @noSelfInFile */
-/// <reference path="../reference.d.ts" />
+/** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.ui {
     /**
@@ -1378,12 +1352,12 @@ declare module '@asledgehammer/pipewrench' {
     export class HUDButton {
       /**
        * Constructors: 
-       *  - (String arg0, float arg1, float arg2, String arg3, String arg4, UIEventHandler arg5)
        *  - (String arg0, double arg1, double arg2, String arg3, String arg4, UIElement arg5)
-       *  - (String arg0, float arg1, float arg2, String arg3, String arg4, String arg5, UIEventHandler arg6)
+       *  - (String arg0, float arg1, float arg2, String arg3, String arg4, UIEventHandler arg5)
        *  - (String arg0, float arg1, float arg2, String arg3, String arg4, String arg5, UIElement arg6)
+       *  - (String arg0, float arg1, float arg2, String arg3, String arg4, String arg5, UIEventHandler arg6)
        */
-      constructor(arg0: string, arg1: number, arg2: number, arg3: string, arg4: string, arg5: zombie.ui.UIEventHandler | zombie.ui.UIElement | string, arg6?: zombie.ui.UIEventHandler | zombie.ui.UIElement);
+      constructor(arg0: string, arg1: number, arg2: number, arg3: string, arg4: string, arg5: zombie.ui.UIElement | zombie.ui.UIEventHandler | string, arg6?: zombie.ui.UIElement | zombie.ui.UIEventHandler);
       /**
        * Method Parameters: 
        *  - (UIElement arg0): void
@@ -4259,8 +4233,8 @@ declare module '@asledgehammer/pipewrench' {
       DrawValueRight(arg0: number, arg1: number, arg2: number, arg3: boolean): void;
       /**
        * Method Parameters: 
-       *  - (int arg0, int arg1, int arg2): void
        *  - (float arg0, int arg1, int arg2): void
+       *  - (int arg0, int arg1, int arg2): void
        */
       DrawValueRightNoPlus(arg0: number, arg1: number, arg2: number): void;
       /**
@@ -8333,15 +8307,61 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.ui.TextDrawHorizontal>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.ui.TextDrawHorizontal>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (String arg0): TextDrawHorizontal
+       * Method Parameters: 
+       *  - (String arg0): zombie.ui.TextDrawHorizontal
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.ui.TextDrawHorizontal;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.ui.TextDrawHorizontal | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.ui.TextDrawHorizontal[]
+       */
       static values(): zombie.ui.TextDrawHorizontal[];
-
     }
     /**
      * @customConstructor TextDrawObject.new
@@ -8541,10 +8561,10 @@ declare module '@asledgehammer/pipewrench' {
       setHearRange(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (TextDrawHorizontal arg0): void
        *  - (String arg0): void
+       *  - (TextDrawHorizontal arg0): void
        */
-      setHorizontalAlign(arg0: zombie.ui.TextDrawHorizontal | string): void;
+      setHorizontalAlign(arg0: string | zombie.ui.TextDrawHorizontal): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -8557,10 +8577,10 @@ declare module '@asledgehammer/pipewrench' {
       setMaxCharsPerLine(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0, int arg1, int arg2): void
        *  - (float arg0, float arg1, float arg2): void
-       *  - (int arg0, int arg1, int arg2, int arg3): void
+       *  - (int arg0, int arg1, int arg2): void
        *  - (float arg0, float arg1, float arg2, float arg3): void
+       *  - (int arg0, int arg1, int arg2, int arg3): void
        */
       setOutlineColors(arg0: number, arg1: number, arg2: number, arg3?: number): void;
       /**
@@ -10873,22 +10893,68 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
-       * @noSelf
-       *
-       * (String arg0): UIFont
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
        */
-      static FromString(arg0: string | null): zombie.ui.UIFont;
-
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.ui.UIFont>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.ui.UIFont>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
       /**
        * @noSelf
        *
-       * (String arg0): UIFont
+       * Method Parameters: 
+       *  - (String arg0): zombie.ui.UIFont
        */
-      static valueOf(arg0: string | null): zombie.ui.UIFont;
-
-      /** @noSelf */
+      static FromString(arg0: string): zombie.ui.UIFont;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): zombie.ui.UIFont
+       *  - (Class arg0, String arg1): T
+       */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.ui.UIFont | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.ui.UIFont[]
+       */
       static values(): zombie.ui.UIFont[];
-
     }
     /**
      * @customConstructor UIManager.new

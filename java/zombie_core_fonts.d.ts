@@ -1,30 +1,4 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
-/**  @noSelfInFile */
-/// <reference path="../reference.d.ts" />
+/** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.core.fonts {
     /**
@@ -50,10 +24,10 @@ declare module '@asledgehammer/pipewrench' {
 
       /**
        * Constructors: 
-       *  - (String arg0, Texture arg1)
        *  - (String arg0, String arg1)
+       *  - (String arg0, Texture arg1)
        */
-      constructor(arg0: string, arg1: zombie.core.textures.Texture | string);
+      constructor(arg0: string, arg1: string | zombie.core.textures.Texture);
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -171,11 +145,11 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Empty): void
-       *  - (WrappedBuffer arg0): void
        *  - (boolean[] arg0): void
        *  - (BooleanGrid arg0): void
+       *  - (WrappedBuffer arg0): void
        */
-      createMask(arg0?: zombie.core.utils.WrappedBuffer | boolean[] | zombie.core.utils.BooleanGrid): void;
+      createMask(arg0?: boolean[] | zombie.core.utils.BooleanGrid | zombie.core.utils.WrappedBuffer): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -183,8 +157,8 @@ declare module '@asledgehammer/pipewrench' {
       destroy(): void;
       /**
        * Method Parameters: 
-       *  - (Texture arg0): boolean
        *  - (Object arg0): boolean
+       *  - (Texture arg0): boolean
        */
       equals(arg0: any): boolean;
       /**

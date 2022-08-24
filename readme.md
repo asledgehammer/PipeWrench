@@ -19,6 +19,36 @@ PipeWrench is a set of TypeScript definitions for both the Java API and Lua code
 
 # Development
 
+## Getting Started
+
+### Prerequirements
+
+- steamcmd installed
+- npm installed
+
+### Install PZ Server
+
+#### MacOS
+
+```shell
+bash scripts/install_pz.sh
+```
+
+#### Windows
+
+```
+./scripts/install_pz.bat
+```
+
+### Generate typescript definitions
+
+```
+npm run extract
+```
+
+Done!
+
+npm install
 ## Releases
 
 ### Versioning

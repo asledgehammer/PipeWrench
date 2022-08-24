@@ -1,30 +1,4 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
-/**  @noSelfInFile */
-/// <reference path="../reference.d.ts" />
+/** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.core.skinnedmodel.model {
     /**
@@ -217,41 +191,113 @@ declare module '@asledgehammer/pipewrench' {
       static readonly Waist: zombie.core.skinnedmodel.model.CharacterMask$Part;
       name(): string;
       ordinal(): number;
-      /** @noSelf */
-      static count(): number;
-
+      /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.core.skinnedmodel.model.CharacterMask$Part>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.characterTextures.BloodBodyPartType[]
+       */
+      getBloodBodyPartTypes(): zombie.characterTextures.BloodBodyPartType[];
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.core.skinnedmodel.model.CharacterMask$Part>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.model.CharacterMask$Part
+       */
+      getParent(): zombie.core.skinnedmodel.model.CharacterMask$Part;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getValue(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      hasSubdivisions(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isSubdivision(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.model.CharacterMask$Part[]
+       */
+      subDivisions(): zombie.core.skinnedmodel.model.CharacterMask$Part[];
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
       /**
        * @noSelf
        *
-       * (int arg0): Part
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      static count(): number;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (int arg0): zombie.core.skinnedmodel.model.CharacterMask$Part
        */
       static fromInt(arg0: number): zombie.core.skinnedmodel.model.CharacterMask$Part;
-
-      getBloodBodyPartTypes(): zombie.characterTextures.BloodBodyPartType[];
-
-      getParent(): zombie.core.skinnedmodel.model.CharacterMask$Part;
-
-      getValue(): number;
-
-      hasSubdivisions(): boolean;
-
-      isSubdivision(): boolean;
-
-      /** @noSelf */
-      static leaves(): zombie.core.skinnedmodel.model.CharacterMask$Part[];
-
-      subDivisions(): zombie.core.skinnedmodel.model.CharacterMask$Part[];
-
       /**
        * @noSelf
        *
-       * (String arg0): Part
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.model.CharacterMask$Part[]
        */
-      static valueOf(arg0: string | null): zombie.core.skinnedmodel.model.CharacterMask$Part;
-
-      /** @noSelf */
+      static leaves(): zombie.core.skinnedmodel.model.CharacterMask$Part[];
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): zombie.core.skinnedmodel.model.CharacterMask$Part
+       *  - (Class arg0, String arg1): T
+       */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.core.skinnedmodel.model.CharacterMask$Part | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.model.CharacterMask$Part[]
+       */
       static values(): zombie.core.skinnedmodel.model.CharacterMask$Part[];
-
     }
     /**
      * @customConstructor Model.new
@@ -360,10 +406,10 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (ModelSlotRenderData arg0, int arg1, Vector3 arg2): void
        *  - (IsoGameCharacter arg0, int arg1, Vector3 arg2): void
+       *  - (ModelSlotRenderData arg0, int arg1, Vector3 arg2): void
        */
-      static BoneToWorldCoords(arg0: zombie.core.skinnedmodel.model.ModelSlotRenderData | zombie.characters.IsoGameCharacter, arg1: number, arg2: zombie.iso.Vector3): void;
+      static BoneToWorldCoords(arg0: zombie.characters.IsoGameCharacter | zombie.core.skinnedmodel.model.ModelSlotRenderData, arg1: number, arg2: zombie.iso.Vector3): void;
       /**
        * @noSelf
        *
@@ -389,10 +435,10 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (ModelSlotRenderData arg0, Vector3 arg1): void
        *  - (IsoGameCharacter arg0, Vector3 arg1): void
+       *  - (ModelSlotRenderData arg0, Vector3 arg1): void
        */
-      static VectorToWorldCoords(arg0: zombie.core.skinnedmodel.model.ModelSlotRenderData | zombie.characters.IsoGameCharacter, arg1: zombie.iso.Vector3): void;
+      static VectorToWorldCoords(arg0: zombie.characters.IsoGameCharacter | zombie.core.skinnedmodel.model.ModelSlotRenderData, arg1: zombie.iso.Vector3): void;
       /**
        * @noSelf
        *
@@ -591,15 +637,61 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.core.skinnedmodel.model.ModelInstance$FrameLightBlendStatus>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.core.skinnedmodel.model.ModelInstance$FrameLightBlendStatus>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (String arg0): FrameLightBlendStatus
+       * Method Parameters: 
+       *  - (String arg0): zombie.core.skinnedmodel.model.ModelInstance$FrameLightBlendStatus
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.core.skinnedmodel.model.ModelInstance$FrameLightBlendStatus;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.core.skinnedmodel.model.ModelInstance$FrameLightBlendStatus | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.model.ModelInstance$FrameLightBlendStatus[]
+       */
       static values(): zombie.core.skinnedmodel.model.ModelInstance$FrameLightBlendStatus[];
-
     }
     /**
      * @customConstructor FrameLightInfo.new
@@ -704,10 +796,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
-       *  - (HumanVisual arg0, ItemVisuals arg1, ModelInstance arg2): void
        *  - (BaseVisual arg0, ItemVisuals arg1, ModelInstance arg2): void
+       *  - (HumanVisual arg0, ItemVisuals arg1, ModelInstance arg2): void
        */
-      init(arg0: zombie.characters.IsoGameCharacter | zombie.core.skinnedmodel.visual.HumanVisual | zombie.core.skinnedmodel.visual.BaseVisual, arg1?: zombie.core.skinnedmodel.visual.ItemVisuals, arg2?: zombie.core.skinnedmodel.model.ModelInstance): void;
+      init(arg0: zombie.characters.IsoGameCharacter | zombie.core.skinnedmodel.visual.BaseVisual | zombie.core.skinnedmodel.visual.HumanVisual, arg1?: zombie.core.skinnedmodel.visual.ItemVisuals, arg2?: zombie.core.skinnedmodel.model.ModelInstance): void;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -744,10 +836,10 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
-       *  - (ModelInstance arg0, InventoryItem arg1): void
        *  - (ModelInstance arg0, float arg1): void
+       *  - (ModelInstance arg0, InventoryItem arg1): void
        */
-      init(arg0: zombie.core.skinnedmodel.model.ModelInstance, arg1: zombie.inventory.InventoryItem | number): void;
+      init(arg0: zombie.core.skinnedmodel.model.ModelInstance, arg1: number | zombie.inventory.InventoryItem): void;
       /**
        * Method Parameters: 
        *  - (Empty): boolean

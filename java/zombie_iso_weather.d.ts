@@ -1,30 +1,4 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
-/**  @noSelfInFile */
-/// <reference path="../reference.d.ts" />
+/** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.iso.weather {
     /**
@@ -1458,10 +1432,10 @@ declare module '@asledgehammer/pipewrench' {
       setModdedValue(arg0: zombie.iso.weather.ClimateColorInfo): void;
       /**
        * Method Parameters: 
-       *  - (ClimateColorInfo arg0, float arg1): void
        *  - (ByteBuffer arg0, float arg1): void
+       *  - (ClimateColorInfo arg0, float arg1): void
        */
-      setOverride(arg0: zombie.iso.weather.ClimateColorInfo | java.nio.ByteBuffer, arg1: number): void;
+      setOverride(arg0: java.nio.ByteBuffer | zombie.iso.weather.ClimateColorInfo, arg1: number): void;
     }
     /**
      * @customConstructor ClimateFloat.new
@@ -1590,15 +1564,61 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.iso.weather.ClimateManager$ClimateNetAuth>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.iso.weather.ClimateManager$ClimateNetAuth>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (String arg0): ClimateNetAuth
+       * Method Parameters: 
+       *  - (String arg0): zombie.iso.weather.ClimateManager$ClimateNetAuth
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.iso.weather.ClimateManager$ClimateNetAuth;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.iso.weather.ClimateManager$ClimateNetAuth | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.weather.ClimateManager$ClimateNetAuth[]
+       */
       static values(): zombie.iso.weather.ClimateManager$ClimateNetAuth[];
-
     }
     /**
      * @customConstructor DayInfo.new
@@ -2496,24 +2516,73 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
-       * @noSelf
-       *
-       * (int arg0): StrLerpVal
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
        */
-      static fromValue(arg0: number): zombie.iso.weather.WeatherPeriod$StrLerpVal;
-
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.iso.weather.WeatherPeriod$StrLerpVal>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.iso.weather.WeatherPeriod$StrLerpVal>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
       getValue(): number;
-
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
       /**
        * @noSelf
        *
-       * (String arg0): StrLerpVal
+       * Method Parameters: 
+       *  - (int arg0): zombie.iso.weather.WeatherPeriod$StrLerpVal
        */
-      static valueOf(arg0: string | null): zombie.iso.weather.WeatherPeriod$StrLerpVal;
-
-      /** @noSelf */
+      static fromValue(arg0: number): zombie.iso.weather.WeatherPeriod$StrLerpVal;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): zombie.iso.weather.WeatherPeriod$StrLerpVal
+       *  - (Class arg0, String arg1): T
+       */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.iso.weather.WeatherPeriod$StrLerpVal | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.weather.WeatherPeriod$StrLerpVal[]
+       */
       static values(): zombie.iso.weather.WeatherPeriod$StrLerpVal[];
-
     }
     /**
      * @customConstructor WeatherStage.new

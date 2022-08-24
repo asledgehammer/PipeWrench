@@ -1,30 +1,4 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
-/**  @noSelfInFile */
-/// <reference path="../reference.d.ts" />
+/** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.core.znet {
     /**
@@ -293,31 +267,85 @@ declare module '@asledgehammer/pipewrench' {
       static readonly Subscribed: zombie.core.znet.SteamWorkshopItem$ItemState;
       name(): string;
       ordinal(): number;
-      /** (ItemState arg0): boolean */
-      and(arg0: zombie.core.znet.SteamWorkshopItem$ItemState | null): boolean;
-
+      /**
+       * Method Parameters: 
+       *  - (long arg0): boolean
+       *  - (ItemState arg0): boolean
+       */
+      and(arg0: number | zombie.core.znet.SteamWorkshopItem$ItemState): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.core.znet.SteamWorkshopItem$ItemState>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.core.znet.SteamWorkshopItem$ItemState>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
       getValue(): number;
-
-      /** (long arg0): boolean */
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (long arg0): boolean
+       */
       not(arg0: number): boolean;
-
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
       /**
        * @noSelf
        *
-       * (long arg0): String
+       * Method Parameters: 
+       *  - (long arg0): string
        */
       static toString(arg0: number): string;
-
       /**
        * @noSelf
        *
-       * (String arg0): ItemState
+       * Method Parameters: 
+       *  - (String arg0): zombie.core.znet.SteamWorkshopItem$ItemState
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.core.znet.SteamWorkshopItem$ItemState;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.core.znet.SteamWorkshopItem$ItemState | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.core.znet.SteamWorkshopItem$ItemState[]
+       */
       static values(): zombie.core.znet.SteamWorkshopItem$ItemState[];
-
     }
     /**
      * @customConstructor ZNetFileAnnounce.new

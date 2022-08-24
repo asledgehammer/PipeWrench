@@ -1,30 +1,4 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
-/**  @noSelfInFile */
-/// <reference path="../reference.d.ts" />
+/** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.characters.Moodles {
     /**
@@ -111,57 +85,103 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.characters.Moodles.MoodleType>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.characters.Moodles.MoodleType>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (int arg0): MoodleType
+       * Method Parameters: 
+       *  - (int arg0): zombie.characters.Moodles.MoodleType
        */
       static FromIndex(arg0: number): zombie.characters.Moodles.MoodleType;
-
       /**
        * @noSelf
        *
-       * (String arg0): MoodleType
+       * Method Parameters: 
+       *  - (String arg0): zombie.characters.Moodles.MoodleType
        */
-      static FromString(arg0: string | null): zombie.characters.Moodles.MoodleType;
-
+      static FromString(arg0: string): zombie.characters.Moodles.MoodleType;
       /**
        * @noSelf
        *
-       * (MoodleType arg0): int
+       * Method Parameters: 
+       *  - (MoodleType arg0): number
        */
-      static GoodBadNeutral(arg0: zombie.characters.Moodles.MoodleType | null): number;
-
+      static GoodBadNeutral(arg0: zombie.characters.Moodles.MoodleType): number;
       /**
        * @noSelf
        *
-       * (MoodleType arg0): int
+       * Method Parameters: 
+       *  - (MoodleType arg0): number
        */
-      static ToIndex(arg0: zombie.characters.Moodles.MoodleType | null): number;
-
+      static ToIndex(arg0: zombie.characters.Moodles.MoodleType): number;
       /**
        * @noSelf
        *
-       * (MoodleType arg0, int arg1): String
+       * Method Parameters: 
+       *  - (MoodleType arg0, int arg1): string
        */
-      static getDescriptionText(arg0: zombie.characters.Moodles.MoodleType | null, arg1: number): string;
-
+      static getDescriptionText(arg0: zombie.characters.Moodles.MoodleType, arg1: number): string;
       /**
        * @noSelf
        *
-       * (MoodleType arg0, int arg1): String
+       * Method Parameters: 
+       *  - (MoodleType arg0, int arg1): string
        */
-      static getDisplayName(arg0: zombie.characters.Moodles.MoodleType | null, arg1: number): string;
-
+      static getDisplayName(arg0: zombie.characters.Moodles.MoodleType, arg1: number): string;
       /**
        * @noSelf
        *
-       * (String arg0): MoodleType
+       * Method Parameters: 
+       *  - (String arg0): zombie.characters.Moodles.MoodleType
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.characters.Moodles.MoodleType;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.characters.Moodles.MoodleType | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.characters.Moodles.MoodleType[]
+       */
       static values(): zombie.characters.Moodles.MoodleType[];
-
     }
     /**
      * @customConstructor Moodles.new

@@ -1,30 +1,4 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
-/**  @noSelfInFile */
-/// <reference path="../reference.d.ts" />
+/** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.iso.objects {
     /**
@@ -905,10 +879,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, KahluaTable arg1): void
        *  - (String arg0, Object... arg1): void
+       *  - (String arg0, KahluaTable arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
+      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -959,10 +933,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -1117,10 +1091,10 @@ declare module '@asledgehammer/pipewrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -2231,10 +2205,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, KahluaTable arg1): void
        *  - (String arg0, Object... arg1): void
+       *  - (String arg0, KahluaTable arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
+      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -2285,10 +2259,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -2428,10 +2402,10 @@ declare module '@asledgehammer/pipewrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -2724,8 +2698,8 @@ declare module '@asledgehammer/pipewrench' {
       Collision(arg0: zombie.iso.Vector2, arg1: zombie.iso.IsoObject): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (float arg0): void
+       *  - (int arg0): void
        */
       Damage(arg0: number): void;
       /**
@@ -3593,10 +3567,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, KahluaTable arg1): void
        *  - (String arg0, Object... arg1): void
+       *  - (String arg0, KahluaTable arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
+      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -3647,10 +3621,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -3775,10 +3749,10 @@ declare module '@asledgehammer/pipewrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -3900,10 +3874,10 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (BarricadeAble arg0, IsoGameCharacter arg1): zombie.iso.objects.IsoBarricade
        *  - (BarricadeAble arg0, boolean arg1): zombie.iso.objects.IsoBarricade
+       *  - (BarricadeAble arg0, IsoGameCharacter arg1): zombie.iso.objects.IsoBarricade
        */
-      static AddBarricadeToObject(arg0: zombie.iso.objects.interfaces.BarricadeAble, arg1: zombie.characters.IsoGameCharacter | boolean): zombie.iso.objects.IsoBarricade;
+      static AddBarricadeToObject(arg0: zombie.iso.objects.interfaces.BarricadeAble, arg1: boolean | zombie.characters.IsoGameCharacter): zombie.iso.objects.IsoBarricade;
       /**
        * @noSelf
        *
@@ -4857,10 +4831,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, KahluaTable arg1): void
        *  - (String arg0, Object... arg1): void
+       *  - (String arg0, KahluaTable arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
+      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -4911,10 +4885,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -5039,10 +5013,10 @@ declare module '@asledgehammer/pipewrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -6113,10 +6087,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, KahluaTable arg1): void
        *  - (String arg0, Object... arg1): void
+       *  - (String arg0, KahluaTable arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
+      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -6182,10 +6156,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -6310,10 +6284,10 @@ declare module '@asledgehammer/pipewrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -7374,10 +7348,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, KahluaTable arg1): void
        *  - (String arg0, Object... arg1): void
+       *  - (String arg0, KahluaTable arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
+      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -7433,10 +7407,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -7561,10 +7535,10 @@ declare module '@asledgehammer/pipewrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -8620,10 +8594,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, KahluaTable arg1): void
        *  - (String arg0, Object... arg1): void
+       *  - (String arg0, KahluaTable arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
+      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -8679,10 +8653,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -8807,10 +8781,10 @@ declare module '@asledgehammer/pipewrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -9876,10 +9850,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, KahluaTable arg1): void
        *  - (String arg0, Object... arg1): void
+       *  - (String arg0, KahluaTable arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
+      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -9935,10 +9909,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -10073,10 +10047,10 @@ declare module '@asledgehammer/pipewrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -11137,10 +11111,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, KahluaTable arg1): void
        *  - (String arg0, Object... arg1): void
+       *  - (String arg0, KahluaTable arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
+      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -11196,10 +11170,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -11324,10 +11298,10 @@ declare module '@asledgehammer/pipewrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -12440,10 +12414,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, KahluaTable arg1): void
        *  - (String arg0, Object... arg1): void
+       *  - (String arg0, KahluaTable arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
+      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -12494,10 +12468,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -12622,10 +12596,10 @@ declare module '@asledgehammer/pipewrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -12857,11 +12831,11 @@ declare module '@asledgehammer/pipewrench' {
 
       /**
        * Constructors: 
-       *  - (IsoCell arg0)
        *  - (IsoGameCharacter arg0)
+       *  - (IsoCell arg0)
        *  - (IsoGameCharacter arg0, boolean arg1)
        */
-      constructor(arg0: zombie.iso.IsoCell | zombie.characters.IsoGameCharacter, arg1?: boolean);
+      constructor(arg0: zombie.characters.IsoGameCharacter | zombie.iso.IsoCell, arg1?: boolean);
       /**
        * Method Parameters: 
        *  - (String arg0, String arg1, int arg2, float arg3, int arg4, int arg5, boolean arg6, int arg7, boolean arg8, float arg9, ColorInfo arg10): void
@@ -14253,10 +14227,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, KahluaTable arg1): void
        *  - (String arg0, Object... arg1): void
+       *  - (String arg0, KahluaTable arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
+      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -14382,10 +14356,10 @@ declare module '@asledgehammer/pipewrench' {
       setDestroyed(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (ArrayList arg0): void
@@ -14690,10 +14664,10 @@ declare module '@asledgehammer/pipewrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -15048,11 +15022,11 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Constructors: 
        *  - (IsoCell arg0)
-       *  - (IsoCell arg0, IsoGridSquare arg1, IsoSprite arg2, boolean arg3)
        *  - (IsoCell arg0, IsoGridSquare arg1, String arg2, boolean arg3)
+       *  - (IsoCell arg0, IsoGridSquare arg1, IsoSprite arg2, boolean arg3)
        *  - (IsoCell arg0, IsoGridSquare arg1, String arg2, boolean arg3, KahluaTable arg4)
        */
-      constructor(arg0: zombie.iso.IsoCell, arg1?: zombie.iso.IsoGridSquare, arg2?: zombie.iso.sprite.IsoSprite | string, arg3?: boolean, arg4?: se.krka.kahlua.vm.KahluaTable);
+      constructor(arg0: zombie.iso.IsoCell, arg1?: zombie.iso.IsoGridSquare, arg2?: string | zombie.iso.sprite.IsoSprite, arg3?: boolean, arg4?: se.krka.kahlua.vm.KahluaTable);
       /**
        * Method Parameters: 
        *  - (String arg0, String arg1, int arg2, float arg3, int arg4, int arg5, boolean arg6, int arg7, boolean arg8, float arg9, ColorInfo arg10): void
@@ -16065,10 +16039,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, KahluaTable arg1): void
        *  - (String arg0, Object... arg1): void
+       *  - (String arg0, KahluaTable arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
+      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -16124,10 +16098,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -16282,10 +16256,10 @@ declare module '@asledgehammer/pipewrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -16605,15 +16579,61 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.iso.objects.IsoDoor$DoorType>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.iso.objects.IsoDoor$DoorType>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (String arg0): DoorType
+       * Method Parameters: 
+       *  - (String arg0): zombie.iso.objects.IsoDoor$DoorType
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.iso.objects.IsoDoor$DoorType;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.iso.objects.IsoDoor$DoorType | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.objects.IsoDoor$DoorType[]
+       */
       static values(): zombie.iso.objects.IsoDoor$DoorType[];
-
     }
     /**
      * @customConstructor IsoFire.new
@@ -17497,10 +17517,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, KahluaTable arg1): void
        *  - (String arg0, Object... arg1): void
+       *  - (String arg0, KahluaTable arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
+      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -17551,10 +17571,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -17699,10 +17719,10 @@ declare module '@asledgehammer/pipewrench' {
       setSpreadDelay(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -18989,10 +19009,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, KahluaTable arg1): void
        *  - (String arg0, Object... arg1): void
+       *  - (String arg0, KahluaTable arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
+      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -19043,10 +19063,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -19181,10 +19201,10 @@ declare module '@asledgehammer/pipewrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -20281,10 +20301,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, KahluaTable arg1): void
        *  - (String arg0, Object... arg1): void
+       *  - (String arg0, KahluaTable arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
+      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -20350,10 +20370,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -20488,10 +20508,10 @@ declare module '@asledgehammer/pipewrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -21598,10 +21618,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, KahluaTable arg1): void
        *  - (String arg0, Object... arg1): void
+       *  - (String arg0, KahluaTable arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
+      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -21652,10 +21672,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -21780,10 +21800,10 @@ declare module '@asledgehammer/pipewrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -22934,10 +22954,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, KahluaTable arg1): void
        *  - (String arg0, Object... arg1): void
+       *  - (String arg0, KahluaTable arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
+      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): boolean
@@ -23010,10 +23030,10 @@ declare module '@asledgehammer/pipewrench' {
       setDelta(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -23163,10 +23183,10 @@ declare module '@asledgehammer/pipewrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -24305,10 +24325,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, KahluaTable arg1): void
        *  - (String arg0, Object... arg1): void
+       *  - (String arg0, KahluaTable arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
+      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -24364,10 +24384,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -24502,10 +24522,10 @@ declare module '@asledgehammer/pipewrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -26246,10 +26266,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, KahluaTable arg1): void
        *  - (String arg0, Object... arg1): void
+       *  - (String arg0, KahluaTable arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
+      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -26365,10 +26385,10 @@ declare module '@asledgehammer/pipewrench' {
       setDestroyed(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (ArrayList arg0): void
@@ -26638,10 +26658,10 @@ declare module '@asledgehammer/pipewrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -26944,10 +26964,10 @@ declare module '@asledgehammer/pipewrench' {
       constructor(arg0: zombie.iso.IsoCell, arg1?: zombie.iso.IsoGridSquare, arg2?: zombie.iso.sprite.IsoSprite);
       /**
        * Method Parameters: 
-       *  - (String arg0, int arg1, int arg2, int arg3, String arg4, String arg5, int arg6): void
        *  - (String arg0, float arg1, float arg2, float arg3, String arg4, String arg5, int arg6): void
-       *  - (String arg0, int arg1, int arg2, int arg3, String arg4, String arg5, int arg6, boolean arg7): void
+       *  - (String arg0, int arg1, int arg2, int arg3, String arg4, String arg5, int arg6): void
        *  - (String arg0, float arg1, float arg2, float arg3, String arg4, String arg5, int arg6, boolean arg7): void
+       *  - (String arg0, int arg1, int arg2, int arg3, String arg4, String arg5, int arg6, boolean arg7): void
        *  - (IsoPlayer arg0, String arg1, float arg2, float arg3, float arg4, String arg5, String arg6, int arg7): void
        */
       AddDeviceText(arg0: string | zombie.characters.IsoPlayer, arg1: number | string, arg2: number, arg3: number, arg4: string | number, arg5: string, arg6: number | string, arg7?: boolean | number): void;
@@ -27832,10 +27852,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, KahluaTable arg1): void
        *  - (String arg0, Object... arg1): void
+       *  - (String arg0, KahluaTable arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
+      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -27896,10 +27916,10 @@ declare module '@asledgehammer/pipewrench' {
       setDeviceData(arg0: zombie.radio.devices.DeviceData): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -28024,10 +28044,10 @@ declare module '@asledgehammer/pipewrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -29095,10 +29115,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, KahluaTable arg1): void
        *  - (String arg0, Object... arg1): void
+       *  - (String arg0, KahluaTable arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
+      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -29149,10 +29169,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -29277,10 +29297,10 @@ declare module '@asledgehammer/pipewrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -30336,10 +30356,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, KahluaTable arg1): void
        *  - (String arg0, Object... arg1): void
+       *  - (String arg0, KahluaTable arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
+      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -30390,10 +30410,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -30518,10 +30538,10 @@ declare module '@asledgehammer/pipewrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -31582,10 +31602,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, KahluaTable arg1): void
        *  - (String arg0, Object... arg1): void
+       *  - (String arg0, KahluaTable arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
+      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -31636,10 +31656,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -31769,10 +31789,10 @@ declare module '@asledgehammer/pipewrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -32878,10 +32898,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, KahluaTable arg1): void
        *  - (String arg0, Object... arg1): void
+       *  - (String arg0, KahluaTable arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
+      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -32942,10 +32962,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -33075,10 +33095,10 @@ declare module '@asledgehammer/pipewrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -33320,10 +33340,10 @@ declare module '@asledgehammer/pipewrench' {
       constructor(arg0: zombie.iso.IsoCell, arg1?: zombie.iso.IsoGridSquare, arg2?: zombie.iso.sprite.IsoSprite);
       /**
        * Method Parameters: 
-       *  - (String arg0, int arg1, int arg2, int arg3, String arg4, String arg5, int arg6): void
        *  - (String arg0, float arg1, float arg2, float arg3, String arg4, String arg5, int arg6): void
-       *  - (String arg0, int arg1, int arg2, int arg3, String arg4, String arg5, int arg6, boolean arg7): void
+       *  - (String arg0, int arg1, int arg2, int arg3, String arg4, String arg5, int arg6): void
        *  - (String arg0, float arg1, float arg2, float arg3, String arg4, String arg5, int arg6, boolean arg7): void
+       *  - (String arg0, int arg1, int arg2, int arg3, String arg4, String arg5, int arg6, boolean arg7): void
        *  - (IsoPlayer arg0, String arg1, float arg2, float arg3, float arg4, String arg5, String arg6, int arg7): void
        */
       AddDeviceText(arg0: string | zombie.characters.IsoPlayer, arg1: number | string, arg2: number, arg3: number, arg4: string | number, arg5: string, arg6: number | string, arg7?: boolean | number): void;
@@ -34228,10 +34248,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, KahluaTable arg1): void
        *  - (String arg0, Object... arg1): void
+       *  - (String arg0, KahluaTable arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
+      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -34292,10 +34312,10 @@ declare module '@asledgehammer/pipewrench' {
       setDeviceData(arg0: zombie.radio.devices.DeviceData): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -34420,10 +34440,10 @@ declare module '@asledgehammer/pipewrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -35805,10 +35825,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, KahluaTable arg1): void
        *  - (String arg0, Object... arg1): void
+       *  - (String arg0, KahluaTable arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
+      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -35904,10 +35924,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -37328,10 +37348,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, KahluaTable arg1): void
        *  - (String arg0, Object... arg1): void
+       *  - (String arg0, KahluaTable arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
+      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -37387,10 +37407,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -37570,10 +37590,10 @@ declare module '@asledgehammer/pipewrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -37813,15 +37833,61 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.iso.objects.IsoTrap$ExplosionMode>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.iso.objects.IsoTrap$ExplosionMode>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (String arg0): ExplosionMode
+       * Method Parameters: 
+       *  - (String arg0): zombie.iso.objects.IsoTrap$ExplosionMode
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.iso.objects.IsoTrap$ExplosionMode;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.iso.objects.IsoTrap$ExplosionMode | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.objects.IsoTrap$ExplosionMode[]
+       */
       static values(): zombie.iso.objects.IsoTrap$ExplosionMode[];
-
     }
     /**
      * @customConstructor IsoTree.new
@@ -38691,10 +38757,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, KahluaTable arg1): void
        *  - (String arg0, Object... arg1): void
+       *  - (String arg0, KahluaTable arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
+      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -38745,10 +38811,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -38878,10 +38944,10 @@ declare module '@asledgehammer/pipewrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -39068,11 +39134,11 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (Empty): zombie.iso.objects.IsoTree
        *  - (Empty): zombie.iso.IsoObject
+       *  - (Empty): zombie.iso.objects.IsoTree
        *  - (IsoGridSquare arg0, String arg1, String arg2, boolean arg3): zombie.iso.IsoObject
        */
-      static getNew(arg0?: zombie.iso.IsoGridSquare, arg1?: string, arg2?: string, arg3?: boolean): zombie.iso.objects.IsoTree | zombie.iso.IsoObject;
+      static getNew(arg0?: zombie.iso.IsoGridSquare, arg1?: string, arg2?: string, arg3?: boolean): zombie.iso.IsoObject | zombie.iso.objects.IsoTree;
       /**
        * @noSelf
        *
@@ -39158,10 +39224,10 @@ declare module '@asledgehammer/pipewrench' {
       constructor(arg0: zombie.iso.IsoCell, arg1?: zombie.iso.IsoGridSquare, arg2?: zombie.iso.sprite.IsoSprite);
       /**
        * Method Parameters: 
-       *  - (String arg0, int arg1, int arg2, int arg3, String arg4, String arg5, int arg6): void
        *  - (String arg0, float arg1, float arg2, float arg3, String arg4, String arg5, int arg6): void
-       *  - (String arg0, int arg1, int arg2, int arg3, String arg4, String arg5, int arg6, boolean arg7): void
+       *  - (String arg0, int arg1, int arg2, int arg3, String arg4, String arg5, int arg6): void
        *  - (String arg0, float arg1, float arg2, float arg3, String arg4, String arg5, int arg6, boolean arg7): void
+       *  - (String arg0, int arg1, int arg2, int arg3, String arg4, String arg5, int arg6, boolean arg7): void
        *  - (IsoPlayer arg0, String arg1, float arg2, float arg3, float arg4, String arg5, String arg6, int arg7): void
        */
       AddDeviceText(arg0: string | zombie.characters.IsoPlayer, arg1: number | string, arg2: number, arg3: number, arg4: string | number, arg5: string, arg6: number | string, arg7?: boolean | number): void;
@@ -40046,10 +40112,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, KahluaTable arg1): void
        *  - (String arg0, Object... arg1): void
+       *  - (String arg0, KahluaTable arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
+      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -40110,10 +40176,10 @@ declare module '@asledgehammer/pipewrench' {
       setDeviceData(arg0: zombie.radio.devices.DeviceData): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -40238,10 +40304,10 @@ declare module '@asledgehammer/pipewrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -41714,10 +41780,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, KahluaTable arg1): void
        *  - (String arg0, Object... arg1): void
+       *  - (String arg0, KahluaTable arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
+      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -41833,10 +41899,10 @@ declare module '@asledgehammer/pipewrench' {
       setDestroyed(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (ArrayList arg0): void
@@ -42106,10 +42172,10 @@ declare module '@asledgehammer/pipewrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -42545,10 +42611,10 @@ declare module '@asledgehammer/pipewrench' {
       addBarricadesDebug(arg0: number, arg1: boolean): zombie.iso.objects.IsoBarricade;
       /**
        * Method Parameters: 
-       *  - (IsoMovingObject arg0): void
        *  - (boolean arg0): void
+       *  - (IsoMovingObject arg0): void
        */
-      addBrokenGlass(arg0: zombie.iso.IsoMovingObject | boolean): void;
+      addBrokenGlass(arg0: boolean | zombie.iso.IsoMovingObject): void;
       /**
        * Method Parameters: 
        *  - (IsoObject arg0): void
@@ -43401,10 +43467,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, KahluaTable arg1): void
        *  - (String arg0, Object... arg1): void
+       *  - (String arg0, KahluaTable arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
+      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -43455,10 +43521,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -43613,10 +43679,10 @@ declare module '@asledgehammer/pipewrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -43901,15 +43967,61 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.iso.objects.IsoWindow$WindowType>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.iso.objects.IsoWindow$WindowType>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (String arg0): WindowType
+       * Method Parameters: 
+       *  - (String arg0): zombie.iso.objects.IsoWindow$WindowType
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.iso.objects.IsoWindow$WindowType;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.iso.objects.IsoWindow$WindowType | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.objects.IsoWindow$WindowType[]
+       */
       static values(): zombie.iso.objects.IsoWindow$WindowType[];
-
     }
     /**
      * @customConstructor IsoWindowFrame.new
@@ -44886,10 +44998,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, KahluaTable arg1): void
        *  - (String arg0, Object... arg1): void
+       *  - (String arg0, KahluaTable arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
+      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -44940,10 +45052,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -45073,10 +45185,10 @@ declare module '@asledgehammer/pipewrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -46564,10 +46676,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, KahluaTable arg1): void
        *  - (String arg0, Object... arg1): void
+       *  - (String arg0, KahluaTable arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
+      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -46683,10 +46795,10 @@ declare module '@asledgehammer/pipewrench' {
       setDestroyed(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (ArrayList arg0): void
@@ -46956,10 +47068,10 @@ declare module '@asledgehammer/pipewrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -47257,15 +47369,61 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.iso.objects.IsoZombieGiblets$GibletType>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.iso.objects.IsoZombieGiblets$GibletType>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (String arg0): GibletType
+       * Method Parameters: 
+       *  - (String arg0): zombie.iso.objects.IsoZombieGiblets$GibletType
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.iso.objects.IsoZombieGiblets$GibletType;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.iso.objects.IsoZombieGiblets$GibletType | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.objects.IsoZombieGiblets$GibletType[]
+       */
       static values(): zombie.iso.objects.IsoZombieGiblets$GibletType[];
-
     }
     /**
      * @customConstructor ObjectRenderEffects.new
@@ -47549,15 +47707,61 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.iso.objects.RenderEffectType>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.iso.objects.RenderEffectType>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (String arg0): RenderEffectType
+       * Method Parameters: 
+       *  - (String arg0): zombie.iso.objects.RenderEffectType
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.iso.objects.RenderEffectType;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.iso.objects.RenderEffectType | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.objects.RenderEffectType[]
+       */
       static values(): zombie.iso.objects.RenderEffectType[];
-
     }
   }
 }

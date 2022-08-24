@@ -1,30 +1,4 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
-/**  @noSelfInFile */
-/// <reference path="../reference.d.ts" />
+/** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.core.math {
     /**
@@ -101,8 +75,8 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (int arg0, int arg1, int arg2): number
        *  - (float arg0, float arg1, float arg2): number
+       *  - (int arg0, int arg1, int arg2): number
        *  - (long arg0, long arg1, long arg2): number
        */
       static clamp(arg0: number, arg1: number, arg2: number): number;
@@ -124,10 +98,10 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (Matrix4f arg0, Matrix4f arg1): org.joml.Matrix4f
        *  - (Matrix4f arg0, Matrix4f arg1): org.lwjgl.util.vector.Matrix4f
+       *  - (Matrix4f arg0, Matrix4f arg1): org.joml.Matrix4f
        */
-      static convertMatrix(arg0: org.lwjgl.util.vector.Matrix4f | org.joml.Matrix4f, arg1: org.joml.Matrix4f | org.lwjgl.util.vector.Matrix4f): org.joml.Matrix4f | org.lwjgl.util.vector.Matrix4f;
+      static convertMatrix(arg0: org.joml.Matrix4f | org.lwjgl.util.vector.Matrix4f, arg1: org.lwjgl.util.vector.Matrix4f | org.joml.Matrix4f): org.lwjgl.util.vector.Matrix4f | org.joml.Matrix4f;
       /**
        * @noSelf
        *
@@ -191,10 +165,10 @@ declare module '@asledgehammer/pipewrench' {
        *
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2): number
-       *  - (Vector2 arg0, Vector2 arg1, Vector2 arg2, float arg3): zombie.iso.Vector2
        *  - (Vector3f arg0, Vector3f arg1, Vector3f arg2, float arg3): org.lwjgl.util.vector.Vector3f
+       *  - (Vector2 arg0, Vector2 arg1, Vector2 arg2, float arg3): zombie.iso.Vector2
        */
-      static lerp(arg0: number | zombie.iso.Vector2 | org.lwjgl.util.vector.Vector3f, arg1: number | zombie.iso.Vector2 | org.lwjgl.util.vector.Vector3f, arg2: number | zombie.iso.Vector2 | org.lwjgl.util.vector.Vector3f, arg3?: number): number | zombie.iso.Vector2 | org.lwjgl.util.vector.Vector3f;
+      static lerp(arg0: number | org.lwjgl.util.vector.Vector3f | zombie.iso.Vector2, arg1: number | org.lwjgl.util.vector.Vector3f | zombie.iso.Vector2, arg2: number | org.lwjgl.util.vector.Vector3f | zombie.iso.Vector2, arg3?: number): number | org.lwjgl.util.vector.Vector3f | zombie.iso.Vector2;
       /**
        * @noSelf
        *
@@ -227,16 +201,16 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (int arg0, int arg1): number
        *  - (float arg0, float arg1): number
+       *  - (int arg0, int arg1): number
        */
       static max(arg0: number, arg1: number): number;
       /**
        * @noSelf
        *
        * Method Parameters: 
-       *  - (int arg0, int arg1): number
        *  - (float arg0, float arg1): number
+       *  - (int arg0, int arg1): number
        */
       static min(arg0: number, arg1: number): number;
       /**
@@ -348,15 +322,61 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.core.math.PZMath$SideOfLine>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.core.math.PZMath$SideOfLine>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (String arg0): SideOfLine
+       * Method Parameters: 
+       *  - (String arg0): zombie.core.math.PZMath$SideOfLine
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.core.math.PZMath$SideOfLine;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.core.math.PZMath$SideOfLine | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.core.math.PZMath$SideOfLine[]
+       */
       static values(): zombie.core.math.PZMath$SideOfLine[];
-
     }
     /**
      * @customConstructor vector2.new

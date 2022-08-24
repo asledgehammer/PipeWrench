@@ -1,30 +1,4 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
-/**  @noSelfInFile */
-/// <reference path="../reference.d.ts" />
+/** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.inventory {
     /**
@@ -1984,15 +1958,15 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (short arg0): zombie.inventory.InventoryItem
        *  - (String arg0): zombie.inventory.InventoryItem
+       *  - (short arg0): zombie.inventory.InventoryItem
        *  - (String arg0, float arg1): zombie.inventory.InventoryItem
        *  - (String arg0, Food arg1): zombie.inventory.InventoryItem
        *  - (String arg0, float arg1, boolean arg2): zombie.inventory.InventoryItem
        *  - (String arg0, float arg1, String arg2): zombie.inventory.InventoryItem
        *  - (String arg0, String arg1, String arg2, String arg3): zombie.inventory.InventoryItem
        */
-      static CreateItem(arg0: number | string, arg1?: number | zombie.inventory.types.Food | string, arg2?: boolean | string, arg3?: string): zombie.inventory.InventoryItem;
+      static CreateItem(arg0: string | number, arg1?: number | zombie.inventory.types.Food | string, arg2?: boolean | string, arg3?: string): zombie.inventory.InventoryItem;
     }
     /**
      * @customConstructor ItemContainer.new
@@ -2054,10 +2028,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): zombie.inventory.InventoryItem
-       *  - (String arg0, ArrayList arg1): zombie.inventory.InventoryItem
        *  - (String arg0, int arg1): java.util.ArrayList<zombie.inventory.InventoryItem>
+       *  - (String arg0, ArrayList arg1): zombie.inventory.InventoryItem
        */
-      FindAndReturn(arg0: string, arg1?: java.util.ArrayList<zombie.inventory.InventoryItem> | number): zombie.inventory.InventoryItem | java.util.ArrayList<zombie.inventory.InventoryItem>;
+      FindAndReturn(arg0: string, arg1?: number | java.util.ArrayList<zombie.inventory.InventoryItem>): zombie.inventory.InventoryItem | java.util.ArrayList<zombie.inventory.InventoryItem>;
       /**
        * Method Parameters: 
        *  - (String arg0): zombie.inventory.InventoryItem
@@ -2065,10 +2039,10 @@ declare module '@asledgehammer/pipewrench' {
       FindAndReturnCategory(arg0: string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (InventoryItem arg0): zombie.inventory.InventoryItem
        *  - (String arg0): zombie.inventory.InventoryItem
+       *  - (InventoryItem arg0): zombie.inventory.InventoryItem
        */
-      FindAndReturnStack(arg0: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
+      FindAndReturnStack(arg0: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (int arg0): zombie.inventory.InventoryItem
@@ -2086,11 +2060,11 @@ declare module '@asledgehammer/pipewrench' {
       HasType(arg0: zombie.inventory.ItemType): boolean;
       /**
        * Method Parameters: 
+       *  - (String arg0): void
        *  - (InventoryItem arg0): void
        *  - (ItemType arg0): zombie.inventory.InventoryItem
-       *  - (String arg0): void
        */
-      Remove(arg0: zombie.inventory.InventoryItem | zombie.inventory.ItemType | string): void | zombie.inventory.InventoryItem;
+      Remove(arg0: string | zombie.inventory.InventoryItem | zombie.inventory.ItemType): void | zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -2126,8 +2100,8 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (String arg0): boolean
        *  - (InventoryItem arg0): boolean
-       *  - (InventoryItem arg0, boolean arg1): boolean
        *  - (String arg0, boolean arg1): boolean
+       *  - (InventoryItem arg0, boolean arg1): boolean
        *  - (String arg0, boolean arg1, boolean arg2): boolean
        */
       contains(arg0: string | zombie.inventory.InventoryItem, arg1?: boolean, arg2?: boolean): boolean;
@@ -2979,10 +2953,10 @@ declare module '@asledgehammer/pipewrench' {
       getWeightReduction(): number;
       /**
        * Method Parameters: 
-       *  - (IsoGameCharacter arg0, InventoryItem arg1): boolean
        *  - (IsoGameCharacter arg0, float arg1): boolean
+       *  - (IsoGameCharacter arg0, InventoryItem arg1): boolean
        */
-      hasRoomFor(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.inventory.InventoryItem | number): boolean;
+      hasRoomFor(arg0: zombie.characters.IsoGameCharacter, arg1: number | zombie.inventory.InventoryItem): boolean;
       /**
        * Method Parameters: 
        *  - (int arg0): zombie.inventory.InventoryItem
@@ -3430,24 +3404,73 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
-       * @noSelf
-       *
-       * (int arg0): ItemType
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
        */
-      static fromIndex(arg0: number): zombie.inventory.ItemType;
-
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.inventory.ItemType>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.inventory.ItemType>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
       index(): number;
-
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
       /**
        * @noSelf
        *
-       * (String arg0): ItemType
+       * Method Parameters: 
+       *  - (int arg0): zombie.inventory.ItemType
        */
-      static valueOf(arg0: string | null): zombie.inventory.ItemType;
-
-      /** @noSelf */
+      static fromIndex(arg0: number): zombie.inventory.ItemType;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): zombie.inventory.ItemType
+       *  - (Class arg0, String arg1): T
+       */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.inventory.ItemType | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.inventory.ItemType[]
+       */
       static values(): zombie.inventory.ItemType[];
-
     }
     /**
      * @customConstructor RecipeManager.new

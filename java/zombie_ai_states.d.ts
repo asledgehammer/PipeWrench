@@ -1,30 +1,4 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
-/**  @noSelfInFile */
-/// <reference path="../reference.d.ts" />
+/** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.ai.states {
     /**
@@ -2648,37 +2622,37 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
-       *  - (HitInfo arg0, HitInfo arg1): number
        *  - (Object arg0, Object arg1): number
+       *  - (HitInfo arg0, HitInfo arg1): number
        */
-      compare<U>(arg0: any, arg1: any): number;
+      compare(arg0: any, arg1: any): number;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.Comparator<T>
        */
-      reversed<U>(): java.util.Comparator<any>;
+      reversed(): java.util.Comparator<any>;
       /**
        * Method Parameters: 
-       *  - (Function arg0): java.util.Comparator<T>
        *  - (Comparator arg0): java.util.Comparator<T>
+       *  - (Function arg0): java.util.Comparator<T>
        *  - (Function arg0, Comparator arg1): java.util.Comparator<T>
        */
-      thenComparing<U>(arg0: java.util._function_.Function<any, U> | java.util.Comparator<any>, arg1?: java.util.Comparator<U>): java.util.Comparator<any>;
+      thenComparing<U>(arg0: java.util.Comparator<any> | java.util._function_.Function<any, U>, arg1?: java.util.Comparator<U>): java.util.Comparator<any>;
       /**
        * Method Parameters: 
        *  - (ToDoubleFunction arg0): java.util.Comparator<T>
        */
-      thenComparingDouble<U>(arg0: java.util._function_.ToDoubleFunction<any>): java.util.Comparator<any>;
+      thenComparingDouble(arg0: java.util._function_.ToDoubleFunction<any>): java.util.Comparator<any>;
       /**
        * Method Parameters: 
        *  - (ToIntFunction arg0): java.util.Comparator<T>
        */
-      thenComparingInt<U>(arg0: java.util._function_.ToIntFunction<any>): java.util.Comparator<any>;
+      thenComparingInt(arg0: java.util._function_.ToIntFunction<any>): java.util.Comparator<any>;
       /**
        * Method Parameters: 
        *  - (ToLongFunction arg0): java.util.Comparator<T>
        */
-      thenComparingLong<U>(arg0: java.util._function_.ToLongFunction<any>): java.util.Comparator<any>;
+      thenComparingLong(arg0: java.util._function_.ToLongFunction<any>): java.util.Comparator<any>;
     }
     /**
      * @customConstructor ThumpState.new

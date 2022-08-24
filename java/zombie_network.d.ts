@@ -1,30 +1,4 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
-/**  @noSelfInFile */
-/// <reference path="../reference.d.ts" />
+/** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.network {
     /**
@@ -172,11 +146,11 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
-       *  - (byte arg0, String arg1): void
        *  - (byte arg0, boolean arg1): void
+       *  - (byte arg0, String arg1): void
        *  - (byte arg0, float arg1, float arg2): boolean
        */
-      updateField(arg0: number, arg1: string | boolean | number, arg2?: number): void | boolean;
+      updateField(arg0: number, arg1: boolean | string | number, arg2?: number): void | boolean;
     }
     /**
      * @customConstructor ClientChunkRequest.new
@@ -1503,22 +1477,68 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
-       * @noSelf
-       *
-       * (byte arg0): PredictionTypes
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
        */
-      static fromByte(arg0: number): zombie.network.NetworkVariables$PredictionTypes;
-
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.network.NetworkVariables$PredictionTypes>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.network.NetworkVariables$PredictionTypes>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
       /**
        * @noSelf
        *
-       * (String arg0): PredictionTypes
+       * Method Parameters: 
+       *  - (byte arg0): zombie.network.NetworkVariables$PredictionTypes
        */
-      static valueOf(arg0: string | null): zombie.network.NetworkVariables$PredictionTypes;
-
-      /** @noSelf */
+      static fromByte(arg0: number): zombie.network.NetworkVariables$PredictionTypes;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): zombie.network.NetworkVariables$PredictionTypes
+       *  - (Class arg0, String arg1): T
+       */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.network.NetworkVariables$PredictionTypes | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.network.NetworkVariables$PredictionTypes[]
+       */
       static values(): zombie.network.NetworkVariables$PredictionTypes[];
-
     }
     /** [ENUM] zombie.network.PacketTypes$PacketType */
     export class PacketTypes$PacketType {
@@ -1735,38 +1755,102 @@ declare module '@asledgehammer/pipewrench' {
 
       name(): string;
       ordinal(): number;
-      /** (ByteBufferWriter arg0): void */
-      doPacket(arg0: zombie.core.network.ByteBufferWriter | null): void;
-
+      /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.network.PacketTypes$PacketType>>;
+      /**
+       * Method Parameters: 
+       *  - (ByteBufferWriter arg0): void
+       */
+      doPacket(arg0: zombie.core.network.ByteBufferWriter): void;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.network.PacketTypes$PacketType>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
       getId(): number;
-
-      /** (ByteBuffer arg0): boolean */
-      onGameLoadingDealWithNetData(arg0: java.nio.ByteBuffer | null): boolean;
-
-      /** (ByteBuffer arg0): void */
-      onMainLoopHandlePacketInternal(arg0: java.nio.ByteBuffer | null): void;
-
-      /** (ByteBuffer arg0, UdpConnection arg1): void */
-      onServerPacket(arg0: java.nio.ByteBuffer | null, arg1: zombie.core.raknet.UdpConnection | null): void;
-
-      /** (UdpConnection arg0): void */
-      onUnauthorized(arg0: zombie.core.raknet.UdpConnection | null): void;
-
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (ByteBuffer arg0): boolean
+       */
+      onGameLoadingDealWithNetData(arg0: java.nio.ByteBuffer): boolean;
+      /**
+       * Method Parameters: 
+       *  - (ByteBuffer arg0): void
+       */
+      onMainLoopHandlePacketInternal(arg0: java.nio.ByteBuffer): void;
+      /**
+       * Method Parameters: 
+       *  - (ByteBuffer arg0, UdpConnection arg1): void
+       */
+      onServerPacket(arg0: java.nio.ByteBuffer, arg1: zombie.core.raknet.UdpConnection): void;
+      /**
+       * Method Parameters: 
+       *  - (UdpConnection arg0): void
+       */
+      onUnauthorized(arg0: zombie.core.raknet.UdpConnection): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
       resetStatistics(): void;
-
-      /** (UdpConnection arg0): void */
-      send(arg0: zombie.core.raknet.UdpConnection | null): void;
-
+      /**
+       * Method Parameters: 
+       *  - (UdpConnection arg0): void
+       */
+      send(arg0: zombie.core.raknet.UdpConnection): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
       /**
        * @noSelf
        *
-       * (String arg0): PacketType
+       * Method Parameters: 
+       *  - (String arg0): zombie.network.PacketTypes$PacketType
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.network.PacketTypes$PacketType;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.network.PacketTypes$PacketType | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.network.PacketTypes$PacketType[]
+       */
       static values(): zombie.network.PacketTypes$PacketType[];
-
     }
     /**
      * @customConstructor Server.new
@@ -2804,31 +2888,80 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
-       * @noSelf
-       *
-       * (String arg0): UserlogType
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
        */
-      static FromString(arg0: string | null): zombie.network.Userlog$UserlogType;
-
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.network.Userlog$UserlogType>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.network.Userlog$UserlogType>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      index(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
       /**
        * @noSelf
        *
-       * (int arg0): UserlogType
+       * Method Parameters: 
+       *  - (String arg0): zombie.network.Userlog$UserlogType
+       */
+      static FromString(arg0: string): zombie.network.Userlog$UserlogType;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (int arg0): zombie.network.Userlog$UserlogType
        */
       static fromIndex(arg0: number): zombie.network.Userlog$UserlogType;
-
-      index(): number;
-
       /**
        * @noSelf
        *
-       * (String arg0): UserlogType
+       * Method Parameters: 
+       *  - (String arg0): zombie.network.Userlog$UserlogType
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.network.Userlog$UserlogType;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.network.Userlog$UserlogType | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.network.Userlog$UserlogType[]
+       */
       static values(): zombie.network.Userlog$UserlogType[];
-
     }
   }
 }

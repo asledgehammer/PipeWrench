@@ -1,33 +1,4 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- * File generated at 2022-08-12T21:26Z
- */
-
-/////////////////////////////////////////////
-// [PARTIAL] : Java.reference.partial.d.ts //
-/////////////////////////////////////////////
-
+// [JAVA-PARTIAL:START]
 /// <reference path="java/fmod_fmod.d.ts" />
 /// <reference path="java/gnu_trove_function.d.ts" />
 /// <reference path="java/gnu_trove_iterator.d.ts" />
@@ -165,11 +136,7 @@
 /// <reference path="java/zombie_worldMap_styles.d.ts" />
 /// <reference path="java/zombie_worldMap_symbols.d.ts" />
 /// <reference path="java/zombie_world_moddata.d.ts" />
-
-////////////////////////////////////////////
-// [PARTIAL] : Lua.reference.partial.d.ts //
-////////////////////////////////////////////
-
+// [JAVA-PARTIAL:STOP]// [LUA-PARTIAL:STOP]
 /// <reference path="lua/client/Blacksmith/ISUI/ISBlacksmithMenu.d.ts" />
 /// <reference path="lua/client/Blacksmith/ISUI/ISFurnaceInfoWindow.d.ts" />
 /// <reference path="lua/client/Blacksmith/TimedActions/ISAddCoalInFurnace.d.ts" />
@@ -1057,3 +1024,4 @@
 /// <reference path="lua/shared/Util/LuaNet.d.ts" />
 /// <reference path="lua/shared/Util/StringReplacer.d.ts" />
 /// <reference path="lua/shared/VehicleZoneDefinition.d.ts" />
+// [LUA-PARTIAL:STOP]

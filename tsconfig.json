@@ -3,16 +3,17 @@
     "allowSyntheticDefaultImports": true,
     "declaration": true,
     "experimentalDecorators": true,
+    "outDir": "./dist",
     "lib": [
       "ESNext",
       "DOM"
     ],
-    "module": "ESNext",
+    "module": "CommonJS",
     "moduleResolution": "node",
     "strict": true,
     "target": "ESNext",
     "types": [
-      "lua-types/5.1",
+      "@types/node"
     ]
   },
   "tstl": {
@@ -24,5 +25,11 @@
     "./lua",
     ".PipeWrench.d.ts",
     ".reference.d.ts"
+  ],
+  "exclude": [
+    "java.api.partial.d.ts",
+    "java.reference.partial.d.ts",
+    "lua.api.partial.d.ts",
+    "lua.reference.partial.d.ts"
   ]
 }

@@ -1,30 +1,4 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
-/**  @noSelfInFile */
-/// <reference path="../reference.d.ts" />
+/** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace java.util {
     export type AbstractList<E> = any;
@@ -38,154 +12,154 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Constructors: 
        *  - (Empty Constructor)
-       *  - (Collection arg0)
        *  - (int arg0)
+       *  - (Collection arg0)
        */
-      constructor(arg0?: java.util.Collection<E> | number);
+      constructor(arg0?: number | java.util.Collection<E>);
       /**
        * Method Parameters: 
        *  - (Object arg0): boolean
        *  - (int arg0, Object arg1): void
        */
-      add<T>(arg0: any | number, arg1?: any): boolean | void;
+      add(arg0: any | number, arg1?: any): boolean | void;
       /**
        * Method Parameters: 
        *  - (Collection arg0): boolean
        *  - (int arg0, Collection arg1): boolean
        */
-      addAll<T>(arg0: java.util.Collection<E> | number, arg1?: java.util.Collection<E>): boolean;
+      addAll(arg0: java.util.Collection<E> | number, arg1?: java.util.Collection<E>): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): void
        */
-      clear<T>(): void;
+      clear(): void;
       /**
        * Method Parameters: 
        *  - (Empty): any
        */
-      clone<T>(): any;
+      clone(): any;
       /**
        * Method Parameters: 
        *  - (Object arg0): boolean
        */
-      contains<T>(arg0: any): boolean;
+      contains(arg0: any): boolean;
       /**
        * Method Parameters: 
        *  - (Collection arg0): boolean
        */
-      containsAll<T>(arg0: java.util.Collection<any>): boolean;
+      containsAll(arg0: java.util.Collection<any>): boolean;
       /**
        * Method Parameters: 
        *  - (int arg0): void
        */
-      ensureCapacity<T>(arg0: number): void;
+      ensureCapacity(arg0: number): void;
       /**
        * Method Parameters: 
        *  - (Object arg0): boolean
        */
-      equals<T>(arg0: any): boolean;
+      equals(arg0: any): boolean;
       /**
        * Method Parameters: 
        *  - (Consumer arg0): void
        */
-      forEach<T>(arg0: java.util._function_.Consumer<E>): void;
+      forEach(arg0: java.util._function_.Consumer<E>): void;
       /**
        * Method Parameters: 
        *  - (int arg0): E
        */
-      get<T>(arg0: number): any;
+      get(arg0: number): any;
       /**
        * Method Parameters: 
        *  - (Empty): number
        */
-      hashCode<T>(): number;
+      hashCode(): number;
       /**
        * Method Parameters: 
        *  - (Object arg0): number
        */
-      indexOf<T>(arg0: any): number;
+      indexOf(arg0: any): number;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
        */
-      isEmpty<T>(): boolean;
+      isEmpty(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.Iterator<E>
        */
-      iterator<T>(): java.util.Iterator<E>;
+      iterator(): java.util.Iterator<E>;
       /**
        * Method Parameters: 
        *  - (Object arg0): number
        */
-      lastIndexOf<T>(arg0: any): number;
+      lastIndexOf(arg0: any): number;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.ListIterator<E>
        *  - (int arg0): java.util.ListIterator<E>
        */
-      listIterator<T>(arg0?: number): java.util.ListIterator<E>;
+      listIterator(arg0?: number): java.util.ListIterator<E>;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.stream.Stream<E>
        */
-      parallelStream<T>(): java.util.stream.Stream<any>;
+      parallelStream(): java.util.stream.Stream<any>;
       /**
        * Method Parameters: 
-       *  - (Object arg0): boolean
        *  - (int arg0): E
+       *  - (Object arg0): boolean
        */
-      remove<T>(arg0: any): any;
+      remove(arg0: any): any;
       /**
        * Method Parameters: 
        *  - (Collection arg0): boolean
        */
-      removeAll<T>(arg0: java.util.Collection<any>): boolean;
+      removeAll(arg0: java.util.Collection<any>): boolean;
       /**
        * Method Parameters: 
        *  - (Predicate arg0): boolean
        */
-      removeIf<T>(arg0: java.util._function_.Predicate<E>): boolean;
+      removeIf(arg0: java.util._function_.Predicate<E>): boolean;
       /**
        * Method Parameters: 
        *  - (UnaryOperator arg0): void
        */
-      replaceAll<T>(arg0: java.util._function_.UnaryOperator<E>): void;
+      replaceAll(arg0: java.util._function_.UnaryOperator<E>): void;
       /**
        * Method Parameters: 
        *  - (Collection arg0): boolean
        */
-      retainAll<T>(arg0: java.util.Collection<any>): boolean;
+      retainAll(arg0: java.util.Collection<any>): boolean;
       /**
        * Method Parameters: 
        *  - (int arg0, Object arg1): E
        */
-      set<T>(arg0: number, arg1: any): any;
+      set(arg0: number, arg1: any): any;
       /**
        * Method Parameters: 
        *  - (Empty): number
        */
-      size<T>(): number;
+      size(): number;
       /**
        * Method Parameters: 
        *  - (Comparator arg0): void
        */
-      sort<T>(arg0: java.util.Comparator<E>): void;
+      sort(arg0: java.util.Comparator<E>): void;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.Spliterator<E>
        */
-      spliterator<T>(): java.util.Spliterator<E>;
+      spliterator(): java.util.Spliterator<E>;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.stream.Stream<E>
        */
-      stream<T>(): java.util.stream.Stream<any>;
+      stream(): java.util.stream.Stream<any>;
       /**
        * Method Parameters: 
        *  - (int arg0, int arg1): java.util.List<E>
        */
-      subList<T>(arg0: number, arg1: number): java.util.List<E>;
+      subList(arg0: number, arg1: number): java.util.List<E>;
       /**
        * Method Parameters: 
        *  - (Empty): any[]
@@ -197,12 +171,12 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): string
        */
-      toString<T>(): string;
+      toString(): string;
       /**
        * Method Parameters: 
        *  - (Empty): void
        */
-      trimToSize<T>(): void;
+      trimToSize(): void;
     }
     export type BitSet = any;
     export type Calendar = any;
@@ -218,10 +192,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Constructors: 
        *  - (Class arg0)
-       *  - (Map arg0)
        *  - (EnumMap arg0)
+       *  - (Map arg0)
        */
-      constructor(arg0: java.lang.Class<K> | java.util.Map<K, V> | java.util.EnumMap<K, V>);
+      constructor(arg0: java.lang.Class<K> | java.util.EnumMap<K, V> | java.util.Map<K, V>);
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -305,8 +279,8 @@ declare module '@asledgehammer/pipewrench' {
       merge(arg0: any, arg1: any, arg2: java.util._function_.BiFunction<any, any, any>): any;
       /**
        * Method Parameters: 
-       *  - (Object arg0, Object arg1): any
        *  - (Enum arg0, Object arg1): V
+       *  - (Object arg0, Object arg1): any
        */
       put(arg0: any, arg1: any): any;
       /**
@@ -543,246 +517,246 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Object arg0): boolean
        *  - (int arg0, Object arg1): void
        */
-      add<T>(arg0: any | number, arg1?: any): boolean | void;
+      add(arg0: any | number, arg1?: any): boolean | void;
       /**
        * Method Parameters: 
        *  - (Collection arg0): boolean
        *  - (int arg0, Collection arg1): boolean
        */
-      addAll<T>(arg0: java.util.Collection<E> | number, arg1?: java.util.Collection<E>): boolean;
+      addAll(arg0: java.util.Collection<E> | number, arg1?: java.util.Collection<E>): boolean;
       /**
        * Method Parameters: 
        *  - (Object arg0): void
        */
-      addFirst<T>(arg0: any): void;
+      addFirst(arg0: any): void;
       /**
        * Method Parameters: 
        *  - (Object arg0): void
        */
-      addLast<T>(arg0: any): void;
+      addLast(arg0: any): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
        */
-      clear<T>(): void;
+      clear(): void;
       /**
        * Method Parameters: 
        *  - (Empty): any
        */
-      clone<T>(): any;
+      clone(): any;
       /**
        * Method Parameters: 
        *  - (Object arg0): boolean
        */
-      contains<T>(arg0: any): boolean;
+      contains(arg0: any): boolean;
       /**
        * Method Parameters: 
        *  - (Collection arg0): boolean
        */
-      containsAll<T>(arg0: java.util.Collection<any>): boolean;
+      containsAll(arg0: java.util.Collection<any>): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.Iterator<E>
        */
-      descendingIterator<T>(): java.util.Iterator<E>;
+      descendingIterator(): java.util.Iterator<E>;
       /**
        * Method Parameters: 
        *  - (Empty): E
        */
-      element<T>(): any;
+      element(): any;
       /**
        * Method Parameters: 
        *  - (Object arg0): boolean
        */
-      equals<T>(arg0: any): boolean;
+      equals(arg0: any): boolean;
       /**
        * Method Parameters: 
        *  - (Consumer arg0): void
        */
-      forEach<T>(arg0: java.util._function_.Consumer<any>): void;
+      forEach(arg0: java.util._function_.Consumer<any>): void;
       /**
        * Method Parameters: 
        *  - (int arg0): E
        */
-      get<T>(arg0: number): any;
+      get(arg0: number): any;
       /**
        * Method Parameters: 
        *  - (Empty): E
        */
-      getFirst<T>(): any;
+      getFirst(): any;
       /**
        * Method Parameters: 
        *  - (Empty): E
        */
-      getLast<T>(): any;
+      getLast(): any;
       /**
        * Method Parameters: 
        *  - (Empty): number
        */
-      hashCode<T>(): number;
+      hashCode(): number;
       /**
        * Method Parameters: 
        *  - (Object arg0): number
        */
-      indexOf<T>(arg0: any): number;
+      indexOf(arg0: any): number;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
        */
-      isEmpty<T>(): boolean;
+      isEmpty(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.Iterator<E>
        */
-      iterator<T>(): java.util.Iterator<any>;
+      iterator(): java.util.Iterator<any>;
       /**
        * Method Parameters: 
        *  - (Object arg0): number
        */
-      lastIndexOf<T>(arg0: any): number;
+      lastIndexOf(arg0: any): number;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.ListIterator<E>
        *  - (int arg0): java.util.ListIterator<E>
        */
-      listIterator<T>(arg0?: number): java.util.ListIterator<any> | java.util.ListIterator<E>;
+      listIterator(arg0?: number): java.util.ListIterator<any> | java.util.ListIterator<E>;
       /**
        * Method Parameters: 
        *  - (Object arg0): boolean
        */
-      offer<T>(arg0: any): boolean;
+      offer(arg0: any): boolean;
       /**
        * Method Parameters: 
        *  - (Object arg0): boolean
        */
-      offerFirst<T>(arg0: any): boolean;
+      offerFirst(arg0: any): boolean;
       /**
        * Method Parameters: 
        *  - (Object arg0): boolean
        */
-      offerLast<T>(arg0: any): boolean;
+      offerLast(arg0: any): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.stream.Stream<E>
        */
-      parallelStream<T>(): java.util.stream.Stream<any>;
+      parallelStream(): java.util.stream.Stream<any>;
       /**
        * Method Parameters: 
        *  - (Empty): E
        */
-      peek<T>(): any;
+      peek(): any;
       /**
        * Method Parameters: 
        *  - (Empty): E
        */
-      peekFirst<T>(): any;
+      peekFirst(): any;
       /**
        * Method Parameters: 
        *  - (Empty): E
        */
-      peekLast<T>(): any;
+      peekLast(): any;
       /**
        * Method Parameters: 
        *  - (Empty): E
        */
-      poll<T>(): any;
+      poll(): any;
       /**
        * Method Parameters: 
        *  - (Empty): E
        */
-      pollFirst<T>(): any;
+      pollFirst(): any;
       /**
        * Method Parameters: 
        *  - (Empty): E
        */
-      pollLast<T>(): any;
+      pollLast(): any;
       /**
        * Method Parameters: 
        *  - (Empty): E
        */
-      pop<T>(): any;
+      pop(): any;
       /**
        * Method Parameters: 
        *  - (Object arg0): void
        */
-      push<T>(arg0: any): void;
+      push(arg0: any): void;
       /**
        * Method Parameters: 
        *  - (Empty): E
-       *  - (Object arg0): boolean
        *  - (int arg0): E
+       *  - (Object arg0): boolean
        */
-      remove<T>(arg0?: any): any;
+      remove(arg0?: any): any;
       /**
        * Method Parameters: 
        *  - (Collection arg0): boolean
        */
-      removeAll<T>(arg0: java.util.Collection<any>): boolean;
+      removeAll(arg0: java.util.Collection<any>): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): E
        */
-      removeFirst<T>(): any;
+      removeFirst(): any;
       /**
        * Method Parameters: 
        *  - (Object arg0): boolean
        */
-      removeFirstOccurrence<T>(arg0: any): boolean;
+      removeFirstOccurrence(arg0: any): boolean;
       /**
        * Method Parameters: 
        *  - (Predicate arg0): boolean
        */
-      removeIf<T>(arg0: java.util._function_.Predicate<any>): boolean;
+      removeIf(arg0: java.util._function_.Predicate<any>): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): E
        */
-      removeLast<T>(): any;
+      removeLast(): any;
       /**
        * Method Parameters: 
        *  - (Object arg0): boolean
        */
-      removeLastOccurrence<T>(arg0: any): boolean;
+      removeLastOccurrence(arg0: any): boolean;
       /**
        * Method Parameters: 
        *  - (UnaryOperator arg0): void
        */
-      replaceAll<T>(arg0: java.util._function_.UnaryOperator<any>): void;
+      replaceAll(arg0: java.util._function_.UnaryOperator<any>): void;
       /**
        * Method Parameters: 
        *  - (Collection arg0): boolean
        */
-      retainAll<T>(arg0: java.util.Collection<any>): boolean;
+      retainAll(arg0: java.util.Collection<any>): boolean;
       /**
        * Method Parameters: 
        *  - (int arg0, Object arg1): E
        */
-      set<T>(arg0: number, arg1: any): any;
+      set(arg0: number, arg1: any): any;
       /**
        * Method Parameters: 
        *  - (Empty): number
        */
-      size<T>(): number;
+      size(): number;
       /**
        * Method Parameters: 
        *  - (Comparator arg0): void
        */
-      sort<T>(arg0: java.util.Comparator<any>): void;
+      sort(arg0: java.util.Comparator<any>): void;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.Spliterator<E>
        */
-      spliterator<T>(): java.util.Spliterator<E>;
+      spliterator(): java.util.Spliterator<E>;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.stream.Stream<E>
        */
-      stream<T>(): java.util.stream.Stream<any>;
+      stream(): java.util.stream.Stream<any>;
       /**
        * Method Parameters: 
        *  - (int arg0, int arg1): java.util.List<E>
        */
-      subList<T>(arg0: number, arg1: number): java.util.List<any>;
+      subList(arg0: number, arg1: number): java.util.List<any>;
       /**
        * Method Parameters: 
        *  - (Empty): any[]
@@ -794,13 +768,14 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): string
        */
-      toString<T>(): string;
+      toString(): string;
     }
     export type List<E> = any;
     export type ListIterator<E> = any;
     export type Locale = any;
     export type Map<K, V> = any;
     export type Map$Entry<K, V> = any;
+    export type Optional<T> = any;
     export type Set<E> = any;
     export type Spliterator<T> = any;
     /**
@@ -819,237 +794,237 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Object arg0): boolean
        *  - (int arg0, Object arg1): void
        */
-      add<T>(arg0: any, arg1?: any): boolean | void;
+      add(arg0: any, arg1?: any): boolean | void;
       /**
        * Method Parameters: 
        *  - (Collection arg0): boolean
        *  - (int arg0, Collection arg1): boolean
        */
-      addAll<T>(arg0: java.util.Collection<any> | number, arg1?: java.util.Collection<any>): boolean;
+      addAll(arg0: java.util.Collection<any> | number, arg1?: java.util.Collection<any>): boolean;
       /**
        * Method Parameters: 
        *  - (Object arg0): void
        */
-      addElement<T>(arg0: any): void;
+      addElement(arg0: any): void;
       /**
        * Method Parameters: 
        *  - (Empty): number
        */
-      capacity<T>(): number;
+      capacity(): number;
       /**
        * Method Parameters: 
        *  - (Empty): void
        */
-      clear<T>(): void;
+      clear(): void;
       /**
        * Method Parameters: 
        *  - (Empty): any
        */
-      clone<T>(): any;
+      clone(): any;
       /**
        * Method Parameters: 
        *  - (Object arg0): boolean
        */
-      contains<T>(arg0: any): boolean;
+      contains(arg0: any): boolean;
       /**
        * Method Parameters: 
        *  - (Collection arg0): boolean
        */
-      containsAll<T>(arg0: java.util.Collection<any>): boolean;
+      containsAll(arg0: java.util.Collection<any>): boolean;
       /**
        * Method Parameters: 
        *  - (Object[] arg0): void
        */
-      copyInto<T>(arg0: any): void;
+      copyInto(arg0: any): void;
       /**
        * Method Parameters: 
        *  - (int arg0): E
        */
-      elementAt<T>(arg0: number): any;
+      elementAt(arg0: number): any;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.Enumeration<E>
        */
-      elements<T>(): java.util.Enumeration<any>;
+      elements(): java.util.Enumeration<any>;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
        */
-      empty<T>(): boolean;
+      empty(): boolean;
       /**
        * Method Parameters: 
        *  - (int arg0): void
        */
-      ensureCapacity<T>(arg0: number): void;
+      ensureCapacity(arg0: number): void;
       /**
        * Method Parameters: 
        *  - (Object arg0): boolean
        */
-      equals<T>(arg0: any): boolean;
+      equals(arg0: any): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): E
        */
-      firstElement<T>(): any;
+      firstElement(): any;
       /**
        * Method Parameters: 
        *  - (Consumer arg0): void
        */
-      forEach<T>(arg0: java.util._function_.Consumer<any>): void;
+      forEach(arg0: java.util._function_.Consumer<any>): void;
       /**
        * Method Parameters: 
        *  - (int arg0): E
        */
-      get<T>(arg0: number): any;
+      get(arg0: number): any;
       /**
        * Method Parameters: 
        *  - (Empty): number
        */
-      hashCode<T>(): number;
+      hashCode(): number;
       /**
        * Method Parameters: 
        *  - (Object arg0): number
        *  - (Object arg0, int arg1): number
        */
-      indexOf<T>(arg0: any, arg1?: number): number;
+      indexOf(arg0: any, arg1?: number): number;
       /**
        * Method Parameters: 
        *  - (Object arg0, int arg1): void
        */
-      insertElementAt<T>(arg0: any, arg1: number): void;
+      insertElementAt(arg0: any, arg1: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
        */
-      isEmpty<T>(): boolean;
+      isEmpty(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.Iterator<E>
        */
-      iterator<T>(): java.util.Iterator<any>;
+      iterator(): java.util.Iterator<any>;
       /**
        * Method Parameters: 
        *  - (Empty): E
        */
-      lastElement<T>(): any;
+      lastElement(): any;
       /**
        * Method Parameters: 
        *  - (Object arg0): number
        *  - (Object arg0, int arg1): number
        */
-      lastIndexOf<T>(arg0: any, arg1?: number): number;
+      lastIndexOf(arg0: any, arg1?: number): number;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.ListIterator<E>
        *  - (int arg0): java.util.ListIterator<E>
        */
-      listIterator<T>(arg0?: number): java.util.ListIterator<any>;
+      listIterator(arg0?: number): java.util.ListIterator<any>;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.stream.Stream<E>
        */
-      parallelStream<T>(): java.util.stream.Stream<any>;
+      parallelStream(): java.util.stream.Stream<any>;
       /**
        * Method Parameters: 
        *  - (Empty): E
        */
-      peek<T>(): any;
+      peek(): any;
       /**
        * Method Parameters: 
        *  - (Empty): E
        */
-      pop<T>(): any;
+      pop(): any;
       /**
        * Method Parameters: 
        *  - (Object arg0): E
        */
-      push<T>(arg0: any): any;
+      push(arg0: any): any;
       /**
        * Method Parameters: 
        *  - (int arg0): E
        *  - (Object arg0): boolean
        */
-      remove<T>(arg0: any): any;
+      remove(arg0: any): any;
       /**
        * Method Parameters: 
        *  - (Collection arg0): boolean
        */
-      removeAll<T>(arg0: java.util.Collection<any>): boolean;
+      removeAll(arg0: java.util.Collection<any>): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): void
        */
-      removeAllElements<T>(): void;
+      removeAllElements(): void;
       /**
        * Method Parameters: 
        *  - (Object arg0): boolean
        */
-      removeElement<T>(arg0: any): boolean;
+      removeElement(arg0: any): boolean;
       /**
        * Method Parameters: 
        *  - (int arg0): void
        */
-      removeElementAt<T>(arg0: number): void;
+      removeElementAt(arg0: number): void;
       /**
        * Method Parameters: 
        *  - (Predicate arg0): boolean
        */
-      removeIf<T>(arg0: java.util._function_.Predicate<any>): boolean;
+      removeIf(arg0: java.util._function_.Predicate<any>): boolean;
       /**
        * Method Parameters: 
        *  - (UnaryOperator arg0): void
        */
-      replaceAll<T>(arg0: java.util._function_.UnaryOperator<any>): void;
+      replaceAll(arg0: java.util._function_.UnaryOperator<any>): void;
       /**
        * Method Parameters: 
        *  - (Collection arg0): boolean
        */
-      retainAll<T>(arg0: java.util.Collection<any>): boolean;
+      retainAll(arg0: java.util.Collection<any>): boolean;
       /**
        * Method Parameters: 
        *  - (Object arg0): number
        */
-      search<T>(arg0: any): number;
+      search(arg0: any): number;
       /**
        * Method Parameters: 
        *  - (int arg0, Object arg1): E
        */
-      set<T>(arg0: number, arg1: any): any;
+      set(arg0: number, arg1: any): any;
       /**
        * Method Parameters: 
        *  - (Object arg0, int arg1): void
        */
-      setElementAt<T>(arg0: any, arg1: number): void;
+      setElementAt(arg0: any, arg1: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
        */
-      setSize<T>(arg0: number): void;
+      setSize(arg0: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): number
        */
-      size<T>(): number;
+      size(): number;
       /**
        * Method Parameters: 
        *  - (Comparator arg0): void
        */
-      sort<T>(arg0: java.util.Comparator<any>): void;
+      sort(arg0: java.util.Comparator<any>): void;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.Spliterator<E>
        */
-      spliterator<T>(): java.util.Spliterator<any>;
+      spliterator(): java.util.Spliterator<any>;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.stream.Stream<E>
        */
-      stream<T>(): java.util.stream.Stream<any>;
+      stream(): java.util.stream.Stream<any>;
       /**
        * Method Parameters: 
        *  - (int arg0, int arg1): java.util.List<E>
        */
-      subList<T>(arg0: number, arg1: number): java.util.List<any>;
+      subList(arg0: number, arg1: number): java.util.List<any>;
       /**
        * Method Parameters: 
        *  - (Empty): any[]
@@ -1061,12 +1036,12 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): string
        */
-      toString<T>(): string;
+      toString(): string;
       /**
        * Method Parameters: 
        *  - (Empty): void
        */
-      trimToSize<T>(): void;
+      trimToSize(): void;
     }
     export type TimeZone = any;
     /**
@@ -1078,222 +1053,222 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Constructors: 
        *  - (Empty Constructor)
-       *  - (Collection arg0)
        *  - (int arg0)
+       *  - (Collection arg0)
        *  - (int arg0, int arg1)
        */
-      constructor(arg0?: java.util.Collection<E> | number, arg1?: number);
+      constructor(arg0?: number | java.util.Collection<E>, arg1?: number);
       /**
        * Method Parameters: 
        *  - (Object arg0): boolean
        *  - (int arg0, Object arg1): void
        */
-      add<T>(arg0: any | number, arg1?: any): boolean | void;
+      add(arg0: any | number, arg1?: any): boolean | void;
       /**
        * Method Parameters: 
        *  - (Collection arg0): boolean
        *  - (int arg0, Collection arg1): boolean
        */
-      addAll<T>(arg0: java.util.Collection<E> | number, arg1?: java.util.Collection<E>): boolean;
+      addAll(arg0: java.util.Collection<E> | number, arg1?: java.util.Collection<E>): boolean;
       /**
        * Method Parameters: 
        *  - (Object arg0): void
        */
-      addElement<T>(arg0: any): void;
+      addElement(arg0: any): void;
       /**
        * Method Parameters: 
        *  - (Empty): number
        */
-      capacity<T>(): number;
+      capacity(): number;
       /**
        * Method Parameters: 
        *  - (Empty): void
        */
-      clear<T>(): void;
+      clear(): void;
       /**
        * Method Parameters: 
        *  - (Empty): any
        */
-      clone<T>(): any;
+      clone(): any;
       /**
        * Method Parameters: 
        *  - (Object arg0): boolean
        */
-      contains<T>(arg0: any): boolean;
+      contains(arg0: any): boolean;
       /**
        * Method Parameters: 
        *  - (Collection arg0): boolean
        */
-      containsAll<T>(arg0: java.util.Collection<any>): boolean;
+      containsAll(arg0: java.util.Collection<any>): boolean;
       /**
        * Method Parameters: 
        *  - (Object[] arg0): void
        */
-      copyInto<T>(arg0: any): void;
+      copyInto(arg0: any): void;
       /**
        * Method Parameters: 
        *  - (int arg0): E
        */
-      elementAt<T>(arg0: number): any;
+      elementAt(arg0: number): any;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.Enumeration<E>
        */
-      elements<T>(): java.util.Enumeration<E>;
+      elements(): java.util.Enumeration<E>;
       /**
        * Method Parameters: 
        *  - (int arg0): void
        */
-      ensureCapacity<T>(arg0: number): void;
+      ensureCapacity(arg0: number): void;
       /**
        * Method Parameters: 
        *  - (Object arg0): boolean
        */
-      equals<T>(arg0: any): boolean;
+      equals(arg0: any): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): E
        */
-      firstElement<T>(): any;
+      firstElement(): any;
       /**
        * Method Parameters: 
        *  - (Consumer arg0): void
        */
-      forEach<T>(arg0: java.util._function_.Consumer<E>): void;
+      forEach(arg0: java.util._function_.Consumer<E>): void;
       /**
        * Method Parameters: 
        *  - (int arg0): E
        */
-      get<T>(arg0: number): any;
+      get(arg0: number): any;
       /**
        * Method Parameters: 
        *  - (Empty): number
        */
-      hashCode<T>(): number;
+      hashCode(): number;
       /**
        * Method Parameters: 
        *  - (Object arg0): number
        *  - (Object arg0, int arg1): number
        */
-      indexOf<T>(arg0: any, arg1?: number): number;
+      indexOf(arg0: any, arg1?: number): number;
       /**
        * Method Parameters: 
        *  - (Object arg0, int arg1): void
        */
-      insertElementAt<T>(arg0: any, arg1: number): void;
+      insertElementAt(arg0: any, arg1: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
        */
-      isEmpty<T>(): boolean;
+      isEmpty(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.Iterator<E>
        */
-      iterator<T>(): java.util.Iterator<E>;
+      iterator(): java.util.Iterator<E>;
       /**
        * Method Parameters: 
        *  - (Empty): E
        */
-      lastElement<T>(): any;
+      lastElement(): any;
       /**
        * Method Parameters: 
        *  - (Object arg0): number
        *  - (Object arg0, int arg1): number
        */
-      lastIndexOf<T>(arg0: any, arg1?: number): number;
+      lastIndexOf(arg0: any, arg1?: number): number;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.ListIterator<E>
        *  - (int arg0): java.util.ListIterator<E>
        */
-      listIterator<T>(arg0?: number): java.util.ListIterator<E>;
+      listIterator(arg0?: number): java.util.ListIterator<E>;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.stream.Stream<E>
        */
-      parallelStream<T>(): java.util.stream.Stream<any>;
+      parallelStream(): java.util.stream.Stream<any>;
       /**
        * Method Parameters: 
        *  - (int arg0): E
        *  - (Object arg0): boolean
        */
-      remove<T>(arg0: any): any;
+      remove(arg0: any): any;
       /**
        * Method Parameters: 
        *  - (Collection arg0): boolean
        */
-      removeAll<T>(arg0: java.util.Collection<any>): boolean;
+      removeAll(arg0: java.util.Collection<any>): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): void
        */
-      removeAllElements<T>(): void;
+      removeAllElements(): void;
       /**
        * Method Parameters: 
        *  - (Object arg0): boolean
        */
-      removeElement<T>(arg0: any): boolean;
+      removeElement(arg0: any): boolean;
       /**
        * Method Parameters: 
        *  - (int arg0): void
        */
-      removeElementAt<T>(arg0: number): void;
+      removeElementAt(arg0: number): void;
       /**
        * Method Parameters: 
        *  - (Predicate arg0): boolean
        */
-      removeIf<T>(arg0: java.util._function_.Predicate<E>): boolean;
+      removeIf(arg0: java.util._function_.Predicate<E>): boolean;
       /**
        * Method Parameters: 
        *  - (UnaryOperator arg0): void
        */
-      replaceAll<T>(arg0: java.util._function_.UnaryOperator<E>): void;
+      replaceAll(arg0: java.util._function_.UnaryOperator<E>): void;
       /**
        * Method Parameters: 
        *  - (Collection arg0): boolean
        */
-      retainAll<T>(arg0: java.util.Collection<any>): boolean;
+      retainAll(arg0: java.util.Collection<any>): boolean;
       /**
        * Method Parameters: 
        *  - (int arg0, Object arg1): E
        */
-      set<T>(arg0: number, arg1: any): any;
+      set(arg0: number, arg1: any): any;
       /**
        * Method Parameters: 
        *  - (Object arg0, int arg1): void
        */
-      setElementAt<T>(arg0: any, arg1: number): void;
+      setElementAt(arg0: any, arg1: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
        */
-      setSize<T>(arg0: number): void;
+      setSize(arg0: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): number
        */
-      size<T>(): number;
+      size(): number;
       /**
        * Method Parameters: 
        *  - (Comparator arg0): void
        */
-      sort<T>(arg0: java.util.Comparator<E>): void;
+      sort(arg0: java.util.Comparator<E>): void;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.Spliterator<E>
        */
-      spliterator<T>(): java.util.Spliterator<E>;
+      spliterator(): java.util.Spliterator<E>;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.stream.Stream<E>
        */
-      stream<T>(): java.util.stream.Stream<any>;
+      stream(): java.util.stream.Stream<any>;
       /**
        * Method Parameters: 
        *  - (int arg0, int arg1): java.util.List<E>
        */
-      subList<T>(arg0: number, arg1: number): java.util.List<E>;
+      subList(arg0: number, arg1: number): java.util.List<E>;
       /**
        * Method Parameters: 
        *  - (Empty): any[]
@@ -1305,12 +1280,12 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): string
        */
-      toString<T>(): string;
+      toString(): string;
       /**
        * Method Parameters: 
        *  - (Empty): void
        */
-      trimToSize<T>(): void;
+      trimToSize(): void;
     }
   }
 }

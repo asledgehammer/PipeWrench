@@ -1,30 +1,4 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
-/**  @noSelfInFile */
-/// <reference path="../reference.d.ts" />
+/** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.core.skinnedmodel.population {
     /**
@@ -277,10 +251,10 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (ClothingItemReference arg0, CharacterMask arg1): void
        *  - (ClothingItem arg0, CharacterMask arg1): void
+       *  - (ClothingItemReference arg0, CharacterMask arg1): void
        */
-      static tryGetCombinedMask(arg0: zombie.core.skinnedmodel.population.ClothingItemReference | zombie.core.skinnedmodel.population.ClothingItem, arg1: zombie.core.skinnedmodel.model.CharacterMask): void;
+      static tryGetCombinedMask(arg0: zombie.core.skinnedmodel.population.ClothingItem | zombie.core.skinnedmodel.population.ClothingItemReference, arg1: zombie.core.skinnedmodel.model.CharacterMask): void;
     }
     /**
      * @customConstructor ClothingItemReference.new
@@ -295,8 +269,8 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
-       *  - (Empty): zombie.core.skinnedmodel.population.ClothingItemReference
        *  - (Empty): any
+       *  - (Empty): zombie.core.skinnedmodel.population.ClothingItemReference
        */
       clone(): any;
       /**
@@ -502,8 +476,8 @@ declare module '@asledgehammer/pipewrench' {
       Randomize(): void;
       /**
        * Method Parameters: 
-       *  - (Empty): zombie.core.skinnedmodel.population.Outfit
        *  - (Empty): any
+       *  - (Empty): zombie.core.skinnedmodel.population.Outfit
        */
       clone(): any;
       /**

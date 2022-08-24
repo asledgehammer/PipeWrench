@@ -1,30 +1,4 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
-/**  @noSelfInFile */
-/// <reference path="../reference.d.ts" />
+/** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.core.opengl {
     /**
@@ -321,14 +295,14 @@ declare module '@asledgehammer/pipewrench' {
       setSamplerUnit(arg0: string, arg1: number): void;
       /**
        * Method Parameters: 
-       *  - (String arg0, Vector2 arg1): void
-       *  - (String arg0, int arg1): void
        *  - (String arg0, float arg1): void
+       *  - (String arg0, int arg1): void
        *  - (String arg0, Matrix4f arg1): void
+       *  - (String arg0, Vector2 arg1): void
        *  - (String arg0, Vector3 arg1): void
        *  - (String arg0, Texture arg1, int arg2): void
        */
-      setValue(arg0: string, arg1: zombie.iso.Vector2 | number | org.lwjgl.util.vector.Matrix4f | zombie.iso.Vector3 | zombie.core.textures.Texture, arg2?: number): void;
+      setValue(arg0: string, arg1: number | org.lwjgl.util.vector.Matrix4f | zombie.iso.Vector2 | zombie.iso.Vector3 | zombie.core.textures.Texture, arg2?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, int arg1): void
@@ -341,22 +315,22 @@ declare module '@asledgehammer/pipewrench' {
       setValueColorRGB(arg0: string, arg1: number): void;
       /**
        * Method Parameters: 
-       *  - (String arg0, float arg1, float arg2): void
        *  - (int arg0, float arg1, float arg2): void
+       *  - (String arg0, float arg1, float arg2): void
        */
-      setVector2(arg0: string | number, arg1: number, arg2: number): void;
+      setVector2(arg0: number | string, arg1: number, arg2: number): void;
       /**
        * Method Parameters: 
-       *  - (String arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3): void
+       *  - (String arg0, float arg1, float arg2, float arg3): void
        */
-      setVector3(arg0: string | number, arg1: number, arg2: number, arg3: number): void;
+      setVector3(arg0: number | string, arg1: number, arg2: number, arg3: number): void;
       /**
        * Method Parameters: 
-       *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
+       *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setVector4(arg0: string | number, arg1: number, arg2: number, arg3: number, arg4: number): void;
+      setVector4(arg0: number | string, arg1: number, arg2: number, arg3: number, arg4: number): void;
       /**
        * @noSelf
        *
@@ -460,15 +434,61 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.core.opengl.ShaderUnit$Type>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.core.opengl.ShaderUnit$Type>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (String arg0): Type
+       * Method Parameters: 
+       *  - (String arg0): zombie.core.opengl.ShaderUnit$Type
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.core.opengl.ShaderUnit$Type;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.core.opengl.ShaderUnit$Type | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.core.opengl.ShaderUnit$Type[]
+       */
       static values(): zombie.core.opengl.ShaderUnit$Type[];
-
     }
     /**
      * @customConstructor SharedVertexBufferObjects.new

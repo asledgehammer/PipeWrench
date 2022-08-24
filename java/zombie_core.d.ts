@@ -1,30 +1,4 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
-/**  @noSelfInFile */
-/// <reference path="../reference.d.ts" />
+/** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.core {
     /**
@@ -120,13 +94,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty Constructor)
        *  - (int arg0)
        *  - (Color arg0)
-       *  - (Color arg0, Color arg1, float arg2)
-       *  - (int arg0, int arg1, int arg2)
        *  - (float arg0, float arg1, float arg2)
-       *  - (int arg0, int arg1, int arg2, int arg3)
+       *  - (int arg0, int arg1, int arg2)
+       *  - (Color arg0, Color arg1, float arg2)
        *  - (float arg0, float arg1, float arg2, float arg3)
+       *  - (int arg0, int arg1, int arg2, int arg3)
        */
-      constructor(arg0?: number | zombie.core.Color, arg1?: zombie.core.Color | number, arg2?: number, arg3?: number);
+      constructor(arg0?: number | zombie.core.Color, arg1?: number | zombie.core.Color, arg2?: number, arg3?: number);
       /**
        * Method Parameters: 
        *  - (Color arg0): void
@@ -2772,15 +2746,15 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Constructors: 
        *  - (int arg0)
-       *  - (ImmutableColor arg0)
        *  - (Color arg0)
-       *  - (Color arg0, Color arg1, float arg2)
-       *  - (int arg0, int arg1, int arg2)
+       *  - (ImmutableColor arg0)
        *  - (float arg0, float arg1, float arg2)
+       *  - (int arg0, int arg1, int arg2)
+       *  - (Color arg0, Color arg1, float arg2)
        *  - (float arg0, float arg1, float arg2, float arg3)
        *  - (int arg0, int arg1, int arg2, int arg3)
        */
-      constructor(arg0: number | zombie.core.ImmutableColor | zombie.core.Color, arg1?: zombie.core.Color | number, arg2?: number, arg3?: number);
+      constructor(arg0: number | zombie.core.Color | zombie.core.ImmutableColor, arg1?: number | zombie.core.Color, arg2?: number, arg3?: number);
       /**
        * Method Parameters: 
        *  - (ImmutableColor arg0): zombie.core.ImmutableColor
@@ -3584,15 +3558,61 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.core.SpriteRenderer$WallShaderTexRender>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.core.SpriteRenderer$WallShaderTexRender>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (String arg0): WallShaderTexRender
+       * Method Parameters: 
+       *  - (String arg0): zombie.core.SpriteRenderer$WallShaderTexRender
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.core.SpriteRenderer$WallShaderTexRender;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.core.SpriteRenderer$WallShaderTexRender | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.core.SpriteRenderer$WallShaderTexRender[]
+       */
       static values(): zombie.core.SpriteRenderer$WallShaderTexRender[];
-
     }
     /**
      * @customConstructor Translator.new
@@ -3790,10 +3810,10 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (Language arg0): void
        *  - (int arg0): void
+       *  - (Language arg0): void
        */
-      static setLanguage(arg0: zombie.core.Language | number): void;
+      static setLanguage(arg0: number | zombie.core.Language): void;
     }
   }
 }

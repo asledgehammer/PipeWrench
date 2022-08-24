@@ -1,30 +1,4 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
-/**  @noSelfInFile */
-/// <reference path="../reference.d.ts" />
+/** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.asset {
     /**
@@ -116,150 +90,150 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Object arg0): boolean
        *  - (int arg0, Object arg1): void
        */
-      add<T>(arg0: any | number, arg1?: any): boolean | void;
+      add(arg0: any | number, arg1?: any): boolean | void;
       /**
        * Method Parameters: 
        *  - (Collection arg0): boolean
        *  - (int arg0, Collection arg1): boolean
        */
-      addAll<T>(arg0: java.util.Collection<zombie.asset.AssetStateObserver> | number, arg1?: java.util.Collection<zombie.asset.AssetStateObserver>): boolean;
+      addAll(arg0: java.util.Collection<zombie.asset.AssetStateObserver> | number, arg1?: java.util.Collection<zombie.asset.AssetStateObserver>): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): void
        */
-      clear<T>(): void;
+      clear(): void;
       /**
        * Method Parameters: 
        *  - (Empty): any
        */
-      clone<T>(): any;
+      clone(): any;
       /**
        * Method Parameters: 
        *  - (Object arg0): boolean
        */
-      contains<T>(arg0: any): boolean;
+      contains(arg0: any): boolean;
       /**
        * Method Parameters: 
        *  - (Collection arg0): boolean
        */
-      containsAll<T>(arg0: java.util.Collection<any>): boolean;
+      containsAll(arg0: java.util.Collection<any>): boolean;
       /**
        * Method Parameters: 
        *  - (int arg0): void
        */
-      ensureCapacity<T>(arg0: number): void;
+      ensureCapacity(arg0: number): void;
       /**
        * Method Parameters: 
        *  - (Object arg0): boolean
        */
-      equals<T>(arg0: any): boolean;
+      equals(arg0: any): boolean;
       /**
        * Method Parameters: 
        *  - (Consumer arg0): void
        */
-      forEach<T>(arg0: java.util._function_.Consumer<zombie.asset.AssetStateObserver>): void;
+      forEach(arg0: java.util._function_.Consumer<zombie.asset.AssetStateObserver>): void;
       /**
        * Method Parameters: 
        *  - (int arg0): E
        */
-      get<T>(arg0: number): any;
+      get(arg0: number): any;
       /**
        * Method Parameters: 
        *  - (Empty): number
        */
-      hashCode<T>(): number;
+      hashCode(): number;
       /**
        * Method Parameters: 
        *  - (Object arg0): number
        */
-      indexOf<T>(arg0: any): number;
+      indexOf(arg0: any): number;
       /**
        * Method Parameters: 
        *  - (State arg0, State arg1, Asset arg2): void
        */
-      invoke<T>(arg0: zombie.asset.Asset$State, arg1: zombie.asset.Asset$State, arg2: zombie.asset.Asset): void;
+      invoke(arg0: zombie.asset.Asset$State, arg1: zombie.asset.Asset$State, arg2: zombie.asset.Asset): void;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
        */
-      isEmpty<T>(): boolean;
+      isEmpty(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.Iterator<E>
        */
-      iterator<T>(): java.util.Iterator<zombie.asset.AssetStateObserver>;
+      iterator(): java.util.Iterator<zombie.asset.AssetStateObserver>;
       /**
        * Method Parameters: 
        *  - (Object arg0): number
        */
-      lastIndexOf<T>(arg0: any): number;
+      lastIndexOf(arg0: any): number;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.ListIterator<E>
        *  - (int arg0): java.util.ListIterator<E>
        */
-      listIterator<T>(arg0?: number): java.util.ListIterator<zombie.asset.AssetStateObserver>;
+      listIterator(arg0?: number): java.util.ListIterator<zombie.asset.AssetStateObserver>;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.stream.Stream<E>
        */
-      parallelStream<T>(): java.util.stream.Stream<zombie.asset.AssetStateObserver>;
+      parallelStream(): java.util.stream.Stream<zombie.asset.AssetStateObserver>;
       /**
        * Method Parameters: 
-       *  - (Object arg0): boolean
        *  - (int arg0): E
+       *  - (Object arg0): boolean
        */
-      remove<T>(arg0: any): any;
+      remove(arg0: any): any;
       /**
        * Method Parameters: 
        *  - (Collection arg0): boolean
        */
-      removeAll<T>(arg0: java.util.Collection<any>): boolean;
+      removeAll(arg0: java.util.Collection<any>): boolean;
       /**
        * Method Parameters: 
        *  - (Predicate arg0): boolean
        */
-      removeIf<T>(arg0: java.util._function_.Predicate<zombie.asset.AssetStateObserver>): boolean;
+      removeIf(arg0: java.util._function_.Predicate<zombie.asset.AssetStateObserver>): boolean;
       /**
        * Method Parameters: 
        *  - (UnaryOperator arg0): void
        */
-      replaceAll<T>(arg0: java.util._function_.UnaryOperator<zombie.asset.AssetStateObserver>): void;
+      replaceAll(arg0: java.util._function_.UnaryOperator<zombie.asset.AssetStateObserver>): void;
       /**
        * Method Parameters: 
        *  - (Collection arg0): boolean
        */
-      retainAll<T>(arg0: java.util.Collection<any>): boolean;
+      retainAll(arg0: java.util.Collection<any>): boolean;
       /**
        * Method Parameters: 
        *  - (int arg0, Object arg1): E
        */
-      set<T>(arg0: number, arg1: any): any;
+      set(arg0: number, arg1: any): any;
       /**
        * Method Parameters: 
        *  - (Empty): number
        */
-      size<T>(): number;
+      size(): number;
       /**
        * Method Parameters: 
        *  - (Comparator arg0): void
        */
-      sort<T>(arg0: java.util.Comparator<zombie.asset.AssetStateObserver>): void;
+      sort(arg0: java.util.Comparator<zombie.asset.AssetStateObserver>): void;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.Spliterator<E>
        */
-      spliterator<T>(): java.util.Spliterator<zombie.asset.AssetStateObserver>;
+      spliterator(): java.util.Spliterator<zombie.asset.AssetStateObserver>;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.stream.Stream<E>
        */
-      stream<T>(): java.util.stream.Stream<zombie.asset.AssetStateObserver>;
+      stream(): java.util.stream.Stream<zombie.asset.AssetStateObserver>;
       /**
        * Method Parameters: 
        *  - (int arg0, int arg1): java.util.List<E>
        */
-      subList<T>(arg0: number, arg1: number): java.util.List<zombie.asset.AssetStateObserver>;
+      subList(arg0: number, arg1: number): java.util.List<zombie.asset.AssetStateObserver>;
       /**
        * Method Parameters: 
        *  - (Empty): any[]
@@ -271,12 +245,12 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): string
        */
-      toString<T>(): string;
+      toString(): string;
       /**
        * Method Parameters: 
        *  - (Empty): void
        */
-      trimToSize<T>(): void;
+      trimToSize(): void;
     }
     /** [ENUM] zombie.asset.Asset$State */
     export class Asset$State {
@@ -287,15 +261,61 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.asset.Asset$State>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.asset.Asset$State>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (String arg0): State
+       * Method Parameters: 
+       *  - (String arg0): zombie.asset.Asset$State
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.asset.Asset$State;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.asset.Asset$State | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.asset.Asset$State[]
+       */
       static values(): zombie.asset.Asset$State[];
-
     }
     /**
      * @customConstructor AssetManager.new
@@ -347,11 +367,11 @@ declare module '@asledgehammer/pipewrench' {
       onStateChanged(arg0: zombie.asset.Asset$State, arg1: zombie.asset.Asset$State, arg2: zombie.asset.Asset): void;
       /**
        * Method Parameters: 
-       *  - (AssetPath arg0): void
        *  - (Asset arg0): void
+       *  - (AssetPath arg0): void
        *  - (Asset arg0, AssetParams arg1): void
        */
-      reload(arg0: zombie.asset.AssetPath | zombie.asset.Asset, arg1?: zombie.asset.AssetManager$AssetParams): void;
+      reload(arg0: zombie.asset.Asset | zombie.asset.AssetPath, arg1?: zombie.asset.AssetManager$AssetParams): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -752,10 +772,10 @@ declare module '@asledgehammer/pipewrench' {
       put(arg0: number, arg1: any): any;
       /**
        * Method Parameters: 
-       *  - (Map arg0): void
        *  - (TLongObjectMap arg0): void
+       *  - (Map arg0): void
        */
-      putAll(arg0: java.util.Map<number, zombie.asset.AssetManager> | gnu.trove.map.TLongObjectMap<zombie.asset.AssetManager>): void;
+      putAll(arg0: gnu.trove.map.TLongObjectMap<zombie.asset.AssetManager> | java.util.Map<number, zombie.asset.AssetManager>): void;
       /**
        * Method Parameters: 
        *  - (long arg0, Object arg1): V

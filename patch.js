@@ -7,6 +7,7 @@ function patch_fmod_fmod() {
         const file = path.join(__dirname, "java/fmod_fmod.d.ts")
         let content = fs.readFileSync(file, 'utf-8')
         content = content.replaceAll(": fmod.fmod", ": fmod")
+        content = content.replaceAll("<fmod.fmod", "<fmod")
         fs.writeFileSync(file, content)
     }
     catch(error) {

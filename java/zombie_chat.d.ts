@@ -1,30 +1,4 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
-/**  @noSelfInFile */
-/// <reference path="../reference.d.ts" />
+/** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.chat {
     /**
@@ -163,10 +137,10 @@ declare module '@asledgehammer/pipewrench' {
       sendPlayerJoinChatPacket(arg0: zombie.core.raknet.UdpConnection): void;
       /**
        * Method Parameters: 
-       *  - (UdpConnection arg0): void
        *  - (short arg0): void
+       *  - (UdpConnection arg0): void
        */
-      sendPlayerLeaveChatPacket(arg0: zombie.core.raknet.UdpConnection | number): void;
+      sendPlayerLeaveChatPacket(arg0: number | zombie.core.raknet.UdpConnection): void;
       /**
        * Method Parameters: 
        *  - (ChatMessage arg0, DeviceData arg1): void
@@ -377,8 +351,8 @@ declare module '@asledgehammer/pipewrench' {
       constructor(arg0: zombie.chat.ChatBase, arg1: string | java.time.LocalDateTime, arg2?: string);
       /**
        * Method Parameters: 
-       *  - (Empty): zombie.chat.ChatMessage
        *  - (Empty): any
+       *  - (Empty): zombie.chat.ChatMessage
        */
       clone(): any;
       /**
@@ -576,15 +550,61 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.chat.ChatMode>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.chat.ChatMode>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (String arg0): ChatMode
+       * Method Parameters: 
+       *  - (String arg0): zombie.chat.ChatMode
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.chat.ChatMode;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.chat.ChatMode | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.chat.ChatMode[]
+       */
       static values(): zombie.chat.ChatMode[];
-
     }
     /**
      * @customConstructor ChatSettings.new
@@ -788,15 +808,61 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.chat.ChatSettings$FontSize>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.chat.ChatSettings$FontSize>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (String arg0): FontSize
+       * Method Parameters: 
+       *  - (String arg0): zombie.chat.ChatSettings$FontSize
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.chat.ChatSettings$FontSize;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.chat.ChatSettings$FontSize | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.chat.ChatSettings$FontSize[]
+       */
       static values(): zombie.chat.ChatSettings$FontSize[];
-
     }
     /**
      * @customConstructor ChatTab.new
@@ -881,8 +947,8 @@ declare module '@asledgehammer/pipewrench' {
       constructor(arg0: zombie.chat.ChatBase, arg1: string);
       /**
        * Method Parameters: 
-       *  - (Empty): zombie.chat.ChatMessage
        *  - (Empty): any
+       *  - (Empty): zombie.chat.ChatMessage
        */
       clone(): any;
       /**

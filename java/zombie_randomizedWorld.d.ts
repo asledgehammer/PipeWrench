@@ -1,30 +1,4 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
-/**  @noSelfInFile */
-/// <reference path="../reference.d.ts" />
+/** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.randomizedWorld {
     /**
@@ -45,10 +19,10 @@ declare module '@asledgehammer/pipewrench' {
       addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
        *  - (IsoGridSquare arg0, String arg1): zombie.inventory.InventoryItem
+       *  - (IsoGridSquare arg0, InventoryItem arg1): zombie.inventory.InventoryItem
        */
-      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
+      addItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (IsoGridSquare arg0, ArrayList arg1): zombie.inventory.InventoryItem
@@ -56,10 +30,10 @@ declare module '@asledgehammer/pipewrench' {
       addRandomItemOnGround(arg0: zombie.iso.IsoGridSquare, arg1: java.util.ArrayList<string>): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (RoomDef arg0, ArrayList arg1, int arg2): void
        *  - (RoomDef arg0, String arg1, int arg2): void
+       *  - (RoomDef arg0, ArrayList arg1, int arg2): void
        */
-      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: java.util.ArrayList<string> | string, arg2: number): void;
+      addRandomItemsOnGround(arg0: zombie.iso.RoomDef, arg1: string | java.util.ArrayList<string>, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0, int arg1, int arg2): zombie.iso.IsoObject
@@ -213,12 +187,12 @@ declare module '@asledgehammer/pipewrench' {
        *
        * Method Parameters: 
        *  - (RoomDef arg0, int arg1): zombie.iso.objects.IsoDeadBody
-       *  - (IsoGridSquare arg0, IsoDirections arg1, int arg2, int arg3, String arg4): zombie.iso.objects.IsoDeadBody
        *  - (int arg0, int arg1, int arg2, IsoDirections arg3, int arg4): zombie.iso.objects.IsoDeadBody
+       *  - (IsoGridSquare arg0, IsoDirections arg1, int arg2, int arg3, String arg4): zombie.iso.objects.IsoDeadBody
        *  - (int arg0, int arg1, int arg2, IsoDirections arg3, int arg4, int arg5): zombie.iso.objects.IsoDeadBody
        *  - (float arg0, float arg1, float arg2, float arg3, boolean arg4, int arg5, int arg6, String arg7): zombie.iso.objects.IsoDeadBody
        */
-      static createRandomDeadBody(arg0: zombie.iso.RoomDef | zombie.iso.IsoGridSquare | number, arg1: number | zombie.iso.IsoDirections, arg2?: number, arg3?: number | zombie.iso.IsoDirections, arg4?: string | number | boolean, arg5?: number, arg6?: number, arg7?: string): zombie.iso.objects.IsoDeadBody;
+      static createRandomDeadBody(arg0: zombie.iso.RoomDef | number | zombie.iso.IsoGridSquare, arg1: number | zombie.iso.IsoDirections, arg2?: number, arg3?: zombie.iso.IsoDirections | number, arg4?: number | string | boolean, arg5?: number, arg6?: number, arg7?: string): zombie.iso.objects.IsoDeadBody;
       /**
        * @noSelf
        *

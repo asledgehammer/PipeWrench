@@ -1,30 +1,4 @@
-/**
- * MIT License
- *
- * Copyright (c) 2022 JabDoesThings
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- */
-
-/**  @noSelfInFile */
-/// <reference path="../reference.d.ts" />
+/** @noSelfInFile */
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.vehicles {
     /**
@@ -2711,10 +2685,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
-       *  - (String arg0, KahluaTable arg1): void
        *  - (String arg0, Object... arg1): void
+       *  - (String arg0, KahluaTable arg1): void
        */
-      sendObjectChange(arg0: string, arg1?: se.krka.kahlua.vm.KahluaTable | any): void;
+      sendObjectChange(arg0: string, arg1?: any | se.krka.kahlua.vm.KahluaTable): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -2910,10 +2884,10 @@ declare module '@asledgehammer/pipewrench' {
       setDestroyed(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -3330,10 +3304,10 @@ declare module '@asledgehammer/pipewrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -3982,18 +3956,68 @@ declare module '@asledgehammer/pipewrench' {
       static readonly Server: zombie.vehicles.BaseVehicle$Authorization;
       name(): string;
       ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.vehicles.BaseVehicle$Authorization>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.vehicles.BaseVehicle$Authorization>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
       index(): number;
-
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
       /**
        * @noSelf
        *
-       * (String arg0): Authorization
+       * Method Parameters: 
+       *  - (byte arg0): zombie.vehicles.BaseVehicle$Authorization
+       *  - (String arg0): zombie.vehicles.BaseVehicle$Authorization
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.vehicles.BaseVehicle$Authorization;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: number | string | java.lang.Class<T>, arg1?: string): zombie.vehicles.BaseVehicle$Authorization | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.vehicles.BaseVehicle$Authorization[]
+       */
       static values(): zombie.vehicles.BaseVehicle$Authorization[];
-
     }
     /**
      * @customConstructor HitVars.new
@@ -4036,8 +4060,8 @@ declare module '@asledgehammer/pipewrench' {
       forEach(arg0: java.util._function_.Consumer<org.joml.Matrix4f>): void;
       /**
        * Method Parameters: 
-       *  - (Object[] arg0): void
        *  - (Object arg0): void
+       *  - (Object[] arg0): void
        *  - (Iterable arg0): void
        *  - (List arg0): void
        */
@@ -4118,8 +4142,8 @@ declare module '@asledgehammer/pipewrench' {
       forEach(arg0: java.util._function_.Consumer<org.joml.Quaternionf>): void;
       /**
        * Method Parameters: 
-       *  - (Object[] arg0): void
        *  - (Object arg0): void
+       *  - (Object[] arg0): void
        *  - (Iterable arg0): void
        *  - (List arg0): void
        */
@@ -4176,8 +4200,8 @@ declare module '@asledgehammer/pipewrench' {
       forEach(arg0: java.util._function_.Consumer<zombie.iso.Vector2>): void;
       /**
        * Method Parameters: 
-       *  - (Object[] arg0): void
        *  - (Object arg0): void
+       *  - (Object[] arg0): void
        *  - (Iterable arg0): void
        *  - (List arg0): void
        */
@@ -4212,8 +4236,8 @@ declare module '@asledgehammer/pipewrench' {
       forEach(arg0: java.util._function_.Consumer<org.joml.Vector2f>): void;
       /**
        * Method Parameters: 
-       *  - (Object[] arg0): void
        *  - (Object arg0): void
+       *  - (Object[] arg0): void
        *  - (Iterable arg0): void
        *  - (List arg0): void
        */
@@ -4248,8 +4272,8 @@ declare module '@asledgehammer/pipewrench' {
       forEach(arg0: java.util._function_.Consumer<org.joml.Vector3f>): void;
       /**
        * Method Parameters: 
-       *  - (Object[] arg0): void
        *  - (Object arg0): void
+       *  - (Object[] arg0): void
        *  - (Iterable arg0): void
        *  - (List arg0): void
        */
@@ -4287,15 +4311,61 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.vehicles.BaseVehicle$engineStateTypes>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.vehicles.BaseVehicle$engineStateTypes>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (String arg0): engineStateTypes
+       * Method Parameters: 
+       *  - (String arg0): zombie.vehicles.BaseVehicle$engineStateTypes
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.vehicles.BaseVehicle$engineStateTypes;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.vehicles.BaseVehicle$engineStateTypes | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.vehicles.BaseVehicle$engineStateTypes[]
+       */
       static values(): zombie.vehicles.BaseVehicle$engineStateTypes[];
-
     }
     /**
      * @customConstructor EditVehicleState.new
@@ -4589,15 +4659,61 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.vehicles.PathFindBehavior2$BehaviorResult>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.vehicles.PathFindBehavior2$BehaviorResult>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (String arg0): BehaviorResult
+       * Method Parameters: 
+       *  - (String arg0): zombie.vehicles.PathFindBehavior2$BehaviorResult
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.vehicles.PathFindBehavior2$BehaviorResult;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.vehicles.PathFindBehavior2$BehaviorResult | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.vehicles.PathFindBehavior2$BehaviorResult[]
+       */
       static values(): zombie.vehicles.PathFindBehavior2$BehaviorResult[];
-
     }
     /**
      * @customConstructor NPCData.new
@@ -4991,32 +5107,88 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
-       * @noSelf
-       *
-       * (int arg0): TransmissionNumber
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
        */
-      static fromIndex(arg0: number): zombie.vehicles.TransmissionNumber;
-
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.vehicles.TransmissionNumber>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.vehicles.TransmissionNumber>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
       getIndex(): number;
-
-      /** (int arg0): TransmissionNumber */
+      /**
+       * Method Parameters: 
+       *  - (int arg0): zombie.vehicles.TransmissionNumber
+       */
       getNext(arg0: number): zombie.vehicles.TransmissionNumber;
-
-      /** (int arg0): TransmissionNumber */
+      /**
+       * Method Parameters: 
+       *  - (int arg0): zombie.vehicles.TransmissionNumber
+       */
       getPrev(arg0: number): zombie.vehicles.TransmissionNumber;
-
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
       getString(): string;
-
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
       /**
        * @noSelf
        *
-       * (String arg0): TransmissionNumber
+       * Method Parameters: 
+       *  - (int arg0): zombie.vehicles.TransmissionNumber
        */
-      static valueOf(arg0: string | null): zombie.vehicles.TransmissionNumber;
-
-      /** @noSelf */
+      static fromIndex(arg0: number): zombie.vehicles.TransmissionNumber;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): zombie.vehicles.TransmissionNumber
+       *  - (Class arg0, String arg1): T
+       */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.vehicles.TransmissionNumber | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.vehicles.TransmissionNumber[]
+       */
       static values(): zombie.vehicles.TransmissionNumber[];
-
     }
     /**
      * @customConstructor UI3DScene.new
@@ -5792,8 +5964,8 @@ declare module '@asledgehammer/pipewrench' {
       forEach(arg0: java.util._function_.Consumer<zombie.vehicles.UI3DScene$Plane>): void;
       /**
        * Method Parameters: 
-       *  - (Object[] arg0): void
        *  - (Object arg0): void
+       *  - (Object[] arg0): void
        *  - (Iterable arg0): void
        *  - (List arg0): void
        */
@@ -5844,8 +6016,8 @@ declare module '@asledgehammer/pipewrench' {
       forEach(arg0: java.util._function_.Consumer<zombie.vehicles.UI3DScene$Ray>): void;
       /**
        * Method Parameters: 
-       *  - (Object[] arg0): void
        *  - (Object arg0): void
+       *  - (Object[] arg0): void
        *  - (Iterable arg0): void
        *  - (List arg0): void
        */
