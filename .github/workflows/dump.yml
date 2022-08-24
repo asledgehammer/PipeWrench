@@ -11,6 +11,12 @@ jobs:
         version: [stable, unstable]
     runs-on: macos-latest
     steps:
+      - name: Cache Pz
+        id: cache-pz
+        uses: actions/cache@v3
+        with:
+          path: pzserver
+          key: ${{ matrix.version }}
       - uses: actions/checkout@v3
       - uses: actions/checkout@v3
         with:
