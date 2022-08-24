@@ -2608,10 +2608,10 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (Item arg0): zombie.inventory.InventoryItem
        *  - (String arg0): zombie.inventory.InventoryItem
+       *  - (Item arg0): zombie.inventory.InventoryItem
        */
-      static instanceItem(arg0: zombie.scripting.objects.Item | string): zombie.inventory.InventoryItem;
+      static instanceItem(arg0: string | zombie.scripting.objects.Item): zombie.inventory.InventoryItem;
       /**
        * @noSelf
        *
@@ -3361,7 +3361,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, String arg1, KahluaTable arg2): void
        *  - (IsoPlayer arg0, String arg1, String arg2, KahluaTable arg3): void
        */
-      static sendClientCommand(arg0: zombie.characters.IsoPlayer | string, arg1: string, arg2: string | se.krka.kahlua.vm.KahluaTable, arg3?: se.krka.kahlua.vm.KahluaTable): void;
+      static sendClientCommand(arg0: string | zombie.characters.IsoPlayer, arg1: string, arg2: se.krka.kahlua.vm.KahluaTable | string, arg3?: se.krka.kahlua.vm.KahluaTable): void;
       /**
        * @noSelf
        *
@@ -3460,7 +3460,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, String arg1, KahluaTable arg2): void
        *  - (IsoPlayer arg0, String arg1, String arg2, KahluaTable arg3): void
        */
-      static sendServerCommand(arg0: zombie.characters.IsoPlayer | string, arg1: string, arg2: string | se.krka.kahlua.vm.KahluaTable, arg3?: se.krka.kahlua.vm.KahluaTable): void;
+      static sendServerCommand(arg0: string | zombie.characters.IsoPlayer, arg1: string, arg2: se.krka.kahlua.vm.KahluaTable | string, arg3?: se.krka.kahlua.vm.KahluaTable): void;
       /**
        * @noSelf
        *
@@ -4056,10 +4056,10 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (String arg0, LuaClosure arg1, int arg2): void
        *  - (KahluaTable arg0, LuaClosure arg1, int arg2): void
+       *  - (String arg0, LuaClosure arg1, int arg2): void
        */
-      static OnNewWithSprite(arg0: string | se.krka.kahlua.vm.KahluaTable, arg1: se.krka.kahlua.vm.LuaClosure, arg2: number): void;
+      static OnNewWithSprite(arg0: se.krka.kahlua.vm.KahluaTable | string, arg1: se.krka.kahlua.vm.LuaClosure, arg2: number): void;
       /**
        * @noSelf
        *

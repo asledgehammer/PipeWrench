@@ -105,16 +105,16 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
-       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
-      DrawText(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
+      DrawText(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawTextCentre(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawTextCentre(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
@@ -173,7 +173,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, Color arg5): void
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
-      DrawTextureScaledCol(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number | zombie.core.Color, arg6?: number, arg7?: number, arg8?: number): void;
+      DrawTextureScaledCol(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color | number, arg6?: number, arg7?: number, arg8?: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, Double arg1, Double arg2, Double arg3, Double arg4, Double arg5, Double arg6, Double arg7, Double arg8): void

@@ -203,7 +203,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0, int arg1, int arg2, String arg3, String arg4, String arg5, float arg6, float arg7, float arg8, int arg9, boolean arg10): void
        *  - (long arg0, int arg1, int arg2, int arg3, String arg4, String arg5, String arg6, float arg7, float arg8, float arg9, int arg10, boolean arg11): void
        */
-      SendTransmission(arg0: number, arg1: number, arg2: number | zombie.chat.ChatMessage, arg3: string | number, arg4?: string, arg5?: string, arg6?: number | string, arg7?: number, arg8?: number, arg9?: number, arg10?: boolean | number, arg11?: boolean): void;
+      SendTransmission(arg0: number, arg1: number, arg2: number | zombie.chat.ChatMessage, arg3: number | string, arg4?: string, arg5?: string, arg6?: string | number, arg7?: number, arg8?: number, arg9?: number, arg10?: number | boolean, arg11?: boolean): void;
       /**
        * Method Parameters: 
        *  - (WaveSignalDevice arg0): void

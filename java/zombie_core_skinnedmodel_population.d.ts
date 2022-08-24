@@ -476,8 +476,8 @@ declare module '@asledgehammer/pipewrench' {
       Randomize(): void;
       /**
        * Method Parameters: 
-       *  - (Empty): zombie.core.skinnedmodel.population.Outfit
        *  - (Empty): any
+       *  - (Empty): zombie.core.skinnedmodel.population.Outfit
        */
       clone(): any;
       /**

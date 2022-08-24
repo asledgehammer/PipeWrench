@@ -1341,10 +1341,10 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoGridSquare arg0): void
        *  - (IsoGameCharacter arg0): void
+       *  - (IsoGridSquare arg0): void
        */
-      static sendStopFire(arg0: zombie.iso.IsoGridSquare | zombie.characters.IsoGameCharacter): void;
+      static sendStopFire(arg0: zombie.characters.IsoGameCharacter | zombie.iso.IsoGridSquare): void;
       /**
        * @noSelf
        *

@@ -1019,10 +1019,10 @@ declare module '@asledgehammer/pipewrench' {
       getOrCreateVariable(arg0: string): zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot;
       /**
        * Method Parameters: 
-       *  - (String arg0): zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot
        *  - (AnimationVariableHandle arg0): zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot
+       *  - (String arg0): zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot
        */
-      getVariable(arg0: string | zombie.core.skinnedmodel.advancedanimation.AnimationVariableHandle): zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot;
+      getVariable(arg0: zombie.core.skinnedmodel.advancedanimation.AnimationVariableHandle | string): zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot;
       /**
        * Method Parameters: 
        *  - (String arg0): boolean
@@ -1047,27 +1047,27 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (IAnimationVariableSlot arg0): void
-       *  - (String arg0, String arg1): void
-       *  - (String arg0, CallbackGetStrongTyped arg1): void
        *  - (String arg0, float arg1): void
        *  - (String arg0, boolean arg1): void
+       *  - (String arg0, String arg1): void
        *  - (String arg0, CallbackGetStrongTyped arg1): void
        *  - (String arg0, CallbackGetStrongTyped arg1): void
        *  - (String arg0, CallbackGetStrongTyped arg1): void
-       *  - (String arg0, int arg1, CallbackGetStrongTyped arg2): void
-       *  - (String arg0, float arg1, CallbackGetStrongTyped arg2): void
-       *  - (String arg0, CallbackGetStrongTyped arg1, CallbackSetStrongTyped arg2): void
-       *  - (String arg0, CallbackGetStrongTyped arg1, CallbackSetStrongTyped arg2): void
+       *  - (String arg0, CallbackGetStrongTyped arg1): void
        *  - (String arg0, String arg1, CallbackGetStrongTyped arg2): void
-       *  - (String arg0, CallbackGetStrongTyped arg1, CallbackSetStrongTyped arg2): void
-       *  - (String arg0, CallbackGetStrongTyped arg1, CallbackSetStrongTyped arg2): void
+       *  - (String arg0, float arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2): void
-       *  - (String arg0, int arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
-       *  - (String arg0, float arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
+       *  - (String arg0, CallbackGetStrongTyped arg1, CallbackSetStrongTyped arg2): void
+       *  - (String arg0, int arg1, CallbackGetStrongTyped arg2): void
+       *  - (String arg0, CallbackGetStrongTyped arg1, CallbackSetStrongTyped arg2): void
+       *  - (String arg0, CallbackGetStrongTyped arg1, CallbackSetStrongTyped arg2): void
+       *  - (String arg0, CallbackGetStrongTyped arg1, CallbackSetStrongTyped arg2): void
        *  - (String arg0, String arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
+       *  - (String arg0, int arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
+       *  - (String arg0, float arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        */
-      setVariable(arg0: string | zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot, arg1?: number | string | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackGetStrongTyped | boolean | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackGetStrongTyped, arg2?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackSetStrongTyped, arg3?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackSetStrongTyped): void;
+      setVariable(arg0: string | zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot, arg1?: string | number | boolean | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackGetStrongTyped, arg2?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackSetStrongTyped, arg3?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackSetStrongTyped): void;
     }
     /** [ENUM] zombie.core.skinnedmodel.advancedanimation.AnimationVariableType */
     export class AnimationVariableType {
@@ -1511,10 +1511,10 @@ declare module '@asledgehammer/pipewrench' {
       setTransitionOut(arg0: zombie.core.skinnedmodel.advancedanimation.AnimTransition): void;
       /**
        * Method Parameters: 
-       *  - (LiveAnimNode arg0, AnimTransition arg1, AnimationTrack arg2): void
        *  - (AnimNode arg0, AnimTransition arg1, AnimationTrack arg2): void
+       *  - (LiveAnimNode arg0, AnimTransition arg1, AnimationTrack arg2): void
        */
-      startTransitionIn(arg0: zombie.core.skinnedmodel.advancedanimation.LiveAnimNode | zombie.core.skinnedmodel.advancedanimation.AnimNode, arg1: zombie.core.skinnedmodel.advancedanimation.AnimTransition, arg2: zombie.core.skinnedmodel.animation.AnimationTrack): void;
+      startTransitionIn(arg0: zombie.core.skinnedmodel.advancedanimation.AnimNode | zombie.core.skinnedmodel.advancedanimation.LiveAnimNode, arg1: zombie.core.skinnedmodel.advancedanimation.AnimTransition, arg2: zombie.core.skinnedmodel.animation.AnimationTrack): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
