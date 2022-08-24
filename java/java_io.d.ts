@@ -91,8 +91,8 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (char arg0): java.io.Writer
        *  - (char arg0): java.lang.Appendable
-       *  - (CharSequence arg0): java.lang.Appendable
        *  - (CharSequence arg0): java.io.Writer
+       *  - (CharSequence arg0): java.lang.Appendable
        *  - (CharSequence arg0, int arg1, int arg2): java.io.Writer
        *  - (CharSequence arg0, int arg1, int arg2): java.lang.Appendable
        */

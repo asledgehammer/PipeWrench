@@ -106,31 +106,80 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
-       * @noSelf
-       *
-       * (String arg0): IsoFlagType
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
        */
-      static FromString(arg0: string | null): zombie.iso.SpriteDetails.IsoFlagType;
-
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.iso.SpriteDetails.IsoFlagType>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.iso.SpriteDetails.IsoFlagType>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      index(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
       /**
        * @noSelf
        *
-       * (int arg0): IsoFlagType
+       * Method Parameters: 
+       *  - (String arg0): zombie.iso.SpriteDetails.IsoFlagType
+       */
+      static FromString(arg0: string): zombie.iso.SpriteDetails.IsoFlagType;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (int arg0): zombie.iso.SpriteDetails.IsoFlagType
        */
       static fromIndex(arg0: number): zombie.iso.SpriteDetails.IsoFlagType;
-
-      index(): number;
-
       /**
        * @noSelf
        *
-       * (String arg0): IsoFlagType
+       * Method Parameters: 
+       *  - (String arg0): zombie.iso.SpriteDetails.IsoFlagType
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.iso.SpriteDetails.IsoFlagType;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.iso.SpriteDetails.IsoFlagType | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.SpriteDetails.IsoFlagType[]
+       */
       static values(): zombie.iso.SpriteDetails.IsoFlagType[];
-
     }
     /** [ENUM] zombie.iso.SpriteDetails.IsoObjectType */
     export class IsoObjectType {
@@ -168,31 +217,80 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
-       * @noSelf
-       *
-       * (String arg0): IsoObjectType
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
        */
-      static FromString(arg0: string | null): zombie.iso.SpriteDetails.IsoObjectType;
-
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.iso.SpriteDetails.IsoObjectType>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.iso.SpriteDetails.IsoObjectType>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      index(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
       /**
        * @noSelf
        *
-       * (int arg0): IsoObjectType
+       * Method Parameters: 
+       *  - (String arg0): zombie.iso.SpriteDetails.IsoObjectType
+       */
+      static FromString(arg0: string): zombie.iso.SpriteDetails.IsoObjectType;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (int arg0): zombie.iso.SpriteDetails.IsoObjectType
        */
       static fromIndex(arg0: number): zombie.iso.SpriteDetails.IsoObjectType;
-
-      index(): number;
-
       /**
        * @noSelf
        *
-       * (String arg0): IsoObjectType
+       * Method Parameters: 
+       *  - (String arg0): zombie.iso.SpriteDetails.IsoObjectType
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.iso.SpriteDetails.IsoObjectType;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.iso.SpriteDetails.IsoObjectType | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.SpriteDetails.IsoObjectType[]
+       */
       static values(): zombie.iso.SpriteDetails.IsoObjectType[];
-
     }
   }
 }

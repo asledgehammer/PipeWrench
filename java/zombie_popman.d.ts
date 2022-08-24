@@ -30,12 +30,12 @@ declare module '@asledgehammer/pipewrench' {
       forEach(arg0: java.util._function_.Consumer<T>): void;
       /**
        * Method Parameters: 
+       *  - (Object arg0): void
        *  - (Object[] arg0): void
        *  - (Iterable arg0): void
-       *  - (Object arg0): void
        *  - (List arg0): void
        */
-      release(arg0: any | java.lang.Iterable<T> | any | java.util.List<T>): void;
+      release(arg0: any | any | java.lang.Iterable<T> | java.util.List<T>): void;
       /**
        * Method Parameters: 
        *  - (List arg0): void

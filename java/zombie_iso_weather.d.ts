@@ -1564,15 +1564,61 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.iso.weather.ClimateManager$ClimateNetAuth>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.iso.weather.ClimateManager$ClimateNetAuth>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (String arg0): ClimateNetAuth
+       * Method Parameters: 
+       *  - (String arg0): zombie.iso.weather.ClimateManager$ClimateNetAuth
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.iso.weather.ClimateManager$ClimateNetAuth;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.iso.weather.ClimateManager$ClimateNetAuth | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.weather.ClimateManager$ClimateNetAuth[]
+       */
       static values(): zombie.iso.weather.ClimateManager$ClimateNetAuth[];
-
     }
     /**
      * @customConstructor DayInfo.new
@@ -2470,24 +2516,73 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
-       * @noSelf
-       *
-       * (int arg0): StrLerpVal
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
        */
-      static fromValue(arg0: number): zombie.iso.weather.WeatherPeriod$StrLerpVal;
-
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.iso.weather.WeatherPeriod$StrLerpVal>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.iso.weather.WeatherPeriod$StrLerpVal>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
       getValue(): number;
-
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
       /**
        * @noSelf
        *
-       * (String arg0): StrLerpVal
+       * Method Parameters: 
+       *  - (int arg0): zombie.iso.weather.WeatherPeriod$StrLerpVal
        */
-      static valueOf(arg0: string | null): zombie.iso.weather.WeatherPeriod$StrLerpVal;
-
-      /** @noSelf */
+      static fromValue(arg0: number): zombie.iso.weather.WeatherPeriod$StrLerpVal;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): zombie.iso.weather.WeatherPeriod$StrLerpVal
+       *  - (Class arg0, String arg1): T
+       */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.iso.weather.WeatherPeriod$StrLerpVal | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.weather.WeatherPeriod$StrLerpVal[]
+       */
       static values(): zombie.iso.weather.WeatherPeriod$StrLerpVal[];
-
     }
     /**
      * @customConstructor WeatherStage.new

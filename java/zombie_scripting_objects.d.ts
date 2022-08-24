@@ -14,10 +14,10 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
-       *  - (String arg0, String[] arg1): void
        *  - (String arg0, String arg1): void
+       *  - (String arg0, String[] arg1): void
        */
-      Load(arg0: string, arg1: string[] | string): void;
+      Load(arg0: string, arg1: string | string[]): void;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.scripting.objects.ScriptModule
@@ -315,10 +315,10 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
-       *  - (String arg0, String[] arg1): void
        *  - (String arg0, String arg1): void
+       *  - (String arg0, String[] arg1): void
        */
-      Load(arg0: string, arg1: string[] | string): void;
+      Load(arg0: string, arg1: string | string[]): void;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.scripting.objects.ScriptModule
@@ -1593,15 +1593,61 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.scripting.objects.Item$Type>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.scripting.objects.Item$Type>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (String arg0): Type
+       * Method Parameters: 
+       *  - (String arg0): zombie.scripting.objects.Item$Type
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.scripting.objects.Item$Type;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.scripting.objects.Item$Type | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.Item$Type[]
+       */
       static values(): zombie.scripting.objects.Item$Type[];
-
     }
     /**
      * @customConstructor ItemRecipe.new
@@ -1665,10 +1711,10 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
-       *  - (String arg0, String[] arg1): void
        *  - (String arg0, String arg1): void
+       *  - (String arg0, String[] arg1): void
        */
-      Load(arg0: string, arg1: string[] | string): void;
+      Load(arg0: string, arg1: string | string[]): void;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -1843,10 +1889,10 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
-       *  - (String arg0, String[] arg1): void
        *  - (String arg0, String arg1): void
+       *  - (String arg0, String[] arg1): void
        */
-      Load(arg0: string, arg1: string[] | string): void;
+      Load(arg0: string, arg1: string | string[]): void;
       /**
        * Method Parameters: 
        *  - (ModelAttachment arg0): zombie.scripting.objects.ModelAttachment
@@ -2837,10 +2883,10 @@ declare module '@asledgehammer/pipewrench' {
       CheckExitPoints(): boolean;
       /**
        * Method Parameters: 
-       *  - (String arg0, String[] arg1): void
        *  - (String arg0, String arg1): void
+       *  - (String arg0, String[] arg1): void
        */
-      Load(arg0: string, arg1: string[] | string): void;
+      Load(arg0: string, arg1: string | string[]): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -2910,10 +2956,10 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
-       *  - (String arg0, String[] arg1): void
        *  - (String arg0, String arg1): void
+       *  - (String arg0, String[] arg1): void
        */
-      Load(arg0: string, arg1: string[] | string): void;
+      Load(arg0: string, arg1: string | string[]): void;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -3025,10 +3071,10 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
-       *  - (String arg0, String[] arg1): void
        *  - (String arg0, String arg1): void
+       *  - (String arg0, String[] arg1): void
        */
-      Load(arg0: string, arg1: string[] | string): void;
+      Load(arg0: string, arg1: string | string[]): void;
       /**
        * Method Parameters: 
        *  - (Empty): void

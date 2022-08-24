@@ -235,10 +235,10 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IPooledObject[] arg0): void
        *  - (List arg0): void
+       *  - (IPooledObject[] arg0): void
        */
-      static release(arg0: zombie.util.IPooledObject[] | java.util.List<zombie.util.IPooledObject>): void;
+      static release(arg0: java.util.List<zombie.util.IPooledObject> | zombie.util.IPooledObject[]): void;
       /**
        * @noSelf
        *
@@ -328,11 +328,11 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IPooledObject[] arg0): E[]
-       *  - (Object arg0): E
        *  - (IPooledObject arg0): E
+       *  - (Object arg0): E
+       *  - (IPooledObject[] arg0): E[]
        */
-      static tryRelease<E>(arg0: E[] | any): any;
+      static tryRelease<E>(arg0: E | any): any;
     }
   }
 }

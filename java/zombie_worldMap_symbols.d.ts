@@ -205,15 +205,61 @@ declare module '@asledgehammer/pipewrench' {
       name(): string;
       ordinal(): number;
       /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.worldMap.symbols.WorldMapSymbols$WorldMapSymbolType>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.worldMap.symbols.WorldMapSymbols$WorldMapSymbolType>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
        * @noSelf
        *
-       * (String arg0): WorldMapSymbolType
+       * Method Parameters: 
+       *  - (String arg0): zombie.worldMap.symbols.WorldMapSymbols$WorldMapSymbolType
+       *  - (Class arg0, String arg1): T
        */
-      static valueOf(arg0: string | null): zombie.worldMap.symbols.WorldMapSymbols$WorldMapSymbolType;
-
-      /** @noSelf */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.worldMap.symbols.WorldMapSymbols$WorldMapSymbolType | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.worldMap.symbols.WorldMapSymbols$WorldMapSymbolType[]
+       */
       static values(): zombie.worldMap.symbols.WorldMapSymbols$WorldMapSymbolType[];
-
     }
     /**
      * @customConstructor WorldMapSymbolsV1.new

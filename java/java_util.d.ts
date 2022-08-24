@@ -775,6 +775,7 @@ declare module '@asledgehammer/pipewrench' {
     export type Locale = any;
     export type Map<K, V> = any;
     export type Map$Entry<K, V> = any;
+    export type Optional<T> = any;
     export type Set<E> = any;
     export type Spliterator<T> = any;
     /**

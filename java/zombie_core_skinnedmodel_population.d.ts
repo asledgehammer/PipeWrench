@@ -269,8 +269,8 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
-       *  - (Empty): zombie.core.skinnedmodel.population.ClothingItemReference
        *  - (Empty): any
+       *  - (Empty): zombie.core.skinnedmodel.population.ClothingItemReference
        */
       clone(): any;
       /**
