@@ -48,7 +48,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (ColorInfo arg0): zombie.core.textures.ColorInfo
        *  - (float arg0, float arg1, float arg2, float arg3): zombie.core.textures.ColorInfo
        */
-      set(arg0: zombie.core.textures.ColorInfo | number, arg1?: number, arg2?: number, arg3?: number): zombie.core.textures.ColorInfo;
+      set(arg0: number | zombie.core.textures.ColorInfo, arg1?: number, arg2?: number, arg3?: number): zombie.core.textures.ColorInfo;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.core.Color
@@ -226,7 +226,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (BufferedInputStream arg0, boolean arg1, PZFileformat arg2)
        *  - (int arg0, int arg1, WrappedBuffer arg2)
        */
-      constructor(arg0: java.io.BufferedInputStream | java.io.InputStream | zombie.core.textures.TextureID | string | number, arg1?: boolean | zombie.core.utils.WrappedBuffer | number, arg2?: zombie.core.textures.Texture$PZFileformat | zombie.core.utils.WrappedBuffer);
+      constructor(arg0: java.io.InputStream | java.io.BufferedInputStream | number | zombie.core.textures.TextureID | string, arg1?: boolean | number | zombie.core.utils.WrappedBuffer, arg2?: zombie.core.textures.Texture$PZFileformat | zombie.core.utils.WrappedBuffer);
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -285,10 +285,10 @@ declare module '@asledgehammer/pipewrench' {
       makeTransp(arg0: number, arg1: number, arg2: number, arg3?: number): void;
       /**
        * Method Parameters: 
-       *  - (Raster arg0): void
        *  - (BufferedImage arg0): void
+       *  - (Raster arg0): void
        */
-      setData(arg0: java.awt.image.Raster | java.awt.image.BufferedImage): void;
+      setData(arg0: java.awt.image.BufferedImage | java.awt.image.Raster): void;
       /**
        * @noSelf
        *
@@ -342,15 +342,15 @@ declare module '@asledgehammer/pipewrench' {
        * Constructors: 
        *  - (ITexture arg0)
        *  - (Mask arg0)
-       *  - (ITexture arg0, boolean[] arg1)
        *  - (ITexture arg0, BooleanGrid arg1)
+       *  - (ITexture arg0, boolean[] arg1)
        *  - (int arg0, int arg1)
        *  - (Mask arg0, int arg1, int arg2, int arg3, int arg4)
        *  - (Texture arg0, Texture arg1, int arg2, int arg3, int arg4, int arg5)
        *  - (BooleanGrid arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
        *  - (boolean[] arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
        */
-      constructor(arg0: zombie.core.utils.BooleanGrid | zombie.interfaces.ITexture | zombie.core.textures.Mask | number | zombie.core.textures.Texture | boolean[], arg1?: number | boolean[] | zombie.core.utils.BooleanGrid | zombie.core.textures.Texture, arg2?: number, arg3?: number, arg4?: number, arg5?: number, arg6?: number);
+      constructor(arg0: zombie.interfaces.ITexture | zombie.core.textures.Mask | number | zombie.core.textures.Texture | zombie.core.utils.BooleanGrid | boolean[], arg1?: zombie.core.utils.BooleanGrid | boolean[] | number | zombie.core.textures.Texture, arg2?: number, arg3?: number, arg4?: number, arg5?: number, arg6?: number);
       /**
        * Method Parameters: 
        *  - (Empty): any
@@ -452,18 +452,18 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Texture arg0)
        *  - (String arg0)
        *  - (String arg0, boolean arg1)
-       *  - (TextureID arg0, String arg1)
        *  - (String arg0, int[] arg1)
        *  - (String arg0, String arg1)
+       *  - (TextureID arg0, String arg1)
+       *  - (String arg0, boolean arg1, boolean arg2)
        *  - (int arg0, int arg1, int arg2)
        *  - (AssetPath arg0, AssetManager arg1, TextureAssetParams arg2)
        *  - (String arg0, BufferedInputStream arg1, boolean arg2)
-       *  - (String arg0, boolean arg1, boolean arg2)
        *  - (String arg0, int arg1, int arg2, int arg3)
        *  - (int arg0, int arg1, String arg2, int arg3)
        *  - (String arg0, BufferedInputStream arg1, boolean arg2, PZFileformat arg3)
        */
-      constructor(arg0?: string | number | zombie.core.textures.Texture | zombie.asset.AssetPath | zombie.core.textures.TextureID, arg1?: number | boolean | zombie.asset.AssetManager | java.io.BufferedInputStream | string | number[], arg2?: number | string | zombie.core.textures.Texture$TextureAssetParams | boolean, arg3?: number | zombie.core.textures.Texture$PZFileformat);
+      constructor(arg0?: string | number | zombie.core.textures.Texture | zombie.core.textures.TextureID | zombie.asset.AssetPath, arg1?: boolean | number[] | string | number | java.io.BufferedInputStream | zombie.asset.AssetManager, arg2?: boolean | number | string | zombie.core.textures.Texture$TextureAssetParams, arg3?: number | zombie.core.textures.Texture$PZFileformat);
       /**
        * Method Parameters: 
        *  - (Asset arg0): void
@@ -483,11 +483,11 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Empty): void
-       *  - (WrappedBuffer arg0): void
-       *  - (boolean[] arg0): void
        *  - (BooleanGrid arg0): void
+       *  - (boolean[] arg0): void
+       *  - (WrappedBuffer arg0): void
        */
-      createMask(arg0?: zombie.core.utils.WrappedBuffer | boolean[] | zombie.core.utils.BooleanGrid): void;
+      createMask(arg0?: zombie.core.utils.BooleanGrid | boolean[] | zombie.core.utils.WrappedBuffer): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -706,7 +706,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, Consumer arg8): void
        *  - (ObjectRenderEffects arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, Consumer arg9): void
        */
-      render(arg0: number | zombie.iso.objects.ObjectRenderEffects, arg1: number, arg2?: number, arg3?: number, arg4?: number, arg5?: number, arg6?: number, arg7?: number, arg8?: number | java.util._function_.Consumer<zombie.core.textures.TextureDraw>, arg9?: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): void;
+      render(arg0: zombie.iso.objects.ObjectRenderEffects | number, arg1: number, arg2?: number, arg3?: number, arg4?: number, arg5?: number, arg6?: number, arg7?: number, arg8?: number | java.util._function_.Consumer<zombie.core.textures.TextureDraw>, arg9?: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): void;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3, int arg4, int arg5, int arg6, int arg7): void
@@ -843,7 +843,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, int arg1, int arg2, int arg3, int arg4): zombie.core.textures.Texture
        *  - (int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7): zombie.core.textures.Texture[]
        */
-      split(arg0: string | number, arg1: number, arg2: number, arg3: number, arg4?: number, arg5?: number, arg6?: number, arg7?: number): zombie.core.textures.Texture | zombie.core.textures.Texture[];
+      split(arg0: number | string, arg1: number, arg2: number, arg3: number, arg4?: number, arg5?: number, arg6?: number, arg7?: number): zombie.core.textures.Texture[] | zombie.core.textures.Texture;
       /**
        * Method Parameters: 
        *  - (int[] arg0, int[] arg1): zombie.core.textures.Texture[][]
@@ -913,11 +913,11 @@ declare module '@asledgehammer/pipewrench' {
        *
        * Method Parameters: 
        *  - (String arg0): zombie.core.textures.Texture
-       *  - (String arg0, String arg1): zombie.core.textures.Texture
        *  - (String arg0, int arg1): zombie.core.textures.Texture
+       *  - (String arg0, String arg1): zombie.core.textures.Texture
        *  - (String arg0, int[] arg1, String arg2): zombie.core.textures.Texture
        */
-      static getSharedTexture(arg0: string, arg1?: number[] | string | number, arg2?: string): zombie.core.textures.Texture;
+      static getSharedTexture(arg0: string, arg1?: number | number[] | string, arg2?: string): zombie.core.textures.Texture;
       /**
        * @noSelf
        *
@@ -1054,7 +1054,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (TextureDraw arg0, Texture arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, int arg10, int arg11, int arg12, int arg13, float arg14, float arg15, float arg16, float arg17, float arg18, float arg19, float arg20, float arg21, Consumer arg22): zombie.core.textures.TextureDraw
        *  - (TextureDraw arg0, Texture arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10, float arg11, float arg12, float arg13, float arg14, float arg15, float arg16, float arg17, float arg18, float arg19, float arg20, float arg21, float arg22, float arg23, float arg24, float arg25, Consumer arg26): void
        */
-      static Create(arg0: zombie.core.textures.TextureDraw, arg1: zombie.core.textures.Texture, arg2: number | zombie.core.SpriteRenderer$WallShaderTexRender, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number | java.util._function_.Consumer<zombie.core.textures.TextureDraw>, arg11?: number | java.util._function_.Consumer<zombie.core.textures.TextureDraw>, arg12?: number, arg13?: number, arg14?: number | java.util._function_.Consumer<zombie.core.textures.TextureDraw>, arg15?: number, arg16?: number, arg17?: number, arg18?: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg19?: number, arg20?: number, arg21?: number, arg22?: number | java.util._function_.Consumer<zombie.core.textures.TextureDraw>, arg23?: number, arg24?: number, arg25?: number, arg26?: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): zombie.core.textures.TextureDraw | void;
+      static Create(arg0: zombie.core.textures.TextureDraw, arg1: zombie.core.textures.Texture, arg2: number | zombie.core.SpriteRenderer$WallShaderTexRender, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number | java.util._function_.Consumer<zombie.core.textures.TextureDraw>, arg11?: number | java.util._function_.Consumer<zombie.core.textures.TextureDraw>, arg12?: number, arg13?: number, arg14?: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg15?: number, arg16?: number, arg17?: number, arg18?: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg19?: number, arg20?: number, arg21?: number, arg22?: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg23?: number, arg24?: number, arg25?: number, arg26?: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): void | zombie.core.textures.TextureDraw;
       /**
        * @noSelf
        *
@@ -1512,13 +1512,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (ImageData arg0)
        *  - (String arg0, int[] arg1)
        *  - (String arg0, String arg1)
+       *  - (int arg0, int arg1, int arg2)
        *  - (BufferedInputStream arg0, String arg1, boolean arg2)
        *  - (AssetPath arg0, AssetManager arg1, TextureIDAssetParams arg2)
-       *  - (int arg0, int arg1, int arg2)
        *  - (String arg0, int arg1, int arg2, int arg3)
        *  - (BufferedInputStream arg0, String arg1, boolean arg2, PZFileformat arg3)
        */
-      constructor(arg0: string | java.io.BufferedInputStream | zombie.asset.AssetPath | number | zombie.core.textures.ImageData, arg1?: number[] | number | string | zombie.asset.AssetManager, arg2?: number | boolean | zombie.core.textures.TextureID$TextureIDAssetParams, arg3?: number | zombie.core.textures.Texture$PZFileformat);
+      constructor(arg0: string | java.io.BufferedInputStream | number | zombie.core.textures.ImageData | zombie.asset.AssetPath, arg1?: number[] | number | string | zombie.asset.AssetManager, arg2?: number | boolean | zombie.core.textures.TextureID$TextureIDAssetParams, arg3?: number | zombie.core.textures.Texture$PZFileformat);
       /**
        * Method Parameters: 
        *  - (Asset arg0): void

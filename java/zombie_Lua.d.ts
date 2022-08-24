@@ -374,10 +374,10 @@ declare module '@asledgehammer/pipewrench' {
       exposeAll(): void;
       /**
        * Method Parameters: 
-       *  - (KahluaTable arg0, Class arg1, Method arg2, String arg3): void
        *  - (KahluaTable arg0, Class arg1, Constructor arg2, String arg3): void
+       *  - (KahluaTable arg0, Class arg1, Method arg2, String arg3): void
        */
-      exposeGlobalClassFunction(arg0: se.krka.kahlua.vm.KahluaTable, arg1: java.lang.Class<any>, arg2: java.lang.reflect.Method | java.lang.reflect.Constructor<any>, arg3: string): void;
+      exposeGlobalClassFunction(arg0: se.krka.kahlua.vm.KahluaTable, arg1: java.lang.Class<any>, arg2: java.lang.reflect.Constructor<any> | java.lang.reflect.Method, arg3: string): void;
       /**
        * Method Parameters: 
        *  - (Object arg0): void
@@ -3361,7 +3361,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, String arg1, KahluaTable arg2): void
        *  - (IsoPlayer arg0, String arg1, String arg2, KahluaTable arg3): void
        */
-      static sendClientCommand(arg0: string | zombie.characters.IsoPlayer, arg1: string, arg2: se.krka.kahlua.vm.KahluaTable | string, arg3?: se.krka.kahlua.vm.KahluaTable): void;
+      static sendClientCommand(arg0: zombie.characters.IsoPlayer | string, arg1: string, arg2: string | se.krka.kahlua.vm.KahluaTable, arg3?: se.krka.kahlua.vm.KahluaTable): void;
       /**
        * @noSelf
        *
@@ -3460,7 +3460,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, String arg1, KahluaTable arg2): void
        *  - (IsoPlayer arg0, String arg1, String arg2, KahluaTable arg3): void
        */
-      static sendServerCommand(arg0: zombie.characters.IsoPlayer | string, arg1: string, arg2: string | se.krka.kahlua.vm.KahluaTable, arg3?: se.krka.kahlua.vm.KahluaTable): void;
+      static sendServerCommand(arg0: string | zombie.characters.IsoPlayer, arg1: string, arg2: se.krka.kahlua.vm.KahluaTable | string, arg3?: se.krka.kahlua.vm.KahluaTable): void;
       /**
        * @noSelf
        *

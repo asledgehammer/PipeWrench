@@ -29,10 +29,10 @@ declare module '@asledgehammer/pipewrench' {
       ContainsChar(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * Method Parameters: 
-       *  - (BaseVehicle arg0): void
        *  - (IsoGameCharacter arg0): void
+       *  - (BaseVehicle arg0): void
        */
-      Remove(arg0: zombie.vehicles.BaseVehicle | zombie.characters.IsoGameCharacter): void;
+      Remove(arg0: zombie.characters.IsoGameCharacter | zombie.vehicles.BaseVehicle): void;
       /**
        * Method Parameters: 
        *  - (TextureDraw arg0, int arg1, int arg2): void
@@ -84,7 +84,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (ModelInstance arg0, String arg1, String arg2, String arg3): zombie.core.skinnedmodel.model.ModelInstance
        *  - (ModelSlot arg0, String arg1, String arg2, String arg3, String arg4): zombie.core.skinnedmodel.model.ModelInstance
        */
-      addStatic(arg0: zombie.core.skinnedmodel.model.ModelInstance | zombie.core.skinnedmodel.ModelManager$ModelSlot, arg1: string, arg2: string, arg3: string, arg4?: string): zombie.core.skinnedmodel.model.ModelInstance;
+      addStatic(arg0: zombie.core.skinnedmodel.ModelManager$ModelSlot | zombie.core.skinnedmodel.model.ModelInstance, arg1: string, arg2: string, arg3: string, arg4?: string): zombie.core.skinnedmodel.model.ModelInstance;
       /**
        * Method Parameters: 
        *  - (ModelInstance arg0, String arg1, String arg2, String arg3, String arg4): zombie.core.skinnedmodel.model.ModelInstance
@@ -236,7 +236,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, String arg1, String arg2, boolean arg3): void
        *  - (String arg0, String arg1, String arg2, String arg3, boolean arg4): void
        */
-      setModelMetaData(arg0: string, arg1: string, arg2: string, arg3: boolean | string, arg4?: boolean): void;
+      setModelMetaData(arg0: string, arg1: string, arg2: string, arg3: string | boolean, arg4?: boolean): void;
       /**
        * Method Parameters: 
        *  - (String arg0, String arg1, boolean arg2, String arg3, boolean arg4): zombie.core.skinnedmodel.model.Model

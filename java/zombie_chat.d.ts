@@ -137,10 +137,10 @@ declare module '@asledgehammer/pipewrench' {
       sendPlayerJoinChatPacket(arg0: zombie.core.raknet.UdpConnection): void;
       /**
        * Method Parameters: 
-       *  - (short arg0): void
        *  - (UdpConnection arg0): void
+       *  - (short arg0): void
        */
-      sendPlayerLeaveChatPacket(arg0: number | zombie.core.raknet.UdpConnection): void;
+      sendPlayerLeaveChatPacket(arg0: zombie.core.raknet.UdpConnection | number): void;
       /**
        * Method Parameters: 
        *  - (ChatMessage arg0, DeviceData arg1): void
@@ -171,7 +171,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (ChatMessage arg0): void
        *  - (String arg0, String arg1): void
        */
-      showMessage(arg0: zombie.chat.ChatMessage | string, arg1?: string): void;
+      showMessage(arg0: string | zombie.chat.ChatMessage, arg1?: string): void;
       /**
        * Method Parameters: 
        *  - (ArrayList arg0): void
@@ -220,7 +220,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, UIFont arg4, float arg5, String arg6, boolean arg7, boolean arg8, boolean arg9, boolean arg10, boolean arg11, boolean arg12): void
        */
-      addChatLine(arg0: string, arg1: number, arg2: number, arg3: number, arg4?: zombie.ui.UIFont | number, arg5?: number, arg6?: string, arg7?: boolean, arg8?: boolean, arg9?: boolean, arg10?: boolean, arg11?: boolean, arg12?: boolean): void;
+      addChatLine(arg0: string, arg1: number, arg2: number, arg3: number, arg4?: number | zombie.ui.UIFont, arg5?: number, arg6?: string, arg7?: boolean, arg8?: boolean, arg9?: boolean, arg10?: boolean, arg11?: boolean, arg12?: boolean): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -351,8 +351,8 @@ declare module '@asledgehammer/pipewrench' {
       constructor(arg0: zombie.chat.ChatBase, arg1: string | java.time.LocalDateTime, arg2?: string);
       /**
        * Method Parameters: 
-       *  - (Empty): zombie.chat.ChatMessage
        *  - (Empty): any
+       *  - (Empty): zombie.chat.ChatMessage
        */
       clone(): any;
       /**
@@ -855,8 +855,8 @@ declare module '@asledgehammer/pipewrench' {
       constructor(arg0: zombie.chat.ChatBase, arg1: string);
       /**
        * Method Parameters: 
-       *  - (Empty): zombie.chat.ChatMessage
        *  - (Empty): any
+       *  - (Empty): zombie.chat.ChatMessage
        */
       clone(): any;
       /**

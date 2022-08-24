@@ -244,8 +244,8 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (Object arg0): void
        *  - (String arg0): void
+       *  - (Object arg0): void
        *  - (DebugType arg0, String arg1): void
        */
       static log(arg0: any, arg1?: string): void;
@@ -312,6 +312,11 @@ declare module '@asledgehammer/pipewrench' {
       append(arg0: java.lang.CharSequence | string, arg1?: number, arg2?: number): java.lang.Appendable | java.io.PrintStream;
       /**
        * Method Parameters: 
+       *  - (Empty): java.nio.charset.Charset
+       */
+      charset(): java.nio.charset.Charset;
+      /**
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       checkError(): boolean;
@@ -347,7 +352,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, Object... arg1): java.io.PrintStream
        *  - (Locale arg0, String arg1, Object... arg2): java.io.PrintStream
        */
-      format(arg0: string | java.util.Locale, arg1: any | string, arg2?: any): java.io.PrintStream;
+      format(arg0: java.util.Locale | string, arg1: string | any, arg2?: any): java.io.PrintStream;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -361,14 +366,14 @@ declare module '@asledgehammer/pipewrench' {
       noise(arg0: string, arg1?: any, arg2?: any, arg3?: any, arg4?: any, arg5?: any, arg6?: any): void;
       /**
        * Method Parameters: 
+       *  - (float arg0): void
        *  - (long arg0): void
        *  - (int arg0): void
        *  - (char arg0): void
-       *  - (boolean arg0): void
-       *  - (Object arg0): void
-       *  - (String arg0): void
        *  - (double arg0): void
-       *  - (float arg0): void
+       *  - (String arg0): void
+       *  - (Object arg0): void
+       *  - (boolean arg0): void
        *  - (char[] arg0): void
        */
       print(arg0: any): void;
@@ -399,15 +404,15 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Empty): void
+       *  - (Object arg0): void
+       *  - (String arg0): void
        *  - (char[] arg0): void
        *  - (double arg0): void
-       *  - (float arg0): void
-       *  - (String arg0): void
-       *  - (Object arg0): void
        *  - (boolean arg0): void
        *  - (char arg0): void
-       *  - (int arg0): void
+       *  - (float arg0): void
        *  - (long arg0): void
+       *  - (int arg0): void
        *  - (String arg0, Object arg1): void
        *  - (String arg0, Object arg1, Object arg2): void
        *  - (String arg0, Object arg1, Object arg2, Object arg3): void
@@ -438,8 +443,8 @@ declare module '@asledgehammer/pipewrench' {
       warn(arg0: any, arg1?: any): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (byte[] arg0): void
+       *  - (int arg0): void
        *  - (byte[] arg0, int arg1, int arg2): void
        */
       write(arg0: number[] | number, arg1?: number, arg2?: number): void;

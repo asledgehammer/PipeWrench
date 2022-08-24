@@ -334,10 +334,10 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (ModelSlotRenderData arg0, int arg1, Vector3 arg2): void
        *  - (IsoGameCharacter arg0, int arg1, Vector3 arg2): void
+       *  - (ModelSlotRenderData arg0, int arg1, Vector3 arg2): void
        */
-      static BoneToWorldCoords(arg0: zombie.core.skinnedmodel.model.ModelSlotRenderData | zombie.characters.IsoGameCharacter, arg1: number, arg2: zombie.iso.Vector3): void;
+      static BoneToWorldCoords(arg0: zombie.characters.IsoGameCharacter | zombie.core.skinnedmodel.model.ModelSlotRenderData, arg1: number, arg2: zombie.iso.Vector3): void;
       /**
        * @noSelf
        *
@@ -469,10 +469,10 @@ declare module '@asledgehammer/pipewrench' {
       getAttachmentById(arg0: string): zombie.scripting.objects.ModelAttachment;
       /**
        * Method Parameters: 
-       *  - (ModelAttachment arg0, Matrix4f arg1): org.joml.Matrix4f
        *  - (int arg0, Matrix4f arg1): org.joml.Matrix4f
+       *  - (ModelAttachment arg0, Matrix4f arg1): org.joml.Matrix4f
        */
-      getAttachmentMatrix(arg0: zombie.scripting.objects.ModelAttachment | number, arg1: org.joml.Matrix4f): org.joml.Matrix4f;
+      getAttachmentMatrix(arg0: number | zombie.scripting.objects.ModelAttachment, arg1: org.joml.Matrix4f): org.joml.Matrix4f;
       /**
        * Method Parameters: 
        *  - (String arg0, Matrix4f arg1): org.joml.Matrix4f
@@ -681,7 +681,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (HumanVisual arg0, ItemVisuals arg1, ModelInstance arg2): void
        *  - (BaseVisual arg0, ItemVisuals arg1, ModelInstance arg2): void
        */
-      init(arg0: zombie.characters.IsoGameCharacter | zombie.core.skinnedmodel.visual.HumanVisual | zombie.core.skinnedmodel.visual.BaseVisual, arg1?: zombie.core.skinnedmodel.visual.ItemVisuals, arg2?: zombie.core.skinnedmodel.model.ModelInstance): void;
+      init(arg0: zombie.core.skinnedmodel.visual.HumanVisual | zombie.characters.IsoGameCharacter | zombie.core.skinnedmodel.visual.BaseVisual, arg1?: zombie.core.skinnedmodel.visual.ItemVisuals, arg2?: zombie.core.skinnedmodel.model.ModelInstance): void;
       /**
        * Method Parameters: 
        *  - (Empty): boolean

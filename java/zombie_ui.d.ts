@@ -41,22 +41,22 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
-       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
-      DrawText(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
+      DrawText(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawTextCentre(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawTextCentre(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawTextRight(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawTextRight(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
@@ -714,22 +714,22 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
-       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
-      DrawText(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
+      DrawText(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawTextCentre(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawTextCentre(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawTextRight(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawTextRight(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
@@ -1352,12 +1352,12 @@ declare module '@asledgehammer/pipewrench' {
     export class HUDButton {
       /**
        * Constructors: 
-       *  - (String arg0, float arg1, float arg2, String arg3, String arg4, UIEventHandler arg5)
        *  - (String arg0, double arg1, double arg2, String arg3, String arg4, UIElement arg5)
-       *  - (String arg0, float arg1, float arg2, String arg3, String arg4, String arg5, UIEventHandler arg6)
+       *  - (String arg0, float arg1, float arg2, String arg3, String arg4, UIEventHandler arg5)
        *  - (String arg0, float arg1, float arg2, String arg3, String arg4, String arg5, UIElement arg6)
+       *  - (String arg0, float arg1, float arg2, String arg3, String arg4, String arg5, UIEventHandler arg6)
        */
-      constructor(arg0: string, arg1: number, arg2: number, arg3: string, arg4: string, arg5: string | zombie.ui.UIEventHandler | zombie.ui.UIElement, arg6?: zombie.ui.UIEventHandler | zombie.ui.UIElement);
+      constructor(arg0: string, arg1: number, arg2: number, arg3: string, arg4: string, arg5: zombie.ui.UIElement | zombie.ui.UIEventHandler | string, arg6?: zombie.ui.UIElement | zombie.ui.UIEventHandler);
       /**
        * Method Parameters: 
        *  - (UIElement arg0): void
@@ -1387,22 +1387,22 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
-       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
-      DrawText(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
+      DrawText(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawTextCentre(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawTextCentre(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawTextRight(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawTextRight(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
@@ -2052,22 +2052,22 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
-       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
-      DrawText(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
+      DrawText(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawTextCentre(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawTextCentre(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawTextRight(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawTextRight(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
@@ -2744,22 +2744,22 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
-       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
-      DrawText(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
+      DrawText(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawTextCentre(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawTextCentre(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawTextRight(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawTextRight(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
@@ -3429,22 +3429,22 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
-       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
-      DrawText(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
+      DrawText(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawTextCentre(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawTextCentre(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawTextRight(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawTextRight(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
@@ -4117,8 +4117,8 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
-       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
       DrawText(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
       /**
@@ -4233,8 +4233,8 @@ declare module '@asledgehammer/pipewrench' {
       DrawValueRight(arg0: number, arg1: number, arg2: number, arg3: boolean): void;
       /**
        * Method Parameters: 
-       *  - (int arg0, int arg1, int arg2): void
        *  - (float arg0, int arg1, int arg2): void
+       *  - (int arg0, int arg1, int arg2): void
        */
       DrawValueRightNoPlus(arg0: number, arg1: number, arg2: number): void;
       /**
@@ -4910,8 +4910,8 @@ declare module '@asledgehammer/pipewrench' {
       setValueRight(arg0: number, arg1: boolean): void;
       /**
        * Method Parameters: 
-       *  - (float arg0): void
        *  - (int arg0): void
+       *  - (float arg0): void
        */
       setValueRightNoPlus(arg0: number): void;
     }
@@ -4955,22 +4955,22 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
-       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
-      DrawText(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
+      DrawText(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawTextCentre(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawTextCentre(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawTextRight(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawTextRight(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
@@ -5615,22 +5615,22 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
-       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
-      DrawText(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
+      DrawText(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawTextCentre(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawTextCentre(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawTextRight(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawTextRight(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
@@ -6310,22 +6310,22 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
-       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
-      DrawText(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
+      DrawText(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawTextCentre(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawTextCentre(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawTextRight(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawTextRight(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
@@ -7003,22 +7003,22 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
-       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
-      DrawText(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
+      DrawText(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawTextCentre(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawTextCentre(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawTextRight(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawTextRight(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
@@ -7678,22 +7678,22 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
-       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
-      DrawText(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
+      DrawText(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawTextCentre(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawTextCentre(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawTextRight(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawTextRight(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
@@ -8338,7 +8338,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (double arg0, double arg1, double arg2, double arg3, double arg4, double arg5, boolean arg6): void
        *  - (TextDrawHorizontal arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, boolean arg7): void
        */
-      AddBatchedDraw(arg0: number | zombie.ui.TextDrawHorizontal, arg1: number, arg2?: boolean | number, arg3?: number, arg4?: number, arg5?: number, arg6?: number | boolean, arg7?: boolean): void;
+      AddBatchedDraw(arg0: number | zombie.ui.TextDrawHorizontal, arg1: number, arg2?: boolean | number, arg3?: number, arg4?: number, arg5?: number, arg6?: boolean | number, arg7?: boolean): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -8364,7 +8364,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, int arg1): void
        *  - (UIFont arg0, String arg1, int arg2): void
        */
-      ReadString(arg0: string | zombie.ui.UIFont, arg1?: string | number, arg2?: number): void;
+      ReadString(arg0: string | zombie.ui.UIFont, arg1?: number | string, arg2?: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -8484,8 +8484,8 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (int arg0, int arg1, int arg2): void
        *  - (float arg0, float arg1, float arg2): void
-       *  - (int arg0, int arg1, int arg2, int arg3): void
        *  - (float arg0, float arg1, float arg2, float arg3): void
+       *  - (int arg0, int arg1, int arg2, int arg3): void
        */
       setDefaultColors(arg0: number, arg1: number, arg2: number, arg3?: number): void;
       /**
@@ -8515,10 +8515,10 @@ declare module '@asledgehammer/pipewrench' {
       setHearRange(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (String arg0): void
        *  - (TextDrawHorizontal arg0): void
+       *  - (String arg0): void
        */
-      setHorizontalAlign(arg0: string | zombie.ui.TextDrawHorizontal): void;
+      setHorizontalAlign(arg0: zombie.ui.TextDrawHorizontal | string): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -8533,8 +8533,8 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2): void
        *  - (int arg0, int arg1, int arg2): void
-       *  - (int arg0, int arg1, int arg2, int arg3): void
        *  - (float arg0, float arg1, float arg2, float arg3): void
+       *  - (int arg0, int arg1, int arg2, int arg3): void
        */
       setOutlineColors(arg0: number, arg1: number, arg2: number, arg3?: number): void;
       /**
@@ -8604,7 +8604,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (UIFont arg0, double arg1, double arg2, String arg3, double arg4, double arg5, double arg6, double arg7): void
        *  - (UIFont arg0, double arg1, double arg2, double arg3, String arg4, double arg5, double arg6, double arg7, double arg8): void
        */
-      DrawString(arg0: number | zombie.ui.UIFont, arg1: number, arg2: string | number, arg3?: number | string, arg4?: number | string, arg5?: number, arg6?: number, arg7?: number, arg8?: number): void;
+      DrawString(arg0: zombie.ui.UIFont | number, arg1: number, arg2: number | string, arg3?: string | number, arg4?: number | string, arg5?: number, arg6?: number, arg7?: number, arg8?: number): void;
       /**
        * Method Parameters: 
        *  - (UIFont arg0, double arg1, double arg2, String arg3, double arg4, double arg5, double arg6, double arg7): void
@@ -8615,7 +8615,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (double arg0, double arg1, String arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, double arg1, double arg2, String arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawStringCentre(arg0: number | zombie.ui.UIFont, arg1: number, arg2: string | number, arg3: number | string, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawStringCentre(arg0: zombie.ui.UIFont | number, arg1: number, arg2: number | string, arg3: string | number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (UIFont arg0, double arg1, double arg2, String arg3, double arg4, double arg5, double arg6, double arg7): void
@@ -8626,7 +8626,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (double arg0, double arg1, String arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, double arg1, double arg2, String arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawStringRight(arg0: zombie.ui.UIFont | number, arg1: number, arg2: number | string, arg3: string | number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawStringRight(arg0: number | zombie.ui.UIFont, arg1: number, arg2: string | number, arg3: number | string, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (UIFont arg0, double arg1, double arg2, String arg3, double arg4, double arg5, double arg6, double arg7): void
@@ -8748,22 +8748,22 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
-       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
-      DrawText(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
+      DrawText(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawTextCentre(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawTextCentre(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawTextRight(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawTextRight(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
@@ -9486,22 +9486,22 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
-       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
-      DrawText(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
+      DrawText(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawTextCentre(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawTextCentre(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawTextRight(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawTextRight(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
@@ -10177,22 +10177,22 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
-       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
-      DrawText(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
+      DrawText(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawTextCentre(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawTextCentre(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawTextRight(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawTextRight(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
@@ -11728,22 +11728,22 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
-       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
-      DrawText(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
+      DrawText(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawTextCentre(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawTextCentre(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawTextRight(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawTextRight(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
@@ -12426,22 +12426,22 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
-       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
-      DrawText(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
+      DrawText(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawTextCentre(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawTextCentre(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawTextRight(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawTextRight(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
@@ -13360,22 +13360,22 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
-       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
-      DrawText(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
+      DrawText(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawTextCentre(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawTextCentre(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
        */
-      DrawTextRight(arg0: zombie.ui.UIFont | string, arg1: string | number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
+      DrawTextRight(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
       /**
        * Method Parameters: 
        *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void

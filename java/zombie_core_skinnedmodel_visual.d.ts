@@ -709,7 +709,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Collection arg0): boolean
        *  - (int arg0, Collection arg1): boolean
        */
-      addAll<T>(arg0: java.util.Collection<zombie.core.skinnedmodel.visual.ItemVisual> | number, arg1?: java.util.Collection<zombie.core.skinnedmodel.visual.ItemVisual>): boolean;
+      addAll<T>(arg0: number | java.util.Collection<zombie.core.skinnedmodel.visual.ItemVisual>, arg1?: java.util.Collection<zombie.core.skinnedmodel.visual.ItemVisual>): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): void

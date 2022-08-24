@@ -1910,10 +1910,10 @@ declare module '@asledgehammer/pipewrench' {
       getTextureName(arg0?: boolean): string;
       /**
        * Method Parameters: 
-       *  - (ModelAttachment arg0): zombie.scripting.objects.ModelAttachment
        *  - (int arg0): zombie.scripting.objects.ModelAttachment
+       *  - (ModelAttachment arg0): zombie.scripting.objects.ModelAttachment
        */
-      removeAttachment(arg0: zombie.scripting.objects.ModelAttachment | number): zombie.scripting.objects.ModelAttachment;
+      removeAttachment(arg0: number | zombie.scripting.objects.ModelAttachment): zombie.scripting.objects.ModelAttachment;
       /**
        * Method Parameters: 
        *  - (Empty): void

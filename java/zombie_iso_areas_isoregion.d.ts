@@ -451,7 +451,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, String arg2, Color arg3): void
        *  - (float arg0, float arg1, String arg2, double arg3, double arg4, double arg5, double arg6): void
        */
-      renderStringUI(arg0: number, arg1: number, arg2: string, arg3: zombie.core.Color | number, arg4?: number, arg5?: number, arg6?: number): void;
+      renderStringUI(arg0: number, arg1: number, arg2: string, arg3: number | zombie.core.Color, arg4?: number, arg5?: number, arg6?: number): void;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3, float arg4): void

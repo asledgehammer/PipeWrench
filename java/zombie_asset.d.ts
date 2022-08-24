@@ -96,7 +96,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Collection arg0): boolean
        *  - (int arg0, Collection arg1): boolean
        */
-      addAll<T>(arg0: java.util.Collection<zombie.asset.AssetStateObserver> | number, arg1?: java.util.Collection<zombie.asset.AssetStateObserver>): boolean;
+      addAll<T>(arg0: number | java.util.Collection<zombie.asset.AssetStateObserver>, arg1?: java.util.Collection<zombie.asset.AssetStateObserver>): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -309,11 +309,11 @@ declare module '@asledgehammer/pipewrench' {
       getOwner(): zombie.asset.AssetManagers;
       /**
        * Method Parameters: 
-       *  - (Asset arg0): void
        *  - (AssetPath arg0): zombie.asset.Asset
+       *  - (Asset arg0): void
        *  - (AssetPath arg0, AssetParams arg1): zombie.asset.Asset
        */
-      load(arg0: zombie.asset.Asset | zombie.asset.AssetPath, arg1?: zombie.asset.AssetManager$AssetParams): void | zombie.asset.Asset;
+      load(arg0: zombie.asset.AssetPath | zombie.asset.Asset, arg1?: zombie.asset.AssetManager$AssetParams): zombie.asset.Asset | void;
       /**
        * Method Parameters: 
        *  - (State arg0, State arg1, Asset arg2): void
@@ -321,11 +321,11 @@ declare module '@asledgehammer/pipewrench' {
       onStateChanged(arg0: zombie.asset.Asset$State, arg1: zombie.asset.Asset$State, arg2: zombie.asset.Asset): void;
       /**
        * Method Parameters: 
-       *  - (AssetPath arg0): void
        *  - (Asset arg0): void
+       *  - (AssetPath arg0): void
        *  - (Asset arg0, AssetParams arg1): void
        */
-      reload(arg0: zombie.asset.AssetPath | zombie.asset.Asset, arg1?: zombie.asset.AssetManager$AssetParams): void;
+      reload(arg0: zombie.asset.Asset | zombie.asset.AssetPath, arg1?: zombie.asset.AssetManager$AssetParams): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -333,10 +333,10 @@ declare module '@asledgehammer/pipewrench' {
       removeUnreferenced(): void;
       /**
        * Method Parameters: 
-       *  - (Asset arg0): void
        *  - (AssetPath arg0): void
+       *  - (Asset arg0): void
        */
-      unload(arg0: zombie.asset.Asset | zombie.asset.AssetPath): void;
+      unload(arg0: zombie.asset.AssetPath | zombie.asset.Asset): void;
     }
     /**
      * @customConstructor AssetParams.new

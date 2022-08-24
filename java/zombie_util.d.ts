@@ -9,10 +9,10 @@ declare module '@asledgehammer/pipewrench' {
     export class BufferedRandomAccessFile {
       /**
        * Constructors: 
-       *  - (String arg0, String arg1, int arg2)
        *  - (File arg0, String arg1, int arg2)
+       *  - (String arg0, String arg1, int arg2)
        */
-      constructor(arg0: string | java.io.File, arg1: string, arg2: number);
+      constructor(arg0: java.io.File | string, arg1: string, arg2: number);
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -133,11 +133,11 @@ declare module '@asledgehammer/pipewrench' {
       skipBytes(arg0: number): number;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (byte[] arg0): void
+       *  - (int arg0): void
        *  - (byte[] arg0, int arg1, int arg2): void
        */
-      write(arg0: number | number[], arg1?: number, arg2?: number): void;
+      write(arg0: number[] | number, arg1?: number, arg2?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void

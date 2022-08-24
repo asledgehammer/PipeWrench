@@ -25,7 +25,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, String arg1, int arg2): void
        *  - (String arg0, String arg1, String arg2, int arg3, String arg4): void
        */
-      LoadFramesBitRepeatFrame(arg0: string, arg1: string, arg2: string | number, arg3?: number, arg4?: string): void;
+      LoadFramesBitRepeatFrame(arg0: string, arg1: string, arg2: number | string, arg3?: number, arg4?: string): void;
       /**
        * Method Parameters: 
        *  - (String arg0, String arg1, int arg2): void
@@ -391,7 +391,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoSpriteManager arg0, String arg1, int arg2): zombie.iso.sprite.IsoSprite
        *  - (IsoSpriteManager arg0, IsoSprite arg1, int arg2): zombie.iso.sprite.IsoSprite
        */
-      static getSprite(arg0: zombie.iso.sprite.IsoSpriteManager, arg1: number | string | zombie.iso.sprite.IsoSprite, arg2?: number): zombie.iso.sprite.IsoSprite;
+      static getSprite(arg0: zombie.iso.sprite.IsoSpriteManager, arg1: string | zombie.iso.sprite.IsoSprite | number, arg2?: number): zombie.iso.sprite.IsoSprite;
       /**
        * @noSelf
        *

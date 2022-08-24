@@ -17,10 +17,10 @@ declare module '@asledgehammer/pipewrench' {
       constructor(arg0: zombie.characters.IsoGameCharacter);
       /**
        * Method Parameters: 
-       *  - (int arg0, float arg1): void
        *  - (BodyPartType arg0, float arg1): void
+       *  - (int arg0, float arg1): void
        */
-      AddDamage(arg0: number | zombie.characters.BodyDamage.BodyPartType, arg1: number): void;
+      AddDamage(arg0: zombie.characters.BodyDamage.BodyPartType | number, arg1: number): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -80,16 +80,16 @@ declare module '@asledgehammer/pipewrench' {
       IsBitten(arg0: number | zombie.characters.BodyDamage.BodyPartType): boolean;
       /**
        * Method Parameters: 
-       *  - (int arg0): boolean
        *  - (BodyPartType arg0): boolean
+       *  - (int arg0): boolean
        */
-      IsBleeding(arg0: number | zombie.characters.BodyDamage.BodyPartType): boolean;
+      IsBleeding(arg0: zombie.characters.BodyDamage.BodyPartType | number): boolean;
       /**
        * Method Parameters: 
-       *  - (BodyPartType arg0): boolean
        *  - (int arg0): boolean
+       *  - (BodyPartType arg0): boolean
        */
-      IsBleedingStemmed(arg0: zombie.characters.BodyDamage.BodyPartType | number): boolean;
+      IsBleedingStemmed(arg0: number | zombie.characters.BodyDamage.BodyPartType): boolean;
       /**
        * Method Parameters: 
        *  - (BodyPartType arg0): boolean
@@ -126,10 +126,10 @@ declare module '@asledgehammer/pipewrench' {
       IsOnFire(): boolean;
       /**
        * Method Parameters: 
-       *  - (BodyPartType arg0): boolean
        *  - (int arg0): boolean
+       *  - (BodyPartType arg0): boolean
        */
-      IsScratched(arg0: zombie.characters.BodyDamage.BodyPartType | number): boolean;
+      IsScratched(arg0: number | zombie.characters.BodyDamage.BodyPartType): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -327,10 +327,10 @@ declare module '@asledgehammer/pipewrench' {
       getBodyPart(arg0: zombie.characters.BodyDamage.BodyPartType): zombie.characters.BodyDamage.BodyPart;
       /**
        * Method Parameters: 
-       *  - (BodyPartType arg0): number
        *  - (int arg0): number
+       *  - (BodyPartType arg0): number
        */
-      getBodyPartHealth(arg0: zombie.characters.BodyDamage.BodyPartType | number): number;
+      getBodyPartHealth(arg0: number | zombie.characters.BodyDamage.BodyPartType): number;
       /**
        * Method Parameters: 
        *  - (int arg0): string
@@ -2427,7 +2427,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Thermoregulator arg0, float arg1, BodyPart arg2, float arg3)
        *  - (Thermoregulator arg0, boolean arg1, float arg2, BodyPart arg3, float arg4)
        */
-      constructor(arg0: zombie.characters.BodyDamage.Thermoregulator, arg1: boolean | number, arg2: number | zombie.characters.BodyDamage.BodyPart, arg3: zombie.characters.BodyDamage.BodyPart | number, arg4?: number);
+      constructor(arg0: zombie.characters.BodyDamage.Thermoregulator, arg1: number | boolean, arg2: zombie.characters.BodyDamage.BodyPart | number, arg3: number | zombie.characters.BodyDamage.BodyPart, arg4?: number);
       /**
        * Method Parameters: 
        *  - (Empty): number

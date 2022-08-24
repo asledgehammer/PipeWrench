@@ -27,7 +27,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Collection arg0): boolean
        *  - (int arg0, Collection arg1): boolean
        */
-      addAll<T>(arg0: java.util.Collection<E> | number, arg1?: java.util.Collection<E>): boolean;
+      addAll<T>(arg0: number | java.util.Collection<E>, arg1?: java.util.Collection<E>): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -523,7 +523,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Collection arg0): boolean
        *  - (int arg0, Collection arg1): boolean
        */
-      addAll<T>(arg0: number | java.util.Collection<E>, arg1?: java.util.Collection<E>): boolean;
+      addAll<T>(arg0: java.util.Collection<E> | number, arg1?: java.util.Collection<E>): boolean;
       /**
        * Method Parameters: 
        *  - (Object arg0): void
@@ -683,8 +683,8 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Empty): E
-       *  - (Object arg0): boolean
        *  - (int arg0): E
+       *  - (Object arg0): boolean
        */
       remove<T>(arg0?: any): any;
       /**
@@ -793,7 +793,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Object arg0): boolean
        *  - (int arg0, Object arg1): void
        */
-      add<T>(arg0: any, arg1?: any): boolean | void;
+      add<T>(arg0: any, arg1?: any): void | boolean;
       /**
        * Method Parameters: 
        *  - (Collection arg0): boolean
@@ -1052,17 +1052,17 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Constructors: 
        *  - (Empty Constructor)
-       *  - (Collection arg0)
        *  - (int arg0)
+       *  - (Collection arg0)
        *  - (int arg0, int arg1)
        */
-      constructor(arg0?: java.util.Collection<E> | number, arg1?: number);
+      constructor(arg0?: number | java.util.Collection<E>, arg1?: number);
       /**
        * Method Parameters: 
        *  - (Object arg0): boolean
        *  - (int arg0, Object arg1): void
        */
-      add<T>(arg0: any | number, arg1?: any): boolean | void;
+      add<T>(arg0: number | any, arg1?: any): void | boolean;
       /**
        * Method Parameters: 
        *  - (Collection arg0): boolean

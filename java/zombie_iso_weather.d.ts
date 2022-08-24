@@ -54,7 +54,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Color arg0): void
        *  - (float arg0, float arg1, float arg2, float arg3): void
        */
-      setExterior(arg0: number | zombie.core.Color, arg1?: number, arg2?: number, arg3?: number): void;
+      setExterior(arg0: zombie.core.Color | number, arg1?: number, arg2?: number, arg3?: number): void;
       /**
        * Method Parameters: 
        *  - (Color arg0): void
@@ -1072,8 +1072,8 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (int arg0, int arg1, int arg2): number
        *  - (float arg0, float arg1, float arg2): number
+       *  - (int arg0, int arg1, int arg2): number
        */
       static clamp(arg0: number, arg1: number, arg2: number): number;
       /**
@@ -1432,10 +1432,10 @@ declare module '@asledgehammer/pipewrench' {
       setModdedValue(arg0: zombie.iso.weather.ClimateColorInfo): void;
       /**
        * Method Parameters: 
-       *  - (ByteBuffer arg0, float arg1): void
        *  - (ClimateColorInfo arg0, float arg1): void
+       *  - (ByteBuffer arg0, float arg1): void
        */
-      setOverride(arg0: java.nio.ByteBuffer | zombie.iso.weather.ClimateColorInfo, arg1: number): void;
+      setOverride(arg0: zombie.iso.weather.ClimateColorInfo | java.nio.ByteBuffer, arg1: number): void;
     }
     /**
      * @customConstructor ClimateFloat.new
@@ -1864,7 +1864,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0, int arg1, int arg2, int arg3): void
        *  - (int arg0, int arg1, int arg2, int arg3, int arg4): void
        */
-      pollDate(arg0: java.util.GregorianCalendar | number, arg1?: number, arg2?: number, arg3?: number, arg4?: number): void;
+      pollDate(arg0: number | java.util.GregorianCalendar, arg1?: number, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): void

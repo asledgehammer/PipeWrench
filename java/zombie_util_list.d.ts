@@ -17,7 +17,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Object arg0): boolean
        *  - (int arg0, Object arg1): void
        */
-      add<E, T>(arg0: any | number, arg1?: any): boolean | void;
+      add<E, T>(arg0: number | any, arg1?: any): void | boolean;
       /**
        * Method Parameters: 
        *  - (Collection arg0): boolean

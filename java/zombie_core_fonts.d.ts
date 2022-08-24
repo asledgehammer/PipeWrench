@@ -43,7 +43,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, String arg2, float arg3, float arg4, float arg5, float arg6, int arg7, int arg8): void
        *  - (float arg0, float arg1, float arg2, String arg3, float arg4, float arg5, float arg6, float arg7, int arg8, int arg9): void
        */
-      drawString(arg0: number, arg1: number, arg2: string | number, arg3?: zombie.core.Color | string | number, arg4?: number, arg5?: number, arg6?: number, arg7?: number, arg8?: number, arg9?: number): void;
+      drawString(arg0: number, arg1: number, arg2: string | number, arg3?: number | zombie.core.Color | string, arg4?: number, arg5?: number, arg6?: number, arg7?: number, arg8?: number, arg9?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0): number
@@ -61,7 +61,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, int arg1, int arg2): number
        *  - (String arg0, int arg1, int arg2, boolean arg3): number
        */
-      getWidth(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: boolean): number;
+      getWidth(arg0: string, arg1?: boolean | number, arg2?: number, arg3?: boolean): number;
       /**
        * Method Parameters: 
        *  - (String arg0): number
@@ -145,11 +145,11 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Empty): void
-       *  - (WrappedBuffer arg0): void
-       *  - (boolean[] arg0): void
        *  - (BooleanGrid arg0): void
+       *  - (boolean[] arg0): void
+       *  - (WrappedBuffer arg0): void
        */
-      createMask(arg0?: zombie.core.utils.WrappedBuffer | boolean[] | zombie.core.utils.BooleanGrid): void;
+      createMask(arg0?: zombie.core.utils.BooleanGrid | boolean[] | zombie.core.utils.WrappedBuffer): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -373,7 +373,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, Consumer arg8): void
        *  - (ObjectRenderEffects arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, Consumer arg9): void
        */
-      render(arg0: number | zombie.iso.objects.ObjectRenderEffects, arg1: number, arg2?: number, arg3?: number, arg4?: number, arg5?: number, arg6?: number, arg7?: number, arg8?: number | java.util._function_.Consumer<zombie.core.textures.TextureDraw>, arg9?: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): void;
+      render(arg0: zombie.iso.objects.ObjectRenderEffects | number, arg1: number, arg2?: number, arg3?: number, arg4?: number, arg5?: number, arg6?: number, arg7?: number, arg8?: number | java.util._function_.Consumer<zombie.core.textures.TextureDraw>, arg9?: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): void;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3, int arg4, int arg5, int arg6, int arg7): void
@@ -510,7 +510,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, int arg1, int arg2, int arg3, int arg4): zombie.core.textures.Texture
        *  - (int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7): zombie.core.textures.Texture[]
        */
-      split(arg0: string | number, arg1: number, arg2: number, arg3: number, arg4?: number, arg5?: number, arg6?: number, arg7?: number): zombie.core.textures.Texture | zombie.core.textures.Texture[];
+      split(arg0: number | string, arg1: number, arg2: number, arg3: number, arg4?: number, arg5?: number, arg6?: number, arg7?: number): zombie.core.textures.Texture[] | zombie.core.textures.Texture;
       /**
        * Method Parameters: 
        *  - (int[] arg0, int[] arg1): zombie.core.textures.Texture[][]
@@ -580,11 +580,11 @@ declare module '@asledgehammer/pipewrench' {
        *
        * Method Parameters: 
        *  - (String arg0): zombie.core.textures.Texture
-       *  - (String arg0, String arg1): zombie.core.textures.Texture
        *  - (String arg0, int arg1): zombie.core.textures.Texture
+       *  - (String arg0, String arg1): zombie.core.textures.Texture
        *  - (String arg0, int[] arg1, String arg2): zombie.core.textures.Texture
        */
-      static getSharedTexture(arg0: string, arg1?: number[] | string | number, arg2?: string): zombie.core.textures.Texture;
+      static getSharedTexture(arg0: string, arg1?: number | number[] | string, arg2?: string): zombie.core.textures.Texture;
       /**
        * @noSelf
        *

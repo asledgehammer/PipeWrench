@@ -139,11 +139,11 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Constructors: 
        *  - (Empty Constructor)
-       *  - (Transform arg0)
        *  - (Matrix4f arg0)
        *  - (Matrix3f arg0)
+       *  - (Transform arg0)
        */
-      constructor(arg0?: zombie.core.physics.Transform | org.joml.Matrix4f | org.joml.Matrix3f);
+      constructor(arg0?: org.joml.Matrix4f | org.joml.Matrix3f | zombie.core.physics.Transform);
       /**
        * Method Parameters: 
        *  - (Object arg0): boolean
@@ -173,10 +173,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Transform arg0): void
-       *  - (Matrix3f arg0): void
        *  - (Matrix4f arg0): void
+       *  - (Matrix3f arg0): void
        */
-      set(arg0: zombie.core.physics.Transform | org.joml.Matrix3f | org.joml.Matrix4f): void;
+      set(arg0: zombie.core.physics.Transform | org.joml.Matrix4f | org.joml.Matrix3f): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
