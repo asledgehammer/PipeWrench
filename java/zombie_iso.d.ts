@@ -2085,19 +2085,10 @@ declare module '@asledgehammer/pipewrench' {
       static readonly W: zombie.iso.IsoDirections;
       name(): string;
       ordinal(): number;
-      /**
-       * @noSelf
-       *
-       * (IsoDirections arg0): IsoDirections
-       */
-      static RotLeft(arg0: zombie.iso.IsoDirections | null): zombie.iso.IsoDirections;
+      /** (int arg0): IsoDirections */
+      RotLeft(arg0: number): zombie.iso.IsoDirections;
 
-      /**
-       * @noSelf
-       *
-       * (IsoDirections arg0): IsoDirections
-       */
-      static RotRight(arg0: zombie.iso.IsoDirections | null): zombie.iso.IsoDirections;
+      RotRight(): zombie.iso.IsoDirections;
 
       ToVector(): zombie.iso.Vector2;
 
@@ -2111,9 +2102,9 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * @noSelf
        *
-       * (float arg0): IsoDirections
+       * (Vector2 arg0): IsoDirections
        */
-      static fromAngle(arg0: number): zombie.iso.IsoDirections;
+      static fromAngle(arg0: zombie.iso.Vector2 | null): zombie.iso.IsoDirections;
 
       /**
        * @noSelf
