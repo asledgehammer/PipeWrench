@@ -56,10 +56,10 @@ declare module '@asledgehammer/pipewrench' {
     export class InventoryItem {
       /**
        * Constructors: 
-       *  - (String arg0, String arg1, String arg2, Item arg3)
        *  - (String arg0, String arg1, String arg2, String arg3)
+       *  - (String arg0, String arg1, String arg2, Item arg3)
        */
-      constructor(arg0: string, arg1: string, arg2: string, arg3: zombie.scripting.objects.Item | string);
+      constructor(arg0: string, arg1: string, arg2: string, arg3: string | zombie.scripting.objects.Item);
       /**
        * Method Parameters: 
        *  - (InventoryItem arg0): boolean
@@ -1958,15 +1958,15 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (short arg0): zombie.inventory.InventoryItem
        *  - (String arg0): zombie.inventory.InventoryItem
+       *  - (short arg0): zombie.inventory.InventoryItem
        *  - (String arg0, float arg1): zombie.inventory.InventoryItem
        *  - (String arg0, Food arg1): zombie.inventory.InventoryItem
-       *  - (String arg0, float arg1, String arg2): zombie.inventory.InventoryItem
        *  - (String arg0, float arg1, boolean arg2): zombie.inventory.InventoryItem
+       *  - (String arg0, float arg1, String arg2): zombie.inventory.InventoryItem
        *  - (String arg0, String arg1, String arg2, String arg3): zombie.inventory.InventoryItem
        */
-      static CreateItem(arg0: string | number, arg1?: number | string | zombie.inventory.types.Food, arg2?: string | boolean, arg3?: string): zombie.inventory.InventoryItem;
+      static CreateItem(arg0: string | number, arg1?: number | zombie.inventory.types.Food | string, arg2?: boolean | string, arg3?: string): zombie.inventory.InventoryItem;
     }
     /**
      * @customConstructor ItemContainer.new
@@ -1988,7 +1988,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (InventoryItem arg0): zombie.inventory.InventoryItem
        *  - (String arg0, float arg1): boolean
        */
-      AddItem(arg0: string | zombie.inventory.InventoryItem, arg1?: number): boolean | zombie.inventory.InventoryItem;
+      AddItem(arg0: string | zombie.inventory.InventoryItem, arg1?: number): zombie.inventory.InventoryItem | boolean;
       /**
        * Method Parameters: 
        *  - (InventoryItem arg0): zombie.inventory.InventoryItem
@@ -2028,10 +2028,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): zombie.inventory.InventoryItem
-       *  - (String arg0, ArrayList arg1): zombie.inventory.InventoryItem
        *  - (String arg0, int arg1): java.util.ArrayList<zombie.inventory.InventoryItem>
+       *  - (String arg0, ArrayList arg1): zombie.inventory.InventoryItem
        */
-      FindAndReturn(arg0: string, arg1?: java.util.ArrayList<zombie.inventory.InventoryItem> | number): zombie.inventory.InventoryItem | java.util.ArrayList<zombie.inventory.InventoryItem>;
+      FindAndReturn(arg0: string, arg1?: number | java.util.ArrayList<zombie.inventory.InventoryItem>): zombie.inventory.InventoryItem | java.util.ArrayList<zombie.inventory.InventoryItem>;
       /**
        * Method Parameters: 
        *  - (String arg0): zombie.inventory.InventoryItem
@@ -2039,10 +2039,10 @@ declare module '@asledgehammer/pipewrench' {
       FindAndReturnCategory(arg0: string): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (InventoryItem arg0): zombie.inventory.InventoryItem
        *  - (String arg0): zombie.inventory.InventoryItem
+       *  - (InventoryItem arg0): zombie.inventory.InventoryItem
        */
-      FindAndReturnStack(arg0: zombie.inventory.InventoryItem | string): zombie.inventory.InventoryItem;
+      FindAndReturnStack(arg0: string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (int arg0): zombie.inventory.InventoryItem
@@ -2060,11 +2060,11 @@ declare module '@asledgehammer/pipewrench' {
       HasType(arg0: zombie.inventory.ItemType): boolean;
       /**
        * Method Parameters: 
-       *  - (ItemType arg0): zombie.inventory.InventoryItem
        *  - (String arg0): void
        *  - (InventoryItem arg0): void
+       *  - (ItemType arg0): zombie.inventory.InventoryItem
        */
-      Remove(arg0: zombie.inventory.ItemType | string | zombie.inventory.InventoryItem): zombie.inventory.InventoryItem | void;
+      Remove(arg0: string | zombie.inventory.InventoryItem | zombie.inventory.ItemType): void | zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -2075,7 +2075,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): void
        *  - (String arg0, boolean arg1): boolean
        */
-      RemoveOneOf(arg0: string, arg1?: boolean): boolean | void;
+      RemoveOneOf(arg0: string, arg1?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (InventoryItem arg0): zombie.inventory.InventoryItem
@@ -2098,13 +2098,13 @@ declare module '@asledgehammer/pipewrench' {
       clear(): void;
       /**
        * Method Parameters: 
-       *  - (InventoryItem arg0): boolean
        *  - (String arg0): boolean
-       *  - (InventoryItem arg0, boolean arg1): boolean
+       *  - (InventoryItem arg0): boolean
        *  - (String arg0, boolean arg1): boolean
+       *  - (InventoryItem arg0, boolean arg1): boolean
        *  - (String arg0, boolean arg1, boolean arg2): boolean
        */
-      contains(arg0: zombie.inventory.InventoryItem | string, arg1?: boolean, arg2?: boolean): boolean;
+      contains(arg0: string | zombie.inventory.InventoryItem, arg1?: boolean, arg2?: boolean): boolean;
       /**
        * Method Parameters: 
        *  - (LuaClosure arg0): boolean
@@ -2337,10 +2337,10 @@ declare module '@asledgehammer/pipewrench' {
       getBestBandage(arg0: zombie.characters.SurvivorDesc): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (Predicate arg0): zombie.inventory.InventoryItem
        *  - (String arg0): zombie.inventory.InventoryItem
+       *  - (Predicate arg0): zombie.inventory.InventoryItem
        */
-      getBestCondition(arg0: java.util._function_.Predicate<zombie.inventory.InventoryItem> | string): zombie.inventory.InventoryItem;
+      getBestCondition(arg0: string | java.util._function_.Predicate<zombie.inventory.InventoryItem>): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (LuaClosure arg0): zombie.inventory.InventoryItem
@@ -2695,7 +2695,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, boolean arg1, boolean arg2): zombie.inventory.InventoryItem
        *  - (String arg0, IsoGameCharacter arg1, boolean arg2, boolean arg3, boolean arg4): zombie.inventory.InventoryItem
        */
-      getItemFromType(arg0: string, arg1?: zombie.characters.IsoGameCharacter | boolean, arg2?: boolean, arg3?: boolean, arg4?: boolean): zombie.inventory.InventoryItem;
+      getItemFromType(arg0: string, arg1?: boolean | zombie.characters.IsoGameCharacter, arg2?: boolean, arg3?: boolean, arg4?: boolean): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
        *  - (String arg0): zombie.inventory.InventoryItem
@@ -2953,10 +2953,10 @@ declare module '@asledgehammer/pipewrench' {
       getWeightReduction(): number;
       /**
        * Method Parameters: 
-       *  - (IsoGameCharacter arg0, InventoryItem arg1): boolean
        *  - (IsoGameCharacter arg0, float arg1): boolean
+       *  - (IsoGameCharacter arg0, InventoryItem arg1): boolean
        */
-      hasRoomFor(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.inventory.InventoryItem | number): boolean;
+      hasRoomFor(arg0: zombie.characters.IsoGameCharacter, arg1: number | zombie.inventory.InventoryItem): boolean;
       /**
        * Method Parameters: 
        *  - (int arg0): zombie.inventory.InventoryItem

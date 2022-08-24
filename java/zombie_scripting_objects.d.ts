@@ -14,10 +14,10 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
-       *  - (String arg0, String arg1): void
        *  - (String arg0, String[] arg1): void
+       *  - (String arg0, String arg1): void
        */
-      Load(arg0: string, arg1: string | string[]): void;
+      Load(arg0: string, arg1: string[] | string): void;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.scripting.objects.ScriptModule
@@ -315,10 +315,10 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
-       *  - (String arg0, String arg1): void
        *  - (String arg0, String[] arg1): void
+       *  - (String arg0, String arg1): void
        */
-      Load(arg0: string, arg1: string | string[]): void;
+      Load(arg0: string, arg1: string[] | string): void;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.scripting.objects.ScriptModule
@@ -1665,10 +1665,10 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
-       *  - (String arg0, String arg1): void
        *  - (String arg0, String[] arg1): void
+       *  - (String arg0, String arg1): void
        */
-      Load(arg0: string, arg1: string | string[]): void;
+      Load(arg0: string, arg1: string[] | string): void;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -1843,10 +1843,10 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
-       *  - (String arg0, String arg1): void
        *  - (String arg0, String[] arg1): void
+       *  - (String arg0, String arg1): void
        */
-      Load(arg0: string, arg1: string | string[]): void;
+      Load(arg0: string, arg1: string[] | string): void;
       /**
        * Method Parameters: 
        *  - (ModelAttachment arg0): zombie.scripting.objects.ModelAttachment
@@ -2837,10 +2837,10 @@ declare module '@asledgehammer/pipewrench' {
       CheckExitPoints(): boolean;
       /**
        * Method Parameters: 
-       *  - (String arg0, String arg1): void
        *  - (String arg0, String[] arg1): void
+       *  - (String arg0, String arg1): void
        */
-      Load(arg0: string, arg1: string | string[]): void;
+      Load(arg0: string, arg1: string[] | string): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -2910,10 +2910,10 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
-       *  - (String arg0, String arg1): void
        *  - (String arg0, String[] arg1): void
+       *  - (String arg0, String arg1): void
        */
-      Load(arg0: string, arg1: string | string[]): void;
+      Load(arg0: string, arg1: string[] | string): void;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -3025,10 +3025,10 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
-       *  - (String arg0, String arg1): void
        *  - (String arg0, String[] arg1): void
+       *  - (String arg0, String arg1): void
        */
-      Load(arg0: string, arg1: string | string[]): void;
+      Load(arg0: string, arg1: string[] | string): void;
       /**
        * Method Parameters: 
        *  - (Empty): void

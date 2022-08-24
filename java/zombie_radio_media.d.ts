@@ -317,15 +317,15 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
-       *  - (MediaData arg0, MediaData arg1): number
        *  - (Object arg0, Object arg1): number
+       *  - (MediaData arg0, MediaData arg1): number
        */
-      compare<U>(arg0: any, arg1: any): number;
+      compare(arg0: any, arg1: any): number;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.Comparator<T>
        */
-      reversed<U>(): java.util.Comparator<any>;
+      reversed(): java.util.Comparator<any>;
       /**
        * Method Parameters: 
        *  - (Comparator arg0): java.util.Comparator<T>
@@ -337,17 +337,17 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (ToDoubleFunction arg0): java.util.Comparator<T>
        */
-      thenComparingDouble<U>(arg0: java.util._function_.ToDoubleFunction<any>): java.util.Comparator<any>;
+      thenComparingDouble(arg0: java.util._function_.ToDoubleFunction<any>): java.util.Comparator<any>;
       /**
        * Method Parameters: 
        *  - (ToIntFunction arg0): java.util.Comparator<T>
        */
-      thenComparingInt<U>(arg0: java.util._function_.ToIntFunction<any>): java.util.Comparator<any>;
+      thenComparingInt(arg0: java.util._function_.ToIntFunction<any>): java.util.Comparator<any>;
       /**
        * Method Parameters: 
        *  - (ToLongFunction arg0): java.util.Comparator<T>
        */
-      thenComparingLong<U>(arg0: java.util._function_.ToLongFunction<any>): java.util.Comparator<any>;
+      thenComparingLong(arg0: java.util._function_.ToLongFunction<any>): java.util.Comparator<any>;
     }
   }
 }

@@ -98,7 +98,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): void
        *  - (int arg0, String arg1): void
        */
-      reportEvent(arg0: number | string, arg1?: string): void;
+      reportEvent(arg0: string | number, arg1?: string): void;
       /**
        * Method Parameters: 
        *  - (ActionGroup arg0): void

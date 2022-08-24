@@ -31,10 +31,10 @@ declare module '@asledgehammer/pipewrench' {
     export class AttachedItems {
       /**
        * Constructors: 
-       *  - (AttachedLocationGroup arg0)
        *  - (AttachedItems arg0)
+       *  - (AttachedLocationGroup arg0)
        */
-      constructor(arg0: zombie.characters.AttachedItems.AttachedLocationGroup | zombie.characters.AttachedItems.AttachedItems);
+      constructor(arg0: zombie.characters.AttachedItems.AttachedItems | zombie.characters.AttachedItems.AttachedLocationGroup);
       /**
        * Method Parameters: 
        *  - (Empty): void

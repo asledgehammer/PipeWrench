@@ -318,21 +318,21 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): PO
        */
-      alloc<E>(): PO;
+      alloc(): PO;
       /**
        * Method Parameters: 
        *  - (IPooledObject arg0): void
        */
-      release<E>(arg0: zombie.util.IPooledObject): void;
+      release(arg0: zombie.util.IPooledObject): void;
       /**
        * @noSelf
        *
        * Method Parameters: 
        *  - (IPooledObject[] arg0): E[]
-       *  - (IPooledObject arg0): E
        *  - (Object arg0): E
+       *  - (IPooledObject arg0): E
        */
-      static tryRelease<E>(arg0: E[] | E): any;
+      static tryRelease<E>(arg0: E[] | any): any;
     }
   }
 }

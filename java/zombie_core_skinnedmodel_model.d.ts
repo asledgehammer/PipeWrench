@@ -363,10 +363,10 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (ModelSlotRenderData arg0, Vector3 arg1): void
        *  - (IsoGameCharacter arg0, Vector3 arg1): void
+       *  - (ModelSlotRenderData arg0, Vector3 arg1): void
        */
-      static VectorToWorldCoords(arg0: zombie.core.skinnedmodel.model.ModelSlotRenderData | zombie.characters.IsoGameCharacter, arg1: zombie.iso.Vector3): void;
+      static VectorToWorldCoords(arg0: zombie.characters.IsoGameCharacter | zombie.core.skinnedmodel.model.ModelSlotRenderData, arg1: zombie.iso.Vector3): void;
       /**
        * @noSelf
        *
@@ -678,10 +678,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
-       *  - (HumanVisual arg0, ItemVisuals arg1, ModelInstance arg2): void
        *  - (BaseVisual arg0, ItemVisuals arg1, ModelInstance arg2): void
+       *  - (HumanVisual arg0, ItemVisuals arg1, ModelInstance arg2): void
        */
-      init(arg0: zombie.core.skinnedmodel.visual.HumanVisual | zombie.characters.IsoGameCharacter | zombie.core.skinnedmodel.visual.BaseVisual, arg1?: zombie.core.skinnedmodel.visual.ItemVisuals, arg2?: zombie.core.skinnedmodel.model.ModelInstance): void;
+      init(arg0: zombie.characters.IsoGameCharacter | zombie.core.skinnedmodel.visual.BaseVisual | zombie.core.skinnedmodel.visual.HumanVisual, arg1?: zombie.core.skinnedmodel.visual.ItemVisuals, arg2?: zombie.core.skinnedmodel.model.ModelInstance): void;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -718,10 +718,10 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
-       *  - (ModelInstance arg0, InventoryItem arg1): void
        *  - (ModelInstance arg0, float arg1): void
+       *  - (ModelInstance arg0, InventoryItem arg1): void
        */
-      init(arg0: zombie.core.skinnedmodel.model.ModelInstance, arg1: zombie.inventory.InventoryItem | number): void;
+      init(arg0: zombie.core.skinnedmodel.model.ModelInstance, arg1: number | zombie.inventory.InventoryItem): void;
       /**
        * Method Parameters: 
        *  - (Empty): boolean

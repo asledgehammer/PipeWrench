@@ -196,10 +196,10 @@ declare module '@asledgehammer/pipewrench' {
     export class WornItems {
       /**
        * Constructors: 
-       *  - (WornItems arg0)
        *  - (BodyLocationGroup arg0)
+       *  - (WornItems arg0)
        */
-      constructor(arg0: zombie.characters.WornItems.WornItems | zombie.characters.WornItems.BodyLocationGroup);
+      constructor(arg0: zombie.characters.WornItems.BodyLocationGroup | zombie.characters.WornItems.WornItems);
       /**
        * Method Parameters: 
        *  - (ItemContainer arg0): void

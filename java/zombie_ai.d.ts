@@ -91,7 +91,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0, int arg1, int arg2): zombie.ai.KnownBlockedEdges
        *  - (int arg0, int arg1, int arg2, boolean arg3, boolean arg4): zombie.ai.KnownBlockedEdges
        */
-      init(arg0: number | zombie.ai.KnownBlockedEdges, arg1?: number, arg2?: number, arg3?: boolean, arg4?: boolean): zombie.ai.KnownBlockedEdges;
+      init(arg0: zombie.ai.KnownBlockedEdges | number, arg1?: number, arg2?: number, arg3?: boolean, arg4?: boolean): zombie.ai.KnownBlockedEdges;
       /**
        * Method Parameters: 
        *  - (int arg0, int arg1): boolean
@@ -138,7 +138,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): java.util.ArrayList<zombie.ai.KnownBlockedEdges>
        *  - (int arg0, int arg1, int arg2): zombie.ai.KnownBlockedEdges
        */
-      getKnownBlockedEdges(arg0?: number, arg1?: number, arg2?: number): zombie.ai.KnownBlockedEdges | java.util.ArrayList<zombie.ai.KnownBlockedEdges>;
+      getKnownBlockedEdges(arg0?: number, arg1?: number, arg2?: number): java.util.ArrayList<zombie.ai.KnownBlockedEdges> | zombie.ai.KnownBlockedEdges;
       /**
        * Method Parameters: 
        *  - (int arg0, int arg1, int arg2): zombie.ai.KnownBlockedEdges
@@ -146,10 +146,10 @@ declare module '@asledgehammer/pipewrench' {
       getOrCreateKnownBlockedEdges(arg0: number, arg1: number, arg2: number): zombie.ai.KnownBlockedEdges;
       /**
        * Method Parameters: 
-       *  - (IsoThumpable arg0, boolean arg1): void
        *  - (IsoDoor arg0, boolean arg1): void
+       *  - (IsoThumpable arg0, boolean arg1): void
        */
-      setKnownBlockedDoor(arg0: zombie.iso.objects.IsoThumpable | zombie.iso.objects.IsoDoor, arg1: boolean): void;
+      setKnownBlockedDoor(arg0: zombie.iso.objects.IsoDoor | zombie.iso.objects.IsoThumpable, arg1: boolean): void;
       /**
        * Method Parameters: 
        *  - (int arg0, int arg1, int arg2, boolean arg3): void

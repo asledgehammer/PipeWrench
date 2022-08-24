@@ -96,7 +96,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (CharSequence arg0, int arg1, int arg2): java.io.Writer
        *  - (CharSequence arg0, int arg1, int arg2): java.lang.Appendable
        */
-      append(arg0: java.lang.CharSequence | string, arg1?: number, arg2?: number): java.io.Writer | java.lang.Appendable;
+      append(arg0: string | java.lang.CharSequence, arg1?: number, arg2?: number): java.io.Writer | java.lang.Appendable;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -114,13 +114,13 @@ declare module '@asledgehammer/pipewrench' {
       newLine(): void;
       /**
        * Method Parameters: 
+       *  - (char[] arg0): void
        *  - (int arg0): void
        *  - (String arg0): void
-       *  - (char[] arg0): void
        *  - (char[] arg0, int arg1, int arg2): void
        *  - (String arg0, int arg1, int arg2): void
        */
-      write(arg0: string[] | string | number, arg1?: number, arg2?: number): void;
+      write(arg0: string[] | number | string, arg1?: number, arg2?: number): void;
       /**
        * @noSelf
        *
@@ -313,8 +313,8 @@ declare module '@asledgehammer/pipewrench' {
       size(): number;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (byte[] arg0): void
+       *  - (int arg0): void
        *  - (byte[] arg0, int arg1, int arg2): void
        */
       write(arg0: number[] | number, arg1?: number, arg2?: number): void;

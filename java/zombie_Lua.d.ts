@@ -3361,7 +3361,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, String arg1, KahluaTable arg2): void
        *  - (IsoPlayer arg0, String arg1, String arg2, KahluaTable arg3): void
        */
-      static sendClientCommand(arg0: zombie.characters.IsoPlayer | string, arg1: string, arg2: string | se.krka.kahlua.vm.KahluaTable, arg3?: se.krka.kahlua.vm.KahluaTable): void;
+      static sendClientCommand(arg0: string | zombie.characters.IsoPlayer, arg1: string, arg2: se.krka.kahlua.vm.KahluaTable | string, arg3?: se.krka.kahlua.vm.KahluaTable): void;
       /**
        * @noSelf
        *
@@ -4048,10 +4048,10 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (KahluaTable arg0, LuaClosure arg1, int arg2): void
        *  - (String arg0, LuaClosure arg1, int arg2): void
+       *  - (KahluaTable arg0, LuaClosure arg1, int arg2): void
        */
-      static OnLoadWithSprite(arg0: se.krka.kahlua.vm.KahluaTable | string, arg1: se.krka.kahlua.vm.LuaClosure, arg2: number): void;
+      static OnLoadWithSprite(arg0: string | se.krka.kahlua.vm.KahluaTable, arg1: se.krka.kahlua.vm.LuaClosure, arg2: number): void;
       /**
        * @noSelf
        *

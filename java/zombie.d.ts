@@ -265,10 +265,10 @@ declare module '@asledgehammer/pipewrench' {
       IsMusicPlaying(): boolean;
       /**
        * Method Parameters: 
-       *  - (String arg0, Audio arg1, float arg2, boolean arg3): void
        *  - (String arg0, Audio arg1, boolean arg2, float arg3): void
+       *  - (String arg0, Audio arg1, float arg2, boolean arg3): void
        */
-      PlayAsMusic(arg0: string, arg1: fmod.fmod.Audio, arg2: number | boolean, arg3: boolean | number): void;
+      PlayAsMusic(arg0: string, arg1: fmod.fmod.Audio, arg2: boolean | number, arg3: number | boolean): void;
       /**
        * Method Parameters: 
        *  - (String arg0, boolean arg1, float arg2): fmod.fmod.Audio
@@ -303,7 +303,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, boolean arg1, IsoGridSquare arg2, float arg3, float arg4, float arg5, boolean arg6): fmod.fmod.Audio
        *  - (String arg0, IsoGridSquare arg1, float arg2, float arg3, float arg4, int arg5, boolean arg6): fmod.fmod.Audio
        */
-      PlayWorldSound(arg0: string, arg1: boolean | zombie.iso.IsoGridSquare, arg2: zombie.iso.IsoGridSquare | number, arg3: number, arg4: number, arg5: number | boolean, arg6?: boolean): fmod.fmod.Audio;
+      PlayWorldSound(arg0: string, arg1: zombie.iso.IsoGridSquare | boolean, arg2: number | zombie.iso.IsoGridSquare, arg3: number, arg4: number, arg5: boolean | number, arg6?: boolean): fmod.fmod.Audio;
       /**
        * Method Parameters: 
        *  - (String arg0, boolean arg1, int arg2, int arg3, int arg4, float arg5, float arg6, float arg7, boolean arg8): fmod.fmod.Audio
@@ -315,7 +315,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, boolean arg1, IsoGridSquare arg2, float arg3, float arg4, float arg5, boolean arg6): fmod.fmod.Audio
        *  - (String arg0, IsoGridSquare arg1, float arg2, float arg3, float arg4, int arg5, boolean arg6): void
        */
-      PlayWorldSoundWav(arg0: string, arg1: boolean | zombie.iso.IsoGridSquare, arg2: zombie.iso.IsoGridSquare | number, arg3: number, arg4: number, arg5: number | boolean, arg6?: boolean): fmod.fmod.Audio | void;
+      PlayWorldSoundWav(arg0: string, arg1: zombie.iso.IsoGridSquare | boolean, arg2: number | zombie.iso.IsoGridSquare, arg3: number, arg4: number, arg5: boolean | number, arg6?: boolean): fmod.fmod.Audio | void;
       /**
        * Method Parameters: 
        *  - (String arg0, boolean arg1, IsoGridSquare arg2, float arg3, float arg4, float arg5, boolean arg6): fmod.fmod.Audio
@@ -408,10 +408,10 @@ declare module '@asledgehammer/pipewrench' {
       isPlayingMusic(): boolean;
       /**
        * Method Parameters: 
-       *  - (long arg0): boolean
        *  - (String arg0): boolean
+       *  - (long arg0): boolean
        */
-      isPlayingUISound(arg0: number | string): boolean;
+      isPlayingUISound(arg0: string | number): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -582,10 +582,10 @@ declare module '@asledgehammer/pipewrench' {
       IsMusicPlaying(): boolean;
       /**
        * Method Parameters: 
-       *  - (String arg0, Audio arg1, float arg2, boolean arg3): void
        *  - (String arg0, Audio arg1, boolean arg2, float arg3): void
+       *  - (String arg0, Audio arg1, float arg2, boolean arg3): void
        */
-      PlayAsMusic(arg0: string, arg1: fmod.fmod.Audio, arg2: number | boolean, arg3: boolean | number): void;
+      PlayAsMusic(arg0: string, arg1: fmod.fmod.Audio, arg2: boolean | number, arg3: number | boolean): void;
       /**
        * Method Parameters: 
        *  - (String arg0, boolean arg1, float arg2): fmod.fmod.Audio
@@ -620,7 +620,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, boolean arg1, IsoGridSquare arg2, float arg3, float arg4, float arg5, boolean arg6): fmod.fmod.Audio
        *  - (String arg0, IsoGridSquare arg1, float arg2, float arg3, float arg4, int arg5, boolean arg6): fmod.fmod.Audio
        */
-      PlayWorldSound(arg0: string, arg1: boolean | zombie.iso.IsoGridSquare, arg2: zombie.iso.IsoGridSquare | number, arg3: number, arg4: number, arg5: number | boolean, arg6?: boolean): fmod.fmod.Audio;
+      PlayWorldSound(arg0: string, arg1: zombie.iso.IsoGridSquare | boolean, arg2: number | zombie.iso.IsoGridSquare, arg3: number, arg4: number, arg5: boolean | number, arg6?: boolean): fmod.fmod.Audio;
       /**
        * Method Parameters: 
        *  - (String arg0, boolean arg1, int arg2, int arg3, int arg4, float arg5, float arg6, float arg7, boolean arg8): fmod.fmod.Audio
@@ -632,7 +632,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, boolean arg1, IsoGridSquare arg2, float arg3, float arg4, float arg5, boolean arg6): fmod.fmod.Audio
        *  - (String arg0, IsoGridSquare arg1, float arg2, float arg3, float arg4, int arg5, boolean arg6): void
        */
-      PlayWorldSoundWav(arg0: string, arg1: boolean | zombie.iso.IsoGridSquare, arg2: zombie.iso.IsoGridSquare | number, arg3: number, arg4: number, arg5: number | boolean, arg6?: boolean): fmod.fmod.Audio | void;
+      PlayWorldSoundWav(arg0: string, arg1: zombie.iso.IsoGridSquare | boolean, arg2: number | zombie.iso.IsoGridSquare, arg3: number, arg4: number, arg5: boolean | number, arg6?: boolean): fmod.fmod.Audio | void;
       /**
        * Method Parameters: 
        *  - (String arg0, boolean arg1, IsoGridSquare arg2, float arg3, float arg4, float arg5, boolean arg6): fmod.fmod.Audio
@@ -725,10 +725,10 @@ declare module '@asledgehammer/pipewrench' {
       isPlayingMusic(): boolean;
       /**
        * Method Parameters: 
-       *  - (long arg0): boolean
        *  - (String arg0): boolean
+       *  - (long arg0): boolean
        */
-      isPlayingUISound(arg0: number | string): boolean;
+      isPlayingUISound(arg0: string | number): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -1697,10 +1697,10 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (ByteBuffer arg0): string
        *  - (DataInputStream arg0): string
+       *  - (ByteBuffer arg0): string
        */
-      static ReadString(arg0: java.nio.ByteBuffer | java.io.DataInputStream): string;
+      static ReadString(arg0: java.io.DataInputStream | java.nio.ByteBuffer): string;
       /**
        * @noSelf
        *
@@ -1712,10 +1712,10 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (ByteBuffer arg0, String arg1): void
        *  - (DataOutputStream arg0, String arg1): void
+       *  - (ByteBuffer arg0, String arg1): void
        */
-      static WriteString(arg0: java.nio.ByteBuffer | java.io.DataOutputStream, arg1: string): void;
+      static WriteString(arg0: java.io.DataOutputStream | java.nio.ByteBuffer, arg1: string): void;
       /**
        * @noSelf
        *
@@ -3181,10 +3181,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0, IsoGridSquare arg1, float arg2, float arg3, float arg4, boolean arg5): fmod.fmod.Audio
-       *  - (String arg0, IsoGridSquare arg1, float arg2, float arg3, float arg4, int arg5, boolean arg6): fmod.fmod.Audio
        *  - (String arg0, boolean arg1, IsoGridSquare arg2, float arg3, float arg4, float arg5, boolean arg6): fmod.fmod.Audio
+       *  - (String arg0, IsoGridSquare arg1, float arg2, float arg3, float arg4, int arg5, boolean arg6): fmod.fmod.Audio
        */
-      PlayWorldSound(arg0: string, arg1: zombie.iso.IsoGridSquare | boolean, arg2: number | zombie.iso.IsoGridSquare, arg3: number, arg4: number, arg5: number | boolean, arg6?: boolean): fmod.fmod.Audio;
+      PlayWorldSound(arg0: string, arg1: zombie.iso.IsoGridSquare | boolean, arg2: number | zombie.iso.IsoGridSquare, arg3: number, arg4: number, arg5: boolean | number, arg6?: boolean): fmod.fmod.Audio;
       /**
        * Method Parameters: 
        *  - (String arg0, boolean arg1, int arg2, int arg3, int arg4, float arg5, float arg6, float arg7, boolean arg8): fmod.fmod.Audio
@@ -3196,7 +3196,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, boolean arg1, IsoGridSquare arg2, float arg3, float arg4, float arg5, boolean arg6): fmod.fmod.Audio
        *  - (String arg0, IsoGridSquare arg1, float arg2, float arg3, float arg4, int arg5, boolean arg6): void
        */
-      PlayWorldSoundWav(arg0: string, arg1: boolean | zombie.iso.IsoGridSquare, arg2: zombie.iso.IsoGridSquare | number, arg3: number, arg4: number, arg5: number | boolean, arg6?: boolean): fmod.fmod.Audio | void;
+      PlayWorldSoundWav(arg0: string, arg1: zombie.iso.IsoGridSquare | boolean, arg2: number | zombie.iso.IsoGridSquare, arg3: number, arg4: number, arg5: boolean | number, arg6?: boolean): fmod.fmod.Audio | void;
       /**
        * Method Parameters: 
        *  - (String arg0, boolean arg1, IsoGridSquare arg2, float arg3, float arg4, float arg5, boolean arg6): fmod.fmod.Audio
@@ -3294,10 +3294,10 @@ declare module '@asledgehammer/pipewrench' {
       isPlayingMusic(): boolean;
       /**
        * Method Parameters: 
-       *  - (long arg0): boolean
        *  - (String arg0): boolean
+       *  - (long arg0): boolean
        */
-      isPlayingUISound(arg0: number | string): boolean;
+      isPlayingUISound(arg0: string | number): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -3900,11 +3900,11 @@ declare module '@asledgehammer/pipewrench' {
       getFromLong(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoFlagType arg0): boolean
        *  - (int arg0): boolean
+       *  - (IsoFlagType arg0): boolean
        *  - (IsoObjectType arg0): boolean
        */
-      isSet(arg0: zombie.iso.SpriteDetails.IsoFlagType | number | zombie.iso.SpriteDetails.IsoObjectType): boolean;
+      isSet(arg0: number | zombie.iso.SpriteDetails.IsoFlagType | zombie.iso.SpriteDetails.IsoObjectType): boolean;
       /**
        * Method Parameters: 
        *  - (DataInputStream arg0): void
@@ -3917,11 +3917,11 @@ declare module '@asledgehammer/pipewrench' {
       save(arg0: java.io.DataOutputStream): void;
       /**
        * Method Parameters: 
+       *  - (int arg0, boolean arg1): void
        *  - (IsoFlagType arg0, boolean arg1): void
        *  - (IsoObjectType arg0, boolean arg1): void
-       *  - (int arg0, boolean arg1): void
        */
-      set(arg0: zombie.iso.SpriteDetails.IsoFlagType | zombie.iso.SpriteDetails.IsoObjectType | number, arg1: boolean): void;
+      set(arg0: number | zombie.iso.SpriteDetails.IsoFlagType | zombie.iso.SpriteDetails.IsoObjectType, arg1: boolean): void;
     }
   }
 }
