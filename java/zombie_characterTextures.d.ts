@@ -115,9 +115,9 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * @noSelf
        *
-       * (BloodBodyPartType arg0, HumanVisual arg1, ArrayList arg2): void
+       * (BloodBodyPartType arg0, HumanVisual arg1, ArrayList arg2, boolean arg3): boolean
        */
-      static addHole(arg0: zombie.characterTextures.BloodBodyPartType | null, arg1: zombie.core.skinnedmodel.visual.HumanVisual | null, arg2: java.util.ArrayList<zombie.core.skinnedmodel.visual.ItemVisual> | null): void;
+      static addHole(arg0: zombie.characterTextures.BloodBodyPartType | null, arg1: zombie.core.skinnedmodel.visual.HumanVisual | null, arg2: java.util.ArrayList<zombie.core.skinnedmodel.visual.ItemVisual> | null, arg3: boolean): boolean;
 
       /**
        * @noSelf
@@ -150,9 +150,9 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * @noSelf
        *
-       * (ArrayList arg0, ArrayList arg1): ArrayList
+       * (ArrayList arg0): ArrayList
        */
-      static getCoveredParts(arg0: java.util.ArrayList<zombie.characterTextures.BloodClothingType> | null, arg1: java.util.ArrayList<zombie.characterTextures.BloodBodyPartType> | null): java.util.ArrayList<zombie.characterTextures.BloodBodyPartType>;
+      static getCoveredParts(arg0: java.util.ArrayList<zombie.characterTextures.BloodClothingType> | null): java.util.ArrayList<zombie.characterTextures.BloodBodyPartType>;
 
       /**
        * @noSelf
