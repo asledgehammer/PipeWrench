@@ -830,11 +830,6 @@ declare module '@asledgehammer/pipewrench' {
       sendSplint(arg0: number, arg1: number, arg2: boolean, arg3: number, arg4: string): void;
       /**
        * Method Parameters: 
-       *  - (long arg0): void
-       */
-      sendSteamProfileName(arg0: number): void;
-      /**
-       * Method Parameters: 
        *  - (IsoGameCharacter arg0, IsoGameCharacter arg1, BodyPart arg2, InventoryItem arg3, boolean arg4): void
        */
       sendStitch(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.IsoGameCharacter, arg2: zombie.characters.BodyDamage.BodyPart, arg3: zombie.inventory.InventoryItem, arg4: boolean): void;
@@ -1693,7 +1688,6 @@ declare module '@asledgehammer/pipewrench' {
       static readonly StartRain: zombie.network.PacketTypes$PacketType;
       static readonly Statistic: zombie.network.PacketTypes$PacketType;
       static readonly StatisticRequest: zombie.network.PacketTypes$PacketType;
-      static readonly SteamGeneric: zombie.network.PacketTypes$PacketType;
       static readonly Stitch: zombie.network.PacketTypes$PacketType;
       static readonly StopFire: zombie.network.PacketTypes$PacketType;
       static readonly StopPause: zombie.network.PacketTypes$PacketType;

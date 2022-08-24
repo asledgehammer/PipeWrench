@@ -668,6 +668,7 @@ declare module '@asledgehammer/pipewrench' {
       static readonly Network: zombie.debug.DebugType;
       static readonly NetworkFileDebug: zombie.debug.DebugType;
       static readonly NetworkPacketDebug: zombie.debug.DebugType;
+      static readonly NetworkPlugin: zombie.debug.DebugType;
       static readonly Objects: zombie.debug.DebugType;
       static readonly Ownership: zombie.debug.DebugType;
       static readonly Radio: zombie.debug.DebugType;

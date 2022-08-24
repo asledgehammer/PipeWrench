@@ -372,11 +372,6 @@ declare module '@asledgehammer/pipewrench' {
       getMTUSize(): number;
       /**
        * Method Parameters: 
-       *  - (Empty): zombie.core.znet.ZNetSessionState
-       */
-      getP2PSessionState(): zombie.core.znet.ZNetSessionState;
-      /**
-       * Method Parameters: 
        *  - (Empty): zombie.core.raknet.RakNetPeerInterface
        */
       getPeer(): zombie.core.raknet.RakNetPeerInterface;
