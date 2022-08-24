@@ -321,11 +321,11 @@ declare module '@asledgehammer/pipewrench' {
       onStateChanged(arg0: zombie.asset.Asset$State, arg1: zombie.asset.Asset$State, arg2: zombie.asset.Asset): void;
       /**
        * Method Parameters: 
-       *  - (Asset arg0): void
        *  - (AssetPath arg0): void
+       *  - (Asset arg0): void
        *  - (Asset arg0, AssetParams arg1): void
        */
-      reload(arg0: zombie.asset.Asset | zombie.asset.AssetPath, arg1?: zombie.asset.AssetManager$AssetParams): void;
+      reload(arg0: zombie.asset.AssetPath | zombie.asset.Asset, arg1?: zombie.asset.AssetManager$AssetParams): void;
       /**
        * Method Parameters: 
        *  - (Empty): void

@@ -49,10 +49,10 @@ declare module '@asledgehammer/pipewrench' {
       Set(arg0: string | zombie.iso.SpriteDetails.IsoFlagType, arg1?: string, arg2?: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoFlagType arg0): void
        *  - (String arg0): void
+       *  - (IsoFlagType arg0): void
        */
-      UnSet(arg0: zombie.iso.SpriteDetails.IsoFlagType | string): void;
+      UnSet(arg0: string | zombie.iso.SpriteDetails.IsoFlagType): void;
       /**
        * Method Parameters: 
        *  - (String arg0): string

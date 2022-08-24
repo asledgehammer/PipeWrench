@@ -1511,10 +1511,10 @@ declare module '@asledgehammer/pipewrench' {
       setTransitionOut(arg0: zombie.core.skinnedmodel.advancedanimation.AnimTransition): void;
       /**
        * Method Parameters: 
-       *  - (AnimNode arg0, AnimTransition arg1, AnimationTrack arg2): void
        *  - (LiveAnimNode arg0, AnimTransition arg1, AnimationTrack arg2): void
+       *  - (AnimNode arg0, AnimTransition arg1, AnimationTrack arg2): void
        */
-      startTransitionIn(arg0: zombie.core.skinnedmodel.advancedanimation.AnimNode | zombie.core.skinnedmodel.advancedanimation.LiveAnimNode, arg1: zombie.core.skinnedmodel.advancedanimation.AnimTransition, arg2: zombie.core.skinnedmodel.animation.AnimationTrack): void;
+      startTransitionIn(arg0: zombie.core.skinnedmodel.advancedanimation.LiveAnimNode | zombie.core.skinnedmodel.advancedanimation.AnimNode, arg1: zombie.core.skinnedmodel.advancedanimation.AnimTransition, arg2: zombie.core.skinnedmodel.animation.AnimationTrack): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void

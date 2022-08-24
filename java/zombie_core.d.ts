@@ -3455,7 +3455,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10, float arg11, float arg12): void
        *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10, float arg11, float arg12, float arg13, float arg14, float arg15, float arg16, float arg17, float arg18, float arg19, float arg20): void
        */
-      renderPoly(arg0: zombie.core.textures.Texture | number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number, arg12?: number, arg13?: number, arg14?: number, arg15?: number, arg16?: number, arg17?: number, arg18?: number, arg19?: number, arg20?: number): void;
+      renderPoly(arg0: number | zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number, arg12?: number, arg13?: number, arg14?: number, arg15?: number, arg16?: number, arg17?: number, arg18?: number, arg19?: number, arg20?: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0, int arg1, int arg2, int arg3, float arg4, float arg5, float arg6, float arg7): void

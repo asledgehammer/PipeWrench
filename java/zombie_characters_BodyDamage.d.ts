@@ -17,10 +17,10 @@ declare module '@asledgehammer/pipewrench' {
       constructor(arg0: zombie.characters.IsoGameCharacter);
       /**
        * Method Parameters: 
-       *  - (BodyPartType arg0, float arg1): void
        *  - (int arg0, float arg1): void
+       *  - (BodyPartType arg0, float arg1): void
        */
-      AddDamage(arg0: zombie.characters.BodyDamage.BodyPartType | number, arg1: number): void;
+      AddDamage(arg0: number | zombie.characters.BodyDamage.BodyPartType, arg1: number): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -74,10 +74,10 @@ declare module '@asledgehammer/pipewrench' {
       IsBandaged(arg0: zombie.characters.BodyDamage.BodyPartType | number): boolean;
       /**
        * Method Parameters: 
-       *  - (BodyPartType arg0): boolean
        *  - (int arg0): boolean
+       *  - (BodyPartType arg0): boolean
        */
-      IsBitten(arg0: zombie.characters.BodyDamage.BodyPartType | number): boolean;
+      IsBitten(arg0: number | zombie.characters.BodyDamage.BodyPartType): boolean;
       /**
        * Method Parameters: 
        *  - (int arg0): boolean
@@ -86,10 +86,10 @@ declare module '@asledgehammer/pipewrench' {
       IsBleeding(arg0: number | zombie.characters.BodyDamage.BodyPartType): boolean;
       /**
        * Method Parameters: 
-       *  - (int arg0): boolean
        *  - (BodyPartType arg0): boolean
+       *  - (int arg0): boolean
        */
-      IsBleedingStemmed(arg0: number | zombie.characters.BodyDamage.BodyPartType): boolean;
+      IsBleedingStemmed(arg0: zombie.characters.BodyDamage.BodyPartType | number): boolean;
       /**
        * Method Parameters: 
        *  - (BodyPartType arg0): boolean
@@ -126,10 +126,10 @@ declare module '@asledgehammer/pipewrench' {
       IsOnFire(): boolean;
       /**
        * Method Parameters: 
-       *  - (int arg0): boolean
        *  - (BodyPartType arg0): boolean
+       *  - (int arg0): boolean
        */
-      IsScratched(arg0: number | zombie.characters.BodyDamage.BodyPartType): boolean;
+      IsScratched(arg0: zombie.characters.BodyDamage.BodyPartType | number): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -213,10 +213,10 @@ declare module '@asledgehammer/pipewrench' {
       SetBleeding(arg0: number | zombie.characters.BodyDamage.BodyPartType, arg1: boolean): void;
       /**
        * Method Parameters: 
-       *  - (BodyPartType arg0, boolean arg1): void
        *  - (int arg0, boolean arg1): void
+       *  - (BodyPartType arg0, boolean arg1): void
        */
-      SetBleedingStemmed(arg0: zombie.characters.BodyDamage.BodyPartType | number, arg1: boolean): void;
+      SetBleedingStemmed(arg0: number | zombie.characters.BodyDamage.BodyPartType, arg1: boolean): void;
       /**
        * Method Parameters: 
        *  - (int arg0, boolean arg1): void
@@ -333,10 +333,10 @@ declare module '@asledgehammer/pipewrench' {
       getBodyPartHealth(arg0: zombie.characters.BodyDamage.BodyPartType | number): number;
       /**
        * Method Parameters: 
-       *  - (BodyPartType arg0): string
        *  - (int arg0): string
+       *  - (BodyPartType arg0): string
        */
-      getBodyPartName(arg0: zombie.characters.BodyDamage.BodyPartType | number): string;
+      getBodyPartName(arg0: number | zombie.characters.BodyDamage.BodyPartType): string;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.ArrayList<zombie.characters.BodyDamage.BodyPart>
@@ -2427,7 +2427,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Thermoregulator arg0, float arg1, BodyPart arg2, float arg3)
        *  - (Thermoregulator arg0, boolean arg1, float arg2, BodyPart arg3, float arg4)
        */
-      constructor(arg0: zombie.characters.BodyDamage.Thermoregulator, arg1: number | boolean, arg2: zombie.characters.BodyDamage.BodyPart | number, arg3: number | zombie.characters.BodyDamage.BodyPart, arg4?: number);
+      constructor(arg0: zombie.characters.BodyDamage.Thermoregulator, arg1: boolean | number, arg2: number | zombie.characters.BodyDamage.BodyPart, arg3: zombie.characters.BodyDamage.BodyPart | number, arg4?: number);
       /**
        * Method Parameters: 
        *  - (Empty): number
