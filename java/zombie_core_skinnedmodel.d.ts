@@ -29,10 +29,10 @@ declare module '@asledgehammer/pipewrench' {
       ContainsChar(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
        * Method Parameters: 
-       *  - (IsoGameCharacter arg0): void
        *  - (BaseVehicle arg0): void
+       *  - (IsoGameCharacter arg0): void
        */
-      Remove(arg0: zombie.characters.IsoGameCharacter | zombie.vehicles.BaseVehicle): void;
+      Remove(arg0: zombie.vehicles.BaseVehicle | zombie.characters.IsoGameCharacter): void;
       /**
        * Method Parameters: 
        *  - (TextureDraw arg0, int arg1, int arg2): void
@@ -236,7 +236,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, String arg1, String arg2, boolean arg3): void
        *  - (String arg0, String arg1, String arg2, String arg3, boolean arg4): void
        */
-      setModelMetaData(arg0: string, arg1: string, arg2: string, arg3: boolean | string, arg4?: boolean): void;
+      setModelMetaData(arg0: string, arg1: string, arg2: string, arg3: string | boolean, arg4?: boolean): void;
       /**
        * Method Parameters: 
        *  - (String arg0, String arg1, boolean arg2, String arg3, boolean arg4): zombie.core.skinnedmodel.model.Model

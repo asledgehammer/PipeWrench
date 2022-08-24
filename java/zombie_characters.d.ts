@@ -24,10 +24,10 @@ declare module '@asledgehammer/pipewrench' {
       isClear(): boolean;
       /**
        * Method Parameters: 
-       *  - (String arg0): boolean
        *  - (long arg0): boolean
+       *  - (String arg0): boolean
        */
-      isPlaying(arg0: string | number): boolean;
+      isPlaying(arg0: number | string): boolean;
       /**
        * Method Parameters: 
        *  - (String arg0, float arg1): void
@@ -187,10 +187,10 @@ declare module '@asledgehammer/pipewrench' {
       isEmpty(): boolean;
       /**
        * Method Parameters: 
-       *  - (long arg0): boolean
        *  - (String arg0): boolean
+       *  - (long arg0): boolean
        */
-      isPlaying(arg0: number | string): boolean;
+      isPlaying(arg0: string | number): boolean;
       /**
        * Method Parameters: 
        *  - (String arg0, float arg1): void
@@ -594,10 +594,10 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoPlayer arg0): zombie.characters.Faction
        *  - (String arg0): zombie.characters.Faction
+       *  - (IsoPlayer arg0): zombie.characters.Faction
        */
-      static getPlayerFaction(arg0: zombie.characters.IsoPlayer | string): zombie.characters.Faction;
+      static getPlayerFaction(arg0: string | zombie.characters.IsoPlayer): zombie.characters.Faction;
       /**
        * @noSelf
        *
@@ -918,10 +918,10 @@ declare module '@asledgehammer/pipewrench' {
       DoFloorSplat(arg0: zombie.iso.IsoGridSquare, arg1: string, arg2: boolean, arg3: number, arg4: number): void;
       /**
        * Method Parameters: 
-       *  - (String arg0): void
        *  - (float arg0): void
+       *  - (String arg0): void
        */
-      DoFootstepSound(arg0: string | number): void;
+      DoFootstepSound(arg0: number | string): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -1006,11 +1006,11 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Vector2 arg0, IsoObject arg1, float arg2): void
-       *  - (BaseVehicle arg0, float arg1, boolean arg2, float arg3, float arg4): number
        *  - (HandWeapon arg0, IsoGameCharacter arg1, float arg2, boolean arg3, float arg4): number
+       *  - (BaseVehicle arg0, float arg1, boolean arg2, float arg3, float arg4): number
        *  - (HandWeapon arg0, IsoGameCharacter arg1, float arg2, boolean arg3, float arg4, boolean arg5): number
        */
-      Hit(arg0: zombie.vehicles.BaseVehicle | zombie.inventory.types.HandWeapon | zombie.iso.Vector2, arg1: number | zombie.characters.IsoGameCharacter | zombie.iso.IsoObject, arg2: boolean | number, arg3?: number | boolean, arg4?: number, arg5?: boolean): number | void;
+      Hit(arg0: zombie.inventory.types.HandWeapon | zombie.vehicles.BaseVehicle | zombie.iso.Vector2, arg1: zombie.characters.IsoGameCharacter | number | zombie.iso.IsoObject, arg2: number | boolean, arg3?: boolean | number, arg4?: number, arg5?: boolean): number | void;
       /**
        * Method Parameters: 
        *  - (BaseVehicle arg0, float arg1): void
@@ -1026,7 +1026,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2): boolean
        *  - (HandWeapon arg0, IsoMovingObject arg1, Vector3 arg2, boolean arg3): boolean
        */
-      IsAttackRange(arg0: number | zombie.inventory.types.HandWeapon, arg1: number | zombie.iso.IsoMovingObject, arg2: number | zombie.iso.Vector3, arg3?: boolean): boolean;
+      IsAttackRange(arg0: zombie.inventory.types.HandWeapon | number, arg1: zombie.iso.IsoMovingObject | number, arg2: zombie.iso.Vector3 | number, arg3?: boolean): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -1164,7 +1164,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): void
        *  - (int arg0, String arg1): void
        */
-      SayDebug(arg0: number | string, arg1?: string): void;
+      SayDebug(arg0: string | number, arg1?: string): void;
       /**
        * Method Parameters: 
        *  - (String arg0, float arg1, float arg2, float arg3, UIFont arg4, float arg5, int arg6, String arg7): void
@@ -1311,7 +1311,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0): void
        *  - (BloodBodyPartType arg0, boolean arg1, boolean arg2, boolean arg3): void
        */
-      addBlood(arg0: number | zombie.characterTextures.BloodBodyPartType, arg1?: boolean, arg2?: boolean, arg3?: boolean): void;
+      addBlood(arg0: zombie.characterTextures.BloodBodyPartType | number, arg1?: boolean, arg2?: boolean, arg3?: boolean): void;
       /**
        * Method Parameters: 
        *  - (IsoObject arg0): void
@@ -1406,7 +1406,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Vector2 arg0): void
        *  - (IsoGameCharacter arg0, HandWeapon arg1, Vector2 arg2): number
        */
-      calcHitDir(arg0: zombie.iso.Vector2 | zombie.characters.IsoGameCharacter, arg1?: zombie.inventory.types.HandWeapon, arg2?: zombie.iso.Vector2): void | number;
+      calcHitDir(arg0: zombie.characters.IsoGameCharacter | zombie.iso.Vector2, arg1?: zombie.inventory.types.HandWeapon, arg2?: zombie.iso.Vector2): number | void;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -1519,12 +1519,12 @@ declare module '@asledgehammer/pipewrench' {
       climbSheetRope(): void;
       /**
        * Method Parameters: 
-       *  - (IsoWindow arg0): void
        *  - (IsoThumpable arg0): void
-       *  - (IsoWindow arg0, Integer arg1): void
+       *  - (IsoWindow arg0): void
        *  - (IsoThumpable arg0, Integer arg1): void
+       *  - (IsoWindow arg0, Integer arg1): void
        */
-      climbThroughWindow(arg0: zombie.iso.objects.IsoWindow | zombie.iso.objects.IsoThumpable, arg1?: number): void;
+      climbThroughWindow(arg0: zombie.iso.objects.IsoThumpable | zombie.iso.objects.IsoWindow, arg1?: number): void;
       /**
        * Method Parameters: 
        *  - (IsoObject arg0): void
@@ -2453,7 +2453,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): zombie.core.skinnedmodel.visual.ItemVisuals
        *  - (ItemVisuals arg0): void
        */
-      getItemVisuals(arg0?: zombie.core.skinnedmodel.visual.ItemVisuals): zombie.core.skinnedmodel.visual.ItemVisuals | void;
+      getItemVisuals(arg0?: zombie.core.skinnedmodel.visual.ItemVisuals): void | zombie.core.skinnedmodel.visual.ItemVisuals;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -4223,10 +4223,10 @@ declare module '@asledgehammer/pipewrench' {
       isReanim(): boolean;
       /**
        * Method Parameters: 
-       *  - (Recipe arg0): boolean
        *  - (String arg0): boolean
+       *  - (Recipe arg0): boolean
        */
-      isRecipeKnown(arg0: zombie.scripting.objects.Recipe | string): boolean;
+      isRecipeKnown(arg0: string | zombie.scripting.objects.Recipe): boolean;
       /**
        * Method Parameters: 
        *  - (ItemContainer arg0, InventoryItem arg1): boolean
@@ -5653,7 +5653,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -5683,7 +5683,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -6081,19 +6081,19 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (IAnimationVariableSlot arg0): void
-       *  - (String arg0, String arg1): void
-       *  - (String arg0, boolean arg1): void
        *  - (String arg0, float arg1): void
-       *  - (String arg0, int arg1, CallbackGetStrongTyped arg2): void
-       *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2): void
+       *  - (String arg0, boolean arg1): void
+       *  - (String arg0, String arg1): void
        *  - (String arg0, String arg1, CallbackGetStrongTyped arg2): void
+       *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2): void
+       *  - (String arg0, int arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, float arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, String arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
+       *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        *  - (String arg0, int arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        *  - (String arg0, float arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
-       *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        */
-      setVariable(arg0: string | zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot, arg1?: string | number | boolean, arg2?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackGetStrongTyped, arg3?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackSetStrongTyped): void;
+      setVariable(arg0: string | zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot, arg1?: string | boolean | number, arg2?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackGetStrongTyped, arg3?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackSetStrongTyped): void;
       /**
        * Method Parameters: 
        *  - (BaseVehicle arg0): void
@@ -6710,10 +6710,10 @@ declare module '@asledgehammer/pipewrench' {
       DoFloorSplat(arg0: zombie.iso.IsoGridSquare, arg1: string, arg2: boolean, arg3: number, arg4: number): void;
       /**
        * Method Parameters: 
-       *  - (String arg0): void
        *  - (float arg0): void
+       *  - (String arg0): void
        */
-      DoFootstepSound(arg0: string | number): void;
+      DoFootstepSound(arg0: number | string): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -6798,11 +6798,11 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Vector2 arg0, IsoObject arg1, float arg2): void
-       *  - (BaseVehicle arg0, float arg1, boolean arg2, float arg3, float arg4): number
        *  - (HandWeapon arg0, IsoGameCharacter arg1, float arg2, boolean arg3, float arg4): number
+       *  - (BaseVehicle arg0, float arg1, boolean arg2, float arg3, float arg4): number
        *  - (HandWeapon arg0, IsoGameCharacter arg1, float arg2, boolean arg3, float arg4, boolean arg5): number
        */
-      Hit(arg0: zombie.vehicles.BaseVehicle | zombie.inventory.types.HandWeapon | zombie.iso.Vector2, arg1: number | zombie.characters.IsoGameCharacter | zombie.iso.IsoObject, arg2: boolean | number, arg3?: number | boolean, arg4?: number, arg5?: boolean): number | void;
+      Hit(arg0: zombie.inventory.types.HandWeapon | zombie.vehicles.BaseVehicle | zombie.iso.Vector2, arg1: zombie.characters.IsoGameCharacter | number | zombie.iso.IsoObject, arg2: number | boolean, arg3?: boolean | number, arg4?: number, arg5?: boolean): number | void;
       /**
        * Method Parameters: 
        *  - (BaseVehicle arg0, float arg1): void
@@ -6818,7 +6818,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2): boolean
        *  - (HandWeapon arg0, IsoMovingObject arg1, Vector3 arg2, boolean arg3): boolean
        */
-      IsAttackRange(arg0: number | zombie.inventory.types.HandWeapon, arg1: number | zombie.iso.IsoMovingObject, arg2: number | zombie.iso.Vector3, arg3?: boolean): boolean;
+      IsAttackRange(arg0: zombie.inventory.types.HandWeapon | number, arg1: zombie.iso.IsoMovingObject | number, arg2: zombie.iso.Vector3 | number, arg3?: boolean): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -6956,7 +6956,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): void
        *  - (int arg0, String arg1): void
        */
-      SayDebug(arg0: number | string, arg1?: string): void;
+      SayDebug(arg0: string | number, arg1?: string): void;
       /**
        * Method Parameters: 
        *  - (String arg0, float arg1, float arg2, float arg3, UIFont arg4, float arg5, int arg6, String arg7): void
@@ -7103,7 +7103,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0): void
        *  - (BloodBodyPartType arg0, boolean arg1, boolean arg2, boolean arg3): void
        */
-      addBlood(arg0: number | zombie.characterTextures.BloodBodyPartType, arg1?: boolean, arg2?: boolean, arg3?: boolean): void;
+      addBlood(arg0: zombie.characterTextures.BloodBodyPartType | number, arg1?: boolean, arg2?: boolean, arg3?: boolean): void;
       /**
        * Method Parameters: 
        *  - (IsoObject arg0): void
@@ -7198,7 +7198,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Vector2 arg0): void
        *  - (IsoGameCharacter arg0, HandWeapon arg1, Vector2 arg2): number
        */
-      calcHitDir(arg0: zombie.iso.Vector2 | zombie.characters.IsoGameCharacter, arg1?: zombie.inventory.types.HandWeapon, arg2?: zombie.iso.Vector2): void | number;
+      calcHitDir(arg0: zombie.characters.IsoGameCharacter | zombie.iso.Vector2, arg1?: zombie.inventory.types.HandWeapon, arg2?: zombie.iso.Vector2): number | void;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -7311,12 +7311,12 @@ declare module '@asledgehammer/pipewrench' {
       climbSheetRope(): void;
       /**
        * Method Parameters: 
-       *  - (IsoWindow arg0): void
        *  - (IsoThumpable arg0): void
-       *  - (IsoWindow arg0, Integer arg1): void
+       *  - (IsoWindow arg0): void
        *  - (IsoThumpable arg0, Integer arg1): void
+       *  - (IsoWindow arg0, Integer arg1): void
        */
-      climbThroughWindow(arg0: zombie.iso.objects.IsoWindow | zombie.iso.objects.IsoThumpable, arg1?: number): void;
+      climbThroughWindow(arg0: zombie.iso.objects.IsoThumpable | zombie.iso.objects.IsoWindow, arg1?: number): void;
       /**
        * Method Parameters: 
        *  - (IsoObject arg0): void
@@ -8245,7 +8245,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): zombie.core.skinnedmodel.visual.ItemVisuals
        *  - (ItemVisuals arg0): void
        */
-      getItemVisuals(arg0?: zombie.core.skinnedmodel.visual.ItemVisuals): zombie.core.skinnedmodel.visual.ItemVisuals | void;
+      getItemVisuals(arg0?: zombie.core.skinnedmodel.visual.ItemVisuals): void | zombie.core.skinnedmodel.visual.ItemVisuals;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -10015,10 +10015,10 @@ declare module '@asledgehammer/pipewrench' {
       isReanim(): boolean;
       /**
        * Method Parameters: 
-       *  - (Recipe arg0): boolean
        *  - (String arg0): boolean
+       *  - (Recipe arg0): boolean
        */
-      isRecipeKnown(arg0: zombie.scripting.objects.Recipe | string): boolean;
+      isRecipeKnown(arg0: string | zombie.scripting.objects.Recipe): boolean;
       /**
        * Method Parameters: 
        *  - (ItemContainer arg0, InventoryItem arg1): boolean
@@ -11445,7 +11445,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -11475,7 +11475,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -11873,19 +11873,19 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (IAnimationVariableSlot arg0): void
-       *  - (String arg0, String arg1): void
-       *  - (String arg0, boolean arg1): void
        *  - (String arg0, float arg1): void
-       *  - (String arg0, int arg1, CallbackGetStrongTyped arg2): void
-       *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2): void
+       *  - (String arg0, boolean arg1): void
+       *  - (String arg0, String arg1): void
        *  - (String arg0, String arg1, CallbackGetStrongTyped arg2): void
+       *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2): void
+       *  - (String arg0, int arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, float arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, String arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
+       *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        *  - (String arg0, int arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        *  - (String arg0, float arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
-       *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        */
-      setVariable(arg0: string | zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot, arg1?: string | number | boolean, arg2?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackGetStrongTyped, arg3?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackSetStrongTyped): void;
+      setVariable(arg0: string | zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot, arg1?: string | boolean | number, arg2?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackGetStrongTyped, arg3?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackSetStrongTyped): void;
       /**
        * Method Parameters: 
        *  - (BaseVehicle arg0): void
@@ -12578,7 +12578,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Perk arg0, float arg1): void
        *  - (Perk arg0, float arg1, boolean arg2, boolean arg3, boolean arg4): void
        */
-      AddXP(arg0: zombie.characters.skills.PerkFactory$Perk | zombie.inventory.types.HandWeapon, arg1: number, arg2?: boolean, arg3?: boolean, arg4?: boolean): void;
+      AddXP(arg0: zombie.inventory.types.HandWeapon | zombie.characters.skills.PerkFactory$Perk, arg1: number, arg2?: boolean, arg3?: boolean, arg4?: boolean): void;
       /**
        * Method Parameters: 
        *  - (Perk arg0, float arg1): void
@@ -12825,10 +12825,10 @@ declare module '@asledgehammer/pipewrench' {
       DoFloorSplat(arg0: zombie.iso.IsoGridSquare, arg1: string, arg2: boolean, arg3: number, arg4: number): void;
       /**
        * Method Parameters: 
-       *  - (String arg0): void
        *  - (float arg0): void
+       *  - (String arg0): void
        */
-      DoFootstepSound(arg0: string | number): void;
+      DoFootstepSound(arg0: number | string): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -12913,11 +12913,11 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Vector2 arg0, IsoObject arg1, float arg2): void
-       *  - (BaseVehicle arg0, float arg1, boolean arg2, float arg3, float arg4): number
        *  - (HandWeapon arg0, IsoGameCharacter arg1, float arg2, boolean arg3, float arg4): number
+       *  - (BaseVehicle arg0, float arg1, boolean arg2, float arg3, float arg4): number
        *  - (HandWeapon arg0, IsoGameCharacter arg1, float arg2, boolean arg3, float arg4, boolean arg5): number
        */
-      Hit(arg0: zombie.vehicles.BaseVehicle | zombie.inventory.types.HandWeapon | zombie.iso.Vector2, arg1: number | zombie.characters.IsoGameCharacter | zombie.iso.IsoObject, arg2: boolean | number, arg3?: number | boolean, arg4?: number, arg5?: boolean): number | void;
+      Hit(arg0: zombie.inventory.types.HandWeapon | zombie.vehicles.BaseVehicle | zombie.iso.Vector2, arg1: zombie.characters.IsoGameCharacter | number | zombie.iso.IsoObject, arg2: number | boolean, arg3?: boolean | number, arg4?: number, arg5?: boolean): number | void;
       /**
        * Method Parameters: 
        *  - (BaseVehicle arg0, float arg1): void
@@ -12933,7 +12933,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2): boolean
        *  - (HandWeapon arg0, IsoMovingObject arg1, Vector3 arg2, boolean arg3): boolean
        */
-      IsAttackRange(arg0: number | zombie.inventory.types.HandWeapon, arg1: number | zombie.iso.IsoMovingObject, arg2: number | zombie.iso.Vector3, arg3?: boolean): boolean;
+      IsAttackRange(arg0: zombie.inventory.types.HandWeapon | number, arg1: zombie.iso.IsoMovingObject | number, arg2: zombie.iso.Vector3 | number, arg3?: boolean): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -13071,7 +13071,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): void
        *  - (int arg0, String arg1): void
        */
-      SayDebug(arg0: number | string, arg1?: string): void;
+      SayDebug(arg0: string | number, arg1?: string): void;
       /**
        * Method Parameters: 
        *  - (String arg0, float arg1, float arg2, float arg3, UIFont arg4, float arg5, int arg6, String arg7): void
@@ -13218,7 +13218,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0): void
        *  - (BloodBodyPartType arg0, boolean arg1, boolean arg2, boolean arg3): void
        */
-      addBlood(arg0: number | zombie.characterTextures.BloodBodyPartType, arg1?: boolean, arg2?: boolean, arg3?: boolean): void;
+      addBlood(arg0: zombie.characterTextures.BloodBodyPartType | number, arg1?: boolean, arg2?: boolean, arg3?: boolean): void;
       /**
        * Method Parameters: 
        *  - (IsoObject arg0): void
@@ -13313,7 +13313,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Vector2 arg0): void
        *  - (IsoGameCharacter arg0, HandWeapon arg1, Vector2 arg2): number
        */
-      calcHitDir(arg0: zombie.iso.Vector2 | zombie.characters.IsoGameCharacter, arg1?: zombie.inventory.types.HandWeapon, arg2?: zombie.iso.Vector2): void | number;
+      calcHitDir(arg0: zombie.characters.IsoGameCharacter | zombie.iso.Vector2, arg1?: zombie.inventory.types.HandWeapon, arg2?: zombie.iso.Vector2): number | void;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -13426,12 +13426,12 @@ declare module '@asledgehammer/pipewrench' {
       climbSheetRope(): void;
       /**
        * Method Parameters: 
-       *  - (IsoWindow arg0): void
        *  - (IsoThumpable arg0): void
-       *  - (IsoWindow arg0, Integer arg1): void
+       *  - (IsoWindow arg0): void
        *  - (IsoThumpable arg0, Integer arg1): void
+       *  - (IsoWindow arg0, Integer arg1): void
        */
-      climbThroughWindow(arg0: zombie.iso.objects.IsoWindow | zombie.iso.objects.IsoThumpable, arg1?: number): void;
+      climbThroughWindow(arg0: zombie.iso.objects.IsoThumpable | zombie.iso.objects.IsoWindow, arg1?: number): void;
       /**
        * Method Parameters: 
        *  - (IsoObject arg0): void
@@ -14360,7 +14360,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): zombie.core.skinnedmodel.visual.ItemVisuals
        *  - (ItemVisuals arg0): void
        */
-      getItemVisuals(arg0?: zombie.core.skinnedmodel.visual.ItemVisuals): zombie.core.skinnedmodel.visual.ItemVisuals | void;
+      getItemVisuals(arg0?: zombie.core.skinnedmodel.visual.ItemVisuals): void | zombie.core.skinnedmodel.visual.ItemVisuals;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -16140,10 +16140,10 @@ declare module '@asledgehammer/pipewrench' {
       isReanim(): boolean;
       /**
        * Method Parameters: 
-       *  - (Recipe arg0): boolean
        *  - (String arg0): boolean
+       *  - (Recipe arg0): boolean
        */
-      isRecipeKnown(arg0: zombie.scripting.objects.Recipe | string): boolean;
+      isRecipeKnown(arg0: string | zombie.scripting.objects.Recipe): boolean;
       /**
        * Method Parameters: 
        *  - (ItemContainer arg0, InventoryItem arg1): boolean
@@ -17575,7 +17575,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -17605,7 +17605,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -18003,19 +18003,19 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (IAnimationVariableSlot arg0): void
-       *  - (String arg0, String arg1): void
-       *  - (String arg0, boolean arg1): void
        *  - (String arg0, float arg1): void
-       *  - (String arg0, int arg1, CallbackGetStrongTyped arg2): void
-       *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2): void
+       *  - (String arg0, boolean arg1): void
+       *  - (String arg0, String arg1): void
        *  - (String arg0, String arg1, CallbackGetStrongTyped arg2): void
+       *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2): void
+       *  - (String arg0, int arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, float arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, String arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
+       *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        *  - (String arg0, int arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        *  - (String arg0, float arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
-       *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        */
-      setVariable(arg0: string | zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot, arg1?: string | number | boolean, arg2?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackGetStrongTyped, arg3?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackSetStrongTyped): void;
+      setVariable(arg0: string | zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot, arg1?: string | boolean | number, arg2?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackGetStrongTyped, arg3?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackSetStrongTyped): void;
       /**
        * Method Parameters: 
        *  - (BaseVehicle arg0): void
@@ -18767,7 +18767,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2): boolean
        *  - (HandWeapon arg0, IsoMovingObject arg1, Vector3 arg2, boolean arg3): boolean
        */
-      IsAttackRange(arg0: number | zombie.inventory.types.HandWeapon, arg1: number | zombie.iso.IsoMovingObject, arg2: number | zombie.iso.Vector3, arg3?: boolean): boolean;
+      IsAttackRange(arg0: zombie.inventory.types.HandWeapon | number, arg1: zombie.iso.IsoMovingObject | number, arg2: zombie.iso.Vector3 | number, arg3?: boolean): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -18920,7 +18920,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): void
        *  - (int arg0, String arg1): void
        */
-      SayDebug(arg0: number | string, arg1?: string): void;
+      SayDebug(arg0: string | number, arg1?: string): void;
       /**
        * Method Parameters: 
        *  - (String arg0, float arg1, float arg2, float arg3, UIFont arg4, float arg5, int arg6, String arg7): void
@@ -19072,7 +19072,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0): void
        *  - (BloodBodyPartType arg0, boolean arg1, boolean arg2, boolean arg3): void
        */
-      addBlood(arg0: number | zombie.characterTextures.BloodBodyPartType, arg1?: boolean, arg2?: boolean, arg3?: boolean): void;
+      addBlood(arg0: zombie.characterTextures.BloodBodyPartType | number, arg1?: boolean, arg2?: boolean, arg3?: boolean): void;
       /**
        * Method Parameters: 
        *  - (IsoObject arg0): void
@@ -19172,7 +19172,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Vector2 arg0): void
        *  - (IsoGameCharacter arg0, HandWeapon arg1, Vector2 arg2): number
        */
-      calcHitDir(arg0: zombie.iso.Vector2 | zombie.characters.IsoGameCharacter, arg1?: zombie.inventory.types.HandWeapon, arg2?: zombie.iso.Vector2): void | number;
+      calcHitDir(arg0: zombie.characters.IsoGameCharacter | zombie.iso.Vector2, arg1?: zombie.inventory.types.HandWeapon, arg2?: zombie.iso.Vector2): number | void;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -19240,10 +19240,10 @@ declare module '@asledgehammer/pipewrench' {
       checkAmbientSound(): void;
       /**
        * Method Parameters: 
-       *  - (UdpConnection arg0): boolean
        *  - (IsoPlayer arg0): boolean
+       *  - (UdpConnection arg0): boolean
        */
-      checkCanSeeClient(arg0: zombie.core.raknet.UdpConnection | zombie.characters.IsoPlayer): boolean;
+      checkCanSeeClient(arg0: zombie.characters.IsoPlayer | zombie.core.raknet.UdpConnection): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -19321,12 +19321,12 @@ declare module '@asledgehammer/pipewrench' {
       climbSheetRope(): void;
       /**
        * Method Parameters: 
-       *  - (IsoWindow arg0): void
        *  - (IsoThumpable arg0): void
-       *  - (IsoWindow arg0, Integer arg1): void
+       *  - (IsoWindow arg0): void
        *  - (IsoThumpable arg0, Integer arg1): void
+       *  - (IsoWindow arg0, Integer arg1): void
        */
-      climbThroughWindow(arg0: zombie.iso.objects.IsoWindow | zombie.iso.objects.IsoThumpable, arg1?: number): void;
+      climbThroughWindow(arg0: zombie.iso.objects.IsoThumpable | zombie.iso.objects.IsoWindow, arg1?: number): void;
       /**
        * Method Parameters: 
        *  - (IsoObject arg0): void
@@ -22556,10 +22556,10 @@ declare module '@asledgehammer/pipewrench' {
       isReanim(): boolean;
       /**
        * Method Parameters: 
-       *  - (Recipe arg0): boolean
        *  - (String arg0): boolean
+       *  - (Recipe arg0): boolean
        */
-      isRecipeKnown(arg0: zombie.scripting.objects.Recipe | string): boolean;
+      isRecipeKnown(arg0: string | zombie.scripting.objects.Recipe): boolean;
       /**
        * Method Parameters: 
        *  - (ItemContainer arg0, InventoryItem arg1): boolean
@@ -23192,7 +23192,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (ByteBuffer arg0): void
        *  - (ByteBuffer arg0, boolean arg1): void
        */
-      save(arg0?: java.nio.ByteBuffer | string, arg1?: boolean): void;
+      save(arg0?: string | java.nio.ByteBuffer, arg1?: boolean): void;
       /**
        * Method Parameters: 
        *  - (String arg0, KahluaTable arg1, ByteBuffer arg2): void
@@ -24350,7 +24350,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -24380,7 +24380,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -24868,19 +24868,19 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (IAnimationVariableSlot arg0): void
-       *  - (String arg0, String arg1): void
-       *  - (String arg0, boolean arg1): void
        *  - (String arg0, float arg1): void
-       *  - (String arg0, int arg1, CallbackGetStrongTyped arg2): void
-       *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2): void
+       *  - (String arg0, boolean arg1): void
+       *  - (String arg0, String arg1): void
        *  - (String arg0, String arg1, CallbackGetStrongTyped arg2): void
+       *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2): void
+       *  - (String arg0, int arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, float arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, String arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
+       *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        *  - (String arg0, int arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        *  - (String arg0, float arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
-       *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        */
-      setVariable(arg0: string | zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot, arg1?: string | number | boolean, arg2?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackGetStrongTyped, arg3?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackSetStrongTyped): void;
+      setVariable(arg0: string | zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot, arg1?: string | boolean | number, arg2?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackGetStrongTyped, arg3?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackSetStrongTyped): void;
       /**
        * Method Parameters: 
        *  - (BaseVehicle arg0): void
@@ -25735,10 +25735,10 @@ declare module '@asledgehammer/pipewrench' {
       DoFloorSplat(arg0: zombie.iso.IsoGridSquare, arg1: string, arg2: boolean, arg3: number, arg4: number): void;
       /**
        * Method Parameters: 
-       *  - (String arg0): void
        *  - (float arg0): void
+       *  - (String arg0): void
        */
-      DoFootstepSound(arg0: string | number): void;
+      DoFootstepSound(arg0: number | string): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -25823,11 +25823,11 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Vector2 arg0, IsoObject arg1, float arg2): void
-       *  - (BaseVehicle arg0, float arg1, boolean arg2, float arg3, float arg4): number
        *  - (HandWeapon arg0, IsoGameCharacter arg1, float arg2, boolean arg3, float arg4): number
+       *  - (BaseVehicle arg0, float arg1, boolean arg2, float arg3, float arg4): number
        *  - (HandWeapon arg0, IsoGameCharacter arg1, float arg2, boolean arg3, float arg4, boolean arg5): number
        */
-      Hit(arg0: zombie.vehicles.BaseVehicle | zombie.inventory.types.HandWeapon | zombie.iso.Vector2, arg1: number | zombie.characters.IsoGameCharacter | zombie.iso.IsoObject, arg2: boolean | number, arg3?: number | boolean, arg4?: number, arg5?: boolean): number | void;
+      Hit(arg0: zombie.inventory.types.HandWeapon | zombie.vehicles.BaseVehicle | zombie.iso.Vector2, arg1: zombie.characters.IsoGameCharacter | number | zombie.iso.IsoObject, arg2: number | boolean, arg3?: boolean | number, arg4?: number, arg5?: boolean): number | void;
       /**
        * Method Parameters: 
        *  - (BaseVehicle arg0, float arg1): void
@@ -25843,7 +25843,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2): boolean
        *  - (HandWeapon arg0, IsoMovingObject arg1, Vector3 arg2, boolean arg3): boolean
        */
-      IsAttackRange(arg0: number | zombie.inventory.types.HandWeapon, arg1: number | zombie.iso.IsoMovingObject, arg2: number | zombie.iso.Vector3, arg3?: boolean): boolean;
+      IsAttackRange(arg0: zombie.inventory.types.HandWeapon | number, arg1: zombie.iso.IsoMovingObject | number, arg2: zombie.iso.Vector3 | number, arg3?: boolean): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -25981,7 +25981,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): void
        *  - (int arg0, String arg1): void
        */
-      SayDebug(arg0: number | string, arg1?: string): void;
+      SayDebug(arg0: string | number, arg1?: string): void;
       /**
        * Method Parameters: 
        *  - (String arg0, float arg1, float arg2, float arg3, UIFont arg4, float arg5, int arg6, String arg7): void
@@ -26128,7 +26128,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0): void
        *  - (BloodBodyPartType arg0, boolean arg1, boolean arg2, boolean arg3): void
        */
-      addBlood(arg0: number | zombie.characterTextures.BloodBodyPartType, arg1?: boolean, arg2?: boolean, arg3?: boolean): void;
+      addBlood(arg0: zombie.characterTextures.BloodBodyPartType | number, arg1?: boolean, arg2?: boolean, arg3?: boolean): void;
       /**
        * Method Parameters: 
        *  - (IsoObject arg0): void
@@ -26223,7 +26223,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Vector2 arg0): void
        *  - (IsoGameCharacter arg0, HandWeapon arg1, Vector2 arg2): number
        */
-      calcHitDir(arg0: zombie.iso.Vector2 | zombie.characters.IsoGameCharacter, arg1?: zombie.inventory.types.HandWeapon, arg2?: zombie.iso.Vector2): void | number;
+      calcHitDir(arg0: zombie.characters.IsoGameCharacter | zombie.iso.Vector2, arg1?: zombie.inventory.types.HandWeapon, arg2?: zombie.iso.Vector2): number | void;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -26336,12 +26336,12 @@ declare module '@asledgehammer/pipewrench' {
       climbSheetRope(): void;
       /**
        * Method Parameters: 
-       *  - (IsoWindow arg0): void
        *  - (IsoThumpable arg0): void
-       *  - (IsoWindow arg0, Integer arg1): void
+       *  - (IsoWindow arg0): void
        *  - (IsoThumpable arg0, Integer arg1): void
+       *  - (IsoWindow arg0, Integer arg1): void
        */
-      climbThroughWindow(arg0: zombie.iso.objects.IsoWindow | zombie.iso.objects.IsoThumpable, arg1?: number): void;
+      climbThroughWindow(arg0: zombie.iso.objects.IsoThumpable | zombie.iso.objects.IsoWindow, arg1?: number): void;
       /**
        * Method Parameters: 
        *  - (IsoObject arg0): void
@@ -27270,7 +27270,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): zombie.core.skinnedmodel.visual.ItemVisuals
        *  - (ItemVisuals arg0): void
        */
-      getItemVisuals(arg0?: zombie.core.skinnedmodel.visual.ItemVisuals): zombie.core.skinnedmodel.visual.ItemVisuals | void;
+      getItemVisuals(arg0?: zombie.core.skinnedmodel.visual.ItemVisuals): void | zombie.core.skinnedmodel.visual.ItemVisuals;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -29050,10 +29050,10 @@ declare module '@asledgehammer/pipewrench' {
       isReanim(): boolean;
       /**
        * Method Parameters: 
-       *  - (Recipe arg0): boolean
        *  - (String arg0): boolean
+       *  - (Recipe arg0): boolean
        */
-      isRecipeKnown(arg0: zombie.scripting.objects.Recipe | string): boolean;
+      isRecipeKnown(arg0: string | zombie.scripting.objects.Recipe): boolean;
       /**
        * Method Parameters: 
        *  - (ItemContainer arg0, InventoryItem arg1): boolean
@@ -30490,7 +30490,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -30520,7 +30520,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -30918,19 +30918,19 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (IAnimationVariableSlot arg0): void
-       *  - (String arg0, String arg1): void
-       *  - (String arg0, boolean arg1): void
        *  - (String arg0, float arg1): void
-       *  - (String arg0, int arg1, CallbackGetStrongTyped arg2): void
-       *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2): void
+       *  - (String arg0, boolean arg1): void
+       *  - (String arg0, String arg1): void
        *  - (String arg0, String arg1, CallbackGetStrongTyped arg2): void
+       *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2): void
+       *  - (String arg0, int arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, float arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, String arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
+       *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        *  - (String arg0, int arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        *  - (String arg0, float arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
-       *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        */
-      setVariable(arg0: string | zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot, arg1?: string | number | boolean, arg2?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackGetStrongTyped, arg3?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackSetStrongTyped): void;
+      setVariable(arg0: string | zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot, arg1?: string | boolean | number, arg2?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackGetStrongTyped, arg3?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackSetStrongTyped): void;
       /**
        * Method Parameters: 
        *  - (BaseVehicle arg0): void
@@ -31583,10 +31583,10 @@ declare module '@asledgehammer/pipewrench' {
       DoFloorSplat(arg0: zombie.iso.IsoGridSquare, arg1: string, arg2: boolean, arg3: number, arg4: number): void;
       /**
        * Method Parameters: 
-       *  - (float arg0): void
        *  - (String arg0): void
+       *  - (float arg0): void
        */
-      DoFootstepSound(arg0: number | string): void;
+      DoFootstepSound(arg0: string | number): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -31691,7 +31691,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (HandWeapon arg0, IsoGameCharacter arg1, float arg2, boolean arg3, float arg4): number
        *  - (HandWeapon arg0, IsoGameCharacter arg1, float arg2, boolean arg3, float arg4, boolean arg5): number
        */
-      Hit(arg0: zombie.inventory.types.HandWeapon | zombie.vehicles.BaseVehicle | zombie.iso.Vector2, arg1: zombie.characters.IsoGameCharacter | number | zombie.iso.IsoObject, arg2: number | boolean, arg3?: boolean | zombie.iso.Vector2 | number, arg4?: number, arg5?: boolean): number | void;
+      Hit(arg0: zombie.inventory.types.HandWeapon | zombie.vehicles.BaseVehicle | zombie.iso.Vector2, arg1: zombie.characters.IsoGameCharacter | number | zombie.iso.IsoObject, arg2: number | boolean, arg3?: boolean | number | zombie.iso.Vector2, arg4?: number, arg5?: boolean): number | void;
       /**
        * Method Parameters: 
        *  - (BaseVehicle arg0, float arg1): void
@@ -31713,7 +31713,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2): boolean
        *  - (HandWeapon arg0, IsoMovingObject arg1, Vector3 arg2, boolean arg3): boolean
        */
-      IsAttackRange(arg0: number | zombie.inventory.types.HandWeapon, arg1: number | zombie.iso.IsoMovingObject, arg2: number | zombie.iso.Vector3, arg3?: boolean): boolean;
+      IsAttackRange(arg0: zombie.inventory.types.HandWeapon | number, arg1: zombie.iso.IsoMovingObject | number, arg2: zombie.iso.Vector3 | number, arg3?: boolean): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -31857,7 +31857,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): void
        *  - (int arg0, String arg1): void
        */
-      SayDebug(arg0: number | string, arg1?: string): void;
+      SayDebug(arg0: string | number, arg1?: string): void;
       /**
        * Method Parameters: 
        *  - (String arg0, float arg1, float arg2, float arg3, UIFont arg4, float arg5, int arg6, String arg7): void
@@ -32272,12 +32272,12 @@ declare module '@asledgehammer/pipewrench' {
       climbSheetRope(): void;
       /**
        * Method Parameters: 
-       *  - (IsoWindow arg0): void
        *  - (IsoThumpable arg0): void
-       *  - (IsoWindow arg0, Integer arg1): void
+       *  - (IsoWindow arg0): void
        *  - (IsoThumpable arg0, Integer arg1): void
+       *  - (IsoWindow arg0, Integer arg1): void
        */
-      climbThroughWindow(arg0: zombie.iso.objects.IsoWindow | zombie.iso.objects.IsoThumpable, arg1?: number): void;
+      climbThroughWindow(arg0: zombie.iso.objects.IsoThumpable | zombie.iso.objects.IsoWindow, arg1?: number): void;
       /**
        * Method Parameters: 
        *  - (IsoObject arg0): void
@@ -33246,7 +33246,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): zombie.core.skinnedmodel.visual.ItemVisuals
        *  - (ItemVisuals arg0): void
        */
-      getItemVisuals(arg0?: zombie.core.skinnedmodel.visual.ItemVisuals): void | zombie.core.skinnedmodel.visual.ItemVisuals;
+      getItemVisuals(arg0?: zombie.core.skinnedmodel.visual.ItemVisuals): zombie.core.skinnedmodel.visual.ItemVisuals | void;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -35171,10 +35171,10 @@ declare module '@asledgehammer/pipewrench' {
       isReanimatedPlayer(): boolean;
       /**
        * Method Parameters: 
-       *  - (Recipe arg0): boolean
        *  - (String arg0): boolean
+       *  - (Recipe arg0): boolean
        */
-      isRecipeKnown(arg0: zombie.scripting.objects.Recipe | string): boolean;
+      isRecipeKnown(arg0: string | zombie.scripting.objects.Recipe): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -36773,7 +36773,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -36803,7 +36803,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -37267,19 +37267,19 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (IAnimationVariableSlot arg0): void
-       *  - (String arg0, String arg1): void
-       *  - (String arg0, boolean arg1): void
        *  - (String arg0, float arg1): void
-       *  - (String arg0, int arg1, CallbackGetStrongTyped arg2): void
-       *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2): void
+       *  - (String arg0, boolean arg1): void
+       *  - (String arg0, String arg1): void
        *  - (String arg0, String arg1, CallbackGetStrongTyped arg2): void
+       *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2): void
+       *  - (String arg0, int arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, float arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, String arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
+       *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        *  - (String arg0, int arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        *  - (String arg0, float arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
-       *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        */
-      setVariable(arg0: string | zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot, arg1?: string | number | boolean, arg2?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackGetStrongTyped, arg3?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackSetStrongTyped): void;
+      setVariable(arg0: string | zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot, arg1?: string | boolean | number, arg2?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackGetStrongTyped, arg3?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackSetStrongTyped): void;
       /**
        * Method Parameters: 
        *  - (BaseVehicle arg0): void
@@ -38341,10 +38341,10 @@ declare module '@asledgehammer/pipewrench' {
       resetStats(): void;
       /**
        * Method Parameters: 
-       *  - (ByteBuffer arg0): void
        *  - (DataOutputStream arg0): void
+       *  - (ByteBuffer arg0): void
        */
-      save(arg0: java.nio.ByteBuffer | java.io.DataOutputStream): void;
+      save(arg0: java.io.DataOutputStream | java.nio.ByteBuffer): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -38475,10 +38475,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Constructors: 
        *  - (Empty Constructor)
-       *  - (SurvivorDesc arg0)
        *  - (boolean arg0)
+       *  - (SurvivorDesc arg0)
        */
-      constructor(arg0?: zombie.characters.SurvivorDesc | boolean);
+      constructor(arg0?: boolean | zombie.characters.SurvivorDesc);
       /**
        * Method Parameters: 
        *  - (String arg0): void

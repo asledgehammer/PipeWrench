@@ -4238,10 +4238,10 @@ declare module '@asledgehammer/pipewrench' {
    * @noSelf
    *
    * Method Parameters:
-   *  - (Item arg0): zombie.inventory.InventoryItem
    *  - (String arg0): zombie.inventory.InventoryItem
+   *  - (Item arg0): zombie.inventory.InventoryItem
    */
-  export function instanceItem(arg0: zombie.scripting.objects.Item | string): zombie.inventory.InventoryItem;
+  export function instanceItem(arg0: string | zombie.scripting.objects.Item): zombie.inventory.InventoryItem;
   /**
    * @noSelf
    *
@@ -5040,9 +5040,9 @@ declare module '@asledgehammer/pipewrench' {
    *  - (IsoPlayer arg0, String arg1, String arg2, KahluaTable arg3): void
    */
   export function sendClientCommand(
-    arg0: zombie.characters.IsoPlayer | string,
+    arg0: string | zombie.characters.IsoPlayer,
     arg1: string,
-    arg2: string | se.krka.kahlua.vm.KahluaTable,
+    arg2: se.krka.kahlua.vm.KahluaTable | string,
     arg3?: se.krka.kahlua.vm.KahluaTable
   ): void;
   /**
@@ -5172,9 +5172,9 @@ declare module '@asledgehammer/pipewrench' {
    *  - (IsoPlayer arg0, String arg1, String arg2, KahluaTable arg3): void
    */
   export function sendServerCommand(
-    arg0: zombie.characters.IsoPlayer | string,
+    arg0: string | zombie.characters.IsoPlayer,
     arg1: string,
-    arg2: string | se.krka.kahlua.vm.KahluaTable,
+    arg2: se.krka.kahlua.vm.KahluaTable | string,
     arg3?: se.krka.kahlua.vm.KahluaTable
   ): void;
   /**

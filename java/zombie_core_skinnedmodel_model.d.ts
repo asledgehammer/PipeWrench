@@ -469,10 +469,10 @@ declare module '@asledgehammer/pipewrench' {
       getAttachmentById(arg0: string): zombie.scripting.objects.ModelAttachment;
       /**
        * Method Parameters: 
-       *  - (int arg0, Matrix4f arg1): org.joml.Matrix4f
        *  - (ModelAttachment arg0, Matrix4f arg1): org.joml.Matrix4f
+       *  - (int arg0, Matrix4f arg1): org.joml.Matrix4f
        */
-      getAttachmentMatrix(arg0: number | zombie.scripting.objects.ModelAttachment, arg1: org.joml.Matrix4f): org.joml.Matrix4f;
+      getAttachmentMatrix(arg0: zombie.scripting.objects.ModelAttachment | number, arg1: org.joml.Matrix4f): org.joml.Matrix4f;
       /**
        * Method Parameters: 
        *  - (String arg0, Matrix4f arg1): org.joml.Matrix4f

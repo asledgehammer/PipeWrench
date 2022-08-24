@@ -315,16 +315,16 @@ declare module '@asledgehammer/pipewrench' {
       setValueColorRGB(arg0: string, arg1: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0, float arg1, float arg2): void
        *  - (String arg0, float arg1, float arg2): void
+       *  - (int arg0, float arg1, float arg2): void
        */
-      setVector2(arg0: number | string, arg1: number, arg2: number): void;
+      setVector2(arg0: string | number, arg1: number, arg2: number): void;
       /**
        * Method Parameters: 
-       *  - (String arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3): void
+       *  - (String arg0, float arg1, float arg2, float arg3): void
        */
-      setVector3(arg0: string | number, arg1: number, arg2: number, arg3: number): void;
+      setVector3(arg0: number | string, arg1: number, arg2: number, arg3: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void

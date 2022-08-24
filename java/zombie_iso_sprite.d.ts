@@ -153,10 +153,10 @@ declare module '@asledgehammer/pipewrench' {
       LoadFramesReverseAltName(arg0: string, arg1: string, arg2: string, arg3: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoAnim arg0): void
        *  - (String arg0): void
+       *  - (IsoAnim arg0): void
        */
-      PlayAnim(arg0: zombie.iso.sprite.IsoAnim | string): void;
+      PlayAnim(arg0: string | zombie.iso.sprite.IsoAnim): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -271,7 +271,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoObject arg0, float arg1, float arg2, float arg3, IsoDirections arg4, float arg5, float arg6, ColorInfo arg7, boolean arg8, Consumer arg9): void
        *  - (IsoSpriteInstance arg0, IsoObject arg1, float arg2, float arg3, float arg4, IsoDirections arg5, float arg6, float arg7, ColorInfo arg8, boolean arg9, Consumer arg10): void
        */
-      render(arg0: zombie.iso.IsoObject | zombie.iso.sprite.IsoSpriteInstance, arg1: number | zombie.iso.IsoObject, arg2: number, arg3: number, arg4: zombie.iso.IsoDirections | number, arg5: number | zombie.iso.IsoDirections, arg6: number, arg7: zombie.core.textures.ColorInfo | number, arg8: boolean | zombie.core.textures.ColorInfo, arg9?: boolean | java.util._function_.Consumer<zombie.core.textures.TextureDraw>, arg10?: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): void;
+      render(arg0: zombie.iso.sprite.IsoSpriteInstance | zombie.iso.IsoObject, arg1: zombie.iso.IsoObject | number, arg2: number, arg3: number, arg4: number | zombie.iso.IsoDirections, arg5: zombie.iso.IsoDirections | number, arg6: number, arg7: number | zombie.core.textures.ColorInfo, arg8: zombie.core.textures.ColorInfo | boolean, arg9?: boolean | java.util._function_.Consumer<zombie.core.textures.TextureDraw>, arg10?: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -388,10 +388,10 @@ declare module '@asledgehammer/pipewrench' {
        *
        * Method Parameters: 
        *  - (IsoSpriteManager arg0, int arg1): zombie.iso.sprite.IsoSprite
-       *  - (IsoSpriteManager arg0, String arg1, int arg2): zombie.iso.sprite.IsoSprite
        *  - (IsoSpriteManager arg0, IsoSprite arg1, int arg2): zombie.iso.sprite.IsoSprite
+       *  - (IsoSpriteManager arg0, String arg1, int arg2): zombie.iso.sprite.IsoSprite
        */
-      static getSprite(arg0: zombie.iso.sprite.IsoSpriteManager, arg1: string | number | zombie.iso.sprite.IsoSprite, arg2?: number): zombie.iso.sprite.IsoSprite;
+      static getSprite(arg0: zombie.iso.sprite.IsoSpriteManager, arg1: number | zombie.iso.sprite.IsoSprite | string, arg2?: number): zombie.iso.sprite.IsoSprite;
       /**
        * @noSelf
        *
@@ -650,10 +650,10 @@ declare module '@asledgehammer/pipewrench' {
       getOrAddSpriteCache(arg0: string, arg1?: zombie.core.Color): zombie.iso.sprite.IsoSprite;
       /**
        * Method Parameters: 
-       *  - (String arg0): zombie.iso.sprite.IsoSprite
        *  - (int arg0): zombie.iso.sprite.IsoSprite
+       *  - (String arg0): zombie.iso.sprite.IsoSprite
        */
-      getSprite(arg0: string | number): zombie.iso.sprite.IsoSprite;
+      getSprite(arg0: number | string): zombie.iso.sprite.IsoSprite;
     }
   }
 }

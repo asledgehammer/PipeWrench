@@ -76,12 +76,12 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Vector2fc arg0): org.joml.Vector2f
        *  - (float arg0): org.joml.Vector2f
-       *  - (float arg0, float arg1): org.joml.Vector2f
        *  - (float arg0, Vector2f arg1): org.joml.Vector2f
+       *  - (float arg0, float arg1): org.joml.Vector2f
        *  - (Vector2fc arg0, Vector2f arg1): org.joml.Vector2f
        *  - (float arg0, float arg1, Vector2f arg2): org.joml.Vector2f
        */
-      div(arg0: number | org.joml.Vector2fc, arg1?: number | org.joml.Vector2f, arg2?: org.joml.Vector2f): org.joml.Vector2f;
+      div(arg0: org.joml.Vector2fc | number, arg1?: org.joml.Vector2f | number, arg2?: org.joml.Vector2f): org.joml.Vector2f;
       /**
        * Method Parameters: 
        *  - (Vector2fc arg0): number
@@ -380,7 +380,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Vector3fc arg0, Vector3fc arg1): number
        *  - (float arg0, float arg1, float arg2, float arg3, float arg4, float arg5): number
        */
-      angleSigned(arg0: org.joml.Vector3fc | number, arg1: org.joml.Vector3fc | number, arg2?: number, arg3?: number, arg4?: number, arg5?: number): number;
+      angleSigned(arg0: number | org.joml.Vector3fc, arg1: number | org.joml.Vector3fc, arg2?: number, arg3?: number, arg4?: number, arg5?: number): number;
       /**
        * Method Parameters: 
        *  - (Empty): org.joml.Vector3f
@@ -394,13 +394,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2): org.joml.Vector3f
        *  - (float arg0, float arg1, float arg2, Vector3f arg3): org.joml.Vector3f
        */
-      cross(arg0: org.joml.Vector3fc | number, arg1?: number | org.joml.Vector3f, arg2?: number, arg3?: org.joml.Vector3f): org.joml.Vector3f;
+      cross(arg0: org.joml.Vector3fc | number, arg1?: org.joml.Vector3f | number, arg2?: number, arg3?: org.joml.Vector3f): org.joml.Vector3f;
       /**
        * Method Parameters: 
        *  - (Vector3fc arg0): number
        *  - (float arg0, float arg1, float arg2): number
        */
-      distance(arg0: number | org.joml.Vector3fc, arg1?: number, arg2?: number): number;
+      distance(arg0: org.joml.Vector3fc | number, arg1?: number, arg2?: number): number;
       /**
        * Method Parameters: 
        *  - (Vector3fc arg0): number
@@ -409,14 +409,14 @@ declare module '@asledgehammer/pipewrench' {
       distanceSquared(arg0: org.joml.Vector3fc | number, arg1?: number, arg2?: number): number;
       /**
        * Method Parameters: 
-       *  - (Vector3fc arg0): org.joml.Vector3f
        *  - (float arg0): org.joml.Vector3f
+       *  - (Vector3fc arg0): org.joml.Vector3f
        *  - (float arg0, Vector3f arg1): org.joml.Vector3f
        *  - (Vector3fc arg0, Vector3f arg1): org.joml.Vector3f
        *  - (float arg0, float arg1, float arg2): org.joml.Vector3f
        *  - (float arg0, float arg1, float arg2, Vector3f arg3): org.joml.Vector3f
        */
-      div(arg0: org.joml.Vector3fc | number, arg1?: org.joml.Vector3f | number, arg2?: number, arg3?: org.joml.Vector3f): org.joml.Vector3f;
+      div(arg0: number | org.joml.Vector3fc, arg1?: number | org.joml.Vector3f, arg2?: number, arg3?: org.joml.Vector3f): org.joml.Vector3f;
       /**
        * Method Parameters: 
        *  - (Vector3fc arg0): number
@@ -468,7 +468,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2): org.joml.Vector3f
        *  - (float arg0, float arg1, float arg2, Vector3f arg3): org.joml.Vector3f
        */
-      half(arg0: number | org.joml.Vector3fc, arg1?: number | org.joml.Vector3f, arg2?: number, arg3?: org.joml.Vector3f): org.joml.Vector3f;
+      half(arg0: org.joml.Vector3fc | number, arg1?: org.joml.Vector3f | number, arg2?: number, arg3?: org.joml.Vector3f): org.joml.Vector3f;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -525,19 +525,19 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Vector3fc arg0): org.joml.Vector3f
-       *  - (Matrix3x2fc arg0): org.joml.Vector3f
-       *  - (float arg0): org.joml.Vector3f
-       *  - (Matrix3fc arg0): org.joml.Vector3f
        *  - (Matrix3dc arg0): org.joml.Vector3f
-       *  - (Matrix3x2fc arg0, Vector3f arg1): org.joml.Vector3f
+       *  - (Matrix3x2fc arg0): org.joml.Vector3f
+       *  - (Matrix3fc arg0): org.joml.Vector3f
+       *  - (float arg0): org.joml.Vector3f
        *  - (Matrix3dc arg0, Vector3f arg1): org.joml.Vector3f
+       *  - (Matrix3x2fc arg0, Vector3f arg1): org.joml.Vector3f
        *  - (Matrix3fc arg0, Vector3f arg1): org.joml.Vector3f
        *  - (Vector3fc arg0, Vector3f arg1): org.joml.Vector3f
        *  - (float arg0, Vector3f arg1): org.joml.Vector3f
        *  - (float arg0, float arg1, float arg2): org.joml.Vector3f
        *  - (float arg0, float arg1, float arg2, Vector3f arg3): org.joml.Vector3f
        */
-      mul(arg0: org.joml.Matrix3x2fc | org.joml.Vector3fc | org.joml.Matrix3dc | number | org.joml.Matrix3fc, arg1?: org.joml.Vector3f | number, arg2?: number, arg3?: org.joml.Vector3f): org.joml.Vector3f;
+      mul(arg0: number | org.joml.Matrix3dc | org.joml.Vector3fc | org.joml.Matrix3x2fc | org.joml.Matrix3fc, arg1?: number | org.joml.Vector3f, arg2?: number, arg3?: org.joml.Vector3f): org.joml.Vector3f;
       /**
        * Method Parameters: 
        *  - (float arg0, Vector3fc arg1): org.joml.Vector3f
@@ -551,15 +551,15 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Matrix4fc arg0): org.joml.Vector3f
        *  - (Matrix4x3fc arg0): org.joml.Vector3f
        *  - (Matrix4dc arg0): org.joml.Vector3f
+       *  - (Matrix4x3fc arg0, Vector3f arg1): org.joml.Vector3f
        *  - (Matrix4dc arg0, Vector3f arg1): org.joml.Vector3f
        *  - (Matrix4fc arg0, Vector3f arg1): org.joml.Vector3f
-       *  - (Matrix4x3fc arg0, Vector3f arg1): org.joml.Vector3f
        */
       mulDirection(arg0: org.joml.Matrix4fc | org.joml.Matrix4x3fc | org.joml.Matrix4dc, arg1?: org.joml.Vector3f): org.joml.Vector3f;
       /**
        * Method Parameters: 
-       *  - (Matrix4x3fc arg0): org.joml.Vector3f
        *  - (Matrix4fc arg0): org.joml.Vector3f
+       *  - (Matrix4x3fc arg0): org.joml.Vector3f
        *  - (Matrix4fc arg0, Vector3f arg1): org.joml.Vector3f
        *  - (Matrix4x3fc arg0, Vector3f arg1): org.joml.Vector3f
        */
@@ -576,7 +576,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Matrix4fc arg0, Vector3f arg1): org.joml.Vector3f
        *  - (Matrix4fc arg0, float arg1, Vector3f arg2): org.joml.Vector3f
        */
-      mulProject(arg0: org.joml.Matrix4fc, arg1?: number | org.joml.Vector3f, arg2?: org.joml.Vector3f): org.joml.Vector3f;
+      mulProject(arg0: org.joml.Matrix4fc, arg1?: org.joml.Vector3f | number, arg2?: org.joml.Vector3f): org.joml.Vector3f;
       /**
        * Method Parameters: 
        *  - (Matrix3fc arg0): org.joml.Vector3f
@@ -717,7 +717,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2): org.joml.Vector3f
        *  - (float arg0, float arg1, float arg2, Vector3f arg3): org.joml.Vector3f
        */
-      sub(arg0: number | org.joml.Vector3fc, arg1?: number | org.joml.Vector3f, arg2?: number, arg3?: org.joml.Vector3f): org.joml.Vector3f;
+      sub(arg0: org.joml.Vector3fc | number, arg1?: org.joml.Vector3f | number, arg2?: number, arg3?: org.joml.Vector3f): org.joml.Vector3f;
       /**
        * Method Parameters: 
        *  - (Empty): string

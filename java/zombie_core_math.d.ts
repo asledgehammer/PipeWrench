@@ -165,10 +165,10 @@ declare module '@asledgehammer/pipewrench' {
        *
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2): number
-       *  - (Vector3f arg0, Vector3f arg1, Vector3f arg2, float arg3): org.lwjgl.util.vector.Vector3f
        *  - (Vector2 arg0, Vector2 arg1, Vector2 arg2, float arg3): zombie.iso.Vector2
+       *  - (Vector3f arg0, Vector3f arg1, Vector3f arg2, float arg3): org.lwjgl.util.vector.Vector3f
        */
-      static lerp(arg0: number | org.lwjgl.util.vector.Vector3f | zombie.iso.Vector2, arg1: number | org.lwjgl.util.vector.Vector3f | zombie.iso.Vector2, arg2: number | org.lwjgl.util.vector.Vector3f | zombie.iso.Vector2, arg3?: number): number | org.lwjgl.util.vector.Vector3f | zombie.iso.Vector2;
+      static lerp(arg0: zombie.iso.Vector2 | number | org.lwjgl.util.vector.Vector3f, arg1: zombie.iso.Vector2 | number | org.lwjgl.util.vector.Vector3f, arg2: zombie.iso.Vector2 | number | org.lwjgl.util.vector.Vector3f, arg3?: number): zombie.iso.Vector2 | number | org.lwjgl.util.vector.Vector3f;
       /**
        * @noSelf
        *

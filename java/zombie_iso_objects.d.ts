@@ -933,10 +933,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -1022,7 +1022,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -1052,7 +1052,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -2259,10 +2259,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -2328,7 +2328,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -2358,7 +2358,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -3621,10 +3621,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -3680,7 +3680,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -3710,7 +3710,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -3874,10 +3874,10 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (BarricadeAble arg0, boolean arg1): zombie.iso.objects.IsoBarricade
        *  - (BarricadeAble arg0, IsoGameCharacter arg1): zombie.iso.objects.IsoBarricade
+       *  - (BarricadeAble arg0, boolean arg1): zombie.iso.objects.IsoBarricade
        */
-      static AddBarricadeToObject(arg0: zombie.iso.objects.interfaces.BarricadeAble, arg1: boolean | zombie.characters.IsoGameCharacter): zombie.iso.objects.IsoBarricade;
+      static AddBarricadeToObject(arg0: zombie.iso.objects.interfaces.BarricadeAble, arg1: zombie.characters.IsoGameCharacter | boolean): zombie.iso.objects.IsoBarricade;
       /**
        * @noSelf
        *
@@ -4885,10 +4885,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -4944,7 +4944,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -4974,7 +4974,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -6156,10 +6156,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -6215,7 +6215,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -6245,7 +6245,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -7407,10 +7407,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -7466,7 +7466,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -7496,7 +7496,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -8653,10 +8653,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -8712,7 +8712,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -8742,7 +8742,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -9909,10 +9909,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -9978,7 +9978,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -10008,7 +10008,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -11170,10 +11170,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -11229,7 +11229,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -11259,7 +11259,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -12468,10 +12468,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -12527,7 +12527,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -12557,7 +12557,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -12831,8 +12831,8 @@ declare module '@asledgehammer/pipewrench' {
 
       /**
        * Constructors: 
-       *  - (IsoCell arg0)
        *  - (IsoGameCharacter arg0)
+       *  - (IsoCell arg0)
        *  - (IsoGameCharacter arg0, boolean arg1)
        */
       constructor(arg0: zombie.characters.IsoGameCharacter | zombie.iso.IsoCell, arg1?: boolean);
@@ -14356,10 +14356,10 @@ declare module '@asledgehammer/pipewrench' {
       setDestroyed(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ArrayList arg0): void
@@ -14550,7 +14550,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -14580,7 +14580,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -15188,7 +15188,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        *  - (boolean arg0, IsoGameCharacter arg1): void
        */
-      addSheet(arg0: boolean | zombie.characters.IsoGameCharacter, arg1?: zombie.characters.IsoGameCharacter): void;
+      addSheet(arg0: zombie.characters.IsoGameCharacter | boolean, arg1?: zombie.characters.IsoGameCharacter): void;
       /**
        * Method Parameters: 
        *  - (IsoPlayer arg0, String arg1): boolean
@@ -16098,10 +16098,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -16187,7 +16187,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -16217,7 +16217,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -17525,10 +17525,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -17599,7 +17599,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -17629,7 +17629,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -19017,10 +19017,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -19086,7 +19086,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -19116,7 +19116,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -20324,10 +20324,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -20393,7 +20393,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -20423,7 +20423,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -21626,10 +21626,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -21685,7 +21685,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -21715,7 +21715,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -22984,10 +22984,10 @@ declare module '@asledgehammer/pipewrench' {
       setDelta(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -23048,7 +23048,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -23078,7 +23078,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -24338,10 +24338,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -24402,7 +24402,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -24432,7 +24432,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -26339,10 +26339,10 @@ declare module '@asledgehammer/pipewrench' {
       setDestroyed(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ArrayList arg0): void
@@ -26513,7 +26513,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -26543,7 +26543,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -26918,8 +26918,8 @@ declare module '@asledgehammer/pipewrench' {
       constructor(arg0: zombie.iso.IsoCell, arg1?: zombie.iso.IsoGridSquare, arg2?: zombie.iso.sprite.IsoSprite);
       /**
        * Method Parameters: 
-       *  - (String arg0, float arg1, float arg2, float arg3, String arg4, String arg5, int arg6): void
        *  - (String arg0, int arg1, int arg2, int arg3, String arg4, String arg5, int arg6): void
+       *  - (String arg0, float arg1, float arg2, float arg3, String arg4, String arg5, int arg6): void
        *  - (String arg0, float arg1, float arg2, float arg3, String arg4, String arg5, int arg6, boolean arg7): void
        *  - (String arg0, int arg1, int arg2, int arg3, String arg4, String arg5, int arg6, boolean arg7): void
        *  - (IsoPlayer arg0, String arg1, float arg2, float arg3, float arg4, String arg5, String arg6, int arg7): void
@@ -27870,10 +27870,10 @@ declare module '@asledgehammer/pipewrench' {
       setDeviceData(arg0: zombie.radio.devices.DeviceData): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -27929,7 +27929,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -27959,7 +27959,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -29123,10 +29123,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -29182,7 +29182,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -29212,7 +29212,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -30364,10 +30364,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -30423,7 +30423,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -30453,7 +30453,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -31610,10 +31610,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -31674,7 +31674,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -31704,7 +31704,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -32916,10 +32916,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -32980,7 +32980,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -33010,7 +33010,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -33294,8 +33294,8 @@ declare module '@asledgehammer/pipewrench' {
       constructor(arg0: zombie.iso.IsoCell, arg1?: zombie.iso.IsoGridSquare, arg2?: zombie.iso.sprite.IsoSprite);
       /**
        * Method Parameters: 
-       *  - (String arg0, float arg1, float arg2, float arg3, String arg4, String arg5, int arg6): void
        *  - (String arg0, int arg1, int arg2, int arg3, String arg4, String arg5, int arg6): void
+       *  - (String arg0, float arg1, float arg2, float arg3, String arg4, String arg5, int arg6): void
        *  - (String arg0, float arg1, float arg2, float arg3, String arg4, String arg5, int arg6, boolean arg7): void
        *  - (String arg0, int arg1, int arg2, int arg3, String arg4, String arg5, int arg6, boolean arg7): void
        *  - (IsoPlayer arg0, String arg1, float arg2, float arg3, float arg4, String arg5, String arg6, int arg7): void
@@ -34266,10 +34266,10 @@ declare module '@asledgehammer/pipewrench' {
       setDeviceData(arg0: zombie.radio.devices.DeviceData): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -34325,7 +34325,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -34355,7 +34355,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -34637,7 +34637,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoCell arg0, IsoGridSquare arg1, String arg2, boolean arg3, KahluaTable arg4)
        *  - (IsoCell arg0, IsoGridSquare arg1, String arg2, String arg3, boolean arg4, KahluaTable arg5)
        */
-      constructor(arg0: zombie.iso.IsoCell, arg1?: zombie.iso.IsoGridSquare, arg2?: string, arg3?: boolean | string, arg4?: se.krka.kahlua.vm.KahluaTable | boolean, arg5?: se.krka.kahlua.vm.KahluaTable);
+      constructor(arg0: zombie.iso.IsoCell, arg1?: zombie.iso.IsoGridSquare, arg2?: string, arg3?: string | boolean, arg4?: boolean | se.krka.kahlua.vm.KahluaTable, arg5?: se.krka.kahlua.vm.KahluaTable);
       /**
        * Method Parameters: 
        *  - (String arg0, String arg1, int arg2, float arg3, int arg4, int arg5, boolean arg6, int arg7, boolean arg8, float arg9, ColorInfo arg10): void
@@ -35878,10 +35878,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -35921,8 +35921,8 @@ declare module '@asledgehammer/pipewrench' {
       setIsDismantable(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (Boolean arg0): void
        *  - (boolean arg0): void
+       *  - (Boolean arg0): void
        */
       setIsDoor(arg0: boolean): void;
       /**
@@ -36074,7 +36074,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -36104,7 +36104,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -37361,10 +37361,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -37460,7 +37460,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -37490,7 +37490,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -38719,10 +38719,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -38783,7 +38783,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -38813,7 +38813,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -39132,8 +39132,8 @@ declare module '@asledgehammer/pipewrench' {
       constructor(arg0: zombie.iso.IsoCell, arg1?: zombie.iso.IsoGridSquare, arg2?: zombie.iso.sprite.IsoSprite);
       /**
        * Method Parameters: 
-       *  - (String arg0, float arg1, float arg2, float arg3, String arg4, String arg5, int arg6): void
        *  - (String arg0, int arg1, int arg2, int arg3, String arg4, String arg5, int arg6): void
+       *  - (String arg0, float arg1, float arg2, float arg3, String arg4, String arg5, int arg6): void
        *  - (String arg0, float arg1, float arg2, float arg3, String arg4, String arg5, int arg6, boolean arg7): void
        *  - (String arg0, int arg1, int arg2, int arg3, String arg4, String arg5, int arg6, boolean arg7): void
        *  - (IsoPlayer arg0, String arg1, float arg2, float arg3, float arg4, String arg5, String arg6, int arg7): void
@@ -40084,10 +40084,10 @@ declare module '@asledgehammer/pipewrench' {
       setDeviceData(arg0: zombie.radio.devices.DeviceData): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -40143,7 +40143,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -40173,7 +40173,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -41807,10 +41807,10 @@ declare module '@asledgehammer/pipewrench' {
       setDestroyed(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ArrayList arg0): void
@@ -41981,7 +41981,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -42011,7 +42011,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -43429,10 +43429,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -43503,7 +43503,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -43533,7 +43533,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -44914,10 +44914,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -44978,7 +44978,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -45008,7 +45008,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
@@ -46657,10 +46657,10 @@ declare module '@asledgehammer/pipewrench' {
       setDestroyed(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
        *  - (IsoDirections arg0): void
+       *  - (int arg0): void
        */
-      setDir(arg0: number | zombie.iso.IsoDirections): void;
+      setDir(arg0: zombie.iso.IsoDirections | number): void;
       /**
        * Method Parameters: 
        *  - (ArrayList arg0): void
@@ -46831,7 +46831,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3): void
        *  - (int arg0, float arg1, float arg2, float arg3, float arg4): void
        */
-      setOutlineHighlightCol(arg0: zombie.core.textures.ColorInfo | number, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
+      setOutlineHighlightCol(arg0: number | zombie.core.textures.ColorInfo, arg1?: number | zombie.core.textures.ColorInfo, arg2?: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -46861,7 +46861,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4): void
        *  - (String arg0, float arg1, float arg2, float arg3, float arg4, boolean arg5): boolean
        */
-      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): boolean | void;
+      setOverlaySprite(arg0: string, arg1?: number | boolean, arg2?: number, arg3?: number, arg4?: number, arg5?: boolean): void | boolean;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void
