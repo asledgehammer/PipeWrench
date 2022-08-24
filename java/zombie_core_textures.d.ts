@@ -483,11 +483,11 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Empty): void
-       *  - (boolean[] arg0): void
        *  - (WrappedBuffer arg0): void
+       *  - (boolean[] arg0): void
        *  - (BooleanGrid arg0): void
        */
-      createMask(arg0?: boolean[] | zombie.core.utils.WrappedBuffer | zombie.core.utils.BooleanGrid): void;
+      createMask(arg0?: zombie.core.utils.WrappedBuffer | boolean[] | zombie.core.utils.BooleanGrid): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -706,7 +706,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, Consumer arg8): void
        *  - (ObjectRenderEffects arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, Consumer arg9): void
        */
-      render(arg0: zombie.iso.objects.ObjectRenderEffects | number, arg1: number, arg2?: number, arg3?: number, arg4?: number, arg5?: number, arg6?: number, arg7?: number, arg8?: number | java.util._function_.Consumer<zombie.core.textures.TextureDraw>, arg9?: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): void;
+      render(arg0: number | zombie.iso.objects.ObjectRenderEffects, arg1: number, arg2?: number, arg3?: number, arg4?: number, arg5?: number, arg6?: number, arg7?: number, arg8?: number | java.util._function_.Consumer<zombie.core.textures.TextureDraw>, arg9?: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): void;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3, int arg4, int arg5, int arg6, int arg7): void
@@ -843,7 +843,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, int arg1, int arg2, int arg3, int arg4): zombie.core.textures.Texture
        *  - (int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7): zombie.core.textures.Texture[]
        */
-      split(arg0: number | string, arg1: number, arg2: number, arg3: number, arg4?: number, arg5?: number, arg6?: number, arg7?: number): zombie.core.textures.Texture[] | zombie.core.textures.Texture;
+      split(arg0: string | number, arg1: number, arg2: number, arg3: number, arg4?: number, arg5?: number, arg6?: number, arg7?: number): zombie.core.textures.Texture | zombie.core.textures.Texture[];
       /**
        * Method Parameters: 
        *  - (int[] arg0, int[] arg1): zombie.core.textures.Texture[][]
@@ -913,11 +913,11 @@ declare module '@asledgehammer/pipewrench' {
        *
        * Method Parameters: 
        *  - (String arg0): zombie.core.textures.Texture
-       *  - (String arg0, int arg1): zombie.core.textures.Texture
        *  - (String arg0, String arg1): zombie.core.textures.Texture
+       *  - (String arg0, int arg1): zombie.core.textures.Texture
        *  - (String arg0, int[] arg1, String arg2): zombie.core.textures.Texture
        */
-      static getSharedTexture(arg0: string, arg1?: number | number[] | string, arg2?: string): zombie.core.textures.Texture;
+      static getSharedTexture(arg0: string, arg1?: number[] | string | number, arg2?: string): zombie.core.textures.Texture;
       /**
        * @noSelf
        *
@@ -1047,14 +1047,14 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (TextureDraw arg0, Texture arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, Consumer arg10): zombie.core.textures.TextureDraw
        *  - (TextureDraw arg0, Texture arg1, WallShaderTexRender arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10, Consumer arg11): zombie.core.textures.TextureDraw
-       *  - (TextureDraw arg0, Texture arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, int arg10, int arg11, int arg12, int arg13): void
        *  - (TextureDraw arg0, Texture arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10, float arg11, float arg12, float arg13): void
+       *  - (TextureDraw arg0, Texture arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, int arg10, int arg11, int arg12, int arg13): void
        *  - (TextureDraw arg0, Texture arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, int arg10, int arg11, int arg12, int arg13, Consumer arg14): zombie.core.textures.TextureDraw
        *  - (TextureDraw arg0, Texture arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10, float arg11, float arg12, float arg13, float arg14, float arg15, float arg16, float arg17, Consumer arg18): zombie.core.textures.TextureDraw
        *  - (TextureDraw arg0, Texture arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, int arg10, int arg11, int arg12, int arg13, float arg14, float arg15, float arg16, float arg17, float arg18, float arg19, float arg20, float arg21, Consumer arg22): zombie.core.textures.TextureDraw
        *  - (TextureDraw arg0, Texture arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10, float arg11, float arg12, float arg13, float arg14, float arg15, float arg16, float arg17, float arg18, float arg19, float arg20, float arg21, float arg22, float arg23, float arg24, float arg25, Consumer arg26): void
        */
-      static Create(arg0: zombie.core.textures.TextureDraw, arg1: zombie.core.textures.Texture, arg2: number | zombie.core.SpriteRenderer$WallShaderTexRender, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number | java.util._function_.Consumer<zombie.core.textures.TextureDraw>, arg11?: number | java.util._function_.Consumer<zombie.core.textures.TextureDraw>, arg12?: number, arg13?: number, arg14?: number | java.util._function_.Consumer<zombie.core.textures.TextureDraw>, arg15?: number, arg16?: number, arg17?: number, arg18?: number | java.util._function_.Consumer<zombie.core.textures.TextureDraw>, arg19?: number, arg20?: number, arg21?: number, arg22?: number | java.util._function_.Consumer<zombie.core.textures.TextureDraw>, arg23?: number, arg24?: number, arg25?: number, arg26?: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): void | zombie.core.textures.TextureDraw;
+      static Create(arg0: zombie.core.textures.TextureDraw, arg1: zombie.core.textures.Texture, arg2: number | zombie.core.SpriteRenderer$WallShaderTexRender, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number | java.util._function_.Consumer<zombie.core.textures.TextureDraw>, arg11?: number | java.util._function_.Consumer<zombie.core.textures.TextureDraw>, arg12?: number, arg13?: number, arg14?: number | java.util._function_.Consumer<zombie.core.textures.TextureDraw>, arg15?: number, arg16?: number, arg17?: number, arg18?: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg19?: number, arg20?: number, arg21?: number, arg22?: number | java.util._function_.Consumer<zombie.core.textures.TextureDraw>, arg23?: number, arg24?: number, arg25?: number, arg26?: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): zombie.core.textures.TextureDraw | void;
       /**
        * @noSelf
        *

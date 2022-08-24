@@ -120,16 +120,16 @@ declare module '@asledgehammer/pipewrench' {
       removeMember(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (ChatMessage arg0): void
        *  - (ServerChatMessage arg0): void
+       *  - (ChatMessage arg0): void
        */
-      sendMessageToChatMembers(arg0: zombie.chat.ChatMessage | zombie.chat.ServerChatMessage): void;
+      sendMessageToChatMembers(arg0: zombie.chat.ServerChatMessage | zombie.chat.ChatMessage): void;
       /**
        * Method Parameters: 
-       *  - (UdpConnection arg0, ChatMessage arg1): void
        *  - (short arg0, ChatMessage arg1): void
+       *  - (UdpConnection arg0, ChatMessage arg1): void
        */
-      sendMessageToPlayer(arg0: zombie.core.raknet.UdpConnection | number, arg1: zombie.chat.ChatMessage): void;
+      sendMessageToPlayer(arg0: number | zombie.core.raknet.UdpConnection, arg1: zombie.chat.ChatMessage): void;
       /**
        * Method Parameters: 
        *  - (UdpConnection arg0): void
@@ -171,7 +171,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (ChatMessage arg0): void
        *  - (String arg0, String arg1): void
        */
-      showMessage(arg0: string | zombie.chat.ChatMessage, arg1?: string): void;
+      showMessage(arg0: zombie.chat.ChatMessage | string, arg1?: string): void;
       /**
        * Method Parameters: 
        *  - (ArrayList arg0): void

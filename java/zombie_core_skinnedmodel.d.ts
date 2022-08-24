@@ -236,7 +236,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, String arg1, String arg2, boolean arg3): void
        *  - (String arg0, String arg1, String arg2, String arg3, boolean arg4): void
        */
-      setModelMetaData(arg0: string, arg1: string, arg2: string, arg3: string | boolean, arg4?: boolean): void;
+      setModelMetaData(arg0: string, arg1: string, arg2: string, arg3: boolean | string, arg4?: boolean): void;
       /**
        * Method Parameters: 
        *  - (String arg0, String arg1, boolean arg2, String arg3, boolean arg4): zombie.core.skinnedmodel.model.Model

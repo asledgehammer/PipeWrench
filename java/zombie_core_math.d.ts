@@ -75,8 +75,8 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (float arg0, float arg1, float arg2): number
        *  - (long arg0, long arg1, long arg2): number
+       *  - (float arg0, float arg1, float arg2): number
        *  - (int arg0, int arg1, int arg2): number
        */
       static clamp(arg0: number, arg1: number, arg2: number): number;
@@ -121,8 +121,8 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (float arg0): number
        *  - (double arg0): number
+       *  - (float arg0): number
        */
       static fastfloor(arg0: number): number;
       /**
@@ -168,7 +168,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Vector2 arg0, Vector2 arg1, Vector2 arg2, float arg3): zombie.iso.Vector2
        *  - (Vector3f arg0, Vector3f arg1, Vector3f arg2, float arg3): org.lwjgl.util.vector.Vector3f
        */
-      static lerp(arg0: zombie.iso.Vector2 | number | org.lwjgl.util.vector.Vector3f, arg1: zombie.iso.Vector2 | number | org.lwjgl.util.vector.Vector3f, arg2: zombie.iso.Vector2 | number | org.lwjgl.util.vector.Vector3f, arg3?: number): zombie.iso.Vector2 | number | org.lwjgl.util.vector.Vector3f;
+      static lerp(arg0: zombie.iso.Vector2 | org.lwjgl.util.vector.Vector3f | number, arg1: zombie.iso.Vector2 | org.lwjgl.util.vector.Vector3f | number, arg2: zombie.iso.Vector2 | org.lwjgl.util.vector.Vector3f | number, arg3?: number): zombie.iso.Vector2 | org.lwjgl.util.vector.Vector3f | number;
       /**
        * @noSelf
        *
@@ -201,8 +201,8 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (float arg0, float arg1): number
        *  - (int arg0, int arg1): number
+       *  - (float arg0, float arg1): number
        */
       static max(arg0: number, arg1: number): number;
       /**

@@ -456,7 +456,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): number
        *  - (ClothingItem arg0): string
        */
-      getBaseTexture(arg0?: zombie.core.skinnedmodel.population.ClothingItem): string | number;
+      getBaseTexture(arg0?: zombie.core.skinnedmodel.population.ClothingItem): number | string;
       /**
        * Method Parameters: 
        *  - (BloodBodyPartType arg0): number
@@ -547,7 +547,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): number
        *  - (ClothingItem arg0): string
        */
-      getTextureChoice(arg0?: zombie.core.skinnedmodel.population.ClothingItem): number | string;
+      getTextureChoice(arg0?: zombie.core.skinnedmodel.population.ClothingItem): string | number;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.core.ImmutableColor

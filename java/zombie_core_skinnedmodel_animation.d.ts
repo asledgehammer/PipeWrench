@@ -886,7 +886,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Keyframe arg0, Keyframe arg1, float arg2, Keyframe arg3): zombie.core.skinnedmodel.animation.Keyframe
        *  - (Keyframe arg0, Keyframe arg1, float arg2, Vector3f arg3, Quaternion arg4, Vector3f arg5): void
        */
-      static lerp(arg0: zombie.core.skinnedmodel.animation.Keyframe, arg1: zombie.core.skinnedmodel.animation.Keyframe, arg2: number, arg3: zombie.core.skinnedmodel.animation.Keyframe | org.lwjgl.util.vector.Vector3f, arg4?: org.lwjgl.util.vector.Quaternion, arg5?: org.lwjgl.util.vector.Vector3f): zombie.core.skinnedmodel.animation.Keyframe | void;
+      static lerp(arg0: zombie.core.skinnedmodel.animation.Keyframe, arg1: zombie.core.skinnedmodel.animation.Keyframe, arg2: number, arg3: org.lwjgl.util.vector.Vector3f | zombie.core.skinnedmodel.animation.Keyframe, arg4?: org.lwjgl.util.vector.Quaternion, arg5?: org.lwjgl.util.vector.Vector3f): void | zombie.core.skinnedmodel.animation.Keyframe;
       /**
        * @noSelf
        *

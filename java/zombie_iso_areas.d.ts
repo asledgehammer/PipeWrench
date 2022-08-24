@@ -578,10 +578,10 @@ declare module '@asledgehammer/pipewrench' {
       kickOutOfSafehouse(arg0: zombie.characters.IsoPlayer): void;
       /**
        * Method Parameters: 
-       *  - (String arg0): boolean
        *  - (IsoPlayer arg0): boolean
+       *  - (String arg0): boolean
        */
-      playerAllowed(arg0: string | zombie.characters.IsoPlayer): boolean;
+      playerAllowed(arg0: zombie.characters.IsoPlayer | string): boolean;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -675,7 +675,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGridSquare arg0, IsoPlayer arg1): zombie.iso.areas.SafeHouse
        *  - (int arg0, int arg1, int arg2, int arg3, String arg4, boolean arg5): zombie.iso.areas.SafeHouse
        */
-      static addSafeHouse(arg0: number | zombie.iso.IsoGridSquare, arg1: number | zombie.characters.IsoPlayer, arg2?: number, arg3?: number, arg4?: string, arg5?: boolean): zombie.iso.areas.SafeHouse;
+      static addSafeHouse(arg0: zombie.iso.IsoGridSquare | number, arg1: zombie.characters.IsoPlayer | number, arg2?: number, arg3?: number, arg4?: string, arg5?: boolean): zombie.iso.areas.SafeHouse;
       /**
        * @noSelf
        *
@@ -704,7 +704,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGridSquare arg0): zombie.iso.areas.SafeHouse
        *  - (int arg0, int arg1, int arg2, int arg3): zombie.iso.areas.SafeHouse
        */
-      static getSafeHouse(arg0: number | zombie.iso.IsoGridSquare, arg1?: number, arg2?: number, arg3?: number): zombie.iso.areas.SafeHouse;
+      static getSafeHouse(arg0: zombie.iso.IsoGridSquare | number, arg1?: number, arg2?: number, arg3?: number): zombie.iso.areas.SafeHouse;
       /**
        * @noSelf
        *
@@ -716,10 +716,10 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoPlayer arg0): zombie.iso.areas.SafeHouse
        *  - (String arg0): zombie.iso.areas.SafeHouse
+       *  - (IsoPlayer arg0): zombie.iso.areas.SafeHouse
        */
-      static hasSafehouse(arg0: zombie.characters.IsoPlayer | string): zombie.iso.areas.SafeHouse;
+      static hasSafehouse(arg0: string | zombie.characters.IsoPlayer): zombie.iso.areas.SafeHouse;
       /**
        * @noSelf
        *
