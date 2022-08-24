@@ -18,6 +18,8 @@ jobs:
           path: pzserver
           key: ${{ matrix.version }}
       - uses: actions/checkout@v3
+        with:
+          ref: ${{ matrix.version }}
       - uses: actions/checkout@v3
         with:
           repository: asledgehammer/PipeWrench-Java-Generator
