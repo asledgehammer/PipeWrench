@@ -26,7 +26,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): string
        *  - (String arg0): se.krka.kahlua.vm.KahluaTable
        */
-      static create(arg0?: string): se.krka.kahlua.vm.KahluaTable | string;
+      static create(arg0?: string): string | se.krka.kahlua.vm.KahluaTable;
       /**
        * @noSelf
        *

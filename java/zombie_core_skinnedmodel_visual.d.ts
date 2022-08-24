@@ -547,7 +547,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): number
        *  - (ClothingItem arg0): string
        */
-      getTextureChoice(arg0?: zombie.core.skinnedmodel.population.ClothingItem): string | number;
+      getTextureChoice(arg0?: zombie.core.skinnedmodel.population.ClothingItem): number | string;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.core.ImmutableColor
@@ -703,165 +703,165 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Object arg0): boolean
        *  - (int arg0, Object arg1): void
        */
-      add<T>(arg0: any | number, arg1?: any): boolean | void;
+      add(arg0: any | number, arg1?: any): boolean | void;
       /**
        * Method Parameters: 
        *  - (Collection arg0): boolean
        *  - (int arg0, Collection arg1): boolean
        */
-      addAll<T>(arg0: number | java.util.Collection<zombie.core.skinnedmodel.visual.ItemVisual>, arg1?: java.util.Collection<zombie.core.skinnedmodel.visual.ItemVisual>): boolean;
+      addAll(arg0: java.util.Collection<zombie.core.skinnedmodel.visual.ItemVisual> | number, arg1?: java.util.Collection<zombie.core.skinnedmodel.visual.ItemVisual>): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): void
        */
-      clear<T>(): void;
+      clear(): void;
       /**
        * Method Parameters: 
        *  - (Empty): any
        */
-      clone<T>(): any;
+      clone(): any;
       /**
        * Method Parameters: 
        *  - (Object arg0): boolean
        */
-      contains<T>(arg0: any): boolean;
+      contains(arg0: any): boolean;
       /**
        * Method Parameters: 
        *  - (Collection arg0): boolean
        */
-      containsAll<T>(arg0: java.util.Collection<any>): boolean;
+      containsAll(arg0: java.util.Collection<any>): boolean;
       /**
        * Method Parameters: 
        *  - (int arg0): void
        */
-      ensureCapacity<T>(arg0: number): void;
+      ensureCapacity(arg0: number): void;
       /**
        * Method Parameters: 
        *  - (Object arg0): boolean
        */
-      equals<T>(arg0: any): boolean;
+      equals(arg0: any): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.core.skinnedmodel.visual.ItemVisual
        */
-      findHat<T>(): zombie.core.skinnedmodel.visual.ItemVisual;
+      findHat(): zombie.core.skinnedmodel.visual.ItemVisual;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.core.skinnedmodel.visual.ItemVisual
        */
-      findMask<T>(): zombie.core.skinnedmodel.visual.ItemVisual;
+      findMask(): zombie.core.skinnedmodel.visual.ItemVisual;
       /**
        * Method Parameters: 
        *  - (Consumer arg0): void
        */
-      forEach<T>(arg0: java.util._function_.Consumer<zombie.core.skinnedmodel.visual.ItemVisual>): void;
+      forEach(arg0: java.util._function_.Consumer<zombie.core.skinnedmodel.visual.ItemVisual>): void;
       /**
        * Method Parameters: 
        *  - (int arg0): E
        */
-      get<T>(arg0: number): any;
+      get(arg0: number): any;
       /**
        * Method Parameters: 
        *  - (Empty): number
        */
-      hashCode<T>(): number;
+      hashCode(): number;
       /**
        * Method Parameters: 
        *  - (Object arg0): number
        */
-      indexOf<T>(arg0: any): number;
+      indexOf(arg0: any): number;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
        */
-      isEmpty<T>(): boolean;
+      isEmpty(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.Iterator<E>
        */
-      iterator<T>(): java.util.Iterator<zombie.core.skinnedmodel.visual.ItemVisual>;
+      iterator(): java.util.Iterator<zombie.core.skinnedmodel.visual.ItemVisual>;
       /**
        * Method Parameters: 
        *  - (Object arg0): number
        */
-      lastIndexOf<T>(arg0: any): number;
+      lastIndexOf(arg0: any): number;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.ListIterator<E>
        *  - (int arg0): java.util.ListIterator<E>
        */
-      listIterator<T>(arg0?: number): java.util.ListIterator<zombie.core.skinnedmodel.visual.ItemVisual>;
+      listIterator(arg0?: number): java.util.ListIterator<zombie.core.skinnedmodel.visual.ItemVisual>;
       /**
        * Method Parameters: 
        *  - (ByteBuffer arg0, int arg1): void
        */
-      load<T>(arg0: java.nio.ByteBuffer, arg1: number): void;
+      load(arg0: java.nio.ByteBuffer, arg1: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.stream.Stream<E>
        */
-      parallelStream<T>(): java.util.stream.Stream<zombie.core.skinnedmodel.visual.ItemVisual>;
+      parallelStream(): java.util.stream.Stream<zombie.core.skinnedmodel.visual.ItemVisual>;
       /**
        * Method Parameters: 
-       *  - (Object arg0): boolean
        *  - (int arg0): E
+       *  - (Object arg0): boolean
        */
-      remove<T>(arg0: any): any;
+      remove(arg0: any): any;
       /**
        * Method Parameters: 
        *  - (Collection arg0): boolean
        */
-      removeAll<T>(arg0: java.util.Collection<any>): boolean;
+      removeAll(arg0: java.util.Collection<any>): boolean;
       /**
        * Method Parameters: 
        *  - (Predicate arg0): boolean
        */
-      removeIf<T>(arg0: java.util._function_.Predicate<zombie.core.skinnedmodel.visual.ItemVisual>): boolean;
+      removeIf(arg0: java.util._function_.Predicate<zombie.core.skinnedmodel.visual.ItemVisual>): boolean;
       /**
        * Method Parameters: 
        *  - (UnaryOperator arg0): void
        */
-      replaceAll<T>(arg0: java.util._function_.UnaryOperator<zombie.core.skinnedmodel.visual.ItemVisual>): void;
+      replaceAll(arg0: java.util._function_.UnaryOperator<zombie.core.skinnedmodel.visual.ItemVisual>): void;
       /**
        * Method Parameters: 
        *  - (Collection arg0): boolean
        */
-      retainAll<T>(arg0: java.util.Collection<any>): boolean;
+      retainAll(arg0: java.util.Collection<any>): boolean;
       /**
        * Method Parameters: 
        *  - (ByteBuffer arg0): void
        */
-      save<T>(arg0: java.nio.ByteBuffer): void;
+      save(arg0: java.nio.ByteBuffer): void;
       /**
        * Method Parameters: 
        *  - (int arg0, Object arg1): E
        */
-      set<T>(arg0: number, arg1: any): any;
+      set(arg0: number, arg1: any): any;
       /**
        * Method Parameters: 
        *  - (Empty): number
        */
-      size<T>(): number;
+      size(): number;
       /**
        * Method Parameters: 
        *  - (Comparator arg0): void
        */
-      sort<T>(arg0: java.util.Comparator<zombie.core.skinnedmodel.visual.ItemVisual>): void;
+      sort(arg0: java.util.Comparator<zombie.core.skinnedmodel.visual.ItemVisual>): void;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.Spliterator<E>
        */
-      spliterator<T>(): java.util.Spliterator<zombie.core.skinnedmodel.visual.ItemVisual>;
+      spliterator(): java.util.Spliterator<zombie.core.skinnedmodel.visual.ItemVisual>;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.stream.Stream<E>
        */
-      stream<T>(): java.util.stream.Stream<zombie.core.skinnedmodel.visual.ItemVisual>;
+      stream(): java.util.stream.Stream<zombie.core.skinnedmodel.visual.ItemVisual>;
       /**
        * Method Parameters: 
        *  - (int arg0, int arg1): java.util.List<E>
        */
-      subList<T>(arg0: number, arg1: number): java.util.List<zombie.core.skinnedmodel.visual.ItemVisual>;
+      subList(arg0: number, arg1: number): java.util.List<zombie.core.skinnedmodel.visual.ItemVisual>;
       /**
        * Method Parameters: 
        *  - (Empty): any[]
@@ -873,12 +873,12 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): string
        */
-      toString<T>(): string;
+      toString(): string;
       /**
        * Method Parameters: 
        *  - (Empty): void
        */
-      trimToSize<T>(): void;
+      trimToSize(): void;
     }
   }
 }

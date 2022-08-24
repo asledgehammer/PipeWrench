@@ -733,7 +733,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoLot arg0, int arg1, int arg2, int arg3, boolean arg4): void
        *  - (IsoLot arg0, int arg1, int arg2, int arg3, IsoChunk arg4, int arg5, int arg6): void
        */
-      PlaceLot(arg0: zombie.iso.IsoLot | string, arg1: number, arg2: number, arg3: number, arg4: zombie.iso.IsoChunk | boolean, arg5?: number, arg6?: number): void;
+      PlaceLot(arg0: string | zombie.iso.IsoLot, arg1: number, arg2: number, arg3: number, arg4: boolean | zombie.iso.IsoChunk, arg5?: number, arg6?: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -782,16 +782,16 @@ declare module '@asledgehammer/pipewrench' {
       addToProcessIsoObjectRemove(arg0: zombie.iso.IsoObject): void;
       /**
        * Method Parameters: 
-       *  - (InventoryItem arg0): void
        *  - (ArrayList arg0): void
+       *  - (InventoryItem arg0): void
        */
-      addToProcessItems(arg0: zombie.inventory.InventoryItem | java.util.ArrayList<zombie.inventory.InventoryItem>): void;
+      addToProcessItems(arg0: java.util.ArrayList<zombie.inventory.InventoryItem> | zombie.inventory.InventoryItem): void;
       /**
        * Method Parameters: 
-       *  - (InventoryItem arg0): void
        *  - (ArrayList arg0): void
+       *  - (InventoryItem arg0): void
        */
-      addToProcessItemsRemove(arg0: zombie.inventory.InventoryItem | java.util.ArrayList<zombie.inventory.InventoryItem>): void;
+      addToProcessItemsRemove(arg0: java.util.ArrayList<zombie.inventory.InventoryItem> | zombie.inventory.InventoryItem): void;
       /**
        * Method Parameters: 
        *  - (IsoWorldInventoryObject arg0): void
@@ -1204,7 +1204,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoLightSource arg0): void
        *  - (int arg0, int arg1, int arg2): void
        */
-      removeLamppost(arg0: number | zombie.iso.IsoLightSource, arg1?: number, arg2?: number): void;
+      removeLamppost(arg0: zombie.iso.IsoLightSource | number, arg1?: number, arg2?: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -1548,7 +1548,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (boolean arg0): void
        *  - (ByteBuffer arg0, CRC32 arg1): java.nio.ByteBuffer
        */
-      Save(arg0: java.nio.ByteBuffer | boolean, arg1?: java.util.zip.CRC32): java.nio.ByteBuffer | void;
+      Save(arg0: boolean | java.nio.ByteBuffer, arg1?: java.util.zip.CRC32): void | java.nio.ByteBuffer;
       /**
        * Method Parameters: 
        *  - (Chunk arg0, CRC32 arg1): void
@@ -1763,7 +1763,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): string
        *  - (IsoGridSquare arg0, int arg1): number
        */
-      static Fix2x(arg0: zombie.iso.IsoGridSquare | string, arg1?: number): number | string;
+      static Fix2x(arg0: string | zombie.iso.IsoGridSquare, arg1?: number): string | number;
       /**
        * @noSelf
        *
@@ -2092,8 +2092,12 @@ declare module '@asledgehammer/pipewrench' {
        */
       static RotLeft(arg0: zombie.iso.IsoDirections | null): zombie.iso.IsoDirections;
 
-      /** (int arg0): IsoDirections */
-      RotRight(arg0: number): zombie.iso.IsoDirections;
+      /**
+       * @noSelf
+       *
+       * (IsoDirections arg0): IsoDirections
+       */
+      static RotRight(arg0: zombie.iso.IsoDirections | null): zombie.iso.IsoDirections;
 
       ToVector(): zombie.iso.Vector2;
 
@@ -2302,12 +2306,12 @@ declare module '@asledgehammer/pipewrench' {
       AddTileObject(arg0: zombie.iso.IsoObject, arg1?: number): void;
       /**
        * Method Parameters: 
-       *  - (InventoryItem arg0, float arg1, float arg2, float arg3): zombie.inventory.InventoryItem
        *  - (String arg0, float arg1, float arg2, float arg3): zombie.inventory.InventoryItem
-       *  - (InventoryItem arg0, float arg1, float arg2, float arg3, boolean arg4): zombie.inventory.InventoryItem
+       *  - (InventoryItem arg0, float arg1, float arg2, float arg3): zombie.inventory.InventoryItem
        *  - (String arg0, float arg1, float arg2, float arg3, int arg4): void
+       *  - (InventoryItem arg0, float arg1, float arg2, float arg3, boolean arg4): zombie.inventory.InventoryItem
        */
-      AddWorldInventoryItem(arg0: zombie.inventory.InventoryItem | string, arg1: number, arg2: number, arg3: number, arg4?: boolean | number): zombie.inventory.InventoryItem | void;
+      AddWorldInventoryItem(arg0: string | zombie.inventory.InventoryItem, arg1: number, arg2: number, arg3: number, arg4?: number | boolean): zombie.inventory.InventoryItem | void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -2373,13 +2377,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoMovingObject arg0): number
        *  - (int arg0, int arg1): number
        */
-      DistTo(arg0: number | zombie.iso.IsoGridSquare | zombie.iso.IsoMovingObject, arg1?: number): number;
+      DistTo(arg0: zombie.iso.IsoGridSquare | zombie.iso.IsoMovingObject | number, arg1?: number): number;
       /**
        * Method Parameters: 
-       *  - (IsoMovingObject arg0): number
        *  - (IsoGridSquare arg0): number
+       *  - (IsoMovingObject arg0): number
        */
-      DistToProper(arg0: zombie.iso.IsoMovingObject | zombie.iso.IsoGridSquare): number;
+      DistToProper(arg0: zombie.iso.IsoGridSquare | zombie.iso.IsoMovingObject): number;
       /**
        * Method Parameters: 
        *  - (IsoObject arg0, IsoDirections arg1, boolean arg2, boolean arg3, boolean arg4, boolean arg5, boolean arg6, boolean arg7, boolean arg8, WallShaperWhole arg9): void
@@ -2493,10 +2497,10 @@ declare module '@asledgehammer/pipewrench' {
       InvalidateSpecialObjectPaths(): void;
       /**
        * Method Parameters: 
-       *  - (IsoFlagType arg0): boolean
        *  - (String arg0): boolean
+       *  - (IsoFlagType arg0): boolean
        */
-      Is(arg0: zombie.iso.SpriteDetails.IsoFlagType | string): boolean;
+      Is(arg0: string | zombie.iso.SpriteDetails.IsoFlagType): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -4034,7 +4038,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        *  - (boolean arg0): void
        */
-      bSeen(arg0?: boolean): void | boolean;
+      bSeen(arg0?: boolean): boolean | void;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -4051,19 +4055,19 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): number
        *  - (float arg0): void
        */
-      lampostTotalB(arg0?: number): void | number;
+      lampostTotalB(arg0?: number): number | void;
       /**
        * Method Parameters: 
        *  - (Empty): number
        *  - (float arg0): void
        */
-      lampostTotalG(arg0?: number): void | number;
+      lampostTotalG(arg0?: number): number | void;
       /**
        * Method Parameters: 
        *  - (Empty): number
        *  - (float arg0): void
        */
-      lampostTotalR(arg0?: number): void | number;
+      lampostTotalR(arg0?: number): number | void;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.core.textures.ColorInfo
@@ -4090,7 +4094,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): number
        *  - (float arg0): void
        */
-      targetDarkMulti(arg0?: number): void | number;
+      targetDarkMulti(arg0?: number): number | void;
     }
     /**
      * @customConstructor Lighting.new
@@ -4108,7 +4112,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        *  - (boolean arg0): void
        */
-      bCanSee(arg0?: boolean): void | boolean;
+      bCanSee(arg0?: boolean): boolean | void;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -4120,13 +4124,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        *  - (boolean arg0): void
        */
-      bSeen(arg0?: boolean): void | boolean;
+      bSeen(arg0?: boolean): boolean | void;
       /**
        * Method Parameters: 
        *  - (Empty): number
        *  - (float arg0): void
        */
-      darkMulti(arg0?: number): void | number;
+      darkMulti(arg0?: number): number | void;
       /**
        * Method Parameters: 
        *  - (int arg0): zombie.iso.IsoGridSquare$ResultLight
@@ -4137,19 +4141,19 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): number
        *  - (float arg0): void
        */
-      lampostTotalB(arg0?: number): void | number;
+      lampostTotalB(arg0?: number): number | void;
       /**
        * Method Parameters: 
        *  - (Empty): number
        *  - (float arg0): void
        */
-      lampostTotalG(arg0?: number): void | number;
+      lampostTotalG(arg0?: number): number | void;
       /**
        * Method Parameters: 
        *  - (Empty): number
        *  - (float arg0): void
        */
-      lampostTotalR(arg0?: number): void | number;
+      lampostTotalR(arg0?: number): number | void;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.core.textures.ColorInfo
@@ -4160,7 +4164,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0): number
        *  - (int arg0, int arg1): void
        */
-      lightverts(arg0: number, arg1?: number): void | number;
+      lightverts(arg0: number, arg1?: number): number | void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -4303,10 +4307,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Constructors: 
        *  - (int arg0, int arg1, int arg2, float arg3, float arg4, float arg5, int arg6)
-       *  - (int arg0, int arg1, int arg2, float arg3, float arg4, float arg5, int arg6, IsoBuilding arg7)
        *  - (int arg0, int arg1, int arg2, float arg3, float arg4, float arg5, int arg6, int arg7)
+       *  - (int arg0, int arg1, int arg2, float arg3, float arg4, float arg5, int arg6, IsoBuilding arg7)
        */
-      constructor(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: zombie.iso.areas.IsoBuilding | number);
+      constructor(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number | zombie.iso.areas.IsoBuilding);
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -4621,7 +4625,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoMovingObject arg0): number
        *  - (float arg0, float arg1): number
        */
-      DistToSquared(arg0: number | zombie.iso.IsoMovingObject, arg1?: number): number;
+      DistToSquared(arg0: zombie.iso.IsoMovingObject | number, arg1?: number): number;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -4737,7 +4741,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (BaseVehicle arg0, float arg1, boolean arg2, float arg3, float arg4): number
        *  - (HandWeapon arg0, IsoGameCharacter arg1, float arg2, boolean arg3, float arg4, boolean arg5): number
        */
-      Hit(arg0: zombie.inventory.types.HandWeapon | zombie.vehicles.BaseVehicle | zombie.iso.Vector2, arg1: zombie.characters.IsoGameCharacter | number | zombie.iso.IsoObject, arg2: number | boolean, arg3?: boolean | number, arg4?: number, arg5?: boolean): number | void;
+      Hit(arg0: zombie.iso.Vector2 | zombie.inventory.types.HandWeapon | zombie.vehicles.BaseVehicle, arg1: zombie.iso.IsoObject | zombie.characters.IsoGameCharacter | number, arg2: number | boolean, arg3?: boolean | number, arg4?: number, arg5?: boolean): void | number;
       /**
        * Method Parameters: 
        *  - (BaseVehicle arg0, float arg1): void
@@ -5038,7 +5042,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0): void
        *  - (BloodBodyPartType arg0, boolean arg1, boolean arg2, boolean arg3): void
        */
-      addBlood(arg0: zombie.characterTextures.BloodBodyPartType | number, arg1?: boolean, arg2?: boolean, arg3?: boolean): void;
+      addBlood(arg0: number | zombie.characterTextures.BloodBodyPartType, arg1?: boolean, arg2?: boolean, arg3?: boolean): void;
       /**
        * Method Parameters: 
        *  - (IsoObject arg0): void
@@ -5928,7 +5932,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Vector3 arg0): number
        *  - (float arg0, float arg1): number
        */
-      getDotWithForwardDirection(arg0: number | zombie.iso.Vector3, arg1?: number): number;
+      getDotWithForwardDirection(arg0: zombie.iso.Vector3 | number, arg1?: number): number;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.ArrayList<zombie.characters.IsoZombie>
@@ -7950,10 +7954,10 @@ declare module '@asledgehammer/pipewrench' {
       isReanim(): boolean;
       /**
        * Method Parameters: 
-       *  - (Recipe arg0): boolean
        *  - (String arg0): boolean
+       *  - (Recipe arg0): boolean
        */
-      isRecipeKnown(arg0: zombie.scripting.objects.Recipe | string): boolean;
+      isRecipeKnown(arg0: string | zombie.scripting.objects.Recipe): boolean;
       /**
        * Method Parameters: 
        *  - (ItemContainer arg0, InventoryItem arg1): boolean
@@ -8882,10 +8886,10 @@ declare module '@asledgehammer/pipewrench' {
       setDieCount(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -8961,7 +8965,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Vector2 arg0): void
        *  - (float arg0, float arg1): void
        */
-      setForwardDirection(arg0: number | zombie.iso.Vector2, arg1?: number): void;
+      setForwardDirection(arg0: zombie.iso.Vector2 | number, arg1?: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -9391,7 +9395,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (boolean arg0): void
        *  - (int arg0, boolean arg1): void
        */
-      setOutlineHlAttached(arg0: number | boolean, arg1?: boolean): void;
+      setOutlineHlAttached(arg0: boolean | number, arg1?: boolean): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -9680,10 +9684,10 @@ declare module '@asledgehammer/pipewrench' {
       setSprinting(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -9813,19 +9817,19 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (IAnimationVariableSlot arg0): void
-       *  - (String arg0, float arg1): void
        *  - (String arg0, boolean arg1): void
+       *  - (String arg0, float arg1): void
        *  - (String arg0, String arg1): void
-       *  - (String arg0, int arg1, CallbackGetStrongTyped arg2): void
-       *  - (String arg0, float arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2): void
+       *  - (String arg0, float arg1, CallbackGetStrongTyped arg2): void
+       *  - (String arg0, int arg1, CallbackGetStrongTyped arg2): void
        *  - (String arg0, String arg1, CallbackGetStrongTyped arg2): void
+       *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        *  - (String arg0, float arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        *  - (String arg0, int arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        *  - (String arg0, String arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
-       *  - (String arg0, boolean arg1, CallbackGetStrongTyped arg2, CallbackSetStrongTyped arg3): void
        */
-      setVariable(arg0: string | zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot, arg1?: number | string | boolean, arg2?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackGetStrongTyped, arg3?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackSetStrongTyped): void;
+      setVariable(arg0: zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSlot | string, arg1?: boolean | number | string, arg2?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackGetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackGetStrongTyped, arg3?: zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackBool$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackFloat$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackInt$CallbackSetStrongTyped | zombie.core.skinnedmodel.advancedanimation.AnimationVariableSlotCallbackString$CallbackSetStrongTyped): void;
       /**
        * Method Parameters: 
        *  - (BaseVehicle arg0): void
@@ -10155,7 +10159,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGridSquare arg0): zombie.iso.IsoObject
        *  - (int arg0, int arg1, int arg2): zombie.iso.IsoObject
        */
-      static FindExternalWaterSource(arg0: number | zombie.iso.IsoGridSquare, arg1?: number, arg2?: number): zombie.iso.IsoObject;
+      static FindExternalWaterSource(arg0: zombie.iso.IsoGridSquare | number, arg1?: number, arg2?: number): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -10313,7 +10317,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (KahluaTable arg0, KahluaTable arg1, IsoGridSquare arg2, float arg3, float arg4, float arg5, boolean arg6, boolean arg7): zombie.iso.IsoMarkers$IsoMarker
        *  - (KahluaTable arg0, KahluaTable arg1, IsoGridSquare arg2, float arg3, float arg4, float arg5, boolean arg6, boolean arg7, float arg8, float arg9, float arg10): zombie.iso.IsoMarkers$IsoMarker
        */
-      addIsoMarker(arg0: se.krka.kahlua.vm.KahluaTable | string, arg1: se.krka.kahlua.vm.KahluaTable | zombie.iso.IsoGridSquare, arg2: zombie.iso.IsoGridSquare | number, arg3: number, arg4: number, arg5: number | boolean, arg6: boolean, arg7?: boolean, arg8?: number, arg9?: number, arg10?: number): zombie.iso.IsoMarkers$IsoMarker;
+      addIsoMarker(arg0: string | se.krka.kahlua.vm.KahluaTable, arg1: zombie.iso.IsoGridSquare | se.krka.kahlua.vm.KahluaTable, arg2: number | zombie.iso.IsoGridSquare, arg3: number, arg4: number, arg5: boolean | number, arg6: boolean, arg7?: boolean, arg8?: number, arg9?: number, arg10?: number): zombie.iso.IsoMarkers$IsoMarker;
       /**
        * Method Parameters: 
        *  - (int arg0): zombie.iso.IsoMarkers$CircleIsoMarker
@@ -10331,10 +10335,10 @@ declare module '@asledgehammer/pipewrench' {
       init(): void;
       /**
        * Method Parameters: 
-       *  - (CircleIsoMarker arg0): boolean
        *  - (int arg0): boolean
+       *  - (CircleIsoMarker arg0): boolean
        */
-      removeCircleIsoMarker(arg0: zombie.iso.IsoMarkers$CircleIsoMarker | number): boolean;
+      removeCircleIsoMarker(arg0: number | zombie.iso.IsoMarkers$CircleIsoMarker): boolean;
       /**
        * Method Parameters: 
        *  - (int arg0): boolean
@@ -11746,7 +11750,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoCell arg0, boolean arg1)
        *  - (IsoCell arg0, IsoGridSquare arg1, IsoSprite arg2, boolean arg3)
        */
-      constructor(arg0?: zombie.iso.IsoCell, arg1?: zombie.iso.IsoGridSquare | boolean, arg2?: zombie.iso.sprite.IsoSprite, arg3?: boolean);
+      constructor(arg0?: zombie.iso.IsoCell, arg1?: boolean | zombie.iso.IsoGridSquare, arg2?: zombie.iso.sprite.IsoSprite, arg3?: boolean);
       /**
        * Method Parameters: 
        *  - (String arg0, String arg1, int arg2, float arg3, int arg4, int arg5, boolean arg6, int arg7, boolean arg8, float arg9, ColorInfo arg10): void
@@ -11799,7 +11803,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoMovingObject arg0): number
        *  - (float arg0, float arg1): number
        */
-      DistToSquared(arg0: number | zombie.iso.IsoMovingObject, arg1?: number): number;
+      DistToSquared(arg0: zombie.iso.IsoMovingObject | number, arg1?: number): number;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -11835,7 +11839,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Vector2 arg0, IsoObject arg1, float arg2): void
        *  - (HandWeapon arg0, IsoGameCharacter arg1, float arg2, boolean arg3, float arg4): number
        */
-      Hit(arg0: zombie.inventory.types.HandWeapon | zombie.iso.Vector2, arg1: zombie.characters.IsoGameCharacter | zombie.iso.IsoObject, arg2: number, arg3?: boolean, arg4?: number): number | void;
+      Hit(arg0: zombie.iso.Vector2 | zombie.inventory.types.HandWeapon, arg1: zombie.iso.IsoObject | zombie.characters.IsoGameCharacter, arg2: number, arg3?: boolean, arg4?: number): void | number;
       /**
        * Method Parameters: 
        *  - (BaseVehicle arg0, float arg1): void
@@ -13102,10 +13106,10 @@ declare module '@asledgehammer/pipewrench' {
       setDestroyed(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (ArrayList arg0): void
@@ -13282,7 +13286,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (boolean arg0): void
        *  - (int arg0, boolean arg1): void
        */
-      setOutlineHlAttached(arg0: number | boolean, arg1?: boolean): void;
+      setOutlineHlAttached(arg0: boolean | number, arg1?: boolean): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -13375,10 +13379,10 @@ declare module '@asledgehammer/pipewrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -13558,7 +13562,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGridSquare arg0): zombie.iso.IsoObject
        *  - (int arg0, int arg1, int arg2): zombie.iso.IsoObject
        */
-      static FindExternalWaterSource(arg0: number | zombie.iso.IsoGridSquare, arg1?: number, arg2?: number): zombie.iso.IsoObject;
+      static FindExternalWaterSource(arg0: zombie.iso.IsoGridSquare | number, arg1?: number, arg2?: number): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -13721,13 +13725,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty Constructor)
        *  - (IsoCell arg0)
        *  - (IsoGridSquare arg0, String arg1)
-       *  - (IsoGridSquare arg0, String arg1, String arg2)
-       *  - (IsoGridSquare arg0, String arg1, boolean arg2)
-       *  - (IsoCell arg0, IsoGridSquare arg1, IsoSprite arg2)
        *  - (IsoCell arg0, IsoGridSquare arg1, String arg2)
+       *  - (IsoCell arg0, IsoGridSquare arg1, IsoSprite arg2)
+       *  - (IsoGridSquare arg0, String arg1, boolean arg2)
+       *  - (IsoGridSquare arg0, String arg1, String arg2)
        *  - (IsoGridSquare arg0, String arg1, String arg2, boolean arg3)
        */
-      constructor(arg0?: zombie.iso.IsoGridSquare | zombie.iso.IsoCell, arg1?: string | zombie.iso.IsoGridSquare, arg2?: string | boolean | zombie.iso.sprite.IsoSprite, arg3?: boolean);
+      constructor(arg0?: zombie.iso.IsoCell | zombie.iso.IsoGridSquare, arg1?: string | zombie.iso.IsoGridSquare, arg2?: string | zombie.iso.sprite.IsoSprite | boolean, arg3?: boolean);
       /**
        * Method Parameters: 
        *  - (String arg0, String arg1, int arg2, float arg3, int arg4, int arg5, boolean arg6, int arg7, boolean arg8, float arg9, ColorInfo arg10): void
@@ -14608,10 +14612,10 @@ declare module '@asledgehammer/pipewrench' {
       setDamage(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -14673,7 +14677,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (boolean arg0): void
        *  - (int arg0, boolean arg1): void
        */
-      setOutlineHlAttached(arg0: number | boolean, arg1?: boolean): void;
+      setOutlineHlAttached(arg0: boolean | number, arg1?: boolean): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -14736,10 +14740,10 @@ declare module '@asledgehammer/pipewrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -14864,7 +14868,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGridSquare arg0): zombie.iso.IsoObject
        *  - (int arg0, int arg1, int arg2): zombie.iso.IsoObject
        */
-      static FindExternalWaterSource(arg0: number | zombie.iso.IsoGridSquare, arg1?: number, arg2?: number): zombie.iso.IsoObject;
+      static FindExternalWaterSource(arg0: zombie.iso.IsoGridSquare | number, arg1?: number, arg2?: number): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -15440,7 +15444,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoMovingObject arg0): number
        *  - (float arg0, float arg1): number
        */
-      DistToSquared(arg0: number | zombie.iso.IsoMovingObject, arg1?: number): number;
+      DistToSquared(arg0: zombie.iso.IsoMovingObject | number, arg1?: number): number;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -15476,7 +15480,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Vector2 arg0, IsoObject arg1, float arg2): void
        *  - (HandWeapon arg0, IsoGameCharacter arg1, float arg2, boolean arg3, float arg4): number
        */
-      Hit(arg0: zombie.inventory.types.HandWeapon | zombie.iso.Vector2, arg1: zombie.characters.IsoGameCharacter | zombie.iso.IsoObject, arg2: number, arg3?: boolean, arg4?: number): number | void;
+      Hit(arg0: zombie.iso.Vector2 | zombie.inventory.types.HandWeapon, arg1: zombie.iso.IsoObject | zombie.characters.IsoGameCharacter, arg2: number, arg3?: boolean, arg4?: number): void | number;
       /**
        * Method Parameters: 
        *  - (BaseVehicle arg0, float arg1): void
@@ -16743,10 +16747,10 @@ declare module '@asledgehammer/pipewrench' {
       setDestroyed(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoDirections arg0): void
        *  - (int arg0): void
+       *  - (IsoDirections arg0): void
        */
-      setDir(arg0: zombie.iso.IsoDirections | number): void;
+      setDir(arg0: number | zombie.iso.IsoDirections): void;
       /**
        * Method Parameters: 
        *  - (ArrayList arg0): void
@@ -16923,7 +16927,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (boolean arg0): void
        *  - (int arg0, boolean arg1): void
        */
-      setOutlineHlAttached(arg0: number | boolean, arg1?: boolean): void;
+      setOutlineHlAttached(arg0: boolean | number, arg1?: boolean): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -17016,10 +17020,10 @@ declare module '@asledgehammer/pipewrench' {
       setSpecialTooltip(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoSprite arg0): void
        *  - (String arg0): void
+       *  - (IsoSprite arg0): void
        */
-      setSprite(arg0: zombie.iso.sprite.IsoSprite | string): void;
+      setSprite(arg0: string | zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -17199,7 +17203,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGridSquare arg0): zombie.iso.IsoObject
        *  - (int arg0, int arg1, int arg2): zombie.iso.IsoObject
        */
-      static FindExternalWaterSource(arg0: number | zombie.iso.IsoGridSquare, arg1?: number, arg2?: number): zombie.iso.IsoObject;
+      static FindExternalWaterSource(arg0: zombie.iso.IsoGridSquare | number, arg1?: number, arg2?: number): zombie.iso.IsoObject;
       /**
        * @noSelf
        *
@@ -17689,7 +17693,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): java.util.HashMap<string, java.util.ArrayList<string>>
        *  - (String arg0): java.util.ArrayList<string>
        */
-      getAllTiles(arg0?: string): java.util.ArrayList<string> | java.util.HashMap<string, java.util.ArrayList<string>>;
+      getAllTiles(arg0?: string): java.util.HashMap<string, java.util.ArrayList<string>> | java.util.ArrayList<string>;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.ArrayList<string>
@@ -18075,10 +18079,10 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (RandomAccessFile arg0): number
        *  - (InputStream arg0): number
+       *  - (RandomAccessFile arg0): number
        */
-      static readInt(arg0: java.io.RandomAccessFile | java.io.InputStream): number;
+      static readInt(arg0: java.io.InputStream | java.io.RandomAccessFile): number;
       /**
        * @noSelf
        *
@@ -18520,7 +18524,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoChunk arg0): number
        *  - (int arg0, int arg1, int arg2, int arg3): number
        */
-      getAreaOverlapping(arg0: number | zombie.iso.IsoChunk, arg1?: number, arg2?: number, arg3?: number): number;
+      getAreaOverlapping(arg0: zombie.iso.IsoChunk | number, arg1?: number, arg2?: number, arg3?: number): number;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.iso.BuildingDef
@@ -19232,8 +19236,8 @@ declare module '@asledgehammer/pipewrench' {
       angleTo(arg0: zombie.iso.Vector2): number;
       /**
        * Method Parameters: 
-       *  - (Empty): zombie.iso.Vector3
        *  - (Empty): any
+       *  - (Empty): zombie.iso.Vector3
        */
       clone(): any;
       /**
@@ -19382,7 +19386,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, String arg1, IsoGridSquare arg2, float arg3, float arg4, float arg5, boolean arg6, float arg7): zombie.iso.WorldMarkers$GridSquareMarker
        *  - (String arg0, String arg1, IsoGridSquare arg2, float arg3, float arg4, float arg5, boolean arg6, float arg7, float arg8, float arg9, float arg10): zombie.iso.WorldMarkers$GridSquareMarker
        */
-      addGridSquareMarker(arg0: string | zombie.iso.IsoGridSquare, arg1: string | number, arg2: zombie.iso.IsoGridSquare | number, arg3: number, arg4: number | boolean, arg5: number, arg6?: boolean, arg7?: number, arg8?: number, arg9?: number, arg10?: number): zombie.iso.WorldMarkers$GridSquareMarker;
+      addGridSquareMarker(arg0: zombie.iso.IsoGridSquare | string, arg1: number | string, arg2: number | zombie.iso.IsoGridSquare, arg3: number, arg4: boolean | number, arg5: number, arg6?: boolean, arg7?: number, arg8?: number, arg9?: number, arg10?: number): zombie.iso.WorldMarkers$GridSquareMarker;
       /**
        * Method Parameters: 
        *  - (IsoPlayer arg0, int arg1, int arg2): zombie.iso.WorldMarkers$PlayerHomingPoint
@@ -19427,16 +19431,16 @@ declare module '@asledgehammer/pipewrench' {
       removeAllHomingPoints(arg0: zombie.characters.IsoPlayer): void;
       /**
        * Method Parameters: 
-       *  - (DirectionArrow arg0): boolean
        *  - (int arg0): boolean
+       *  - (DirectionArrow arg0): boolean
        */
-      removeDirectionArrow(arg0: zombie.iso.WorldMarkers$DirectionArrow | number): boolean;
+      removeDirectionArrow(arg0: number | zombie.iso.WorldMarkers$DirectionArrow): boolean;
       /**
        * Method Parameters: 
-       *  - (GridSquareMarker arg0): boolean
        *  - (int arg0): boolean
+       *  - (GridSquareMarker arg0): boolean
        */
-      removeGridSquareMarker(arg0: zombie.iso.WorldMarkers$GridSquareMarker | number): boolean;
+      removeGridSquareMarker(arg0: number | zombie.iso.WorldMarkers$GridSquareMarker): boolean;
       /**
        * Method Parameters: 
        *  - (int arg0): boolean
@@ -19445,16 +19449,16 @@ declare module '@asledgehammer/pipewrench' {
       removeHomingPoint(arg0: number | zombie.iso.WorldMarkers$PlayerHomingPoint): boolean;
       /**
        * Method Parameters: 
-       *  - (IsoPlayer arg0, DirectionArrow arg1): boolean
        *  - (IsoPlayer arg0, int arg1): boolean
+       *  - (IsoPlayer arg0, DirectionArrow arg1): boolean
        */
-      removePlayerDirectionArrow(arg0: zombie.characters.IsoPlayer, arg1: zombie.iso.WorldMarkers$DirectionArrow | number): boolean;
+      removePlayerDirectionArrow(arg0: zombie.characters.IsoPlayer, arg1: number | zombie.iso.WorldMarkers$DirectionArrow): boolean;
       /**
        * Method Parameters: 
-       *  - (IsoPlayer arg0, PlayerHomingPoint arg1): boolean
        *  - (IsoPlayer arg0, int arg1): boolean
+       *  - (IsoPlayer arg0, PlayerHomingPoint arg1): boolean
        */
-      removePlayerHomingPoint(arg0: zombie.characters.IsoPlayer, arg1: zombie.iso.WorldMarkers$PlayerHomingPoint | number): boolean;
+      removePlayerHomingPoint(arg0: zombie.characters.IsoPlayer, arg1: number | zombie.iso.WorldMarkers$PlayerHomingPoint): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): void

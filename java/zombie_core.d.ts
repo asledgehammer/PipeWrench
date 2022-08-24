@@ -94,13 +94,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty Constructor)
        *  - (int arg0)
        *  - (Color arg0)
-       *  - (Color arg0, Color arg1, float arg2)
-       *  - (int arg0, int arg1, int arg2)
        *  - (float arg0, float arg1, float arg2)
-       *  - (int arg0, int arg1, int arg2, int arg3)
+       *  - (int arg0, int arg1, int arg2)
+       *  - (Color arg0, Color arg1, float arg2)
        *  - (float arg0, float arg1, float arg2, float arg3)
+       *  - (int arg0, int arg1, int arg2, int arg3)
        */
-      constructor(arg0?: zombie.core.Color | number, arg1?: zombie.core.Color | number, arg2?: number, arg3?: number);
+      constructor(arg0?: number | zombie.core.Color, arg1?: number | zombie.core.Color, arg2?: number, arg3?: number);
       /**
        * Method Parameters: 
        *  - (Color arg0): void
@@ -229,7 +229,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2): zombie.core.Color
        *  - (float arg0, float arg1, float arg2, float arg3): zombie.core.Color
        */
-      set(arg0: number | zombie.core.Color, arg1?: number, arg2?: number, arg3?: number): zombie.core.Color;
+      set(arg0: zombie.core.Color | number, arg1?: number, arg2?: number, arg3?: number): zombie.core.Color;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -281,7 +281,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Color arg0): number
        *  - (float arg0, float arg1, float arg2, float arg3): number
        */
-      static colorToABGR(arg0: number | zombie.core.Color, arg1?: number, arg2?: number, arg3?: number): number;
+      static colorToABGR(arg0: zombie.core.Color | number, arg1?: number, arg2?: number, arg3?: number): number;
       /**
        * @noSelf
        *
@@ -2745,14 +2745,14 @@ declare module '@asledgehammer/pipewrench' {
 
       /**
        * Constructors: 
-       *  - (Color arg0)
        *  - (int arg0)
+       *  - (Color arg0)
        *  - (ImmutableColor arg0)
+       *  - (float arg0, float arg1, float arg2)
        *  - (int arg0, int arg1, int arg2)
        *  - (Color arg0, Color arg1, float arg2)
-       *  - (float arg0, float arg1, float arg2)
-       *  - (int arg0, int arg1, int arg2, int arg3)
        *  - (float arg0, float arg1, float arg2, float arg3)
+       *  - (int arg0, int arg1, int arg2, int arg3)
        */
       constructor(arg0: number | zombie.core.Color | zombie.core.ImmutableColor, arg1?: number | zombie.core.Color, arg2?: number, arg3?: number);
       /**
@@ -3443,7 +3443,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10, float arg11, float arg12, float arg13, float arg14, float arg15, float arg16, Consumer arg17): void
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, float arg9, float arg10, float arg11, float arg12, float arg13, float arg14, float arg15, float arg16, float arg17, float arg18, float arg19, float arg20, float arg21, float arg22, float arg23, float arg24, Consumer arg25): void
        */
-      render(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg10?: number, arg11?: number, arg12?: number, arg13?: number | java.util._function_.Consumer<zombie.core.textures.TextureDraw>, arg14?: number, arg15?: number, arg16?: number, arg17?: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg18?: number, arg19?: number, arg20?: number, arg21?: number, arg22?: number, arg23?: number, arg24?: number, arg25?: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): void;
+      render(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg10?: number, arg11?: number, arg12?: number, arg13?: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg14?: number, arg15?: number, arg16?: number, arg17?: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg18?: number, arg19?: number, arg20?: number, arg21?: number, arg22?: number, arg23?: number, arg24?: number, arg25?: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, float arg9, float arg10, float arg11, float arg12, Consumer arg13): void
@@ -3455,7 +3455,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10, float arg11, float arg12): void
        *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10, float arg11, float arg12, float arg13, float arg14, float arg15, float arg16, float arg17, float arg18, float arg19, float arg20): void
        */
-      renderPoly(arg0: zombie.core.textures.Texture | number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number, arg12?: number, arg13?: number, arg14?: number, arg15?: number, arg16?: number, arg17?: number, arg18?: number, arg19?: number, arg20?: number): void;
+      renderPoly(arg0: number | zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number, arg12?: number, arg13?: number, arg14?: number, arg15?: number, arg16?: number, arg17?: number, arg18?: number, arg19?: number, arg20?: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0, int arg1, int arg2, int arg3, float arg4, float arg5, float arg6, float arg7): void
@@ -3764,10 +3764,10 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (Language arg0): void
        *  - (int arg0): void
+       *  - (Language arg0): void
        */
-      static setLanguage(arg0: zombie.core.Language | number): void;
+      static setLanguage(arg0: number | zombie.core.Language): void;
     }
   }
 }

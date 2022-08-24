@@ -244,8 +244,8 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (String arg0): void
        *  - (Object arg0): void
+       *  - (String arg0): void
        *  - (DebugType arg0, String arg1): void
        */
       static log(arg0: any, arg1?: string): void;
@@ -302,19 +302,14 @@ declare module '@asledgehammer/pipewrench' {
       constructor(arg0: java.io.PrintStream, arg1: java.io.PrintStream, arg2: java.io.PrintStream, arg3: zombie.debug.IDebugLogFormatter);
       /**
        * Method Parameters: 
-       *  - (CharSequence arg0): java.lang.Appendable
-       *  - (CharSequence arg0): java.io.PrintStream
        *  - (char arg0): java.lang.Appendable
        *  - (char arg0): java.io.PrintStream
+       *  - (CharSequence arg0): java.lang.Appendable
+       *  - (CharSequence arg0): java.io.PrintStream
        *  - (CharSequence arg0, int arg1, int arg2): java.lang.Appendable
        *  - (CharSequence arg0, int arg1, int arg2): java.io.PrintStream
        */
-      append(arg0: java.lang.CharSequence | string, arg1?: number, arg2?: number): java.lang.Appendable | java.io.PrintStream;
-      /**
-       * Method Parameters: 
-       *  - (Empty): java.nio.charset.Charset
-       */
-      charset(): java.nio.charset.Charset;
+      append(arg0: string | java.lang.CharSequence, arg1?: number, arg2?: number): java.lang.Appendable | java.io.PrintStream;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -352,7 +347,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, Object... arg1): java.io.PrintStream
        *  - (Locale arg0, String arg1, Object... arg2): java.io.PrintStream
        */
-      format(arg0: java.util.Locale | string, arg1: string | any, arg2?: any): java.io.PrintStream;
+      format(arg0: string | java.util.Locale, arg1: any | string, arg2?: any): java.io.PrintStream;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -366,15 +361,15 @@ declare module '@asledgehammer/pipewrench' {
       noise(arg0: string, arg1?: any, arg2?: any, arg3?: any, arg4?: any, arg5?: any, arg6?: any): void;
       /**
        * Method Parameters: 
-       *  - (float arg0): void
-       *  - (long arg0): void
-       *  - (int arg0): void
+       *  - (char[] arg0): void
+       *  - (boolean arg0): void
        *  - (char arg0): void
        *  - (double arg0): void
-       *  - (String arg0): void
+       *  - (float arg0): void
+       *  - (int arg0): void
        *  - (Object arg0): void
-       *  - (boolean arg0): void
-       *  - (char[] arg0): void
+       *  - (String arg0): void
+       *  - (long arg0): void
        */
       print(arg0: any): void;
       /**
@@ -389,7 +384,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): void
        *  - (int arg0, String arg1): void
        */
-      printStackTrace(arg0?: number | string, arg1?: string): void;
+      printStackTrace(arg0?: string | number, arg1?: string): void;
       /**
        * Method Parameters: 
        *  - (String arg0, boolean arg1, Object... arg2): void
@@ -404,15 +399,15 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Empty): void
-       *  - (Object arg0): void
-       *  - (String arg0): void
        *  - (char[] arg0): void
-       *  - (double arg0): void
        *  - (boolean arg0): void
        *  - (char arg0): void
+       *  - (double arg0): void
        *  - (float arg0): void
-       *  - (long arg0): void
        *  - (int arg0): void
+       *  - (Object arg0): void
+       *  - (String arg0): void
+       *  - (long arg0): void
        *  - (String arg0, Object arg1): void
        *  - (String arg0, Object arg1, Object arg2): void
        *  - (String arg0, Object arg1, Object arg2, Object arg3): void
@@ -641,7 +636,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, boolean arg1): zombie.debug.BooleanDebugOption
        *  - (IDebugOptionGroup arg0, String arg1, boolean arg2): zombie.debug.BooleanDebugOption
        */
-      static newDebugOnlyOption(arg0: zombie.debug.options.IDebugOptionGroup | string, arg1: string | boolean, arg2?: boolean): zombie.debug.BooleanDebugOption;
+      static newDebugOnlyOption(arg0: string | zombie.debug.options.IDebugOptionGroup, arg1: boolean | string, arg2?: boolean): zombie.debug.BooleanDebugOption;
       /**
        * @noSelf
        *

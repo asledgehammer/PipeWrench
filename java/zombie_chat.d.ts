@@ -120,10 +120,10 @@ declare module '@asledgehammer/pipewrench' {
       removeMember(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (ServerChatMessage arg0): void
        *  - (ChatMessage arg0): void
+       *  - (ServerChatMessage arg0): void
        */
-      sendMessageToChatMembers(arg0: zombie.chat.ServerChatMessage | zombie.chat.ChatMessage): void;
+      sendMessageToChatMembers(arg0: zombie.chat.ChatMessage | zombie.chat.ServerChatMessage): void;
       /**
        * Method Parameters: 
        *  - (short arg0, ChatMessage arg1): void
@@ -137,10 +137,10 @@ declare module '@asledgehammer/pipewrench' {
       sendPlayerJoinChatPacket(arg0: zombie.core.raknet.UdpConnection): void;
       /**
        * Method Parameters: 
-       *  - (UdpConnection arg0): void
        *  - (short arg0): void
+       *  - (UdpConnection arg0): void
        */
-      sendPlayerLeaveChatPacket(arg0: zombie.core.raknet.UdpConnection | number): void;
+      sendPlayerLeaveChatPacket(arg0: number | zombie.core.raknet.UdpConnection): void;
       /**
        * Method Parameters: 
        *  - (ChatMessage arg0, DeviceData arg1): void
@@ -171,7 +171,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (ChatMessage arg0): void
        *  - (String arg0, String arg1): void
        */
-      showMessage(arg0: string | zombie.chat.ChatMessage, arg1?: string): void;
+      showMessage(arg0: zombie.chat.ChatMessage | string, arg1?: string): void;
       /**
        * Method Parameters: 
        *  - (ArrayList arg0): void
@@ -351,8 +351,8 @@ declare module '@asledgehammer/pipewrench' {
       constructor(arg0: zombie.chat.ChatBase, arg1: string | java.time.LocalDateTime, arg2?: string);
       /**
        * Method Parameters: 
-       *  - (Empty): any
        *  - (Empty): zombie.chat.ChatMessage
+       *  - (Empty): any
        */
       clone(): any;
       /**
@@ -855,8 +855,8 @@ declare module '@asledgehammer/pipewrench' {
       constructor(arg0: zombie.chat.ChatBase, arg1: string);
       /**
        * Method Parameters: 
-       *  - (Empty): any
        *  - (Empty): zombie.chat.ChatMessage
+       *  - (Empty): any
        */
       clone(): any;
       /**

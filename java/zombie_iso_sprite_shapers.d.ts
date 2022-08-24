@@ -17,8 +17,8 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
-       *  - (TextureDraw arg0): void
        *  - (Object arg0): void
+       *  - (TextureDraw arg0): void
        */
       accept(arg0: any): void;
       /**

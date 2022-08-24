@@ -82,7 +82,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0)
        *  - (boolean arg0, int arg1)
        */
-      constructor(arg0?: boolean | number, arg1?: number);
+      constructor(arg0?: number | boolean, arg1?: number);
       /**
        * Method Parameters: 
        *  - (float arg0): number
@@ -184,7 +184,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0)
        *  - (boolean arg0, int arg1)
        */
-      constructor(arg0?: boolean | number, arg1?: number);
+      constructor(arg0?: number | boolean, arg1?: number);
       /**
        * Method Parameters: 
        *  - (short arg0): number

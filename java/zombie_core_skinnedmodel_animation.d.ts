@@ -909,7 +909,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Vector3f arg0, float arg1, float arg2, float arg3): void
        *  - (Vector3f arg0, Vector3f arg1, float arg2, float arg3, float arg4): void
        */
-      static setIfNotNull(arg0: org.lwjgl.util.vector.Vector3f | org.lwjgl.util.vector.Quaternion, arg1: number | org.lwjgl.util.vector.Quaternion | org.lwjgl.util.vector.Vector3f, arg2?: number, arg3?: number, arg4?: number): void;
+      static setIfNotNull(arg0: org.lwjgl.util.vector.Quaternion | org.lwjgl.util.vector.Vector3f, arg1: org.lwjgl.util.vector.Quaternion | number | org.lwjgl.util.vector.Vector3f, arg2?: number, arg3?: number, arg4?: number): void;
     }
   }
 }

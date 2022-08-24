@@ -146,11 +146,11 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
-       *  - (byte arg0, String arg1): void
        *  - (byte arg0, boolean arg1): void
+       *  - (byte arg0, String arg1): void
        *  - (byte arg0, float arg1, float arg2): boolean
        */
-      updateField(arg0: number, arg1: string | boolean | number, arg2?: number): void | boolean;
+      updateField(arg0: number, arg1: boolean | string | number, arg2?: number): void | boolean;
     }
     /**
      * @customConstructor ClientChunkRequest.new
@@ -1341,10 +1341,10 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoGridSquare arg0): void
        *  - (IsoGameCharacter arg0): void
+       *  - (IsoGridSquare arg0): void
        */
-      static sendStopFire(arg0: zombie.iso.IsoGridSquare | zombie.characters.IsoGameCharacter): void;
+      static sendStopFire(arg0: zombie.characters.IsoGameCharacter | zombie.iso.IsoGridSquare): void;
       /**
        * @noSelf
        *

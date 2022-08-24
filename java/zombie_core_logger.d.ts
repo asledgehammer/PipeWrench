@@ -18,7 +18,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): void
        *  - (String arg0, String arg1): void
        */
-      write(arg0: string | java.lang.Exception, arg1?: string): void;
+      write(arg0: java.lang.Exception | string, arg1?: string): void;
       /**
        * Method Parameters: 
        *  - (String arg0, String arg1): void

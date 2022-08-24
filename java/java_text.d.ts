@@ -43,12 +43,12 @@ declare module '@asledgehammer/pipewrench' {
       equals(arg0: any): boolean;
       /**
        * Method Parameters: 
-       *  - (Date arg0): string
        *  - (Object arg0): string
-       *  - (Date arg0, StringBuffer arg1, FieldPosition arg2): java.lang.StringBuffer
+       *  - (Date arg0): string
        *  - (Object arg0, StringBuffer arg1, FieldPosition arg2): java.lang.StringBuffer
+       *  - (Date arg0, StringBuffer arg1, FieldPosition arg2): java.lang.StringBuffer
        */
-      format(arg0: any, arg1?: java.lang.StringBuffer, arg2?: java.text.FieldPosition): java.lang.StringBuffer | string;
+      format(arg0: any, arg1?: java.lang.StringBuffer, arg2?: java.text.FieldPosition): string | java.lang.StringBuffer;
       /**
        * Method Parameters: 
        *  - (Object arg0): java.text.AttributedCharacterIterator

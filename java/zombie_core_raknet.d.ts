@@ -507,7 +507,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (long arg0, String arg1): void
        *  - (String arg0, int arg1, String arg2): void
        */
-      Connect(arg0: string | number, arg1: number | string, arg2?: string): void;
+      Connect(arg0: number | string, arg1: string | number, arg2?: string): void;
       /**
        * Method Parameters: 
        *  - (Empty): java.nio.ByteBuffer

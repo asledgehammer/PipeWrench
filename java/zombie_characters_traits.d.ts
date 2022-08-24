@@ -129,8 +129,8 @@ declare module '@asledgehammer/pipewrench' {
       clear(): void;
       /**
        * Method Parameters: 
-       *  - (String arg0): boolean
        *  - (Object arg0): boolean
+       *  - (String arg0): boolean
        */
       contains(arg0: any): boolean;
       /**
@@ -150,8 +150,8 @@ declare module '@asledgehammer/pipewrench' {
       isEmpty(): boolean;
       /**
        * Method Parameters: 
-       *  - (String arg0): boolean
        *  - (Object arg0): boolean
+       *  - (String arg0): boolean
        */
       remove(arg0: any): boolean;
       /**

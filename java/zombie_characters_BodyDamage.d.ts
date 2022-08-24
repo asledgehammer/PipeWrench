@@ -17,10 +17,10 @@ declare module '@asledgehammer/pipewrench' {
       constructor(arg0: zombie.characters.IsoGameCharacter);
       /**
        * Method Parameters: 
-       *  - (BodyPartType arg0, float arg1): void
        *  - (int arg0, float arg1): void
+       *  - (BodyPartType arg0, float arg1): void
        */
-      AddDamage(arg0: zombie.characters.BodyDamage.BodyPartType | number, arg1: number): void;
+      AddDamage(arg0: number | zombie.characters.BodyDamage.BodyPartType, arg1: number): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -68,10 +68,10 @@ declare module '@asledgehammer/pipewrench' {
       IncreasePanicFloat(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (BodyPartType arg0): boolean
        *  - (int arg0): boolean
+       *  - (BodyPartType arg0): boolean
        */
-      IsBandaged(arg0: zombie.characters.BodyDamage.BodyPartType | number): boolean;
+      IsBandaged(arg0: number | zombie.characters.BodyDamage.BodyPartType): boolean;
       /**
        * Method Parameters: 
        *  - (int arg0): boolean
@@ -80,10 +80,10 @@ declare module '@asledgehammer/pipewrench' {
       IsBitten(arg0: number | zombie.characters.BodyDamage.BodyPartType): boolean;
       /**
        * Method Parameters: 
-       *  - (BodyPartType arg0): boolean
        *  - (int arg0): boolean
+       *  - (BodyPartType arg0): boolean
        */
-      IsBleeding(arg0: zombie.characters.BodyDamage.BodyPartType | number): boolean;
+      IsBleeding(arg0: number | zombie.characters.BodyDamage.BodyPartType): boolean;
       /**
        * Method Parameters: 
        *  - (int arg0): boolean
@@ -92,10 +92,10 @@ declare module '@asledgehammer/pipewrench' {
       IsBleedingStemmed(arg0: number | zombie.characters.BodyDamage.BodyPartType): boolean;
       /**
        * Method Parameters: 
-       *  - (BodyPartType arg0): boolean
        *  - (int arg0): boolean
+       *  - (BodyPartType arg0): boolean
        */
-      IsCortorised(arg0: zombie.characters.BodyDamage.BodyPartType | number): boolean;
+      IsCortorised(arg0: number | zombie.characters.BodyDamage.BodyPartType): boolean;
       /**
        * Method Parameters: 
        *  - (BodyPartType arg0): boolean
@@ -115,10 +115,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Empty): boolean
-       *  - (BodyPartType arg0): boolean
        *  - (int arg0): boolean
+       *  - (BodyPartType arg0): boolean
        */
-      IsInfected(arg0?: zombie.characters.BodyDamage.BodyPartType | number): boolean;
+      IsInfected(arg0?: number | zombie.characters.BodyDamage.BodyPartType): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -230,10 +230,10 @@ declare module '@asledgehammer/pipewrench' {
       SetCut(arg0: number, arg1: boolean): void;
       /**
        * Method Parameters: 
-       *  - (BodyPartType arg0, boolean arg1): void
        *  - (int arg0, boolean arg1): void
+       *  - (BodyPartType arg0, boolean arg1): void
        */
-      SetScratched(arg0: zombie.characters.BodyDamage.BodyPartType | number, arg1: boolean): void;
+      SetScratched(arg0: number | zombie.characters.BodyDamage.BodyPartType, arg1: boolean): void;
       /**
        * Method Parameters: 
        *  - (int arg0, boolean arg1): void
@@ -241,10 +241,10 @@ declare module '@asledgehammer/pipewrench' {
       SetScratchedFromWeapon(arg0: number, arg1: boolean): void;
       /**
        * Method Parameters: 
-       *  - (BodyPartType arg0, boolean arg1): void
        *  - (int arg0, boolean arg1): void
+       *  - (BodyPartType arg0, boolean arg1): void
        */
-      SetWounded(arg0: zombie.characters.BodyDamage.BodyPartType | number, arg1: boolean): void;
+      SetWounded(arg0: number | zombie.characters.BodyDamage.BodyPartType, arg1: boolean): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -1627,10 +1627,10 @@ declare module '@asledgehammer/pipewrench' {
       stitched(): boolean;
       /**
        * Method Parameters: 
-       *  - (BodyPart arg0, Updater arg1): void
        *  - (ByteBuffer arg0, byte arg1): void
+       *  - (BodyPart arg0, Updater arg1): void
        */
-      sync(arg0: zombie.characters.BodyDamage.BodyPart | java.nio.ByteBuffer, arg1: zombie.network.BodyDamageSync$Updater | number): void;
+      sync(arg0: java.nio.ByteBuffer | zombie.characters.BodyDamage.BodyPart, arg1: number | zombie.network.BodyDamageSync$Updater): void;
     }
     /**
      * @customConstructor BodyPartLast.new
@@ -2368,10 +2368,10 @@ declare module '@asledgehammer/pipewrench' {
       save(arg0: java.nio.ByteBuffer): void;
       /**
        * Method Parameters: 
-       *  - (Metabolics arg0): void
        *  - (float arg0): void
+       *  - (Metabolics arg0): void
        */
-      setMetabolicTarget(arg0: zombie.characters.BodyDamage.Metabolics | number): void;
+      setMetabolicTarget(arg0: number | zombie.characters.BodyDamage.Metabolics): void;
       /**
        * Method Parameters: 
        *  - (Empty): number

@@ -34,11 +34,11 @@ declare module '@asledgehammer/pipewrench' {
       CreateKeySet(): void;
       /**
        * Method Parameters: 
-       *  - (String arg0): boolean
        *  - (Double arg0): boolean
+       *  - (String arg0): boolean
        *  - (IsoFlagType arg0): boolean
        */
-      Is(arg0: string | number | zombie.iso.SpriteDetails.IsoFlagType): boolean;
+      Is(arg0: number | string | zombie.iso.SpriteDetails.IsoFlagType): boolean;
       /**
        * Method Parameters: 
        *  - (IsoFlagType arg0): void
@@ -46,7 +46,7 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoFlagType arg0, String arg1): void
        *  - (String arg0, String arg1, boolean arg2): void
        */
-      Set(arg0: string | zombie.iso.SpriteDetails.IsoFlagType, arg1?: string, arg2?: boolean): void;
+      Set(arg0: zombie.iso.SpriteDetails.IsoFlagType | string, arg1?: string, arg2?: boolean): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void

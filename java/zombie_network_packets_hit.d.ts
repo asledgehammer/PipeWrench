@@ -258,10 +258,10 @@ declare module '@asledgehammer/pipewrench' {
       parse(arg0: java.nio.ByteBuffer, arg1: zombie.core.raknet.UdpConnection): void;
       /**
        * Method Parameters: 
-       *  - (BaseVehicle arg0): void
        *  - (short arg0): void
+       *  - (BaseVehicle arg0): void
        */
-      set(arg0: zombie.vehicles.BaseVehicle | number): void;
+      set(arg0: number | zombie.vehicles.BaseVehicle): void;
       /**
        * Method Parameters: 
        *  - (ByteBufferWriter arg0): void
