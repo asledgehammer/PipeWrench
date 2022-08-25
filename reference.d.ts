@@ -1,4 +1,5 @@
 // [JAVA-PARTIAL:START]
+
 /// <reference path="java/fmod_fmod.d.ts" />
 /// <reference path="java/gnu_trove_function.d.ts" />
 /// <reference path="java/gnu_trove_iterator.d.ts" />
@@ -136,7 +137,9 @@
 /// <reference path="java/zombie_worldMap_styles.d.ts" />
 /// <reference path="java/zombie_worldMap_symbols.d.ts" />
 /// <reference path="java/zombie_world_moddata.d.ts" />
-// [JAVA-PARTIAL:STOP]// [LUA-PARTIAL:STOP]
+// [JAVA-PARTIAL:STOP]
+// [LUA-PARTIAL:STOP]
+
 /// <reference path="lua/client/Blacksmith/ISUI/ISBlacksmithMenu.d.ts" />
 /// <reference path="lua/client/Blacksmith/ISUI/ISFurnaceInfoWindow.d.ts" />
 /// <reference path="lua/client/Blacksmith/TimedActions/ISAddCoalInFurnace.d.ts" />
