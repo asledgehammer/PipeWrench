@@ -2,6 +2,7 @@
 /// <reference path="reference.d.ts" />
 declare module '@asledgehammer/pipewrench' {
   // [JAVA-PARTIAL:START]
+
   /** @customConstructor AStarPathFinderResult.new */
   export class AStarPathFinderResult extends zombie.ai.astar.AStarPathFinderResult {}
   /** @customConstructor AbstractStyle.new */
@@ -5787,7 +5788,9 @@ declare module '@asledgehammer/pipewrench' {
   export function zpopSpawnTimeToZero(arg0: number, arg1: number): void;
   export function addEventListener(id: string, listener: any): void;
   export function removeEventListener(id: string, listener: any): void;
-  // [JAVA-PARTIAL:END]// [LUA-PARTIAL:START]
+  // [JAVA-PARTIAL:END]
+  // [LUA-PARTIAL:START]
+
   // [lua/client/Blacksmith/ISUI/ISBlacksmithMenu.d.ts]
   export abstract class ISBlacksmithMenu extends lua.client.Blacksmith.ISUI.ISBlacksmithMenu {}
 

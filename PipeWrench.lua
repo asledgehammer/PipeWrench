@@ -1,5 +1,6 @@
 local Exports = {}
--- [LUA-PARTIAL:START]
+-- [JAVA-PARTIAL:START]
+
 function Exports.tonumber(arg) return tonumber(arg) end
 function Exports.tostring(arg) return tostring(arg) end
 function Exports.global(id) return _G[id] end
@@ -1492,7 +1493,9 @@ Exports.engineStateTypes = loadstring("return _G['engineStateTypes']")()
 Exports.l_receive = loadstring("return _G['l_receive']")()
 Exports.l_send = loadstring("return _G['l_send']")()
 Exports.vector2 = loadstring("return _G['vector2']")()
--- [LUA-PARTIAL:STOP]-- [JAVA-PARTIAL:START]
+-- [JAVA-PARTIAL:STOP]
+-- [LUA-PARTIAL:START]
+
 _G.PIPEWRENCH_READY = false
 triggerEvent('OnPipeWrenchBoot', false)
 Events.OnGameBoot.Add(function()
@@ -3991,4 +3994,5 @@ Events.OnGameBoot.Add(function()
   -- Trigger reimport blocks for all compiled PipeWrench TypeScript file(s).
   triggerEvent('OnPipeWrenchBoot', true)
 end)
--- [JAVA-PARTIAL:STOP]return Exports
+-- [LUA-PARTIAL:STOP]
+return Exports
