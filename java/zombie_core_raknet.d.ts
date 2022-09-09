@@ -138,11 +138,6 @@ declare module '@asledgehammer/pipewrench' {
       GetNetStatistics(arg0: number): zombie.core.znet.ZNetStatistics;
       /**
        * Method Parameters: 
-       *  - (long arg0): zombie.core.znet.ZNetSessionState
-       */
-      GetP2PSessionState(arg0: number): zombie.core.znet.ZNetSessionState;
-      /**
-       * Method Parameters: 
        *  - (Empty): string
        */
       GetServerIP(): string;
@@ -238,9 +233,9 @@ declare module '@asledgehammer/pipewrench' {
       Startup(arg0: number): number;
       /**
        * Method Parameters: 
-       *  - (long arg0): void
+       *  - (long arg0, String arg1): void
        */
-      disconnect(arg0: number): void;
+      disconnect(arg0: number, arg1: string): void;
       /**
        * Method Parameters: 
        *  - (int arg0): number
@@ -340,6 +335,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): number
        */
       getAveragePing(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getBufferPosition(): number;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -591,10 +591,9 @@ declare module '@asledgehammer/pipewrench' {
       constructor(arg0: number, arg1: number, arg2: string, arg3: boolean);
       /**
        * Method Parameters: 
-       *  - (long arg0, String arg1): void
        *  - (String arg0, int arg1, String arg2): void
        */
-      Connect(arg0: number | string, arg1: string | number, arg2?: string): void;
+      Connect(arg0: string, arg1: number, arg2: string): void;
       /**
        * Method Parameters: 
        *  - (Empty): java.nio.ByteBuffer
@@ -612,6 +611,11 @@ declare module '@asledgehammer/pipewrench' {
       Shutdown(): void;
       /**
        * Method Parameters: 
+       *  - (Empty): void
+       */
+      connected(): void;
+      /**
+       * Method Parameters: 
        *  - (PacketType arg0): void
        */
       endPacketBroadcast(arg0: zombie.network.PacketTypes$PacketType): void;
@@ -622,9 +626,9 @@ declare module '@asledgehammer/pipewrench' {
       endPacketBroadcastExcept(arg0: number, arg1: number, arg2: zombie.core.raknet.UdpConnection): void;
       /**
        * Method Parameters: 
-       *  - (long arg0): void
+       *  - (long arg0, String arg1): void
        */
-      forceDisconnect(arg0: number): void;
+      forceDisconnect(arg0: number, arg1: string): void;
       /**
        * Method Parameters: 
        *  - (long arg0): zombie.core.raknet.UdpConnection

@@ -1415,6 +1415,8 @@ declare module '@asledgehammer/pipewrench' {
   export class RenderEffectType extends zombie.iso.objects.RenderEffectType {}
   /** @customConstructor RenderSettings.new */
   export class RenderSettings extends zombie.core.opengl.RenderSettings {}
+  /** @customConstructor RequestState.new */
+  export class RequestState extends zombie.network.GameClient$RequestState {}
   /** @customConstructor RequiredSkill.new */
   export class RequiredSkill extends zombie.scripting.objects.Recipe$RequiredSkill {}
   /** @customConstructor Result.new */
@@ -1895,8 +1897,6 @@ declare module '@asledgehammer/pipewrench' {
   export class ZNetFileAnnounce extends zombie.core.znet.ZNetFileAnnounce {}
   /** @customConstructor ZNetFileChunk.new */
   export class ZNetFileChunk extends zombie.core.znet.ZNetFileChunk {}
-  /** @customConstructor ZNetSessionState.new */
-  export class ZNetSessionState extends zombie.core.znet.ZNetSessionState {}
   /** @customConstructor ZNetStatistics.new */
   export class ZNetStatistics extends zombie.core.znet.ZNetStatistics {}
   /** @customConstructor ZombieConfig.new */
@@ -3834,6 +3834,13 @@ declare module '@asledgehammer/pipewrench' {
    * @noSelf
    *
    * Method Parameters:
+   *  - (Empty): string
+   */
+  export function getServerIP(): string;
+  /**
+   * @noSelf
+   *
+   * Method Parameters:
    *  - (Empty): se.krka.kahlua.vm.KahluaTable
    */
   export function getServerList(): se.krka.kahlua.vm.KahluaTable;
@@ -3872,6 +3879,13 @@ declare module '@asledgehammer/pipewrench' {
    *  - (Empty): string
    */
   export function getServerPasswordFromArgs(): string;
+  /**
+   * @noSelf
+   *
+   * Method Parameters:
+   *  - (Empty): string
+   */
+  export function getServerPort(): string;
   /**
    * @noSelf
    *
@@ -4515,6 +4529,27 @@ declare module '@asledgehammer/pipewrench' {
    *  - (Empty): boolean
    */
   export function isShiftKeyDown(): boolean;
+  /**
+   * @noSelf
+   *
+   * Method Parameters:
+   *  - (Empty): boolean
+   */
+  export function isShowConnectionInfo(): boolean;
+  /**
+   * @noSelf
+   *
+   * Method Parameters:
+   *  - (Empty): boolean
+   */
+  export function isShowPingInfo(): boolean;
+  /**
+   * @noSelf
+   *
+   * Method Parameters:
+   *  - (Empty): boolean
+   */
+  export function isShowServerInfo(): boolean;
   /**
    * @noSelf
    *
@@ -5223,7 +5258,7 @@ declare module '@asledgehammer/pipewrench' {
    * @noSelf
    *
    * Method Parameters:
-   *  - (String arg0, String arg1, String arg2, String arg3, String arg4, String arg5): void
+   *  - (String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6): void
    */
   export function serverConnect(
     arg0: string,
@@ -5231,7 +5266,8 @@ declare module '@asledgehammer/pipewrench' {
     arg2: string,
     arg3: string,
     arg4: string,
-    arg5: string
+    arg5: string,
+    arg6: string
   ): void;
   /**
    * @noSelf
@@ -5365,7 +5401,28 @@ declare module '@asledgehammer/pipewrench' {
    * Method Parameters:
    *  - (boolean arg0): void
    */
+  export function setShowConnectionInfo(arg0: boolean): void;
+  /**
+   * @noSelf
+   *
+   * Method Parameters:
+   *  - (boolean arg0): void
+   */
   export function setShowPausedMessage(arg0: boolean): void;
+  /**
+   * @noSelf
+   *
+   * Method Parameters:
+   *  - (boolean arg0): void
+   */
+  export function setShowPingInfo(arg0: boolean): void;
+  /**
+   * @noSelf
+   *
+   * Method Parameters:
+   *  - (boolean arg0): void
+   */
+  export function setShowServerInfo(arg0: boolean): void;
   /**
    * @noSelf
    *
