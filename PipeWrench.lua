@@ -247,12 +247,14 @@ function Exports.getSaveName(arg1) return getSaveName(arg1) end
 function Exports.getScriptManager() return getScriptManager() end
 function Exports.getSearchMode() return getSearchMode() end
 function Exports.getServerAddressFromArgs() return getServerAddressFromArgs() end
+function Exports.getServerIP() return getServerIP() end
 function Exports.getServerList() return getServerList() end
 function Exports.getServerListFile() return getServerListFile() end
 function Exports.getServerModData() return getServerModData() end
 function Exports.getServerName() return getServerName() end
 function Exports.getServerOptions() return getServerOptions() end
 function Exports.getServerPasswordFromArgs() return getServerPasswordFromArgs() end
+function Exports.getServerPort() return getServerPort() end
 function Exports.getServerSavedWorldVersion(arg1) return getServerSavedWorldVersion(arg1) end
 function Exports.getServerSettingsManager() return getServerSettingsManager() end
 function Exports.getServerSpawnRegions() return getServerSpawnRegions() end
@@ -343,6 +345,9 @@ function Exports.isPublicServerListAllowed() return isPublicServerListAllowed() 
 function Exports.isServer() return isServer() end
 function Exports.isServerSoftReset() return isServerSoftReset() end
 function Exports.isShiftKeyDown() return isShiftKeyDown() end
+function Exports.isShowConnectionInfo() return isShowConnectionInfo() end
+function Exports.isShowPingInfo() return isShowPingInfo() end
+function Exports.isShowServerInfo() return isShowServerInfo() end
 function Exports.isSoundPlaying(arg1) return isSoundPlaying(arg1) end
 function Exports.isSteamOverlayEnabled() return isSteamOverlayEnabled() end
 function Exports.isSteamRunningOnSteamDeck() return isSteamRunningOnSteamDeck() end
@@ -430,7 +435,7 @@ function Exports.sendSplint(arg1,arg2,arg3,arg4,arg5) return sendSplint(arg1,arg
 function Exports.sendStitch(arg1,arg2,arg3,arg4,arg5) return sendStitch(arg1,arg2,arg3,arg4,arg5) end
 function Exports.sendSwitchSeat(arg1,arg2,arg3,arg4) return sendSwitchSeat(arg1,arg2,arg3,arg4) end
 function Exports.sendVisual(arg1) return sendVisual(arg1) end
-function Exports.serverConnect(arg1,arg2,arg3,arg4,arg5,arg6) return serverConnect(arg1,arg2,arg3,arg4,arg5,arg6) end
+function Exports.serverConnect(arg1,arg2,arg3,arg4,arg5,arg6,arg7) return serverConnect(arg1,arg2,arg3,arg4,arg5,arg6,arg7) end
 function Exports.serverConnectCoop(arg1) return serverConnectCoop(arg1) end
 function Exports.serverFileExists(arg1) return serverFileExists(arg1) end
 function Exports.setActivePlayer(arg1) return setActivePlayer(arg1) end
@@ -449,7 +454,10 @@ function Exports.setProgressBarValue(arg1,arg2) return setProgressBarValue(arg1,
 function Exports.setPuddles(arg1) return setPuddles(arg1) end
 function Exports.setSavefilePlayer1(arg1,arg2,arg3) return setSavefilePlayer1(arg1,arg2,arg3) end
 function Exports.setServerStatisticEnable(arg1) return setServerStatisticEnable(arg1) end
+function Exports.setShowConnectionInfo(arg1) return setShowConnectionInfo(arg1) end
 function Exports.setShowPausedMessage(arg1) return setShowPausedMessage(arg1) end
+function Exports.setShowPingInfo(arg1) return setShowPingInfo(arg1) end
+function Exports.setShowServerInfo(arg1) return setShowServerInfo(arg1) end
 function Exports.showAnimationViewer() return showAnimationViewer() end
 function Exports.showAttachmentEditor() return showAttachmentEditor() end
 function Exports.showChunkDebugger() return showChunkDebugger() end
@@ -1225,6 +1233,7 @@ Exports.Remove = loadstring("return _G['Remove']")()
 Exports.RenderArgs = loadstring("return _G['RenderArgs']")()
 Exports.RenderEffectType = loadstring("return _G['RenderEffectType']")()
 Exports.RenderSettings = loadstring("return _G['RenderSettings']")()
+Exports.RequestState = loadstring("return _G['RequestState']")()
 Exports.RequiredSkill = loadstring("return _G['RequiredSkill']")()
 Exports.Result = loadstring("return _G['Result']")()
 Exports.ResultBiggestSound = loadstring("return _G['ResultBiggestSound']")()
@@ -1470,7 +1479,6 @@ Exports.XPMultiplier = loadstring("return _G['XPMultiplier']")()
 Exports.ZLogger = loadstring("return _G['ZLogger']")()
 Exports.ZNetFileAnnounce = loadstring("return _G['ZNetFileAnnounce']")()
 Exports.ZNetFileChunk = loadstring("return _G['ZNetFileChunk']")()
-Exports.ZNetSessionState = loadstring("return _G['ZNetSessionState']")()
 Exports.ZNetStatistics = loadstring("return _G['ZNetStatistics']")()
 Exports.ZombieConfig = loadstring("return _G['ZombieConfig']")()
 Exports.ZombieFallDownState = loadstring("return _G['ZombieFallDownState']")()

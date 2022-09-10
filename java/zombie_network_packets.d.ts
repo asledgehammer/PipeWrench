@@ -186,9 +186,9 @@ declare module '@asledgehammer/pipewrench' {
       process(arg0: zombie.core.raknet.UdpConnection): void;
       /**
        * Method Parameters: 
-       *  - (UdpConnection arg0): void
+       *  - (UdpConnection arg0, boolean arg1): void
        */
-      setSalt(arg0: zombie.core.raknet.UdpConnection): void;
+      setSalt(arg0: zombie.core.raknet.UdpConnection, arg1: boolean): void;
       /**
        * Method Parameters: 
        *  - (ByteBufferWriter arg0): void

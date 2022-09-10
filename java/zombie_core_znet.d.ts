@@ -372,23 +372,6 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
     }
     /**
-     * @customConstructor ZNetSessionState.new
-     * @
-     * [CLASS] zombie.core.znet.ZNetSessionState
-     */
-    export class ZNetSessionState {
-      /**
-       * Constructors: 
-       *  - (Empty Constructor)
-       */
-      constructor();
-      /**
-       * Method Parameters: 
-       *  - (Empty): string
-       */
-      getDescription(): string;
-    }
-    /**
      * @customConstructor ZNetStatistics.new
      * @
      * [CLASS] zombie.core.znet.ZNetStatistics
