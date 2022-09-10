@@ -279,9 +279,9 @@ declare module '@asledgehammer/pipewrench' {
       save(): void;
       /**
        * Method Parameters: 
-       *  - (ByteBufferWriter arg0): void
+       *  - (ByteBuffer arg0): void
        */
-      sendRequestData(arg0: zombie.core.network.ByteBufferWriter): void;
+      sendRequestData(arg0: java.nio.ByteBuffer): void;
       /**
        * @noSelf
        *

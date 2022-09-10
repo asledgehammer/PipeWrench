@@ -2201,6 +2201,13 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (Empty): string
+       */
+      static getServerIP(): string;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (Empty): se.krka.kahlua.vm.KahluaTable
        */
       static getServerList(): se.krka.kahlua.vm.KahluaTable;
@@ -2239,6 +2246,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): string
        */
       static getServerPasswordFromArgs(): string;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      static getServerPort(): string;
       /**
        * @noSelf
        *
@@ -2882,6 +2896,27 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      static isShowConnectionInfo(): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      static isShowPingInfo(): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      static isShowServerInfo(): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (Object arg0): boolean
        */
       static isSoundPlaying(arg0: any): boolean;
@@ -3493,9 +3528,9 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (String arg0, String arg1, String arg2, String arg3, String arg4, String arg5): void
+       *  - (String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6): void
        */
-      static serverConnect(arg0: string, arg1: string, arg2: string, arg3: string, arg4: string, arg5: string): void;
+      static serverConnect(arg0: string, arg1: string, arg2: string, arg3: string, arg4: string, arg5: string, arg6: string): void;
       /**
        * @noSelf
        *
@@ -3628,7 +3663,28 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (boolean arg0): void
        */
+      static setShowConnectionInfo(arg0: boolean): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
       static setShowPausedMessage(arg0: boolean): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      static setShowPingInfo(arg0: boolean): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      static setShowServerInfo(arg0: boolean): void;
       /**
        * @noSelf
        *

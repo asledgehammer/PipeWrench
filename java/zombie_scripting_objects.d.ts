@@ -2929,6 +2929,11 @@ declare module '@asledgehammer/pipewrench' {
       getRecipe(arg0: string): zombie.scripting.objects.Recipe;
       /**
        * Method Parameters: 
+       *  - (String arg0): zombie.scripting.objects.Item
+       */
+      getSpecificItem(arg0: string): zombie.scripting.objects.Item;
+      /**
+       * Method Parameters: 
        *  - (String arg0): zombie.scripting.objects.VehicleScript
        */
       getVehicle(arg0: string): zombie.scripting.objects.VehicleScript;
