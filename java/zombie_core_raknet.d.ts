@@ -7,6 +7,12 @@ declare module '@asledgehammer/pipewrench' {
      * [CLASS] zombie.core.raknet.RakNetPeerInterface
      */
     export class RakNetPeerInterface {
+      /** byte */
+      static readonly ConnectionType_Disconnected: number;
+      /** byte */
+      static readonly ConnectionType_Steam: number;
+      /** byte */
+      static readonly ConnectionType_UDPRakNet: number;
       /** int */
       static readonly ID_ALREADY_CONNECTED: number;
       /** int */
@@ -34,8 +40,6 @@ declare module '@asledgehammer/pipewrench' {
       /** int */
       static readonly ID_RAKVOICE_CLOSE_CHANNEL: number;
       /** int */
-      static readonly ID_RAKVOICE_DATA: number;
-      /** int */
       static readonly ID_RAKVOICE_OPEN_CHANNEL_REPLY: number;
       /** int */
       static readonly ID_RAKVOICE_OPEN_CHANNEL_REQUEST: number;
@@ -45,8 +49,6 @@ declare module '@asledgehammer/pipewrench' {
       static readonly ID_REMOTE_DISCONNECTION_NOTIFICATION: number;
       /** int */
       static readonly ID_REMOTE_NEW_INCOMING_CONNECTION: number;
-      /** int */
-      static readonly ID_TIMESTAMP: number;
       /** int */
       static readonly ID_UNCONNECTED_PING: number;
       /** int */
@@ -83,11 +85,6 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
-       *  - (float arg0, short arg1, short arg2): void
-       */
-      ApplyNetworkSimulator(arg0: number, arg1: number, arg2: number): void;
-      /**
-       * Method Parameters: 
        *  - (String arg0, int arg1, String arg2): number
        */
       Connect(arg0: string, arg1: number, arg2: string): number;
@@ -111,6 +108,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (long arg0): number
        */
       GetClientSteamID(arg0: number): number;
+      /**
+       * Method Parameters: 
+       *  - (long arg0): number
+       */
+      GetConnectionType(arg0: number): number;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -153,29 +155,9 @@ declare module '@asledgehammer/pipewrench' {
       Receive(arg0: java.nio.ByteBuffer): boolean;
       /**
        * Method Parameters: 
-       *  - (Empty): zombie.core.znet.ZNetFileAnnounce
-       */
-      ReceiveFileAnnounce(): zombie.core.znet.ZNetFileAnnounce;
-      /**
-       * Method Parameters: 
-       *  - (Empty): zombie.core.znet.ZNetFileChunk
-       */
-      ReceiveFileChunk(): zombie.core.znet.ZNetFileChunk;
-      /**
-       * Method Parameters: 
        *  - (ByteBuffer arg0, int arg1, int arg2, byte arg3, long arg4, boolean arg5): number
        */
       Send(arg0: java.nio.ByteBuffer, arg1: number, arg2: number, arg3: number, arg4: number, arg5: boolean): number;
-      /**
-       * Method Parameters: 
-       *  - (long arg0, long arg1, long arg2, long arg3, String arg4): number
-       */
-      SendFileAnnounce(arg0: number, arg1: number, arg2: number, arg3: number, arg4: string): number;
-      /**
-       * Method Parameters: 
-       *  - (long arg0, long arg1, long arg2, byte[] arg3, long arg4): number
-       */
-      SendFileChunk(arg0: number, arg1: number, arg2: number, arg3: number[], arg4: number): number;
       /**
        * Method Parameters: 
        *  - (ByteBuffer arg0, int arg1, int arg2, byte arg3, long arg4, boolean arg5): number
@@ -208,9 +190,9 @@ declare module '@asledgehammer/pipewrench' {
       SetServerIP(arg0: string): void;
       /**
        * Method Parameters: 
-       *  - (int arg0): void
+       *  - (int arg0, int arg1): void
        */
-      SetServerPort(arg0: number): void;
+      SetServerPort(arg0: number, arg1: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -347,6 +329,11 @@ declare module '@asledgehammer/pipewrench' {
       getConnectedGUID(): number;
       /**
        * Method Parameters: 
+       *  - (Empty): zombie.core.raknet.UdpConnection$ConnectionType
+       */
+      getConnectionType(): zombie.core.raknet.UdpConnection$ConnectionType;
+      /**
+       * Method Parameters: 
        *  - (Empty): string
        */
       getDescription(): string;
@@ -375,11 +362,6 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): zombie.core.raknet.RakNetPeerInterface
        */
       getPeer(): zombie.core.raknet.RakNetPeerInterface;
-      /**
-       * Method Parameters: 
-       *  - (Empty): string
-       */
-      getPlayerDescription(): string;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2): number
@@ -419,6 +401,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): void
        */
+      setConnectionTimestamp(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
       setFullyConnected(): void;
       /**
        * Method Parameters: 
@@ -430,71 +417,6 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): zombie.core.network.ByteBufferWriter
        */
       startPingPacket(): zombie.core.network.ByteBufferWriter;
-    }
-    /** [ENUM] zombie.core.raknet.UdpConnection$CheckState */
-    export class UdpConnection$CheckState {
-      protected constructor();
-      static readonly None: zombie.core.raknet.UdpConnection$CheckState;
-      static readonly Sent: zombie.core.raknet.UdpConnection$CheckState;
-      static readonly Success: zombie.core.raknet.UdpConnection$CheckState;
-      name(): string;
-      ordinal(): number;
-      /**
-       * Method Parameters: 
-       *  - (Enum arg0): number
-       *  - (Object arg0): number
-       */
-      compareTo(arg0: any): number;
-      /**
-       * Method Parameters: 
-       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
-       */
-      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.core.raknet.UdpConnection$CheckState>>;
-      /**
-       * Method Parameters: 
-       *  - (Object arg0): boolean
-       */
-      equals(arg0: any): boolean;
-      /**
-       * Method Parameters: 
-       *  - (Empty): java.lang.Class<E>
-       */
-      getDeclaringClass(): java.lang.Class<zombie.core.raknet.UdpConnection$CheckState>;
-      /**
-       * Method Parameters: 
-       *  - (Empty): number
-       */
-      hashCode(): number;
-      /**
-       * Method Parameters: 
-       *  - (Empty): string
-       */
-      name(): string;
-      /**
-       * Method Parameters: 
-       *  - (Empty): number
-       */
-      ordinal(): number;
-      /**
-       * Method Parameters: 
-       *  - (Empty): string
-       */
-      toString(): string;
-      /**
-       * @noSelf
-       *
-       * Method Parameters: 
-       *  - (String arg0): zombie.core.raknet.UdpConnection$CheckState
-       *  - (Class arg0, String arg1): T
-       */
-      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.core.raknet.UdpConnection$CheckState | T;
-      /**
-       * @noSelf
-       *
-       * Method Parameters: 
-       *  - (Empty): zombie.core.raknet.UdpConnection$CheckState[]
-       */
-      static values(): zombie.core.raknet.UdpConnection$CheckState[];
     }
     /** [ENUM] zombie.core.raknet.UdpConnection$ChecksumState */
     export class UdpConnection$ChecksumState {
@@ -561,6 +483,71 @@ declare module '@asledgehammer/pipewrench' {
        */
       static values(): zombie.core.raknet.UdpConnection$ChecksumState[];
     }
+    /** [ENUM] zombie.core.raknet.UdpConnection$ConnectionType */
+    export class UdpConnection$ConnectionType {
+      protected constructor();
+      static readonly Disconnected: zombie.core.raknet.UdpConnection$ConnectionType;
+      static readonly Steam: zombie.core.raknet.UdpConnection$ConnectionType;
+      static readonly UDPRakNet: zombie.core.raknet.UdpConnection$ConnectionType;
+      name(): string;
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.core.raknet.UdpConnection$ConnectionType>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.core.raknet.UdpConnection$ConnectionType>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): zombie.core.raknet.UdpConnection$ConnectionType
+       *  - (Class arg0, String arg1): T
+       */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.core.raknet.UdpConnection$ConnectionType | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.core.raknet.UdpConnection$ConnectionType[]
+       */
+      static values(): zombie.core.raknet.UdpConnection$ConnectionType[];
+    }
     /**
      * @customConstructor MPClientStatistic.new
      * @
@@ -586,9 +573,9 @@ declare module '@asledgehammer/pipewrench' {
     export class UdpEngine {
       /**
        * Constructors: 
-       *  - (int arg0, int arg1, String arg2, boolean arg3)
+       *  - (int arg0, int arg1, int arg2, String arg3, boolean arg4)
        */
-      constructor(arg0: number, arg1: number, arg2: string, arg3: boolean);
+      constructor(arg0: number, arg1: number, arg2: number, arg3: string, arg4: boolean);
       /**
        * Method Parameters: 
        *  - (String arg0, int arg1, String arg2): void

@@ -194,6 +194,7 @@ function Exports.getLocalVarStack(arg1,arg2) return getLocalVarStack(arg1,arg2) 
 function Exports.getLotDirectories() return getLotDirectories() end
 function Exports.getLuaDebuggerErrorCount() return getLuaDebuggerErrorCount() end
 function Exports.getLuaDebuggerErrors() return getLuaDebuggerErrors() end
+function Exports.getMPStatus() return getMPStatus() end
 function Exports.getMapDirectoryTable() return getMapDirectoryTable() end
 function Exports.getMapFoldersForMod(arg1) return getMapFoldersForMod(arg1) end
 function Exports.getMapInfo(arg1) return getMapInfo(arg1) end
@@ -286,7 +287,6 @@ function Exports.getTextOrNull(arg1,arg2,arg3,arg4,arg5) return getTextOrNull(ar
 function Exports.getTexture(arg1) return getTexture(arg1) end
 function Exports.getTextureFromSaveDir(arg1,arg2) return getTextureFromSaveDir(arg1,arg2) end
 function Exports.getTickets(arg1) return getTickets(arg1) end
-function Exports.getMPStatus() return getMPStatus() end
 function Exports.getTimeInMillis() return getTimeInMillis() end
 function Exports.getTimestamp() return getTimestamp() end
 function Exports.getTimestampMs() return getTimestampMs() end
@@ -655,7 +655,6 @@ Exports.ChatMode = loadstring("return _G['ChatMode']")()
 Exports.ChatSettings = loadstring("return _G['ChatSettings']")()
 Exports.ChatTab = loadstring("return _G['ChatTab']")()
 Exports.ChatType = loadstring("return _G['ChatType']")()
-Exports.CheckState = loadstring("return _G['CheckState']")()
 Exports.Checks = loadstring("return _G['Checks']")()
 Exports.ChecksumState = loadstring("return _G['ChecksumState']")()
 Exports.ChooseGameInfo = loadstring("return _G['ChooseGameInfo']")()
@@ -700,6 +699,7 @@ Exports.Colors = loadstring("return _G['Colors']")()
 Exports.ComboItem = loadstring("return _G['ComboItem']")()
 Exports.ConfigOption = loadstring("return _G['ConfigOption']")()
 Exports.ConnectToServerState = loadstring("return _G['ConnectToServerState']")()
+Exports.ConnectionType = loadstring("return _G['ConnectionType']")()
 Exports.Container = loadstring("return _G['Container']")()
 Exports.ContainerOverlays = loadstring("return _G['ContainerOverlays']")()
 Exports.Core = loadstring("return _G['Core']")()
@@ -1477,8 +1477,6 @@ Exports.WrappedBuffer = loadstring("return _G['WrappedBuffer']")()
 Exports.XP = loadstring("return _G['XP']")()
 Exports.XPMultiplier = loadstring("return _G['XPMultiplier']")()
 Exports.ZLogger = loadstring("return _G['ZLogger']")()
-Exports.ZNetFileAnnounce = loadstring("return _G['ZNetFileAnnounce']")()
-Exports.ZNetFileChunk = loadstring("return _G['ZNetFileChunk']")()
 Exports.ZNetStatistics = loadstring("return _G['ZNetStatistics']")()
 Exports.ZombieConfig = loadstring("return _G['ZombieConfig']")()
 Exports.ZombieFallDownState = loadstring("return _G['ZombieFallDownState']")()

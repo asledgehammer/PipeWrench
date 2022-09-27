@@ -186,28 +186,14 @@ declare module '@asledgehammer/pipewrench' {
       process(arg0: zombie.core.raknet.UdpConnection): void;
       /**
        * Method Parameters: 
-       *  - (UdpConnection arg0, boolean arg1): void
+       *  - (int arg0, boolean arg1, boolean arg2): void
        */
-      setSalt(arg0: zombie.core.raknet.UdpConnection, arg1: boolean): void;
+      setSalt(arg0: number, arg1: boolean, arg2: boolean): void;
       /**
        * Method Parameters: 
        *  - (ByteBufferWriter arg0): void
        */
       write(arg0: zombie.core.network.ByteBufferWriter): void;
-      /**
-       * @noSelf
-       *
-       * Method Parameters: 
-       *  - (UdpConnection arg0): boolean
-       */
-      static isUntouchable(arg0: zombie.core.raknet.UdpConnection): boolean;
-      /**
-       * @noSelf
-       *
-       * Method Parameters: 
-       *  - (UdpConnection arg0): void
-       */
-      static update(arg0: zombie.core.raknet.UdpConnection): void;
     }
     /** [ENUM] zombie.network.packets.ValidatePacket$ValidateState */
     export class ValidatePacket$ValidateState {

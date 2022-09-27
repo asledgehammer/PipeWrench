@@ -1832,6 +1832,13 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): se.krka.kahlua.vm.KahluaTable
        */
+      static getMPStatus(): se.krka.kahlua.vm.KahluaTable;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): se.krka.kahlua.vm.KahluaTable
+       */
       static getMapDirectoryTable(): se.krka.kahlua.vm.KahluaTable;
       /**
        * @noSelf
@@ -2478,13 +2485,6 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): void
        */
       static getTickets(arg0: string): void;
-      /**
-       * @noSelf
-       *
-       * Method Parameters: 
-       *  - (Empty): se.krka.kahlua.vm.KahluaTable
-       */
-      static getMPStatus(): se.krka.kahlua.vm.KahluaTable;
       /**
        * @noSelf
        *

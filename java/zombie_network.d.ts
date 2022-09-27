@@ -1474,12 +1474,6 @@ declare module '@asledgehammer/pipewrench' {
       static readonly CHARACTER_PREDICTION_INTERVAL_MS: number;
       /** int */
       static readonly CHARACTER_UPDATE_RATE_MS: number;
-      /** long */
-      static readonly CHECKSUM_VALIDATION_INTERVAL_MAX: number;
-      /** long */
-      static readonly CHECKSUM_VALIDATION_INTERVAL_MIN: number;
-      /** long */
-      static readonly CHECKSUM_VALIDATION_TIMEOUT: number;
       /** float */
       static readonly MAX_RECONNECT_DISTANCE_SQ: number;
       /** float */
