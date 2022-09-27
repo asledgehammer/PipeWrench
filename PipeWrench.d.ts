@@ -272,8 +272,6 @@ declare module '@asledgehammer/pipewrench' {
   export class ChatTab extends zombie.chat.ChatTab {}
   /** @customConstructor ChatType.new */
   export class ChatType extends zombie.network.chat.ChatType {}
-  /** @customConstructor CheckState.new */
-  export class CheckState extends zombie.core.raknet.UdpConnection$CheckState {}
   /** @customConstructor Checks.new */
   export class Checks extends zombie.debug.DebugOptions$Checks {}
   /** @customConstructor ChecksumState.new */
@@ -360,6 +358,8 @@ declare module '@asledgehammer/pipewrench' {
   export class ConfigOption extends zombie.config.ConfigOption {}
   /** @customConstructor ConnectToServerState.new */
   export class ConnectToServerState extends zombie.gameStates.ConnectToServerState {}
+  /** @customConstructor ConnectionType.new */
+  export class ConnectionType extends zombie.core.raknet.UdpConnection$ConnectionType {}
   /** @customConstructor Container.new */
   export class Container extends zombie.scripting.objects.VehicleScript$Container {}
   /** @customConstructor ContainerOverlays.new */
@@ -1893,10 +1893,6 @@ declare module '@asledgehammer/pipewrench' {
   export class XPMultiplier extends zombie.characters.IsoGameCharacter$XPMultiplier {}
   /** @customConstructor ZLogger.new */
   export class ZLogger extends zombie.core.logger.ZLogger {}
-  /** @customConstructor ZNetFileAnnounce.new */
-  export class ZNetFileAnnounce extends zombie.core.znet.ZNetFileAnnounce {}
-  /** @customConstructor ZNetFileChunk.new */
-  export class ZNetFileChunk extends zombie.core.znet.ZNetFileChunk {}
   /** @customConstructor ZNetStatistics.new */
   export class ZNetStatistics extends zombie.core.znet.ZNetStatistics {}
   /** @customConstructor ZombieConfig.new */
@@ -3456,6 +3452,13 @@ declare module '@asledgehammer/pipewrench' {
    * Method Parameters:
    *  - (Empty): se.krka.kahlua.vm.KahluaTable
    */
+  export function getMPStatus(): se.krka.kahlua.vm.KahluaTable;
+  /**
+   * @noSelf
+   *
+   * Method Parameters:
+   *  - (Empty): se.krka.kahlua.vm.KahluaTable
+   */
   export function getMapDirectoryTable(): se.krka.kahlua.vm.KahluaTable;
   /**
    * @noSelf
@@ -4111,13 +4114,6 @@ declare module '@asledgehammer/pipewrench' {
    *  - (String arg0): void
    */
   export function getTickets(arg0: string): void;
-  /**
-   * @noSelf
-   *
-   * Method Parameters:
-   *  - (Empty): se.krka.kahlua.vm.KahluaTable
-   */
-  export function getMPStatus(): se.krka.kahlua.vm.KahluaTable;
   /**
    * @noSelf
    *

@@ -141,9 +141,9 @@ declare module '@asledgehammer/pipewrench' {
       /** zombie.debug.DebugLogStream */
       static readonly NetworkFileDebug?: zombie.debug.DebugLogStream;
       /** zombie.debug.DebugLogStream */
-      static readonly NetworkPacketDebug?: zombie.debug.DebugLogStream;
-      /** zombie.debug.DebugLogStream */
       static readonly Objects?: zombie.debug.DebugLogStream;
+      /** zombie.debug.DebugLogStream */
+      static readonly Packet?: zombie.debug.DebugLogStream;
       /** zombie.debug.DebugLogStream */
       static readonly Radio?: zombie.debug.DebugLogStream;
       /** zombie.debug.DebugLogStream */
@@ -211,6 +211,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): java.util.ArrayList<zombie.debug.DebugType>
        */
       static getDebugTypes(): java.util.ArrayList<zombie.debug.DebugType>;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (DebugType arg0): zombie.debug.LogSeverity
+       */
+      static getLogLevel(arg0: zombie.debug.DebugType): zombie.debug.LogSeverity;
       /**
        * @noSelf
        *
@@ -667,10 +674,9 @@ declare module '@asledgehammer/pipewrench' {
       static readonly Multiplayer: zombie.debug.DebugType;
       static readonly Network: zombie.debug.DebugType;
       static readonly NetworkFileDebug: zombie.debug.DebugType;
-      static readonly NetworkPacketDebug: zombie.debug.DebugType;
-      static readonly NetworkPlugin: zombie.debug.DebugType;
       static readonly Objects: zombie.debug.DebugType;
       static readonly Ownership: zombie.debug.DebugType;
+      static readonly Packet: zombie.debug.DebugType;
       static readonly Radio: zombie.debug.DebugType;
       static readonly Recipe: zombie.debug.DebugType;
       static readonly Script: zombie.debug.DebugType;
