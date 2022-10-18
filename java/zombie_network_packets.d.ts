@@ -34,9 +34,9 @@ declare module '@asledgehammer/pipewrench' {
       isConsistent(): boolean;
       /**
        * Method Parameters: 
-       *  - (String arg0): void
+       *  - (UdpConnection arg0, String arg1): void
        */
-      log(arg0: string): void;
+      log(arg0: zombie.core.raknet.UdpConnection, arg1: string): void;
       /**
        * Method Parameters: 
        *  - (ByteBuffer arg0, UdpConnection arg1): void
@@ -94,9 +94,9 @@ declare module '@asledgehammer/pipewrench' {
       isConsistent(): boolean;
       /**
        * Method Parameters: 
-       *  - (String arg0): void
+       *  - (UdpConnection arg0, String arg1): void
        */
-      log(arg0: string): void;
+      log(arg0: zombie.core.raknet.UdpConnection, arg1: string): void;
       /**
        * Method Parameters: 
        *  - (ByteBuffer arg0, UdpConnection arg1): void
@@ -171,9 +171,9 @@ declare module '@asledgehammer/pipewrench' {
       isConsistent(): boolean;
       /**
        * Method Parameters: 
-       *  - (String arg0): void
+       *  - (UdpConnection arg0, String arg1): void
        */
-      log(arg0: string): void;
+      log(arg0: zombie.core.raknet.UdpConnection, arg1: string): void;
       /**
        * Method Parameters: 
        *  - (ByteBuffer arg0, UdpConnection arg1): void
@@ -186,28 +186,14 @@ declare module '@asledgehammer/pipewrench' {
       process(arg0: zombie.core.raknet.UdpConnection): void;
       /**
        * Method Parameters: 
-       *  - (UdpConnection arg0): void
+       *  - (int arg0, boolean arg1, boolean arg2, boolean arg3): void
        */
-      setSalt(arg0: zombie.core.raknet.UdpConnection): void;
+      setSalt(arg0: number, arg1: boolean, arg2: boolean, arg3: boolean): void;
       /**
        * Method Parameters: 
        *  - (ByteBufferWriter arg0): void
        */
       write(arg0: zombie.core.network.ByteBufferWriter): void;
-      /**
-       * @noSelf
-       *
-       * Method Parameters: 
-       *  - (UdpConnection arg0): boolean
-       */
-      static isUntouchable(arg0: zombie.core.raknet.UdpConnection): boolean;
-      /**
-       * @noSelf
-       *
-       * Method Parameters: 
-       *  - (UdpConnection arg0): void
-       */
-      static update(arg0: zombie.core.raknet.UdpConnection): void;
     }
     /** [ENUM] zombie.network.packets.ValidatePacket$ValidateState */
     export class ValidatePacket$ValidateState {

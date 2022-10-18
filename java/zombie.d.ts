@@ -3497,6 +3497,8 @@ declare module '@asledgehammer/pipewrench' {
       /** boolean */
       static doEnableDetectOpenGLErrorsInTexture: boolean;
       /** boolean */
+      static doKickInDebug: boolean;
+      /** boolean */
       static doObjectStateSyncEnable: boolean;
       /** boolean */
       static doOverridePOVCharacters: boolean;

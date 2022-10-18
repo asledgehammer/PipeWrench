@@ -668,8 +668,9 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Empty): void
+       *  - (int arg0): void
        */
-      update(): void;
+      update(arg0?: number): void;
     }
     /**
      * @customConstructor Clock.new

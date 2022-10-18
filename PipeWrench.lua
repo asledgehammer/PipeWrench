@@ -159,6 +159,7 @@ function Exports.getGameFilesInput(arg1) return getGameFilesInput(arg1) end
 function Exports.getGameFilesTextInput(arg1) return getGameFilesTextInput(arg1) end
 function Exports.getGameSpeed() return getGameSpeed() end
 function Exports.getGameTime() return getGameTime() end
+function Exports.getGameVersion() return getGameVersion() end
 function Exports.getGametimeTimestamp() return getGametimeTimestamp() end
 function Exports.getHairStylesInstance() return getHairStylesInstance() end
 function Exports.getHourMinute() return getHourMinute() end
@@ -194,6 +195,7 @@ function Exports.getLocalVarStack(arg1,arg2) return getLocalVarStack(arg1,arg2) 
 function Exports.getLotDirectories() return getLotDirectories() end
 function Exports.getLuaDebuggerErrorCount() return getLuaDebuggerErrorCount() end
 function Exports.getLuaDebuggerErrors() return getLuaDebuggerErrors() end
+function Exports.getMPStatus() return getMPStatus() end
 function Exports.getMapDirectoryTable() return getMapDirectoryTable() end
 function Exports.getMapFoldersForMod(arg1) return getMapFoldersForMod(arg1) end
 function Exports.getMapInfo(arg1) return getMapInfo(arg1) end
@@ -247,12 +249,14 @@ function Exports.getSaveName(arg1) return getSaveName(arg1) end
 function Exports.getScriptManager() return getScriptManager() end
 function Exports.getSearchMode() return getSearchMode() end
 function Exports.getServerAddressFromArgs() return getServerAddressFromArgs() end
+function Exports.getServerIP() return getServerIP() end
 function Exports.getServerList() return getServerList() end
 function Exports.getServerListFile() return getServerListFile() end
 function Exports.getServerModData() return getServerModData() end
 function Exports.getServerName() return getServerName() end
 function Exports.getServerOptions() return getServerOptions() end
 function Exports.getServerPasswordFromArgs() return getServerPasswordFromArgs() end
+function Exports.getServerPort() return getServerPort() end
 function Exports.getServerSavedWorldVersion(arg1) return getServerSavedWorldVersion(arg1) end
 function Exports.getServerSettingsManager() return getServerSettingsManager() end
 function Exports.getServerSpawnRegions() return getServerSpawnRegions() end
@@ -284,7 +288,6 @@ function Exports.getTextOrNull(arg1,arg2,arg3,arg4,arg5) return getTextOrNull(ar
 function Exports.getTexture(arg1) return getTexture(arg1) end
 function Exports.getTextureFromSaveDir(arg1,arg2) return getTextureFromSaveDir(arg1,arg2) end
 function Exports.getTickets(arg1) return getTickets(arg1) end
-function Exports.getMPStatus() return getMPStatus() end
 function Exports.getTimeInMillis() return getTimeInMillis() end
 function Exports.getTimestamp() return getTimestamp() end
 function Exports.getTimestampMs() return getTimestampMs() end
@@ -343,6 +346,9 @@ function Exports.isPublicServerListAllowed() return isPublicServerListAllowed() 
 function Exports.isServer() return isServer() end
 function Exports.isServerSoftReset() return isServerSoftReset() end
 function Exports.isShiftKeyDown() return isShiftKeyDown() end
+function Exports.isShowConnectionInfo() return isShowConnectionInfo() end
+function Exports.isShowPingInfo() return isShowPingInfo() end
+function Exports.isShowServerInfo() return isShowServerInfo() end
 function Exports.isSoundPlaying(arg1) return isSoundPlaying(arg1) end
 function Exports.isSteamOverlayEnabled() return isSteamOverlayEnabled() end
 function Exports.isSteamRunningOnSteamDeck() return isSteamRunningOnSteamDeck() end
@@ -430,7 +436,7 @@ function Exports.sendSplint(arg1,arg2,arg3,arg4,arg5) return sendSplint(arg1,arg
 function Exports.sendStitch(arg1,arg2,arg3,arg4,arg5) return sendStitch(arg1,arg2,arg3,arg4,arg5) end
 function Exports.sendSwitchSeat(arg1,arg2,arg3,arg4) return sendSwitchSeat(arg1,arg2,arg3,arg4) end
 function Exports.sendVisual(arg1) return sendVisual(arg1) end
-function Exports.serverConnect(arg1,arg2,arg3,arg4,arg5,arg6) return serverConnect(arg1,arg2,arg3,arg4,arg5,arg6) end
+function Exports.serverConnect(arg1,arg2,arg3,arg4,arg5,arg6,arg7) return serverConnect(arg1,arg2,arg3,arg4,arg5,arg6,arg7) end
 function Exports.serverConnectCoop(arg1) return serverConnectCoop(arg1) end
 function Exports.serverFileExists(arg1) return serverFileExists(arg1) end
 function Exports.setActivePlayer(arg1) return setActivePlayer(arg1) end
@@ -449,7 +455,10 @@ function Exports.setProgressBarValue(arg1,arg2) return setProgressBarValue(arg1,
 function Exports.setPuddles(arg1) return setPuddles(arg1) end
 function Exports.setSavefilePlayer1(arg1,arg2,arg3) return setSavefilePlayer1(arg1,arg2,arg3) end
 function Exports.setServerStatisticEnable(arg1) return setServerStatisticEnable(arg1) end
+function Exports.setShowConnectionInfo(arg1) return setShowConnectionInfo(arg1) end
 function Exports.setShowPausedMessage(arg1) return setShowPausedMessage(arg1) end
+function Exports.setShowPingInfo(arg1) return setShowPingInfo(arg1) end
+function Exports.setShowServerInfo(arg1) return setShowServerInfo(arg1) end
 function Exports.showAnimationViewer() return showAnimationViewer() end
 function Exports.showAttachmentEditor() return showAttachmentEditor() end
 function Exports.showChunkDebugger() return showChunkDebugger() end
@@ -647,7 +656,6 @@ Exports.ChatMode = loadstring("return _G['ChatMode']")()
 Exports.ChatSettings = loadstring("return _G['ChatSettings']")()
 Exports.ChatTab = loadstring("return _G['ChatTab']")()
 Exports.ChatType = loadstring("return _G['ChatType']")()
-Exports.CheckState = loadstring("return _G['CheckState']")()
 Exports.Checks = loadstring("return _G['Checks']")()
 Exports.ChecksumState = loadstring("return _G['ChecksumState']")()
 Exports.ChooseGameInfo = loadstring("return _G['ChooseGameInfo']")()
@@ -692,6 +700,7 @@ Exports.Colors = loadstring("return _G['Colors']")()
 Exports.ComboItem = loadstring("return _G['ComboItem']")()
 Exports.ConfigOption = loadstring("return _G['ConfigOption']")()
 Exports.ConnectToServerState = loadstring("return _G['ConnectToServerState']")()
+Exports.ConnectionType = loadstring("return _G['ConnectionType']")()
 Exports.Container = loadstring("return _G['Container']")()
 Exports.ContainerOverlays = loadstring("return _G['ContainerOverlays']")()
 Exports.Core = loadstring("return _G['Core']")()
@@ -1225,6 +1234,7 @@ Exports.Remove = loadstring("return _G['Remove']")()
 Exports.RenderArgs = loadstring("return _G['RenderArgs']")()
 Exports.RenderEffectType = loadstring("return _G['RenderEffectType']")()
 Exports.RenderSettings = loadstring("return _G['RenderSettings']")()
+Exports.RequestState = loadstring("return _G['RequestState']")()
 Exports.RequiredSkill = loadstring("return _G['RequiredSkill']")()
 Exports.Result = loadstring("return _G['Result']")()
 Exports.ResultBiggestSound = loadstring("return _G['ResultBiggestSound']")()
@@ -1468,9 +1478,6 @@ Exports.WrappedBuffer = loadstring("return _G['WrappedBuffer']")()
 Exports.XP = loadstring("return _G['XP']")()
 Exports.XPMultiplier = loadstring("return _G['XPMultiplier']")()
 Exports.ZLogger = loadstring("return _G['ZLogger']")()
-Exports.ZNetFileAnnounce = loadstring("return _G['ZNetFileAnnounce']")()
-Exports.ZNetFileChunk = loadstring("return _G['ZNetFileChunk']")()
-Exports.ZNetSessionState = loadstring("return _G['ZNetSessionState']")()
 Exports.ZNetStatistics = loadstring("return _G['ZNetStatistics']")()
 Exports.ZombieConfig = loadstring("return _G['ZombieConfig']")()
 Exports.ZombieFallDownState = loadstring("return _G['ZombieFallDownState']")()

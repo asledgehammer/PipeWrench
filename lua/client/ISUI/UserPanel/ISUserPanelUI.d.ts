@@ -19,6 +19,12 @@ declare module '@asledgehammer/pipewrench' {
 
       serverOptionBtn: any;
 
+      showConnectionInfo: any;
+
+      showPingInfo: any;
+
+      showServerInfo: any;
+
       ticketsBtn: any;
 
       variableColor: any;
@@ -30,6 +36,12 @@ declare module '@asledgehammer/pipewrench' {
       create: (() => any) | any;
 
       onOptionMouseDown: ((button: any, x: any, y: any) => any) | any;
+
+      onShowConnectionInfo: ((option: any, enabled: any) => any) | any;
+
+      onShowPingInfo: ((option: any, enabled: any) => any) | any;
+
+      onShowServerInfo: ((option: any, enabled: any) => any) | any;
 
       render: (() => any) | any;
 
