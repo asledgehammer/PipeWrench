@@ -15,6 +15,10 @@ declare module '@asledgehammer/pipewrench' {
 
       backButton: any;
 
+      connectTypeEntry: any;
+
+      connectTypeLabel: any;
+
       deleteBtn: any;
 
       descEntry: any;

@@ -57,6 +57,18 @@ declare module '@asledgehammer/pipewrench' {
 
       useSeat: ((seat: any) => any) | any;
     }
+
+    export abstract class ImageScale {
+      static [id: string]: any;
+    }
+
+    export abstract class SeatOffsetX {
+      static [id: string]: any;
+    }
+
+    export abstract class SeatOffsetY {
+      static [id: string]: any;
+    }
   }
   export namespace lua.client.Vehicles.ISUI.ISVehicleSeatUI {}
 }

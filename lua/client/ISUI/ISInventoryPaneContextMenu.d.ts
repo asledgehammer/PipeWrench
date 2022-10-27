@@ -56,6 +56,12 @@ declare module '@asledgehammer/pipewrench' {
       static applyBandage: (item: any, bodyPart: any, player: any) => any;
 
       /** @noSelf */
+      static AutoDrinkOff: (waterContainer: any) => any;
+
+      /** @noSelf */
+      static AutoDrinkOn: (waterContainer: any) => any;
+
+      /** @noSelf */
       static buildFixingMenu: (
         brokenObject: any,
         player: any,
@@ -247,7 +253,8 @@ declare module '@asledgehammer/pipewrench' {
         playerObj: any,
         container: any,
         containers: any,
-        selectedItem: any
+        selectedItemType: any,
+        selectedItemContainer: any
       ) => any;
 
       /** @noSelf */

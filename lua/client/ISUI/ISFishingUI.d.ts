@@ -43,12 +43,6 @@ declare module '@asledgehammer/pipewrench' {
 
       containersLbl: any;
 
-      fgBar: any;
-
-      fgBarOrange: any;
-
-      fgBarRed: any;
-
       fishes: any;
 
       items_array: any;

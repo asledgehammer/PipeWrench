@@ -25,6 +25,8 @@ declare module '@asledgehammer/pipewrench' {
 
       backButton: any;
 
+      badHighColor: any;
+
       btnJoypadSensitivityM: any;
 
       btnJoypadSensitivityP: any;
@@ -33,6 +35,10 @@ declare module '@asledgehammer/pipewrench' {
 
       colorPicker2: any;
 
+      colorPicker3: any;
+
+      colorPicker4: any;
+
       controllerTestPanel: any;
 
       cover: any;
@@ -40,6 +46,8 @@ declare module '@asledgehammer/pipewrench' {
       gameOptions: any;
 
       gameSounds: any;
+
+      goodHighColor: any;
 
       javaObject: any;
 
@@ -125,6 +133,8 @@ declare module '@asledgehammer/pipewrench' {
 
       joypadSensitivityP: ((button: any) => any) | any;
 
+      onBadHighlightColor: ((button: any) => any) | any;
+
       onConfirmModalClick: ((button: any) => any) | any;
 
       onConfirmMonitorSettingsClick: ((button: any, closeAfter: any) => any) | any;
@@ -134,6 +144,8 @@ declare module '@asledgehammer/pipewrench' {
       onGainJoypadFocusCurrentTab: ((joypadData: any) => any) | any;
 
       onGameSounds: (() => any) | any;
+
+      onGoodHighlightColor: ((button: any) => any) | any;
 
       onJoypadBeforeDeactivate: ((joypadData: any) => any) | any;
 
@@ -164,6 +176,10 @@ declare module '@asledgehammer/pipewrench' {
       onRestartRequiredClick: ((button: any, closeAfter: any) => any) | any;
 
       onTabsActivateView: ((tabs: any) => any) | any;
+
+      pickedBadHighlightColor: ((color: any, mouseUp: any) => any) | any;
+
+      pickedGoodHighlightColor: ((color: any, mouseUp: any) => any) | any;
 
       pickedMPTextColor: ((color: any, mouseUp: any) => any) | any;
 

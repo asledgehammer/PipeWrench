@@ -3438,6 +3438,11 @@ declare module '@asledgehammer/pipewrench' {
       isWet(): boolean;
       /**
        * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isWorn(): boolean;
+      /**
+       * Method Parameters: 
        *  - (ByteBuffer arg0, int arg1): void
        */
       load(arg0: java.nio.ByteBuffer, arg1: number): void;
@@ -5736,6 +5741,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       isWet(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isWorn(): boolean;
       /**
        * Method Parameters: 
        *  - (ByteBuffer arg0, int arg1): void

@@ -44,9 +44,9 @@ declare module '@asledgehammer/pipewrench' {
       isConsistent(): boolean;
       /**
        * Method Parameters: 
-       *  - (String arg0): void
+       *  - (UdpConnection arg0, String arg1): void
        */
-      log(arg0: string): void;
+      log(arg0: zombie.core.raknet.UdpConnection, arg1: string): void;
       /**
        * Method Parameters: 
        *  - (ByteBuffer arg0, UdpConnection arg1): void
@@ -96,9 +96,9 @@ declare module '@asledgehammer/pipewrench' {
       isRelevant(arg0: zombie.core.raknet.UdpConnection): boolean;
       /**
        * Method Parameters: 
-       *  - (String arg0): void
+       *  - (UdpConnection arg0, String arg1): void
        */
-      log(arg0: string): void;
+      log(arg0: zombie.core.raknet.UdpConnection, arg1: string): void;
       /**
        * Method Parameters: 
        *  - (ByteBuffer arg0, UdpConnection arg1): void
@@ -242,9 +242,9 @@ declare module '@asledgehammer/pipewrench' {
       isConsistent(): boolean;
       /**
        * Method Parameters: 
-       *  - (String arg0): void
+       *  - (UdpConnection arg0, String arg1): void
        */
-      log(arg0: string): void;
+      log(arg0: zombie.core.raknet.UdpConnection, arg1: string): void;
       /**
        * Method Parameters: 
        *  - (ByteBuffer arg0, UdpConnection arg1): void
@@ -294,9 +294,9 @@ declare module '@asledgehammer/pipewrench' {
       isConsistent(): boolean;
       /**
        * Method Parameters: 
-       *  - (String arg0): void
+       *  - (UdpConnection arg0, String arg1): void
        */
-      log(arg0: string): void;
+      log(arg0: zombie.core.raknet.UdpConnection, arg1: string): void;
       /**
        * Method Parameters: 
        *  - (ByteBuffer arg0, UdpConnection arg1): void
@@ -347,9 +347,9 @@ declare module '@asledgehammer/pipewrench' {
       isRelevant(arg0: zombie.core.raknet.UdpConnection): boolean;
       /**
        * Method Parameters: 
-       *  - (String arg0): void
+       *  - (UdpConnection arg0, String arg1): void
        */
-      log(arg0: string): void;
+      log(arg0: zombie.core.raknet.UdpConnection, arg1: string): void;
       /**
        * Method Parameters: 
        *  - (ByteBuffer arg0, UdpConnection arg1): void

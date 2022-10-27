@@ -7,15 +7,19 @@ declare module '@asledgehammer/pipewrench' {
       [id: string]: any;
       static [id: string]: any;
 
+      cornerCounter: any;
+
       item: any;
 
       sledge: any;
 
       spriteFrame: any;
 
-      constructor(character: any, item: any);
+      constructor(character: any, item: any, cornerCounter: any);
 
       animEvent: ((event: any, parameter: any) => any) | any;
+
+      getCornerWallSprite: ((wallSprite: any) => any) | any;
     }
   }
   export namespace lua.client.TimedActions.ISDestroyStuffAction {}
