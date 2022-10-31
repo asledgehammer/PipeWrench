@@ -806,6 +806,13 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (UdpConnection arg0): void
+       */
+      static checkModsNeedUpdate(arg0: zombie.core.raknet.UdpConnection): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (String arg0): boolean
        */
       static checkPlayerCanUseChat(arg0: string): boolean;
@@ -858,6 +865,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): void
        */
       static connectToServerStateCallback(arg0: string): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      static connectionManagerLog(arg0: string, arg1: string): void;
       /**
        * @noSelf
        *
@@ -1581,6 +1595,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): zombie.GameTime
        */
       static getGameTime(): zombie.GameTime;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      static getGameVersion(): string;
       /**
        * @noSelf
        *
@@ -3528,9 +3549,9 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6): void
+       *  - (String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6, boolean arg7): void
        */
-      static serverConnect(arg0: string, arg1: string, arg2: string, arg3: string, arg4: string, arg5: string, arg6: string): void;
+      static serverConnect(arg0: string, arg1: string, arg2: string, arg3: string, arg4: string, arg5: string, arg6: string, arg7: boolean): void;
       /**
        * @noSelf
        *

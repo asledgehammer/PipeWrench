@@ -21,8 +21,6 @@ declare module '@asledgehammer/pipewrench' {
 
       drawJoypadFocus: any;
 
-      fgBar: any;
-
       listbox: any;
 
       noRepairWidth: any;
@@ -82,6 +80,8 @@ declare module '@asledgehammer/pipewrench' {
       doDrawItem: ((y: any, item: any, alt: any) => any) | any;
 
       doPatch: ((fabric: any, thread: any, needle: any, part: any, context: any, submenu: any) => any) | any;
+
+      drawBar: ((x: any, y: any, width: any, height: any, percent: any, highGood: any) => any) | any;
 
       getPaddablePartsNumber: ((clothing: any, parts: any) => any) | any;
 

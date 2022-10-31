@@ -84,6 +84,8 @@ declare module '@asledgehammer/pipewrench' {
       /** byte */
       static readonly BD_splintItem: number;
       /** byte */
+      static readonly BD_stiffness: number;
+      /** byte */
       static readonly BD_stitchTime: number;
       /** byte */
       static readonly BD_stitched: number;
@@ -482,6 +484,10 @@ declare module '@asledgehammer/pipewrench' {
       static serverPassword?: string;
       /** java.util.Calendar */
       static startAuth?: java.util.Calendar;
+      /** long */
+      static steamID: number;
+      /** boolean */
+      static useSteamRelay: boolean;
       /** java.lang.String */
       static username?: string;
 
@@ -572,9 +578,9 @@ declare module '@asledgehammer/pipewrench' {
       disconnect(): void;
       /**
        * Method Parameters: 
-       *  - (String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6): void
+       *  - (String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6, boolean arg7): void
        */
-      doConnect(arg0: string, arg1: string, arg2: string, arg3: string, arg4: string, arg5: string, arg6: string): void;
+      doConnect(arg0: string, arg1: string, arg2: string, arg3: string, arg4: string, arg5: string, arg6: string, arg7: boolean): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -1481,6 +1487,10 @@ declare module '@asledgehammer/pipewrench' {
       /** float */
       static readonly MAX_TOWING_TRAILER_DISTANCE_SQ: number;
       /** long */
+      static readonly TIME_VALIDATION_DELAY: number;
+      /** long */
+      static readonly TIME_VALIDATION_INTERVAL: number;
+      /** long */
       static readonly TIME_VALIDATION_TIMEOUT: number;
       /** float */
       static readonly TOWING_DISTANCE: number;
@@ -1500,6 +1510,8 @@ declare module '@asledgehammer/pipewrench' {
       static readonly ZOMBIE_MAX_UPDATE_INTERVAL_MS: number;
       /** int */
       static readonly ZOMBIE_MIN_UPDATE_INTERVAL_MS: number;
+      /** int */
+      static readonly ZOMBIE_OWNERSHIP_INTERVAL: number;
       /** int */
       static readonly ZOMBIE_REMOVE_INTERVAL_MS: number;
       /** int */
@@ -2031,6 +2043,11 @@ declare module '@asledgehammer/pipewrench' {
       getSteamId(): string;
       /**
        * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getUseSteamRelay(): boolean;
+      /**
+       * Method Parameters: 
        *  - (Empty): string
        */
       getUserName(): string;
@@ -2144,6 +2161,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): void
        */
       setSteamId(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setUseSteamRelay(arg0: boolean): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void

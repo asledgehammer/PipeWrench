@@ -2272,6 +2272,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isPreviouslyEntered(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isPushableForSeparate(): boolean;
       /**
        * Method Parameters: 
@@ -3209,6 +3214,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0): void
        */
       setPipedFuelAmount(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setPreviouslyEntered(arg0: boolean): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void

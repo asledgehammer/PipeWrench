@@ -11119,6 +11119,13 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): void
        */
+      static clearArrays(): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): void
+       */
       static closeContainers(): void;
       /**
        * @noSelf

@@ -3493,6 +3493,11 @@ declare module '@asledgehammer/pipewrench' {
       hasBlockedWindow(arg0: boolean): boolean;
       /**
        * Method Parameters: 
+       *  - (IsoDirections arg0): boolean
+       */
+      hasClosedDoorOnEdge(arg0: zombie.iso.IsoDirections): boolean;
+      /**
+       * Method Parameters: 
        *  - (IsoDirections arg0, boolean arg1): boolean
        */
       hasDoorOnEdge(arg0: zombie.iso.IsoDirections, arg1: boolean): boolean;
@@ -3511,6 +3516,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       hasModData(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (IsoDirections arg0): boolean
+       */
+      hasOpenDoorOnEdge(arg0: zombie.iso.IsoDirections): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -17961,6 +17971,8 @@ declare module '@asledgehammer/pipewrench' {
       static readonly WorldVersion_PolygonZone: number;
       /** int */
       static readonly WorldVersion_PolylineZone: number;
+      /** int */
+      static readonly WorldVersion_PreviouslyEntered: number;
       /** int */
       static readonly WorldVersion_SandboxOptions: number;
       /** int */

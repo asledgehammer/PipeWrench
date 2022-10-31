@@ -2208,6 +2208,11 @@ declare module '@asledgehammer/pipewrench' {
       isHidden(): boolean;
       /**
        * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isInSameInventory(): boolean;
+      /**
+       * Method Parameters: 
        *  - (String arg0): boolean
        */
       isKeep(arg0: string): boolean;
@@ -2593,6 +2598,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       isHidden(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isInSameInventory(): boolean;
       /**
        * Method Parameters: 
        *  - (String arg0): boolean

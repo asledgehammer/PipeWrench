@@ -9,6 +9,8 @@ declare module '@asledgehammer/pipewrench' {
 
       addItemBtn: any;
 
+      capacityWeight: any;
+
       datas: any;
 
       equippedIcon: any;
@@ -16,6 +18,8 @@ declare module '@asledgehammer/pipewrench' {
       getItemBtn: any;
 
       listHeaderColor: any;
+
+      maxWeight: any;
 
       no: any;
 

@@ -19353,6 +19353,11 @@ declare module '@asledgehammer/pipewrench' {
       checkUpdateModelTextures(): void;
       /**
        * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      checkWalkTo(): boolean;
+      /**
+       * Method Parameters: 
        *  - (Empty): void
        */
       cleanWallBlood(): void;
