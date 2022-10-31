@@ -348,47 +348,6 @@ declare module '@asledgehammer/pipewrench' {
       static values(): zombie.core.znet.SteamWorkshopItem$ItemState[];
     }
     /**
-     * @customConstructor ZNetFileAnnounce.new
-     * @
-     * [CLASS] zombie.core.znet.ZNetFileAnnounce
-     */
-    export class ZNetFileAnnounce {
-      /**
-       * Constructors: 
-       *  - (Empty Constructor)
-       */
-      constructor();
-    }
-    /**
-     * @customConstructor ZNetFileChunk.new
-     * @
-     * [CLASS] zombie.core.znet.ZNetFileChunk
-     */
-    export class ZNetFileChunk {
-      /**
-       * Constructors: 
-       *  - (Empty Constructor)
-       */
-      constructor();
-    }
-    /**
-     * @customConstructor ZNetSessionState.new
-     * @
-     * [CLASS] zombie.core.znet.ZNetSessionState
-     */
-    export class ZNetSessionState {
-      /**
-       * Constructors: 
-       *  - (Empty Constructor)
-       */
-      constructor();
-      /**
-       * Method Parameters: 
-       *  - (Empty): string
-       */
-      getDescription(): string;
-    }
-    /**
      * @customConstructor ZNetStatistics.new
      * @
      * [CLASS] zombie.core.znet.ZNetStatistics

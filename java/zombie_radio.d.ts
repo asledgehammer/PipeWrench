@@ -405,11 +405,6 @@ declare module '@asledgehammer/pipewrench' {
       scrambleString(arg0: string, arg1: number, arg2: boolean, arg3: string): string;
       /**
        * Method Parameters: 
-       *  - (ByteBufferWriter arg0): void
-       */
-      sendRequestData(arg0: zombie.core.network.ByteBufferWriter): void;
-      /**
-       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setDisableBroadcasting(arg0: boolean): void;
@@ -456,13 +451,6 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): boolean
        */
       static isStaticSound(arg0: string): boolean;
-      /**
-       * @noSelf
-       *
-       * Method Parameters: 
-       *  - (ByteBuffer arg0): void
-       */
-      static receiveRequestData(arg0: java.nio.ByteBuffer): void;
     }
   }
 }

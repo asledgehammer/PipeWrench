@@ -1566,6 +1566,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): string
        */
+      getVersion(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
       getVersionNumber(): string;
       /**
        * Method Parameters: 
