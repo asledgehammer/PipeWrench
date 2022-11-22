@@ -2195,6 +2195,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isAllowRottenItem(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isCanBeDoneFromFloor(): boolean;
       /**
        * Method Parameters: 
@@ -2256,6 +2261,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (boolean arg0): void
        */
       setAllowFrozenItem(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setAllowRottenItem(arg0: boolean): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -2587,6 +2597,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isAllowRottenItem(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isCanBeDoneFromFloor(): boolean;
       /**
        * Method Parameters: 
@@ -2643,6 +2658,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (boolean arg0): void
        */
       setAllowFrozenItem(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setAllowRottenItem(arg0: boolean): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void

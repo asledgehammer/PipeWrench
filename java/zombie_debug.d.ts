@@ -659,6 +659,7 @@ declare module '@asledgehammer/pipewrench' {
       static readonly ActionSystem: zombie.debug.DebugType;
       static readonly Animation: zombie.debug.DebugType;
       static readonly Asset: zombie.debug.DebugType;
+      static readonly Checksum: zombie.debug.DebugType;
       static readonly Clothing: zombie.debug.DebugType;
       static readonly Combat: zombie.debug.DebugType;
       static readonly Damage: zombie.debug.DebugType;

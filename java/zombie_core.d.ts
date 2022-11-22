@@ -722,6 +722,8 @@ declare module '@asledgehammer/pipewrench' {
       /** java.lang.String */
       static OptionContextMenuFont?: string;
       /** boolean */
+      static OptionDoContainerOutline: boolean;
+      /** boolean */
       static OptionDoDoorSpriteEffects: boolean;
       /** boolean */
       static OptionDoWindSpriteEffects: boolean;
@@ -1217,6 +1219,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       getOptionDisplayAsCelsius(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getOptionDoContainerOutline(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -2107,6 +2114,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (boolean arg0): void
        */
       setOptionDisplayAsCelsius(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setOptionDoContainerOutline(arg0: boolean): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
