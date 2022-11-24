@@ -66,6 +66,12 @@ declare module '@asledgehammer/pipewrench' {
       static onDetachTrailer: (playerObj: any, vehicle: any, attachmentA: any) => any;
 
       /** @noSelf */
+      static onDisableAlarm: (playerObj: any, vehicle: any) => any;
+
+      /** @noSelf */
+      static onEnableAlarm: (playerObj: any, vehicle: any) => any;
+
+      /** @noSelf */
       static onEnter: (playerObj: any, vehicle: any, seat: any) => any;
 
       /** @noSelf */

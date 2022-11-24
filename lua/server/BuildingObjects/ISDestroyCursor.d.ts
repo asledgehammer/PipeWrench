@@ -9,6 +9,8 @@ declare module '@asledgehammer/pipewrench' {
 
       character: any;
 
+      cornerCounter: any;
+
       currentObject: any;
 
       currentSquare: any;

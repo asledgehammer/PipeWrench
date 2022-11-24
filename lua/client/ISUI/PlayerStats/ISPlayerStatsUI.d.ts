@@ -57,6 +57,8 @@ declare module '@asledgehammer/pipewrench' {
 
       selectedPerk: any;
 
+      syncWeightTimer: any;
+
       traits: any;
 
       traitsRemoveButtons: any;
@@ -118,6 +120,8 @@ declare module '@asledgehammer/pipewrench' {
       updateButtons: (() => any) | any;
 
       updateColumns: (() => any) | any;
+
+      updateWeight: (() => any) | any;
 
       /** @noSelf */
       static loadPerks: (self: any) => any;

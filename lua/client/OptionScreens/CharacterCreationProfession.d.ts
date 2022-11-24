@@ -39,8 +39,6 @@ declare module '@asledgehammer/pipewrench' {
 
       freeTraits: any;
 
-      greenBlits: any;
-
       infoBtn: any;
 
       infoRichText: any;
@@ -108,6 +106,8 @@ declare module '@asledgehammer/pipewrench' {
       traitButtonHgt: any;
 
       traitButtonPad: any;
+
+      whiteBar: any;
 
       constructor(x: any, y: any, width: any, height: any);
 

@@ -16,6 +16,9 @@ declare module '@asledgehammer/pipewrench' {
 
       /** @noSelf */
       static OnKeyStartPressed: (key: any) => any;
+
+      /** @noSelf */
+      static OnTick: () => any;
     }
   }
   export namespace lua.client.DebugUIs.ISFastTeleportMove {}

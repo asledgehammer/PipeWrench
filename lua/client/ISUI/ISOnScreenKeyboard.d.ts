@@ -89,6 +89,8 @@ declare module '@asledgehammer/pipewrench' {
 
       getCursorPos: (() => any) | any;
 
+      getInternalText: (() => any) | any;
+
       getText: (() => any) | any;
 
       instantiate: (() => any) | any;

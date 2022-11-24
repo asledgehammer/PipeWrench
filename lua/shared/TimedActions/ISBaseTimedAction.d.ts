@@ -39,6 +39,8 @@ declare module '@asledgehammer/pipewrench' {
 
       isValid: (() => any) | any;
 
+      isValidStart: (() => any) | any;
+
       perform: (() => any) | any;
 
       resetJobDelta: (() => any) | any;

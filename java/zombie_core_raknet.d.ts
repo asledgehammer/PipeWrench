@@ -85,14 +85,14 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
-       *  - (String arg0, int arg1, String arg2): number
+       *  - (String arg0, int arg1, String arg2, boolean arg3): number
        */
-      Connect(arg0: string, arg1: number, arg2: string): number;
+      Connect(arg0: string, arg1: number, arg2: string, arg3: boolean): number;
       /**
        * Method Parameters: 
-       *  - (long arg0, String arg1): number
+       *  - (long arg0, String arg1, boolean arg2): number
        */
-      ConnectToSteamServer(arg0: number, arg1: string): number;
+      ConnectToSteamServer(arg0: number, arg1: string, arg2: boolean): number;
       /**
        * Method Parameters: 
        *  - (long arg0): number
@@ -578,9 +578,9 @@ declare module '@asledgehammer/pipewrench' {
       constructor(arg0: number, arg1: number, arg2: number, arg3: string, arg4: boolean);
       /**
        * Method Parameters: 
-       *  - (String arg0, int arg1, String arg2): void
+       *  - (String arg0, int arg1, String arg2, boolean arg3): void
        */
-      Connect(arg0: string, arg1: number, arg2: string): void;
+      Connect(arg0: string, arg1: number, arg2: string, arg3: boolean): void;
       /**
        * Method Parameters: 
        *  - (Empty): java.nio.ByteBuffer

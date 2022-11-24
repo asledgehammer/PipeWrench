@@ -3106,6 +3106,11 @@ declare module '@asledgehammer/pipewrench' {
       setAgeFactor(arg0: number): void;
       /**
        * Method Parameters: 
+       *  - (int arg0): void
+       */
+      setCapacity(arg0: number): void;
+      /**
+       * Method Parameters: 
        *  - (String arg0): void
        */
       setCloseSound(arg0: string): void;
@@ -3630,6 +3635,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Recipe arg0, InventoryItem arg1, ArrayList arg2, IsoGameCharacter arg3): boolean
        */
       static hasHeat(arg0: zombie.scripting.objects.Recipe, arg1: zombie.inventory.InventoryItem, arg2: java.util.ArrayList<zombie.inventory.ItemContainer>, arg3: zombie.characters.IsoGameCharacter): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Recipe arg0, IsoGameCharacter arg1, InventoryItem arg2, ArrayList arg3): boolean
+       */
+      static isAllItemsUsableRotten(arg0: zombie.scripting.objects.Recipe, arg1: zombie.characters.IsoGameCharacter, arg2: zombie.inventory.InventoryItem, arg3: java.util.ArrayList<zombie.inventory.ItemContainer>): boolean;
     }
   }
 }

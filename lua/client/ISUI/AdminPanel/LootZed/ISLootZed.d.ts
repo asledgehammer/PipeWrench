@@ -17,6 +17,8 @@ declare module '@asledgehammer/pipewrench' {
 
       playerSelect: any;
 
+      searchEntryBox: any;
+
       titlebarbkg: any;
 
       constructor(width: any, height: any, player: any);
@@ -28,6 +30,8 @@ declare module '@asledgehammer/pipewrench' {
       onClick: ((button: any) => any) | any;
 
       onSelectContainerType: (() => any) | any;
+
+      onTextChange: (() => any) | any;
 
       render: (() => any) | any;
 

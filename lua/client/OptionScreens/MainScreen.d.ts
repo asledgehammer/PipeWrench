@@ -129,6 +129,10 @@ declare module '@asledgehammer/pipewrench' {
 
       survivalOption: any;
 
+      termsOfService: any;
+
+      termsOfServiceDialog: any;
+
       threeD: any;
 
       time: any;
@@ -177,6 +181,8 @@ declare module '@asledgehammer/pipewrench' {
 
       OnClickNews: (() => any) | any;
 
+      onClickTermsOfService: ((button: any) => any) | any;
+
       onClickVersionDetail: (() => any) | any;
 
       onConfirmQuitToDesktop: ((button: any) => any) | any;
@@ -190,6 +196,8 @@ declare module '@asledgehammer/pipewrench' {
       onLoseJoypadFocus: ((joypadData: any) => any) | any;
 
       onReturnToGame: (() => any) | any;
+
+      onTermsOfServiceOK: (() => any) | any;
 
       onTutorialControllerWarn2: ((button: any) => any) | any;
 
