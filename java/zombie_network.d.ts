@@ -1851,6 +1851,7 @@ declare module '@asledgehammer/pipewrench' {
       static readonly WaveSignal: zombie.network.PacketTypes$PacketType;
       static readonly WeaponHit: zombie.network.PacketTypes$PacketType;
       static readonly Weather: zombie.network.PacketTypes$PacketType;
+      static readonly WorldMapPlayerPosition: zombie.network.PacketTypes$PacketType;
       static readonly WorldMessage: zombie.network.PacketTypes$PacketType;
       static readonly WorldSound: zombie.network.PacketTypes$PacketType;
       static readonly WoundInfection: zombie.network.PacketTypes$PacketType;
@@ -2964,9 +2965,9 @@ declare module '@asledgehammer/pipewrench' {
     export class Userlog {
       /**
        * Constructors: 
-       *  - (String arg0, String arg1, String arg2, String arg3, int arg4)
+       *  - (String arg0, String arg1, String arg2, String arg3, int arg4, String arg5)
        */
-      constructor(arg0: string, arg1: string, arg2: string, arg3: string, arg4: number);
+      constructor(arg0: string, arg1: string, arg2: string, arg3: string, arg4: number, arg5: string);
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -2977,6 +2978,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): string
        */
       getIssuedBy(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getLastUpdate(): string;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -3006,6 +3012,7 @@ declare module '@asledgehammer/pipewrench' {
       static readonly DupeItem: zombie.network.Userlog$UserlogType;
       static readonly Kicked: zombie.network.Userlog$UserlogType;
       static readonly LuaChecksum: zombie.network.Userlog$UserlogType;
+      static readonly SuspiciousActivity: zombie.network.Userlog$UserlogType;
       static readonly UnauthorizedPacket: zombie.network.Userlog$UserlogType;
       static readonly WarningPoint: zombie.network.Userlog$UserlogType;
       name(): string;

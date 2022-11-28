@@ -3797,6 +3797,12 @@ declare module '@asledgehammer/pipewrench' {
       getBiggestSoundZomb(arg0: number, arg1: number, arg2: number, arg3: boolean, arg4: zombie.characters.IsoZombie): zombie.WorldSoundManager$ResultBiggestSound;
       /**
        * Method Parameters: 
+       *  - (int arg0): number
+       *  - (IsoZombie arg0): number
+       */
+      getHearingMultiplier(arg0: number | zombie.characters.IsoZombie): number;
+      /**
+       * Method Parameters: 
        *  - (Empty): zombie.WorldSoundManager$WorldSound
        */
       getNew(): zombie.WorldSoundManager$WorldSound;
