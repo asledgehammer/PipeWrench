@@ -2253,6 +2253,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): void
        */
+      syncWeight(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
       update(): void;
     }
     /**

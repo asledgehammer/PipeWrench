@@ -19353,6 +19353,11 @@ declare module '@asledgehammer/pipewrench' {
       checkUpdateModelTextures(): void;
       /**
        * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      checkWalkTo(): boolean;
+      /**
+       * Method Parameters: 
        *  - (Empty): void
        */
       cleanWallBlood(): void;
@@ -31507,6 +31512,14 @@ declare module '@asledgehammer/pipewrench' {
       static readonly EAT_BODY_DIST: number;
       /** float */
       static readonly EAT_BODY_TIME: number;
+      /** byte */
+      static readonly HEARING_NORMAL: number;
+      /** byte */
+      static readonly HEARING_PINPOINT: number;
+      /** byte */
+      static readonly HEARING_POOR: number;
+      /** byte */
+      static readonly HEARING_RANDOM: number;
       /** float */
       static readonly LUNGE_TIME: number;
       /** int */

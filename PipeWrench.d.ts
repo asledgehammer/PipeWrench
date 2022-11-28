@@ -2388,6 +2388,13 @@ declare module '@asledgehammer/pipewrench' {
    * @noSelf
    *
    * Method Parameters:
+   *  - (UdpConnection arg0): void
+   */
+  export function checkModsNeedUpdate(arg0: zombie.core.raknet.UdpConnection): void;
+  /**
+   * @noSelf
+   *
+   * Method Parameters:
    *  - (String arg0): boolean
    */
   export function checkPlayerCanUseChat(arg0: string): boolean;
@@ -2440,6 +2447,13 @@ declare module '@asledgehammer/pipewrench' {
    *  - (String arg0): void
    */
   export function connectToServerStateCallback(arg0: string): void;
+  /**
+   * @noSelf
+   *
+   * Method Parameters:
+   *  - (String arg0, String arg1): void
+   */
+  export function connectionManagerLog(arg0: string, arg1: string): void;
   /**
    * @noSelf
    *
@@ -5261,7 +5275,7 @@ declare module '@asledgehammer/pipewrench' {
    * @noSelf
    *
    * Method Parameters:
-   *  - (String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6): void
+   *  - (String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6, boolean arg7): void
    */
   export function serverConnect(
     arg0: string,
@@ -5270,7 +5284,8 @@ declare module '@asledgehammer/pipewrench' {
     arg3: string,
     arg4: string,
     arg5: string,
-    arg6: string
+    arg6: string,
+    arg7: boolean
   ): void;
   /**
    * @noSelf
@@ -7056,6 +7071,10 @@ declare module '@asledgehammer/pipewrench' {
   /** @customConstructor ISTabPanel:new */
   export class ISTabPanel extends lua.client.ISUI.ISTabPanel {}
 
+  // [lua/client/ISUI/ISTermsOfServiceUI.d.ts]
+  /** @customConstructor ISTermsOfServiceUI:new */
+  export class ISTermsOfServiceUI extends lua.client.ISUI.ISTermsOfServiceUI {}
+
   // [lua/client/ISUI/ISTextBox.d.ts]
   /** @customConstructor ISTextBox:new */
   export class ISTextBox extends lua.client.ISUI.ISTextBox {}
@@ -8518,6 +8537,9 @@ declare module '@asledgehammer/pipewrench' {
   // [lua/client/Vehicles/ISUI/ISVehicleSeatUI.d.ts]
   /** @customConstructor ISVehicleSeatUI:new */
   export class ISVehicleSeatUI extends lua.client.Vehicles.ISUI.ISVehicleSeatUI {}
+  export abstract class ImageScale extends lua.client.Vehicles.ISUI.ImageScale {}
+  export abstract class SeatOffsetX extends lua.client.Vehicles.ISUI.SeatOffsetX {}
+  export abstract class SeatOffsetY extends lua.client.Vehicles.ISUI.SeatOffsetY {}
 
   // [lua/client/Vehicles/ISVehicleTrailerUtils.d.ts]
   export abstract class ISVehicleTrailerUtils extends lua.client.Vehicles.ISVehicleTrailerUtils {}

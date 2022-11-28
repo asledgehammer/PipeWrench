@@ -17,6 +17,10 @@ declare module '@asledgehammer/pipewrench' {
 
       connecting: any;
 
+      connectTypeEntry: any;
+
+      connectTypeLabel: any;
+
       descEntry: any;
 
       descLabel: any;

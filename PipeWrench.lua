@@ -48,6 +48,7 @@ function Exports.canInviteFriends() return canInviteFriends() end
 function Exports.canModifyPlayerScoreboard() return canModifyPlayerScoreboard() end
 function Exports.canModifyPlayerStats() return canModifyPlayerStats() end
 function Exports.canSeePlayerStats() return canSeePlayerStats() end
+function Exports.checkModsNeedUpdate(arg1) return checkModsNeedUpdate(arg1) end
 function Exports.checkPlayerCanUseChat(arg1) return checkPlayerCanUseChat(arg1) end
 function Exports.checkSaveFileExists(arg1) return checkSaveFileExists(arg1) end
 function Exports.checkSaveFolderExists(arg1) return checkSaveFolderExists(arg1) end
@@ -56,6 +57,7 @@ function Exports.checkStringPattern(arg1) return checkStringPattern(arg1) end
 function Exports.cloneItemType(arg1,arg2) return cloneItemType(arg1,arg2) end
 function Exports.configureLighting(arg1) return configureLighting(arg1) end
 function Exports.connectToServerStateCallback(arg1) return connectToServerStateCallback(arg1) end
+function Exports.connectionManagerLog(arg1,arg2) return connectionManagerLog(arg1,arg2) end
 function Exports.copyTable(arg1,arg2) return copyTable(arg1,arg2) end
 function Exports.createHordeFromTo(arg1,arg2,arg3,arg4,arg5) return createHordeFromTo(arg1,arg2,arg3,arg4,arg5) end
 function Exports.createHordeInAreaTo(arg1,arg2,arg3,arg4,arg5,arg6,arg7) return createHordeInAreaTo(arg1,arg2,arg3,arg4,arg5,arg6,arg7) end
@@ -436,7 +438,7 @@ function Exports.sendSplint(arg1,arg2,arg3,arg4,arg5) return sendSplint(arg1,arg
 function Exports.sendStitch(arg1,arg2,arg3,arg4,arg5) return sendStitch(arg1,arg2,arg3,arg4,arg5) end
 function Exports.sendSwitchSeat(arg1,arg2,arg3,arg4) return sendSwitchSeat(arg1,arg2,arg3,arg4) end
 function Exports.sendVisual(arg1) return sendVisual(arg1) end
-function Exports.serverConnect(arg1,arg2,arg3,arg4,arg5,arg6,arg7) return serverConnect(arg1,arg2,arg3,arg4,arg5,arg6,arg7) end
+function Exports.serverConnect(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8) return serverConnect(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8) end
 function Exports.serverConnectCoop(arg1) return serverConnectCoop(arg1) end
 function Exports.serverFileExists(arg1) return serverFileExists(arg1) end
 function Exports.setActivePlayer(arg1) return setActivePlayer(arg1) end
@@ -2396,6 +2398,9 @@ Events.OnGameBoot.Add(function()
 --[lua/client/ISUI/ISTabPanel.d.ts]
   Exports.ISTabPanel = loadstring("return _G['ISTabPanel']")()
 
+--[lua/client/ISUI/ISTermsOfServiceUI.d.ts]
+  Exports.ISTermsOfServiceUI = loadstring("return _G['ISTermsOfServiceUI']")()
+
 --[lua/client/ISUI/ISTextBox.d.ts]
   Exports.ISTextBox = loadstring("return _G['ISTextBox']")()
 
@@ -3457,6 +3462,9 @@ Events.OnGameBoot.Add(function()
 
 --[lua/client/Vehicles/ISUI/ISVehicleSeatUI.d.ts]
   Exports.ISVehicleSeatUI = loadstring("return _G['ISVehicleSeatUI']")()
+  Exports.ImageScale = loadstring("return _G['ImageScale']")()
+  Exports.SeatOffsetX = loadstring("return _G['SeatOffsetX']")()
+  Exports.SeatOffsetY = loadstring("return _G['SeatOffsetY']")()
 
 --[lua/client/Vehicles/ISVehicleTrailerUtils.d.ts]
   Exports.ISVehicleTrailerUtils = loadstring("return _G['ISVehicleTrailerUtils']")()

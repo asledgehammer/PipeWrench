@@ -84,6 +84,8 @@ declare module '@asledgehammer/pipewrench' {
       /** byte */
       static readonly BD_splintItem: number;
       /** byte */
+      static readonly BD_stiffness: number;
+      /** byte */
       static readonly BD_stitchTime: number;
       /** byte */
       static readonly BD_stitched: number;
@@ -484,6 +486,8 @@ declare module '@asledgehammer/pipewrench' {
       static startAuth?: java.util.Calendar;
       /** long */
       static steamID: number;
+      /** boolean */
+      static useSteamRelay: boolean;
       /** java.lang.String */
       static username?: string;
 
@@ -574,9 +578,9 @@ declare module '@asledgehammer/pipewrench' {
       disconnect(): void;
       /**
        * Method Parameters: 
-       *  - (String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6): void
+       *  - (String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6, boolean arg7): void
        */
-      doConnect(arg0: string, arg1: string, arg2: string, arg3: string, arg4: string, arg5: string, arg6: string): void;
+      doConnect(arg0: string, arg1: string, arg2: string, arg3: string, arg4: string, arg5: string, arg6: string, arg7: boolean): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -1847,6 +1851,7 @@ declare module '@asledgehammer/pipewrench' {
       static readonly WaveSignal: zombie.network.PacketTypes$PacketType;
       static readonly WeaponHit: zombie.network.PacketTypes$PacketType;
       static readonly Weather: zombie.network.PacketTypes$PacketType;
+      static readonly WorldMapPlayerPosition: zombie.network.PacketTypes$PacketType;
       static readonly WorldMessage: zombie.network.PacketTypes$PacketType;
       static readonly WorldSound: zombie.network.PacketTypes$PacketType;
       static readonly WoundInfection: zombie.network.PacketTypes$PacketType;
@@ -2039,6 +2044,11 @@ declare module '@asledgehammer/pipewrench' {
       getSteamId(): string;
       /**
        * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getUseSteamRelay(): boolean;
+      /**
+       * Method Parameters: 
        *  - (Empty): string
        */
       getUserName(): string;
@@ -2152,6 +2162,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): void
        */
       setSteamId(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setUseSteamRelay(arg0: boolean): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -2950,9 +2965,9 @@ declare module '@asledgehammer/pipewrench' {
     export class Userlog {
       /**
        * Constructors: 
-       *  - (String arg0, String arg1, String arg2, String arg3, int arg4)
+       *  - (String arg0, String arg1, String arg2, String arg3, int arg4, String arg5)
        */
-      constructor(arg0: string, arg1: string, arg2: string, arg3: string, arg4: number);
+      constructor(arg0: string, arg1: string, arg2: string, arg3: string, arg4: number, arg5: string);
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -2963,6 +2978,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): string
        */
       getIssuedBy(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getLastUpdate(): string;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -2992,6 +3012,7 @@ declare module '@asledgehammer/pipewrench' {
       static readonly DupeItem: zombie.network.Userlog$UserlogType;
       static readonly Kicked: zombie.network.Userlog$UserlogType;
       static readonly LuaChecksum: zombie.network.Userlog$UserlogType;
+      static readonly SuspiciousActivity: zombie.network.Userlog$UserlogType;
       static readonly UnauthorizedPacket: zombie.network.Userlog$UserlogType;
       static readonly WarningPoint: zombie.network.Userlog$UserlogType;
       name(): string;

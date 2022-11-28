@@ -453,6 +453,7 @@
 /// <reference path="lua/client/ISUI/ISSleepDialog.d.ts" />
 /// <reference path="lua/client/ISUI/ISSpinBox.d.ts" />
 /// <reference path="lua/client/ISUI/ISTabPanel.d.ts" />
+/// <reference path="lua/client/ISUI/ISTermsOfServiceUI.d.ts" />
 /// <reference path="lua/client/ISUI/ISTextBox.d.ts" />
 /// <reference path="lua/client/ISUI/ISTextEntryBox.d.ts" />
 /// <reference path="lua/client/ISUI/ISTickBox.d.ts" />
