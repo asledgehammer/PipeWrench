@@ -128,6 +128,7 @@
 /// <reference path="java/zombie_sandbox.d.ts" />
 /// <reference path="java/zombie_scripting.d.ts" />
 /// <reference path="java/zombie_scripting_objects.d.ts" />
+/// <reference path="java/zombie_text_templating.d.ts" />
 /// <reference path="java/zombie_ui.d.ts" />
 /// <reference path="java/zombie_util.d.ts" />
 /// <reference path="java/zombie_util_list.d.ts" />

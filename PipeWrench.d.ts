@@ -655,6 +655,10 @@ declare module '@asledgehammer/pipewrench' {
   export class IPathfinder extends zombie.vehicles.PolygonalMap2$IPathfinder {}
   /** @customConstructor IPooledObject.new */
   export class IPooledObject extends zombie.util.IPooledObject {}
+  /** @customConstructor IReplace.new */
+  export class IReplace extends zombie.text.templating.IReplace {}
+  /** @customConstructor IReplaceProvider.new */
+  export class IReplaceProvider extends zombie.text.templating.IReplaceProvider {}
   /** @customConstructor IShaderProgramListener.new */
   export class IShaderProgramListener extends zombie.core.opengl.IShaderProgramListener {}
   /** @customConstructor IStatePermissions.new */
@@ -1415,6 +1419,8 @@ declare module '@asledgehammer/pipewrench' {
   export class RenderEffectType extends zombie.iso.objects.RenderEffectType {}
   /** @customConstructor RenderSettings.new */
   export class RenderSettings extends zombie.core.opengl.RenderSettings {}
+  /** @customConstructor ReplaceProviderCharacter.new */
+  export class ReplaceProviderCharacter extends zombie.text.templating.ReplaceProviderCharacter {}
   /** @customConstructor RequestState.new */
   export class RequestState extends zombie.network.GameClient$RequestState {}
   /** @customConstructor RequiredSkill.new */
@@ -1608,8 +1614,12 @@ declare module '@asledgehammer/pipewrench' {
   export class SystemDisabler extends zombie.SystemDisabler {}
   /** @customConstructor Temperature.new */
   export class Temperature extends zombie.iso.weather.Temperature {}
+  /** @customConstructor TemplateText.new */
+  export class TemplateText extends zombie.text.templating.TemplateText {}
   /** @customConstructor TentAmbianceLogic.new */
   export class TentAmbianceLogic extends zombie.audio.ObjectAmbientEmitters$TentAmbianceLogic {}
+  /** @customConstructor TermsOfServiceState.new */
+  export class TermsOfServiceState extends zombie.gameStates.TermsOfServiceState {}
   /** @customConstructor TestResults.new */
   export class TestResults extends zombie.iso.LosUtil$TestResults {}
   /** @customConstructor TextDrawHorizontal.new */

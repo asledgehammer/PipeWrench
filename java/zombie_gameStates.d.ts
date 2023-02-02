@@ -1311,5 +1311,57 @@ declare module '@asledgehammer/pipewrench' {
        */
       update(): void;
     }
+    /**
+     * @customConstructor TermsOfServiceState.new
+     * @
+     * [CLASS] zombie.gameStates.TermsOfServiceState extends zombie.gameStates.GameState
+     */
+    export class TermsOfServiceState {
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       */
+      constructor();
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      enter(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      exit(): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): any
+       */
+      fromLua0(arg0: string): any;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.gameStates.GameState
+       */
+      redirectState(): zombie.gameStates.GameState;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      reenter(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      render(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.gameStates.GameStateMachine$StateAction
+       */
+      update(): zombie.gameStates.GameStateMachine$StateAction;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      yield(): void;
+    }
   }
 }
