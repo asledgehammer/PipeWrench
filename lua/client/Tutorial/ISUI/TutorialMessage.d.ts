@@ -44,7 +44,7 @@ declare module '@asledgehammer/pipewrench' {
         message: any,
         clickToSkip: any,
         target: any,
-        test: any
+        test: any,
       ) => any;
 
       /** @noSelf */

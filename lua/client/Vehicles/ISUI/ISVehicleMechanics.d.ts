@@ -182,7 +182,7 @@ declare module '@asledgehammer/pipewrench' {
         vehicleId: any,
         partId: any,
         itemId: any,
-        installing: any
+        installing: any,
       ) => any;
 
       /** @noSelf */

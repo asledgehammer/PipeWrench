@@ -1077,6 +1077,26 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): number
        */
+      getMaxTextureSize(): number;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): number
+       */
+      getMaxTextureSizeFromFlags(arg0: number): number;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): number
+       */
+      getMaxTextureSizeFromOption(arg0: number): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getMaxVehicleTextureSize(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
       getMaxZoom(): number;
       /**
        * Method Parameters: 
@@ -1289,6 +1309,16 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): number
        */
       getOptionMaxChatOpaque(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getOptionMaxTextureSize(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getOptionMaxVehicleTextureSize(): number;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -2184,6 +2214,16 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0): void
        */
       setOptionMaxChatOpaque(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): void
+       */
+      setOptionMaxTextureSize(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): void
+       */
+      setOptionMaxVehicleTextureSize(arg0: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void

@@ -69,7 +69,7 @@ declare module '@asledgehammer/pipewrench' {
         onItemDropped: any,
         onItemRemove: any,
         onVerifyItem: any,
-        onDragSelf: any
+        onDragSelf: any,
       );
 
       activateToolTip: (() => any) | any;

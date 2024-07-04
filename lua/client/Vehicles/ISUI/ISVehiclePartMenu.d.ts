@@ -29,7 +29,7 @@ declare module '@asledgehammer/pipewrench' {
         part: any,
         fuelContainerList: any,
         fuelContainer: any,
-        player: any
+        player: any,
       ) => any;
 
       /** @noSelf */
@@ -74,7 +74,7 @@ declare module '@asledgehammer/pipewrench' {
         part: any,
         fuelContainerList: any,
         fuelContainer: any,
-        player: any
+        player: any,
       ) => any;
 
       /** @noSelf */

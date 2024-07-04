@@ -215,7 +215,7 @@ declare module '@asledgehammer/pipewrench' {
         _onclick: any,
         target: any,
         param1: any,
-        param2: any
+        param2: any,
       ) => any;
 
       /** @noSelf */

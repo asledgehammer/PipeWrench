@@ -61,7 +61,7 @@ declare module '@asledgehammer/pipewrench' {
         target: any,
         onChange: any,
         onChangeArg1: any,
-        onChangeArg2: any
+        onChangeArg2: any,
       );
 
       addOption: ((option: any) => any) | any;

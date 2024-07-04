@@ -44,7 +44,7 @@ declare module '@asledgehammer/pipewrench' {
         onclick: any,
         player: any,
         param1: any,
-        param2: any
+        param2: any,
       );
 
       destroy: (() => any) | any;

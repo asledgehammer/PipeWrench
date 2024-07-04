@@ -35,7 +35,7 @@ declare module '@asledgehammer/pipewrench' {
         headerText: any,
         except: any,
         scriptOnOk: any,
-        leaderInstance: any
+        leaderInstance: any,
       );
 
       changeOption: ((option: any) => any) | any;

@@ -47,7 +47,7 @@ declare module '@asledgehammer/pipewrench' {
         player: any,
         percedWood: any,
         stickOrBranch: any,
-        campfire: any
+        campfire: any,
       ) => any;
 
       /** @noSelf */

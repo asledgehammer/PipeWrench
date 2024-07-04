@@ -66,7 +66,7 @@ declare module '@asledgehammer/pipewrench' {
             button7: any,
             button8: any,
             button9: any,
-            button10: any
+            button10: any,
           ) => any)
         | any;
 

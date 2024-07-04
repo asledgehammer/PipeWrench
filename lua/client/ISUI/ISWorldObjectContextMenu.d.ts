@@ -49,7 +49,7 @@ declare module '@asledgehammer/pipewrench' {
         generator: any,
         fuelContainerList: any,
         fuelContainer: any,
-        player: any
+        player: any,
       ) => any;
 
       /** @noSelf */
@@ -116,7 +116,7 @@ declare module '@asledgehammer/pipewrench' {
         worldZ: any,
         radius: any,
         doneSquares: any,
-        squares: any
+        squares: any,
       ) => any;
 
       /** @noSelf */
@@ -129,7 +129,7 @@ declare module '@asledgehammer/pipewrench' {
         screenY: any,
         squares: any,
         radius: any,
-        worldObjects: any
+        worldObjects: any,
       ) => any;
 
       /** @noSelf */
@@ -144,7 +144,7 @@ declare module '@asledgehammer/pipewrench' {
         context: any,
         worldobjects: any,
         playerObj: any,
-        playerInv: any
+        playerInv: any,
       ) => any;
 
       /** @noSelf */
@@ -158,7 +158,7 @@ declare module '@asledgehammer/pipewrench' {
         context: any,
         worldobjects: any,
         playerObj: any,
-        playerInv: any
+        playerInv: any,
       ) => any;
 
       /** @noSelf */
@@ -169,7 +169,7 @@ declare module '@asledgehammer/pipewrench' {
         context: any,
         worldobjects: any,
         playerObj: any,
-        playerInv: any
+        playerInv: any,
       ) => any;
 
       /** @noSelf */
@@ -433,7 +433,7 @@ declare module '@asledgehammer/pipewrench' {
         fuelObject: any,
         fuelContainerList: any,
         fuelContainer: any,
-        player: any
+        player: any,
       ) => any;
 
       /** @noSelf */
@@ -451,7 +451,7 @@ declare module '@asledgehammer/pipewrench' {
         waterObject: any,
         waterContainerList: any,
         waterContainer: any,
-        player: any
+        player: any,
       ) => any;
 
       /** @noSelf */
@@ -512,7 +512,7 @@ declare module '@asledgehammer/pipewrench' {
         soapList: any,
         washList: any,
         singleClothing: any,
-        noSoap: any
+        noSoap: any,
       ) => any;
 
       /** @noSelf */

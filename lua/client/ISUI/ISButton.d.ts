@@ -90,7 +90,7 @@ declare module '@asledgehammer/pipewrench' {
         clicktarget: any,
         onclick: any,
         onmousedown: any,
-        allowMouseUpProcessing: any
+        allowMouseUpProcessing: any,
       );
 
       clearJoypadButton: (() => any) | any;

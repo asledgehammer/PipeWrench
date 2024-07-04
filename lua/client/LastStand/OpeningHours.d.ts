@@ -17,7 +17,7 @@ declare module '@asledgehammer/pipewrench' {
         regionSpawn: any,
         regionSpawnX: any,
         regionSpawnY: any,
-        regionSpawnZ: any
+        regionSpawnZ: any,
       ) => any;
 
       /** @noSelf */

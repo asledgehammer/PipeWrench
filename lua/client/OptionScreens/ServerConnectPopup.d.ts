@@ -11,6 +11,10 @@ declare module '@asledgehammer/pipewrench' {
 
       connectBtn: any;
 
+      connectTypeEntry: any;
+
+      connectTypeLabel: any;
+
       ip: any;
 
       itemheightoverride: any;

@@ -35,7 +35,7 @@ declare module '@asledgehammer/pipewrench' {
             _stepsize: any,
             _get: any,
             _set: any,
-            _reqIdx: any
+            _reqIdx: any,
           ) => any)
         | any;
 

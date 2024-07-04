@@ -13,7 +13,7 @@ declare module '@asledgehammer/pipewrench' {
         character: any,
         arg4: any,
         isJunk: any,
-        arg6: any
+        arg6: any,
       ) => any;
 
       /** @noSelf */
@@ -28,7 +28,7 @@ declare module '@asledgehammer/pipewrench' {
         container: any,
         doItemContainer: any,
         player: any,
-        roomDist: any
+        roomDist: any,
       ) => any;
 
       /** @noSelf */
@@ -37,7 +37,7 @@ declare module '@asledgehammer/pipewrench' {
         container: any,
         arg2: any,
         character: any,
-        roomDist: any
+        roomDist: any,
       ) => any;
     }
   }

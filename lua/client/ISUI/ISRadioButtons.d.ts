@@ -67,7 +67,7 @@ declare module '@asledgehammer/pipewrench' {
         arg1: any,
         arg2: any,
         arg3: any,
-        arg4: any
+        arg4: any,
       );
 
       addOption: ((text: any, data: any, texture: any, enabled: any) => any) | any;

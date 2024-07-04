@@ -82,7 +82,7 @@ declare module '@asledgehammer/pipewrench' {
         title: any,
         lineNumber: any,
         editable: any,
-        numberOfPages: any
+        numberOfPages: any,
       );
 
       close: (() => any) | any;

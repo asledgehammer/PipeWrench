@@ -51,7 +51,7 @@ declare module '@asledgehammer/pipewrench' {
             localIP: any,
             port: any,
             serverPassword: any,
-            useSteamRelay: any
+            useSteamRelay: any,
           ) => any)
         | any;
 

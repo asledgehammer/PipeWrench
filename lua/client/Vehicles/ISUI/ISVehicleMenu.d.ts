@@ -190,7 +190,7 @@ declare module '@asledgehammer/pipewrench' {
         moveThem: any,
         doEnter: any,
         seatTo: any,
-        itemListIndex: any
+        itemListIndex: any,
       ) => any;
     }
   }

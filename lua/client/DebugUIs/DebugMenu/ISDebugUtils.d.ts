@@ -33,7 +33,7 @@ declare module '@asledgehammer/pipewrench' {
         _h: any,
         _title: any,
         options: any,
-        _func: any
+        _func: any,
       ) => any;
 
       /** @noSelf */

@@ -33,7 +33,7 @@ declare module '@asledgehammer/pipewrench' {
         yoffset: any,
         zoffset: any,
         rotation: any,
-        isMultiple: any
+        isMultiple: any,
       );
     }
   }

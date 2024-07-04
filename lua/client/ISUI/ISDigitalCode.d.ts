@@ -57,7 +57,7 @@ declare module '@asledgehammer/pipewrench' {
         player: any,
         padlock: any,
         thumpable: any,
-        _new_: any
+        _new_: any,
       );
 
       decrement: ((number: any) => any) | any;
