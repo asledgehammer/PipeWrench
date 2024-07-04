@@ -72,7 +72,7 @@ declare module '@asledgehammer/pipewrench' {
         changeOptionTarget: any,
         changeOptionMethod: any,
         changeOptionArg1: any,
-        changeOptionArg2: any
+        changeOptionArg2: any,
       );
 
       addOption: ((name: any, data: any, texture: any) => any) | any;

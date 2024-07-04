@@ -29,7 +29,7 @@ declare module '@asledgehammer/pipewrench' {
         northSprite2: any,
         northSprite3: any,
         pillar: any,
-        pillarNorth: any
+        pillarNorth: any,
       );
 
       create: ((x: any, y: any, z: any, north: any, sprite: any) => any) | any;

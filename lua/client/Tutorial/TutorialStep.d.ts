@@ -23,7 +23,7 @@ declare module '@asledgehammer/pipewrench' {
             focusx: any,
             focusy: any,
             focusw: any,
-            focush: any
+            focush: any,
           ) => any)
         | any;
 

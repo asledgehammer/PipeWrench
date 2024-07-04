@@ -23,7 +23,7 @@ declare module '@asledgehammer/pipewrench' {
         context: any,
         recipeList: any,
         player: any,
-        containerList: any
+        containerList: any,
       ) => any;
 
       /** @noSelf */
@@ -36,7 +36,7 @@ declare module '@asledgehammer/pipewrench' {
         fixing: any,
         fixer: any,
         subMenuFix: any,
-        vehiclePart: any
+        vehiclePart: any,
       ) => any;
 
       /** @noSelf */
@@ -46,7 +46,7 @@ declare module '@asledgehammer/pipewrench' {
         evoItem: any,
         extraInfo: any,
         evorecipe2: any,
-        player: any
+        player: any,
       ) => any;
 
       /** @noSelf */
@@ -68,7 +68,7 @@ declare module '@asledgehammer/pipewrench' {
         fixing: any,
         fixOption: any,
         subMenuFix: any,
-        vehiclePart: any
+        vehiclePart: any,
       ) => any;
 
       /** @noSelf */
@@ -132,7 +132,7 @@ declare module '@asledgehammer/pipewrench' {
         player: any,
         evorecipe: any,
         baseItem: any,
-        containerList: any
+        containerList: any,
       ) => any;
 
       /** @noSelf */
@@ -254,7 +254,7 @@ declare module '@asledgehammer/pipewrench' {
         container: any,
         containers: any,
         selectedItemType: any,
-        selectedItemContainer: any
+        selectedItemContainer: any,
       ) => any;
 
       /** @noSelf */
@@ -436,7 +436,7 @@ declare module '@asledgehammer/pipewrench' {
         fabric: any,
         thread: any,
         needle: any,
-        onlyHoles: any
+        onlyHoles: any,
       ) => any;
 
       /** @noSelf */

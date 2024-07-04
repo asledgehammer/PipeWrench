@@ -20,7 +20,7 @@ declare module '@asledgehammer/pipewrench' {
         player: any,
         toolTip: any,
         metalBar: any,
-        wire: any
+        wire: any,
       ) => any;
 
       /** @noSelf */
@@ -89,7 +89,7 @@ declare module '@asledgehammer/pipewrench' {
         player: any,
         percedWood: any,
         stickOrBranch: any,
-        metalDrum: any
+        metalDrum: any,
       ) => any;
 
       /** @noSelf */
@@ -99,7 +99,7 @@ declare module '@asledgehammer/pipewrench' {
         literature: any,
         lighter: any,
         metalDrum: any,
-        fuelAmt: any
+        fuelAmt: any,
       ) => any;
 
       /** @noSelf */
@@ -111,7 +111,7 @@ declare module '@asledgehammer/pipewrench' {
         player: any,
         percedWood: any,
         stickOrBranch: any,
-        furnace: any
+        furnace: any,
       ) => any;
 
       /** @noSelf */
@@ -121,7 +121,7 @@ declare module '@asledgehammer/pipewrench' {
         literature: any,
         lighter: any,
         furnace: any,
-        fuelAmt: any
+        fuelAmt: any,
       ) => any;
 
       /** @noSelf */

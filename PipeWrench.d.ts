@@ -655,6 +655,10 @@ declare module '@asledgehammer/pipewrench' {
   export class IPathfinder extends zombie.vehicles.PolygonalMap2$IPathfinder {}
   /** @customConstructor IPooledObject.new */
   export class IPooledObject extends zombie.util.IPooledObject {}
+  /** @customConstructor IReplace.new */
+  export class IReplace extends zombie.text.templating.IReplace {}
+  /** @customConstructor IReplaceProvider.new */
+  export class IReplaceProvider extends zombie.text.templating.IReplaceProvider {}
   /** @customConstructor IShaderProgramListener.new */
   export class IShaderProgramListener extends zombie.core.opengl.IShaderProgramListener {}
   /** @customConstructor IStatePermissions.new */
@@ -1415,6 +1419,8 @@ declare module '@asledgehammer/pipewrench' {
   export class RenderEffectType extends zombie.iso.objects.RenderEffectType {}
   /** @customConstructor RenderSettings.new */
   export class RenderSettings extends zombie.core.opengl.RenderSettings {}
+  /** @customConstructor ReplaceProviderCharacter.new */
+  export class ReplaceProviderCharacter extends zombie.text.templating.ReplaceProviderCharacter {}
   /** @customConstructor RequestState.new */
   export class RequestState extends zombie.network.GameClient$RequestState {}
   /** @customConstructor RequiredSkill.new */
@@ -1608,8 +1614,12 @@ declare module '@asledgehammer/pipewrench' {
   export class SystemDisabler extends zombie.SystemDisabler {}
   /** @customConstructor Temperature.new */
   export class Temperature extends zombie.iso.weather.Temperature {}
+  /** @customConstructor TemplateText.new */
+  export class TemplateText extends zombie.text.templating.TemplateText {}
   /** @customConstructor TentAmbianceLogic.new */
   export class TentAmbianceLogic extends zombie.audio.ObjectAmbientEmitters$TentAmbianceLogic {}
+  /** @customConstructor TermsOfServiceState.new */
+  export class TermsOfServiceState extends zombie.gameStates.TermsOfServiceState {}
   /** @customConstructor TestResults.new */
   export class TestResults extends zombie.iso.LosUtil$TestResults {}
   /** @customConstructor TextDrawHorizontal.new */
@@ -2181,7 +2191,7 @@ declare module '@asledgehammer/pipewrench' {
   export function acceptTrading(
     arg0: zombie.characters.IsoPlayer,
     arg1: zombie.characters.IsoPlayer,
-    arg2: boolean
+    arg2: boolean,
   ): void;
   /**
    * @noSelf
@@ -2285,7 +2295,7 @@ declare module '@asledgehammer/pipewrench' {
     arg0: string,
     arg1: zombie.iso.IsoDirections,
     arg2: number,
-    arg3: zombie.iso.IsoGridSquare
+    arg3: zombie.iso.IsoGridSquare,
   ): zombie.vehicles.BaseVehicle;
   /**
    * @noSelf
@@ -2319,7 +2329,7 @@ declare module '@asledgehammer/pipewrench' {
     arg7?: boolean,
     arg8?: boolean,
     arg9?: boolean,
-    arg10?: number
+    arg10?: number,
   ): java.util.ArrayList<zombie.characters.IsoZombie>;
   /**
    * @noSelf
@@ -2463,7 +2473,7 @@ declare module '@asledgehammer/pipewrench' {
    */
   export function copyTable(
     arg0: se.krka.kahlua.vm.KahluaTable,
-    arg1?: se.krka.kahlua.vm.KahluaTable
+    arg1?: se.krka.kahlua.vm.KahluaTable,
   ): se.krka.kahlua.vm.KahluaTable;
   /**
    * @noSelf
@@ -2485,7 +2495,7 @@ declare module '@asledgehammer/pipewrench' {
     arg3: number,
     arg4: number,
     arg5: number,
-    arg6: number
+    arg6: number,
   ): void;
   /**
    * @noSelf
@@ -2496,7 +2506,7 @@ declare module '@asledgehammer/pipewrench' {
   export function createItemTransaction(
     arg0: zombie.inventory.InventoryItem,
     arg1: zombie.inventory.ItemContainer,
-    arg2: zombie.inventory.ItemContainer
+    arg2: zombie.inventory.ItemContainer,
   ): void;
   /**
    * @noSelf
@@ -2509,7 +2519,7 @@ declare module '@asledgehammer/pipewrench' {
     arg1: string,
     arg2: string,
     arg3: string,
-    arg4: string
+    arg4: string,
   ): zombie.scripting.objects.Item;
   /**
    * @noSelf
@@ -2558,7 +2568,7 @@ declare module '@asledgehammer/pipewrench' {
     arg2: number,
     arg3: zombie.characters.SurvivorDesc,
     arg4: number,
-    arg5: zombie.iso.IsoDirections
+    arg5: zombie.iso.IsoDirections,
   ): zombie.characters.IsoZombie;
   /**
    * @noSelf
@@ -3003,7 +3013,7 @@ declare module '@asledgehammer/pipewrench' {
    */
   export function getCoroutineCallframeStack(
     arg0: se.krka.kahlua.vm.Coroutine,
-    arg1: number
+    arg1: number,
   ): se.krka.kahlua.vm.LuaCallFrame;
   /**
    * @noSelf
@@ -3076,7 +3086,7 @@ declare module '@asledgehammer/pipewrench' {
    */
   export function getDirectionTo(
     arg0: zombie.characters.IsoGameCharacter,
-    arg1: zombie.iso.IsoObject
+    arg1: zombie.iso.IsoObject,
   ): zombie.iso.IsoDirections;
   /**
    * @noSelf
@@ -3143,7 +3153,7 @@ declare module '@asledgehammer/pipewrench' {
   export function getFileWriter(
     arg0: string,
     arg1: boolean,
-    arg2: boolean
+    arg2: boolean,
   ): zombie.Lua.LuaManager$GlobalObject$LuaFileWriter;
   /**
    * @noSelf
@@ -3547,7 +3557,7 @@ declare module '@asledgehammer/pipewrench' {
     arg0: string,
     arg1: string,
     arg2: boolean,
-    arg3: boolean
+    arg3: boolean,
   ): zombie.Lua.LuaManager$GlobalObject$LuaFileWriter;
   /**
    * @noSelf
@@ -3789,7 +3799,7 @@ declare module '@asledgehammer/pipewrench' {
   export function getSandboxFileWriter(
     arg0: string,
     arg1: boolean,
-    arg2: boolean
+    arg2: boolean,
   ): zombie.Lua.LuaManager$GlobalObject$LuaFileWriter;
   /**
    * @noSelf
@@ -4404,7 +4414,7 @@ declare module '@asledgehammer/pipewrench' {
   export function isItemTransactionConsistent(
     arg0: zombie.inventory.InventoryItem,
     arg1: zombie.inventory.ItemContainer,
-    arg2: zombie.inventory.ItemContainer
+    arg2: zombie.inventory.ItemContainer,
   ): boolean;
   /**
    * @noSelf
@@ -4667,7 +4677,7 @@ declare module '@asledgehammer/pipewrench' {
   export function loadSkinnedZomboidModel(
     arg0: string,
     arg1: string,
-    arg2: string
+    arg2: string,
   ): zombie.core.skinnedmodel.model.Model;
   /**
    * @noSelf
@@ -4678,7 +4688,7 @@ declare module '@asledgehammer/pipewrench' {
   export function loadStaticZomboidModel(
     arg0: string,
     arg1: string,
-    arg2: string
+    arg2: string,
   ): zombie.core.skinnedmodel.model.Model;
   /**
    * @noSelf
@@ -4698,7 +4708,7 @@ declare module '@asledgehammer/pipewrench' {
     arg1: string,
     arg2: string,
     arg3: string,
-    arg4: boolean
+    arg4: boolean,
   ): zombie.core.skinnedmodel.model.Model;
   /**
    * @noSelf
@@ -4793,7 +4803,7 @@ declare module '@asledgehammer/pipewrench' {
   export function querySteamWorkshopItemDetails(
     arg0: java.util.ArrayList<string>,
     arg1: se.krka.kahlua.vm.LuaClosure,
-    arg2: any
+    arg2: any,
   ): void;
   /**
    * @noSelf
@@ -4902,7 +4912,7 @@ declare module '@asledgehammer/pipewrench' {
   export function removeItemTransaction(
     arg0: zombie.inventory.InventoryItem,
     arg1: zombie.inventory.ItemContainer,
-    arg2: zombie.inventory.ItemContainer
+    arg2: zombie.inventory.ItemContainer,
   ): void;
   /**
    * @noSelf
@@ -4940,7 +4950,7 @@ declare module '@asledgehammer/pipewrench' {
     arg5: number,
     arg6: number,
     arg7: number,
-    arg8: number
+    arg8: number,
   ): void;
   /**
    * @noSelf
@@ -5066,7 +5076,7 @@ declare module '@asledgehammer/pipewrench' {
     arg2: boolean,
     arg3: number,
     arg4: boolean,
-    arg5: string
+    arg5: string,
   ): void;
   /**
    * @noSelf
@@ -5085,7 +5095,7 @@ declare module '@asledgehammer/pipewrench' {
     arg0: zombie.characters.IsoGameCharacter,
     arg1: zombie.characters.IsoGameCharacter,
     arg2: zombie.characters.BodyDamage.BodyPart,
-    arg3: zombie.inventory.InventoryItem
+    arg3: zombie.inventory.InventoryItem,
   ): void;
   /**
    * @noSelf
@@ -5098,7 +5108,7 @@ declare module '@asledgehammer/pipewrench' {
     arg0: string | zombie.characters.IsoPlayer,
     arg1: string,
     arg2: se.krka.kahlua.vm.KahluaTable | string,
-    arg3?: se.krka.kahlua.vm.KahluaTable
+    arg3?: se.krka.kahlua.vm.KahluaTable,
   ): void;
   /**
    * @noSelf
@@ -5117,7 +5127,7 @@ declare module '@asledgehammer/pipewrench' {
     arg0: zombie.characters.IsoGameCharacter,
     arg1: zombie.characters.IsoGameCharacter,
     arg2: zombie.characters.BodyDamage.BodyPart,
-    arg3: zombie.inventory.InventoryItem
+    arg3: zombie.inventory.InventoryItem,
   ): void;
   /**
    * @noSelf
@@ -5128,7 +5138,7 @@ declare module '@asledgehammer/pipewrench' {
   export function sendFactionInvite(
     arg0: zombie.characters.Faction,
     arg1: zombie.characters.IsoPlayer,
-    arg2: string
+    arg2: string,
   ): void;
   /**
    * @noSelf
@@ -5141,7 +5151,7 @@ declare module '@asledgehammer/pipewrench' {
     arg1: java.util.ArrayList<zombie.inventory.InventoryItem>,
     arg2: zombie.characters.IsoPlayer,
     arg3: string,
-    arg4: string
+    arg4: string,
   ): boolean;
   /**
    * @noSelf
@@ -5187,7 +5197,7 @@ declare module '@asledgehammer/pipewrench' {
   export function sendRemoveBullet(
     arg0: zombie.characters.IsoGameCharacter,
     arg1: zombie.characters.IsoGameCharacter,
-    arg2: zombie.characters.BodyDamage.BodyPart
+    arg2: zombie.characters.BodyDamage.BodyPart,
   ): void;
   /**
    * @noSelf
@@ -5199,7 +5209,7 @@ declare module '@asledgehammer/pipewrench' {
     arg0: zombie.characters.IsoGameCharacter,
     arg1: zombie.characters.IsoGameCharacter,
     arg2: zombie.characters.BodyDamage.BodyPart,
-    arg3: boolean
+    arg3: boolean,
   ): void;
   /**
    * @noSelf
@@ -5217,7 +5227,7 @@ declare module '@asledgehammer/pipewrench' {
   export function sendSafehouseInvite(
     arg0: zombie.iso.areas.SafeHouse,
     arg1: zombie.characters.IsoPlayer,
-    arg2: string
+    arg2: string,
   ): void;
   /**
    * @noSelf
@@ -5230,7 +5240,7 @@ declare module '@asledgehammer/pipewrench' {
     arg0: string | zombie.characters.IsoPlayer,
     arg1: string,
     arg2: se.krka.kahlua.vm.KahluaTable | string,
-    arg3?: se.krka.kahlua.vm.KahluaTable
+    arg3?: se.krka.kahlua.vm.KahluaTable,
   ): void;
   /**
    * @noSelf
@@ -5250,7 +5260,7 @@ declare module '@asledgehammer/pipewrench' {
     arg1: zombie.characters.IsoGameCharacter,
     arg2: zombie.characters.BodyDamage.BodyPart,
     arg3: zombie.inventory.InventoryItem,
-    arg4: boolean
+    arg4: boolean,
   ): void;
   /**
    * @noSelf
@@ -5262,7 +5272,7 @@ declare module '@asledgehammer/pipewrench' {
     arg0: zombie.vehicles.BaseVehicle,
     arg1: zombie.characters.IsoGameCharacter,
     arg2: number,
-    arg3: number
+    arg3: number,
   ): void;
   /**
    * @noSelf
@@ -5285,7 +5295,7 @@ declare module '@asledgehammer/pipewrench' {
     arg4: string,
     arg5: string,
     arg6: string,
-    arg7: boolean
+    arg7: boolean,
   ): void;
   /**
    * @noSelf
@@ -5487,7 +5497,7 @@ declare module '@asledgehammer/pipewrench' {
     arg1: number,
     arg2: number,
     arg3: number,
-    arg4: number
+    arg4: number,
   ): boolean;
   /**
    * @noSelf
@@ -5500,7 +5510,7 @@ declare module '@asledgehammer/pipewrench' {
     arg1: boolean,
     arg2: string,
     arg3: number,
-    arg4: string
+    arg4: string,
   ): boolean;
   /**
    * @noSelf
@@ -5694,7 +5704,7 @@ declare module '@asledgehammer/pipewrench' {
   export function tradingUISendAddItem(
     arg0: zombie.characters.IsoPlayer,
     arg1: zombie.characters.IsoPlayer,
-    arg2: zombie.inventory.InventoryItem
+    arg2: zombie.inventory.InventoryItem,
   ): void;
   /**
    * @noSelf
@@ -5705,7 +5715,7 @@ declare module '@asledgehammer/pipewrench' {
   export function tradingUISendRemoveItem(
     arg0: zombie.characters.IsoPlayer,
     arg1: zombie.characters.IsoPlayer,
-    arg2: number
+    arg2: number,
   ): void;
   /**
    * @noSelf
@@ -5716,7 +5726,7 @@ declare module '@asledgehammer/pipewrench' {
   export function tradingUISendUpdateState(
     arg0: zombie.characters.IsoPlayer,
     arg1: zombie.characters.IsoPlayer,
-    arg2: number
+    arg2: number,
   ): void;
   /**
    * @noSelf
@@ -5735,7 +5745,7 @@ declare module '@asledgehammer/pipewrench' {
     arg0: number,
     arg1: zombie.ui.UIElement,
     arg2: number,
-    arg3: number
+    arg3: number,
   ): number;
   /**
    * @noSelf
@@ -5747,7 +5757,7 @@ declare module '@asledgehammer/pipewrench' {
     arg0: number,
     arg1: zombie.ui.UIElement,
     arg2: number,
-    arg3: number
+    arg3: number,
   ): number;
   /**
    * @noSelf
@@ -5759,7 +5769,7 @@ declare module '@asledgehammer/pipewrench' {
     arg0: number,
     arg1: zombie.ui.UIElement,
     arg2: number,
-    arg3: number
+    arg3: number,
   ): number;
   /**
    * @noSelf
@@ -5771,7 +5781,7 @@ declare module '@asledgehammer/pipewrench' {
     arg0: number,
     arg1: zombie.ui.UIElement,
     arg2: number,
-    arg3: number
+    arg3: number,
   ): number;
   /**
    * @noSelf

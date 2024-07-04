@@ -55,7 +55,7 @@ declare module '@asledgehammer/pipewrench' {
         baredWireNb: any,
         carpentrySkill: any,
         option: any,
-        player: any
+        player: any,
       ) => any;
 
       /** @noSelf */

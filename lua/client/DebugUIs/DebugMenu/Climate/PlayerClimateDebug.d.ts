@@ -79,7 +79,7 @@ declare module '@asledgehammer/pipewrench' {
             _javaInstance: any,
             _defaultVal: any,
             _color: any,
-            _postfix: any
+            _postfix: any,
           ) => any)
         | any;
 

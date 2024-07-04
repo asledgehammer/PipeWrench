@@ -88,7 +88,7 @@ declare module '@asledgehammer/pipewrench' {
             arg7: any,
             arg8: any,
             arg9: any,
-            arg10: any
+            arg10: any,
           ) => any)
         | any;
 
@@ -106,7 +106,7 @@ declare module '@asledgehammer/pipewrench' {
             param7: any,
             param8: any,
             param9: any,
-            param10: any
+            param10: any,
           ) => any)
         | any;
 
@@ -126,7 +126,7 @@ declare module '@asledgehammer/pipewrench' {
             param7: any,
             param8: any,
             param9: any,
-            param10: any
+            param10: any,
           ) => any)
         | any;
 
@@ -144,7 +144,7 @@ declare module '@asledgehammer/pipewrench' {
             param7: any,
             param8: any,
             param9: any,
-            param10: any
+            param10: any,
           ) => any)
         | any;
 
@@ -164,7 +164,7 @@ declare module '@asledgehammer/pipewrench' {
             param7: any,
             param8: any,
             param9: any,
-            param10: any
+            param10: any,
           ) => any)
         | any;
 
@@ -227,7 +227,7 @@ declare module '@asledgehammer/pipewrench' {
             param7: any,
             param8: any,
             param9: any,
-            param10: any
+            param10: any,
           ) => any)
         | any;
 
@@ -246,7 +246,7 @@ declare module '@asledgehammer/pipewrench' {
             param7: any,
             param8: any,
             param9: any,
-            param10: any
+            param10: any,
           ) => any)
         | any;
 

@@ -52,7 +52,7 @@ declare module '@asledgehammer/pipewrench' {
             _minUpdFreq: any,
             _maxUpdFreq: any,
             _minScrollSpeed: any,
-            _maxScrollSpeed: any
+            _maxScrollSpeed: any,
           ) => any)
         | any;
 

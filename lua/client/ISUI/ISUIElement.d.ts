@@ -127,7 +127,7 @@ declare module '@asledgehammer/pipewrench' {
             r: any,
             g: any,
             b: any,
-            a: any
+            a: any,
           ) => any)
         | any;
 

@@ -91,7 +91,7 @@ declare module '@asledgehammer/pipewrench' {
             _nodeAlpha: any,
             _selectedAlpha: any,
             _deselectedAlpha: any,
-            _backgroundAlpha: any
+            _backgroundAlpha: any,
           ) => any)
         | any;
 

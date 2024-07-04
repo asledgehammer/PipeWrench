@@ -137,7 +137,7 @@ declare module '@asledgehammer/pipewrench' {
             _sprInstance: any,
             _spriteName: any,
             _createItem: any,
-            _rotating: any
+            _rotating: any,
           ) => any)
         | any;
 
@@ -171,7 +171,7 @@ declare module '@asledgehammer/pipewrench' {
             _object: any,
             _scrapResult: any,
             _chance: any,
-            _perkName: any
+            _perkName: any,
           ) => any)
         | any;
 
@@ -195,7 +195,7 @@ declare module '@asledgehammer/pipewrench' {
         _lineB: any,
         _rB: any,
         _gB: any,
-        _bB: any
+        _bB: any,
       ) => any;
 
       /** @noSelf */

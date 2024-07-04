@@ -63,7 +63,7 @@ declare module '@asledgehammer/pipewrench' {
         arg7: any,
         arg8: any,
         arg9: any,
-        arg10: any
+        arg10: any,
       ) => any;
     }
   }
