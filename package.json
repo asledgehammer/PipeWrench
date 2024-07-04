@@ -39,7 +39,7 @@
   "homepage": "https://github.com/asledgehammer/PipeWrench#readme",
   "devDependencies": {
     "@shughesuk/pipewrench-modeler": "^1.0.11",
-    "@types/node": "^18.7.8",
+    "@types/node": "^20.14.9",
     "@types/prettier": "^3.0.0",
     "lua-types": "^2.12.0",
     "nodejs": "^0.0.0",
