@@ -30,17 +30,17 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(ui: any);
 
-      java0: ((func: any) => any) | any;
+      java0(func: any, ...__args: never[]): any;
 
-      java1: ((func: any, arg0: any) => any) | any;
+      java1(func: any, arg0: any, ...__args: never[]): any;
 
-      java2: ((func: any, arg0: any, arg1: any) => any) | any;
+      java2(func: any, arg0: any, arg1: any, ...__args: never[]): any;
 
-      onMouseDown: ((x: any, y: any) => any) | any;
+      onMouseDown(x: any, y: any, ...__args: never[]): any;
 
-      onMouseMove: ((dx: any, dy: any) => any) | any;
+      onMouseMove(dx: any, dy: any, ...__args: never[]): any;
 
-      onMouseUp: ((x: any, y: any) => any) | any;
+      onMouseUp(x: any, y: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.DebugUIs.DebugGlobalObjectState.DebugGlobalObjectState_Tools {}

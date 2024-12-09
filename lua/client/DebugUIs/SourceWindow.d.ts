@@ -17,17 +17,17 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, filename: any);
 
-      doDrawItem: ((y: any, item: any) => any) | any;
+      doDrawItem(y: any, item: any, ...__args: never[]): any;
 
-      fill: (() => any) | any;
+      fill(...__args: never[]): any;
 
-      onMouseDoubleClickBreakpointToggle: ((item: any) => any) | any;
+      onMouseDoubleClickBreakpointToggle(item: any, ...__args: never[]): any;
 
-      onSourceMouseWheel: ((del: any) => any) | any;
+      onSourceMouseWheel(del: any, ...__args: never[]): any;
 
-      reloadFile: (() => any) | any;
+      reloadFile(...__args: never[]): any;
 
-      renderSrc: (() => any) | any;
+      renderSrc(...__args: never[]): any;
     }
   }
   export namespace lua.client.DebugUIs.SourceWindow {}

@@ -29,11 +29,11 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, character: any);
 
-      readFile: (() => any) | any;
+      readFile(...__args: never[]): any;
 
-      selectCategory: ((combo: any) => any) | any;
+      selectCategory(combo: any, ...__args: never[]): any;
 
-      writeToFile: (() => any) | any;
+      writeToFile(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISUIEmoteConfig {}

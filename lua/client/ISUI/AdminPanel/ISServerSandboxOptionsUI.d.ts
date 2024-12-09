@@ -25,21 +25,21 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      createPanel: ((page: any) => any) | any;
+      createPanel(page: any, ...__args: never[]): any;
 
-      destroy: (() => any) | any;
+      destroy(...__args: never[]): any;
 
-      onButtonApply: (() => any) | any;
+      onButtonApply(...__args: never[]): any;
 
-      onButtonClose: (() => any) | any;
+      onButtonClose(...__args: never[]): any;
 
-      onMouseDownListbox: ((item: any) => any) | any;
+      onMouseDownListbox(item: any, ...__args: never[]): any;
 
-      settingsFromUI: ((options: any) => any) | any;
+      settingsFromUI(options: any, ...__args: never[]): any;
 
-      settingsToUI: ((options: any) => any) | any;
+      settingsToUI(options: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.AdminPanel.ISServerSandboxOptionsUI {}

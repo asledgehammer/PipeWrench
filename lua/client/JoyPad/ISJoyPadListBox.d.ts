@@ -13,22 +13,22 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, w: any, h: any, playerNum: any, joypadData: any);
 
-      cmdAddNew: (() => any) | any;
+      cmdAddNew(...__args: never[]): any;
 
-      cmdAddSaved: ((player: any) => any) | any;
+      cmdAddSaved(player: any, ...__args: never[]): any;
 
-      cmdCancel: (() => any) | any;
+      cmdCancel(...__args: never[]): any;
 
-      cmdTakeOver: ((playerNum: any) => any) | any;
+      cmdTakeOver(playerNum: any, ...__args: never[]): any;
 
-      fill: (() => any) | any;
+      fill(...__args: never[]): any;
 
-      getUserNameCallback: ((button: any, playerObj: any) => any) | any;
+      getUserNameCallback(button: any, playerObj: any, ...__args: never[]): any;
 
-      invoke: (() => any) | any;
+      invoke(...__args: never[]): any;
 
       /** @noSelf */
-      static Create: (playerNum: any, joypadData: any) => any;
+      static Create: (playerNum: any, joypadData: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.JoyPad.ISJoyPadListBox {}

@@ -6,7 +6,7 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static getInstance: () => any;
+      static getInstance: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.Context.ISContextManager {}

@@ -13,15 +13,15 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, w: any, h: any);
 
-      addLine: ((text: any, arg0: any, arg1: any, arg2: any, arg3: any, arg4: any) => any) | any;
+      addLine(text: any, arg0: any, arg1: any, arg2: any, arg3: any, arg4: any, ...__args: never[]): any;
 
-      onMouseWheel: ((del: any) => any) | any;
+      onMouseWheel(del: any, ...__args: never[]): any;
 
-      postrender: (() => any) | any;
+      postrender(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      renderKeyValue: ((k: any, v: any) => any) | any;
+      renderKeyValue(k: any, v: any, ...__args: never[]): any;
     }
 
     /** @customConstructor DebugGlobalObjectState_GlobalObjectPanel:new */
@@ -34,9 +34,9 @@ declare module '@asledgehammer/pipewrench' {
 
       system: any;
 
-      render1: (() => any) | any;
+      render1(...__args: never[]): any;
 
-      setObject: ((globalObject: any) => any) | any;
+      setObject(globalObject: any, ...__args: never[]): any;
     }
 
     /** @customConstructor DebugGlobalObjectState_IsoObjectPanel:new */
@@ -49,9 +49,9 @@ declare module '@asledgehammer/pipewrench' {
 
       system: any;
 
-      render1: (() => any) | any;
+      render1(...__args: never[]): any;
 
-      setObject: ((globalObject: any) => any) | any;
+      setObject(globalObject: any, ...__args: never[]): any;
     }
 
     /** @customConstructor DebugGlobalObjectState_PropertiesPanel:new */
@@ -67,11 +67,11 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, state: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      setObject: ((globalObject: any) => any) | any;
+      setObject(globalObject: any, ...__args: never[]): any;
 
-      setSystem: ((system: any) => any) | any;
+      setSystem(system: any, ...__args: never[]): any;
     }
 
     /** @customConstructor DebugGlobalObjectState_SystemPanel:new */
@@ -84,9 +84,9 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, w: any, h: any);
 
-      render1: (() => any) | any;
+      render1(...__args: never[]): any;
 
-      setSystem: ((system: any) => any) | any;
+      setSystem(system: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.DebugUIs.DebugGlobalObjectState.DebugGlobalObjectState_PropertiesPanel {}

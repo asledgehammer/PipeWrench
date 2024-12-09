@@ -13,18 +13,18 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(status: any);
 
-      configButton: ((button: any) => any) | any;
+      configButton(button: any, ...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onExit: (() => any) | any;
+      onExit(...__args: never[]): any;
 
-      onExitToDesktop: (() => any) | any;
+      onExitToDesktop(...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
       /** @noSelf */
-      static OnJoypadActivateUI: (id: any) => any;
+      static OnJoypadActivateUI: (id: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.ISGameLoadingUI {}

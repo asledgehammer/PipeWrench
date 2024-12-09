@@ -15,12 +15,12 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      create: ((desc: any) => any) | any;
+      create(desc: any, ...__args: never[]): any;
 
-      instantiate: (() => any) | any;
+      instantiate(...__args: never[]): any;
 
       /** @noSelf */
-      static onOptionMouseDown: (button: any, x: any, y: any) => any;
+      static onOptionMouseDown: (button: any, x: any, y: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.OptionScreens.ModMoreInfo {}

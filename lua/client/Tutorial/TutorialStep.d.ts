@@ -11,33 +11,32 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(type: any);
 
-      addMessage:
-        | ((
-            text: any,
-            x: any,
-            y: any,
-            w: any,
-            h: any,
-            clickToSkip: any,
-            test: any,
-            focusx: any,
-            focusy: any,
-            focusw: any,
-            focush: any,
-          ) => any)
-        | any;
+      addMessage(
+        text: any,
+        x: any,
+        y: any,
+        w: any,
+        h: any,
+        clickToSkip: any,
+        test: any,
+        focusx: any,
+        focusy: any,
+        focusw: any,
+        focush: any,
+        ...__args: never[]
+      ): any;
 
-      begin: (() => any) | any;
+      begin(...__args: never[]): any;
 
-      doMessage: (() => any) | any;
+      doMessage(...__args: never[]): any;
 
-      during: (() => any) | any;
+      during(...__args: never[]): any;
 
-      finish: (() => any) | any;
+      finish(...__args: never[]): any;
 
-      isComplete: (() => any) | any;
+      isComplete(...__args: never[]): any;
 
-      onClose: ((message: any) => any) | any;
+      onClose(message: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.Tutorial.TutorialStep {}

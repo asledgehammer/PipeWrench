@@ -6,7 +6,7 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static replaceInContainer: (x: any, y: any, z: any, type: any, items: any) => any;
+      static replaceInContainer: (x: any, y: any, z: any, type: any, items: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.server.TutorialHelperFunctions {}

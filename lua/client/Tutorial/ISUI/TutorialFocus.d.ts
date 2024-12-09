@@ -25,17 +25,17 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(focusx: any, focusy: any, focuswidth: any, focusheight: any);
 
-      isInside: ((x: any, y: any) => any) | any;
+      isInside(x: any, y: any, ...__args: never[]): any;
 
-      onRightMouseDown: ((x: any, y: any) => any) | any;
+      onRightMouseDown(x: any, y: any, ...__args: never[]): any;
 
-      onRightMouseUp: ((x: any, y: any) => any) | any;
-
-      /** @noSelf */
-      static set: (x: any, y: any, w: any, h: any) => any;
+      onRightMouseUp(x: any, y: any, ...__args: never[]): any;
 
       /** @noSelf */
-      static unset: () => any;
+      static set: (x: any, y: any, w: any, h: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static unset: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.Tutorial.ISUI.TutorialFocus {}

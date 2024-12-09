@@ -13,20 +13,20 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor();
 
-      RestoreLayout: ((name: any, layout: any) => any) | any;
+      RestoreLayout(name: any, layout: any, ...__args: never[]): any;
 
-      SaveLayout: ((name: any, layout: any) => any) | any;
+      SaveLayout(name: any, layout: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
-
-      /** @noSelf */
-      static OnGameStart: () => any;
+      update(...__args: never[]): any;
 
       /** @noSelf */
-      static onKeyPressed: (key: any) => any;
+      static OnGameStart: (...__args: never[]) => any;
 
       /** @noSelf */
-      static OnNewGame: () => any;
+      static onKeyPressed: (key: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static OnNewGame: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.SurvivalGuide.SurvivalGuideManager {

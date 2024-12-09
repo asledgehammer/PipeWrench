@@ -49,28 +49,28 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, title: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      drawFlaresList: ((y: any, item: any, alt: any) => any) | any;
+      drawFlaresList(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      onClickAddFlare: (() => any) | any;
+      onClickAddFlare(...__args: never[]): any;
 
-      onClickClose: (() => any) | any;
+      onClickClose(...__args: never[]): any;
 
-      onClickDeleteFlares: (() => any) | any;
+      onClickDeleteFlares(...__args: never[]): any;
 
-      OnFlaresListMouseDown: ((item: any) => any) | any;
+      OnFlaresListMouseDown(item: any, ...__args: never[]): any;
 
-      onSliderChange: ((_newVal: any, _slider: any) => any) | any;
+      onSliderChange(_newVal: any, _slider: any, ...__args: never[]): any;
 
-      onTicked: ((_index: any, _selected: any, _arg1: any, _arg2: any, _tickbox: any) => any) | any;
+      onTicked(_index: any, _selected: any, _arg1: any, _arg2: any, _tickbox: any, ...__args: never[]): any;
 
-      populateList: (() => any) | any;
+      populateList(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
       /** @noSelf */
-      static OnOpenPanel: () => any;
+      static OnOpenPanel: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.DebugUIs.DebugMenu.WorldFlares.WorldFlaresDebug {}

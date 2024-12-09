@@ -6,22 +6,28 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static canPlayerPickUpMoveable: (_char: any, _square: any, _object: any, _moveProps: any) => any;
+      static canPlayerPickUpMoveable: (
+        _char: any,
+        _square: any,
+        _object: any,
+        _moveProps: any,
+        ...__args: never[]
+      ) => any;
 
       /** @noSelf */
-      static canPlayerPickUpObject: (_char: any, _square: any, _object: any) => any;
+      static canPlayerPickUpObject: (_char: any, _square: any, _object: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getMoveableList: (_square: any) => any;
+      static getMoveableList: (_square: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getObjectList: (_square: any) => any;
+      static getObjectList: (_square: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getScrapableObjects: (_char: any, _square: any) => any;
+      static getScrapableObjects: (_char: any, _square: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static isObjectMoveable: (_object: any) => any;
+      static isObjectMoveable: (_object: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.Moveables.ISMoveableTools {}

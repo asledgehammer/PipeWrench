@@ -25,9 +25,9 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, drainable: any, intoItem: any, time: any, otherItems: any);
 
-      nextItem: (() => any) | any;
+      nextItem(...__args: never[]): any;
 
-      runAgain: ((drainable: any, intoItem: any) => any) | any;
+      runAgain(drainable: any, intoItem: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.TimedActions.ISConsolidateDrainable {}

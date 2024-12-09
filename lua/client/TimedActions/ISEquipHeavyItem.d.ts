@@ -11,7 +11,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, item: any, time: any);
 
-      isAlreadyTransferred: ((item: any) => any) | any;
+      isAlreadyTransferred(item: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.TimedActions.ISEquipHeavyItem {}

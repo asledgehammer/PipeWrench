@@ -6,13 +6,13 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static runAll: () => any;
+      static runAll: (...__args: never[]) => any;
 
       /** @noSelf */
-      static runOne: (name: any) => any;
+      static runOne: (name: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static stop: () => any;
+      static stop: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.Tests.TimedActionsTests {}

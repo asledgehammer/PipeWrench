@@ -6,22 +6,22 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static doAddFuelMenu: (playerObj: any, part: any, context: any) => any;
+      static doAddFuelMenu: (playerObj: any, part: any, context: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doSiphonFuelMenu: (playerObj: any, part: any, context: any) => any;
+      static doSiphonFuelMenu: (playerObj: any, part: any, context: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static equipRequiredItems: (playerObj: any, part: any, tbl: any) => any;
+      static equipRequiredItems: (playerObj: any, part: any, tbl: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getGasCanNotEmpty: (playerObj: any, typeToItem: any) => any;
+      static getGasCanNotEmpty: (playerObj: any, typeToItem: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getGasCanNotFull: (playerObj: any, typeToItem: any) => any;
+      static getGasCanNotFull: (playerObj: any, typeToItem: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getNearbyFuelPump: (vehicle: any) => any;
+      static getNearbyFuelPump: (vehicle: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static onAddFuelNew: (
@@ -30,43 +30,44 @@ declare module '@asledgehammer/pipewrench' {
         fuelContainerList: any,
         fuelContainer: any,
         player: any,
+        ...__args: never[]
       ) => any;
 
       /** @noSelf */
-      static onAddGasoline: (playerObj: any, part: any) => any;
+      static onAddGasoline: (playerObj: any, part: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onDebugFill: (playerObj: any, part: any) => any;
+      static onDebugFill: (playerObj: any, part: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onDeflateTire: (playerObj: any, part: any) => any;
+      static onDeflateTire: (playerObj: any, part: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onDeviceOptions: (playerObj: any, part: any) => any;
+      static onDeviceOptions: (playerObj: any, part: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onInflateTire: (playerObj: any, part: any) => any;
+      static onInflateTire: (playerObj: any, part: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onInstallPart: (playerObj: any, part: any, item: any) => any;
+      static onInstallPart: (playerObj: any, part: any, item: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onLockDoor: (playerObj: any, part: any) => any;
+      static onLockDoor: (playerObj: any, part: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onLockDoors: (playerObj: any, vehicle: any, lock: any) => any;
+      static onLockDoors: (playerObj: any, vehicle: any, lock: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onOpenCloseWindow: (playerObj: any, part: any, open: any) => any;
+      static onOpenCloseWindow: (playerObj: any, part: any, open: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onPumpGasoline: (playerObj: any, part: any) => any;
+      static onPumpGasoline: (playerObj: any, part: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onPumpGasolinePathFail: (playerObj: any) => any;
+      static onPumpGasolinePathFail: (playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onSmashWindow: (playerObj: any, part: any, open: any) => any;
+      static onSmashWindow: (playerObj: any, part: any, open: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static onTakeFuelNew: (
@@ -75,22 +76,23 @@ declare module '@asledgehammer/pipewrench' {
         fuelContainerList: any,
         fuelContainer: any,
         player: any,
+        ...__args: never[]
       ) => any;
 
       /** @noSelf */
-      static onTakeGasoline: (playerObj: any, part: any) => any;
+      static onTakeGasoline: (playerObj: any, part: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onUninstallPart: (playerObj: any, part: any) => any;
+      static onUninstallPart: (playerObj: any, part: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onUnlockDoor: (playerObj: any, part: any) => any;
+      static onUnlockDoor: (playerObj: any, part: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static toPlayerInventory: (playerObj: any, item: any) => any;
+      static toPlayerInventory: (playerObj: any, item: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static transferRequiredItems: (playerObj: any, part: any, tbl: any) => any;
+      static transferRequiredItems: (playerObj: any, part: any, tbl: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.Vehicles.ISUI.ISVehiclePartMenu {}

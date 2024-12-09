@@ -19,21 +19,21 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      beforeShow: (() => any) | any;
+      beforeShow(...__args: never[]): any;
 
-      clickBack: (() => any) | any;
+      clickBack(...__args: never[]): any;
 
-      clickNext: (() => any) | any;
+      clickNext(...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      getUserName: (() => any) | any;
+      getUserName(...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      shouldShow: (() => any) | any;
+      shouldShow(...__args: never[]): any;
     }
   }
   export namespace lua.client.OptionScreens.CoopUserName {}

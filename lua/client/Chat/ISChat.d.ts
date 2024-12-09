@@ -77,111 +77,111 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      calcAlpha: ((defaultMin: any, defaultMax: any, fraction: any) => any) | any;
+      calcAlpha(defaultMin: any, defaultMax: any, fraction: any, ...__args: never[]): any;
 
-      calcTabPos: (() => any) | any;
+      calcTabPos(...__args: never[]): any;
 
-      calcTabSize: (() => any) | any;
+      calcTabSize(...__args: never[]): any;
 
-      createTab: (() => any) | any;
+      createTab(...__args: never[]): any;
 
-      focus: (() => any) | any;
+      focus(...__args: never[]): any;
 
-      initFade: ((durationInS: any) => any) | any;
+      initFade(durationInS: any, ...__args: never[]): any;
 
-      isCursorOnTitlebar: ((x: any, y: any) => any) | any;
+      isCursorOnTitlebar(x: any, y: any, ...__args: never[]): any;
 
-      isMuted: ((username: any) => any) | any;
+      isMuted(username: any, ...__args: never[]): any;
 
-      logChatCommand: ((command: any) => any) | any;
+      logChatCommand(command: any, ...__args: never[]): any;
 
-      makeFade: ((fraction: any) => any) | any;
+      makeFade(fraction: any, ...__args: never[]): any;
 
-      mute: ((username: any) => any) | any;
+      mute(username: any, ...__args: never[]): any;
 
-      onActivateView: (() => any) | any;
+      onActivateView(...__args: never[]): any;
 
-      onCommandEntered: (() => any) | any;
+      onCommandEntered(...__args: never[]): any;
 
-      onContextClear: (() => any) | any;
+      onContextClear(...__args: never[]): any;
 
-      onGearButtonClick: (() => any) | any;
+      onGearButtonClick(...__args: never[]): any;
 
-      onOtherKey: ((key: any) => any) | any;
+      onOtherKey(key: any, ...__args: never[]): any;
 
-      onPressDown: (() => any) | any;
+      onPressDown(...__args: never[]): any;
 
-      onPressUp: (() => any) | any;
+      onPressUp(...__args: never[]): any;
 
-      onRightMouseDown: ((x: any, y: any) => any) | any;
+      onRightMouseDown(x: any, y: any, ...__args: never[]): any;
 
-      onRightMouseUp: ((x: any, y: any) => any) | any;
+      onRightMouseUp(x: any, y: any, ...__args: never[]): any;
 
-      render_chatText: (() => any) | any;
+      render_chatText(...__args: never[]): any;
 
-      unfocus: (() => any) | any;
+      unfocus(...__args: never[]): any;
 
-      updateChatPrefixSettings: (() => any) | any;
-
-      /** @noSelf */
-      static addLineInChat: (message: any, tabID: any) => any;
+      updateChatPrefixSettings(...__args: never[]): any;
 
       /** @noSelf */
-      static createChat: () => any;
+      static addLineInChat: (message: any, tabID: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static initChat: () => any;
+      static createChat: (...__args: never[]) => any;
 
       /** @noSelf */
-      static ISTabPanelOnMouseDown: (target: any, x: any, y: any) => any;
+      static initChat: (...__args: never[]) => any;
 
       /** @noSelf */
-      static onFadeTimeChange: (target: any, value: any) => any;
+      static ISTabPanelOnMouseDown: (target: any, x: any, y: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onFocusOpaqueChange: (target: any, value: any) => any;
+      static onFadeTimeChange: (target: any, value: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onFontSizeChange: (target: any, value: any) => any;
+      static onFocusOpaqueChange: (target: any, value: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onKeyKeepPressed: (key: any) => any;
+      static onFontSizeChange: (target: any, value: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onMaxOpaqueChange: (target: any, value: any) => any;
+      static onKeyKeepPressed: (key: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onMinOpaqueChange: (target: any, value: any) => any;
+      static onMaxOpaqueChange: (target: any, value: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onSetDefaultTab: (defaultTabTitle: any) => any;
+      static onMinOpaqueChange: (target: any, value: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onSwitchStream: () => any;
+      static onSetDefaultTab: (defaultTabTitle: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onTabAdded: (tabTitle: any, tabID: any) => any;
+      static onSwitchStream: (...__args: never[]) => any;
 
       /** @noSelf */
-      static onTabRemoved: (tabTitle: any, tabID: any) => any;
+      static onTabAdded: (tabTitle: any, tabID: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onTextChange: () => any;
+      static onTabRemoved: (tabTitle: any, tabID: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static ontick: () => any;
+      static onTextChange: (...__args: never[]) => any;
 
       /** @noSelf */
-      static onToggleChatBox: (key: any) => any;
+      static ontick: (...__args: never[]) => any;
 
       /** @noSelf */
-      static onToggleTagPrefix: () => any;
+      static onToggleChatBox: (key: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onToggleTimestampPrefix: () => any;
+      static onToggleTagPrefix: (...__args: never[]) => any;
 
       /** @noSelf */
-      static unfocusEvent: () => any;
+      static onToggleTimestampPrefix: (...__args: never[]) => any;
+
+      /** @noSelf */
+      static unfocusEvent: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.Chat.ISChat {}

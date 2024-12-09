@@ -15,17 +15,17 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(reason: any);
 
-      configButton: ((button: any) => any) | any;
+      configButton(button: any, ...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onResolutionChange: ((oldw: any, oldh: any, neww: any, newh: any) => any) | any;
+      onResolutionChange(oldw: any, oldh: any, neww: any, newh: any, ...__args: never[]): any;
 
-      onToDesktop: (() => any) | any;
+      onToDesktop(...__args: never[]): any;
 
-      onToMainMenu: (() => any) | any;
+      onToMainMenu(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISServerDisconnectUI {}

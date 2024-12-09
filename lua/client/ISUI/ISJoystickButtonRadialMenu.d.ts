@@ -6,25 +6,25 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static displayLeft: (joypadData: any) => any;
+      static displayLeft: (joypadData: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onJoypadButtonReleased: (button: any, joypadData: any) => any;
+      static onJoypadButtonReleased: (button: any, joypadData: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onJoypadDown: (button: any, joypadData: any) => any;
+      static onJoypadDown: (button: any, joypadData: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onRepeatLeftStickButton: (joypadData: any) => any;
+      static onRepeatLeftStickButton: (joypadData: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onToggleAutoWalk: (playerObj: any) => any;
+      static onToggleAutoWalk: (playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onToggleCrouch: (playerObj: any) => any;
+      static onToggleCrouch: (playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onToggleSit: (playerObj: any) => any;
+      static onToggleSit: (playerObj: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.ISJoystickButtonRadialMenu {}

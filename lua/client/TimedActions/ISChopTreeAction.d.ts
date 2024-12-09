@@ -17,9 +17,9 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, tree: any);
 
-      animEvent: ((event: any, parameter: any) => any) | any;
+      animEvent(event: any, parameter: any, ...__args: never[]): any;
 
-      useEndurance: (() => any) | any;
+      useEndurance(...__args: never[]): any;
     }
   }
   export namespace lua.client.TimedActions.ISChopTreeAction {}

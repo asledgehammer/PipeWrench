@@ -64,57 +64,57 @@ declare module '@asledgehammer/pipewrench' {
         onChangeArg2: any,
       );
 
-      addOption: ((option: any) => any) | any;
+      addOption(option: any, ...__args: never[]): any;
 
-      addOptionWithData: ((option: any, data: any) => any) | any;
+      addOptionWithData(option: any, data: any, ...__args: never[]): any;
 
-      clear: (() => any) | any;
+      clear(...__args: never[]): any;
 
-      contains: ((text: any) => any) | any;
+      contains(text: any, ...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      find: ((func: any, arg1: any, arg2: any) => any) | any;
+      find(func: any, arg1: any, arg2: any, ...__args: never[]): any;
 
-      forceClick: (() => any) | any;
+      forceClick(...__args: never[]): any;
 
-      getFilterText: (() => any) | any;
+      getFilterText(...__args: never[]): any;
 
-      getOptionData: ((index: any) => any) | any;
+      getOptionData(index: any, ...__args: never[]): any;
 
-      getOptionText: ((index: any) => any) | any;
+      getOptionText(index: any, ...__args: never[]): any;
 
-      getOptionTooltip: ((index: any) => any) | any;
+      getOptionTooltip(index: any, ...__args: never[]): any;
 
-      getSelectedText: (() => any) | any;
+      getSelectedText(...__args: never[]): any;
 
-      hasFilterText: (() => any) | any;
+      hasFilterText(...__args: never[]): any;
 
-      hidePopup: (() => any) | any;
+      hidePopup(...__args: never[]): any;
 
-      isEditable: (() => any) | any;
+      isEditable(...__args: never[]): any;
 
-      onJoypadDirDown: ((joypadData: any) => any) | any;
+      onJoypadDirDown(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDirUp: ((joypadData: any) => any) | any;
+      onJoypadDirUp(joypadData: any, ...__args: never[]): any;
 
-      onMouseDownOutside: ((x: any, y: any) => any) | any;
+      onMouseDownOutside(x: any, y: any, ...__args: never[]): any;
 
-      select: ((option: any) => any) | any;
+      select(option: any, ...__args: never[]): any;
 
-      selectData: ((data: any) => any) | any;
+      selectData(data: any, ...__args: never[]): any;
 
-      setEditable: ((editable: any) => any) | any;
+      setEditable(editable: any, ...__args: never[]): any;
 
-      setFilterText: ((text: any) => any) | any;
+      setFilterText(text: any, ...__args: never[]): any;
 
-      setJoypadFocused: ((focused: any) => any) | any;
+      setJoypadFocused(focused: any, ...__args: never[]): any;
 
-      setToolTipMap: ((tooltipmap: any) => any) | any;
+      setToolTipMap(tooltipmap: any, ...__args: never[]): any;
 
-      setWidthToOptions: ((minWidth: any) => any) | any;
+      setWidthToOptions(minWidth: any, ...__args: never[]): any;
 
-      showPopup: (() => any) | any;
+      showPopup(...__args: never[]): any;
     }
 
     /** @customConstructor ISComboBoxEditor:new */
@@ -126,7 +126,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, comboBox: any);
 
-      onOtherKey: ((key: any) => any) | any;
+      onOtherKey(key: any, ...__args: never[]): any;
     }
 
     /** @customConstructor ISComboBoxPopup:new */
@@ -142,7 +142,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      setComboBox: ((comboBox: any) => any) | any;
+      setComboBox(comboBox: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISComboBox {}

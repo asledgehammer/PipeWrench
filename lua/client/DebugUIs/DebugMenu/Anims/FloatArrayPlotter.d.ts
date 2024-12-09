@@ -31,15 +31,15 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, maxPlotPoints: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setData: ((_data: any) => any) | any;
+      setData(_data: any, ...__args: never[]): any;
 
-      setHorzLine: ((value: any, col: any) => any) | any;
+      setHorzLine(value: any, col: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
     }
   }
   export namespace lua.client.DebugUIs.DebugMenu.Anims.FloatArrayPlotter {}

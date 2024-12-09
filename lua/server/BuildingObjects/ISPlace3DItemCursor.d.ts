@@ -67,29 +67,29 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, items: any);
 
-      checkPositionJoypad: (() => any) | any;
+      checkPositionJoypad(...__args: never[]): any;
 
-      checkRotateJoypad: (() => any) | any;
+      checkRotateJoypad(...__args: never[]): any;
 
-      checkRotateKey: (() => any) | any;
+      checkRotateKey(...__args: never[]): any;
 
-      checkSelectSurfaceKey: (() => any) | any;
+      checkSelectSurfaceKey(...__args: never[]): any;
 
-      clamp: ((rot: any) => any) | any;
+      clamp(rot: any, ...__args: never[]): any;
 
-      create: ((x: any, y: any, z: any, north: any, sprite: any) => any) | any;
+      create(x: any, y: any, z: any, north: any, sprite: any, ...__args: never[]): any;
 
-      drawPrompt: ((playerNum: any, ui: any) => any) | any;
+      drawPrompt(playerNum: any, ui: any, ...__args: never[]): any;
 
-      getSurface: ((square: any) => any) | any;
+      getSurface(square: any, ...__args: never[]): any;
 
-      getXPrompt: (() => any) | any;
+      getXPrompt(...__args: never[]): any;
 
-      handleRotate: ((pressed: any, reverse: any) => any) | any;
+      handleRotate(pressed: any, reverse: any, ...__args: never[]): any;
 
-      onObjectLeftMouseButtonDown: ((object: any, x: any, y: any) => any) | any;
+      onObjectLeftMouseButtonDown(object: any, x: any, y: any, ...__args: never[]): any;
 
-      rotateDelta: (() => any) | any;
+      rotateDelta(...__args: never[]): any;
     }
   }
   export namespace lua.server.BuildingObjects.ISPlace3DItemCursor {}

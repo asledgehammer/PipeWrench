@@ -27,37 +27,37 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor();
 
-      createMagazine: (() => any) | any;
+      createMagazine(...__args: never[]): any;
 
-      getRackTime: (() => any) | any;
+      getRackTime(...__args: never[]): any;
 
-      getReloadTime: (() => any) | any;
+      getReloadTime(...__args: never[]): any;
 
-      isChainReloading: (() => any) | any;
+      isChainReloading(...__args: never[]): any;
 
-      isReloadValidEasy: ((char: any, square: any) => any) | any;
+      isReloadValidEasy(char: any, square: any, ...__args: never[]): any;
 
-      isReloadValidHard: ((char: any, square: any) => any) | any;
+      isReloadValidHard(char: any, square: any, ...__args: never[]): any;
 
-      isReloadValidNormal: ((char: any, square: any) => any) | any;
+      isReloadValidNormal(char: any, square: any, ...__args: never[]): any;
 
-      printReloadableWeaponDetails: (() => any) | any;
+      printReloadableWeaponDetails(...__args: never[]): any;
 
-      printWeaponDetails: ((item: any) => any) | any;
+      printWeaponDetails(item: any, ...__args: never[]): any;
 
-      rackingPerform: ((char: any, square: any, weapon: any) => any) | any;
+      rackingPerform(char: any, square: any, weapon: any, ...__args: never[]): any;
 
-      rackingStart: ((char: any, square: any, weapon: any) => any) | any;
+      rackingStart(char: any, square: any, weapon: any, ...__args: never[]): any;
 
-      reloadPerformEasy: ((char: any, square: any, weapon: any) => any) | any;
+      reloadPerformEasy(char: any, square: any, weapon: any, ...__args: never[]): any;
 
-      reloadPerformNormal: ((char: any, square: any, weapon: any) => any) | any;
+      reloadPerformNormal(char: any, square: any, weapon: any, ...__args: never[]): any;
 
-      reloadStartEasy: ((char: any, square: any) => any) | any;
+      reloadStartEasy(char: any, square: any, ...__args: never[]): any;
 
-      reloadStartNormal: ((char: any, square: any) => any) | any;
+      reloadStartNormal(char: any, square: any, ...__args: never[]): any;
 
-      setupMagazine: ((magazine: any) => any) | any;
+      setupMagazine(magazine: any, ...__args: never[]): any;
     }
   }
   export namespace lua.shared.Reloading.ISSemiAutoWeapon {}

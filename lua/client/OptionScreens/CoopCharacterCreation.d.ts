@@ -27,28 +27,28 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(joypadIndex: any, joypadData: any, playerIndex: any);
 
-      accept: (() => any) | any;
+      accept(...__args: never[]): any;
 
-      accept1: (() => any) | any;
+      accept1(...__args: never[]): any;
 
-      cancel: (() => any) | any;
+      cancel(...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      initPlayer: (() => any) | any;
+      initPlayer(...__args: never[]): any;
 
-      newPlayerMouse: (() => any) | any;
+      newPlayerMouse(...__args: never[]): any;
 
-      OnJoypadBeforeDeactivate: ((index: any) => any) | any;
-
-      /** @noSelf */
-      static getJoypad: () => any;
+      OnJoypadBeforeDeactivate(index: any, ...__args: never[]): any;
 
       /** @noSelf */
-      static newPlayer: (joypadIndex: any, joypadData: any) => any;
+      static getJoypad: (...__args: never[]) => any;
 
       /** @noSelf */
-      static setVisibleAllUI: (visible: any) => any;
+      static newPlayer: (joypadIndex: any, joypadData: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static setVisibleAllUI: (visible: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.OptionScreens.CoopCharacterCreation {}

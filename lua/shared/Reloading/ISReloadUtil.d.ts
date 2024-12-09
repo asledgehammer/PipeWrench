@@ -9,29 +9,29 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor();
 
-      addMagazineType: ((magazineType: any) => any) | any;
+      addMagazineType(magazineType: any, ...__args: never[]): any;
 
-      addWeaponType: ((weaponType: any) => any) | any;
+      addWeaponType(weaponType: any, ...__args: never[]): any;
 
-      canReload: ((item: any) => any) | any;
+      canReload(item: any, ...__args: never[]): any;
 
-      getClipData: ((magazineType: any) => any) | any;
+      getClipData(magazineType: any, ...__args: never[]): any;
 
-      getReloadableForPlayer: ((reloadClass: any, playerObj: any) => any) | any;
+      getReloadableForPlayer(reloadClass: any, playerObj: any, ...__args: never[]): any;
 
-      getReloadableWeapon: ((weapon: any, player: any) => any) | any;
+      getReloadableWeapon(weapon: any, player: any, ...__args: never[]): any;
 
-      getReloadText: ((item: any, player: any) => any) | any;
+      getReloadText(item: any, player: any, ...__args: never[]): any;
 
-      getWeaponData: ((weaponType: any) => any) | any;
+      getWeaponData(weaponType: any, ...__args: never[]): any;
 
-      isReloadable: ((item: any, player: any) => any) | any;
+      isReloadable(item: any, player: any, ...__args: never[]): any;
 
-      setUpGun: ((weapon: any, playerObj: any) => any) | any;
+      setUpGun(weapon: any, playerObj: any, ...__args: never[]): any;
 
-      setupMagazine: ((magazine: any, clipData: any, playerObj: any) => any) | any;
+      setupMagazine(magazine: any, clipData: any, playerObj: any, ...__args: never[]): any;
 
-      syncItemToReloadable: ((item: any, player: any) => any) | any;
+      syncItemToReloadable(item: any, player: any, ...__args: never[]): any;
     }
   }
   export namespace lua.shared.Reloading.ISReloadUtil {}

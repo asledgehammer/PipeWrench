@@ -11,7 +11,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      onResolutionChange: ((oldw: any, oldh: any, neww: any, newh: any) => any) | any;
+      onResolutionChange(oldw: any, oldh: any, neww: any, newh: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.DebugUIs.LuaDebugger {}

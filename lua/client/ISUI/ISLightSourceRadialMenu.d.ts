@@ -13,41 +13,41 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any);
 
-      center: (() => any) | any;
+      center(...__args: never[]): any;
 
-      display: (() => any) | any;
+      display(...__args: never[]): any;
 
-      fillMenu: (() => any) | any;
+      fillMenu(...__args: never[]): any;
 
-      fillMenuForItem: ((menu: any, item: any) => any) | any;
+      fillMenuForItem(menu: any, item: any, ...__args: never[]): any;
 
-      getInsertBatteryRecipe: ((item: any, containerList: any) => any) | any;
+      getInsertBatteryRecipe(item: any, containerList: any, ...__args: never[]): any;
 
-      getRemoveBatteryRecipe: ((item: any, containerList: any) => any) | any;
+      getRemoveBatteryRecipe(item: any, containerList: any, ...__args: never[]): any;
 
-      onEquipLight: ((item: any, primary: any) => any) | any;
+      onEquipLight(item: any, primary: any, ...__args: never[]): any;
 
-      onExtinguishCandle: ((item: any) => any) | any;
+      onExtinguishCandle(item: any, ...__args: never[]): any;
 
-      onInsertBattery: ((item: any) => any) | any;
+      onInsertBattery(item: any, ...__args: never[]): any;
 
-      onLightCandle: ((item: any) => any) | any;
+      onLightCandle(item: any, ...__args: never[]): any;
 
-      onRemoveBattery: ((item: any) => any) | any;
+      onRemoveBattery(item: any, ...__args: never[]): any;
 
-      onToggle: ((item: any) => any) | any;
-
-      /** @noSelf */
-      static checkKey: (key: any) => any;
+      onToggle(item: any, ...__args: never[]): any;
 
       /** @noSelf */
-      static onKeyPressed: (key: any) => any;
+      static checkKey: (key: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onKeyReleased: (key: any) => any;
+      static onKeyPressed: (key: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onKeyRepeat: (key: any) => any;
+      static onKeyReleased: (key: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static onKeyRepeat: (key: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.ISLightSourceRadialMenu {}

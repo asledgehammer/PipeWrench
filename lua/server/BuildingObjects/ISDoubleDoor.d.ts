@@ -27,21 +27,21 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(sprite: any, spriteIndex: any);
 
-      addDoorPart: ((x: any, y: any, z: any, north: any, sprite: any, index: any) => any) | any;
+      addDoorPart(x: any, y: any, z: any, north: any, sprite: any, index: any, ...__args: never[]): any;
 
-      create: ((x: any, y: any, z: any, north: any, sprite: any) => any) | any;
+      create(x: any, y: any, z: any, north: any, sprite: any, ...__args: never[]): any;
 
-      getHealth: (() => any) | any;
+      getHealth(...__args: never[]): any;
 
-      getSquare2Pos: ((square: any, north: any) => any) | any;
+      getSquare2Pos(square: any, north: any, ...__args: never[]): any;
 
-      getSquare3Pos: ((square: any, north: any) => any) | any;
+      getSquare3Pos(square: any, north: any, ...__args: never[]): any;
 
-      getSquare4Pos: ((square: any, north: any) => any) | any;
+      getSquare4Pos(square: any, north: any, ...__args: never[]): any;
 
-      overrideModData: ((spriteIndex: any) => any) | any;
+      overrideModData(spriteIndex: any, ...__args: never[]): any;
 
-      partExists: ((square: any, index: any) => any) | any;
+      partExists(square: any, index: any, ...__args: never[]): any;
     }
   }
   export namespace lua.server.BuildingObjects.ISDoubleDoor {}

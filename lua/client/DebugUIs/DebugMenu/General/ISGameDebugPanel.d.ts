@@ -15,25 +15,34 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, doStencil: any);
 
-      addBoolOption: ((_title: any, _tag: any) => any) | any;
+      addBoolOption(_title: any, _tag: any, ...__args: never[]): any;
 
-      addButtonInfo: ((_title: any, _command: any, _marginBot: any) => any) | any;
+      addButtonInfo(_title: any, _command: any, _marginBot: any, ...__args: never[]): any;
 
-      addSliderOption: ((_java: any, _var: any, _min: any, _max: any, _step: any, _get: any, _set: any) => any) | any;
+      addSliderOption(
+        _java: any,
+        _var: any,
+        _min: any,
+        _max: any,
+        _step: any,
+        _get: any,
+        _set: any,
+        ...__args: never[]
+      ): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      initialise: (() => any) | any;
+      initialise(...__args: never[]): any;
 
-      onClick: ((_button: any) => any) | any;
+      onClick(_button: any, ...__args: never[]): any;
 
-      onSliderChange: ((_newval: any, _slider: any) => any) | any;
+      onSliderChange(_newval: any, _slider: any, ...__args: never[]): any;
 
-      onTicked: ((_index: any, _selected: any, _arg1: any, _arg2: any, _tickbox: any) => any) | any;
+      onTicked(_index: any, _selected: any, _arg1: any, _arg2: any, _tickbox: any, ...__args: never[]): any;
 
-      onTickedValue: ((_index: any, _selected: any, _arg1: any, _arg2: any, _tickbox: any) => any) | any;
+      onTickedValue(_index: any, _selected: any, _arg1: any, _arg2: any, _tickbox: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
     }
   }
   export namespace lua.client.DebugUIs.DebugMenu.General.ISGameDebugPanel {}

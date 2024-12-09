@@ -6,16 +6,16 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static onJoypadPressDown: (joypadData: any) => any;
+      static onJoypadPressDown: (joypadData: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onJoypadPressUp: (joypadData: any) => any;
+      static onJoypadPressUp: (joypadData: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onJoypadPressX: (buttonPrompt: any, joypadData: any) => any;
+      static onJoypadPressX: (buttonPrompt: any, joypadData: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onJoypadReleaseX: (joypadData: any) => any;
+      static onJoypadReleaseX: (joypadData: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.Vehicles.ISUI.ISVehicleRegulator {}

@@ -29,19 +29,19 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      drawDatas: ((y: any, item: any, alt: any) => any) | any;
+      drawDatas(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      getActiveMods: (() => any) | any;
+      getActiveMods(...__args: never[]): any;
 
-      onClick: ((button: any) => any) | any;
+      onClick(button: any, ...__args: never[]): any;
 
-      onMouseDownOutside: ((x: any, y: any) => any) | any;
+      onMouseDownOutside(x: any, y: any, ...__args: never[]): any;
 
-      populateList: (() => any) | any;
+      populateList(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      updateButtons: (() => any) | any;
+      updateButtons(...__args: never[]): any;
     }
   }
   export namespace lua.client.OptionScreens.ModOrderUI {}

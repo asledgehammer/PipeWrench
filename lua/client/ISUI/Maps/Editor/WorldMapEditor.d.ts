@@ -45,29 +45,29 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, javaObject: any);
 
-      close: (() => any) | any;
+      close(...__args: never[]): any;
 
-      isKeyConsumed: ((key: any) => any) | any;
+      isKeyConsumed(key: any, ...__args: never[]): any;
 
-      loadSettingsFromMap: (() => any) | any;
+      loadSettingsFromMap(...__args: never[]): any;
 
-      onExit: ((button: any, x: any, y: any) => any) | any;
+      onExit(button: any, x: any, y: any, ...__args: never[]): any;
 
-      onGenerateLuaScript: (() => any) | any;
+      onGenerateLuaScript(...__args: never[]): any;
 
-      onKeyPress: ((key: any) => any) | any;
+      onKeyPress(key: any, ...__args: never[]): any;
 
-      onKeyRelease: ((key: any) => any) | any;
+      onKeyRelease(key: any, ...__args: never[]): any;
 
-      onMouseDown: ((x: any, y: any) => any) | any;
+      onMouseDown(x: any, y: any, ...__args: never[]): any;
 
-      onResolutionChange: ((oldw: any, oldh: any, neww: any, newh: any) => any) | any;
+      onResolutionChange(oldw: any, oldh: any, neww: any, newh: any, ...__args: never[]): any;
 
-      onSwitchMode: ((button: any) => any) | any;
+      onSwitchMode(button: any, ...__args: never[]): any;
 
-      setDataFiles: ((fileNames: any) => any) | any;
+      setDataFiles(fileNames: any, ...__args: never[]): any;
 
-      showUI: (() => any) | any;
+      showUI(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.Maps.Editor.WorldMapEditor {}

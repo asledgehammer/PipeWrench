@@ -61,42 +61,42 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      addView: ((view: any) => any) | any;
+      addView(view: any, ...__args: never[]): any;
 
-      collapse: (() => any) | any;
+      collapse(...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      getTitle: (() => any) | any;
+      getTitle(...__args: never[]): any;
 
-      getViews: (() => any) | any;
+      getViews(...__args: never[]): any;
 
-      onInfo: (() => any) | any;
+      onInfo(...__args: never[]): any;
 
-      pin: (() => any) | any;
+      pin(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      resizeWidgetHeight: (() => any) | any;
+      resizeWidgetHeight(...__args: never[]): any;
 
-      RestoreLayout: ((name: any, layout: any) => any) | any;
+      RestoreLayout(name: any, layout: any, ...__args: never[]): any;
 
-      SaveLayout: ((name: any, layout: any) => any) | any;
+      SaveLayout(name: any, layout: any, ...__args: never[]): any;
 
-      setDrawFrame: ((visible: any) => any) | any;
+      setDrawFrame(visible: any, ...__args: never[]): any;
 
-      setInfo: ((text: any) => any) | any;
+      setInfo(text: any, ...__args: never[]): any;
 
-      setResizable: ((resizable: any) => any) | any;
+      setResizable(resizable: any, ...__args: never[]): any;
 
-      setTitle: ((title: any) => any) | any;
+      setTitle(title: any, ...__args: never[]): any;
 
-      titleBarHeight: (() => any) | any;
+      titleBarHeight(...__args: never[]): any;
 
-      uncollapse: (() => any) | any;
+      uncollapse(...__args: never[]): any;
 
       /** @noSelf */
-      static TitleBarHeight: () => any;
+      static TitleBarHeight: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.ISCollapsableWindow {}

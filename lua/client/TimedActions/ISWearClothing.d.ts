@@ -13,7 +13,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, item: any, time: any);
 
-      isAlreadyEquipped: ((item: any) => any) | any;
+      isAlreadyEquipped(item: any, ...__args: never[]): any;
     }
 
     export abstract class WearClothingAnimations {

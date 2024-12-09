@@ -25,19 +25,19 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(editor: any);
 
-      cancelDrag: (() => any) | any;
+      cancelDrag(...__args: never[]): any;
 
-      hitTest: ((x: any, y: any) => any) | any;
+      hitTest(x: any, y: any, ...__args: never[]): any;
 
-      onMouseMove: ((mx: any, my: any) => any) | any;
+      onMouseMove(mx: any, my: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setLocation: ((x: any, y: any) => any) | any;
+      setLocation(x: any, y: any, ...__args: never[]): any;
 
-      snap: ((xy: any) => any) | any;
+      snap(xy: any, ...__args: never[]): any;
 
-      startDrag: (() => any) | any;
+      startDrag(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.Maps.Editor.WorldMapEditorLocationControl {}

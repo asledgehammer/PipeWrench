@@ -155,131 +155,131 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(inGame: any);
 
-      addCredit: ((title: any, name: any) => any) | any;
+      addCredit(title: any, name: any, ...__args: never[]): any;
 
-      calcLogoHeight: (() => any) | any;
+      calcLogoHeight(...__args: never[]): any;
 
-      doArtCredits: (() => any) | any;
+      doArtCredits(...__args: never[]): any;
 
-      doCodeCredits: (() => any) | any;
+      doCodeCredits(...__args: never[]): any;
 
-      doCredits: (() => any) | any;
+      doCredits(...__args: never[]): any;
 
-      doScriptingCredits: (() => any) | any;
+      doScriptingCredits(...__args: never[]): any;
 
-      doWritingCredits: (() => any) | any;
+      doWritingCredits(...__args: never[]): any;
 
-      getAllUIs: (() => any) | any;
+      getAllUIs(...__args: never[]): any;
 
-      getCurrentFocusForController: (() => any) | any;
+      getCurrentFocusForController(...__args: never[]): any;
 
-      getLatestSave: (() => any) | any;
+      getLatestSave(...__args: never[]): any;
 
-      instantiate: (() => any) | any;
+      instantiate(...__args: never[]): any;
 
-      onClickModList: (() => any) | any;
+      onClickModList(...__args: never[]): any;
 
-      OnClickNews: (() => any) | any;
+      OnClickNews(...__args: never[]): any;
 
-      onClickTermsOfService: ((button: any) => any) | any;
+      onClickTermsOfService(button: any, ...__args: never[]): any;
 
-      onClickVersionDetail: (() => any) | any;
+      onClickVersionDetail(...__args: never[]): any;
 
-      onConfirmQuitToDesktop: ((button: any) => any) | any;
+      onConfirmQuitToDesktop(button: any, ...__args: never[]): any;
 
-      onEnterFromGame: (() => any) | any;
+      onEnterFromGame(...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onInviteFailDialogButton: ((button: any, focus: any) => any) | any;
+      onInviteFailDialogButton(button: any, focus: any, ...__args: never[]): any;
 
-      onLoseJoypadFocus: ((joypadData: any) => any) | any;
+      onLoseJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onReturnToGame: (() => any) | any;
+      onReturnToGame(...__args: never[]): any;
 
-      onTermsOfServiceOK: (() => any) | any;
+      onTermsOfServiceOK(...__args: never[]): any;
 
-      onTutorialControllerWarn2: ((button: any) => any) | any;
+      onTutorialControllerWarn2(button: any, ...__args: never[]): any;
 
-      onTutorialModalClick: ((button: any) => any) | any;
+      onTutorialModalClick(button: any, ...__args: never[]): any;
 
-      prerenderBottomPanelLabel: (() => any) | any;
+      prerenderBottomPanelLabel(...__args: never[]): any;
 
-      presentServerConnectPopup: (() => any) | any;
+      presentServerConnectPopup(...__args: never[]): any;
 
-      quitToDesktopFunc: (() => any) | any;
+      quitToDesktopFunc(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setBeginnerPreset: (() => any) | any;
+      setBeginnerPreset(...__args: never[]): any;
 
-      setBottomPanelVisible: ((visible: any) => any) | any;
+      setBottomPanelVisible(visible: any, ...__args: never[]): any;
 
-      setDefaultSandboxVars: (() => any) | any;
+      setDefaultSandboxVars(...__args: never[]): any;
 
-      setEasyPreset: (() => any) | any;
+      setEasyPreset(...__args: never[]): any;
 
-      setHardcorePreset: (() => any) | any;
+      setHardcorePreset(...__args: never[]): any;
 
-      setHardPreset: (() => any) | any;
+      setHardPreset(...__args: never[]): any;
 
-      setNormalPreset: (() => any) | any;
+      setNormalPreset(...__args: never[]): any;
 
-      setSandboxPreset: ((preset: any) => any) | any;
+      setSandboxPreset(preset: any, ...__args: never[]): any;
 
-      showInviteFailDialog: ((message: any) => any) | any;
+      showInviteFailDialog(message: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
-      updateBottomPanelButtons: (() => any) | any;
-
-      /** @noSelf */
-      static checkMapsAvailable: (mapName: any, activeMods: any, mapAvailable: any) => any;
+      updateBottomPanelButtons(...__args: never[]): any;
 
       /** @noSelf */
-      static checkSaveFile: () => any;
+      static checkMapsAvailable: (mapName: any, activeMods: any, mapAvailable: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static checkTutorial: (button: any) => any;
+      static checkSaveFile: (...__args: never[]) => any;
 
       /** @noSelf */
-      static continueLatestSave: (gameMode: any, saveName: any) => any;
+      static checkTutorial: (button: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static continueLatestSaveAux: (fromResetLua: any) => any;
+      static continueLatestSave: (gameMode: any, saveName: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static displayCheckSavefileModal: (text: any) => any;
+      static continueLatestSaveAux: (fromResetLua: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onAcceptInvite: (connectionString: any) => any;
+      static displayCheckSavefileModal: (text: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onCheckSavefileModalClick: (button: any) => any;
+      static onAcceptInvite: (connectionString: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnJoypadBeforeDeactivate: (index: any) => any;
+      static onCheckSavefileModalClick: (button: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onMenuItemMouseDownMainMenu: (item: any, x: any, y: any) => any;
+      static OnJoypadBeforeDeactivate: (index: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onResetLua: (reason: any) => any;
+      static onMenuItemMouseDownMainMenu: (item: any, x: any, y: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onResolutionChange: (oldw: any, oldh: any, neww: any, newh: any) => any;
+      static onResetLua: (reason: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnTick: (totalTicks: any) => any;
+      static onResolutionChange: (oldw: any, oldh: any, neww: any, newh: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onTutorialControllerWarn: () => any;
+      static OnTick: (totalTicks: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static resetLuaIfNeeded: () => any;
+      static onTutorialControllerWarn: (...__args: never[]) => any;
 
       /** @noSelf */
-      static startTutorial: () => any;
+      static resetLuaIfNeeded: (...__args: never[]) => any;
+
+      /** @noSelf */
+      static startTutorial: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.OptionScreens.MainScreen {}

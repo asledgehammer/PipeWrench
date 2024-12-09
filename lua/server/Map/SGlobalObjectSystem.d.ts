@@ -15,62 +15,62 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(name: any);
 
-      getInitialStateForClient: (() => any) | any;
+      getInitialStateForClient(...__args: never[]): any;
 
-      getIsoObjectAt: ((x: any, y: any, z: any) => any) | any;
+      getIsoObjectAt(x: any, y: any, z: any, ...__args: never[]): any;
 
-      getIsoObjectOnSquare: ((square: any) => any) | any;
+      getIsoObjectOnSquare(square: any, ...__args: never[]): any;
 
-      getLuaObjectAt: ((x: any, y: any, z: any) => any) | any;
+      getLuaObjectAt(x: any, y: any, z: any, ...__args: never[]): any;
 
-      getLuaObjectByIndex: ((index: any) => any) | any;
+      getLuaObjectByIndex(index: any, ...__args: never[]): any;
 
-      getLuaObjectCount: (() => any) | any;
+      getLuaObjectCount(...__args: never[]): any;
 
-      getLuaObjectOnSquare: ((square: any) => any) | any;
+      getLuaObjectOnSquare(square: any, ...__args: never[]): any;
 
-      initLuaObjects: (() => any) | any;
+      initLuaObjects(...__args: never[]): any;
 
-      initSystem: (() => any) | any;
+      initSystem(...__args: never[]): any;
 
-      isValidIsoObject: ((isoObject: any) => any) | any;
+      isValidIsoObject(isoObject: any, ...__args: never[]): any;
 
-      loadIsoObject: ((isoObject: any) => any) | any;
+      loadIsoObject(isoObject: any, ...__args: never[]): any;
 
-      newLuaObject: ((globalObject: any) => any) | any;
+      newLuaObject(globalObject: any, ...__args: never[]): any;
 
-      newLuaObjectAt: ((x: any, y: any, z: any) => any) | any;
+      newLuaObjectAt(x: any, y: any, z: any, ...__args: never[]): any;
 
-      newLuaObjectOnClient: ((luaObject: any) => any) | any;
+      newLuaObjectOnClient(luaObject: any, ...__args: never[]): any;
 
-      newLuaObjectOnSquare: ((square: any) => any) | any;
+      newLuaObjectOnSquare(square: any, ...__args: never[]): any;
 
-      noise: ((message: any) => any) | any;
+      noise(message: any, ...__args: never[]): any;
 
-      OnChunkLoaded: ((wx: any, wy: any) => any) | any;
+      OnChunkLoaded(wx: any, wy: any, ...__args: never[]): any;
 
-      OnClientCommand: ((command: any, playerObj: any, args: any) => any) | any;
+      OnClientCommand(command: any, playerObj: any, args: any, ...__args: never[]): any;
 
-      OnDestroyIsoThumpable: ((isoObject: any, playerObj: any) => any) | any;
+      OnDestroyIsoThumpable(isoObject: any, playerObj: any, ...__args: never[]): any;
 
-      OnIsoObjectChangedItself: ((isoObject: any) => any) | any;
+      OnIsoObjectChangedItself(isoObject: any, ...__args: never[]): any;
 
-      OnObjectAboutToBeRemoved: ((isoObject: any) => any) | any;
+      OnObjectAboutToBeRemoved(isoObject: any, ...__args: never[]): any;
 
-      OnObjectAdded: ((isoObject: any) => any) | any;
+      OnObjectAdded(isoObject: any, ...__args: never[]): any;
 
-      removeLuaObject: ((luaObject: any) => any) | any;
+      removeLuaObject(luaObject: any, ...__args: never[]): any;
 
-      removeLuaObjectAt: ((x: any, y: any, z: any) => any) | any;
+      removeLuaObjectAt(x: any, y: any, z: any, ...__args: never[]): any;
 
-      removeLuaObjectOnClient: ((luaObject: any) => any) | any;
+      removeLuaObjectOnClient(luaObject: any, ...__args: never[]): any;
 
-      removeLuaObjectOnSquare: ((square: any) => any) | any;
+      removeLuaObjectOnSquare(square: any, ...__args: never[]): any;
 
-      sendCommand: ((command: any, args: any) => any) | any;
+      sendCommand(command: any, args: any, ...__args: never[]): any;
 
       /** @noSelf */
-      static RegisterSystemClass: (luaClass: any) => any;
+      static RegisterSystemClass: (luaClass: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.server.Map.SGlobalObjectSystem {}

@@ -55,42 +55,42 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, faction: any, player: any);
 
-      drawPlayers: ((y: any, item: any, alt: any) => any) | any;
+      drawPlayers(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      onAnswerFactionInvite: ((button: any) => any) | any;
+      onAnswerFactionInvite(button: any, ...__args: never[]): any;
 
-      onChangeTag: ((button: any) => any) | any;
+      onChangeTag(button: any, ...__args: never[]): any;
 
-      onChangeTitle: ((button: any) => any) | any;
+      onChangeTitle(button: any, ...__args: never[]): any;
 
-      onClick: ((button: any) => any) | any;
+      onClick(button: any, ...__args: never[]): any;
 
-      onClickFactionPvp: ((clickedOption: any, enabled: any) => any) | any;
+      onClickFactionPvp(clickedOption: any, enabled: any, ...__args: never[]): any;
 
-      onClickShowTag: ((clickedOption: any, enabled: any) => any) | any;
+      onClickShowTag(clickedOption: any, enabled: any, ...__args: never[]): any;
 
-      onPickedTagColor: ((color: any, mouseUp: any) => any) | any;
+      onPickedTagColor(color: any, mouseUp: any, ...__args: never[]): any;
 
-      onQuitFaction: ((button: any) => any) | any;
+      onQuitFaction(button: any, ...__args: never[]): any;
 
-      onRemovePlayerFromFaction: ((button: any, player: any) => any) | any;
+      onRemovePlayerFromFaction(button: any, player: any, ...__args: never[]): any;
 
-      onTagColor: ((button: any) => any) | any;
+      onTagColor(button: any, ...__args: never[]): any;
 
-      populateList: (() => any) | any;
+      populateList(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      updateButtons: (() => any) | any;
-
-      /** @noSelf */
-      static AcceptedFactionInvite: (factionName: any, host: any) => any;
+      updateButtons(...__args: never[]): any;
 
       /** @noSelf */
-      static ReceiveFactionInvite: (factionName: any, host: any) => any;
+      static AcceptedFactionInvite: (factionName: any, host: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static SyncFaction: (factionName: any) => any;
+      static ReceiveFactionInvite: (factionName: any, host: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static SyncFaction: (factionName: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.UserPanel.ISFactionUI {}

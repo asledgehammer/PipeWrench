@@ -169,155 +169,155 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(_manager: any, _icon: any);
 
-      addIsoMarker: (() => any) | any;
+      addIsoMarker(...__args: never[]): any;
 
-      addWorldMarker: (() => any) | any;
+      addWorldMarker(...__args: never[]): any;
 
-      checkIsForageable: (() => any) | any;
+      checkIsForageable(...__args: never[]): any;
 
-      checkIsPlayerRunning: (() => any) | any;
+      checkIsPlayerRunning(...__args: never[]): any;
 
-      checkIsSpotted: (() => any) | any;
+      checkIsSpotted(...__args: never[]): any;
 
-      doContextMenu: ((_context: any) => any) | any;
+      doContextMenu(_context: any, ...__args: never[]): any;
 
-      doPickup: (() => any) | any;
+      doPickup(...__args: never[]): any;
 
-      doSearchFocusCheck: (() => any) | any;
+      doSearchFocusCheck(...__args: never[]): any;
 
-      doUpdateEvents: ((_force: any) => any) | any;
+      doUpdateEvents(_force: any, ...__args: never[]): any;
 
-      doVisionCheck: (() => any) | any;
+      doVisionCheck(...__args: never[]): any;
 
-      findPinOffset: (() => any) | any;
+      findPinOffset(...__args: never[]): any;
 
-      findTextureCenter: (() => any) | any;
+      findTextureCenter(...__args: never[]): any;
 
-      getAlpha: (() => any) | any;
+      getAlpha(...__args: never[]): any;
 
-      getAngle2D: ((_x1: any, _y1: any, _x2: any, _y2: any) => any) | any;
+      getAngle2D(_x1: any, _y1: any, _x2: any, _y2: any, ...__args: never[]): any;
 
-      getAngleOffset2D: ((_angle1: any, _angle2: any) => any) | any;
+      getAngleOffset2D(_angle1: any, _angle2: any, ...__args: never[]): any;
 
-      getCanSeeThisUpdate: (() => any) | any;
+      getCanSeeThisUpdate(...__args: never[]): any;
 
-      getColor: (() => any) | any;
+      getColor(...__args: never[]): any;
 
-      getDistance3D: ((_x1: any, _y1: any, _z1: any, _x2: any, _y2: any, _z2: any) => any) | any;
+      getDistance3D(_x1: any, _y1: any, _z1: any, _x2: any, _y2: any, _z2: any, ...__args: never[]): any;
 
-      getGameSpeed: (() => any) | any;
+      getGameSpeed(...__args: never[]): any;
 
-      getGridSquare: (() => any) | any;
+      getGridSquare(...__args: never[]): any;
 
-      getIsNoticed: (() => any) | any;
+      getIsNoticed(...__args: never[]): any;
 
-      getIsSearchModeActive: (() => any) | any;
+      getIsSearchModeActive(...__args: never[]): any;
 
-      getIsSeen: (() => any) | any;
+      getIsSeen(...__args: never[]): any;
 
-      getIsSeenThisUpdate: (() => any) | any;
+      getIsSeenThisUpdate(...__args: never[]): any;
 
-      getItemList: (() => any) | any;
+      getItemList(...__args: never[]): any;
 
-      getScreenDelta: (() => any) | any;
+      getScreenDelta(...__args: never[]): any;
 
-      getSpotTimer: (() => any) | any;
+      getSpotTimer(...__args: never[]): any;
 
-      initAltTexture: (() => any) | any;
+      initAltTexture(...__args: never[]): any;
 
-      initGridSquare: (() => any) | any;
+      initGridSquare(...__args: never[]): any;
 
-      initItem: (() => any) | any;
+      initItem(...__args: never[]): any;
 
-      initItemCount: (() => any) | any;
+      initItemCount(...__args: never[]): any;
 
-      isCenterView: ((_bonusAngle: any) => any) | any;
+      isCenterView(_bonusAngle: any, ...__args: never[]): any;
 
-      isInRangeForUpdate: (() => any) | any;
+      isInRangeForUpdate(...__args: never[]): any;
 
-      isInRangeOfPlayer: ((_range: any) => any) | any;
+      isInRangeOfPlayer(_range: any, ...__args: never[]): any;
 
-      isNearby: (() => any) | any;
+      isNearby(...__args: never[]): any;
 
-      isValid: (() => any) | any;
+      isValid(...__args: never[]): any;
 
-      onRightMouseDown: (() => any) | any;
+      onRightMouseDown(...__args: never[]): any;
 
-      onRightMouseUp: (() => any) | any;
+      onRightMouseUp(...__args: never[]): any;
 
-      remove: (() => any) | any;
+      remove(...__args: never[]): any;
 
-      removeIsoMarker: (() => any) | any;
+      removeIsoMarker(...__args: never[]): any;
 
-      removeWorldMarker: (() => any) | any;
+      removeWorldMarker(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      render3DItem: (() => any) | any;
+      render3DItem(...__args: never[]): any;
 
-      renderAltWorldTexture: (() => any) | any;
+      renderAltWorldTexture(...__args: never[]): any;
 
-      renderPinIcon: (() => any) | any;
+      renderPinIcon(...__args: never[]): any;
 
-      renderWorldIcon: (() => any) | any;
+      renderWorldIcon(...__args: never[]): any;
 
-      renderWorldItemTexture: (() => any) | any;
+      renderWorldItemTexture(...__args: never[]): any;
 
-      reset: (() => any) | any;
+      reset(...__args: never[]): any;
 
-      resetBounce: (() => any) | any;
+      resetBounce(...__args: never[]): any;
 
-      setAlpha: ((_a: any) => any) | any;
+      setAlpha(_a: any, ...__args: never[]): any;
 
-      setCanRollForSearchFocus: (() => any) | any;
+      setCanRollForSearchFocus(...__args: never[]): any;
 
-      setColor: ((_rgba: any) => any) | any;
+      setColor(_rgba: any, ...__args: never[]): any;
 
-      setIsBeingRemoved: ((_isBeingRemoved: any) => any) | any;
+      setIsBeingRemoved(_isBeingRemoved: any, ...__args: never[]): any;
 
-      setIsNoticed: ((_isNoticed: any) => any) | any;
+      setIsNoticed(_isNoticed: any, ...__args: never[]): any;
 
-      setIsSeen: ((_isSeen: any) => any) | any;
+      setIsSeen(_isSeen: any, ...__args: never[]): any;
 
-      setIsSeenThisUpdate: ((_isSeen: any) => any) | any;
+      setIsSeenThisUpdate(_isSeen: any, ...__args: never[]): any;
 
-      setSpotTimer: ((_time: any) => any) | any;
+      setSpotTimer(_time: any, ...__args: never[]): any;
 
-      setWorldMarkerPosition: (() => any) | any;
+      setWorldMarkerPosition(...__args: never[]): any;
 
-      spotIcon: (() => any) | any;
+      spotIcon(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
-      updateAlpha: (() => any) | any;
+      updateAlpha(...__args: never[]): any;
 
-      updateBounce: (() => any) | any;
+      updateBounce(...__args: never[]): any;
 
-      updateDistanceToPlayer: (() => any) | any;
+      updateDistanceToPlayer(...__args: never[]): any;
 
-      updateLastSeen: (() => any) | any;
+      updateLastSeen(...__args: never[]): any;
 
-      updateManagerMarkers: (() => any) | any;
+      updateManagerMarkers(...__args: never[]): any;
 
-      updateModifiers: (() => any) | any;
+      updateModifiers(...__args: never[]): any;
 
-      updatePerkLevel: (() => any) | any;
+      updatePerkLevel(...__args: never[]): any;
 
-      updatePinIconPosition: (() => any) | any;
+      updatePinIconPosition(...__args: never[]): any;
 
-      updatePinIconSize: (() => any) | any;
+      updatePinIconSize(...__args: never[]): any;
 
-      updateSpotTimer: (() => any) | any;
+      updateSpotTimer(...__args: never[]): any;
 
-      updateSpotTimerMax: (() => any) | any;
+      updateSpotTimerMax(...__args: never[]): any;
 
-      updateTimestamp: (() => any) | any;
+      updateTimestamp(...__args: never[]): any;
 
-      updateViewDistance: (() => any) | any;
+      updateViewDistance(...__args: never[]): any;
 
-      updateWorldMarker: (() => any) | any;
+      updateWorldMarker(...__args: never[]): any;
 
-      updateZoom: (() => any) | any;
+      updateZoom(...__args: never[]): any;
     }
   }
   export namespace lua.client.Foraging.ISBaseIcon {}

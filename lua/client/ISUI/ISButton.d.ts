@@ -93,61 +93,61 @@ declare module '@asledgehammer/pipewrench' {
         allowMouseUpProcessing: any,
       );
 
-      clearJoypadButton: (() => any) | any;
+      clearJoypadButton(...__args: never[]): any;
 
-      forceClick: (() => any) | any;
+      forceClick(...__args: never[]): any;
 
-      forceImageSize: ((width: any, height: any) => any) | any;
+      forceImageSize(width: any, height: any, ...__args: never[]): any;
 
-      getTitle: (() => any) | any;
+      getTitle(...__args: never[]): any;
 
-      isEnabled: (() => any) | any;
+      isEnabled(...__args: never[]): any;
 
-      onMouseDoubleClick: ((x: any, y: any) => any) | any;
+      onMouseDoubleClick(x: any, y: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setBackgroundColorMouseOverRGBA: ((r: any, g: any, b: any, a: any) => any) | any;
+      setBackgroundColorMouseOverRGBA(r: any, g: any, b: any, a: any, ...__args: never[]): any;
 
-      setBackgroundRGBA: ((r: any, g: any, b: any, a: any) => any) | any;
+      setBackgroundRGBA(r: any, g: any, b: any, a: any, ...__args: never[]): any;
 
-      setBorderRGBA: ((r: any, g: any, b: any, a: any) => any) | any;
+      setBorderRGBA(r: any, g: any, b: any, a: any, ...__args: never[]): any;
 
-      setDisplayBackground: ((background: any) => any) | any;
+      setDisplayBackground(background: any, ...__args: never[]): any;
 
-      setEnable: ((bEnabled: any) => any) | any;
+      setEnable(bEnabled: any, ...__args: never[]): any;
 
-      setFont: ((font: any) => any) | any;
+      setFont(font: any, ...__args: never[]): any;
 
-      setImage: ((image: any) => any) | any;
+      setImage(image: any, ...__args: never[]): any;
 
-      setJoypadButton: ((texture: any) => any) | any;
+      setJoypadButton(texture: any, ...__args: never[]): any;
 
-      setJoypadFocused: ((focused: any) => any) | any;
+      setJoypadFocused(focused: any, ...__args: never[]): any;
 
-      setOnClick: ((func: any, arg1: any, arg2: any, arg3: any, arg4: any) => any) | any;
+      setOnClick(func: any, arg1: any, arg2: any, arg3: any, arg4: any, ...__args: never[]): any;
 
-      setOnMouseOutFunction: ((onmouseout: any) => any) | any;
+      setOnMouseOutFunction(onmouseout: any, ...__args: never[]): any;
 
-      setOnMouseOverFunction: ((onmouseover: any) => any) | any;
+      setOnMouseOverFunction(onmouseover: any, ...__args: never[]): any;
 
-      setOverlayText: ((text: any) => any) | any;
+      setOverlayText(text: any, ...__args: never[]): any;
 
-      setRepeatWhilePressed: ((func: any) => any) | any;
+      setRepeatWhilePressed(func: any, ...__args: never[]): any;
 
-      setSound: ((which: any, soundName: any) => any) | any;
+      setSound(which: any, soundName: any, ...__args: never[]): any;
 
-      setTextureRGBA: ((r: any, g: any, b: any, a: any) => any) | any;
+      setTextureRGBA(r: any, g: any, b: any, a: any, ...__args: never[]): any;
 
-      setTitle: ((title: any) => any) | any;
+      setTitle(title: any, ...__args: never[]): any;
 
-      setTooltip: ((tooltip: any) => any) | any;
+      setTooltip(tooltip: any, ...__args: never[]): any;
 
-      setWidthToTitle: ((minWidth: any, isJoypad: any) => any) | any;
+      setWidthToTitle(minWidth: any, isJoypad: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
-      updateTooltip: (() => any) | any;
+      updateTooltip(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISButton {}

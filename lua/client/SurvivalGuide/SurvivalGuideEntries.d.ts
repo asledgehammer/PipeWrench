@@ -8,16 +8,16 @@ declare module '@asledgehammer/pipewrench' {
       static useJoypad: any;
 
       /** @noSelf */
-      static addEntry11: () => any;
+      static addEntry11: (...__args: never[]) => any;
 
       /** @noSelf */
-      static addSurvivalGuideEntry: (index: any) => any;
+      static addSurvivalGuideEntry: (index: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getEntry: (num: any) => any;
+      static getEntry: (num: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getEntryCount: () => any;
+      static getEntryCount: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.SurvivalGuide.SurvivalGuideEntries {}

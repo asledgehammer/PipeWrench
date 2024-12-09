@@ -21,7 +21,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, leaderInstance: any);
 
-      drawMember: ((y: any, item: any, alt: any) => any) | any;
+      drawMember(y: any, item: any, alt: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.NPCs.UI.TeamOverview {}

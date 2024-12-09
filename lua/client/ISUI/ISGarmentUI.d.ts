@@ -63,39 +63,39 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, character: any, clothing: any);
 
-      addTextures: ((type: any, textureName: any, overlayName: any) => any) | any;
+      addTextures(type: any, textureName: any, overlayName: any, ...__args: never[]): any;
 
-      calcColumnWidths: (() => any) | any;
+      calcColumnWidths(...__args: never[]): any;
 
-      calcProgressPositions: (() => any) | any;
+      calcProgressPositions(...__args: never[]): any;
 
-      calcProgressWidths: (() => any) | any;
+      calcProgressWidths(...__args: never[]): any;
 
-      calculateHeight: ((doListHeight: any) => any) | any;
+      calculateHeight(doListHeight: any, ...__args: never[]): any;
 
-      create: (() => any) | any;
+      create(...__args: never[]): any;
 
-      doContextMenu: ((part: any, x: any, y: any) => any) | any;
+      doContextMenu(part: any, x: any, y: any, ...__args: never[]): any;
 
-      doDrawItem: ((y: any, item: any, alt: any) => any) | any;
+      doDrawItem(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      doPatch: ((fabric: any, thread: any, needle: any, part: any, context: any, submenu: any) => any) | any;
+      doPatch(fabric: any, thread: any, needle: any, part: any, context: any, submenu: any, ...__args: never[]): any;
 
-      drawBar: ((x: any, y: any, width: any, height: any, percent: any, highGood: any) => any) | any;
+      drawBar(x: any, y: any, width: any, height: any, percent: any, highGood: any, ...__args: never[]): any;
 
-      getPaddablePartsNumber: ((clothing: any, parts: any) => any) | any;
+      getPaddablePartsNumber(clothing: any, parts: any, ...__args: never[]): any;
 
-      onBodyPartListRightMouseUp: ((x: any, y: any) => any) | any;
+      onBodyPartListRightMouseUp(x: any, y: any, ...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDirDown: ((joypadData: any) => any) | any;
+      onJoypadDirDown(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDirUp: ((joypadData: any) => any) | any;
+      onJoypadDirUp(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDown: ((button: any, joypadData: any) => any) | any;
+      onJoypadDown(button: any, joypadData: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISGarmentUI {}

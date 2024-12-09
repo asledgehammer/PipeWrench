@@ -37,13 +37,13 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, playerNum: any);
 
-      create: (() => any) | any;
+      create(...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      initTextures: (() => any) | any;
+      initTextures(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
     }
   }
   export namespace lua.client.XpSystem.ISUI.ISCharacterProtection {}

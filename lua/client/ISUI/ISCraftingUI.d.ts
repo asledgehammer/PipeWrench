@@ -101,93 +101,93 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, character: any);
 
-      addItemInEvolvedRecipe: ((button: any) => any) | any;
+      addItemInEvolvedRecipe(button: any, ...__args: never[]): any;
 
-      craft: ((button: any, all: any) => any) | any;
+      craft(button: any, all: any, ...__args: never[]): any;
 
-      craftAll: (() => any) | any;
+      craftAll(...__args: never[]): any;
 
-      debugGiveIngredients: (() => any) | any;
+      debugGiveIngredients(...__args: never[]): any;
 
-      drawEvolvedIngredient: ((y: any, item: any, alt: any) => any) | any;
+      drawEvolvedIngredient(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      drawNonEvolvedIngredient: ((y: any, item: any, alt: any) => any) | any;
+      drawNonEvolvedIngredient(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      getAvailableItemsType: (() => any) | any;
+      getAvailableItemsType(...__args: never[]): any;
 
-      getContainers: (() => any) | any;
+      getContainers(...__args: never[]): any;
 
-      getFavoriteModDataLocalString: ((recipe: any) => any) | any;
+      getFavoriteModDataLocalString(recipe: any, ...__args: never[]): any;
 
-      getFavoriteModDataString: ((recipe: any) => any) | any;
+      getFavoriteModDataString(recipe: any, ...__args: never[]): any;
 
-      GetItemInstance: ((type: any) => any) | any;
+      GetItemInstance(type: any, ...__args: never[]): any;
 
-      getRecipeListBox: (() => any) | any;
+      getRecipeListBox(...__args: never[]): any;
 
-      isExtraClothingItemOf: ((item1: any, item2: any) => any) | any;
+      isExtraClothingItemOf(item1: any, item2: any, ...__args: never[]): any;
 
-      isKeyConsumed: ((key: any) => any) | any;
+      isKeyConsumed(key: any, ...__args: never[]): any;
 
-      isWaterSource: ((item: any, count: any) => any) | any;
+      isWaterSource(item: any, count: any, ...__args: never[]): any;
 
-      onActivateView: (() => any) | any;
+      onActivateView(...__args: never[]): any;
 
-      onAddIngredient: (() => any) | any;
+      onAddIngredient(...__args: never[]): any;
 
-      onAddRandomIngredient: ((button: any) => any) | any;
+      onAddRandomIngredient(button: any, ...__args: never[]): any;
 
-      onCraftComplete: ((completedAction: any, recipe: any, container: any, containers: any) => any) | any;
+      onCraftComplete(completedAction: any, recipe: any, container: any, containers: any, ...__args: never[]): any;
 
-      onDblClickIngredientListbox: ((data: any) => any) | any;
+      onDblClickIngredientListbox(data: any, ...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDirDown: (() => any) | any;
+      onJoypadDirDown(...__args: never[]): any;
 
-      onJoypadDirLeft: (() => any) | any;
+      onJoypadDirLeft(...__args: never[]): any;
 
-      onJoypadDirRight: (() => any) | any;
+      onJoypadDirRight(...__args: never[]): any;
 
-      onJoypadDirUp: (() => any) | any;
+      onJoypadDirUp(...__args: never[]): any;
 
-      onJoypadDown: ((button: any) => any) | any;
+      onJoypadDown(button: any, ...__args: never[]): any;
 
-      onKeyRelease: ((key: any) => any) | any;
+      onKeyRelease(key: any, ...__args: never[]): any;
 
-      onResize: (() => any) | any;
+      onResize(...__args: never[]): any;
 
-      populateRecipesList: (() => any) | any;
+      populateRecipesList(...__args: never[]): any;
 
-      refresh: (() => any) | any;
+      refresh(...__args: never[]): any;
 
-      refreshIngredientList: (() => any) | any;
+      refreshIngredientList(...__args: never[]): any;
 
-      refreshIngredientPanel: (() => any) | any;
+      refreshIngredientPanel(...__args: never[]): any;
 
-      refreshTickBox: (() => any) | any;
+      refreshTickBox(...__args: never[]): any;
 
-      removeExtraClothingItemsFromList: ((index: any, item: any, itemList: any) => any) | any;
+      removeExtraClothingItemsFromList(index: any, item: any, itemList: any, ...__args: never[]): any;
 
-      setVisible: ((bVisible: any) => any) | any;
+      setVisible(bVisible: any, ...__args: never[]): any;
 
-      sortList: (() => any) | any;
+      sortList(...__args: never[]): any;
 
-      transferItems: (() => any) | any;
+      transferItems(...__args: never[]): any;
 
-      update: (() => any) | any;
-
-      /** @noSelf */
-      static onPressKey: (key: any) => any;
+      update(...__args: never[]): any;
 
       /** @noSelf */
-      static ReturnItemsToOriginalContainer: (playerObj: any, items: any) => any;
+      static onPressKey: (key: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static sortByName: (a: any, b: any) => any;
+      static ReturnItemsToOriginalContainer: (playerObj: any, items: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static toggleCraftingUI: () => any;
+      static sortByName: (a: any, b: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static toggleCraftingUI: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.ISCraftingUI {}

@@ -31,26 +31,26 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      destroy: (() => any) | any;
+      destroy(...__args: never[]): any;
 
-      onButton1: ((button: any) => any) | any;
+      onButton1(button: any, ...__args: never[]): any;
 
-      onButton2: ((button: any) => any) | any;
+      onButton2(button: any, ...__args: never[]): any;
 
-      onButtonAccept: ((button: any) => any) | any;
+      onButtonAccept(button: any, ...__args: never[]): any;
 
-      onButtonQuit: ((button: any) => any) | any;
+      onButtonQuit(button: any, ...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onLoseJoypadFocus: ((joypadData: any) => any) | any;
+      onLoseJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
       /** @noSelf */
-      static OnGameStateEnter: (javaStateObj: any) => any;
+      static OnGameStateEnter: (javaStateObj: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.ISTermsOfServiceUI {}

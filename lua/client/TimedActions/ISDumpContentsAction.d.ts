@@ -13,9 +13,9 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, item: any, time: any);
 
-      finalItem: ((itemType: any) => any) | any;
+      finalItem(itemType: any, ...__args: never[]): any;
 
-      stopSound: (() => any) | any;
+      stopSound(...__args: never[]): any;
     }
   }
   export namespace lua.client.TimedActions.ISDumpContentsAction {}

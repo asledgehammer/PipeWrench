@@ -75,234 +75,227 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, zoom: any);
 
-      addActionsOption:
-        | ((
-            text: any,
-            getActionsFunction: any,
-            arg1: any,
-            arg2: any,
-            arg3: any,
-            arg4: any,
-            arg5: any,
-            arg6: any,
-            arg7: any,
-            arg8: any,
-            arg9: any,
-            arg10: any,
-          ) => any)
-        | any;
+      addActionsOption(
+        text: any,
+        getActionsFunction: any,
+        arg1: any,
+        arg2: any,
+        arg3: any,
+        arg4: any,
+        arg5: any,
+        arg6: any,
+        arg7: any,
+        arg8: any,
+        arg9: any,
+        arg10: any,
+        ...__args: never[]
+      ): any;
 
-      addDebugOption:
-        | ((
-            name: any,
-            target: any,
-            onSelect: any,
-            param1: any,
-            param2: any,
-            param3: any,
-            param4: any,
-            param5: any,
-            param6: any,
-            param7: any,
-            param8: any,
-            param9: any,
-            param10: any,
-          ) => any)
-        | any;
+      addDebugOption(
+        name: any,
+        target: any,
+        onSelect: any,
+        param1: any,
+        param2: any,
+        param3: any,
+        param4: any,
+        param5: any,
+        param6: any,
+        param7: any,
+        param8: any,
+        param9: any,
+        param10: any,
+        ...__args: never[]
+      ): any;
 
-      addDefaultOptions: (() => any) | any;
+      addDefaultOptions(...__args: never[]): any;
 
-      addOption:
-        | ((
-            name: any,
-            target: any,
-            onSelect: any,
-            param1: any,
-            param2: any,
-            param3: any,
-            param4: any,
-            param5: any,
-            param6: any,
-            param7: any,
-            param8: any,
-            param9: any,
-            param10: any,
-          ) => any)
-        | any;
+      addOption(
+        name: any,
+        target: any,
+        onSelect: any,
+        param1: any,
+        param2: any,
+        param3: any,
+        param4: any,
+        param5: any,
+        param6: any,
+        param7: any,
+        param8: any,
+        param9: any,
+        param10: any,
+        ...__args: never[]
+      ): any;
 
-      addOptionOnTop:
-        | ((
-            name: any,
-            target: any,
-            onSelect: any,
-            param1: any,
-            param2: any,
-            param3: any,
-            param4: any,
-            param5: any,
-            param6: any,
-            param7: any,
-            param8: any,
-            param9: any,
-            param10: any,
-          ) => any)
-        | any;
+      addOptionOnTop(
+        name: any,
+        target: any,
+        onSelect: any,
+        param1: any,
+        param2: any,
+        param3: any,
+        param4: any,
+        param5: any,
+        param6: any,
+        param7: any,
+        param8: any,
+        param9: any,
+        param10: any,
+        ...__args: never[]
+      ): any;
 
-      addSubMenu: ((option: any, menu: any) => any) | any;
+      addSubMenu(option: any, menu: any, ...__args: never[]): any;
 
-      allocOption:
-        | ((
-            name: any,
-            target: any,
-            onSelect: any,
-            param1: any,
-            param2: any,
-            param3: any,
-            param4: any,
-            param5: any,
-            param6: any,
-            param7: any,
-            param8: any,
-            param9: any,
-            param10: any,
-          ) => any)
-        | any;
+      allocOption(
+        name: any,
+        target: any,
+        onSelect: any,
+        param1: any,
+        param2: any,
+        param3: any,
+        param4: any,
+        param5: any,
+        param6: any,
+        param7: any,
+        param8: any,
+        param9: any,
+        param10: any,
+        ...__args: never[]
+      ): any;
 
-      calcHeight: (() => any) | any;
+      calcHeight(...__args: never[]): any;
 
-      calcWidth: (() => any) | any;
+      calcWidth(...__args: never[]): any;
 
-      clear: (() => any) | any;
+      clear(...__args: never[]): any;
 
-      closeAll: (() => any) | any;
+      closeAll(...__args: never[]): any;
 
-      displayAncestor: ((ancestor: any) => any) | any;
+      displayAncestor(ancestor: any, ...__args: never[]): any;
 
-      displaySubMenu: ((subMenu: any, option: any) => any) | any;
+      displaySubMenu(subMenu: any, option: any, ...__args: never[]): any;
 
-      ensureVisible: (() => any) | any;
+      ensureVisible(...__args: never[]): any;
 
-      getDefaultOptionCount: (() => any) | any;
+      getDefaultOptionCount(...__args: never[]): any;
 
-      getIndexAt: ((x: any, y: any) => any) | any;
+      getIndexAt(x: any, y: any, ...__args: never[]): any;
 
-      getIndexForSubMenu: ((subMenu: any) => any) | any;
+      getIndexForSubMenu(subMenu: any, ...__args: never[]): any;
 
-      getItemY: ((index: any) => any) | any;
+      getItemY(index: any, ...__args: never[]): any;
 
-      getMenuOptionNames: (() => any) | any;
+      getMenuOptionNames(...__args: never[]): any;
 
-      getNew: ((parentContext: any) => any) | any;
+      getNew(parentContext: any, ...__args: never[]): any;
 
-      getOptionFromName: ((name: any) => any) | any;
+      getOptionFromName(name: any, ...__args: never[]): any;
 
-      getRootY: (() => any) | any;
+      getRootY(...__args: never[]): any;
 
-      getScrollAreaHeight: (() => any) | any;
+      getScrollAreaHeight(...__args: never[]): any;
 
-      getSubInstance: ((num: any) => any) | any;
+      getSubInstance(num: any, ...__args: never[]): any;
 
-      getSubMenu: ((num: any) => any) | any;
+      getSubMenu(num: any, ...__args: never[]): any;
 
-      hideAndChildren: (() => any) | any;
+      hideAndChildren(...__args: never[]): any;
 
-      hideSelf: (() => any) | any;
+      hideSelf(...__args: never[]): any;
 
-      hideSelfAndChildren2: (() => any) | any;
+      hideSelfAndChildren2(...__args: never[]): any;
 
-      hideToolTip: (() => any) | any;
+      hideToolTip(...__args: never[]): any;
 
-      insertOptionAfter:
-        | ((
-            prevOptionName: any,
-            name: any,
-            target: any,
-            onSelect: any,
-            param1: any,
-            param2: any,
-            param3: any,
-            param4: any,
-            param5: any,
-            param6: any,
-            param7: any,
-            param8: any,
-            param9: any,
-            param10: any,
-          ) => any)
-        | any;
+      insertOptionAfter(
+        prevOptionName: any,
+        name: any,
+        target: any,
+        onSelect: any,
+        param1: any,
+        param2: any,
+        param3: any,
+        param4: any,
+        param5: any,
+        param6: any,
+        param7: any,
+        param8: any,
+        param9: any,
+        param10: any,
+        ...__args: never[]
+      ): any;
 
-      insertOptionBefore:
-        | ((
-            nextOptionName: any,
-            name: any,
-            target: any,
-            onSelect: any,
-            param1: any,
-            param2: any,
-            param3: any,
-            param4: any,
-            param5: any,
-            param6: any,
-            param7: any,
-            param8: any,
-            param9: any,
-            param10: any,
-          ) => any)
-        | any;
+      insertOptionBefore(
+        nextOptionName: any,
+        name: any,
+        target: any,
+        onSelect: any,
+        param1: any,
+        param2: any,
+        param3: any,
+        param4: any,
+        param5: any,
+        param6: any,
+        param7: any,
+        param8: any,
+        param9: any,
+        param10: any,
+        ...__args: never[]
+      ): any;
 
-      isAnyVisible: (() => any) | any;
+      isAnyVisible(...__args: never[]): any;
 
-      isEmpty: (() => any) | any;
+      isEmpty(...__args: never[]): any;
 
-      isMouseOut: (() => any) | any;
+      isMouseOut(...__args: never[]): any;
 
-      isOptionSingleMenu: (() => any) | any;
+      isOptionSingleMenu(...__args: never[]): any;
 
-      onFocus: ((x: any, y: any) => any) | any;
+      onFocus(x: any, y: any, ...__args: never[]): any;
 
-      onJoypadDirDown: (() => any) | any;
+      onJoypadDirDown(...__args: never[]): any;
 
-      onJoypadDirLeft: (() => any) | any;
+      onJoypadDirLeft(...__args: never[]): any;
 
-      onJoypadDirRight: (() => any) | any;
+      onJoypadDirRight(...__args: never[]): any;
 
-      onJoypadDirUp: (() => any) | any;
+      onJoypadDirUp(...__args: never[]): any;
 
-      onJoypadDown: ((button: any) => any) | any;
+      onJoypadDown(button: any, ...__args: never[]): any;
 
-      onMouseDownOutside: ((x: any, y: any) => any) | any;
+      onMouseDownOutside(x: any, y: any, ...__args: never[]): any;
 
-      onMouseWheel: ((del: any) => any) | any;
+      onMouseWheel(del: any, ...__args: never[]): any;
 
-      removeLastOption: (() => any) | any;
+      removeLastOption(...__args: never[]): any;
 
-      removeOptionByName: ((optName: any) => any) | any;
+      removeOptionByName(optName: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setFont: ((font: any) => any) | any;
+      setFont(font: any, ...__args: never[]): any;
 
-      setFontFromOption: (() => any) | any;
+      setFontFromOption(...__args: never[]): any;
 
-      setOptionChecked: ((option: any, checked: any) => any) | any;
+      setOptionChecked(option: any, checked: any, ...__args: never[]): any;
 
-      setSlideGoalX: ((startX: any, finalX: any) => any) | any;
+      setSlideGoalX(startX: any, finalX: any, ...__args: never[]): any;
 
-      setSlideGoalY: ((startY: any, finalY: any) => any) | any;
+      setSlideGoalY(startY: any, finalY: any, ...__args: never[]): any;
 
-      showTooltip: ((option: any) => any) | any;
+      showTooltip(option: any, ...__args: never[]): any;
 
-      topmostMenuWithMouse: ((x: any, y: any) => any) | any;
+      topmostMenuWithMouse(x: any, y: any, ...__args: never[]): any;
 
-      updateSlideGoalX: (() => any) | any;
+      updateSlideGoalX(...__args: never[]): any;
 
-      updateSlideGoalY: (() => any) | any;
+      updateSlideGoalY(...__args: never[]): any;
 
       /** @noSelf */
-      static get: (player: any, x: any, y: any) => any;
+      static get: (player: any, x: any, y: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static noise: (msg: any) => any;
+      static noise: (msg: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.ISContextMenu {}

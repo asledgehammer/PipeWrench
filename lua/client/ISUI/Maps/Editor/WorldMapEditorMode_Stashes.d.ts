@@ -21,27 +21,27 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(editor: any);
 
-      cancelMode: (() => any) | any;
+      cancelMode(...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onBuildingClear: (() => any) | any;
+      onBuildingClear(...__args: never[]): any;
 
-      onBuildingSet: (() => any) | any;
+      onBuildingSet(...__args: never[]): any;
 
-      onBuildingXEntered: (() => any) | any;
+      onBuildingXEntered(...__args: never[]): any;
 
-      onBuildingYEntered: (() => any) | any;
+      onBuildingYEntered(...__args: never[]): any;
 
-      onLoadStash: (() => any) | any;
+      onLoadStash(...__args: never[]): any;
 
-      onMouseUpOutside: ((x: any, y: any) => any) | any;
+      onMouseUpOutside(x: any, y: any, ...__args: never[]): any;
 
-      onRightMouseDown: ((x: any, y: any) => any) | any;
+      onRightMouseDown(x: any, y: any, ...__args: never[]): any;
 
-      prerender: (() => any) | any;
+      prerender(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.Maps.Editor.WorldMapEditorMode_Stashes {}

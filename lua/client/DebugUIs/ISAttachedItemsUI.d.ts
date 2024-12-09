@@ -35,21 +35,21 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, character: any);
 
-      drawDatas: ((y: any, item: any, alt: any) => any) | any;
+      drawDatas(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      onAdd: ((char: any) => any) | any;
+      onAdd(char: any, ...__args: never[]): any;
 
-      onAddOnChar: (() => any) | any;
+      onAddOnChar(...__args: never[]): any;
 
-      onAddZombie: (() => any) | any;
+      onAddZombie(...__args: never[]): any;
 
-      onRemove: (() => any) | any;
+      onRemove(...__args: never[]): any;
 
-      onRemoveZombie: (() => any) | any;
+      onRemoveZombie(...__args: never[]): any;
 
-      populateList: (() => any) | any;
+      populateList(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
     }
   }
   export namespace lua.client.DebugUIs.ISAttachedItemsUI {}

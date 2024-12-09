@@ -31,23 +31,23 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, player: any);
 
-      create: (() => any) | any;
+      create(...__args: never[]): any;
 
-      drawDatas: ((y: any, item: any, alt: any) => any) | any;
+      drawDatas(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      hideTooltip: (() => any) | any;
+      hideTooltip(...__args: never[]): any;
 
-      onConfirmLeave: ((button: any) => any) | any;
+      onConfirmLeave(button: any, ...__args: never[]): any;
 
-      onOptionMouseDown: ((button: any, x: any, y: any) => any) | any;
+      onOptionMouseDown(button: any, x: any, y: any, ...__args: never[]): any;
 
-      onServerOptionChange: ((option: any, newValue: any) => any) | any;
+      onServerOptionChange(option: any, newValue: any, ...__args: never[]): any;
 
-      populateList: (() => any) | any;
+      populateList(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setVisible: ((visible: any) => any) | any;
+      setVisible(visible: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.AdminPanel.ISServerOptions {}

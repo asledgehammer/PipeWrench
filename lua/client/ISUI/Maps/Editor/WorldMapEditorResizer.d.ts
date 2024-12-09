@@ -29,21 +29,21 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(editor: any);
 
-      cancelResize: (() => any) | any;
+      cancelResize(...__args: never[]): any;
 
-      endResizing: (() => any) | any;
+      endResizing(...__args: never[]): any;
 
-      hitTest: ((x: any, y: any) => any) | any;
+      hitTest(x: any, y: any, ...__args: never[]): any;
 
-      onMouseMove: ((mx: any, my: any, hitTest: any) => any) | any;
+      onMouseMove(mx: any, my: any, hitTest: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setBounds: ((x1: any, y1: any, x2: any, y2: any) => any) | any;
+      setBounds(x1: any, y1: any, x2: any, y2: any, ...__args: never[]): any;
 
-      snap: ((xy: any) => any) | any;
+      snap(xy: any, ...__args: never[]): any;
 
-      startResizing: (() => any) | any;
+      startResizing(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.Maps.Editor.WorldMapEditorResizer {}

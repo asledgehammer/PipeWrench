@@ -127,138 +127,138 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, inventory: any, onCharacter: any, zoom: any);
 
-      addContainerButton: ((container: any, texture: any, name: any, tooltip: any) => any) | any;
+      addContainerButton(container: any, texture: any, name: any, tooltip: any, ...__args: never[]): any;
 
-      canPutIn: (() => any) | any;
+      canPutIn(...__args: never[]): any;
 
-      checkExplored: ((container: any, playerObj: any) => any) | any;
+      checkExplored(container: any, playerObj: any, ...__args: never[]): any;
 
-      collapse: (() => any) | any;
+      collapse(...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      dropItemsInContainer: ((button: any) => any) | any;
+      dropItemsInContainer(button: any, ...__args: never[]): any;
 
-      ensureVisible: ((index: any) => any) | any;
+      ensureVisible(index: any, ...__args: never[]): any;
 
-      getCurrentBackpackIndex: (() => any) | any;
+      getCurrentBackpackIndex(...__args: never[]): any;
 
-      isCycleContainerKeyDown: (() => any) | any;
+      isCycleContainerKeyDown(...__args: never[]): any;
 
-      isRemoveButtonVisible: (() => any) | any;
+      isRemoveButtonVisible(...__args: never[]): any;
 
-      lootAll: (() => any) | any;
+      lootAll(...__args: never[]): any;
 
-      nextUnlockedContainer: ((index: any, wrap: any) => any) | any;
+      nextUnlockedContainer(index: any, wrap: any, ...__args: never[]): any;
 
-      onBackpackClick: ((button: any) => any) | any;
+      onBackpackClick(button: any, ...__args: never[]): any;
 
-      onBackpackMouseDown: ((button: any, x: any, y: any) => any) | any;
+      onBackpackMouseDown(button: any, x: any, y: any, ...__args: never[]): any;
 
-      onBackpackMouseUp: ((x: any, y: any) => any) | any;
+      onBackpackMouseUp(x: any, y: any, ...__args: never[]): any;
 
-      onBackpackRightMouseDown: ((x: any, y: any) => any) | any;
+      onBackpackRightMouseDown(x: any, y: any, ...__args: never[]): any;
 
-      onChangeFilter: ((selected: any) => any) | any;
+      onChangeFilter(selected: any, ...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onInfo: (() => any) | any;
+      onInfo(...__args: never[]): any;
 
-      onInventoryContainerSizeChanged: (() => any) | any;
+      onInventoryContainerSizeChanged(...__args: never[]): any;
 
-      onJoypadDirDown: ((joypadData: any) => any) | any;
+      onJoypadDirDown(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDirLeft: (() => any) | any;
+      onJoypadDirLeft(...__args: never[]): any;
 
-      onJoypadDirRight: (() => any) | any;
+      onJoypadDirRight(...__args: never[]): any;
 
-      onJoypadDirUp: ((joypadData: any) => any) | any;
+      onJoypadDirUp(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDown: ((button: any) => any) | any;
+      onJoypadDown(button: any, ...__args: never[]): any;
 
-      onLoseJoypadFocus: ((joypadData: any) => any) | any;
+      onLoseJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onMouseDownOutside: ((x: any, y: any) => any) | any;
+      onMouseDownOutside(x: any, y: any, ...__args: never[]): any;
 
-      onMouseOutButton: ((button: any, x: any, y: any) => any) | any;
+      onMouseOutButton(button: any, x: any, y: any, ...__args: never[]): any;
 
-      onMouseOverButton: ((button: any, x: any, y: any) => any) | any;
+      onMouseOverButton(button: any, x: any, y: any, ...__args: never[]): any;
 
-      onMouseWheel: ((del: any) => any) | any;
+      onMouseWheel(del: any, ...__args: never[]): any;
 
-      onRightMouseDownOutside: ((x: any, y: any) => any) | any;
+      onRightMouseDownOutside(x: any, y: any, ...__args: never[]): any;
 
-      prevUnlockedContainer: ((index: any, wrap: any) => any) | any;
+      prevUnlockedContainer(index: any, wrap: any, ...__args: never[]): any;
 
-      refreshBackpacks: (() => any) | any;
+      refreshBackpacks(...__args: never[]): any;
 
-      refreshWeight: (() => any) | any;
+      refreshWeight(...__args: never[]): any;
 
-      removeAll: (() => any) | any;
+      removeAll(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      render3DItemPreview: (() => any) | any;
+      render3DItemPreview(...__args: never[]): any;
 
-      RestoreLayout: ((name: any, layout: any) => any) | any;
+      RestoreLayout(name: any, layout: any, ...__args: never[]): any;
 
-      SaveLayout: ((name: any, layout: any) => any) | any;
+      SaveLayout(name: any, layout: any, ...__args: never[]): any;
 
-      selectButtonForContainer: ((container: any) => any) | any;
+      selectButtonForContainer(container: any, ...__args: never[]): any;
 
-      selectContainer: ((button: any) => any) | any;
+      selectContainer(button: any, ...__args: never[]): any;
 
-      selectNextContainer: (() => any) | any;
+      selectNextContainer(...__args: never[]): any;
 
-      selectPrevContainer: (() => any) | any;
+      selectPrevContainer(...__args: never[]): any;
 
-      setBlinkingContainer: ((blinking: any, containerType: any) => any) | any;
+      setBlinkingContainer(blinking: any, containerType: any, ...__args: never[]): any;
 
-      setForceSelectedContainer: ((container: any) => any) | any;
+      setForceSelectedContainer(container: any, ...__args: never[]): any;
 
-      setInfo: ((text: any) => any) | any;
+      setInfo(text: any, ...__args: never[]): any;
 
-      setNewContainer: ((inventory: any) => any) | any;
+      setNewContainer(inventory: any, ...__args: never[]): any;
 
-      setPinned: (() => any) | any;
+      setPinned(...__args: never[]): any;
 
-      syncToggleStove: (() => any) | any;
+      syncToggleStove(...__args: never[]): any;
 
-      titleBarHeight: ((selected: any) => any) | any;
+      titleBarHeight(selected: any, ...__args: never[]): any;
 
-      toggleStove: (() => any) | any;
+      toggleStove(...__args: never[]): any;
 
-      transferAll: (() => any) | any;
+      transferAll(...__args: never[]): any;
 
-      update: (() => any) | any;
-
-      /** @noSelf */
-      static ContainerSizeChanged: () => any;
+      update(...__args: never[]): any;
 
       /** @noSelf */
-      static dirtyUI: () => any;
+      static ContainerSizeChanged: (...__args: never[]) => any;
 
       /** @noSelf */
-      static GetFloorContainer: (playerNum: any) => any;
+      static dirtyUI: (...__args: never[]) => any;
 
       /** @noSelf */
-      static loadWeight: (inv: any) => any;
+      static GetFloorContainer: (playerNum: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnContainerUpdate: (object: any) => any;
+      static loadWeight: (inv: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static ongamestart: () => any;
+      static OnContainerUpdate: (object: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onInventoryFontChanged: () => any;
+      static ongamestart: (...__args: never[]) => any;
 
       /** @noSelf */
-      static onKeyPressed: (key: any) => any;
+      static onInventoryFontChanged: (...__args: never[]) => any;
 
       /** @noSelf */
-      static toggleInventory: () => any;
+      static onKeyPressed: (key: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static toggleInventory: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.ISInventoryPage {}

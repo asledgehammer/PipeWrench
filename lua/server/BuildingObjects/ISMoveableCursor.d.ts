@@ -73,50 +73,50 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(_character: any);
 
-      clearCache: (() => any) | any;
+      clearCache(...__args: never[]): any;
 
-      create: ((_x: any, _y: any, _z: any, _north: any, _sprite: any) => any) | any;
+      create(_x: any, _y: any, _z: any, _north: any, _sprite: any, ...__args: never[]): any;
 
-      exitCursor: (() => any) | any;
+      exitCursor(...__args: never[]): any;
 
-      getDirectionFromItem: ((item: any) => any) | any;
+      getDirectionFromItem(item: any, ...__args: never[]): any;
 
-      getInfoPanel: (() => any) | any;
+      getInfoPanel(...__args: never[]): any;
 
-      getInventoryObjectList: (() => any) | any;
+      getInventoryObjectList(...__args: never[]): any;
 
-      getMoveableMode: (() => any) | any;
+      getMoveableMode(...__args: never[]): any;
 
-      getObjectList: (() => any) | any;
+      getObjectList(...__args: never[]): any;
 
-      getRotateableObject: (() => any) | any;
+      getRotateableObject(...__args: never[]): any;
 
-      getScrapObjectList: (() => any) | any;
+      getScrapObjectList(...__args: never[]): any;
 
-      getXPrompt: (() => any) | any;
+      getXPrompt(...__args: never[]): any;
 
-      onObjectLeftMouseButtonDown: ((object: any, x: any, y: any) => any) | any;
+      onObjectLeftMouseButtonDown(object: any, x: any, y: any, ...__args: never[]): any;
 
-      rotateWhilePlacing: (() => any) | any;
+      rotateWhilePlacing(...__args: never[]): any;
 
-      setInfoPanel: ((_square: any, _object: any, _moveProps: any, _customTexture: any) => any) | any;
+      setInfoPanel(_square: any, _object: any, _moveProps: any, _customTexture: any, ...__args: never[]): any;
 
-      setJoypadFocus: ((_window: any) => any) | any;
+      setJoypadFocus(_window: any, ...__args: never[]): any;
 
-      setMoveableMode: ((_mode: any) => any) | any;
+      setMoveableMode(_mode: any, ...__args: never[]): any;
 
-      shouldAddObject: ((_obj: any) => any) | any;
+      shouldAddObject(_obj: any, ...__args: never[]): any;
 
-      tryInitialItem: ((_item: any) => any) | any;
-
-      /** @noSelf */
-      static changeModeKey: (_key: any, _playerNum: any, _joyPadTriggered: any) => any;
+      tryInitialItem(_item: any, ...__args: never[]): any;
 
       /** @noSelf */
-      static clearCacheForAllPlayers: () => any;
+      static changeModeKey: (_key: any, _playerNum: any, _joyPadTriggered: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static exitCursorKey: (_key: any) => any;
+      static clearCacheForAllPlayers: (...__args: never[]) => any;
+
+      /** @noSelf */
+      static exitCursorKey: (_key: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.server.BuildingObjects.ISMoveableCursor {}

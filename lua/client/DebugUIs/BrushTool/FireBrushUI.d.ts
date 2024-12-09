@@ -41,28 +41,28 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, player: any);
 
-      addExplosion: ((square: any) => any) | any;
+      addExplosion(square: any, ...__args: never[]): any;
 
-      addFire: ((square: any) => any) | any;
+      addFire(square: any, ...__args: never[]): any;
 
-      addSmoke: ((square: any) => any) | any;
+      addSmoke(square: any, ...__args: never[]): any;
 
-      applyOnArea: (() => any) | any;
+      applyOnArea(...__args: never[]): any;
 
-      destroy: (() => any) | any;
+      destroy(...__args: never[]): any;
 
-      onClick: ((button: any) => any) | any;
+      onClick(button: any, ...__args: never[]): any;
 
-      onMouseDownOutside: ((x: any, y: any) => any) | any;
+      onMouseDownOutside(x: any, y: any, ...__args: never[]): any;
 
-      removeFire: ((square: any) => any) | any;
+      removeFire(square: any, ...__args: never[]): any;
 
-      removeSmoke: ((square: any) => any) | any;
+      removeSmoke(square: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
       /** @noSelf */
-      static openPanel: (x: any, y: any, playerObj: any) => any;
+      static openPanel: (x: any, y: any, playerObj: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.DebugUIs.BrushTool.FireBrushUI {}

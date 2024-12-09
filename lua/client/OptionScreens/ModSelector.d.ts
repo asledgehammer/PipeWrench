@@ -27,19 +27,19 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onJoypadBeforeDeactivate: ((joypadData: any) => any) | any;
+      onJoypadBeforeDeactivate(joypadData: any, ...__args: never[]): any;
 
-      onLoseJoypadFocus: ((joypadData: any) => any) | any;
+      onLoseJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onMouseWheel: ((del: any) => any) | any;
+      onMouseWheel(del: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setModInfo: ((modInfo: any) => any) | any;
+      setModInfo(modInfo: any, ...__args: never[]): any;
     }
 
     /** @customConstructor ModListBox:new */
@@ -51,7 +51,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      onJoypadBeforeDeactivate: ((joypadData: any) => any) | any;
+      onJoypadBeforeDeactivate(joypadData: any, ...__args: never[]): any;
     }
 
     /** @customConstructor ModPosterPanel:new */
@@ -63,11 +63,11 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setJoypadFocused: ((focused: any) => any) | any;
+      setJoypadFocused(focused: any, ...__args: never[]): any;
 
-      setModInfo: ((modInfo: any) => any) | any;
+      setModInfo(modInfo: any, ...__args: never[]): any;
     }
 
     /** @customConstructor ModSelector:new */
@@ -121,38 +121,38 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      create: (() => any) | any;
+      create(...__args: never[]): any;
 
-      forceActivateMods: ((modInfo: any, activate: any) => any) | any;
+      forceActivateMods(modInfo: any, activate: any, ...__args: never[]): any;
 
-      getActiveMods: (() => any) | any;
+      getActiveMods(...__args: never[]): any;
 
-      instantiate: (() => any) | any;
+      instantiate(...__args: never[]): any;
 
-      isModActive: ((modInfo: any) => any) | any;
+      isModActive(modInfo: any, ...__args: never[]): any;
 
-      onAccept: (() => any) | any;
+      onAccept(...__args: never[]): any;
 
-      onDblClickMap: ((item: any) => any) | any;
+      onDblClickMap(item: any, ...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onJoypadBeforeDeactivate: ((joypadData: any) => any) | any;
+      onJoypadBeforeDeactivate(joypadData: any, ...__args: never[]): any;
 
-      onModsEnabledTick: ((option: any, selected: any) => any) | any;
+      onModsEnabledTick(option: any, selected: any, ...__args: never[]): any;
 
-      onOptionMouseDown: ((button: any, x: any, y: any) => any) | any;
+      onOptionMouseDown(button: any, x: any, y: any, ...__args: never[]): any;
 
-      onResolutionChange: ((oldw: any, oldh: any, neww: any, newh: any) => any) | any;
+      onResolutionChange(oldw: any, oldh: any, neww: any, newh: any, ...__args: never[]): any;
 
-      populateListBox: ((directories: any) => any) | any;
+      populateListBox(directories: any, ...__args: never[]): any;
 
-      setExistingSavefile: ((folder: any) => any) | any;
+      setExistingSavefile(folder: any, ...__args: never[]): any;
 
-      updateButtons: (() => any) | any;
+      updateButtons(...__args: never[]): any;
 
       /** @noSelf */
-      static showNagPanel: () => any;
+      static showNagPanel: (...__args: never[]) => any;
     }
 
     /** @customConstructor ModThumbnailPanel:new */
@@ -176,13 +176,13 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      getIndexAt: ((x: any, y: any) => any) | any;
+      getIndexAt(x: any, y: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setJoypadFocused: ((focused: any) => any) | any;
+      setJoypadFocused(focused: any, ...__args: never[]): any;
 
-      setModInfo: ((modInfo: any) => any) | any;
+      setModInfo(modInfo: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.OptionScreens.ModSelector {

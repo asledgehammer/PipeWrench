@@ -21,27 +21,27 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      clickAllow: (() => any) | any;
+      clickAllow(...__args: never[]): any;
 
-      clickBack: (() => any) | any;
+      clickBack(...__args: never[]): any;
 
-      create: (() => any) | any;
+      create(...__args: never[]): any;
 
-      doDrawItem: ((y: any, item: any, alt: any) => any) | any;
+      doDrawItem(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      fillList: (() => any) | any;
+      fillList(...__args: never[]): any;
 
-      hasChoices: (() => any) | any;
+      hasChoices(...__args: never[]): any;
 
-      onDblClick: (() => any) | any;
+      onDblClick(...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onOptionMouseDown: ((button: any, x: any, y: any) => any) | any;
+      onOptionMouseDown(button: any, x: any, y: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      useDefaultSpawnRegion: (() => any) | any;
+      useDefaultSpawnRegion(...__args: never[]): any;
     }
   }
   export namespace lua.client.OptionScreens.ServerToolbox {}

@@ -21,11 +21,11 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, player: any);
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDown: ((button: any, joypadData: any) => any) | any;
+      onJoypadDown(button: any, joypadData: any, ...__args: never[]): any;
 
-      reloadButtons: (() => any) | any;
+      reloadButtons(...__args: never[]): any;
     }
   }
   export namespace lua.client.LastStand.ISUI.ISChallenge2UpgradeTab {}

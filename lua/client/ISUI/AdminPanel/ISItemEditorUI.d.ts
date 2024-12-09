@@ -95,19 +95,19 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, admin: any, item: any);
 
-      create: (() => any) | any;
+      create(...__args: never[]): any;
 
-      onColor: ((button: any) => any) | any;
+      onColor(button: any, ...__args: never[]): any;
 
-      onOptionMouseDown: ((button: any, x: any, y: any) => any) | any;
+      onOptionMouseDown(button: any, x: any, y: any, ...__args: never[]): any;
 
-      onPickedColor: ((color: any, mouseUp: any) => any) | any;
+      onPickedColor(color: any, mouseUp: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setVisible: ((visible: any) => any) | any;
+      setVisible(visible: any, ...__args: never[]): any;
 
-      updateButtons: ((internalUI: any) => any) | any;
+      updateButtons(internalUI: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.AdminPanel.ISItemEditorUI {}

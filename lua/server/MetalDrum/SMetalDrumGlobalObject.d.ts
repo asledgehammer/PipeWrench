@@ -27,19 +27,19 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(luaSystem: any, globalObject: any);
 
-      changeSprite: (() => any) | any;
+      changeSprite(...__args: never[]): any;
 
-      getSprites: (() => any) | any;
+      getSprites(...__args: never[]): any;
 
-      setHaveCharcoal: ((haveCharcoal: any) => any) | any;
+      setHaveCharcoal(haveCharcoal: any, ...__args: never[]): any;
 
-      setHaveLogs: ((haveLogs: any) => any) | any;
+      setHaveLogs(haveLogs: any, ...__args: never[]): any;
 
-      setLit: ((isLit: any) => any) | any;
+      setLit(isLit: any, ...__args: never[]): any;
 
-      setModData: (() => any) | any;
+      setModData(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
     }
   }
   export namespace lua.server.MetalDrum.SMetalDrumGlobalObject {}

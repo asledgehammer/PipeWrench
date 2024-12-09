@@ -29,33 +29,33 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, character: any);
 
-      centerOnScreen: (() => any) | any;
+      centerOnScreen(...__args: never[]): any;
 
-      closeSelf: (() => any) | any;
+      closeSelf(...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      exitSeat: ((seat: any) => any) | any;
+      exitSeat(seat: any, ...__args: never[]): any;
 
-      isKeyConsumed: ((key: any) => any) | any;
+      isKeyConsumed(key: any, ...__args: never[]): any;
 
-      isSeatInstalled: ((seat: any) => any) | any;
+      isSeatInstalled(seat: any, ...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onKeyPress: ((key: any) => any) | any;
+      onKeyPress(key: any, ...__args: never[]): any;
 
-      onKeyRelease: ((key: any) => any) | any;
+      onKeyRelease(key: any, ...__args: never[]): any;
 
-      onMouseDownOutside: ((x: any, y: any) => any) | any;
+      onMouseDownOutside(x: any, y: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setVehicle: ((vehicle: any) => any) | any;
+      setVehicle(vehicle: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
-      useSeat: ((seat: any) => any) | any;
+      useSeat(seat: any, ...__args: never[]): any;
     }
 
     export abstract class ImageScale {

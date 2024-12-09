@@ -47,22 +47,22 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, player: any, zone: any, clickedSquare: any);
 
-      doBagOptions: (() => any) | any;
+      doBagOptions(...__args: never[]): any;
 
-      onClick: ((button: any) => any) | any;
+      onClick(button: any, ...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setItemScavenged: ((item: any) => any) | any;
+      setItemScavenged(item: any, ...__args: never[]): any;
 
-      updateButtons: ((currentAction: any) => any) | any;
+      updateButtons(currentAction: any, ...__args: never[]): any;
 
-      updateZoneProgress: ((zoneClicked: any) => any) | any;
+      updateZoneProgress(zoneClicked: any, ...__args: never[]): any;
 
       /** @noSelf */
-      static OnPlayerDeath: (playerObj: any) => any;
+      static OnPlayerDeath: (playerObj: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.ISScavengeUI {}

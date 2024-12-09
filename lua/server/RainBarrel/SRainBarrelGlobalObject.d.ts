@@ -17,7 +17,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(luaSystem: any, globalObject: any);
 
-      changeSprite: (() => any) | any;
+      changeSprite(...__args: never[]): any;
     }
   }
   export namespace lua.server.RainBarrel.SRainBarrelGlobalObject {}

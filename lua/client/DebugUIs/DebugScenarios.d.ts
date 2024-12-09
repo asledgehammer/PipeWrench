@@ -15,21 +15,21 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      drawItem: ((y: any, item: any, alt: any) => any) | any;
+      drawItem(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      launchScenario: ((scenario: any) => any) | any;
+      launchScenario(scenario: any, ...__args: never[]): any;
 
-      onClickOption: ((option: any) => any) | any;
+      onClickOption(option: any, ...__args: never[]): any;
 
-      onResolutionChange: ((oldw: any, oldh: any, neww: any, newh: any) => any) | any;
-
-      /** @noSelf */
-      static ongamestart: () => any;
+      onResolutionChange(oldw: any, oldh: any, neww: any, newh: any, ...__args: never[]): any;
 
       /** @noSelf */
-      static onloadgs: (sq: any) => any;
+      static ongamestart: (...__args: never[]) => any;
+
+      /** @noSelf */
+      static onloadgs: (sq: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.DebugUIs.DebugScenarios {

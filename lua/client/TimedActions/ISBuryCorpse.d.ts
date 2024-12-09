@@ -13,7 +13,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, graves: any, time: any, shovel: any);
 
-      increaseCorpse: ((square: any) => any) | any;
+      increaseCorpse(square: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.TimedActions.ISBuryCorpse {}

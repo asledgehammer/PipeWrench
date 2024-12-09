@@ -17,13 +17,13 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, square: any, wallVine: any);
 
-      animEvent: ((event: any, parameter: any) => any) | any;
+      animEvent(event: any, parameter: any, ...__args: never[]): any;
 
-      getBushObject: ((square: any) => any) | any;
+      getBushObject(square: any, ...__args: never[]): any;
 
-      getWallVineObject: ((square: any) => any) | any;
+      getWallVineObject(square: any, ...__args: never[]): any;
 
-      useEndurance: (() => any) | any;
+      useEndurance(...__args: never[]): any;
     }
   }
   export namespace lua.client.TimedActions.ISRemoveBush {}

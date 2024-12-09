@@ -31,12 +31,12 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(sprite: any, northSprite: any, item: any, character: any);
 
-      create: ((x: any, y: any, z: any, north: any, sprite: any) => any) | any;
+      create(x: any, y: any, z: any, north: any, sprite: any, ...__args: never[]): any;
 
-      getFloorType: ((item: any) => any) | any;
+      getFloorType(item: any, ...__args: never[]): any;
 
       /** @noSelf */
-      static getFloorSpriteNames: (square: any) => any;
+      static getFloorSpriteNames: (square: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.server.BuildingObjects.ISNaturalFloor {}

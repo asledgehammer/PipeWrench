@@ -6,19 +6,19 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static getSpawnRegions: () => any;
+      static getSpawnRegions: (...__args: never[]) => any;
 
       /** @noSelf */
-      static getSpawnRegionsAux: () => any;
+      static getSpawnRegionsAux: (...__args: never[]) => any;
 
       /** @noSelf */
-      static loadSpawnPointsFile: (filename: any, server: any) => any;
+      static loadSpawnPointsFile: (filename: any, server: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static loadSpawnRegions: (regions: any) => any;
+      static loadSpawnRegions: (regions: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static loadSpawnRegionsFile: (filename: any, server: any) => any;
+      static loadSpawnRegionsFile: (filename: any, server: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.shared.SpawnRegions {}

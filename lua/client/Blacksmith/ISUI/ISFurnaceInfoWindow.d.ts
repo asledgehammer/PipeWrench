@@ -27,13 +27,13 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, character: any, object: any);
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDown: ((button: any) => any) | any;
+      onJoypadDown(button: any, ...__args: never[]): any;
 
-      setObject: ((object: any) => any) | any;
+      setObject(object: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
     }
   }
   export namespace lua.client.Blacksmith.ISUI.ISFurnaceInfoWindow {}

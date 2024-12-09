@@ -33,34 +33,34 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, viewer: any);
 
-      addItem: ((item: any) => any) | any;
+      addItem(item: any, ...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      drawDatas: ((y: any, item: any, alt: any) => any) | any;
+      drawDatas(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      filterCategory: ((widget: any, scriptItem: any) => any) | any;
+      filterCategory(widget: any, scriptItem: any, ...__args: never[]): any;
 
-      filterDisplayCategory: ((widget: any, scriptItem: any) => any) | any;
+      filterDisplayCategory(widget: any, scriptItem: any, ...__args: never[]): any;
 
-      filterName: ((widget: any, scriptItem: any) => any) | any;
+      filterName(widget: any, scriptItem: any, ...__args: never[]): any;
 
-      filterType: ((widget: any, scriptItem: any) => any) | any;
+      filterType(widget: any, scriptItem: any, ...__args: never[]): any;
 
-      initList: ((module: any) => any) | any;
+      initList(module: any, ...__args: never[]): any;
 
-      onAddItem: ((button: any, item: any) => any) | any;
+      onAddItem(button: any, item: any, ...__args: never[]): any;
 
-      onOptionMouseDown: ((button: any, x: any, y: any) => any) | any;
+      onOptionMouseDown(button: any, x: any, y: any, ...__args: never[]): any;
 
-      onOtherKey: ((key: any) => any) | any;
+      onOtherKey(key: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
       /** @noSelf */
-      static onFilterChange: (widget: any) => any;
+      static onFilterChange: (widget: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.AdminPanel.ISItemsListTable {}

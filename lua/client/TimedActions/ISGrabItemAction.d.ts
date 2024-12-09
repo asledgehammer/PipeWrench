@@ -19,9 +19,9 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, item: any, time: any);
 
-      checkQueueList: (() => any) | any;
+      checkQueueList(...__args: never[]): any;
 
-      transferItem: ((item: any) => any) | any;
+      transferItem(item: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.TimedActions.ISGrabItemAction {}

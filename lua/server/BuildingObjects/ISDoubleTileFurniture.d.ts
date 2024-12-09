@@ -19,15 +19,15 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(name: any, sprite1: any, sprite2: any, northSprite1: any, northSprite2: any);
 
-      create: ((x: any, y: any, z: any, north: any, sprite: any) => any) | any;
+      create(x: any, y: any, z: any, north: any, sprite: any, ...__args: never[]): any;
 
-      getHealth: (() => any) | any;
+      getHealth(...__args: never[]): any;
 
-      getSquare2: ((square: any, north: any) => any) | any;
+      getSquare2(square: any, north: any, ...__args: never[]): any;
 
-      getSquare2Pos: ((square: any, north: any) => any) | any;
+      getSquare2Pos(square: any, north: any, ...__args: never[]): any;
 
-      setInfo: ((square: any, north: any, sprite: any) => any) | any;
+      setInfo(square: any, north: any, sprite: any, ...__args: never[]): any;
     }
   }
   export namespace lua.server.BuildingObjects.ISDoubleTileFurniture {}

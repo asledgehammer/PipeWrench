@@ -21,27 +21,27 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(title: any, x: any, y: any, width: any, height: any);
 
-      addToolbar: ((toolbar: any, height: any) => any) | any;
+      addToolbar(toolbar: any, height: any, ...__args: never[]): any;
 
-      getClientBottom: (() => any) | any;
+      getClientBottom(...__args: never[]): any;
 
-      getClientHeight: (() => any) | any;
+      getClientHeight(...__args: never[]): any;
 
-      getClientLeft: (() => any) | any;
+      getClientLeft(...__args: never[]): any;
 
-      getClientRight: (() => any) | any;
+      getClientRight(...__args: never[]): any;
 
-      getClientTop: (() => any) | any;
+      getClientTop(...__args: never[]): any;
 
-      getClientWidth: (() => any) | any;
+      getClientWidth(...__args: never[]): any;
 
-      getNClientTop: (() => any) | any;
+      getNClientTop(...__args: never[]): any;
 
-      getTotalToolbarHeight: (() => any) | any;
+      getTotalToolbarHeight(...__args: never[]): any;
 
-      onMouseDown: ((x: any, y: any) => any) | any;
+      onMouseDown(x: any, y: any, ...__args: never[]): any;
 
-      removeToolbar: ((toolbar: any) => any) | any;
+      removeToolbar(toolbar: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISWindow {}

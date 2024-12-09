@@ -11,7 +11,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any);
 
-      stopSound: (() => any) | any;
+      stopSound(...__args: never[]): any;
     }
   }
   export namespace lua.client.Vehicles.TimedActions.ISHotwireVehicle {}

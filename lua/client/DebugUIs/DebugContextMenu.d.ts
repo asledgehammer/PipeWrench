@@ -6,232 +6,232 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static addRBDebugMenu: (context: any, building: any) => any;
+      static addRBDebugMenu: (context: any, building: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static addRVSDebugMenu: (context: any, square: any) => any;
+      static addRVSDebugMenu: (context: any, square: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static addRZSDebugMenu: (context: any, square: any) => any;
+      static addRZSDebugMenu: (context: any, square: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static do3DItem: () => any;
+      static do3DItem: (...__args: never[]) => any;
 
       /** @noSelf */
-      static doCheatMenu: (context: any, playerObj: any) => any;
+      static doCheatMenu: (context: any, playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doDebugCorpseMenu: (player: any, context: any, worldobjects: any, test: any) => any;
+      static doDebugCorpseMenu: (player: any, context: any, worldobjects: any, test: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doDebugMenu: (player: any, context: any, worldobjects: any, test: any) => any;
+      static doDebugMenu: (player: any, context: any, worldobjects: any, test: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doDebugObjectMenu: (player: any, context: any, worldobjects: any, test: any) => any;
+      static doDebugObjectMenu: (player: any, context: any, worldobjects: any, test: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doDebugZombieMenu: (player: any, context: any, worldobjects: any, test: any) => any;
+      static doDebugZombieMenu: (player: any, context: any, worldobjects: any, test: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doRandomizedBuilding: (building: any, RBdef: any) => any;
+      static doRandomizedBuilding: (building: any, RBdef: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doRandomizedVehicleStory: (square: any, rvs: any) => any;
+      static doRandomizedVehicleStory: (square: any, rvs: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doRandomizedZoneStory: (square: any, rzs: any) => any;
+      static doRandomizedZoneStory: (square: any, rzs: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onAttachedItems: (playerObj: any) => any;
+      static onAttachedItems: (playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnBBQSetFuel: (obj: any) => any;
+      static OnBBQSetFuel: (obj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnBBQZeroFuel: (obj: any) => any;
+      static OnBBQZeroFuel: (obj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnBendFence: (worldobjects: any, fence: any) => any;
+      static OnBendFence: (worldobjects: any, fence: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnBreakFence: (worldobjects: any, fence: any) => any;
+      static OnBreakFence: (worldobjects: any, fence: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnCampfireSetFuel: (obj: any) => any;
+      static OnCampfireSetFuel: (obj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnCampfireZeroFuel: (obj: any) => any;
+      static OnCampfireZeroFuel: (obj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onCheat: (player: any, cheat: any) => any;
+      static onCheat: (player: any, cheat: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnDeadBodyRemove: (body: any) => any;
+      static OnDeadBodyRemove: (body: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnDeadBodyToggleCrawling: (body: any) => any;
+      static OnDeadBodyToggleCrawling: (body: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnDeadBodyToggleFakeDead: (body: any) => any;
+      static OnDeadBodyToggleFakeDead: (body: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onDebugInterpolationUI: (square: any) => any;
+      static onDebugInterpolationUI: (square: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onDebugPlayerInterpolationUI: (square: any) => any;
+      static onDebugPlayerInterpolationUI: (square: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnDoorLock: (worldobjects: any, door: any) => any;
+      static OnDoorLock: (worldobjects: any, door: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onExtList: (playerObj: any) => any;
+      static onExtList: (playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnFireplaceSetFuel: (obj: any) => any;
+      static OnFireplaceSetFuel: (obj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnFireplaceZeroFuel: (obj: any) => any;
+      static OnFireplaceZeroFuel: (obj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onGenerateLootUI: (playerObj: any) => any;
+      static onGenerateLootUI: (playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnGeneratorSetFuel: (obj: any) => any;
+      static OnGeneratorSetFuel: (obj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnGetBuildingKey: (worldobjects: any, player: any) => any;
+      static OnGetBuildingKey: (worldobjects: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnGetDoorKey: (worldobjects: any, door: any, player: any) => any;
+      static OnGetDoorKey: (worldobjects: any, door: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onHordeManager: (square: any, player: any) => any;
+      static onHordeManager: (square: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onMakeNoise: (square: any, playerObj: any, radius: any, volume: any) => any;
+      static onMakeNoise: (square: any, playerObj: any, radius: any, volume: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnMannequinCreateItem: (script: any) => any;
+      static OnMannequinCreateItem: (script: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnMannequinSetScript: (obj: any, script: any) => any;
+      static OnMannequinSetScript: (obj: any, script: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnMetalDrumSetWater: (obj: any) => any;
+      static OnMetalDrumSetWater: (obj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnMetalDrumZeroWater: (obj: any) => any;
+      static OnMetalDrumZeroWater: (obj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnRainBarrelSetWater: (obj: any) => any;
+      static OnRainBarrelSetWater: (obj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnRainBarrelZeroWater: (obj: any) => any;
+      static OnRainBarrelZeroWater: (obj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnReanimateCorpse: (body: any) => any;
+      static OnReanimateCorpse: (body: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnRemoveAllZombies: (zombie: any) => any;
+      static OnRemoveAllZombies: (zombie: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnRemoveAllZombiesClient: (zombie: any) => any;
+      static OnRemoveAllZombiesClient: (zombie: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onRemoveItemTool: (playerObj: any) => any;
+      static onRemoveItemTool: (playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onRemoveVehicles: (zone: any) => any;
+      static onRemoveVehicles: (zone: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onRunningUI: (playerObj: any) => any;
+      static onRunningUI: (playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnSelectedZombieKnockDown: (hitFromBehind: any) => any;
+      static OnSelectedZombieKnockDown: (hitFromBehind: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnSelectedZombieToggleCanCrawlUnderVehicle: () => any;
+      static OnSelectedZombieToggleCanCrawlUnderVehicle: (...__args: never[]) => any;
 
       /** @noSelf */
-      static OnSelectedZombieToggleCanWalk: () => any;
+      static OnSelectedZombieToggleCanWalk: (...__args: never[]) => any;
 
       /** @noSelf */
-      static OnSelectedZombieToggleCrawling: () => any;
+      static OnSelectedZombieToggleCrawling: (...__args: never[]) => any;
 
       /** @noSelf */
-      static OnSelectedZombieToggleFakeDead: () => any;
+      static OnSelectedZombieToggleFakeDead: (...__args: never[]) => any;
 
       /** @noSelf */
-      static OnSelectedZombieToggleUseless: () => any;
+      static OnSelectedZombieToggleUseless: (...__args: never[]) => any;
 
       /** @noSelf */
-      static OnSelectedZombieWalk: (square: any) => any;
+      static OnSelectedZombieWalk: (square: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnSelectZombie: (zombie: any) => any;
+      static OnSelectZombie: (zombie: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onSetAlarm: (def: any) => any;
+      static onSetAlarm: (def: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnSetCompost: (worldobjects: any, obj: any) => any;
+      static OnSetCompost: (worldobjects: any, obj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnSetDoorKeyID: (worldobjects: any, door: any) => any;
+      static OnSetDoorKeyID: (worldobjects: any, door: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnSetDoorKeyIDBuilding: (worldobjects: any, door: any) => any;
+      static OnSetDoorKeyIDBuilding: (worldobjects: any, door: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnSetDoorKeyIDRandom: (worldobjects: any, door: any) => any;
+      static OnSetDoorKeyIDRandom: (worldobjects: any, door: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnSetZombieOnFire: (zombie: any) => any;
+      static OnSetZombieOnFire: (zombie: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onSpawnPoints: (square: any, player: any) => any;
+      static onSpawnPoints: (square: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onSpawnSurvivorHorde: (playerObj: any) => any;
+      static onSpawnSurvivorHorde: (playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onSpawnVehicle: (playerObj: any) => any;
+      static onSpawnVehicle: (playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onTeleportUI: (playerObj: any) => any;
+      static onTeleportUI: (playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onTeleportValid: (button: any, x: any, y: any, z: any) => any;
+      static onTeleportValid: (button: any, x: any, y: any, z: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onTick: () => any;
+      static onTick: (...__args: never[]) => any;
 
       /** @noSelf */
-      static onTilesPicker: (playerObj: any) => any;
+      static onTilesPicker: (playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnUnbendFence: (worldobjects: any, fence: any) => any;
+      static OnUnbendFence: (worldobjects: any, fence: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnWindowGlassRemoved: (worldobjects: any, window: any) => any;
+      static OnWindowGlassRemoved: (worldobjects: any, window: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnWindowLock: (worldobjects: any, window: any) => any;
+      static OnWindowLock: (worldobjects: any, window: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnWindowPermLock: (worldobjects: any, window: any) => any;
+      static OnWindowPermLock: (worldobjects: any, window: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnWindowSmash: (worldobjects: any, window: any) => any;
+      static OnWindowSmash: (worldobjects: any, window: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static pickSquare: (x: any, y: any) => any;
+      static pickSquare: (x: any, y: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static setForceLockDoor: (worldobjects: any, door: any, player: any) => any;
+      static setForceLockDoor: (worldobjects: any, door: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static stagger: (player: any, stag: any) => any;
+      static stagger: (player: any, stag: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.DebugUIs.DebugContextMenu {}

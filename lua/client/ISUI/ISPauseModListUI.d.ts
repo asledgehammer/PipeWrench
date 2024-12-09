@@ -15,7 +15,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      destroy: (() => any) | any;
+      destroy(...__args: never[]): any;
     }
 
     export abstract class PauseBuggedModList {

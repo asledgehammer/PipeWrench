@@ -39,26 +39,26 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, player: any);
 
-      addLine: ((_prefix: any, _line: any) => any) | any;
+      addLine(_prefix: any, _line: any, ...__args: never[]): any;
 
-      addLineEnd: (() => any) | any;
+      addLineEnd(...__args: never[]): any;
 
-      addTitle: ((_title: any) => any) | any;
+      addTitle(_title: any, ...__args: never[]): any;
 
-      clear: (() => any) | any;
+      clear(...__args: never[]): any;
 
-      onButton: ((_btn: any) => any) | any;
+      onButton(_btn: any, ...__args: never[]): any;
 
-      onResize: (() => any) | any;
+      onResize(...__args: never[]): any;
 
-      readRegion: ((_x: any, _y: any, _z: any, _o: any) => any) | any;
+      readRegion(_x: any, _y: any, _z: any, _o: any, ...__args: never[]): any;
 
-      stayOnSplitScreen: (() => any) | any;
+      stayOnSplitScreen(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
       /** @noSelf */
-      static OnOpenPanel: () => any;
+      static OnOpenPanel: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.DebugUIs.DebugMenu.IsoRegions.IsoRegionDetails {}

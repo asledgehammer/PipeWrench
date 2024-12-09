@@ -13,7 +13,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, door: any, lock: any);
 
-      getSoundPrefix: (() => any) | any;
+      getSoundPrefix(...__args: never[]): any;
     }
   }
   export namespace lua.client.TimedActions.ISLockDoor {}

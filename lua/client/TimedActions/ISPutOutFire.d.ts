@@ -15,7 +15,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, squares: any, item: any, usesPerSquare: any, time: any);
 
-      useItem: (() => any) | any;
+      useItem(...__args: never[]): any;
     }
   }
   export namespace lua.client.TimedActions.ISPutOutFire {}

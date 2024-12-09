@@ -6,40 +6,46 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static doCampingMenu: (player: any, context: any, worldobjects: any, test: any) => any;
+      static doCampingMenu: (player: any, context: any, worldobjects: any, test: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doSleepOption: (context: any, bed: any, player: any, playerObj: any) => any;
+      static doSleepOption: (context: any, bed: any, player: any, playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getFuelDurationForItem: (item: any) => any;
+      static getFuelDurationForItem: (item: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getFuelItemUses: (item: any) => any;
+      static getFuelItemUses: (item: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static isValidCampfire: (campfire: any) => any;
+      static isValidCampfire: (campfire: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static isValidFuel: (item: any) => any;
+      static isValidFuel: (item: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static isValidTinder: (item: any) => any;
+      static isValidTinder: (item: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onAddAllFuel: (playerObj: any, campfire: any) => any;
+      static onAddAllFuel: (playerObj: any, campfire: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onAddFuel: (playerObj: any, campfire: any, fuelType: any) => any;
+      static onAddFuel: (playerObj: any, campfire: any, fuelType: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onAddMultipleFuel: (playerObj: any, campfire: any, fuelType: any) => any;
+      static onAddMultipleFuel: (playerObj: any, campfire: any, fuelType: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onAddTent: (worldobjects: any, player: any, tentKit: any) => any;
+      static onAddTent: (worldobjects: any, player: any, tentKit: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onDisplayInfo: (worldobjects: any, player: any, isoCampfireObject: any, campfire: any) => any;
+      static onDisplayInfo: (
+        worldobjects: any,
+        player: any,
+        isoCampfireObject: any,
+        campfire: any,
+        ...__args: never[]
+      ) => any;
 
       /** @noSelf */
       static onLightFromKindle: (
@@ -48,40 +54,55 @@ declare module '@asledgehammer/pipewrench' {
         percedWood: any,
         stickOrBranch: any,
         campfire: any,
+        ...__args: never[]
       ) => any;
 
       /** @noSelf */
-      static onLightFromLiterature: (playerObj: any, itemType: any, lighter: any, campfire: any, fuelAmt: any) => any;
+      static onLightFromLiterature: (
+        playerObj: any,
+        itemType: any,
+        lighter: any,
+        campfire: any,
+        fuelAmt: any,
+        ...__args: never[]
+      ) => any;
 
       /** @noSelf */
-      static onLightFromPetrol: (worldobjects: any, player: any, lighter: any, petrol: any, campfire: any) => any;
+      static onLightFromPetrol: (
+        worldobjects: any,
+        player: any,
+        lighter: any,
+        petrol: any,
+        campfire: any,
+        ...__args: never[]
+      ) => any;
 
       /** @noSelf */
-      static onPlaceCampfire: (worldobjects: any, player: any, campfireKit: any) => any;
+      static onPlaceCampfire: (worldobjects: any, player: any, campfireKit: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onPutOutCampfire: (worldobjects: any, player: any, campfire: any) => any;
+      static onPutOutCampfire: (worldobjects: any, player: any, campfire: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onRemoveCampfire: (worldobjects: any, player: any, campfire: any) => any;
+      static onRemoveCampfire: (worldobjects: any, player: any, campfire: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onRemoveTent: (worldobjects: any, player: any, tent: any) => any;
+      static onRemoveTent: (worldobjects: any, player: any, tent: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onRest: (worldobjects: any, player: any, tent: any) => any;
+      static onRest: (worldobjects: any, player: any, tent: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onSleep: (worldobjects: any, player: any, tent: any) => any;
+      static onSleep: (worldobjects: any, player: any, tent: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static timeString: (timeInMinutes: any) => any;
+      static timeString: (timeInMinutes: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static toPlayerInventory: (playerObj: any, item: any) => any;
+      static toPlayerInventory: (playerObj: any, item: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static walkToCampfire: (playerObj: any, square: any) => any;
+      static walkToCampfire: (playerObj: any, square: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.Camping.ISUI.ISCampingMenu {}

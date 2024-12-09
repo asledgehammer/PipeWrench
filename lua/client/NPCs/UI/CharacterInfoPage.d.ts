@@ -15,14 +15,14 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, desc: any);
 
-      createAvatar: (() => any) | any;
+      createAvatar(...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      drawAvatar: (() => any) | any;
+      drawAvatar(...__args: never[]): any;
 
       /** @noSelf */
-      static doInfo: (desc: any) => any;
+      static doInfo: (desc: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.NPCs.UI.CharacterInfoPage {}

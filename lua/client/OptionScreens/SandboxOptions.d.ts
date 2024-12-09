@@ -49,72 +49,72 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      create: (() => any) | any;
+      create(...__args: never[]): any;
 
-      createPanel: ((page: any) => any) | any;
+      createPanel(page: any, ...__args: never[]): any;
 
-      deletePresetStep1: ((preset: any) => any) | any;
+      deletePresetStep1(preset: any, ...__args: never[]): any;
 
-      deletePresetStep2: ((button: any, joypadData: any) => any) | any;
+      deletePresetStep2(button: any, joypadData: any, ...__args: never[]): any;
 
-      getApocalypsePreset: (() => any) | any;
+      getApocalypsePreset(...__args: never[]): any;
 
-      getBeginnerPreset: (() => any) | any;
+      getBeginnerPreset(...__args: never[]): any;
 
-      getBuilderPreset: (() => any) | any;
+      getBuilderPreset(...__args: never[]): any;
 
-      getDefaultPreset: (() => any) | any;
+      getDefaultPreset(...__args: never[]): any;
 
-      getHardPreset: (() => any) | any;
+      getHardPreset(...__args: never[]): any;
 
-      getNormalPreset: (() => any) | any;
+      getNormalPreset(...__args: never[]): any;
 
-      getSurvivalPreset: (() => any) | any;
+      getSurvivalPreset(...__args: never[]): any;
 
-      getSurvivorPreset: (() => any) | any;
+      getSurvivorPreset(...__args: never[]): any;
 
-      instantiate: (() => any) | any;
+      instantiate(...__args: never[]): any;
 
-      loadPresets: (() => any) | any;
+      loadPresets(...__args: never[]): any;
 
-      onComboBoxSelected: ((combo: any, optionName: any) => any) | any;
+      onComboBoxSelected(combo: any, optionName: any, ...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onGroupBox: ((index: any, selected: any, groupBoxName: any) => any) | any;
+      onGroupBox(index: any, selected: any, groupBoxName: any, ...__args: never[]): any;
 
-      onLoseJoypadFocus: ((joypadData: any) => any) | any;
+      onLoseJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onMouseDownListbox: ((item: any) => any) | any;
+      onMouseDownListbox(item: any, ...__args: never[]): any;
 
-      onOptionMouseDown: ((button: any, x: any, y: any) => any) | any;
+      onOptionMouseDown(button: any, x: any, y: any, ...__args: never[]): any;
 
-      onPresetChange: (() => any) | any;
+      onPresetChange(...__args: never[]): any;
 
-      onResolutionChange: ((oldw: any, oldh: any, neww: any, newh: any) => any) | any;
+      onResolutionChange(oldw: any, oldh: any, neww: any, newh: any, ...__args: never[]): any;
 
-      onSaveDeveloperPreset: ((button: any, joypadData: any) => any) | any;
+      onSaveDeveloperPreset(button: any, joypadData: any, ...__args: never[]): any;
 
-      onSavePreset: ((button: any, joypadData: any) => any) | any;
+      onSavePreset(button: any, joypadData: any, ...__args: never[]): any;
 
-      onValidateSavePreset: ((text: any) => any) | any;
+      onValidateSavePreset(text: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setSandboxVars: (() => any) | any;
+      setSandboxVars(...__args: never[]): any;
 
-      settingsFromUI: ((options: any) => any) | any;
+      settingsFromUI(options: any, ...__args: never[]): any;
 
-      settingsToUI: ((options: any) => any) | any;
+      settingsToUI(options: any, ...__args: never[]): any;
 
-      subPanelPreRender: (() => any) | any;
+      subPanelPreRender(...__args: never[]): any;
 
-      subPanelRender: (() => any) | any;
+      subPanelRender(...__args: never[]): any;
 
-      syncStartDay: (() => any) | any;
+      syncStartDay(...__args: never[]): any;
 
       /** @noSelf */
-      static load: () => any;
+      static load: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.OptionScreens.SandboxOptions {}

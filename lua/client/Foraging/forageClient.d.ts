@@ -6,31 +6,31 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static addZone: (_zoneData: any) => any;
+      static addZone: (_zoneData: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static clearData: () => any;
+      static clearData: (...__args: never[]) => any;
 
       /** @noSelf */
-      static getZones: () => any;
+      static getZones: (...__args: never[]) => any;
 
       /** @noSelf */
-      static init: () => any;
+      static init: (...__args: never[]) => any;
 
       /** @noSelf */
-      static removeZone: (_zoneData: any) => any;
+      static removeZone: (_zoneData: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static syncForageData: () => any;
+      static syncForageData: (...__args: never[]) => any;
 
       /** @noSelf */
-      static updateData: () => any;
+      static updateData: (...__args: never[]) => any;
 
       /** @noSelf */
-      static updateIcon: (_zoneData: any, _iconID: any, _icon: any) => any;
+      static updateIcon: (_zoneData: any, _iconID: any, _icon: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static updateZone: (_zoneData: any) => any;
+      static updateZone: (_zoneData: any, ...__args: never[]) => any;
     }
 
     export abstract class forageData {

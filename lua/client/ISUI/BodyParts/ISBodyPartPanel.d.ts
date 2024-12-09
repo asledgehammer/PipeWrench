@@ -61,53 +61,52 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(player: any, x: any, y: any, target: any, onPartSelected: any);
 
-      activateToolTip: (() => any) | any;
+      activateToolTip(...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      deactivateToolTip: (() => any) | any;
+      deactivateToolTip(...__args: never[]): any;
 
-      deselect: (() => any) | any;
+      deselect(...__args: never[]): any;
 
-      drawLineLeft: ((x: any, y: any) => any) | any;
+      drawLineLeft(x: any, y: any, ...__args: never[]): any;
 
-      enableNodes: ((_nodeTex: any, _nodeOutlineTex: any) => any) | any;
+      enableNodes(_nodeTex: any, _nodeOutlineTex: any, ...__args: never[]): any;
 
-      getBodyPartColor: ((_bodyPartType: any) => any) | any;
+      getBodyPartColor(_bodyPartType: any, ...__args: never[]): any;
 
-      getPartForCoordinate: ((mx: any, my: any) => any) | any;
+      getPartForCoordinate(mx: any, my: any, ...__args: never[]): any;
 
-      getRgbForValue: ((_val: any) => any) | any;
+      getRgbForValue(_val: any, ...__args: never[]): any;
 
-      onRightMouseUp: ((x: any, y: any) => any) | any;
+      onRightMouseUp(x: any, y: any, ...__args: never[]): any;
 
-      overrideNodeTexture: ((_bodyPartType: any, _nodeTex: any, _nodeOutlineTex: any) => any) | any;
+      overrideNodeTexture(_bodyPartType: any, _nodeTex: any, _nodeOutlineTex: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setAlphas:
-        | ((
-            _defaultAlpha: any,
-            _nodeAlpha: any,
-            _selectedAlpha: any,
-            _deselectedAlpha: any,
-            _backgroundAlpha: any,
-          ) => any)
-        | any;
+      setAlphas(
+        _defaultAlpha: any,
+        _nodeAlpha: any,
+        _selectedAlpha: any,
+        _deselectedAlpha: any,
+        _backgroundAlpha: any,
+        ...__args: never[]
+      ): any;
 
-      setColorForValue: ((_val: any, _color: any) => any) | any;
+      setColorForValue(_val: any, _color: any, ...__args: never[]): any;
 
-      setColorScheme: ((_colorScheme: any) => any) | any;
+      setColorScheme(_colorScheme: any, ...__args: never[]): any;
 
-      setEnableSelectLines: ((_b: any, _defaultAnchorX: any, _defaultAnchorY: any) => any) | any;
+      setEnableSelectLines(_b: any, _defaultAnchorX: any, _defaultAnchorY: any, ...__args: never[]): any;
 
-      setSelected: ((mx: any, my: any, bLock: any) => any) | any;
+      setSelected(mx: any, my: any, bLock: any, ...__args: never[]): any;
 
-      setSelectLinesAnchor: ((_anchorX: any, _anchorY: any) => any) | any;
+      setSelectLinesAnchor(_anchorX: any, _anchorY: any, ...__args: never[]): any;
 
-      setToolTip: ((_b: any, _text: any) => any) | any;
+      setToolTip(_b: any, _text: any, ...__args: never[]): any;
 
-      setValue: ((_bodyPartType: any, _value: any, _force: any) => any) | any;
+      setValue(_bodyPartType: any, _value: any, _force: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.BodyParts.ISBodyPartPanel {}

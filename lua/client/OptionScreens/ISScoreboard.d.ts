@@ -49,29 +49,29 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      create: (() => any) | any;
+      create(...__args: never[]): any;
 
-      doAdminButtons: (() => any) | any;
+      doAdminButtons(...__args: never[]): any;
 
-      drawMap: ((y: any, item: any, alt: any) => any) | any;
+      drawMap(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      fillList: ((usernames: any, displayNames: any, steamIDs: any) => any) | any;
+      fillList(usernames: any, displayNames: any, steamIDs: any, ...__args: never[]): any;
 
-      onContext: ((button: any) => any) | any;
+      onContext(button: any, ...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onOptionMouseDown: ((button: any, x: any, y: any) => any) | any;
+      onOptionMouseDown(button: any, x: any, y: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      update: (() => any) | any;
-
-      /** @noSelf */
-      static onScoreboardUpdate: (usernames: any, displayNames: any, steamIDs: any) => any;
+      update(...__args: never[]): any;
 
       /** @noSelf */
-      static recreate: () => any;
+      static onScoreboardUpdate: (usernames: any, displayNames: any, steamIDs: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static recreate: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.OptionScreens.ISScoreboard {}

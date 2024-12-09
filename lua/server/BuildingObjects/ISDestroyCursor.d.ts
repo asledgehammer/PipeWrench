@@ -41,27 +41,27 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, dismantle: any, sledgehammer: any);
 
-      _isDoorFrame: ((object: any) => any) | any;
+      _isDoorFrame(object: any, ...__args: never[]): any;
 
-      _isDoorN: ((object: any) => any) | any;
+      _isDoorN(object: any, ...__args: never[]): any;
 
-      _isDoorW: ((object: any) => any) | any;
+      _isDoorW(object: any, ...__args: never[]): any;
 
-      _isDoorWallN: ((object: any) => any) | any;
+      _isDoorWallN(object: any, ...__args: never[]): any;
 
-      _isDoorWallW: ((object: any) => any) | any;
+      _isDoorWallW(object: any, ...__args: never[]): any;
 
-      _isWall: ((object: any) => any) | any;
+      _isWall(object: any, ...__args: never[]): any;
 
-      canDestroy: ((object: any) => any) | any;
+      canDestroy(object: any, ...__args: never[]): any;
 
-      couldSeeOpposite: ((object: any, square: any) => any) | any;
+      couldSeeOpposite(object: any, square: any, ...__args: never[]): any;
 
-      create: ((x: any, y: any, z: any, north: any, sprite: any) => any) | any;
+      create(x: any, y: any, z: any, north: any, sprite: any, ...__args: never[]): any;
 
-      getObjectList: (() => any) | any;
+      getObjectList(...__args: never[]): any;
 
-      isFloorAtTopOfStairs: ((object: any) => any) | any;
+      isFloorAtTopOfStairs(object: any, ...__args: never[]): any;
     }
   }
   export namespace lua.server.BuildingObjects.ISDestroyCursor {}

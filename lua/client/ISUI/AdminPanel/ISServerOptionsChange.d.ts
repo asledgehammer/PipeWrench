@@ -37,15 +37,15 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, target: any, onclick: any, option: any);
 
-      create: (() => any) | any;
+      create(...__args: never[]): any;
 
-      onOptionMouseDown: ((button: any, x: any, y: any) => any) | any;
+      onOptionMouseDown(button: any, x: any, y: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setVisible: ((visible: any) => any) | any;
+      setVisible(visible: any, ...__args: never[]): any;
 
-      updateButtons: (() => any) | any;
+      updateButtons(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.AdminPanel.ISServerOptionsChange {}

@@ -47,58 +47,58 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      clickPlay: (() => any) | any;
+      clickPlay(...__args: never[]): any;
 
-      create: (() => any) | any;
+      create(...__args: never[]): any;
 
-      disableBtn: (() => any) | any;
+      disableBtn(...__args: never[]): any;
 
-      instantiate: (() => any) | any;
+      instantiate(...__args: never[]): any;
 
-      Label_setJoypadFocused: ((focused: any, joypadData: any) => any) | any;
+      Label_setJoypadFocused(focused: any, joypadData: any, ...__args: never[]): any;
 
-      needDifficulty: (() => any) | any;
+      needDifficulty(...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onJoypadBeforeDeactivate: ((joypadData: any) => any) | any;
+      onJoypadBeforeDeactivate(joypadData: any, ...__args: never[]): any;
 
-      onLoseJoypadFocus: ((joypadData: any) => any) | any;
+      onLoseJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onOptionMouseDown: ((button: any, x: any, y: any) => any) | any;
+      onOptionMouseDown(button: any, x: any, y: any, ...__args: never[]): any;
 
-      onResetLua: ((reason: any) => any) | any;
+      onResetLua(reason: any, ...__args: never[]): any;
 
-      onResolutionChange: ((oldw: any, oldh: any, neww: any, newh: any) => any) | any;
+      onResolutionChange(oldw: any, oldh: any, neww: any, newh: any, ...__args: never[]): any;
 
-      prerenderBottomPanelLabel: (() => any) | any;
+      prerenderBottomPanelLabel(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
-      updateBottomPanelButtons: (() => any) | any;
-
-      /** @noSelf */
-      static dblClickChallenge: (item: any, x: any, y: any) => any;
+      updateBottomPanelButtons(...__args: never[]): any;
 
       /** @noSelf */
-      static dblClickDifficulty: (item: any, x: any, y: any) => any;
+      static dblClickChallenge: (item: any, x: any, y: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static dblClickPlaystyle: (item: any, x: any, y: any) => any;
+      static dblClickDifficulty: (item: any, x: any, y: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static dblClickSurvival: (item: any, x: any, y: any) => any;
+      static dblClickPlaystyle: (item: any, x: any, y: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static dblClickTutorial: (item: any, x: any, y: any) => any;
+      static dblClickSurvival: (item: any, x: any, y: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onChooseDifficulty: (item: any, x: any, y: any) => any;
+      static dblClickTutorial: (item: any, x: any, y: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onMenuItemMouseDown: (item: any, x: any, y: any) => any;
+      static onChooseDifficulty: (item: any, x: any, y: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static onMenuItemMouseDown: (item: any, x: any, y: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.OptionScreens.NewGameScreen {}

@@ -17,28 +17,28 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, obj: any);
 
-      doDrawItem: ((y: any, item: any, alt: any) => any) | any;
+      doDrawItem(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      fill: (() => any) | any;
+      fill(...__args: never[]): any;
 
-      onMouseDoubleClickOpenObject: ((item: any) => any) | any;
+      onMouseDoubleClickOpenObject(item: any, ...__args: never[]): any;
 
-      onRightMouseDownObject: ((x: any, y: any) => any) | any;
+      onRightMouseDownObject(x: any, y: any, ...__args: never[]): any;
 
-      onSourceMouseWheel: ((del: any) => any) | any;
+      onSourceMouseWheel(del: any, ...__args: never[]): any;
 
-      restorePos: (() => any) | any;
+      restorePos(...__args: never[]): any;
 
-      storePos: (() => any) | any;
-
-      /** @noSelf */
-      static onDataRead: (data: any) => any;
+      storePos(...__args: never[]): any;
 
       /** @noSelf */
-      static onDataWrite: (data: any) => any;
+      static onDataRead: (data: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onWatch: (item: any) => any;
+      static onDataWrite: (data: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static onWatch: (item: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.DebugUIs.ObjectViewer {}

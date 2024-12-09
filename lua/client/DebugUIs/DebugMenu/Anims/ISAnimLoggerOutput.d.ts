@@ -17,17 +17,17 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, doStencil: any);
 
-      clear: (() => any) | any;
+      clear(...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      initialise: (() => any) | any;
+      initialise(...__args: never[]): any;
 
-      scrollToBottom: (() => any) | any;
+      scrollToBottom(...__args: never[]): any;
 
-      setMonitor: ((_mon: any) => any) | any;
+      setMonitor(_mon: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
     }
   }
   export namespace lua.client.DebugUIs.DebugMenu.Anims.ISAnimLoggerOutput {}

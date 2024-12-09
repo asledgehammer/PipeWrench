@@ -21,15 +21,15 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      addBattery: ((_items: any) => any) | any;
+      addBattery(_items: any, ...__args: never[]): any;
 
-      powerUpdateSimulation: (() => any) | any;
+      powerUpdateSimulation(...__args: never[]): any;
 
-      removeBattery: (() => any) | any;
+      removeBattery(...__args: never[]): any;
 
-      toggleOnOff: (() => any) | any;
+      toggleOnOff(...__args: never[]): any;
 
-      verifyItem: ((_item: any) => any) | any;
+      verifyItem(_item: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.RadioCom.RadioWindowModules.RWMPower {}

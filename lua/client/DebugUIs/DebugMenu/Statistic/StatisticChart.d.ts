@@ -55,38 +55,45 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, player: any);
 
-      addColor: ((_r: any, _g: any, _b: any) => any) | any;
+      addColor(_r: any, _g: any, _b: any, ...__args: never[]): any;
 
-      addLabel: ((_curX: any, _curY: any, _labelID: any, _title: any) => any) | any;
+      addLabel(_curX: any, _curY: any, _labelID: any, _title: any, ...__args: never[]): any;
 
-      addLabelValue:
-        | ((_curX: any, _curY: any, _width: any, _type: any, _labelID: any, _title: any, _defaultVal: any) => any)
-        | any;
+      addLabelValue(
+        _curX: any,
+        _curY: any,
+        _width: any,
+        _type: any,
+        _labelID: any,
+        _title: any,
+        _defaultVal: any,
+        ...__args: never[]
+      ): any;
 
-      addVarInfo: ((_name: any, _desc: any, _min: any, _max: any, _func: any) => any) | any;
+      addVarInfo(_name: any, _desc: any, _min: any, _max: any, _func: any, ...__args: never[]): any;
 
-      clear: (() => any) | any;
+      clear(...__args: never[]): any;
 
-      getTitleLabel: ((_labelID: any) => any) | any;
+      getTitleLabel(_labelID: any, ...__args: never[]): any;
 
-      getValueLabel: ((_labelID: any) => any) | any;
+      getValueLabel(_labelID: any, ...__args: never[]): any;
 
-      initVariables: (() => any) | any;
+      initVariables(...__args: never[]): any;
 
-      onButtonToggle: ((_btn: any) => any) | any;
+      onButtonToggle(_btn: any, ...__args: never[]): any;
 
-      onMouseWheel: ((del: any) => any) | any;
+      onMouseWheel(del: any, ...__args: never[]): any;
 
-      onResize: (() => any) | any;
+      onResize(...__args: never[]): any;
 
-      stayOnSplitScreen: (() => any) | any;
+      stayOnSplitScreen(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
-      updateValues: (() => any) | any;
+      updateValues(...__args: never[]): any;
 
       /** @noSelf */
-      static OnServerStatisticReceived: () => any;
+      static OnServerStatisticReceived: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.DebugUIs.DebugMenu.Statistic.StatisticChart {}

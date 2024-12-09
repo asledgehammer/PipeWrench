@@ -8,7 +8,7 @@ declare module '@asledgehammer/pipewrench' {
       static lastSec: any;
 
       /** @noSelf */
-      static onKeyPressed: (key: any) => any;
+      static onKeyPressed: (key: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.FPS {}

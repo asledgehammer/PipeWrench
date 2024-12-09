@@ -15,25 +15,25 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(mode: any, character: any, lightswitch: any, item: any);
 
-      isValidAddBattery: (() => any) | any;
+      isValidAddBattery(...__args: never[]): any;
 
-      isValidAddLightBulb: (() => any) | any;
+      isValidAddLightBulb(...__args: never[]): any;
 
-      isValidModifyLamp: (() => any) | any;
+      isValidModifyLamp(...__args: never[]): any;
 
-      isValidRemoveBattery: (() => any) | any;
+      isValidRemoveBattery(...__args: never[]): any;
 
-      isValidRemoveLightBulb: (() => any) | any;
+      isValidRemoveLightBulb(...__args: never[]): any;
 
-      performAddBattery: (() => any) | any;
+      performAddBattery(...__args: never[]): any;
 
-      performAddLightBulb: (() => any) | any;
+      performAddLightBulb(...__args: never[]): any;
 
-      performModifyLamp: (() => any) | any;
+      performModifyLamp(...__args: never[]): any;
 
-      performRemoveBattery: (() => any) | any;
+      performRemoveBattery(...__args: never[]): any;
 
-      performRemoveLightBulb: (() => any) | any;
+      performRemoveLightBulb(...__args: never[]): any;
     }
   }
   export namespace lua.client.TimedActions.ISLightActions {}

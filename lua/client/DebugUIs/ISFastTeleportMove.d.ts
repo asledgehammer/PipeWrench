@@ -6,19 +6,19 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static moveXY: (player: any, dx: any, dy: any) => any;
+      static moveXY: (player: any, dx: any, dy: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static moveZ: (player: any, dz: any) => any;
+      static moveZ: (player: any, dz: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnKeyKeepPressed: (key: any) => any;
+      static OnKeyKeepPressed: (key: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnKeyStartPressed: (key: any) => any;
+      static OnKeyStartPressed: (key: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnTick: () => any;
+      static OnTick: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.DebugUIs.ISFastTeleportMove {}

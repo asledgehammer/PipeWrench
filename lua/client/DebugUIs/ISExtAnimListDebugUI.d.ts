@@ -25,13 +25,13 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, character: any);
 
-      closeUI: (() => any) | any;
+      closeUI(...__args: never[]): any;
 
-      createList: (() => any) | any;
+      createList(...__args: never[]): any;
 
-      playAnim: (() => any) | any;
+      playAnim(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
     }
   }
   export namespace lua.client.DebugUIs.ISExtAnimListDebugUI {}

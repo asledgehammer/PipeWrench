@@ -97,53 +97,53 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(playerNum: any, chr: any);
 
-      checkEngineFull: (() => any) | any;
+      checkEngineFull(...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      getAlphaFlick: ((_default_: any) => any) | any;
+      getAlphaFlick(_default_: any, ...__args: never[]): any;
 
-      onClickDoors: (() => any) | any;
+      onClickDoors(...__args: never[]): any;
 
-      onClickEngine: (() => any) | any;
+      onClickEngine(...__args: never[]): any;
 
-      onClickHeadlights: (() => any) | any;
+      onClickHeadlights(...__args: never[]): any;
 
-      onClickHeater: (() => any) | any;
+      onClickHeater(...__args: never[]): any;
 
-      onClickKeys: (() => any) | any;
+      onClickKeys(...__args: never[]): any;
 
-      onClickTrunk: (() => any) | any;
+      onClickTrunk(...__args: never[]): any;
 
-      onResolutionChange: (() => any) | any;
+      onResolutionChange(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setVehicle: ((vehicle: any) => any) | any;
-
-      /** @noSelf */
-      static damageChecker: () => any;
+      setVehicle(vehicle: any, ...__args: never[]): any;
 
       /** @noSelf */
-      static damageFlick: (character: any) => any;
+      static damageChecker: (...__args: never[]) => any;
 
       /** @noSelf */
-      static getVehicleCondition: (vehicle: any) => any;
+      static damageFlick: (character: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onEnterVehicle: (character: any) => any;
+      static getVehicleCondition: (vehicle: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onExitVehicle: (character: any) => any;
+      static onEnterVehicle: (character: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onGameStart: () => any;
+      static onExitVehicle: (character: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnGameStart: () => any;
+      static onGameStart: (...__args: never[]) => any;
 
       /** @noSelf */
-      static onSwitchVehicleSeat: (character: any) => any;
+      static OnGameStart: (...__args: never[]) => any;
+
+      /** @noSelf */
+      static onSwitchVehicleSeat: (character: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.Vehicles.ISUI.ISVehicleDashboard {}

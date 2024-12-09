@@ -13,7 +13,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, tex: any);
 
-      renderTex: (() => any) | any;
+      renderTex(...__args: never[]): any;
     }
   }
   export namespace lua.client.DebugUIs.TextureViewer {}

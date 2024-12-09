@@ -29,77 +29,77 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(title: any, x: any, y: any, width: any, height: any);
 
-      clear: (() => any) | any;
+      clear(...__args: never[]): any;
 
-      focus: (() => any) | any;
+      focus(...__args: never[]): any;
 
-      getCursorPos: (() => any) | any;
+      getCursorPos(...__args: never[]): any;
 
-      getFrameAlpha: (() => any) | any;
+      getFrameAlpha(...__args: never[]): any;
 
-      getInternalText: (() => any) | any;
+      getInternalText(...__args: never[]): any;
 
-      getMaxLines: (() => any) | any;
+      getMaxLines(...__args: never[]): any;
 
-      getText: (() => any) | any;
+      getText(...__args: never[]): any;
 
-      ignoreFirstInput: (() => any) | any;
+      ignoreFirstInput(...__args: never[]): any;
 
-      instantiate: (() => any) | any;
+      instantiate(...__args: never[]): any;
 
-      isEditable: (() => any) | any;
+      isEditable(...__args: never[]): any;
 
-      isFocused: (() => any) | any;
+      isFocused(...__args: never[]): any;
 
-      isMultipleLine: (() => any) | any;
+      isMultipleLine(...__args: never[]): any;
 
-      isSelectable: (() => any) | any;
+      isSelectable(...__args: never[]): any;
 
-      onCommandEntered: (() => any) | any;
+      onCommandEntered(...__args: never[]): any;
 
-      onMouseWheel: ((del: any) => any) | any;
+      onMouseWheel(del: any, ...__args: never[]): any;
 
-      onPressDown: (() => any) | any;
+      onPressDown(...__args: never[]): any;
 
-      onPressUp: (() => any) | any;
+      onPressUp(...__args: never[]): any;
 
-      onTextChange: (() => any) | any;
+      onTextChange(...__args: never[]): any;
 
-      selectAll: (() => any) | any;
+      selectAll(...__args: never[]): any;
 
-      setClearButton: ((hasButton: any) => any) | any;
+      setClearButton(hasButton: any, ...__args: never[]): any;
 
-      setCursorPos: ((charIndex: any) => any) | any;
+      setCursorPos(charIndex: any, ...__args: never[]): any;
 
-      setEditable: ((editable: any) => any) | any;
+      setEditable(editable: any, ...__args: never[]): any;
 
-      setForceUpperCase: ((forceUpperCase: any) => any) | any;
+      setForceUpperCase(forceUpperCase: any, ...__args: never[]): any;
 
-      setFrameAlpha: ((alpha: any) => any) | any;
+      setFrameAlpha(alpha: any, ...__args: never[]): any;
 
-      setHasFrame: ((hasFrame: any) => any) | any;
+      setHasFrame(hasFrame: any, ...__args: never[]): any;
 
-      setJoypadFocused: ((focused: any, joypadData: any) => any) | any;
+      setJoypadFocused(focused: any, joypadData: any, ...__args: never[]): any;
 
-      setMasked: ((b: any) => any) | any;
+      setMasked(b: any, ...__args: never[]): any;
 
-      setMaxLines: ((max: any) => any) | any;
+      setMaxLines(max: any, ...__args: never[]): any;
 
-      setMaxTextLength: ((length: any) => any) | any;
+      setMaxTextLength(length: any, ...__args: never[]): any;
 
-      setMultipleLine: ((multiple: any) => any) | any;
+      setMultipleLine(multiple: any, ...__args: never[]): any;
 
-      setOnlyNumbers: ((onlyNumbers: any) => any) | any;
+      setOnlyNumbers(onlyNumbers: any, ...__args: never[]): any;
 
-      setSelectable: ((enable: any) => any) | any;
+      setSelectable(enable: any, ...__args: never[]): any;
 
-      setText: ((str: any) => any) | any;
+      setText(str: any, ...__args: never[]): any;
 
-      setTooltip: ((text: any) => any) | any;
+      setTooltip(text: any, ...__args: never[]): any;
 
-      setValid: ((valid: any) => any) | any;
+      setValid(valid: any, ...__args: never[]): any;
 
-      unfocus: (() => any) | any;
+      unfocus(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISTextEntryBox {}

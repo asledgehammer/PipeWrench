@@ -13,7 +13,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, item: any, extra: any);
 
-      createItem: ((item: any, itemType: any) => any) | any;
+      createItem(item: any, itemType: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.TimedActions.ISClothingExtraAction {}

@@ -23,9 +23,9 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, debugChunkState: any);
 
-      createSections: (() => any) | any;
+      createSections(...__args: never[]): any;
 
-      setSquare: ((square: any, x: any, y: any, z: any) => any) | any;
+      setSquare(square: any, x: any, y: any, z: any, ...__args: never[]): any;
     }
 
     /** @customConstructor DebugChunkStateUI_SquarePropsHandler:new */
@@ -51,17 +51,17 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, gameState: any);
 
-      addLine: ((text: any, arg0: any, arg1: any, arg2: any, arg3: any, arg4: any) => any) | any;
+      addLine(text: any, arg0: any, arg1: any, arg2: any, arg3: any, arg4: any, ...__args: never[]): any;
 
-      playerIndex: (() => any) | any;
+      playerIndex(...__args: never[]): any;
 
-      postrender: (() => any) | any;
+      postrender(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      render1: (() => any) | any;
+      render1(...__args: never[]): any;
 
-      setSquare: ((square: any, x: any, y: any, z: any) => any) | any;
+      setSquare(square: any, x: any, y: any, z: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.DebugUIs.DebugChunkState.DebugChunkState_SquarePanel {}

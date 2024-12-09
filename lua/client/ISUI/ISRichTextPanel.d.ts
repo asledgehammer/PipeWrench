@@ -79,25 +79,25 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      onMouseWheel: ((del: any) => any) | any;
+      onMouseWheel(del: any, ...__args: never[]): any;
 
-      onResize: (() => any) | any;
+      onResize(...__args: never[]): any;
 
-      paginate: (() => any) | any;
+      paginate(...__args: never[]): any;
 
-      processCommand: ((command: any, x: any, y: any, lineImageHeight: any, lineHeight: any) => any) | any;
+      processCommand(command: any, x: any, y: any, lineImageHeight: any, lineHeight: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      replaceKeyName: ((text: any, offset: any) => any) | any;
+      replaceKeyName(text: any, offset: any, ...__args: never[]): any;
 
-      replaceKeyNames: ((text: any) => any) | any;
+      replaceKeyNames(text: any, ...__args: never[]): any;
 
-      setContentTransparency: ((alpha: any) => any) | any;
+      setContentTransparency(alpha: any, ...__args: never[]): any;
 
-      setMargins: ((left: any, top: any, right: any, bottom: any) => any) | any;
+      setMargins(left: any, top: any, right: any, bottom: any, ...__args: never[]): any;
 
-      setText: ((text: any) => any) | any;
+      setText(text: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISRichTextPanel {}

@@ -27,9 +27,9 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any);
 
-      create: ((x: any, y: any, z: any, north: any, sprite: any) => any) | any;
+      create(x: any, y: any, z: any, north: any, sprite: any, ...__args: never[]): any;
 
-      getObjectList: (() => any) | any;
+      getObjectList(...__args: never[]): any;
     }
   }
   export namespace lua.server.Farming.BuildingObjects.ISFarmingCursor {}

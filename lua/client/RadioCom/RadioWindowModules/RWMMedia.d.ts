@@ -39,17 +39,17 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      addMedia: ((_items: any) => any) | any;
+      addMedia(_items: any, ...__args: never[]): any;
 
-      addMediaAux: ((item: any) => any) | any;
+      addMediaAux(item: any, ...__args: never[]): any;
 
-      getMediaText: (() => any) | any;
+      getMediaText(...__args: never[]): any;
 
-      removeMedia: (() => any) | any;
+      removeMedia(...__args: never[]): any;
 
-      togglePlayMedia: (() => any) | any;
+      togglePlayMedia(...__args: never[]): any;
 
-      verifyItem: ((_item: any) => any) | any;
+      verifyItem(_item: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.RadioCom.RadioWindowModules.RWMMedia {}

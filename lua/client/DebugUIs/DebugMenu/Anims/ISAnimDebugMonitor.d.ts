@@ -79,26 +79,26 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, player: any);
 
-      clear: (() => any) | any;
+      clear(...__args: never[]): any;
 
-      clearLog: (() => any) | any;
+      clearLog(...__args: never[]): any;
 
-      onClick: ((_button: any) => any) | any;
+      onClick(_button: any, ...__args: never[]): any;
 
-      onCombo: ((_combo: any) => any) | any;
+      onCombo(_combo: any, ...__args: never[]): any;
 
-      onResize: (() => any) | any;
+      onResize(...__args: never[]): any;
 
-      scrollToBottom: (() => any) | any;
+      scrollToBottom(...__args: never[]): any;
 
-      stayOnSplitScreen: (() => any) | any;
+      stayOnSplitScreen(...__args: never[]): any;
 
-      toggleEditEnabled: ((_b: any) => any) | any;
+      toggleEditEnabled(_b: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
       /** @noSelf */
-      static OnOpenPanel: () => any;
+      static OnOpenPanel: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.DebugUIs.DebugMenu.Anims.ISAnimDebugMonitor {}

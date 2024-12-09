@@ -13,13 +13,13 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      addSection: ((panel: any, title: any) => any) | any;
+      addSection(panel: any, title: any, ...__args: never[]): any;
 
-      clear: (() => any) | any;
+      clear(...__args: never[]): any;
 
-      onMouseWheel: ((del: any) => any) | any;
+      onMouseWheel(del: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
     }
 
     /** @customConstructor ISSectionedPanel_Section:new */
@@ -41,15 +41,15 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, panel: any, title: any);
 
-      calculateHeights: (() => any) | any;
+      calculateHeights(...__args: never[]): any;
 
-      clear: (() => any) | any;
+      clear(...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onHeaderClick: (() => any) | any;
+      onHeaderClick(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
     }
   }
   export namespace lua.client.DebugUIs.DebugChunkState.ISSectionedPanel {}

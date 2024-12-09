@@ -21,18 +21,18 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, sink: any, soapList: any, item: any, bloodAmount: any, dirtAmount: any, noSoap: any);
 
-      stopSound: (() => any) | any;
+      stopSound(...__args: never[]): any;
 
-      useSoap: ((item: any, part: any) => any) | any;
-
-      /** @noSelf */
-      static GetRequiredSoap: (item: any) => any;
+      useSoap(item: any, part: any, ...__args: never[]): any;
 
       /** @noSelf */
-      static GetRequiredWater: (item: any) => any;
+      static GetRequiredSoap: (item: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static GetSoapRemaining: (soaps: any) => any;
+      static GetRequiredWater: (item: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static GetSoapRemaining: (soaps: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.TimedActions.ISWashClothing {}

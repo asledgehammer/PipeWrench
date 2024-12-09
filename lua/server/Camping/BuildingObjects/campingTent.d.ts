@@ -17,13 +17,13 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, tentSprites: any);
 
-      create: ((x: any, y: any, z: any, north: any, sprite: any) => any) | any;
+      create(x: any, y: any, z: any, north: any, sprite: any, ...__args: never[]): any;
 
-      getSquare2: ((square: any, north: any) => any) | any;
+      getSquare2(square: any, north: any, ...__args: never[]): any;
 
-      getSquare2Pos: ((square: any, north: any) => any) | any;
+      getSquare2Pos(square: any, north: any, ...__args: never[]): any;
 
-      isSquareFree: ((square: any) => any) | any;
+      isSquareFree(square: any, ...__args: never[]): any;
     }
   }
   export namespace lua.server.Camping.BuildingObjects.campingTent {}

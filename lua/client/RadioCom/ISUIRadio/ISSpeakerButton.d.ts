@@ -23,13 +23,13 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, onclick: any, onclickTarget: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      getEnableControls: (() => any) | any;
+      getEnableControls(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setEnableControls: ((_b: any) => any) | any;
+      setEnableControls(_b: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.RadioCom.ISUIRadio.ISSpeakerButton {}

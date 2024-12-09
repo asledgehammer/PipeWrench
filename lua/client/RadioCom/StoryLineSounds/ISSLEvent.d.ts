@@ -17,19 +17,19 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      addEventSoundItem: ((_eventSound: any) => any) | any;
+      addEventSoundItem(_eventSound: any, ...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      drawEventSoundItem: ((y: any, item: any, alt: any) => any) | any;
+      drawEventSoundItem(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      onResize: (() => any) | any;
+      onResize(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setEvent: ((_event: any) => any) | any;
+      setEvent(_event: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
     }
   }
   export namespace lua.client.RadioCom.StoryLineSounds.ISSLEvent {}

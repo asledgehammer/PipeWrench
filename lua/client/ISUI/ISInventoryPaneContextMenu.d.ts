@@ -24,10 +24,11 @@ declare module '@asledgehammer/pipewrench' {
         recipeList: any,
         player: any,
         containerList: any,
+        ...__args: never[]
       ) => any;
 
       /** @noSelf */
-      static addEatTooltip: (option: any, items: any, percent: any) => any;
+      static addEatTooltip: (option: any, items: any, percent: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static addFixerSubOption: (
@@ -37,6 +38,7 @@ declare module '@asledgehammer/pipewrench' {
         fixer: any,
         subMenuFix: any,
         vehiclePart: any,
+        ...__args: never[]
       ) => any;
 
       /** @noSelf */
@@ -47,19 +49,20 @@ declare module '@asledgehammer/pipewrench' {
         extraInfo: any,
         evorecipe2: any,
         player: any,
+        ...__args: never[]
       ) => any;
 
       /** @noSelf */
-      static addToolTip: () => any;
+      static addToolTip: (...__args: never[]) => any;
 
       /** @noSelf */
-      static applyBandage: (item: any, bodyPart: any, player: any) => any;
+      static applyBandage: (item: any, bodyPart: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static AutoDrinkOff: (waterContainer: any) => any;
+      static AutoDrinkOff: (waterContainer: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static AutoDrinkOn: (waterContainer: any) => any;
+      static AutoDrinkOn: (waterContainer: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static buildFixingMenu: (
@@ -69,61 +72,91 @@ declare module '@asledgehammer/pipewrench' {
         fixOption: any,
         subMenuFix: any,
         vehiclePart: any,
+        ...__args: never[]
       ) => any;
 
       /** @noSelf */
-      static canAddManyItems: (recipe: any, selectedItem: any, playerObj: any) => any;
+      static canAddManyItems: (recipe: any, selectedItem: any, playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static canMoveTo: (items: any, dest: any, player: any) => any;
+      static canMoveTo: (items: any, dest: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static canReplaceStoreWater: (item: any) => any;
+      static canReplaceStoreWater: (item: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static canReplaceStoreWater2: (itemType: any) => any;
+      static canReplaceStoreWater2: (itemType: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static canRipItem: (playerObj: any, item: any) => any;
+      static canRipItem: (playerObj: any, item: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static canUnpack: (items: any, player: any) => any;
+      static canUnpack: (items: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static checkConsolidate: (drainable: any, player: any, context: any, previousPourInto: any) => any;
+      static checkConsolidate: (
+        drainable: any,
+        player: any,
+        context: any,
+        previousPourInto: any,
+        ...__args: never[]
+      ) => any;
 
       /** @noSelf */
-      static createMenu: (player: any, isInPlayerInventory: any, items: any, x: any, y: any, origin: any) => any;
+      static createMenu: (
+        player: any,
+        isInPlayerInventory: any,
+        items: any,
+        x: any,
+        y: any,
+        origin: any,
+        ...__args: never[]
+      ) => any;
 
       /** @noSelf */
-      static createMenuNoItems: (playerNum: any, isLoot: any, x: any, y: any) => any;
+      static createMenuNoItems: (playerNum: any, isLoot: any, x: any, y: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doBandageMenu: (context: any, items: any, player: any) => any;
+      static doBandageMenu: (context: any, items: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doBulletMenu: (playerObj: any, weapon: any, context: any) => any;
+      static doBulletMenu: (playerObj: any, weapon: any, context: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doChangeFireModeMenu: (playerObj: any, weapon: any, context: any) => any;
+      static doChangeFireModeMenu: (playerObj: any, weapon: any, context: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doClothingItemExtraMenu: (context: any, clothingItemExtra: any, playerObj: any) => any;
+      static doClothingItemExtraMenu: (context: any, clothingItemExtra: any, playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doClothingPatchMenu: (player: any, clothing: any, context: any) => any;
+      static doClothingPatchMenu: (player: any, clothing: any, context: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doClothingRecipeMenu: (playerObj: any, clothing: any, items: any, context: any) => any;
+      static doClothingRecipeMenu: (playerObj: any, clothing: any, items: any, context: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doDrinkForThirstMenu: (context: any, playerObj: any, waterContainer: any) => any;
+      static doDrinkForThirstMenu: (context: any, playerObj: any, waterContainer: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doEatOption: (context: any, cmd: any, items: any, player: any, playerObj: any, foodItems: any) => any;
+      static doEatOption: (
+        context: any,
+        cmd: any,
+        items: any,
+        player: any,
+        playerObj: any,
+        foodItems: any,
+        ...__args: never[]
+      ) => any;
 
       /** @noSelf */
-      static doEquipOption: (context: any, playerObj: any, isWeapon: any, items: any, player: any) => any;
+      static doEquipOption: (
+        context: any,
+        playerObj: any,
+        isWeapon: any,
+        items: any,
+        player: any,
+        ...__args: never[]
+      ) => any;
 
       /** @noSelf */
       static doEvorecipeMenu: (
@@ -133,118 +166,125 @@ declare module '@asledgehammer/pipewrench' {
         evorecipe: any,
         baseItem: any,
         containerList: any,
+        ...__args: never[]
       ) => any;
 
       /** @noSelf */
-      static doGrabMenu: (context: any, items: any, player: any) => any;
+      static doGrabMenu: (context: any, items: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doLiteratureMenu: (context: any, items: any, player: any) => any;
+      static doLiteratureMenu: (context: any, items: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doMagazineMenu: (playerObj: any, magazine: any, context: any) => any;
+      static doMagazineMenu: (playerObj: any, magazine: any, context: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doMakeUpMenu: (context: any, makeup: any, playerObj: any) => any;
+      static doMakeUpMenu: (context: any, makeup: any, playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doPlace3DItemOption: (items: any, player: any, context: any) => any;
+      static doPlace3DItemOption: (items: any, player: any, context: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doReloadMenuForBullets: (playerObj: any, bullet: any, context: any) => any;
+      static doReloadMenuForBullets: (playerObj: any, bullet: any, context: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doReloadMenuForMagazine: (playerObj: any, magazine: any, context: any) => any;
+      static doReloadMenuForMagazine: (playerObj: any, magazine: any, context: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doReloadMenuForWeapon: (playerObj: any, weapon: any, context: any) => any;
+      static doReloadMenuForWeapon: (playerObj: any, weapon: any, context: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doStoveMenu: (context: any, playerNum: any) => any;
+      static doStoveMenu: (context: any, playerNum: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doTrashCanMenu: (context: any, playerNum: any) => any;
+      static doTrashCanMenu: (context: any, playerNum: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doWearClothingMenu: (player: any, clothing: any, items: any, context: any) => any;
+      static doWearClothingMenu: (player: any, clothing: any, items: any, context: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doWearClothingTooltip: (playerObj: any, newItem: any, currentItem: any, option: any) => any;
+      static doWearClothingTooltip: (
+        playerObj: any,
+        newItem: any,
+        currentItem: any,
+        option: any,
+        ...__args: never[]
+      ) => any;
 
       /** @noSelf */
-      static dropItem: (item: any, player: any) => any;
+      static dropItem: (item: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static dryMyself: (item: any, player: any) => any;
+      static dryMyself: (item: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static eatItem: (item: any, percentage: any, player: any) => any;
+      static eatItem: (item: any, percentage: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static equipHeavyItem: (playerObj: any, item: any) => any;
+      static equipHeavyItem: (playerObj: any, item: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static equipWeapon: (weapon: any, primary: any, twoHands: any, player: any) => any;
+      static equipWeapon: (weapon: any, primary: any, twoHands: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getContainers: (character: any) => any;
+      static getContainers: (character: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getEvoItemCategories: (items: any, evorecipe: any) => any;
+      static getEvoItemCategories: (items: any, evorecipe: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getItemInstance: (type: any) => any;
+      static getItemInstance: (type: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getRealEvolvedItemUse: (evoItem: any, evorecipe2: any, cookingLvl: any) => any;
+      static getRealEvolvedItemUse: (evoItem: any, evorecipe2: any, cookingLvl: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static hasRoomForAny: (playerObj: any, container: any, items: any) => any;
+      static hasRoomForAny: (playerObj: any, container: any, items: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static haveDamagePart: (playerId: any) => any;
+      static haveDamagePart: (playerId: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static information: (item: any) => any;
+      static information: (item: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static isAllFav: (items: any) => any;
+      static isAllFav: (items: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static isAllNoDropMoveable: (items: any) => any;
+      static isAllNoDropMoveable: (items: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static isAnyAllowed: (container: any, items: any) => any;
+      static isAnyAllowed: (container: any, items: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static litCandleExtinguish: (item: any, player: any) => any;
+      static litCandleExtinguish: (item: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onActivateItem: (light: any, player: any) => any;
+      static onActivateItem: (light: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onAddItemInEvoRecipe: (recipe: any, baseItem: any, usedItem: any, player: any) => any;
+      static onAddItemInEvoRecipe: (recipe: any, baseItem: any, usedItem: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onApplyBandage: (bandages: any, bodyPart: any, player: any) => any;
+      static onApplyBandage: (bandages: any, bodyPart: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onChangefiremode: (playerObj: any, weapon: any, newfiremode: any) => any;
+      static onChangefiremode: (playerObj: any, weapon: any, newfiremode: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onCheckMap: (map: any, player: any) => any;
+      static onCheckMap: (map: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onClothingItemExtra: (item: any, extra: any, playerObj: any) => any;
+      static onClothingItemExtra: (item: any, extra: any, playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onConsolidate: (drainable: any, intoItem: any, player: any) => any;
+      static onConsolidate: (drainable: any, intoItem: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onConsolidateAll: (drainable: any, consolidateList: any, player: any) => any;
+      static onConsolidateAll: (drainable: any, consolidateList: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnCraft: (selectedItem: any, recipe: any, player: any, all: any) => any;
+      static OnCraft: (selectedItem: any, recipe: any, player: any, all: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static OnCraftComplete: (
@@ -255,178 +295,186 @@ declare module '@asledgehammer/pipewrench' {
         containers: any,
         selectedItemType: any,
         selectedItemContainer: any,
+        ...__args: never[]
       ) => any;
 
       /** @noSelf */
-      static onCraftSheetRope: (playerObj: any, items: any) => any;
+      static onCraftSheetRope: (playerObj: any, items: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onDrink: (items: any, waterContainer: any, percentage: any, player: any) => any;
+      static onDrink: (items: any, waterContainer: any, percentage: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onDrinkForThirst: (waterContainer: any, playerObj: any) => any;
+      static onDrinkForThirst: (waterContainer: any, playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onDropItems: (items: any, player: any) => any;
+      static onDropItems: (items: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onDryMyself: (towels: any, player: any) => any;
+      static onDryMyself: (towels: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onDumpContents: (items: any, item: any, time: any, player: any) => any;
+      static onDumpContents: (items: any, item: any, time: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onDyeHair: (hairDye: any, playerObj: any, beard: any) => any;
+      static onDyeHair: (hairDye: any, playerObj: any, beard: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onEatItems: (items: any, percentage: any, player: any) => any;
+      static onEatItems: (items: any, percentage: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onEditItem: (items: any, player: any, item: any) => any;
+      static onEditItem: (items: any, player: any, item: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onEjectMagazine: (playerObj: any, weapon: any) => any;
+      static onEjectMagazine: (playerObj: any, weapon: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onEmptyWaterContainer: (items: any, waterSource: any, player: any) => any;
+      static onEmptyWaterContainer: (items: any, waterSource: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onFavorite: (items: any, item2: any, fav: any) => any;
+      static onFavorite: (items: any, item2: any, fav: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onFix: (brokenObject: any, player: any, fixing: any, fixer: any, vehiclePart: any) => any;
+      static onFix: (
+        brokenObject: any,
+        player: any,
+        fixing: any,
+        fixer: any,
+        vehiclePart: any,
+        ...__args: never[]
+      ) => any;
 
       /** @noSelf */
-      static onGrabHalfItems: (items: any, player: any) => any;
+      static onGrabHalfItems: (items: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onGrabItems: (items: any, player: any) => any;
+      static onGrabItems: (items: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onGrabOneItems: (items: any, player: any) => any;
+      static onGrabOneItems: (items: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onInformationItems: (items: any) => any;
+      static onInformationItems: (items: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onInsertMagazine: (playerObj: any, weapon: any, magazine: any) => any;
+      static onInsertMagazine: (playerObj: any, weapon: any, magazine: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onInspectClothing: (playerObj: any, clothing: any) => any;
+      static onInspectClothing: (playerObj: any, clothing: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onInspectClothingUI: (player: any, clothing: any) => any;
+      static onInspectClothingUI: (player: any, clothing: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnLinkRemoteController: (itemToLink: any, remoteController: any, player: any) => any;
+      static OnLinkRemoteController: (itemToLink: any, remoteController: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onLiteratureItems: (items: any, player: any) => any;
+      static onLiteratureItems: (items: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onLoadBulletsInMagazine: (playerObj: any, magazine: any, ammoCount: any) => any;
+      static onLoadBulletsInMagazine: (playerObj: any, magazine: any, ammoCount: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onLoadBulletsIntoFirearm: (playerObj: any, weapon: any) => any;
+      static onLoadBulletsIntoFirearm: (playerObj: any, weapon: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onMakeUp: (makeup: any, playerObj: any) => any;
+      static onMakeUp: (makeup: any, playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onMoveItemsTo: (items: any, dest: any, player: any) => any;
+      static onMoveItemsTo: (items: any, dest: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onPillsItems: (items: any, player: any) => any;
+      static onPillsItems: (items: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onPlaceCarBatteryCharger: (playerObj: any, carBatteryCharger: any) => any;
+      static onPlaceCarBatteryCharger: (playerObj: any, carBatteryCharger: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onPlaceItemOnGround: (items: any, playerObj: any) => any;
+      static onPlaceItemOnGround: (items: any, playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onPlaceTrap: (weapon: any, player: any) => any;
+      static onPlaceTrap: (weapon: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnPrimaryWeapon: (items: any, player: any) => any;
+      static OnPrimaryWeapon: (items: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onPutItems: (items: any, player: any) => any;
+      static onPutItems: (items: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onRackGun: (playerObj: any, weapon: any) => any;
+      static onRackGun: (playerObj: any, weapon: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnReload: (items: any, player: any) => any;
+      static OnReload: (items: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onRemoveUpgradeWeapon: (weapon: any, part: any, playerObj: any) => any;
+      static onRemoveUpgradeWeapon: (weapon: any, part: any, playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onRenameBag: (bag: any, player: any) => any;
+      static onRenameBag: (bag: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onRenameFood: (food: any, player: any) => any;
+      static onRenameFood: (food: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onRenameMap: (map: any, player: any) => any;
+      static onRenameMap: (map: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnResetRemoteControlID: (item: any, player: any) => any;
+      static OnResetRemoteControlID: (item: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onRipClothing: (playerObj: any, items: any) => any;
+      static onRipClothing: (playerObj: any, items: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnSecondWeapon: (items: any, player: any) => any;
+      static OnSecondWeapon: (items: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onSetAlarm: (alarm: any, player: any) => any;
+      static onSetAlarm: (alarm: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onSetBombTimer: (trap: any, player: any) => any;
+      static onSetBombTimer: (trap: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onStopAlarm: (alarm: any, player: any) => any;
+      static onStopAlarm: (alarm: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onTransferWater: (items: any, itemFrom: any, itemTo: any, player: any) => any;
+      static onTransferWater: (items: any, itemFrom: any, itemTo: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnTriggerRemoteController: (remoteController: any, player: any) => any;
+      static OnTriggerRemoteController: (remoteController: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnTwoHandsEquip: (items: any, player: any) => any;
+      static OnTwoHandsEquip: (items: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onUnEquip: (items: any, player: any) => any;
+      static onUnEquip: (items: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onUnloadBulletsFromFirearm: (playerObj: any, weapon: any) => any;
+      static onUnloadBulletsFromFirearm: (playerObj: any, weapon: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onUnloadBulletsFromMagazine: (playerObj: any, magazine: any) => any;
+      static onUnloadBulletsFromMagazine: (playerObj: any, magazine: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onUpgradeWeapon: (weapon: any, part: any, player: any) => any;
+      static onUpgradeWeapon: (weapon: any, part: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onWearItems: (items: any, player: any) => any;
+      static onWearItems: (items: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onWriteSomething: (notebook: any, editable: any, player: any) => any;
+      static onWriteSomething: (notebook: any, editable: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static readItem: (item: any, player: any) => any;
+      static readItem: (item: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static removeAllPatches: (player: any, clothing: any, parts: any, needle: any) => any;
+      static removeAllPatches: (player: any, clothing: any, parts: any, needle: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static removePatch: (player: any, clothing: any, part: any, needle: any) => any;
+      static removePatch: (player: any, clothing: any, part: any, needle: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static removeToolTip: () => any;
+      static removeToolTip: (...__args: never[]) => any;
 
       /** @noSelf */
       static repairAllClothing: (
@@ -437,31 +485,46 @@ declare module '@asledgehammer/pipewrench' {
         thread: any,
         needle: any,
         onlyHoles: any,
+        ...__args: never[]
       ) => any;
 
       /** @noSelf */
-      static repairClothing: (player: any, clothing: any, part: any, fabric: any, thread: any, needle: any) => any;
+      static repairClothing: (
+        player: any,
+        clothing: any,
+        part: any,
+        fabric: any,
+        thread: any,
+        needle: any,
+        ...__args: never[]
+      ) => any;
 
       /** @noSelf */
-      static startWith: (String: any, Start: any) => any;
+      static startWith: (String: any, Start: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static takePill: (item: any, player: any) => any;
+      static takePill: (item: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static transferBullets: (playerObj: any, ammoType: any, currentAmmo: any, maxAmmo: any) => any;
+      static transferBullets: (
+        playerObj: any,
+        ammoType: any,
+        currentAmmo: any,
+        maxAmmo: any,
+        ...__args: never[]
+      ) => any;
 
       /** @noSelf */
-      static transferIfNeeded: (playerObj: any, item: any) => any;
+      static transferIfNeeded: (playerObj: any, item: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static transferItems: (items: any, playerInv: any, player: any, dontWalk: any) => any;
+      static transferItems: (items: any, playerInv: any, player: any, dontWalk: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static unequipItem: (item: any, player: any) => any;
+      static unequipItem: (item: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static wearItem: (item: any, player: any) => any;
+      static wearItem: (item: any, player: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.ISInventoryPaneContextMenu {}

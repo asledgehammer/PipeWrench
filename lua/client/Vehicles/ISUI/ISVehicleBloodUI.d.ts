@@ -21,15 +21,15 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(playerObj: any);
 
-      addLabel: ((_x: any, _y: any, _title: any, _font: any, _bLeft: any) => any) | any;
+      addLabel(_x: any, _y: any, _title: any, _font: any, _bLeft: any, ...__args: never[]): any;
 
-      addSlider: ((_x: any, _y: any, _w: any, _h: any, _func: any) => any) | any;
+      addSlider(_x: any, _y: any, _w: any, _h: any, _func: any, ...__args: never[]): any;
 
-      callbackBlood: ((value: any, slider: any) => any) | any;
+      callbackBlood(value: any, slider: any, ...__args: never[]): any;
 
-      clearVehicle: (() => any) | any;
+      clearVehicle(...__args: never[]): any;
 
-      setVehicle: ((vehicle: any) => any) | any;
+      setVehicle(vehicle: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.Vehicles.ISUI.ISVehicleBloodUI {}

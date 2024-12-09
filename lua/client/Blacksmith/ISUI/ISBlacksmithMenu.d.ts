@@ -6,7 +6,7 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static addToolTip: (option: any, name: any, texture: any) => any;
+      static addToolTip: (option: any, name: any, texture: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static checkMetalWeldingFurnitures: (
@@ -21,67 +21,68 @@ declare module '@asledgehammer/pipewrench' {
         toolTip: any,
         metalBar: any,
         wire: any,
+        ...__args: never[]
       ) => any;
 
       /** @noSelf */
-      static checkWire: (wireUses: any, player: any, toolTip: any) => any;
+      static checkWire: (wireUses: any, player: any, toolTip: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doBuildMenu: (player: any, context: any, worldobjects: any, test: any) => any;
+      static doBuildMenu: (player: any, context: any, worldobjects: any, test: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getBlowTorchWithMostUses: (container: any) => any;
+      static getBlowTorchWithMostUses: (container: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getFenceSprite: (player: any) => any;
+      static getFenceSprite: (player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getFirstBlowTorchWithUses: (container: any, uses: any) => any;
+      static getFirstBlowTorchWithUses: (container: any, uses: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getMaterialCount: (playerObj: any, type: any) => any;
+      static getMaterialCount: (playerObj: any, type: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getMaterialUses: (playerObj: any, type: any) => any;
+      static getMaterialUses: (playerObj: any, type: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getMetal: (player: any, amount: any) => any;
+      static getMetal: (player: any, amount: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onAddFuel: (worldobjects: any, furnace: any, coal: any, player: any) => any;
+      static onAddFuel: (worldobjects: any, furnace: any, coal: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onAddLogs: (worldobjects: any, metalDrum: any, player: any) => any;
+      static onAddLogs: (worldobjects: any, metalDrum: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onAnvil: (worldobjects: any, player: any) => any;
+      static onAnvil: (worldobjects: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onBigLocker: (worldobjects: any, player: any, torchUse: any) => any;
+      static onBigLocker: (worldobjects: any, player: any, torchUse: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onBigMetalFence: (worldobjects: any, player: any, torchUse: any) => any;
+      static onBigMetalFence: (worldobjects: any, player: any, torchUse: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onBigMetalFenceGate: (worldobjects: any, player: any, torchUse: any) => any;
+      static onBigMetalFenceGate: (worldobjects: any, player: any, torchUse: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onBigWiredFence: (worldobjects: any, player: any, torchUse: any) => any;
+      static onBigWiredFence: (worldobjects: any, player: any, torchUse: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onDoubleMetalDoor: (worldobjects: any, player: any, torchUse: any) => any;
+      static onDoubleMetalDoor: (worldobjects: any, player: any, torchUse: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onDoublePoleDoor: (worldobjects: any, player: any, torchUse: any) => any;
+      static onDoublePoleDoor: (worldobjects: any, player: any, torchUse: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onEmptyDrum: (worldobjects: any, metalDrum: any, playerObj: any) => any;
+      static onEmptyDrum: (worldobjects: any, metalDrum: any, playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onFenceGate: (worldobjects: any, player: any, torchUse: any) => any;
+      static onFenceGate: (worldobjects: any, player: any, torchUse: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onInfo: (worldobjects: any, furnace: any, player: any) => any;
+      static onInfo: (worldobjects: any, furnace: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static onLightDrumFromKindle: (
@@ -90,6 +91,7 @@ declare module '@asledgehammer/pipewrench' {
         percedWood: any,
         stickOrBranch: any,
         metalDrum: any,
+        ...__args: never[]
       ) => any;
 
       /** @noSelf */
@@ -100,10 +102,18 @@ declare module '@asledgehammer/pipewrench' {
         lighter: any,
         metalDrum: any,
         fuelAmt: any,
+        ...__args: never[]
       ) => any;
 
       /** @noSelf */
-      static onLightDrumFromPetrol: (worldobjects: any, player: any, lighter: any, petrol: any, metalDrum: any) => any;
+      static onLightDrumFromPetrol: (
+        worldobjects: any,
+        player: any,
+        lighter: any,
+        petrol: any,
+        metalDrum: any,
+        ...__args: never[]
+      ) => any;
 
       /** @noSelf */
       static onLightFromKindle: (
@@ -112,6 +122,7 @@ declare module '@asledgehammer/pipewrench' {
         percedWood: any,
         stickOrBranch: any,
         furnace: any,
+        ...__args: never[]
       ) => any;
 
       /** @noSelf */
@@ -122,67 +133,75 @@ declare module '@asledgehammer/pipewrench' {
         lighter: any,
         furnace: any,
         fuelAmt: any,
+        ...__args: never[]
       ) => any;
 
       /** @noSelf */
-      static onLightFromPetrol: (worldobjects: any, player: any, lighter: any, petrol: any, furnace: any) => any;
+      static onLightFromPetrol: (
+        worldobjects: any,
+        player: any,
+        lighter: any,
+        petrol: any,
+        furnace: any,
+        ...__args: never[]
+      ) => any;
 
       /** @noSelf */
-      static onMetalCounter: (worldobjects: any, player: any, torchUse: any) => any;
+      static onMetalCounter: (worldobjects: any, player: any, torchUse: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onMetalCounterCorner: (worldobjects: any, player: any, torchUse: any) => any;
+      static onMetalCounterCorner: (worldobjects: any, player: any, torchUse: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onMetalCrate: (worldobjects: any, player: any, torchUse: any) => any;
+      static onMetalCrate: (worldobjects: any, player: any, torchUse: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onMetalDrum: (worldobjects: any, player: any, sprite: any) => any;
+      static onMetalDrum: (worldobjects: any, player: any, sprite: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onMetalFence: (worldobjects: any, player: any, torchUse: any, sprite: any) => any;
+      static onMetalFence: (worldobjects: any, player: any, torchUse: any, sprite: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onMetalFloor: (worldobjects: any, player: any, torchUse: any) => any;
+      static onMetalFloor: (worldobjects: any, player: any, torchUse: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onMetalPoleFence: (worldobjects: any, player: any, torchUse: any) => any;
+      static onMetalPoleFence: (worldobjects: any, player: any, torchUse: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onMetalShelves: (worldobjects: any, player: any, torchUse: any) => any;
+      static onMetalShelves: (worldobjects: any, player: any, torchUse: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onMetalWallFrame: (worldobjects: any, player: any, torchUse: any) => any;
+      static onMetalWallFrame: (worldobjects: any, player: any, torchUse: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onPutOutFireDrum: (worldobjects: any, metalDrum: any, player: any) => any;
+      static onPutOutFireDrum: (worldobjects: any, metalDrum: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onRemoveCharcoal: (worldobjects: any, metalDrum: any, player: any) => any;
+      static onRemoveCharcoal: (worldobjects: any, metalDrum: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onRemoveDrum: (worldobjects: any, metalDrum: any, player: any) => any;
+      static onRemoveDrum: (worldobjects: any, metalDrum: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onRemoveLogs: (worldobjects: any, metalDrum: any, player: any) => any;
+      static onRemoveLogs: (worldobjects: any, metalDrum: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onSmallLocker: (worldobjects: any, player: any, torchUse: any) => any;
+      static onSmallLocker: (worldobjects: any, player: any, torchUse: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onStoneFurnace: (worldobjects: any, player: any) => any;
+      static onStoneFurnace: (worldobjects: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onStopFire: (worldobjects: any, furnace: any, player: any) => any;
+      static onStopFire: (worldobjects: any, furnace: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onUseBellows: (worldobjects: any, furnace: any, bellows: any, player: any) => any;
+      static onUseBellows: (worldobjects: any, furnace: any, bellows: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onWiredFence: (worldobjects: any, player: any, torchUse: any) => any;
+      static onWiredFence: (worldobjects: any, player: any, torchUse: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static weldingRodUses: (torchUses: any) => any;
+      static weldingRodUses: (torchUses: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.Blacksmith.ISUI.ISBlacksmithMenu {}

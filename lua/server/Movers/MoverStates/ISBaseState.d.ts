@@ -9,13 +9,13 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor();
 
-      during: (() => any) | any;
+      during(...__args: never[]): any;
 
-      enter: (() => any) | any;
+      enter(...__args: never[]): any;
 
-      exit: (() => any) | any;
+      exit(...__args: never[]): any;
 
-      isFinished: (() => any) | any;
+      isFinished(...__args: never[]): any;
     }
   }
   export namespace lua.server.Movers.MoverStates.ISBaseState {}

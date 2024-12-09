@@ -15,9 +15,9 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(playerNum: any);
 
-      renderControllerDisconnected: (() => any) | any;
+      renderControllerDisconnected(...__args: never[]): any;
 
-      useKeyboardMouse: (() => any) | any;
+      useKeyboardMouse(...__args: never[]): any;
     }
   }
   export namespace lua.client.JoyPad.ISJoypadDisconnectedUI {}

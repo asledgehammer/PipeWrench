@@ -17,19 +17,19 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, sink: any, soapList: any);
 
-      removeAllMakeup: (() => any) | any;
+      removeAllMakeup(...__args: never[]): any;
 
-      removeMakeup: ((item: any) => any) | any;
+      removeMakeup(item: any, ...__args: never[]): any;
 
-      stopSound: (() => any) | any;
+      stopSound(...__args: never[]): any;
 
-      washPart: ((visual: any, part: any) => any) | any;
-
-      /** @noSelf */
-      static GetRequiredSoap: (character: any) => any;
+      washPart(visual: any, part: any, ...__args: never[]): any;
 
       /** @noSelf */
-      static GetRequiredWater: (character: any) => any;
+      static GetRequiredSoap: (character: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static GetRequiredWater: (character: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.TimedActions.ISWashYourself {}

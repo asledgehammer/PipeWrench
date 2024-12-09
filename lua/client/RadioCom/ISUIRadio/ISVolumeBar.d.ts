@@ -47,41 +47,41 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, onVolumeChange: any, onVolumeChangeTarget: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      getHoverVolume: (() => any) | any;
+      getHoverVolume(...__args: never[]): any;
 
-      getVolume: (() => any) | any;
+      getVolume(...__args: never[]): any;
 
-      getVolumeFromXPosition: ((_x: any) => any) | any;
+      getVolumeFromXPosition(_x: any, ...__args: never[]): any;
 
-      getVolumeSteps: (() => any) | any;
+      getVolumeSteps(...__args: never[]): any;
 
-      isDragging: (() => any) | any;
+      isDragging(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      resetHoverVolume: (() => any) | any;
+      resetHoverVolume(...__args: never[]): any;
 
-      setEnableControls: ((b: any) => any) | any;
+      setEnableControls(b: any, ...__args: never[]): any;
 
-      setHeight: ((h: any) => any) | any;
+      setHeight(h: any, ...__args: never[]): any;
 
-      setHoverVolume: ((_vol: any) => any) | any;
+      setHoverVolume(_vol: any, ...__args: never[]): any;
 
-      setVolume: ((vol: any) => any) | any;
+      setVolume(vol: any, ...__args: never[]): any;
 
-      setVolumeJoypad: ((_up: any) => any) | any;
+      setVolumeJoypad(_up: any, ...__args: never[]): any;
 
-      setVolumeSteps: ((vol: any) => any) | any;
+      setVolumeSteps(vol: any, ...__args: never[]): any;
 
-      setWidth: ((w: any) => any) | any;
+      setWidth(w: any, ...__args: never[]): any;
 
-      setX: ((x: any) => any) | any;
+      setX(x: any, ...__args: never[]): any;
 
-      setY: ((y: any) => any) | any;
+      setY(y: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
     }
   }
   export namespace lua.client.RadioCom.ISUIRadio.ISVolumeBar {}

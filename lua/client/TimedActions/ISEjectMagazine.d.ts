@@ -13,11 +13,11 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, gun: any);
 
-      animEvent: ((event: any, parameter: any) => any) | any;
+      animEvent(event: any, parameter: any, ...__args: never[]): any;
 
-      initVars: (() => any) | any;
+      initVars(...__args: never[]): any;
 
-      unloadAmmo: (() => any) | any;
+      unloadAmmo(...__args: never[]): any;
     }
   }
   export namespace lua.client.TimedActions.ISEjectMagazine {}

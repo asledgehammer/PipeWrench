@@ -21,11 +21,11 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, magazine: any, ammoCount: any);
 
-      animEvent: ((event: any, parameter: any) => any) | any;
+      animEvent(event: any, parameter: any, ...__args: never[]): any;
 
-      initVars: (() => any) | any;
+      initVars(...__args: never[]): any;
 
-      isLoadFinished: (() => any) | any;
+      isLoadFinished(...__args: never[]): any;
     }
   }
   export namespace lua.client.TimedActions.ISLoadBulletsInMagazine {}

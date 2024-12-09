@@ -85,71 +85,71 @@ declare module '@asledgehammer/pipewrench' {
 
       zJoypad: any;
 
-      deactivate: (() => any) | any;
+      deactivate(...__args: never[]): any;
 
-      getAPrompt: (() => any) | any;
+      getAPrompt(...__args: never[]): any;
 
-      getBPrompt: (() => any) | any;
+      getBPrompt(...__args: never[]): any;
 
-      getLBPrompt: (() => any) | any;
+      getLBPrompt(...__args: never[]): any;
 
-      getRBPrompt: (() => any) | any;
+      getRBPrompt(...__args: never[]): any;
 
-      getSprite: (() => any) | any;
+      getSprite(...__args: never[]): any;
 
-      getYPrompt: (() => any) | any;
+      getYPrompt(...__args: never[]): any;
 
-      haveMaterial: ((square: any) => any) | any;
+      haveMaterial(square: any, ...__args: never[]): any;
 
-      init: (() => any) | any;
+      init(...__args: never[]): any;
 
-      isValid: ((square: any) => any) | any;
+      isValid(square: any, ...__args: never[]): any;
 
-      onJoypadDirDown: ((joypadData: any) => any) | any;
+      onJoypadDirDown(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDirLeft: ((joypadData: any) => any) | any;
+      onJoypadDirLeft(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDirRight: ((joypadData: any) => any) | any;
+      onJoypadDirRight(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDirUp: ((joypadData: any) => any) | any;
+      onJoypadDirUp(joypadData: any, ...__args: never[]): any;
 
-      onJoypadPressButton: ((joypadIndex: any, joypadData: any, button: any) => any) | any;
+      onJoypadPressButton(joypadIndex: any, joypadData: any, button: any, ...__args: never[]): any;
 
-      onTimedActionStart: ((action: any) => any) | any;
+      onTimedActionStart(action: any, ...__args: never[]): any;
 
-      onTimedActionStop: ((action: any) => any) | any;
+      onTimedActionStop(action: any, ...__args: never[]): any;
 
-      reinit: (() => any) | any;
+      reinit(...__args: never[]): any;
 
-      render: ((x: any, y: any, z: any, square: any) => any) | any;
+      render(x: any, y: any, z: any, square: any, ...__args: never[]): any;
 
-      reset: (() => any) | any;
+      reset(...__args: never[]): any;
 
-      rotateKey: ((key: any) => any) | any;
+      rotateKey(key: any, ...__args: never[]): any;
 
-      rotateMouse: ((x: any, y: any) => any) | any;
+      rotateMouse(x: any, y: any, ...__args: never[]): any;
 
-      setCanPassThrough: ((passThrough: any) => any) | any;
+      setCanPassThrough(passThrough: any, ...__args: never[]): any;
 
-      setDragNilAfterPlace: ((nilAfter: any) => any) | any;
+      setDragNilAfterPlace(nilAfter: any, ...__args: never[]): any;
 
-      setEastSprite: ((sprite: any) => any) | any;
+      setEastSprite(sprite: any, ...__args: never[]): any;
 
-      setNorthSprite: ((sprite: any) => any) | any;
+      setNorthSprite(sprite: any, ...__args: never[]): any;
 
-      setSouthSprite: ((sprite: any) => any) | any;
+      setSouthSprite(sprite: any, ...__args: never[]): any;
 
-      setSprite: ((sprite: any) => any) | any;
+      setSprite(sprite: any, ...__args: never[]): any;
 
-      tryBuild: ((x: any, y: any, z: any) => any) | any;
+      tryBuild(x: any, y: any, z: any, ...__args: never[]): any;
 
-      walkTo: ((x: any, y: any, z: any) => any) | any;
-
-      /** @noSelf */
-      static onDestroy: (thump: any, player: any) => any;
+      walkTo(x: any, y: any, z: any, ...__args: never[]): any;
 
       /** @noSelf */
-      static removeFromGround: (square: any) => any;
+      static onDestroy: (thump: any, player: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static removeFromGround: (square: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.server.BuildingObjects.ISBuildingObject {}

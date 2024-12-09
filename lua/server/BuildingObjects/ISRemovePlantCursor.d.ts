@@ -23,9 +23,9 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, removeType: any);
 
-      create: ((x: any, y: any, z: any, north: any, sprite: any) => any) | any;
+      create(x: any, y: any, z: any, north: any, sprite: any, ...__args: never[]): any;
 
-      getRemovableObject: ((square: any) => any) | any;
+      getRemovableObject(square: any, ...__args: never[]): any;
     }
   }
   export namespace lua.server.BuildingObjects.ISRemovePlantCursor {}

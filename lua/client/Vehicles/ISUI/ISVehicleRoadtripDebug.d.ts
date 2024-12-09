@@ -37,13 +37,13 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, character: any);
 
-      startRoadtrip: (() => any) | any;
+      startRoadtrip(...__args: never[]): any;
 
-      stopRoadtrip: (() => any) | any;
+      stopRoadtrip(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
-      updateXY: ((x: any, y: any, startingListY: any) => any) | any;
+      updateXY(x: any, y: any, startingListY: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.Vehicles.ISUI.ISVehicleRoadtripDebug {}

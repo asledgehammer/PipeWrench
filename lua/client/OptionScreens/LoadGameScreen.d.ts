@@ -45,63 +45,63 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      checkChallenge: ((item: any) => any) | any;
+      checkChallenge(item: any, ...__args: never[]): any;
 
-      checkMapsAvailable: ((item: any) => any) | any;
+      checkMapsAvailable(item: any, ...__args: never[]): any;
 
-      clickPlay: (() => any) | any;
+      clickPlay(...__args: never[]): any;
 
-      create: (() => any) | any;
+      create(...__args: never[]): any;
 
-      disableBtn: (() => any) | any;
+      disableBtn(...__args: never[]): any;
 
-      drawMap: ((y: any, item: any, alt: any) => any) | any;
+      drawMap(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      getChallenge: ((item: any) => any) | any;
+      getChallenge(item: any, ...__args: never[]): any;
 
-      hasChoices: (() => any) | any;
+      hasChoices(...__args: never[]): any;
 
-      hideConfigPanel: (() => any) | any;
+      hideConfigPanel(...__args: never[]): any;
 
-      instantiate: (() => any) | any;
+      instantiate(...__args: never[]): any;
 
-      onDblClickWorld: (() => any) | any;
+      onDblClickWorld(...__args: never[]): any;
 
-      onDeleteModalClick: ((button: any) => any) | any;
+      onDeleteModalClick(button: any, ...__args: never[]): any;
 
-      onErrorLoadingClick: ((button: any) => any) | any;
+      onErrorLoadingClick(button: any, ...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onGainJoypadFocus_child: ((joypadData: any) => any) | any;
+      onGainJoypadFocus_child(joypadData: any, ...__args: never[]): any;
 
-      onJoypadBeforeDeactivate: ((joypadData: any) => any) | any;
+      onJoypadBeforeDeactivate(joypadData: any, ...__args: never[]): any;
 
-      onJoypadBeforeDeactivate_child: ((joypadData: any) => any) | any;
+      onJoypadBeforeDeactivate_child(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDirLeft_child: ((joypadData: any) => any) | any;
+      onJoypadDirLeft_child(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDirRight_child: ((joypadData: any) => any) | any;
+      onJoypadDirRight_child(joypadData: any, ...__args: never[]): any;
 
-      onLoseJoypadFocus_child: ((joypadData: any) => any) | any;
+      onLoseJoypadFocus_child(joypadData: any, ...__args: never[]): any;
 
-      onOptionMouseDown: ((button: any, x: any, y: any) => any) | any;
+      onOptionMouseDown(button: any, x: any, y: any, ...__args: never[]): any;
 
-      onResolutionChange: ((oldw: any, oldh: any, neww: any, newh: any) => any) | any;
+      onResolutionChange(oldw: any, oldh: any, neww: any, newh: any, ...__args: never[]): any;
 
-      onSavefileModsChanged: ((folder: any) => any) | any;
+      onSavefileModsChanged(folder: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setSaveGamesList: (() => any) | any;
+      setSaveGamesList(...__args: never[]): any;
 
-      showConfigPanel: (() => any) | any;
-
-      /** @noSelf */
-      static onClickWorld: () => any;
+      showConfigPanel(...__args: never[]): any;
 
       /** @noSelf */
-      static OnKeyPressed: (key: any) => any;
+      static onClickWorld: (...__args: never[]) => any;
+
+      /** @noSelf */
+      static OnKeyPressed: (key: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.OptionScreens.LoadGameScreen {

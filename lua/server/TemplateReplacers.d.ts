@@ -6,10 +6,10 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static init: () => any;
+      static init: (...__args: never[]) => any;
 
       /** @noSelf */
-      static runExample: () => any;
+      static runExample: (...__args: never[]) => any;
     }
   }
   export namespace lua.server.TemplateReplacers {}

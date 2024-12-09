@@ -46,19 +46,19 @@ declare module '@asledgehammer/pipewrench' {
         param2: any,
       );
 
-      destroy: (() => any) | any;
+      destroy(...__args: never[]): any;
 
-      onClick: ((button: any) => any) | any;
+      onClick(button: any, ...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onVersionSelected: (() => any) | any;
+      onVersionSelected(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
-      updateButtons: (() => any) | any;
+      updateButtons(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISNewsUpdate {}

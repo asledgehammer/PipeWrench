@@ -23,25 +23,25 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(width: any, height: any, player: any);
 
-      destroy: (() => any) | any;
+      destroy(...__args: never[]): any;
 
-      drawDatas: ((y: any, item: any, alt: any) => any) | any;
+      drawDatas(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      onClick: ((button: any) => any) | any;
+      onClick(button: any, ...__args: never[]): any;
 
-      onSelectContainerType: (() => any) | any;
+      onSelectContainerType(...__args: never[]): any;
 
-      onTextChange: (() => any) | any;
+      onTextChange(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      titleBarHeight: (() => any) | any;
+      titleBarHeight(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
-      updateButtons: (() => any) | any;
+      updateButtons(...__args: never[]): any;
 
-      updateContent: (() => any) | any;
+      updateContent(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.AdminPanel.LootZed.ISLootZed {}

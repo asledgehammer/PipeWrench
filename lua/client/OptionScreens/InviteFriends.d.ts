@@ -33,40 +33,40 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      clickBack: (() => any) | any;
+      clickBack(...__args: never[]): any;
 
-      clickInvite: (() => any) | any;
+      clickInvite(...__args: never[]): any;
 
-      create: (() => any) | any;
+      create(...__args: never[]): any;
 
-      doDrawItem: ((y: any, item: any, alt: any) => any) | any;
+      doDrawItem(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      fillList: (() => any) | any;
+      fillList(...__args: never[]): any;
 
-      filter: (() => any) | any;
+      filter(...__args: never[]): any;
 
-      hasChoices: (() => any) | any;
+      hasChoices(...__args: never[]): any;
 
-      loadInvitedFile: (() => any) | any;
+      loadInvitedFile(...__args: never[]): any;
 
-      onDblClick: (() => any) | any;
+      onDblClick(...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onMouseDown_ListBox: ((x: any, y: any) => any) | any;
+      onMouseDown_ListBox(x: any, y: any, ...__args: never[]): any;
 
-      onOptionMouseDown: ((button: any, x: any, y: any) => any) | any;
+      onOptionMouseDown(button: any, x: any, y: any, ...__args: never[]): any;
 
-      refreshList: (() => any) | any;
+      refreshList(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      saveInvitedFile: (() => any) | any;
+      saveInvitedFile(...__args: never[]): any;
 
-      toggleAllowDeny: ((index: any) => any) | any;
+      toggleAllowDeny(index: any, ...__args: never[]): any;
 
       /** @noSelf */
-      static OnSteamFriendStatusChanged: (steamID: any) => any;
+      static OnSteamFriendStatusChanged: (steamID: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.OptionScreens.InviteFriends {}

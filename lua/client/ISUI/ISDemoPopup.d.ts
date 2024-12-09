@@ -15,21 +15,21 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onJoypadDown: ((button: any, joypadData: any) => any) | any;
+      onJoypadDown(button: any, joypadData: any, ...__args: never[]): any;
 
-      onMouseDownOutside: ((x: any, y: any) => any) | any;
+      onMouseDownOutside(x: any, y: any, ...__args: never[]): any;
 
-      removeSelf: (() => any) | any;
+      removeSelf(...__args: never[]): any;
 
-      setInfo: ((item: any) => any) | any;
-
-      /** @noSelf */
-      static getInstance: () => any;
+      setInfo(item: any, ...__args: never[]): any;
 
       /** @noSelf */
-      static OnJoypadActivate: (id: any) => any;
+      static getInstance: (...__args: never[]) => any;
+
+      /** @noSelf */
+      static OnJoypadActivate: (id: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.ISDemoPopup {

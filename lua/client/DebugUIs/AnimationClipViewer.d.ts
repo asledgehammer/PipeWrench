@@ -31,39 +31,39 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      createToolbar: (() => any) | any;
+      createToolbar(...__args: never[]): any;
 
-      getCurrentFrame: (() => any) | any;
+      getCurrentFrame(...__args: never[]): any;
 
-      getCurrentTime: (() => any) | any;
+      getCurrentTime(...__args: never[]): any;
 
-      getDuration: (() => any) | any;
+      getDuration(...__args: never[]): any;
 
-      getFPS: (() => any) | any;
+      getFPS(...__args: never[]): any;
 
-      getLastFrame: (() => any) | any;
+      getLastFrame(...__args: never[]): any;
 
-      onExit: ((button: any, x: any, y: any) => any) | any;
+      onExit(button: any, x: any, y: any, ...__args: never[]): any;
 
-      onKeyPress: ((key: any) => any) | any;
+      onKeyPress(key: any, ...__args: never[]): any;
 
-      onOptions: (() => any) | any;
+      onOptions(...__args: never[]): any;
 
-      onResolutionChange: ((oldw: any, oldh: any, neww: any, newh: any) => any) | any;
+      onResolutionChange(oldw: any, oldh: any, neww: any, newh: any, ...__args: never[]): any;
 
-      onSpeedScaleChanged: ((speed: any, slider: any) => any) | any;
+      onSpeedScaleChanged(speed: any, slider: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      resetView: (() => any) | any;
+      resetView(...__args: never[]): any;
 
-      setClipList: (() => any) | any;
+      setClipList(...__args: never[]): any;
 
-      showUI: (() => any) | any;
+      showUI(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
     }
 
     /** @customConstructor AnimationClipViewer_ListBox:new */
@@ -75,7 +75,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      indexOf: ((text: any) => any) | any;
+      indexOf(text: any, ...__args: never[]): any;
     }
 
     /** @customConstructor AnimationClipViewer_OptionsPanel:new */
@@ -87,11 +87,11 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onMouseDownOutside: ((x: any, y: any) => any) | any;
+      onMouseDownOutside(x: any, y: any, ...__args: never[]): any;
 
-      onTickBox: ((index: any, selected: any) => any) | any;
+      onTickBox(index: any, selected: any, ...__args: never[]): any;
     }
 
     /** @customConstructor AnimationClipViewer_Scene:new */
@@ -105,9 +105,9 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      onRightMouseDown: ((x: any, y: any) => any) | any;
+      onRightMouseDown(x: any, y: any, ...__args: never[]): any;
 
-      prerenderEditor: (() => any) | any;
+      prerenderEditor(...__args: never[]): any;
     }
 
     /** @customConstructor AnimationClipViewer_Timeline:new */
@@ -123,7 +123,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
     }
   }
   export namespace lua.client.DebugUIs.AnimationClipViewer {

@@ -67,17 +67,17 @@ declare module '@asledgehammer/pipewrench' {
         param4: any,
       );
 
-      addTime: ((seconds: any) => any) | any;
+      addTime(seconds: any, ...__args: never[]): any;
 
-      destroy: (() => any) | any;
+      destroy(...__args: never[]): any;
 
-      getTime: (() => any) | any;
+      getTime(...__args: never[]): any;
 
-      onButton: ((button: any) => any) | any;
+      onButton(button: any, ...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISBombTimerDialog {}

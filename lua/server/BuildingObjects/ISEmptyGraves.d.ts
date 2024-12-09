@@ -29,30 +29,30 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(sprite1: any, sprite2: any, northSprite1: any, northSprite2: any, shovel: any);
 
-      create: ((x: any, y: any, z: any, north: any, sprite: any) => any) | any;
+      create(x: any, y: any, z: any, north: any, sprite: any, ...__args: never[]): any;
 
-      getHealth: (() => any) | any;
+      getHealth(...__args: never[]): any;
 
-      getSquare2: ((square: any, north: any) => any) | any;
+      getSquare2(square: any, north: any, ...__args: never[]): any;
 
-      getSquare2Pos: ((square: any, north: any) => any) | any;
+      getSquare2Pos(square: any, north: any, ...__args: never[]): any;
 
-      setInfo: ((square: any, north: any, sprite: any, cell: any, spriteType: any) => any) | any;
-
-      /** @noSelf */
-      static canDigHere: (worldObjects: any) => any;
+      setInfo(square: any, north: any, sprite: any, cell: any, spriteType: any, ...__args: never[]): any;
 
       /** @noSelf */
-      static getMaxCorpses: (grave: any) => any;
+      static canDigHere: (worldObjects: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static isGraveFilledIn: (grave: any) => any;
+      static getMaxCorpses: (grave: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static isGraveFullOfCorpses: (grave: any) => any;
+      static isGraveFilledIn: (grave: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static shovelledFloorCanDig: (square: any) => any;
+      static isGraveFullOfCorpses: (grave: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static shovelledFloorCanDig: (square: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.server.BuildingObjects.ISEmptyGraves {}

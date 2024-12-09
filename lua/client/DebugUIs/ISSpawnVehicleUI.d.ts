@@ -29,21 +29,21 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, player: any);
 
-      destroy: (() => any) | any;
+      destroy(...__args: never[]): any;
 
-      getVehicle: (() => any) | any;
+      getVehicle(...__args: never[]): any;
 
-      onClick: ((button: any) => any) | any;
+      onClick(button: any, ...__args: never[]): any;
 
-      onSelectOption: (() => any) | any;
+      onSelectOption(...__args: never[]): any;
 
-      populateList: (() => any) | any;
+      populateList(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      titleBarHeight: (() => any) | any;
+      titleBarHeight(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
     }
   }
   export namespace lua.client.DebugUIs.ISSpawnVehicleUI {}

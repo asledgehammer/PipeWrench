@@ -60,21 +60,21 @@ declare module '@asledgehammer/pipewrench' {
         _new_: any,
       );
 
-      decrement: ((number: any) => any) | any;
+      decrement(number: any, ...__args: never[]): any;
 
-      destroy: (() => any) | any;
+      destroy(...__args: never[]): any;
 
-      getCode: (() => any) | any;
+      getCode(...__args: never[]): any;
 
-      increment: ((number: any) => any) | any;
+      increment(number: any, ...__args: never[]): any;
 
-      onClick: ((button: any) => any) | any;
+      onClick(button: any, ...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISDigitalCode {}

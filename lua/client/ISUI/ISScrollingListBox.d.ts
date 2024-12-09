@@ -55,62 +55,62 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      addColumn: ((columnName: any, size: any) => any) | any;
+      addColumn(columnName: any, size: any, ...__args: never[]): any;
 
-      addItem: ((name: any, item: any) => any) | any;
+      addItem(name: any, item: any, ...__args: never[]): any;
 
-      clear: (() => any) | any;
+      clear(...__args: never[]): any;
 
-      doDrawItem: ((y: any, item: any, alt: any) => any) | any;
+      doDrawItem(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      insertItem: ((index: any, name: any, item: any) => any) | any;
+      insertItem(index: any, name: any, item: any, ...__args: never[]): any;
 
-      instantiate: (() => any) | any;
+      instantiate(...__args: never[]): any;
 
-      isMouseOverScrollBar: (() => any) | any;
+      isMouseOverScrollBar(...__args: never[]): any;
 
-      nextVisibleItem: ((index: any) => any) | any;
+      nextVisibleItem(index: any, ...__args: never[]): any;
 
-      onLoseJoypadFocus: ((joypadData: any) => any) | any;
+      onLoseJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onMouseDoubleClick: ((x: any, y: any) => any) | any;
+      onMouseDoubleClick(x: any, y: any, ...__args: never[]): any;
 
-      onMouseWheel: ((del: any) => any) | any;
+      onMouseWheel(del: any, ...__args: never[]): any;
 
-      prevVisibleIndex: ((index: any) => any) | any;
+      prevVisibleIndex(index: any, ...__args: never[]): any;
 
-      removeFirst: (() => any) | any;
+      removeFirst(...__args: never[]): any;
 
-      removeItem: ((itemText: any) => any) | any;
+      removeItem(itemText: any, ...__args: never[]): any;
 
-      removeItemByIndex: ((itemIndex: any) => any) | any;
+      removeItemByIndex(itemIndex: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      rowAt: ((x: any, y: any) => any) | any;
+      rowAt(x: any, y: any, ...__args: never[]): any;
 
-      scrollToSelected: (() => any) | any;
+      scrollToSelected(...__args: never[]): any;
 
-      setFont: ((font: any, padY: any) => any) | any;
+      setFont(font: any, padY: any, ...__args: never[]): any;
 
-      setJoypadFocused: ((focused: any, joypadData: any) => any) | any;
+      setJoypadFocused(focused: any, joypadData: any, ...__args: never[]): any;
 
-      setOnMouseDoubleClick: ((target: any, onmousedblclick: any) => any) | any;
+      setOnMouseDoubleClick(target: any, onmousedblclick: any, ...__args: never[]): any;
 
-      setOnMouseDownFunction: ((target: any, onmousedown: any) => any) | any;
+      setOnMouseDownFunction(target: any, onmousedown: any, ...__args: never[]): any;
 
-      size: (() => any) | any;
+      size(...__args: never[]): any;
 
-      sort: (() => any) | any;
+      sort(...__args: never[]): any;
 
-      topOfItem: ((index: any) => any) | any;
+      topOfItem(index: any, ...__args: never[]): any;
 
-      updateSmoothScrolling: (() => any) | any;
+      updateSmoothScrolling(...__args: never[]): any;
 
-      updateTooltip: (() => any) | any;
+      updateTooltip(...__args: never[]): any;
 
       /** @noSelf */
-      static sortByName: (a: any, b: any) => any;
+      static sortByName: (a: any, b: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.ISScrollingListBox {}

@@ -27,21 +27,21 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, HSBFactor: any);
 
-      onMouseDownOutside: ((x: any, y: any) => any) | any;
+      onMouseDownOutside(x: any, y: any, ...__args: never[]): any;
 
-      picked: ((hide: any) => any) | any;
+      picked(hide: any, ...__args: never[]): any;
 
-      picked2: ((hide: any) => any) | any;
+      picked2(hide: any, ...__args: never[]): any;
 
-      removeSelf: (() => any) | any;
+      removeSelf(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setColors: ((colors: any, columns: any, rows: any) => any) | any;
+      setColors(colors: any, columns: any, rows: any, ...__args: never[]): any;
 
-      setInitialColor: ((initial: any) => any) | any;
+      setInitialColor(initial: any, ...__args: never[]): any;
 
-      setPickedFunc: ((func: any, arg1: any, arg2: any, arg3: any, arg4: any) => any) | any;
+      setPickedFunc(func: any, arg1: any, arg2: any, arg3: any, arg4: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISColorPicker {}

@@ -44,35 +44,35 @@ declare module '@asledgehammer/pipewrench' {
         arg4: any,
       );
 
-      addItem: ((text: any, data: any) => any) | any;
+      addItem(text: any, data: any, ...__args: never[]): any;
 
-      clear: (() => any) | any;
+      clear(...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      getItemByIndex: ((index: any) => any) | any;
+      getItemByIndex(index: any, ...__args: never[]): any;
 
-      getListBox: (() => any) | any;
+      getListBox(...__args: never[]): any;
 
-      getSelectedIndex: (() => any) | any;
+      getSelectedIndex(...__args: never[]): any;
 
-      getSelectedItem: (() => any) | any;
+      getSelectedItem(...__args: never[]): any;
 
-      insertItem: ((index: any, text: any, data: any) => any) | any;
+      insertItem(index: any, text: any, data: any, ...__args: never[]): any;
 
-      onAddItem: (() => any) | any;
+      onAddItem(...__args: never[]): any;
 
-      onMoveDown: (() => any) | any;
+      onMoveDown(...__args: never[]): any;
 
-      onMoveUp: (() => any) | any;
+      onMoveUp(...__args: never[]): any;
 
-      onRemoveItem: (() => any) | any;
+      onRemoveItem(...__args: never[]): any;
 
-      removeItemByIndex: ((index: any) => any) | any;
+      removeItemByIndex(index: any, ...__args: never[]): any;
 
-      setSelectedIndex: ((index: any) => any) | any;
+      setSelectedIndex(index: any, ...__args: never[]): any;
 
-      size: (() => any) | any;
+      size(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.Maps.Editor.WorldMapEditorListBox {}

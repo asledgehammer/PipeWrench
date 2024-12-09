@@ -31,13 +31,13 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, player: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onClick: ((_button: any) => any) | any;
+      onClick(_button: any, ...__args: never[]): any;
 
-      onSliderChange: ((_newval: any, _slider: any) => any) | any;
+      onSliderChange(_newval: any, _slider: any, ...__args: never[]): any;
 
-      onTicked: ((_index: any, _selected: any, _arg1: any, _arg2: any, _tickbox: any) => any) | any;
+      onTicked(_index: any, _selected: any, _arg1: any, _arg2: any, _tickbox: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.AdminPanel.ISAdmPanelWeather {}

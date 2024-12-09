@@ -77,39 +77,39 @@ declare module '@asledgehammer/pipewrench' {
         param4: any,
       );
 
-      destroy: (() => any) | any;
+      destroy(...__args: never[]): any;
 
-      enableColorPicker: (() => any) | any;
+      enableColorPicker(...__args: never[]): any;
 
-      getMaxLines: (() => any) | any;
+      getMaxLines(...__args: never[]): any;
 
-      onClick: ((button: any) => any) | any;
+      onClick(button: any, ...__args: never[]): any;
 
-      onColorPicker: ((button: any) => any) | any;
+      onColorPicker(button: any, ...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onPickedColor: ((color: any, mouseUp: any) => any) | any;
+      onPickedColor(color: any, mouseUp: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setMaxLines: ((max: any) => any) | any;
+      setMaxLines(max: any, ...__args: never[]): any;
 
-      setMultipleLine: ((multiple: any) => any) | any;
+      setMultipleLine(multiple: any, ...__args: never[]): any;
 
-      setNumberOfLines: ((numLines: any) => any) | any;
+      setNumberOfLines(numLines: any, ...__args: never[]): any;
 
-      setOnlyNumbers: ((onlyNumbers: any) => any) | any;
+      setOnlyNumbers(onlyNumbers: any, ...__args: never[]): any;
 
-      setValidateFunction: ((target: any, func: any, arg1: any, arg2: any) => any) | any;
+      setValidateFunction(target: any, func: any, arg1: any, arg2: any, ...__args: never[]): any;
 
-      setValidateTooltipText: ((text: any) => any) | any;
+      setValidateTooltipText(text: any, ...__args: never[]): any;
 
-      showErrorMessage: ((show: any, errorMsg: any) => any) | any;
+      showErrorMessage(show: any, errorMsg: any, ...__args: never[]): any;
 
-      titleBarHeight: (() => any) | any;
+      titleBarHeight(...__args: never[]): any;
 
-      updateButtons: (() => any) | any;
+      updateButtons(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISTextBox {}

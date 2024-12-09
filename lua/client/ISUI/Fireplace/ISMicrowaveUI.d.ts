@@ -21,19 +21,19 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, oven: any, character: any);
 
-      addKnobValues: (() => any) | any;
+      addKnobValues(...__args: never[]): any;
 
-      ChangeKnob: (() => any) | any;
+      ChangeKnob(...__args: never[]): any;
 
-      onClick: ((button: any) => any) | any;
+      onClick(button: any, ...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
-      updateButtons: (() => any) | any;
+      updateButtons(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.Fireplace.ISMicrowaveUI {}

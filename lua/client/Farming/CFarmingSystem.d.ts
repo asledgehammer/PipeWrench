@@ -11,11 +11,11 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor();
 
-      changePlayer: ((player: any) => any) | any;
+      changePlayer(player: any, ...__args: never[]): any;
 
-      gainXp: ((player: any, luaObject: any) => any) | any;
+      gainXp(player: any, luaObject: any, ...__args: never[]): any;
 
-      getXp: ((character: any) => any) | any;
+      getXp(character: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.Farming.CFarmingSystem {}

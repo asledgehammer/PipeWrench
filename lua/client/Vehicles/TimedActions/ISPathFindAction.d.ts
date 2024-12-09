@@ -15,19 +15,19 @@ declare module '@asledgehammer/pipewrench' {
 
       onFailFunc: any;
 
-      pathToLocationF: ((character: any, targetX: any, targetY: any, targetZ: any) => any) | any;
+      pathToLocationF(character: any, targetX: any, targetY: any, targetZ: any, ...__args: never[]): any;
 
-      pathToNearest: ((character: any, locations: any) => any) | any;
+      pathToNearest(character: any, locations: any, ...__args: never[]): any;
 
-      pathToVehicleAdjacent: ((character: any, vehicle: any) => any) | any;
+      pathToVehicleAdjacent(character: any, vehicle: any, ...__args: never[]): any;
 
-      pathToVehicleArea: ((character: any, vehicle: any, areaId: any) => any) | any;
+      pathToVehicleArea(character: any, vehicle: any, areaId: any, ...__args: never[]): any;
 
-      pathToVehicleSeat: ((character: any, vehicle: any, seat: any) => any) | any;
+      pathToVehicleSeat(character: any, vehicle: any, seat: any, ...__args: never[]): any;
 
-      setOnComplete: ((func: any, arg1: any, arg2: any, arg3: any, arg4: any) => any) | any;
+      setOnComplete(func: any, arg1: any, arg2: any, arg3: any, arg4: any, ...__args: never[]): any;
 
-      setOnFail: ((func: any, arg1: any, arg2: any, arg3: any, arg4: any) => any) | any;
+      setOnFail(func: any, arg1: any, arg2: any, arg3: any, arg4: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.Vehicles.TimedActions.ISPathFindAction {}

@@ -13,7 +13,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      toggleOnOff: (() => any) | any;
+      toggleOnOff(...__args: never[]): any;
     }
   }
   export namespace lua.client.RadioCom.RadioWindowModules.RWMGridPower {}

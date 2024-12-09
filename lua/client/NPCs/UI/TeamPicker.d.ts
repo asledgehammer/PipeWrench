@@ -38,13 +38,13 @@ declare module '@asledgehammer/pipewrench' {
         leaderInstance: any,
       );
 
-      changeOption: ((option: any) => any) | any;
+      changeOption(option: any, ...__args: never[]): any;
 
-      create: (() => any) | any;
+      create(...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onOptionMouseDown: ((button: any, x: any, y: any) => any) | any;
+      onOptionMouseDown(button: any, x: any, y: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.NPCs.UI.TeamPicker {}

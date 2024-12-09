@@ -27,17 +27,17 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, player: any);
 
-      drawList: ((y: any, item: any, alt: any) => any) | any;
+      drawList(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      onClick: ((button: any) => any) | any;
+      onClick(button: any, ...__args: never[]): any;
 
-      onRemoveZone: ((button: any) => any) | any;
+      onRemoveZone(button: any, ...__args: never[]): any;
 
-      populateList: (() => any) | any;
+      populateList(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      updateButtons: (() => any) | any;
+      updateButtons(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.AdminPanel.ISPvpZonePanel {}

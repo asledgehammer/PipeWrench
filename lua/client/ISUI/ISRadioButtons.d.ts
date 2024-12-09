@@ -70,51 +70,51 @@ declare module '@asledgehammer/pipewrench' {
         arg4: any,
       );
 
-      addOption: ((text: any, data: any, texture: any, enabled: any) => any) | any;
+      addOption(text: any, data: any, texture: any, enabled: any, ...__args: never[]): any;
 
-      checkIndex: ((index: any) => any) | any;
+      checkIndex(index: any, ...__args: never[]): any;
 
-      clear: (() => any) | any;
+      clear(...__args: never[]): any;
 
-      forceClick: (() => any) | any;
+      forceClick(...__args: never[]): any;
 
-      getNumOptions: (() => any) | any;
+      getNumOptions(...__args: never[]): any;
 
-      getOptionData: ((index: any) => any) | any;
+      getOptionData(index: any, ...__args: never[]): any;
 
-      getOptionText: ((index: any) => any) | any;
+      getOptionText(index: any, ...__args: never[]): any;
 
-      getOptionTexture: ((index: any) => any) | any;
+      getOptionTexture(index: any, ...__args: never[]): any;
 
-      getTextColor: ((index: any, color: any) => any) | any;
+      getTextColor(index: any, color: any, ...__args: never[]): any;
 
-      isEmpty: (() => any) | any;
+      isEmpty(...__args: never[]): any;
 
-      isOptionEnabled: ((index: any) => any) | any;
+      isOptionEnabled(index: any, ...__args: never[]): any;
 
-      isSelected: ((index: any) => any) | any;
+      isSelected(index: any, ...__args: never[]): any;
 
-      onJoypadDirDown: ((joypadData: any) => any) | any;
+      onJoypadDirDown(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDirUp: ((joypadData: any) => any) | any;
+      onJoypadDirUp(joypadData: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setFont: ((font: any) => any) | any;
+      setFont(font: any, ...__args: never[]): any;
 
-      setJoypadFocused: ((focused: any) => any) | any;
+      setJoypadFocused(focused: any, ...__args: never[]): any;
 
-      setOptionData: ((index: any, data: any) => any) | any;
+      setOptionData(index: any, data: any, ...__args: never[]): any;
 
-      setOptionEnabled: ((index: any, enabled: any) => any) | any;
+      setOptionEnabled(index: any, enabled: any, ...__args: never[]): any;
 
-      setOptionText: ((index: any, text: any) => any) | any;
+      setOptionText(index: any, text: any, ...__args: never[]): any;
 
-      setOptionTexture: ((index: any, texture: any) => any) | any;
+      setOptionTexture(index: any, texture: any, ...__args: never[]): any;
 
-      setSelected: ((index: any) => any) | any;
+      setSelected(index: any, ...__args: never[]): any;
 
-      setWidthToFit: (() => any) | any;
+      setWidthToFit(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISRadioButtons {}

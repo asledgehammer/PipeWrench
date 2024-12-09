@@ -51,42 +51,42 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, safehouse: any, player: any);
 
-      drawPlayers: ((y: any, item: any, alt: any) => any) | any;
+      drawPlayers(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      hasPrivilegedAccessLevel: (() => any) | any;
+      hasPrivilegedAccessLevel(...__args: never[]): any;
 
-      isOwner: (() => any) | any;
+      isOwner(...__args: never[]): any;
 
-      onAnswerSafehouseInvite: ((button: any) => any) | any;
+      onAnswerSafehouseInvite(button: any, ...__args: never[]): any;
 
-      onChangeTitle: ((button: any) => any) | any;
+      onChangeTitle(button: any, ...__args: never[]): any;
 
-      onClick: ((button: any) => any) | any;
+      onClick(button: any, ...__args: never[]): any;
 
-      onClickRespawn: ((clickedOption: any, enabled: any) => any) | any;
+      onClickRespawn(clickedOption: any, enabled: any, ...__args: never[]): any;
 
-      onQuitSafehouse: ((button: any) => any) | any;
+      onQuitSafehouse(button: any, ...__args: never[]): any;
 
-      onReleaseSafehouse: ((button: any, player: any) => any) | any;
+      onReleaseSafehouse(button: any, player: any, ...__args: never[]): any;
 
-      onRemovePlayerFromSafehouse: ((button: any, player: any) => any) | any;
+      onRemovePlayerFromSafehouse(button: any, player: any, ...__args: never[]): any;
 
-      populateList: (() => any) | any;
+      populateList(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      updateButtons: (() => any) | any;
+      updateButtons(...__args: never[]): any;
 
-      updatePlayerList: (() => any) | any;
-
-      /** @noSelf */
-      static AcceptedSafehouseInvite: (safehouseName: any, host: any) => any;
+      updatePlayerList(...__args: never[]): any;
 
       /** @noSelf */
-      static OnSafehousesChanged: () => any;
+      static AcceptedSafehouseInvite: (safehouseName: any, host: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static ReceiveSafehouseInvite: (safehouse: any, host: any) => any;
+      static OnSafehousesChanged: (...__args: never[]) => any;
+
+      /** @noSelf */
+      static ReceiveSafehouseInvite: (safehouse: any, host: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.UserPanel.ISSafehouseUI {}

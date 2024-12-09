@@ -23,29 +23,29 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor();
 
-      addLabel: ((_x: any, _y: any, _title: any, _font: any, _bLeft: any) => any) | any;
+      addLabel(_x: any, _y: any, _title: any, _font: any, _bLeft: any, ...__args: never[]): any;
 
-      addSlider: ((_x: any, _y: any, _w: any, _h: any, _func: any) => any) | any;
+      addSlider(_x: any, _y: any, _w: any, _h: any, _func: any, ...__args: never[]): any;
 
-      callbackAngleX: ((value: any, slider: any) => any) | any;
+      callbackAngleX(value: any, slider: any, ...__args: never[]): any;
 
-      callbackAngleY: ((value: any, slider: any) => any) | any;
+      callbackAngleY(value: any, slider: any, ...__args: never[]): any;
 
-      callbackAngleZ: ((value: any, slider: any) => any) | any;
+      callbackAngleZ(value: any, slider: any, ...__args: never[]): any;
 
-      callbackHeight: ((value: any, slider: any) => any) | any;
+      callbackHeight(value: any, slider: any, ...__args: never[]): any;
 
-      clearVehicle: (() => any) | any;
+      clearVehicle(...__args: never[]): any;
 
-      onButtonBottom: (() => any) | any;
+      onButtonBottom(...__args: never[]): any;
 
-      onButtonDrop: (() => any) | any;
+      onButtonDrop(...__args: never[]): any;
 
-      onButtonLeft: (() => any) | any;
+      onButtonLeft(...__args: never[]): any;
 
-      onButtonLevel: (() => any) | any;
+      onButtonLevel(...__args: never[]): any;
 
-      setVehicle: ((vehicle: any) => any) | any;
+      setVehicle(vehicle: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.Vehicles.ISUI.ISVehicleAngles {}

@@ -35,26 +35,26 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, tile: any, rod: any, lure: any, fishingUI: any);
 
-      animEvent: ((event: any, parameter: any) => any) | any;
+      animEvent(event: any, parameter: any, ...__args: never[]): any;
 
-      attractFish: (() => any) | any;
+      attractFish(...__args: never[]): any;
 
-      brokeLine: ((fish: any) => any) | any;
+      brokeLine(fish: any, ...__args: never[]): any;
 
-      brokeThisLine: (() => any) | any;
+      brokeThisLine(...__args: never[]): any;
 
-      createFish: ((fishType: any, fish: any) => any) | any;
+      createFish(fishType: any, fish: any, ...__args: never[]): any;
 
-      getFish: (() => any) | any;
+      getFish(...__args: never[]): any;
 
-      getFishByLure: (() => any) | any;
+      getFishByLure(...__args: never[]): any;
 
-      getFishingZone: (() => any) | any;
+      getFishingZone(...__args: never[]): any;
 
-      getUsedInventory: ((item: any) => any) | any;
+      getUsedInventory(item: any, ...__args: never[]): any;
 
       /** @noSelf */
-      static getFishingZoneFixed: (x: any, y: any, z: any) => any;
+      static getFishingZoneFixed: (x: any, y: any, z: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.Fishing.TimedActions.ISFishingAction {}

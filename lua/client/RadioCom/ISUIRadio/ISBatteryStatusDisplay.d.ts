@@ -25,15 +25,15 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, addAlertLed: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      round: ((num: any, idp: any) => any) | any;
+      round(num: any, idp: any, ...__args: never[]): any;
 
-      setPower: ((_power: any) => any) | any;
+      setPower(_power: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
     }
   }
   export namespace lua.client.RadioCom.ISUIRadio.ISBatteryStatusDisplay {}

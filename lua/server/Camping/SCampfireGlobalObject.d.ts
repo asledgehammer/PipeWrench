@@ -29,59 +29,59 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(luaSystem: any, globalObject: any);
 
-      addContainer: (() => any) | any;
+      addContainer(...__args: never[]): any;
 
-      addFireObject: (() => any) | any;
+      addFireObject(...__args: never[]): any;
 
-      addFuel: ((fuelAmt: any) => any) | any;
+      addFuel(fuelAmt: any, ...__args: never[]): any;
 
-      addObject: (() => any) | any;
+      addObject(...__args: never[]): any;
 
-      changeFireLvl: (() => any) | any;
+      changeFireLvl(...__args: never[]): any;
 
-      fireRadius: (() => any) | any;
+      fireRadius(...__args: never[]): any;
 
-      fireRatio: (() => any) | any;
+      fireRatio(...__args: never[]): any;
 
-      fromModData: ((modData: any) => any) | any;
+      fromModData(modData: any, ...__args: never[]): any;
 
-      fromObject: ((isoObject: any) => any) | any;
+      fromObject(isoObject: any, ...__args: never[]): any;
 
-      getContainer: (() => any) | any;
+      getContainer(...__args: never[]): any;
 
-      getFireObject: (() => any) | any;
+      getFireObject(...__args: never[]): any;
 
-      getObject: (() => any) | any;
+      getObject(...__args: never[]): any;
 
-      lightFire: (() => any) | any;
+      lightFire(...__args: never[]): any;
 
-      processContainerItems: (() => any) | any;
+      processContainerItems(...__args: never[]): any;
 
-      putOut: (() => any) | any;
+      putOut(...__args: never[]): any;
 
-      removeFireObject: (() => any) | any;
+      removeFireObject(...__args: never[]): any;
 
-      removeObject: (() => any) | any;
+      removeObject(...__args: never[]): any;
 
-      saveData: (() => any) | any;
+      saveData(...__args: never[]): any;
 
-      setFuel: ((fuelAmt: any) => any) | any;
+      setFuel(fuelAmt: any, ...__args: never[]): any;
 
-      setSpriteName: ((spriteName: any) => any) | any;
+      setSpriteName(spriteName: any, ...__args: never[]): any;
 
-      syncContainer: (() => any) | any;
+      syncContainer(...__args: never[]): any;
 
-      syncIsoFire: (() => any) | any;
+      syncIsoFire(...__args: never[]): any;
 
-      syncIsoObject: (() => any) | any;
+      syncIsoObject(...__args: never[]): any;
 
-      syncModData: (() => any) | any;
+      syncModData(...__args: never[]): any;
 
-      syncSprite: (() => any) | any;
+      syncSprite(...__args: never[]): any;
 
-      toModData: ((modData: any) => any) | any;
+      toModData(modData: any, ...__args: never[]): any;
 
-      transferItemsToGround: (() => any) | any;
+      transferItemsToGround(...__args: never[]): any;
     }
   }
   export namespace lua.server.Camping.SCampfireGlobalObject {}

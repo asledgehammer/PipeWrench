@@ -6,52 +6,52 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static doMenu: (player: any, context: any, worldobjects: any, test: any) => any;
+      static doMenu: (player: any, context: any, worldobjects: any, test: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onDebugBlood: (playerObj: any, vehicle: any) => any;
+      static onDebugBlood: (playerObj: any, vehicle: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onDebugColor: (playerObj: any, vehicle: any) => any;
+      static onDebugColor: (playerObj: any, vehicle: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnDoorLock: (worldobjects: any, door: any) => any;
+      static OnDoorLock: (worldobjects: any, door: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnGetDoorKey: (worldobjects: any, door: any, player: any) => any;
+      static OnGetDoorKey: (worldobjects: any, door: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onHordeManager: (square: any, player: any) => any;
+      static onHordeManager: (square: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onMakeNoise: (square: any, playerObj: any, radius: any, volume: any) => any;
+      static onMakeNoise: (square: any, playerObj: any, radius: any, volume: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnRemoveAllZombiesClient: (zombie: any) => any;
+      static OnRemoveAllZombiesClient: (zombie: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onRemoveItemTool: (playerObj: any) => any;
+      static onRemoveItemTool: (playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnSetDoorKeyID: (worldobjects: any, door: any) => any;
+      static OnSetDoorKeyID: (worldobjects: any, door: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnSetDoorKeyIDBuilding: (worldobjects: any, door: any) => any;
+      static OnSetDoorKeyIDBuilding: (worldobjects: any, door: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnSetDoorKeyIDRandom: (worldobjects: any, door: any) => any;
+      static OnSetDoorKeyIDRandom: (worldobjects: any, door: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onSpawnVehicle: (playerObj: any) => any;
+      static onSpawnVehicle: (playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onTeleportUI: (playerObj: any) => any;
+      static onTeleportUI: (playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onTriggerThunderUI: (playerObj: any) => any;
+      static onTriggerThunderUI: (playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static setForceLockDoor: (worldobjects: any, door: any, player: any) => any;
+      static setForceLockDoor: (worldobjects: any, door: any, player: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.DebugUIs.AdminContextMenu {}

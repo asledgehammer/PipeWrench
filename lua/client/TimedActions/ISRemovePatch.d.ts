@@ -16,7 +16,7 @@ declare module '@asledgehammer/pipewrench' {
       constructor(character: any, clothing: any, part: any, needle: any);
 
       /** @noSelf */
-      static chanceToGetPatchBack: (character: any) => any;
+      static chanceToGetPatchBack: (character: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.TimedActions.ISRemovePatch {}

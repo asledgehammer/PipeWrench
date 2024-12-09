@@ -19,15 +19,15 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(luaSystem: any, globalObject: any);
 
-      fromModData: ((modData: any) => any) | any;
+      fromModData(modData: any, ...__args: never[]): any;
 
-      getIsoObject: (() => any) | any;
+      getIsoObject(...__args: never[]): any;
 
-      getSquare: (() => any) | any;
+      getSquare(...__args: never[]): any;
 
-      noise: ((message: any) => any) | any;
+      noise(message: any, ...__args: never[]): any;
 
-      updateFromIsoObject: (() => any) | any;
+      updateFromIsoObject(...__args: never[]): any;
     }
   }
   export namespace lua.client.Map.CGlobalObject {}

@@ -32,7 +32,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      onRightMouseUp: ((x: any, y: any) => any) | any;
+      onRightMouseUp(x: any, y: any, ...__args: never[]): any;
     }
 
     /** @customConstructor ISHealthBodyPartPanel:new */
@@ -42,7 +42,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, x: any, y: any);
 
-      cbSetSelected: ((bp: any) => any) | any;
+      cbSetSelected(bp: any, ...__args: never[]): any;
     }
 
     /** @customConstructor ISHealthPanel:new */
@@ -94,63 +94,70 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(player: any, x: any, y: any, width: any, height: any);
 
-      checkContainerItems: ((container: any, childContainers: any, handlers: any) => any) | any;
+      checkContainerItems(container: any, childContainers: any, handlers: any, ...__args: never[]): any;
 
-      checkItems: ((handlers: any) => any) | any;
+      checkItems(handlers: any, ...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      doBodyPartContextMenu: ((bodyPart: any, x: any, y: any) => any) | any;
+      doBodyPartContextMenu(bodyPart: any, x: any, y: any, ...__args: never[]): any;
 
-      drawText: ((str: any, x: any, y: any, r: any, g: any, b: any, a: any, font: any) => any) | any;
+      drawText(str: any, x: any, y: any, r: any, g: any, b: any, a: any, font: any, ...__args: never[]): any;
 
-      dropItemsOnBodyPart: ((bodyPart: any, items: any) => any) | any;
+      dropItemsOnBodyPart(bodyPart: any, items: any, ...__args: never[]): any;
 
-      getDamagedParts: (() => any) | any;
+      getDamagedParts(...__args: never[]): any;
 
-      getDoctor: (() => any) | any;
+      getDoctor(...__args: never[]): any;
 
-      getPatient: (() => any) | any;
+      getPatient(...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onLoseJoypadFocus: ((joypadData: any) => any) | any;
+      onLoseJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setBodyPartAction: ((bodyPart: any, args: any) => any) | any;
+      setBodyPartAction(bodyPart: any, args: any, ...__args: never[]): any;
 
-      setOtherPlayer: ((playerObj: any) => any) | any;
+      setOtherPlayer(playerObj: any, ...__args: never[]): any;
 
-      toPlayerInventory: ((playerObj: any, item: any, bodyPart: any) => any) | any;
+      toPlayerInventory(playerObj: any, item: any, bodyPart: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
-      updateBodyPartList: (() => any) | any;
-
-      /** @noSelf */
-      static DidPatientMove: (doctor: any, patient: any, patientX: any, patientY: any) => any;
+      updateBodyPartList(...__args: never[]): any;
 
       /** @noSelf */
-      static getBandageType: (bodyPart: any) => any;
+      static DidPatientMove: (doctor: any, patient: any, patientX: any, patientY: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onCheat: (bodyPart: any, action: any, player: any, otherPlayer: any) => any;
+      static getBandageType: (bodyPart: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onCheatCurrentPlayer: (bodyPart: any, action: any, player: any) => any;
+      static onCheat: (bodyPart: any, action: any, player: any, otherPlayer: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onCheatHealthCommand: (module: any, command: any, args: any) => any;
+      static onCheatCurrentPlayer: (bodyPart: any, action: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onCheatItem: (itemType: any, playerObj: any) => any;
+      static onCheatHealthCommand: (module: any, command: any, args: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onCheatOtherPlayer: (bodyPart: any, action: any, player: any, otherPlayer: any) => any;
+      static onCheatItem: (itemType: any, playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static setBodyPartActionForPlayer: (playerObj: any, bodyPart: any, action: any, jobType: any, args: any) => any;
+      static onCheatOtherPlayer: (bodyPart: any, action: any, player: any, otherPlayer: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static setBodyPartActionForPlayer: (
+        playerObj: any,
+        bodyPart: any,
+        action: any,
+        jobType: any,
+        args: any,
+        ...__args: never[]
+      ) => any;
     }
 
     /** @customConstructor ISNewHealthPanel:new */
@@ -162,7 +169,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, character: any);
 
-      onClick: ((button: any) => any) | any;
+      onClick(button: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.XpSystem.ISUI.ISHealthPanel {}

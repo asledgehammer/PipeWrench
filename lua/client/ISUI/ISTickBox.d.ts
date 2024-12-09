@@ -75,35 +75,35 @@ declare module '@asledgehammer/pipewrench' {
         changeOptionArg2: any,
       );
 
-      addOption: ((name: any, data: any, texture: any) => any) | any;
+      addOption(name: any, data: any, texture: any, ...__args: never[]): any;
 
-      clearOptions: (() => any) | any;
+      clearOptions(...__args: never[]): any;
 
-      disableOption: ((name: any, disable: any) => any) | any;
+      disableOption(name: any, disable: any, ...__args: never[]): any;
 
-      forceClick: (() => any) | any;
+      forceClick(...__args: never[]): any;
 
-      getOptionCount: (() => any) | any;
+      getOptionCount(...__args: never[]): any;
 
-      getOptionData: ((index: any) => any) | any;
+      getOptionData(index: any, ...__args: never[]): any;
 
-      getTextColor: ((index: any, color: any) => any) | any;
+      getTextColor(index: any, color: any, ...__args: never[]): any;
 
-      isSelected: ((index: any) => any) | any;
+      isSelected(index: any, ...__args: never[]): any;
 
-      onJoypadDirDown: ((joypadData: any) => any) | any;
+      onJoypadDirDown(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDirUp: ((joypadData: any) => any) | any;
+      onJoypadDirUp(joypadData: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setFont: ((font: any) => any) | any;
+      setFont(font: any, ...__args: never[]): any;
 
-      setJoypadFocused: ((focused: any) => any) | any;
+      setJoypadFocused(focused: any, ...__args: never[]): any;
 
-      setSelected: ((index: any, selected: any) => any) | any;
+      setSelected(index: any, selected: any, ...__args: never[]): any;
 
-      setWidthToFit: (() => any) | any;
+      setWidthToFit(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISTickBox {}

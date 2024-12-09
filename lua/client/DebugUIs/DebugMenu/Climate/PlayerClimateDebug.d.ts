@@ -55,45 +55,51 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, player: any);
 
-      addLabel: ((_curY: any, _labelID: any, _title: any) => any) | any;
+      addLabel(_curY: any, _labelID: any, _title: any, ...__args: never[]): any;
 
-      addLabelValue:
-        | ((_curY: any, _type: any, _labelID: any, _title: any, _defaultVal: any, _col: any, _extension: any) => any)
-        | any;
+      addLabelValue(
+        _curY: any,
+        _type: any,
+        _labelID: any,
+        _title: any,
+        _defaultVal: any,
+        _col: any,
+        _extension: any,
+        ...__args: never[]
+      ): any;
 
-      clear: (() => any) | any;
+      clear(...__args: never[]): any;
 
-      getTitleLabel: ((_labelID: any) => any) | any;
+      getTitleLabel(_labelID: any, ...__args: never[]): any;
 
-      getValueLabel: ((_labelID: any) => any) | any;
+      getValueLabel(_labelID: any, ...__args: never[]): any;
 
-      initVariables: (() => any) | any;
+      initVariables(...__args: never[]): any;
 
-      onResize: (() => any) | any;
+      onResize(...__args: never[]): any;
 
-      registerVariable:
-        | ((
-            _variable: any,
-            _title: any,
-            _isValue: any,
-            _javaInstance: any,
-            _defaultVal: any,
-            _color: any,
-            _postfix: any,
-          ) => any)
-        | any;
+      registerVariable(
+        _variable: any,
+        _title: any,
+        _isValue: any,
+        _javaInstance: any,
+        _defaultVal: any,
+        _color: any,
+        _postfix: any,
+        ...__args: never[]
+      ): any;
 
-      stayOnSplitScreen: (() => any) | any;
+      stayOnSplitScreen(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
-      updateOLD: (() => any) | any;
+      updateOLD(...__args: never[]): any;
 
       /** @noSelf */
-      static onClimateTickDebug: () => any;
+      static onClimateTickDebug: (...__args: never[]) => any;
 
       /** @noSelf */
-      static OnOpenPanel: () => any;
+      static OnOpenPanel: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.DebugUIs.DebugMenu.Climate.PlayerClimateDebug {}

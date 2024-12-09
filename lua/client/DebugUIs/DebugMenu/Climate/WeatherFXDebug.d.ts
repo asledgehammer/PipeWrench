@@ -117,58 +117,58 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, player: any);
 
-      clear: (() => any) | any;
+      clear(...__args: never[]): any;
 
-      onAmbientChange: ((_slider: any, _value: any) => any) | any;
+      onAmbientChange(_slider: any, _value: any, ...__args: never[]): any;
 
-      onButtonClimate: ((_btn: any) => any) | any;
+      onButtonClimate(_btn: any, ...__args: never[]): any;
 
-      onButtonDebugBounds: ((_btn: any) => any) | any;
+      onButtonDebugBounds(_btn: any, ...__args: never[]): any;
 
-      onButtonDoBlizzard: ((_btn: any) => any) | any;
+      onButtonDoBlizzard(_btn: any, ...__args: never[]): any;
 
-      onButtonDoStorm: ((_btn: any) => any) | any;
+      onButtonDoStorm(_btn: any, ...__args: never[]): any;
 
-      onButtonDoTropical: ((_btn: any) => any) | any;
+      onButtonDoTropical(_btn: any, ...__args: never[]): any;
 
-      onButtonGodMode: ((_btn: any) => any) | any;
+      onButtonGodMode(_btn: any, ...__args: never[]): any;
 
-      onButtonLaunchFlare: ((_btn: any) => any) | any;
+      onButtonLaunchFlare(_btn: any, ...__args: never[]): any;
 
-      onButtonNightVision: ((_btn: any) => any) | any;
+      onButtonNightVision(_btn: any, ...__args: never[]): any;
 
-      onCloudIntensityChange: ((_slider: any, _value: any) => any) | any;
+      onCloudIntensityChange(_slider: any, _value: any, ...__args: never[]): any;
 
-      onDayLightStrengthChange: ((_slider: any, _value: any) => any) | any;
+      onDayLightStrengthChange(_slider: any, _value: any, ...__args: never[]): any;
 
-      onDesaturationChange: ((_slider: any, _value: any) => any) | any;
+      onDesaturationChange(_slider: any, _value: any, ...__args: never[]): any;
 
-      onFogIntensityChange: ((_slider: any, _value: any) => any) | any;
+      onFogIntensityChange(_slider: any, _value: any, ...__args: never[]): any;
 
-      onLightColorChange: ((_slider: any, _value: any) => any) | any;
+      onLightColorChange(_slider: any, _value: any, ...__args: never[]): any;
 
-      onLightIntensityChange: ((_slider: any, _value: any) => any) | any;
+      onLightIntensityChange(_slider: any, _value: any, ...__args: never[]): any;
 
-      onNightStrengthChange: ((_slider: any, _value: any) => any) | any;
+      onNightStrengthChange(_slider: any, _value: any, ...__args: never[]): any;
 
-      onPrecipitationChange: ((_slider: any, _value: any) => any) | any;
+      onPrecipitationChange(_slider: any, _value: any, ...__args: never[]): any;
 
-      onResize: (() => any) | any;
+      onResize(...__args: never[]): any;
 
-      onViewDistanceChange: ((_slider: any, _value: any) => any) | any;
+      onViewDistanceChange(_slider: any, _value: any, ...__args: never[]): any;
 
-      onWindAngleChange: ((_slider: any, _value: any) => any) | any;
+      onWindAngleChange(_slider: any, _value: any, ...__args: never[]): any;
 
-      onWindIntensityChange: ((_slider: any, _value: any) => any) | any;
+      onWindIntensityChange(_slider: any, _value: any, ...__args: never[]): any;
 
-      stayOnSplitScreen: (() => any) | any;
+      stayOnSplitScreen(...__args: never[]): any;
 
-      tickBoxIsSnowChange: ((_optionIndex: any, _value: any) => any) | any;
+      tickBoxIsSnowChange(_optionIndex: any, _value: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
       /** @noSelf */
-      static OnOpenPanel: () => any;
+      static OnOpenPanel: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.DebugUIs.DebugMenu.Climate.WeatherFXDebug {}

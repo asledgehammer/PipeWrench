@@ -13,15 +13,15 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      clear: (() => any) | any;
+      clear(...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      debug: ((text: any) => any) | any;
+      debug(text: any, ...__args: never[]): any;
 
-      doDrawItem: ((y: any, item: any, alt: any) => any) | any;
+      doDrawItem(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      error: ((text: any) => any) | any;
+      error(text: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.DebugUIs.LuaDebugOutput {}

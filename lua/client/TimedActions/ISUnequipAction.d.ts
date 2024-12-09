@@ -19,7 +19,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, item: any, time: any);
 
-      animEvent: ((event: any, parameter: any) => any) | any;
+      animEvent(event: any, parameter: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.TimedActions.ISUnequipAction {}

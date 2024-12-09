@@ -13,11 +13,11 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor();
 
-      getRackTime: (() => any) | any;
+      getRackTime(...__args: never[]): any;
 
-      rackingPerform: ((char: any, square: any, weapon: any) => any) | any;
+      rackingPerform(char: any, square: any, weapon: any, ...__args: never[]): any;
 
-      rackingStart: ((char: any, square: any, weapon: any) => any) | any;
+      rackingStart(char: any, square: any, weapon: any, ...__args: never[]): any;
     }
   }
   export namespace lua.shared.Reloading.ISReloadableMagazine {}

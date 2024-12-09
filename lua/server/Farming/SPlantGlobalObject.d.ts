@@ -47,64 +47,64 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(luaSystem: any, globalObject: any);
 
-      addIcon: (() => any) | any;
+      addIcon(...__args: never[]): any;
 
-      addObject: (() => any) | any;
+      addObject(...__args: never[]): any;
 
-      aphid: (() => any) | any;
+      aphid(...__args: never[]): any;
 
-      canHarvest: (() => any) | any;
+      canHarvest(...__args: never[]): any;
 
-      checkStat: (() => any) | any;
+      checkStat(...__args: never[]): any;
 
-      cureFlies: ((fliesCureSource: any, uses: any) => any) | any;
+      cureFlies(fliesCureSource: any, uses: any, ...__args: never[]): any;
 
-      cureMildew: ((mildewCureSource: any, uses: any) => any) | any;
+      cureMildew(mildewCureSource: any, uses: any, ...__args: never[]): any;
 
-      deadPlant: (() => any) | any;
+      deadPlant(...__args: never[]): any;
 
-      destroyThis: (() => any) | any;
+      destroyThis(...__args: never[]): any;
 
-      dryThis: (() => any) | any;
+      dryThis(...__args: never[]): any;
 
-      fertilize: ((fertilizer: any) => any) | any;
+      fertilize(fertilizer: any, ...__args: never[]): any;
 
-      flies: (() => any) | any;
+      flies(...__args: never[]): any;
 
-      fromModData: ((modData: any) => any) | any;
+      fromModData(modData: any, ...__args: never[]): any;
 
-      fromObject: ((object: any) => any) | any;
+      fromObject(object: any, ...__args: never[]): any;
 
-      getObject: (() => any) | any;
+      getObject(...__args: never[]): any;
 
-      isAlive: (() => any) | any;
+      isAlive(...__args: never[]): any;
 
-      loadGridSquare: (() => any) | any;
+      loadGridSquare(...__args: never[]): any;
 
-      lowerWaterLvl: ((plant: any) => any) | any;
+      lowerWaterLvl(plant: any, ...__args: never[]): any;
 
-      mildew: (() => any) | any;
+      mildew(...__args: never[]): any;
 
-      removeObject: (() => any) | any;
+      removeObject(...__args: never[]): any;
 
-      rottenThis: (() => any) | any;
+      rottenThis(...__args: never[]): any;
 
-      saveData: (() => any) | any;
+      saveData(...__args: never[]): any;
 
-      seed: ((typeOfSeed: any) => any) | any;
+      seed(typeOfSeed: any, ...__args: never[]): any;
 
-      setObjectName: ((objectName: any) => any) | any;
+      setObjectName(objectName: any, ...__args: never[]): any;
 
-      setSpriteName: ((spriteName: any) => any) | any;
+      setSpriteName(spriteName: any, ...__args: never[]): any;
 
-      toModData: ((modData: any) => any) | any;
+      toModData(modData: any, ...__args: never[]): any;
 
-      upDisease: (() => any) | any;
+      upDisease(...__args: never[]): any;
 
-      water: ((waterSource: any, uses: any) => any) | any;
+      water(waterSource: any, uses: any, ...__args: never[]): any;
 
       /** @noSelf */
-      static initModData: (modData: any) => any;
+      static initModData: (modData: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.server.Farming.SPlantGlobalObject {}

@@ -39,48 +39,48 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(luaSystem: any, globalObject: any);
 
-      addBait: ((bait: any, age: any, baitAmountMulti: any, player: any) => any) | any;
+      addBait(bait: any, age: any, baitAmountMulti: any, player: any, ...__args: never[]): any;
 
-      addSound: ((square: any) => any) | any;
+      addSound(square: any, ...__args: never[]): any;
 
-      calculTrap: ((square: any) => any) | any;
+      calculTrap(square: any, ...__args: never[]): any;
 
-      checkBaitFreshness: (() => any) | any;
+      checkBaitFreshness(...__args: never[]): any;
 
-      checkDestroy: ((square: any) => any) | any;
+      checkDestroy(square: any, ...__args: never[]): any;
 
-      checkForAnimal: ((square: any) => any) | any;
+      checkForAnimal(square: any, ...__args: never[]): any;
 
-      checkForWallExploit: ((square: any) => any) | any;
+      checkForWallExploit(square: any, ...__args: never[]): any;
 
-      checkTime: ((animal: any) => any) | any;
+      checkTime(animal: any, ...__args: never[]): any;
 
-      fromModData: ((modData: any) => any) | any;
+      fromModData(modData: any, ...__args: never[]): any;
 
-      isMetalTrap: (() => any) | any;
+      isMetalTrap(...__args: never[]): any;
 
-      isWoodenTrap: (() => any) | any;
+      isWoodenTrap(...__args: never[]): any;
 
-      reinitModData: ((square: any) => any) | any;
+      reinitModData(square: any, ...__args: never[]): any;
 
-      removeAnimal: ((character: any) => any) | any;
+      removeAnimal(character: any, ...__args: never[]): any;
 
-      removeBait: ((character: any) => any) | any;
+      removeBait(character: any, ...__args: never[]): any;
 
-      sendSound: ((soundName: any, square: any) => any) | any;
+      sendSound(soundName: any, square: any, ...__args: never[]): any;
 
-      setAnimal: ((animal: any) => any) | any;
+      setAnimal(animal: any, ...__args: never[]): any;
 
-      setDef: (() => any) | any;
+      setDef(...__args: never[]): any;
 
-      spawnDestroyItems: ((square: any, object: any) => any) | any;
+      spawnDestroyItems(square: any, object: any, ...__args: never[]): any;
 
-      toModData: ((modData: any) => any) | any;
+      toModData(modData: any, ...__args: never[]): any;
 
-      toObject: ((object: any, transmitData: any) => any) | any;
+      toObject(object: any, transmitData: any, ...__args: never[]): any;
 
       /** @noSelf */
-      static SpawnDestroyItems: (trapType: any, square: any, object: any) => any;
+      static SpawnDestroyItems: (trapType: any, square: any, object: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.server.Traps.STrapGlobalObject {}

@@ -33,17 +33,17 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor();
 
-      addPage: ((pagetitle: any, pagetext: any, moreTextInfo: any, pagenextcondition: any) => any) | any;
+      addPage(pagetitle: any, pagetext: any, moreTextInfo: any, pagenextcondition: any, ...__args: never[]): any;
 
-      applyPageToRichTextPanel: ((tutorialPanel: any) => any) | any;
+      applyPageToRichTextPanel(tutorialPanel: any, ...__args: never[]): any;
 
-      getCurrent: (() => any) | any;
+      getCurrent(...__args: never[]): any;
 
-      hasNext: (() => any) | any;
+      hasNext(...__args: never[]): any;
 
-      hasPrevious: (() => any) | any;
+      hasPrevious(...__args: never[]): any;
 
-      update: ((tutorialPanel: any) => any) | any;
+      update(tutorialPanel: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.SurvivalGuide.ISTutorialPageInfo {}

@@ -27,36 +27,53 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      addCombo:
-        | ((x: any, y: any, w: any, h: any, name: any, options: any, selected: any, target: any, onchange: any) => any)
-        | any;
+      addCombo(
+        x: any,
+        y: any,
+        w: any,
+        h: any,
+        name: any,
+        options: any,
+        selected: any,
+        target: any,
+        onchange: any,
+        ...__args: never[]
+      ): any;
 
-      addPage: ((name: any) => any) | any;
+      addPage(name: any, ...__args: never[]): any;
 
-      addVolumeControl:
-        | ((x: any, y: any, w: any, h: any, name: any, volume: any, target: any, onchange: any) => any)
-        | any;
+      addVolumeControl(
+        x: any,
+        y: any,
+        w: any,
+        h: any,
+        name: any,
+        volume: any,
+        target: any,
+        onchange: any,
+        ...__args: never[]
+      ): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onClose: (() => any) | any;
+      onClose(...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onJoypadBeforeDeactivate: ((joypadData: any) => any) | any;
+      onJoypadBeforeDeactivate(joypadData: any, ...__args: never[]): any;
 
-      onMouseWheel: ((del: any) => any) | any;
+      onMouseWheel(del: any, ...__args: never[]): any;
 
-      onReload: (() => any) | any;
+      onReload(...__args: never[]): any;
 
-      onReturnToGame: (() => any) | any;
+      onReturnToGame(...__args: never[]): any;
 
-      onStopSound: (() => any) | any;
+      onStopSound(...__args: never[]): any;
 
-      onVolumeChanged: ((control: any, volume: any) => any) | any;
+      onVolumeChanged(control: any, volume: any, ...__args: never[]): any;
 
       /** @noSelf */
-      static onPlaySound: (args: any) => any;
+      static onPlaySound: (args: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.OptionScreens.ISGameSounds {}

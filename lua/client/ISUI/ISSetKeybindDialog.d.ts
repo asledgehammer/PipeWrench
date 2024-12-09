@@ -17,19 +17,19 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(keybindName: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      destroy: (() => any) | any;
+      destroy(...__args: never[]): any;
 
-      isKeyConsumed: ((key: any) => any) | any;
+      isKeyConsumed(key: any, ...__args: never[]): any;
 
-      onCancel: (() => any) | any;
+      onCancel(...__args: never[]): any;
 
-      onClear: (() => any) | any;
+      onClear(...__args: never[]): any;
 
-      onDefault: (() => any) | any;
+      onDefault(...__args: never[]): any;
 
-      onKeyRelease: ((key: any) => any) | any;
+      onKeyRelease(key: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISSetKeybindDialog {}

@@ -21,17 +21,17 @@ declare module '@asledgehammer/pipewrench' {
 
       serverPassword: any;
 
-      connect: ((host: any, port: any, serverPassword: any) => any) | any;
+      connect(host: any, port: any, serverPassword: any, ...__args: never[]): any;
 
-      create: (() => any) | any;
+      create(...__args: never[]): any;
 
-      onBackButton: (() => any) | any;
+      onBackButton(...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      OnSteamServerFailedToRespond2: ((host: any, port: any) => any) | any;
+      OnSteamServerFailedToRespond2(host: any, port: any, ...__args: never[]): any;
 
-      OnSteamServerResponded2: ((host: any, port: any, server2: any) => any) | any;
+      OnSteamServerResponded2(host: any, port: any, server2: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.OptionScreens.BootstrapConnectPopup {}

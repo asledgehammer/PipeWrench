@@ -107,35 +107,35 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, title: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      drawIncomePacketsList: ((y: any, item: any, alt: any) => any) | any;
+      drawIncomePacketsList(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      drawOutcomePacketsList: ((y: any, item: any, alt: any) => any) | any;
+      drawOutcomePacketsList(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      drawUsersList: ((y: any, item: any, alt: any) => any) | any;
+      drawUsersList(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      onClick: ((_button: any) => any) | any;
+      onClick(_button: any, ...__args: never[]): any;
 
-      onClickClose: (() => any) | any;
+      onClickClose(...__args: never[]): any;
 
-      onCombo: ((_combo: any) => any) | any;
+      onCombo(_combo: any, ...__args: never[]): any;
 
-      OnFlaresListMouseDown: ((item: any) => any) | any;
+      OnFlaresListMouseDown(item: any, ...__args: never[]): any;
 
-      populateConnectionsList: (() => any) | any;
+      populateConnectionsList(...__args: never[]): any;
 
-      populatePacketsList: (() => any) | any;
+      populatePacketsList(...__args: never[]): any;
 
-      populateUsersList: ((connect: any) => any) | any;
+      populateUsersList(connect: any, ...__args: never[]): any;
 
-      updateValues: (() => any) | any;
-
-      /** @noSelf */
-      static OnOpenPanel: () => any;
+      updateValues(...__args: never[]): any;
 
       /** @noSelf */
-      static OnServerStatisticReceived: () => any;
+      static OnOpenPanel: (...__args: never[]) => any;
+
+      /** @noSelf */
+      static OnServerStatisticReceived: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.DebugUIs.DebugMenu.Statistic.ISGameStatisticPanel {}

@@ -6,10 +6,10 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static OnEveryHour: () => any;
+      static OnEveryHour: (...__args: never[]) => any;
 
       /** @noSelf */
-      static OnLoadRadioScripts: (_scriptManager: any, _isNewGame: any) => any;
+      static OnLoadRadioScripts: (_scriptManager: any, _isNewGame: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.server.radio.ISDynamicRadio {}

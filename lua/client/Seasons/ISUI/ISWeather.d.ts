@@ -13,13 +13,13 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      addImage: ((image: any) => any) | any;
+      addImage(image: any, ...__args: never[]): any;
 
-      addMoon: ((moonImage: any) => any) | any;
+      addMoon(moonImage: any, ...__args: never[]): any;
 
-      removeImages: (() => any) | any;
+      removeImages(...__args: never[]): any;
 
-      removeMoon: (() => any) | any;
+      removeMoon(...__args: never[]): any;
     }
   }
   export namespace lua.client.Seasons.ISUI.ISWeather {}

@@ -8,7 +8,7 @@ declare module '@asledgehammer/pipewrench' {
       getInstance: (() => any) | any;
 
       /** @noSelf */
-      static load: () => any;
+      static load: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.Moveables.ISMoveableDefinitions {}

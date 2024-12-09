@@ -17,37 +17,37 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor();
 
-      changeHealth: (() => any) | any;
+      changeHealth(...__args: never[]): any;
 
-      checkPlant: (() => any) | any;
+      checkPlant(...__args: never[]): any;
 
-      convertOldModData: (() => any) | any;
+      convertOldModData(...__args: never[]): any;
 
-      destroyOnWalk: ((luaObject: any) => any) | any;
+      destroyOnWalk(luaObject: any, ...__args: never[]): any;
 
-      diseaseClosePlant: ((luaObject: any) => any) | any;
+      diseaseClosePlant(luaObject: any, ...__args: never[]): any;
 
-      diseaseThis: ((luaObject: any, checkClosePlant: any) => any) | any;
+      diseaseThis(luaObject: any, checkClosePlant: any, ...__args: never[]): any;
 
-      EveryTenMinutes: (() => any) | any;
+      EveryTenMinutes(...__args: never[]): any;
 
-      getHealth: (() => any) | any;
+      getHealth(...__args: never[]): any;
 
-      growPlant: ((luaObject: any, nextGrowing: any, updateNbOfGrow: any) => any) | any;
+      growPlant(luaObject: any, nextGrowing: any, updateNbOfGrow: any, ...__args: never[]): any;
 
-      harvest: ((luaObject: any, player: any) => any) | any;
+      harvest(luaObject: any, player: any, ...__args: never[]): any;
 
-      isValidModData: ((modData: any) => any) | any;
+      isValidModData(modData: any, ...__args: never[]): any;
 
-      lowerWaterLvlAndUpDisease: (() => any) | any;
+      lowerWaterLvlAndUpDisease(...__args: never[]): any;
 
-      plow: ((square: any) => any) | any;
+      plow(square: any, ...__args: never[]): any;
 
-      receiveCommand: ((playerObj: any, command: any, args: any) => any) | any;
+      receiveCommand(playerObj: any, command: any, args: any, ...__args: never[]): any;
 
-      removePlant: ((luaObject: any) => any) | any;
+      removePlant(luaObject: any, ...__args: never[]): any;
 
-      removeTallGrass: ((sq: any) => any) | any;
+      removeTallGrass(sq: any, ...__args: never[]): any;
     }
   }
   export namespace lua.server.Farming.SFarmingSystem {}

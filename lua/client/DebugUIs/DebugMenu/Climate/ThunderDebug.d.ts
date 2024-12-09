@@ -51,30 +51,30 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, player: any);
 
-      addPoi: ((_name: any, _x: any, _y: any) => any) | any;
+      addPoi(_name: any, _x: any, _y: any, ...__args: never[]): any;
 
-      addThunderEvent: ((_x: any, _y: any, strike: any, light: any, rumble: any) => any) | any;
+      addThunderEvent(_x: any, _y: any, strike: any, light: any, rumble: any, ...__args: never[]): any;
 
-      clear: (() => any) | any;
+      clear(...__args: never[]): any;
 
-      convertCoords: ((_x: any, _y: any) => any) | any;
+      convertCoords(_x: any, _y: any, ...__args: never[]): any;
 
-      onResize: (() => any) | any;
+      onResize(...__args: never[]): any;
 
-      stayOnSplitScreen: (() => any) | any;
+      stayOnSplitScreen(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
-      updateValues: ((_mgr: any) => any) | any;
-
-      /** @noSelf */
-      static OnClimateTickDebug: (mgr: any) => any;
+      updateValues(_mgr: any, ...__args: never[]): any;
 
       /** @noSelf */
-      static OnOpenPanel: () => any;
+      static OnClimateTickDebug: (mgr: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnThunderEvent: (x: any, y: any, strike: any, light: any, rumble: any) => any;
+      static OnOpenPanel: (...__args: never[]) => any;
+
+      /** @noSelf */
+      static OnThunderEvent: (x: any, y: any, strike: any, light: any, rumble: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.DebugUIs.DebugMenu.Climate.ThunderDebug {}

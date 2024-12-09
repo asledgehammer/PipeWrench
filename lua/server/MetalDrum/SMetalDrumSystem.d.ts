@@ -9,9 +9,9 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor();
 
-      checkRain: (() => any) | any;
+      checkRain(...__args: never[]): any;
 
-      convertOldModData: (() => any) | any;
+      convertOldModData(...__args: never[]): any;
     }
   }
   export namespace lua.server.MetalDrum.SMetalDrumSystem {}

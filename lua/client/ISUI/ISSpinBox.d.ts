@@ -25,13 +25,13 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, target: any, targetFunc: any);
 
-      addOption: ((option: any) => any) | any;
+      addOption(option: any, ...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onButton: ((button: any) => any) | any;
+      onButton(button: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISSpinBox {}

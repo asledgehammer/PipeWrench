@@ -55,27 +55,27 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, player: any, clickedSquare: any);
 
-      addExerciseToList: ((type: any, data: any) => any) | any;
+      addExerciseToList(type: any, data: any, ...__args: never[]): any;
 
-      clickedExe: ((buttons: any, index: any) => any) | any;
+      clickedExe(buttons: any, index: any, ...__args: never[]): any;
 
-      equipItems: (() => any) | any;
+      equipItems(...__args: never[]): any;
 
-      getCurrentRegularity: (() => any) | any;
+      getCurrentRegularity(...__args: never[]): any;
 
-      onClick: ((button: any) => any) | any;
+      onClick(button: any, ...__args: never[]): any;
 
-      onClickTime: ((button: any) => any) | any;
+      onClickTime(button: any, ...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      selectedNewExercise: (() => any) | any;
+      selectedNewExercise(...__args: never[]): any;
 
-      updateButtons: ((currentAction: any) => any) | any;
+      updateButtons(currentAction: any, ...__args: never[]): any;
 
-      updateExercises: (() => any) | any;
+      updateExercises(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISFitnessUI {}

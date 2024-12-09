@@ -6,40 +6,40 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static addXp: (owner: any, type: any, amount: any) => any;
+      static addXp: (owner: any, type: any, amount: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static checkForLosingLevel: (playerObj: any, perk: any) => any;
+      static checkForLosingLevel: (playerObj: any, perk: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static displayCharacterInfo: (key: any) => any;
+      static displayCharacterInfo: (key: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static everyTenMinutes: () => any;
+      static everyTenMinutes: (...__args: never[]) => any;
 
       /** @noSelf */
-      static getModData: (playerObj: any) => any;
+      static getModData: (playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static levelPerk: (owner: any, perk: any, level: any, addBuffer: any) => any;
+      static levelPerk: (owner: any, perk: any, level: any, addBuffer: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onMakeItem: (item: any, resultItem: any, recipe: any) => any;
+      static onMakeItem: (item: any, resultItem: any, recipe: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onNewGame: (playerObj: any, square: any) => any;
+      static onNewGame: (playerObj: any, square: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onPlayerMove: () => any;
+      static onPlayerMove: (...__args: never[]) => any;
 
       /** @noSelf */
-      static OnWeaponHitTree: (owner: any, weapon: any) => any;
+      static OnWeaponHitTree: (owner: any, weapon: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onWeaponHitXp: (owner: any, weapon: any, hitObject: any, damage: any) => any;
+      static onWeaponHitXp: (owner: any, weapon: any, hitObject: any, damage: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static randXp: () => any;
+      static randXp: (...__args: never[]) => any;
     }
   }
   export namespace lua.server.XpSystem.XpUpdate {}

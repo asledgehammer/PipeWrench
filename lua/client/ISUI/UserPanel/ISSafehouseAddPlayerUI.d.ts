@@ -25,17 +25,17 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, safehouse: any, player: any);
 
-      drawPlayers: ((y: any, item: any, alt: any) => any) | any;
+      drawPlayers(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      onClick: ((button: any) => any) | any;
+      onClick(button: any, ...__args: never[]): any;
 
-      populateList: (() => any) | any;
-
-      /** @noSelf */
-      static OnMiniScoreboardUpdate: () => any;
+      populateList(...__args: never[]): any;
 
       /** @noSelf */
-      static OnScoreboardUpdate: (usernames: any, displayNames: any, steamIDs: any) => any;
+      static OnMiniScoreboardUpdate: (...__args: never[]) => any;
+
+      /** @noSelf */
+      static OnScoreboardUpdate: (usernames: any, displayNames: any, steamIDs: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.UserPanel.ISSafehouseAddPlayerUI {}

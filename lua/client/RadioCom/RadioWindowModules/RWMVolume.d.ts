@@ -39,19 +39,19 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      addHeadphone: ((_items: any) => any) | any;
+      addHeadphone(_items: any, ...__args: never[]): any;
 
-      onSpeakerButton: ((_ismute: any) => any) | any;
+      onSpeakerButton(_ismute: any, ...__args: never[]): any;
 
-      onVolumeChange: ((_newVol: any) => any) | any;
+      onVolumeChange(_newVol: any, ...__args: never[]): any;
 
-      removeHeadphone: (() => any) | any;
+      removeHeadphone(...__args: never[]): any;
 
-      round: ((num: any, idp: any) => any) | any;
+      round(num: any, idp: any, ...__args: never[]): any;
 
-      toggleHeaphoneSupport: ((enable: any) => any) | any;
+      toggleHeaphoneSupport(enable: any, ...__args: never[]): any;
 
-      verifyItem: ((_item: any) => any) | any;
+      verifyItem(_item: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.RadioCom.RadioWindowModules.RWMVolume {}

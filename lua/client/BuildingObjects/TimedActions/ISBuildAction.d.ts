@@ -39,9 +39,9 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, item: any, x: any, y: any, z: any, north: any, spriteName: any, time: any);
 
-      faceLocation: (() => any) | any;
+      faceLocation(...__args: never[]): any;
 
-      isReachableThroughWindow: ((_square: any) => any) | any;
+      isReachableThroughWindow(_square: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.BuildingObjects.TimedActions.ISBuildAction {}

@@ -17,57 +17,57 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(mode: any, character: any, device: any, secondaryItem: any);
 
-      isValidAddBattery: (() => any) | any;
+      isValidAddBattery(...__args: never[]): any;
 
-      isValidAddHeadphones: (() => any) | any;
+      isValidAddHeadphones(...__args: never[]): any;
 
-      isValidAddMedia: (() => any) | any;
+      isValidAddMedia(...__args: never[]): any;
 
-      isValidMuteMicrophone: (() => any) | any;
+      isValidMuteMicrophone(...__args: never[]): any;
 
-      isValidMuteVolume: (() => any) | any;
+      isValidMuteVolume(...__args: never[]): any;
 
-      isValidRemoveBattery: (() => any) | any;
+      isValidRemoveBattery(...__args: never[]): any;
 
-      isValidRemoveHeadphones: (() => any) | any;
+      isValidRemoveHeadphones(...__args: never[]): any;
 
-      isValidRemoveMedia: (() => any) | any;
+      isValidRemoveMedia(...__args: never[]): any;
 
-      isValidSetChannel: (() => any) | any;
+      isValidSetChannel(...__args: never[]): any;
 
-      isValidSetVolume: (() => any) | any;
+      isValidSetVolume(...__args: never[]): any;
 
-      isValidToggleOnOff: (() => any) | any;
+      isValidToggleOnOff(...__args: never[]): any;
 
-      isValidTogglePlayMedia: (() => any) | any;
+      isValidTogglePlayMedia(...__args: never[]): any;
 
-      isValidUnMuteVolume: (() => any) | any;
+      isValidUnMuteVolume(...__args: never[]): any;
 
-      performAddBattery: (() => any) | any;
+      performAddBattery(...__args: never[]): any;
 
-      performAddHeadphones: (() => any) | any;
+      performAddHeadphones(...__args: never[]): any;
 
-      performAddMedia: (() => any) | any;
+      performAddMedia(...__args: never[]): any;
 
-      performMuteMicrophone: (() => any) | any;
+      performMuteMicrophone(...__args: never[]): any;
 
-      performMuteVolume: (() => any) | any;
+      performMuteVolume(...__args: never[]): any;
 
-      performRemoveBattery: (() => any) | any;
+      performRemoveBattery(...__args: never[]): any;
 
-      performRemoveHeadphones: (() => any) | any;
+      performRemoveHeadphones(...__args: never[]): any;
 
-      performRemoveMedia: (() => any) | any;
+      performRemoveMedia(...__args: never[]): any;
 
-      performSetChannel: (() => any) | any;
+      performSetChannel(...__args: never[]): any;
 
-      performSetVolume: (() => any) | any;
+      performSetVolume(...__args: never[]): any;
 
-      performToggleOnOff: (() => any) | any;
+      performToggleOnOff(...__args: never[]): any;
 
-      performTogglePlayMedia: (() => any) | any;
+      performTogglePlayMedia(...__args: never[]): any;
 
-      performUnMuteVolume: (() => any) | any;
+      performUnMuteVolume(...__args: never[]): any;
     }
   }
   export namespace lua.client.RadioCom.ISRadioAction {}

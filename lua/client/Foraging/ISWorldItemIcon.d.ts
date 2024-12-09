@@ -17,7 +17,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(_manager: any, _icon: any);
 
-      isValidWorldItem: (() => any) | any;
+      isValidWorldItem(...__args: never[]): any;
     }
   }
   export namespace lua.client.Foraging.ISWorldItemIcon {}

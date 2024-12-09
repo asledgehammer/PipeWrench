@@ -41,37 +41,36 @@ declare module '@asledgehammer/pipewrench' {
 
       userName1: any;
 
-      connect:
-        | ((
-            previousScreen: any,
-            serverName: any,
-            userName: any,
-            password: any,
-            IP: any,
-            localIP: any,
-            port: any,
-            serverPassword: any,
-            useSteamRelay: any,
-          ) => any)
-        | any;
+      connect(
+        previousScreen: any,
+        serverName: any,
+        userName: any,
+        password: any,
+        IP: any,
+        localIP: any,
+        port: any,
+        serverPassword: any,
+        useSteamRelay: any,
+        ...__args: never[]
+      ): any;
 
-      connectCoop: ((previousScreen: any, serverSteamID: any) => any) | any;
+      connectCoop(previousScreen: any, serverSteamID: any, ...__args: never[]): any;
 
-      create: (() => any) | any;
+      create(...__args: never[]): any;
 
-      onBackButton: (() => any) | any;
+      onBackButton(...__args: never[]): any;
 
-      OnConnected: (() => any) | any;
+      OnConnected(...__args: never[]): any;
 
-      OnConnectFailed: ((message: any, detail: any) => any) | any;
+      OnConnectFailed(message: any, detail: any, ...__args: never[]): any;
 
-      OnConnectionStateChanged: ((state: any, message: any, arg: any) => any) | any;
+      OnConnectionStateChanged(state: any, message: any, arg: any, ...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onResize: ((width: any, height: any) => any) | any;
+      onResize(width: any, height: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
     }
   }
   export namespace lua.client.OptionScreens.ConnectToServer {}

@@ -6,7 +6,7 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static init: (_rc: any) => any;
+      static init: (_rc: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.shared.RecordedMedia.ISRecordeMedia {}

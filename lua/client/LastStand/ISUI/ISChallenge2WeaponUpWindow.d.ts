@@ -15,17 +15,17 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, player: any);
 
-      create: (() => any) | any;
+      create(...__args: never[]): any;
 
-      createItemButton: ((x: any, y: any, itemType: any, cost: any, itemType2: any) => any) | any;
+      createItemButton(x: any, y: any, itemType: any, cost: any, itemType2: any, ...__args: never[]): any;
 
-      loadJoypadButtons: (() => any) | any;
+      loadJoypadButtons(...__args: never[]): any;
 
-      onOptionMouseDown: ((button: any, x: any, y: any) => any) | any;
+      onOptionMouseDown(button: any, x: any, y: any, ...__args: never[]): any;
 
-      reloadButtons: (() => any) | any;
+      reloadButtons(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
     }
   }
   export namespace lua.client.LastStand.ISUI.ISChallenge2WeaponUpWindow {}

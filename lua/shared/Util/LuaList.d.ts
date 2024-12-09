@@ -13,31 +13,31 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor();
 
-      add: ((item: any) => any) | any;
+      add(item: any, ...__args: never[]): any;
 
-      addAll: ((list: any) => any) | any;
+      addAll(list: any, ...__args: never[]): any;
 
-      clear: (() => any) | any;
+      clear(...__args: never[]): any;
 
-      contains: ((item: any) => any) | any;
+      contains(item: any, ...__args: never[]): any;
 
-      foreach: ((func: any, param1: any, param2: any, param3: any, param4: any) => any) | any;
+      foreach(func: any, param1: any, param2: any, param3: any, param4: any, ...__args: never[]): any;
 
-      get: ((index: any) => any) | any;
+      get(index: any, ...__args: never[]): any;
 
-      isEmpty: (() => any) | any;
+      isEmpty(...__args: never[]): any;
 
-      pop: (() => any) | any;
+      pop(...__args: never[]): any;
 
-      remove: ((item: any) => any) | any;
+      remove(item: any, ...__args: never[]): any;
 
-      removeAt: ((index: any) => any) | any;
+      removeAt(index: any, ...__args: never[]): any;
 
-      removeRandom: (() => any) | any;
+      removeRandom(...__args: never[]): any;
 
-      size: (() => any) | any;
+      size(...__args: never[]): any;
 
-      sort: ((f: any) => any) | any;
+      sort(f: any, ...__args: never[]): any;
     }
   }
   export namespace lua.shared.Util.LuaList {}

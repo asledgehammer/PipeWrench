@@ -69,111 +69,117 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, character: any, vehicle: any);
 
-      checkEngineFull: (() => any) | any;
+      checkEngineFull(...__args: never[]): any;
 
-      doDrawItem: ((y: any, item: any, alt: any) => any) | any;
+      doDrawItem(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      doMenuTooltip: ((part: any, option: any, lua: any, name: any) => any) | any;
+      doMenuTooltip(part: any, option: any, lua: any, name: any, ...__args: never[]): any;
 
-      doPartContextMenu: ((part: any, x: any, y: any) => any) | any;
+      doPartContextMenu(part: any, x: any, y: any, ...__args: never[]): any;
 
-      getConditionRGB: ((condition: any) => any) | any;
+      getConditionRGB(condition: any, ...__args: never[]): any;
 
-      getMouseOverPart: ((x: any, y: any) => any) | any;
+      getMouseOverPart(x: any, y: any, ...__args: never[]): any;
 
-      initParts: (() => any) | any;
+      initParts(...__args: never[]): any;
 
-      isKeyConsumed: ((key: any) => any) | any;
+      isKeyConsumed(key: any, ...__args: never[]): any;
 
-      isMouseOverPart: ((x: any, y: any, part: any) => any) | any;
+      isMouseOverPart(x: any, y: any, part: any, ...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDirDown: (() => any) | any;
+      onJoypadDirDown(...__args: never[]): any;
 
-      onJoypadDirLeft: (() => any) | any;
+      onJoypadDirLeft(...__args: never[]): any;
 
-      onJoypadDirRight: (() => any) | any;
+      onJoypadDirRight(...__args: never[]): any;
 
-      onJoypadDirUp: (() => any) | any;
+      onJoypadDirUp(...__args: never[]): any;
 
-      onJoypadDown: ((button: any) => any) | any;
+      onJoypadDown(button: any, ...__args: never[]): any;
 
-      onKeyRelease: ((key: any) => any) | any;
+      onKeyRelease(key: any, ...__args: never[]): any;
 
-      onListboxJoypadDirDown: ((listbox: any) => any) | any;
+      onListboxJoypadDirDown(listbox: any, ...__args: never[]): any;
 
-      onListboxJoypadDirUp: ((listbox: any) => any) | any;
+      onListboxJoypadDirUp(listbox: any, ...__args: never[]): any;
 
-      onListMouseDown: ((x: any, y: any) => any) | any;
+      onListMouseDown(x: any, y: any, ...__args: never[]): any;
 
-      onListRightMouseUp: ((x: any, y: any) => any) | any;
+      onListRightMouseUp(x: any, y: any, ...__args: never[]): any;
 
-      onRightMouseUp: ((x: any, y: any) => any) | any;
+      onRightMouseUp(x: any, y: any, ...__args: never[]): any;
 
-      recalculGeneralCondition: (() => any) | any;
+      recalculGeneralCondition(...__args: never[]): any;
 
-      renderCarOverlay: (() => any) | any;
+      renderCarOverlay(...__args: never[]): any;
 
-      renderCarOverlayTooltip: ((partProps: any, part: any, carType: any) => any) | any;
+      renderCarOverlayTooltip(partProps: any, part: any, carType: any, ...__args: never[]): any;
 
-      renderPartDetail: ((part: any) => any) | any;
+      renderPartDetail(part: any, ...__args: never[]): any;
 
-      roundContainerContentAmount: ((part: any) => any) | any;
+      roundContainerContentAmount(part: any, ...__args: never[]): any;
 
-      selectPart: ((part: any) => any) | any;
+      selectPart(part: any, ...__args: never[]): any;
 
-      setVisible: ((bVisible: any, joypadData: any) => any) | any;
+      setVisible(bVisible: any, joypadData: any, ...__args: never[]): any;
 
-      startFlashGreen: (() => any) | any;
+      startFlashGreen(...__args: never[]): any;
 
-      startFlashRed: (() => any) | any;
+      startFlashRed(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
-      updateLayout: (() => any) | any;
-
-      /** @noSelf */
-      static onCheatGetKey: (playerObj: any, vehicle: any) => any;
+      updateLayout(...__args: never[]): any;
 
       /** @noSelf */
-      static onCheatHotwire: (playerObj: any, vehicle: any, hotwired: any, broken: any) => any;
+      static onCheatGetKey: (playerObj: any, vehicle: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onCheatRemove: (playerObj: any, vehicle: any) => any;
+      static onCheatHotwire: (playerObj: any, vehicle: any, hotwired: any, broken: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onCheatRemoveAux: (dummy: any, button: any, playerObj: any, vehicle: any) => any;
+      static onCheatRemove: (playerObj: any, vehicle: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onCheatRepair: (playerObj: any, vehicle: any) => any;
+      static onCheatRemoveAux: (dummy: any, button: any, playerObj: any, vehicle: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onCheatRepairPart: (playerObj: any, part: any) => any;
+      static onCheatRepair: (playerObj: any, vehicle: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onCheatSetCondition: (playerObj: any, part: any) => any;
+      static onCheatRepairPart: (playerObj: any, part: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onCheatSetConditionAux: (target: any, button: any, playerObj: any, part: any) => any;
+      static onCheatSetCondition: (playerObj: any, part: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onCheatSetContentAmount: (playerObj: any, part: any) => any;
+      static onCheatSetConditionAux: (target: any, button: any, playerObj: any, part: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onCheatSetContentAmountAux: (target: any, button: any, playerObj: any, part: any) => any;
+      static onCheatSetContentAmount: (playerObj: any, part: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onCheatSetRust: (playerObj: any, vehicle: any) => any;
+      static onCheatSetContentAmountAux: (
+        target: any,
+        button: any,
+        playerObj: any,
+        part: any,
+        ...__args: never[]
+      ) => any;
 
       /** @noSelf */
-      static onCheatSetRustAux: (target: any, button: any, playerObj: any, vehicle: any) => any;
+      static onCheatSetRust: (playerObj: any, vehicle: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onCheatToggle: (playerObj: any) => any;
+      static onCheatSetRustAux: (target: any, button: any, playerObj: any, vehicle: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onConfigHeadlight: (playerObj: any, part: any, dir: any) => any;
+      static onCheatToggle: (playerObj: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static onConfigHeadlight: (playerObj: any, part: any, dir: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static OnMechanicActionDone: (
@@ -183,13 +189,14 @@ declare module '@asledgehammer/pipewrench' {
         partId: any,
         itemId: any,
         installing: any,
+        ...__args: never[]
       ) => any;
 
       /** @noSelf */
-      static onRepairEngine: (playerObj: any, part: any) => any;
+      static onRepairEngine: (playerObj: any, part: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onTakeEngineParts: (playerObj: any, part: any) => any;
+      static onTakeEngineParts: (playerObj: any, part: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.Vehicles.ISUI.ISVehicleMechanics {}

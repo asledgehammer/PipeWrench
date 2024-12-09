@@ -15,75 +15,75 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, character: any, plant: any);
 
-      getBlueBar: ((list: any) => any) | any;
+      getBlueBar(list: any, ...__args: never[]): any;
 
-      getDiseaseColor: ((diseaseLvl: any, index: any, info: any) => any) | any;
+      getDiseaseColor(diseaseLvl: any, index: any, info: any, ...__args: never[]): any;
 
-      getGreen: ((list: any, index: any) => any) | any;
+      getGreen(list: any, index: any, ...__args: never[]): any;
 
-      getOrange: ((list: any, index: any) => any) | any;
+      getOrange(list: any, index: any, ...__args: never[]): any;
 
-      getOrangeBar: ((list: any) => any) | any;
+      getOrangeBar(list: any, ...__args: never[]): any;
 
-      getRed: ((list: any, index: any) => any) | any;
+      getRed(list: any, index: any, ...__args: never[]): any;
 
-      getRedBar: ((list: any) => any) | any;
+      getRedBar(list: any, ...__args: never[]): any;
 
-      getWhite: ((list: any, index: any) => any) | any;
+      getWhite(list: any, index: any, ...__args: never[]): any;
 
-      isPlantValid: (() => any) | any;
+      isPlantValid(...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onLoseJoypadFocus: ((joypadData: any) => any) | any;
+      onLoseJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setPlant: ((plant: any) => any) | any;
+      setPlant(plant: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
-
-      /** @noSelf */
-      static getCurrentGrowingPhase: (info: any, farmingLevel: any) => any;
+      update(...__args: never[]): any;
 
       /** @noSelf */
-      static getDiseaseName: (info: any) => any;
+      static getCurrentGrowingPhase: (info: any, farmingLevel: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getFertilizerColor: (info: any) => any;
+      static getDiseaseName: (info: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getHealth: (info: any, farmingLevel: any) => any;
+      static getFertilizerColor: (info: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getHealthColor: (info: any, farmingLevel: any) => any;
+      static getHealth: (info: any, farmingLevel: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getLastWatedHour: (plant: any) => any;
+      static getHealthColor: (info: any, farmingLevel: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getNextGrowingPhase: (info: any) => any;
+      static getLastWatedHour: (plant: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getNoWateredSinceColor: (plant: any, lastWatedHour: any, farmingLevel: any) => any;
+      static getNextGrowingPhase: (info: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getTitleColor: (plant: any) => any;
+      static getNoWateredSinceColor: (plant: any, lastWatedHour: any, farmingLevel: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getWaterBarWidth: (info: any) => any;
+      static getTitleColor: (plant: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getWaterLvl: (plant: any, farmingLevel: any) => any;
+      static getWaterBarWidth: (info: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getWaterLvlBarColor: (info: any, farmingLevel: any) => any;
+      static getWaterLvl: (plant: any, farmingLevel: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getWaterLvlColor: (plant: any, farmingLevel: any) => any;
+      static getWaterLvlBarColor: (info: any, farmingLevel: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static RequiredWidth: () => any;
+      static getWaterLvlColor: (plant: any, farmingLevel: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static RequiredWidth: (...__args: never[]) => any;
     }
 
     export abstract class disease {

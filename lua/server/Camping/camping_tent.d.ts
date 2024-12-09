@@ -6,31 +6,31 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static addTent: (grid: any, sprite: any) => any;
+      static addTent: (grid: any, sprite: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static destroyTent: (tent: any) => any;
+      static destroyTent: (tent: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static findTentObject: (square: any) => any;
+      static findTentObject: (square: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static findTentSprites: (sprite: any) => any;
+      static findTentSprites: (sprite: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getCurrentTent: (grid: any) => any;
+      static getCurrentTent: (grid: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getTentObjects: (tent: any) => any;
+      static getTentObjects: (tent: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static isTentObject: (object: any) => any;
+      static isTentObject: (object: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static removeTent: (tent: any) => any;
+      static removeTent: (tent: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static tentAt: (x: any, y: any, z: any) => any;
+      static tentAt: (x: any, y: any, z: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.server.Camping.camping_tent {}

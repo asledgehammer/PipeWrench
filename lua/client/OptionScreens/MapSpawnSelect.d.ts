@@ -35,47 +35,47 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      clickBack: (() => any) | any;
+      clickBack(...__args: never[]): any;
 
-      clickNext: (() => any) | any;
+      clickNext(...__args: never[]): any;
 
-      create: (() => any) | any;
+      create(...__args: never[]): any;
 
-      doDrawItem: ((y: any, item: any, alt: any) => any) | any;
+      doDrawItem(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      fillList: (() => any) | any;
+      fillList(...__args: never[]): any;
 
-      getChallengeSpawnRegion: (() => any) | any;
+      getChallengeSpawnRegion(...__args: never[]): any;
 
-      getFixedSpawnRegion: (() => any) | any;
+      getFixedSpawnRegion(...__args: never[]): any;
 
-      getSafehouseSpawnRegion: (() => any) | any;
+      getSafehouseSpawnRegion(...__args: never[]): any;
 
-      getSpawnRegions: (() => any) | any;
+      getSpawnRegions(...__args: never[]): any;
 
-      hasChoices: (() => any) | any;
+      hasChoices(...__args: never[]): any;
 
-      hideOrShowSaveName: (() => any) | any;
+      hideOrShowSaveName(...__args: never[]): any;
 
-      onDblClick: (() => any) | any;
+      onDblClick(...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onJoypadBeforeDeactivate: ((joypadData: any) => any) | any;
+      onJoypadBeforeDeactivate(joypadData: any, ...__args: never[]): any;
 
-      onJoypadBeforeDeactivate_child: ((joypadData: any) => any) | any;
+      onJoypadBeforeDeactivate_child(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDirDown_textEntry: ((joypadData: any) => any) | any;
+      onJoypadDirDown_textEntry(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDown_textEntry: ((button: any, joypadData: any) => any) | any;
+      onJoypadDown_textEntry(button: any, joypadData: any, ...__args: never[]): any;
 
-      onOptionMouseDown: ((button: any, x: any, y: any) => any) | any;
+      onOptionMouseDown(button: any, x: any, y: any, ...__args: never[]): any;
 
-      onResolutionChange: ((oldw: any, oldh: any, neww: any, newh: any) => any) | any;
+      onResolutionChange(oldw: any, oldh: any, neww: any, newh: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      useDefaultSpawnRegion: (() => any) | any;
+      useDefaultSpawnRegion(...__args: never[]): any;
     }
 
     /** @customConstructor MapSpawnSelectInfoPanel:new */
@@ -83,17 +83,17 @@ declare module '@asledgehammer/pipewrench' {
       [id: string]: any;
       static [id: string]: any;
 
-      onJoypadBeforeDeactivate: ((joypadData: any) => any) | any;
+      onJoypadBeforeDeactivate(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDirDown: ((joypadData: any) => any) | any;
+      onJoypadDirDown(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDirLeft: ((joypadData: any) => any) | any;
+      onJoypadDirLeft(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDirUp: ((joypadData: any) => any) | any;
+      onJoypadDirUp(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDown: ((button: any, joypadData: any) => any) | any;
+      onJoypadDown(button: any, joypadData: any, ...__args: never[]): any;
 
-      prerender: (() => any) | any;
+      prerender(...__args: never[]): any;
     }
 
     /** @customConstructor MapSpawnSelectListBox:new */
@@ -101,7 +101,7 @@ declare module '@asledgehammer/pipewrench' {
       [id: string]: any;
       static [id: string]: any;
 
-      onJoypadBeforeDeactivate: ((joypadData: any) => any) | any;
+      onJoypadBeforeDeactivate(joypadData: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.OptionScreens.MapSpawnSelect {}

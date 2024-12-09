@@ -6,43 +6,43 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static EveryTenMinutes: () => any;
+      static EveryTenMinutes: (...__args: never[]) => any;
 
       /** @noSelf */
-      static load: () => any;
+      static load: (...__args: never[]) => any;
 
       /** @noSelf */
-      static OnGameStart: () => any;
+      static OnGameStart: (...__args: never[]) => any;
 
       /** @noSelf */
-      static OnGameTimeLoaded: () => any;
+      static OnGameTimeLoaded: (...__args: never[]) => any;
 
       /** @noSelf */
-      static save: () => any;
+      static save: (...__args: never[]) => any;
 
       /** @noSelf */
-      static startRain: () => any;
+      static startRain: (...__args: never[]) => any;
 
       /** @noSelf */
-      static updateAmbient: () => any;
+      static updateAmbient: (...__args: never[]) => any;
 
       /** @noSelf */
-      static updateBodyTemperature: () => any;
+      static updateBodyTemperature: (...__args: never[]) => any;
 
       /** @noSelf */
-      static updateMoonPhase: () => any;
+      static updateMoonPhase: (...__args: never[]) => any;
 
       /** @noSelf */
-      static updateMoonState: (currentHour: any, month: any) => any;
+      static updateMoonState: (currentHour: any, month: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static updateRain: () => any;
+      static updateRain: (...__args: never[]) => any;
 
       /** @noSelf */
-      static updateWeather: (month: any, currentHour: any) => any;
+      static updateWeather: (month: any, currentHour: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static updateWeatherIcon: () => any;
+      static updateWeatherIcon: (...__args: never[]) => any;
     }
   }
   export namespace lua.server.Seasons.season {}

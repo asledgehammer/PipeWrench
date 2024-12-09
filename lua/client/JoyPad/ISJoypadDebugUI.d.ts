@@ -9,7 +9,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor();
 
-      addLine: ((x1: any, x2: any, y: any, label: any, value: any) => any) | any;
+      addLine(x1: any, x2: any, y: any, label: any, value: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.JoyPad.ISJoypadDebugUI {}

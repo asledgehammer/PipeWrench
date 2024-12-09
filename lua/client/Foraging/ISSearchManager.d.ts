@@ -197,170 +197,179 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(_character: any);
 
-      addHaloNote: ((_text: any) => any) | any;
+      addHaloNote(_text: any, ...__args: never[]): any;
 
-      addIcon: ((_id: any, _iconClass: any, _itemType: any, _itemObj: any, _x: any, _y: any, _z: any) => any) | any;
+      addIcon(
+        _id: any,
+        _iconClass: any,
+        _itemType: any,
+        _itemObj: any,
+        _x: any,
+        _y: any,
+        _z: any,
+        ...__args: never[]
+      ): any;
 
-      checkActiveZones: (() => any) | any;
+      checkActiveZones(...__args: never[]): any;
 
-      checkCloseIcons: (() => any) | any;
+      checkCloseIcons(...__args: never[]): any;
 
-      checkForSpriteAffinity: ((_square: any, _object: any, _zoneData: any) => any) | any;
+      checkForSpriteAffinity(_square: any, _object: any, _zoneData: any, ...__args: never[]): any;
 
-      checkIcons: (() => any) | any;
+      checkIcons(...__args: never[]): any;
 
-      checkMarkers: (() => any) | any;
+      checkMarkers(...__args: never[]): any;
 
-      checkShouldDisable: (() => any) | any;
+      checkShouldDisable(...__args: never[]): any;
 
-      checkShouldForceIcon: (() => any) | any;
+      checkShouldForceIcon(...__args: never[]): any;
 
-      checkSquares: (() => any) | any;
+      checkSquares(...__args: never[]): any;
 
-      checkWorldIcons: (() => any) | any;
+      checkWorldIcons(...__args: never[]): any;
 
-      clearCheckedSquares: (() => any) | any;
+      clearCheckedSquares(...__args: never[]): any;
 
-      clearHaloNotes: (() => any) | any;
+      clearHaloNotes(...__args: never[]): any;
 
-      clearIcons: (() => any) | any;
+      clearIcons(...__args: never[]): any;
 
-      clearMovedIconsSquares: (() => any) | any;
+      clearMovedIconsSquares(...__args: never[]): any;
 
-      clearQueue: (() => any) | any;
+      clearQueue(...__args: never[]): any;
 
-      clearSpriteCheckedSquares: (() => any) | any;
+      clearSpriteCheckedSquares(...__args: never[]): any;
 
-      clearZoneData: (() => any) | any;
+      clearZoneData(...__args: never[]): any;
 
-      createBonusIcon: ((_square: any, _catDef: any, _zoneData: any) => any) | any;
+      createBonusIcon(_square: any, _catDef: any, _zoneData: any, ...__args: never[]): any;
 
-      createIconsForCell: (() => any) | any;
+      createIconsForCell(...__args: never[]): any;
 
-      createIconsForContainers: ((_square: any, _object: any) => any) | any;
+      createIconsForContainers(_square: any, _object: any, ...__args: never[]): any;
 
-      createIconsForWorldItems: ((_square: any) => any) | any;
+      createIconsForWorldItems(_square: any, ...__args: never[]): any;
 
-      createIconsForZone: ((_zoneData: any, _recreate: any) => any) | any;
+      createIconsForZone(_zoneData: any, _recreate: any, ...__args: never[]): any;
 
-      displayHaloNotes: (() => any) | any;
+      displayHaloNotes(...__args: never[]): any;
 
-      doChangePosition: ((_icon: any) => any) | any;
+      doChangePosition(_icon: any, ...__args: never[]): any;
 
-      doChangeZone: ((_zoneData: any) => any) | any;
+      doChangeZone(_zoneData: any, ...__args: never[]): any;
 
-      doDisableCheck: (() => any) | any;
+      doDisableCheck(...__args: never[]): any;
 
-      doMoveIcon: ((_icon: any, _x: any, _y: any, _z: any) => any) | any;
+      doMoveIcon(_icon: any, _x: any, _y: any, _z: any, ...__args: never[]): any;
 
-      doMoveIconNearPlayer: (() => any) | any;
+      doMoveIconNearPlayer(...__args: never[]): any;
 
-      doUpdateEvents: ((_force: any) => any) | any;
+      doUpdateEvents(_force: any, ...__args: never[]): any;
 
-      findSpriteAffinityIcon: ((_square: any, _catDef: any, _zoneData: any) => any) | any;
+      findSpriteAffinityIcon(_square: any, _catDef: any, _zoneData: any, ...__args: never[]): any;
 
-      flashEye: ((_amount: any) => any) | any;
+      flashEye(_amount: any, ...__args: never[]): any;
 
-      getAlpha: (() => any) | any;
+      getAlpha(...__args: never[]): any;
 
-      getAndActivateZoneAtXY: ((_x: any, _y: any) => any) | any;
+      getAndActivateZoneAtXY(_x: any, _y: any, ...__args: never[]): any;
 
-      getColor: (() => any) | any;
+      getColor(...__args: never[]): any;
 
-      getGameSpeed: (() => any) | any;
+      getGameSpeed(...__args: never[]): any;
 
-      getIsSeen: ((_icon: any) => any) | any;
+      getIsSeen(_icon: any, ...__args: never[]): any;
 
-      getOverlayRadius: (() => any) | any;
+      getOverlayRadius(...__args: never[]): any;
 
-      getScreenDelta: (() => any) | any;
+      getScreenDelta(...__args: never[]): any;
 
-      isFinishedLoadingIcons: (() => any) | any;
+      isFinishedLoadingIcons(...__args: never[]): any;
 
-      isIconOnSquare: ((_square: any, _iconList: any) => any) | any;
+      isIconOnSquare(_square: any, _iconList: any, ...__args: never[]): any;
 
-      loadIcons: (() => any) | any;
+      loadIcons(...__args: never[]): any;
 
-      onRightMouseDown: (() => any) | any;
+      onRightMouseDown(...__args: never[]): any;
 
-      onRightMouseUp: (() => any) | any;
+      onRightMouseUp(...__args: never[]): any;
 
-      onToggleVisible: (() => any) | any;
+      onToggleVisible(...__args: never[]): any;
 
-      removeIcon: ((_icon: any) => any) | any;
+      removeIcon(_icon: any, ...__args: never[]): any;
 
-      removeItem: ((_icon: any) => any) | any;
+      removeItem(_icon: any, ...__args: never[]): any;
 
-      removeZoneAndIcons: ((_zoneData: any) => any) | any;
+      removeZoneAndIcons(_zoneData: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      renderDebugInfo: (() => any) | any;
+      renderDebugInfo(...__args: never[]): any;
 
-      renderEye: (() => any) | any;
+      renderEye(...__args: never[]): any;
 
-      reset: (() => any) | any;
+      reset(...__args: never[]): any;
 
-      resetForceFindSystem: (() => any) | any;
+      resetForceFindSystem(...__args: never[]): any;
 
-      resetVisionBonuses: (() => any) | any;
+      resetVisionBonuses(...__args: never[]): any;
 
-      setAlpha: ((_a: any) => any) | any;
+      setAlpha(_a: any, ...__args: never[]): any;
 
-      setColor: ((_rgba: any) => any) | any;
+      setColor(_rgba: any, ...__args: never[]): any;
 
-      spotIcon: ((_icon: any) => any) | any;
+      spotIcon(_icon: any, ...__args: never[]): any;
 
-      toggleSearchMode: ((_isSearchMode: any) => any) | any;
+      toggleSearchMode(_isSearchMode: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
-      updateAlpha: (() => any) | any;
+      updateAlpha(...__args: never[]): any;
 
-      updateCurrentZone: (() => any) | any;
+      updateCurrentZone(...__args: never[]): any;
 
-      updateForceFindSystem: (() => any) | any;
+      updateForceFindSystem(...__args: never[]): any;
 
-      updateModifiers: (() => any) | any;
+      updateModifiers(...__args: never[]): any;
 
-      updateOverlay: (() => any) | any;
+      updateOverlay(...__args: never[]): any;
 
-      updatePosition: (() => any) | any;
+      updatePosition(...__args: never[]): any;
 
-      updateTimestamp: (() => any) | any;
+      updateTimestamp(...__args: never[]): any;
 
-      updateVisionBonuses: (() => any) | any;
+      updateVisionBonuses(...__args: never[]): any;
 
-      updateZoom: (() => any) | any;
+      updateZoom(...__args: never[]): any;
 
-      worldItemTest: ((_itemObj: any) => any) | any;
+      worldItemTest(_itemObj: any, ...__args: never[]): any;
 
       /** @noSelf */
-      static createUI: (_player: any) => any;
+      static createUI: (_player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static destroyUI: (_character: any) => any;
+      static destroyUI: (_character: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getManager: (_character: any) => any;
+      static getManager: (_character: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static handleKeyPressed: (_keyPressed: any) => any;
+      static handleKeyPressed: (_keyPressed: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static initBinds: () => any;
+      static initBinds: (...__args: never[]) => any;
 
       /** @noSelf */
-      static OnFillWorldObjectContextMenu: (_player: any, _context: any, _worldObjects: any) => any;
+      static OnFillWorldObjectContextMenu: (_player: any, _context: any, _worldObjects: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnGameStart: () => any;
+      static OnGameStart: (...__args: never[]) => any;
 
       /** @noSelf */
-      static onUpdateIcon: (_zoneData: any, _iconID: any, _icon: any) => any;
+      static onUpdateIcon: (_zoneData: any, _iconID: any, _icon: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static setManager: (_character: any, _manager: any) => any;
+      static setManager: (_character: any, _manager: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.Foraging.ISSearchManager {}

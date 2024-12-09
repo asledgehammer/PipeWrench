@@ -11,19 +11,19 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor();
 
-      convertOldModData: (() => any) | any;
+      convertOldModData(...__args: never[]): any;
 
       /** @noSelf */
-      static addSound: () => any;
+      static addSound: (...__args: never[]) => any;
 
       /** @noSelf */
-      static checkTrap: () => any;
+      static checkTrap: (...__args: never[]) => any;
 
       /** @noSelf */
-      static EveryDays: () => any;
+      static EveryDays: (...__args: never[]) => any;
 
       /** @noSelf */
-      static isValidModData: (modData: any) => any;
+      static isValidModData: (modData: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.server.Traps.STrapSystem {}

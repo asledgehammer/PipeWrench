@@ -11,7 +11,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any);
 
-      getExtraLogData: (() => any) | any;
+      getExtraLogData(...__args: never[]): any;
     }
   }
   export namespace lua.client.Vehicles.TimedActions.ISExitVehicle {}

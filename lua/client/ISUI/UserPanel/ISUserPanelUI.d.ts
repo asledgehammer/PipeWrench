@@ -33,21 +33,21 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, player: any);
 
-      create: (() => any) | any;
+      create(...__args: never[]): any;
 
-      onOptionMouseDown: ((button: any, x: any, y: any) => any) | any;
+      onOptionMouseDown(button: any, x: any, y: any, ...__args: never[]): any;
 
-      onShowConnectionInfo: ((option: any, enabled: any) => any) | any;
+      onShowConnectionInfo(option: any, enabled: any, ...__args: never[]): any;
 
-      onShowPingInfo: ((option: any, enabled: any) => any) | any;
+      onShowPingInfo(option: any, enabled: any, ...__args: never[]): any;
 
-      onShowServerInfo: ((option: any, enabled: any) => any) | any;
+      onShowServerInfo(option: any, enabled: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setVisible: ((visible: any) => any) | any;
+      setVisible(visible: any, ...__args: never[]): any;
 
-      updateButtons: (() => any) | any;
+      updateButtons(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.UserPanel.ISUserPanelUI {}

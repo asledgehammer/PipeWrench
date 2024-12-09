@@ -22,73 +22,86 @@ declare module '@asledgehammer/pipewrench' {
       static DeadMouse: any;
 
       /** @noSelf */
-      static Add: () => any;
+      static Add: (...__args: never[]) => any;
 
       /** @noSelf */
-      static addBarricade: (x: any, y: any, z: any) => any;
+      static addBarricade: (x: any, y: any, z: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static addMetalBarricade: (x: any, y: any, z: any) => any;
+      static addMetalBarricade: (x: any, y: any, z: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static AddPlayer: (p: any) => any;
+      static AddPlayer: (p: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static closeBothInv: () => any;
+      static closeBothInv: (...__args: never[]) => any;
 
       /** @noSelf */
-      static closeInv: () => any;
+      static closeInv: (...__args: never[]) => any;
 
       /** @noSelf */
-      static closeLoot: () => any;
+      static closeLoot: (...__args: never[]) => any;
 
       /** @noSelf */
-      static collapseInv: (inv: any) => any;
+      static collapseInv: (inv: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static createInventoryContextMenu: (player: any, isInPlayerInventory: any, items: any, x: any, y: any) => any;
+      static createInventoryContextMenu: (
+        player: any,
+        isInPlayerInventory: any,
+        items: any,
+        x: any,
+        y: any,
+        ...__args: never[]
+      ) => any;
 
       /** @noSelf */
-      static createWorldContextMenu: (player: any, worldobjects: any, x: any, y: any) => any;
+      static createWorldContextMenu: (player: any, worldobjects: any, x: any, y: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static createWorldContextMenuFromContext: (context: any, worldobjects: any) => any;
+      static createWorldContextMenuFromContext: (context: any, worldobjects: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doubleClickInventory: (inventoryPane: any, x: any, y: any, mouseOverOption: any) => any;
+      static doubleClickInventory: (
+        inventoryPane: any,
+        x: any,
+        y: any,
+        mouseOverOption: any,
+        ...__args: never[]
+      ) => any;
 
       /** @noSelf */
-      static FillContainers: () => any;
+      static FillContainers: (...__args: never[]) => any;
 
       /** @noSelf */
-      static Init: () => any;
+      static Init: (...__args: never[]) => any;
 
       /** @noSelf */
-      static lockDoor: (x: any, y: any, z: any) => any;
+      static lockDoor: (x: any, y: any, z: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static openDoor: (x: any, y: any, z: any, north: any) => any;
+      static openDoor: (x: any, y: any, z: any, north: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static PreloadInit: () => any;
+      static PreloadInit: (...__args: never[]) => any;
 
       /** @noSelf */
-      static removeFences: () => any;
+      static removeFences: (...__args: never[]) => any;
 
       /** @noSelf */
-      static Render: () => any;
+      static Render: (...__args: never[]) => any;
 
       /** @noSelf */
-      static replaceFence: (sq: any, north: any) => any;
+      static replaceFence: (sq: any, north: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static SpawnZombies: (count: any) => any;
+      static SpawnZombies: (count: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static Tick: () => any;
+      static Tick: (...__args: never[]) => any;
 
       /** @noSelf */
-      static unlockDoor: (x: any, y: any, z: any) => any;
+      static unlockDoor: (x: any, y: any, z: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.Tutorial.Tutorial1 {}

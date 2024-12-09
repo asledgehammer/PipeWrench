@@ -13,7 +13,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      refresh: (() => any) | any;
+      refresh(...__args: never[]): any;
     }
   }
   export namespace lua.client.DebugUIs.DebugErrorsWindow {}

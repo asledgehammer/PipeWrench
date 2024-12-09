@@ -47,28 +47,28 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, character: any, owner: any);
 
-      close: (() => any) | any;
+      close(...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDirDown: ((button: any) => any) | any;
+      onJoypadDirDown(button: any, ...__args: never[]): any;
 
-      onJoypadDirUp: ((button: any) => any) | any;
+      onJoypadDirUp(button: any, ...__args: never[]): any;
 
-      onJoypadDown: ((button: any) => any) | any;
+      onJoypadDown(button: any, ...__args: never[]): any;
 
-      onLoseJoypadFocus: ((joypadData: any) => any) | any;
+      onLoseJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      prerender: (() => any) | any;
+      prerender(...__args: never[]): any;
 
-      setLists: (() => any) | any;
+      setLists(...__args: never[]): any;
 
-      setMediaLists: ((scriptItems: any) => any) | any;
+      setMediaLists(scriptItems: any, ...__args: never[]): any;
 
       /** @noSelf */
-      static SetItemHidden: (fullType: any, hidden: any) => any;
+      static SetItemHidden: (fullType: any, hidden: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.ISLiteratureUI {}

@@ -17,21 +17,21 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      doDrawItem: ((y: any, item: any, alt: any) => any) | any;
+      doDrawItem(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      fill: (() => any) | any;
+      fill(...__args: never[]): any;
 
-      onMouseDoubleClickCallframe: ((item: any) => any) | any;
+      onMouseDoubleClickCallframe(item: any, ...__args: never[]): any;
 
-      onMouseDoubleClickMeta: ((item: any) => any) | any;
+      onMouseDoubleClickMeta(item: any, ...__args: never[]): any;
 
-      onMouseDoubleClickObject: ((item: any) => any) | any;
+      onMouseDoubleClickObject(item: any, ...__args: never[]): any;
 
-      onResize: ((width: any, height: any) => any) | any;
+      onResize(width: any, height: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
     }
   }
   export namespace lua.client.DebugUIs.LuaThreadWindow {}

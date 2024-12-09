@@ -83,63 +83,63 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, playerChecked: any, admin: any);
 
-      canModifyThis: (() => any) | any;
+      canModifyThis(...__args: never[]): any;
 
-      create: (() => any) | any;
+      create(...__args: never[]): any;
 
-      drawPerk: ((y: any, item: any, alt: any) => any) | any;
+      drawPerk(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      onAddTrait: ((button: any, trait: any) => any) | any;
+      onAddTrait(button: any, trait: any, ...__args: never[]): any;
 
-      onAddWarningPoint: ((button: any, reason: any, amount: any) => any) | any;
+      onAddWarningPoint(button: any, reason: any, amount: any, ...__args: never[]): any;
 
-      onAddXP: ((button: any, perk: any, amount: any, addGlobalXP: any) => any) | any;
+      onAddXP(button: any, perk: any, amount: any, addGlobalXP: any, ...__args: never[]): any;
 
-      onChangeAccessLevel: ((button: any, accessLevel: any) => any) | any;
+      onChangeAccessLevel(button: any, accessLevel: any, ...__args: never[]): any;
 
-      onChangeName: ((button: any, player: any, changedName: any) => any) | any;
+      onChangeName(button: any, player: any, changedName: any, ...__args: never[]): any;
 
-      onChangeProfession: ((button: any, prof: any) => any) | any;
+      onChangeProfession(button: any, prof: any, ...__args: never[]): any;
 
-      onChangeWeight: ((button: any, player: any) => any) | any;
+      onChangeWeight(button: any, player: any, ...__args: never[]): any;
 
-      onMouseWheelXXX: ((del: any) => any) | any;
+      onMouseWheelXXX(del: any, ...__args: never[]): any;
 
-      onOptionMouseDown: ((button: any, x: any, y: any) => any) | any;
+      onOptionMouseDown(button: any, x: any, y: any, ...__args: never[]): any;
 
-      onRemoveTrait: ((button: any, x: any, y: any) => any) | any;
+      onRemoveTrait(button: any, x: any, y: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setVisible: ((visible: any) => any) | any;
+      setVisible(visible: any, ...__args: never[]): any;
 
-      subPanelPreRender: (() => any) | any;
+      subPanelPreRender(...__args: never[]): any;
 
-      subPanelRender: (() => any) | any;
+      subPanelRender(...__args: never[]): any;
 
-      updateButtons: (() => any) | any;
+      updateButtons(...__args: never[]): any;
 
-      updateColumns: (() => any) | any;
+      updateColumns(...__args: never[]): any;
 
-      updateWeight: (() => any) | any;
-
-      /** @noSelf */
-      static loadPerks: (self: any) => any;
+      updateWeight(...__args: never[]): any;
 
       /** @noSelf */
-      static loadProfession: (self: any) => any;
+      static loadPerks: (self: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static loadTraits: (self: any) => any;
+      static loadProfession: (self: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static loadUserlog: (self: any) => any;
+      static loadTraits: (self: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnOpenPanel: () => any;
+      static loadUserlog: (self: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static receiveUserLog: (username: any, logs: any) => any;
+      static OnOpenPanel: (...__args: never[]) => any;
+
+      /** @noSelf */
+      static receiveUserLog: (username: any, logs: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.PlayerStats.ISPlayerStatsUI {}

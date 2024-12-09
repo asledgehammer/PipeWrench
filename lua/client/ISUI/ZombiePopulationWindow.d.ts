@@ -29,32 +29,32 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      onAddWorldSound: ((worldX: any, worldY: any) => any) | any;
+      onAddWorldSound(worldX: any, worldY: any, ...__args: never[]): any;
 
-      onChangeOption: ((option: any) => any) | any;
+      onChangeOption(option: any, ...__args: never[]): any;
 
-      onMapMouseDown: ((x: any, y: any) => any) | any;
+      onMapMouseDown(x: any, y: any, ...__args: never[]): any;
 
-      onMapMouseMove: ((dx: any, dy: any) => any) | any;
+      onMapMouseMove(dx: any, dy: any, ...__args: never[]): any;
 
-      onMapMouseUp: ((x: any, y: any) => any) | any;
+      onMapMouseUp(x: any, y: any, ...__args: never[]): any;
 
-      onMapMouseUpOutside: ((x: any, y: any) => any) | any;
+      onMapMouseUpOutside(x: any, y: any, ...__args: never[]): any;
 
-      onMapRightMouseDown: ((x: any, y: any) => any) | any;
+      onMapRightMouseDown(x: any, y: any, ...__args: never[]): any;
 
-      onMapRightMouseUp: ((x: any, y: any) => any) | any;
+      onMapRightMouseUp(x: any, y: any, ...__args: never[]): any;
 
-      onMapRightMouseUpOutside: ((x: any, y: any) => any) | any;
+      onMapRightMouseUpOutside(x: any, y: any, ...__args: never[]): any;
 
-      onRenderMouseWheel: ((del: any) => any) | any;
+      onRenderMouseWheel(del: any, ...__args: never[]): any;
 
-      onTeleport: ((worldX: any, worldY: any) => any) | any;
+      onTeleport(worldX: any, worldY: any, ...__args: never[]): any;
 
-      renderTex: (() => any) | any;
+      renderTex(...__args: never[]): any;
 
       /** @noSelf */
-      static OnOpenPanel: () => any;
+      static OnOpenPanel: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.ZombiePopulationWindow {

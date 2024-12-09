@@ -12,10 +12,10 @@ declare module '@asledgehammer/pipewrench' {
       constructor(x: any, y: any, width: any, height: any);
 
       /** @noSelf */
-      static doInfo: (title: any, infopanel: any) => any;
+      static doInfo: (title: any, infopanel: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static get: (title: any) => any;
+      static get: (title: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.ISInfoContainer {}

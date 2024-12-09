@@ -6,37 +6,37 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static calcDisease: (diseaseLvl: any) => any;
+      static calcDisease: (diseaseLvl: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static calcWater: (waterMin: any, waterLvl: any) => any;
+      static calcWater: (waterMin: any, waterLvl: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getObjectName: (plant: any) => any;
+      static getObjectName: (plant: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getSpriteName: (plant: any) => any;
+      static getSpriteName: (plant: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static growBroccoli: (planting: any, nextGrowing: any, updateNbOfGrow: any) => any;
+      static growBroccoli: (planting: any, nextGrowing: any, updateNbOfGrow: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static growCabbage: (planting: any, nextGrowing: any, updateNbOfGrow: any) => any;
+      static growCabbage: (planting: any, nextGrowing: any, updateNbOfGrow: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static growCarrots: (planting: any, nextGrowing: any, updateNbOfGrow: any) => any;
+      static growCarrots: (planting: any, nextGrowing: any, updateNbOfGrow: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static growPotato: (planting: any, nextGrowing: any, updateNbOfGrow: any) => any;
+      static growPotato: (planting: any, nextGrowing: any, updateNbOfGrow: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static growRedRadish: (planting: any, nextGrowing: any, updateNbOfGrow: any) => any;
+      static growRedRadish: (planting: any, nextGrowing: any, updateNbOfGrow: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static growStrewberries: (planting: any, nextGrowing: any, updateNbOfGrow: any) => any;
+      static growStrewberries: (planting: any, nextGrowing: any, updateNbOfGrow: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static growTomato: (planting: any, nextGrowing: any, updateNbOfGrow: any) => any;
+      static growTomato: (planting: any, nextGrowing: any, updateNbOfGrow: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.server.Farming.farming_vegetableconf {}

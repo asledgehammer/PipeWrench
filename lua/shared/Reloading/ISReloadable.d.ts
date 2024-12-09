@@ -35,35 +35,35 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor();
 
-      canRack: ((chr: any) => any) | any;
+      canRack(chr: any, ...__args: never[]): any;
 
-      canReload: ((chr: any) => any) | any;
+      canReload(chr: any, ...__args: never[]): any;
 
-      fireShot: (() => any) | any;
+      fireShot(...__args: never[]): any;
 
-      getReloadText: (() => any) | any;
+      getReloadText(...__args: never[]): any;
 
-      getReloadTime: (() => any) | any;
+      getReloadTime(...__args: never[]): any;
 
-      isChainReloading: (() => any) | any;
+      isChainReloading(...__args: never[]): any;
 
-      isLoaded: (() => any) | any;
+      isLoaded(...__args: never[]): any;
 
-      isReloadValid: ((char: any, square: any, difficulty: any) => any) | any;
+      isReloadValid(char: any, square: any, difficulty: any, ...__args: never[]): any;
 
-      printItemDetails: ((item: any) => any) | any;
+      printItemDetails(item: any, ...__args: never[]): any;
 
-      printReloadableDetails: (() => any) | any;
+      printReloadableDetails(...__args: never[]): any;
 
-      reloadPerform: ((char: any, square: any, difficulty: any) => any) | any;
+      reloadPerform(char: any, square: any, difficulty: any, ...__args: never[]): any;
 
-      reloadStart: ((char: any, square: any, difficulty: any) => any) | any;
+      reloadStart(char: any, square: any, difficulty: any, ...__args: never[]): any;
 
-      setupReloadable: ((item: any, v: any) => any) | any;
+      setupReloadable(item: any, v: any, ...__args: never[]): any;
 
-      syncItemToReloadable: ((item: any) => any) | any;
+      syncItemToReloadable(item: any, ...__args: never[]): any;
 
-      syncReloadableToItem: ((item: any) => any) | any;
+      syncReloadableToItem(item: any, ...__args: never[]): any;
     }
   }
   export namespace lua.shared.Reloading.ISReloadable {}

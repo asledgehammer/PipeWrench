@@ -29,27 +29,27 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onExit: ((button: any, x: any, y: any) => any) | any;
+      onExit(button: any, x: any, y: any, ...__args: never[]): any;
 
-      onGridMult1: ((button: any, x: any, y: any) => any) | any;
+      onGridMult1(button: any, x: any, y: any, ...__args: never[]): any;
 
-      onGridMult2: ((button: any, x: any, y: any) => any) | any;
+      onGridMult2(button: any, x: any, y: any, ...__args: never[]): any;
 
-      onGridMult3: ((button: any, x: any, y: any) => any) | any;
+      onGridMult3(button: any, x: any, y: any, ...__args: never[]): any;
 
-      onResolutionChange: ((oldw: any, oldh: any, neww: any, newh: any) => any) | any;
+      onResolutionChange(oldw: any, oldh: any, neww: any, newh: any, ...__args: never[]): any;
 
-      onSave: ((button: any, x: any, y: any) => any) | any;
+      onSave(button: any, x: any, y: any, ...__args: never[]): any;
 
-      setEditUI: ((ui: any) => any) | any;
+      setEditUI(ui: any, ...__args: never[]): any;
 
-      showUI: (() => any) | any;
+      showUI(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
-      wroteScript: ((fileName: any) => any) | any;
+      wroteScript(fileName: any, ...__args: never[]): any;
     }
 
     /** @customConstructor AttachmentEditorUI_EditAttachment:new */
@@ -99,49 +99,49 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      doDrawItem: ((y: any, item: any, alt: any) => any) | any;
+      doDrawItem(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      doDrawItem2: ((y: any, item: any, alt: any) => any) | any;
+      doDrawItem2(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      doLayout: (() => any) | any;
+      doLayout(...__args: never[]): any;
 
-      getSelectedAttachmentIds: (() => any) | any;
+      getSelectedAttachmentIds(...__args: never[]): any;
 
-      getSelectedAttachments: (() => any) | any;
+      getSelectedAttachments(...__args: never[]): any;
 
-      getUniqueAttachmentId: ((modelScript: any) => any) | any;
+      getUniqueAttachmentId(modelScript: any, ...__args: never[]): any;
 
-      isBodyScript: ((modelScript: any) => any) | any;
+      isBodyScript(modelScript: any, ...__args: never[]): any;
 
-      onComboAddModel: (() => any) | any;
+      onComboAddModel(...__args: never[]): any;
 
-      onComboPlayerModel: (() => any) | any;
+      onComboPlayerModel(...__args: never[]): any;
 
-      onDeleteAttachment: ((button: any, x: any, y: any) => any) | any;
+      onDeleteAttachment(button: any, x: any, y: any, ...__args: never[]): any;
 
-      onNameEntered: (() => any) | any;
+      onNameEntered(...__args: never[]): any;
 
-      onNewAttachment: ((button: any, x: any, y: any) => any) | any;
+      onNewAttachment(button: any, x: any, y: any, ...__args: never[]): any;
 
-      onRemoveModel: ((button: any, x: any, y: any) => any) | any;
+      onRemoveModel(button: any, x: any, y: any, ...__args: never[]): any;
 
-      onRightMouseDownList1: ((x: any, y: any) => any) | any;
+      onRightMouseDownList1(x: any, y: any, ...__args: never[]): any;
 
-      onSetObjectAutoRotate: ((child: any) => any) | any;
+      onSetObjectAutoRotate(child: any, ...__args: never[]): any;
 
-      onSetObjectParent: ((child: any, childAttachment: any, parent: any, parentAttachment: any) => any) | any;
+      onSetObjectParent(child: any, childAttachment: any, parent: any, parentAttachment: any, ...__args: never[]): any;
 
-      onToggleGizmo: (() => any) | any;
+      onToggleGizmo(...__args: never[]): any;
 
-      onToggleGlobalLocal: (() => any) | any;
+      onToggleGlobalLocal(...__args: never[]): any;
 
-      pickCharacterBone: (() => any) | any;
+      pickCharacterBone(...__args: never[]): any;
 
-      setSelectedAttachment: ((attach: any) => any) | any;
+      setSelectedAttachment(attach: any, ...__args: never[]): any;
 
-      setSelectedModel: ((modelScript: any) => any) | any;
+      setSelectedModel(modelScript: any, ...__args: never[]): any;
     }
 
     /** @customConstructor AttachmentEditorUI_EditPanel:new */
@@ -151,50 +151,49 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      createList: ((x: any, y: any, w: any, h: any) => any) | any;
+      createList(x: any, y: any, w: any, h: any, ...__args: never[]): any;
 
-      java0: ((func: any) => any) | any;
+      java0(func: any, ...__args: never[]): any;
 
-      java1: ((func: any, arg0: any) => any) | any;
+      java1(func: any, arg0: any, ...__args: never[]): any;
 
-      java2: ((func: any, arg0: any, arg1: any) => any) | any;
+      java2(func: any, arg0: any, arg1: any, ...__args: never[]): any;
 
-      java3: ((func: any, arg0: any, arg1: any, arg2: any) => any) | any;
+      java3(func: any, arg0: any, arg1: any, arg2: any, ...__args: never[]): any;
 
-      java4: ((func: any, arg0: any, arg1: any, arg2: any, arg3: any) => any) | any;
+      java4(func: any, arg0: any, arg1: any, arg2: any, arg3: any, ...__args: never[]): any;
 
-      java6: ((func: any, arg0: any, arg1: any, arg2: any, arg3: any, arg4: any, arg5: any) => any) | any;
+      java6(func: any, arg0: any, arg1: any, arg2: any, arg3: any, arg4: any, arg5: any, ...__args: never[]): any;
 
-      java9:
-        | ((
-            func: any,
-            arg0: any,
-            arg1: any,
-            arg2: any,
-            arg3: any,
-            arg4: any,
-            arg5: any,
-            arg6: any,
-            arg7: any,
-            arg8: any,
-          ) => any)
-        | any;
+      java9(
+        func: any,
+        arg0: any,
+        arg1: any,
+        arg2: any,
+        arg3: any,
+        arg4: any,
+        arg5: any,
+        arg6: any,
+        arg7: any,
+        arg8: any,
+        ...__args: never[]
+      ): any;
 
-      onGizmoAccept: (() => any) | any;
+      onGizmoAccept(...__args: never[]): any;
 
-      onGizmoCancel: (() => any) | any;
+      onGizmoCancel(...__args: never[]): any;
 
-      onGizmoChanged: ((delta: any) => any) | any;
+      onGizmoChanged(delta: any, ...__args: never[]): any;
 
-      onGizmoStart: (() => any) | any;
+      onGizmoStart(...__args: never[]): any;
 
-      onSceneMouseDown: ((x: any, y: any) => any) | any;
+      onSceneMouseDown(x: any, y: any, ...__args: never[]): any;
 
-      prerenderEditor: (() => any) | any;
+      prerenderEditor(...__args: never[]): any;
 
-      toUI: (() => any) | any;
+      toUI(...__args: never[]): any;
 
-      updateEditor: (() => any) | any;
+      updateEditor(...__args: never[]): any;
     }
 
     /** @customConstructor AttachmentEditorUI_ListBox:new */
@@ -206,19 +205,19 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      clearSelection: (() => any) | any;
+      clearSelection(...__args: never[]): any;
 
-      getSelectedCount: (() => any) | any;
+      getSelectedCount(...__args: never[]): any;
 
-      getSelectedItems: (() => any) | any;
+      getSelectedItems(...__args: never[]): any;
 
-      indexOf: ((text: any) => any) | any;
+      indexOf(text: any, ...__args: never[]): any;
 
-      iteratorSelected: (() => any) | any;
+      iteratorSelected(...__args: never[]): any;
 
-      setSelectedRow: ((row: any) => any) | any;
+      setSelectedRow(row: any, ...__args: never[]): any;
 
-      setSelectedRows: ((rows: any) => any) | any;
+      setSelectedRows(rows: any, ...__args: never[]): any;
     }
 
     /** @customConstructor AttachmentEditorUI_Scene:new */
@@ -236,17 +235,17 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      onGizmoAccept: (() => any) | any;
+      onGizmoAccept(...__args: never[]): any;
 
-      onGizmoCancel: (() => any) | any;
+      onGizmoCancel(...__args: never[]): any;
 
-      onGizmoChanged: ((delta: any) => any) | any;
+      onGizmoChanged(delta: any, ...__args: never[]): any;
 
-      onGizmoStart: (() => any) | any;
+      onGizmoStart(...__args: never[]): any;
 
-      onRightMouseDown: ((x: any, y: any) => any) | any;
+      onRightMouseDown(x: any, y: any, ...__args: never[]): any;
 
-      prerenderEditor: (() => any) | any;
+      prerenderEditor(...__args: never[]): any;
     }
 
     /** @customConstructor AttachmentEditorUI_SwitchView:new */
@@ -258,7 +257,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(editor: any, x: any, y: any, width: any, height: any);
 
-      onMouseMoveOutside: ((dx: any, dy: any) => any) | any;
+      onMouseMoveOutside(dx: any, dy: any, ...__args: never[]): any;
     }
 
     /** @customConstructor AttachmentEditorUI_WorldAttachmentPanel:new */
@@ -272,11 +271,11 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onTickBox: ((index: any, selected: any) => any) | any;
+      onTickBox(index: any, selected: any, ...__args: never[]): any;
 
-      setModelScriptName: ((scriptName: any) => any) | any;
+      setModelScriptName(scriptName: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.DebugUIs.AttachmentEditorUI {

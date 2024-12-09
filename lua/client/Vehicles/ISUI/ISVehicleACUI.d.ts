@@ -25,27 +25,27 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, character: any);
 
-      addKnobValues: (() => any) | any;
+      addKnobValues(...__args: never[]): any;
 
-      centerOnScreen: (() => any) | any;
+      centerOnScreen(...__args: never[]): any;
 
-      changeKnob: (() => any) | any;
+      changeKnob(...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onClick: ((button: any) => any) | any;
+      onClick(button: any, ...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setVehicle: ((vehicle: any) => any) | any;
+      setVehicle(vehicle: any, ...__args: never[]): any;
 
-      undisplay: (() => any) | any;
+      undisplay(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
-      updateButtons: (() => any) | any;
+      updateButtons(...__args: never[]): any;
     }
   }
   export namespace lua.client.Vehicles.ISUI.ISVehicleACUI {}

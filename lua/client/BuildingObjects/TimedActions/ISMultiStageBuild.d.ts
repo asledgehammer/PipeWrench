@@ -15,7 +15,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, stage: any, item: any, time: any);
 
-      consumeMaterial: (() => any) | any;
+      consumeMaterial(...__args: never[]): any;
     }
   }
   export namespace lua.client.BuildingObjects.TimedActions.ISMultiStageBuild {}

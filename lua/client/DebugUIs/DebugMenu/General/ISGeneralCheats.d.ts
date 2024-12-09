@@ -11,15 +11,15 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, doStencil: any);
 
-      addBoolOption: ((_title: any, _lua: any) => any) | any;
+      addBoolOption(_title: any, _lua: any, ...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      initialise: (() => any) | any;
+      initialise(...__args: never[]): any;
 
-      onTicked: ((_index: any, _selected: any, _arg1: any, _arg2: any, _tickbox: any) => any) | any;
+      onTicked(_index: any, _selected: any, _arg1: any, _arg2: any, _tickbox: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
     }
   }
   export namespace lua.client.DebugUIs.DebugMenu.General.ISGeneralCheats {}

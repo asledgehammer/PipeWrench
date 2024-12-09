@@ -27,7 +27,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      addCombo: ((name: any, options: any, selected: any, target: any, onchange: any) => any) | any;
+      addCombo(name: any, options: any, selected: any, target: any, onchange: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISOptionPanel {}

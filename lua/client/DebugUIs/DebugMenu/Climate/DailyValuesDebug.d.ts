@@ -39,24 +39,24 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, player: any);
 
-      addLabel: ((_curY: any, _labelID: any, _title: any) => any) | any;
+      addLabel(_curY: any, _labelID: any, _title: any, ...__args: never[]): any;
 
-      addLabelValue: ((_curY: any, _type: any, _labelID: any, _title: any, _defaultVal: any) => any) | any;
+      addLabelValue(_curY: any, _type: any, _labelID: any, _title: any, _defaultVal: any, ...__args: never[]): any;
 
-      clear: (() => any) | any;
+      clear(...__args: never[]): any;
 
-      getTitleLabel: ((_labelID: any) => any) | any;
+      getTitleLabel(_labelID: any, ...__args: never[]): any;
 
-      getValueLabel: ((_labelID: any) => any) | any;
+      getValueLabel(_labelID: any, ...__args: never[]): any;
 
-      onResize: (() => any) | any;
+      onResize(...__args: never[]): any;
 
-      stayOnSplitScreen: (() => any) | any;
+      stayOnSplitScreen(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
       /** @noSelf */
-      static OnOpenPanel: () => any;
+      static OnOpenPanel: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.DebugUIs.DebugMenu.Climate.DailyValuesDebug {}

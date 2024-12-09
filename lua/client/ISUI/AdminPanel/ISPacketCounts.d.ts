@@ -21,17 +21,17 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      closeSelf: (() => any) | any;
+      closeSelf(...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onClose: (() => any) | any;
+      onClose(...__args: never[]): any;
 
-      onSelectCategory: (() => any) | any;
+      onSelectCategory(...__args: never[]): any;
 
-      onUpdate: (() => any) | any;
+      onUpdate(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
     }
 
     /** @customConstructor ISPacketCountsList:new */
@@ -41,7 +41,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      onMouseWheel: ((del: any) => any) | any;
+      onMouseWheel(del: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.AdminPanel.ISPacketCounts {}

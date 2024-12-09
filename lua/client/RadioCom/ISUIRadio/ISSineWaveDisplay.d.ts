@@ -37,28 +37,27 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      getWaveData: ((_len: any, _minH: any, _maxH: any) => any) | any;
+      getWaveData(_len: any, _minH: any, _maxH: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setWaveParameters:
-        | ((
-            _minLen: any,
-            _maxLen: any,
-            _minHeight: any,
-            _maxHeight: any,
-            _minUpdFreq: any,
-            _maxUpdFreq: any,
-            _minScrollSpeed: any,
-            _maxScrollSpeed: any,
-          ) => any)
-        | any;
+      setWaveParameters(
+        _minLen: any,
+        _maxLen: any,
+        _minHeight: any,
+        _maxHeight: any,
+        _minUpdFreq: any,
+        _maxUpdFreq: any,
+        _minScrollSpeed: any,
+        _maxScrollSpeed: any,
+        ...__args: never[]
+      ): any;
 
-      toggleOn: ((_b: any) => any) | any;
+      toggleOn(_b: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
     }
   }
   export namespace lua.client.RadioCom.ISUIRadio.ISSineWaveDisplay {}

@@ -49,19 +49,19 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, character: any);
 
-      checkIfAdmin: (() => any) | any;
+      checkIfAdmin(...__args: never[]): any;
 
-      checkIfIntersectingAnotherZone: (() => any) | any;
+      checkIfIntersectingAnotherZone(...__args: never[]): any;
 
-      highlightZone: ((_x1: any, _x2: any, _y1: any, _y2: any, _fullHighlight: any) => any) | any;
+      highlightZone(_x1: any, _x2: any, _y1: any, _y2: any, _fullHighlight: any, ...__args: never[]): any;
 
-      onClick: ((button: any) => any) | any;
+      onClick(button: any, ...__args: never[]): any;
 
-      onClickClaimOptions: ((_clickedOption: any, _ticked: any) => any) | any;
+      onClickClaimOptions(_clickedOption: any, _ticked: any, ...__args: never[]): any;
 
-      redefineStartingPoint: (() => any) | any;
+      redefineStartingPoint(...__args: never[]): any;
 
-      updateButtons: (() => any) | any;
+      updateButtons(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.AdminPanel.ISAddSafeZoneUI {}

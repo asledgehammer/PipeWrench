@@ -27,24 +27,24 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      closeSelf: (() => any) | any;
+      closeSelf(...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onActivateView: (() => any) | any;
+      onActivateView(...__args: never[]): any;
 
-      onOptionMouseDown: ((button: any, x: any, y: any) => any) | any;
+      onOptionMouseDown(button: any, x: any, y: any, ...__args: never[]): any;
 
-      onRemove: ((button: any, view: any) => any) | any;
+      onRemove(button: any, view: any, ...__args: never[]): any;
 
-      refresh: (() => any) | any;
+      refresh(...__args: never[]): any;
 
-      refreshButtons: (() => any) | any;
+      refreshButtons(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
       /** @noSelf */
-      static receiveDBSchema: (schema: any) => any;
+      static receiveDBSchema: (schema: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.AdminPanel.ISWhitelistViewer {}

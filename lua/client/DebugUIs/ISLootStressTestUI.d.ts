@@ -43,23 +43,23 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, character: any);
 
-      concatList: ((list: any) => any) | any;
+      concatList(list: any, ...__args: never[]): any;
 
-      doRichTextList: ((container: any, roomName: any) => any) | any;
+      doRichTextList(container: any, roomName: any, ...__args: never[]): any;
 
-      doRoom: ((container: any, roomName: any, contName: any, procName: any) => any) | any;
+      doRoom(container: any, roomName: any, contName: any, procName: any, ...__args: never[]): any;
 
-      generateBuilding: (() => any) | any;
+      generateBuilding(...__args: never[]): any;
 
-      getLootDensity: (() => any) | any;
+      getLootDensity(...__args: never[]): any;
 
-      getRandomKitchenCounter: (() => any) | any;
+      getRandomKitchenCounter(...__args: never[]): any;
 
-      itemValidForList: ((item: any) => any) | any;
+      itemValidForList(item: any, ...__args: never[]): any;
 
-      startGenerate: (() => any) | any;
+      startGenerate(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
     }
   }
   export namespace lua.client.DebugUIs.ISLootStressTestUI {}

@@ -19,15 +19,15 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      fill: (() => any) | any;
+      fill(...__args: never[]): any;
 
-      onButtonReload: (() => any) | any;
+      onButtonReload(...__args: never[]): any;
 
-      onMouseDoubleClickFile: ((item: any) => any) | any;
+      onMouseDoubleClickFile(item: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
-      updateReloadButton: (() => any) | any;
+      updateReloadButton(...__args: never[]): any;
     }
 
     /** @customConstructor LuaFileBrowserList:new */

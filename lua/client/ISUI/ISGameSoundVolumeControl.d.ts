@@ -29,23 +29,23 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, target: any, targetFunc: any);
 
-      getTooltip: (() => any) | any;
+      getTooltip(...__args: never[]): any;
 
-      getVolume: (() => any) | any;
+      getVolume(...__args: never[]): any;
 
-      getVolumeAtX: ((x: any) => any) | any;
+      getVolumeAtX(x: any, ...__args: never[]): any;
 
-      instantiate: (() => any) | any;
+      instantiate(...__args: never[]): any;
 
-      onJoypadDirLeft: ((joypadData: any) => any) | any;
+      onJoypadDirLeft(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDirRight: ((joypadData: any) => any) | any;
+      onJoypadDirRight(joypadData: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setJoypadFocused: ((focused: any) => any) | any;
+      setJoypadFocused(focused: any, ...__args: never[]): any;
 
-      setVolume: ((volume: any) => any) | any;
+      setVolume(volume: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISGameSoundVolumeControl {}

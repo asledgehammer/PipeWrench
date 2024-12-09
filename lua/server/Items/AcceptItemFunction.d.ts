@@ -6,10 +6,10 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static FirstAidKit: (container: any, item: any) => any;
+      static FirstAidKit: (container: any, item: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static KeyRing: (container: any, item: any) => any;
+      static KeyRing: (container: any, item: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.server.Items.AcceptItemFunction {}

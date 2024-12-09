@@ -17,7 +17,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(mover: any, x: any, y: any, z: any);
 
-      setTarget: ((x: any, y: any, z: any) => any) | any;
+      setTarget(x: any, y: any, z: any, ...__args: never[]): any;
     }
   }
   export namespace lua.server.Movers.MoverStates.MoveToState {}

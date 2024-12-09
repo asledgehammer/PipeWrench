@@ -29,26 +29,26 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      addButtonInfo: ((_title: any, _func: any, _tab: any, _marginTop: any) => any) | any;
+      addButtonInfo(_title: any, _func: any, _tab: any, _marginTop: any, ...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onClick: ((_button: any) => any) | any;
+      onClick(_button: any, ...__args: never[]): any;
 
-      onClick_Dev: (() => any) | any;
+      onClick_Dev(...__args: never[]): any;
 
-      onClick_Main: (() => any) | any;
+      onClick_Main(...__args: never[]): any;
 
-      setupButtons: (() => any) | any;
-
-      /** @noSelf */
-      static OnOpenPanel: () => any;
+      setupButtons(...__args: never[]): any;
 
       /** @noSelf */
-      static OnPlayerDeath: (playerObj: any) => any;
+      static OnOpenPanel: (...__args: never[]) => any;
 
       /** @noSelf */
-      static RegisterClass: (_class: any) => any;
+      static OnPlayerDeath: (playerObj: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static RegisterClass: (_class: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.DebugUIs.DebugMenu.ISDebugMenu {}

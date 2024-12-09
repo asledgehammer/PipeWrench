@@ -31,31 +31,31 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, target: any, onSave: any);
 
-      addLinePair: ((_text: any, _UIelement: any) => any) | any;
+      addLinePair(_text: any, _UIelement: any, ...__args: never[]): any;
 
-      calcLinePairs: (() => any) | any;
+      calcLinePairs(...__args: never[]): any;
 
-      clearJoypadFocus: ((joypadData: any) => any) | any;
+      clearJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      doSaveButton: (() => any) | any;
+      doSaveButton(...__args: never[]): any;
 
-      getAPrompt: (() => any) | any;
+      getAPrompt(...__args: never[]): any;
 
-      getBPrompt: (() => any) | any;
+      getBPrompt(...__args: never[]): any;
 
-      getXPrompt: (() => any) | any;
+      getXPrompt(...__args: never[]): any;
 
-      getYPrompt: (() => any) | any;
+      getYPrompt(...__args: never[]): any;
 
-      onJoypadDown: ((button: any) => any) | any;
+      onJoypadDown(button: any, ...__args: never[]): any;
 
-      onSliderChange: ((value: any) => any) | any;
+      onSliderChange(value: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setValues: ((name: any, freq: any, min: any, max: any, step: any, shift: any) => any) | any;
+      setValues(name: any, freq: any, min: any, max: any, step: any, shift: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.RadioCom.RadioWindowModules.RWMSubEditPreset {}

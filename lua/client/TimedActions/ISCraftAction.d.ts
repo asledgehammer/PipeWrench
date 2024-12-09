@@ -29,13 +29,22 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, item: any, time: any, recipe: any, container: any, containers: any);
 
-      addOrDropItem: ((item: any) => any) | any;
+      addOrDropItem(item: any, ...__args: never[]): any;
 
-      getPropItemOrModel: ((propStr: any) => any) | any;
+      getPropItemOrModel(propStr: any, ...__args: never[]): any;
 
-      setOnComplete:
-        | ((func: any, arg1: any, arg2: any, arg3: any, arg4: any, arg5: any, arg6: any, arg7: any, arg8: any) => any)
-        | any;
+      setOnComplete(
+        func: any,
+        arg1: any,
+        arg2: any,
+        arg3: any,
+        arg4: any,
+        arg5: any,
+        arg6: any,
+        arg7: any,
+        arg8: any,
+        ...__args: never[]
+      ): any;
     }
   }
   export namespace lua.client.TimedActions.ISCraftAction {}

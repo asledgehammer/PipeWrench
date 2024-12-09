@@ -12,7 +12,7 @@ declare module '@asledgehammer/pipewrench' {
       addStamp: ((symbol: any, text: any, mapX: any, mapY: any, r: any, g: any, b: any) => any) | any;
 
       /** @noSelf */
-      static newStash: (name: any, type: any, item: any, customName: any) => any;
+      static newStash: (name: any, type: any, item: any, customName: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.shared.StashDescriptions.StashUtil {}

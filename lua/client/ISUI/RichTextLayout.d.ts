@@ -67,21 +67,21 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(width: any);
 
-      getHeight: (() => any) | any;
+      getHeight(...__args: never[]): any;
 
-      getWidth: (() => any) | any;
+      getWidth(...__args: never[]): any;
 
-      paginate: (() => any) | any;
+      paginate(...__args: never[]): any;
 
-      processCommand: ((command: any, x: any, y: any, lineImageHeight: any, lineHeight: any) => any) | any;
+      processCommand(command: any, x: any, y: any, lineImageHeight: any, lineHeight: any, ...__args: never[]): any;
 
-      render: ((x: any, y: any, ui: any) => any) | any;
+      render(x: any, y: any, ui: any, ...__args: never[]): any;
 
-      setMargins: ((left: any, top: any, right: any, bottom: any) => any) | any;
+      setMargins(left: any, top: any, right: any, bottom: any, ...__args: never[]): any;
 
-      setText: ((text: any) => any) | any;
+      setText(text: any, ...__args: never[]): any;
 
-      setWidth: ((width: any) => any) | any;
+      setWidth(width: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.RichTextLayout {}

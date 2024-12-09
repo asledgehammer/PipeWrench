@@ -45,31 +45,31 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor();
 
-      OnBrothersDead: (() => any) | any;
+      OnBrothersDead(...__args: never[]): any;
 
       /** @noSelf */
-      static BandageYourself: () => any;
+      static BandageYourself: (...__args: never[]) => any;
 
       /** @noSelf */
-      static CheckWindow: () => any;
+      static CheckWindow: (...__args: never[]) => any;
 
       /** @noSelf */
-      static HealthOpen: () => any;
+      static HealthOpen: (...__args: never[]) => any;
 
       /** @noSelf */
-      static OpenCurtain: () => any;
+      static OpenCurtain: (...__args: never[]) => any;
 
       /** @noSelf */
-      static spawnBrothers: () => any;
+      static spawnBrothers: (...__args: never[]) => any;
 
       /** @noSelf */
-      static ThroughDoor: () => any;
+      static ThroughDoor: (...__args: never[]) => any;
 
       /** @noSelf */
-      static ThroughWindow: () => any;
+      static ThroughWindow: (...__args: never[]) => any;
 
       /** @noSelf */
-      static Vault: () => any;
+      static Vault: (...__args: never[]) => any;
     }
 
     /** @customConstructor FightStep:new */
@@ -107,23 +107,23 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor();
 
-      ClimbThroughWindow: (() => any) | any;
+      ClimbThroughWindow(...__args: never[]): any;
 
-      HitZombie: (() => any) | any;
+      HitZombie(...__args: never[]): any;
 
-      IsAiming: (() => any) | any;
+      IsAiming(...__args: never[]): any;
 
-      KillZombie: (() => any) | any;
+      KillZombie(...__args: never[]): any;
 
-      LootKnife: (() => any) | any;
+      LootKnife(...__args: never[]): any;
 
-      OnMomDead: ((zed: any) => any) | any;
+      OnMomDead(zed: any, ...__args: never[]): any;
 
-      OpenWindow: (() => any) | any;
+      OpenWindow(...__args: never[]): any;
 
-      spawnMom: (() => any) | any;
+      spawnMom(...__args: never[]): any;
 
-      WalkToWindow: (() => any) | any;
+      WalkToWindow(...__args: never[]): any;
     }
 
     /** @customConstructor InventoryLootingStep:new */
@@ -137,15 +137,15 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor();
 
-      focusCorrectPanel: (() => any) | any;
+      focusCorrectPanel(...__args: never[]): any;
 
-      focusLootingPanel: (() => any) | any;
+      focusLootingPanel(...__args: never[]): any;
 
-      haveItem: (() => any) | any;
+      haveItem(...__args: never[]): any;
 
-      haveWater: (() => any) | any;
+      haveWater(...__args: never[]): any;
 
-      openInventoryJoypad: (() => any) | any;
+      openInventoryJoypad(...__args: never[]): any;
     }
 
     /** @customConstructor InventoryUseStep:new */
@@ -167,22 +167,22 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor();
 
-      eat: (() => any) | any;
+      eat(...__args: never[]): any;
 
-      fillBottle: (() => any) | any;
+      fillBottle(...__args: never[]): any;
 
-      focusLootingPanel: (() => any) | any;
+      focusLootingPanel(...__args: never[]): any;
 
-      InLocJoypad: (() => any) | any;
+      InLocJoypad(...__args: never[]): any;
 
-      lootWeapon: (() => any) | any;
+      lootWeapon(...__args: never[]): any;
 
-      seeWeapon: (() => any) | any;
+      seeWeapon(...__args: never[]): any;
 
-      selectInventory: (() => any) | any;
+      selectInventory(...__args: never[]): any;
 
       /** @noSelf */
-      static spawnPan: () => any;
+      static spawnPan: (...__args: never[]) => any;
     }
 
     /** @customConstructor ShotgunStep:new */
@@ -220,37 +220,37 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor();
 
-      Aiming: (() => any) | any;
+      Aiming(...__args: never[]): any;
 
-      isPlayedDead: (() => any) | any;
+      isPlayedDead(...__args: never[]): any;
 
-      isPlayedDeadJoypad: (() => any) | any;
+      isPlayedDeadJoypad(...__args: never[]): any;
 
-      Shout: (() => any) | any;
-
-      /** @noSelf */
-      static BackOverFence: () => any;
+      Shout(...__args: never[]): any;
 
       /** @noSelf */
-      static BrothersDead: () => any;
+      static BackOverFence: (...__args: never[]) => any;
 
       /** @noSelf */
-      static ClimbedFence: () => any;
+      static BrothersDead: (...__args: never[]) => any;
 
       /** @noSelf */
-      static OnSquare: () => any;
+      static ClimbedFence: (...__args: never[]) => any;
 
       /** @noSelf */
-      static Outhouse: () => any;
+      static OnSquare: (...__args: never[]) => any;
 
       /** @noSelf */
-      static Sprinted: () => any;
+      static Outhouse: (...__args: never[]) => any;
 
       /** @noSelf */
-      static SurvivalGuideOpen: () => any;
+      static Sprinted: (...__args: never[]) => any;
 
       /** @noSelf */
-      static TheEnd: () => any;
+      static SurvivalGuideOpen: (...__args: never[]) => any;
+
+      /** @noSelf */
+      static TheEnd: (...__args: never[]) => any;
     }
 
     /** @customConstructor SneakStep:new */
@@ -276,35 +276,35 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor();
 
-      CheckBag: (() => any) | any;
+      CheckBag(...__args: never[]): any;
 
-      DadDead: (() => any) | any;
+      DadDead(...__args: never[]): any;
 
-      EquippedBag: (() => any) | any;
+      EquippedBag(...__args: never[]): any;
 
-      EquipShotgun: (() => any) | any;
+      EquipShotgun(...__args: never[]): any;
 
-      GoThroughDoor: (() => any) | any;
+      GoThroughDoor(...__args: never[]): any;
 
-      OnDadDead: (() => any) | any;
+      OnDadDead(...__args: never[]): any;
 
-      OpenGate: (() => any) | any;
+      OpenGate(...__args: never[]): any;
 
-      SneakingGate: (() => any) | any;
+      SneakingGate(...__args: never[]): any;
 
-      spawnDad: (() => any) | any;
-
-      /** @noSelf */
-      static OnSwingAtDad: (owner: any, weapon: any, zed: any, dmg: any) => any;
+      spawnDad(...__args: never[]): any;
 
       /** @noSelf */
-      static setZoom: (depth: any) => any;
+      static OnSwingAtDad: (owner: any, weapon: any, zed: any, dmg: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static Sneak: () => any;
+      static setZoom: (depth: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static spawnShotgun: () => any;
+      static Sneak: (...__args: never[]) => any;
+
+      /** @noSelf */
+      static spawnShotgun: (...__args: never[]) => any;
     }
 
     /** @customConstructor WalkToAdjacent:new */
@@ -324,11 +324,11 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor();
 
-      inLoc: (() => any) | any;
+      inLoc(...__args: never[]): any;
 
-      inLoc2: (() => any) | any;
+      inLoc2(...__args: never[]): any;
 
-      strafed: (() => any) | any;
+      strafed(...__args: never[]): any;
     }
 
     /** @customConstructor WelcomeStep:new */
@@ -345,40 +345,40 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static addHoming: (sq: any, yoffset: any, xoffset: any, color: any) => any;
+      static addHoming: (sq: any, yoffset: any, xoffset: any, color: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static addMarker: (sq: any, size: any) => any;
+      static addMarker: (sq: any, size: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static HealthOpen: () => any;
+      static HealthOpen: (...__args: never[]) => any;
 
       /** @noSelf */
-      static highlight: (obj: any, thickness: any) => any;
+      static highlight: (obj: any, thickness: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static LookedAround: () => any;
+      static LookedAround: (...__args: never[]) => any;
 
       /** @noSelf */
-      static NotSkillsPage: () => any;
+      static NotSkillsPage: (...__args: never[]) => any;
 
       /** @noSelf */
-      static PlayerInfoOpen: () => any;
+      static PlayerInfoOpen: (...__args: never[]) => any;
 
       /** @noSelf */
-      static RemoveMarkers: () => any;
+      static RemoveMarkers: (...__args: never[]) => any;
 
       /** @noSelf */
-      static SkillsPage: () => any;
+      static SkillsPage: (...__args: never[]) => any;
 
       /** @noSelf */
-      static stopHighlight: (obj: any) => any;
+      static stopHighlight: (obj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static ZoomedIn: () => any;
+      static ZoomedIn: (...__args: never[]) => any;
 
       /** @noSelf */
-      static ZoomedOut: () => any;
+      static ZoomedOut: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.Tutorial.Steps {}

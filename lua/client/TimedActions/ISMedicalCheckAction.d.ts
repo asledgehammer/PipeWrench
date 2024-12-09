@@ -18,7 +18,7 @@ declare module '@asledgehammer/pipewrench' {
       constructor(character: any, otherPlayer: any);
 
       /** @noSelf */
-      static getHealthWindowForPlayer: (playerObj: any) => any;
+      static getHealthWindowForPlayer: (playerObj: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.TimedActions.ISMedicalCheckAction {}

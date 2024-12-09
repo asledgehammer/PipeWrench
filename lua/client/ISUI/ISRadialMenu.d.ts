@@ -21,41 +21,40 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, innerRadius: any, outerRadius: any, playerNum: any);
 
-      addSlice:
-        | ((
-            text: any,
-            texture: any,
-            command: any,
-            arg1: any,
-            arg2: any,
-            arg3: any,
-            arg4: any,
-            arg5: any,
-            arg6: any,
-          ) => any)
-        | any;
+      addSlice(
+        text: any,
+        texture: any,
+        command: any,
+        arg1: any,
+        arg2: any,
+        arg3: any,
+        arg4: any,
+        arg5: any,
+        arg6: any,
+        ...__args: never[]
+      ): any;
 
-      center: (() => any) | any;
+      center(...__args: never[]): any;
 
-      clear: (() => any) | any;
+      clear(...__args: never[]): any;
 
-      getSliceCommand: ((sliceIndex: any) => any) | any;
+      getSliceCommand(sliceIndex: any, ...__args: never[]): any;
 
-      instantiate: (() => any) | any;
+      instantiate(...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onJoypadButtonReleased: ((button: any, joypadData: any) => any) | any;
+      onJoypadButtonReleased(button: any, joypadData: any, ...__args: never[]): any;
 
-      onMouseDownOutside: ((x: any, y: any) => any) | any;
+      onMouseDownOutside(x: any, y: any, ...__args: never[]): any;
 
-      setHideWhenButtonReleased: ((button: any) => any) | any;
+      setHideWhenButtonReleased(button: any, ...__args: never[]): any;
 
-      setSliceText: ((sliceIndex: any, text: any) => any) | any;
+      setSliceText(sliceIndex: any, text: any, ...__args: never[]): any;
 
-      setSliceTexture: ((sliceIndex: any, texture: any) => any) | any;
+      setSliceTexture(sliceIndex: any, texture: any, ...__args: never[]): any;
 
-      undisplay: (() => any) | any;
+      undisplay(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISRadialMenu {}

@@ -15,11 +15,11 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor();
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onOptionMouseDown: ((button: any, x: any, y: any) => any) | any;
+      onOptionMouseDown(button: any, x: any, y: any, ...__args: never[]): any;
     }
 
     /** @customConstructor ISVehiclePartListBox:new */

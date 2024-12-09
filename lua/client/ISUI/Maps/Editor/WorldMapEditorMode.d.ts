@@ -19,21 +19,21 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(editor: any);
 
-      display: (() => any) | any;
+      display(...__args: never[]): any;
 
-      generateLuaScript: (() => any) | any;
+      generateLuaScript(...__args: never[]): any;
 
-      isKeyConsumed: ((key: any) => any) | any;
+      isKeyConsumed(key: any, ...__args: never[]): any;
 
-      loadSettingsFromMap: (() => any) | any;
+      loadSettingsFromMap(...__args: never[]): any;
 
-      onKeyPress: ((key: any) => any) | any;
+      onKeyPress(key: any, ...__args: never[]): any;
 
-      onKeyRelease: ((key: any) => any) | any;
+      onKeyRelease(key: any, ...__args: never[]): any;
 
-      onMouseWheel: ((del: any) => any) | any;
+      onMouseWheel(del: any, ...__args: never[]): any;
 
-      undisplay: (() => any) | any;
+      undisplay(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.Maps.Editor.WorldMapEditorMode {}

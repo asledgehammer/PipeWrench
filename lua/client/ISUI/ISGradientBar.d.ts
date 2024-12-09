@@ -21,23 +21,23 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setBorderColor: ((_a: any, _r: any, _g: any, _b: any) => any) | any;
+      setBorderColor(_a: any, _r: any, _g: any, _b: any, ...__args: never[]): any;
 
-      setBorderInnerColor: ((_a: any, _r: any, _g: any, _b: any) => any) | any;
+      setBorderInnerColor(_a: any, _r: any, _g: any, _b: any, ...__args: never[]): any;
 
-      setDarkAlpha: ((_alpha: any) => any) | any;
+      setDarkAlpha(_alpha: any, ...__args: never[]): any;
 
-      setDoKnob: ((_b: any) => any) | any;
+      setDoKnob(_b: any, ...__args: never[]): any;
 
-      setGradientTexture: ((_tex: any) => any) | any;
+      setGradientTexture(_tex: any, ...__args: never[]): any;
 
-      setHighlightRadius: ((_rad: any) => any) | any;
+      setHighlightRadius(_rad: any, ...__args: never[]): any;
 
-      setValue: ((_v: any) => any) | any;
+      setValue(_v: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISGradientBar {}

@@ -33,57 +33,57 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, player: any);
 
-      addModule: ((_modulePanel: any, _moduleName: any, _enable: any) => any) | any;
+      addModule(_modulePanel: any, _moduleName: any, _enable: any, ...__args: never[]): any;
 
-      clear: (() => any) | any;
+      clear(...__args: never[]): any;
 
-      focusNext: ((_up: any) => any) | any;
+      focusNext(_up: any, ...__args: never[]): any;
 
-      focusSelf: (() => any) | any;
+      focusSelf(...__args: never[]): any;
 
-      getAPrompt: (() => any) | any;
+      getAPrompt(...__args: never[]): any;
 
-      getBPrompt: (() => any) | any;
+      getBPrompt(...__args: never[]): any;
 
-      getLBPrompt: (() => any) | any;
+      getLBPrompt(...__args: never[]): any;
 
-      getRBPrompt: (() => any) | any;
+      getRBPrompt(...__args: never[]): any;
 
-      getXPrompt: (() => any) | any;
+      getXPrompt(...__args: never[]): any;
 
-      getYPrompt: (() => any) | any;
+      getYPrompt(...__args: never[]): any;
 
-      isValidPrompt: (() => any) | any;
+      isValidPrompt(...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDirDown: (() => any) | any;
+      onJoypadDirDown(...__args: never[]): any;
 
-      onJoypadDirLeft: (() => any) | any;
+      onJoypadDirLeft(...__args: never[]): any;
 
-      onJoypadDirRight: (() => any) | any;
+      onJoypadDirRight(...__args: never[]): any;
 
-      onJoypadDirUp: (() => any) | any;
+      onJoypadDirUp(...__args: never[]): any;
 
-      onJoypadDown: ((button: any) => any) | any;
+      onJoypadDown(button: any, ...__args: never[]): any;
 
-      onLoseJoypadFocus: ((joypadData: any) => any) | any;
+      onLoseJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      readFromObject: ((_player: any, _deviceObject: any) => any) | any;
+      readFromObject(_player: any, _deviceObject: any, ...__args: never[]): any;
 
-      setSubFocus: ((_newFocus: any) => any) | any;
+      setSubFocus(_newFocus: any, ...__args: never[]): any;
 
-      stayOnSplitScreen: (() => any) | any;
+      stayOnSplitScreen(...__args: never[]): any;
 
-      unfocusSelf: (() => any) | any;
+      unfocusSelf(...__args: never[]): any;
 
-      update: (() => any) | any;
-
-      /** @noSelf */
-      static activate: (_player: any, _deviceObject: any) => any;
+      update(...__args: never[]): any;
 
       /** @noSelf */
-      static onEquip: (_player: any, _item: any) => any;
+      static activate: (_player: any, _deviceObject: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static onEquip: (_player: any, _item: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.RadioCom.ISRadioWindow {}

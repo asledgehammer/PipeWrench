@@ -6,10 +6,10 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static MouseUp: () => any;
+      static MouseUp: (...__args: never[]) => any;
 
       /** @noSelf */
-      static RenderUI: () => any;
+      static RenderUI: (...__args: never[]) => any;
     }
   }
   export namespace lua.server.NewSelectionSystem.GridSquareSelector {}

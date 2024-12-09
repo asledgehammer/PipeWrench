@@ -33,23 +33,23 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onButtonResume: (() => any) | any;
+      onButtonResume(...__args: never[]): any;
 
-      onButtonStepInto: (() => any) | any;
+      onButtonStepInto(...__args: never[]): any;
 
-      onButtonStepOver: (() => any) | any;
+      onButtonStepOver(...__args: never[]): any;
 
-      onDebugLog: (() => any) | any;
+      onDebugLog(...__args: never[]): any;
 
-      onMapClick: (() => any) | any;
+      onMapClick(...__args: never[]): any;
 
-      onOptionsClick: (() => any) | any;
+      onOptionsClick(...__args: never[]): any;
 
-      onShowErrors: (() => any) | any;
+      onShowErrors(...__args: never[]): any;
 
-      onToggleBreak: ((index: any, selected: any) => any) | any;
+      onToggleBreak(index: any, selected: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.DebugUIs.DebugToolstrip {}

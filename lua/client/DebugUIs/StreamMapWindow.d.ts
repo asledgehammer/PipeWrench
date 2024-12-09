@@ -21,23 +21,23 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      doDrawItem: ((y: any, item: any, alt: any) => any) | any;
+      doDrawItem(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      fillInfo: (() => any) | any;
+      fillInfo(...__args: never[]): any;
 
-      onMapMouseDown: ((x: any, y: any) => any) | any;
+      onMapMouseDown(x: any, y: any, ...__args: never[]): any;
 
-      onMapMouseMove: ((dx: any, dy: any) => any) | any;
+      onMapMouseMove(dx: any, dy: any, ...__args: never[]): any;
 
-      onMapRightMouseDown: ((x: any, y: any) => any) | any;
+      onMapRightMouseDown(x: any, y: any, ...__args: never[]): any;
 
-      onMapRightMouseUp: ((x: any, y: any) => any) | any;
+      onMapRightMouseUp(x: any, y: any, ...__args: never[]): any;
 
-      onMouseDoubleClickOpenObject: ((item: any) => any) | any;
+      onMouseDoubleClickOpenObject(item: any, ...__args: never[]): any;
 
-      onRenderMouseWheel: ((del: any) => any) | any;
+      onRenderMouseWheel(del: any, ...__args: never[]): any;
 
-      renderTex: (() => any) | any;
+      renderTex(...__args: never[]): any;
     }
   }
   export namespace lua.client.DebugUIs.StreamMapWindow {}

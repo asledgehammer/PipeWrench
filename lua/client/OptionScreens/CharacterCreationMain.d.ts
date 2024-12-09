@@ -135,117 +135,117 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      create: (() => any) | any;
+      create(...__args: never[]): any;
 
-      createBeardTypeBtn: (() => any) | any;
+      createBeardTypeBtn(...__args: never[]): any;
 
-      createChestTypeBtn: (() => any) | any;
+      createChestTypeBtn(...__args: never[]): any;
 
-      createClothingBtn: (() => any) | any;
+      createClothingBtn(...__args: never[]): any;
 
-      createClothingCombo: ((bodyLocation: any) => any) | any;
+      createClothingCombo(bodyLocation: any, ...__args: never[]): any;
 
-      createClothingComboDebug: ((bodyLocation: any) => any) | any;
+      createClothingComboDebug(bodyLocation: any, ...__args: never[]): any;
 
-      createHairTypeBtn: (() => any) | any;
+      createHairTypeBtn(...__args: never[]): any;
 
-      debugClothingDefinitions: (() => any) | any;
+      debugClothingDefinitions(...__args: never[]): any;
 
-      deleteBuildStep1: (() => any) | any;
+      deleteBuildStep1(...__args: never[]): any;
 
-      deleteBuildStep2: ((button: any, joypadData: any) => any) | any;
+      deleteBuildStep2(button: any, joypadData: any, ...__args: never[]): any;
 
-      disableBtn: (() => any) | any;
+      disableBtn(...__args: never[]): any;
 
-      doClothingCombo: ((definition: any, erasePrevious: any) => any) | any;
+      doClothingCombo(definition: any, erasePrevious: any, ...__args: never[]): any;
 
-      initClothing: (() => any) | any;
+      initClothing(...__args: never[]): any;
 
-      initClothingDebug: (() => any) | any;
+      initClothingDebug(...__args: never[]): any;
 
-      initPlayer: (() => any) | any;
+      initPlayer(...__args: never[]): any;
 
-      instantiate: (() => any) | any;
+      instantiate(...__args: never[]): any;
 
-      loadJoypadButtons: ((joypadData: any) => any) | any;
+      loadJoypadButtons(joypadData: any, ...__args: never[]): any;
 
-      loadOutfit: ((box: any) => any) | any;
+      loadOutfit(box: any, ...__args: never[]): any;
 
-      onBeardStubbleSelected: ((index: any, selected: any) => any) | any;
+      onBeardStubbleSelected(index: any, selected: any, ...__args: never[]): any;
 
-      onBeardTypeSelected: ((combo: any) => any) | any;
+      onBeardTypeSelected(combo: any, ...__args: never[]): any;
 
-      onChestHairSelected: ((index: any, selected: any) => any) | any;
+      onChestHairSelected(index: any, selected: any, ...__args: never[]): any;
 
-      onClothingColorClicked: ((button: any, bodyLocation: any) => any) | any;
+      onClothingColorClicked(button: any, bodyLocation: any, ...__args: never[]): any;
 
-      onClothingColorPicked: ((color: any, mouseUp: any, bodyLocation: any) => any) | any;
+      onClothingColorPicked(color: any, mouseUp: any, bodyLocation: any, ...__args: never[]): any;
 
-      onClothingComboSelected: ((combo: any, bodyLocation: any) => any) | any;
+      onClothingComboSelected(combo: any, bodyLocation: any, ...__args: never[]): any;
 
-      onClothingDecalComboSelected: ((combo: any, bodyLocation: any) => any) | any;
+      onClothingDecalComboSelected(combo: any, bodyLocation: any, ...__args: never[]): any;
 
-      onClothingTextureComboSelected: ((combo: any, bodyLocation: any) => any) | any;
+      onClothingTextureComboSelected(combo: any, bodyLocation: any, ...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onHairColorMouseDown: ((button: any, x: any, y: any) => any) | any;
+      onHairColorMouseDown(button: any, x: any, y: any, ...__args: never[]): any;
 
-      onHairColorPicked: ((color: any, mouseUp: any) => any) | any;
+      onHairColorPicked(color: any, mouseUp: any, ...__args: never[]): any;
 
-      onHairTypeSelected: ((combo: any) => any) | any;
+      onHairTypeSelected(combo: any, ...__args: never[]): any;
 
-      onLoseJoypadFocus: ((joypadData: any) => any) | any;
+      onLoseJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onOptionMouseDown: ((button: any, x: any, y: any) => any) | any;
+      onOptionMouseDown(button: any, x: any, y: any, ...__args: never[]): any;
 
-      onOutfitSelected: ((combo: any) => any) | any;
+      onOutfitSelected(combo: any, ...__args: never[]): any;
 
-      onRandomizeOutfitClicked: (() => any) | any;
+      onRandomizeOutfitClicked(...__args: never[]): any;
 
-      onResolutionChange: ((oldw: any, oldh: any, neww: any, newh: any) => any) | any;
+      onResolutionChange(oldw: any, oldh: any, neww: any, newh: any, ...__args: never[]): any;
 
-      onShavedHairSelected: ((index: any, selected: any) => any) | any;
+      onShavedHairSelected(index: any, selected: any, ...__args: never[]): any;
 
-      onSkinColorPicked: ((color: any, mouseUp: any) => any) | any;
+      onSkinColorPicked(color: any, mouseUp: any, ...__args: never[]): any;
 
-      onSkinColorSelected: ((button: any, x: any, y: any) => any) | any;
+      onSkinColorSelected(button: any, x: any, y: any, ...__args: never[]): any;
 
-      requiredSize: ((panel: any) => any) | any;
+      requiredSize(panel: any, ...__args: never[]): any;
 
-      saveBuildStep1: (() => any) | any;
+      saveBuildStep1(...__args: never[]): any;
 
-      saveBuildStep2: ((button: any, joypadData: any, param2: any) => any) | any;
+      saveBuildStep2(button: any, joypadData: any, param2: any, ...__args: never[]): any;
 
-      saveBuildValidate: ((text: any) => any) | any;
+      saveBuildValidate(text: any, ...__args: never[]): any;
 
-      syncTorsoWithUI: (() => any) | any;
+      syncTorsoWithUI(...__args: never[]): any;
 
-      syncUIWithTorso: (() => any) | any;
+      syncUIWithTorso(...__args: never[]): any;
 
-      updateClothingTextureCombo: ((bodyLocation: any, clothing: any) => any) | any;
+      updateClothingTextureCombo(bodyLocation: any, clothing: any, ...__args: never[]): any;
 
-      updateColorButton: ((bodyLocation: any, clothing: any) => any) | any;
+      updateColorButton(bodyLocation: any, clothing: any, ...__args: never[]): any;
 
-      updateSelectedClothingCombo: (() => any) | any;
-
-      /** @noSelf */
-      static invertSort: (list: any) => any;
+      updateSelectedClothingCombo(...__args: never[]): any;
 
       /** @noSelf */
-      static readSavedOutfitFile: () => any;
+      static invertSort: (list: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static sort: (list: any) => any;
+      static readSavedOutfitFile: (...__args: never[]) => any;
 
       /** @noSelf */
-      static sortByCost: (a: any, b: any) => any;
+      static sort: (list: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static sortByInvertCost: (a: any, b: any) => any;
+      static sortByCost: (a: any, b: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static writeSaveFile: (options: any) => any;
+      static sortByInvertCost: (a: any, b: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static writeSaveFile: (options: any, ...__args: never[]) => any;
     }
 
     /** @customConstructor CharacterCreationMainCharacterPanel:new */
@@ -257,13 +257,13 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      loadJoypadButtons: ((joypadData: any) => any) | any;
+      loadJoypadButtons(joypadData: any, ...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onLoseJoypadFocus: ((joypadData: any) => any) | any;
+      onLoseJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
     }
 
     /** @customConstructor CharacterCreationMainPresetPanel:new */
@@ -271,11 +271,11 @@ declare module '@asledgehammer/pipewrench' {
       [id: string]: any;
       static [id: string]: any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onLoseJoypadFocus: ((joypadData: any) => any) | any;
+      onLoseJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
     }
   }
   export namespace lua.client.OptionScreens.CharacterCreationMain {}

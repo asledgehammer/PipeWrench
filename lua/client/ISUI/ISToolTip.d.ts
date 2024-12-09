@@ -31,44 +31,44 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor();
 
-      adjustPositionToAvoidOverlap: ((avoidRect: any) => any) | any;
+      adjustPositionToAvoidOverlap(avoidRect: any, ...__args: never[]): any;
 
-      doLayout: (() => any) | any;
+      doLayout(...__args: never[]): any;
 
-      instantiate: (() => any) | any;
+      instantiate(...__args: never[]): any;
 
-      layoutContents: ((x: any, y: any, myWidth: any) => any) | any;
+      layoutContents(x: any, y: any, myWidth: any, ...__args: never[]): any;
 
-      onRightMouseDown: ((x: any, y: any) => any) | any;
+      onRightMouseDown(x: any, y: any, ...__args: never[]): any;
 
-      onRightMouseUp: ((x: any, y: any) => any) | any;
+      onRightMouseUp(x: any, y: any, ...__args: never[]): any;
 
-      overlaps: ((r1: any, r2: any) => any) | any;
+      overlaps(r1: any, r2: any, ...__args: never[]): any;
 
-      placeAbove: ((r1: any, r2: any) => any) | any;
+      placeAbove(r1: any, r2: any, ...__args: never[]): any;
 
-      placeLeft: ((r1: any, r2: any) => any) | any;
+      placeLeft(r1: any, r2: any, ...__args: never[]): any;
 
-      placeRight: ((r1: any, r2: any) => any) | any;
+      placeRight(r1: any, r2: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      renderContents: (() => any) | any;
+      renderContents(...__args: never[]): any;
 
-      reset: (() => any) | any;
+      reset(...__args: never[]): any;
 
-      setContextMenu: ((contextMenu: any) => any) | any;
+      setContextMenu(contextMenu: any, ...__args: never[]): any;
 
-      setDesiredPosition: ((x: any, y: any) => any) | any;
+      setDesiredPosition(x: any, y: any, ...__args: never[]): any;
 
-      setName: ((name: any) => any) | any;
+      setName(name: any, ...__args: never[]): any;
 
-      setOwner: ((ui: any) => any) | any;
+      setOwner(ui: any, ...__args: never[]): any;
 
-      setTexture: ((textureName: any) => any) | any;
+      setTexture(textureName: any, ...__args: never[]): any;
 
       /** @noSelf */
-      static GetFont: () => any;
+      static GetFont: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.ISToolTip {}

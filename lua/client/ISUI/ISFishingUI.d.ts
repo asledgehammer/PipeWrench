@@ -81,49 +81,49 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, player: any, clickedSquare: any);
 
-      checkInventory: (() => any) | any;
+      checkInventory(...__args: never[]): any;
 
-      checkInventoryBags: (() => any) | any;
+      checkInventoryBags(...__args: never[]): any;
 
-      checkInventoryLures: (() => any) | any;
+      checkInventoryLures(...__args: never[]): any;
 
-      checkInventoryRods: (() => any) | any;
+      checkInventoryRods(...__args: never[]): any;
 
-      checkPlayerPosition: (() => any) | any;
+      checkPlayerPosition(...__args: never[]): any;
 
-      clickedRod: ((buttons: any, index: any) => any) | any;
+      clickedRod(buttons: any, index: any, ...__args: never[]): any;
 
-      doBagOptions: (() => any) | any;
+      doBagOptions(...__args: never[]): any;
 
-      equipItems: (() => any) | any;
+      equipItems(...__args: never[]): any;
 
-      getSelectedBag: (() => any) | any;
+      getSelectedBag(...__args: never[]): any;
 
-      onClick: ((button: any) => any) | any;
+      onClick(button: any, ...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onJoypadBeforeDeactivate: ((joypadData: any) => any) | any;
+      onJoypadBeforeDeactivate(joypadData: any, ...__args: never[]): any;
 
-      onJoypadBeforeReactivate: ((joypadData: any) => any) | any;
+      onJoypadBeforeReactivate(joypadData: any, ...__args: never[]): any;
 
-      pickBestSquare: ((squares: any) => any) | any;
+      pickBestSquare(squares: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setFish: ((item: any) => any) | any;
+      setFish(item: any, ...__args: never[]): any;
 
-      updateButtons: ((currentAction: any) => any) | any;
+      updateButtons(currentAction: any, ...__args: never[]): any;
 
-      updateLures: (() => any) | any;
+      updateLures(...__args: never[]): any;
 
-      updateRods: (() => any) | any;
+      updateRods(...__args: never[]): any;
 
-      updateSelectedRod: (() => any) | any;
+      updateSelectedRod(...__args: never[]): any;
 
-      updateSize: (() => any) | any;
+      updateSize(...__args: never[]): any;
 
-      updateZoneProgress: ((zoneClicked: any) => any) | any;
+      updateZoneProgress(zoneClicked: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISFishingUI {}

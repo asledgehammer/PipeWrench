@@ -27,23 +27,23 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      getLedIsOn: (() => any) | any;
+      getLedIsOn(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setBlinkingSpeed: ((_i: any) => any) | any;
+      setBlinkingSpeed(_i: any, ...__args: never[]): any;
 
-      setIsBlinking: ((_b: any) => any) | any;
+      setIsBlinking(_b: any, ...__args: never[]): any;
 
-      setLedColor: ((_a: any, _r: any, _g: any, _b: any) => any) | any;
+      setLedColor(_a: any, _r: any, _g: any, _b: any, ...__args: never[]): any;
 
-      setLedColorOff: ((_a: any, _r: any, _g: any, _b: any) => any) | any;
+      setLedColorOff(_a: any, _r: any, _g: any, _b: any, ...__args: never[]): any;
 
-      setLedIsOn: ((_b: any) => any) | any;
+      setLedIsOn(_b: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
     }
   }
   export namespace lua.client.RadioCom.ISUIRadio.ISLedLight {}

@@ -123,126 +123,134 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, inventory: any, zoom: any);
 
-      canPutIn: (() => any) | any;
+      canPutIn(...__args: never[]): any;
 
-      collapseAll: ((button: any) => any) | any;
+      collapseAll(button: any, ...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      doButtons: ((y: any) => any) | any;
+      doButtons(y: any, ...__args: never[]): any;
 
-      doContextOnJoypadSelected: (() => any) | any;
+      doContextOnJoypadSelected(...__args: never[]): any;
 
-      doContextualDblClick: ((item: any) => any) | any;
+      doContextualDblClick(item: any, ...__args: never[]): any;
 
-      doGrabOnJoypadSelected: (() => any) | any;
+      doGrabOnJoypadSelected(...__args: never[]): any;
 
-      doJoypadExpandCollapse: (() => any) | any;
+      doJoypadExpandCollapse(...__args: never[]): any;
 
-      drawItemDetails: ((item: any, y: any, xoff: any, yoff: any, red: any) => any) | any;
+      drawItemDetails(item: any, y: any, xoff: any, yoff: any, red: any, ...__args: never[]): any;
 
-      drawProgressBar: ((x: any, y: any, w: any, h: any, f: any, fg: any) => any) | any;
+      drawProgressBar(x: any, y: any, w: any, h: any, f: any, fg: any, ...__args: never[]): any;
 
-      drawTextAndProgressBar: ((text: any, fraction: any, xoff: any, top: any, fgText: any, fgBar: any) => any) | any;
+      drawTextAndProgressBar(
+        text: any,
+        fraction: any,
+        xoff: any,
+        top: any,
+        fgText: any,
+        fgBar: any,
+        ...__args: never[]
+      ): any;
 
-      expandAll: ((button: any) => any) | any;
+      expandAll(button: any, ...__args: never[]): any;
 
-      hideButtons: (() => any) | any;
+      hideButtons(...__args: never[]): any;
 
-      isMouseOverScrollBar: (() => any) | any;
+      isMouseOverScrollBar(...__args: never[]): any;
 
-      lootAll: (() => any) | any;
+      lootAll(...__args: never[]): any;
 
-      onConfirmDelete: ((button: any) => any) | any;
+      onConfirmDelete(button: any, ...__args: never[]): any;
 
-      onContext: ((button: any) => any) | any;
+      onContext(button: any, ...__args: never[]): any;
 
-      onFilterMenu: ((button: any) => any) | any;
+      onFilterMenu(button: any, ...__args: never[]): any;
 
-      onInventoryFontChanged: (() => any) | any;
+      onInventoryFontChanged(...__args: never[]): any;
 
-      onMouseDoubleClick: ((x: any, y: any) => any) | any;
+      onMouseDoubleClick(x: any, y: any, ...__args: never[]): any;
 
-      onMouseDownOutside: ((x: any, y: any) => any) | any;
+      onMouseDownOutside(x: any, y: any, ...__args: never[]): any;
 
-      onMouseWheel: ((del: any) => any) | any;
+      onMouseWheel(del: any, ...__args: never[]): any;
 
-      onResize: (() => any) | any;
+      onResize(...__args: never[]): any;
 
-      onResizeColumn: ((button: any) => any) | any;
+      onResizeColumn(button: any, ...__args: never[]): any;
 
-      onRightMouseUp: ((x: any, y: any) => any) | any;
+      onRightMouseUp(x: any, y: any, ...__args: never[]): any;
 
-      refreshContainer: (() => any) | any;
+      refreshContainer(...__args: never[]): any;
 
-      removeAll: ((player: any) => any) | any;
+      removeAll(player: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      renderdetails: ((doDragged: any) => any) | any;
+      renderdetails(doDragged: any, ...__args: never[]): any;
 
-      rendericons: (() => any) | any;
+      rendericons(...__args: never[]): any;
 
-      RestoreLayout: ((name: any, layout: any) => any) | any;
+      RestoreLayout(name: any, layout: any, ...__args: never[]): any;
 
-      restoreSelection: ((selected: any) => any) | any;
+      restoreSelection(selected: any, ...__args: never[]): any;
 
-      rowAt: ((x: any, y: any) => any) | any;
+      rowAt(x: any, y: any, ...__args: never[]): any;
 
-      SaveLayout: ((name: any, layout: any) => any) | any;
+      SaveLayout(name: any, layout: any, ...__args: never[]): any;
 
-      saveSelection: ((selected: any) => any) | any;
+      saveSelection(selected: any, ...__args: never[]): any;
 
-      selectIndex: ((index: any) => any) | any;
+      selectIndex(index: any, ...__args: never[]): any;
 
-      setMode: ((mode: any) => any) | any;
+      setMode(mode: any, ...__args: never[]): any;
 
-      sortByName: ((button: any) => any) | any;
+      sortByName(button: any, ...__args: never[]): any;
 
-      sortByType: ((button: any) => any) | any;
+      sortByType(button: any, ...__args: never[]): any;
 
-      sortByWeight: ((_isAscending: any) => any) | any;
+      sortByWeight(_isAscending: any, ...__args: never[]): any;
 
-      sortItemsByType: ((items: any) => any) | any;
+      sortItemsByType(items: any, ...__args: never[]): any;
 
-      sortItemsByTypeAndWeight: ((items: any) => any) | any;
+      sortItemsByTypeAndWeight(items: any, ...__args: never[]): any;
 
-      sortItemsByWeight: ((items: any) => any) | any;
+      sortItemsByWeight(items: any, ...__args: never[]): any;
 
-      toggleStove: (() => any) | any;
+      toggleStove(...__args: never[]): any;
 
-      topOfItem: ((index: any) => any) | any;
+      topOfItem(index: any, ...__args: never[]): any;
 
-      transferAll: (() => any) | any;
+      transferAll(...__args: never[]): any;
 
-      transferItemsByWeight: ((items: any, container: any) => any) | any;
+      transferItemsByWeight(items: any, container: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
-      updateSmoothScrolling: (() => any) | any;
+      updateSmoothScrolling(...__args: never[]): any;
 
-      updateTooltip: (() => any) | any;
-
-      /** @noSelf */
-      static getActualItems: (items: any) => any;
-
-      /** @noSelf */
-      static itemSortByCatDesc: (a: any, b: any) => any;
-
-      /** @noSelf */
-      static itemSortByCatInc: (a: any, b: any) => any;
-
-      /** @noSelf */
-      static itemSortByNameDesc: (a: any, b: any) => any;
+      updateTooltip(...__args: never[]): any;
 
       /** @noSelf */
-      static itemSortByNameInc: (a: any, b: any) => any;
+      static getActualItems: (items: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static itemSortByWeightAsc: (a: any, b: any) => any;
+      static itemSortByCatDesc: (a: any, b: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static itemSortByWeightDesc: (a: any, b: any) => any;
+      static itemSortByCatInc: (a: any, b: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static itemSortByNameDesc: (a: any, b: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static itemSortByNameInc: (a: any, b: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static itemSortByWeightAsc: (a: any, b: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static itemSortByWeightDesc: (a: any, b: any, ...__args: never[]) => any;
     }
 
     export abstract class ISInventoryPaneDraggedItems {

@@ -69,37 +69,37 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, map: any, player: any);
 
-      canErase: (() => any) | any;
+      canErase(...__args: never[]): any;
 
-      canWrite: (() => any) | any;
+      canWrite(...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      destroy: (() => any) | any;
+      destroy(...__args: never[]): any;
 
-      initMapData: (() => any) | any;
+      initMapData(...__args: never[]): any;
 
-      instantiate: (() => any) | any;
+      instantiate(...__args: never[]): any;
 
-      onButtonClick: ((button: any) => any) | any;
+      onButtonClick(button: any, ...__args: never[]): any;
 
-      onConfirmRemove: ((button: any, note: any) => any) | any;
+      onConfirmRemove(button: any, note: any, ...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onMouseWheel: ((del: any) => any) | any;
+      onMouseWheel(del: any, ...__args: never[]): any;
 
-      onRightMouseDown: ((x: any, y: any) => any) | any;
+      onRightMouseDown(x: any, y: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      renderJoypadIcons: (() => any) | any;
+      renderJoypadIcons(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
-      updateButtons: (() => any) | any;
+      updateButtons(...__args: never[]): any;
 
-      updateJoypad: (() => any) | any;
+      updateJoypad(...__args: never[]): any;
     }
 
     /** @customConstructor ISMapWrapper:new */
@@ -109,13 +109,13 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      isKeyConsumed: ((key: any) => any) | any;
+      isKeyConsumed(key: any, ...__args: never[]): any;
 
-      onKeyPress: ((key: any) => any) | any;
+      onKeyPress(key: any, ...__args: never[]): any;
 
-      onKeyRelease: ((key: any) => any) | any;
+      onKeyRelease(key: any, ...__args: never[]): any;
 
-      setVisible: ((bVisible: any) => any) | any;
+      setVisible(bVisible: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.Maps.ISMap {}

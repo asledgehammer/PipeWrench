@@ -25,7 +25,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(_forageIcon: any, _targetContainer: any, _discardItems: any);
 
-      forage: (() => any) | any;
+      forage(...__args: never[]): any;
     }
   }
   export namespace lua.client.Foraging.ISForageAction {}

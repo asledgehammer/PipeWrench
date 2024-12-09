@@ -63,46 +63,46 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      activateView: ((viewName: any) => any) | any;
+      activateView(viewName: any, ...__args: never[]): any;
 
-      addView: ((name: any, view: any) => any) | any;
+      addView(name: any, view: any, ...__args: never[]): any;
 
-      ensureVisible: ((index: any) => any) | any;
+      ensureVisible(index: any, ...__args: never[]): any;
 
-      getActiveView: (() => any) | any;
+      getActiveView(...__args: never[]): any;
 
-      getActiveViewIndex: (() => any) | any;
+      getActiveViewIndex(...__args: never[]): any;
 
-      getScrollButtonAtX: ((x: any) => any) | any;
+      getScrollButtonAtX(x: any, ...__args: never[]): any;
 
-      getTabIndexAtX: ((x: any, scrollX: any) => any) | any;
+      getTabIndexAtX(x: any, scrollX: any, ...__args: never[]): any;
 
-      getTabX: ((tabIndex: any, scrollX: any) => any) | any;
+      getTabX(tabIndex: any, scrollX: any, ...__args: never[]): any;
 
-      getView: ((viewName: any) => any) | any;
+      getView(viewName: any, ...__args: never[]): any;
 
-      getWidthOfAllTabs: (() => any) | any;
+      getWidthOfAllTabs(...__args: never[]): any;
 
-      onMouseWheel: ((del: any) => any) | any;
+      onMouseWheel(del: any, ...__args: never[]): any;
 
-      removeView: ((view: any) => any) | any;
+      removeView(view: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setCenterTabs: ((center: any) => any) | any;
+      setCenterTabs(center: any, ...__args: never[]): any;
 
-      setEqualTabWidth: ((equal: any) => any) | any;
+      setEqualTabWidth(equal: any, ...__args: never[]): any;
 
-      setOnTabTornOff: ((target: any, method: any) => any) | any;
+      setOnTabTornOff(target: any, method: any, ...__args: never[]): any;
 
-      setTabsTransparency: ((alpha: any) => any) | any;
+      setTabsTransparency(alpha: any, ...__args: never[]): any;
 
-      setTextTransparency: ((alpha: any) => any) | any;
+      setTextTransparency(alpha: any, ...__args: never[]): any;
 
-      updateSmoothScrolling: (() => any) | any;
+      updateSmoothScrolling(...__args: never[]): any;
 
       /** @noSelf */
-      static redoTab: (self: any) => any;
+      static redoTab: (self: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.ISTabPanel {}

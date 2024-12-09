@@ -13,15 +13,15 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, text: any);
 
-      destroy: (() => any) | any;
+      destroy(...__args: never[]): any;
 
-      render: (() => any) | any;
-
-      /** @noSelf */
-      static showPauseMessage: () => any;
+      render(...__args: never[]): any;
 
       /** @noSelf */
-      static showSavingFinishMessage: () => any;
+      static showPauseMessage: (...__args: never[]) => any;
+
+      /** @noSelf */
+      static showSavingFinishMessage: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.ISServerSavingMessage {}

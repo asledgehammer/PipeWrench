@@ -91,90 +91,90 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      initDataAndStyle: (() => any) | any;
+      initDataAndStyle(...__args: never[]): any;
 
-      instantiate: (() => any) | any;
+      instantiate(...__args: never[]): any;
 
-      isKeyConsumed: ((key: any) => any) | any;
+      isKeyConsumed(key: any, ...__args: never[]): any;
 
-      onCenterOnPlayer: (() => any) | any;
+      onCenterOnPlayer(...__args: never[]): any;
 
-      onChangeOptions: ((button: any) => any) | any;
+      onChangeOptions(button: any, ...__args: never[]): any;
 
-      onChangePerspective: (() => any) | any;
+      onChangePerspective(...__args: never[]): any;
 
-      onConfirmForget: ((button: any) => any) | any;
+      onConfirmForget(button: any, ...__args: never[]): any;
 
-      onForget: (() => any) | any;
+      onForget(...__args: never[]): any;
 
-      onKeyPress: ((key: any) => any) | any;
+      onKeyPress(key: any, ...__args: never[]): any;
 
-      onKeyRelease: ((key: any) => any) | any;
+      onKeyRelease(key: any, ...__args: never[]): any;
 
-      onMouseWheel: ((del: any) => any) | any;
+      onMouseWheel(del: any, ...__args: never[]): any;
 
-      onRightMouseDown: ((x: any, y: any) => any) | any;
+      onRightMouseDown(x: any, y: any, ...__args: never[]): any;
 
-      onRightMouseUp: ((x: any, y: any) => any) | any;
+      onRightMouseUp(x: any, y: any, ...__args: never[]): any;
 
-      onTeleport: ((worldX: any, worldY: any) => any) | any;
+      onTeleport(worldX: any, worldY: any, ...__args: never[]): any;
 
-      onTogglePyramid: (() => any) | any;
+      onTogglePyramid(...__args: never[]): any;
 
-      onToggleSymbols: (() => any) | any;
+      onToggleSymbols(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      renderJoypadPrompt: ((texture: any, text: any, x: any, y: any) => any) | any;
+      renderJoypadPrompt(texture: any, text: any, x: any, y: any, ...__args: never[]): any;
 
-      restoreSettings: (() => any) | any;
+      restoreSettings(...__args: never[]): any;
 
-      saveSettings: (() => any) | any;
+      saveSettings(...__args: never[]): any;
 
-      setHideUnvisitedAreas: ((hide: any) => any) | any;
+      setHideUnvisitedAreas(hide: any, ...__args: never[]): any;
 
-      setIsometric: ((iso: any) => any) | any;
+      setIsometric(iso: any, ...__args: never[]): any;
 
-      setShowCellGrid: ((show: any) => any) | any;
+      setShowCellGrid(show: any, ...__args: never[]): any;
 
-      setShowPlayerNames: ((show: any) => any) | any;
+      setShowPlayerNames(show: any, ...__args: never[]): any;
 
-      setShowPlayers: ((show: any) => any) | any;
+      setShowPlayers(show: any, ...__args: never[]): any;
 
-      setShowRemotePlayers: ((show: any) => any) | any;
+      setShowRemotePlayers(show: any, ...__args: never[]): any;
 
-      setShowTileGrid: ((show: any) => any) | any;
+      setShowTileGrid(show: any, ...__args: never[]): any;
 
-      updateJoypad: (() => any) | any;
-
-      /** @noSelf */
-      static checkKey: (key: any) => any;
+      updateJoypad(...__args: never[]): any;
 
       /** @noSelf */
-      static HideWorldMap: (playerNum: any) => any;
+      static checkKey: (key: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static IsAllowed: () => any;
+      static HideWorldMap: (playerNum: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onKeyKeepPressed: (key: any) => any;
+      static IsAllowed: (...__args: never[]) => any;
 
       /** @noSelf */
-      static onKeyReleased: (key: any) => any;
+      static onKeyKeepPressed: (key: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onKeyStartPressed: (key: any) => any;
+      static onKeyReleased: (key: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnPlayerDeath: (playerObj: any) => any;
+      static onKeyStartPressed: (key: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static ShowWorldMap: (playerNum: any) => any;
+      static OnPlayerDeath: (playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static ToggleWorldMap: (playerNum: any) => any;
+      static ShowWorldMap: (playerNum: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static ToggleWorldMap: (playerNum: any, ...__args: never[]) => any;
     }
 
     /** @customConstructor ISWorldMapButtonPanel:new */
@@ -184,11 +184,11 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onLoseJoypadFocus: ((joypadData: any) => any) | any;
+      onLoseJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
     }
 
     /** @customConstructor WorldMapOptions:new */
@@ -214,23 +214,23 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, map: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      getVisibleOptions: (() => any) | any;
+      getVisibleOptions(...__args: never[]): any;
 
-      isMultiplayerOption: ((optionName: any) => any) | any;
+      isMultiplayerOption(optionName: any, ...__args: never[]): any;
 
-      onCommandEntered: ((entry: any, option: any) => any) | any;
+      onCommandEntered(entry: any, option: any, ...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDown: ((button: any, joypadData: any) => any) | any;
+      onJoypadDown(button: any, joypadData: any, ...__args: never[]): any;
 
-      onMouseDownOutside: ((x: any, y: any) => any) | any;
+      onMouseDownOutside(x: any, y: any, ...__args: never[]): any;
 
-      onTickBox: ((index: any, selected: any, option: any) => any) | any;
+      onTickBox(index: any, selected: any, option: any, ...__args: never[]): any;
 
-      synchUI: (() => any) | any;
+      synchUI(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.Maps.ISWorldMap {}

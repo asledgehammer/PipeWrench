@@ -45,67 +45,67 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(_manager: any);
 
-      checkShowFirstTimeSearchTutorial: (() => any) | any;
+      checkShowFirstTimeSearchTutorial(...__args: never[]): any;
 
-      getAPrompt: (() => any) | any;
+      getAPrompt(...__args: never[]): any;
 
-      getBPrompt: (() => any) | any;
+      getBPrompt(...__args: never[]): any;
 
-      getLBPrompt: (() => any) | any;
+      getLBPrompt(...__args: never[]): any;
 
-      getRBPrompt: (() => any) | any;
+      getRBPrompt(...__args: never[]): any;
 
-      getXPrompt: (() => any) | any;
+      getXPrompt(...__args: never[]): any;
 
-      getYPrompt: (() => any) | any;
+      getYPrompt(...__args: never[]): any;
 
-      isValidPrompt: (() => any) | any;
+      isValidPrompt(...__args: never[]): any;
 
-      nextSearchFocus: (() => any) | any;
+      nextSearchFocus(...__args: never[]): any;
 
-      onChangeSearchFocusCategory: ((_option: any) => any) | any;
+      onChangeSearchFocusCategory(_option: any, ...__args: never[]): any;
 
-      onGainJoypadFocus: (() => any) | any;
+      onGainJoypadFocus(...__args: never[]): any;
 
-      onJoypadDirDown: (() => any) | any;
+      onJoypadDirDown(...__args: never[]): any;
 
-      onJoypadDirLeft: (() => any) | any;
+      onJoypadDirLeft(...__args: never[]): any;
 
-      onJoypadDirRight: (() => any) | any;
+      onJoypadDirRight(...__args: never[]): any;
 
-      onJoypadDirUp: (() => any) | any;
+      onJoypadDirUp(...__args: never[]): any;
 
-      onJoypadDown: ((_button: any) => any) | any;
+      onJoypadDown(_button: any, ...__args: never[]): any;
 
-      onLoseJoypadFocus: (() => any) | any;
+      onLoseJoypadFocus(...__args: never[]): any;
 
-      onToggleVisible: (() => any) | any;
+      onToggleVisible(...__args: never[]): any;
 
-      toggleForceAreaTooltip: (() => any) | any;
+      toggleForceAreaTooltip(...__args: never[]): any;
 
-      toggleForceVisionTooltip: (() => any) | any;
+      toggleForceVisionTooltip(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
-      updateSearchFocusCategories: (() => any) | any;
-
-      /** @noSelf */
-      static createUI: (_player: any) => any;
+      updateSearchFocusCategories(...__args: never[]): any;
 
       /** @noSelf */
-      static destroyUI: (_character: any) => any;
+      static createUI: (_player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onEnableSearchMode: (_character: any, _isSearchMode: any) => any;
+      static destroyUI: (_character: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnFillWorldObjectContextMenu: (_player: any, _context: any) => any;
+      static onEnableSearchMode: (_character: any, _isSearchMode: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static showWindow: (_character: any) => any;
+      static OnFillWorldObjectContextMenu: (_player: any, _context: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static toggleWindow: (_character: any) => any;
+      static showWindow: (_character: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static toggleWindow: (_character: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.Foraging.ISSearchWindow {}

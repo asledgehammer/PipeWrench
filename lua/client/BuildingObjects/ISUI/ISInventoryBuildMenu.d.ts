@@ -6,19 +6,19 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static doBuildMenu: (player: any, context: any, worldobjects: any, test: any) => any;
+      static doBuildMenu: (player: any, context: any, worldobjects: any, test: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onSpillDirt: (playerObj: any) => any;
+      static onSpillDirt: (playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onSpillGravel: (playerObj: any) => any;
+      static onSpillGravel: (playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onSpillSand: (playerObj: any) => any;
+      static onSpillSand: (playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onTakeThing: (playerObj: any, groundType: any) => any;
+      static onTakeThing: (playerObj: any, groundType: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.BuildingObjects.ISUI.ISInventoryBuildMenu {}

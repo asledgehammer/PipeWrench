@@ -15,17 +15,17 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, doStencil: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      initialise: (() => any) | any;
+      initialise(...__args: never[]): any;
 
-      onRandomBlood: (() => any) | any;
+      onRandomBlood(...__args: never[]): any;
 
-      onSliderChange: ((_newval: any, _slider: any) => any) | any;
+      onSliderChange(_newval: any, _slider: any, ...__args: never[]): any;
 
-      onZeroAll: (() => any) | any;
+      onZeroAll(...__args: never[]): any;
 
-      setSliderValues: (() => any) | any;
+      setSliderValues(...__args: never[]): any;
     }
   }
   export namespace lua.client.DebugUIs.DebugMenu.General.ISDebugBlood {}

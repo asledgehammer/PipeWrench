@@ -15,23 +15,31 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, doStencil: any);
 
-      addColorInfo:
-        | ((_x: any, _y: any, _w: any, _col: any, _name: any, _daySegment: any, _temp: any, _season: any) => any)
-        | any;
+      addColorInfo(
+        _x: any,
+        _y: any,
+        _w: any,
+        _col: any,
+        _name: any,
+        _daySegment: any,
+        _temp: any,
+        _season: any,
+        ...__args: never[]
+      ): any;
 
-      addColorOption: ((_info: any, _x: any, _y: any, _w: any) => any) | any;
+      addColorOption(_info: any, _x: any, _y: any, _w: any, ...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      initialise: (() => any) | any;
+      initialise(...__args: never[]): any;
 
-      onApplyColorChange: ((_colorInfo: any) => any) | any;
+      onApplyColorChange(_colorInfo: any, ...__args: never[]): any;
 
-      onButtonClick: ((_button: any) => any) | any;
+      onButtonClick(_button: any, ...__args: never[]): any;
 
-      onButtonWriteConfig: ((_button: any) => any) | any;
+      onButtonWriteConfig(_button: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
     }
   }
   export namespace lua.client.DebugUIs.DebugMenu.Climate.ClimateColorsDebug {}

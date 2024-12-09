@@ -23,11 +23,11 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, _sq: any, _moveProps: any, _mode: any, _origSpriteName: any, _moveCursor: any);
 
-      isReachableObjectType: (() => any) | any;
+      isReachableObjectType(...__args: never[]): any;
 
-      isValidObject: (() => any) | any;
+      isValidObject(...__args: never[]): any;
 
-      setActionSound: (() => any) | any;
+      setActionSound(...__args: never[]): any;
     }
   }
   export namespace lua.client.Moveables.ISMoveablesAction {}

@@ -77,76 +77,76 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      addServerToList: ((server: any) => any) | any;
+      addServerToList(server: any, ...__args: never[]): any;
 
-      canConnect: (() => any) | any;
+      canConnect(...__args: never[]): any;
 
-      checkFields: (() => any) | any;
+      checkFields(...__args: never[]): any;
 
-      clickNext: (() => any) | any;
+      clickNext(...__args: never[]): any;
 
-      countMods: ((modString: any) => any) | any;
+      countMods(modString: any, ...__args: never[]): any;
 
-      create: (() => any) | any;
+      create(...__args: never[]): any;
 
-      drawMap: ((y: any, item: any, alt: any) => any) | any;
+      drawMap(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      emptyServerFile: ((server: any, append: any) => any) | any;
+      emptyServerFile(server: any, append: any, ...__args: never[]): any;
 
-      erase: (() => any) | any;
+      erase(...__args: never[]): any;
 
-      fillFields: ((item: any) => any) | any;
+      fillFields(item: any, ...__args: never[]): any;
 
-      instantiate: (() => any) | any;
+      instantiate(...__args: never[]): any;
 
-      onClickServer: ((item: any) => any) | any;
+      onClickServer(item: any, ...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onGainJoypadFocus_RightPanel: ((joypadData: any) => any) | any;
+      onGainJoypadFocus_RightPanel(joypadData: any, ...__args: never[]): any;
 
-      onJoypadBeforeDeactivate: ((joypadData: any) => any) | any;
+      onJoypadBeforeDeactivate(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDirLeft_RightPanel: ((joypadData: any) => any) | any;
+      onJoypadDirLeft_RightPanel(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDirRight_ListBox: ((joypadData: any) => any) | any;
+      onJoypadDirRight_ListBox(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDown_ListBox: ((button: any, joypadData: any) => any) | any;
+      onJoypadDown_ListBox(button: any, joypadData: any, ...__args: never[]): any;
 
-      onJoypadDown_RightPanel: ((button: any, joypadData: any) => any) | any;
+      onJoypadDown_RightPanel(button: any, joypadData: any, ...__args: never[]): any;
 
-      onLoseJoypadFocus_RightPanel: ((joypadData: any) => any) | any;
+      onLoseJoypadFocus_RightPanel(joypadData: any, ...__args: never[]): any;
 
-      onMouseDown_Tabs: ((x: any, y: any) => any) | any;
+      onMouseDown_Tabs(x: any, y: any, ...__args: never[]): any;
 
-      onOptionMouseDown: ((button: any, x: any, y: any) => any) | any;
+      onOptionMouseDown(button: any, x: any, y: any, ...__args: never[]): any;
 
-      pingServers: ((init: any) => any) | any;
+      pingServers(init: any, ...__args: never[]): any;
 
-      refreshList: (() => any) | any;
+      refreshList(...__args: never[]): any;
 
-      setServerDescription: ((item: any) => any) | any;
+      setServerDescription(item: any, ...__args: never[]): any;
 
-      setServerMods: ((item: any) => any) | any;
+      setServerMods(item: any, ...__args: never[]): any;
 
-      trimFields: ((item: any) => any) | any;
+      trimFields(item: any, ...__args: never[]): any;
 
-      writeServerOnFile: ((server: any, append: any) => any) | any;
-
-      /** @noSelf */
-      static onResetLua: (reason: any) => any;
+      writeServerOnFile(server: any, append: any, ...__args: never[]): any;
 
       /** @noSelf */
-      static OnSteamRulesRefreshComplete: (host: any, port: any, rules: any) => any;
+      static onResetLua: (reason: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnSteamServerFailedToRespond2: (host: any, port: any) => any;
+      static OnSteamRulesRefreshComplete: (host: any, port: any, rules: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnSteamServerResponded2: (host: any, port: any, server2: any) => any;
+      static OnSteamServerFailedToRespond2: (host: any, port: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static ServerPinged: (ip: any, users: any) => any;
+      static OnSteamServerResponded2: (host: any, port: any, server2: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static ServerPinged: (ip: any, users: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.OptionScreens.ServerList {}

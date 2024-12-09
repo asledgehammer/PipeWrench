@@ -35,42 +35,51 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, item: any, srcContainer: any, destContainer: any, time: any);
 
-      canDropOnFloor: ((square: any) => any) | any;
+      canDropOnFloor(square: any, ...__args: never[]): any;
 
-      canMergeAction: ((action: any) => any) | any;
+      canMergeAction(action: any, ...__args: never[]): any;
 
-      checkQueueList: (() => any) | any;
+      checkQueueList(...__args: never[]): any;
 
-      countItemsRecursive: ((_containerList: any, _itemsNum: any) => any) | any;
+      countItemsRecursive(_containerList: any, _itemsNum: any, ...__args: never[]): any;
 
-      doActionAnim: ((cont: any) => any) | any;
+      doActionAnim(cont: any, ...__args: never[]): any;
 
-      findRootInventory: ((_inventory: any) => any) | any;
+      findRootInventory(_inventory: any, ...__args: never[]): any;
 
-      floorHasRoomFor: ((square: any, item: any) => any) | any;
+      floorHasRoomFor(square: any, item: any, ...__args: never[]): any;
 
-      getExtraLogData: (() => any) | any;
+      getExtraLogData(...__args: never[]): any;
 
-      getNotFullFloorSquare: ((item: any) => any) | any;
+      getNotFullFloorSquare(item: any, ...__args: never[]): any;
 
-      getTimeDelta: (() => any) | any;
+      getTimeDelta(...__args: never[]): any;
 
-      isAlreadyTransferred: ((item: any) => any) | any;
+      isAlreadyTransferred(item: any, ...__args: never[]): any;
 
-      removeItemOnCharacter: (() => any) | any;
+      removeItemOnCharacter(...__args: never[]): any;
 
-      setAllowMissingItems: ((allow: any) => any) | any;
+      setAllowMissingItems(allow: any, ...__args: never[]): any;
 
-      setOnComplete:
-        | ((func: any, arg1: any, arg2: any, arg3: any, arg4: any, arg5: any, arg6: any, arg7: any, arg8: any) => any)
-        | any;
+      setOnComplete(
+        func: any,
+        arg1: any,
+        arg2: any,
+        arg3: any,
+        arg4: any,
+        arg5: any,
+        arg6: any,
+        arg7: any,
+        arg8: any,
+        ...__args: never[]
+      ): any;
 
-      startActionAnim: (() => any) | any;
+      startActionAnim(...__args: never[]): any;
 
-      transferItem: ((item: any) => any) | any;
+      transferItem(item: any, ...__args: never[]): any;
 
       /** @noSelf */
-      static GetDropItemOffset: (character: any, square: any, item: any) => any;
+      static GetDropItemOffset: (character: any, square: any, item: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.TimedActions.ISInventoryTransferAction {}

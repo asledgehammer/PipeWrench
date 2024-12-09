@@ -21,21 +21,21 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      create: (() => any) | any;
+      create(...__args: never[]): any;
 
-      onButtonDisconnect: (() => any) | any;
+      onButtonDisconnect(...__args: never[]): any;
 
-      onButtonInstall: (() => any) | any;
+      onButtonInstall(...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      progress: ((id: any, downloaded: any, total: any) => any) | any;
+      progress(id: any, downloaded: any, total: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setRequiredItems: ((itemIDs: any) => any) | any;
+      setRequiredItems(itemIDs: any, ...__args: never[]): any;
 
-      updateItemDetails: ((detailsList: any) => any) | any;
+      updateItemDetails(detailsList: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.OptionScreens.ServerWorkshopItemScreen {}

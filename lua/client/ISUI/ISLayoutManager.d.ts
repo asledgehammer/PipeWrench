@@ -8,40 +8,40 @@ declare module '@asledgehammer/pipewrench' {
       static enableLog: any;
 
       /** @noSelf */
-      static CallRestoreLayout: (name: any, layout: any) => any;
+      static CallRestoreLayout: (name: any, layout: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static CallSaveLayout: (name: any, layout: any) => any;
+      static CallSaveLayout: (name: any, layout: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static DefaultRestoreWindow: (window: any, layout: any) => any;
+      static DefaultRestoreWindow: (window: any, layout: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static DefaultSaveWindow: (window: any, layout: any) => any;
+      static DefaultSaveWindow: (window: any, layout: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static FindResizeWidget: (window: any) => any;
+      static FindResizeWidget: (window: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnPostSave: () => any;
+      static OnPostSave: (...__args: never[]) => any;
 
       /** @noSelf */
-      static ReadIni: () => any;
+      static ReadIni: (...__args: never[]) => any;
 
       /** @noSelf */
-      static RegisterWindow: (name: any, funcs: any, target: any) => any;
+      static RegisterWindow: (name: any, funcs: any, target: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static SaveLayout: (name: any, window: any) => any;
+      static SaveLayout: (name: any, window: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static SaveWindowVisible: (window: any, layout: any) => any;
+      static SaveWindowVisible: (window: any, layout: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static TryRestore: (name: any) => any;
+      static TryRestore: (name: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static WriteIni: () => any;
+      static WriteIni: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.ISLayoutManager {}

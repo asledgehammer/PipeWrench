@@ -35,43 +35,43 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      accept: (() => any) | any;
+      accept(...__args: never[]): any;
 
-      checkRightTrigger: ((joypadData: any) => any) | any;
+      checkRightTrigger(joypadData: any, ...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      focusOnEntry: ((joypadData: any) => any) | any;
+      focusOnEntry(joypadData: any, ...__args: never[]): any;
 
-      getCurrentText: (() => any) | any;
+      getCurrentText(...__args: never[]): any;
 
-      hide: (() => any) | any;
+      hide(...__args: never[]): any;
 
-      KeyFunction_CapsLock: (() => any) | any;
+      KeyFunction_CapsLock(...__args: never[]): any;
 
-      KeyFunction_Char: ((chLower: any, chUpper: any) => any) | any;
+      KeyFunction_Char(chLower: any, chUpper: any, ...__args: never[]): any;
 
-      KeyFunction_Enter: (() => any) | any;
+      KeyFunction_Enter(...__args: never[]): any;
 
-      KeyFunction_Hide: (() => any) | any;
+      KeyFunction_Hide(...__args: never[]): any;
 
-      KeyFunction_KeyCode: ((keyCode: any) => any) | any;
+      KeyFunction_KeyCode(keyCode: any, ...__args: never[]): any;
 
-      KeyFunction_TogglePassword: (() => any) | any;
+      KeyFunction_TogglePassword(...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onMouseDownOutside: ((x: any, y: any) => any) | any;
+      onMouseDownOutside(x: any, y: any, ...__args: never[]): any;
 
-      setButtonNames: (() => any) | any;
+      setButtonNames(...__args: never[]): any;
 
-      setMultipleLine: ((multipleLine: any) => any) | any;
+      setMultipleLine(multipleLine: any, ...__args: never[]): any;
 
-      show: ((playerNum: any, textEntryBox: any, joypadData: any) => any) | any;
+      show(playerNum: any, textEntryBox: any, joypadData: any, ...__args: never[]): any;
 
-      shrinkWrap: ((panel: any) => any) | any;
+      shrinkWrap(panel: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
     }
 
     /** @customConstructor OnScreenKeyboardEntry:new */
@@ -83,41 +83,41 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      focus: (() => any) | any;
+      focus(...__args: never[]): any;
 
-      getCursorLine: (() => any) | any;
+      getCursorLine(...__args: never[]): any;
 
-      getCursorPos: (() => any) | any;
+      getCursorPos(...__args: never[]): any;
 
-      getInternalText: (() => any) | any;
+      getInternalText(...__args: never[]): any;
 
-      getText: (() => any) | any;
+      getText(...__args: never[]): any;
 
-      instantiate: (() => any) | any;
+      instantiate(...__args: never[]): any;
 
-      isFocused: (() => any) | any;
+      isFocused(...__args: never[]): any;
 
-      isMasked: (() => any) | any;
+      isMasked(...__args: never[]): any;
 
-      isMultipleLine: (() => any) | any;
+      isMultipleLine(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setCursorLine: ((line: any) => any) | any;
+      setCursorLine(line: any, ...__args: never[]): any;
 
-      setCursorPos: ((charIndex: any) => any) | any;
+      setCursorPos(charIndex: any, ...__args: never[]): any;
 
-      setMasked: ((masked: any) => any) | any;
+      setMasked(masked: any, ...__args: never[]): any;
 
-      setMaxLines: ((max: any) => any) | any;
+      setMaxLines(max: any, ...__args: never[]): any;
 
-      setMultipleLine: ((multipleLine: any) => any) | any;
+      setMultipleLine(multipleLine: any, ...__args: never[]): any;
 
-      setText: ((str: any) => any) | any;
+      setText(str: any, ...__args: never[]): any;
 
-      unfocus: (() => any) | any;
+      unfocus(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
     }
 
     /** @customConstructor OnScreenKeyboardPanel:new */
@@ -147,21 +147,31 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, parent: any);
 
-      createButton: ((textLower: any, textUpper: any, keyFunction: any, arg1: any, arg2: any) => any) | any;
+      createButton(textLower: any, textUpper: any, keyFunction: any, arg1: any, arg2: any, ...__args: never[]): any;
 
-      createButton_Char: ((chLower: any, chUpper: any) => any) | any;
+      createButton_Char(chLower: any, chUpper: any, ...__args: never[]): any;
 
-      createButton2: ((x: any, y: any, w: any, h: any, text: any, keyFunction: any, arg1: any, arg2: any) => any) | any;
+      createButton2(
+        x: any,
+        y: any,
+        w: any,
+        h: any,
+        text: any,
+        keyFunction: any,
+        arg1: any,
+        arg2: any,
+        ...__args: never[]
+      ): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onButtonPressed: ((button: any) => any) | any;
+      onButtonPressed(button: any, ...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      renderButton: (() => any) | any;
+      renderButton(...__args: never[]): any;
     }
 
     export abstract class OnScreenKeyboard {
@@ -170,16 +180,16 @@ declare module '@asledgehammer/pipewrench' {
       static instance: any;
 
       /** @noSelf */
-      static GetCurrentText: () => any;
+      static GetCurrentText: (...__args: never[]) => any;
 
       /** @noSelf */
-      static Hide: () => any;
+      static Hide: (...__args: never[]) => any;
 
       /** @noSelf */
-      static IsVisible: () => any;
+      static IsVisible: (...__args: never[]) => any;
 
       /** @noSelf */
-      static Show: (playerNum: any, textEntryBox: any, joypadData: any) => any;
+      static Show: (playerNum: any, textEntryBox: any, joypadData: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.ISOnScreenKeyboard {}

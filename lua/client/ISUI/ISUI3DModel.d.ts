@@ -15,35 +15,35 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      getDirection: (() => any) | any;
+      getDirection(...__args: never[]): any;
 
-      onMouseDown: ((x: any, y: any) => any) | any;
+      onMouseDown(x: any, y: any, ...__args: never[]): any;
 
-      reportEvent: ((event: any) => any) | any;
+      reportEvent(event: any, ...__args: never[]): any;
 
-      setAnimateWhilePaused: ((animate: any) => any) | any;
+      setAnimateWhilePaused(animate: any, ...__args: never[]): any;
 
-      setAnimSetName: ((animSet: any) => any) | any;
+      setAnimSetName(animSet: any, ...__args: never[]): any;
 
-      setCharacter: ((character: any) => any) | any;
+      setCharacter(character: any, ...__args: never[]): any;
 
-      setDirection: ((dir: any) => any) | any;
+      setDirection(dir: any, ...__args: never[]): any;
 
-      setDoRandomExtAnimations: ((doExt: any) => any) | any;
+      setDoRandomExtAnimations(doExt: any, ...__args: never[]): any;
 
-      setIsometric: ((iso: any) => any) | any;
+      setIsometric(iso: any, ...__args: never[]): any;
 
-      setOutfitName: ((name: any, female: any, zombie: any) => any) | any;
+      setOutfitName(name: any, female: any, zombie: any, ...__args: never[]): any;
 
-      setState: ((state: any) => any) | any;
+      setState(state: any, ...__args: never[]): any;
 
-      setSurvivorDesc: ((survivorDesc: any) => any) | any;
+      setSurvivorDesc(survivorDesc: any, ...__args: never[]): any;
 
-      setXOffset: ((xoffset: any) => any) | any;
+      setXOffset(xoffset: any, ...__args: never[]): any;
 
-      setYOffset: ((yoffset: any) => any) | any;
+      setYOffset(yoffset: any, ...__args: never[]): any;
 
-      setZoom: ((zoom: any) => any) | any;
+      setZoom(zoom: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISUI3DModel {}

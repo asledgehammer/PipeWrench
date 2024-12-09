@@ -23,20 +23,20 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, title: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      drawTableNameList: ((y: any, item: any, alt: any) => any) | any;
+      drawTableNameList(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      onClickClose: (() => any) | any;
+      onClickClose(...__args: never[]): any;
 
-      OnTableNamesListMouseDown: ((item: any) => any) | any;
+      OnTableNamesListMouseDown(item: any, ...__args: never[]): any;
 
-      populateList: (() => any) | any;
+      populateList(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
       /** @noSelf */
-      static OnOpenPanel: () => any;
+      static OnOpenPanel: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.DebugUIs.DebugMenu.IsoRegions.IsoRegionLogWindow {}

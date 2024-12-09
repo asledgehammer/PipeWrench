@@ -17,16 +17,16 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(player: any);
 
-      create: ((x: any, y: any, z: any, north: any, sprite: any) => any) | any;
+      create(x: any, y: any, z: any, north: any, sprite: any, ...__args: never[]): any;
 
       /** @noSelf */
-      static checkTrap: (player: any, trap: any, hours: any) => any;
+      static checkTrap: (player: any, trap: any, hours: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doTimestamp: (net: any) => any;
+      static doTimestamp: (net: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static remove: (net: any, player: any) => any;
+      static remove: (net: any, player: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.server.Fishing.BuildingObjects.FishingNet {}

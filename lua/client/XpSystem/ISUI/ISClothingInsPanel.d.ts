@@ -95,37 +95,37 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(player: any, x: any, y: any, width: any, height: any);
 
-      addMainGroup: ((_widget: any, _ignoreAddChild: any, _view: any) => any) | any;
+      addMainGroup(_widget: any, _ignoreAddChild: any, _view: any, ...__args: never[]): any;
 
-      addNodeGroup: ((_widget: any, _view: any) => any) | any;
+      addNodeGroup(_widget: any, _view: any, ...__args: never[]): any;
 
-      addView: ((_viewID: any, _viewTable: any, _y: any) => any) | any;
+      addView(_viewID: any, _viewTable: any, _y: any, ...__args: never[]): any;
 
-      create: (() => any) | any;
+      create(...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onClickViewButton: ((_btn: any) => any) | any;
+      onClickViewButton(_btn: any, ...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onLoseJoypadFocus: ((joypadData: any) => any) | any;
+      onLoseJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onResetButton: ((_btn: any) => any) | any;
+      onResetButton(_btn: any, ...__args: never[]): any;
 
-      onToggleViewStyle: ((_btn: any) => any) | any;
+      onToggleViewStyle(_btn: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setJoypadButtons: (() => any) | any;
+      setJoypadButtons(...__args: never[]): any;
 
-      setSelection: ((_node: any) => any) | any;
+      setSelection(_node: any, ...__args: never[]): any;
 
-      setViewIndex: ((_index: any) => any) | any;
+      setViewIndex(_index: any, ...__args: never[]): any;
 
-      setViewStyle: ((_viewStyle: any, _force: any) => any) | any;
+      setViewStyle(_viewStyle: any, _force: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
     }
   }
   export namespace lua.client.XpSystem.ISUI.ISClothingInsPanel {}

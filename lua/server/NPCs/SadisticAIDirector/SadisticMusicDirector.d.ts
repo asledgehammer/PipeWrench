@@ -23,13 +23,13 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor();
 
-      changeTrack: (() => any) | any;
+      changeTrack(...__args: never[]): any;
 
-      seenZombies: ((num: any) => any) | any;
+      seenZombies(num: any, ...__args: never[]): any;
 
-      shouldChangeTrack: (() => any) | any;
+      shouldChangeTrack(...__args: never[]): any;
 
-      tick: (() => any) | any;
+      tick(...__args: never[]): any;
     }
   }
   export namespace lua.server.NPCs.SadisticAIDirector.SadisticMusicDirector {

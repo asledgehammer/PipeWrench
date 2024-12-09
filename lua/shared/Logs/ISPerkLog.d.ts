@@ -6,22 +6,22 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static init: () => any;
+      static init: (...__args: never[]) => any;
 
       /** @noSelf */
-      static logAllPerks: (_character: any) => any;
+      static logAllPerks: (_character: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static logCreatePlayer: (_player: any) => any;
+      static logCreatePlayer: (_player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static logDeath: (_character: any) => any;
+      static logDeath: (_character: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static logLogin: (_character: any) => any;
+      static logLogin: (_character: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static logPerkLevelChange: (_character: any, _perk: any, _perkLevel: any) => any;
+      static logPerkLevelChange: (_character: any, _perk: any, _perkLevel: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.shared.Logs.ISPerkLog {}

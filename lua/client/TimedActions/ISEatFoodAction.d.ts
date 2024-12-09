@@ -19,9 +19,9 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, item: any, percentage: any);
 
-      eat: ((food: any, percentage: any) => any) | any;
+      eat(food: any, percentage: any, ...__args: never[]): any;
 
-      getRequiredItem: (() => any) | any;
+      getRequiredItem(...__args: never[]): any;
     }
   }
   export namespace lua.client.TimedActions.ISEatFoodAction {}

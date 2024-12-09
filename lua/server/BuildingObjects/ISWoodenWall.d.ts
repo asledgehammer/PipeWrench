@@ -17,15 +17,15 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(sprite: any, northSprite: any, corner: any);
 
-      addCorner: ((x: any, y: any, z: any, north: any) => any) | any;
+      addCorner(x: any, y: any, z: any, north: any, ...__args: never[]): any;
 
-      checkCorner: ((x: any, y: any, z: any, north: any) => any) | any;
+      checkCorner(x: any, y: any, z: any, north: any, ...__args: never[]): any;
 
-      create: ((x: any, y: any, z: any, north: any, sprite: any) => any) | any;
+      create(x: any, y: any, z: any, north: any, sprite: any, ...__args: never[]): any;
 
-      getHealth: (() => any) | any;
+      getHealth(...__args: never[]): any;
 
-      getObjectIndex: (() => any) | any;
+      getObjectIndex(...__args: never[]): any;
     }
   }
   export namespace lua.server.BuildingObjects.ISWoodenWall {}

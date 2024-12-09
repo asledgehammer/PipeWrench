@@ -196,16 +196,17 @@ declare module '@asledgehammer/pipewrench' {
         _rB: any,
         _gB: any,
         _bB: any,
+        ...__args: never[]
       ) => any;
 
       /** @noSelf */
-      static fromObject: (_object: any) => any;
+      static fromObject: (_object: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static new: (_sprite: any) => any;
+      static new: (_sprite: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnDynamicMovableRecipe: (_sprite: any, _recipe: any, _item: any, _player: any) => any;
+      static OnDynamicMovableRecipe: (_sprite: any, _recipe: any, _item: any, _player: any, ...__args: never[]) => any;
     }
 
     export abstract class ISThumpableSpriteProps {
@@ -230,7 +231,7 @@ declare module '@asledgehammer/pipewrench' {
       walkToAndEquip: ((_character: any, _square: any, _mode: any) => any) | any;
 
       /** @noSelf */
-      static new: (object: any) => any;
+      static new: (object: any, ...__args: never[]) => any;
     }
 
     export abstract class SpriteGridCache {

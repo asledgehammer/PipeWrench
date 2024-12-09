@@ -35,17 +35,17 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, tex: any, valuesBg: any, title: any, player: any);
 
-      addValue: ((angle: any, value: any) => any) | any;
+      addValue(angle: any, value: any, ...__args: never[]): any;
 
-      forceClick: (() => any) | any;
+      forceClick(...__args: never[]): any;
 
-      getValue: (() => any) | any;
+      getValue(...__args: never[]): any;
 
-      onMouseDown: ((x: any, y: any) => any) | any;
+      onMouseDown(x: any, y: any, ...__args: never[]): any;
 
-      setJoypadFocused: ((focused: any) => any) | any;
+      setJoypadFocused(focused: any, ...__args: never[]): any;
 
-      setKnobPosition: ((value: any) => any) | any;
+      setKnobPosition(value: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.Fireplace.ISKnob {}

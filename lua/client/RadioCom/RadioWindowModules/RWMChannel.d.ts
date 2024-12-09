@@ -37,33 +37,33 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      addComboOption: ((_freq: any, _name: any) => any) | any;
+      addComboOption(_freq: any, _name: any, ...__args: never[]): any;
 
-      comboChange: (() => any) | any;
+      comboChange(...__args: never[]): any;
 
-      doAddPresetButton: (() => any) | any;
+      doAddPresetButton(...__args: never[]): any;
 
-      doDeletePresetButton: (() => any) | any;
+      doDeletePresetButton(...__args: never[]): any;
 
-      doEditPresetButton: (() => any) | any;
+      doEditPresetButton(...__args: never[]): any;
 
-      doTuneInButton: (() => any) | any;
+      doTuneInButton(...__args: never[]): any;
 
-      getParent: (() => any) | any;
+      getParent(...__args: never[]): any;
 
-      getRBPrompt: (() => any) | any;
+      getRBPrompt(...__args: never[]): any;
 
-      isValidPresets: (() => any) | any;
+      isValidPresets(...__args: never[]): any;
 
-      onChildSave: ((_freq: any, _name: any) => any) | any;
+      onChildSave(_freq: any, _name: any, ...__args: never[]): any;
 
-      readPresets: ((_selected: any) => any) | any;
+      readPresets(_selected: any, ...__args: never[]): any;
 
-      round: ((num: any, idp: any) => any) | any;
+      round(num: any, idp: any, ...__args: never[]): any;
 
-      setPanelMode: ((_edit: any, _ignoreParent: any) => any) | any;
+      setPanelMode(_edit: any, _ignoreParent: any, ...__args: never[]): any;
 
-      setParent: ((_parent: any) => any) | any;
+      setParent(_parent: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.RadioCom.RadioWindowModules.RWMChannel {}

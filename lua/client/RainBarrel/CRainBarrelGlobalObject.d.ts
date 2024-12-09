@@ -9,7 +9,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(luaSystem: any, globalObject: any);
 
-      getObject: (() => any) | any;
+      getObject(...__args: never[]): any;
     }
   }
   export namespace lua.client.RainBarrel.CRainBarrelGlobalObject {}

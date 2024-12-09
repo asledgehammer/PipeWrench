@@ -8,7 +8,7 @@ declare module '@asledgehammer/pipewrench' {
       static chosenChallenge: any;
 
       /** @noSelf */
-      static getSpawnRegion: () => any;
+      static getSpawnRegion: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.LastStand.LastStandSetup {

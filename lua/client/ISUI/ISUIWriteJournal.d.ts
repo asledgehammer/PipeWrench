@@ -85,25 +85,25 @@ declare module '@asledgehammer/pipewrench' {
         numberOfPages: any,
       );
 
-      close: (() => any) | any;
+      close(...__args: never[]): any;
 
-      destroy: (() => any) | any;
+      destroy(...__args: never[]): any;
 
-      onClick: ((button: any) => any) | any;
+      onClick(button: any, ...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDirDown: ((joypadData: any) => any) | any;
+      onJoypadDirDown(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDirUp: ((joypadData: any) => any) | any;
+      onJoypadDirUp(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDown: ((button: any, joypadData: any) => any) | any;
+      onJoypadDown(button: any, joypadData: any, ...__args: never[]): any;
 
-      prerender: (() => any) | any;
+      prerender(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setJoypadButtons: ((joypadData: any) => any) | any;
+      setJoypadButtons(joypadData: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISUIWriteJournal {}

@@ -19,11 +19,11 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, texture: any, needleX: any, needleY: any, minAngle: any, maxAngle: any);
 
-      setNeedleWidth: ((width: any) => any) | any;
+      setNeedleWidth(width: any, ...__args: never[]): any;
 
-      setTexture: ((texture: any) => any) | any;
+      setTexture(texture: any, ...__args: never[]): any;
 
-      setValue: ((value: any) => any) | any;
+      setValue(value: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.Vehicles.ISUI.ISVehicleGauge {}

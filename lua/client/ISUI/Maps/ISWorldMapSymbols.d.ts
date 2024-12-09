@@ -67,74 +67,74 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, mapUI: any);
 
-      canErase: (() => any) | any;
+      canErase(...__args: never[]): any;
 
-      canWrite: (() => any) | any;
+      canWrite(...__args: never[]): any;
 
-      checkAnnotationForMoveJoypad: (() => any) | any;
+      checkAnnotationForMoveJoypad(...__args: never[]): any;
 
-      checkAnnotationForMoveMouse: (() => any) | any;
+      checkAnnotationForMoveMouse(...__args: never[]): any;
 
-      checkAnnotationForRemoveJoypad: (() => any) | any;
+      checkAnnotationForRemoveJoypad(...__args: never[]): any;
 
-      checkAnnotationForRemoveMouse: (() => any) | any;
+      checkAnnotationForRemoveMouse(...__args: never[]): any;
 
-      checkInventory: (() => any) | any;
+      checkInventory(...__args: never[]): any;
 
-      checkTextForEditJoypad: (() => any) | any;
+      checkTextForEditJoypad(...__args: never[]): any;
 
-      checkTextForEditMouse: (() => any) | any;
+      checkTextForEditMouse(...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      getJoypadAButtonText: (() => any) | any;
+      getJoypadAButtonText(...__args: never[]): any;
 
-      hitTestAnnotations: ((x: any, y: any, mode: any, filter: any) => any) | any;
+      hitTestAnnotations(x: any, y: any, mode: any, filter: any, ...__args: never[]): any;
 
-      initTools: (() => any) | any;
+      initTools(...__args: never[]): any;
 
-      isKeyConsumed: ((key: any) => any) | any;
+      isKeyConsumed(key: any, ...__args: never[]): any;
 
-      onButtonClick: ((button: any) => any) | any;
+      onButtonClick(button: any, ...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDownInMap: ((button: any, joypadData: any) => any) | any;
+      onJoypadDownInMap(button: any, joypadData: any, ...__args: never[]): any;
 
-      onKeyPress: ((key: any) => any) | any;
+      onKeyPress(key: any, ...__args: never[]): any;
 
-      onKeyRelease: ((key: any) => any) | any;
+      onKeyRelease(key: any, ...__args: never[]): any;
 
-      onLoseJoypadFocus: ((joypadData: any) => any) | any;
+      onLoseJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onMouseDownMap: ((x: any, y: any) => any) | any;
+      onMouseDownMap(x: any, y: any, ...__args: never[]): any;
 
-      onMouseMoveMap: ((x: any, y: any) => any) | any;
+      onMouseMoveMap(x: any, y: any, ...__args: never[]): any;
 
-      onMouseUpMap: ((x: any, y: any) => any) | any;
+      onMouseUpMap(x: any, y: any, ...__args: never[]): any;
 
-      onRightMouseDownMap: ((x: any, y: any) => any) | any;
+      onRightMouseDownMap(x: any, y: any, ...__args: never[]): any;
 
-      onRightMouseUpMap: ((x: any, y: any) => any) | any;
+      onRightMouseUpMap(x: any, y: any, ...__args: never[]): any;
 
-      populateSymbolList: (() => any) | any;
+      populateSymbolList(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      renderNoteBeingAddedOrEdited: ((modal: any) => any) | any;
+      renderNoteBeingAddedOrEdited(modal: any, ...__args: never[]): any;
 
-      renderSymbol: ((symbol: any, x: any, y: any) => any) | any;
+      renderSymbol(symbol: any, x: any, y: any, ...__args: never[]): any;
 
-      setCurrentTool: ((tool: any) => any) | any;
+      setCurrentTool(tool: any, ...__args: never[]): any;
 
-      toggleTool: ((tool: any) => any) | any;
+      toggleTool(tool: any, ...__args: never[]): any;
 
-      undisplay: (() => any) | any;
+      undisplay(...__args: never[]): any;
 
-      updateSymbolColors: (() => any) | any;
+      updateSymbolColors(...__args: never[]): any;
 
       /** @noSelf */
-      static RequiredWidth: () => any;
+      static RequiredWidth: (...__args: never[]) => any;
     }
 
     /** @customConstructor ISWorldMapSymbolTool:new */
@@ -160,35 +160,35 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(symbolsUI: any);
 
-      activate: (() => any) | any;
+      activate(...__args: never[]): any;
 
-      deactivate: (() => any) | any;
+      deactivate(...__args: never[]): any;
 
-      getJoypadAButtonText: (() => any) | any;
+      getJoypadAButtonText(...__args: never[]): any;
 
-      getMouseX: (() => any) | any;
+      getMouseX(...__args: never[]): any;
 
-      getMouseY: (() => any) | any;
+      getMouseY(...__args: never[]): any;
 
-      isKeyConsumed: ((key: any) => any) | any;
+      isKeyConsumed(key: any, ...__args: never[]): any;
 
-      onJoypadDownInMap: ((button: any, joypadData: any) => any) | any;
+      onJoypadDownInMap(button: any, joypadData: any, ...__args: never[]): any;
 
-      onKeyPress: ((key: any) => any) | any;
+      onKeyPress(key: any, ...__args: never[]): any;
 
-      onKeyRelease: ((key: any) => any) | any;
+      onKeyRelease(key: any, ...__args: never[]): any;
 
-      onMouseDown: ((x: any, y: any) => any) | any;
+      onMouseDown(x: any, y: any, ...__args: never[]): any;
 
-      onMouseMove: ((dx: any, dy: any) => any) | any;
+      onMouseMove(dx: any, dy: any, ...__args: never[]): any;
 
-      onMouseUp: ((x: any, y: any) => any) | any;
+      onMouseUp(x: any, y: any, ...__args: never[]): any;
 
-      onRightMouseDown: ((x: any, y: any) => any) | any;
+      onRightMouseDown(x: any, y: any, ...__args: never[]): any;
 
-      onRightMouseUp: ((x: any, y: any) => any) | any;
+      onRightMouseUp(x: any, y: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
     }
 
     /** @customConstructor ISWorldMapSymbolTool_AddNote:new */
@@ -200,9 +200,9 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(symbolsUI: any);
 
-      addNote: ((x: any, y: any) => any) | any;
+      addNote(x: any, y: any, ...__args: never[]): any;
 
-      onAddNote: ((button: any, playerNum: any) => any) | any;
+      onAddNote(button: any, playerNum: any, ...__args: never[]): any;
     }
 
     /** @customConstructor ISWorldMapSymbolTool_AddSymbol:new */
@@ -212,7 +212,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(symbolsUI: any);
 
-      addSymbol: ((x: any, y: any) => any) | any;
+      addSymbol(x: any, y: any, ...__args: never[]): any;
     }
 
     /** @customConstructor ISWorldMapSymbolTool_EditNote:new */
@@ -224,9 +224,9 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(symbolsUI: any);
 
-      editNote: ((x: any, y: any) => any) | any;
+      editNote(x: any, y: any, ...__args: never[]): any;
 
-      onEditNote: ((button: any, symbol: any) => any) | any;
+      onEditNote(button: any, symbol: any, ...__args: never[]): any;
     }
 
     /** @customConstructor ISWorldMapSymbolTool_MoveAnnotation:new */
@@ -244,7 +244,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(symbolsUI: any);
 
-      cancelDrag: (() => any) | any;
+      cancelDrag(...__args: never[]): any;
     }
 
     /** @customConstructor ISWorldMapSymbolTool_RemoveAnnotation:new */
@@ -254,7 +254,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(symbolsUI: any);
 
-      removeAnnotation: (() => any) | any;
+      removeAnnotation(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.Maps.ISWorldMapSymbols {}

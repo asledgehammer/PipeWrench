@@ -6,26 +6,34 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static callLua: (functionName: any, mapUI: any, arg1: any, arg2: any, arg3: any, arg4: any) => any;
+      static callLua: (
+        functionName: any,
+        mapUI: any,
+        arg1: any,
+        arg2: any,
+        arg3: any,
+        arg4: any,
+        ...__args: never[]
+      ) => any;
     }
 
     export abstract class MapUtils {
       static [id: string]: any;
 
       /** @noSelf */
-      static initDefaultMapData: (mapUI: any) => any;
+      static initDefaultMapData: (mapUI: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static initDefaultStyleV1: (mapUI: any) => any;
+      static initDefaultStyleV1: (mapUI: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static initDirectoryMapData: (mapUI: any, directory: any) => any;
+      static initDirectoryMapData: (mapUI: any, directory: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static overlayPaper: (mapUI: any) => any;
+      static overlayPaper: (mapUI: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static revealKnownArea: (mapUI: any) => any;
+      static revealKnownArea: (mapUI: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.Maps.ISMapDefinitions {}

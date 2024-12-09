@@ -15,9 +15,9 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, doStencil: any);
 
-      initHorzBars: ((_x: any, _width: any) => any) | any;
+      initHorzBars(_x: any, _width: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
     }
   }
   export namespace lua.client.DebugUIs.DebugMenu.Base.ISDebugSubPanelBase {}

@@ -20,10 +20,10 @@ declare module '@asledgehammer/pipewrench' {
       constructor(character: any, recipe: any, baseItem: any, usedItem: any, time: any);
 
       /** @noSelf */
-      static checkName: (baseItem: any, recipe: any) => any;
+      static checkName: (baseItem: any, recipe: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static checkTemperature: (baseItem: any, usedItem: any, recipe: any) => any;
+      static checkTemperature: (baseItem: any, usedItem: any, recipe: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.TimedActions.ISAddItemInRecipe {}

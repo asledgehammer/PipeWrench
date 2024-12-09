@@ -15,42 +15,42 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(name: any);
 
-      getIsoObjectAt: ((x: any, y: any, z: any) => any) | any;
+      getIsoObjectAt(x: any, y: any, z: any, ...__args: never[]): any;
 
-      getIsoObjectOnSquare: ((square: any) => any) | any;
+      getIsoObjectOnSquare(square: any, ...__args: never[]): any;
 
-      getLuaObjectAt: ((x: any, y: any, z: any) => any) | any;
+      getLuaObjectAt(x: any, y: any, z: any, ...__args: never[]): any;
 
-      getLuaObjectByIndex: ((index: any) => any) | any;
+      getLuaObjectByIndex(index: any, ...__args: never[]): any;
 
-      getLuaObjectCount: (() => any) | any;
+      getLuaObjectCount(...__args: never[]): any;
 
-      getLuaObjectOnSquare: ((square: any) => any) | any;
+      getLuaObjectOnSquare(square: any, ...__args: never[]): any;
 
-      initLuaObjects: (() => any) | any;
+      initLuaObjects(...__args: never[]): any;
 
-      initSystem: (() => any) | any;
+      initSystem(...__args: never[]): any;
 
-      isValidIsoObject: ((isoObject: any) => any) | any;
+      isValidIsoObject(isoObject: any, ...__args: never[]): any;
 
-      newLuaObject: ((globalObject: any) => any) | any;
+      newLuaObject(globalObject: any, ...__args: never[]): any;
 
-      newLuaObjectAt: ((x: any, y: any, z: any) => any) | any;
+      newLuaObjectAt(x: any, y: any, z: any, ...__args: never[]): any;
 
-      noise: ((message: any) => any) | any;
+      noise(message: any, ...__args: never[]): any;
 
-      OnLuaObjectUpdated: ((luaObject: any) => any) | any;
+      OnLuaObjectUpdated(luaObject: any, ...__args: never[]): any;
 
-      OnServerCommand: ((command: any, args: any) => any) | any;
+      OnServerCommand(command: any, args: any, ...__args: never[]): any;
 
-      removeLuaObject: ((luaObject: any) => any) | any;
+      removeLuaObject(luaObject: any, ...__args: never[]): any;
 
-      removeLuaObjectAt: ((x: any, y: any, z: any) => any) | any;
+      removeLuaObjectAt(x: any, y: any, z: any, ...__args: never[]): any;
 
-      sendCommand: ((playerObj: any, command: any, args: any) => any) | any;
+      sendCommand(playerObj: any, command: any, args: any, ...__args: never[]): any;
 
       /** @noSelf */
-      static RegisterSystemClass: (luaClass: any) => any;
+      static RegisterSystemClass: (luaClass: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.Map.CGlobalObjectSystem {}

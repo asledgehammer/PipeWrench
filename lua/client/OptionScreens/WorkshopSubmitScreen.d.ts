@@ -29,27 +29,31 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      create: (() => any) | any;
+      create(...__args: never[]): any;
 
-      fillList: (() => any) | any;
+      fillList(...__args: never[]): any;
 
-      onButtonBack: (() => any) | any;
+      onButtonBack(...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
-
-      /** @noSelf */
-      static OnSteamWorkshopItemCreated: (itemID: any, bUserNeedsToAcceptWorkshopLegalAgreement: any) => any;
+      render(...__args: never[]): any;
 
       /** @noSelf */
-      static OnSteamWorkshopItemNotCreated: (result: any) => any;
+      static OnSteamWorkshopItemCreated: (
+        itemID: any,
+        bUserNeedsToAcceptWorkshopLegalAgreement: any,
+        ...__args: never[]
+      ) => any;
 
       /** @noSelf */
-      static OnSteamWorkshopItemNotUpdated: (result: any) => any;
+      static OnSteamWorkshopItemNotCreated: (result: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnSteamWorkshopItemUpdated: (bUserNeedsToAcceptWorkshopLegalAgreement: any) => any;
+      static OnSteamWorkshopItemNotUpdated: (result: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static OnSteamWorkshopItemUpdated: (bUserNeedsToAcceptWorkshopLegalAgreement: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.OptionScreens.WorkshopSubmitScreen {}

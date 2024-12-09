@@ -21,7 +21,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, item: any, uses: any);
 
-      drink: ((food: any, percentage: any) => any) | any;
+      drink(food: any, percentage: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.TimedActions.ISDrinkFromBottle {}

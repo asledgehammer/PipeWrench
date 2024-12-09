@@ -13,40 +13,40 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any);
 
-      center: (() => any) | any;
+      center(...__args: never[]): any;
 
-      display: (() => any) | any;
+      display(...__args: never[]): any;
 
-      fillMenu: (() => any) | any;
+      fillMenu(...__args: never[]): any;
 
-      getWeapon: (() => any) | any;
-
-      /** @noSelf */
-      static checkKey: (key: any) => any;
+      getWeapon(...__args: never[]): any;
 
       /** @noSelf */
-      static checkWeapon: (playerObj: any) => any;
+      static checkKey: (key: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getBestLBButtonAction: (buttonPrompt: any) => any;
+      static checkWeapon: (playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getBestRBButtonAction: (buttonPrompt: any) => any;
+      static getBestLBButtonAction: (buttonPrompt: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onJoypadButtonReleased: (buttonPrompt: any, button: any) => any;
+      static getBestRBButtonAction: (buttonPrompt: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onKeyPressed: (key: any) => any;
+      static onJoypadButtonReleased: (buttonPrompt: any, button: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onKeyReleased: (key: any) => any;
+      static onKeyPressed: (key: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onKeyRepeat: (key: any) => any;
+      static onKeyReleased: (key: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onRepeatRBumper: (buttonPrompt: any) => any;
+      static onKeyRepeat: (key: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static onRepeatRBumper: (buttonPrompt: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.ISFirearmRadialMenu {}

@@ -19,35 +19,35 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(id: any);
 
-      clearJoypad: (() => any) | any;
+      clearJoypad(...__args: never[]): any;
 
-      onPauseButtonPressed: (() => any) | any;
+      onPauseButtonPressed(...__args: never[]): any;
 
-      onPressButton: ((button: any) => any) | any;
+      onPressButton(button: any, ...__args: never[]): any;
 
-      onPressButtonNoFocus: ((button: any) => any) | any;
+      onPressButtonNoFocus(button: any, ...__args: never[]): any;
 
-      onPressDown: (() => any) | any;
+      onPressDown(...__args: never[]): any;
 
-      onPressLeft: (() => any) | any;
+      onPressLeft(...__args: never[]): any;
 
-      onPressRight: (() => any) | any;
+      onPressRight(...__args: never[]): any;
 
-      onPressUp: (() => any) | any;
+      onPressUp(...__args: never[]): any;
 
-      onReleaseButton: ((button: any) => any) | any;
+      onReleaseButton(button: any, ...__args: never[]): any;
 
-      onReleaseDown: (() => any) | any;
+      onReleaseDown(...__args: never[]): any;
 
-      onReleaseLeft: (() => any) | any;
+      onReleaseLeft(...__args: never[]): any;
 
-      onReleaseRight: (() => any) | any;
+      onReleaseRight(...__args: never[]): any;
 
-      onReleaseUp: (() => any) | any;
+      onReleaseUp(...__args: never[]): any;
 
-      setJoypad: ((joypadData: any) => any) | any;
+      setJoypad(joypadData: any, ...__args: never[]): any;
 
-      update: ((time: any) => any) | any;
+      update(time: any, ...__args: never[]): any;
     }
 
     /** @customConstructor JoypadData:new */
@@ -77,13 +77,13 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor();
 
-      clearController: (() => any) | any;
+      clearController(...__args: never[]): any;
 
-      isConnected: (() => any) | any;
+      isConnected(...__args: never[]): any;
 
-      setActive: ((isActive: any) => any) | any;
+      setActive(isActive: any, ...__args: never[]): any;
 
-      setController: ((controller: any) => any) | any;
+      setController(controller: any, ...__args: never[]): any;
     }
 
     export abstract class joypad {
@@ -118,34 +118,34 @@ declare module '@asledgehammer/pipewrench' {
       static forceActivate: any;
 
       /** @noSelf */
-      static getMainMenuJoypad: () => any;
+      static getMainMenuJoypad: (...__args: never[]) => any;
 
       /** @noSelf */
-      static onCoopJoinFailed: (playerNum: any) => any;
+      static onCoopJoinFailed: (playerNum: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onGamepadConnect: (id: any) => any;
+      static onGamepadConnect: (id: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onGamepadDisconnect: (id: any) => any;
+      static onGamepadDisconnect: (id: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onGameStart: () => any;
+      static onGameStart: (...__args: never[]) => any;
 
       /** @noSelf */
-      static onPlayerDeath: (playerObj: any) => any;
+      static onPlayerDeath: (playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onRenderUI: () => any;
+      static onRenderUI: (...__args: never[]) => any;
 
       /** @noSelf */
-      static restoreAllFocus: () => any;
+      static restoreAllFocus: (...__args: never[]) => any;
 
       /** @noSelf */
-      static saveAllFocus: () => any;
+      static saveAllFocus: (...__args: never[]) => any;
 
       /** @noSelf */
-      static useKeyboardMouse: () => any;
+      static useKeyboardMouse: (...__args: never[]) => any;
     }
   }
   export namespace lua.shared.JoyPad.JoyPadSetup {}

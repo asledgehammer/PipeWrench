@@ -6,7 +6,7 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static new: () => any;
+      static new: (...__args: never[]) => any;
     }
   }
   export namespace lua.shared.Util.ISPriorityTable {}

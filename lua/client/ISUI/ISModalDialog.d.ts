@@ -43,20 +43,20 @@ declare module '@asledgehammer/pipewrench' {
         param2: any,
       );
 
-      destroy: (() => any) | any;
+      destroy(...__args: never[]): any;
 
-      onClick: ((button: any) => any) | any;
+      onClick(button: any, ...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onJoypadBeforeDeactivate: ((joypadData: any) => any) | any;
+      onJoypadBeforeDeactivate(joypadData: any, ...__args: never[]): any;
 
-      onLoseJoypadFocus: ((joypadData: any) => any) | any;
+      onLoseJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
       /** @noSelf */
-      static CalcSize: (width: any, height: any, text: any) => any;
+      static CalcSize: (width: any, height: any, text: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.ISModalDialog {}

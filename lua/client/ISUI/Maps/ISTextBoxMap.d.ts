@@ -83,43 +83,43 @@ declare module '@asledgehammer/pipewrench' {
         param4: any,
       );
 
-      close: (() => any) | any;
+      close(...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      destroy: (() => any) | any;
+      destroy(...__args: never[]): any;
 
-      isTranslation: (() => any) | any;
+      isTranslation(...__args: never[]): any;
 
-      onClick: ((button: any) => any) | any;
+      onClick(button: any, ...__args: never[]): any;
 
-      onCommandEntered: (() => any) | any;
+      onCommandEntered(...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDirDown: ((joypadData: any) => any) | any;
+      onJoypadDirDown(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDirUp: ((joypadData: any) => any) | any;
+      onJoypadDirUp(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDown: ((button: any, joypadData: any) => any) | any;
+      onJoypadDown(button: any, joypadData: any, ...__args: never[]): any;
 
-      onOtherKey: ((key: any) => any) | any;
+      onOtherKey(key: any, ...__args: never[]): any;
 
-      prerender: (() => any) | any;
+      prerender(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      selectColor: ((r: any, g: any, b: any) => any) | any;
+      selectColor(r: any, g: any, b: any, ...__args: never[]): any;
 
-      setOnlyNumbers: ((onlyNumbers: any) => any) | any;
+      setOnlyNumbers(onlyNumbers: any, ...__args: never[]): any;
 
-      setValidateFunction: ((target: any, func: any, arg1: any, arg2: any) => any) | any;
+      setValidateFunction(target: any, func: any, arg1: any, arg2: any, ...__args: never[]): any;
 
-      setValidateTooltipText: ((text: any) => any) | any;
+      setValidateTooltipText(text: any, ...__args: never[]): any;
 
-      showTranslationTickBox: ((isTranslation: any) => any) | any;
+      showTranslationTickBox(isTranslation: any, ...__args: never[]): any;
 
-      updateButtons: (() => any) | any;
+      updateButtons(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.Maps.ISTextBoxMap {}

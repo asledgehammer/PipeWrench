@@ -113,35 +113,35 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, chr: any);
 
-      addMouseOverToolTipItem: ((_object: any, _displayString: any) => any) | any;
+      addMouseOverToolTipItem(_object: any, _displayString: any, ...__args: never[]): any;
 
-      checkBounds: ((_boundsItem: any, _x: any, _y: any) => any) | any;
+      checkBounds(_boundsItem: any, _x: any, _y: any, ...__args: never[]): any;
 
-      checkToolTip: (() => any) | any;
+      checkToolTip(...__args: never[]): any;
 
-      doToolTip: ((_state: any, _text: any) => any) | any;
+      doToolTip(_state: any, _text: any, ...__args: never[]): any;
 
-      getDraggedEquippableItem: (() => any) | any;
+      getDraggedEquippableItem(...__args: never[]): any;
 
-      getDraggedEquippableItems: (() => any) | any;
+      getDraggedEquippableItems(...__args: never[]): any;
 
-      onMouseUpPrimary: ((x: any, y: any) => any) | any;
+      onMouseUpPrimary(x: any, y: any, ...__args: never[]): any;
 
-      onMouseUpSecondary: ((x: any, y: any) => any) | any;
+      onMouseUpSecondary(x: any, y: any, ...__args: never[]): any;
 
-      onOptionMouseDown: ((button: any, x: any, y: any) => any) | any;
+      onOptionMouseDown(button: any, x: any, y: any, ...__args: never[]): any;
 
-      removeFromUIManager: (() => any) | any;
+      removeFromUIManager(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      renderFPS: (() => any) | any;
+      renderFPS(...__args: never[]): any;
 
-      rightClickPrimary: ((x: any, y: any) => any) | any;
+      rightClickPrimary(x: any, y: any, ...__args: never[]): any;
 
-      rightClickSecondary: ((x: any, y: any) => any) | any;
+      rightClickSecondary(x: any, y: any, ...__args: never[]): any;
 
-      shrinkWrap: (() => any) | any;
+      shrinkWrap(...__args: never[]): any;
     }
 
     /** @customConstructor ISMapPopup:new */
@@ -155,7 +155,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
     }
 
     /** @customConstructor ISMoveablesIconPopup:new */
@@ -165,7 +165,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISEquippedItem {}

@@ -31,21 +31,21 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      joypadSensitivityM: (() => any) | any;
+      joypadSensitivityM(...__args: never[]): any;
 
-      joypadSensitivityP: (() => any) | any;
+      joypadSensitivityP(...__args: never[]): any;
 
-      onControllerSelected: (() => any) | any;
+      onControllerSelected(...__args: never[]): any;
 
-      OnGamepadConnect: ((index: any) => any) | any;
+      OnGamepadConnect(index: any, ...__args: never[]): any;
 
-      OnGamepadDisconnect: ((index: any) => any) | any;
+      OnGamepadDisconnect(index: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setControllerCombo: (() => any) | any;
+      setControllerCombo(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISControllerTestPanel {}

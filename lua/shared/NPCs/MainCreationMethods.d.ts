@@ -6,43 +6,43 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static CreateCharacterInstance: (s: any) => any;
+      static CreateCharacterInstance: (s: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static CreateCharacterStats: (desc: any) => any;
+      static CreateCharacterStats: (desc: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static DoFemaleForename: () => any;
+      static DoFemaleForename: (...__args: never[]) => any;
 
       /** @noSelf */
-      static DoHairColor: () => any;
+      static DoHairColor: (...__args: never[]) => any;
 
       /** @noSelf */
-      static DoMaleForename: () => any;
+      static DoMaleForename: (...__args: never[]) => any;
 
       /** @noSelf */
-      static DoObservations: () => any;
+      static DoObservations: (...__args: never[]) => any;
 
       /** @noSelf */
-      static DoProfessions: () => any;
+      static DoProfessions: (...__args: never[]) => any;
 
       /** @noSelf */
-      static DoSpawnPoint: () => any;
+      static DoSpawnPoint: (...__args: never[]) => any;
 
       /** @noSelf */
-      static DoSurname: () => any;
+      static DoSurname: (...__args: never[]) => any;
 
       /** @noSelf */
-      static DoTraits: () => any;
+      static DoTraits: (...__args: never[]) => any;
 
       /** @noSelf */
-      static DoTrouserColor: () => any;
+      static DoTrouserColor: (...__args: never[]) => any;
 
       /** @noSelf */
-      static SetProfessionDescription: (prof: any) => any;
+      static SetProfessionDescription: (prof: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static SetTraitDescription: (trait: any) => any;
+      static SetTraitDescription: (trait: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.shared.NPCs.MainCreationMethods {}

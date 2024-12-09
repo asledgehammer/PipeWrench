@@ -31,17 +31,26 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      addCombo:
-        | ((x: any, y: any, w: any, h: any, name: any, options: any, selected: any, target: any, onchange: any) => any)
-        | any;
+      addCombo(
+        x: any,
+        y: any,
+        w: any,
+        h: any,
+        name: any,
+        options: any,
+        selected: any,
+        target: any,
+        onchange: any,
+        ...__args: never[]
+      ): any;
 
-      create: (() => any) | any;
+      create(...__args: never[]): any;
 
-      instantiate: (() => any) | any;
+      instantiate(...__args: never[]): any;
 
-      onChange: ((box: any) => any) | any;
+      onChange(box: any, ...__args: never[]): any;
 
-      onOptionMouseDown: ((button: any, x: any, y: any) => any) | any;
+      onOptionMouseDown(button: any, x: any, y: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.OptionScreens.LoginScreen {

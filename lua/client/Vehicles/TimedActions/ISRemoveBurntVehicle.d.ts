@@ -15,7 +15,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, vehicle: any);
 
-      checkAddItem: ((item: any, baseChance: any) => any) | any;
+      checkAddItem(item: any, baseChance: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.Vehicles.TimedActions.ISRemoveBurntVehicle {}

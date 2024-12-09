@@ -6,10 +6,10 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static ToScreen: (x: any, y: any, z: any, cz: any) => any;
+      static ToScreen: (x: any, y: any, z: any, cz: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static ToWorld: (x: any, y: any, z: any) => any;
+      static ToWorld: (x: any, y: any, z: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.server.ISCoordConversion {}

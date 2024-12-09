@@ -25,27 +25,27 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      create: (() => any) | any;
+      create(...__args: never[]): any;
 
-      createAvatar: (() => any) | any;
+      createAvatar(...__args: never[]): any;
 
-      disableBtn: (() => any) | any;
+      disableBtn(...__args: never[]): any;
 
-      dressWithDefinitions: ((definition: any, resetWornItems: any) => any) | any;
+      dressWithDefinitions(definition: any, resetWornItems: any, ...__args: never[]): any;
 
-      initPlayer: (() => any) | any;
+      initPlayer(...__args: never[]): any;
 
-      instantiate: (() => any) | any;
+      instantiate(...__args: never[]): any;
 
-      onGenderSelected: ((combo: any) => any) | any;
+      onGenderSelected(combo: any, ...__args: never[]): any;
 
-      onOptionMouseDown: ((button: any, x: any, y: any) => any) | any;
+      onOptionMouseDown(button: any, x: any, y: any, ...__args: never[]): any;
 
-      randomGenericOutfit: (() => any) | any;
+      randomGenericOutfit(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setAvatarFromUI: (() => any) | any;
+      setAvatarFromUI(...__args: never[]): any;
     }
   }
   export namespace lua.client.OptionScreens.CharacterCreationHeader {}

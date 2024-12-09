@@ -55,30 +55,30 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, tableName: any);
 
-      clear: (() => any) | any;
+      clear(...__args: never[]): any;
 
-      clearFilters: (() => any) | any;
+      clearFilters(...__args: never[]): any;
 
-      computeResult: ((datas: any) => any) | any;
+      computeResult(datas: any, ...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      doPagesButtons: (() => any) | any;
+      doPagesButtons(...__args: never[]): any;
 
-      drawDatas: ((y: any, item: any, alt: any) => any) | any;
+      drawDatas(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      onOptionPage: ((button: any, x: any, y: any) => any) | any;
+      onOptionPage(button: any, x: any, y: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
-
-      /** @noSelf */
-      static getTableResult: (datas: any, rowId: any, tableName: any) => any;
+      render(...__args: never[]): any;
 
       /** @noSelf */
-      static onFilterChange: (entry: any, combo: any) => any;
+      static getTableResult: (datas: any, rowId: any, tableName: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onNbrPerPageChange: (entry: any) => any;
+      static onFilterChange: (entry: any, combo: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static onNbrPerPageChange: (entry: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.AdminPanel.ISWhitelistTable {}

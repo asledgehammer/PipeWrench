@@ -19,18 +19,18 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, player: any);
 
-      addAdminPowerOptions: (() => any) | any;
+      addAdminPowerOptions(...__args: never[]): any;
 
-      addOption: ((text: any, selected: any, setFunction: any) => any) | any;
+      addOption(text: any, selected: any, setFunction: any, ...__args: never[]): any;
 
-      onClick: ((button: any) => any) | any;
+      onClick(button: any, ...__args: never[]): any;
 
-      onTicked: ((index: any, selected: any) => any) | any;
+      onTicked(index: any, selected: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
       /** @noSelf */
-      static onGameStart: () => any;
+      static onGameStart: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.AdminPanel.ISAdminPowerUI {}

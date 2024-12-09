@@ -21,29 +21,29 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any);
 
-      center: (() => any) | any;
+      center(...__args: never[]): any;
 
-      configEmote: (() => any) | any;
+      configEmote(...__args: never[]): any;
 
-      display: (() => any) | any;
+      display(...__args: never[]): any;
 
-      emote: ((emote: any) => any) | any;
+      emote(emote: any, ...__args: never[]): any;
 
-      fillMenu: ((submenu: any) => any) | any;
+      fillMenu(submenu: any, ...__args: never[]): any;
 
-      init: (() => any) | any;
-
-      /** @noSelf */
-      static checkKey: (key: any) => any;
+      init(...__args: never[]): any;
 
       /** @noSelf */
-      static onKeyPressed: (key: any) => any;
+      static checkKey: (key: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onKeyReleased: (key: any) => any;
+      static onKeyPressed: (key: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onKeyRepeat: (key: any) => any;
+      static onKeyReleased: (key: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static onKeyRepeat: (key: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.ISEmoteRadialMenu {}

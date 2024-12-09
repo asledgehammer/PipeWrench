@@ -53,51 +53,51 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, playerNum: any);
 
-      addTooltip: ((option: any, text: any) => any) | any;
+      addTooltip(option: any, text: any, ...__args: never[]): any;
 
-      beardMenu: ((button: any) => any) | any;
+      beardMenu(button: any, ...__args: never[]): any;
 
-      create: (() => any) | any;
+      create(...__args: never[]): any;
 
-      hairMenu: ((button: any) => any) | any;
+      hairMenu(button: any, ...__args: never[]): any;
 
-      initJoypadButtons: ((joypadData: any) => any) | any;
+      initJoypadButtons(joypadData: any, ...__args: never[]): any;
 
-      maxTextWidth: ((font: any, text: any, maxWidth: any) => any) | any;
+      maxTextWidth(font: any, text: any, maxWidth: any, ...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onLoseJoypadFocus: ((joypadData: any) => any) | any;
+      onLoseJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onShowLiterature: (() => any) | any;
+      onShowLiterature(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      updateAvatar: (() => any) | any;
-
-      /** @noSelf */
-      static loadBeardAndHairStyle: (self: any) => any;
+      updateAvatar(...__args: never[]): any;
 
       /** @noSelf */
-      static loadFavouriteWeapon: (self: any) => any;
+      static loadBeardAndHairStyle: (self: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static loadProfession: (self: any) => any;
+      static loadFavouriteWeapon: (self: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static loadTraits: (self: any) => any;
+      static loadProfession: (self: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onCutHair: (playerObj: any, hairStyle: any, time: any) => any;
+      static loadTraits: (self: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onTrimBeard: (playerObj: any, beardStyle: any) => any;
+      static onCutHair: (playerObj: any, hairStyle: any, time: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static setDisplayedTraits: (self: any) => any;
+      static onTrimBeard: (playerObj: any, beardStyle: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static traitsChanged: (self: any) => any;
+      static setDisplayedTraits: (self: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static traitsChanged: (self: any, ...__args: never[]) => any;
     }
 
     /** @customConstructor ISCharacterScreenAvatar:new */

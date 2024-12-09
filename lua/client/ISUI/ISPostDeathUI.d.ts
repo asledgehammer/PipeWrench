@@ -31,30 +31,30 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(playerIndex: any);
 
-      configButton: ((button: any) => any) | any;
+      configButton(button: any, ...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onConfirmQuitToDesktop: ((button: any) => any) | any;
+      onConfirmQuitToDesktop(button: any, ...__args: never[]): any;
 
-      onExit: (() => any) | any;
+      onExit(...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onJoypadBeforeDeactivate: ((joypadData: any) => any) | any;
+      onJoypadBeforeDeactivate(joypadData: any, ...__args: never[]): any;
 
-      onJoypadReactivate: ((joypadData: any) => any) | any;
+      onJoypadReactivate(joypadData: any, ...__args: never[]): any;
 
-      onMouseWheel: ((del: any) => any) | any;
+      onMouseWheel(del: any, ...__args: never[]): any;
 
-      onQuitToDesktop: (() => any) | any;
+      onQuitToDesktop(...__args: never[]): any;
 
-      onRespawn: (() => any) | any;
+      onRespawn(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
       /** @noSelf */
-      static OnPlayerDeath: (playerObj: any) => any;
+      static OnPlayerDeath: (playerObj: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.ISPostDeathUI {}

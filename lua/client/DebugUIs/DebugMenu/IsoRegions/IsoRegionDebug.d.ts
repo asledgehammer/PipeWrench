@@ -71,20 +71,20 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, player: any);
 
-      clear: (() => any) | any;
+      clear(...__args: never[]): any;
 
-      convertCoords: ((_x: any, _y: any) => any) | any;
+      convertCoords(_x: any, _y: any, ...__args: never[]): any;
 
-      onButton: ((_btn: any) => any) | any;
+      onButton(_btn: any, ...__args: never[]): any;
 
-      onResize: (() => any) | any;
+      onResize(...__args: never[]): any;
 
-      stayOnSplitScreen: (() => any) | any;
+      stayOnSplitScreen(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
       /** @noSelf */
-      static OnOpenPanel: () => any;
+      static OnOpenPanel: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.DebugUIs.DebugMenu.IsoRegions.IsoRegionDebug {}

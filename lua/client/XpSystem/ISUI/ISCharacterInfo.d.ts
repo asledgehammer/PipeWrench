@@ -53,23 +53,23 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, playerNum: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onLoseJoypadFocus: ((joypadData: any) => any) | any;
+      onLoseJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onMouseWheel: ((del: any) => any) | any;
+      onMouseWheel(del: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      updateTooltipForJoypad: (() => any) | any;
-
-      /** @noSelf */
-      static loadPerk: (self: any) => any;
+      updateTooltipForJoypad(...__args: never[]): any;
 
       /** @noSelf */
-      static onResolutionChange: (oldw: any, oldh: any, neww: any, newh: any) => any;
+      static loadPerk: (self: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static onResolutionChange: (oldw: any, oldh: any, neww: any, newh: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.XpSystem.ISUI.ISCharacterInfo {}

@@ -33,32 +33,32 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, title: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      drawBroadcastList: ((y: any, item: any, alt: any) => any) | any;
+      drawBroadcastList(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      drawChannelList: ((y: any, item: any, alt: any) => any) | any;
+      drawChannelList(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      drawInfoList: ((y: any, item: any, alt: any) => any) | any;
+      drawInfoList(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      onClickClose: (() => any) | any;
+      onClickClose(...__args: never[]): any;
 
-      onClickRefresh: (() => any) | any;
+      onClickRefresh(...__args: never[]): any;
 
-      OnDaysListMouseDown: ((item: any) => any) | any;
+      OnDaysListMouseDown(item: any, ...__args: never[]): any;
 
-      onViewScript: (() => any) | any;
+      onViewScript(...__args: never[]): any;
 
-      populateBroadcastList: ((_radioChannel: any) => any) | any;
+      populateBroadcastList(_radioChannel: any, ...__args: never[]): any;
 
-      populateInfoList: ((_radioChannel: any) => any) | any;
+      populateInfoList(_radioChannel: any, ...__args: never[]): any;
 
-      populateList: ((_force: any) => any) | any;
+      populateList(_force: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
       /** @noSelf */
-      static OnOpenPanel: () => any;
+      static OnOpenPanel: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.DebugUIs.DebugMenu.radio.ZomboidRadioDebug {}

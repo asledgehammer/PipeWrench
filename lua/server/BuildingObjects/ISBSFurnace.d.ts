@@ -19,7 +19,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(name: any, sprite: any, litSprite: any);
 
-      create: ((x: any, y: any, z: any, north: any, sprite: any) => any) | any;
+      create(x: any, y: any, z: any, north: any, sprite: any, ...__args: never[]): any;
     }
   }
   export namespace lua.server.BuildingObjects.ISBSFurnace {}

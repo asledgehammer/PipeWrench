@@ -23,14 +23,14 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, player: any);
 
-      drawDatas: ((y: any, item: any, alt: any) => any) | any;
+      drawDatas(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      onClick: ((button: any) => any) | any;
+      onClick(button: any, ...__args: never[]): any;
 
-      populateList: (() => any) | any;
+      populateList(...__args: never[]): any;
 
       /** @noSelf */
-      static OnSafehousesChanged: () => any;
+      static OnSafehousesChanged: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.AdminPanel.ISSafehousesList {}

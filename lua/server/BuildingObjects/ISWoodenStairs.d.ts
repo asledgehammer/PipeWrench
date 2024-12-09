@@ -32,17 +32,17 @@ declare module '@asledgehammer/pipewrench' {
         pillarNorth: any,
       );
 
-      create: ((x: any, y: any, z: any, north: any, sprite: any) => any) | any;
+      create(x: any, y: any, z: any, north: any, sprite: any, ...__args: never[]): any;
 
-      getHealth: (() => any) | any;
+      getHealth(...__args: never[]): any;
 
-      getSquare2Pos: ((square: any, north: any) => any) | any;
+      getSquare2Pos(square: any, north: any, ...__args: never[]): any;
 
-      getSquare3Pos: ((square: any, north: any) => any) | any;
+      getSquare3Pos(square: any, north: any, ...__args: never[]): any;
 
-      getSquareTopPos: ((square: any, north: any) => any) | any;
+      getSquareTopPos(square: any, north: any, ...__args: never[]): any;
 
-      setInfo: ((square: any, level: any, north: any, sprite: any, luaobject: any) => any) | any;
+      setInfo(square: any, level: any, north: any, sprite: any, luaobject: any, ...__args: never[]): any;
     }
   }
   export namespace lua.server.BuildingObjects.ISWoodenStairs {}

@@ -17,17 +17,17 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor();
 
-      getRackTime: (() => any) | any;
+      getRackTime(...__args: never[]): any;
 
-      getReloadTime: (() => any) | any;
+      getReloadTime(...__args: never[]): any;
 
-      printReloadableWeaponDetails: (() => any) | any;
+      printReloadableWeaponDetails(...__args: never[]): any;
 
-      printWeaponDetails: ((item: any) => any) | any;
+      printWeaponDetails(item: any, ...__args: never[]): any;
 
-      rackingPerform: ((char: any, square: any, weapon: any) => any) | any;
+      rackingPerform(char: any, square: any, weapon: any, ...__args: never[]): any;
 
-      rackingStart: ((char: any, square: any, weapon: any) => any) | any;
+      rackingStart(char: any, square: any, weapon: any, ...__args: never[]): any;
     }
   }
   export namespace lua.shared.Reloading.ISShotgunWeapon {}

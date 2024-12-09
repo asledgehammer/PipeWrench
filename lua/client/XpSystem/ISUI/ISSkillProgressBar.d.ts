@@ -43,25 +43,25 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, playerNum: any, perk: any, parent: any);
 
-      activate: (() => any) | any;
+      activate(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      renderPerkRect: (() => any) | any;
+      renderPerkRect(...__args: never[]): any;
 
-      updateTooltip: ((lvlSelected: any) => any) | any;
-
-      /** @noSelf */
-      static getPerkXp: (self: any) => any;
+      updateTooltip(lvlSelected: any, ...__args: never[]): any;
 
       /** @noSelf */
-      static getPreviousXpLvl: (perk: any, level: any) => any;
+      static getPerkXp: (self: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getXpForLvl: (perk: any, level: any) => any;
+      static getPreviousXpLvl: (perk: any, level: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static updateAlpha: () => any;
+      static getXpForLvl: (perk: any, level: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static updateAlpha: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.XpSystem.ISUI.ISSkillProgressBar {}

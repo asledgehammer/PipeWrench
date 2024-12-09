@@ -11,9 +11,9 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor();
 
-      rotateCylinder: (() => any) | any;
+      rotateCylinder(...__args: never[]): any;
 
-      spinCylinder: (() => any) | any;
+      spinCylinder(...__args: never[]): any;
     }
   }
   export namespace lua.shared.Reloading.ISRevolverWeapon {}

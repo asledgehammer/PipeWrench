@@ -41,56 +41,55 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      clearJoypadFocus: ((joypadData: any) => any) | any;
+      clearJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      close: (() => any) | any;
+      close(...__args: never[]): any;
 
-      doRightJoystickScrolling: ((dx: any, dy: any) => any) | any;
+      doRightJoystickScrolling(dx: any, dy: any, ...__args: never[]): any;
 
-      ensureVisible: (() => any) | any;
+      ensureVisible(...__args: never[]): any;
 
-      getClosestChild: ((children: any, x: any) => any) | any;
+      getClosestChild(children: any, x: any, ...__args: never[]): any;
 
-      getJoypadFocus: (() => any) | any;
+      getJoypadFocus(...__args: never[]): any;
 
-      getVisibleChildren: ((joypadIndexY: any) => any) | any;
+      getVisibleChildren(joypadIndexY: any, ...__args: never[]): any;
 
-      insertNewLineOfButtons:
-        | ((
-            button1: any,
-            button2: any,
-            button3: any,
-            button4: any,
-            button5: any,
-            button6: any,
-            button7: any,
-            button8: any,
-            button9: any,
-            button10: any,
-          ) => any)
-        | any;
+      insertNewLineOfButtons(
+        button1: any,
+        button2: any,
+        button3: any,
+        button4: any,
+        button5: any,
+        button6: any,
+        button7: any,
+        button8: any,
+        button9: any,
+        button10: any,
+        ...__args: never[]
+      ): any;
 
-      insertNewListOfButtons: ((list: any) => any) | any;
+      insertNewListOfButtons(list: any, ...__args: never[]): any;
 
-      insertNewListOfButtonsList: ((list: any) => any) | any;
+      insertNewListOfButtonsList(list: any, ...__args: never[]): any;
 
-      isFocusOnControl: (() => any) | any;
+      isFocusOnControl(...__args: never[]): any;
 
-      noBackground: (() => any) | any;
+      noBackground(...__args: never[]): any;
 
-      onMouseDown: ((x: any, y: any) => any) | any;
+      onMouseDown(x: any, y: any, ...__args: never[]): any;
 
-      restoreJoypadFocus: ((joypadData: any) => any) | any;
+      restoreJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      setISButtonForA: ((button: any) => any) | any;
+      setISButtonForA(button: any, ...__args: never[]): any;
 
-      setISButtonForB: ((button: any) => any) | any;
+      setISButtonForB(button: any, ...__args: never[]): any;
 
-      setISButtonForX: ((button: any) => any) | any;
+      setISButtonForX(button: any, ...__args: never[]): any;
 
-      setISButtonForY: ((button: any) => any) | any;
+      setISButtonForY(button: any, ...__args: never[]): any;
 
-      setJoypadFocus: ((child: any, joypadData: any) => any) | any;
+      setJoypadFocus(child: any, joypadData: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISPanelJoypad {}

@@ -15,9 +15,9 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      onMuteButton: (() => any) | any;
+      onMuteButton(...__args: never[]): any;
 
-      setMuteButtonText: (() => any) | any;
+      setMuteButtonText(...__args: never[]): any;
     }
   }
   export namespace lua.client.RadioCom.RadioWindowModules.RWMMicrophone {}

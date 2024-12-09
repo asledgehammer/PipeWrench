@@ -99,97 +99,97 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(player: any);
 
-      climbFence: (() => any) | any;
+      climbFence(...__args: never[]): any;
 
-      climbInWindow: ((window: any) => any) | any;
+      climbInWindow(window: any, ...__args: never[]): any;
 
-      climbOverWall: ((dir: any) => any) | any;
+      climbOverWall(dir: any, ...__args: never[]): any;
 
-      closeWindow: ((window: any) => any) | any;
+      closeWindow(window: any, ...__args: never[]): any;
 
-      cmdCloseVehicleDoor: ((playerObj: any, part: any) => any) | any;
+      cmdCloseVehicleDoor(playerObj: any, part: any, ...__args: never[]): any;
 
-      cmdEnterVehicle: ((vehicle: any, seat: any) => any) | any;
+      cmdEnterVehicle(vehicle: any, seat: any, ...__args: never[]): any;
 
-      cmdExitVehicle: (() => any) | any;
+      cmdExitVehicle(...__args: never[]): any;
 
-      cmdOpenVehicleDoor: ((playerObj: any, part: any) => any) | any;
+      cmdOpenVehicleDoor(playerObj: any, part: any, ...__args: never[]): any;
 
-      cmdShowInventory: (() => any) | any;
+      cmdShowInventory(...__args: never[]): any;
 
-      cmdShowLoot: (() => any) | any;
+      cmdShowLoot(...__args: never[]): any;
 
-      cmdToggleLight: ((light: any) => any) | any;
+      cmdToggleLight(light: any, ...__args: never[]): any;
 
-      cmdToggleStove: ((stove: any) => any) | any;
+      cmdToggleStove(stove: any, ...__args: never[]): any;
 
-      cmdUseVehicle: ((vehicle: any, part: any) => any) | any;
+      cmdUseVehicle(vehicle: any, part: any, ...__args: never[]): any;
 
-      doAButtonDoorOrWindowOrWindowFrame: ((dir: any, obj: any) => any) | any;
+      doAButtonDoorOrWindowOrWindowFrame(dir: any, obj: any, ...__args: never[]): any;
 
-      doBButtonDoorOrWindowOrWindowFrame: ((dir: any, obj: any) => any) | any;
+      doBButtonDoorOrWindowOrWindowFrame(dir: any, obj: any, ...__args: never[]): any;
 
-      getBestAButtonAction: ((dir: any) => any) | any;
+      getBestAButtonAction(dir: any, ...__args: never[]): any;
 
-      getBestBButtonAction: ((dir: any) => any) | any;
+      getBestBButtonAction(dir: any, ...__args: never[]): any;
 
-      getBestLBButtonAction: ((dir: any) => any) | any;
+      getBestLBButtonAction(dir: any, ...__args: never[]): any;
 
-      getBestRBButtonAction: ((dir: any) => any) | any;
+      getBestRBButtonAction(dir: any, ...__args: never[]): any;
 
-      getBestXButtonAction: ((dir: any) => any) | any;
+      getBestXButtonAction(dir: any, ...__args: never[]): any;
 
-      getBestYButtonAction: ((dir: any) => any) | any;
+      getBestYButtonAction(dir: any, ...__args: never[]): any;
 
-      getTopOf: (() => any) | any;
+      getTopOf(...__args: never[]): any;
 
-      getXButtonObjects: ((dir: any) => any) | any;
+      getXButtonObjects(dir: any, ...__args: never[]): any;
 
-      interact: ((worldobjects: any) => any) | any;
+      interact(worldobjects: any, ...__args: never[]): any;
 
-      isLootIcon: (() => any) | any;
+      isLootIcon(...__args: never[]): any;
 
-      onAPress: (() => any) | any;
+      onAPress(...__args: never[]): any;
 
-      onBPress: (() => any) | any;
+      onBPress(...__args: never[]): any;
 
-      onJoypadButtonReleased: ((button: any) => any) | any;
+      onJoypadButtonReleased(button: any, ...__args: never[]): any;
 
-      onLBPress: (() => any) | any;
+      onLBPress(...__args: never[]): any;
 
-      onRBPress: (() => any) | any;
+      onRBPress(...__args: never[]): any;
 
-      onXPress: (() => any) | any;
+      onXPress(...__args: never[]): any;
 
-      onYPress: (() => any) | any;
+      onYPress(...__args: never[]): any;
 
-      openDeviceOptions: ((device: any) => any) | any;
+      openDeviceOptions(device: any, ...__args: never[]): any;
 
-      openDoor: ((door: any) => any) | any;
+      openDoor(door: any, ...__args: never[]): any;
 
-      openWindow: ((window: any) => any) | any;
+      openWindow(window: any, ...__args: never[]): any;
 
-      setAPrompt: ((str: any, func: any, param1: any, param2: any, param3: any, param4: any) => any) | any;
+      setAPrompt(str: any, func: any, param1: any, param2: any, param3: any, param4: any, ...__args: never[]): any;
 
-      setBPrompt: ((str: any, func: any, param1: any, param2: any, param3: any, param4: any) => any) | any;
+      setBPrompt(str: any, func: any, param1: any, param2: any, param3: any, param4: any, ...__args: never[]): any;
 
-      setLBPrompt: ((str: any, func: any, param1: any, param2: any, param3: any, param4: any) => any) | any;
+      setLBPrompt(str: any, func: any, param1: any, param2: any, param3: any, param4: any, ...__args: never[]): any;
 
-      setRBPrompt: ((str: any, func: any, param1: any, param2: any, param3: any, param4: any) => any) | any;
+      setRBPrompt(str: any, func: any, param1: any, param2: any, param3: any, param4: any, ...__args: never[]): any;
 
-      setXPrompt: ((str: any, func: any, param1: any, param2: any, param3: any, param4: any) => any) | any;
+      setXPrompt(str: any, func: any, param1: any, param2: any, param3: any, param4: any, ...__args: never[]): any;
 
-      setYPrompt: ((str: any, func: any, param1: any, param2: any, param3: any, param4: any) => any) | any;
+      setYPrompt(str: any, func: any, param1: any, param2: any, param3: any, param4: any, ...__args: never[]): any;
 
-      sleep: (() => any) | any;
+      sleep(...__args: never[]): any;
 
-      smashWindow: ((window: any) => any) | any;
+      smashWindow(window: any, ...__args: never[]): any;
 
-      stopAction: (() => any) | any;
+      stopAction(...__args: never[]): any;
 
-      testAButtonAction: ((dir: any) => any) | any;
+      testAButtonAction(dir: any, ...__args: never[]): any;
 
-      testBButtonAction: ((dir: any) => any) | any;
+      testBButtonAction(dir: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISButtonPrompt {}

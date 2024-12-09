@@ -10,7 +10,7 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
 
       /** @noSelf */
-      static initObjectModData: (isoObject: any, trapDef: any, north: any, player: any) => any;
+      static initObjectModData: (isoObject: any, trapDef: any, north: any, player: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.Traps.CTrapSystem {}

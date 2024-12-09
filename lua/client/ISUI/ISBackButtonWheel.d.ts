@@ -23,11 +23,11 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(playerNum: any);
 
-      addCommands: (() => any) | any;
+      addCommands(...__args: never[]): any;
 
-      onCommand: ((command: any) => any) | any;
+      onCommand(command: any, ...__args: never[]): any;
 
-      onLoseJoypadFocus: ((joypadData: any) => any) | any;
+      onLoseJoypadFocus(joypadData: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISBackButtonWheel {}

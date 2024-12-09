@@ -59,26 +59,26 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, player: any);
 
-      addColor: ((_r: any, _g: any, _b: any) => any) | any;
+      addColor(_r: any, _g: any, _b: any, ...__args: never[]): any;
 
-      addVarInfo: ((_name: any, _desc: any, _min: any, _max: any, _func: any) => any) | any;
+      addVarInfo(_name: any, _desc: any, _min: any, _max: any, _func: any, ...__args: never[]): any;
 
-      clear: (() => any) | any;
+      clear(...__args: never[]): any;
 
-      initVariables: (() => any) | any;
+      initVariables(...__args: never[]): any;
 
-      onButton: ((_btn: any) => any) | any;
+      onButton(_btn: any, ...__args: never[]): any;
 
-      onButtonToggle: ((_btn: any) => any) | any;
+      onButtonToggle(_btn: any, ...__args: never[]): any;
 
-      onResize: (() => any) | any;
+      onResize(...__args: never[]): any;
 
-      stayOnSplitScreen: (() => any) | any;
+      stayOnSplitScreen(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
       /** @noSelf */
-      static OnOpenPanel: () => any;
+      static OnOpenPanel: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.DebugUIs.DebugMenu.Climate.WindDebug {}

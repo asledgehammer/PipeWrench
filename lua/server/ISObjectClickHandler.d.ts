@@ -6,49 +6,49 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static doClick: (object: any, x: any, y: any) => any;
+      static doClick: (object: any, x: any, y: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doClickCurtain: (object: any, playerNum: any, playerObj: any) => any;
+      static doClickCurtain: (object: any, playerNum: any, playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doClickDoor: (object: any, playerNum: any, playerObj: any) => any;
+      static doClickDoor: (object: any, playerNum: any, playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doClickLightSwitch: (object: any, playerNum: any, playerObj: any) => any;
+      static doClickLightSwitch: (object: any, playerNum: any, playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doClickSpecificObject: (object: any, playerNum: any, playerObj: any) => any;
+      static doClickSpecificObject: (object: any, playerNum: any, playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doClickThumpable: (object: any, playerNum: any, playerObj: any) => any;
+      static doClickThumpable: (object: any, playerNum: any, playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doClickWindow: (object: any, playerNum: any, playerObj: any) => any;
+      static doClickWindow: (object: any, playerNum: any, playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doDoubleClick: (object: any, x: any, y: any) => any;
+      static doDoubleClick: (object: any, x: any, y: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doRClick: (object: any, x: any, y: any) => any;
+      static doRClick: (object: any, x: any, y: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doRDoubleClick: (object: any, x: any, y: any) => any;
+      static doRDoubleClick: (object: any, x: any, y: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onObjectLeftMouseButtonDown: (object: any, x: any, y: any) => any;
+      static onObjectLeftMouseButtonDown: (object: any, x: any, y: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onObjectLeftMouseButtonUp: (object: any, x: any, y: any) => any;
+      static onObjectLeftMouseButtonUp: (object: any, x: any, y: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onObjectRightMouseButtonDown: (object: any, x: any, y: any) => any;
+      static onObjectRightMouseButtonDown: (object: any, x: any, y: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onObjectRightMouseButtonUp: (object: any, x: any, y: any) => any;
+      static onObjectRightMouseButtonUp: (object: any, x: any, y: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onTick: () => any;
+      static onTick: (...__args: never[]) => any;
     }
   }
   export namespace lua.server.ISObjectClickHandler {}

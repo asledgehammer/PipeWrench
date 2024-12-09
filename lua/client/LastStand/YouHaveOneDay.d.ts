@@ -6,37 +6,37 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static Add: () => any;
+      static Add: (...__args: never[]) => any;
 
       /** @noSelf */
-      static AddPlayer: (playerNum: any, playerObj: any) => any;
+      static AddPlayer: (playerNum: any, playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static EveryDays: () => any;
+      static EveryDays: (...__args: never[]) => any;
 
       /** @noSelf */
-      static EveryHours: () => any;
+      static EveryHours: (...__args: never[]) => any;
 
       /** @noSelf */
-      static Init: () => any;
+      static Init: (...__args: never[]) => any;
 
       /** @noSelf */
-      static OnGameStart: () => any;
+      static OnGameStart: (...__args: never[]) => any;
 
       /** @noSelf */
-      static OnInitWorld: () => any;
+      static OnInitWorld: (...__args: never[]) => any;
 
       /** @noSelf */
-      static OnPlayerUpdate: (zombie: any) => any;
+      static OnPlayerUpdate: (zombie: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnZombieUpdate: (zombie: any) => any;
+      static OnZombieUpdate: (zombie: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static RemovePlayer: (playerObj: any) => any;
+      static RemovePlayer: (playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static Render: () => any;
+      static Render: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.LastStand.YouHaveOneDay {}

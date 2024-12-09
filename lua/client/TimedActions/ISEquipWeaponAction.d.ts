@@ -25,9 +25,9 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, item: any, time: any, primary: any, twoHands: any);
 
-      animEvent: ((event: any, parameter: any) => any) | any;
+      animEvent(event: any, parameter: any, ...__args: never[]): any;
 
-      isAlreadyEquipped: (() => any) | any;
+      isAlreadyEquipped(...__args: never[]): any;
     }
   }
   export namespace lua.client.TimedActions.ISEquipWeaponAction {}

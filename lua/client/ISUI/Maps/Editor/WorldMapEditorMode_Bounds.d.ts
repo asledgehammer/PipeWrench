@@ -21,25 +21,25 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(editor: any);
 
-      cancelResize: (() => any) | any;
+      cancelResize(...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onChangeSnapMode: ((button: any) => any) | any;
+      onChangeSnapMode(button: any, ...__args: never[]): any;
 
-      onDrawBounds: (() => any) | any;
+      onDrawBounds(...__args: never[]): any;
 
-      onMouseUpOutside: ((x: any, y: any) => any) | any;
+      onMouseUpOutside(x: any, y: any, ...__args: never[]): any;
 
-      onReset: (() => any) | any;
+      onReset(...__args: never[]): any;
 
-      onRightMouseDown: ((x: any, y: any) => any) | any;
+      onRightMouseDown(x: any, y: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setBounds: ((x1: any, y1: any, x2: any, y2: any) => any) | any;
+      setBounds(x1: any, y1: any, x2: any, y2: any, ...__args: never[]): any;
 
-      snap: ((xy: any) => any) | any;
+      snap(xy: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.Maps.Editor.WorldMapEditorMode_Bounds {}

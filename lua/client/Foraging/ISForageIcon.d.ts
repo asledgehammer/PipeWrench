@@ -23,13 +23,13 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(_manager: any, _forageIcon: any, _zoneData: any);
 
-      checkIsIdentified: (() => any) | any;
+      checkIsIdentified(...__args: never[]): any;
 
-      doForage: ((_x: any, _y: any, _contextOption: any, _targetContainer: any) => any) | any;
+      doForage(_x: any, _y: any, _contextOption: any, _targetContainer: any, ...__args: never[]): any;
 
-      getNewCategoryItem: ((_catDef: any, _zoneData: any) => any) | any;
+      getNewCategoryItem(_catDef: any, _zoneData: any, ...__args: never[]): any;
 
-      onClickDiscard: ((_x: any, _y: any, _contextOption: any) => any) | any;
+      onClickDiscard(_x: any, _y: any, _contextOption: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.Foraging.ISForageIcon {}

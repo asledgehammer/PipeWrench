@@ -25,24 +25,24 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, title: any);
 
-      addColorOption: ((_id: any, _color: any, _x: any, _y: any, _w: any) => any) | any;
+      addColorOption(_id: any, _color: any, _x: any, _y: any, _w: any, ...__args: never[]): any;
 
-      addFloatOption: ((_id: any, _float: any, _x: any, _y: any, _w: any) => any) | any;
+      addFloatOption(_id: any, _float: any, _x: any, _y: any, _w: any, ...__args: never[]): any;
 
-      addSlider: ((_id: any, _x: any, _y: any, _w: any, _title: any) => any) | any;
+      addSlider(_id: any, _x: any, _y: any, _w: any, _title: any, ...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onClick: ((_button: any) => any) | any;
+      onClick(_button: any, ...__args: never[]): any;
 
-      onFloatSliderChange: ((_newval: any, _slider: any) => any) | any;
+      onFloatSliderChange(_newval: any, _slider: any, ...__args: never[]): any;
 
-      onSliderChange: ((_newval: any, _slider: any) => any) | any;
+      onSliderChange(_newval: any, _slider: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
       /** @noSelf */
-      static OnOpenPanel: (_colorInfo: any, _parent: any, _ambient: any, _desat: any) => any;
+      static OnOpenPanel: (_colorInfo: any, _parent: any, _ambient: any, _desat: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.DebugUIs.DebugMenu.Climate.PopupColorEdit {}

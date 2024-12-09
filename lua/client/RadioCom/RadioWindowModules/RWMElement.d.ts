@@ -33,39 +33,39 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, subpanel: any, title: any, radioParent: any);
 
-      calculateHeights: (() => any) | any;
+      calculateHeights(...__args: never[]): any;
 
-      clear: (() => any) | any;
+      clear(...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      getAPrompt: (() => any) | any;
+      getAPrompt(...__args: never[]): any;
 
-      getBPrompt: (() => any) | any;
+      getBPrompt(...__args: never[]): any;
 
-      getLBPrompt: (() => any) | any;
+      getLBPrompt(...__args: never[]): any;
 
-      getRBPrompt: (() => any) | any;
+      getRBPrompt(...__args: never[]): any;
 
-      getXPrompt: (() => any) | any;
+      getXPrompt(...__args: never[]): any;
 
-      getYPrompt: (() => any) | any;
+      getYPrompt(...__args: never[]): any;
 
-      isValidPrompt: (() => any) | any;
+      isValidPrompt(...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onHeaderClick: (() => any) | any;
+      onHeaderClick(...__args: never[]): any;
 
-      onLoseJoypadFocus: ((joypadData: any) => any) | any;
+      onLoseJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      readFromObject: ((_player: any, _deviceObject: any, _deviceData: any, _deviceType: any) => any) | any;
+      readFromObject(_player: any, _deviceObject: any, _deviceData: any, _deviceType: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setExpanded: ((_bool: any) => any) | any;
+      setExpanded(_bool: any, ...__args: never[]): any;
 
-      setFocus: ((_playerNum: any, _radioParent: any) => any) | any;
+      setFocus(_playerNum: any, _radioParent: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.RadioCom.RadioWindowModules.RWMElement {}

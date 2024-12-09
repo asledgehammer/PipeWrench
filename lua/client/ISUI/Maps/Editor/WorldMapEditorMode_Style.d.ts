@@ -21,39 +21,39 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(editor: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      fillList: (() => any) | any;
+      fillList(...__args: never[]): any;
 
-      generateLuaScript_FillStops: ((layer: any) => any) | any;
+      generateLuaScript_FillStops(layer: any, ...__args: never[]): any;
 
-      generateLuaScript_TextureStops: ((layer: any) => any) | any;
+      generateLuaScript_TextureStops(layer: any, ...__args: never[]): any;
 
-      onAdd: (() => any) | any;
+      onAdd(...__args: never[]): any;
 
-      onChangeLayerType: (() => any) | any;
+      onChangeLayerType(...__args: never[]): any;
 
-      onLayerNameEntered: (() => any) | any;
+      onLayerNameEntered(...__args: never[]): any;
 
-      onListboxEvent: ((action: any) => any) | any;
+      onListboxEvent(action: any, ...__args: never[]): any;
 
-      onMinZoomEntered: (() => any) | any;
+      onMinZoomEntered(...__args: never[]): any;
 
-      onMouseUpOutside: ((x: any, y: any) => any) | any;
+      onMouseUpOutside(x: any, y: any, ...__args: never[]): any;
 
-      onMoveDown: (() => any) | any;
+      onMoveDown(...__args: never[]): any;
 
-      onMoveUp: (() => any) | any;
+      onMoveUp(...__args: never[]): any;
 
-      onRemove: (() => any) | any;
+      onRemove(...__args: never[]): any;
 
-      onRightMouseDown: ((x: any, y: any) => any) | any;
+      onRightMouseDown(x: any, y: any, ...__args: never[]): any;
 
-      onSelect: (() => any) | any;
+      onSelect(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setCurrentEditor: ((layer: any) => any) | any;
+      setCurrentEditor(layer: any, ...__args: never[]): any;
     }
 
     /** @customConstructor WorldMapStyleEditor:new */
@@ -73,13 +73,13 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(editorMode: any);
 
-      display: ((layer: any) => any) | any;
+      display(layer: any, ...__args: never[]): any;
 
-      onKeyPress: ((key: any) => any) | any;
+      onKeyPress(key: any, ...__args: never[]): any;
 
-      shrinkWrap: (() => any) | any;
+      shrinkWrap(...__args: never[]): any;
 
-      undisplay: (() => any) | any;
+      undisplay(...__args: never[]): any;
     }
 
     /** @customConstructor WorldMapStyleEditor_ColorStopsPanel:new */
@@ -101,43 +101,43 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(width: any, editorMode: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      getSelectedAlpha: (() => any) | any;
+      getSelectedAlpha(...__args: never[]): any;
 
-      getSelectedBlue: (() => any) | any;
+      getSelectedBlue(...__args: never[]): any;
 
-      getSelectedGreen: (() => any) | any;
+      getSelectedGreen(...__args: never[]): any;
 
-      getSelectedIndex: (() => any) | any;
+      getSelectedIndex(...__args: never[]): any;
 
-      getSelectedRed: (() => any) | any;
+      getSelectedRed(...__args: never[]): any;
 
-      getSelectedZoom: (() => any) | any;
+      getSelectedZoom(...__args: never[]): any;
 
-      onAdd: (() => any) | any;
+      onAdd(...__args: never[]): any;
 
-      onAlphaEntered: (() => any) | any;
+      onAlphaEntered(...__args: never[]): any;
 
-      onBlueEntered: (() => any) | any;
+      onBlueEntered(...__args: never[]): any;
 
-      onGreenEntered: (() => any) | any;
+      onGreenEntered(...__args: never[]): any;
 
-      onListboxEvent: ((action: any) => any) | any;
+      onListboxEvent(action: any, ...__args: never[]): any;
 
-      onMoveDown: (() => any) | any;
+      onMoveDown(...__args: never[]): any;
 
-      onMoveUp: (() => any) | any;
+      onMoveUp(...__args: never[]): any;
 
-      onRedEntered: (() => any) | any;
+      onRedEntered(...__args: never[]): any;
 
-      onRemove: (() => any) | any;
+      onRemove(...__args: never[]): any;
 
-      onSelect: (() => any) | any;
+      onSelect(...__args: never[]): any;
 
-      onZoomEntered: (() => any) | any;
+      onZoomEntered(...__args: never[]): any;
 
-      setRGBA: ((r: any, g: any, b: any, a: any) => any) | any;
+      setRGBA(r: any, g: any, b: any, a: any, ...__args: never[]): any;
     }
 
     /** @customConstructor WorldMapStyleEditor_FilterPanel:new */
@@ -151,11 +151,11 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(width: any, editorMode: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onKeyEntered: (() => any) | any;
+      onKeyEntered(...__args: never[]): any;
 
-      onValueEntered: (() => any) | any;
+      onValueEntered(...__args: never[]): any;
     }
 
     /** @customConstructor WorldMapStyleEditor_PolygonLayerPanel:new */
@@ -173,19 +173,19 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(editorMode: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onMouseDownMap: ((x: any, y: any) => any) | any;
+      onMouseDownMap(x: any, y: any, ...__args: never[]): any;
 
-      onMouseMoveMap: ((dx: any, dy: any) => any) | any;
+      onMouseMoveMap(dx: any, dy: any, ...__args: never[]): any;
 
-      onMouseUpMap: ((x: any, y: any) => any) | any;
+      onMouseUpMap(x: any, y: any, ...__args: never[]): any;
 
-      onMouseUpOutsideMap: ((x: any, y: any) => any) | any;
+      onMouseUpOutsideMap(x: any, y: any, ...__args: never[]): any;
 
-      onRightMouseDownMap: ((x: any, y: any) => any) | any;
+      onRightMouseDownMap(x: any, y: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
     }
 
     /** @customConstructor WorldMapStyleEditor_TabPanel:new */
@@ -205,23 +205,23 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(width: any, editorMode: any);
 
-      getEntryClamped: ((entry: any, min: any, max: any) => any) | any;
+      getEntryClamped(entry: any, min: any, max: any, ...__args: never[]): any;
 
-      onKeyPress: ((key: any) => any) | any;
+      onKeyPress(key: any, ...__args: never[]): any;
 
-      onMouseDownMap: ((x: any, y: any) => any) | any;
+      onMouseDownMap(x: any, y: any, ...__args: never[]): any;
 
-      onMouseMoveMap: ((dx: any, dy: any) => any) | any;
+      onMouseMoveMap(dx: any, dy: any, ...__args: never[]): any;
 
-      onMouseUpMap: ((x: any, y: any) => any) | any;
+      onMouseUpMap(x: any, y: any, ...__args: never[]): any;
 
-      onMouseUpOutsideMap: ((x: any, y: any) => any) | any;
+      onMouseUpOutsideMap(x: any, y: any, ...__args: never[]): any;
 
-      onRightMouseDownMap: ((x: any, y: any) => any) | any;
+      onRightMouseDownMap(x: any, y: any, ...__args: never[]): any;
 
-      populateList: ((layer: any) => any) | any;
+      populateList(layer: any, ...__args: never[]): any;
 
-      undisplay: (() => any) | any;
+      undisplay(...__args: never[]): any;
     }
 
     /** @customConstructor WorldMapStyleEditor_TextureLayerPanel:new */
@@ -237,19 +237,19 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(editorMode: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onMouseDownMap: ((x: any, y: any) => any) | any;
+      onMouseDownMap(x: any, y: any, ...__args: never[]): any;
 
-      onMouseMoveMap: ((dx: any, dy: any) => any) | any;
+      onMouseMoveMap(dx: any, dy: any, ...__args: never[]): any;
 
-      onMouseUpMap: ((x: any, y: any) => any) | any;
+      onMouseUpMap(x: any, y: any, ...__args: never[]): any;
 
-      onMouseUpOutsideMap: ((x: any, y: any) => any) | any;
+      onMouseUpOutsideMap(x: any, y: any, ...__args: never[]): any;
 
-      onRightMouseDownMap: ((x: any, y: any) => any) | any;
+      onRightMouseDownMap(x: any, y: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
     }
 
     /** @customConstructor WorldMapStyleEditor_TexturePanel:new */
@@ -280,29 +280,29 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(width: any, editorMode: any);
 
-      cancelResize: (() => any) | any;
+      cancelResize(...__args: never[]): any;
 
-      getSelectedTextureScale: (() => any) | any;
+      getSelectedTextureScale(...__args: never[]): any;
 
-      onBoundsFromTexture: (() => any) | any;
+      onBoundsFromTexture(...__args: never[]): any;
 
-      onChangeSizeLocked: (() => any) | any;
+      onChangeSizeLocked(...__args: never[]): any;
 
-      onChangeSnapMode: ((button: any) => any) | any;
+      onChangeSnapMode(button: any, ...__args: never[]): any;
 
-      onChangeTextureMode: (() => any) | any;
+      onChangeTextureMode(...__args: never[]): any;
 
-      onChangeUseWorldBounds: (() => any) | any;
+      onChangeUseWorldBounds(...__args: never[]): any;
 
-      onKeyPress: ((key: any) => any) | any;
+      onKeyPress(key: any, ...__args: never[]): any;
 
-      onResizeToTexture: (() => any) | any;
+      onResizeToTexture(...__args: never[]): any;
 
-      onRightMouseDownMap: ((x: any, y: any) => any) | any;
+      onRightMouseDownMap(x: any, y: any, ...__args: never[]): any;
 
-      onScaleEntered: (() => any) | any;
+      onScaleEntered(...__args: never[]): any;
 
-      undisplay: (() => any) | any;
+      undisplay(...__args: never[]): any;
     }
 
     /** @customConstructor WorldMapStyleEditor_TextureStopsPanel:new */
@@ -319,33 +319,33 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(width: any, editorMode: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      getSelectedIndex: (() => any) | any;
+      getSelectedIndex(...__args: never[]): any;
 
-      getSelectedTexture: (() => any) | any;
+      getSelectedTexture(...__args: never[]): any;
 
-      getSelectedTexturePath: (() => any) | any;
+      getSelectedTexturePath(...__args: never[]): any;
 
-      getSelectedZoom: (() => any) | any;
+      getSelectedZoom(...__args: never[]): any;
 
-      onAdd: (() => any) | any;
+      onAdd(...__args: never[]): any;
 
-      onListboxEvent: ((action: any) => any) | any;
+      onListboxEvent(action: any, ...__args: never[]): any;
 
-      onMoveDown: (() => any) | any;
+      onMoveDown(...__args: never[]): any;
 
-      onMoveUp: (() => any) | any;
+      onMoveUp(...__args: never[]): any;
 
-      onRemove: (() => any) | any;
+      onRemove(...__args: never[]): any;
 
-      onSelect: (() => any) | any;
+      onSelect(...__args: never[]): any;
 
-      onTexturePathEntered: (() => any) | any;
+      onTexturePathEntered(...__args: never[]): any;
 
-      onZoomEntered: (() => any) | any;
+      onZoomEntered(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.Maps.Editor.WorldMapEditorMode_Style {}

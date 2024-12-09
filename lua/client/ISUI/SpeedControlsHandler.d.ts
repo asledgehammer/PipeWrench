@@ -6,7 +6,7 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static onKeyPressed: (key: any) => any;
+      static onKeyPressed: (key: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.SpeedControlsHandler {}

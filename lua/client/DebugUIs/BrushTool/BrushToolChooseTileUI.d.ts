@@ -19,20 +19,20 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, character: any);
 
-      doDrawImageListItem: ((y: any, item: any, alt: any) => any) | any;
+      doDrawImageListItem(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      onTextChange: (() => any) | any;
+      onTextChange(...__args: never[]): any;
 
-      populateList: (() => any) | any;
-
-      /** @noSelf */
-      static OnKeyPressed: (key: any) => any;
+      populateList(...__args: never[]): any;
 
       /** @noSelf */
-      static onSelectImage: (arg0: any, item: any) => any;
+      static OnKeyPressed: (key: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static openPanel: (x: any, y: any, playerObj: any) => any;
+      static onSelectImage: (arg0: any, item: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static openPanel: (x: any, y: any, playerObj: any, ...__args: never[]) => any;
     }
 
     /** @customConstructor BrushToolTilePickerList:new */
@@ -48,9 +48,9 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, w: any, h: any, character: any);
 
-      onMouseWheel: ((del: any) => any) | any;
+      onMouseWheel(del: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
     }
   }
   export namespace lua.client.DebugUIs.BrushTool.BrushToolChooseTileUI {}

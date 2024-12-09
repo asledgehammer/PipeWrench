@@ -19,13 +19,13 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, item: any, time: any);
 
-      animEvent: ((event: any, parameter: any) => any) | any;
+      animEvent(event: any, parameter: any, ...__args: never[]): any;
 
       /** @noSelf */
-      static checkLevel: (character: any, item: any) => any;
+      static checkLevel: (character: any, item: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static checkMultiplier: (self: any) => any;
+      static checkMultiplier: (self: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.TimedActions.ISReadABook {}

@@ -72,43 +72,70 @@ declare module '@asledgehammer/pipewrench' {
         onDragSelf: any,
       );
 
-      activateToolTip: (() => any) | any;
+      activateToolTip(...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      deactivateToolTip: (() => any) | any;
+      deactivateToolTip(...__args: never[]): any;
 
-      defaultVerifyItem: ((_item: any) => any) | any;
+      defaultVerifyItem(_item: any, ...__args: never[]): any;
 
-      hasValidItemInDrag: (() => any) | any;
+      hasValidItemInDrag(...__args: never[]): any;
 
-      itemDropped: ((_items: any) => any) | any;
+      itemDropped(_items: any, ...__args: never[]): any;
 
-      onRightMouseUp: ((x: any, y: any) => any) | any;
+      onRightMouseUp(x: any, y: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setBackDropTex: ((_tex: any, _a: any, _r: any, _g: any, _b: any) => any) | any;
+      setBackDropTex(_tex: any, _a: any, _r: any, _g: any, _b: any, ...__args: never[]): any;
 
-      setDoBackDropTex: ((_b: any) => any) | any;
+      setDoBackDropTex(_b: any, ...__args: never[]): any;
 
-      setHighlight:
-        | ((arg0: any, _a: any, _r: any, _g: any, _b: any, _a2: any, _r2: any, _g2: any, _b2: any) => any)
-        | any;
+      setHighlight(
+        arg0: any,
+        _a: any,
+        _r: any,
+        _g: any,
+        _b: any,
+        _a2: any,
+        _r2: any,
+        _g2: any,
+        _b2: any,
+        ...__args: never[]
+      ): any;
 
-      setInvalidHighlight:
-        | ((arg0: any, _a: any, _r: any, _g: any, _b: any, _a2: any, _r2: any, _g2: any, _b2: any) => any)
-        | any;
+      setInvalidHighlight(
+        arg0: any,
+        _a: any,
+        _r: any,
+        _g: any,
+        _b: any,
+        _a2: any,
+        _r2: any,
+        _g2: any,
+        _b2: any,
+        ...__args: never[]
+      ): any;
 
-      setStoredItem: ((_item: any) => any) | any;
+      setStoredItem(_item: any, ...__args: never[]): any;
 
-      setStoredItemFake: ((_itemTex: any) => any) | any;
+      setStoredItemFake(_itemTex: any, ...__args: never[]): any;
 
-      setToolTip: ((_b: any, _text: any) => any) | any;
+      setToolTip(_b: any, _text: any, ...__args: never[]): any;
 
-      setValidHighlight:
-        | ((arg0: any, _a: any, _r: any, _g: any, _b: any, _a2: any, _r2: any, _g2: any, _b2: any) => any)
-        | any;
+      setValidHighlight(
+        arg0: any,
+        _a: any,
+        _r: any,
+        _g: any,
+        _b: any,
+        _a2: any,
+        _r2: any,
+        _g2: any,
+        _b2: any,
+        ...__args: never[]
+      ): any;
     }
   }
   export namespace lua.client.RadioCom.ISUIRadio.ISItemDropBox {}

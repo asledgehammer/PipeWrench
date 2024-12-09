@@ -63,46 +63,46 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, item: any, character: any);
 
-      close: (() => any) | any;
+      close(...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      displayBodyPart: ((cat: any) => any) | any;
+      displayBodyPart(cat: any, ...__args: never[]): any;
 
-      initLocationCombo: (() => any) | any;
+      initLocationCombo(...__args: never[]): any;
 
-      initRemoveMakeUpCombo: (() => any) | any;
+      initRemoveMakeUpCombo(...__args: never[]): any;
 
-      onApplyMakeUp: (() => any) | any;
+      onApplyMakeUp(...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDown: ((button: any) => any) | any;
+      onJoypadDown(button: any, ...__args: never[]): any;
 
-      onRemoveMakeUp: (() => any) | any;
+      onRemoveMakeUp(...__args: never[]): any;
 
-      onSelectLocation: (() => any) | any;
+      onSelectLocation(...__args: never[]): any;
 
-      onSelectMakeUp: (() => any) | any;
+      onSelectMakeUp(...__args: never[]): any;
 
-      onSelectRemoveMakeUp: (() => any) | any;
+      onSelectRemoveMakeUp(...__args: never[]): any;
 
-      prerender: (() => any) | any;
+      prerender(...__args: never[]): any;
 
-      reinit: (() => any) | any;
+      reinit(...__args: never[]): any;
 
-      reinitCombos: (() => any) | any;
+      reinitCombos(...__args: never[]): any;
 
-      setWidthToChildren: ((panel: any, minWidth: any) => any) | any;
+      setWidthToChildren(panel: any, minWidth: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
-      updateAvatar: (() => any) | any;
+      updateAvatar(...__args: never[]): any;
 
-      updateLayout: (() => any) | any;
+      updateLayout(...__args: never[]): any;
 
       /** @noSelf */
-      static OnPlayerDeath: (playerObj: any) => any;
+      static OnPlayerDeath: (playerObj: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.ISMakeUpUI {}

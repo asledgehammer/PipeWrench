@@ -7,7 +7,7 @@ declare module '@asledgehammer/pipewrench' {
       [id: string]: any;
       static [id: string]: any;
 
-      onLoseJoypadFocus: ((joypadData: any) => any) | any;
+      onLoseJoypadFocus(joypadData: any, ...__args: never[]): any;
     }
 
     /** @customConstructor ServerSettingsScreen:new */
@@ -33,20 +33,20 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      aboutToShow: (() => any) | any;
+      aboutToShow(...__args: never[]): any;
 
-      create: (() => any) | any;
+      create(...__args: never[]): any;
 
-      getCurrentFocusForController: (() => any) | any;
+      getCurrentFocusForController(...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onJoypadBeforeDeactivate: ((joypadData: any) => any) | any;
+      onJoypadBeforeDeactivate(joypadData: any, ...__args: never[]): any;
 
-      onResolutionChange: ((oldw: any, oldh: any, neww: any, newh: any) => any) | any;
+      onResolutionChange(oldw: any, oldh: any, neww: any, newh: any, ...__args: never[]): any;
 
       /** @noSelf */
-      static getSandboxSettingsTable: () => any;
+      static getSandboxSettingsTable: (...__args: never[]) => any;
     }
 
     /** @customConstructor SpawnRegionsNameFilePanel:new */
@@ -66,21 +66,21 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onFileEntered: (() => any) | any;
+      onFileEntered(...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDownInParent: ((button: any, joypadData: any) => any) | any;
+      onJoypadDownInParent(button: any, joypadData: any, ...__args: never[]): any;
 
-      onLoseJoypadFocus: ((joypadData: any) => any) | any;
+      onLoseJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onNameEntered: (() => any) | any;
+      onNameEntered(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setJoypadFocused: ((focused: any, joypadData: any) => any) | any;
+      setJoypadFocused(focused: any, joypadData: any, ...__args: never[]): any;
     }
 
     export abstract class DefaultServerSettings {

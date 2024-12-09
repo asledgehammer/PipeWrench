@@ -6,7 +6,7 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static onClimateManagerInit: (_clim: any) => any;
+      static onClimateManagerInit: (_clim: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.server.Climate.ClimateMain {}

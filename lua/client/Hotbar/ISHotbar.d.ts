@@ -39,70 +39,70 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any);
 
-      activateSlot: ((slotIndex: any) => any) | any;
+      activateSlot(slotIndex: any, ...__args: never[]): any;
 
-      attachItem: ((item: any, slot: any, slotIndex: any, slotDef: any, doAnim: any) => any) | any;
+      attachItem(item: any, slot: any, slotIndex: any, slotDef: any, doAnim: any, ...__args: never[]): any;
 
-      canBeAttached: ((slot: any, item: any) => any) | any;
+      canBeAttached(slot: any, item: any, ...__args: never[]): any;
 
-      compareWornItems: (() => any) | any;
+      compareWornItems(...__args: never[]): any;
 
-      doMenu: ((slotIndex: any) => any) | any;
+      doMenu(slotIndex: any, ...__args: never[]): any;
 
-      equipItem: ((item: any) => any) | any;
+      equipItem(item: any, ...__args: never[]): any;
 
-      getSlotDef: ((slot: any) => any) | any;
+      getSlotDef(slot: any, ...__args: never[]): any;
 
-      getSlotDefReplacement: ((slot: any) => any) | any;
+      getSlotDefReplacement(slot: any, ...__args: never[]): any;
 
-      getSlotForKey: ((key: any) => any) | any;
+      getSlotForKey(key: any, ...__args: never[]): any;
 
-      getSlotIndexAt: ((x: any, y: any) => any) | any;
+      getSlotIndexAt(x: any, y: any, ...__args: never[]): any;
 
-      haveThisSlot: ((slotType: any, list: any) => any) | any;
+      haveThisSlot(slotType: any, list: any, ...__args: never[]): any;
 
-      isInHotbar: ((item: any) => any) | any;
+      isInHotbar(item: any, ...__args: never[]): any;
 
-      isItemAttached: ((item: any) => any) | any;
+      isItemAttached(item: any, ...__args: never[]): any;
 
-      loadPosition: (() => any) | any;
+      loadPosition(...__args: never[]): any;
 
-      onRadialAttach: ((item: any, slotIndex: any, v: any) => any) | any;
+      onRadialAttach(item: any, slotIndex: any, v: any, ...__args: never[]): any;
 
-      onRadialRemove: ((item: any) => any) | any;
+      onRadialRemove(item: any, ...__args: never[]): any;
 
-      onRightMouseUp: ((x: any, y: any) => any) | any;
+      onRightMouseUp(x: any, y: any, ...__args: never[]): any;
 
-      refresh: (() => any) | any;
+      refresh(...__args: never[]): any;
 
-      reloadIcons: (() => any) | any;
+      reloadIcons(...__args: never[]): any;
 
-      removeItem: ((item: any, doAnim: any) => any) | any;
+      removeItem(item: any, doAnim: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      savePosition: (() => any) | any;
+      savePosition(...__args: never[]): any;
 
-      setAttachAnim: ((item: any, slot: any) => any) | any;
+      setAttachAnim(item: any, slot: any, ...__args: never[]): any;
 
-      setSizeAndPosition: (() => any) | any;
+      setSizeAndPosition(...__args: never[]): any;
 
-      update: (() => any) | any;
-
-      /** @noSelf */
-      static doMenuFromInventory: (playerNum: any, item: any, context: any) => any;
+      update(...__args: never[]): any;
 
       /** @noSelf */
-      static onClothingUpdated: (player: any) => any;
+      static doMenuFromInventory: (playerNum: any, item: any, context: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onKeyKeepPressed: (key: any) => any;
+      static onClothingUpdated: (player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onKeyPressed: (key: any) => any;
+      static onKeyKeepPressed: (key: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onKeyStartPressed: (key: any) => any;
+      static onKeyPressed: (key: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static onKeyStartPressed: (key: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.Hotbar.ISHotbar {}

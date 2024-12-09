@@ -23,10 +23,10 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, item: any, waterUnit: any, waterObject: any, time: any, oldItem: any);
 
-      stopSound: (() => any) | any;
+      stopSound(...__args: never[]): any;
 
       /** @noSelf */
-      static SendTakeWaterCommand: (playerObj: any, object: any, units: any) => any;
+      static SendTakeWaterCommand: (playerObj: any, object: any, units: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.TimedActions.ISTakeWaterAction {}

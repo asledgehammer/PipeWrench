@@ -33,11 +33,11 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, playerNum: any);
 
-      onMouseDown: ((x: any, y: any) => any) | any;
+      onMouseDown(x: any, y: any, ...__args: never[]): any;
 
-      onTeleport: ((worldX: any, worldY: any) => any) | any;
+      onTeleport(worldX: any, worldY: any, ...__args: never[]): any;
 
-      prerenderHack: (() => any) | any;
+      prerenderHack(...__args: never[]): any;
     }
 
     /** @customConstructor ISMiniMapOuter:new */
@@ -75,37 +75,37 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, playerNum: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onButton1: (() => any) | any;
+      onButton1(...__args: never[]): any;
 
-      onButton2: (() => any) | any;
+      onButton2(...__args: never[]): any;
 
-      onButton3: (() => any) | any;
+      onButton3(...__args: never[]): any;
 
-      onButton4: (() => any) | any;
+      onButton4(...__args: never[]): any;
 
-      onButton5: (() => any) | any;
+      onButton5(...__args: never[]): any;
 
-      onButton6: (() => any) | any;
+      onButton6(...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onLoseJoypadFocus: ((joypadData: any) => any) | any;
+      onLoseJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      RestoreLayout: ((name: any, layout: any) => any) | any;
+      RestoreLayout(name: any, layout: any, ...__args: never[]): any;
 
-      restoreSettings: (() => any) | any;
+      restoreSettings(...__args: never[]): any;
 
-      SaveLayout: ((name: any, layout: any) => any) | any;
+      SaveLayout(name: any, layout: any, ...__args: never[]): any;
 
-      saveSettings: (() => any) | any;
+      saveSettings(...__args: never[]): any;
 
-      setAdornmentsVisible: ((visible: any) => any) | any;
+      setAdornmentsVisible(visible: any, ...__args: never[]): any;
 
-      setPosition: (() => any) | any;
+      setPosition(...__args: never[]): any;
     }
 
     /** @customConstructor ISMiniMapTitleBar:new */
@@ -121,29 +121,29 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(miniMap: any);
 
-      titleBarHeight: (() => any) | any;
+      titleBarHeight(...__args: never[]): any;
 
       /** @noSelf */
-      static TitleBarHeight: () => any;
+      static TitleBarHeight: (...__args: never[]) => any;
     }
 
     export abstract class ISMiniMap {
       static [id: string]: any;
 
       /** @noSelf */
-      static FocusMiniMap: (playerNum: any) => any;
+      static FocusMiniMap: (playerNum: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static InitPlayer: (playerNum: any) => any;
+      static InitPlayer: (playerNum: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static IsAllowed: () => any;
+      static IsAllowed: (...__args: never[]) => any;
 
       /** @noSelf */
-      static Recreate: (playerNum: any) => any;
+      static Recreate: (playerNum: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static ToggleMiniMap: (playerNum: any) => any;
+      static ToggleMiniMap: (playerNum: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.Maps.ISMiniMap {}

@@ -25,31 +25,31 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      alignEverythingToGrid: (() => any) | any;
+      alignEverythingToGrid(...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onComboEdit: (() => any) | any;
+      onComboEdit(...__args: never[]): any;
 
-      onComboVehicle: (() => any) | any;
+      onComboVehicle(...__args: never[]): any;
 
-      onExit: ((button: any, x: any, y: any) => any) | any;
+      onExit(button: any, x: any, y: any, ...__args: never[]): any;
 
-      onReload: ((button: any, x: any, y: any) => any) | any;
+      onReload(button: any, x: any, y: any, ...__args: never[]): any;
 
-      onResolutionChange: ((oldw: any, oldh: any, neww: any, newh: any) => any) | any;
+      onResolutionChange(oldw: any, oldh: any, neww: any, newh: any, ...__args: never[]): any;
 
-      onSave: ((button: any, x: any, y: any) => any) | any;
+      onSave(button: any, x: any, y: any, ...__args: never[]): any;
 
-      setEditUI: ((ui: any) => any) | any;
+      setEditUI(ui: any, ...__args: never[]): any;
 
-      setScript: ((scriptName: any) => any) | any;
+      setScript(scriptName: any, ...__args: never[]): any;
 
-      showUI: (() => any) | any;
+      showUI(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
-      wroteScript: ((fileName: any) => any) | any;
+      wroteScript(fileName: any, ...__args: never[]): any;
     }
 
     /** @customConstructor EditVehicleUI_EditArea:new */
@@ -69,15 +69,15 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      doDrawItem: ((y: any, item: any, alt: any) => any) | any;
+      doDrawItem(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      getSelectedAreas: (() => any) | any;
+      getSelectedAreas(...__args: never[]): any;
 
-      onAlignToExtents: (() => any) | any;
+      onAlignToExtents(...__args: never[]): any;
 
-      onToggleGizmo: (() => any) | any;
+      onToggleGizmo(...__args: never[]): any;
     }
 
     /** @customConstructor EditVehicleUI_EditAttachment:new */
@@ -111,29 +111,29 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      doDrawItem: ((y: any, item: any, alt: any) => any) | any;
+      doDrawItem(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      doLayout: (() => any) | any;
+      doLayout(...__args: never[]): any;
 
-      getSelectedAttachmentIds: (() => any) | any;
+      getSelectedAttachmentIds(...__args: never[]): any;
 
-      getSelectedAttachments: (() => any) | any;
+      getSelectedAttachments(...__args: never[]): any;
 
-      getUniqueAttachmentId: ((modelScript: any) => any) | any;
+      getUniqueAttachmentId(modelScript: any, ...__args: never[]): any;
 
-      onDeleteAttachment: ((button: any, x: any, y: any) => any) | any;
+      onDeleteAttachment(button: any, x: any, y: any, ...__args: never[]): any;
 
-      onNameEntered: (() => any) | any;
+      onNameEntered(...__args: never[]): any;
 
-      onNewAttachment: ((button: any, x: any, y: any) => any) | any;
+      onNewAttachment(button: any, x: any, y: any, ...__args: never[]): any;
 
-      onToggleGizmo: (() => any) | any;
+      onToggleGizmo(...__args: never[]): any;
 
-      onToggleGlobalLocal: (() => any) | any;
+      onToggleGlobalLocal(...__args: never[]): any;
 
-      setSelectedAttachment: ((attach: any) => any) | any;
+      setSelectedAttachment(attach: any, ...__args: never[]): any;
     }
 
     /** @customConstructor EditVehicleUI_EditChassis:new */
@@ -163,13 +163,13 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      addAABB: ((box: any, offset: any, r: any, g: any, b: any) => any) | any;
+      addAABB(box: any, offset: any, r: any, g: any, b: any, ...__args: never[]): any;
 
-      addSphere: ((offset: any, radius: any, r: any, g: any, b: any) => any) | any;
+      addSphere(offset: any, radius: any, r: any, g: any, b: any, ...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      doDrawItem: ((y: any, item: any, alt: any) => any) | any;
+      doDrawItem(y: any, item: any, alt: any, ...__args: never[]): any;
     }
 
     /** @customConstructor EditVehicleUI_EditPanel:new */
@@ -181,50 +181,49 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      createList: ((x: any, y: any, w: any, h: any) => any) | any;
+      createList(x: any, y: any, w: any, h: any, ...__args: never[]): any;
 
-      isScaleVehicle: (() => any) | any;
+      isScaleVehicle(...__args: never[]): any;
 
-      java0: ((func: any) => any) | any;
+      java0(func: any, ...__args: never[]): any;
 
-      java1: ((func: any, arg0: any) => any) | any;
+      java1(func: any, arg0: any, ...__args: never[]): any;
 
-      java2: ((func: any, arg0: any, arg1: any) => any) | any;
+      java2(func: any, arg0: any, arg1: any, ...__args: never[]): any;
 
-      java3: ((func: any, arg0: any, arg1: any, arg2: any) => any) | any;
+      java3(func: any, arg0: any, arg1: any, arg2: any, ...__args: never[]): any;
 
-      java4: ((func: any, arg0: any, arg1: any, arg2: any, arg3: any) => any) | any;
+      java4(func: any, arg0: any, arg1: any, arg2: any, arg3: any, ...__args: never[]): any;
 
-      java6: ((func: any, arg0: any, arg1: any, arg2: any, arg3: any, arg4: any, arg5: any) => any) | any;
+      java6(func: any, arg0: any, arg1: any, arg2: any, arg3: any, arg4: any, arg5: any, ...__args: never[]): any;
 
-      java9:
-        | ((
-            func: any,
-            arg0: any,
-            arg1: any,
-            arg2: any,
-            arg3: any,
-            arg4: any,
-            arg5: any,
-            arg6: any,
-            arg7: any,
-            arg8: any,
-          ) => any)
-        | any;
+      java9(
+        func: any,
+        arg0: any,
+        arg1: any,
+        arg2: any,
+        arg3: any,
+        arg4: any,
+        arg5: any,
+        arg6: any,
+        arg7: any,
+        arg8: any,
+        ...__args: never[]
+      ): any;
 
-      onGizmoAccept: (() => any) | any;
+      onGizmoAccept(...__args: never[]): any;
 
-      onGizmoCancel: (() => any) | any;
+      onGizmoCancel(...__args: never[]): any;
 
-      onGizmoChanged: ((delta: any) => any) | any;
+      onGizmoChanged(delta: any, ...__args: never[]): any;
 
-      onGizmoStart: (() => any) | any;
+      onGizmoStart(...__args: never[]): any;
 
-      prerenderEditor: (() => any) | any;
+      prerenderEditor(...__args: never[]): any;
 
-      toUI: (() => any) | any;
+      toUI(...__args: never[]): any;
 
-      updateEditor: (() => any) | any;
+      updateEditor(...__args: never[]): any;
     }
 
     /** @customConstructor EditVehicleUI_EditPassenger:new */
@@ -242,19 +241,19 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      doDrawItem: ((y: any, item: any, alt: any) => any) | any;
+      doDrawItem(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      doDrawItem2: ((y: any, item: any, alt: any) => any) | any;
+      doDrawItem2(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      getSelectedPositionIds: (() => any) | any;
+      getSelectedPositionIds(...__args: never[]): any;
 
-      getSelectedPositions: (() => any) | any;
+      getSelectedPositions(...__args: never[]): any;
 
-      prerenderEditor2: (() => any) | any;
+      prerenderEditor2(...__args: never[]): any;
 
-      setSelectedPassenger: ((pngr: any) => any) | any;
+      setSelectedPassenger(pngr: any, ...__args: never[]): any;
     }
 
     /** @customConstructor EditVehicleUI_EditPhysics:new */
@@ -276,25 +275,25 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      addAABB: ((extents: any, offset: any, r: any, g: any, b: any) => any) | any;
+      addAABB(extents: any, offset: any, r: any, g: any, b: any, ...__args: never[]): any;
 
-      addSphere: ((offset: any, radius: any, r: any, g: any, b: any) => any) | any;
+      addSphere(offset: any, radius: any, r: any, g: any, b: any, ...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      doDrawItem: ((y: any, item: any, alt: any) => any) | any;
+      doDrawItem(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      doDrawItem2: ((y: any, item: any, alt: any) => any) | any;
+      doDrawItem2(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      getSelectedShapes: (() => any) | any;
+      getSelectedShapes(...__args: never[]): any;
 
-      indexOfShape: ((shape: any) => any) | any;
+      indexOfShape(shape: any, ...__args: never[]): any;
 
-      onToggleGlobalLocal: (() => any) | any;
+      onToggleGlobalLocal(...__args: never[]): any;
 
-      prerenderEditor2: (() => any) | any;
+      prerenderEditor2(...__args: never[]): any;
 
-      setSelectedShape: ((shape: any) => any) | any;
+      setSelectedShape(shape: any, ...__args: never[]): any;
     }
 
     /** @customConstructor EditVehicleUI_EditWheel:new */
@@ -308,11 +307,11 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      doDrawItem: ((y: any, item: any, alt: any) => any) | any;
+      doDrawItem(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      getSelectedWheels: (() => any) | any;
+      getSelectedWheels(...__args: never[]): any;
     }
 
     /** @customConstructor EditVehicleUI_ListBox:new */
@@ -324,19 +323,19 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      clearSelection: (() => any) | any;
+      clearSelection(...__args: never[]): any;
 
-      getSelectedCount: (() => any) | any;
+      getSelectedCount(...__args: never[]): any;
 
-      getSelectedItems: (() => any) | any;
+      getSelectedItems(...__args: never[]): any;
 
-      indexOf: ((text: any) => any) | any;
+      indexOf(text: any, ...__args: never[]): any;
 
-      iteratorSelected: (() => any) | any;
+      iteratorSelected(...__args: never[]): any;
 
-      setSelectedRow: ((row: any) => any) | any;
+      setSelectedRow(row: any, ...__args: never[]): any;
 
-      setSelectedRows: ((rows: any) => any) | any;
+      setSelectedRows(rows: any, ...__args: never[]): any;
     }
 
     /** @customConstructor EditVehicleUI_Scene:new */
@@ -352,17 +351,17 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      onGizmoAccept: (() => any) | any;
+      onGizmoAccept(...__args: never[]): any;
 
-      onGizmoCancel: (() => any) | any;
+      onGizmoCancel(...__args: never[]): any;
 
-      onGizmoChanged: ((delta: any) => any) | any;
+      onGizmoChanged(delta: any, ...__args: never[]): any;
 
-      onGizmoStart: (() => any) | any;
+      onGizmoStart(...__args: never[]): any;
 
-      onRightMouseDown: ((x: any, y: any) => any) | any;
+      onRightMouseDown(x: any, y: any, ...__args: never[]): any;
 
-      prerenderEditor: (() => any) | any;
+      prerenderEditor(...__args: never[]): any;
     }
 
     /** @customConstructor EditVehicleUI_SwitchView:new */
@@ -374,7 +373,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(editor: any, x: any, y: any, width: any, height: any);
 
-      onMouseMoveOutside: ((dx: any, dy: any) => any) | any;
+      onMouseMoveOutside(dx: any, dy: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.Vehicles.ISUI.EditVehicleState {

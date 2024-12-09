@@ -11,9 +11,9 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor();
 
-      derive: ((type: any) => any) | any;
+      derive(type: any, ...__args: never[]): any;
 
-      initialise: (() => any) | any;
+      initialise(...__args: never[]): any;
     }
   }
   export namespace lua.shared.ISBaseObject {}

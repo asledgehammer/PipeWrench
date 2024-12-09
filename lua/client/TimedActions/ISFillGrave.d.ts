@@ -15,7 +15,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, graves: any, time: any, shovel: any);
 
-      changeSprite: ((square: any) => any) | any;
+      changeSprite(square: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.TimedActions.ISFillGrave {}

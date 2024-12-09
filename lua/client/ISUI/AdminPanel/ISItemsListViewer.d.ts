@@ -19,16 +19,16 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      initList: (() => any) | any;
+      initList(...__args: never[]): any;
 
-      onClick: ((button: any) => any) | any;
+      onClick(button: any, ...__args: never[]): any;
 
-      onSelectPlayer: (() => any) | any;
+      onSelectPlayer(...__args: never[]): any;
 
-      setKeyboardFocus: (() => any) | any;
+      setKeyboardFocus(...__args: never[]): any;
 
       /** @noSelf */
-      static OnOpenPanel: () => any;
+      static OnOpenPanel: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.AdminPanel.ISItemsListViewer {}

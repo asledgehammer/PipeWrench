@@ -23,19 +23,19 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(key: any, keybindName: any, keybind2Name: any);
 
-      assignKey: ((keyText: any, keybind: any, key: any) => any) | any;
+      assignKey(keyText: any, keybind: any, key: any, ...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      destroy: (() => any) | any;
+      destroy(...__args: never[]): any;
 
-      nextDuplicate: (() => any) | any;
+      nextDuplicate(...__args: never[]): any;
 
-      onCancel: (() => any) | any;
+      onCancel(...__args: never[]): any;
 
-      onClear: (() => any) | any;
+      onClear(...__args: never[]): any;
 
-      onKeep: (() => any) | any;
+      onKeep(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISDuplicateKeybindDialog {}

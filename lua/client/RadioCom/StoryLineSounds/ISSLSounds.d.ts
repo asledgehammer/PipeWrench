@@ -21,19 +21,19 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      addSoundItem: ((_sound: any) => any) | any;
+      addSoundItem(_sound: any, ...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      loadSounds: ((_filter: any) => any) | any;
+      loadSounds(_filter: any, ...__args: never[]): any;
 
-      onResize: (() => any) | any;
+      onResize(...__args: never[]): any;
 
-      playSoundFromMainList: (() => any) | any;
+      playSoundFromMainList(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
     }
   }
   export namespace lua.client.RadioCom.StoryLineSounds.ISSLSounds {}

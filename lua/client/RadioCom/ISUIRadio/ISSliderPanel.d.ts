@@ -69,29 +69,29 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, target: any, onValueChange: any, customPaginate: any);
 
-      activateToolTip: (() => any) | any;
+      activateToolTip(...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      deactivateToolTip: (() => any) | any;
+      deactivateToolTip(...__args: never[]): any;
 
-      doOnValueChange: ((_newvalue: any) => any) | any;
+      doOnValueChange(_newvalue: any, ...__args: never[]): any;
 
-      getCurrentValue: (() => any) | any;
+      getCurrentValue(...__args: never[]): any;
 
-      paginate: (() => any) | any;
+      paginate(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      round: ((num: any, idp: any) => any) | any;
+      round(num: any, idp: any, ...__args: never[]): any;
 
-      setCurrentValue: ((_v: any, _ignoreOnChange: any) => any) | any;
+      setCurrentValue(_v: any, _ignoreOnChange: any, ...__args: never[]): any;
 
-      setDoButtons: ((_b: any) => any) | any;
+      setDoButtons(_b: any, ...__args: never[]): any;
 
-      setValues: ((_min: any, _max: any, _step: any, _shift: any, _ignoreCurVal: any) => any) | any;
+      setValues(_min: any, _max: any, _step: any, _shift: any, _ignoreCurVal: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
     }
   }
   export namespace lua.client.RadioCom.ISUIRadio.ISSliderPanel {}

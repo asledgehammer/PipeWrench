@@ -59,48 +59,48 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, player: any, otherPlayer: any);
 
-      addItemToYourOffer: ((item: any) => any) | any;
+      addItemToYourOffer(item: any, ...__args: never[]): any;
 
-      drawOffer: ((y: any, item: any, alt: any) => any) | any;
+      drawOffer(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      finalizeDeal: (() => any) | any;
+      finalizeDeal(...__args: never[]): any;
 
-      onAnswerTradeRequest: ((button: any) => any) | any;
+      onAnswerTradeRequest(button: any, ...__args: never[]): any;
 
-      onClick: ((button: any) => any) | any;
+      onClick(button: any, ...__args: never[]): any;
 
-      onSealOffer: ((clickedOption: any, enabled: any) => any) | any;
+      onSealOffer(clickedOption: any, enabled: any, ...__args: never[]): any;
 
-      populateList: (() => any) | any;
+      populateList(...__args: never[]): any;
 
-      removeItem: ((item: any) => any) | any;
+      removeItem(item: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setHistoryMessage: ((message: any, publishInHistorical: any, add: any, remove: any) => any) | any;
+      setHistoryMessage(message: any, publishInHistorical: any, add: any, remove: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
-      updateButtons: (() => any) | any;
+      updateButtons(...__args: never[]): any;
 
-      updateTooltip: (() => any) | any;
+      updateTooltip(...__args: never[]): any;
 
-      yourOfferMouseUp: ((x: any, y: any) => any) | any;
-
-      /** @noSelf */
-      static AcceptedTrade: (accepted: any) => any;
+      yourOfferMouseUp(x: any, y: any, ...__args: never[]): any;
 
       /** @noSelf */
-      static OtherAddNewItem: (player: any, item: any) => any;
+      static AcceptedTrade: (accepted: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static ReceiveTradeRequest: (requester: any) => any;
+      static OtherAddNewItem: (player: any, item: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static RemoveItem: (player: any, index: any) => any;
+      static ReceiveTradeRequest: (requester: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static UpdateState: (player: any, state: any) => any;
+      static RemoveItem: (player: any, index: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static UpdateState: (player: any, state: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.ISTradingUI {}

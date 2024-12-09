@@ -15,40 +15,40 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any);
 
-      addToQueue: ((action: any) => any) | any;
+      addToQueue(action: any, ...__args: never[]): any;
 
-      clearQueue: (() => any) | any;
+      clearQueue(...__args: never[]): any;
 
-      indexOf: ((action: any) => any) | any;
+      indexOf(action: any, ...__args: never[]): any;
 
-      onCompleted: ((action: any) => any) | any;
+      onCompleted(action: any, ...__args: never[]): any;
 
-      removeFromQueue: ((action: any) => any) | any;
+      removeFromQueue(action: any, ...__args: never[]): any;
 
-      resetQueue: (() => any) | any;
+      resetQueue(...__args: never[]): any;
 
-      tick: (() => any) | any;
-
-      /** @noSelf */
-      static add: (action: any) => any;
+      tick(...__args: never[]): any;
 
       /** @noSelf */
-      static addAfter: (previousAction: any, action: any) => any;
+      static add: (action: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static clear: (character: any) => any;
+      static addAfter: (previousAction: any, action: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getTimedActionQueue: (character: any) => any;
+      static clear: (character: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static hasAction: (action: any) => any;
+      static getTimedActionQueue: (character: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static isPlayerDoingAction: (playerObj: any) => any;
+      static hasAction: (action: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onTick: () => any;
+      static isPlayerDoingAction: (playerObj: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static onTick: (...__args: never[]) => any;
 
       /** @noSelf */
       static queueActions: (
@@ -64,6 +64,7 @@ declare module '@asledgehammer/pipewrench' {
         arg8: any,
         arg9: any,
         arg10: any,
+        ...__args: never[]
       ) => any;
     }
   }

@@ -33,22 +33,22 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, player: any);
 
-      drawDatas: ((y: any, item: any, alt: any) => any) | any;
+      drawDatas(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      onAddItem: ((button: any) => any) | any;
+      onAddItem(button: any, ...__args: never[]): any;
 
-      onClick: ((button: any) => any) | any;
+      onClick(button: any, ...__args: never[]): any;
 
-      populateList: (() => any) | any;
+      populateList(...__args: never[]): any;
 
-      removeSelectedItem: (() => any) | any;
+      removeSelectedItem(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      requestDatas: (() => any) | any;
+      requestDatas(...__args: never[]): any;
 
       /** @noSelf */
-      static ReceiveItems: (itemtable: any) => any;
+      static ReceiveItems: (itemtable: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.PlayerStats.ISPlayerStatsManageInvUI {}

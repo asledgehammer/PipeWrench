@@ -27,21 +27,21 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, playerObj: any);
 
-      addKnobValues: (() => any) | any;
+      addKnobValues(...__args: never[]): any;
 
-      ChangeKnob: (() => any) | any;
+      ChangeKnob(...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onOptionMouseDown: ((button: any, x: any, y: any) => any) | any;
+      onOptionMouseDown(button: any, x: any, y: any, ...__args: never[]): any;
 
-      setLightbarLightsMode: ((mode: any) => any) | any;
+      setLightbarLightsMode(mode: any, ...__args: never[]): any;
 
-      setLightbarSirenMode: ((mode: any) => any) | any;
+      setLightbarSirenMode(mode: any, ...__args: never[]): any;
 
-      setVehicle: ((vehicle: any) => any) | any;
+      setVehicle(vehicle: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.Vehicles.ISUI.ISLightbarUI {}

@@ -17,9 +17,9 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, resizeTarget: any, yonly: any);
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      resize: ((dx: any, dy: any) => any) | any;
+      resize(dx: any, dy: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISResizeWidget {}

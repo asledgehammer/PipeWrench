@@ -37,27 +37,27 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, craftingUI: any);
 
-      addToFavorite: ((fromKeyboard: any) => any) | any;
+      addToFavorite(fromKeyboard: any, ...__args: never[]): any;
 
-      create: (() => any) | any;
+      create(...__args: never[]): any;
 
-      drawRecipesMap: ((y: any, item: any, alt: any) => any) | any;
+      drawRecipesMap(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      filter: (() => any) | any;
+      filter(...__args: never[]): any;
 
-      getFavoriteX: (() => any) | any;
+      getFavoriteX(...__args: never[]): any;
 
-      isMouseOverFavorite: ((x: any) => any) | any;
+      isMouseOverFavorite(x: any, ...__args: never[]): any;
 
-      onFilterAll: ((index: any, selected: any) => any) | any;
+      onFilterAll(index: any, selected: any, ...__args: never[]): any;
 
-      onMouseDoubleClick_Recipes: ((x: any, y: any) => any) | any;
+      onMouseDoubleClick_Recipes(x: any, y: any, ...__args: never[]): any;
 
-      onMouseDown_Recipes: ((x: any, y: any) => any) | any;
+      onMouseDown_Recipes(x: any, y: any, ...__args: never[]): any;
 
-      syncAllFilters: (() => any) | any;
+      syncAllFilters(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISCraftingCategoryUI {}

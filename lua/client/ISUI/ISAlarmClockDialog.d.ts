@@ -37,25 +37,25 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, player: any, alarm: any);
 
-      decrementHour: ((number: any) => any) | any;
+      decrementHour(number: any, ...__args: never[]): any;
 
-      decrementMin: ((number: any) => any) | any;
+      decrementMin(number: any, ...__args: never[]): any;
 
-      destroy: (() => any) | any;
+      destroy(...__args: never[]): any;
 
-      getCode: (() => any) | any;
+      getCode(...__args: never[]): any;
 
-      incrementHour: ((number: any) => any) | any;
+      incrementHour(number: any, ...__args: never[]): any;
 
-      incrementMin: ((number: any) => any) | any;
+      incrementMin(number: any, ...__args: never[]): any;
 
-      onClick: ((button: any) => any) | any;
+      onClick(button: any, ...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISAlarmClockDialog {}

@@ -23,17 +23,17 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, clickToSkip: any, message: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onMouseWheel: ((del: any) => any) | any;
+      onMouseWheel(del: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setInfo: ((item: any) => any) | any;
+      setInfo(item: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
       /** @noSelf */
       static getInstance: (
@@ -45,10 +45,11 @@ declare module '@asledgehammer/pipewrench' {
         clickToSkip: any,
         target: any,
         test: any,
+        ...__args: never[]
       ) => any;
 
       /** @noSelf */
-      static onKeyPressed: (key: any) => any;
+      static onKeyPressed: (key: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.Tutorial.ISUI.TutorialMessage {}

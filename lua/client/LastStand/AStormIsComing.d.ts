@@ -6,28 +6,28 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static Add: () => any;
+      static Add: (...__args: never[]) => any;
 
       /** @noSelf */
-      static AddPlayer: (playerNum: any, playerObj: any) => any;
+      static AddPlayer: (playerNum: any, playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static EveryTenMinutes: () => any;
+      static EveryTenMinutes: (...__args: never[]) => any;
 
       /** @noSelf */
-      static OnGameStart: () => any;
+      static OnGameStart: (...__args: never[]) => any;
 
       /** @noSelf */
-      static OnInitSeasons: (_season: any) => any;
+      static OnInitSeasons: (_season: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnInitWorld: () => any;
+      static OnInitWorld: (...__args: never[]) => any;
 
       /** @noSelf */
-      static RemovePlayer: (p: any) => any;
+      static RemovePlayer: (p: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static Render: () => any;
+      static Render: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.LastStand.AStormIsComing {}

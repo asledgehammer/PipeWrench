@@ -23,18 +23,18 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, title: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onClick: ((_button: any) => any) | any;
+      onClick(_button: any, ...__args: never[]): any;
 
-      onMadeActive: (() => any) | any;
+      onMadeActive(...__args: never[]): any;
 
-      registerPanel: ((_buttonTitle: any, _panelClass: any) => any) | any;
+      registerPanel(_buttonTitle: any, _panelClass: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
       /** @noSelf */
-      static OnOpenPanel: (_class: any, _x: any, _y: any, _w: any, _h: any, _title: any) => any;
+      static OnOpenPanel: (_class: any, _x: any, _y: any, _w: any, _h: any, _title: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.DebugUIs.DebugMenu.Base.ISDebugPanelBase {}

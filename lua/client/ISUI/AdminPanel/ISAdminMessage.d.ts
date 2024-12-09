@@ -27,19 +27,19 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, text: any, px: any, py: any, pz: any);
 
-      destroy: (() => any) | any;
+      destroy(...__args: never[]): any;
 
-      onClick: ((button: any) => any) | any;
+      onClick(button: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
-      updateButtons: (() => any) | any;
-
-      /** @noSelf */
-      static AddAdminMessage: (message: any, x: any, y: any, z: any) => any;
+      updateButtons(...__args: never[]): any;
 
       /** @noSelf */
-      static RecalculPositions: () => any;
+      static AddAdminMessage: (message: any, x: any, y: any, z: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static RecalculPositions: (...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.AdminPanel.ISAdminMessage {}

@@ -9,11 +9,11 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(luaSystem: any, globalObject: any);
 
-      canHarvest: (() => any) | any;
+      canHarvest(...__args: never[]): any;
 
-      getObject: (() => any) | any;
+      getObject(...__args: never[]): any;
 
-      isAlive: (() => any) | any;
+      isAlive(...__args: never[]): any;
     }
   }
   export namespace lua.client.Farming.CPlantGlobalObject {}

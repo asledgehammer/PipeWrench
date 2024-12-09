@@ -61,29 +61,29 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, character: any, square: any);
 
-      addMarker: ((square: any, radius: any) => any) | any;
+      addMarker(square: any, radius: any, ...__args: never[]): any;
 
-      getOutfit: (() => any) | any;
+      getOutfit(...__args: never[]): any;
 
-      getRadius: (() => any) | any;
+      getRadius(...__args: never[]): any;
 
-      getZombiesNumber: (() => any) | any;
+      getZombiesNumber(...__args: never[]): any;
 
-      onBoolOptionsChange: ((index: any, selected: any) => any) | any;
+      onBoolOptionsChange(index: any, selected: any, ...__args: never[]): any;
 
-      onRemoveBodies: (() => any) | any;
+      onRemoveBodies(...__args: never[]): any;
 
-      onRemoveZombies: (() => any) | any;
+      onRemoveZombies(...__args: never[]): any;
 
-      onSelectNewSquare: (() => any) | any;
+      onSelectNewSquare(...__args: never[]): any;
 
-      onSliderChange: ((_newval: any, _slider: any) => any) | any;
+      onSliderChange(_newval: any, _slider: any, ...__args: never[]): any;
 
-      onSpawn: (() => any) | any;
+      onSpawn(...__args: never[]): any;
 
-      onSquareSelected: ((square: any) => any) | any;
+      onSquareSelected(square: any, ...__args: never[]): any;
 
-      removeMarker: (() => any) | any;
+      removeMarker(...__args: never[]): any;
     }
   }
   export namespace lua.client.DebugUIs.ISSpawnHordeUI {}

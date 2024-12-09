@@ -23,47 +23,47 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any);
 
-      addAfter: ((action: any) => any) | any;
+      addAfter(action: any, ...__args: never[]): any;
 
-      adjustMaxTime: ((maxTime: any) => any) | any;
+      adjustMaxTime(maxTime: any, ...__args: never[]): any;
 
-      begin: (() => any) | any;
+      begin(...__args: never[]): any;
 
-      create: (() => any) | any;
+      create(...__args: never[]): any;
 
-      forceComplete: (() => any) | any;
+      forceComplete(...__args: never[]): any;
 
-      forceStop: (() => any) | any;
+      forceStop(...__args: never[]): any;
 
-      getJobDelta: (() => any) | any;
+      getJobDelta(...__args: never[]): any;
 
-      isValid: (() => any) | any;
+      isValid(...__args: never[]): any;
 
-      isValidStart: (() => any) | any;
+      isValidStart(...__args: never[]): any;
 
-      perform: (() => any) | any;
+      perform(...__args: never[]): any;
 
-      resetJobDelta: (() => any) | any;
+      resetJobDelta(...__args: never[]): any;
 
-      setActionAnim: ((_action: any, _displayItemModels: any) => any) | any;
+      setActionAnim(_action: any, _displayItemModels: any, ...__args: never[]): any;
 
-      setAnimVariable: ((_key: any, _val: any) => any) | any;
+      setAnimVariable(_key: any, _val: any, ...__args: never[]): any;
 
-      setCurrentTime: ((time: any) => any) | any;
+      setCurrentTime(time: any, ...__args: never[]): any;
 
-      setOverrideHandModels: ((_primaryHand: any, _secondaryHand: any, _resetModel: any) => any) | any;
+      setOverrideHandModels(_primaryHand: any, _secondaryHand: any, _resetModel: any, ...__args: never[]): any;
 
-      setOverrideHandModelsString: ((_primaryHand: any, _secondaryHand: any, _resetModel: any) => any) | any;
+      setOverrideHandModelsString(_primaryHand: any, _secondaryHand: any, _resetModel: any, ...__args: never[]): any;
 
-      setTime: ((time: any) => any) | any;
+      setTime(time: any, ...__args: never[]): any;
 
-      start: (() => any) | any;
+      start(...__args: never[]): any;
 
-      stop: (() => any) | any;
+      stop(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
-      waitToStart: (() => any) | any;
+      waitToStart(...__args: never[]): any;
     }
   }
   export namespace lua.shared.TimedActions.ISBaseTimedAction {}

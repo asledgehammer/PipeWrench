@@ -6,43 +6,43 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static Find: (gridSquare: any, playerObj: any) => any;
+      static Find: (gridSquare: any, playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static FindClosest: (gridSquare: any, playerObj: any) => any;
+      static FindClosest: (gridSquare: any, playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static FindEdge: (gridSquare: any, dir: any, playerObj: any, preferSameSquare: any) => any;
+      static FindEdge: (gridSquare: any, dir: any, playerObj: any, preferSameSquare: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static FindWall: (gridSquare: any, north: any, playerObj: any) => any;
+      static FindWall: (gridSquare: any, north: any, playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static FindWindowOrDoor: (gridSquare: any, window: any, playerObj: any) => any;
+      static FindWindowOrDoor: (gridSquare: any, window: any, playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static isTileOrAdjacent: (a: any, b: any) => any;
+      static isTileOrAdjacent: (a: any, b: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static isTileOrAdjacent8: (a: any, b: any) => any;
+      static isTileOrAdjacent8: (a: any, b: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static privCanStand: (test: any) => any;
+      static privCanStand: (test: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static privGetNorth: (gridSquare: any, object: any) => any;
+      static privGetNorth: (gridSquare: any, object: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static privTrySquare: (src: any, test: any) => any;
+      static privTrySquare: (src: any, test: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static privTrySquareForWalls: (src: any, test: any) => any;
+      static privTrySquareForWalls: (src: any, test: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static privTrySquareForWalls2: (src: any, x: any, y: any, z: any) => any;
+      static privTrySquareForWalls2: (src: any, x: any, y: any, z: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static privTrySquareWindow: (src: any, test: any) => any;
+      static privTrySquareWindow: (src: any, test: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.shared.Util.AdjacentFreeTileFinder {}

@@ -19,7 +19,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(sprite: any, northSprite: any, character: any);
 
-      create: ((x: any, y: any, z: any, north: any, sprite: any) => any) | any;
+      create(x: any, y: any, z: any, north: any, sprite: any, ...__args: never[]): any;
     }
   }
   export namespace lua.server.BuildingObjects.ISCleanBloodCursor {}

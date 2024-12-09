@@ -87,41 +87,41 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(_parent: any);
 
-      canSeeOutside: (() => any) | any;
+      canSeeOutside(...__args: never[]): any;
 
-      canSeeThroughObject: ((_object: any) => any) | any;
+      canSeeThroughObject(_object: any, ...__args: never[]): any;
 
-      doFadeStep: (() => any) | any;
+      doFadeStep(...__args: never[]): any;
 
-      getVisionTooltipText: (() => any) | any;
+      getVisionTooltipText(...__args: never[]): any;
 
-      getZoneTooltipText: (() => any) | any;
+      getZoneTooltipText(...__args: never[]): any;
 
-      isLeapYear: ((_yearNum: any) => any) | any;
+      isLeapYear(_yearNum: any, ...__args: never[]): any;
 
-      showNextTip: (() => any) | any;
+      showNextTip(...__args: never[]): any;
 
-      showPrevTip: (() => any) | any;
+      showPrevTip(...__args: never[]): any;
 
-      showTip: ((_tip: any, _force: any) => any) | any;
+      showTip(_tip: any, _force: any, ...__args: never[]): any;
 
-      toggleTips: (() => any) | any;
+      toggleTips(...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
-      updateData: (() => any) | any;
+      updateData(...__args: never[]): any;
 
-      updateLocation: (() => any) | any;
+      updateLocation(...__args: never[]): any;
 
-      updateMoonPhase: (() => any) | any;
+      updateMoonPhase(...__args: never[]): any;
 
-      updateMoonPosition: ((_dawn: any, _dusk: any, _timeOfDay: any) => any) | any;
+      updateMoonPosition(_dawn: any, _dusk: any, _timeOfDay: any, ...__args: never[]): any;
 
-      updateSunPosition: ((_dawn: any, _dusk: any, _timeOfDay: any) => any) | any;
+      updateSunPosition(_dawn: any, _dusk: any, _timeOfDay: any, ...__args: never[]): any;
 
-      updateTips: (() => any) | any;
+      updateTips(...__args: never[]): any;
 
-      updateTooltip: (() => any) | any;
+      updateTooltip(...__args: never[]): any;
     }
   }
   export namespace lua.client.Foraging.ISZoneDisplay {}

@@ -9,7 +9,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
     }
 
     /** @customConstructor ISSurvivalGuideRichText:new */
@@ -25,19 +25,19 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      onJoypadDirDown: ((joypadData: any) => any) | any;
+      onJoypadDirDown(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDirLeft: ((joypadData: any) => any) | any;
+      onJoypadDirLeft(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDirRight: ((joypadData: any) => any) | any;
+      onJoypadDirRight(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDirUp: ((joypadData: any) => any) | any;
+      onJoypadDirUp(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDown: ((button: any, joypadData: any) => any) | any;
+      onJoypadDown(button: any, joypadData: any, ...__args: never[]): any;
 
-      prerender: (() => any) | any;
+      prerender(...__args: never[]): any;
 
-      updateSmoothScrolling: (() => any) | any;
+      updateSmoothScrolling(...__args: never[]): any;
     }
 
     /** @customConstructor ISSurvivalGuideRightPanel:new */
@@ -51,13 +51,13 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onLoseJoypadFocus: ((joypadData: any) => any) | any;
+      onLoseJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onTickBox: ((index: any, selected: any) => any) | any;
+      onTickBox(index: any, selected: any, ...__args: never[]): any;
     }
 
     /** @customConstructor ISTutorialPanel:new */
@@ -85,31 +85,31 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      close: (() => any) | any;
+      close(...__args: never[]): any;
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      fillChapterList: (() => any) | any;
+      fillChapterList(...__args: never[]): any;
 
-      isKeyConsumed: ((key: any) => any) | any;
+      isKeyConsumed(key: any, ...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onKeyRelease: ((key: any) => any) | any;
+      onKeyRelease(key: any, ...__args: never[]): any;
 
-      onToggleVisible: (() => any) | any;
+      onToggleVisible(...__args: never[]): any;
 
-      prerender: (() => any) | any;
+      prerender(...__args: never[]): any;
 
-      reload: (() => any) | any;
+      reload(...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setPage: ((pageNum: any) => any) | any;
+      setPage(pageNum: any, ...__args: never[]): any;
 
-      setUseJoypad: ((useJoypad: any) => any) | any;
+      setUseJoypad(useJoypad: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
     }
   }
   export namespace lua.client.SurvivalGuide.ISTutorialPanel {}

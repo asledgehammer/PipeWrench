@@ -41,27 +41,27 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, charWidth: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      isSpecial: ((_char: any) => any) | any;
+      isSpecial(_char: any, ...__args: never[]): any;
 
-      printChar: ((_pos: any, _char: any) => any) | any;
+      printChar(_pos: any, _char: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      renderBackground: ((_r: any, _g: any, _b: any, _a: any) => any) | any;
+      renderBackground(_r: any, _g: any, _b: any, _a: any, ...__args: never[]): any;
 
-      renderChar: ((_pos: any, _index: any, _r: any, _g: any, _b: any, _a: any) => any) | any;
+      renderChar(_pos: any, _index: any, _r: any, _g: any, _b: any, _a: any, ...__args: never[]): any;
 
-      setDoScroll: ((_b: any) => any) | any;
+      setDoScroll(_b: any, ...__args: never[]): any;
 
-      setText: ((_text: any) => any) | any;
+      setText(_text: any, ...__args: never[]): any;
 
-      setTextMode: ((_b: any) => any) | any;
+      setTextMode(_b: any, ...__args: never[]): any;
 
-      toggleOn: ((_b: any) => any) | any;
+      toggleOn(_b: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISLcdBar {}

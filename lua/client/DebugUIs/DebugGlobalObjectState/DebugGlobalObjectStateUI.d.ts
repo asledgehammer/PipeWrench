@@ -47,43 +47,43 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, gameState: any);
 
-      createChildren: (() => any) | any;
+      createChildren(...__args: never[]): any;
 
-      isMouseOverChild: (() => any) | any;
+      isMouseOverChild(...__args: never[]): any;
 
-      ObjectList_doDrawItem: ((y: any, item: any, alt: any) => any) | any;
+      ObjectList_doDrawItem(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      ObjectList_OnMouseDoubleClick: ((item: any) => any) | any;
+      ObjectList_OnMouseDoubleClick(item: any, ...__args: never[]): any;
 
-      onChangeZLevel: ((value: any, slider: any) => any) | any;
+      onChangeZLevel(value: any, slider: any, ...__args: never[]): any;
 
-      onComboClientServer: (() => any) | any;
+      onComboClientServer(...__args: never[]): any;
 
-      onExit: (() => any) | any;
+      onExit(...__args: never[]): any;
 
-      onMouseWheel: ((del: any) => any) | any;
+      onMouseWheel(del: any, ...__args: never[]): any;
 
-      onResolutionChange: ((oldw: any, oldh: any, neww: any, newh: any) => any) | any;
+      onResolutionChange(oldw: any, oldh: any, neww: any, newh: any, ...__args: never[]): any;
 
-      pickSquare: ((x: any, y: any) => any) | any;
+      pickSquare(x: any, y: any, ...__args: never[]): any;
 
-      setObjectList: ((square: any, x: any, y: any, z: any) => any) | any;
+      setObjectList(square: any, x: any, y: any, z: any, ...__args: never[]): any;
 
-      setSystemList: (() => any) | any;
+      setSystemList(...__args: never[]): any;
 
-      showUI: (() => any) | any;
+      showUI(...__args: never[]): any;
 
-      SystemList_doDrawItem: ((y: any, item: any, alt: any) => any) | any;
+      SystemList_doDrawItem(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      update: (() => any) | any;
+      update(...__args: never[]): any;
 
-      updateObjectList: (() => any) | any;
+      updateObjectList(...__args: never[]): any;
 
-      updateObjectProps: (() => any) | any;
+      updateObjectProps(...__args: never[]): any;
 
-      updateSelectedObject: (() => any) | any;
+      updateSelectedObject(...__args: never[]): any;
 
-      updateSelectedSystem: (() => any) | any;
+      updateSelectedSystem(...__args: never[]): any;
     }
   }
   export namespace lua.client.DebugUIs.DebugGlobalObjectState.DebugGlobalObjectStateUI {}

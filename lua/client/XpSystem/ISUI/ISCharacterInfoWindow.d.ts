@@ -25,16 +25,16 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, playerNum: any);
 
-      isActive: ((viewName: any) => any) | any;
+      isActive(viewName: any, ...__args: never[]): any;
 
-      onJoypadDown: ((button: any) => any) | any;
+      onJoypadDown(button: any, ...__args: never[]): any;
 
-      onTabTornOff: ((view: any, window: any) => any) | any;
+      onTabTornOff(view: any, window: any, ...__args: never[]): any;
 
-      toggleView: ((viewName: any) => any) | any;
+      toggleView(viewName: any, ...__args: never[]): any;
 
       /** @noSelf */
-      static OnClothingUpdated: (chr: any) => any;
+      static OnClothingUpdated: (chr: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.XpSystem.ISUI.ISCharacterInfoWindow {}

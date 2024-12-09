@@ -29,65 +29,65 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(player: any);
 
-      autoRackNeeded: (() => any) | any;
+      autoRackNeeded(...__args: never[]): any;
 
-      checkLoaded: ((character: any, chargeDelta: any) => any) | any;
+      checkLoaded(character: any, chargeDelta: any, ...__args: never[]): any;
 
-      checkRackConditions: (() => any) | any;
+      checkRackConditions(...__args: never[]): any;
 
-      checkReloadConditions: (() => any) | any;
+      checkReloadConditions(...__args: never[]): any;
 
-      fireShot: ((wielder: any, weapon: any, difficulty: any) => any) | any;
+      fireShot(wielder: any, weapon: any, difficulty: any, ...__args: never[]): any;
 
-      getDifficulty: (() => any) | any;
+      getDifficulty(...__args: never[]): any;
 
-      getDifficultyDescription: ((difficulty: any) => any) | any;
+      getDifficultyDescription(difficulty: any, ...__args: never[]): any;
 
-      isWeaponReloadable: (() => any) | any;
+      isWeaponReloadable(...__args: never[]): any;
 
-      printManagerDetails: (() => any) | any;
+      printManagerDetails(...__args: never[]): any;
 
-      printReloadableDetails: (() => any) | any;
+      printReloadableDetails(...__args: never[]): any;
 
-      printWeaponModDetails: (() => any) | any;
+      printWeaponModDetails(...__args: never[]): any;
 
-      rackingNow: (() => any) | any;
+      rackingNow(...__args: never[]): any;
 
-      rackingStarted: (() => any) | any;
+      rackingStarted(...__args: never[]): any;
 
-      reloadStarted: (() => any) | any;
+      reloadStarted(...__args: never[]): any;
 
-      setDifficulty: ((newDifficulty: any) => any) | any;
+      setDifficulty(newDifficulty: any, ...__args: never[]): any;
 
-      startRackFromUi: ((item: any) => any) | any;
+      startRackFromUi(item: any, ...__args: never[]): any;
 
-      startRacking: (() => any) | any;
+      startRacking(...__args: never[]): any;
 
-      startReloadFromUi: ((item: any) => any) | any;
+      startReloadFromUi(item: any, ...__args: never[]): any;
 
-      startReloading: (() => any) | any;
+      startReloading(...__args: never[]): any;
 
-      stopRacking: (() => any) | any;
+      stopRacking(...__args: never[]): any;
 
-      stopReload: ((noSound: any) => any) | any;
+      stopReload(noSound: any, ...__args: never[]): any;
 
-      stopReloadSuccess: (() => any) | any;
+      stopReloadSuccess(...__args: never[]): any;
     }
 
     export abstract class aaa {
       static [id: string]: any;
 
       /** @noSelf */
-      static checkLoadedHook: (character: any, chargeDelta: any) => any;
+      static checkLoadedHook: (character: any, chargeDelta: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static fireShotHook: (wielder: any, weapon: any) => any;
+      static fireShotHook: (wielder: any, weapon: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static startRackingHook: (pl: any) => any;
+      static startRackingHook: (pl: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static startReloadHook: (pl: any) => any;
+      static startReloadHook: (pl: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.shared.Reloading.ISReloadManager {}

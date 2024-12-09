@@ -21,23 +21,23 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any, admin: any);
 
-      doPlayerListContextMenu: ((player: any, x: any, y: any) => any) | any;
+      doPlayerListContextMenu(player: any, x: any, y: any, ...__args: never[]): any;
 
-      drawPlayers: ((y: any, item: any, alt: any) => any) | any;
+      drawPlayers(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      onClick: ((button: any) => any) | any;
+      onClick(button: any, ...__args: never[]): any;
 
-      onCommand: ((player: any, command: any) => any) | any;
+      onCommand(player: any, command: any, ...__args: never[]): any;
 
-      onRightMousePlayerList: ((x: any, y: any) => any) | any;
+      onRightMousePlayerList(x: any, y: any, ...__args: never[]): any;
 
-      populateList: (() => any) | any;
-
-      /** @noSelf */
-      static OnMiniScoreboardUpdate: () => any;
+      populateList(...__args: never[]): any;
 
       /** @noSelf */
-      static onScoreboardUpdate: (usernames: any, displayNames: any, steamIDs: any) => any;
+      static OnMiniScoreboardUpdate: (...__args: never[]) => any;
+
+      /** @noSelf */
+      static onScoreboardUpdate: (usernames: any, displayNames: any, steamIDs: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.AdminPanel.ISMiniScoreboardUI {}

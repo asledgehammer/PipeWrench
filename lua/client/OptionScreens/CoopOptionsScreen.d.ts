@@ -49,69 +49,69 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      aboutToShow: (() => any) | any;
+      aboutToShow(...__args: never[]): any;
 
-      checkPlayerExists: (() => any) | any;
+      checkPlayerExists(...__args: never[]): any;
 
-      checkWorldExists: (() => any) | any;
+      checkWorldExists(...__args: never[]): any;
 
-      checkWorldVersion: (() => any) | any;
+      checkWorldVersion(...__args: never[]): any;
 
-      create: (() => any) | any;
+      create(...__args: never[]): any;
 
-      getPlayerSaveFolder: (() => any) | any;
+      getPlayerSaveFolder(...__args: never[]): any;
 
-      getServerSaveFolder: (() => any) | any;
+      getServerSaveFolder(...__args: never[]): any;
 
-      instantiate: (() => any) | any;
+      instantiate(...__args: never[]): any;
 
-      loadOptions: (() => any) | any;
+      loadOptions(...__args: never[]): any;
 
-      onAbortButtonDown: ((button: any, x: any, y: any) => any) | any;
+      onAbortButtonDown(button: any, x: any, y: any, ...__args: never[]): any;
 
-      onBackButtonDown: ((button: any, x: any, y: any) => any) | any;
+      onBackButtonDown(button: any, x: any, y: any, ...__args: never[]): any;
 
-      onDeletePlayer: (() => any) | any;
+      onDeletePlayer(...__args: never[]): any;
 
-      onDeletePlayerStep2: ((button: any, joypadData: any) => any) | any;
+      onDeletePlayerStep2(button: any, joypadData: any, ...__args: never[]): any;
 
-      onDeleteWorld: (() => any) | any;
+      onDeleteWorld(...__args: never[]): any;
 
-      onDeleteWorldStep2: ((button: any, joypadData: any) => any) | any;
+      onDeleteWorldStep2(button: any, joypadData: any, ...__args: never[]): any;
 
-      onEditSettings: (() => any) | any;
+      onEditSettings(...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onJoypadBeforeDeactivate: ((joypadData: any) => any) | any;
+      onJoypadBeforeDeactivate(joypadData: any, ...__args: never[]): any;
 
-      onLoseJoypadFocus: ((joypadData: any) => any) | any;
+      onLoseJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onMemorySelected: (() => any) | any;
+      onMemorySelected(...__args: never[]): any;
 
-      onSettingsSelected: (() => any) | any;
+      onSettingsSelected(...__args: never[]): any;
 
-      onSoftReset: (() => any) | any;
+      onSoftReset(...__args: never[]): any;
 
-      onSoftResetStep2: ((button: any, joypadData: any) => any) | any;
+      onSoftResetStep2(button: any, joypadData: any, ...__args: never[]): any;
 
-      onStartButtonDown: ((button: any, x: any, y: any) => any) | any;
+      onStartButtonDown(button: any, x: any, y: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      saveOptions: (() => any) | any;
-
-      /** @noSelf */
-      static OnConnected: () => any;
+      saveOptions(...__args: never[]): any;
 
       /** @noSelf */
-      static OnConnectFailed: (message: any) => any;
+      static OnConnected: (...__args: never[]) => any;
 
       /** @noSelf */
-      static OnConnectionStateChanged: (state: any, message: any) => any;
+      static OnConnectFailed: (message: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onCoopServerMessage: (tag: any, cookie: any, payload: any) => any;
+      static OnConnectionStateChanged: (state: any, message: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static onCoopServerMessage: (tag: any, cookie: any, payload: any, ...__args: never[]) => any;
     }
 
     /** @customConstructor CoopOptionsScreenPanel:new */
@@ -123,11 +123,11 @@ declare module '@asledgehammer/pipewrench' {
 
       oldJoypadIndexY: any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onJoypadBeforeDeactivate: ((joypadData: any) => any) | any;
+      onJoypadBeforeDeactivate(joypadData: any, ...__args: never[]): any;
 
-      onLoseJoypadFocus: ((joypadData: any) => any) | any;
+      onLoseJoypadFocus(joypadData: any, ...__args: never[]): any;
     }
 
     export abstract class CoopConnection {

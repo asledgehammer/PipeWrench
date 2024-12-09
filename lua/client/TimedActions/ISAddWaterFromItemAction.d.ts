@@ -19,7 +19,7 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(character: any, itemFrom: any, objectTo: any);
 
-      stopSound: (() => any) | any;
+      stopSound(...__args: never[]): any;
     }
   }
   export namespace lua.client.TimedActions.ISAddWaterFromItemAction {}

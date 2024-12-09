@@ -31,17 +31,17 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, character: any, square: any);
 
-      addMarker: ((square: any, radius: any) => any) | any;
+      addMarker(square: any, radius: any, ...__args: never[]): any;
 
-      drawTilesetList: ((y: any, item: any, alt: any) => any) | any;
+      drawTilesetList(y: any, item: any, alt: any, ...__args: never[]): any;
 
-      onSelectNewSquare: (() => any) | any;
+      onSelectNewSquare(...__args: never[]): any;
 
-      onSquareSelected: ((square: any) => any) | any;
+      onSquareSelected(square: any, ...__args: never[]): any;
 
-      populateList: (() => any) | any;
+      populateList(...__args: never[]): any;
 
-      removeMarker: (() => any) | any;
+      removeMarker(...__args: never[]): any;
     }
 
     /** @customConstructor ISTilesPickerTilesList:new */
@@ -53,9 +53,9 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, w: any, h: any);
 
-      onMouseWheel: ((del: any) => any) | any;
+      onMouseWheel(del: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
     }
   }
   export namespace lua.client.DebugUIs.ISTilesPickerDebugUI {}

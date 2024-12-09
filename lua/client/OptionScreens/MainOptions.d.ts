@@ -83,153 +83,195 @@ declare module '@asledgehammer/pipewrench' {
 
       constructor(x: any, y: any, width: any, height: any);
 
-      addColorButton: ((x: any, y: any, name: any, color: any, onClick: any) => any) | any;
+      addColorButton(x: any, y: any, name: any, color: any, onClick: any, ...__args: never[]): any;
 
-      addCombo:
-        | ((x: any, y: any, w: any, h: any, name: any, options: any, selected: any, target: any, onchange: any) => any)
-        | any;
+      addCombo(
+        x: any,
+        y: any,
+        w: any,
+        h: any,
+        name: any,
+        options: any,
+        selected: any,
+        target: any,
+        onchange: any,
+        ...__args: never[]
+      ): any;
 
-      addHorizontalLine: ((y: any, text: any) => any) | any;
+      addHorizontalLine(y: any, text: any, ...__args: never[]): any;
 
-      addMegaVolumeControl:
-        | ((x: any, y: any, w: any, h: any, name: any, volume: any, target: any, onchange: any) => any)
-        | any;
+      addMegaVolumeControl(
+        x: any,
+        y: any,
+        w: any,
+        h: any,
+        name: any,
+        volume: any,
+        target: any,
+        onchange: any,
+        ...__args: never[]
+      ): any;
 
-      addPage: ((name: any) => any) | any;
+      addPage(name: any, ...__args: never[]): any;
 
-      addSpinBox:
-        | ((x: any, y: any, w: any, h: any, name: any, options: any, selected: any, target: any, onchange: any) => any)
-        | any;
+      addSpinBox(
+        x: any,
+        y: any,
+        w: any,
+        h: any,
+        name: any,
+        options: any,
+        selected: any,
+        target: any,
+        onchange: any,
+        ...__args: never[]
+      ): any;
 
-      addTextPane: ((x: any, y: any, w: any, h: any) => any) | any;
+      addTextPane(x: any, y: any, w: any, h: any, ...__args: never[]): any;
 
-      addTickBox: ((x: any, y: any, w: any, h: any) => any) | any;
+      addTickBox(x: any, y: any, w: any, h: any, ...__args: never[]): any;
 
-      addVolumeControl:
-        | ((x: any, y: any, w: any, h: any, name: any, volume: any, target: any, onchange: any) => any)
-        | any;
+      addVolumeControl(
+        x: any,
+        y: any,
+        w: any,
+        h: any,
+        name: any,
+        volume: any,
+        target: any,
+        onchange: any,
+        ...__args: never[]
+      ): any;
 
-      addVolumeIndicator:
-        | ((x: any, y: any, w: any, h: any, name: any, volume: any, target: any, onchange: any) => any)
-        | any;
+      addVolumeIndicator(
+        x: any,
+        y: any,
+        w: any,
+        h: any,
+        name: any,
+        volume: any,
+        target: any,
+        onchange: any,
+        ...__args: never[]
+      ): any;
 
-      addYesNo: ((x: any, y: any, w: any, h: any, name: any) => any) | any;
+      addYesNo(x: any, y: any, w: any, h: any, name: any, ...__args: never[]): any;
 
-      apply: ((closeAfter: any) => any) | any;
+      apply(closeAfter: any, ...__args: never[]): any;
 
-      centerChildrenX: ((panel: any) => any) | any;
+      centerChildrenX(panel: any, ...__args: never[]): any;
 
-      centerKeybindings: (() => any) | any;
+      centerKeybindings(...__args: never[]): any;
 
-      centerTabChildrenX: ((tabTitle: any) => any) | any;
+      centerTabChildrenX(tabTitle: any, ...__args: never[]): any;
 
-      ControllerReload: ((button: any) => any) | any;
+      ControllerReload(button: any, ...__args: never[]): any;
 
-      create: (() => any) | any;
+      create(...__args: never[]): any;
 
-      instantiate: (() => any) | any;
+      instantiate(...__args: never[]): any;
 
-      joypadSensitivityM: ((button: any) => any) | any;
+      joypadSensitivityM(button: any, ...__args: never[]): any;
 
-      joypadSensitivityP: ((button: any) => any) | any;
+      joypadSensitivityP(button: any, ...__args: never[]): any;
 
-      onBadHighlightColor: ((button: any) => any) | any;
+      onBadHighlightColor(button: any, ...__args: never[]): any;
 
-      onConfirmModalClick: ((button: any) => any) | any;
+      onConfirmModalClick(button: any, ...__args: never[]): any;
 
-      onConfirmMonitorSettingsClick: ((button: any, closeAfter: any) => any) | any;
+      onConfirmMonitorSettingsClick(button: any, closeAfter: any, ...__args: never[]): any;
 
-      onGainJoypadFocus: ((joypadData: any) => any) | any;
+      onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onGainJoypadFocusCurrentTab: ((joypadData: any) => any) | any;
+      onGainJoypadFocusCurrentTab(joypadData: any, ...__args: never[]): any;
 
-      onGameSounds: (() => any) | any;
+      onGameSounds(...__args: never[]): any;
 
-      onGoodHighlightColor: ((button: any) => any) | any;
+      onGoodHighlightColor(button: any, ...__args: never[]): any;
 
-      onJoypadBeforeDeactivate: ((joypadData: any) => any) | any;
+      onJoypadBeforeDeactivate(joypadData: any, ...__args: never[]): any;
 
-      onJoypadBeforeDeactivateCurrentTab: ((joypadData: any) => any) | any;
+      onJoypadBeforeDeactivateCurrentTab(joypadData: any, ...__args: never[]): any;
 
-      onJoypadDownCurrentTab: ((button: any, joypadData: any) => any) | any;
+      onJoypadDownCurrentTab(button: any, joypadData: any, ...__args: never[]): any;
 
-      onKeybindChanged: ((name: any, key: any) => any) | any;
+      onKeybindChanged(name: any, key: any, ...__args: never[]): any;
 
-      onKeyBindingBtnPress: ((button: any, x: any, y: any) => any) | any;
+      onKeyBindingBtnPress(button: any, x: any, y: any, ...__args: never[]): any;
 
-      onKeyboardLayoutChanged: (() => any) | any;
+      onKeyboardLayoutChanged(...__args: never[]): any;
 
-      onLoseJoypadFocusCurrentTab: ((joypadData: any) => any) | any;
+      onLoseJoypadFocusCurrentTab(joypadData: any, ...__args: never[]): any;
 
-      onMouseWheel: ((del: any) => any) | any;
+      onMouseWheel(del: any, ...__args: never[]): any;
 
-      onMPColor: ((button: any) => any) | any;
+      onMPColor(button: any, ...__args: never[]): any;
 
-      onObjHighlightColor: ((button: any) => any) | any;
+      onObjHighlightColor(button: any, ...__args: never[]): any;
 
-      onOptionMouseDown: ((button: any, x: any, y: any) => any) | any;
+      onOptionMouseDown(button: any, x: any, y: any, ...__args: never[]): any;
 
-      onReloadGameSounds: (() => any) | any;
+      onReloadGameSounds(...__args: never[]): any;
 
-      onResolutionChange: ((oldw: any, oldh: any, neww: any, newh: any) => any) | any;
+      onResolutionChange(oldw: any, oldh: any, neww: any, newh: any, ...__args: never[]): any;
 
-      onRestartRequiredClick: ((button: any, closeAfter: any) => any) | any;
+      onRestartRequiredClick(button: any, closeAfter: any, ...__args: never[]): any;
 
-      onTabsActivateView: ((tabs: any) => any) | any;
+      onTabsActivateView(tabs: any, ...__args: never[]): any;
 
-      pickedBadHighlightColor: ((color: any, mouseUp: any) => any) | any;
+      pickedBadHighlightColor(color: any, mouseUp: any, ...__args: never[]): any;
 
-      pickedGoodHighlightColor: ((color: any, mouseUp: any) => any) | any;
+      pickedGoodHighlightColor(color: any, mouseUp: any, ...__args: never[]): any;
 
-      pickedMPTextColor: ((color: any, mouseUp: any) => any) | any;
+      pickedMPTextColor(color: any, mouseUp: any, ...__args: never[]): any;
 
-      pickedObjHighlightColor: ((color: any, mouseUp: any) => any) | any;
+      pickedObjHighlightColor(color: any, mouseUp: any, ...__args: never[]): any;
 
-      render: (() => any) | any;
+      render(...__args: never[]): any;
 
-      setResolutionAndFullScreen: (() => any) | any;
+      setResolutionAndFullScreen(...__args: never[]): any;
 
-      showConfirmDialog: (() => any) | any;
+      showConfirmDialog(...__args: never[]): any;
 
-      showConfirmMonitorSettingsDialog: ((closeAfter: any) => any) | any;
+      showConfirmMonitorSettingsDialog(closeAfter: any, ...__args: never[]): any;
 
-      showRestartRequiredDialog: ((closeAfter: any) => any) | any;
+      showRestartRequiredDialog(closeAfter: any, ...__args: never[]): any;
 
-      subPanelPreRender: (() => any) | any;
+      subPanelPreRender(...__args: never[]): any;
 
-      subPanelRender: (() => any) | any;
+      subPanelRender(...__args: never[]): any;
 
-      toUI: (() => any) | any;
+      toUI(...__args: never[]): any;
 
       /** @noSelf */
-      static doLanguageToolTip: (languages: any) => any;
+      static doLanguageToolTip: (languages: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getAvailableLanguage: () => any;
+      static getAvailableLanguage: (...__args: never[]) => any;
 
       /** @noSelf */
-      static getGeneralTranslators: (_language: any) => any;
+      static getGeneralTranslators: (_language: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static keyPressHandler: (key: any) => any;
+      static keyPressHandler: (key: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static loadKeys: () => any;
+      static loadKeys: (...__args: never[]) => any;
 
       /** @noSelf */
-      static OnGamepadConnect: (index: any) => any;
+      static OnGamepadConnect: (index: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnGamepadDisconnect: (index: any) => any;
+      static OnGamepadDisconnect: (index: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static saveKeys: () => any;
+      static saveKeys: (...__args: never[]) => any;
 
       /** @noSelf */
-      static sortModes: (a: any, b: any) => any;
+      static sortModes: (a: any, b: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static upgradeKeysIni: (name: any, key: any, defaultKey: any, version: any) => any;
+      static upgradeKeysIni: (name: any, key: any, defaultKey: any, version: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.OptionScreens.MainOptions {}
