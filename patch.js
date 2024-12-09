@@ -105,8 +105,30 @@ function patch_ISBaseObject() {
     }
 }
 
+/**
+ * fix error TS2425: Class 'ISPanel' defines instance member property 'onMouseDoubleClick', but extended class 'ISButton' defines it as instance member function.
+ */
+function patch_ISUIElement() {
+    console.log("Patching ISUIElement.d.ts ...")
+    try {
+        const file = path.join(__dirname, "lua/client/ISUI/ISUIElement.d.ts")
+        let content = fs.readFileSync(file, 'utf-8')
+        
+        content = content.replace(
+            `onMouseDoubleClick: any;`,
+            `onMouseDoubleClick(x: any, y: any, ...__args: never[]): any;`
+        )
+
+        fs.writeFileSync(file, content)
+    }
+    catch(error) {
+        console.error(error)
+    }
+}
+
 // Run
 patch_fmod_fmod()
 patch_pipewrench()
 patch_ThermoDebug()
 patch_ISBaseObject()
+patch_ISUIElement()
