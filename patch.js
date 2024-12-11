@@ -15,30 +15,41 @@ function patch_fmod_fmod() {
     }
 }
 
+function patch_pipewrench_content(content) {
+    content = content.replace(`// [server/recipecode.d.ts]`, ``)
+    content = content.replace(`export abstract class Recipe extends lua.server.Recipe {}`, ``)
+    content = content.replace(`export abstract class scavenges extends lua.shared.Foraging.scavenges {}`, ``)
+    content = content.replace(`export abstract class ThermoDebug extends lua.client.DebugUIs.DebugMenu.Climate.ThermoDebug {}`, ``)
+    content = content.replace(`lua.shared.ISBaseObject.ISBaseObject`, `lua.shared.ISBaseObject`)
+    content = content.replace(`export abstract class Joypad extends lua.shared.JoyPad.Joypad {}`, ``)
+    
+    content = content.replace(`/** @customConstructor CGlobalObject.new */`, ``)
+    content = content.replace(`export class CGlobalObject extends zombie.globalObjects.CGlobalObject {}`, ``)
+    content = content.replace(`/** @customConstructor CGlobalObjectSystem.new */`, ``)
+    content = content.replace(`export class CGlobalObjectSystem extends zombie.globalObjects.CGlobalObjectSystem {}`, ``)
+
+    content = content.replace(`/** @customConstructor SGlobalObject.new */`, ``)
+    content = content.replace(`export class SGlobalObject extends zombie.globalObjects.SGlobalObject {}`, ``)
+    content = content.replace(`/** @customConstructor SGlobalObjectSystem.new */`, ``)
+    content = content.replace(`export class SGlobalObjectSystem extends zombie.globalObjects.SGlobalObjectSystem {}`, ``)
+
+    return content
+}
+
 function patch_pipewrench() {
     console.log("Patching PipeWrench.d.ts ...")
     try {
-        const file = path.join(__dirname, "PipeWrench.d.ts")
-        let content = fs.readFileSync(file, 'utf-8')
-
-        content = content.replace(`// [server/recipecode.d.ts]`, ``)
-        content = content.replace(`export abstract class Recipe extends lua.server.Recipe {}`, ``)
-        content = content.replace(`export abstract class scavenges extends lua.shared.Foraging.scavenges {}`, ``)
-        content = content.replace(`export abstract class ThermoDebug extends lua.client.DebugUIs.DebugMenu.Climate.ThermoDebug {}`, ``)
-        content = content.replace(`lua.shared.ISBaseObject.ISBaseObject`, `lua.shared.ISBaseObject`)
-        content = content.replace(`export abstract class Joypad extends lua.shared.JoyPad.Joypad {}`, ``)
-        
-        content = content.replace(`/** @customConstructor CGlobalObject.new */`, ``)
-        content = content.replace(`export class CGlobalObject extends zombie.globalObjects.CGlobalObject {}`, ``)
-        content = content.replace(`/** @customConstructor CGlobalObjectSystem.new */`, ``)
-        content = content.replace(`export class CGlobalObjectSystem extends zombie.globalObjects.CGlobalObjectSystem {}`, ``)
-
-        content = content.replace(`/** @customConstructor SGlobalObject.new */`, ``)
-        content = content.replace(`export class SGlobalObject extends zombie.globalObjects.SGlobalObject {}`, ``)
-        content = content.replace(`/** @customConstructor SGlobalObjectSystem.new */`, ``)
-        content = content.replace(`export class SGlobalObjectSystem extends zombie.globalObjects.SGlobalObjectSystem {}`, ``)
-
-        fs.writeFileSync(file, content)
+        const fileNames = [
+            'PipeWrench.d.ts',
+            'server.d.ts',
+            'client.d.ts',
+        ]
+        fileNames.forEach(fileName => {
+            const file = path.join(__dirname, fileName)
+            let content = fs.readFileSync(file, 'utf-8')
+            const patchedContent = patch_pipewrench_content(content)
+            fs.writeFileSync(file, patchedContent)
+        })
     }
     catch(error) {
         console.error(error)

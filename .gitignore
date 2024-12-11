@@ -6,6 +6,12 @@ steamcmd
 java-gen
 lua.api.partial.d.ts
 lua.interface.partial.lua
+lua.shared.api.partial.d.ts
+lua.shared.interface.partial.lua
+lua.server.api.partial.d.ts
+lua.server.interface.partial.lua
+lua.client.api.partial.d.ts
+lua.client.interface.partial.lua
 lua.reference.partial.d.ts
 java.api.partial.d.ts
 java.interface.partial.lua

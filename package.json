@@ -18,7 +18,11 @@
     "PipeWrench.lua",
     "reference.d.ts",
     "lua",
-    "java"
+    "java",
+    "server.d.ts",
+    "server.lua",
+    "client.d.ts",
+    "client.lua"
   ],
   "keywords": [
     "pipewrench",
