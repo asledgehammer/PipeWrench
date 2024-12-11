@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.DebugUIs.DebugChunkState {
     /** @customConstructor DebugChunkStateUI_SquarePanel:new */
     export class DebugChunkStateUI_SquarePanel extends lua.client.DebugUIs.DebugChunkState.ISSectionedPanel {

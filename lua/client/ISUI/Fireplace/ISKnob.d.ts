@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.ISUI.Fireplace {
     /** @customConstructor ISKnob:new */
     export class ISKnob extends lua.client.ISUI.ISUIElement {

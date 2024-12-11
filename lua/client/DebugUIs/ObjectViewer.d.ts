@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.DebugUIs {
     /** @customConstructor ObjectViewer:new */
     export class ObjectViewer extends lua.client.ISUI.ISCollapsableWindow {

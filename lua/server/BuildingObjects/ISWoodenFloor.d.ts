@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/server' {
   export namespace lua.server.BuildingObjects {
     /** @customConstructor ISWoodenFloor:new */
     export class ISWoodenFloor extends lua.server.BuildingObjects.ISBuildingObject {

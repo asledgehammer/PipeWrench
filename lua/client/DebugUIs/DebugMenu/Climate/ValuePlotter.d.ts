@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.DebugUIs.DebugMenu.Climate {
     /** @customConstructor ValuePlotter:new */
     export class ValuePlotter extends lua.client.ISUI.ISPanel {

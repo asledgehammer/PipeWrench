@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.Tutorial.ISUI {
     /** @customConstructor TutorialFocus:new */
     export class TutorialFocus extends lua.client.ISUI.ISPanel {

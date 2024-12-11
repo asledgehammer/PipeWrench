@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.RadioCom.ISUIRadio {
     /** @customConstructor ISLedLight:new */
     export class ISLedLight extends lua.client.ISUI.ISPanel {

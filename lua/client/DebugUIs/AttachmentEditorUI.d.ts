@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.DebugUIs {
     /** @customConstructor AttachmentEditorUI:new */
     export class AttachmentEditorUI extends lua.client.ISUI.ISPanel {

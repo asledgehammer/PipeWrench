@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.DebugUIs.DebugMenu.radio {
     /** @customConstructor RadioScriptDebugger:new */
     export class RadioScriptDebugger extends lua.client.ISUI.ISPanel {

@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/server' {
   export namespace lua.server.MetalDrum {
     /** @customConstructor SMetalDrumGlobalObject:new */
     export class SMetalDrumGlobalObject extends lua.server.Map.SGlobalObject {

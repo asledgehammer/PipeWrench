@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor CoopOptionsScreen:new */
     export class CoopOptionsScreen extends lua.client.ISUI.ISPanelJoypad {

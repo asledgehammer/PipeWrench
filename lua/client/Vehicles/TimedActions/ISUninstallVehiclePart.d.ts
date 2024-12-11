@@ -1,9 +1,11 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+import { lua as sharedLua } from '@asledgehammer/pipewrench';
+
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.Vehicles.TimedActions {
     /** @customConstructor ISUninstallVehiclePart:new */
-    export class ISUninstallVehiclePart extends lua.shared.TimedActions.ISBaseTimedAction {
+    export class ISUninstallVehiclePart extends sharedLua.shared.TimedActions.ISBaseTimedAction {
       [id: string]: any;
       static [id: string]: any;
 

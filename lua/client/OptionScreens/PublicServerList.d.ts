@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor PublicServerList:new */
     export class PublicServerList extends lua.client.ISUI.ISPanelJoypad {

@@ -1,9 +1,11 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+import { lua as sharedLua } from '@asledgehammer/pipewrench';
+
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.Fishing.TimedActions {
     /** @customConstructor ISFishingAction:new */
-    export class ISFishingAction extends lua.shared.TimedActions.ISBaseTimedAction {
+    export class ISFishingAction extends sharedLua.shared.TimedActions.ISBaseTimedAction {
       [id: string]: any;
       static [id: string]: any;
 

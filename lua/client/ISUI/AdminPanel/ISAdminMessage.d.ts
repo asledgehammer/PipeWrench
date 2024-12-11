@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.ISUI.AdminPanel {
     /** @customConstructor ISAdminMessage:new */
     export class ISAdminMessage extends lua.client.ISUI.ISPanel {

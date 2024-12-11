@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.RadioCom.RadioWindowModules {
     /** @customConstructor RWMChannelTV:new */
     export class RWMChannelTV extends lua.client.RadioCom.RadioWindowModules.RWMPanel {

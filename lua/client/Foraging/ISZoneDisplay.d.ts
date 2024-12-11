@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.Foraging {
     /** @customConstructor ISZoneDisplay:new */
     export class ISZoneDisplay extends lua.client.ISUI.ISPanel {

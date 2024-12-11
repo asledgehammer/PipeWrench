@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.LastStand.ISUI {
     /** @customConstructor ISChallenge2WeaponUpWindow:new */
     export class ISChallenge2WeaponUpWindow extends lua.client.ISUI.ISPanelJoypad {

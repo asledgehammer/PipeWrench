@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/server' {
   export namespace lua.server.NewSelectionSystem {
     export abstract class GridSquareSelector {
       static [id: string]: any;

@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor CoopMapSpawnSelect:new */
     export class CoopMapSpawnSelect extends lua.client.OptionScreens.MapSpawnSelect {

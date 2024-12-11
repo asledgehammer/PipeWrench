@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.ISUI.AdminPanel {
     /** @customConstructor ISServerSandboxOptionsUI:new */
     export class ISServerSandboxOptionsUI extends lua.client.ISUI.ISPanelJoypad {

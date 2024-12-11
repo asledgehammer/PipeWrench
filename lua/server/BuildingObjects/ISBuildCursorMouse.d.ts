@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/server' {
   export namespace lua.server.BuildingObjects {
     /** @customConstructor ISBuildCursorMouse:new */
     export class ISBuildCursorMouse extends lua.server.BuildingObjects.ISBuildingObject {

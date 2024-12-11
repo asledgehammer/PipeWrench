@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.RadioCom {
     /** @customConstructor ISRadioWindow:new */
     export class ISRadioWindow extends lua.client.ISUI.ISCollapsableWindow {

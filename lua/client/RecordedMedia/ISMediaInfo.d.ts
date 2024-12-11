@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.RecordedMedia {
     /** @customConstructor ISMediaInfo:new */
     export class ISMediaInfo extends lua.client.ISUI.ISCollapsableWindowJoypad {

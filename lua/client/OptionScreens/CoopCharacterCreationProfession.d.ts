@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor CoopCharacterCreationProfession:new */
     export class CoopCharacterCreationProfession extends lua.client.OptionScreens.CharacterCreationProfession {

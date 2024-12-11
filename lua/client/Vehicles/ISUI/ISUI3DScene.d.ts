@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.Vehicles.ISUI {
     /** @customConstructor ISUI3DScene:new */
     export class ISUI3DScene extends lua.client.ISUI.ISUIElement {

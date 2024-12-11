@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.Farming {
     /** @customConstructor CPlantGlobalObject:new */
     export class CPlantGlobalObject extends lua.client.Map.CGlobalObject {

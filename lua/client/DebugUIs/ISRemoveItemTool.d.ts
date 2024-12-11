@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.DebugUIs {
     /** @customConstructor ISRemoveItemTool:new */
     export class ISRemoveItemTool extends lua.client.ISUI.ISPanelJoypad {

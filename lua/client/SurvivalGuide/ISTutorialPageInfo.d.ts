@@ -1,9 +1,11 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+import { lua as sharedLua } from '@asledgehammer/pipewrench';
+
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.SurvivalGuide {
     /** @customConstructor ISTutorialPageInfo:new */
-    export class ISTutorialPageInfo extends lua.shared.ISBaseObject {
+    export class ISTutorialPageInfo extends sharedLua.shared.ISBaseObject.ISBaseObject {
       [id: string]: any;
       static [id: string]: any;
 
@@ -21,7 +23,7 @@ declare module '@asledgehammer/pipewrench' {
     }
 
     /** @customConstructor ISTutorialSetInfo:new */
-    export class ISTutorialSetInfo extends lua.shared.ISBaseObject {
+    export class ISTutorialSetInfo extends sharedLua.shared.ISBaseObject.ISBaseObject {
       [id: string]: any;
       static [id: string]: any;
 

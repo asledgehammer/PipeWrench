@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISTextEntryBox:new */
     export class ISTextEntryBox extends lua.client.ISUI.ISPanelJoypad {

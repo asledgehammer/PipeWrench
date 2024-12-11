@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/server' {
   export namespace lua.server.Camping.BuildingObjects {
     /** @customConstructor campingCampfire:new */
     export class campingCampfire extends lua.server.BuildingObjects.ISBuildingObject {

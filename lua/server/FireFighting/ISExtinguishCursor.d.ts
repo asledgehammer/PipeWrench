@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/server' {
   export namespace lua.server.FireFighting {
     /** @customConstructor ISExtinguishCursor:new */
     export class ISExtinguishCursor extends lua.server.BuildingObjects.ISBuildingObject {

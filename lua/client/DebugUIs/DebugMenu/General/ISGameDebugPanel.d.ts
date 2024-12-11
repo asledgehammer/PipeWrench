@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.DebugUIs.DebugMenu.General {
     /** @customConstructor ISGameDebugPanel:new */
     export class ISGameDebugPanel extends lua.client.DebugUIs.DebugMenu.Base.ISDebugSubPanelBase {

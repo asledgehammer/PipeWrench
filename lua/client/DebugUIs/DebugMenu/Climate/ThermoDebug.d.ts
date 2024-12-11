@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.DebugUIs.DebugMenu.Climate {
     /** @customConstructor ThermoDebug:new */
     export class ThermoDebug extends lua.client.ISUI.ISCollapsableWindow {

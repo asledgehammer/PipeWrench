@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/server' {
   export namespace lua.server.BuildingObjects {
     /** @customConstructor ISSelectCursor:new */
     export class ISSelectCursor extends lua.server.BuildingObjects.ISBuildingObject {

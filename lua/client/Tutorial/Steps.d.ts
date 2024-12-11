@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.Tutorial {
     /** @customConstructor BandageStep:new */
     export class BandageStep extends lua.client.Tutorial.TutorialStep {

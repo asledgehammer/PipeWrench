@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor CoopCharacterCreationMain:new */
     export class CoopCharacterCreationMain extends lua.client.OptionScreens.CharacterCreationMain {

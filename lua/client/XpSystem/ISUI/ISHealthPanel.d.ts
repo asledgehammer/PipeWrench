@@ -1,9 +1,11 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+import { lua as sharedLua } from '@asledgehammer/pipewrench';
+
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.XpSystem.ISUI {
     /** @customConstructor HealthPanelAction:new */
-    export class HealthPanelAction extends lua.shared.TimedActions.ISBaseTimedAction {
+    export class HealthPanelAction extends sharedLua.shared.TimedActions.ISBaseTimedAction {
       [id: string]: any;
       static [id: string]: any;
 

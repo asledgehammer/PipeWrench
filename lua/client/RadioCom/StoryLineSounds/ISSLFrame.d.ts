@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.RadioCom.StoryLineSounds {
     /** @customConstructor ISSLFrame:new */
     export class ISSLFrame extends lua.client.ISUI.ISPanel {

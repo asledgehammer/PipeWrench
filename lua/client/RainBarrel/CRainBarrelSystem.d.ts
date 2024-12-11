@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.RainBarrel {
     /** @customConstructor CRainBarrelSystem:new */
     export class CRainBarrelSystem extends lua.client.Map.CGlobalObjectSystem {

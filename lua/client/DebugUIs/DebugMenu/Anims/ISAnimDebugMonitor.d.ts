@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.DebugUIs.DebugMenu.Anims {
     /** @customConstructor ISAnimDebugMonitor:new */
     export class ISAnimDebugMonitor extends lua.client.ISUI.ISCollapsableWindow {

@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.Foraging {
     /** @customConstructor ISSearchManager:new */
     export class ISSearchManager extends lua.client.ISUI.ISPanel {

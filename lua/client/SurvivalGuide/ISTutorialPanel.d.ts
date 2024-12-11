@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.SurvivalGuide {
     /** @customConstructor ISSurvivalGuideListBox:new */
     export class ISSurvivalGuideListBox extends lua.client.ISUI.ISScrollingListBox {

@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.XpSystem.ISUI {
     /** @customConstructor ISClothingInsPanel:new */
     export class ISClothingInsPanel extends lua.client.ISUI.ISPanelJoypad {

@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.Moveables {
     /** @customConstructor ISMoveablesIconToolTip:new */
     export class ISMoveablesIconToolTip extends lua.client.ISUI.ISPanel {

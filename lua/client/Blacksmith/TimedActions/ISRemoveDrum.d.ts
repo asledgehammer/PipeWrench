@@ -1,9 +1,11 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+import { lua as sharedLua } from '@asledgehammer/pipewrench';
+
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.Blacksmith.TimedActions {
     /** @customConstructor ISRemoveDrum:new */
-    export class ISRemoveDrum extends lua.shared.TimedActions.ISBaseTimedAction {
+    export class ISRemoveDrum extends sharedLua.shared.TimedActions.ISBaseTimedAction {
       [id: string]: any;
       static [id: string]: any;
 

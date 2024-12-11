@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.ISUI.AdminPanel {
     /** @customConstructor ISAddSafeZoneUI:new */
     export class ISAddSafeZoneUI extends lua.client.ISUI.ISPanel {

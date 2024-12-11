@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.DebugUIs.DebugMenu.Puddles {
     /** @customConstructor PuddlesControl:new */
     export class PuddlesControl extends lua.client.DebugUIs.DebugMenu.Base.ISDebugSubPanelBase {

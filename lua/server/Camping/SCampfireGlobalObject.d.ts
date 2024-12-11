@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/server' {
   export namespace lua.server.Camping {
     /** @customConstructor SCampfireGlobalObject:new */
     export class SCampfireGlobalObject extends lua.server.Map.SGlobalObject {

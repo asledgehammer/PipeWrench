@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/server' {
   export namespace lua.server.BuildingObjects {
     /** @customConstructor ISShovelGroundCursor:new */
     export class ISShovelGroundCursor extends lua.server.BuildingObjects.ISBuildingObject {

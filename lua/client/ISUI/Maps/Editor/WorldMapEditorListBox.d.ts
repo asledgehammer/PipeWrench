@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.ISUI.Maps.Editor {
     /** @customConstructor WorldMapEditorListBox:new */
     export class WorldMapEditorListBox extends lua.client.ISUI.ISPanel {

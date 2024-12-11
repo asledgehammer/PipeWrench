@@ -1,9 +1,11 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+import { lua as sharedLua } from '@asledgehammer/pipewrench';
+
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.Moveables {
     /** @customConstructor ISMoveablesAction:new */
-    export class ISMoveablesAction extends lua.shared.TimedActions.ISBaseTimedAction {
+    export class ISMoveablesAction extends sharedLua.shared.TimedActions.ISBaseTimedAction {
       [id: string]: any;
       static [id: string]: any;
 

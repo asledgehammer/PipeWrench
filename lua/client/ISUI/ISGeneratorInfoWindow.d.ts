@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISGeneratorInfoWindow:new */
     export class ISGeneratorInfoWindow extends lua.client.ISUI.ISCollapsableWindow {

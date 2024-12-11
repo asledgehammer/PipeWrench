@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.DebugUIs {
     /** @customConstructor ISTriggerThunderUI:new */
     export class ISTriggerThunderUI extends lua.client.ISUI.ISCollapsableWindow {

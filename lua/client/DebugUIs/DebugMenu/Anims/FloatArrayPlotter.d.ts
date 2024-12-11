@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.DebugUIs.DebugMenu.Anims {
     /** @customConstructor FloatArrayPlotter:new */
     export class FloatArrayPlotter extends lua.client.ISUI.ISPanel {

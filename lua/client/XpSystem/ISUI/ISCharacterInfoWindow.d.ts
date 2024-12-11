@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.XpSystem.ISUI {
     /** @customConstructor ISCharacterInfoWindow:new */
     export class ISCharacterInfoWindow extends lua.client.ISUI.ISCollapsableWindow {

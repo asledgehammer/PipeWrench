@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.DebugUIs.DebugMenu.Climate {
     /** @customConstructor ClimateControlDebug:new */
     export class ClimateControlDebug extends lua.client.DebugUIs.DebugMenu.Base.ISDebugPanelBase {

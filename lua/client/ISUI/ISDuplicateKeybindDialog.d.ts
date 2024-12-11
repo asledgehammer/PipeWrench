@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISDuplicateKeybindDialog:new */
     export class ISDuplicateKeybindDialog extends lua.client.ISUI.ISPanel {

@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.ISUI.Maps {
     /** @customConstructor ISMap:new */
     export class ISMap extends lua.client.ISUI.ISPanelJoypad {

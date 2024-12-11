@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/server' {
   export namespace lua.server.BuildingObjects {
     /** @customConstructor ISBSFurnace:new */
     export class ISBSFurnace extends lua.server.BuildingObjects.ISBuildingObject {

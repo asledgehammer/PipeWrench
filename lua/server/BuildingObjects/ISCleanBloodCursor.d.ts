@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/server' {
   export namespace lua.server.BuildingObjects {
     /** @customConstructor ISCleanBloodCursor:new */
     export class ISCleanBloodCursor extends lua.server.BuildingObjects.ISBuildingObject {

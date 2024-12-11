@@ -1,9 +1,11 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+import { lua as sharedLua } from '@asledgehammer/pipewrench';
+
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.Farming.TimedActions {
     /** @customConstructor ISWaterPlantAction:new */
-    export class ISWaterPlantAction extends lua.shared.TimedActions.ISBaseTimedAction {
+    export class ISWaterPlantAction extends sharedLua.shared.TimedActions.ISBaseTimedAction {
       [id: string]: any;
       static [id: string]: any;
 

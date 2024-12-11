@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.DebugUIs.DebugMenu.Statistic {
     /** @customConstructor StatisticChartMemory:new */
     export class StatisticChartMemory extends lua.client.DebugUIs.DebugMenu.Statistic.StatisticChart {

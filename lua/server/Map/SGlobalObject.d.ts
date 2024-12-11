@@ -1,9 +1,11 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+import { lua as sharedLua } from '@asledgehammer/pipewrench';
+
+declare module '@asledgehammer/pipewrench/server' {
   export namespace lua.server.Map {
     /** @customConstructor SGlobalObject:new */
-    export class SGlobalObject extends lua.shared.ISBaseObject {
+    export class SGlobalObject extends sharedLua.shared.ISBaseObject.ISBaseObject {
       [id: string]: any;
       static [id: string]: any;
 

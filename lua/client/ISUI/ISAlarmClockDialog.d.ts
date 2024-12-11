@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISAlarmClockDialog:new */
     export class ISAlarmClockDialog extends lua.client.ISUI.ISPanelJoypad {

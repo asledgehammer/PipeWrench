@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.LastStand.ISUI {
     /** @customConstructor ISChallenge2UpgradeTab:new */
     export class ISChallenge2UpgradeTab extends lua.client.ISUI.ISCollapsableWindow {

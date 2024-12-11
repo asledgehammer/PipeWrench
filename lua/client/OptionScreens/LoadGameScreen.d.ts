@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor LoadGameScreen:new */
     export class LoadGameScreen extends lua.client.ISUI.ISPanelJoypad {

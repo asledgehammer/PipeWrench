@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.Blacksmith.ISUI {
     export abstract class ISBlacksmithMenu {
       static [id: string]: any;

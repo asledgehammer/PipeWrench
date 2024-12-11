@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.DebugUIs.DebugMenu.Anims {
     /** @customConstructor ISAnimLoggerOutput:new */
     export class ISAnimLoggerOutput extends lua.client.DebugUIs.DebugMenu.Base.ISDebugSubPanelBase {

@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/server' {
   export namespace lua.server.MetalDrum.BuildingObjects {
     /** @customConstructor ISMetalDrum:new */
     export class ISMetalDrum extends lua.server.BuildingObjects.ISBuildingObject {

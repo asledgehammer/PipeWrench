@@ -1,6 +1,8 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+import { lua as sharedLua } from '@asledgehammer/pipewrench';
+
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.DebugUIs.DebugGlobalObjectState {
     /** @customConstructor DebugGlobalObjectStateUI_DragCameraTool:new */
     export class DebugGlobalObjectStateUI_DragCameraTool extends lua.client.DebugUIs.DebugChunkState
@@ -22,7 +24,7 @@ declare module '@asledgehammer/pipewrench' {
     }
 
     /** @customConstructor DebugGlobalObjectStateUI_Tool:new */
-    export class DebugGlobalObjectStateUI_Tool extends lua.shared.ISBaseObject {
+    export class DebugGlobalObjectStateUI_Tool extends sharedLua.shared.ISBaseObject.ISBaseObject {
       [id: string]: any;
       static [id: string]: any;
 

@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/server' {
   export namespace lua.server.Movers.MoverStates {
     /** @customConstructor MoveToState:new */
     export class MoveToState extends lua.server.Movers.MoverStates.ISBaseState {

@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.DebugUIs.DebugMenu.WorldFlares {
     /** @customConstructor WorldFlaresDebug:new */
     export class WorldFlaresDebug extends lua.client.ISUI.ISPanel {

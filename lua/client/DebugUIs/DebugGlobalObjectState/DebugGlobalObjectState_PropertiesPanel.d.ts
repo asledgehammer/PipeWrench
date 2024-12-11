@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.DebugUIs.DebugGlobalObjectState {
     /** @customConstructor DebugGlobalObjectState_BasePropertiesPanel:new */
     export class DebugGlobalObjectState_BasePropertiesPanel extends lua.client.ISUI.ISPanel {

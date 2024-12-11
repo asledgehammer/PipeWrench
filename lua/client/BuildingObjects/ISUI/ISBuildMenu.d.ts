@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.BuildingObjects.ISUI {
     export abstract class ISBuildMenu {
       static [id: string]: any;

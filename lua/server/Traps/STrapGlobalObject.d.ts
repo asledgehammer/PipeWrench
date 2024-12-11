@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/server' {
   export namespace lua.server.Traps {
     /** @customConstructor STrapGlobalObject:new */
     export class STrapGlobalObject extends lua.server.Map.SGlobalObject {

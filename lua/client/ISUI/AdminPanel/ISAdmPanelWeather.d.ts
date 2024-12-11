@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.ISUI.AdminPanel {
     /** @customConstructor ISAdmPanelWeather:new */
     export class ISAdmPanelWeather extends lua.client.DebugUIs.DebugMenu.Base.ISDebugSubPanelBase {

@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.Seasons.ISUI {
     /** @customConstructor ISWeather:new */
     export class ISWeather extends lua.client.ISUI.ISPanel {

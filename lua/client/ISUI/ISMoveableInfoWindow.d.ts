@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISMoveableInfoWindow:new */
     export class ISMoveableInfoWindow extends lua.client.ISUI.ISPanel {

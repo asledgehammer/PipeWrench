@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.DebugUIs.DebugMenu.Climate {
     /** @customConstructor ThunderDebug:new */
     export class ThunderDebug extends lua.client.ISUI.ISCollapsableWindow {

@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor LastStandPlayerSelect:new */
     export class LastStandPlayerSelect extends lua.client.ISUI.ISPanelJoypad {

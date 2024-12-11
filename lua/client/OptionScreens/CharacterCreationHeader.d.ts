@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor CharacterCreationHeader:new */
     export class CharacterCreationHeader extends lua.client.ISUI.ISPanel {

@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.Hotbar {
     /** @customConstructor ISHotbar:new */
     export class ISHotbar extends lua.client.ISUI.ISPanelJoypad {

@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.DebugUIs.DebugMenu.Climate {
     /** @customConstructor NewFogDebug:new */
     export class NewFogDebug extends lua.client.DebugUIs.DebugMenu.Base.ISDebugSubPanelBase {

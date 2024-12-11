@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/server' {
   export namespace lua.server.Movers {
     /** @customConstructor Rabbit:new */
     export class Rabbit extends lua.server.Movers.ISBaseMover {

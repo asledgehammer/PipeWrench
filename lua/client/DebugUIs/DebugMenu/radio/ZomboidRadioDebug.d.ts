@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.DebugUIs.DebugMenu.radio {
     /** @customConstructor ZomboidRadioDebug:new */
     export class ZomboidRadioDebug extends lua.client.ISUI.ISPanel {

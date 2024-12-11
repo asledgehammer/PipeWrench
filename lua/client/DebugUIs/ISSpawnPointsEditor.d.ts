@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.DebugUIs {
     /** @customConstructor ISSpawnPointsEditor:new */
     export class ISSpawnPointsEditor extends lua.client.ISUI.ISCollapsableWindow {

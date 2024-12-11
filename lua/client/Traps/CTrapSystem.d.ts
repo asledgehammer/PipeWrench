@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.Traps {
     /** @customConstructor CTrapSystem:new */
     export class CTrapSystem extends lua.client.Map.CGlobalObjectSystem {

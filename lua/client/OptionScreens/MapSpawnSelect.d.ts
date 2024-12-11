@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.OptionScreens {
     /** @customConstructor MapSpawnSelect:new */
     export class MapSpawnSelect extends lua.client.ISUI.ISPanelJoypad {

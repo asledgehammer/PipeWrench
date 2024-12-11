@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.ISUI.PlayerStats {
     /** @customConstructor ISPlayerStatsAddXPUI:new */
     export class ISPlayerStatsAddXPUI extends lua.client.ISUI.ISPanel {

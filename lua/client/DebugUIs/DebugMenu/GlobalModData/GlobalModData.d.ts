@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.DebugUIs.DebugMenu.GlobalModData {
     /** @customConstructor GlobalModDataDebug:new */
     export class GlobalModDataDebug extends lua.client.ISUI.ISPanel {

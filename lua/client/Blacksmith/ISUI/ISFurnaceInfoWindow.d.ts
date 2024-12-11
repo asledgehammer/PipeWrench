@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.Blacksmith.ISUI {
     /** @customConstructor ISFurnaceInfoWindow:new */
     export class ISFurnaceInfoWindow extends lua.client.ISUI.ISCollapsableWindow {

@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.ISUI.Fireplace {
     /** @customConstructor ISMicrowaveUI:new */
     export class ISMicrowaveUI extends lua.client.ISUI.ISPanelJoypad {

@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.JoyPad {
     /** @customConstructor ISJoypadDebugUI:new */
     export class ISJoypadDebugUI extends lua.client.ISUI.ISUIElement {

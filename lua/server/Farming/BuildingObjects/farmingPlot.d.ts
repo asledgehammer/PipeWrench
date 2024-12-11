@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/server' {
   export namespace lua.server.Farming.BuildingObjects {
     /** @customConstructor farmingPlot:new */
     export class farmingPlot extends lua.server.BuildingObjects.ISBuildingObject {

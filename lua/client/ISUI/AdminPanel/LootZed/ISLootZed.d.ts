@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.ISUI.AdminPanel.LootZed {
     /** @customConstructor ISLootZed:new */
     export class ISLootZed extends lua.client.ISUI.ISPanelJoypad {

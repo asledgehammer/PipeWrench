@@ -1,9 +1,11 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+import { lua as sharedLua } from '@asledgehammer/pipewrench';
+
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.ISUI.PlayerData {
     /** @customConstructor ISPlayerDataObject:new */
-    export class ISPlayerDataObject extends lua.shared.ISBaseObject {
+    export class ISPlayerDataObject extends sharedLua.shared.ISBaseObject.ISBaseObject {
       [id: string]: any;
       static [id: string]: any;
 

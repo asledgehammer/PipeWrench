@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.NPCs.UI {
     /** @customConstructor CharacterInfoPage:new */
     export class CharacterInfoPage extends lua.client.ISUI.ISPanel {

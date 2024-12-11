@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.DebugUIs.BrushTool {
     /** @customConstructor BrushToolManager:new */
     export class BrushToolManager extends lua.client.ISUI.ISCollapsableWindow {

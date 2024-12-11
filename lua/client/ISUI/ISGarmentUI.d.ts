@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.ISUI {
     /** @customConstructor ISGarmentUI:new */
     export class ISGarmentUI extends lua.client.ISUI.ISCollapsableWindow {

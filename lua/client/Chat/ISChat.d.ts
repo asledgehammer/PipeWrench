@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.Chat {
     /** @customConstructor ISChat:new */
     export class ISChat extends lua.client.ISUI.ISCollapsableWindow {

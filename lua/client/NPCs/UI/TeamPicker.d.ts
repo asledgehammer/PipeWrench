@@ -1,6 +1,6 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.NPCs.UI {
     /** @customConstructor TeamPicker:new */
     export class TeamPicker extends lua.client.ISUI.ISPanel {

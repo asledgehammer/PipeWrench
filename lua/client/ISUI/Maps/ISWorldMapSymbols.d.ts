@@ -1,6 +1,8 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+import { lua as sharedLua } from '@asledgehammer/pipewrench';
+
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.ISUI.Maps {
     /** @customConstructor ISWorldMapSymbols:new */
     export class ISWorldMapSymbols extends lua.client.ISUI.ISPanelJoypad {
@@ -138,7 +140,7 @@ declare module '@asledgehammer/pipewrench' {
     }
 
     /** @customConstructor ISWorldMapSymbolTool:new */
-    export class ISWorldMapSymbolTool extends lua.shared.ISBaseObject {
+    export class ISWorldMapSymbolTool extends sharedLua.shared.ISBaseObject.ISBaseObject {
       [id: string]: any;
       static [id: string]: any;
 

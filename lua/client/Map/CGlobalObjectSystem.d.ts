@@ -1,9 +1,11 @@
 /**  @noSelfInFile */
 
-declare module '@asledgehammer/pipewrench' {
+import { lua as sharedLua } from '@asledgehammer/pipewrench';
+
+declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.Map {
     /** @customConstructor CGlobalObjectSystem:new */
-    export class CGlobalObjectSystem extends lua.shared.ISBaseObject {
+    export class CGlobalObjectSystem extends sharedLua.shared.ISBaseObject.ISBaseObject {
       [id: string]: any;
       static [id: string]: any;
 
