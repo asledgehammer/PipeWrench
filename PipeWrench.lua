@@ -1511,125 +1511,125 @@ Exports.vector2 = loadstring("return _G['vector2']")()
 -- [LUA-PARTIAL:START]
 
 --[lua/shared/defines.d.ts]
-Exports.ZomboidGlobals = loadstring("return _G['ZomboidGlobals']")()
+Exports.ZomboidGlobals = loadstring("require('lua/shared/defines');return _G['ZomboidGlobals']")()
 
 --[lua/shared/Definitions/ClothingRecipesDefinitions.d.ts]
-Exports.ClothingRecipesDefinitions = loadstring("return _G['ClothingRecipesDefinitions']")()
+Exports.ClothingRecipesDefinitions = loadstring("require('lua/shared/Definitions/ClothingRecipesDefinitions');return _G['ClothingRecipesDefinitions']")()
 
 --[lua/shared/Definitions/DefaultClothing.d.ts]
-Exports.DefaultClothing = loadstring("return _G['DefaultClothing']")()
+Exports.DefaultClothing = loadstring("require('lua/shared/Definitions/DefaultClothing');return _G['DefaultClothing']")()
 
 --[lua/shared/Definitions/FitnessExercises.d.ts]
-Exports.FitnessExercises = loadstring("return _G['FitnessExercises']")()
+Exports.FitnessExercises = loadstring("require('lua/shared/Definitions/FitnessExercises');return _G['FitnessExercises']")()
 
 --[lua/shared/Foraging/forageDefinitions.d.ts]
-Exports.forageCategories = loadstring("return _G['forageCategories']")()
-Exports.forageDefaultDefs = loadstring("return _G['forageDefaultDefs']")()
-Exports.forageDefs = loadstring("return _G['forageDefs']")()
-Exports.forageSkills = loadstring("return _G['forageSkills']")()
-Exports.forageZones = loadstring("return _G['forageZones']")()
-Exports.scavenges = loadstring("return _G['scavenges']")()
+Exports.forageCategories = loadstring("require('lua/shared/Foraging/forageDefinitions');return _G['forageCategories']")()
+Exports.forageDefaultDefs = loadstring("require('lua/shared/Foraging/forageDefinitions');return _G['forageDefaultDefs']")()
+Exports.forageDefs = loadstring("require('lua/shared/Foraging/forageDefinitions');return _G['forageDefs']")()
+Exports.forageSkills = loadstring("require('lua/shared/Foraging/forageDefinitions');return _G['forageSkills']")()
+Exports.forageZones = loadstring("require('lua/shared/Foraging/forageDefinitions');return _G['forageZones']")()
+Exports.scavenges = loadstring("require('lua/shared/Foraging/forageDefinitions');return _G['scavenges']")()
 
 --[lua/shared/Foraging/forageSystem.d.ts]
-Exports.forageSystem = loadstring("return _G['forageSystem']")()
+Exports.forageSystem = loadstring("require('lua/shared/Foraging/forageSystem');return _G['forageSystem']")()
 
 --[lua/shared/ISBaseObject.d.ts]
-Exports.ISBaseObject = loadstring("return _G['ISBaseObject']")()
+Exports.ISBaseObject = loadstring("require('lua/shared/ISBaseObject');return _G['ISBaseObject']")()
 
 --[lua/shared/iwbumstempmodelcompat.d.ts]
 
 --[lua/shared/JoyPad/JoyPadSetup.d.ts]
-Exports.JoypadControllerData = loadstring("return _G['JoypadControllerData']")()
-Exports.JoypadData = loadstring("return _G['JoypadData']")()
-Exports.joypad = loadstring("return _G['joypad']")()
-Exports.Joypad = loadstring("return _G['Joypad']")()
-Exports.JoypadState = loadstring("return _G['JoypadState']")()
+Exports.JoypadControllerData = loadstring("require('lua/shared/JoyPad/JoyPadSetup');return _G['JoypadControllerData']")()
+Exports.JoypadData = loadstring("require('lua/shared/JoyPad/JoyPadSetup');return _G['JoypadData']")()
+Exports.joypad = loadstring("require('lua/shared/JoyPad/JoyPadSetup');return _G['joypad']")()
+Exports.Joypad = loadstring("require('lua/shared/JoyPad/JoyPadSetup');return _G['Joypad']")()
+Exports.JoypadState = loadstring("require('lua/shared/JoyPad/JoyPadSetup');return _G['JoypadState']")()
 
 --[lua/shared/keyBinding.d.ts]
-Exports.keyBinding = loadstring("return _G['keyBinding']")()
+Exports.keyBinding = loadstring("require('lua/shared/keyBinding');return _G['keyBinding']")()
 
 --[lua/shared/Logs/ISLogSystem.d.ts]
-Exports.ISLogSystem = loadstring("return _G['ISLogSystem']")()
+Exports.ISLogSystem = loadstring("require('lua/shared/Logs/ISLogSystem');return _G['ISLogSystem']")()
 
 --[lua/shared/Logs/ISPerkLog.d.ts]
-Exports.ISPerkLog = loadstring("return _G['ISPerkLog']")()
+Exports.ISPerkLog = loadstring("require('lua/shared/Logs/ISPerkLog');return _G['ISPerkLog']")()
 
 --[lua/shared/luautils.d.ts]
-Exports.luautils = loadstring("return _G['luautils']")()
+Exports.luautils = loadstring("require('lua/shared/luautils');return _G['luautils']")()
 
 --[lua/shared/NPCs/MainCreationMethods.d.ts]
-Exports.BaseGameCharacterDetails = loadstring("return _G['BaseGameCharacterDetails']")()
+Exports.BaseGameCharacterDetails = loadstring("require('lua/shared/NPCs/MainCreationMethods');return _G['BaseGameCharacterDetails']")()
 
 --[lua/shared/RecordedMedia/ISRecordeMedia.d.ts]
-Exports.ISRecordedMedia = loadstring("return _G['ISRecordedMedia']")()
+Exports.ISRecordedMedia = loadstring("require('lua/shared/RecordedMedia/ISRecordeMedia');return _G['ISRecordedMedia']")()
 
 --[lua/shared/Reloading/ISRackAction.d.ts]
-Exports.ISRackAction = loadstring("return _G['ISRackAction']")()
+Exports.ISRackAction = loadstring("require('lua/shared/Reloading/ISRackAction');return _G['ISRackAction']")()
 
 --[lua/shared/Reloading/ISReloadable.d.ts]
-Exports.ISReloadable = loadstring("return _G['ISReloadable']")()
+Exports.ISReloadable = loadstring("require('lua/shared/Reloading/ISReloadable');return _G['ISReloadable']")()
 
 --[lua/shared/Reloading/ISReloadableMagazine.d.ts]
-Exports.ISReloadableMagazine = loadstring("return _G['ISReloadableMagazine']")()
+Exports.ISReloadableMagazine = loadstring("require('lua/shared/Reloading/ISReloadableMagazine');return _G['ISReloadableMagazine']")()
 
 --[lua/shared/Reloading/ISReloadableWeapon.d.ts]
-Exports.ISReloadableWeapon = loadstring("return _G['ISReloadableWeapon']")()
+Exports.ISReloadableWeapon = loadstring("require('lua/shared/Reloading/ISReloadableWeapon');return _G['ISReloadableWeapon']")()
 
 --[lua/shared/Reloading/ISReloadAction.d.ts]
-Exports.ISReloadAction = loadstring("return _G['ISReloadAction']")()
+Exports.ISReloadAction = loadstring("require('lua/shared/Reloading/ISReloadAction');return _G['ISReloadAction']")()
 
 --[lua/shared/Reloading/ISReloadManager.d.ts]
-Exports.ISReloadManager = loadstring("return _G['ISReloadManager']")()
-Exports.aaa = loadstring("return _G['aaa']")()
+Exports.ISReloadManager = loadstring("require('lua/shared/Reloading/ISReloadManager');return _G['ISReloadManager']")()
+Exports.aaa = loadstring("require('lua/shared/Reloading/ISReloadManager');return _G['aaa']")()
 
 --[lua/shared/Reloading/ISReloadUtil.d.ts]
-Exports.ISReloadUtil = loadstring("return _G['ISReloadUtil']")()
+Exports.ISReloadUtil = loadstring("require('lua/shared/Reloading/ISReloadUtil');return _G['ISReloadUtil']")()
 
 --[lua/shared/Reloading/ISRevolverWeapon.d.ts]
-Exports.ISRevolverWeapon = loadstring("return _G['ISRevolverWeapon']")()
+Exports.ISRevolverWeapon = loadstring("require('lua/shared/Reloading/ISRevolverWeapon');return _G['ISRevolverWeapon']")()
 
 --[lua/shared/Reloading/ISSemiAutoWeapon.d.ts]
-Exports.ISSemiAutoWeapon = loadstring("return _G['ISSemiAutoWeapon']")()
+Exports.ISSemiAutoWeapon = loadstring("require('lua/shared/Reloading/ISSemiAutoWeapon');return _G['ISSemiAutoWeapon']")()
 
 --[lua/shared/Reloading/ISShotgunWeapon.d.ts]
-Exports.ISShotgunWeapon = loadstring("return _G['ISShotgunWeapon']")()
+Exports.ISShotgunWeapon = loadstring("require('lua/shared/Reloading/ISShotgunWeapon');return _G['ISShotgunWeapon']")()
 
 --[lua/shared/Reloading/stormysReload.d.ts]
-Exports.ReloadManager = loadstring("return _G['ReloadManager']")()
+Exports.ReloadManager = loadstring("require('lua/shared/Reloading/stormysReload');return _G['ReloadManager']")()
 
 --[lua/shared/SoundBanks/SoundBanks.d.ts]
-Exports.ambientSoundTable = loadstring("return _G['ambientSoundTable']")()
-Exports.baseSoundTable = loadstring("return _G['baseSoundTable']")()
-Exports.footStepTable = loadstring("return _G['footStepTable']")()
-Exports.globalSoundTable = loadstring("return _G['globalSoundTable']")()
-Exports.voiceTable = loadstring("return _G['voiceTable']")()
+Exports.ambientSoundTable = loadstring("require('lua/shared/SoundBanks/SoundBanks');return _G['ambientSoundTable']")()
+Exports.baseSoundTable = loadstring("require('lua/shared/SoundBanks/SoundBanks');return _G['baseSoundTable']")()
+Exports.footStepTable = loadstring("require('lua/shared/SoundBanks/SoundBanks');return _G['footStepTable']")()
+Exports.globalSoundTable = loadstring("require('lua/shared/SoundBanks/SoundBanks');return _G['globalSoundTable']")()
+Exports.voiceTable = loadstring("require('lua/shared/SoundBanks/SoundBanks');return _G['voiceTable']")()
 
 --[lua/shared/SpawnRegions.d.ts]
-Exports.SpawnRegionMgr = loadstring("return _G['SpawnRegionMgr']")()
+Exports.SpawnRegionMgr = loadstring("require('lua/shared/SpawnRegions');return _G['SpawnRegionMgr']")()
 
 --[lua/shared/StashDescriptions/StashUtil.d.ts]
-Exports.StashUtil = loadstring("return _G['StashUtil']")()
+Exports.StashUtil = loadstring("require('lua/shared/StashDescriptions/StashUtil');return _G['StashUtil']")()
 
 --[lua/shared/TimedActions/ISBaseTimedAction.d.ts]
-Exports.ISBaseTimedAction = loadstring("return _G['ISBaseTimedAction']")()
+Exports.ISBaseTimedAction = loadstring("require('lua/shared/TimedActions/ISBaseTimedAction');return _G['ISBaseTimedAction']")()
 
 --[lua/shared/Util/AdjacentFreeTileFinder.d.ts]
-Exports.AdjacentFreeTileFinder = loadstring("return _G['AdjacentFreeTileFinder']")()
+Exports.AdjacentFreeTileFinder = loadstring("require('lua/shared/Util/AdjacentFreeTileFinder');return _G['AdjacentFreeTileFinder']")()
 
 --[lua/shared/Util/BuildingHelper.d.ts]
-Exports.BuildingHelper = loadstring("return _G['BuildingHelper']")()
+Exports.BuildingHelper = loadstring("require('lua/shared/Util/BuildingHelper');return _G['BuildingHelper']")()
 
 --[lua/shared/Util/ISPriorityTable.d.ts]
-Exports.ISPriorityTable = loadstring("return _G['ISPriorityTable']")()
+Exports.ISPriorityTable = loadstring("require('lua/shared/Util/ISPriorityTable');return _G['ISPriorityTable']")()
 
 --[lua/shared/Util/LuaList.d.ts]
-Exports.LuaList = loadstring("return _G['LuaList']")()
+Exports.LuaList = loadstring("require('lua/shared/Util/LuaList');return _G['LuaList']")()
 
 --[lua/shared/Util/LuaNet.d.ts]
-Exports.LuaNet = loadstring("return _G['LuaNet']")()
+Exports.LuaNet = loadstring("require('lua/shared/Util/LuaNet');return _G['LuaNet']")()
 
 --[lua/shared/Util/StringReplacer.d.ts]
-Exports.StringReplacer = loadstring("return _G['StringReplacer']")()
+Exports.StringReplacer = loadstring("require('lua/shared/Util/StringReplacer');return _G['StringReplacer']")()
 
 -- [LUA-PARTIAL:STOP]
 return Exports
