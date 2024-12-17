@@ -6,7 +6,13 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
+      static countItemsRecursive: (_containerList: any, _itemsNum: any, ...__args: never[]) => any;
+
+      /** @noSelf */
       static equipItems: (_player: any, _primItemToEquip: any, _scndItemToEquip: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static findRootInventory: (_inventory: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static getConditionRGB: (condition: any, ...__args: never[]) => any;
@@ -53,16 +59,25 @@ declare module '@asledgehammer/pipewrench' {
       static stringStarts: (String: any, Start: any, ...__args: never[]) => any;
 
       /** @noSelf */
+      static tableContains: (table2: any, value: any, ...__args: never[]) => any;
+
+      /** @noSelf */
       static trim: (s: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static updatePerksXp: (perks: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static walkAdj: (playerObj: any, square: any, keepActions: any, ...__args: never[]) => any;
+      static walk: (playerObj: any, square: any, keepActions: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static walkAdj: (playerObj: any, square: any, keepActions: any, excludeList: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static walkAdjAltTest: (playerObj: any, square: any, altSquare: any, keepActions: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static walkAdjTest: (playerObj: any, square: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static walkAdjWall: (playerObj: any, square: any, north: any, keepActions: any, ...__args: never[]) => any;

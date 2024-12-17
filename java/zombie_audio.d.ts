@@ -70,6 +70,11 @@ declare module '@asledgehammer/pipewrench' {
       isPlaying(arg0: string | number): boolean;
       /**
        * Method Parameters: 
+       *  - (long arg0, String arg1): boolean
+       */
+      isUsingParameter(arg0: number, arg1: string): boolean;
+      /**
+       * Method Parameters: 
        *  - (String arg0): number
        */
       playAmbientLoopedImpl(arg0: string): number;
@@ -132,6 +137,11 @@ declare module '@asledgehammer/pipewrench' {
       setParameterValue(arg0: number, arg1: fmod.fmod.FMOD_STUDIO_PARAMETER_DESCRIPTION, arg2: number): void;
       /**
        * Method Parameters: 
+       *  - (long arg0, String arg1, float arg2): void
+       */
+      setParameterValueByName(arg0: number, arg1: string, arg2: number): void;
+      /**
+       * Method Parameters: 
        *  - (long arg0, float arg1): void
        */
       setPitch(arg0: number, arg1: number): void;
@@ -170,6 +180,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): void
        */
       stopOrTriggerSoundByName(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (long arg0): void
+       */
+      stopOrTriggerSoundLocal(arg0: number): void;
       /**
        * Method Parameters: 
        *  - (long arg0): number
@@ -262,6 +277,11 @@ declare module '@asledgehammer/pipewrench' {
       isPlaying(arg0: string | number): boolean;
       /**
        * Method Parameters: 
+       *  - (long arg0, String arg1): boolean
+       */
+      isUsingParameter(arg0: number, arg1: string): boolean;
+      /**
+       * Method Parameters: 
        *  - (String arg0): number
        */
       playAmbientLoopedImpl(arg0: string): number;
@@ -324,6 +344,11 @@ declare module '@asledgehammer/pipewrench' {
       setParameterValue(arg0: number, arg1: fmod.fmod.FMOD_STUDIO_PARAMETER_DESCRIPTION, arg2: number): void;
       /**
        * Method Parameters: 
+       *  - (long arg0, String arg1, float arg2): void
+       */
+      setParameterValueByName(arg0: number, arg1: string, arg2: number): void;
+      /**
+       * Method Parameters: 
        *  - (long arg0, float arg1): void
        */
       setPitch(arg0: number, arg1: number): void;
@@ -362,6 +387,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): void
        */
       stopOrTriggerSoundByName(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (long arg0): void
+       */
+      stopOrTriggerSoundLocal(arg0: number): void;
       /**
        * Method Parameters: 
        *  - (long arg0): number
@@ -681,6 +711,262 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       hasSustainPoints(): boolean;
+    }
+    /**
+     * @customConstructor MusicIntensityConfig.new
+     * @
+     * [CLASS] zombie.audio.MusicIntensityConfig
+     */
+    export class MusicIntensityConfig {
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       */
+      constructor();
+      /**
+       * Method Parameters: 
+       *  - (IsoGameCharacter arg0): void
+       */
+      checkHealthPanelVisible(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (KahluaTableImpl arg0): void
+       */
+      initEvents(arg0: se.krka.kahlua.j2se.KahluaTableImpl): void;
+      /**
+       * Method Parameters: 
+       *  - (IsoGameCharacter arg0): void
+       */
+      restoreToFullHealth(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, MusicIntensityEvents arg1): zombie.audio.MusicIntensityEvent
+       */
+      triggerEvent(arg0: string, arg1: zombie.audio.MusicIntensityEvents): zombie.audio.MusicIntensityEvent;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.audio.MusicIntensityConfig
+       */
+      static getInstance(): zombie.audio.MusicIntensityConfig;
+    }
+    /**
+     * @customConstructor MusicIntensityEvent.new
+     * @
+     * [CLASS] zombie.audio.MusicIntensityEvent
+     */
+    export class MusicIntensityEvent {
+      /**
+       * Constructors: 
+       *  - (String arg0, float arg1, long arg2)
+       */
+      constructor(arg0: string, arg1: number, arg2: number);
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getDuration(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getElapsedTime(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getId(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getIntensity(): number;
+      /**
+       * Method Parameters: 
+       *  - (long arg0): void
+       */
+      setElapsedTime(arg0: number): void;
+    }
+    /**
+     * @customConstructor MusicIntensityEvents.new
+     * @
+     * [CLASS] zombie.audio.MusicIntensityEvents
+     */
+    export class MusicIntensityEvents {
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       */
+      constructor();
+      /**
+       * Method Parameters: 
+       *  - (String arg0, float arg1, long arg2, boolean arg3): zombie.audio.MusicIntensityEvent
+       */
+      addEvent(arg0: string, arg1: number, arg2: number, arg3: boolean): zombie.audio.MusicIntensityEvent;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      clear(): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): zombie.audio.MusicIntensityEvent
+       */
+      findEventById(arg0: string): zombie.audio.MusicIntensityEvent;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): zombie.audio.MusicIntensityEvent
+       */
+      getEventByIndex(arg0: number): zombie.audio.MusicIntensityEvent;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getEventCount(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getIntensity(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      update(): void;
+    }
+    /**
+     * @customConstructor MusicThreatConfig.new
+     * @
+     * [CLASS] zombie.audio.MusicThreatConfig
+     */
+    export class MusicThreatConfig {
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       */
+      constructor();
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getStatusCount(): number;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): string
+       */
+      getStatusIdByIndex(arg0: number): string;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): number
+       */
+      getStatusIntensity(arg0: string): number;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): number
+       */
+      getStatusIntensityByIndex(arg0: number): number;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): number
+       */
+      getStatusIntensityOverride(arg0: string): number;
+      /**
+       * Method Parameters: 
+       *  - (KahluaTableImpl arg0): void
+       */
+      initStatuses(arg0: se.krka.kahlua.j2se.KahluaTableImpl): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): boolean
+       */
+      isStatusIntensityOverridden(arg0: string): boolean;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, float arg1): void
+       */
+      setStatusIntensityOverride(arg0: string, arg1: number): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.audio.MusicThreatConfig
+       */
+      static getInstance(): zombie.audio.MusicThreatConfig;
+    }
+    /**
+     * @customConstructor MusicThreatStatus.new
+     * @
+     * [CLASS] zombie.audio.MusicThreatStatus
+     */
+    export class MusicThreatStatus {
+      /**
+       * Constructors: 
+       *  - (String arg0, float arg1)
+       */
+      constructor(arg0: string, arg1: number);
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getId(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getIntensity(): number;
+      /**
+       * Method Parameters: 
+       *  - (float arg0): void
+       */
+      setIntensity(arg0: number): void;
+    }
+    /**
+     * @customConstructor MusicThreatStatuses.new
+     * @
+     * [CLASS] zombie.audio.MusicThreatStatuses
+     */
+    export class MusicThreatStatuses {
+      /**
+       * Constructors: 
+       *  - (IsoPlayer arg0)
+       */
+      constructor(arg0: zombie.characters.IsoPlayer);
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      clear(): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): zombie.audio.MusicThreatStatus
+       */
+      findStatusById(arg0: string): zombie.audio.MusicThreatStatus;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getIntensity(): number;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): zombie.audio.MusicThreatStatus
+       */
+      getStatusByIndex(arg0: number): zombie.audio.MusicThreatStatus;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getStatusCount(): number;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, float arg1): zombie.audio.MusicThreatStatus
+       */
+      setStatus(arg0: string, arg1: number): zombie.audio.MusicThreatStatus;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      update(): void;
     }
     /**
      * @customConstructor ObjectAmbientEmitters.new
@@ -1081,6 +1367,28 @@ declare module '@asledgehammer/pipewrench' {
        *  - (BaseSoundEmitter arg0, long arg1): void
        */
       stopPlaying(arg0: zombie.audio.BaseSoundEmitter, arg1: number): void;
+    }
+    /**
+     * @customConstructor TreeSoundManager.new
+     * @
+     * [CLASS] zombie.audio.TreeSoundManager
+     */
+    export class TreeSoundManager {
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       */
+      constructor();
+      /**
+       * Method Parameters: 
+       *  - (IsoGridSquare arg0): void
+       */
+      addSquare(arg0: zombie.iso.IsoGridSquare): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      update(): void;
     }
   }
 }

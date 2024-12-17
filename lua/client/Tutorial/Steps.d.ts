@@ -194,6 +194,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       static finished: any;
 
+      static forcedShoutBinding: any;
+
       static forceSpawnHorde: any;
 
       static hassprintedTimer: any;

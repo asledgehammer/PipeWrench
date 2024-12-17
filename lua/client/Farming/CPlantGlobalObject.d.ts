@@ -14,6 +14,8 @@ declare module '@asledgehammer/pipewrench/client' {
       getObject(...__args: never[]): any;
 
       isAlive(...__args: never[]): any;
+
+      isBadMonth(...__args: never[]): any;
     }
   }
   export namespace lua.client.Farming.CPlantGlobalObject {}

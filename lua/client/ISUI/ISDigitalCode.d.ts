@@ -57,7 +57,7 @@ declare module '@asledgehammer/pipewrench/client' {
         player: any,
         padlock: any,
         thumpable: any,
-        _new_: any,
+        _new_: any
       );
 
       decrement(number: any, ...__args: never[]): any;

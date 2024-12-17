@@ -59,8 +59,6 @@ declare module '@asledgehammer/pipewrench/server' {
 
       skipBuildAction: any;
 
-      surfaceKeyTimer: any;
-
       surfaceSelected: any;
 
       surfacesPossible: any;

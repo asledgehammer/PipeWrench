@@ -56,139 +56,31 @@ declare module '@asledgehammer/pipewrench' {
       allocate(): any;
     }
     /**
-     * @customConstructor ZombiePopulationManager.new
+     * @customConstructor Ownership.new
      * @
-     * [CLASS] zombie.popman.ZombiePopulationManager
+     * [CLASS] zombie.popman.Ownership
      */
-    export class ZombiePopulationManager {
-      /** boolean */
-      static bDebugLoggingEnabled: boolean;
-      /** zombie.popman.ZombiePopulationManager */
-      static readonly instance?: zombie.popman.ZombiePopulationManager;
-
-
+    export class Ownership {
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       */
+      constructor();
       /**
        * Method Parameters: 
-       *  - (IsoChunk arg0): void
+       *  - (Empty): zombie.core.raknet.UdpConnection
        */
-      addChunkToWorld(arg0: zombie.iso.IsoChunk): void;
+      getConnection(): zombie.core.raknet.UdpConnection;
       /**
        * Method Parameters: 
-       *  - (WorldSound arg0, boolean arg1): void
+       *  - (int arg0): boolean
        */
-      addWorldSound(arg0: zombie.WorldSoundManager$WorldSound, arg1: boolean): void;
+      isBlocked(arg0: number): boolean;
       /**
        * Method Parameters: 
-       *  - (Empty): void
+       *  - (UdpConnection arg0): void
        */
-      beginSaveRealZombies(): void;
-      /**
-       * Method Parameters: 
-       *  - (int arg0, int arg1, int arg2, int arg3, int arg4): void
-       */
-      createHordeFromTo(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number): void;
-      /**
-       * Method Parameters: 
-       *  - (int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): void
-       */
-      createHordeInAreaTo(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): void;
-      /**
-       * Method Parameters: 
-       *  - (int arg0, int arg1): void
-       */
-      dbgClearZombies(arg0: number, arg1: number): void;
-      /**
-       * Method Parameters: 
-       *  - (int arg0, int arg1): void
-       */
-      dbgSpawnNow(arg0: number, arg1: number): void;
-      /**
-       * Method Parameters: 
-       *  - (int arg0, int arg1): void
-       */
-      dbgSpawnTimeToZero(arg0: number, arg1: number): void;
-      /**
-       * Method Parameters: 
-       *  - (Empty): void
-       */
-      endSaveRealZombies(): void;
-      /**
-       * Method Parameters: 
-       *  - (IsoMetaGrid arg0): void
-       */
-      init(arg0: zombie.iso.IsoMetaGrid): void;
-      /**
-       * Method Parameters: 
-       *  - (Empty): void
-       */
-      onConfigReloaded(): void;
-      /**
-       * Method Parameters: 
-       *  - (int arg0, int arg1, int arg2): void
-       */
-      playerSpawnedAt(arg0: number, arg1: number, arg2: number): void;
-      /**
-       * Method Parameters: 
-       *  - (int arg0, int arg1, int arg2, int arg3, KahluaTable arg4): void
-       */
-      registerSpawnOrigin(arg0: number, arg1: number, arg2: number, arg3: number, arg4: se.krka.kahlua.vm.KahluaTable): void;
-      /**
-       * Method Parameters: 
-       *  - (IsoChunk arg0): void
-       */
-      removeChunkFromWorld(arg0: zombie.iso.IsoChunk): void;
-      /**
-       * Method Parameters: 
-       *  - (Empty): void
-       */
-      save(): void;
-      /**
-       * Method Parameters: 
-       *  - (int arg0, int arg1, int arg2): void
-       */
-      setAggroTarget(arg0: number, arg1: number, arg2: number): void;
-      /**
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      shouldWait(): boolean;
-      /**
-       * Method Parameters: 
-       *  - (IsoZombie arg0, IsoGridSquare arg1): void
-       */
-      sitAgainstWall(arg0: zombie.characters.IsoZombie, arg1: zombie.iso.IsoGridSquare): void;
-      /**
-       * Method Parameters: 
-       *  - (Empty): void
-       */
-      stop(): void;
-      /**
-       * Method Parameters: 
-       *  - (Empty): void
-       */
-      updateLoadedAreas(): void;
-      /**
-       * Method Parameters: 
-       *  - (Empty): void
-       */
-      updateMain(): void;
-      /**
-       * Method Parameters: 
-       *  - (Empty): void
-       */
-      updateThread(): void;
-      /**
-       * Method Parameters: 
-       *  - (IsoZombie arg0): void
-       */
-      virtualizeZombie(arg0: zombie.characters.IsoZombie): void;
-      /**
-       * @noSelf
-       *
-       * Method Parameters: 
-       *  - (Empty): void
-       */
-      static init(): void;
+      setOwnership(arg0: zombie.core.raknet.UdpConnection): void;
     }
     /**
      * @customConstructor ZombiePopulationRenderer.new
@@ -373,6 +265,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): boolean
        */
       isValidString(arg0: string): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.config.ConfigOption
+       */
+      makeCopy(): zombie.config.ConfigOption;
       /**
        * Method Parameters: 
        *  - (String arg0): void

@@ -25,8 +25,6 @@ declare module '@asledgehammer/pipewrench/client' {
 
       richtext: any;
 
-      setY: any;
-
       subFocus: any;
 
       tmpTxt: any;
@@ -51,6 +49,10 @@ declare module '@asledgehammer/pipewrench/client' {
 
       /** @noSelf */
       static OnOpenPanel: (...__args: never[]) => any;
+    }
+
+    export abstract class ThermoDebug {
+      static [id: string]: any;
     }
   }
   export namespace lua.client.DebugUIs.DebugMenu.Climate.ThermoDebug {}

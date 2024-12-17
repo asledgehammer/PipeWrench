@@ -67,7 +67,7 @@ declare module '@asledgehammer/pipewrench/client' {
         arg1: any,
         arg2: any,
         arg3: any,
-        arg4: any,
+        arg4: any
       );
 
       addOption(text: any, data: any, texture: any, enabled: any, ...__args: never[]): any;

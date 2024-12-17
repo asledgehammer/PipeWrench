@@ -139,6 +139,70 @@ declare module '@asledgehammer/pipewrench' {
     export class WorldMapStyleLayer$Stop {
 
     }
+    /** [ENUM] zombie.worldMap.styles.WorldMapStyleLayer$TextureScaling */
+    export class WorldMapStyleLayer$TextureScaling {
+      protected constructor();
+      static readonly IsoGridSquare: zombie.worldMap.styles.WorldMapStyleLayer$TextureScaling;
+      static readonly ScreenPixel: zombie.worldMap.styles.WorldMapStyleLayer$TextureScaling;
+      name(): string;
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.worldMap.styles.WorldMapStyleLayer$TextureScaling>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.worldMap.styles.WorldMapStyleLayer$TextureScaling>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): zombie.worldMap.styles.WorldMapStyleLayer$TextureScaling
+       *  - (Class arg0, String arg1): T
+       */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.worldMap.styles.WorldMapStyleLayer$TextureScaling | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.worldMap.styles.WorldMapStyleLayer$TextureScaling[]
+       */
+      static values(): zombie.worldMap.styles.WorldMapStyleLayer$TextureScaling[];
+    }
     /**
      * @customConstructor TextureStop.new
      * @
@@ -148,8 +212,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Constructors: 
        *  - (float arg0, String arg1)
+       *  - (float arg0, String arg1, String arg2)
+       *  - (float arg0, String arg1, TextureScaling arg2)
        */
-      constructor(arg0: number, arg1: string);
+      constructor(arg0: number, arg1: string, arg2?: string | zombie.worldMap.styles.WorldMapStyleLayer$TextureScaling);
     }
     /**
      * @customConstructor WorldMapStyleV1.new
@@ -293,8 +359,9 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (float arg0, String arg1): void
+       *  - (float arg0, String arg1, String arg2): void
        */
-      addTexture(arg0: number, arg1: string): void;
+      addTexture(arg0: number, arg1: string, arg2?: string): void;
       /**
        * Method Parameters: 
        *  - (int arg0): number
@@ -347,6 +414,11 @@ declare module '@asledgehammer/pipewrench' {
       getMinZoom(): number;
       /**
        * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScaleStops(): number;
+      /**
+       * Method Parameters: 
        *  - (int arg0): zombie.core.textures.Texture
        */
       getTexture(arg0: number): zombie.core.textures.Texture;
@@ -355,6 +427,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0): string
        */
       getTexturePath(arg0: number): string;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): string
+       */
+      getTextureScaling(arg0: number): string;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -379,12 +456,22 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (int arg0, int arg1): void
        */
+      moveScale(arg0: number, arg1: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, int arg1): void
+       */
       moveTexture(arg0: number, arg1: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
        */
       removeFill(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): void
+       */
+      removeScale(arg0: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -417,9 +504,24 @@ declare module '@asledgehammer/pipewrench' {
       setMinZoom(arg0: number): void;
       /**
        * Method Parameters: 
+       *  - (int arg0, int arg1): void
+       */
+      setScaleValue(arg0: number, arg1: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, float arg1): void
+       */
+      setScaleZoom(arg0: number, arg1: number): void;
+      /**
+       * Method Parameters: 
        *  - (int arg0, String arg1): void
        */
       setTexturePath(arg0: number, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, String arg1): void
+       */
+      setTextureScaling(arg0: number, arg1: string): void;
       /**
        * Method Parameters: 
        *  - (int arg0, float arg1): void

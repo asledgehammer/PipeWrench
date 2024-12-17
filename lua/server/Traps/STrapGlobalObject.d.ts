@@ -9,6 +9,8 @@ declare module '@asledgehammer/pipewrench/server' {
 
       animal: any;
 
+      animalAliveHour: any;
+
       animalHour: any;
 
       bait: any;
@@ -38,6 +40,8 @@ declare module '@asledgehammer/pipewrench/server' {
       zone: any;
 
       constructor(luaSystem: any, globalObject: any);
+
+      addAliveAnimal(character: any, ...__args: never[]): any;
 
       addBait(bait: any, age: any, baitAmountMulti: any, player: any, ...__args: never[]): any;
 

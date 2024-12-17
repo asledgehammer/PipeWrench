@@ -19,6 +19,10 @@ declare module '@asledgehammer/pipewrench/client' {
 
       queueList: any;
 
+      started: any;
+
+      transactionId: any;
+
       constructor(character: any, item: any, time: any);
 
       checkQueueList(...__args: never[]): any;

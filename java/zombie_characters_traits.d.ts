@@ -2,6 +2,100 @@
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.characters.traits {
     /**
+     * @customConstructor CharacterTraits.new
+     * @
+     * [CLASS] zombie.characters.traits.CharacterTraits extends zombie.characters.traits.TraitCollection
+     */
+    export class CharacterTraits {
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       */
+      constructor();
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      add(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (Collection arg0): void
+       */
+      addAll(arg0: java.util.Collection<string>): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      clear(): void;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       *  - (String arg0): boolean
+       */
+      contains(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): string
+       */
+      get(arg0: number): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getTraitDamageDealtReductionModifier(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getTraitEnduranceLossModifier(): number;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): zombie.characters.traits.TraitCollection$TraitSlot
+       */
+      getTraitSlot(arg0: string): zombie.characters.traits.TraitCollection$TraitSlot;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getTraitWeatherPenaltyModifier(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEmpty(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isIlliterate(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       *  - (String arg0): boolean
+       */
+      remove(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Collection arg0): void
+       */
+      removeAll(arg0: java.util.Collection<any>): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, boolean arg1): void
+       */
+      set(arg0: string, arg1: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      size(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+    }
+    /**
      * @customConstructor ObservationFactory.new
      * @
      * [CLASS] zombie.characters.traits.ObservationFactory
@@ -281,6 +375,11 @@ declare module '@asledgehammer/pipewrench' {
       constructor(arg0: string, arg1: string, arg2: number, arg3: string, arg4: boolean, arg5: boolean);
       /**
        * Method Parameters: 
+       *  - (String arg0): void
+       */
+      addFreeTrait(arg0: string): void;
+      /**
+       * Method Parameters: 
        *  - (Perk arg0, int arg1): void
        */
       addXPBoost(arg0: zombie.characters.skills.PerkFactory$Perk, arg1: number): void;
@@ -299,6 +398,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): java.util.List<string>
        */
       getFreeRecipes(): java.util.List<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getFreeTraits(): java.util.ArrayList<string>;
       /**
        * Method Parameters: 
        *  - (Empty): string

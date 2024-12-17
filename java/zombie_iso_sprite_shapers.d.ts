@@ -2,14 +2,11 @@
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.iso.sprite.shapers {
     /**
-     * @customConstructor WallShaperWhole.new
+     * @customConstructor WallShaper.new
      * @
-     * [CLASS] zombie.iso.sprite.shapers.WallShaperWhole extends zombie.iso.sprite.shapers.WallShaper
+     * [CLASS] zombie.iso.sprite.shapers.WallShaper
      */
-    export class WallShaperWhole {
-      /** zombie.iso.sprite.shapers.WallShaperWhole */
-      static readonly instance?: zombie.iso.sprite.shapers.WallShaperWhole;
-
+    export class WallShaper {
       /**
        * Constructors: 
        *  - (Empty Constructor)

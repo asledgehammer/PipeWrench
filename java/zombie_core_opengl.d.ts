@@ -2,6 +2,24 @@
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.core.opengl {
     /**
+     * @customConstructor IModelCamera.new
+     * @
+     * [INTERFACE] zombie.core.opengl.IModelCamera
+     */
+    export class IModelCamera {
+      protected constructor();
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      Begin(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      End(): void;
+    }
+    /**
      * @customConstructor IShaderProgramListener.new
      * @
      * [INTERFACE] zombie.core.opengl.IShaderProgramListener
@@ -93,6 +111,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): number
        */
+      getBlurFactor(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
       getBmod(): number;
       /**
        * Method Parameters: 
@@ -104,6 +127,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): number
        */
       getDesaturation(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getDrunkFactor(): number;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -156,14 +184,11 @@ declare module '@asledgehammer/pipewrench' {
       isExterior(): boolean;
     }
     /**
-     * @customConstructor Shader.new
+     * @customConstructor SDFShader.new
      * @
-     * [CLASS] zombie.core.opengl.Shader
+     * [CLASS] zombie.core.opengl.SDFShader extends zombie.core.opengl.Shader
      */
-    export class Shader {
-      /** java.util.HashMap<java.lang.Integer, zombie.core.opengl.Shader> */
-      static ShaderMap?: java.util.HashMap<number, zombie.core.opengl.Shader>;
-
+    export class SDFShader {
       /**
        * Constructors: 
        *  - (String arg0)
@@ -173,7 +198,27 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): void
        */
+      Activate(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
       End(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      GetRequiresSkinning(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (ModelMesh arg0): void
+       */
+      SetupBones(arg0: zombie.core.skinnedmodel.model.ModelMesh): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      SetupInstancedData(): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -193,12 +238,37 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): number
        */
+      getHeight(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
       getID(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getName(): string;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.core.opengl.ShaderProgram
        */
       getProgram(): zombie.core.opengl.ShaderProgram;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getRequiresSkinning(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.opengl.ShaderProgram
+       */
+      getShaderProgram(): zombie.core.opengl.ShaderProgram;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getWidth(): number;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -211,9 +281,19 @@ declare module '@asledgehammer/pipewrench' {
       postRender(arg0: zombie.core.textures.TextureDraw): void;
       /**
        * Method Parameters: 
+       *  - (int arg0): void
+       */
+      setHeight(arg0: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0): void
        */
       setTexture(arg0: zombie.core.textures.Texture): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): void
+       */
+      setWidth(arg0: number): void;
       /**
        * Method Parameters: 
        *  - (TextureDraw arg0, int arg1): void
@@ -224,6 +304,176 @@ declare module '@asledgehammer/pipewrench' {
        *  - (TextureDraw arg0): void
        */
       startRenderThread(arg0: zombie.core.textures.TextureDraw): void;
+      /**
+       * Method Parameters: 
+       *  - (float arg0, float arg1, float arg2, float arg3, float arg4): void
+       */
+      updateOutline(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number): void;
+      /**
+       * Method Parameters: 
+       *  - (float arg0): void
+       */
+      updateShadow(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (float arg0): void
+       */
+      updateThreshold(arg0: number): void;
+    }
+    /**
+     * @customConstructor Shader.new
+     * @
+     * [CLASS] zombie.core.opengl.Shader
+     */
+    export class Shader {
+      /** java.util.HashMap<java.lang.Integer, zombie.core.opengl.Shader> */
+      static ShaderMap?: java.util.HashMap<number, zombie.core.opengl.Shader>;
+
+      /**
+       * Constructors: 
+       *  - (String arg0)
+       */
+      constructor(arg0: string);
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      Activate(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      End(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      GetRequiresSkinning(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (ModelMesh arg0): void
+       */
+      SetupBones(arg0: zombie.core.skinnedmodel.model.ModelMesh): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      SetupInstancedData(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      Start(): void;
+      /**
+       * Method Parameters: 
+       *  - (ShaderProgram arg0): void
+       */
+      callback(arg0: zombie.core.opengl.ShaderProgram): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      destroy(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getHeight(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getID(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.opengl.ShaderProgram
+       */
+      getProgram(): zombie.core.opengl.ShaderProgram;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getRequiresSkinning(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.opengl.ShaderProgram
+       */
+      getShaderProgram(): zombie.core.opengl.ShaderProgram;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getWidth(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isCompiled(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (TextureDraw arg0): void
+       */
+      postRender(arg0: zombie.core.textures.TextureDraw): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): void
+       */
+      setHeight(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0): void
+       */
+      setTexture(arg0: zombie.core.textures.Texture): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): void
+       */
+      setWidth(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (TextureDraw arg0, int arg1): void
+       */
+      startMainThread(arg0: zombie.core.textures.TextureDraw, arg1: number): void;
+      /**
+       * Method Parameters: 
+       *  - (TextureDraw arg0): void
+       */
+      startRenderThread(arg0: zombie.core.textures.TextureDraw): void;
+    }
+    /**
+     * @customConstructor Skinning.new
+     * @
+     * [CLASS] zombie.core.opengl.Shader$Skinning
+     */
+    export class Shader$Skinning {
+
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      Init(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (ModelMesh arg0): void
+       */
+      SetupBones(arg0: zombie.core.skinnedmodel.model.ModelMesh): void;
+    }
+    /**
+     * @customConstructor IDs.new
+     * @
+     * [CLASS] zombie.core.opengl.Shader$Skinning$IDs
+     */
+    export class Shader$Skinning$IDs {
+      /**
+       * Constructors: 
+       *  - (Skinning arg0)
+       */
+      constructor(arg0: zombie.core.opengl.Shader$Skinning);
     }
     /**
      * @customConstructor ShaderProgram.new
@@ -298,11 +548,12 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, float arg1): void
        *  - (String arg0, int arg1): void
        *  - (String arg0, Matrix4f arg1): void
+       *  - (String arg0, Matrix4f arg1): void
        *  - (String arg0, Vector2 arg1): void
        *  - (String arg0, Vector3 arg1): void
        *  - (String arg0, Texture arg1, int arg2): void
        */
-      setValue(arg0: string, arg1: number | org.lwjgl.util.vector.Matrix4f | zombie.iso.Vector2 | zombie.iso.Vector3 | zombie.core.textures.Texture, arg2?: number): void;
+      setValue(arg0: string, arg1: number | org.joml.Matrix4f | org.lwjgl.util.vector.Matrix4f | zombie.iso.Vector2 | zombie.iso.Vector3 | zombie.core.textures.Texture, arg2?: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, int arg1): void
@@ -342,9 +593,9 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (String arg0, boolean arg1, boolean arg2): zombie.core.opengl.ShaderProgram
+       *  - (String arg0, boolean arg1, boolean arg2, boolean arg3): zombie.core.opengl.ShaderProgram
        */
-      static createShaderProgram(arg0: string, arg1: boolean, arg2: boolean): zombie.core.opengl.ShaderProgram;
+      static createShaderProgram(arg0: string, arg1: boolean, arg2: boolean, arg3: boolean): zombie.core.opengl.ShaderProgram;
       /**
        * @noSelf
        *

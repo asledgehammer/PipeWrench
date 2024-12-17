@@ -10,6 +10,9 @@ declare module '@asledgehammer/pipewrench' {
 
       /** @noSelf */
       static getFreeTilesFromRandomRoomInBuilding: (building: any, count: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static getShovelAnim: (item: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.shared.Util.BuildingHelper {}

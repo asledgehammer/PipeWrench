@@ -35,7 +35,7 @@ declare module '@asledgehammer/pipewrench/client' {
         headerText: any,
         except: any,
         scriptOnOk: any,
-        leaderInstance: any,
+        leaderInstance: any
       );
 
       changeOption(option: any, ...__args: never[]): any;

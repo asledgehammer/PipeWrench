@@ -134,6 +134,21 @@ declare module '@asledgehammer/pipewrench' {
       getAllowRandomTint(): boolean;
       /**
        * Method Parameters: 
+       *  - (Empty): string
+       */
+      getAltFemaleModel(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getAltMaleModel(): string;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): string
+       */
+      getAltModel(arg0: boolean): string;
+      /**
+       * Method Parameters: 
        *  - (Empty): zombie.asset.AssetManager
        */
       getAssetManager(): zombie.asset.AssetManager;
@@ -182,6 +197,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): number
        */
       getRefCount(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getSpawnWith(): java.util.ArrayList<string>;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.asset.Asset$State
@@ -497,6 +517,11 @@ declare module '@asledgehammer/pipewrench' {
       findItemByGUID(arg0: string): zombie.core.skinnedmodel.population.ClothingItemReference;
       /**
        * Method Parameters: 
+       *  - (Empty): string
+       */
+      getName(): string;
+      /**
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isEmpty(): boolean;
@@ -527,6 +552,101 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty Constructor)
        */
       constructor();
+    }
+    /**
+     * @customConstructor VoiceStyle.new
+     * @
+     * [CLASS] zombie.core.skinnedmodel.population.VoiceStyle
+     */
+    export class VoiceStyle {
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       */
+      constructor();
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getBodyTypeDefault(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getPrefix(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getVoiceType(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isValid(): boolean;
+    }
+    /**
+     * @customConstructor VoiceStyles.new
+     * @
+     * [CLASS] zombie.core.skinnedmodel.population.VoiceStyles
+     */
+    export class VoiceStyles {
+      /** zombie.core.skinnedmodel.population.VoiceStyles */
+      static instance?: zombie.core.skinnedmodel.population.VoiceStyles;
+
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       */
+      constructor();
+      /**
+       * Method Parameters: 
+       *  - (String arg0): zombie.core.skinnedmodel.population.VoiceStyle
+       */
+      FindStyle(arg0: string): zombie.core.skinnedmodel.population.VoiceStyle;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<zombie.core.skinnedmodel.population.VoiceStyle>
+       */
+      getAllStyles(): java.util.ArrayList<zombie.core.skinnedmodel.population.VoiceStyle>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.population.VoiceStyles
+       */
+      getInstance(): zombie.core.skinnedmodel.population.VoiceStyles;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): zombie.core.skinnedmodel.population.VoiceStyles
+       */
+      static Parse(arg0: string): zombie.core.skinnedmodel.population.VoiceStyles;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      static Reset(): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      static init(): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): zombie.core.skinnedmodel.population.VoiceStyles
+       */
+      static parse(arg0: string): zombie.core.skinnedmodel.population.VoiceStyles;
     }
   }
 }

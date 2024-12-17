@@ -71,6 +71,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       headerHgt: any;
 
+      highlightItems: any;
+
       hotbar: any;
 
       inventory: any;
@@ -125,6 +127,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       canPutIn(...__args: never[]): any;
 
+      clearWorldObjectHighlights(...__args: never[]): any;
+
       collapseAll(button: any, ...__args: never[]): any;
 
       createChildren(...__args: never[]): any;
@@ -138,6 +142,8 @@ declare module '@asledgehammer/pipewrench/client' {
       doGrabOnJoypadSelected(...__args: never[]): any;
 
       doJoypadExpandCollapse(...__args: never[]): any;
+
+      doWorldObjectHighlight(_item: any, ...__args: never[]): any;
 
       drawItemDetails(item: any, y: any, xoff: any, yoff: any, red: any, ...__args: never[]): any;
 
@@ -154,6 +160,10 @@ declare module '@asledgehammer/pipewrench/client' {
       ): any;
 
       expandAll(button: any, ...__args: never[]): any;
+
+      findItemForWorldObjectHighlight(_itemTest: any, ...__args: never[]): any;
+
+      getScrollAreaHeight(...__args: never[]): any;
 
       hideButtons(...__args: never[]): any;
 
@@ -230,6 +240,8 @@ declare module '@asledgehammer/pipewrench/client' {
       updateSmoothScrolling(...__args: never[]): any;
 
       updateTooltip(...__args: never[]): any;
+
+      updateWorldObjectHighlight(...__args: never[]): any;
 
       /** @noSelf */
       static getActualItems: (items: any, ...__args: never[]) => any;

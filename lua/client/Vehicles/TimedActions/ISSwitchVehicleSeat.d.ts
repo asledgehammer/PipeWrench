@@ -11,7 +11,7 @@ declare module '@asledgehammer/pipewrench/client' {
 
       seatTo: any;
 
-      constructor(character: any, seatTo: any);
+      constructor(character: any, seatTo: any, seatFrom: any);
     }
   }
   export namespace lua.client.Vehicles.TimedActions.ISSwitchVehicleSeat {}

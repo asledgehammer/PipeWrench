@@ -36,6 +36,16 @@ declare module '@asledgehammer/pipewrench/client' {
       ) => any;
 
       /** @noSelf */
+      static onPaper: (
+        worldobjects: any,
+        player: any,
+        thumpable: any,
+        papering: any,
+        wallType: any,
+        ...__args: never[]
+      ) => any;
+
+      /** @noSelf */
       static onPlaster: (worldobjects: any, player: any, thumpable: any, square: any, ...__args: never[]) => any;
     }
   }

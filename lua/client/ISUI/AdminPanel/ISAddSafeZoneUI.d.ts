@@ -49,8 +49,6 @@ declare module '@asledgehammer/pipewrench/client' {
 
       constructor(x: any, y: any, width: any, height: any, character: any);
 
-      checkIfAdmin(...__args: never[]): any;
-
       checkIfIntersectingAnotherZone(...__args: never[]): any;
 
       highlightZone(_x1: any, _x2: any, _y1: any, _y2: any, _fullHighlight: any, ...__args: never[]): any;

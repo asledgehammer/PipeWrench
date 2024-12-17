@@ -9,6 +9,10 @@ declare module '@asledgehammer/pipewrench/server' {
     export abstract class Painting {
       static [id: string]: any;
     }
+
+    export abstract class WallPaper {
+      static [id: string]: any;
+    }
   }
   export namespace lua.server.BuildingObjects.PaintingReference {}
 }

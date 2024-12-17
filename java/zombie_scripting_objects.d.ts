@@ -14,10 +14,75 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
-       *  - (String arg0, String arg1): void
-       *  - (String arg0, String[] arg1): void
+       *  - (String arg0): void
        */
-      Load(arg0: string, arg1: string | string[]): void;
+      InitLoadPP(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      Load(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       *  - (Block arg0): void
+       */
+      LoadCommonBlock(arg0: string | zombie.scripting.ScriptParser$Block): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnLoadedAfterLua(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnPostWorldDictionaryInit(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptLoadMode arg0): void
+       */
+      OnScriptsLoaded(arg0: zombie.scripting.ScriptLoadMode): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      PreReload(): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      addLoadedScriptBody(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      calculateScriptVersion(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      debugString(): string;
+      /**
+       * Method Parameters: 
+       *  - (ArrayList arg0): java.util.ArrayList<string>
+       */
+      getAllScriptLines(arg0: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, ArrayList arg1): java.util.ArrayList<string>
+       */
+      getBodyScriptLines(arg0: number, arg1: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getLoadedScriptBodies(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getLoadedScriptBodyCount(): number;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.scripting.objects.ScriptModule
@@ -25,9 +90,453 @@ declare module '@asledgehammer/pipewrench' {
       getModule(): zombie.scripting.objects.ScriptModule;
       /**
        * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getObsolete(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.BaseScriptObject
+       */
+      getParent(): zombie.scripting.objects.BaseScriptObject;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getScriptLines(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectFullType(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.ScriptType
+       */
+      getScriptObjectType(): zombie.scripting.ScriptType;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScriptVersion(): number;
+      /**
+       * Method Parameters: 
+       *  - (IVersionHash arg0): void
+       */
+      getVersion(arg0: zombie.world.scripts.IVersionHash): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isDebugOnly(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEnabled(): boolean;
+      /**
+       * Method Parameters: 
        *  - (Empty): void
        */
       reset(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      resetLoadedScriptBodies(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptModule arg0): void
+       */
+      setModule(arg0: zombie.scripting.objects.ScriptModule): void;
+      /**
+       * Method Parameters: 
+       *  - (BaseScriptObject arg0): void
+       */
+      setParent(arg0: zombie.scripting.objects.BaseScriptObject): void;
+    }
+    /**
+     * @customConstructor BaseScriptObject.new
+     * @
+     * [ABSTRACT CLASS] zombie.scripting.objects.BaseScriptObject
+     */
+    export class BaseScriptObject {
+
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      InitLoadPP(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      Load(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       *  - (Block arg0): void
+       */
+      LoadCommonBlock(arg0: string | zombie.scripting.ScriptParser$Block): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnLoadedAfterLua(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnPostWorldDictionaryInit(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptLoadMode arg0): void
+       */
+      OnScriptsLoaded(arg0: zombie.scripting.ScriptLoadMode): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      PreReload(): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      addLoadedScriptBody(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      calculateScriptVersion(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      debugString(): string;
+      /**
+       * Method Parameters: 
+       *  - (ArrayList arg0): java.util.ArrayList<string>
+       */
+      getAllScriptLines(arg0: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, ArrayList arg1): java.util.ArrayList<string>
+       */
+      getBodyScriptLines(arg0: number, arg1: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getLoadedScriptBodies(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getLoadedScriptBodyCount(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.ScriptModule
+       */
+      getModule(): zombie.scripting.objects.ScriptModule;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getObsolete(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.BaseScriptObject
+       */
+      getParent(): zombie.scripting.objects.BaseScriptObject;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getScriptLines(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectFullType(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.ScriptType
+       */
+      getScriptObjectType(): zombie.scripting.ScriptType;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScriptVersion(): number;
+      /**
+       * Method Parameters: 
+       *  - (IVersionHash arg0): void
+       */
+      getVersion(arg0: zombie.world.scripts.IVersionHash): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isDebugOnly(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEnabled(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      reset(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      resetLoadedScriptBodies(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptModule arg0): void
+       */
+      setModule(arg0: zombie.scripting.objects.ScriptModule): void;
+      /**
+       * Method Parameters: 
+       *  - (BaseScriptObject arg0): void
+       */
+      setParent(arg0: zombie.scripting.objects.BaseScriptObject): void;
+    }
+    /**
+     * @customConstructor EnergyDefinitionScript.new
+     * @
+     * [CLASS] zombie.scripting.objects.EnergyDefinitionScript extends zombie.scripting.objects.BaseScriptObject
+     */
+    export class EnergyDefinitionScript {
+
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      InitLoadPP(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      Load(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       *  - (Block arg0): void
+       */
+      LoadCommonBlock(arg0: string | zombie.scripting.ScriptParser$Block): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnLoadedAfterLua(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnPostWorldDictionaryInit(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptLoadMode arg0): void
+       */
+      OnScriptsLoaded(arg0: zombie.scripting.ScriptLoadMode): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      PreReload(): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      addLoadedScriptBody(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      calculateScriptVersion(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      debugString(): string;
+      /**
+       * Method Parameters: 
+       *  - (ArrayList arg0): java.util.ArrayList<string>
+       */
+      getAllScriptLines(arg0: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, ArrayList arg1): java.util.ArrayList<string>
+       */
+      getBodyScriptLines(arg0: number, arg1: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.Color
+       */
+      getColor(): zombie.core.Color;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getDisplayName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.entity.energy.EnergyType
+       */
+      getEnergyType(): zombie.entity.energy.EnergyType;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getEnergyTypeString(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getExistsAsVanilla(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.textures.Texture
+       */
+      getHorizontalBarTexture(): zombie.core.textures.Texture;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.textures.Texture
+       */
+      getIconTexture(): zombie.core.textures.Texture;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getLoadedScriptBodies(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getLoadedScriptBodyCount(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getModID(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.ScriptModule
+       */
+      getModule(): zombie.scripting.objects.ScriptModule;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getObsolete(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.BaseScriptObject
+       */
+      getParent(): zombie.scripting.objects.BaseScriptObject;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getScriptLines(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectFullType(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.ScriptType
+       */
+      getScriptObjectType(): zombie.scripting.ScriptType;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScriptVersion(): number;
+      /**
+       * Method Parameters: 
+       *  - (IVersionHash arg0): void
+       */
+      getVersion(arg0: zombie.world.scripts.IVersionHash): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.textures.Texture
+       */
+      getVerticalBarTexture(): zombie.core.textures.Texture;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isDebugOnly(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEnabled(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isVanilla(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      reset(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      resetLoadedScriptBodies(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptModule arg0): void
+       */
+      setModule(arg0: zombie.scripting.objects.ScriptModule): void;
+      /**
+       * Method Parameters: 
+       *  - (BaseScriptObject arg0): void
+       */
+      setParent(arg0: zombie.scripting.objects.BaseScriptObject): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.core.textures.Texture
+       */
+      static getDefaultHorizontalBarTexture(): zombie.core.textures.Texture;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.core.textures.Texture
+       */
+      static getDefaultIconTexture(): zombie.core.textures.Texture;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.core.textures.Texture
+       */
+      static getDefaultVerticalBarTexture(): zombie.core.textures.Texture;
     }
     /**
      * @customConstructor EvolvedRecipe.new
@@ -42,9 +551,40 @@ declare module '@asledgehammer/pipewrench' {
       constructor(arg0: string);
       /**
        * Method Parameters: 
-       *  - (String arg0, String[] arg1): void
+       *  - (String arg0): void
        */
-      Load(arg0: string, arg1: string[]): void;
+      InitLoadPP(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      Load(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       *  - (Block arg0): void
+       */
+      LoadCommonBlock(arg0: string | zombie.scripting.ScriptParser$Block): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnLoadedAfterLua(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnPostWorldDictionaryInit(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptLoadMode arg0): void
+       */
+      OnScriptsLoaded(arg0: zombie.scripting.ScriptLoadMode): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      PreReload(): void;
       /**
        * Method Parameters: 
        *  - (InventoryItem arg0, InventoryItem arg1, IsoGameCharacter arg2): zombie.inventory.InventoryItem
@@ -52,14 +592,39 @@ declare module '@asledgehammer/pipewrench' {
       addItem(arg0: zombie.inventory.InventoryItem, arg1: zombie.inventory.InventoryItem, arg2: zombie.characters.IsoGameCharacter): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      addLoadedScriptBody(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      calculateScriptVersion(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      debugString(): string;
+      /**
+       * Method Parameters: 
        *  - (Empty): string
        */
       getAddIngredientSound(): string;
       /**
        * Method Parameters: 
+       *  - (ArrayList arg0): java.util.ArrayList<string>
+       */
+      getAllScriptLines(arg0: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
        *  - (Empty): string
        */
       getBaseItem(): string;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, ArrayList arg1): java.util.ArrayList<string>
+       */
+      getBodyScriptLines(arg0: number, arg1: java.util.ArrayList<string>): java.util.ArrayList<string>;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -82,9 +647,24 @@ declare module '@asledgehammer/pipewrench' {
       getItemsList(): java.util.Map<string, zombie.scripting.objects.ItemRecipe>;
       /**
        * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getLoadedScriptBodies(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getLoadedScriptBodyCount(): number;
+      /**
+       * Method Parameters: 
        *  - (Empty): number
        */
       getMaxItems(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getMinimumWater(): number;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.scripting.objects.ScriptModule
@@ -97,9 +677,19 @@ declare module '@asledgehammer/pipewrench' {
       getName(): string;
       /**
        * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getObsolete(): boolean;
+      /**
+       * Method Parameters: 
        *  - (Empty): string
        */
       getOriginalname(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.BaseScriptObject
+       */
+      getParent(): zombie.scripting.objects.BaseScriptObject;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.ArrayList<zombie.scripting.objects.ItemRecipe>
@@ -112,9 +702,44 @@ declare module '@asledgehammer/pipewrench' {
       getResultItem(): string;
       /**
        * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getScriptLines(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectFullType(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.ScriptType
+       */
+      getScriptObjectType(): zombie.scripting.ScriptType;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScriptVersion(): number;
+      /**
+       * Method Parameters: 
        *  - (Empty): string
        */
       getUntranslatedName(): string;
+      /**
+       * Method Parameters: 
+       *  - (IVersionHash arg0): void
+       */
+      getVersion(arg0: zombie.world.scripts.IVersionHash): void;
+      /**
+       * Method Parameters: 
+       *  - (InventoryItem arg0): boolean
+       */
+      hasMinimumWater(arg0: zombie.inventory.InventoryItem): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -125,6 +750,16 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       isCookable(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isDebugOnly(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEnabled(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -147,6 +782,16 @@ declare module '@asledgehammer/pipewrench' {
       needToBeCooked(arg0: zombie.inventory.InventoryItem): boolean;
       /**
        * Method Parameters: 
+       *  - (Empty): void
+       */
+      reset(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      resetLoadedScriptBodies(): void;
+      /**
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setAllowFrozenItem(arg0: boolean): void;
@@ -155,6 +800,16 @@ declare module '@asledgehammer/pipewrench' {
        *  - (boolean arg0): void
        */
       setIsHidden(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptModule arg0): void
+       */
+      setModule(arg0: zombie.scripting.objects.ScriptModule): void;
+      /**
+       * Method Parameters: 
+       *  - (BaseScriptObject arg0): void
+       */
+      setParent(arg0: zombie.scripting.objects.BaseScriptObject): void;
     }
     /**
      * @customConstructor Fixing.new
@@ -169,9 +824,45 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
-       *  - (String arg0, String[] arg1): void
+       *  - (String arg0): void
        */
-      Load(arg0: string, arg1: string[]): void;
+      InitLoadPP(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      Load(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       *  - (Block arg0): void
+       */
+      LoadCommonBlock(arg0: string | zombie.scripting.ScriptParser$Block): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnLoadedAfterLua(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnPostWorldDictionaryInit(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptLoadMode arg0): void
+       */
+      OnScriptsLoaded(arg0: zombie.scripting.ScriptLoadMode): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      PreReload(): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      addLoadedScriptBody(arg0: string, arg1: string): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -179,9 +870,29 @@ declare module '@asledgehammer/pipewrench' {
       addRequiredItem(arg0: string): void;
       /**
        * Method Parameters: 
+       *  - (Empty): void
+       */
+      calculateScriptVersion(): void;
+      /**
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, Fixer arg1, InventoryItem arg2): number
        */
       countUses(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.scripting.objects.Fixing$Fixer, arg2: zombie.inventory.InventoryItem): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      debugString(): string;
+      /**
+       * Method Parameters: 
+       *  - (ArrayList arg0): java.util.ArrayList<string>
+       */
+      getAllScriptLines(arg0: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, ArrayList arg1): java.util.ArrayList<string>
+       */
+      getBodyScriptLines(arg0: number, arg1: java.util.ArrayList<string>): java.util.ArrayList<string>;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -199,6 +910,16 @@ declare module '@asledgehammer/pipewrench' {
       getGlobalItem(): zombie.scripting.objects.Fixing$Fixer;
       /**
        * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getLoadedScriptBodies(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getLoadedScriptBodyCount(): number;
+      /**
+       * Method Parameters: 
        *  - (Empty): zombie.scripting.objects.ScriptModule
        */
       getModule(): zombie.scripting.objects.ScriptModule;
@@ -207,6 +928,16 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): string
        */
       getName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getObsolete(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.BaseScriptObject
+       */
+      getParent(): zombie.scripting.objects.BaseScriptObject;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, Fixer arg1, InventoryItem arg2, ArrayList arg3): java.util.ArrayList<zombie.inventory.InventoryItem>
@@ -224,6 +955,36 @@ declare module '@asledgehammer/pipewrench' {
       getRequiredItems(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.scripting.objects.Fixing$Fixer, arg2: zombie.inventory.InventoryItem): java.util.ArrayList<zombie.inventory.InventoryItem>;
       /**
        * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getScriptLines(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectFullType(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.ScriptType
+       */
+      getScriptObjectType(): zombie.scripting.ScriptType;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScriptVersion(): number;
+      /**
+       * Method Parameters: 
+       *  - (IVersionHash arg0): void
+       */
+      getVersion(arg0: zombie.world.scripts.IVersionHash): void;
+      /**
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0): zombie.inventory.InventoryItem
        */
       haveGlobalItem(arg0: zombie.characters.IsoGameCharacter): zombie.inventory.InventoryItem;
@@ -232,6 +993,26 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0, Fixer arg1, InventoryItem arg2): zombie.inventory.InventoryItem
        */
       haveThisFixer(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.scripting.objects.Fixing$Fixer, arg2: zombie.inventory.InventoryItem): zombie.inventory.InventoryItem;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isDebugOnly(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEnabled(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      reset(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      resetLoadedScriptBodies(): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -244,9 +1025,19 @@ declare module '@asledgehammer/pipewrench' {
       setGlobalItem(arg0: zombie.scripting.objects.Fixing$Fixer): void;
       /**
        * Method Parameters: 
+       *  - (ScriptModule arg0): void
+       */
+      setModule(arg0: zombie.scripting.objects.ScriptModule): void;
+      /**
+       * Method Parameters: 
        *  - (String arg0): void
        */
       setName(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (BaseScriptObject arg0): void
+       */
+      setParent(arg0: zombie.scripting.objects.BaseScriptObject): void;
       /**
        * Method Parameters: 
        *  - (InventoryItem arg0, IsoGameCharacter arg1): zombie.scripting.objects.Fixing$Fixer
@@ -303,6 +1094,496 @@ declare module '@asledgehammer/pipewrench' {
       getSkillName(): string;
     }
     /**
+     * @customConstructor FluidDefinitionScript.new
+     * @
+     * [CLASS] zombie.scripting.objects.FluidDefinitionScript extends zombie.scripting.objects.BaseScriptObject
+     */
+    export class FluidDefinitionScript {
+
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      InitLoadPP(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      Load(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       *  - (Block arg0): void
+       */
+      LoadCommonBlock(arg0: string | zombie.scripting.ScriptParser$Block): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnLoadedAfterLua(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnPostWorldDictionaryInit(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptLoadMode arg0): void
+       */
+      OnScriptsLoaded(arg0: zombie.scripting.ScriptLoadMode): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      PreReload(): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      addLoadedScriptBody(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      calculateScriptVersion(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      debugString(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getAlcohol(): number;
+      /**
+       * Method Parameters: 
+       *  - (ArrayList arg0): java.util.ArrayList<string>
+       */
+      getAllScriptLines(arg0: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.FluidFilterScript
+       */
+      getBlendBlackList(): zombie.scripting.objects.FluidFilterScript;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.FluidFilterScript
+       */
+      getBlendWhitelist(): zombie.scripting.objects.FluidFilterScript;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, ArrayList arg1): java.util.ArrayList<string>
+       */
+      getBodyScriptLines(arg0: number, arg1: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getCalories(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getCarbohydrates(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.EnumSet<zombie.entity.components.fluids.FluidCategory>
+       */
+      getCategories(): java.util.EnumSet<zombie.entity.components.fluids.FluidCategory>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.Color
+       */
+      getColor(): zombie.core.Color;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getDisplayName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getEnduranceChange(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getExistsAsVanilla(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getFatigueChange(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getFluReduction(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.entity.components.fluids.FluidType
+       */
+      getFluidType(): zombie.entity.components.fluids.FluidType;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getFluidTypeString(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getFoodSicknessReduction(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getHungerChange(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getLipids(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getLoadedScriptBodies(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getLoadedScriptBodyCount(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getModID(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.ScriptModule
+       */
+      getModule(): zombie.scripting.objects.ScriptModule;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getObsolete(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getPainReduction(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.BaseScriptObject
+       */
+      getParent(): zombie.scripting.objects.BaseScriptObject;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getPoisonDiluteRatio(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.entity.components.fluids.PoisonEffect
+       */
+      getPoisonMaxEffect(): zombie.entity.components.fluids.PoisonEffect;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getPoisonMinAmount(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getProteins(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getScriptLines(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectFullType(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.ScriptType
+       */
+      getScriptObjectType(): zombie.scripting.ScriptType;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScriptVersion(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getStressChange(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getThirstChange(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getUnhappyChange(): number;
+      /**
+       * Method Parameters: 
+       *  - (IVersionHash arg0): void
+       */
+      getVersion(arg0: zombie.world.scripts.IVersionHash): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      hasPropertiesSet(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isDebugOnly(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEnabled(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isVanilla(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      reset(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      resetLoadedScriptBodies(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptModule arg0): void
+       */
+      setModule(arg0: zombie.scripting.objects.ScriptModule): void;
+      /**
+       * Method Parameters: 
+       *  - (BaseScriptObject arg0): void
+       */
+      setParent(arg0: zombie.scripting.objects.BaseScriptObject): void;
+    }
+    /**
+     * @customConstructor FluidFilterScript.new
+     * @
+     * [CLASS] zombie.scripting.objects.FluidFilterScript extends zombie.scripting.objects.BaseScriptObject
+     */
+    export class FluidFilterScript {
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       */
+      constructor();
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      InitLoadPP(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      Load(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (Block arg0): void
+       */
+      LoadAnonymousFromBlock(arg0: zombie.scripting.ScriptParser$Block): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      LoadAnonymousSingleFluid(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       *  - (Block arg0): void
+       */
+      LoadCommonBlock(arg0: string | zombie.scripting.ScriptParser$Block): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnLoadedAfterLua(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnPostWorldDictionaryInit(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptLoadMode arg0): void
+       */
+      OnScriptsLoaded(arg0: zombie.scripting.ScriptLoadMode): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      PreReload(): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      addLoadedScriptBody(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      calculateScriptVersion(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.FluidFilterScript
+       */
+      copy(): zombie.scripting.objects.FluidFilterScript;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.entity.components.fluids.FluidFilter
+       */
+      createFilter(): zombie.entity.components.fluids.FluidFilter;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      debugString(): string;
+      /**
+       * Method Parameters: 
+       *  - (ArrayList arg0): java.util.ArrayList<string>
+       */
+      getAllScriptLines(arg0: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, ArrayList arg1): java.util.ArrayList<string>
+       */
+      getBodyScriptLines(arg0: number, arg1: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.entity.components.fluids.FluidFilter
+       */
+      getFilter(): zombie.entity.components.fluids.FluidFilter;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getLoadedScriptBodies(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getLoadedScriptBodyCount(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.ScriptModule
+       */
+      getModule(): zombie.scripting.objects.ScriptModule;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getObsolete(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.BaseScriptObject
+       */
+      getParent(): zombie.scripting.objects.BaseScriptObject;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getScriptLines(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectFullType(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.ScriptType
+       */
+      getScriptObjectType(): zombie.scripting.ScriptType;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScriptVersion(): number;
+      /**
+       * Method Parameters: 
+       *  - (IVersionHash arg0): void
+       */
+      getVersion(arg0: zombie.world.scripts.IVersionHash): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isDebugOnly(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEnabled(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isSingleFluid(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      reset(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      resetLoadedScriptBodies(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptModule arg0): void
+       */
+      setModule(arg0: zombie.scripting.objects.ScriptModule): void;
+      /**
+       * Method Parameters: 
+       *  - (BaseScriptObject arg0): void
+       */
+      setParent(arg0: zombie.scripting.objects.BaseScriptObject): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.FluidFilterScript
+       *  - (boolean arg0): zombie.scripting.objects.FluidFilterScript
+       */
+      static GetAnonymous(arg0?: boolean): zombie.scripting.objects.FluidFilterScript;
+    }
+    /**
      * @customConstructor GameSoundScript.new
      * @
      * [CLASS] zombie.scripting.objects.GameSoundScript extends zombie.scripting.objects.BaseScriptObject
@@ -315,10 +1596,75 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
-       *  - (String arg0, String arg1): void
-       *  - (String arg0, String[] arg1): void
+       *  - (String arg0): void
        */
-      Load(arg0: string, arg1: string | string[]): void;
+      InitLoadPP(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      Load(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       *  - (Block arg0): void
+       */
+      LoadCommonBlock(arg0: string | zombie.scripting.ScriptParser$Block): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnLoadedAfterLua(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnPostWorldDictionaryInit(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptLoadMode arg0): void
+       */
+      OnScriptsLoaded(arg0: zombie.scripting.ScriptLoadMode): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      PreReload(): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      addLoadedScriptBody(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      calculateScriptVersion(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      debugString(): string;
+      /**
+       * Method Parameters: 
+       *  - (ArrayList arg0): java.util.ArrayList<string>
+       */
+      getAllScriptLines(arg0: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, ArrayList arg1): java.util.ArrayList<string>
+       */
+      getBodyScriptLines(arg0: number, arg1: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getLoadedScriptBodies(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getLoadedScriptBodyCount(): number;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.scripting.objects.ScriptModule
@@ -326,14 +1672,97 @@ declare module '@asledgehammer/pipewrench' {
       getModule(): zombie.scripting.objects.ScriptModule;
       /**
        * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getObsolete(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.BaseScriptObject
+       */
+      getParent(): zombie.scripting.objects.BaseScriptObject;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getScriptLines(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectFullType(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.ScriptType
+       */
+      getScriptObjectType(): zombie.scripting.ScriptType;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScriptVersion(): number;
+      /**
+       * Method Parameters: 
+       *  - (IVersionHash arg0): void
+       */
+      getVersion(arg0: zombie.world.scripts.IVersionHash): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isDebugOnly(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEnabled(): boolean;
+      /**
+       * Method Parameters: 
        *  - (Empty): void
        */
       reset(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      resetLoadedScriptBodies(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptModule arg0): void
+       */
+      setModule(arg0: zombie.scripting.objects.ScriptModule): void;
+      /**
+       * Method Parameters: 
+       *  - (BaseScriptObject arg0): void
+       */
+      setParent(arg0: zombie.scripting.objects.BaseScriptObject): void;
+    }
+    /**
+     * @customConstructor IModelAttachmentOwner.new
+     * @
+     * [INTERFACE] zombie.scripting.objects.IModelAttachmentOwner
+     */
+    export class IModelAttachmentOwner {
+      protected constructor();
+      /**
+       * Method Parameters: 
+       *  - (ModelAttachment arg0): void
+       */
+      afterRenameAttachment(arg0: zombie.scripting.objects.ModelAttachment): void;
+      /**
+       * Method Parameters: 
+       *  - (ModelAttachment arg0): void
+       */
+      beforeRenameAttachment(arg0: zombie.scripting.objects.ModelAttachment): void;
     }
     /**
      * @customConstructor Item.new
      * @
-     * [CLASS] zombie.scripting.objects.Item extends zombie.scripting.objects.BaseScriptObject
+     * [CLASS] zombie.scripting.objects.Item extends zombie.scripting.entity.GameEntityScript
      */
     export class Item {
       /** java.util.HashMap<java.lang.Integer, java.lang.String> */
@@ -349,18 +1778,86 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): void
+       *  - (String arg0, String arg1): void
        */
-      DoParam(arg0: string): void;
+      DoParam(arg0: string, arg1?: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      InitLoadPP(arg0: string): void;
       /**
        * Method Parameters: 
        *  - (String arg0): zombie.inventory.InventoryItem
+       *  - (String arg0, boolean arg1): zombie.inventory.InventoryItem
        */
-      InstanceItem(arg0: string): zombie.inventory.InventoryItem;
+      InstanceItem(arg0: string, arg1?: boolean): zombie.inventory.InventoryItem;
       /**
        * Method Parameters: 
-       *  - (String arg0, String[] arg1): void
+       *  - (String arg0, String arg1): void
        */
-      Load(arg0: string, arg1: string[]): void;
+      Load(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): boolean
+       */
+      LoadAttribute(arg0: string, arg1: string): boolean;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       *  - (Block arg0): void
+       */
+      LoadCommonBlock(arg0: string | zombie.scripting.ScriptParser$Block): void;
+      /**
+       * Method Parameters: 
+       *  - (Block arg0): void
+       */
+      LoadComponentBlock(arg0: zombie.scripting.ScriptParser$Block): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnLoadedAfterLua(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnPostWorldDictionaryInit(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptLoadMode arg0): void
+       */
+      OnScriptsLoaded(arg0: zombie.scripting.ScriptLoadMode): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      PreReload(): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      addLoadedScriptBody(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      calculateScriptVersion(): void;
+      /**
+       * Method Parameters: 
+       *  - (ComponentType arg0): boolean
+       */
+      containsComponent(arg0: zombie.entity.ComponentType): boolean;
+      /**
+       * Method Parameters: 
+       *  - (GameEntityScript arg0): void
+       */
+      copyFrom(arg0: zombie.scripting.entity.GameEntityScript): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      debugString(): string;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -373,9 +1870,19 @@ declare module '@asledgehammer/pipewrench' {
       getActualWeight(): number;
       /**
        * Method Parameters: 
+       *  - (ArrayList arg0): java.util.ArrayList<string>
+       */
+      getAllScriptLines(arg0: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
        *  - (Empty): string
        */
       getAmmoType(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getB(): number;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.ArrayList<zombie.characterTextures.BloodClothingType>
@@ -386,6 +1893,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): string
        */
       getBodyLocation(): string;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, ArrayList arg1): java.util.ArrayList<string>
+       */
+      getBodyScriptLines(arg0: number, arg1: java.util.ArrayList<string>): java.util.ArrayList<string>;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -406,11 +1918,6 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): string
        */
       getBulletOutSound(): string;
-      /**
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      getCanStoreWater(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.ArrayList<string>
@@ -450,6 +1957,31 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): number
        */
+      getColorBlue(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getColorGreen(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getColorRed(): number;
+      /**
+       * Method Parameters: 
+       *  - (ComponentType arg0): T
+       */
+      getComponentScriptFor<T>(arg0: zombie.entity.ComponentType): T;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<zombie.scripting.entity.ComponentScript>
+       */
+      getComponentScripts(): java.util.ArrayList<zombie.scripting.entity.ComponentScript>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
       getConditionLowerChance(): number;
       /**
        * Method Parameters: 
@@ -461,6 +1993,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): string
        */
       getCookingSound(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getCorpseSicknessDefense(): number;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -478,6 +2015,11 @@ declare module '@asledgehammer/pipewrench' {
       getCustomEatSound(): string;
       /**
        * Method Parameters: 
+       *  - (Empty): string
+       */
+      getDamagedSound(): string;
+      /**
+       * Method Parameters: 
        *  - (Empty): number
        */
       getDaysFresh(): number;
@@ -490,12 +2032,27 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): string
        */
+      getDigType(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getDiscomfortModifier(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
       getDisplayCategory(): string;
       /**
        * Method Parameters: 
        *  - (Empty): string
        */
       getDisplayName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getDisplayNameDebug(): string;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -506,6 +2063,16 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): string
        */
       getDoorHitSound(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getDropSound(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getEatTime(): number;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -543,6 +2110,11 @@ declare module '@asledgehammer/pipewrench' {
       getEquipSound(): string;
       /**
        * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getEvolvedRecipe(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getExistsAsVanilla(): boolean;
@@ -570,12 +2142,42 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): string
        */
+      getFillFromLakeSound(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
       getFillFromTapSound(): string;
       /**
        * Method Parameters: 
        *  - (Empty): string
        */
+      getFillFromToiletSound(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getFireFuelRatio(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
       getFullName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getG(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getHeadConditionLowerChanceMultiplier(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getHearingModifier(): number;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -618,6 +2220,16 @@ declare module '@asledgehammer/pipewrench' {
       getInsulation(): number;
       /**
        * Method Parameters: 
+       *  - (Empty): zombie.scripting.itemConfig.ItemConfig
+       */
+      getItemConfig(): zombie.scripting.itemConfig.ItemConfig;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getItemConfigKey(): string;
+      /**
+       * Method Parameters: 
        *  - (Empty): number
        */
       getKnockdownMod(): number;
@@ -626,6 +2238,21 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): number
        */
       getLevelSkillTrained(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getLoadedScriptBodies(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getLoadedScriptBodyCount(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getLootType(): string;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -646,6 +2273,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): number
        */
       getMaxHitCount(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getMaxItemSize(): number;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -735,6 +2367,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): string
        */
+      getOnBreak(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
       getOpenSound(): string;
       /**
        * Method Parameters: 
@@ -758,6 +2395,11 @@ declare module '@asledgehammer/pipewrench' {
       getPalettesStart(): string;
       /**
        * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.BaseScriptObject
+       */
+      getParent(): zombie.scripting.objects.BaseScriptObject;
+      /**
+       * Method Parameters: 
        *  - (Empty): string
        */
       getPhysicsObject(): string;
@@ -775,6 +2417,21 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): number
        */
+      getPoisonDetectionLevel(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getPoisonPower(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getPourType(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
       getPushBackMod(): number;
       /**
        * Method Parameters: 
@@ -785,7 +2442,12 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): number
        */
-      getRainFactor(): number;
+      getR(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getReadType(): string;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -828,9 +2490,44 @@ declare module '@asledgehammer/pipewrench' {
       getReplaceWhenUnequip(): string;
       /**
        * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getScriptLines(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectFullType(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.ScriptType
+       */
+      getScriptObjectType(): zombie.scripting.ScriptType;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScriptVersion(): number;
+      /**
+       * Method Parameters: 
        *  - (Empty): string
        */
       getShellFallSound(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getShoutMultiplier(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getShoutType(): string;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -858,6 +2555,11 @@ declare module '@asledgehammer/pipewrench' {
       getSoundVolume(): number;
       /**
        * Method Parameters: 
+       *  - (Empty): string
+       */
+      getSpawnWith(): string;
+      /**
+       * Method Parameters: 
        *  - (Empty): number
        */
       getSplatNumber(): number;
@@ -871,6 +2573,21 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): string
        */
       getStaticModel(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getStaticModelException(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getStaticModelsByIndex(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getStrainModifier(): number;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -953,6 +2670,21 @@ declare module '@asledgehammer/pipewrench' {
       getUseDelta(): number;
       /**
        * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<zombie.scripting.objects.VehiclePartModel>
+       */
+      getVehiclePartModels(): java.util.ArrayList<zombie.scripting.objects.VehiclePartModel>;
+      /**
+       * Method Parameters: 
+       *  - (IVersionHash arg0): void
+       */
+      getVersion(arg0: zombie.world.scripts.IVersionHash): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getVisionModifier(): number;
+      /**
+       * Method Parameters: 
        *  - (Empty): number
        */
       getWaterresist(): number;
@@ -961,6 +2693,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): string
        */
       getWeaponSprite(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getWeaponSpritesByIndex(): java.util.ArrayList<string>;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -983,9 +2720,49 @@ declare module '@asledgehammer/pipewrench' {
       getWindresist(): number;
       /**
        * Method Parameters: 
+       *  - (Empty): string
+       */
+      getWithDrainable(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getWithoutDrainable(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getWorldObjectSprite(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getWorldStaticModel(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getWorldStaticModelsByIndex(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      hasComponents(): boolean;
+      /**
+       * Method Parameters: 
        *  - (String arg0): boolean
        */
       hasReplaceType(arg0: string): boolean;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): boolean
+       */
+      hasTag(arg0: string): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      ignoreZombieDensity(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -1035,6 +2812,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isCookwareLoot(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isCosmetic(): boolean;
       /**
        * Method Parameters: 
@@ -1045,7 +2827,22 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isDebugOnly(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isDisappearOnUse(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEnabled(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isFarmingLoot(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -1060,12 +2857,37 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isKeepOnDeplete(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isKnockBackOnNoDeath(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
        */
       isManuallyRemoveSpentRounds(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isMaterialLoot(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isMechanicsLoot(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isMedicalLoot(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isMementoLoot(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -1105,6 +2927,16 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isSurvivalGearLoot(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isToolLoot(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isUseEndurance(): boolean;
       /**
        * Method Parameters: 
@@ -1125,7 +2957,22 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isVisualAid(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isWorldRender(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      reset(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      resetLoadedScriptBodies(): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -1288,6 +3135,16 @@ declare module '@asledgehammer/pipewrench' {
       setIsCookable(arg0: boolean): void;
       /**
        * Method Parameters: 
+       *  - (ItemConfig arg0): void
+       */
+      setItemConfig(arg0: zombie.scripting.itemConfig.ItemConfig): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setKeepOnDeplete(arg0: boolean): void;
+      /**
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setKnockBackOnNoDeath(arg0: boolean): void;
@@ -1348,6 +3205,11 @@ declare module '@asledgehammer/pipewrench' {
       setModID(arg0: string): void;
       /**
        * Method Parameters: 
+       *  - (ScriptModule arg0): void
+       */
+      setModule(arg0: zombie.scripting.objects.ScriptModule): void;
+      /**
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setMultipleHitConditionAffected(arg0: boolean): void;
@@ -1386,6 +3248,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): void
        */
       setPalettesStart(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (BaseScriptObject arg0): void
+       */
+      setParent(arg0: zombie.scripting.objects.BaseScriptObject): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -1577,6 +3444,7 @@ declare module '@asledgehammer/pipewrench' {
       protected constructor();
       static readonly AlarmClock: zombie.scripting.objects.Item$Type;
       static readonly AlarmClockClothing: zombie.scripting.objects.Item$Type;
+      static readonly Animal: zombie.scripting.objects.Item$Type;
       static readonly Clothing: zombie.scripting.objects.Item$Type;
       static readonly Container: zombie.scripting.objects.Item$Type;
       static readonly Drainable: zombie.scripting.objects.Item$Type;
@@ -1650,6 +3518,175 @@ declare module '@asledgehammer/pipewrench' {
       static values(): zombie.scripting.objects.Item$Type[];
     }
     /**
+     * @customConstructor ItemFilterScript.new
+     * @
+     * [CLASS] zombie.scripting.objects.ItemFilterScript extends zombie.scripting.objects.BaseScriptObject
+     */
+    export class ItemFilterScript {
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       */
+      constructor();
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      InitLoadPP(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      Load(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       *  - (Block arg0): void
+       */
+      LoadCommonBlock(arg0: string | zombie.scripting.ScriptParser$Block): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnLoadedAfterLua(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnPostWorldDictionaryInit(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptLoadMode arg0): void
+       */
+      OnScriptsLoaded(arg0: zombie.scripting.ScriptLoadMode): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      PreReload(): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      addLoadedScriptBody(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (InventoryItem arg0): boolean
+       *  - (Item arg0): boolean
+       */
+      allowsItem(arg0: zombie.inventory.InventoryItem | zombie.scripting.objects.Item): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      calculateScriptVersion(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      debugString(): string;
+      /**
+       * Method Parameters: 
+       *  - (ArrayList arg0): java.util.ArrayList<string>
+       */
+      getAllScriptLines(arg0: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, ArrayList arg1): java.util.ArrayList<string>
+       */
+      getBodyScriptLines(arg0: number, arg1: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getLoadedScriptBodies(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getLoadedScriptBodyCount(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.ScriptModule
+       */
+      getModule(): zombie.scripting.objects.ScriptModule;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getObsolete(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.BaseScriptObject
+       */
+      getParent(): zombie.scripting.objects.BaseScriptObject;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getScriptLines(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectFullType(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.ScriptType
+       */
+      getScriptObjectType(): zombie.scripting.ScriptType;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScriptVersion(): number;
+      /**
+       * Method Parameters: 
+       *  - (IVersionHash arg0): void
+       */
+      getVersion(arg0: zombie.world.scripts.IVersionHash): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isDebugOnly(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEnabled(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      reset(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      resetLoadedScriptBodies(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptModule arg0): void
+       */
+      setModule(arg0: zombie.scripting.objects.ScriptModule): void;
+      /**
+       * Method Parameters: 
+       *  - (BaseScriptObject arg0): void
+       */
+      setParent(arg0: zombie.scripting.objects.BaseScriptObject): void;
+    }
+    /**
      * @customConstructor ItemRecipe.new
      * @
      * [CLASS] zombie.scripting.objects.ItemRecipe
@@ -1711,10 +3748,60 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
-       *  - (String arg0, String arg1): void
-       *  - (String arg0, String[] arg1): void
+       *  - (String arg0): void
        */
-      Load(arg0: string, arg1: string | string[]): void;
+      InitLoadPP(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      Load(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       *  - (Block arg0): void
+       */
+      LoadCommonBlock(arg0: string | zombie.scripting.ScriptParser$Block): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnLoadedAfterLua(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnPostWorldDictionaryInit(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptLoadMode arg0): void
+       */
+      OnScriptsLoaded(arg0: zombie.scripting.ScriptLoadMode): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      PreReload(): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      addLoadedScriptBody(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      calculateScriptVersion(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      debugString(): string;
+      /**
+       * Method Parameters: 
+       *  - (ArrayList arg0): java.util.ArrayList<string>
+       */
+      getAllScriptLines(arg0: java.util.ArrayList<string>): java.util.ArrayList<string>;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -1725,6 +3812,21 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): string
        */
       getAnimState(): string;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, ArrayList arg1): java.util.ArrayList<string>
+       */
+      getBodyScriptLines(arg0: number, arg1: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getLoadedScriptBodies(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getLoadedScriptBodyCount(): number;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -1742,9 +3844,19 @@ declare module '@asledgehammer/pipewrench' {
       getName(): string;
       /**
        * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getObsolete(): boolean;
+      /**
+       * Method Parameters: 
        *  - (Empty): string
        */
       getOutfit(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.BaseScriptObject
+       */
+      getParent(): zombie.scripting.objects.BaseScriptObject;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -1752,9 +3864,49 @@ declare module '@asledgehammer/pipewrench' {
       getPose(): string;
       /**
        * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getScriptLines(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectFullType(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.ScriptType
+       */
+      getScriptObjectType(): zombie.scripting.ScriptType;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScriptVersion(): number;
+      /**
+       * Method Parameters: 
        *  - (Empty): string
        */
       getTexture(): string;
+      /**
+       * Method Parameters: 
+       *  - (IVersionHash arg0): void
+       */
+      getVersion(arg0: zombie.world.scripts.IVersionHash): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isDebugOnly(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEnabled(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -1765,6 +3917,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): void
        */
       reset(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      resetLoadedScriptBodies(): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -1787,9 +3944,19 @@ declare module '@asledgehammer/pipewrench' {
       setModelScriptName(arg0: string): void;
       /**
        * Method Parameters: 
+       *  - (ScriptModule arg0): void
+       */
+      setModule(arg0: zombie.scripting.objects.ScriptModule): void;
+      /**
+       * Method Parameters: 
        *  - (String arg0): void
        */
       setOutfit(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (BaseScriptObject arg0): void
+       */
+      setParent(arg0: zombie.scripting.objects.BaseScriptObject): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -1841,6 +4008,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): number
        */
+      getScale(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
       getZOffset(): number;
       /**
        * Method Parameters: 
@@ -1862,6 +4034,16 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): void
        */
       setId(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (IModelAttachmentOwner arg0): void
+       */
+      setOwner(arg0: zombie.scripting.objects.IModelAttachmentOwner): void;
+      /**
+       * Method Parameters: 
+       *  - (float arg0): void
+       */
+      setScale(arg0: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -1889,10 +4071,40 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
-       *  - (String arg0, String arg1): void
-       *  - (String arg0, String[] arg1): void
+       *  - (String arg0): void
        */
-      Load(arg0: string, arg1: string | string[]): void;
+      InitLoadPP(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      Load(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       *  - (Block arg0): void
+       */
+      LoadCommonBlock(arg0: string | zombie.scripting.ScriptParser$Block): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnLoadedAfterLua(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnPostWorldDictionaryInit(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptLoadMode arg0): void
+       */
+      OnScriptsLoaded(arg0: zombie.scripting.ScriptLoadMode): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      PreReload(): void;
       /**
        * Method Parameters: 
        *  - (ModelAttachment arg0): zombie.scripting.objects.ModelAttachment
@@ -1903,6 +4115,36 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0, ModelAttachment arg1): zombie.scripting.objects.ModelAttachment
        */
       addAttachmentAt(arg0: number, arg1: zombie.scripting.objects.ModelAttachment): zombie.scripting.objects.ModelAttachment;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      addLoadedScriptBody(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (ModelAttachment arg0): void
+       */
+      afterRenameAttachment(arg0: zombie.scripting.objects.ModelAttachment): void;
+      /**
+       * Method Parameters: 
+       *  - (ModelAttachment arg0): void
+       */
+      beforeRenameAttachment(arg0: zombie.scripting.objects.ModelAttachment): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      calculateScriptVersion(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      debugString(): string;
+      /**
+       * Method Parameters: 
+       *  - (ArrayList arg0): java.util.ArrayList<string>
+       */
+      getAllScriptLines(arg0: java.util.ArrayList<string>): java.util.ArrayList<string>;
       /**
        * Method Parameters: 
        *  - (int arg0): zombie.scripting.objects.ModelAttachment
@@ -1920,6 +4162,11 @@ declare module '@asledgehammer/pipewrench' {
       getAttachmentCount(): number;
       /**
        * Method Parameters: 
+       *  - (int arg0, ArrayList arg1): java.util.ArrayList<string>
+       */
+      getBodyScriptLines(arg0: number, arg1: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
        *  - (Empty): string
        */
       getFileName(): string;
@@ -1928,6 +4175,16 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): string
        */
       getFullType(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getLoadedScriptBodies(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getLoadedScriptBodyCount(): number;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -1945,6 +4202,41 @@ declare module '@asledgehammer/pipewrench' {
       getName(): string;
       /**
        * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getObsolete(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.BaseScriptObject
+       */
+      getParent(): zombie.scripting.objects.BaseScriptObject;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getScriptLines(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectFullType(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.ScriptType
+       */
+      getScriptObjectType(): zombie.scripting.ScriptType;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScriptVersion(): number;
+      /**
+       * Method Parameters: 
        *  - (Empty): string
        */
       getShaderName(): string;
@@ -1956,6 +4248,26 @@ declare module '@asledgehammer/pipewrench' {
       getTextureName(arg0?: boolean): string;
       /**
        * Method Parameters: 
+       *  - (IVersionHash arg0): void
+       */
+      getVersion(arg0: zombie.world.scripts.IVersionHash): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isDebugOnly(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEnabled(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isStatic(): boolean;
+      /**
+       * Method Parameters: 
        *  - (int arg0): zombie.scripting.objects.ModelAttachment
        *  - (ModelAttachment arg0): zombie.scripting.objects.ModelAttachment
        */
@@ -1965,6 +4277,26 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): void
        */
       reset(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      resetLoadedScriptBodies(): void;
+      /**
+       * Method Parameters: 
+       *  - (float arg0): void
+       */
+      scaleAttachmentOffset(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptModule arg0): void
+       */
+      setModule(arg0: zombie.scripting.objects.ScriptModule): void;
+      /**
+       * Method Parameters: 
+       *  - (BaseScriptObject arg0): void
+       */
+      setParent(arg0: zombie.scripting.objects.BaseScriptObject): void;
       /**
        * @noSelf
        *
@@ -2008,14 +4340,45 @@ declare module '@asledgehammer/pipewrench' {
       DoSource(arg0: string): void;
       /**
        * Method Parameters: 
-       *  - (InventoryItem arg0): number
+       *  - (String arg0): void
        */
-      FindIndexOf(arg0: zombie.inventory.InventoryItem): number;
+      InitLoadPP(arg0: string): void;
       /**
        * Method Parameters: 
-       *  - (String arg0, String[] arg1): void
+       *  - (String arg0, String arg1): void
        */
-      Load(arg0: string, arg1: string[]): void;
+      Load(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       *  - (Block arg0): void
+       */
+      LoadCommonBlock(arg0: string | zombie.scripting.ScriptParser$Block): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnLoadedAfterLua(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnPostWorldDictionaryInit(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptLoadMode arg0): void
+       */
+      OnScriptsLoaded(arg0: zombie.scripting.ScriptLoadMode): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      PreReload(): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      addLoadedScriptBody(arg0: string, arg1: string): void;
       /**
        * Method Parameters: 
        *  - (Perk arg0, int arg1): void
@@ -2025,7 +4388,17 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): void
        */
+      calculateScriptVersion(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
       clearRequiredSkills(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      debugString(): string;
       /**
        * Method Parameters: 
        *  - (String arg0): zombie.scripting.objects.Recipe$Source
@@ -2033,19 +4406,14 @@ declare module '@asledgehammer/pipewrench' {
       findSource(arg0: string): zombie.scripting.objects.Recipe$Source;
       /**
        * Method Parameters: 
-       *  - (Empty): string
+       *  - (ArrayList arg0): java.util.ArrayList<string>
        */
-      getAnimNode(): string;
+      getAllScriptLines(arg0: java.util.ArrayList<string>): java.util.ArrayList<string>;
       /**
        * Method Parameters: 
-       *  - (Empty): string
+       *  - (int arg0, ArrayList arg1): java.util.ArrayList<string>
        */
-      getCanPerform(): string;
-      /**
-       * Method Parameters: 
-       *  - (Empty): string
-       */
-      getCategory(): string;
+      getBodyScriptLines(arg0: number, arg1: java.util.ArrayList<string>): java.util.ArrayList<string>;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -2058,24 +4426,14 @@ declare module '@asledgehammer/pipewrench' {
       getHeat(): number;
       /**
        * Method Parameters: 
-       *  - (Empty): string
+       *  - (Empty): java.util.ArrayList<string>
        */
-      getLuaCreate(): string;
+      getLoadedScriptBodies(): java.util.ArrayList<string>;
       /**
        * Method Parameters: 
-       *  - (Empty): string
+       *  - (Empty): number
        */
-      getLuaGiveXP(): string;
-      /**
-       * Method Parameters: 
-       *  - (Empty): string
-       */
-      getLuaGrab(): string;
-      /**
-       * Method Parameters: 
-       *  - (Empty): string
-       */
-      getLuaTest(): string;
+      getLoadedScriptBodyCount(): number;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.scripting.objects.ScriptModule
@@ -2098,24 +4456,24 @@ declare module '@asledgehammer/pipewrench' {
       getNumberOfNeededItem(): number;
       /**
        * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getObsolete(): boolean;
+      /**
+       * Method Parameters: 
        *  - (Empty): string
        */
       getOriginalname(): string;
       /**
        * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.BaseScriptObject
+       */
+      getParent(): zombie.scripting.objects.BaseScriptObject;
+      /**
+       * Method Parameters: 
        *  - (Empty): zombie.scripting.objects.Recipe$Source
        */
       getPrimaryTools(): zombie.scripting.objects.Recipe$Source;
-      /**
-       * Method Parameters: 
-       *  - (Empty): string
-       */
-      getProp1(): string;
-      /**
-       * Method Parameters: 
-       *  - (Empty): string
-       */
-      getProp2(): string;
       /**
        * Method Parameters: 
        *  - (int arg0): zombie.scripting.objects.Recipe$RequiredSkill
@@ -2138,14 +4496,39 @@ declare module '@asledgehammer/pipewrench' {
       getResult(): zombie.scripting.objects.Recipe$Result;
       /**
        * Method Parameters: 
-       *  - (Empty): zombie.scripting.objects.Recipe$Source
+       *  - (Empty): java.util.ArrayList<zombie.scripting.objects.Recipe$Result>
        */
-      getSecondaryTools(): zombie.scripting.objects.Recipe$Source;
+      getResults(): java.util.ArrayList<zombie.scripting.objects.Recipe$Result>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getScriptLines(): java.util.ArrayList<string>;
       /**
        * Method Parameters: 
        *  - (Empty): string
        */
-      getSound(): string;
+      getScriptObjectFullType(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.ScriptType
+       */
+      getScriptObjectType(): zombie.scripting.ScriptType;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScriptVersion(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.Recipe$Source
+       */
+      getSecondaryTools(): zombie.scripting.objects.Recipe$Source;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.ArrayList<zombie.scripting.objects.Recipe$Source>
@@ -2155,17 +4538,12 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): number
        */
-      getTimeToMake(): number;
+      getStationMultiplier(): number;
       /**
        * Method Parameters: 
-       *  - (Empty): string
+       *  - (IVersionHash arg0): void
        */
-      getTooltip(): string;
-      /**
-       * Method Parameters: 
-       *  - (Empty): number
-       */
-      getWaterAmountNeeded(): number;
+      getVersion(arg0: zombie.world.scripts.IVersionHash): void;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -2185,57 +4563,17 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
-      isAllowDestroyedItem(): boolean;
+      isDebugOnly(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
        */
-      isAllowFrozenItem(): boolean;
+      isEnabled(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
        */
-      isAllowRottenItem(): boolean;
-      /**
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      isCanBeDoneFromFloor(): boolean;
-      /**
-       * Method Parameters: 
-       *  - (String arg0): boolean
-       */
-      isDestroy(arg0: string): boolean;
-      /**
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      isHidden(): boolean;
-      /**
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      isInSameInventory(): boolean;
-      /**
-       * Method Parameters: 
-       *  - (String arg0): boolean
-       */
-      isKeep(arg0: string): boolean;
-      /**
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      isRemoveResultItem(): boolean;
-      /**
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      isStopOnRun(): boolean;
-      /**
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      isStopOnWalk(): boolean;
+      isRequiresWorkstation(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -2243,74 +4581,19 @@ declare module '@asledgehammer/pipewrench' {
       isValid(): boolean;
       /**
        * Method Parameters: 
-       *  - (Empty): boolean
+       *  - (Empty): void
        */
-      needToBeLearn(): boolean;
+      reset(): void;
       /**
        * Method Parameters: 
-       *  - (Empty): boolean
+       *  - (Empty): void
        */
-      noBrokenItems(): boolean;
+      resetLoadedScriptBodies(): void;
       /**
        * Method Parameters: 
-       *  - (boolean arg0): void
+       *  - (ScriptModule arg0): void
        */
-      setAllowDestroyedItem(arg0: boolean): void;
-      /**
-       * Method Parameters: 
-       *  - (boolean arg0): void
-       */
-      setAllowFrozenItem(arg0: boolean): void;
-      /**
-       * Method Parameters: 
-       *  - (boolean arg0): void
-       */
-      setAllowRottenItem(arg0: boolean): void;
-      /**
-       * Method Parameters: 
-       *  - (String arg0): void
-       */
-      setAnimNode(arg0: string): void;
-      /**
-       * Method Parameters: 
-       *  - (boolean arg0): void
-       */
-      setCanBeDoneFromFloor(arg0: boolean): void;
-      /**
-       * Method Parameters: 
-       *  - (String arg0): void
-       */
-      setCanPerform(arg0: string): void;
-      /**
-       * Method Parameters: 
-       *  - (String arg0): void
-       */
-      setCategory(arg0: string): void;
-      /**
-       * Method Parameters: 
-       *  - (boolean arg0): void
-       */
-      setIsHidden(arg0: boolean): void;
-      /**
-       * Method Parameters: 
-       *  - (String arg0): void
-       */
-      setLuaCreate(arg0: string): void;
-      /**
-       * Method Parameters: 
-       *  - (String arg0): void
-       */
-      setLuaGiveXP(arg0: string): void;
-      /**
-       * Method Parameters: 
-       *  - (String arg0): void
-       */
-      setLuaGrab(arg0: string): void;
-      /**
-       * Method Parameters: 
-       *  - (String arg0): void
-       */
-      setLuaTest(arg0: string): void;
+      setModule(arg0: zombie.scripting.objects.ScriptModule): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -2323,39 +4606,14 @@ declare module '@asledgehammer/pipewrench' {
       setNearItem(arg0: string): void;
       /**
        * Method Parameters: 
-       *  - (boolean arg0): void
-       */
-      setNeedToBeLearn(arg0: boolean): void;
-      /**
-       * Method Parameters: 
-       *  - (String arg0): void
-       */
-      setOnCreate(arg0: string): void;
-      /**
-       * Method Parameters: 
-       *  - (String arg0): void
-       */
-      setOnXP(arg0: string): void;
-      /**
-       * Method Parameters: 
        *  - (String arg0): void
        */
       setOriginalname(arg0: string): void;
       /**
        * Method Parameters: 
-       *  - (String arg0): void
+       *  - (BaseScriptObject arg0): void
        */
-      setProp1(arg0: string): void;
-      /**
-       * Method Parameters: 
-       *  - (String arg0): void
-       */
-      setProp2(arg0: string): void;
-      /**
-       * Method Parameters: 
-       *  - (boolean arg0): void
-       */
-      setRemoveResultItem(arg0: boolean): void;
+      setParent(arg0: zombie.scripting.objects.BaseScriptObject): void;
       /**
        * Method Parameters: 
        *  - (Perk arg0, int arg1): void
@@ -2370,22 +4628,7 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (String arg0): void
        */
-      setSound(arg0: string): void;
-      /**
-       * Method Parameters: 
-       *  - (String arg0): void
-       */
       setSource(arg0: string): void;
-      /**
-       * Method Parameters: 
-       *  - (boolean arg0): void
-       */
-      setStopOnRun(arg0: boolean): void;
-      /**
-       * Method Parameters: 
-       *  - (boolean arg0): void
-       */
-      setStopOnWalk(arg0: boolean): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -2413,6 +4656,377 @@ declare module '@asledgehammer/pipewrench' {
       setXpPerk(arg0: zombie.characters.skills.PerkFactory$Perk): void;
     }
     /**
+     * @customConstructor PhysicsShapeScript.new
+     * @
+     * [CLASS] zombie.scripting.objects.PhysicsShapeScript extends zombie.scripting.objects.BaseScriptObject
+     */
+    export class PhysicsShapeScript {
+
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      InitLoadPP(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      Load(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       *  - (Block arg0): void
+       */
+      LoadCommonBlock(arg0: string | zombie.scripting.ScriptParser$Block): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnLoadedAfterLua(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnPostWorldDictionaryInit(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptLoadMode arg0): void
+       */
+      OnScriptsLoaded(arg0: zombie.scripting.ScriptLoadMode): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      PreReload(): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      addLoadedScriptBody(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      calculateScriptVersion(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      debugString(): string;
+      /**
+       * Method Parameters: 
+       *  - (ArrayList arg0): java.util.ArrayList<string>
+       */
+      getAllScriptLines(arg0: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, ArrayList arg1): java.util.ArrayList<string>
+       */
+      getBodyScriptLines(arg0: number, arg1: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getLoadedScriptBodies(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getLoadedScriptBodyCount(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.ScriptModule
+       */
+      getModule(): zombie.scripting.objects.ScriptModule;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getObsolete(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.BaseScriptObject
+       */
+      getParent(): zombie.scripting.objects.BaseScriptObject;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getScriptLines(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectFullType(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.ScriptType
+       */
+      getScriptObjectType(): zombie.scripting.ScriptType;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScriptVersion(): number;
+      /**
+       * Method Parameters: 
+       *  - (IVersionHash arg0): void
+       */
+      getVersion(arg0: zombie.world.scripts.IVersionHash): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isDebugOnly(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEnabled(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      reset(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      resetLoadedScriptBodies(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptModule arg0): void
+       */
+      setModule(arg0: zombie.scripting.objects.ScriptModule): void;
+      /**
+       * Method Parameters: 
+       *  - (BaseScriptObject arg0): void
+       */
+      setParent(arg0: zombie.scripting.objects.BaseScriptObject): void;
+    }
+    /**
+     * @customConstructor RagdollAnchor.new
+     * @
+     * [CLASS] zombie.scripting.objects.RagdollAnchor
+     */
+    export class RagdollAnchor {
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       */
+      constructor();
+    }
+    /**
+     * @customConstructor RagdollConstraint.new
+     * @
+     * [CLASS] zombie.scripting.objects.RagdollConstraint
+     */
+    export class RagdollConstraint {
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       */
+      constructor();
+    }
+    /**
+     * @customConstructor RagdollScript.new
+     * @
+     * [CLASS] zombie.scripting.objects.RagdollScript extends zombie.scripting.objects.BaseScriptObject
+     */
+    export class RagdollScript {
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       */
+      constructor();
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      InitLoadPP(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      Load(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       *  - (Block arg0): void
+       */
+      LoadCommonBlock(arg0: string | zombie.scripting.ScriptParser$Block): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnLoadedAfterLua(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnPostWorldDictionaryInit(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptLoadMode arg0): void
+       */
+      OnScriptsLoaded(arg0: zombie.scripting.ScriptLoadMode): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      PreReload(): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      addLoadedScriptBody(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      calculateScriptVersion(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      debugString(): string;
+      /**
+       * Method Parameters: 
+       *  - (ArrayList arg0): java.util.ArrayList<string>
+       */
+      getAllScriptLines(arg0: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, ArrayList arg1): java.util.ArrayList<string>
+       */
+      getBodyScriptLines(arg0: number, arg1: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getLoadedScriptBodies(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getLoadedScriptBodyCount(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.ScriptModule
+       */
+      getModule(): zombie.scripting.objects.ScriptModule;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getObsolete(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.BaseScriptObject
+       */
+      getParent(): zombie.scripting.objects.BaseScriptObject;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getScriptLines(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectFullType(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.ScriptType
+       */
+      getScriptObjectType(): zombie.scripting.ScriptType;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScriptVersion(): number;
+      /**
+       * Method Parameters: 
+       *  - (IVersionHash arg0): void
+       */
+      getVersion(arg0: zombie.world.scripts.IVersionHash): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isDebugOnly(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEnabled(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      reset(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      resetLoadedScriptBodies(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptModule arg0): void
+       */
+      setModule(arg0: zombie.scripting.objects.ScriptModule): void;
+      /**
+       * Method Parameters: 
+       *  - (BaseScriptObject arg0): void
+       */
+      setParent(arg0: zombie.scripting.objects.BaseScriptObject): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<zombie.scripting.objects.RagdollAnchor>
+       */
+      static getRagdollAnchorList(): java.util.ArrayList<zombie.scripting.objects.RagdollAnchor>;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<zombie.scripting.objects.RagdollConstraint>
+       */
+      static getRagdollConstraintList(): java.util.ArrayList<zombie.scripting.objects.RagdollConstraint>;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      static resetAnchorsToDefaultValues(): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      static resetConstraintsToDefaultValues(): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      static toBullet(arg0: boolean): void;
+    }
+    /**
      * @customConstructor Recipe.new
      * @
      * [CLASS] zombie.scripting.objects.Recipe extends zombie.scripting.objects.BaseScriptObject
@@ -2435,14 +5049,45 @@ declare module '@asledgehammer/pipewrench' {
       DoSource(arg0: string): void;
       /**
        * Method Parameters: 
-       *  - (InventoryItem arg0): number
+       *  - (String arg0): void
        */
-      FindIndexOf(arg0: zombie.inventory.InventoryItem): number;
+      InitLoadPP(arg0: string): void;
       /**
        * Method Parameters: 
-       *  - (String arg0, String[] arg1): void
+       *  - (String arg0, String arg1): void
        */
-      Load(arg0: string, arg1: string[]): void;
+      Load(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       *  - (Block arg0): void
+       */
+      LoadCommonBlock(arg0: string | zombie.scripting.ScriptParser$Block): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnLoadedAfterLua(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnPostWorldDictionaryInit(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptLoadMode arg0): void
+       */
+      OnScriptsLoaded(arg0: zombie.scripting.ScriptLoadMode): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      PreReload(): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      addLoadedScriptBody(arg0: string, arg1: string): void;
       /**
        * Method Parameters: 
        *  - (Perk arg0, int arg1): void
@@ -2452,7 +5097,17 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): void
        */
+      calculateScriptVersion(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
       clearRequiredSkills(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      debugString(): string;
       /**
        * Method Parameters: 
        *  - (String arg0): zombie.scripting.objects.Recipe$Source
@@ -2460,19 +5115,14 @@ declare module '@asledgehammer/pipewrench' {
       findSource(arg0: string): zombie.scripting.objects.Recipe$Source;
       /**
        * Method Parameters: 
-       *  - (Empty): string
+       *  - (ArrayList arg0): java.util.ArrayList<string>
        */
-      getAnimNode(): string;
+      getAllScriptLines(arg0: java.util.ArrayList<string>): java.util.ArrayList<string>;
       /**
        * Method Parameters: 
-       *  - (Empty): string
+       *  - (int arg0, ArrayList arg1): java.util.ArrayList<string>
        */
-      getCanPerform(): string;
-      /**
-       * Method Parameters: 
-       *  - (Empty): string
-       */
-      getCategory(): string;
+      getBodyScriptLines(arg0: number, arg1: java.util.ArrayList<string>): java.util.ArrayList<string>;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -2485,24 +5135,14 @@ declare module '@asledgehammer/pipewrench' {
       getHeat(): number;
       /**
        * Method Parameters: 
-       *  - (Empty): string
+       *  - (Empty): java.util.ArrayList<string>
        */
-      getLuaCreate(): string;
+      getLoadedScriptBodies(): java.util.ArrayList<string>;
       /**
        * Method Parameters: 
-       *  - (Empty): string
+       *  - (Empty): number
        */
-      getLuaGiveXP(): string;
-      /**
-       * Method Parameters: 
-       *  - (Empty): string
-       */
-      getLuaGrab(): string;
-      /**
-       * Method Parameters: 
-       *  - (Empty): string
-       */
-      getLuaTest(): string;
+      getLoadedScriptBodyCount(): number;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.scripting.objects.ScriptModule
@@ -2525,19 +5165,19 @@ declare module '@asledgehammer/pipewrench' {
       getNumberOfNeededItem(): number;
       /**
        * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getObsolete(): boolean;
+      /**
+       * Method Parameters: 
        *  - (Empty): string
        */
       getOriginalname(): string;
       /**
        * Method Parameters: 
-       *  - (Empty): string
+       *  - (Empty): zombie.scripting.objects.BaseScriptObject
        */
-      getProp1(): string;
-      /**
-       * Method Parameters: 
-       *  - (Empty): string
-       */
-      getProp2(): string;
+      getParent(): zombie.scripting.objects.BaseScriptObject;
       /**
        * Method Parameters: 
        *  - (int arg0): zombie.scripting.objects.Recipe$RequiredSkill
@@ -2560,9 +5200,34 @@ declare module '@asledgehammer/pipewrench' {
       getResult(): zombie.scripting.objects.Recipe$Result;
       /**
        * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<zombie.scripting.objects.Recipe$Result>
+       */
+      getResults(): java.util.ArrayList<zombie.scripting.objects.Recipe$Result>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getScriptLines(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
        *  - (Empty): string
        */
-      getSound(): string;
+      getScriptObjectFullType(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.ScriptType
+       */
+      getScriptObjectType(): zombie.scripting.ScriptType;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScriptVersion(): number;
       /**
        * Method Parameters: 
        *  - (Empty): java.util.ArrayList<zombie.scripting.objects.Recipe$Source>
@@ -2572,142 +5237,42 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): number
        */
-      getTimeToMake(): number;
+      getStationMultiplier(): number;
       /**
        * Method Parameters: 
-       *  - (Empty): string
+       *  - (IVersionHash arg0): void
        */
-      getTooltip(): string;
-      /**
-       * Method Parameters: 
-       *  - (Empty): number
-       */
-      getWaterAmountNeeded(): number;
+      getVersion(arg0: zombie.world.scripts.IVersionHash): void;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
        */
-      isAllowDestroyedItem(): boolean;
+      isDebugOnly(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
        */
-      isAllowFrozenItem(): boolean;
+      isEnabled(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
        */
-      isAllowRottenItem(): boolean;
+      isRequiresWorkstation(): boolean;
       /**
        * Method Parameters: 
-       *  - (Empty): boolean
+       *  - (Empty): void
        */
-      isCanBeDoneFromFloor(): boolean;
+      reset(): void;
       /**
        * Method Parameters: 
-       *  - (String arg0): boolean
+       *  - (Empty): void
        */
-      isDestroy(arg0: string): boolean;
+      resetLoadedScriptBodies(): void;
       /**
        * Method Parameters: 
-       *  - (Empty): boolean
+       *  - (ScriptModule arg0): void
        */
-      isHidden(): boolean;
-      /**
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      isInSameInventory(): boolean;
-      /**
-       * Method Parameters: 
-       *  - (String arg0): boolean
-       */
-      isKeep(arg0: string): boolean;
-      /**
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      isRemoveResultItem(): boolean;
-      /**
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      isStopOnRun(): boolean;
-      /**
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      isStopOnWalk(): boolean;
-      /**
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      needToBeLearn(): boolean;
-      /**
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      noBrokenItems(): boolean;
-      /**
-       * Method Parameters: 
-       *  - (boolean arg0): void
-       */
-      setAllowDestroyedItem(arg0: boolean): void;
-      /**
-       * Method Parameters: 
-       *  - (boolean arg0): void
-       */
-      setAllowFrozenItem(arg0: boolean): void;
-      /**
-       * Method Parameters: 
-       *  - (boolean arg0): void
-       */
-      setAllowRottenItem(arg0: boolean): void;
-      /**
-       * Method Parameters: 
-       *  - (String arg0): void
-       */
-      setAnimNode(arg0: string): void;
-      /**
-       * Method Parameters: 
-       *  - (boolean arg0): void
-       */
-      setCanBeDoneFromFloor(arg0: boolean): void;
-      /**
-       * Method Parameters: 
-       *  - (String arg0): void
-       */
-      setCanPerform(arg0: string): void;
-      /**
-       * Method Parameters: 
-       *  - (String arg0): void
-       */
-      setCategory(arg0: string): void;
-      /**
-       * Method Parameters: 
-       *  - (boolean arg0): void
-       */
-      setIsHidden(arg0: boolean): void;
-      /**
-       * Method Parameters: 
-       *  - (String arg0): void
-       */
-      setLuaCreate(arg0: string): void;
-      /**
-       * Method Parameters: 
-       *  - (String arg0): void
-       */
-      setLuaGiveXP(arg0: string): void;
-      /**
-       * Method Parameters: 
-       *  - (String arg0): void
-       */
-      setLuaGrab(arg0: string): void;
-      /**
-       * Method Parameters: 
-       *  - (String arg0): void
-       */
-      setLuaTest(arg0: string): void;
+      setModule(arg0: zombie.scripting.objects.ScriptModule): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -2715,44 +5280,82 @@ declare module '@asledgehammer/pipewrench' {
       setNearItem(arg0: string): void;
       /**
        * Method Parameters: 
-       *  - (boolean arg0): void
-       */
-      setNeedToBeLearn(arg0: boolean): void;
-      /**
-       * Method Parameters: 
        *  - (String arg0): void
        */
       setOriginalname(arg0: string): void;
       /**
        * Method Parameters: 
-       *  - (String arg0): void
+       *  - (BaseScriptObject arg0): void
        */
-      setProp1(arg0: string): void;
+      setParent(arg0: zombie.scripting.objects.BaseScriptObject): void;
+    }
+    /** [ENUM] zombie.scripting.objects.Recipe$LuaCall */
+    export class Recipe$LuaCall {
+      protected constructor();
+      static readonly LuaAttributes: zombie.scripting.objects.Recipe$LuaCall;
+      static readonly LuaCanPerform: zombie.scripting.objects.Recipe$LuaCall;
+      static readonly LuaCreate: zombie.scripting.objects.Recipe$LuaCall;
+      static readonly LuaGiveXP: zombie.scripting.objects.Recipe$LuaCall;
+      static readonly LuaGrab: zombie.scripting.objects.Recipe$LuaCall;
+      static readonly LuaTest: zombie.scripting.objects.Recipe$LuaCall;
+      name(): string;
+      ordinal(): number;
       /**
        * Method Parameters: 
-       *  - (String arg0): void
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
        */
-      setProp2(arg0: string): void;
+      compareTo(arg0: any): number;
       /**
        * Method Parameters: 
-       *  - (boolean arg0): void
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
        */
-      setRemoveResultItem(arg0: boolean): void;
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.scripting.objects.Recipe$LuaCall>>;
       /**
        * Method Parameters: 
-       *  - (String arg0): void
+       *  - (Object arg0): boolean
        */
-      setSound(arg0: string): void;
+      equals(arg0: any): boolean;
       /**
        * Method Parameters: 
-       *  - (boolean arg0): void
+       *  - (Empty): java.lang.Class<E>
        */
-      setStopOnRun(arg0: boolean): void;
+      getDeclaringClass(): java.lang.Class<zombie.scripting.objects.Recipe$LuaCall>;
       /**
        * Method Parameters: 
-       *  - (boolean arg0): void
+       *  - (Empty): number
        */
-      setStopOnWalk(arg0: boolean): void;
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): zombie.scripting.objects.Recipe$LuaCall
+       *  - (Class arg0, String arg1): T
+       */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.scripting.objects.Recipe$LuaCall | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.Recipe$LuaCall[]
+       */
+      static values(): zombie.scripting.objects.Recipe$LuaCall[];
     }
     /**
      * @customConstructor RequiredSkill.new
@@ -2861,6 +5464,11 @@ declare module '@asledgehammer/pipewrench' {
       getOnlyItem(): string;
       /**
        * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getOriginalItems(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
        *  - (Empty): number
        */
       getUse(): number;
@@ -2898,7 +5506,7 @@ declare module '@asledgehammer/pipewrench' {
     /**
      * @customConstructor ScriptModule.new
      * @
-     * [CLASS] zombie.scripting.objects.ScriptModule extends zombie.scripting.objects.BaseScriptObject
+     * [CLASS] zombie.scripting.objects.ScriptModule
      */
     export class ScriptModule {
       /**
@@ -2913,20 +5521,14 @@ declare module '@asledgehammer/pipewrench' {
       CheckExitPoints(): boolean;
       /**
        * Method Parameters: 
-       *  - (String arg0, String arg1): void
-       *  - (String arg0, String[] arg1): void
+       *  - (ScriptLoadMode arg0, String arg1, String arg2): void
        */
-      Load(arg0: string, arg1: string | string[]): void;
+      Load(arg0: zombie.scripting.ScriptLoadMode, arg1: string, arg2: string): void;
       /**
        * Method Parameters: 
-       *  - (String arg0): void
+       *  - (ScriptLoadMode arg0, String arg1): void
        */
-      ParseScript(arg0: string): void;
-      /**
-       * Method Parameters: 
-       *  - (String arg0): void
-       */
-      ParseScriptPP(arg0: string): void;
+      ParseScriptPP(arg0: zombie.scripting.ScriptLoadMode, arg1: string): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -2934,9 +5536,79 @@ declare module '@asledgehammer/pipewrench' {
       Reset(): void;
       /**
        * Method Parameters: 
+       *  - (String arg0): zombie.core.skinnedmodel.runtime.RuntimeAnimationScript
+       */
+      getAnimation(arg0: string): zombie.core.skinnedmodel.runtime.RuntimeAnimationScript;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): zombie.scripting.objects.AnimationsMesh
+       */
+      getAnimationsMesh(arg0: string): zombie.scripting.objects.AnimationsMesh;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): zombie.scripting.entity.components.crafting.CraftRecipe
+       */
+      getCraftRecipe(arg0: string): zombie.scripting.entity.components.crafting.CraftRecipe;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): zombie.scripting.objects.EnergyDefinitionScript
+       */
+      getEnergyDefinitionScript(arg0: string): zombie.scripting.objects.EnergyDefinitionScript;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): zombie.scripting.objects.EvolvedRecipe
+       */
+      getEvolvedRecipe(arg0: string): zombie.scripting.objects.EvolvedRecipe;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): zombie.scripting.objects.Fixing
+       */
+      getFixing(arg0: string): zombie.scripting.objects.Fixing;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): zombie.scripting.objects.FluidDefinitionScript
+       */
+      getFluidDefinitionScript(arg0: string): zombie.scripting.objects.FluidDefinitionScript;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): zombie.scripting.objects.FluidFilterScript
+       */
+      getFluidFilter(arg0: string): zombie.scripting.objects.FluidFilterScript;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): zombie.scripting.entity.GameEntityScript
+       */
+      getGameEntityScript(arg0: string): zombie.scripting.entity.GameEntityScript;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): zombie.scripting.entity.GameEntityTemplate
+       */
+      getGameEntityTemplate(arg0: string): zombie.scripting.entity.GameEntityTemplate;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): zombie.scripting.objects.GameSoundScript
+       */
+      getGameSound(arg0: string): zombie.scripting.objects.GameSoundScript;
+      /**
+       * Method Parameters: 
        *  - (String arg0): zombie.scripting.objects.Item
        */
       getItem(arg0: string): zombie.scripting.objects.Item;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): zombie.scripting.itemConfig.ItemConfig
+       */
+      getItemConfig(arg0: string): zombie.scripting.itemConfig.ItemConfig;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): zombie.scripting.objects.ItemFilterScript
+       */
+      getItemFilter(arg0: string): zombie.scripting.objects.ItemFilterScript;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): zombie.scripting.objects.MannequinScript
+       */
+      getMannequinScript(arg0: string): zombie.scripting.objects.MannequinScript;
       /**
        * Method Parameters: 
        *  - (String arg0): zombie.scripting.objects.ModelScript
@@ -2944,14 +5616,19 @@ declare module '@asledgehammer/pipewrench' {
       getModelScript(arg0: string): zombie.scripting.objects.ModelScript;
       /**
        * Method Parameters: 
-       *  - (Empty): zombie.scripting.objects.ScriptModule
-       */
-      getModule(): zombie.scripting.objects.ScriptModule;
-      /**
-       * Method Parameters: 
        *  - (Empty): string
        */
       getName(): string;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): zombie.scripting.objects.PhysicsShapeScript
+       */
+      getPhysicsShape(arg0: string): zombie.scripting.objects.PhysicsShapeScript;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): zombie.scripting.objects.RagdollScript
+       */
+      getRagdollScript(arg0: string): zombie.scripting.objects.RagdollScript;
       /**
        * Method Parameters: 
        *  - (String arg0): zombie.scripting.objects.Recipe
@@ -2959,9 +5636,29 @@ declare module '@asledgehammer/pipewrench' {
       getRecipe(arg0: string): zombie.scripting.objects.Recipe;
       /**
        * Method Parameters: 
-       *  - (String arg0): zombie.scripting.objects.Item
+       *  - (String arg0): zombie.scripting.objects.SoundTimelineScript
        */
-      getSpecificItem(arg0: string): zombie.scripting.objects.Item;
+      getSoundTimeline(arg0: string): zombie.scripting.objects.SoundTimelineScript;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): zombie.iso.SpriteModel
+       */
+      getSpriteModel(arg0: string): zombie.iso.SpriteModel;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): zombie.scripting.objects.StringListScript
+       */
+      getStringList(arg0: string): zombie.scripting.objects.StringListScript;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): zombie.scripting.objects.TimedActionScript
+       */
+      getTimedActionScript(arg0: string): zombie.scripting.objects.TimedActionScript;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): zombie.scripting.objects.UniqueRecipe
+       */
+      getUniqueRecipe(arg0: string): zombie.scripting.objects.UniqueRecipe;
       /**
        * Method Parameters: 
        *  - (String arg0): zombie.scripting.objects.VehicleScript
@@ -2977,6 +5674,36 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): zombie.scripting.objects.VehicleTemplate
        */
       getVehicleTemplate(arg0: string): zombie.scripting.objects.VehicleTemplate;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): zombie.scripting.objects.XuiConfigScript
+       */
+      getXuiConfigScript(arg0: string): zombie.scripting.objects.XuiConfigScript;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): zombie.scripting.objects.XuiLayoutScript
+       */
+      getXuiDefaultStyle(arg0: string): zombie.scripting.objects.XuiLayoutScript;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): zombie.scripting.objects.XuiColorsScript
+       */
+      getXuiGlobalColors(arg0: string): zombie.scripting.objects.XuiColorsScript;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): zombie.scripting.objects.XuiLayoutScript
+       */
+      getXuiLayout(arg0: string): zombie.scripting.objects.XuiLayoutScript;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): zombie.scripting.objects.XuiSkinScript
+       */
+      getXuiSkinScript(arg0: string): zombie.scripting.objects.XuiSkinScript;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): zombie.scripting.objects.XuiLayoutScript
+       */
+      getXuiStyle(arg0: string): zombie.scripting.objects.XuiLayoutScript;
     }
     /**
      * @customConstructor SoundTimelineScript.new
@@ -2991,10 +5718,65 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
-       *  - (String arg0, String arg1): void
-       *  - (String arg0, String[] arg1): void
+       *  - (String arg0): void
        */
-      Load(arg0: string, arg1: string | string[]): void;
+      InitLoadPP(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      Load(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       *  - (Block arg0): void
+       */
+      LoadCommonBlock(arg0: string | zombie.scripting.ScriptParser$Block): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnLoadedAfterLua(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnPostWorldDictionaryInit(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptLoadMode arg0): void
+       */
+      OnScriptsLoaded(arg0: zombie.scripting.ScriptLoadMode): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      PreReload(): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      addLoadedScriptBody(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      calculateScriptVersion(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      debugString(): string;
+      /**
+       * Method Parameters: 
+       *  - (ArrayList arg0): java.util.ArrayList<string>
+       */
+      getAllScriptLines(arg0: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, ArrayList arg1): java.util.ArrayList<string>
+       */
+      getBodyScriptLines(arg0: number, arg1: java.util.ArrayList<string>): java.util.ArrayList<string>;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -3002,9 +5784,29 @@ declare module '@asledgehammer/pipewrench' {
       getEventName(): string;
       /**
        * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getLoadedScriptBodies(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getLoadedScriptBodyCount(): number;
+      /**
+       * Method Parameters: 
        *  - (Empty): zombie.scripting.objects.ScriptModule
        */
       getModule(): zombie.scripting.objects.ScriptModule;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getObsolete(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.BaseScriptObject
+       */
+      getParent(): zombie.scripting.objects.BaseScriptObject;
       /**
        * Method Parameters: 
        *  - (String arg0): number
@@ -3012,9 +5814,456 @@ declare module '@asledgehammer/pipewrench' {
       getPosition(arg0: string): number;
       /**
        * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getScriptLines(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectFullType(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.ScriptType
+       */
+      getScriptObjectType(): zombie.scripting.ScriptType;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScriptVersion(): number;
+      /**
+       * Method Parameters: 
+       *  - (IVersionHash arg0): void
+       */
+      getVersion(arg0: zombie.world.scripts.IVersionHash): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isDebugOnly(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEnabled(): boolean;
+      /**
+       * Method Parameters: 
        *  - (Empty): void
        */
       reset(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      resetLoadedScriptBodies(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptModule arg0): void
+       */
+      setModule(arg0: zombie.scripting.objects.ScriptModule): void;
+      /**
+       * Method Parameters: 
+       *  - (BaseScriptObject arg0): void
+       */
+      setParent(arg0: zombie.scripting.objects.BaseScriptObject): void;
+    }
+    /**
+     * @customConstructor StringListScript.new
+     * @
+     * [CLASS] zombie.scripting.objects.StringListScript extends zombie.scripting.objects.BaseScriptObject
+     */
+    export class StringListScript {
+
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      InitLoadPP(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      Load(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       *  - (Block arg0): void
+       */
+      LoadCommonBlock(arg0: string | zombie.scripting.ScriptParser$Block): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnLoadedAfterLua(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnPostWorldDictionaryInit(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptLoadMode arg0): void
+       */
+      OnScriptsLoaded(arg0: zombie.scripting.ScriptLoadMode): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      PreReload(): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      addLoadedScriptBody(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      calculateScriptVersion(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      debugString(): string;
+      /**
+       * Method Parameters: 
+       *  - (ArrayList arg0): java.util.ArrayList<string>
+       */
+      getAllScriptLines(arg0: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, ArrayList arg1): java.util.ArrayList<string>
+       */
+      getBodyScriptLines(arg0: number, arg1: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getLoadedScriptBodies(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getLoadedScriptBodyCount(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.ScriptModule
+       */
+      getModule(): zombie.scripting.objects.ScriptModule;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getObsolete(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.BaseScriptObject
+       */
+      getParent(): zombie.scripting.objects.BaseScriptObject;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getScriptLines(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectFullType(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.ScriptType
+       */
+      getScriptObjectType(): zombie.scripting.ScriptType;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScriptVersion(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getValues(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (IVersionHash arg0): void
+       */
+      getVersion(arg0: zombie.world.scripts.IVersionHash): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isDebugOnly(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEnabled(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      reset(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      resetLoadedScriptBodies(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptModule arg0): void
+       */
+      setModule(arg0: zombie.scripting.objects.ScriptModule): void;
+      /**
+       * Method Parameters: 
+       *  - (BaseScriptObject arg0): void
+       */
+      setParent(arg0: zombie.scripting.objects.BaseScriptObject): void;
+    }
+    /**
+     * @customConstructor TimedActionScript.new
+     * @
+     * [CLASS] zombie.scripting.objects.TimedActionScript extends zombie.scripting.objects.BaseScriptObject
+     */
+    export class TimedActionScript {
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       */
+      constructor();
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      InitLoadPP(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      Load(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       *  - (Block arg0): void
+       */
+      LoadCommonBlock(arg0: string | zombie.scripting.ScriptParser$Block): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnLoadedAfterLua(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnPostWorldDictionaryInit(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptLoadMode arg0): void
+       */
+      OnScriptsLoaded(arg0: zombie.scripting.ScriptLoadMode): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      PreReload(): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      addLoadedScriptBody(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (IsoGameCharacter arg0): void
+       */
+      applyMuscleStrain(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      calculateScriptVersion(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      debugString(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getActionAnim(): string;
+      /**
+       * Method Parameters: 
+       *  - (ArrayList arg0): java.util.ArrayList<string>
+       */
+      getAllScriptLines(arg0: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getAnimVarKey(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getAnimVarVal(): string;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, ArrayList arg1): java.util.ArrayList<string>
+       */
+      getBodyScriptLines(arg0: number, arg1: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getCompletionSound(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getFullType(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getLoadedScriptBodies(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getLoadedScriptBodyCount(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.characters.BodyDamage.Metabolics
+       */
+      getMetabolics(): zombie.characters.BodyDamage.Metabolics;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.ScriptModule
+       */
+      getModule(): zombie.scripting.objects.ScriptModule;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getObsolete(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.BaseScriptObject
+       */
+      getParent(): zombie.scripting.objects.BaseScriptObject;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getProp1(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getProp2(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getScriptLines(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectFullType(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.ScriptType
+       */
+      getScriptObjectType(): zombie.scripting.ScriptType;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScriptVersion(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getSound(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getTime(): number;
+      /**
+       * Method Parameters: 
+       *  - (IVersionHash arg0): void
+       */
+      getVersion(arg0: zombie.world.scripts.IVersionHash): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      hasMuscleStrain(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isCantSit(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isDebugOnly(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEnabled(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isFaceObject(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      reset(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      resetLoadedScriptBodies(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptModule arg0): void
+       */
+      setModule(arg0: zombie.scripting.objects.ScriptModule): void;
+      /**
+       * Method Parameters: 
+       *  - (BaseScriptObject arg0): void
+       */
+      setParent(arg0: zombie.scripting.objects.BaseScriptObject): void;
     }
     /**
      * @customConstructor UniqueRecipe.new
@@ -3029,14 +6278,71 @@ declare module '@asledgehammer/pipewrench' {
       constructor(arg0: string);
       /**
        * Method Parameters: 
+       *  - (String arg0): void
+       */
+      InitLoadPP(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
        *  - (String arg0, String[] arg1): void
        */
-      Load(arg0: string, arg1: string[]): void;
+      Load(arg0: string, arg1: string | string[]): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       *  - (Block arg0): void
+       */
+      LoadCommonBlock(arg0: string | zombie.scripting.ScriptParser$Block): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnLoadedAfterLua(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnPostWorldDictionaryInit(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptLoadMode arg0): void
+       */
+      OnScriptsLoaded(arg0: zombie.scripting.ScriptLoadMode): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      PreReload(): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      addLoadedScriptBody(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      calculateScriptVersion(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      debugString(): string;
+      /**
+       * Method Parameters: 
+       *  - (ArrayList arg0): java.util.ArrayList<string>
+       */
+      getAllScriptLines(arg0: java.util.ArrayList<string>): java.util.ArrayList<string>;
       /**
        * Method Parameters: 
        *  - (Empty): string
        */
       getBaseRecipe(): string;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, ArrayList arg1): java.util.ArrayList<string>
+       */
+      getBodyScriptLines(arg0: number, arg1: java.util.ArrayList<string>): java.util.ArrayList<string>;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -3059,6 +6365,16 @@ declare module '@asledgehammer/pipewrench' {
       getItems(): java.util.ArrayList<string>;
       /**
        * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getLoadedScriptBodies(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getLoadedScriptBodyCount(): number;
+      /**
+       * Method Parameters: 
        *  - (Empty): zombie.scripting.objects.ScriptModule
        */
       getModule(): zombie.scripting.objects.ScriptModule;
@@ -3067,6 +6383,66 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): string
        */
       getName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getObsolete(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.BaseScriptObject
+       */
+      getParent(): zombie.scripting.objects.BaseScriptObject;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getScriptLines(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectFullType(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.ScriptType
+       */
+      getScriptObjectType(): zombie.scripting.ScriptType;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScriptVersion(): number;
+      /**
+       * Method Parameters: 
+       *  - (IVersionHash arg0): void
+       */
+      getVersion(arg0: zombie.world.scripts.IVersionHash): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isDebugOnly(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEnabled(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      reset(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      resetLoadedScriptBodies(): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -3089,9 +6465,31 @@ declare module '@asledgehammer/pipewrench' {
       setHungerBonus(arg0: number): void;
       /**
        * Method Parameters: 
+       *  - (ScriptModule arg0): void
+       */
+      setModule(arg0: zombie.scripting.objects.ScriptModule): void;
+      /**
+       * Method Parameters: 
        *  - (String arg0): void
        */
       setName(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (BaseScriptObject arg0): void
+       */
+      setParent(arg0: zombie.scripting.objects.BaseScriptObject): void;
+    }
+    /**
+     * @customConstructor VehiclePartModel.new
+     * @
+     * [CLASS] zombie.scripting.objects.VehiclePartModel
+     */
+    export class VehiclePartModel {
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       */
+      constructor();
     }
     /**
      * @customConstructor VehicleScript.new
@@ -3099,6 +6497,13 @@ declare module '@asledgehammer/pipewrench' {
      * [CLASS] zombie.scripting.objects.VehicleScript extends zombie.scripting.objects.BaseScriptObject
      */
     export class VehicleScript {
+      /** int */
+      static readonly PHYSICS_SHAPE_BOX: number;
+      /** int */
+      static readonly PHYSICS_SHAPE_MESH: number;
+      /** int */
+      static readonly PHYSICS_SHAPE_SPHERE: number;
+
       /**
        * Constructors: 
        *  - (Empty Constructor)
@@ -3106,15 +6511,45 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
-       *  - (String arg0, String arg1): void
-       *  - (String arg0, String[] arg1): void
+       *  - (String arg0): void
        */
-      Load(arg0: string, arg1: string | string[]): void;
+      InitLoadPP(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      Load(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       *  - (Block arg0): void
+       */
+      LoadCommonBlock(arg0: string | zombie.scripting.ScriptParser$Block): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
        */
       Loaded(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnLoadedAfterLua(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnPostWorldDictionaryInit(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptLoadMode arg0): void
+       */
+      OnScriptsLoaded(arg0: zombie.scripting.ScriptLoadMode): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      PreReload(): void;
       /**
        * Method Parameters: 
        *  - (ModelAttachment arg0): zombie.scripting.objects.ModelAttachment
@@ -3125,6 +6560,31 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0, ModelAttachment arg1): zombie.scripting.objects.ModelAttachment
        */
       addAttachmentAt(arg0: number, arg1: zombie.scripting.objects.ModelAttachment): zombie.scripting.objects.ModelAttachment;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      addLoadedScriptBody(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): zombie.scripting.objects.VehicleScript$PhysicsShape
+       */
+      addPhysicsShape(arg0: string): zombie.scripting.objects.VehicleScript$PhysicsShape;
+      /**
+       * Method Parameters: 
+       *  - (ModelAttachment arg0): void
+       */
+      afterRenameAttachment(arg0: zombie.scripting.objects.ModelAttachment): void;
+      /**
+       * Method Parameters: 
+       *  - (ModelAttachment arg0): void
+       */
+      beforeRenameAttachment(arg0: zombie.scripting.objects.ModelAttachment): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      calculateScriptVersion(): void;
       /**
        * Method Parameters: 
        *  - (VehicleScript arg0, String arg1): void
@@ -3144,7 +6604,32 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (VehicleScript arg0, String arg1): void
        */
+      copyPhysicsFrom(arg0: zombie.scripting.objects.VehicleScript, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (VehicleScript arg0, String arg1): void
+       */
+      copySoundFrom(arg0: zombie.scripting.objects.VehicleScript, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (VehicleScript arg0, String arg1): void
+       */
       copyWheelsFrom(arg0: zombie.scripting.objects.VehicleScript, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      debugString(): string;
+      /**
+       * Method Parameters: 
+       *  - (ArrayList arg0): java.util.ArrayList<string>
+       */
+      getAllScriptLines(arg0: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getAnimalTrailerSize(): number;
       /**
        * Method Parameters: 
        *  - (int arg0): zombie.scripting.objects.VehicleScript$Area
@@ -3175,6 +6660,21 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): number
        */
       getAttachmentCount(): number;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, ArrayList arg1): java.util.ArrayList<string>
+       */
+      getBodyScriptLines(arg0: number, arg1: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getCarMechanicsOverlay(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getCarModelName(): string;
       /**
        * Method Parameters: 
        *  - (Empty): org.joml.Vector3f
@@ -3232,6 +6732,11 @@ declare module '@asledgehammer/pipewrench' {
       getFileName(): string;
       /**
        * Method Parameters: 
+       *  - (Empty): string
+       */
+      getFirstZombieType(): string;
+      /**
+       * Method Parameters: 
        *  - (Empty): number
        */
       getForcedHue(): number;
@@ -3255,6 +6760,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): string
        */
       getFullName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getFullType(): string;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -3290,6 +6800,16 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): zombie.scripting.objects.VehicleScript$LightBar
        */
       getLightbar(): zombie.scripting.objects.VehicleScript$LightBar;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getLoadedScriptBodies(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getLoadedScriptBodyCount(): number;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -3343,9 +6863,19 @@ declare module '@asledgehammer/pipewrench' {
       getName(): string;
       /**
        * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getObsolete(): boolean;
+      /**
+       * Method Parameters: 
        *  - (Empty): number
        */
       getOffroadEfficiency(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.BaseScriptObject
+       */
+      getParent(): zombie.scripting.objects.BaseScriptObject;
       /**
        * Method Parameters: 
        *  - (int arg0): zombie.scripting.objects.VehicleScript$Part
@@ -3403,6 +6933,16 @@ declare module '@asledgehammer/pipewrench' {
       getPlayerDamageProtection(): number;
       /**
        * Method Parameters: 
+       *  - (Empty): string
+       */
+      getRandomSpecialKeyRing(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getRandomZombieType(): string;
+      /**
+       * Method Parameters: 
        *  - (Empty): number
        */
       getRearEndHealth(): number;
@@ -3411,6 +6951,31 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): number
        */
       getRollInfluence(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getScriptLines(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectFullType(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.ScriptType
+       */
+      getScriptObjectType(): zombie.scripting.ScriptType;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScriptVersion(): number;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -3441,6 +7006,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): zombie.scripting.objects.VehicleScript$Sounds
        */
       getSounds(): zombie.scripting.objects.VehicleScript$Sounds;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getSpecialKeyRing(): java.util.ArrayList<string>;
       /**
        * Method Parameters: 
        *  - (float arg0): number
@@ -3488,6 +7058,11 @@ declare module '@asledgehammer/pipewrench' {
       getTextures(): zombie.scripting.objects.VehicleScript$Skin;
       /**
        * Method Parameters: 
+       *  - (IVersionHash arg0): void
+       */
+      getVersion(arg0: zombie.world.scripts.IVersionHash): void;
+      /**
+       * Method Parameters: 
        *  - (int arg0): zombie.scripting.objects.VehicleScript$Wheel
        */
       getWheel(arg0: number): zombie.scripting.objects.VehicleScript$Wheel;
@@ -3508,15 +7083,80 @@ declare module '@asledgehammer/pipewrench' {
       getWheelFriction(): number;
       /**
        * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getZombieType(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
        *  - (String arg0, String arg1): boolean
        */
       globMatch(arg0: string, arg1: string): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      hasLighter(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      hasPhysicsChassisShape(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      hasSpecialKeyRing(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): boolean
+       */
+      hasZombieType(arg0: string): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isDebugOnly(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEnabled(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      notKillCrops(): boolean;
       /**
        * Method Parameters: 
        *  - (int arg0): zombie.scripting.objects.ModelAttachment
        *  - (ModelAttachment arg0): zombie.scripting.objects.ModelAttachment
        */
       removeAttachment(arg0: number | zombie.scripting.objects.ModelAttachment): zombie.scripting.objects.ModelAttachment;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): zombie.scripting.objects.VehicleScript$PhysicsShape
+       */
+      removePhysicsShape(arg0: number): zombie.scripting.objects.VehicleScript$PhysicsShape;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      reset(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      resetLoadedScriptBodies(): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      setCarMechanicsOverlay(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      setCarModelName(arg0: string): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -3554,9 +7194,19 @@ declare module '@asledgehammer/pipewrench' {
       setModelScale(arg0: number): void;
       /**
        * Method Parameters: 
+       *  - (ScriptModule arg0): void
+       */
+      setModule(arg0: zombie.scripting.objects.ScriptModule): void;
+      /**
+       * Method Parameters: 
        *  - (float arg0): void
        */
       setOffroadEfficiency(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (BaseScriptObject arg0): void
+       */
+      setParent(arg0: zombie.scripting.objects.BaseScriptObject): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -3572,6 +7222,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): void
        */
       toBullet(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      useChassisPhysicsCollision(): boolean;
     }
     /**
      * @customConstructor Anim.new
@@ -3693,6 +7348,21 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): string
        */
+      getAttachmentNameParent(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getAttachmentNameSelf(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getFile(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
       getId(): string;
       /**
        * Method Parameters: 
@@ -3704,6 +7374,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): org.joml.Vector3f
        */
       getRotate(): org.joml.Vector3f;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScale(): number;
     }
     /**
      * @customConstructor Part.new
@@ -3716,6 +7391,36 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty Constructor)
        */
       constructor();
+      /**
+       * Method Parameters: 
+       *  - (String arg0): zombie.scripting.objects.VehicleScript$Anim
+       */
+      getAnimById(arg0: string): zombie.scripting.objects.VehicleScript$Anim;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getDurability(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getId(): string;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): zombie.scripting.objects.VehicleScript$Model
+       */
+      getModel(arg0: number): zombie.scripting.objects.VehicleScript$Model;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): zombie.scripting.objects.VehicleScript$Model
+       */
+      getModelById(arg0: string): zombie.scripting.objects.VehicleScript$Model;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getModelCount(): number;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -3824,6 +7529,11 @@ declare module '@asledgehammer/pipewrench' {
       getOffset(): org.joml.Vector3f;
       /**
        * Method Parameters: 
+       *  - (Empty): string
+       */
+      getPhysicsShapeScript(): string;
+      /**
+       * Method Parameters: 
        *  - (Empty): number
        */
       getRadius(): number;
@@ -3837,6 +7547,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): string
        */
       getTypeString(): string;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      setPhysicsShapeScript(arg0: string): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -3951,9 +7666,75 @@ declare module '@asledgehammer/pipewrench' {
       constructor(arg0: zombie.scripting.objects.ScriptModule, arg1: string, arg2: string);
       /**
        * Method Parameters: 
-       *  - (String arg0, String[] arg1): void
+       *  - (String arg0): void
        */
-      Load(arg0: string, arg1: string[]): void;
+      InitLoadPP(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      Load(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       *  - (Block arg0): void
+       */
+      LoadCommonBlock(arg0: string | zombie.scripting.ScriptParser$Block): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnLoadedAfterLua(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnPostWorldDictionaryInit(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptLoadMode arg0): void
+       */
+      OnScriptsLoaded(arg0: zombie.scripting.ScriptLoadMode): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      PreReload(): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      addLoadedScriptBody(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      calculateScriptVersion(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      debugString(): string;
+      /**
+       * Method Parameters: 
+       *  - (ArrayList arg0): java.util.ArrayList<string>
+       */
+      getAllScriptLines(arg0: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, ArrayList arg1): java.util.ArrayList<string>
+       */
+      getBodyScriptLines(arg0: number, arg1: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getLoadedScriptBodies(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getLoadedScriptBodyCount(): number;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.scripting.objects.ScriptModule
@@ -3961,9 +7742,912 @@ declare module '@asledgehammer/pipewrench' {
       getModule(): zombie.scripting.objects.ScriptModule;
       /**
        * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getObsolete(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.BaseScriptObject
+       */
+      getParent(): zombie.scripting.objects.BaseScriptObject;
+      /**
+       * Method Parameters: 
        *  - (Empty): zombie.scripting.objects.VehicleScript
        */
       getScript(): zombie.scripting.objects.VehicleScript;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getScriptLines(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectFullType(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.ScriptType
+       */
+      getScriptObjectType(): zombie.scripting.ScriptType;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScriptVersion(): number;
+      /**
+       * Method Parameters: 
+       *  - (IVersionHash arg0): void
+       */
+      getVersion(arg0: zombie.world.scripts.IVersionHash): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isDebugOnly(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEnabled(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      reset(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      resetLoadedScriptBodies(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptModule arg0): void
+       */
+      setModule(arg0: zombie.scripting.objects.ScriptModule): void;
+      /**
+       * Method Parameters: 
+       *  - (BaseScriptObject arg0): void
+       */
+      setParent(arg0: zombie.scripting.objects.BaseScriptObject): void;
+    }
+    /**
+     * @customConstructor XuiColorsScript.new
+     * @
+     * [CLASS] zombie.scripting.objects.XuiColorsScript extends zombie.scripting.objects.BaseScriptObject
+     */
+    export class XuiColorsScript {
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       */
+      constructor();
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      InitLoadPP(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      Load(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       *  - (Block arg0): void
+       */
+      LoadCommonBlock(arg0: string | zombie.scripting.ScriptParser$Block): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnLoadedAfterLua(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnPostWorldDictionaryInit(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptLoadMode arg0): void
+       */
+      OnScriptsLoaded(arg0: zombie.scripting.ScriptLoadMode): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      PreReload(): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      addLoadedScriptBody(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      calculateScriptVersion(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      debugString(): string;
+      /**
+       * Method Parameters: 
+       *  - (ArrayList arg0): java.util.ArrayList<string>
+       */
+      getAllScriptLines(arg0: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, ArrayList arg1): java.util.ArrayList<string>
+       */
+      getBodyScriptLines(arg0: number, arg1: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Map<string, zombie.core.Color>
+       */
+      getColorMap(): java.util.Map<string, zombie.core.Color>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getLoadedScriptBodies(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getLoadedScriptBodyCount(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.ScriptModule
+       */
+      getModule(): zombie.scripting.objects.ScriptModule;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getObsolete(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.BaseScriptObject
+       */
+      getParent(): zombie.scripting.objects.BaseScriptObject;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getScriptLines(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectFullType(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.ScriptType
+       */
+      getScriptObjectType(): zombie.scripting.ScriptType;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScriptVersion(): number;
+      /**
+       * Method Parameters: 
+       *  - (IVersionHash arg0): void
+       */
+      getVersion(arg0: zombie.world.scripts.IVersionHash): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isDebugOnly(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEnabled(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      reset(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      resetLoadedScriptBodies(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptModule arg0): void
+       */
+      setModule(arg0: zombie.scripting.objects.ScriptModule): void;
+      /**
+       * Method Parameters: 
+       *  - (BaseScriptObject arg0): void
+       */
+      setParent(arg0: zombie.scripting.objects.BaseScriptObject): void;
+    }
+    /**
+     * @customConstructor XuiConfigScript.new
+     * @
+     * [CLASS] zombie.scripting.objects.XuiConfigScript extends zombie.scripting.objects.BaseScriptObject
+     */
+    export class XuiConfigScript {
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       */
+      constructor();
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      InitLoadPP(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      Load(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       *  - (Block arg0): void
+       */
+      LoadCommonBlock(arg0: string | zombie.scripting.ScriptParser$Block): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnLoadedAfterLua(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnPostWorldDictionaryInit(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptLoadMode arg0): void
+       */
+      OnScriptsLoaded(arg0: zombie.scripting.ScriptLoadMode): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      PreReload(): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      addLoadedScriptBody(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      calculateScriptVersion(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      debugString(): string;
+      /**
+       * Method Parameters: 
+       *  - (ArrayList arg0): java.util.ArrayList<string>
+       */
+      getAllScriptLines(arg0: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, ArrayList arg1): java.util.ArrayList<string>
+       */
+      getBodyScriptLines(arg0: number, arg1: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getLoadedScriptBodies(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getLoadedScriptBodyCount(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.ScriptModule
+       */
+      getModule(): zombie.scripting.objects.ScriptModule;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getObsolete(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.BaseScriptObject
+       */
+      getParent(): zombie.scripting.objects.BaseScriptObject;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getScriptLines(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectFullType(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.ScriptType
+       */
+      getScriptObjectType(): zombie.scripting.ScriptType;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScriptVersion(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Map<zombie.scripting.ui.XuiVarType, java.util.ArrayList<string>>
+       */
+      getVarConfigs(): java.util.Map<zombie.scripting.ui.XuiVarType, java.util.ArrayList<string>>;
+      /**
+       * Method Parameters: 
+       *  - (IVersionHash arg0): void
+       */
+      getVersion(arg0: zombie.world.scripts.IVersionHash): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isDebugOnly(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEnabled(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      reset(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      resetLoadedScriptBodies(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptModule arg0): void
+       */
+      setModule(arg0: zombie.scripting.objects.ScriptModule): void;
+      /**
+       * Method Parameters: 
+       *  - (BaseScriptObject arg0): void
+       */
+      setParent(arg0: zombie.scripting.objects.BaseScriptObject): void;
+    }
+    /**
+     * @customConstructor XuiLayoutScript.new
+     * @
+     * [CLASS] zombie.scripting.objects.XuiLayoutScript extends zombie.scripting.objects.BaseScriptObject
+     */
+    export class XuiLayoutScript {
+      /**
+       * Constructors: 
+       *  - (ScriptType arg0, XuiScriptType arg1)
+       */
+      constructor(arg0: zombie.scripting.ScriptType, arg1: zombie.scripting.ui.XuiScriptType);
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      InitLoadPP(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      Load(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       *  - (Block arg0): void
+       */
+      LoadCommonBlock(arg0: string | zombie.scripting.ScriptParser$Block): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnLoadedAfterLua(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnPostWorldDictionaryInit(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptLoadMode arg0): void
+       */
+      OnScriptsLoaded(arg0: zombie.scripting.ScriptLoadMode): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      PreReload(): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      addLoadedScriptBody(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      calculateScriptVersion(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      debugString(): string;
+      /**
+       * Method Parameters: 
+       *  - (ArrayList arg0): java.util.ArrayList<string>
+       */
+      getAllScriptLines(arg0: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, ArrayList arg1): java.util.ArrayList<string>
+       */
+      getBodyScriptLines(arg0: number, arg1: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getLoadedScriptBodies(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getLoadedScriptBodyCount(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.ScriptModule
+       */
+      getModule(): zombie.scripting.objects.ScriptModule;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getObsolete(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.BaseScriptObject
+       */
+      getParent(): zombie.scripting.objects.BaseScriptObject;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getScriptLines(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectFullType(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.ScriptType
+       */
+      getScriptObjectType(): zombie.scripting.ScriptType;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.ui.XuiScriptType
+       */
+      getScriptType(): zombie.scripting.ui.XuiScriptType;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScriptVersion(): number;
+      /**
+       * Method Parameters: 
+       *  - (IVersionHash arg0): void
+       */
+      getVersion(arg0: zombie.world.scripts.IVersionHash): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.ui.XuiScript
+       */
+      getXuiScript(): zombie.scripting.ui.XuiScript;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isDebugOnly(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEnabled(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      parseScript(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      preParse(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      reset(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      resetLoadedScriptBodies(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptModule arg0): void
+       */
+      setModule(arg0: zombie.scripting.objects.ScriptModule): void;
+      /**
+       * Method Parameters: 
+       *  - (BaseScriptObject arg0): void
+       */
+      setParent(arg0: zombie.scripting.objects.BaseScriptObject): void;
+    }
+    /**
+     * @customConstructor XuiSkinScript.new
+     * @
+     * [CLASS] zombie.scripting.objects.XuiSkinScript extends zombie.scripting.objects.BaseScriptObject
+     */
+    export class XuiSkinScript {
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       */
+      constructor();
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      InitLoadPP(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      Load(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       *  - (Block arg0): void
+       */
+      LoadCommonBlock(arg0: string | zombie.scripting.ScriptParser$Block): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnLoadedAfterLua(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      OnPostWorldDictionaryInit(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptLoadMode arg0): void
+       */
+      OnScriptsLoaded(arg0: zombie.scripting.ScriptLoadMode): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      PreReload(): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      addLoadedScriptBody(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      calculateScriptVersion(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      debugString(): string;
+      /**
+       * Method Parameters: 
+       *  - (ArrayList arg0): java.util.ArrayList<string>
+       */
+      getAllScriptLines(arg0: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, ArrayList arg1): java.util.ArrayList<string>
+       */
+      getBodyScriptLines(arg0: number, arg1: java.util.ArrayList<string>): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.XuiColorsScript
+       */
+      getColorsScript(): zombie.scripting.objects.XuiColorsScript;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.XuiSkinScript$EntityUiScript
+       */
+      getDefaultEntityUiScript(): zombie.scripting.objects.XuiSkinScript$EntityUiScript;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Map<string, zombie.scripting.objects.XuiSkinScript$EntityUiScript>
+       */
+      getEntityUiScriptMap(): java.util.Map<string, zombie.scripting.objects.XuiSkinScript$EntityUiScript>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getImports(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getLoadedScriptBodies(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getLoadedScriptBodyCount(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.ScriptModule
+       */
+      getModule(): zombie.scripting.objects.ScriptModule;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getObsolete(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.BaseScriptObject
+       */
+      getParent(): zombie.scripting.objects.BaseScriptObject;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getScriptLines(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectFullType(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getScriptObjectName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.ScriptType
+       */
+      getScriptObjectType(): zombie.scripting.ScriptType;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScriptVersion(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Map<string, zombie.scripting.objects.XuiSkinScript$StyleInfoScript>
+       */
+      getStyleInfoMap(): java.util.Map<string, zombie.scripting.objects.XuiSkinScript$StyleInfoScript>;
+      /**
+       * Method Parameters: 
+       *  - (IVersionHash arg0): void
+       */
+      getVersion(arg0: zombie.world.scripts.IVersionHash): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isDebugOnly(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEnabled(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      reset(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      resetLoadedScriptBodies(): void;
+      /**
+       * Method Parameters: 
+       *  - (ScriptModule arg0): void
+       */
+      setModule(arg0: zombie.scripting.objects.ScriptModule): void;
+      /**
+       * Method Parameters: 
+       *  - (BaseScriptObject arg0): void
+       */
+      setParent(arg0: zombie.scripting.objects.BaseScriptObject): void;
+    }
+    /**
+     * @customConstructor ComponentUiScript.new
+     * @
+     * [CLASS] zombie.scripting.objects.XuiSkinScript$ComponentUiScript
+     */
+    export class XuiSkinScript$ComponentUiScript {
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       */
+      constructor();
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getDisplayName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getIconPath(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getListOrderZ(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getLuaPanelClass(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getXuiStyle(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEnabled(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEnabledSet(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isListOrderZ(): boolean;
+    }
+    /**
+     * @customConstructor EntityUiScript.new
+     * @
+     * [CLASS] zombie.scripting.objects.XuiSkinScript$EntityUiScript
+     */
+    export class XuiSkinScript$EntityUiScript {
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       */
+      constructor();
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getBuildDescription(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Map<zombie.entity.ComponentType, zombie.scripting.objects.XuiSkinScript$ComponentUiScript>
+       */
+      getComponentUiScriptMap(): java.util.Map<zombie.entity.ComponentType, zombie.scripting.objects.XuiSkinScript$ComponentUiScript>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getDescription(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getDisplayName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getIconPath(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getLuaCanOpenWindow(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getLuaOpenWindow(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getLuaWindowClass(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getXuiStyle(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isClearComponents(): boolean;
+    }
+    /**
+     * @customConstructor StyleInfoScript.new
+     * @
+     * [CLASS] zombie.scripting.objects.XuiSkinScript$StyleInfoScript
+     */
+    export class XuiSkinScript$StyleInfoScript {
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       */
+      constructor();
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.HashMap<string, string>
+       */
+      getDefaultStyleBlock(): java.util.HashMap<string, string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Map<string, java.util.HashMap<string, string>>
+       */
+      getStyleBlocks(): java.util.Map<string, java.util.HashMap<string, string>>;
     }
   }
 }

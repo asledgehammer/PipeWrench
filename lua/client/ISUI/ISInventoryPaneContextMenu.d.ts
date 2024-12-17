@@ -31,11 +31,16 @@ declare module '@asledgehammer/pipewrench/client' {
       static addEatTooltip: (option: any, items: any, percent: any, ...__args: never[]) => any;
 
       /** @noSelf */
+      static addFishRodOptions: (fishingRod: any, haveLure: any, context: any, player: any, ...__args: never[]) => any;
+
+      /** @noSelf */
       static addFixerSubOption: (
         brokenObject: any,
         player: any,
         fixing: any,
+        fixingNum: any,
         fixer: any,
+        fixerNum: any,
         subMenuFix: any,
         vehiclePart: any,
         ...__args: never[]
@@ -49,6 +54,19 @@ declare module '@asledgehammer/pipewrench/client' {
         extraInfo: any,
         evorecipe2: any,
         player: any,
+        ...__args: never[]
+      ) => any;
+
+      /** @noSelf */
+      static addLure: (player: any, fishingRod: any, lure: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static addNewCraftingDynamicalContextMenu: (
+        selectedItem: any,
+        context: any,
+        recipeList: any,
+        player: any,
+        containerList: any,
         ...__args: never[]
       ) => any;
 
@@ -69,6 +87,7 @@ declare module '@asledgehammer/pipewrench/client' {
         brokenObject: any,
         player: any,
         fixing: any,
+        fixingNum: any,
         fixOption: any,
         subMenuFix: any,
         vehiclePart: any,
@@ -94,9 +113,15 @@ declare module '@asledgehammer/pipewrench/client' {
       static canUnpack: (items: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
+      static changeHook: (player: any, fishingRod: any, hook: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static changeLine: (player: any, fishingRod: any, line: any, ...__args: never[]) => any;
+
+      /** @noSelf */
       static checkConsolidate: (
         drainable: any,
-        player: any,
+        playerObj: any,
         context: any,
         previousPourInto: any,
         ...__args: never[]
@@ -132,7 +157,7 @@ declare module '@asledgehammer/pipewrench/client' {
       static doClothingPatchMenu: (player: any, clothing: any, context: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static doClothingRecipeMenu: (playerObj: any, clothing: any, items: any, context: any, ...__args: never[]) => any;
+      static doDrinkFluidMenu: (playerObj: any, fluidContainer: any, context: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static doDrinkForThirstMenu: (context: any, playerObj: any, waterContainer: any, ...__args: never[]) => any;
@@ -230,6 +255,9 @@ declare module '@asledgehammer/pipewrench/client' {
       static getContainers: (character: any, ...__args: never[]) => any;
 
       /** @noSelf */
+      static getEatingMask: (playerObj: any, removeMask: any, ...__args: never[]) => any;
+
+      /** @noSelf */
       static getEvoItemCategories: (items: any, evorecipe: any, ...__args: never[]) => any;
 
       /** @noSelf */
@@ -239,10 +267,16 @@ declare module '@asledgehammer/pipewrench/client' {
       static getRealEvolvedItemUse: (evoItem: any, evorecipe2: any, cookingLvl: any, ...__args: never[]) => any;
 
       /** @noSelf */
+      static hasOpenFlame: (playerObj: any, ...__args: never[]) => any;
+
+      /** @noSelf */
       static hasRoomForAny: (playerObj: any, container: any, items: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static haveDamagePart: (playerId: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static hurricaneLanternExtinguish: (item: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static information: (item: any, ...__args: never[]) => any;
@@ -278,10 +312,10 @@ declare module '@asledgehammer/pipewrench/client' {
       static onClothingItemExtra: (item: any, extra: any, playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onConsolidate: (drainable: any, intoItem: any, player: any, ...__args: never[]) => any;
+      static onConsolidate: (drainable: any, intoItem: any, playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onConsolidateAll: (drainable: any, consolidateList: any, player: any, ...__args: never[]) => any;
+      static onConsolidateAll: (drainable: any, consolidateList: any, playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static OnCraft: (selectedItem: any, recipe: any, player: any, all: any, ...__args: never[]) => any;
@@ -299,13 +333,13 @@ declare module '@asledgehammer/pipewrench/client' {
       ) => any;
 
       /** @noSelf */
-      static onCraftSheetRope: (playerObj: any, items: any, ...__args: never[]) => any;
-
-      /** @noSelf */
       static onDrink: (items: any, waterContainer: any, percentage: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onDrinkForThirst: (waterContainer: any, playerObj: any, ...__args: never[]) => any;
+      static onDrinkFluid: (item: any, percent: any, playerObj: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static onDrinkForThirst: (waterContainer: any, playerObj: any, units: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static onDropItems: (items: any, player: any, ...__args: never[]) => any;
@@ -314,7 +348,7 @@ declare module '@asledgehammer/pipewrench/client' {
       static onDryMyself: (towels: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onDumpContents: (items: any, item: any, time: any, player: any, ...__args: never[]) => any;
+      static onDumpContents: (items: any, item: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static onDyeHair: (hairDye: any, playerObj: any, beard: any, ...__args: never[]) => any;
@@ -338,8 +372,8 @@ declare module '@asledgehammer/pipewrench/client' {
       static onFix: (
         brokenObject: any,
         player: any,
-        fixing: any,
-        fixer: any,
+        fixingNum: any,
+        fixerNum: any,
         vehiclePart: any,
         ...__args: never[]
       ) => any;
@@ -366,6 +400,9 @@ declare module '@asledgehammer/pipewrench/client' {
       static onInspectClothingUI: (player: any, clothing: any, ...__args: never[]) => any;
 
       /** @noSelf */
+      static onInspectTrack: (player: any, track: any, ...__args: never[]) => any;
+
+      /** @noSelf */
       static OnLinkRemoteController: (itemToLink: any, remoteController: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
@@ -382,6 +419,22 @@ declare module '@asledgehammer/pipewrench/client' {
 
       /** @noSelf */
       static onMoveItemsTo: (items: any, dest: any, player: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static OnNewCraft: (selectedItem: any, recipe: any, player: any, all: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static OnNewCraftComplete: (logic: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static OnNewCraftCompleteAll: (
+        completedAction: any,
+        recipe: any,
+        playerObj: any,
+        containers: any,
+        usedItems: any,
+        ...__args: never[]
+      ) => any;
 
       /** @noSelf */
       static onPillsItems: (items: any, player: any, ...__args: never[]) => any;
@@ -405,9 +458,6 @@ declare module '@asledgehammer/pipewrench/client' {
       static onRackGun: (playerObj: any, weapon: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnReload: (items: any, player: any, ...__args: never[]) => any;
-
-      /** @noSelf */
       static onRemoveUpgradeWeapon: (weapon: any, part: any, playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
@@ -421,9 +471,6 @@ declare module '@asledgehammer/pipewrench/client' {
 
       /** @noSelf */
       static OnResetRemoteControlID: (item: any, player: any, ...__args: never[]) => any;
-
-      /** @noSelf */
-      static onRipClothing: (playerObj: any, items: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static OnSecondWeapon: (items: any, player: any, ...__args: never[]) => any;
@@ -444,6 +491,9 @@ declare module '@asledgehammer/pipewrench/client' {
       static OnTriggerRemoteController: (remoteController: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
+      static onTurnIntoSkeleton: (animal: any, ...__args: never[]) => any;
+
+      /** @noSelf */
       static OnTwoHandsEquip: (items: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
@@ -462,6 +512,9 @@ declare module '@asledgehammer/pipewrench/client' {
       static onWearItems: (items: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
+      static onWringClothing: (items: any, player: any, ...__args: never[]) => any;
+
+      /** @noSelf */
       static onWriteSomething: (notebook: any, editable: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
@@ -469,6 +522,9 @@ declare module '@asledgehammer/pipewrench/client' {
 
       /** @noSelf */
       static removeAllPatches: (player: any, clothing: any, parts: any, needle: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static removeLure: (player: any, fishingRod: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static removePatch: (player: any, clothing: any, part: any, needle: any, ...__args: never[]) => any;

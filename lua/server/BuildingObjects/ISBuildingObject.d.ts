@@ -9,7 +9,11 @@ declare module '@asledgehammer/pipewrench/server' {
       [id: string]: any;
       static [id: string]: any;
 
+      static floorCursorSprite: any;
+
       blockAllTheSquare: any;
+
+      blockBuild: any;
 
       build: any;
 
@@ -23,7 +27,7 @@ declare module '@asledgehammer/pipewrench/server' {
 
       canPassThrough: any;
 
-      choosenSprite: any;
+      chosenSprite: any;
 
       clickedUI: any;
 
@@ -93,6 +97,8 @@ declare module '@asledgehammer/pipewrench/server' {
 
       getBPrompt(...__args: never[]): any;
 
+      getFloorCursorSprite(...__args: never[]): any;
+
       getLBPrompt(...__args: never[]): any;
 
       getRBPrompt(...__args: never[]): any;
@@ -106,6 +112,8 @@ declare module '@asledgehammer/pipewrench/server' {
       init(...__args: never[]): any;
 
       isValid(square: any, ...__args: never[]): any;
+
+      onActionComplete(...__args: never[]): any;
 
       onJoypadDirDown(joypadData: any, ...__args: never[]): any;
 
@@ -124,6 +132,8 @@ declare module '@asledgehammer/pipewrench/server' {
       reinit(...__args: never[]): any;
 
       render(x: any, y: any, z: any, square: any, ...__args: never[]): any;
+
+      renderOpaqueObjectsInWorld(x: any, y: any, z: any, square: any, ...__args: never[]): any;
 
       reset(...__args: never[]): any;
 
@@ -144,6 +154,8 @@ declare module '@asledgehammer/pipewrench/server' {
       setSprite(sprite: any, ...__args: never[]): any;
 
       tryBuild(x: any, y: any, z: any, ...__args: never[]): any;
+
+      update(...__args: never[]): any;
 
       walkTo(x: any, y: any, z: any, ...__args: never[]): any;
 

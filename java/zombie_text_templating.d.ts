@@ -33,6 +33,37 @@ declare module '@asledgehammer/pipewrench' {
       hasReplacer(arg0: string): boolean;
     }
     /**
+     * @customConstructor ITemplateBuilder.new
+     * @
+     * [INTERFACE] zombie.text.templating.ITemplateBuilder
+     */
+    export class ITemplateBuilder {
+      protected constructor();
+      /**
+       * Method Parameters: 
+       *  - (String arg0): string
+       *  - (String arg0, KahluaTableImpl arg1): string
+       *  - (String arg0, IReplaceProvider arg1): string
+       */
+      Build(arg0: string, arg1?: se.krka.kahlua.j2se.KahluaTableImpl | zombie.text.templating.IReplaceProvider): string;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): void
+       */
+      CopyFrom(arg0: any): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, KahluaTableImpl arg1): void
+       *  - (String arg0, IReplace arg1): void
+       */
+      RegisterKey(arg0: string, arg1: se.krka.kahlua.j2se.KahluaTableImpl | zombie.text.templating.IReplace): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      Reset(): void;
+    }
+    /**
      * @customConstructor ReplaceProviderCharacter.new
      * @
      * [CLASS] zombie.text.templating.ReplaceProviderCharacter extends zombie.text.templating.ReplaceProvider
@@ -85,6 +116,20 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, IReplaceProvider arg1): string
        */
       static Build(arg0: string, arg1?: se.krka.kahlua.j2se.KahluaTableImpl | zombie.text.templating.IReplaceProvider): string;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.text.templating.ITemplateBuilder
+       */
+      static CreateBlanc(): zombie.text.templating.ITemplateBuilder;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.text.templating.ITemplateBuilder
+       */
+      static CreateCopy(): zombie.text.templating.ITemplateBuilder;
       /**
        * @noSelf
        *

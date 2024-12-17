@@ -8,9 +8,6 @@ declare module '@asledgehammer/pipewrench/client' {
       static [id: string]: any;
 
       constructor();
-
-      /** @noSelf */
-      static initObjectModData: (isoObject: any, trapDef: any, north: any, player: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.Traps.CTrapSystem {}

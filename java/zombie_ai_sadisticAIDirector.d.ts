@@ -20,8 +20,9 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (IsoPlayer arg0, int arg1): void
+       *  - (IsoPlayer arg0, int arg1, boolean arg2, boolean arg3): void
        */
-      setPlayerFallAsleep(arg0: zombie.characters.IsoPlayer, arg1: number): void;
+      setPlayerFallAsleep(arg0: zombie.characters.IsoPlayer, arg1: number, arg2?: boolean, arg3?: boolean): void;
       /**
        * Method Parameters: 
        *  - (IsoPlayer arg0): void

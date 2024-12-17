@@ -7,11 +7,17 @@ declare module '@asledgehammer/pipewrench/client' {
       [id: string]: any;
       static [id: string]: any;
 
+      autoScale: any;
+
+      doBorder: any;
+
       font: any;
 
       mouseover: any;
 
       mouseovertext: any;
+
+      noAspect: any;
 
       texture: any;
 

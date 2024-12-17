@@ -13,6 +13,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       deviceData: any;
 
+      ignoreHandsWounds: any;
+
       mode: any;
 
       secondaryItem: any;
@@ -70,6 +72,8 @@ declare module '@asledgehammer/pipewrench/client' {
       performTogglePlayMedia(...__args: never[]): any;
 
       performUnMuteVolume(...__args: never[]): any;
+
+      startSetChannel(...__args: never[]): any;
     }
   }
   export namespace lua.client.RadioCom.ISRadioAction {}

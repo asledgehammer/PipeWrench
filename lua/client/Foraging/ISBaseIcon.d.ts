@@ -269,8 +269,6 @@ declare module '@asledgehammer/pipewrench/client' {
 
       setAlpha(_a: any, ...__args: never[]): any;
 
-      setCanRollForSearchFocus(...__args: never[]): any;
-
       setColor(_rgba: any, ...__args: never[]): any;
 
       setIsBeingRemoved(_isBeingRemoved: any, ...__args: never[]): any;

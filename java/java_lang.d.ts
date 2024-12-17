@@ -99,6 +99,32 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (int arg0, int arg1): number
+       *  - (long arg0, int arg1): number
+       *  - (long arg0, long arg1): number
+       */
+      static ceilDiv(arg0: number, arg1: number): number;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (int arg0, int arg1): number
+       *  - (long arg0, long arg1): number
+       */
+      static ceilDivExact(arg0: number, arg1: number): number;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (int arg0, int arg1): number
+       *  - (long arg0, int arg1): number
+       *  - (long arg0, long arg1): number
+       */
+      static ceilMod(arg0: number, arg1: number): number;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (double arg0, double arg1): number
        *  - (float arg0, float arg1): number
        */
@@ -129,6 +155,14 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (int arg0, int arg1): number
+       *  - (long arg0, long arg1): number
+       */
+      static divideExact(arg0: number, arg1: number): number;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (double arg0): number
        */
       static exp(arg0: number): number;
@@ -155,6 +189,14 @@ declare module '@asledgehammer/pipewrench' {
        *  - (long arg0, long arg1): number
        */
       static floorDiv(arg0: number, arg1: number): number;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (int arg0, int arg1): number
+       *  - (long arg0, long arg1): number
+       */
+      static floorDivExact(arg0: number, arg1: number): number;
       /**
        * @noSelf
        *
@@ -408,10 +450,19 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0): number
        */
       static ulp(arg0: number): number;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (long arg0, long arg1): number
+       */
+      static unsignedMultiplyHigh(arg0: number, arg1: number): number;
     }
+    export type Number = any;
     export type Runnable = any;
     export type StackTraceElement = any;
     export type StringBuffer = any;
+    export type StringBuilder = any;
     export type Thread = any;
     export type ThreadLocal<T> = any;
     export type Throwable = any;

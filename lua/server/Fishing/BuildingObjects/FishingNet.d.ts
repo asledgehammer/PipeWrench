@@ -9,13 +9,15 @@ declare module '@asledgehammer/pipewrench/server' {
 
       character: any;
 
+      item: any;
+
       player: any;
 
       skipBuildAction: any;
 
       skipWalk: any;
 
-      constructor(player: any);
+      constructor(character: any, item: any);
 
       create(x: any, y: any, z: any, north: any, sprite: any, ...__args: never[]): any;
 
@@ -27,6 +29,12 @@ declare module '@asledgehammer/pipewrench/server' {
 
       /** @noSelf */
       static remove: (net: any, player: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static setBait: (net: any, baitForce: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static updateBait: (net: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.server.Fishing.BuildingObjects.FishingNet {}

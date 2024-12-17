@@ -15,9 +15,13 @@ declare module '@asledgehammer/pipewrench/client' {
 
       defaultBool: any;
 
+      defaultOption: any;
+
       defaultText: any;
 
       entry: any;
+
+      enumOption: any;
 
       errorTxt: any;
 

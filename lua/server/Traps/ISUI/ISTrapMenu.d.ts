@@ -6,6 +6,9 @@ declare module '@asledgehammer/pipewrench/server' {
       static [id: string]: any;
 
       /** @noSelf */
+      static addAnimalDebug: (trap: any, player: any, animal: any, ...__args: never[]) => any;
+
+      /** @noSelf */
       static doTrapMenu: (player: any, context: any, worldobjects: any, test: any, ...__args: never[]) => any;
 
       /** @noSelf */

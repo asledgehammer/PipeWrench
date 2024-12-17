@@ -14,9 +14,9 @@ declare module '@asledgehammer/pipewrench' {
       constructor(arg0: zombie.characters.IsoGameCharacter);
       /**
        * Method Parameters: 
-       *  - (int arg0): void
+       *  - (Empty): void
        */
-      beginLine(arg0: number): void;
+      close(): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -24,14 +24,14 @@ declare module '@asledgehammer/pipewrench' {
       discardRecording(): void;
       /**
        * Method Parameters: 
-       *  - (Empty): void
-       */
-      endLine(): void;
-      /**
-       * Method Parameters: 
        *  - (Empty): zombie.characters.IsoGameCharacter
        */
       getOwner(): zombie.characters.IsoGameCharacter;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      hasActiveLine(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -44,9 +44,14 @@ declare module '@asledgehammer/pipewrench' {
       logAIState(arg0: zombie.ai.State, arg1: java.util.List<zombie.ai.StateMachine$SubstateSlot>): void;
       /**
        * Method Parameters: 
-       *  - (ActionState arg0, List arg1): void
+       *  - (ActionGroup arg0, ActionState arg1, List arg2): void
        */
-      logActionState(arg0: zombie.characters.action.ActionState, arg1: java.util.List<zombie.characters.action.ActionState>): void;
+      logActionState(arg0: zombie.characters.action.ActionGroup, arg1: zombie.characters.action.ActionState, arg2: java.util.List<zombie.characters.action.ActionState>): void;
+      /**
+       * Method Parameters: 
+       *  - (AnimationTrack arg0, AnimEvent arg1): void
+       */
+      logAnimEvent(arg0: zombie.core.skinnedmodel.animation.AnimationTrack, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
        * Method Parameters: 
        *  - (LiveAnimNode arg0): void
@@ -59,9 +64,9 @@ declare module '@asledgehammer/pipewrench' {
       logAnimState(arg0: zombie.core.skinnedmodel.advancedanimation.AnimState): void;
       /**
        * Method Parameters: 
-       *  - (List arg0, int[] arg1, float[] arg2, Vector2 arg3): void
+       *  - (List arg0, int[] arg1, float[] arg2, Vector2 arg3, Vector2 arg4): void
        */
-      logAnimWeights(arg0: java.util.List<zombie.core.skinnedmodel.animation.AnimationTrack>, arg1: number[], arg2: number[], arg3: zombie.iso.Vector2): void;
+      logAnimWeights(arg0: java.util.List<zombie.core.skinnedmodel.animation.AnimationTrack>, arg1: number[], arg2: number[], arg3: zombie.iso.Vector2, arg4: zombie.iso.Vector2): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -74,9 +79,47 @@ declare module '@asledgehammer/pipewrench' {
       logVariables(arg0: zombie.core.skinnedmodel.advancedanimation.IAnimationVariableSource): void;
       /**
        * Method Parameters: 
+       *  - (int arg0): void
+       */
+      newFrame(arg0: number): void;
+      /**
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setRecording(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      writeFrame(): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      static backupOldRecordings(): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      static discardOldRecordings(): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      static getRecordingDir(): string;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      static init(): void;
       /**
        * @noSelf
        *

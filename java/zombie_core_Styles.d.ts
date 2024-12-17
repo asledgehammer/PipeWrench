@@ -129,9 +129,9 @@ declare module '@asledgehammer/pipewrench' {
        * Constructors: 
        *  - (Empty Constructor)
        *  - (int arg0)
-       *  - (boolean arg0, int arg1)
+       *  - (ExpandStyle arg0, int arg1)
        */
-      constructor(arg0?: number | boolean, arg1?: number);
+      constructor(arg0?: number | zombie.core.Styles.FloatList$ExpandStyle, arg1?: number);
       /**
        * Method Parameters: 
        *  - (float arg0): number
@@ -193,6 +193,71 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): void
        */
       trimToSize(): void;
+    }
+    /** [ENUM] zombie.core.Styles.FloatList$ExpandStyle */
+    export class FloatList$ExpandStyle {
+      protected constructor();
+      static readonly Fast: zombie.core.Styles.FloatList$ExpandStyle;
+      static readonly Normal: zombie.core.Styles.FloatList$ExpandStyle;
+      static readonly Slow: zombie.core.Styles.FloatList$ExpandStyle;
+      name(): string;
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.core.Styles.FloatList$ExpandStyle>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.core.Styles.FloatList$ExpandStyle>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): zombie.core.Styles.FloatList$ExpandStyle
+       *  - (Class arg0, String arg1): T
+       */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.core.Styles.FloatList$ExpandStyle | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.core.Styles.FloatList$ExpandStyle[]
+       */
+      static values(): zombie.core.Styles.FloatList$ExpandStyle[];
     }
     /**
      * @customConstructor GeometryData.new

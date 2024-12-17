@@ -182,18 +182,13 @@ declare module '@asledgehammer/pipewrench/client' {
       static onConfigHeadlight: (playerObj: any, part: any, dir: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnMechanicActionDone: (
-        chr: any,
-        success: any,
-        vehicleId: any,
-        partId: any,
-        itemId: any,
-        installing: any,
-        ...__args: never[]
-      ) => any;
+      static OnMechanicActionDone: (chr: any, success: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static onRepairEngine: (playerObj: any, part: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static onRepairLightbar: (playerObj: any, part: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static onTakeEngineParts: (playerObj: any, part: any, ...__args: never[]) => any;

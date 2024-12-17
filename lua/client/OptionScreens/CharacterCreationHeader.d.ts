@@ -9,8 +9,6 @@ declare module '@asledgehammer/pipewrench/client' {
 
       avatarPanel: any;
 
-      femaletex: any;
-
       forenameEntry: any;
 
       genderCombo: any;
@@ -18,8 +16,6 @@ declare module '@asledgehammer/pipewrench/client' {
       itemheightoverride: any;
 
       javaObject: any;
-
-      maletex: any;
 
       surnameEntry: any;
 
@@ -42,6 +38,8 @@ declare module '@asledgehammer/pipewrench/client' {
       onOptionMouseDown(button: any, x: any, y: any, ...__args: never[]): any;
 
       randomGenericOutfit(...__args: never[]): any;
+
+      randomVoice(...__args: never[]): any;
 
       render(...__args: never[]): any;
 

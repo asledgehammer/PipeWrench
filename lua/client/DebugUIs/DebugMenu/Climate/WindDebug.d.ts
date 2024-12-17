@@ -11,8 +11,6 @@ declare module '@asledgehammer/pipewrench/client' {
 
       static shiftDown: any;
 
-      buttonM1: any;
-
       chartLabelsLeft: any;
 
       chartLabelsLeftTxt: any;

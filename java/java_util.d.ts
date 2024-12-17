@@ -326,6 +326,7 @@ declare module '@asledgehammer/pipewrench' {
        */
       values(): java.util.Collection<V>;
     }
+    export type EnumSet<E> = any;
     export type Enumeration<E> = any;
     export type GregorianCalendar = any;
     /**
@@ -499,7 +500,149 @@ declare module '@asledgehammer/pipewrench' {
        */
       remove(): void;
     }
-    export type LinkedHashMap<K, V> = any;
+    /**
+     * @customConstructor LinkedHashMap.new
+     * @
+     * [CLASS] java.util.LinkedHashMap extends java.util.HashMap<K, V>
+     */
+    export class LinkedHashMap<K, V> {
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       *  - (int arg0)
+       *  - (Map arg0)
+       *  - (int arg0, float arg1)
+       *  - (int arg0, float arg1, boolean arg2)
+       */
+      constructor(arg0?: number | java.util.Map<K, V>, arg1?: number, arg2?: boolean);
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      clear(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): any
+       */
+      clone(): any;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0, BiFunction arg1): V
+       */
+      compute(arg0: any, arg1: java.util._function_.BiFunction<any, any, any>): any;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0, Function arg1): V
+       */
+      computeIfAbsent(arg0: any, arg1: java.util._function_.Function<any, any>): any;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0, BiFunction arg1): V
+       */
+      computeIfPresent(arg0: any, arg1: java.util._function_.BiFunction<any, any, any>): any;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      containsKey(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      containsValue(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Set<java.util.Map$Entry<K, V>>
+       */
+      entrySet(): java.util.Set<java.util.Map$Entry<K, V>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (BiConsumer arg0): void
+       */
+      forEach(arg0: java.util._function_.BiConsumer<K, V>): void;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): V
+       */
+      get(arg0: any): any;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0, Object arg1): V
+       */
+      getOrDefault(arg0: any, arg1: any): any;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEmpty(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Set<K>
+       */
+      keySet(): java.util.Set<K>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0, Object arg1, BiFunction arg2): V
+       */
+      merge(arg0: any, arg1: any, arg2: java.util._function_.BiFunction<any, any, any>): any;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0, Object arg1): V
+       */
+      put(arg0: any, arg1: any): any;
+      /**
+       * Method Parameters: 
+       *  - (Map arg0): void
+       */
+      putAll(arg0: java.util.Map<any, any>): void;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0, Object arg1): V
+       */
+      putIfAbsent(arg0: any, arg1: any): any;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): V
+       *  - (Object arg0, Object arg1): boolean
+       */
+      remove(arg0: any, arg1?: any): any;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0, Object arg1): V
+       *  - (Object arg0, Object arg1, Object arg2): boolean
+       */
+      replace(arg0: any, arg1: any, arg2?: any): any;
+      /**
+       * Method Parameters: 
+       *  - (BiFunction arg0): void
+       */
+      replaceAll(arg0: java.util._function_.BiFunction<K, V, V>): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      size(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Collection<V>
+       */
+      values(): java.util.Collection<V>;
+    }
     /**
      * @customConstructor LinkedList.new
      * @
@@ -776,6 +919,7 @@ declare module '@asledgehammer/pipewrench' {
     export type Map<K, V> = any;
     export type Map$Entry<K, V> = any;
     export type Optional<T> = any;
+    export type Random = any;
     export type Set<E> = any;
     export type Spliterator<T> = any;
     /**
@@ -1044,6 +1188,7 @@ declare module '@asledgehammer/pipewrench' {
       trimToSize(): void;
     }
     export type TimeZone = any;
+    export type UUID = any;
     /**
      * @customConstructor Vector.new
      * @

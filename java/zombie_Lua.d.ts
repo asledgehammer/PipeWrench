@@ -108,7 +108,21 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): void
        */
+      static RunQueuedEvents(): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): void
+       */
       static clear(): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (ArrayList arg0, HashMap arg1): void
+       */
+      static getEvents(arg0: java.util.ArrayList<zombie.Lua.Event>, arg1: java.util.HashMap<string, zombie.Lua.Event>): void;
       /**
        * @noSelf
        *
@@ -123,6 +137,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Prototype arg0, LuaClosure arg1): void
        */
       static reroute(arg0: se.krka.kahlua.vm.Prototype, arg1: se.krka.kahlua.vm.LuaClosure): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (ArrayList arg0, HashMap arg1): void
+       */
+      static setEvents(arg0: java.util.ArrayList<zombie.Lua.Event>, arg1: java.util.HashMap<string, zombie.Lua.Event>): void;
       /**
        * @noSelf
        *
@@ -155,6 +176,51 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, Object arg1): void
        */
       static triggerEventUnique(arg0: string, arg1: any): void;
+    }
+    /**
+     * @customConstructor QueuedEvent.new
+     * @
+     * [CLASS] zombie.Lua.LuaEventManager$QueuedEvent extends zombie.util.PooledObject
+     */
+    export class LuaEventManager$QueuedEvent {
+      /** zombie.util.Pool<zombie.Lua.LuaEventManager$QueuedEvent> */
+      static readonly EventPool?: zombie.util.Pool<zombie.Lua.LuaEventManager$QueuedEvent>;
+
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       */
+      constructor();
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.util.Pool$PoolReference
+       */
+      getPoolReference(): zombie.util.Pool$PoolReference;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isFree(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      onReleased(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      release(): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setFree(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (PoolReference arg0): void
+       */
+      setPool(arg0: zombie.util.Pool$PoolReference): void;
     }
     /**
      * @customConstructor LuaManager.new
@@ -249,13 +315,6 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (InventoryItem arg0): void
-       */
-      static dropItem(arg0: zombie.inventory.InventoryItem): void;
-      /**
-       * @noSelf
-       *
-       * Method Parameters: 
        *  - (ItemContainer arg0, IsoPlayer arg1): void
        */
       static fillContainer(arg0: zombie.inventory.ItemContainer, arg1: zombie.characters.IsoPlayer): void;
@@ -285,8 +344,9 @@ declare module '@asledgehammer/pipewrench' {
        *
        * Method Parameters: 
        *  - (String arg0): any
+       *  - (String arg0, DebugLogStream arg1): any
        */
-      static getFunctionObject(arg0: string): any;
+      static getFunctionObject(arg0: string, arg1?: zombie.debug.DebugLogStream): any;
       /**
        * @noSelf
        *
@@ -312,6 +372,14 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (String arg0): any
+       *  - (String arg0, DebugLogStream arg1): any
+       */
+      static getTableObject(arg0: string, arg1?: zombie.debug.DebugLogStream): any;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (Empty): void
        */
       static init(): void;
@@ -333,16 +401,16 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (URI arg0, File arg1): void
+       *  - (Empty): void
        */
-      static searchFolders(arg0: java.net.URI, arg1: java.io.File): void;
+      static releaseAllVideoTextures(): void;
       /**
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoGameCharacter arg0, InventoryItem arg1, ItemContainer arg2, ItemContainer arg3): void
+       *  - (URI arg0, File arg1): void
        */
-      static transferItem(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.inventory.InventoryItem, arg2: zombie.inventory.ItemContainer, arg3: zombie.inventory.ItemContainer): void;
+      static searchFolders(arg0: java.net.URI, arg1: java.io.File): void;
       /**
        * @noSelf
        *
@@ -446,6 +514,11 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
+       *  - (String arg0): void
+       */
+      NewMapBinaryFile(arg0: string): void;
+      /**
+       * Method Parameters: 
        *  - (InventoryItem arg0, IsoGridSquare arg1, float arg2, float arg3, float arg4, float arg5): void
        */
       Render3DItem(arg0: zombie.inventory.InventoryItem, arg1: zombie.iso.IsoGridSquare, arg2: number, arg3: number, arg4: number, arg5: number): void;
@@ -457,13 +530,29 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (IsoGridSquare arg0, int arg1): void
+       *  - (IsoGridSquare arg0, int arg1, float arg2, float arg3): void
        */
-      addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number): void;
+      addBloodSplat(arg0: zombie.iso.IsoGridSquare, arg1: number, arg2?: number, arg3?: number): void;
       /**
        * Method Parameters: 
        *  - (IsoObject arg0, int arg1, int arg2, int arg3, int arg4, int arg5): void
        */
       addSound(arg0: zombie.iso.IsoObject, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
+      /**
+       * Method Parameters: 
+       *  - (IsoPlayer arg0, Perk arg1, float arg2): void
+       */
+      addXp(arg0: zombie.characters.IsoPlayer, arg1: zombie.characters.skills.PerkFactory$Perk, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (IsoPlayer arg0, Perk arg1, float arg2, int arg3, int arg4): void
+       */
+      addXpMultiplier(arg0: zombie.characters.IsoPlayer, arg1: zombie.characters.skills.PerkFactory$Perk, arg2: number, arg3: number, arg4: number): void;
+      /**
+       * Method Parameters: 
+       *  - (IsoPlayer arg0, Perk arg1, float arg2): void
+       */
+      addXpNoMultiplier(arg0: zombie.characters.IsoPlayer, arg1: zombie.characters.skills.PerkFactory$Perk, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0, int arg1, int arg2): void
@@ -496,9 +585,39 @@ declare module '@asledgehammer/pipewrench' {
       getAverageFPS(): number;
       /**
        * Method Parameters: 
+       *  - (Empty): number
+       */
+      getCPUTime(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getCPUWait(): number;
+      /**
+       * Method Parameters: 
        *  - (Empty): zombie.iso.ContainerOverlays
        */
       getContainerOverlays(): zombie.iso.ContainerOverlays;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getGPUTime(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getGPUWait(): number;
+      /**
+       * Method Parameters: 
+       *  - (IsoPlayer arg0): zombie.inventory.InventoryItem
+       */
+      getPickedUpFish(arg0: zombie.characters.IsoPlayer): zombie.inventory.InventoryItem;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getServerFPS(): number;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.iso.TileOverlays
@@ -516,9 +635,59 @@ declare module '@asledgehammer/pipewrench' {
       screenZoomOut(): void;
       /**
        * Method Parameters: 
-       *  - (IsoPlayer arg0, Perk arg1, int arg2): void
+       *  - (IsoPlayer arg0, Perk arg1, float arg2, boolean arg3): void
        */
-      sendAddXp(arg0: zombie.characters.IsoPlayer, arg1: zombie.characters.skills.PerkFactory$Perk, arg2: number): void;
+      sendAddXp(arg0: zombie.characters.IsoPlayer, arg1: zombie.characters.skills.PerkFactory$Perk, arg2: number, arg3: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (IsoPlayer arg0, String arg1, String arg2, Object... arg3): void
+       */
+      sendClientCommandV(arg0: zombie.characters.IsoPlayer, arg1: string, arg2: string, arg3: any): void;
+      /**
+       * Method Parameters: 
+       *  - (IsoPlayer arg0, String arg1, float arg2): void
+       */
+      sendIconFound(arg0: zombie.characters.IsoPlayer, arg1: string, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, boolean arg1, IsoMovingObject arg2): void
+       */
+      sendPlaySound(arg0: string, arg1: boolean, arg2: zombie.iso.IsoMovingObject): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1, Object... arg2): void
+       */
+      sendServerCommandV(arg0: string, arg1: string, arg2: any): void;
+      /**
+       * Method Parameters: 
+       *  - (BodyPart arg0, long arg1): void
+       */
+      syncBodyPart(arg0: zombie.characters.BodyDamage.BodyPart, arg1: number): void;
+      /**
+       * Method Parameters: 
+       *  - (IsoPlayer arg0, HandWeapon arg1): void
+       */
+      syncHandWeaponFields(arg0: zombie.characters.IsoPlayer, arg1: zombie.inventory.types.HandWeapon): void;
+      /**
+       * Method Parameters: 
+       *  - (IsoPlayer arg0): void
+       */
+      syncInventory(arg0: zombie.characters.IsoPlayer): void;
+      /**
+       * Method Parameters: 
+       *  - (IsoPlayer arg0, InventoryItem arg1): void
+       */
+      syncItemFields(arg0: zombie.characters.IsoPlayer, arg1: zombie.inventory.InventoryItem): void;
+      /**
+       * Method Parameters: 
+       *  - (IsoPlayer arg0, InventoryItem arg1): void
+       */
+      syncItemModData(arg0: zombie.characters.IsoPlayer, arg1: zombie.inventory.InventoryItem): void;
+      /**
+       * Method Parameters: 
+       *  - (IsoPlayer arg0, int arg1): void
+       */
+      syncPlayerStats(arg0: zombie.characters.IsoPlayer, arg1: number): void;
       /**
        * @noSelf
        *
@@ -537,16 +706,16 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (long arg0, String arg1, IsoPlayer arg2): void
+       *  - (long arg0, String arg1, int arg2, String arg3): void
        */
-      static InvMngGetItem(arg0: number, arg1: string, arg2: zombie.characters.IsoPlayer): void;
+      static InvMngGetItem(arg0: number, arg1: string, arg2: number, arg3: string): void;
       /**
        * @noSelf
        *
        * Method Parameters: 
-       *  - (long arg0, IsoPlayer arg1): void
+       *  - (long arg0, int arg1, String arg2): void
        */
-      static InvMngRemoveItem(arg0: number, arg1: zombie.characters.IsoPlayer): void;
+      static InvMngRemoveItem(arg0: number, arg1: number, arg2: string): void;
       /**
        * @noSelf
        *
@@ -608,9 +777,9 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (SafeHouse arg0, String arg1): void
+       *  - (SafeHouse arg0, String arg1, IsoPlayer arg2): void
        */
-      static acceptSafehouseInvite(arg0: zombie.iso.areas.SafeHouse, arg1: string): void;
+      static acceptSafehouseInvite(arg0: zombie.iso.areas.SafeHouse, arg1: string, arg2: zombie.characters.IsoPlayer): void;
       /**
        * @noSelf
        *
@@ -679,6 +848,21 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (IsoCell arg0, int arg1, int arg2, int arg3, String arg4, AnimalBreed arg5): zombie.characters.animals.IsoAnimal
+       *  - (IsoCell arg0, int arg1, int arg2, int arg3, String arg4, AnimalBreed arg5, boolean arg6): zombie.characters.animals.IsoAnimal
+       */
+      static addAnimal(arg0: zombie.iso.IsoCell, arg1: number, arg2: number, arg3: number, arg4: string, arg5: zombie.characters.animals.datas.AnimalBreed, arg6?: boolean): zombie.characters.animals.IsoAnimal;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (int arg0, int arg1, int arg2, int arg3, int arg4, float arg5, float arg6, float arg7, float arg8): void
+       */
+      static addAreaHighlight(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (Empty): void
        */
       static addCarCrash(): void;
@@ -689,6 +873,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): zombie.vehicles.BaseVehicle
        */
       static addPhysicsObject(): zombie.vehicles.BaseVehicle;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      static addRole(arg0: string): void;
       /**
        * @noSelf
        *
@@ -707,9 +898,16 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (String arg0): zombie.vehicles.BaseVehicle
+       *  - (String arg0): void
        */
-      static addVehicle(arg0: string): zombie.vehicles.BaseVehicle;
+      static addVariableToSyncList(arg0: string): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0, int arg1, int arg2, int arg3): zombie.vehicles.BaseVehicle
+       */
+      static addVehicle(arg0: string, arg1: number, arg2: number, arg3: number): zombie.vehicles.BaseVehicle;
       /**
        * @noSelf
        *
@@ -736,9 +934,9 @@ declare module '@asledgehammer/pipewrench' {
        *
        * Method Parameters: 
        *  - (int arg0, int arg1, int arg2, int arg3, String arg4, Integer arg5): java.util.ArrayList<zombie.characters.IsoZombie>
-       *  - (int arg0, int arg1, int arg2, int arg3, String arg4, Integer arg5, boolean arg6, boolean arg7, boolean arg8, boolean arg9, float arg10): java.util.ArrayList<zombie.characters.IsoZombie>
+       *  - (int arg0, int arg1, int arg2, int arg3, String arg4, Integer arg5, boolean arg6, boolean arg7, boolean arg8, boolean arg9, boolean arg10, boolean arg11, float arg12): java.util.ArrayList<zombie.characters.IsoZombie>
        */
-      static addZombiesInOutfit(arg0: number, arg1: number, arg2: number, arg3: number, arg4: string, arg5: number, arg6?: boolean, arg7?: boolean, arg8?: boolean, arg9?: boolean, arg10?: number): java.util.ArrayList<zombie.characters.IsoZombie>;
+      static addZombiesInOutfit(arg0: number, arg1: number, arg2: number, arg3: number, arg4: string, arg5: number, arg6?: boolean, arg7?: boolean, arg8?: boolean, arg9?: boolean, arg10?: boolean, arg11?: boolean, arg12?: number): java.util.ArrayList<zombie.characters.IsoZombie>;
       /**
        * @noSelf
        *
@@ -771,6 +969,34 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (String arg0): boolean
+       */
+      static cacheFileExists(arg0: string): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0, Object arg1): void
+       */
+      static callLua(arg0: string, arg1: any): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0, Object arg1): boolean
+       */
+      static callLuaBool(arg0: string, arg1: any): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0, ArrayList arg1): java.util.ArrayList<any>
+       */
+      static callLuaReturn(arg0: string, arg1: java.util.ArrayList<any>): java.util.ArrayList<any>;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       static canConnect(): boolean;
@@ -794,14 +1020,14 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
-      static canModifyPlayerStats(): boolean;
+      static canSeePlayerStats(): boolean;
       /**
        * @noSelf
        *
        * Method Parameters: 
-       *  - (Empty): boolean
+       *  - (IsoPlayer arg0, InventoryItem arg1, String arg2): number
        */
-      static canSeePlayerStats(): boolean;
+      static changeItemTypeTransaction(arg0: zombie.characters.IsoPlayer, arg1: zombie.inventory.InventoryItem, arg2: string): number;
       /**
        * @noSelf
        *
@@ -813,9 +1039,23 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (IsoPlayer arg0, Capability arg1): boolean
+       */
+      static checkPermissions(arg0: zombie.characters.IsoPlayer, arg1: zombie.characters.Capability): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (String arg0): boolean
        */
       static checkPlayerCanUseChat(arg0: string): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0, String arg1, String arg2): boolean
+       */
+      static checkPlayerExistsInDatabase(arg0: string, arg1: string, arg2: string): boolean;
       /**
        * @noSelf
        *
@@ -844,6 +1084,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): boolean
        */
       static checkStringPattern(arg0: string): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      static clearPVPEvents(): void;
       /**
        * @noSelf
        *
@@ -877,9 +1124,23 @@ declare module '@asledgehammer/pipewrench' {
        *
        * Method Parameters: 
        *  - (KahluaTable arg0): se.krka.kahlua.vm.KahluaTable
+       */
+      static convertToPZNetTable(arg0: se.krka.kahlua.vm.KahluaTable): se.krka.kahlua.vm.KahluaTable;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (KahluaTable arg0): se.krka.kahlua.vm.KahluaTable
        *  - (KahluaTable arg0, KahluaTable arg1): se.krka.kahlua.vm.KahluaTable
        */
       static copyTable(arg0: se.krka.kahlua.vm.KahluaTable, arg1?: se.krka.kahlua.vm.KahluaTable): se.krka.kahlua.vm.KahluaTable;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (IsoPlayer arg0, float arg1, float arg2, float arg3, boolean arg4, String arg5, KahluaTable arg6): number
+       */
+      static createBuildAction(arg0: zombie.characters.IsoPlayer, arg1: number, arg2: number, arg3: number, arg4: boolean, arg5: string, arg6: se.krka.kahlua.vm.KahluaTable): number;
       /**
        * @noSelf
        *
@@ -898,9 +1159,16 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (InventoryItem arg0, ItemContainer arg1, ItemContainer arg2): void
+       *  - (IsoPlayer arg0, InventoryItem arg1, ItemContainer arg2, ItemContainer arg3): number
        */
-      static createItemTransaction(arg0: zombie.inventory.InventoryItem, arg1: zombie.inventory.ItemContainer, arg2: zombie.inventory.ItemContainer): void;
+      static createItemTransaction(arg0: zombie.characters.IsoPlayer, arg1: zombie.inventory.InventoryItem, arg2: zombie.inventory.ItemContainer, arg3: zombie.inventory.ItemContainer): number;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (IsoPlayer arg0, InventoryItem arg1, ItemContainer arg2, ItemContainer arg3, String arg4, float arg5, float arg6, float arg7): number
+       */
+      static createItemTransactionWithPosData(arg0: zombie.characters.IsoPlayer, arg1: zombie.inventory.InventoryItem, arg2: zombie.inventory.ItemContainer, arg3: zombie.inventory.ItemContainer, arg4: string, arg5: number, arg6: number, arg7: number): number;
       /**
        * @noSelf
        *
@@ -908,6 +1176,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, String arg1, String arg2, String arg3, String arg4): zombie.scripting.objects.Item
        */
       static createNewScriptItem(arg0: string, arg1: string, arg2: string, arg3: string, arg4: string): zombie.scripting.objects.Item;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0, String arg1): zombie.core.textures.Texture
+       */
+      static createQRCodeTex(arg0: string, arg1: string): zombie.core.textures.Texture;
       /**
        * @noSelf
        *
@@ -983,9 +1258,23 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (String arg0, String arg1, String arg2): void
+       */
+      static deletePlayerFromDatabase(arg0: string, arg1: string, arg2: string): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (String arg0): void
        */
       static deletePlayerSave(arg0: string): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      static deleteRole(arg0: string): void;
       /**
        * @noSelf
        *
@@ -1039,9 +1328,23 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (UIElement arg0, float arg1, float arg2, float arg3): void
+       *  - (UIElement arg0, int arg1, float arg2, float arg3, float arg4): void
        */
-      static drawOverheadMap(arg0: zombie.ui.UIElement, arg1: number, arg2: number, arg3: number): void;
+      static drawOverheadMap(arg0: zombie.ui.UIElement, arg1: number, arg2: number, arg3: number, arg4: number): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (NetTimedAction arg0, long arg1, String arg2, String arg3): void
+       */
+      static emulateAnimEvent(arg0: zombie.core.NetTimedAction, arg1: number, arg2: string, arg3: string): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (NetTimedAction arg0, long arg1, String arg2, String arg3): void
+       */
+      static emulateAnimEventOnce(arg0: zombie.core.NetTimedAction, arg1: number, arg2: string, arg3: string): void;
       /**
        * @noSelf
        *
@@ -1077,6 +1380,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, KahluaTable arg1): void
        */
       static executeQuery(arg0: string, arg1: se.krka.kahlua.vm.KahluaTable): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (float arg0): number
+       */
+      static fastfloor(arg0: number): number;
       /**
        * @noSelf
        *
@@ -1118,6 +1428,13 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (String arg0): string
        */
+      static generateSecretKey(arg0: string): string;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): string
+       */
       static getAbsoluteSaveFolderName(arg0: string): string;
       /**
        * @noSelf
@@ -1130,9 +1447,23 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (byte arg0): number
+       */
+      static getActionDuration(arg0: number): number;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (Empty): java.util.ArrayList<string>
        */
       static getActivatedMods(): java.util.ArrayList<string>;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<zombie.characters.animals.AnimalDefinitions>
+       */
+      static getAllAnimalsDefinitions(): java.util.ArrayList<zombie.characters.animals.AnimalDefinitions>;
       /**
        * @noSelf
        *
@@ -1200,9 +1531,37 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<zombie.core.skinnedmodel.population.VoiceStyle>
+       */
+      static getAllVoiceStyles(): java.util.ArrayList<zombie.core.skinnedmodel.population.VoiceStyle>;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (Empty): zombie.BaseAmbientStreamManager
        */
       static getAmbientStreamManager(): zombie.BaseAmbientStreamManager;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (IsoGameCharacter arg0): java.util.ArrayList<zombie.characters.animals.AnimalTracks>
+       */
+      static getAndFindNearestTracks(arg0: zombie.characters.IsoGameCharacter): java.util.ArrayList<zombie.characters.animals.AnimalTracks>;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (int arg0): zombie.characters.animals.IsoAnimal
+       */
+      static getAnimal(arg0: number): zombie.characters.animals.IsoAnimal;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (int arg0, int arg1): zombie.characters.animals.AnimalChunk
+       */
+      static getAnimalChunk(arg0: number, arg1: number): zombie.characters.animals.AnimalChunk;
       /**
        * @noSelf
        *
@@ -1221,6 +1580,13 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (Empty): zombie.audio.BaseSoundBank
+       */
+      static getBaseSoundBank(): zombie.audio.BaseSoundBank;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (Empty): zombie.core.skinnedmodel.population.BeardStyles
        */
       static getBeardStylesInstance(): zombie.core.skinnedmodel.population.BeardStyles;
@@ -1231,6 +1597,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): zombie.characters.IsoGameCharacter
        */
       static getBehaviourDebugPlayer(): zombie.characters.IsoGameCharacter;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.core.GameVersion
+       */
+      static getBreakModGameVersion(): zombie.core.GameVersion;
       /**
        * @noSelf
        *
@@ -1263,9 +1636,65 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<zombie.characters.Capability>
+       */
+      static getCapabilities(): java.util.ArrayList<zombie.characters.Capability>;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (Empty): zombie.iso.IsoCell
        */
       static getCell(): zombie.iso.IsoCell;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      static getCellMaxX(): number;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      static getCellMaxY(): number;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      static getCellMinX(): number;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      static getCellMinY(): number;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      static getCellSizeInChunks(): number;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      static getCellSizeInSquares(): number;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      static getChunkSizeInSquares(): number;
       /**
        * @noSelf
        *
@@ -1287,6 +1716,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Object arg0, int arg1): java.lang.reflect.Method
        */
       static getClassFunction(arg0: any, arg1: number): java.lang.reflect.Method;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (int arg0): zombie.core.textures.Texture
+       */
+      static getClientLoadingScreen(arg0: number): zombie.core.textures.Texture;
       /**
        * @noSelf
        *
@@ -1426,6 +1862,13 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): string
        */
+      static getCurrentSaveName(): string;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): string
+       */
       static getCurrentUserProfileName(): string;
       /**
        * @noSelf
@@ -1434,6 +1877,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): string
        */
       static getCurrentUserSteamID(): string;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, boolean arg6): void
+       */
+      static getCustomizationData(arg0: string, arg1: string, arg2: string, arg3: string, arg4: string, arg5: string, arg6: boolean): void;
       /**
        * @noSelf
        *
@@ -1487,9 +1937,23 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      static getFMODEventPathList(): java.util.ArrayList<string>;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (Empty): zombie.audio.BaseSoundBank
        */
       static getFMODSoundBank(): zombie.audio.BaseSoundBank;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.characters.IsoGameCharacter
+       */
+      static getFakeAttacker(): zombie.characters.IsoGameCharacter;
       /**
        * @noSelf
        *
@@ -1627,9 +2091,79 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (int arg0, int arg1, int arg2): zombie.iso.objects.IsoHutch
+       */
+      static getHutch(arg0: number, arg1: number, arg2: number): zombie.iso.objects.IsoHutch;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<zombie.entity.GameEntity>
+       */
+      static getIsoEntitiesDebug(): java.util.ArrayList<zombie.entity.GameEntity>;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (Empty): zombie.iso.IsoMarkers
        */
       static getIsoMarkers(): zombie.iso.IsoMarkers;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): zombie.scripting.objects.Item
+       */
+      static getItem(arg0: string): zombie.scripting.objects.Item;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): number
+       */
+      static getItemActualWeight(arg0: string): number;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): number
+       */
+      static getItemConditionMax(arg0: string): number;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): number
+       */
+      static getItemCount(arg0: string): number;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): string
+       */
+      static getItemDisplayName(arg0: string): string;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): string
+       */
+      static getItemEvolvedRecipeName(arg0: string): string;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): string
+       */
+      static getItemFoodType(arg0: string): string;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): string
+       */
+      static getItemName(arg0: string): string;
       /**
        * @noSelf
        *
@@ -1643,7 +2177,42 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (String arg0): string
        */
+      static getItemStaticModel(arg0: string): string;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): zombie.core.textures.Texture
+       */
+      static getItemTex(arg0: string): zombie.core.textures.Texture;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): string
+       */
       static getItemText(arg0: string): string;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): string
+       */
+      static getItemTextureName(arg0: string): string;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (byte arg0): number
+       */
+      static getItemTransactionDuration(arg0: number): number;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): number
+       */
+      static getItemWeight(arg0: string): number;
       /**
        * @noSelf
        *
@@ -1810,15 +2379,17 @@ declare module '@asledgehammer/pipewrench' {
        *
        * Method Parameters: 
        *  - (Coroutine arg0): number
+       *  - (LuaCallFrame arg0): number
        */
-      static getLocalVarCount(arg0: se.krka.kahlua.vm.Coroutine): number;
+      static getLocalVarCount(arg0: se.krka.kahlua.vm.Coroutine | se.krka.kahlua.vm.LuaCallFrame): number;
       /**
        * @noSelf
        *
        * Method Parameters: 
        *  - (Coroutine arg0, int arg1): string
+       *  - (LuaCallFrame arg0, int arg1): string
        */
-      static getLocalVarName(arg0: se.krka.kahlua.vm.Coroutine, arg1: number): string;
+      static getLocalVarName(arg0: se.krka.kahlua.vm.Coroutine | se.krka.kahlua.vm.LuaCallFrame, arg1: number): string;
       /**
        * @noSelf
        *
@@ -1826,6 +2397,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Coroutine arg0, int arg1): number
        */
       static getLocalVarStack(arg0: se.krka.kahlua.vm.Coroutine, arg1: number): number;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (LuaCallFrame arg0, int arg1): number
+       */
+      static getLocalVarStackIndex(arg0: se.krka.kahlua.vm.LuaCallFrame, arg1: number): number;
       /**
        * @noSelf
        *
@@ -1847,6 +2425,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): java.util.ArrayList<string>
        */
       static getLuaDebuggerErrors(): java.util.ArrayList<string>;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      static getLuaStackTrace(): java.util.ArrayList<string>;
       /**
        * @noSelf
        *
@@ -1893,6 +2478,13 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (Empty): number
+       */
+      static getMaximumWorldLevel(): number;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (Method arg0, int arg1): string
        */
       static getMethodParameter(arg0: java.lang.reflect.Method, arg1: number): string;
@@ -1903,6 +2495,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Method arg0): number
        */
       static getMethodParameterCount(arg0: java.lang.reflect.Method): number;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      static getMinimumWorldLevel(): number;
       /**
        * @noSelf
        *
@@ -2124,6 +2723,13 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (Empty): zombie.core.physics.RagdollSettingsManager
+       */
+      static getRagdollSettingsManager(): zombie.core.physics.RagdollSettingsManager;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (Empty): string
        */
       static getRandomUUID(): string;
@@ -2145,9 +2751,23 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      static getRemotePlayModeActive(): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (Empty): zombie.core.SpriteRenderer
        */
       static getRenderer(): zombie.core.SpriteRenderer;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<zombie.characters.Role>
+       */
+      static getRoles(): java.util.ArrayList<zombie.characters.Role>;
       /**
        * @noSelf
        *
@@ -2211,6 +2831,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): zombie.scripting.ScriptManager
        */
       static getScriptManager(): zombie.scripting.ScriptManager;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.gameStates.SeamEditorState
+       */
+      static getSeamEditorState(): zombie.gameStates.SeamEditorState;
       /**
        * @noSelf
        *
@@ -2362,6 +2989,13 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (Empty): zombie.gameStates.SpriteModelEditorState
+       */
+      static getSpriteModelEditorState(): zombie.gameStates.SpriteModelEditorState;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (double arg0, double arg1, double arg2): zombie.iso.IsoGridSquare
        */
       static getSquare(arg0: number, arg1: number, arg2: number): zombie.iso.IsoGridSquare;
@@ -2446,6 +3080,13 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      static getStreamModeActive(): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (String arg0, int arg1): void
        */
       static getTableResult(arg0: string, arg1: number): void;
@@ -2510,6 +3151,13 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (Empty): zombie.gameStates.TileGeometryState
+       */
+      static getTileGeometryState(): zombie.gameStates.TileGeometryState;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (Empty): number
        */
       static getTimeInMillis(): number;
@@ -2538,9 +3186,9 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (String arg0): java.io.DataInputStream
+       *  - (Empty): java.util.ArrayList<zombie.characters.NetworkUser>
        */
-      static getUrlInputStream(arg0: string): java.io.DataInputStream;
+      static getUsers(): java.util.ArrayList<zombie.characters.NetworkUser>;
       /**
        * @noSelf
        *
@@ -2559,9 +3207,37 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (int arg0, int arg1, int arg2): zombie.iso.IsoMetaGrid$VehicleZone
+       *  - (int arg0, int arg1, int arg2): zombie.iso.zones.VehicleZone
        */
-      static getVehicleZoneAt(arg0: number, arg1: number, arg2: number): zombie.iso.IsoMetaGrid$VehicleZone;
+      static getVehicleZoneAt(arg0: number, arg1: number, arg2: number): zombie.iso.zones.VehicleZone;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0, int arg1, int arg2): zombie.core.textures.VideoTexture
+       */
+      static getVideo(arg0: string, arg1: number, arg2: number): zombie.core.textures.VideoTexture;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.population.VoiceStyles
+       */
+      static getVoiceStylesInstance(): zombie.core.skinnedmodel.population.VoiceStyles;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.network.WarManager$War
+       */
+      static getWarNearest(): zombie.network.WarManager$War;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<zombie.network.WarManager$War>
+       */
+      static getWars(): java.util.ArrayList<zombie.network.WarManager$War>;
       /**
        * @noSelf
        *
@@ -2601,16 +3277,16 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (int arg0, int arg1, int arg2): zombie.iso.IsoMetaGrid$Zone
+       *  - (int arg0, int arg1, int arg2): zombie.iso.zones.Zone
        */
-      static getZone(arg0: number, arg1: number, arg2: number): zombie.iso.IsoMetaGrid$Zone;
+      static getZone(arg0: number, arg1: number, arg2: number): zombie.iso.zones.Zone;
       /**
        * @noSelf
        *
        * Method Parameters: 
-       *  - (int arg0, int arg1, int arg2): java.util.ArrayList<zombie.iso.IsoMetaGrid$Zone>
+       *  - (int arg0, int arg1, int arg2): java.util.ArrayList<zombie.iso.zones.Zone>
        */
-      static getZones(arg0: number, arg1: number, arg2: number): java.util.ArrayList<zombie.iso.IsoMetaGrid$Zone>;
+      static getZones(arg0: number, arg1: number, arg2: number): java.util.ArrayList<zombie.iso.zones.Zone>;
       /**
        * @noSelf
        *
@@ -2636,6 +3312,20 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (String arg0, String arg1): boolean
+       */
+      static hasItemTag(arg0: string, arg1: string): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): boolean
+       */
+      static haveAccess(arg0: string): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (Empty): void
        */
       static initUISystem(): void;
@@ -2645,8 +3335,9 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (String arg0): zombie.inventory.InventoryItem
        *  - (Item arg0): zombie.inventory.InventoryItem
+       *  - (String arg0, float arg1): zombie.inventory.InventoryItem
        */
-      static instanceItem(arg0: string | zombie.scripting.objects.Item): zombie.inventory.InventoryItem;
+      static instanceItem(arg0: string | zombie.scripting.objects.Item, arg1?: number): zombie.inventory.InventoryItem;
       /**
        * @noSelf
        *
@@ -2654,6 +3345,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Object arg0, String arg1): boolean
        */
       static _instanceof_(arg0: any, arg1: string): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      static invalidateLighting(): void;
       /**
        * @noSelf
        *
@@ -2675,6 +3373,20 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): boolean
        */
       static isAccessLevel(arg0: string): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (byte arg0): boolean
+       */
+      static isActionDone(arg0: number): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (byte arg0): boolean
+       */
+      static isActionRejected(arg0: number): boolean;
       /**
        * @noSelf
        *
@@ -2770,9 +3482,37 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (InventoryItem arg0, ItemContainer arg1, ItemContainer arg2): boolean
+       *  - (String arg0): boolean
        */
-      static isItemTransactionConsistent(arg0: zombie.inventory.InventoryItem, arg1: zombie.inventory.ItemContainer, arg2: zombie.inventory.ItemContainer): boolean;
+      static isItemFood(arg0: string): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0, float arg1): boolean
+       */
+      static isItemFresh(arg0: string, arg1: number): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (InventoryItem arg0, ItemContainer arg1, ItemContainer arg2, String arg3): boolean
+       */
+      static isItemTransactionConsistent(arg0: zombie.inventory.InventoryItem, arg1: zombie.inventory.ItemContainer, arg2: zombie.inventory.ItemContainer, arg3: string): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (byte arg0): boolean
+       */
+      static isItemTransactionDone(arg0: number): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (byte arg0): boolean
+       */
+      static isItemTransactionRejected(arg0: number): boolean;
       /**
        * @noSelf
        *
@@ -2862,15 +3602,17 @@ declare module '@asledgehammer/pipewrench' {
        *
        * Method Parameters: 
        *  - (int arg0): boolean
+       *  - (String arg0): boolean
        */
-      static isKeyDown(arg0: number): boolean;
+      static isKeyDown(arg0: number | string): boolean;
       /**
        * @noSelf
        *
        * Method Parameters: 
        *  - (int arg0): boolean
+       *  - (String arg0): boolean
        */
-      static isKeyPressed(arg0: number): boolean;
+      static isKeyPressed(arg0: number | string): boolean;
       /**
        * @noSelf
        *
@@ -2889,9 +3631,37 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      static isMouseButtonPressed(arg0: number): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      static isMultiplayer(): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      static isPlaystationController(arg0: number): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       static isPublicServerListAllowed(): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      static isQuitCooldown(): boolean;
       /**
        * @noSelf
        *
@@ -2920,13 +3690,6 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       static isShowConnectionInfo(): boolean;
-      /**
-       * @noSelf
-       *
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      static isShowPingInfo(): boolean;
       /**
        * @noSelf
        *
@@ -3029,6 +3792,13 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (List arg0, int arg1): any
+       */
+      static javaListRemoveAt(arg0: java.util.List<any>, arg1: number): any;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (String arg0, String arg1, String arg2): zombie.core.skinnedmodel.model.Model
        */
       static loadSkinnedZomboidModel(arg0: string, arg1: string, arg2: string): zombie.core.skinnedmodel.model.Model;
@@ -3064,6 +3834,13 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (DebugType arg0, String arg1): void
+       */
+      static log(arg0: zombie.debug.DebugType, arg1: string): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (Empty): void
        */
       static luaDebug(): void;
@@ -3085,6 +3862,13 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (String arg0, String arg1, String arg2): void
+       */
+      static networkUserAction(arg0: string, arg1: string, arg2: string): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (String arg0): void
        */
       static openUrl(arg0: string): void;
@@ -3099,9 +3883,9 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (String arg0, String arg1, String arg2, String arg3): void
+       *  - (String arg0, String arg1, String arg2, String arg3, boolean arg4): void
        */
-      static ping(arg0: string, arg1: string, arg2: string, arg3: string): void;
+      static ping(arg0: string, arg1: string, arg2: string, arg3: string, arg4: boolean): void;
       /**
        * @noSelf
        *
@@ -3204,6 +3988,34 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (Empty): void
+       */
+      static reloadEntitiesDebug(): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (GameEntity arg0): void
+       */
+      static reloadEntityDebug(arg0: zombie.entity.GameEntity): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (GameEntity arg0): void
+       */
+      static reloadEntityFromScriptDebug(arg0: zombie.entity.GameEntity): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      static reloadEntityScripts(): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (String arg0): void
        */
       static reloadLuaFile(arg0: string): void;
@@ -3214,6 +4026,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): void
        */
       static reloadModelsMatching(arg0: string): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (ScriptType arg0): void
+       */
+      static reloadScripts(arg0: zombie.scripting.ScriptType): void;
       /**
        * @noSelf
        *
@@ -3246,9 +4065,30 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (InventoryItem arg0, ItemContainer arg1, ItemContainer arg2): void
+       *  - (Empty): void
        */
-      static removeItemTransaction(arg0: zombie.inventory.InventoryItem, arg1: zombie.inventory.ItemContainer, arg2: zombie.inventory.ItemContainer): void;
+      static reloadXui(): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (byte arg0, boolean arg1): void
+       */
+      static removeAction(arg0: number, arg1: boolean): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (int arg0): void
+       */
+      static removeAnimal(arg0: number): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (byte arg0, boolean arg1): void
+       */
+      static removeItemTransaction(arg0: number, arg1: boolean): void;
       /**
        * @noSelf
        *
@@ -3281,6 +4121,27 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, int arg8): void
+       */
+      static renderIsoRect(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9): void
+       */
+      static renderLine(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (ItemContainer arg0, InventoryItem arg1, InventoryItem arg2): void
+       */
+      static replaceItemInContainer(arg0: zombie.inventory.ItemContainer, arg1: zombie.inventory.InventoryItem, arg2: zombie.inventory.InventoryItem): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (String arg0, String arg1, String arg2): string
        */
       static replaceWith(arg0: string, arg1: string, arg2: string): string;
@@ -3290,7 +4151,21 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): void
        */
+      static requestPVPEvents(): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): void
+       */
       static requestPacketCounts(): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      static requestRoles(): void;
       /**
        * @noSelf
        *
@@ -3305,6 +4180,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): void
        */
       static requestUserlog(arg0: string): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      static requestUsers(): void;
       /**
        * @noSelf
        *
@@ -3393,23 +4275,60 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (int arg0, int arg1, boolean arg2, float arg3, boolean arg4, String arg5): void
+       *  - (IsoAnimal arg0, IsoPlayer arg1, BaseVehicle arg2): void
+       *  - (IsoDeadBody arg0, IsoPlayer arg1, BaseVehicle arg2): void
        */
-      static sendBandage(arg0: number, arg1: number, arg2: boolean, arg3: number, arg4: boolean, arg5: string): void;
+      static sendAddAnimalFromHandsInTrailer(arg0: zombie.characters.animals.IsoAnimal | zombie.iso.objects.IsoDeadBody, arg1: zombie.characters.IsoPlayer, arg2: zombie.vehicles.BaseVehicle): void;
       /**
        * @noSelf
        *
        * Method Parameters: 
-       *  - (int arg0, int arg1, float arg2, float arg3, float arg4): void
+       *  - (IsoAnimal arg0, IsoPlayer arg1, BaseVehicle arg2): void
+       *  - (IsoDeadBody arg0, IsoPlayer arg1, BaseVehicle arg2): void
        */
-      static sendCataplasm(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number): void;
+      static sendAddAnimalInTrailer(arg0: zombie.characters.animals.IsoAnimal | zombie.iso.objects.IsoDeadBody, arg1: zombie.characters.IsoPlayer, arg2: zombie.vehicles.BaseVehicle): void;
       /**
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoGameCharacter arg0, IsoGameCharacter arg1, BodyPart arg2, InventoryItem arg3): void
+       *  - (ItemContainer arg0, InventoryItem arg1): void
        */
-      static sendCleanBurn(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.IsoGameCharacter, arg2: zombie.characters.BodyDamage.BodyPart, arg3: zombie.inventory.InventoryItem): void;
+      static sendAddItemToContainer(arg0: zombie.inventory.ItemContainer, arg1: zombie.inventory.InventoryItem): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (ItemContainer arg0, ArrayList arg1): void
+       */
+      static sendAddItemsToContainer(arg0: zombie.inventory.ItemContainer, arg1: java.util.ArrayList<zombie.inventory.InventoryItem>): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (IsoAnimal arg0): void
+       */
+      static sendAnimalGenome(arg0: zombie.characters.animals.IsoAnimal): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (IsoAnimal arg0, IsoPlayer arg1, IsoObject arg2, boolean arg3): void
+       */
+      static sendAttachAnimalToPlayer(arg0: zombie.characters.animals.IsoAnimal, arg1: zombie.characters.IsoPlayer, arg2: zombie.iso.IsoObject, arg3: boolean): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (IsoAnimal arg0, IsoPlayer arg1, IsoObject arg2, boolean arg3): void
+       */
+      static sendAttachAnimalToTree(arg0: zombie.characters.animals.IsoAnimal, arg1: zombie.characters.IsoPlayer, arg2: zombie.iso.IsoObject, arg3: boolean): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (IsoDeadBody arg0, IsoPlayer arg1): void
+       */
+      static sendButcherAnimal(arg0: zombie.iso.objects.IsoDeadBody, arg1: zombie.characters.IsoPlayer): void;
       /**
        * @noSelf
        *
@@ -3422,16 +4341,37 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoPlayer arg0): void
+       *  - (IsoPlayer arg0, String arg1, InventoryItem arg2): void
        */
-      static sendClothing(arg0: zombie.characters.IsoPlayer): void;
+      static sendClothing(arg0: zombie.characters.IsoPlayer, arg1: string, arg2: zombie.inventory.InventoryItem): void;
       /**
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoGameCharacter arg0, IsoGameCharacter arg1, BodyPart arg2, InventoryItem arg3): void
+       *  - (IsoPlayer arg0): void
        */
-      static sendDisinfect(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.IsoGameCharacter, arg2: zombie.characters.BodyDamage.BodyPart, arg3: zombie.inventory.InventoryItem): void;
+      static sendDamage(arg0: zombie.characters.IsoPlayer): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (IsoGridSquare arg0, int arg1, String arg2): void
+       */
+      static sendDebugStory(arg0: zombie.iso.IsoGridSquare, arg1: number, arg2: string): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (IsoPlayer arg0): void
+       */
+      static sendEquip(arg0: zombie.characters.IsoPlayer): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (IsoPlayer arg0, String arg1): void
+       */
+      static sendEvent(arg0: zombie.characters.IsoPlayer, arg1: string): void;
       /**
        * @noSelf
        *
@@ -3443,9 +4383,72 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (IsoAnimal arg0, IsoPlayer arg1, InventoryItem arg2): void
+       */
+      static sendFeedAnimalFromHand(arg0: zombie.characters.animals.IsoAnimal, arg1: zombie.characters.IsoPlayer, arg2: zombie.inventory.InventoryItem): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      static sendGoogleAuth(arg0: string, arg1: string): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (IsoPlayer arg0, String arg1, String arg2, String arg3, boolean arg4, boolean arg5, boolean arg6, boolean arg7): void
+       */
+      static sendHitPlayer(arg0: zombie.characters.IsoPlayer, arg1: string, arg2: string, arg3: string, arg4: boolean, arg5: boolean, arg6: boolean, arg7: boolean): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (IsoGameCharacter arg0, String arg1, boolean arg2, String arg3, String arg4, boolean arg5): void
+       */
+      static sendHitVehicle(arg0: zombie.characters.IsoGameCharacter, arg1: string, arg2: boolean, arg3: string, arg4: string, arg5: boolean): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (IsoPlayer arg0): void
+       */
+      static sendHumanVisual(arg0: zombie.characters.IsoPlayer): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (IsoAnimal arg0, IsoPlayer arg1, IsoObject arg2, InventoryItem arg3): void
+       */
+      static sendHutchGrabAnimal(arg0: zombie.characters.animals.IsoAnimal, arg1: zombie.characters.IsoPlayer, arg2: zombie.iso.IsoObject, arg3: zombie.inventory.InventoryItem): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (IsoAnimal arg0, IsoPlayer arg1, IsoObject arg2, InventoryItem arg3): void
+       */
+      static sendHutchGrabCorpseAction(arg0: zombie.characters.animals.IsoAnimal, arg1: zombie.characters.IsoPlayer, arg2: zombie.iso.IsoObject, arg3: zombie.inventory.InventoryItem): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (IsoAnimal arg0, IsoPlayer arg1, IsoObject arg2): void
+       */
+      static sendHutchRemoveAnimalAction(arg0: zombie.characters.animals.IsoAnimal, arg1: zombie.characters.IsoPlayer, arg2: zombie.iso.IsoObject): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (IsoPlayer arg0, ArrayList arg1, IsoPlayer arg2, String arg3, String arg4): boolean
        */
       static sendItemListNet(arg0: zombie.characters.IsoPlayer, arg1: java.util.ArrayList<zombie.inventory.InventoryItem>, arg2: zombie.characters.IsoPlayer, arg3: string, arg4: string): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (InventoryItem arg0): void
+       */
+      static sendItemStats(arg0: zombie.inventory.InventoryItem): void;
       /**
        * @noSelf
        *
@@ -3464,9 +4467,23 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (IsoAnimal arg0, IsoPlayer arg1, AnimalInventoryItem arg2): void
+       */
+      static sendPickupAnimal(arg0: zombie.characters.animals.IsoAnimal, arg1: zombie.characters.IsoPlayer, arg2: zombie.inventory.types.AnimalInventoryItem): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (Empty): void
        */
       static sendPing(): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (IsoPlayer arg0): void
+       */
+      static sendPlayerEffects(arg0: zombie.characters.IsoPlayer): void;
       /**
        * @noSelf
        *
@@ -3485,23 +4502,80 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoGameCharacter arg0, IsoGameCharacter arg1, BodyPart arg2): void
+       *  - (IsoAnimal arg0, IsoPlayer arg1, BaseVehicle arg2, AnimalInventoryItem arg3): void
+       *  - (IsoDeadBody arg0, IsoPlayer arg1, BaseVehicle arg2, AnimalInventoryItem arg3): void
        */
-      static sendRemoveBullet(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.IsoGameCharacter, arg2: zombie.characters.BodyDamage.BodyPart): void;
+      static sendRemoveAndGrabAnimalFromTrailer(arg0: zombie.characters.animals.IsoAnimal | zombie.iso.objects.IsoDeadBody, arg1: zombie.characters.IsoPlayer, arg2: zombie.vehicles.BaseVehicle, arg3: zombie.inventory.types.AnimalInventoryItem): void;
       /**
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoGameCharacter arg0, IsoGameCharacter arg1, BodyPart arg2, boolean arg3): void
+       *  - (IsoAnimal arg0, IsoPlayer arg1, BaseVehicle arg2): void
        */
-      static sendRemoveGlass(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.IsoGameCharacter, arg2: zombie.characters.BodyDamage.BodyPart, arg3: boolean): void;
+      static sendRemoveAnimalFromTrailer(arg0: zombie.characters.animals.IsoAnimal, arg1: zombie.characters.IsoPlayer, arg2: zombie.vehicles.BaseVehicle): void;
       /**
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoPlayer arg0): void
+       *  - (ItemContainer arg0, InventoryItem arg1): void
        */
-      static sendRequestInventory(arg0: zombie.characters.IsoPlayer): void;
+      static sendRemoveItemFromContainer(arg0: zombie.inventory.ItemContainer, arg1: zombie.inventory.InventoryItem): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (ItemContainer arg0, ArrayList arg1): void
+       */
+      static sendRemoveItemsFromContainer(arg0: zombie.inventory.ItemContainer, arg1: java.util.ArrayList<zombie.inventory.InventoryItem>): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (ItemContainer arg0, InventoryItem arg1, InventoryItem arg2): void
+       */
+      static sendReplaceItemInContainer(arg0: zombie.inventory.ItemContainer, arg1: zombie.inventory.InventoryItem, arg2: zombie.inventory.InventoryItem): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (int arg0, String arg1): void
+       */
+      static sendRequestInventory(arg0: number, arg1: string): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (SafeHouse arg0, String arg1): void
+       */
+      static sendSafehouseChangeMember(arg0: zombie.iso.areas.SafeHouse, arg1: string): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (SafeHouse arg0, String arg1): void
+       */
+      static sendSafehouseChangeOwner(arg0: zombie.iso.areas.SafeHouse, arg1: string): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (SafeHouse arg0, String arg1, boolean arg2): void
+       */
+      static sendSafehouseChangeRespawn(arg0: zombie.iso.areas.SafeHouse, arg1: string, arg2: boolean): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (SafeHouse arg0, String arg1): void
+       */
+      static sendSafehouseChangeTitle(arg0: zombie.iso.areas.SafeHouse, arg1: string): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (IsoGridSquare arg0, IsoPlayer arg1, String arg2): void
+       */
+      static sendSafehouseClaim(arg0: zombie.iso.IsoGridSquare, arg1: zombie.characters.IsoPlayer, arg2: string): void;
       /**
        * @noSelf
        *
@@ -3509,6 +4583,27 @@ declare module '@asledgehammer/pipewrench' {
        *  - (SafeHouse arg0, IsoPlayer arg1, String arg2): void
        */
       static sendSafehouseInvite(arg0: zombie.iso.areas.SafeHouse, arg1: zombie.characters.IsoPlayer, arg2: string): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (SafeHouse arg0): void
+       */
+      static sendSafehouseRelease(arg0: zombie.iso.areas.SafeHouse): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0, int arg1, int arg2, int arg3, int arg4, String arg5): void
+       */
+      static sendSafezoneClaim(arg0: string, arg1: number, arg2: number, arg3: number, arg4: number, arg5: string): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0, String arg1, String arg2, String arg3, boolean arg4, int arg5, String arg6): void
+       */
+      static sendSecretKey(arg0: string, arg1: string, arg2: string, arg3: string, arg4: boolean, arg5: number, arg6: string): void;
       /**
        * @noSelf
        *
@@ -3521,23 +4616,16 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (int arg0, int arg1, boolean arg2, float arg3, String arg4): void
-       */
-      static sendSplint(arg0: number, arg1: number, arg2: boolean, arg3: number, arg4: string): void;
-      /**
-       * @noSelf
-       *
-       * Method Parameters: 
-       *  - (IsoGameCharacter arg0, IsoGameCharacter arg1, BodyPart arg2, InventoryItem arg3, boolean arg4): void
-       */
-      static sendStitch(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.IsoGameCharacter, arg2: zombie.characters.BodyDamage.BodyPart, arg3: zombie.inventory.InventoryItem, arg4: boolean): void;
-      /**
-       * @noSelf
-       *
-       * Method Parameters: 
        *  - (BaseVehicle arg0, IsoGameCharacter arg1, int arg2, int arg3): void
        */
       static sendSwitchSeat(arg0: zombie.vehicles.BaseVehicle, arg1: zombie.characters.IsoGameCharacter, arg2: number, arg3: number): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (IsoPlayer arg0, byte arg1): void
+       */
+      static sendSyncPlayerFields(arg0: zombie.characters.IsoPlayer, arg1: number): void;
       /**
        * @noSelf
        *
@@ -3549,9 +4637,16 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6, boolean arg7): void
+       *  - (int arg0, String arg1, State arg2): void
        */
-      static serverConnect(arg0: string, arg1: string, arg2: string, arg3: string, arg4: string, arg5: string, arg6: string, arg7: boolean): void;
+      static sendWarManagerUpdate(arg0: number, arg1: string, arg2: zombie.network.WarManager$State): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6, boolean arg7, boolean arg8, int arg9, String arg10): void
+       */
+      static serverConnect(arg0: string, arg1: string, arg2: string, arg3: string, arg4: string, arg5: string, arg6: string, arg7: boolean, arg8: boolean, arg9: number, arg10: string): void;
       /**
        * @noSelf
        *
@@ -3608,6 +4703,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0): void
        */
       static setDebugToggleControllerPluggedIn(arg0: number): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      static setDefaultRoleFor(arg0: string, arg1: string): void;
       /**
        * @noSelf
        *
@@ -3698,14 +4800,28 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (boolean arg0): void
        */
-      static setShowPingInfo(arg0: boolean): void;
+      static setShowServerInfo(arg0: boolean): void;
       /**
        * @noSelf
        *
        * Method Parameters: 
-       *  - (boolean arg0): void
+       *  - (String arg0): void
        */
-      static setShowServerInfo(arg0: boolean): void;
+      static setSpawnRegion(arg0: string): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Double... arg0): void
+       */
+      static setZoomLevels(arg0: number[]): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Role arg0, String arg1, Color arg2, KahluaTable arg3): void
+       */
+      static setupRole(arg0: zombie.characters.Role, arg1: string, arg2: zombie.core.Color, arg3: se.krka.kahlua.vm.KahluaTable): void;
       /**
        * @noSelf
        *
@@ -3733,6 +4849,13 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (String arg0): void
        */
+      static showDebugInfoInChat(arg0: string): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
       static showFolderInDesktop(arg0: string): void;
       /**
        * @noSelf
@@ -3741,6 +4864,20 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): void
        */
       static showGlobalObjectDebugger(): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      static showSeamEditor(): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      static showSpriteModelEditor(): void;
       /**
        * @noSelf
        *
@@ -3801,6 +4938,13 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (IsoPlayer arg0, InventoryItem arg1, IsoGridSquare arg2, KahluaTable arg3): number
+       */
+      static startFishingAction(arg0: zombie.characters.IsoPlayer, arg1: zombie.inventory.InventoryItem, arg2: zombie.iso.IsoGridSquare, arg3: se.krka.kahlua.vm.KahluaTable): number;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (int arg0): zombie.network.Server
        */
       static steamGetInternetServerDetails(arg0: number): zombie.network.Server;
@@ -3845,7 +4989,28 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): void
        */
+      static stepForward(): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Object arg0): void
+       */
+      static stopFire(arg0: any): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): void
+       */
       static stopPing(): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      static stopSendSecretKey(): void;
       /**
        * @noSelf
        *
@@ -3853,6 +5018,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (long arg0): void
        */
       static stopSound(arg0: number): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (IsoPlayer arg0): void
+       */
+      static syncVisuals(arg0: zombie.characters.IsoPlayer): void;
       /**
        * @noSelf
        *
@@ -3928,13 +5100,6 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoPlayer arg0): void
-       */
-      static toggleSafetyServer(arg0: zombie.characters.IsoPlayer): void;
-      /**
-       * @noSelf
-       *
-       * Method Parameters: 
        *  - (Empty): void
        */
       static toggleVehicleRenderToTexture(): void;
@@ -3949,9 +5114,9 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IsoPlayer arg0, IsoPlayer arg1, int arg2): void
+       *  - (IsoPlayer arg0, IsoPlayer arg1, InventoryItem arg2): void
        */
-      static tradingUISendRemoveItem(arg0: zombie.characters.IsoPlayer, arg1: zombie.characters.IsoPlayer, arg2: number): void;
+      static tradingUISendRemoveItem(arg0: zombie.characters.IsoPlayer, arg1: zombie.characters.IsoPlayer, arg2: zombie.inventory.InventoryItem): void;
       /**
        * @noSelf
        *
@@ -3998,6 +5163,13 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (int arg0, int arg1, float arg2, float arg3): void
+       */
+      static transmitBigWaterSplash(arg0: number, arg1: number, arg2: number, arg3: number): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (String arg0): void
        *  - (String arg0, Object arg1): void
        *  - (String arg0, Object arg1, Object arg2): void
@@ -4005,6 +5177,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, Object arg1, Object arg2, Object arg3, Object arg4): void
        */
       static triggerEvent(arg0: string, arg1?: any, arg2?: any, arg3?: any, arg4?: any): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): zombie.core.textures.Texture
+       */
+      static tryGetTexture(arg0: string): zombie.core.textures.Texture;
       /**
        * @noSelf
        *
@@ -4038,8 +5217,9 @@ declare module '@asledgehammer/pipewrench' {
        *
        * Method Parameters: 
        *  - (int arg0): boolean
+       *  - (String arg0): boolean
        */
-      static wasKeyDown(arg0: number): boolean;
+      static wasKeyDown(arg0: number | string): boolean;
       /**
        * @noSelf
        *

@@ -43,15 +43,17 @@ declare module '@asledgehammer/pipewrench' {
        *
        * Method Parameters: 
        *  - (int arg0): boolean
+       *  - (String arg0): boolean
        */
-      static isKeyDown(arg0: number): boolean;
+      static isKeyDown(arg0: number | string): boolean;
       /**
        * @noSelf
        *
        * Method Parameters: 
        *  - (int arg0): boolean
+       *  - (String arg0): boolean
        */
-      static isKeyPressed(arg0: number): boolean;
+      static isKeyPressed(arg0: number | string): boolean;
       /**
        * @noSelf
        *
@@ -78,8 +80,30 @@ declare module '@asledgehammer/pipewrench' {
        *
        * Method Parameters: 
        *  - (int arg0): boolean
+       *  - (String arg0): boolean
        */
-      static wasKeyDown(arg0: number): boolean;
+      static wasKeyDown(arg0: number | string): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): number
+       */
+      static whichKeyDown(arg0: string): number;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): number
+       */
+      static whichKeyPressed(arg0: string): number;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): number
+       */
+      static whichKeyWasDown(arg0: string): number;
     }
     /**
      * @customConstructor JoypadManager.new
@@ -570,24 +594,38 @@ declare module '@asledgehammer/pipewrench' {
      * [CLASS] zombie.input.Mouse
      */
     export class Mouse {
+      /** int */
+      static readonly BTN_0: number;
+      /** int */
+      static readonly BTN_1: number;
+      /** int */
+      static readonly BTN_2: number;
+      /** int */
+      static readonly BTN_3: number;
+      /** int */
+      static readonly BTN_4: number;
+      /** int */
+      static readonly BTN_5: number;
+      /** int */
+      static readonly BTN_6: number;
+      /** int */
+      static readonly BTN_7: number;
+      /** int */
+      static readonly BTN_OFFSET: number;
+      /** int */
+      static readonly LMB: number;
+      /** int */
+      static readonly MMB: number;
+      /** int */
+      static readonly RMB: number;
       /** boolean[] */
       static UICaptured?: boolean[];
-      /** boolean */
-      static bLeftDown: boolean;
-      /** boolean */
-      static bLeftWasDown: boolean;
-      /** boolean */
-      static bMiddleDown: boolean;
-      /** boolean */
-      static bMiddleWasDown: boolean;
-      /** boolean */
-      static bRightDown: boolean;
-      /** boolean */
-      static bRightWasDown: boolean;
       /** long */
       static lastActivity: number;
       /** boolean[] */
       static m_buttonDownStates?: boolean[];
+      /** boolean[] */
+      static m_buttonPrevStates?: boolean[];
       /** int */
       static wheelDelta: number;
 
@@ -603,6 +641,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0): void
        */
       static UIBlockButtonDown(arg0: number): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      static getButtonCount(): number;
       /**
        * @noSelf
        *
@@ -659,6 +704,20 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0): boolean
        */
       static isButtonDownUICheck(arg0: number): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      static isButtonPressed(arg0: number): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      static isButtonReleased(arg0: number): boolean;
       /**
        * @noSelf
        *
@@ -722,6 +781,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       static isMiddleUp(): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      static isRightDelay(): boolean;
       /**
        * @noSelf
        *
@@ -792,6 +858,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): void
        */
       static update(): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      static wasButtonDown(arg0: number): boolean;
     }
   }
 }

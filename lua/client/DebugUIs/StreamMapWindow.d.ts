@@ -7,6 +7,8 @@ declare module '@asledgehammer/pipewrench/client' {
       [id: string]: any;
       static [id: string]: any;
 
+      level: any;
+
       objectView: any;
 
       panning: any;

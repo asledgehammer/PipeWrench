@@ -4,20 +4,27 @@ declare module '@asledgehammer/pipewrench' {
     /** [ENUM] zombie.iso.SpriteDetails.IsoFlagType */
     export class IsoFlagType {
       protected constructor();
+      static readonly BlockRain: zombie.iso.SpriteDetails.IsoFlagType;
       static readonly CantClimb: zombie.iso.SpriteDetails.IsoFlagType;
       static readonly DoorWallN: zombie.iso.SpriteDetails.IsoFlagType;
       static readonly DoorWallW: zombie.iso.SpriteDetails.IsoFlagType;
+      static readonly DoubleDoor1: zombie.iso.SpriteDetails.IsoFlagType;
+      static readonly DoubleDoor2: zombie.iso.SpriteDetails.IsoFlagType;
+      static readonly EntityScript: zombie.iso.SpriteDetails.IsoFlagType;
       static readonly FloorHeightOneThird: zombie.iso.SpriteDetails.IsoFlagType;
       static readonly FloorHeightTwoThirds: zombie.iso.SpriteDetails.IsoFlagType;
       static readonly FloorOverlay: zombie.iso.SpriteDetails.IsoFlagType;
       static readonly ForceAmbient: zombie.iso.SpriteDetails.IsoFlagType;
+      static readonly HasLightOnSprite: zombie.iso.SpriteDetails.IsoFlagType;
       static readonly HasRainSplashes: zombie.iso.SpriteDetails.IsoFlagType;
       static readonly HasRaindrop: zombie.iso.SpriteDetails.IsoFlagType;
       static readonly HoppableN: zombie.iso.SpriteDetails.IsoFlagType;
       static readonly HoppableW: zombie.iso.SpriteDetails.IsoFlagType;
       static readonly MAX: zombie.iso.SpriteDetails.IsoFlagType;
+      static readonly NeverCutaway: zombie.iso.SpriteDetails.IsoFlagType;
       static readonly NoWallLighting: zombie.iso.SpriteDetails.IsoFlagType;
       static readonly SpearOnlyAttackThrough: zombie.iso.SpriteDetails.IsoFlagType;
+      static readonly SpriteConfig: zombie.iso.SpriteDetails.IsoFlagType;
       static readonly TallHoppableN: zombie.iso.SpriteDetails.IsoFlagType;
       static readonly TallHoppableW: zombie.iso.SpriteDetails.IsoFlagType;
       static readonly WallN: zombie.iso.SpriteDetails.IsoFlagType;
@@ -72,10 +79,12 @@ declare module '@asledgehammer/pipewrench' {
       static readonly halfheight: zombie.iso.SpriteDetails.IsoFlagType;
       static readonly hidewalls: zombie.iso.SpriteDetails.IsoFlagType;
       static readonly invisible: zombie.iso.SpriteDetails.IsoFlagType;
+      static readonly isEave: zombie.iso.SpriteDetails.IsoFlagType;
       static readonly makeWindowInvincible: zombie.iso.SpriteDetails.IsoFlagType;
       static readonly noStart: zombie.iso.SpriteDetails.IsoFlagType;
       static readonly ontable: zombie.iso.SpriteDetails.IsoFlagType;
       static readonly open: zombie.iso.SpriteDetails.IsoFlagType;
+      static readonly openAir: zombie.iso.SpriteDetails.IsoFlagType;
       static readonly pushable: zombie.iso.SpriteDetails.IsoFlagType;
       static readonly sheetCurtains: zombie.iso.SpriteDetails.IsoFlagType;
       static readonly shelfE: zombie.iso.SpriteDetails.IsoFlagType;
@@ -98,6 +107,7 @@ declare module '@asledgehammer/pipewrench' {
       static readonly transparentN: zombie.iso.SpriteDetails.IsoFlagType;
       static readonly transparentW: zombie.iso.SpriteDetails.IsoFlagType;
       static readonly unflamable: zombie.iso.SpriteDetails.IsoFlagType;
+      static readonly unlit: zombie.iso.SpriteDetails.IsoFlagType;
       static readonly vegitation: zombie.iso.SpriteDetails.IsoFlagType;
       static readonly water: zombie.iso.SpriteDetails.IsoFlagType;
       static readonly waterPiped: zombie.iso.SpriteDetails.IsoFlagType;

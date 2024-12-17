@@ -167,9 +167,9 @@ declare module '@asledgehammer/pipewrench' {
       setKnownBlockedWindow(arg0: zombie.iso.objects.IsoWindow, arg1: boolean): void;
       /**
        * Method Parameters: 
-       *  - (IsoObject arg0, boolean arg1): void
+       *  - (IsoWindowFrame arg0, boolean arg1): void
        */
-      setKnownBlockedWindowFrame(arg0: zombie.iso.IsoObject, arg1: boolean): void;
+      setKnownBlockedWindowFrame(arg0: zombie.iso.objects.IsoWindowFrame, arg1: boolean): void;
     }
     /**
      * @customConstructor State.new
@@ -182,6 +182,16 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty Constructor)
        */
       protected constructor();
+      /**
+       * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
@@ -202,6 +212,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -287,6 +302,11 @@ declare module '@asledgehammer/pipewrench' {
       isSubstate(arg0: zombie.ai.State): boolean;
       /**
        * Method Parameters: 
+       *  - (ByteBuffer arg0, int arg1): void
+       */
+      parse(arg0: java.nio.ByteBuffer, arg1: number): void;
+      /**
+       * Method Parameters: 
        *  - (State arg0): void
        */
       revertToPreviousState(arg0: zombie.ai.State): void;
@@ -305,6 +325,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): void
        */
       update(): void;
+      /**
+       * Method Parameters: 
+       *  - (ByteBufferWriter arg0, int arg1): void
+       */
+      write(arg0: zombie.core.network.ByteBufferWriter, arg1: number): void;
     }
     /**
      * @customConstructor SubstateSlot.new

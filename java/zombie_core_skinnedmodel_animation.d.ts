@@ -80,8 +80,9 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Constructors: 
        *  - (float arg0, List arg1, String arg2, boolean arg3)
+       *  - (float arg0, List arg1, String arg2, boolean arg3, boolean arg4)
        */
-      constructor(arg0: number, arg1: java.util.List<zombie.core.skinnedmodel.animation.Keyframe>, arg2: string, arg3: boolean);
+      constructor(arg0: number, arg1: java.util.List<zombie.core.skinnedmodel.animation.Keyframe>, arg2: string, arg3: boolean, arg4?: boolean);
       /**
        * Method Parameters: 
        *  - (int arg0): zombie.core.skinnedmodel.animation.Keyframe[]
@@ -89,9 +90,24 @@ declare module '@asledgehammer/pipewrench' {
       getBoneFramesAt(arg0: number): zombie.core.skinnedmodel.animation.Keyframe[];
       /**
        * Method Parameters: 
+       *  - (Empty): number
+       */
+      getDuration(): number;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): zombie.core.skinnedmodel.animation.Keyframe
+       */
+      getKeyframe(arg0: number): zombie.core.skinnedmodel.animation.Keyframe;
+      /**
+       * Method Parameters: 
        *  - (Empty): zombie.core.skinnedmodel.animation.Keyframe[]
        */
       getKeyframes(): zombie.core.skinnedmodel.animation.Keyframe[];
+      /**
+       * Method Parameters: 
+       *  - (int arg0, Keyframe[] arg1): zombie.core.skinnedmodel.animation.Keyframe[]
+       */
+      getKeyframesForBone(arg0: number, arg1: zombie.core.skinnedmodel.animation.Keyframe[]): zombie.core.skinnedmodel.animation.Keyframe[];
       /**
        * Method Parameters: 
        *  - (int arg0): zombie.core.skinnedmodel.animation.Keyframe
@@ -107,6 +123,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (BoneAxis arg0): number
        */
       getTranslationLength(arg0: zombie.core.skinnedmodel.animation.BoneAxis): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      recalculateKeyframesByBoneIndex(): void;
     }
     /**
      * @customConstructor AnimationMultiTrack.new
@@ -131,14 +152,39 @@ declare module '@asledgehammer/pipewrench' {
       addTrack(arg0: zombie.core.skinnedmodel.animation.AnimationTrack): void;
       /**
        * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      anyRagdollFirstFrame(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      containsAnyRagdollTracks(): boolean;
+      /**
+       * Method Parameters: 
        *  - (String arg0): zombie.core.skinnedmodel.animation.AnimationTrack
        */
       findTrack(arg0: string): zombie.core.skinnedmodel.animation.AnimationTrack;
       /**
        * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.animation.AnimationTrack
+       */
+      getActiveRagdollTrack(): zombie.core.skinnedmodel.animation.AnimationTrack;
+      /**
+       * Method Parameters: 
        *  - (Empty): number
        */
       getDuration(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getIKAimingLeftArmWeight(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getIKAimingRightArmWeight(): number;
       /**
        * Method Parameters: 
        *  - (AnimationTrack arg0): number
@@ -159,6 +205,12 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): java.util.List<zombie.core.skinnedmodel.animation.AnimationTrack>
        */
       getTracks(): java.util.List<zombie.core.skinnedmodel.animation.AnimationTrack>;
+      /**
+       * Method Parameters: 
+       *  - (List arg0): void
+       *  - (TwistableBoneTransform[] arg0): void
+       */
+      initRagdollTransforms(arg0: java.util.List<org.lwjgl.util.vector.Matrix4f> | zombie.core.skinnedmodel.animation.TwistableBoneTransform[]): void;
       /**
        * Method Parameters: 
        *  - (AnimationTrack arg0): void
@@ -189,9 +241,14 @@ declare module '@asledgehammer/pipewrench' {
 
       /**
        * Method Parameters: 
-       *  - (Empty): void
+       *  - (float arg0): void
        */
-      DoAngles(): void;
+      DoAngles(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (float arg0): void
+       */
+      DoAnglesWhileRagdolling(arg0: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): org.lwjgl.util.vector.Matrix4f
@@ -199,25 +256,10 @@ declare module '@asledgehammer/pipewrench' {
       GetPropBoneMatrix(arg0: number): org.lwjgl.util.vector.Matrix4f;
       /**
        * Method Parameters: 
-       *  - (Vector2 arg0): void
-       */
-      SetDir(arg0: zombie.iso.Vector2): void;
-      /**
-       * Method Parameters: 
-       *  - (Vector2 arg0): void
-       */
-      SetForceDir(arg0: zombie.iso.Vector2): void;
-      /**
-       * Method Parameters: 
        *  - (Empty): void
        *  - (float arg0): void
        */
       Update(arg0?: number): void;
-      /**
-       * Method Parameters: 
-       *  - (IsoGameCharacter arg0): void
-       */
-      UpdateDir(arg0: zombie.characters.IsoGameCharacter): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -245,6 +287,21 @@ declare module '@asledgehammer/pipewrench' {
       getAngle(): number;
       /**
        * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.animation.AnimationClip
+       */
+      getAnimationClip(): zombie.core.skinnedmodel.animation.AnimationClip;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, Matrix4f arg1): org.lwjgl.util.vector.Matrix4f
+       */
+      getBindPoseBoneModelTransform(arg0: number, arg1: org.lwjgl.util.vector.Matrix4f): org.lwjgl.util.vector.Matrix4f;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): zombie.core.skinnedmodel.animation.TwistableBoneTransform
+       */
+      getBone(arg0: number): zombie.core.skinnedmodel.animation.TwistableBoneTransform;
+      /**
+       * Method Parameters: 
        *  - (int arg0, Matrix4f arg1): org.lwjgl.util.vector.Matrix4f
        */
       getBoneModelTransform(arg0: number, arg1: org.lwjgl.util.vector.Matrix4f): org.lwjgl.util.vector.Matrix4f;
@@ -253,6 +310,17 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0, Matrix4f arg1): org.lwjgl.util.vector.Matrix4f
        */
       getBoneTransform(arg0: number, arg1: org.lwjgl.util.vector.Matrix4f): org.lwjgl.util.vector.Matrix4f;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): zombie.core.skinnedmodel.animation.AnimatorsBoneTransform
+       *  - (int arg0, BoneTransform arg1): T
+       */
+      getBoneTransformAt<T>(arg0: number, arg1?: T): zombie.core.skinnedmodel.animation.AnimatorsBoneTransform | T;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getBoneTransformsTimeDelta(): number;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.core.skinnedmodel.animation.AnimationBoneBinding
@@ -265,9 +333,14 @@ declare module '@asledgehammer/pipewrench' {
       getDeferredAngleDelta(): number;
       /**
        * Method Parameters: 
-       *  - (Vector2 arg0): void
+       *  - (Vector2 arg0, boolean arg1): zombie.iso.Vector2
        */
-      getDeferredMovement(arg0: zombie.iso.Vector2): void;
+      getDeferredMovement(arg0: zombie.iso.Vector2, arg1: boolean): zombie.iso.Vector2;
+      /**
+       * Method Parameters: 
+       *  - (Vector2 arg0): zombie.iso.Vector2
+       */
+      getDeferredMovementFromRagdoll(arg0: zombie.iso.Vector2): zombie.iso.Vector2;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -280,6 +353,27 @@ declare module '@asledgehammer/pipewrench' {
       getExcessTwistAngle(): number;
       /**
        * Method Parameters: 
+       *  - (Vector3 arg0): zombie.core.math.Vector3
+       *  - (Vector3 arg0): zombie.iso.Vector3
+       */
+      getGrappleOffset(arg0: zombie.core.math.Vector3 | zombie.iso.Vector3): zombie.core.math.Vector3 | zombie.iso.Vector3;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getIKAimingLeftArmWeight(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getIKAimingRightArmWeight(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.characters.IsoGameCharacter
+       */
+      getIsoGameCharacter(): zombie.characters.IsoGameCharacter;
+      /**
+       * Method Parameters: 
        *  - (Empty): number
        */
       getMaxTwistAngle(): number;
@@ -290,14 +384,49 @@ declare module '@asledgehammer/pipewrench' {
       getModel(): zombie.core.skinnedmodel.model.Model;
       /**
        * Method Parameters: 
+       *  - (int arg0): org.lwjgl.util.vector.Matrix4f
+       */
+      getModelTransformAt(arg0: number): org.lwjgl.util.vector.Matrix4f;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getModelTransformsCount(): number;
+      /**
+       * Method Parameters: 
        *  - (Empty): zombie.core.skinnedmodel.animation.AnimationMultiTrack
        */
       getMultiTrack(): zombie.core.skinnedmodel.animation.AnimationMultiTrack;
       /**
        * Method Parameters: 
-       *  - (Empty): zombie.util.Pool<zombie.util.IPooledObject>
+       *  - (Empty): number
        */
-      getPool(): zombie.util.Pool<zombie.util.IPooledObject>;
+      getNumBones(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getNumTwistBones(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.animation.AnimationClip
+       */
+      getOrCreateRagdollAnimationClip(): zombie.core.skinnedmodel.animation.AnimationClip;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.util.Pool$PoolReference
+       */
+      getPoolReference(): zombie.util.Pool$PoolReference;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.physics.RagdollController
+       */
+      getRagdollController(): zombie.core.physics.RagdollController;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.animation.AnimationClip
+       */
+      getRagdollSimulationAnimationClip(): zombie.core.skinnedmodel.animation.AnimationClip;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.core.skinnedmodel.animation.debug.AnimationPlayerRecorder
@@ -313,6 +442,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): number
        */
       getShoulderTwistAngle(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.model.SkinningBoneHierarchy
+       */
+      getSkeletonBoneHiearchy(): zombie.core.skinnedmodel.model.SkinningBoneHierarchy;
       /**
        * Method Parameters: 
        *  - (SkinningData arg0): org.lwjgl.util.vector.Matrix4f[]
@@ -340,6 +474,17 @@ declare module '@asledgehammer/pipewrench' {
       getTargetAngle(): number;
       /**
        * Method Parameters: 
+       *  - (Vector3 arg0): zombie.core.math.Vector3
+       *  - (Vector3 arg0): zombie.iso.Vector3
+       */
+      getTargetGrapplePos(arg0: zombie.core.math.Vector3 | zombie.iso.Vector3): zombie.core.math.Vector3 | zombie.iso.Vector3;
+      /**
+       * Method Parameters: 
+       *  - (Vector2 arg0): zombie.iso.Vector2
+       */
+      getTargetGrappleRotation(arg0: zombie.iso.Vector2): zombie.iso.Vector2;
+      /**
+       * Method Parameters: 
        *  - (Empty): number
        */
       getTargetTwistAngle(): number;
@@ -348,6 +493,16 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): number
        */
       getTwistAngle(): number;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): zombie.core.skinnedmodel.animation.AnimatorsBoneTransform
+       */
+      getTwistBoneAt(arg0: number): zombie.core.skinnedmodel.animation.AnimatorsBoneTransform;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): string
+       */
+      getTwistBoneNameAt(arg0: number): string;
       /**
        * Method Parameters: 
        *  - (AnimationTrack arg0, int arg1, Matrix4f arg2): org.lwjgl.util.vector.Matrix4f
@@ -377,6 +532,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isRagdolling(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isReady(): boolean;
       /**
        * Method Parameters: 
@@ -391,13 +551,20 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0, boolean arg1): zombie.core.skinnedmodel.animation.AnimationTrack
+       *  - (StartAnimTrackParameters arg0, AnimLayer arg1): zombie.core.skinnedmodel.animation.AnimationTrack
+       *  - (String arg0, boolean arg1, boolean arg2, float arg3): zombie.core.skinnedmodel.animation.AnimationTrack
        */
-      play(arg0: string, arg1: boolean): zombie.core.skinnedmodel.animation.AnimationTrack;
+      play(arg0: string | zombie.core.skinnedmodel.animation.StartAnimTrackParameters, arg1: boolean | zombie.core.skinnedmodel.advancedanimation.AnimLayer, arg2?: boolean, arg3?: number): zombie.core.skinnedmodel.animation.AnimationTrack;
       /**
        * Method Parameters: 
        *  - (Empty): void
        */
       release(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      releaseRagdollController(): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -430,6 +597,16 @@ declare module '@asledgehammer/pipewrench' {
       setFree(arg0: boolean): void;
       /**
        * Method Parameters: 
+       *  - (float arg0, float arg1, float arg2): void
+       */
+      setGrappleOffset(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (IsoGameCharacter arg0): void
+       */
+      setIsoGameCharacter(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
        *  - (float arg0): void
        */
       setMaxTwistAngle(arg0: number): void;
@@ -440,9 +617,9 @@ declare module '@asledgehammer/pipewrench' {
       setModel(arg0: zombie.core.skinnedmodel.model.Model): void;
       /**
        * Method Parameters: 
-       *  - (Pool arg0): void
+       *  - (PoolReference arg0): void
        */
-      setPool(arg0: zombie.util.Pool<zombie.util.IPooledObject>): void;
+      setPool(arg0: zombie.util.Pool$PoolReference): void;
       /**
        * Method Parameters: 
        *  - (AnimationPlayerRecorder arg0): void
@@ -460,9 +637,29 @@ declare module '@asledgehammer/pipewrench' {
       setSharedAnimRepo(arg0: zombie.core.skinnedmodel.animation.sharedskele.SharedSkeleAnimationRepository): void;
       /**
        * Method Parameters: 
+       *  - (Vector2 arg0): void
+       */
+      setTargetAndCurrentDirection(arg0: zombie.iso.Vector2): void;
+      /**
+       * Method Parameters: 
        *  - (float arg0): void
        */
       setTargetAngle(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Vector2 arg0): void
+       */
+      setTargetDirection(arg0: zombie.iso.Vector2): void;
+      /**
+       * Method Parameters: 
+       *  - (float arg0, float arg1, float arg2): void
+       */
+      setTargetGrapplePos(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (float arg0, float arg1): void
+       */
+      setTargetGrappleRotation(arg0: number, arg1: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -473,6 +670,21 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String... arg0): void
        */
       setTwistBones(arg0: string[]): void;
+      /**
+       * Method Parameters: 
+       *  - (AnimationClip arg0, boolean arg1, float arg2): zombie.core.skinnedmodel.animation.AnimationTrack
+       */
+      startClip(arg0: zombie.core.skinnedmodel.animation.AnimationClip, arg1: boolean, arg2: number): zombie.core.skinnedmodel.animation.AnimationTrack;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      stopAll(): void;
+      /**
+       * Method Parameters: 
+       *  - (IsoGameCharacter arg0): void
+       */
+      updateForwardDirection(arg0: zombie.characters.IsoGameCharacter): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -568,6 +780,11 @@ declare module '@asledgehammer/pipewrench' {
       getClip(): zombie.core.skinnedmodel.animation.AnimationClip;
       /**
        * Method Parameters: 
+       *  - (Empty): number
+       */
+      getCurrentAnimationTime(): number;
+      /**
+       * Method Parameters: 
        *  - (Vector3f arg0): org.lwjgl.util.vector.Vector3f
        */
       getCurrentDeferredCounterPosition(arg0: org.lwjgl.util.vector.Vector3f): org.lwjgl.util.vector.Vector3f;
@@ -585,11 +802,6 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): number
        */
-      getCurrentTime(): number;
-      /**
-       * Method Parameters: 
-       *  - (Empty): number
-       */
       getCurrentTimeFraction(): number;
       /**
        * Method Parameters: 
@@ -600,12 +812,12 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): number
        */
-      getDeferredBoneWeight(): number;
+      getCurrentTrackTime(): number;
       /**
        * Method Parameters: 
-       *  - (Vector3f arg0, Vector2 arg1): zombie.iso.Vector2
+       *  - (Empty): number
        */
-      getDeferredMovement(arg0: org.lwjgl.util.vector.Vector3f, arg1: zombie.iso.Vector2): zombie.iso.Vector2;
+      getDeferredBoneWeight(): number;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -623,9 +835,9 @@ declare module '@asledgehammer/pipewrench' {
       getDeferredRotationDiff(): number;
       /**
        * Method Parameters: 
-       *  - (Quaternion arg0): number
+       *  - (Empty): number
        */
-      getDeferredTwistRotation(arg0: org.lwjgl.util.vector.Quaternion): number;
+      getDeferredRotationScale(): number;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -638,14 +850,24 @@ declare module '@asledgehammer/pipewrench' {
       getLayerIdx(): number;
       /**
        * Method Parameters: 
-       *  - (Empty): zombie.util.Pool<zombie.util.IPooledObject>
+       *  - (Empty): string
        */
-      getPool(): zombie.util.Pool<zombie.util.IPooledObject>;
+      getMatchingGrappledAnimNode(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.util.Pool$PoolReference
+       */
+      getPoolReference(): zombie.util.Pool$PoolReference;
       /**
        * Method Parameters: 
        *  - (Empty): number
        */
-      getPreviousTime(): number;
+      getPreviousAnimationTime(): number;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -655,7 +877,17 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): number
        */
+      getPreviousTrackTime(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
       getPriority(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getUseDeferredMovement(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -678,6 +910,17 @@ declare module '@asledgehammer/pipewrench' {
       initBoneWeights(arg0: zombie.core.skinnedmodel.model.SkinningData): void;
       /**
        * Method Parameters: 
+       *  - (int arg0, Vector3f arg1, Quaternion arg2, Vector3f arg3): void
+       */
+      initRagdollTransform(arg0: number, arg1: org.lwjgl.util.vector.Vector3f, arg2: org.lwjgl.util.vector.Quaternion, arg3: org.lwjgl.util.vector.Vector3f): void;
+      /**
+       * Method Parameters: 
+       *  - (List arg0): void
+       *  - (TwistableBoneTransform[] arg0): void
+       */
+      initRagdollTransforms(arg0: java.util.List<org.lwjgl.util.vector.Matrix4f> | zombie.core.skinnedmodel.animation.TwistableBoneTransform[]): void;
+      /**
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isFinished(): boolean;
@@ -690,7 +933,32 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isGrappler(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isIKAimingLeftArm(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isIKAimingRightArm(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isLooping(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isRagdoll(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isRagdollFirstFrame(): boolean;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -738,6 +1006,11 @@ declare module '@asledgehammer/pipewrench' {
       scaledRewind(arg0: number): void;
       /**
        * Method Parameters: 
+       *  - (AnimLayer arg0): void
+       */
+      setAnimLayer(arg0: zombie.core.skinnedmodel.advancedanimation.AnimLayer): void;
+      /**
+       * Method Parameters: 
        *  - (List arg0): void
        */
       setBoneWeights(arg0: java.util.List<zombie.core.skinnedmodel.advancedanimation.AnimBoneWeight>): void;
@@ -753,9 +1026,24 @@ declare module '@asledgehammer/pipewrench' {
       setDeferredBone(arg0: zombie.core.skinnedmodel.model.SkinningBone, arg1: zombie.core.skinnedmodel.animation.BoneAxis): void;
       /**
        * Method Parameters: 
+       *  - (float arg0): void
+       */
+      setDeferredRotationScale(arg0: number): void;
+      /**
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setFree(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setIKAimingLeftArm(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setIKAimingRightArm(arg0: boolean): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -763,9 +1051,14 @@ declare module '@asledgehammer/pipewrench' {
       setLayerIdx(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (Pool arg0): void
+       *  - (String arg0): void
        */
-      setPool(arg0: zombie.util.Pool<zombie.util.IPooledObject>): void;
+      setMatchingGrappledAnimNode(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (PoolReference arg0): void
+       */
+      setPool(arg0: zombie.util.Pool$PoolReference): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
@@ -775,12 +1068,17 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (boolean arg0): void
        */
+      setUseDeferredMovement(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
       setUseDeferredRotation(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (AnimationClip arg0, boolean arg1): void
+       *  - (AnimationClip arg0, boolean arg1, float arg2): void
        */
-      startClip(arg0: zombie.core.skinnedmodel.animation.AnimationClip, arg1: boolean): void;
+      startClip(arg0: zombie.core.skinnedmodel.animation.AnimationClip, arg1: boolean, arg2: number): void;
       /**
        * @noSelf
        *
@@ -795,6 +1093,133 @@ declare module '@asledgehammer/pipewrench' {
        *  - (AnimationTrack arg0, Supplier arg1): zombie.core.skinnedmodel.animation.AnimationTrack
        */
       static createClone(arg0: zombie.core.skinnedmodel.animation.AnimationTrack, arg1: java.util._function_.Supplier<zombie.core.skinnedmodel.animation.AnimationTrack>): zombie.core.skinnedmodel.animation.AnimationTrack;
+    }
+    /**
+     * @customConstructor AnimatorsBoneTransform.new
+     * @
+     * [CLASS] zombie.core.skinnedmodel.animation.AnimatorsBoneTransform extends zombie.core.skinnedmodel.animation.TwistableBoneTransform
+     */
+    export class AnimatorsBoneTransform {
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       */
+      constructor();
+      /**
+       * Method Parameters: 
+       *  - (Matrix4f arg0): void
+       */
+      getMatrix(arg0: org.lwjgl.util.vector.Matrix4f): void;
+      /**
+       * Method Parameters: 
+       *  - (Vector3f arg0, Quaternion arg1, Vector3f arg2): void
+       */
+      getPRS(arg0: org.lwjgl.util.vector.Vector3f, arg1: org.lwjgl.util.vector.Quaternion, arg2: org.lwjgl.util.vector.Vector3f): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.util.Pool$PoolReference
+       */
+      getPoolReference(): zombie.util.Pool$PoolReference;
+      /**
+       * Method Parameters: 
+       *  - (Vector3f arg0): void
+       */
+      getPosition(arg0: org.lwjgl.util.vector.Vector3f): void;
+      /**
+       * Method Parameters: 
+       *  - (BoneTransform arg0): T
+       */
+      getPreviousTransform<T>(arg0: T): T;
+      /**
+       * Method Parameters: 
+       *  - (Quaternion arg0): void
+       */
+      getRotation(arg0: org.lwjgl.util.vector.Quaternion): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getTimeDelta(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isFree(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Matrix4f arg0, Matrix4f arg1): void
+       */
+      mul(arg0: org.lwjgl.util.vector.Matrix4f, arg1: org.lwjgl.util.vector.Matrix4f): void;
+      /**
+       * Method Parameters: 
+       *  - (float arg0): void
+       */
+      nextFrame(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      onReleased(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      release(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      reset(): void;
+      /**
+       * Method Parameters: 
+       *  - (Matrix4f arg0): void
+       *  - (BoneTransform arg0): void
+       *  - (Vector3f arg0, Quaternion arg1, Vector3f arg2): void
+       */
+      set(arg0: org.lwjgl.util.vector.Matrix4f | zombie.core.skinnedmodel.animation.BoneTransform | org.lwjgl.util.vector.Vector3f, arg1?: org.lwjgl.util.vector.Quaternion, arg2?: org.lwjgl.util.vector.Vector3f): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setFree(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      setIdentity(): void;
+      /**
+       * Method Parameters: 
+       *  - (PoolReference arg0): void
+       */
+      setPool(arg0: zombie.util.Pool$PoolReference): void;
+      /**
+       * Method Parameters: 
+       *  - (Vector3f arg0): void
+       */
+      setPosition(arg0: org.lwjgl.util.vector.Vector3f): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.animation.AnimatorsBoneTransform
+       *  - (Empty): zombie.core.skinnedmodel.animation.BoneTransform
+       *  - (Empty): zombie.core.skinnedmodel.animation.TwistableBoneTransform
+       */
+      static alloc(): zombie.core.skinnedmodel.animation.AnimatorsBoneTransform | zombie.core.skinnedmodel.animation.BoneTransform | zombie.core.skinnedmodel.animation.TwistableBoneTransform;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (int arg0): zombie.core.skinnedmodel.animation.TwistableBoneTransform[]
+       */
+      static allocArray(arg0: number): zombie.core.skinnedmodel.animation.TwistableBoneTransform[];
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (BoneTransform arg0, Matrix4f arg1, Matrix4f arg2): void
+       */
+      static mul(arg0: zombie.core.skinnedmodel.animation.BoneTransform, arg1: org.lwjgl.util.vector.Matrix4f, arg2: org.lwjgl.util.vector.Matrix4f): void;
     }
     /** [ENUM] zombie.core.skinnedmodel.animation.BoneAxis */
     export class BoneAxis {
@@ -861,6 +1286,105 @@ declare module '@asledgehammer/pipewrench' {
       static values(): zombie.core.skinnedmodel.animation.BoneAxis[];
     }
     /**
+     * @customConstructor BoneTransform.new
+     * @
+     * [CLASS] zombie.core.skinnedmodel.animation.BoneTransform extends zombie.util.PooledObject
+     */
+    export class BoneTransform {
+
+      /**
+       * Method Parameters: 
+       *  - (Matrix4f arg0): void
+       */
+      getMatrix(arg0: org.lwjgl.util.vector.Matrix4f): void;
+      /**
+       * Method Parameters: 
+       *  - (Vector3f arg0, Quaternion arg1, Vector3f arg2): void
+       */
+      getPRS(arg0: org.lwjgl.util.vector.Vector3f, arg1: org.lwjgl.util.vector.Quaternion, arg2: org.lwjgl.util.vector.Vector3f): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.util.Pool$PoolReference
+       */
+      getPoolReference(): zombie.util.Pool$PoolReference;
+      /**
+       * Method Parameters: 
+       *  - (Vector3f arg0): void
+       */
+      getPosition(arg0: org.lwjgl.util.vector.Vector3f): void;
+      /**
+       * Method Parameters: 
+       *  - (Quaternion arg0): void
+       */
+      getRotation(arg0: org.lwjgl.util.vector.Quaternion): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isFree(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Matrix4f arg0, Matrix4f arg1): void
+       */
+      mul(arg0: org.lwjgl.util.vector.Matrix4f, arg1: org.lwjgl.util.vector.Matrix4f): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      onReleased(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      release(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      reset(): void;
+      /**
+       * Method Parameters: 
+       *  - (Matrix4f arg0): void
+       *  - (BoneTransform arg0): void
+       *  - (Vector3f arg0, Quaternion arg1, Vector3f arg2): void
+       */
+      set(arg0: org.lwjgl.util.vector.Matrix4f | zombie.core.skinnedmodel.animation.BoneTransform | org.lwjgl.util.vector.Vector3f, arg1?: org.lwjgl.util.vector.Quaternion, arg2?: org.lwjgl.util.vector.Vector3f): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setFree(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      setIdentity(): void;
+      /**
+       * Method Parameters: 
+       *  - (PoolReference arg0): void
+       */
+      setPool(arg0: zombie.util.Pool$PoolReference): void;
+      /**
+       * Method Parameters: 
+       *  - (Vector3f arg0): void
+       */
+      setPosition(arg0: org.lwjgl.util.vector.Vector3f): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.animation.BoneTransform
+       */
+      static alloc(): zombie.core.skinnedmodel.animation.BoneTransform;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (BoneTransform arg0, Matrix4f arg1, Matrix4f arg2): void
+       */
+      static mul(arg0: zombie.core.skinnedmodel.animation.BoneTransform, arg1: org.lwjgl.util.vector.Matrix4f, arg2: org.lwjgl.util.vector.Matrix4f): void;
+    }
+    /**
      * @customConstructor IAnimListener.new
      * @
      * [INTERFACE] zombie.core.skinnedmodel.animation.IAnimListener
@@ -877,6 +1401,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (AnimationTrack arg0): void
        */
       onLoopedAnim(arg0: zombie.core.skinnedmodel.animation.AnimationTrack): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      onNoAnimConditionsPass(): void;
       /**
        * Method Parameters: 
        *  - (AnimationTrack arg0): void
@@ -918,13 +1447,29 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Keyframe arg0): void
+       *  - (Vector3f arg0, Quaternion arg1, Vector3f arg2): void
        */
-      set(arg0: zombie.core.skinnedmodel.animation.Keyframe): void;
+      set(arg0: zombie.core.skinnedmodel.animation.Keyframe | org.lwjgl.util.vector.Vector3f, arg1?: org.lwjgl.util.vector.Quaternion, arg2?: org.lwjgl.util.vector.Vector3f): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
        */
       setIdentity(): void;
+      /**
+       * Method Parameters: 
+       *  - (Vector3f arg0): void
+       */
+      setPosition(arg0: org.lwjgl.util.vector.Vector3f): void;
+      /**
+       * Method Parameters: 
+       *  - (Quaternion arg0): void
+       */
+      setRotation(arg0: org.lwjgl.util.vector.Quaternion): void;
+      /**
+       * Method Parameters: 
+       *  - (Vector3f arg0): void
+       */
+      setScale(arg0: org.lwjgl.util.vector.Vector3f): void;
       /**
        * @noSelf
        *
@@ -956,6 +1501,158 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Vector3f arg0, Vector3f arg1, float arg2, float arg3, float arg4): void
        */
       static setIfNotNull(arg0: org.lwjgl.util.vector.Quaternion | org.lwjgl.util.vector.Vector3f, arg1: org.lwjgl.util.vector.Quaternion | number | org.lwjgl.util.vector.Vector3f, arg2?: number, arg3?: number, arg4?: number): void;
+    }
+    /**
+     * @customConstructor StartAnimTrackParameters.new
+     * @
+     * [CLASS] zombie.core.skinnedmodel.animation.StartAnimTrackParameters extends zombie.util.PooledObject
+     */
+    export class StartAnimTrackParameters {
+
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.util.Pool$PoolReference
+       */
+      getPoolReference(): zombie.util.Pool$PoolReference;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isFree(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      onReleased(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      release(): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setFree(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (PoolReference arg0): void
+       */
+      setPool(arg0: zombie.util.Pool$PoolReference): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.animation.StartAnimTrackParameters
+       */
+      static alloc(): zombie.core.skinnedmodel.animation.StartAnimTrackParameters;
+    }
+    /**
+     * @customConstructor TwistableBoneTransform.new
+     * @
+     * [CLASS] zombie.core.skinnedmodel.animation.TwistableBoneTransform extends zombie.core.skinnedmodel.animation.BoneTransform
+     */
+    export class TwistableBoneTransform {
+
+      /**
+       * Method Parameters: 
+       *  - (Matrix4f arg0): void
+       */
+      getMatrix(arg0: org.lwjgl.util.vector.Matrix4f): void;
+      /**
+       * Method Parameters: 
+       *  - (Vector3f arg0, Quaternion arg1, Vector3f arg2): void
+       */
+      getPRS(arg0: org.lwjgl.util.vector.Vector3f, arg1: org.lwjgl.util.vector.Quaternion, arg2: org.lwjgl.util.vector.Vector3f): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.util.Pool$PoolReference
+       */
+      getPoolReference(): zombie.util.Pool$PoolReference;
+      /**
+       * Method Parameters: 
+       *  - (Vector3f arg0): void
+       */
+      getPosition(arg0: org.lwjgl.util.vector.Vector3f): void;
+      /**
+       * Method Parameters: 
+       *  - (Quaternion arg0): void
+       */
+      getRotation(arg0: org.lwjgl.util.vector.Quaternion): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isFree(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Matrix4f arg0, Matrix4f arg1): void
+       */
+      mul(arg0: org.lwjgl.util.vector.Matrix4f, arg1: org.lwjgl.util.vector.Matrix4f): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      onReleased(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      release(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      reset(): void;
+      /**
+       * Method Parameters: 
+       *  - (Matrix4f arg0): void
+       *  - (BoneTransform arg0): void
+       *  - (Vector3f arg0, Quaternion arg1, Vector3f arg2): void
+       */
+      set(arg0: org.lwjgl.util.vector.Matrix4f | zombie.core.skinnedmodel.animation.BoneTransform | org.lwjgl.util.vector.Vector3f, arg1?: org.lwjgl.util.vector.Quaternion, arg2?: org.lwjgl.util.vector.Vector3f): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setFree(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      setIdentity(): void;
+      /**
+       * Method Parameters: 
+       *  - (PoolReference arg0): void
+       */
+      setPool(arg0: zombie.util.Pool$PoolReference): void;
+      /**
+       * Method Parameters: 
+       *  - (Vector3f arg0): void
+       */
+      setPosition(arg0: org.lwjgl.util.vector.Vector3f): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.animation.BoneTransform
+       *  - (Empty): zombie.core.skinnedmodel.animation.TwistableBoneTransform
+       */
+      static alloc(): zombie.core.skinnedmodel.animation.BoneTransform | zombie.core.skinnedmodel.animation.TwistableBoneTransform;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (int arg0): zombie.core.skinnedmodel.animation.TwistableBoneTransform[]
+       */
+      static allocArray(arg0: number): zombie.core.skinnedmodel.animation.TwistableBoneTransform[];
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (BoneTransform arg0, Matrix4f arg1, Matrix4f arg2): void
+       */
+      static mul(arg0: zombie.core.skinnedmodel.animation.BoneTransform, arg1: org.lwjgl.util.vector.Matrix4f, arg2: org.lwjgl.util.vector.Matrix4f): void;
     }
   }
 }

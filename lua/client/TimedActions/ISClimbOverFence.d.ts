@@ -12,6 +12,8 @@ declare module '@asledgehammer/pipewrench/client' {
       item: any;
 
       constructor(character: any, item: any);
+
+      getFacingDirection(...__args: never[]): any;
     }
   }
   export namespace lua.client.TimedActions.ISClimbOverFence {}

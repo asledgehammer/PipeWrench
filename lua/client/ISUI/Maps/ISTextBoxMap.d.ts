@@ -80,7 +80,7 @@ declare module '@asledgehammer/pipewrench/client' {
         param1: any,
         param2: any,
         param3: any,
-        param4: any,
+        param4: any
       );
 
       close(...__args: never[]): any;

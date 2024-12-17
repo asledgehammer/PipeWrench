@@ -2,6 +2,24 @@
 
 declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.Vehicles.ISUI {
+    /** @customConstructor EditVehicleState_EditPhysics_PhysicsMeshPanel:new */
+    export class EditVehicleState_EditPhysics_PhysicsMeshPanel extends lua.client.ISUI.ISPanel {
+      [id: string]: any;
+      static [id: string]: any;
+
+      comboPhysicsShape: any;
+
+      editPhysics: any;
+
+      constructor(x: any, y: any, width: any, height: any, editPhysics: any);
+
+      createChildren(...__args: never[]): any;
+
+      fillCombo(...__args: never[]): any;
+
+      onSelectPhysicsShapeScript(...__args: never[]): any;
+    }
+
     /** @customConstructor EditVehicleUI:new */
     export class EditVehicleUI extends lua.client.ISUI.ISPanel {
       [id: string]: any;
@@ -34,6 +52,8 @@ declare module '@asledgehammer/pipewrench/client' {
       onComboVehicle(...__args: never[]): any;
 
       onExit(button: any, x: any, y: any, ...__args: never[]): any;
+
+      onKeyPress(key: any, ...__args: never[]): any;
 
       onReload(button: any, x: any, y: any, ...__args: never[]): any;
 
@@ -99,13 +119,19 @@ declare module '@asledgehammer/pipewrench/client' {
 
       list: any;
 
+      modelCombo: any;
+
       nameEntry: any;
 
       originalOffset: any;
 
       originalRotate: any;
 
+      partCombo: any;
+
       selectedAttachment: any;
+
+      selectedBone: any;
 
       transformMode: any;
 
@@ -117,13 +143,27 @@ declare module '@asledgehammer/pipewrench/client' {
 
       doLayout(...__args: never[]): any;
 
+      getCurrentModel(...__args: never[]): any;
+
+      getCurrentPart(...__args: never[]): any;
+
+      getModelScriptForPart(part: any, vehicleModel: any, ...__args: never[]): any;
+
+      getScriptForAttachments(...__args: never[]): any;
+
       getSelectedAttachmentIds(...__args: never[]): any;
 
       getSelectedAttachments(...__args: never[]): any;
 
       getUniqueAttachmentId(modelScript: any, ...__args: never[]): any;
 
+      onComboModel(...__args: never[]): any;
+
+      onComboPart(...__args: never[]): any;
+
       onDeleteAttachment(button: any, x: any, y: any, ...__args: never[]): any;
+
+      onKeyPress(key: any, ...__args: never[]): any;
 
       onNameEntered(...__args: never[]): any;
 
@@ -132,6 +172,14 @@ declare module '@asledgehammer/pipewrench/client' {
       onToggleGizmo(...__args: never[]): any;
 
       onToggleGlobalLocal(...__args: never[]): any;
+
+      pickPartBone(...__args: never[]): any;
+
+      populateAttachmentList(...__args: never[]): any;
+
+      populateComboModel(...__args: never[]): any;
+
+      populateComboPart(...__args: never[]): any;
 
       setSelectedAttachment(attach: any, ...__args: never[]): any;
     }
@@ -195,7 +243,21 @@ declare module '@asledgehammer/pipewrench/client' {
 
       java4(func: any, arg0: any, arg1: any, arg2: any, arg3: any, ...__args: never[]): any;
 
+      java5(func: any, arg0: any, arg1: any, arg2: any, arg3: any, arg4: any, ...__args: never[]): any;
+
       java6(func: any, arg0: any, arg1: any, arg2: any, arg3: any, arg4: any, arg5: any, ...__args: never[]): any;
+
+      java7(
+        func: any,
+        arg0: any,
+        arg1: any,
+        arg2: any,
+        arg3: any,
+        arg4: any,
+        arg5: any,
+        arg6: any,
+        ...__args: never[]
+      ): any;
 
       java9(
         func: any,
@@ -219,11 +281,61 @@ declare module '@asledgehammer/pipewrench/client' {
 
       onGizmoStart(...__args: never[]): any;
 
+      onKeyPress(key: any, ...__args: never[]): any;
+
+      onSceneMouseDown(x: any, y: any, ...__args: never[]): any;
+
       prerenderEditor(...__args: never[]): any;
 
       toUI(...__args: never[]): any;
 
+      undisplay(...__args: never[]): any;
+
       updateEditor(...__args: never[]): any;
+    }
+
+    /** @customConstructor EditVehicleUI_EditPart:new */
+    export class EditVehicleUI_EditPart extends lua.client.DebugUIs.AttachmentEditorUI_EditPanel {
+      [id: string]: any;
+      static [id: string]: any;
+
+      button3: any;
+
+      button4: any;
+
+      gizmo: any;
+
+      list: any;
+
+      list2: any;
+
+      originalValue: any;
+
+      selectedPart: any;
+
+      transformMode: any;
+
+      constructor(x: any, y: any, width: any, height: any);
+
+      addAABB(extents: any, offset: any, r: any, g: any, b: any, ...__args: never[]): any;
+
+      createChildren(...__args: never[]): any;
+
+      doDrawItem(y: any, item: any, alt: any, ...__args: never[]): any;
+
+      doDrawItem2(y: any, item: any, alt: any, ...__args: never[]): any;
+
+      getSelectedModels(...__args: never[]): any;
+
+      indexOfModel(model: any, ...__args: never[]): any;
+
+      onToggleGizmo(...__args: never[]): any;
+
+      onToggleGlobalLocal(...__args: never[]): any;
+
+      prerenderEditor2(...__args: never[]): any;
+
+      setSelectedPart(part: any, ...__args: never[]): any;
     }
 
     /** @customConstructor EditVehicleUI_EditPassenger:new */
@@ -261,7 +373,17 @@ declare module '@asledgehammer/pipewrench/client' {
       [id: string]: any;
       static [id: string]: any;
 
+      button1: any;
+
+      button2: any;
+
+      button3: any;
+
       button4: any;
+
+      button5: any;
+
+      editor: any;
 
       list: any;
 
@@ -269,13 +391,26 @@ declare module '@asledgehammer/pipewrench/client' {
 
       originalValue: any;
 
+      physicsMeshPanel: any;
+
       selectedShape: any;
 
       transformMode: any;
 
-      constructor(x: any, y: any, width: any, height: any);
+      constructor(x: any, y: any, width: any, height: any, editor: any);
 
       addAABB(extents: any, offset: any, r: any, g: any, b: any, ...__args: never[]): any;
+
+      addPhysicsMesh(
+        offset: any,
+        rotate: any,
+        scale: any,
+        physicsShapeScript: any,
+        r: any,
+        g: any,
+        b: any,
+        ...__args: never[]
+      ): any;
 
       addSphere(offset: any, radius: any, r: any, g: any, b: any, ...__args: never[]): any;
 
@@ -289,11 +424,21 @@ declare module '@asledgehammer/pipewrench/client' {
 
       indexOfShape(shape: any, ...__args: never[]): any;
 
+      onAddBox(...__args: never[]): any;
+
+      onAddMesh(...__args: never[]): any;
+
+      onAddSphere(...__args: never[]): any;
+
+      onRemoveShape(...__args: never[]): any;
+
       onToggleGlobalLocal(...__args: never[]): any;
 
       prerenderEditor2(...__args: never[]): any;
 
       setSelectedShape(shape: any, ...__args: never[]): any;
+
+      undisplay(...__args: never[]): any;
     }
 
     /** @customConstructor EditVehicleUI_EditWheel:new */

@@ -15,6 +15,8 @@ declare module '@asledgehammer/pipewrench/client' {
       [id: string]: any;
       static [id: string]: any;
 
+      initialSelectedSettings: any;
+
       joyfocus: any;
 
       pageDelete: any;
@@ -31,6 +33,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       pageStart: any;
 
+      prevScreen: any;
+
       constructor(x: any, y: any, width: any, height: any);
 
       aboutToShow(...__args: never[]): any;
@@ -42,6 +46,8 @@ declare module '@asledgehammer/pipewrench/client' {
       onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
       onJoypadBeforeDeactivate(joypadData: any, ...__args: never[]): any;
+
+      onResetLua(reason: any, ...__args: never[]): any;
 
       onResolutionChange(oldw: any, oldh: any, neww: any, newh: any, ...__args: never[]): any;
 
@@ -83,6 +89,12 @@ declare module '@asledgehammer/pipewrench/client' {
       setJoypadFocused(focused: any, joypadData: any, ...__args: never[]): any;
     }
 
+    /** @customConstructor undefined:new */
+    export class undefined extends lua.client.ISUI.ISPanelJoypad {
+      [id: string]: any;
+      static [id: string]: any;
+    }
+
     export abstract class DefaultServerSettings {
       static [id: string]: any;
 
@@ -93,5 +105,23 @@ declare module '@asledgehammer/pipewrench/client' {
       setServerOptionValue: ((settings: any, option: any, _table: any) => any) | any;
     }
   }
-  export namespace lua.client.OptionScreens.ServerSettingsScreen {}
+  export namespace lua.client.OptionScreens.ServerSettingsScreen {
+    /** @noSelf */
+    export const aboutToShow: () => any;
+
+    /** @noSelf */
+    export const create: () => any;
+
+    /** @noSelf */
+    export const onButtonCancel: () => any;
+
+    /** @noSelf */
+    export const onButtonMods: () => any;
+
+    /** @noSelf */
+    export const onButtonNext: () => any;
+
+    /** @noSelf */
+    export const render: () => any;
+  }
 }

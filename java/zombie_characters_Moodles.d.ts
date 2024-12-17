@@ -72,12 +72,14 @@ declare module '@asledgehammer/pipewrench' {
       static readonly Hypothermia: zombie.characters.Moodles.MoodleType;
       static readonly Injured: zombie.characters.Moodles.MoodleType;
       static readonly MAX: zombie.characters.Moodles.MoodleType;
+      static readonly NoxiousSmell: zombie.characters.Moodles.MoodleType;
       static readonly Pain: zombie.characters.Moodles.MoodleType;
       static readonly Panic: zombie.characters.Moodles.MoodleType;
       static readonly Sick: zombie.characters.Moodles.MoodleType;
       static readonly Stress: zombie.characters.Moodles.MoodleType;
       static readonly Thirst: zombie.characters.Moodles.MoodleType;
       static readonly Tired: zombie.characters.Moodles.MoodleType;
+      static readonly Uncomfortable: zombie.characters.Moodles.MoodleType;
       static readonly Unhappy: zombie.characters.Moodles.MoodleType;
       static readonly Wet: zombie.characters.Moodles.MoodleType;
       static readonly Windchill: zombie.characters.Moodles.MoodleType;

@@ -27,6 +27,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       playerList: any;
 
+      points: any;
+
       pos: any;
 
       quitSafehouse: any;

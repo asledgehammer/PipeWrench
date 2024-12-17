@@ -15,7 +15,17 @@ declare module '@asledgehammer/pipewrench/client' {
 
       constructor(x: any, y: any, width: any, height: any);
 
+      clearVariable(key: any, ...__args: never[]): any;
+
+      clearVariables(...__args: never[]): any;
+
+      getCharacter(...__args: never[]): any;
+
       getDirection(...__args: never[]): any;
+
+      getState(...__args: never[]): any;
+
+      getVariable(key: any, ...__args: never[]): any;
 
       onMouseDown(x: any, y: any, ...__args: never[]): any;
 
@@ -38,6 +48,8 @@ declare module '@asledgehammer/pipewrench/client' {
       setState(state: any, ...__args: never[]): any;
 
       setSurvivorDesc(survivorDesc: any, ...__args: never[]): any;
+
+      setVariable(key: any, value: any, ...__args: never[]): any;
 
       setXOffset(xoffset: any, ...__args: never[]): any;
 

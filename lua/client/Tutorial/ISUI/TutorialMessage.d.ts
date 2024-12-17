@@ -35,6 +35,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       update(...__args: never[]): any;
 
+      updateSize(...__args: never[]): any;
+
       /** @noSelf */
       static getInstance: (
         x: any,

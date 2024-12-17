@@ -13,7 +13,15 @@ declare module '@asledgehammer/pipewrench/client' {
 
       addBtn: any;
 
+      authType: any;
+
+      authTypeLabel: any;
+
       backButton: any;
+
+      closeAuthPopupButton: any;
+
+      closeFiltersPopupButton: any;
 
       connecting: any;
 
@@ -33,15 +41,39 @@ declare module '@asledgehammer/pipewrench/client' {
 
       filterBottomPad: any;
 
+      filteredCount: any;
+
       filterEntry: any;
 
       filterLabel: any;
 
       filterPadX: any;
 
+      filtersButton: any;
+
+      filtersPopup: any;
+
+      filtersPopupLabel: any;
+
       filterUI: any;
 
       filterX: any;
+
+      firstAddServer: any;
+
+      firstDraw: any;
+
+      firstDrawPending: any;
+
+      googleAuthButton: any;
+
+      googleAuthConnectLabel: any;
+
+      googleAuthLabel: any;
+
+      googleAuthPopup: any;
+
+      googleKey: any;
 
       hasVisibleItem: any;
 
@@ -51,13 +83,27 @@ declare module '@asledgehammer/pipewrench/client' {
 
       largeServer: any;
 
+      lastUseSteamRelay: any;
+
       listbox: any;
 
+      listCount: any;
+
+      listTabs: any;
+
+      moddedServer: any;
+
       NoLabel: any;
+
+      pageChanged: any;
 
       passwordEntry: any;
 
       passwordLabel: any;
+
+      passwordText: any;
+
+      passwordWasFocused: any;
 
       playButton: any;
 
@@ -67,9 +113,15 @@ declare module '@asledgehammer/pipewrench/client' {
 
       pwdProtected: any;
 
+      recountFiltered: any;
+
+      recountFilteredPending: any;
+
       refreshBtn: any;
 
-      savedBtn: any;
+      registerBtn: any;
+
+      rememberPasswordTickBox: any;
 
       scrollPanel: any;
 
@@ -85,11 +137,23 @@ declare module '@asledgehammer/pipewrench/client' {
 
       showCountdownForJoin: any;
 
+      skipCount: any;
+
+      sortingLabel: any;
+
+      sortingType: any;
+
+      steamIPwarningLabel: any;
+
+      stopPrerender: any;
+
       tabs: any;
 
       usernameEntry: any;
 
       usernameLabel: any;
+
+      vanillaServer: any;
 
       versionCheckBox: any;
 
@@ -121,11 +185,19 @@ declare module '@asledgehammer/pipewrench/client' {
 
       instantiate(...__args: never[]): any;
 
-      layoutFilterUI(...__args: never[]): any;
-
       onCheckLargeServerOption(...__args: never[]): any;
 
       onClickServer(item: any, ...__args: never[]): any;
+
+      onCloseFiltersButton(...__args: never[]): any;
+
+      onCloseQRButton(...__args: never[]): any;
+
+      OnConnected(...__args: never[]): any;
+
+      OnConnectFailed(message: any, detail: any, ...__args: never[]): any;
+
+      onFilterChanged(...__args: never[]): any;
 
       onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
@@ -143,11 +215,19 @@ declare module '@asledgehammer/pipewrench/client' {
 
       onLoseJoypadFocus_RightPanel(joypadData: any, ...__args: never[]): any;
 
+      onMouseDown_ListTabs(x: any, y: any, ...__args: never[]): any;
+
       onMouseDown_Tabs(x: any, y: any, ...__args: never[]): any;
 
       onOptionMouseDown(button: any, x: any, y: any, ...__args: never[]): any;
 
+      OnQRReceived(message: any, ...__args: never[]): any;
+
       onResolutionChange(oldw: any, oldh: any, neww: any, newh: any, ...__args: never[]): any;
+
+      onSendButton(...__args: never[]): any;
+
+      onSortingChanged(...__args: never[]): any;
 
       refreshList(...__args: never[]): any;
 
@@ -171,5 +251,8 @@ declare module '@asledgehammer/pipewrench/client' {
       static OnSteamServerResponded: (serverIndex: any, ...__args: never[]) => any;
     }
   }
-  export namespace lua.client.OptionScreens.PublicServerList {}
+  export namespace lua.client.OptionScreens.PublicServerList {
+    /** @noSelf */
+    export const OnConnected: () => any;
+  }
 }

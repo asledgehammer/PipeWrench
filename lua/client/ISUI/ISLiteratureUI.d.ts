@@ -2,6 +2,16 @@
 
 declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.ISUI {
+    /** @customConstructor ISLiteratureGrowingList:new */
+    export class ISLiteratureGrowingList extends lua.client.ISUI.ISScrollingListBox {
+      [id: string]: any;
+      static [id: string]: any;
+
+      character: any;
+
+      constructor(x: any, y: any, width: any, height: any, character: any);
+    }
+
     /** @customConstructor ISLiteratureList:new */
     export class ISLiteratureList extends lua.client.ISUI.ISScrollingListBox {
       [id: string]: any;
@@ -36,6 +46,10 @@ declare module '@asledgehammer/pipewrench/client' {
       listbox1: any;
 
       listbox2: any;
+
+      listbox3: any;
+
+      listbox5: any;
 
       listboxMedia: any;
 

@@ -6,7 +6,7 @@ declare module '@asledgehammer/pipewrench' {
       static [id: string]: any;
 
       /** @noSelf */
-      static Find: (gridSquare: any, playerObj: any, ...__args: never[]) => any;
+      static Find: (gridSquare: any, playerObj: any, excludeList: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static FindClosest: (gridSquare: any, playerObj: any, ...__args: never[]) => any;
@@ -33,7 +33,7 @@ declare module '@asledgehammer/pipewrench' {
       static privGetNorth: (gridSquare: any, object: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static privTrySquare: (src: any, test: any, ...__args: never[]) => any;
+      static privTrySquare: (src: any, test: any, excludeList: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static privTrySquareForWalls: (src: any, test: any, ...__args: never[]) => any;

@@ -47,6 +47,10 @@ declare module '@asledgehammer/pipewrench/client' {
 
       javaObject: any;
 
+      joypadPromptHgt: any;
+
+      keyUI: any;
+
       LBumperZoom: any;
 
       mapAPI: any;
@@ -89,6 +93,10 @@ declare module '@asledgehammer/pipewrench/client' {
 
       updateMS: any;
 
+      zoomInButton: any;
+
+      zoomOutButton: any;
+
       constructor(x: any, y: any, width: any, height: any);
 
       createChildren(...__args: never[]): any;
@@ -121,9 +129,15 @@ declare module '@asledgehammer/pipewrench/client' {
 
       onTeleport(worldX: any, worldY: any, ...__args: never[]): any;
 
+      onToggleLegend(...__args: never[]): any;
+
       onTogglePyramid(...__args: never[]): any;
 
       onToggleSymbols(...__args: never[]): any;
+
+      onZoomInButton(...__args: never[]): any;
+
+      onZoomOutButton(...__args: never[]): any;
 
       render(...__args: never[]): any;
 
@@ -159,6 +173,9 @@ declare module '@asledgehammer/pipewrench/client' {
       static IsAllowed: (...__args: never[]) => any;
 
       /** @noSelf */
+      static NeedsLight: (...__args: never[]) => any;
+
+      /** @noSelf */
       static onKeyKeepPressed: (key: any, ...__args: never[]) => any;
 
       /** @noSelf */
@@ -171,7 +188,7 @@ declare module '@asledgehammer/pipewrench/client' {
       static OnPlayerDeath: (playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static ShowWorldMap: (playerNum: any, ...__args: never[]) => any;
+      static ShowWorldMap: (playerNum: any, centerX: any, centerY: any, zoom: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static ToggleWorldMap: (playerNum: any, ...__args: never[]) => any;

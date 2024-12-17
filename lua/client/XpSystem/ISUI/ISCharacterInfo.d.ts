@@ -17,13 +17,19 @@ declare module '@asledgehammer/pipewrench/client' {
 
       barWithTooltip: any;
 
+      buttonList: any;
+
       char: any;
+
+      collapse: any;
 
       disabledArrow: any;
 
       lastLeveledUpPerk: any;
 
       lastLevelUpTime: any;
+
+      nameToPerk: any;
 
       perks: any;
 
@@ -47,11 +53,15 @@ declare module '@asledgehammer/pipewrench/client' {
 
       SkillPtsProgressBarStart: any;
 
+      sorted: any;
+
       txtLen: any;
 
       yButton: any;
 
       constructor(x: any, y: any, width: any, height: any, playerNum: any);
+
+      collapseSection(button: any, ...__args: never[]): any;
 
       createChildren(...__args: never[]): any;
 

@@ -21,6 +21,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       isSamePoint(point1: any, point2: any, ...__args: never[]): any;
 
+      normalizePoint(point: any, ...__args: never[]): any;
+
       onCopyToClipboard(...__args: never[]): any;
 
       onMapSelected(directory: any, ...__args: never[]): any;

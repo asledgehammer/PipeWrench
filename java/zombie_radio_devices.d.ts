@@ -125,6 +125,11 @@ declare module '@asledgehammer/pipewrench' {
       getEmitter(): zombie.audio.BaseSoundEmitter;
       /**
        * Method Parameters: 
+       *  - (Empty): zombie.audio.FMODParameterList
+       */
+      getFMODParameters(): zombie.audio.FMODParameterList;
+      /**
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getHasBattery(): boolean;
@@ -168,6 +173,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       getIsTwoWay(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoObject
+       */
+      getIsoObject(): zombie.iso.IsoObject;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -233,6 +243,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       hasMedia(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEmergencyBroadcast(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -446,6 +461,21 @@ declare module '@asledgehammer/pipewrench' {
       setUseDelta(arg0: number): void;
       /**
        * Method Parameters: 
+       *  - (long arg0, GameSoundClip arg1, BitSet arg2): void
+       */
+      startEvent(arg0: number, arg1: zombie.audio.GameSoundClip, arg2: java.util.BitSet): void;
+      /**
+       * Method Parameters: 
+       *  - (long arg0, GameSoundClip arg1, BitSet arg2): void
+       */
+      stopEvent(arg0: number, arg1: zombie.audio.GameSoundClip, arg2: java.util.BitSet): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      stopOrTriggerSoundByName(arg0: string): void;
+      /**
+       * Method Parameters: 
        *  - (Empty): void
        */
       transmitBattryChange(): void;
@@ -459,6 +489,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (boolean arg0, boolean arg1): void
        */
       update(arg0: boolean, arg1: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (long arg0, GameSoundClip arg1): void
+       */
+      updateEvent(arg0: number, arg1: zombie.audio.GameSoundClip): void;
       /**
        * Method Parameters: 
        *  - (Empty): void

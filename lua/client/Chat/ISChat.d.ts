@@ -23,8 +23,6 @@ declare module '@asledgehammer/pipewrench/client' {
 
       chatUnLockedButtonTexture: any;
 
-      closeBtnTxt: any;
-
       currentTabID: any;
 
       fade: any;

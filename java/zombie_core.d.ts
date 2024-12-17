@@ -225,9 +225,39 @@ declare module '@asledgehammer/pipewrench' {
       interp(arg0: zombie.core.Color, arg1: number, arg2: zombie.core.Color): void;
       /**
        * Method Parameters: 
+       *  - (ByteBuffer arg0, int arg1): void
+       */
+      load(arg0: java.nio.ByteBuffer, arg1: number): void;
+      /**
+       * Method Parameters: 
+       *  - (ByteBuffer arg0): void
+       */
+      loadCompact(arg0: java.nio.ByteBuffer): void;
+      /**
+       * Method Parameters: 
+       *  - (ByteBuffer arg0): void
+       */
+      loadCompactNoAlpha(arg0: java.nio.ByteBuffer): void;
+      /**
+       * Method Parameters: 
        *  - (Color arg0): zombie.core.Color
        */
       multiply(arg0: zombie.core.Color): zombie.core.Color;
+      /**
+       * Method Parameters: 
+       *  - (ByteBuffer arg0): void
+       */
+      save(arg0: java.nio.ByteBuffer): void;
+      /**
+       * Method Parameters: 
+       *  - (ByteBuffer arg0): void
+       */
+      saveCompact(arg0: java.nio.ByteBuffer): void;
+      /**
+       * Method Parameters: 
+       *  - (ByteBuffer arg0): void
+       */
+      saveCompactNoAlpha(arg0: java.nio.ByteBuffer): void;
       /**
        * Method Parameters: 
        *  - (float arg0): zombie.core.Color
@@ -403,11 +433,21 @@ declare module '@asledgehammer/pipewrench' {
      */
     export class Colors {
       /** zombie.core.Color */
+      static readonly AliceBlue?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly AntiqueWhite?: zombie.core.Color;
+      /** zombie.core.Color */
       static readonly Aqua?: zombie.core.Color;
       /** zombie.core.Color */
       static readonly Aquamarine?: zombie.core.Color;
       /** zombie.core.Color */
+      static readonly Azure?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly Beige?: zombie.core.Color;
+      /** zombie.core.Color */
       static readonly Bisque?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly Black?: zombie.core.Color;
       /** zombie.core.Color */
       static readonly BlanchedAlmond?: zombie.core.Color;
       /** zombie.core.Color */
@@ -419,17 +459,69 @@ declare module '@asledgehammer/pipewrench' {
       /** zombie.core.Color */
       static readonly BurlyWood?: zombie.core.Color;
       /** zombie.core.Color */
+      static readonly CB_B0_Submerge?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly CB_B1_Elvis?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly CB_B2_FlatMediumBlue?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly CB_B3_ClearBlue?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly CB_B4_Azure?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly CB_B5_SpiroDiscoBall?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly CB_B6_AquaBlue?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly CB_B7_LightBrilliantCyan?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly CB_G0_SherwoodGreen?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly CB_G1_PthaloGreen?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly CB_G2_TropicalRainForest?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly CB_G3_Observatory?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly CB_G4_JungleGreen?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly CB_G5_Dali?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly CB_G6_AquaMarine?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly CB_G7_LightAqua?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly CB_R0_DeepAmaranth?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly CB_R1_HotChile?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly CB_R2_Smashing?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly CB_R3_GeraniumLake?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly CB_R4_RedOrange?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly CB_R5_Crusta?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly CB_R6_GoldenYellow?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly CB_R7_BananaYellow?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly CB_White?: zombie.core.Color;
+      /** zombie.core.Color */
       static readonly CadetBlue?: zombie.core.Color;
       /** zombie.core.Color */
       static readonly Chartreuse?: zombie.core.Color;
       /** zombie.core.Color */
       static readonly Chocolate?: zombie.core.Color;
       /** zombie.core.Color */
+      static readonly Cola?: zombie.core.Color;
+      /** zombie.core.Color */
       static readonly Coral?: zombie.core.Color;
       /** zombie.core.Color */
       static readonly CornFlowerBlue?: zombie.core.Color;
       /** zombie.core.Color */
-      static readonly CornSilk?: zombie.core.Color;
+      static readonly Cornsilk?: zombie.core.Color;
       /** zombie.core.Color */
       static readonly Crimson?: zombie.core.Color;
       /** zombie.core.Color */
@@ -440,6 +532,8 @@ declare module '@asledgehammer/pipewrench' {
       static readonly DarkCyan?: zombie.core.Color;
       /** zombie.core.Color */
       static readonly DarkGoldenrod?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly DarkGray?: zombie.core.Color;
       /** zombie.core.Color */
       static readonly DarkGreen?: zombie.core.Color;
       /** zombie.core.Color */
@@ -461,6 +555,8 @@ declare module '@asledgehammer/pipewrench' {
       /** zombie.core.Color */
       static readonly DarkSlateBlue?: zombie.core.Color;
       /** zombie.core.Color */
+      static readonly DarkSlateGray?: zombie.core.Color;
+      /** zombie.core.Color */
       static readonly DarkTurquoise?: zombie.core.Color;
       /** zombie.core.Color */
       static readonly DarkViolet?: zombie.core.Color;
@@ -469,21 +565,39 @@ declare module '@asledgehammer/pipewrench' {
       /** zombie.core.Color */
       static readonly DeepSkyBlue?: zombie.core.Color;
       /** zombie.core.Color */
+      static readonly DimGray?: zombie.core.Color;
+      /** zombie.core.Color */
       static readonly DodgerBlue?: zombie.core.Color;
       /** zombie.core.Color */
       static readonly FireBrick?: zombie.core.Color;
       /** zombie.core.Color */
+      static readonly FloralWhite?: zombie.core.Color;
+      /** zombie.core.Color */
       static readonly ForestGreen?: zombie.core.Color;
       /** zombie.core.Color */
+      static readonly FruitPunch?: zombie.core.Color;
+      /** zombie.core.Color */
       static readonly Fuchsia?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly Gainsboro?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly GhostWhite?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly Ginger?: zombie.core.Color;
       /** zombie.core.Color */
       static readonly Gold?: zombie.core.Color;
       /** zombie.core.Color */
       static readonly Goldenrod?: zombie.core.Color;
       /** zombie.core.Color */
+      static readonly Gray?: zombie.core.Color;
+      /** zombie.core.Color */
       static readonly Green?: zombie.core.Color;
       /** zombie.core.Color */
       static readonly GreenYellow?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly Grenadine?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly HoneyDew?: zombie.core.Color;
       /** zombie.core.Color */
       static readonly HotPink?: zombie.core.Color;
       /** zombie.core.Color */
@@ -491,9 +605,13 @@ declare module '@asledgehammer/pipewrench' {
       /** zombie.core.Color */
       static readonly Indigo?: zombie.core.Color;
       /** zombie.core.Color */
+      static readonly Ivory?: zombie.core.Color;
+      /** zombie.core.Color */
       static readonly Khaki?: zombie.core.Color;
       /** zombie.core.Color */
       static readonly Lavender?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly LavenderBlush?: zombie.core.Color;
       /** zombie.core.Color */
       static readonly LawnGreen?: zombie.core.Color;
       /** zombie.core.Color */
@@ -507,6 +625,8 @@ declare module '@asledgehammer/pipewrench' {
       /** zombie.core.Color */
       static readonly LightGoldenrodYellow?: zombie.core.Color;
       /** zombie.core.Color */
+      static readonly LightGray?: zombie.core.Color;
+      /** zombie.core.Color */
       static readonly LightGreen?: zombie.core.Color;
       /** zombie.core.Color */
       static readonly LightPink?: zombie.core.Color;
@@ -517,6 +637,8 @@ declare module '@asledgehammer/pipewrench' {
       /** zombie.core.Color */
       static readonly LightSkyBlue?: zombie.core.Color;
       /** zombie.core.Color */
+      static readonly LightSlateGray?: zombie.core.Color;
+      /** zombie.core.Color */
       static readonly LightSteelBlue?: zombie.core.Color;
       /** zombie.core.Color */
       static readonly LightYellow?: zombie.core.Color;
@@ -524,6 +646,8 @@ declare module '@asledgehammer/pipewrench' {
       static readonly Lime?: zombie.core.Color;
       /** zombie.core.Color */
       static readonly LimeGreen?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly Linen?: zombie.core.Color;
       /** zombie.core.Color */
       static readonly Magenta?: zombie.core.Color;
       /** zombie.core.Color */
@@ -549,11 +673,17 @@ declare module '@asledgehammer/pipewrench' {
       /** zombie.core.Color */
       static readonly MidnightBlue?: zombie.core.Color;
       /** zombie.core.Color */
+      static readonly MintCream?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly MistyRose?: zombie.core.Color;
+      /** zombie.core.Color */
       static readonly Moccasin?: zombie.core.Color;
       /** zombie.core.Color */
       static readonly NavajoWhite?: zombie.core.Color;
       /** zombie.core.Color */
       static readonly Navy?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly OldLace?: zombie.core.Color;
       /** zombie.core.Color */
       static readonly Olive?: zombie.core.Color;
       /** zombie.core.Color */
@@ -575,7 +705,7 @@ declare module '@asledgehammer/pipewrench' {
       /** zombie.core.Color */
       static readonly PapayaWhip?: zombie.core.Color;
       /** zombie.core.Color */
-      static readonly PeachPu?: zombie.core.Color;
+      static readonly PeachPuff?: zombie.core.Color;
       /** zombie.core.Color */
       static readonly Peru?: zombie.core.Color;
       /** zombie.core.Color */
@@ -586,6 +716,8 @@ declare module '@asledgehammer/pipewrench' {
       static readonly PowderBlue?: zombie.core.Color;
       /** zombie.core.Color */
       static readonly Purple?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly RebeccaPurple?: zombie.core.Color;
       /** zombie.core.Color */
       static readonly Red?: zombie.core.Color;
       /** zombie.core.Color */
@@ -601,11 +733,19 @@ declare module '@asledgehammer/pipewrench' {
       /** zombie.core.Color */
       static readonly SeaGreen?: zombie.core.Color;
       /** zombie.core.Color */
+      static readonly SeaShell?: zombie.core.Color;
+      /** zombie.core.Color */
       static readonly Sienna?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly Silver?: zombie.core.Color;
       /** zombie.core.Color */
       static readonly SkyBlue?: zombie.core.Color;
       /** zombie.core.Color */
       static readonly SlateBlue?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly SlateGray?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly Snow?: zombie.core.Color;
       /** zombie.core.Color */
       static readonly SpringGreen?: zombie.core.Color;
       /** zombie.core.Color */
@@ -621,9 +761,15 @@ declare module '@asledgehammer/pipewrench' {
       /** zombie.core.Color */
       static readonly Turquoise?: zombie.core.Color;
       /** zombie.core.Color */
+      static readonly UI_Background?: zombie.core.Color;
+      /** zombie.core.Color */
       static readonly Violet?: zombie.core.Color;
       /** zombie.core.Color */
       static readonly Wheat?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly White?: zombie.core.Color;
+      /** zombie.core.Color */
+      static readonly WhiteSmoke?: zombie.core.Color;
       /** zombie.core.Color */
       static readonly Yellow?: zombie.core.Color;
       /** zombie.core.Color */
@@ -634,6 +780,62 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty Constructor)
        */
       constructor();
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0, Color arg1): zombie.core.Color
+       */
+      static AddGameColor(arg0: string, arg1: zombie.core.Color): zombie.core.Color;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): boolean
+       */
+      static CB_ColorExists(arg0: string): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): zombie.core.Color
+       */
+      static CB_GetColorByName(arg0: string): zombie.core.Color;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (int arg0): zombie.core.Color
+       */
+      static CB_GetColorFromIndex(arg0: number): zombie.core.Color;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (int arg0): string
+       */
+      static CB_GetColorNameFromIndex(arg0: number): string;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      static CB_GetColorNames(): java.util.ArrayList<string>;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      static CB_GetColorsCount(): number;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.core.Color
+       */
+      static CB_GetRandomColor(): zombie.core.Color;
       /**
        * @noSelf
        *
@@ -659,6 +861,20 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (String arg0): zombie.core.Colors$ColNfo
+       */
+      static GetColorInfo(arg0: string): zombie.core.Colors$ColNfo;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (int arg0): string
+       */
+      static GetColorNameFromIndex(arg0: number): string;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (Empty): java.util.ArrayList<string>
        */
       static GetColorNames(): java.util.ArrayList<string>;
@@ -678,6 +894,143 @@ declare module '@asledgehammer/pipewrench' {
       static GetRandomColor(): zombie.core.Color;
     }
     /**
+     * @customConstructor ColNfo.new
+     * @
+     * [CLASS] zombie.core.Colors$ColNfo
+     */
+    export class Colors$ColNfo {
+      /**
+       * Constructors: 
+       *  - (String arg0, Color arg1, ColorSet arg2)
+       */
+      constructor(arg0: string, arg1: zombie.core.Color, arg2: zombie.core.Colors$ColorSet);
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getB(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getBInt(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.Color
+       */
+      getColor(): zombie.core.Color;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.Colors$ColorSet
+       */
+      getColorSet(): zombie.core.Colors$ColorSet;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getColorSetIndex(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getG(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getGInt(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getHex(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getR(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getRInt(): number;
+    }
+    /** [ENUM] zombie.core.Colors$ColorSet */
+    export class Colors$ColorSet {
+      protected constructor();
+      static readonly ColorBlind: zombie.core.Colors$ColorSet;
+      static readonly Game: zombie.core.Colors$ColorSet;
+      static readonly Standard: zombie.core.Colors$ColorSet;
+      name(): string;
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.core.Colors$ColorSet>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.core.Colors$ColorSet>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getIndex(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): zombie.core.Colors$ColorSet
+       *  - (Class arg0, String arg1): T
+       */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.core.Colors$ColorSet | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.core.Colors$ColorSet[]
+       */
+      static values(): zombie.core.Colors$ColorSet[];
+    }
+    /**
      * @customConstructor Core.new
      * @
      * [CLASS] zombie.core.Core
@@ -685,8 +1038,8 @@ declare module '@asledgehammer/pipewrench' {
     export class Core {
       /** java.lang.String */
       static ChallengeID?: string;
-      /** zombie.ui.UITextBox2 */
-      static CurrentTextEntryBox?: zombie.ui.UITextBox2;
+      /** zombie.ui.UITextEntryInterface */
+      static CurrentTextEntryBox?: zombie.ui.UITextEntryInterface;
       /** java.lang.String */
       static GameMap?: string;
       /** java.lang.String */
@@ -695,124 +1048,16 @@ declare module '@asledgehammer/pipewrench' {
       static GameSaveWorld?: string;
       /** int */
       static MaxJukeBoxesActive: number;
+      /** float */
+      static readonly ModelScale: number;
       /** int */
       static NumJukeBoxesActive: number;
       /** boolean */
-      static Option3DGroundItem: boolean;
-      /** int */
-      static OptionAmbientVolume: number;
-      /** boolean */
-      static OptionAutoProneAtk: boolean;
-      /** int */
-      static OptionBloodDecals: number;
-      /** boolean */
-      static OptionBorderlessWindow: boolean;
-      /** float */
-      static OptionChatFadeTime: number;
-      /** java.lang.String */
-      static OptionChatFontSize?: string;
-      /** boolean */
-      static OptionChatOpaqueOnFocus: boolean;
-      /** boolean */
-      static OptionClock24Hour: boolean;
-      /** int */
-      static OptionClockFormat: number;
-      /** int */
-      static OptionClockSize: number;
-      /** java.lang.String */
-      static OptionContextMenuFont?: string;
-      /** boolean */
-      static OptionDoContainerOutline: boolean;
-      /** boolean */
-      static OptionDoDoorSpriteEffects: boolean;
-      /** boolean */
-      static OptionDoWindSpriteEffects: boolean;
-      /** boolean */
-      static OptionEnableContentTranslations: boolean;
-      /** int */
-      static OptionFontSize: number;
-      /** java.lang.String */
-      static OptionInventoryFont?: string;
-      /** int */
-      static OptionJumpScareVolume: number;
-      /** boolean */
-      static OptionLockCursorToWindow: boolean;
-      /** float */
-      static OptionMaxChatOpaque: number;
-      /** java.lang.String */
-      static OptionMeasurementFormat?: string;
-      /** float */
-      static OptionMinChatOpaque: number;
-      /** boolean */
-      static OptionModelTextureMipmaps: boolean;
-      /** boolean */
       static OptionModsEnabled: boolean;
-      /** int */
-      static OptionMusicActionStyle: number;
-      /** int */
-      static OptionMusicLibrary: number;
-      /** int */
-      static OptionMusicVolume: number;
-      /** boolean */
-      static OptionPanCameraWhileAiming: boolean;
-      /** boolean */
-      static OptionPanCameraWhileDriving: boolean;
-      /** boolean */
-      static OptionRackProgress: boolean;
-      /** boolean */
-      static OptionRadialMenuKeyToggle: boolean;
-      /** int */
-      static OptionReloadDifficulty: number;
-      /** boolean */
-      static OptionReloadRadialInstant: boolean;
-      /** boolean */
-      static OptionRenderPrecipIndoors: boolean;
-      /** int */
-      static OptionRenderPrecipitation: number;
-      /** boolean */
-      static OptionShowChatTimestamp: boolean;
-      /** boolean */
-      static OptionShowChatTitle: boolean;
-      /** boolean */
-      static OptionShowCursorWhileAiming: boolean;
-      /** int */
-      static OptionSoundVolume: number;
-      /** boolean */
-      static OptionTemperatureDisplayCelsius: boolean;
-      /** boolean */
-      static OptionTexture2x: boolean;
-      /** boolean */
-      static OptionTextureCompression: boolean;
+      /** float */
+      static readonly PZWorldToBulletZScale: number;
       /** java.lang.String */
-      static OptionTooltipFont?: string;
-      /** boolean */
-      static OptionUIFBO: boolean;
-      /** int */
-      static OptionUIRenderFPS: number;
-      /** boolean */
-      static OptionUpdateSneakButton: boolean;
-      /** boolean */
-      static OptionVSync: boolean;
-      /** int */
-      static OptionVehicleEngineVolume: number;
-      /** int */
-      static OptionVoiceAGCMode: number;
-      /** boolean */
-      static OptionVoiceEnable: boolean;
-      /** int */
-      static OptionVoiceMode: number;
-      /** java.lang.String */
-      static OptionVoiceRecordDeviceName?: string;
-      /** int */
-      static OptionVoiceVADMode: number;
-      /** int */
-      static OptionVoiceVolumeMic: number;
-      /** int */
-      static OptionVoiceVolumePlayers: number;
-      /** boolean */
-      static OptionZoom: boolean;
-      /** boolean */
-      static OptiondblTapJogToSprint: boolean;
+      static Preset?: string;
       /** boolean */
       static SafeMode: boolean;
       /** boolean */
@@ -821,6 +1066,10 @@ declare module '@asledgehammer/pipewrench' {
       static SoundDisabled: boolean;
       /** int */
       static TileScale: number;
+      /** org.lwjgl.util.vector.Vector3f */
+      static readonly UnitVector3f?: org.lwjgl.util.vector.Vector3f;
+      /** org.lwjgl.util.vector.Vector3f */
+      static readonly _UNIT_Z?: org.lwjgl.util.vector.Vector3f;
       /** boolean */
       static bAltMoveMethod: boolean;
       /** boolean */
@@ -830,13 +1079,23 @@ declare module '@asledgehammer/pipewrench' {
       /** boolean */
       static bExiting: boolean;
       /** boolean */
+      static bImGui: boolean;
+      /** boolean */
       static bLastStand: boolean;
       /** boolean */
       static bTutorial: boolean;
+      /** boolean */
+      static bUseGameViewport: boolean;
+      /** boolean */
+      static bUseViewports: boolean;
       /** float */
       static blinkAlpha: number;
       /** boolean */
       static blinkAlphaIncrease: boolean;
+      /** float */
+      static readonly characterHeight: number;
+      /** int */
+      static dirtyGlobalLightsCount: number;
       /** int */
       static height: number;
       /** int */
@@ -853,6 +1112,12 @@ declare module '@asledgehammer/pipewrench' {
       static readonly iPerfSkybox_Medium: number;
       /** int */
       static readonly iPerfSkybox_Static: number;
+      /** float */
+      static initialHeight: number;
+      /** float */
+      static initialWidth: number;
+      /** float */
+      static readonly scale: number;
       /** int */
       static width: number;
       /** int */
@@ -867,6 +1132,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty Constructor)
        */
       constructor();
+      /**
+       * Method Parameters: 
+       *  - (int arg0, int arg1, int arg2): void
+       */
+      ChangeWorldViewport(arg0: number, arg1: number, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -907,6 +1177,16 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2, float arg3, boolean arg4): void
        */
       DoPushIsoStuff(arg0: number, arg1: number, arg2: number, arg3: number, arg4: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (float arg0, float arg1, float arg2, float arg3, boolean arg4): void
+       */
+      DoPushIsoStuff2D(arg0: number, arg1: number, arg2: number, arg3: number, arg4: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, int arg1, float arg2, int arg3, boolean arg4, boolean arg5, boolean arg6): void
+       */
+      DoStartFrameNoZoom(arg0: number, arg1: number, arg2: number, arg3: number, arg4: boolean, arg5: boolean, arg6: boolean): void;
       /**
        * Method Parameters: 
        *  - (int arg0, int arg1, float arg2, int arg3): void
@@ -958,6 +1238,11 @@ declare module '@asledgehammer/pipewrench' {
       StartFrame(arg0?: number, arg1?: boolean): void;
       /**
        * Method Parameters: 
+       *  - (int arg0, int arg1, float arg2, int arg3): void
+       */
+      StartFrameFlipY(arg0: number, arg1: number, arg2: number, arg3: number): void;
+      /**
+       * Method Parameters: 
        *  - (int arg0): void
        */
       StartFrameText(arg0: number): void;
@@ -982,12 +1267,32 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (String arg0, Integer arg1): void
        */
+      addAltKeyBinding(arg0: string, arg1: number): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, Integer arg1): void
+       */
       addKeyBinding(arg0: string, arg1: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
        */
       countMissing3DItems(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      debugOutputMissingCLothingSpawn(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      debugOutputMissingItemSpawn(): string;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): string
+       */
+      debugOutputMissingSpawn(arg0: string, arg1: string): string;
       /**
        * Method Parameters: 
        *  - (int arg0, int arg1): void
@@ -1000,6 +1305,16 @@ declare module '@asledgehammer/pipewrench' {
       exitToMenu(): void;
       /**
        * Method Parameters: 
+       *  - (String arg0): number
+       */
+      getAltKey(arg0: string): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Map<string, number>
+       */
+      getAltKeyMaps(): java.util.Map<string, number>;
+      /**
+       * Method Parameters: 
        *  - (int arg0): boolean
        */
       getAutoZoom(arg0: number): boolean;
@@ -1010,9 +1325,19 @@ declare module '@asledgehammer/pipewrench' {
       getBadHighlitedColor(): zombie.core.textures.ColorInfo;
       /**
        * Method Parameters: 
+       *  - (int arg0): string
+       */
+      getBindForKey(arg0: number): string;
+      /**
+       * Method Parameters: 
        *  - (Empty): string
        */
       getBlinkingMoodle(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.GameVersion
+       */
+      getBreakModGameVersion(): zombie.core.GameVersion;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -1058,6 +1383,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): number
        */
       getIgnoreProneZombieRange(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getIsoCursorAlpha(): number;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -1127,6 +1457,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): zombie.core.textures.ColorInfo
        */
+      getNoTargetColor(): zombie.core.textures.ColorInfo;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.textures.ColorInfo
+       */
       getObjectHighlitedColor(): zombie.core.textures.ColorInfo;
       /**
        * Method Parameters: 
@@ -1156,6 +1491,11 @@ declare module '@asledgehammer/pipewrench' {
       getOffscreenWidth(arg0: number): number;
       /**
        * Method Parameters: 
+       *  - (Empty): number
+       */
+      getOptionActionProgressBarSize(): number;
+      /**
+       * Method Parameters: 
        *  - (String arg0): boolean
        */
       getOptionActiveController(arg0: string): boolean;
@@ -1163,7 +1503,7 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): number
        */
-      getOptionAimOutline(): number;
+      getOptionAimTextureIndex(): number;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -1189,6 +1529,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       getOptionBorderlessWindow(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): zombie.config.ConfigOption
+       */
+      getOptionByIndex(arg0: number): zombie.config.ConfigOption;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -1221,14 +1566,34 @@ declare module '@asledgehammer/pipewrench' {
       getOptionClockSize(): number;
       /**
        * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getOptionColorblindPatterns(): boolean;
+      /**
+       * Method Parameters: 
        *  - (Empty): string
        */
       getOptionContextMenuFont(): string;
       /**
        * Method Parameters: 
+       *  - (Empty): number
+       */
+      getOptionControllerButtonStyle(): number;
+      /**
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getOptionCorpseShadows(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getOptionCount(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getOptionCrosshairTextureIndex(): number;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -1253,6 +1618,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      getOptionDoVideoEffects(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       getOptionDoWindSpriteEffects(): boolean;
       /**
        * Method Parameters: 
@@ -1263,12 +1633,32 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      getOptionEnableDyslexicFont(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       getOptionEnableLeftJoystickRadialMenu(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getOptionFocusloss(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): number
        */
       getOptionFontSize(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getOptionFontSizeReal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getOptionHighResPlacedItems(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -1303,12 +1693,22 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      getOptionLightSensitivity(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       getOptionLockCursorToWindow(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): number
        */
       getOptionMaxChatOpaque(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getOptionMaxCrosshairOffset(): number;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -1326,6 +1726,11 @@ declare module '@asledgehammer/pipewrench' {
       getOptionMeasurementFormat(): string;
       /**
        * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getOptionMeleeOutline(): boolean;
+      /**
+       * Method Parameters: 
        *  - (Empty): number
        */
       getOptionMinChatOpaque(): number;
@@ -1339,6 +1744,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       getOptionModsEnabled(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getOptionMoodleSize(): number;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -1371,6 +1781,11 @@ declare module '@asledgehammer/pipewrench' {
       getOptionPanCameraWhileDriving(): boolean;
       /**
        * Method Parameters: 
+       *  - (Empty): number
+       */
+      getOptionPrecipitationSpeedMultiplier(): number;
+      /**
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getOptionRackProgress(): boolean;
@@ -1396,6 +1811,21 @@ declare module '@asledgehammer/pipewrench' {
       getOptionRenderPrecipitation(): number;
       /**
        * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getOptionReticleCameraZoom(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getOptionReticleMode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getOptionReticleTextureIndex(): number;
+      /**
+       * Method Parameters: 
        *  - (Empty): number
        */
       getOptionSearchModeOverlayEffect(): number;
@@ -1408,7 +1838,17 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      getOptionShowAimTexture(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       getOptionShowCursorWhileAiming(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getOptionShowFirstAnimalZoneInfo(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -1418,7 +1858,17 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      getOptionShowReticleTexture(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       getOptionShowSurvivalGuide(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getOptionShowValidTargetReticleTexture(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -1439,6 +1889,16 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): number
        */
       getOptionSoundVolume(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getOptionStreamerMode(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getOptionTemperatureDisplayCelsius(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -1484,6 +1944,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       getOptionVSync(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getOptionValidTargetReticleTextureIndex(): number;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -1616,6 +2081,11 @@ declare module '@asledgehammer/pipewrench' {
       getSeenUpdateText(): string;
       /**
        * Method Parameters: 
+       *  - (Empty): string
+       */
+      getSelectedMap(): string;
+      /**
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getServerVOIPEnable(): boolean;
@@ -1624,6 +2094,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): string
        */
       getSteamServerVersion(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.textures.ColorInfo
+       */
+      getTargetColor(): zombie.core.textures.ColorInfo;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -1649,6 +2124,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): number
        */
       getVidMem(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.textures.ColorInfo
+       */
+      getWorkstationHighlitedColor(): zombie.core.textures.ColorInfo;
       /**
        * Method Parameters: 
        *  - (int arg0, float arg1): number
@@ -1679,6 +2159,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): void
        */
       initFBOs(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      initGlobalShader(): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -1733,6 +2218,16 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isDisplayCursor(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isDisplayPlayerModel(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isDoingTextEntry(): boolean;
       /**
        * Method Parameters: 
@@ -1761,6 +2256,11 @@ declare module '@asledgehammer/pipewrench' {
       isInDebug(): boolean;
       /**
        * Method Parameters: 
+       *  - (String arg0, Integer arg1): boolean
+       */
+      isKey(arg0: string, arg1: number): boolean;
+      /**
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isModsPopupDone(): boolean;
@@ -1769,11 +2269,6 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       isMultiThread(): boolean;
-      /**
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      isNewReloading(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -1903,6 +2398,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      loadOptions_OLD(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       loadedShader(): boolean;
       /**
        * Method Parameters: 
@@ -1926,9 +2426,19 @@ declare module '@asledgehammer/pipewrench' {
       saveOptions(): void;
       /**
        * Method Parameters: 
+       *  - (Empty): void
+       */
+      saveOptions_OLD(): void;
+      /**
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setAnimPopupDone(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setAnimalCheat(arg0: boolean): void;
       /**
        * Method Parameters: 
        *  - (int arg0, boolean arg1): void
@@ -1969,6 +2479,16 @@ declare module '@asledgehammer/pipewrench' {
        *  - (boolean arg0): void
        */
       setContentTranslationsEnabled(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setDisplayCursor(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setDisplayPlayerModel(arg0: boolean): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -2038,12 +2558,12 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (boolean arg0): void
        */
-      setNewReloading(arg0: boolean): void;
+      setNoSave(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (boolean arg0): void
+       *  - (ColorInfo arg0): void
        */
-      setNoSave(arg0: boolean): void;
+      setNoTargetColor(arg0: zombie.core.textures.ColorInfo): void;
       /**
        * Method Parameters: 
        *  - (ColorInfo arg0): void
@@ -2056,6 +2576,11 @@ declare module '@asledgehammer/pipewrench' {
       setOption3DGroundItem(arg0: boolean): void;
       /**
        * Method Parameters: 
+       *  - (int arg0): void
+       */
+      setOptionActionProgressBarSize(arg0: number): void;
+      /**
+       * Method Parameters: 
        *  - (int arg0, boolean arg1): void
        */
       setOptionActiveController(arg0: number, arg1: boolean): void;
@@ -2063,7 +2588,7 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (int arg0): void
        */
-      setOptionAimOutline(arg0: number): void;
+      setOptionAimTextureIndex(arg0: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -2126,14 +2651,29 @@ declare module '@asledgehammer/pipewrench' {
       setOptionClockSize(arg0: number): void;
       /**
        * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setOptionColorblindPatterns(arg0: boolean): void;
+      /**
+       * Method Parameters: 
        *  - (String arg0): void
        */
       setOptionContextMenuFont(arg0: string): void;
       /**
        * Method Parameters: 
+       *  - (int arg0): void
+       */
+      setOptionControllerButtonStyle(arg0: number): void;
+      /**
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionCorpseShadows(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): void
+       */
+      setOptionCrosshairTextureIndex(arg0: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -2158,6 +2698,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (boolean arg0): void
        */
+      setOptionDoVideoEffects(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
       setOptionDoWindSpriteEffects(arg0: boolean): void;
       /**
        * Method Parameters: 
@@ -2168,12 +2713,27 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (boolean arg0): void
        */
+      setOptionEnableDyslexicFont(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
       setOptionEnableLeftJoystickRadialMenu(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setOptionFocusloss(arg0: boolean): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
        */
       setOptionFontSize(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setOptionHighResPlacedItems(arg0: boolean): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -2208,12 +2768,22 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (boolean arg0): void
        */
+      setOptionLightSensitivity(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
       setOptionLockCursorToWindow(arg0: boolean): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
        */
       setOptionMaxChatOpaque(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): void
+       */
+      setOptionMaxCrosshairOffset(arg0: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -2231,6 +2801,11 @@ declare module '@asledgehammer/pipewrench' {
       setOptionMeasurementFormat(arg0: string): void;
       /**
        * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setOptionMeleeOutline(arg0: boolean): void;
+      /**
+       * Method Parameters: 
        *  - (float arg0): void
        */
       setOptionMinChatOpaque(arg0: number): void;
@@ -2244,6 +2819,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (boolean arg0): void
        */
       setOptionModsEnabled(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): void
+       */
+      setOptionMoodleSize(arg0: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -2276,6 +2856,11 @@ declare module '@asledgehammer/pipewrench' {
       setOptionPanCameraWhileDriving(arg0: boolean): void;
       /**
        * Method Parameters: 
+       *  - (float arg0): void
+       */
+      setOptionPrecipitationSpeedMultiplier(arg0: number): void;
+      /**
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setOptionProgressBar(arg0: boolean): void;
@@ -2306,6 +2891,21 @@ declare module '@asledgehammer/pipewrench' {
       setOptionRenderPrecipitation(arg0: number): void;
       /**
        * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setOptionReticleCameraZoom(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): void
+       */
+      setOptionReticleMode(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): void
+       */
+      setOptionReticleTextureIndex(arg0: number): void;
+      /**
+       * Method Parameters: 
        *  - (int arg0): void
        */
       setOptionSearchModeOverlayEffect(arg0: number): void;
@@ -2314,6 +2914,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0): void
        */
       setOptionShoulderButtonContainerSwitch(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setOptionShowAimTexture(arg0: boolean): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -2333,12 +2938,27 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (boolean arg0): void
        */
+      setOptionShowFirstAnimalZoneInfo(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
       setOptionShowItemModInfo(arg0: boolean): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
        */
+      setOptionShowReticleTexture(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
       setOptionShowSurvivalGuide(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setOptionShowValidTargetReticleTexture(arg0: boolean): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -2359,6 +2979,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0): void
        */
       setOptionSoundVolume(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setOptionStreamerMode(arg0: boolean): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -2408,6 +3033,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (int arg0): void
        */
+      setOptionValidTargetReticleTextureIndex(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): void
+       */
       setOptionVehicleEngineVolume(arg0: number): void;
       /**
        * Method Parameters: 
@@ -2417,8 +3047,9 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
+       *  - (boolean arg0, boolean arg1): void
        */
-      setOptionVoiceEnable(arg0: boolean): void;
+      setOptionVoiceEnable(arg0: boolean, arg1?: boolean): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -2526,6 +3157,11 @@ declare module '@asledgehammer/pipewrench' {
       setSeenUpdateText(arg0: string): void;
       /**
        * Method Parameters: 
+       *  - (String arg0): void
+       */
+      setSelectedMap(arg0: string): void;
+      /**
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setShowFirstTimeSearchTutorial(arg0: boolean): void;
@@ -2554,6 +3190,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (boolean arg0): void
        */
       setShowYourUsername(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (ColorInfo arg0): void
+       */
+      setTargetColor(arg0: zombie.core.textures.ColorInfo): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -2606,9 +3247,19 @@ declare module '@asledgehammer/pipewrench' {
       setWindowed(arg0: boolean): void;
       /**
        * Method Parameters: 
+       *  - (ColorInfo arg0): void
+       */
+      setWorkstationHighlitedColor(arg0: zombie.core.textures.ColorInfo): void;
+      /**
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setZombieGroupSound(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setZoomEnalbed(arg0: boolean): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -2699,6 +3350,13 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (Empty): string
+       */
+      static getSVNRevisionString(): string;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (Empty): number
        */
       static getTileScale(): number;
@@ -2708,7 +3366,28 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      static isImGui(): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       static isLastStand(): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      static isUseGameViewport(): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      static isUseViewports(): boolean;
       /**
        * @noSelf
        *
@@ -2730,6 +3409,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (boolean arg0): void
        */
       static setFullScreen(arg0: boolean): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      static setInitialSize(): void;
       /**
        * @noSelf
        *
@@ -3059,6 +3745,85 @@ declare module '@asledgehammer/pipewrench' {
       static fromIndex(arg0: number): zombie.core.Language;
     }
     /**
+     * @customConstructor NetTimedAction.new
+     * @
+     * [CLASS] zombie.core.NetTimedAction extends zombie.core.Action
+     */
+    export class NetTimedAction {
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       */
+      constructor();
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      animEvent(arg0: string, arg1: string): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      forceComplete(): void;
+      /**
+       * Method Parameters: 
+       *  - (StringBuilder arg0, Class arg1, HashSet arg2): void
+       */
+      getClassDescription(arg0: java.lang.StringBuilder, arg1: java.lang.Class<any>, arg2: java.util.HashSet<any>): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       *  - (HashSet arg0): string
+       */
+      getDescription(arg0?: java.util.HashSet<any>): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getPacketSizeBytes(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getProgress(): number;
+      /**
+       * Method Parameters: 
+       *  - (UdpConnection arg0): boolean
+       */
+      isConsistent(arg0: zombie.core.raknet.UdpConnection): boolean;
+      /**
+       * Method Parameters: 
+       *  - (ByteBuffer arg0, UdpConnection arg1): void
+       */
+      parse(arg0: java.nio.ByteBuffer, arg1: zombie.core.raknet.UdpConnection): void;
+      /**
+       * Method Parameters: 
+       *  - (IsoPlayer arg0): void
+       *  - (IsoPlayer arg0, KahluaTable arg1): void
+       */
+      set(arg0: zombie.characters.IsoPlayer, arg1?: se.krka.kahlua.vm.KahluaTable): void;
+      /**
+       * Method Parameters: 
+       *  - (long arg0): void
+       */
+      setDuration(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (TransactionState arg0): void
+       */
+      setState(arg0: zombie.core.Transaction$TransactionState): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      setTimeData(): void;
+      /**
+       * Method Parameters: 
+       *  - (ByteBufferWriter arg0): void
+       */
+      write(arg0: zombie.core.network.ByteBufferWriter): void;
+    }
+    /**
      * @customConstructor PerformanceSettings.new
      * @
      * [CLASS] zombie.core.PerformanceSettings
@@ -3068,6 +3833,8 @@ declare module '@asledgehammer/pipewrench' {
       static AnimationSkip: number;
       /** int */
       static BaseStaticAnimFramerate: number;
+      /** boolean */
+      static FBORenderChunk: boolean;
       /** int */
       static FogQuality: number;
       /** boolean */
@@ -3202,23 +3969,9 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      static isUncappedFPS(): boolean;
-      /**
-       * @noSelf
-       *
-       * Method Parameters: 
        *  - (int arg0): void
        */
       static setLockFPS(arg0: number): void;
-      /**
-       * @noSelf
-       *
-       * Method Parameters: 
-       *  - (boolean arg0): void
-       */
-      static setUncappedFPS(arg0: boolean): void;
     }
     /**
      * @customConstructor SpriteRenderer.new
@@ -3245,6 +3998,21 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): void
        */
       EndShader(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      FBORenderChunkEnd(): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, boolean arg1): void
+       */
+      FBORenderChunkStart(arg0: number, arg1: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      NewFrame(): void;
       /**
        * Method Parameters: 
        *  - (int arg0, int arg1, float arg2): void
@@ -3280,6 +4048,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (BooleanSupplier arg0): zombie.core.sprite.SpriteRenderState
        */
       acquireStateForRendering(arg0: java.util._function_.BooleanSupplier): zombie.core.sprite.SpriteRenderState;
+      /**
+       * Method Parameters: 
+       *  - (PerformanceProfileProbe arg0): void
+       */
+      beginProfile(arg0: zombie.core.profiling.PerformanceProfileProbe): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -3322,9 +4095,9 @@ declare module '@asledgehammer/pipewrench' {
       drawParticles(arg0: number, arg1: number, arg2: number): void;
       /**
        * Method Parameters: 
-       *  - (Shader arg0, int arg1, int arg2, int arg3): void
+       *  - (int arg0, int arg1, int arg2, int arg3): void
        */
-      drawPuddles(arg0: zombie.core.opengl.Shader, arg1: number, arg2: number, arg3: number): void;
+      drawPuddles(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
        * Method Parameters: 
        *  - (Shader arg0, int arg1, int arg2, int arg3): void
@@ -3335,6 +4108,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Shader arg0, int arg1, int arg2, boolean arg3): void
        */
       drawWater(arg0: zombie.core.opengl.Shader, arg1: number, arg2: number, arg3: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (PerformanceProfileProbe arg0): void
+       */
+      endProfile(arg0: zombie.core.profiling.PerformanceProfileProbe): void;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -3397,6 +4175,11 @@ declare module '@asledgehammer/pipewrench' {
       glBind(arg0: number): void;
       /**
        * Method Parameters: 
+       *  - (int arg0, int arg1): void
+       */
+      glBindFramebuffer(arg0: number, arg1: number): void;
+      /**
+       * Method Parameters: 
        *  - (int arg0): void
        */
       glBlendEquation(arg0: number): void;
@@ -3427,9 +4210,19 @@ declare module '@asledgehammer/pipewrench' {
       glClearColor(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
        * Method Parameters: 
+       *  - (float arg0): void
+       */
+      glClearDepth(arg0: number): void;
+      /**
+       * Method Parameters: 
        *  - (int arg0, int arg1, int arg2, int arg3): void
        */
       glColorMask(arg0: number, arg1: number, arg2: number, arg3: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): void
+       */
+      glDepthFunc(arg0: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -3458,9 +4251,19 @@ declare module '@asledgehammer/pipewrench' {
       glDoStartFrame(arg0: number, arg1: number, arg2: number, arg3: number, arg4?: boolean): void;
       /**
        * Method Parameters: 
+       *  - (int arg0, int arg1, float arg2, int arg3): void
+       */
+      glDoStartFrameFlipY(arg0: number, arg1: number, arg2: number, arg3: number): void;
+      /**
+       * Method Parameters: 
        *  - (int arg0, int arg1, int arg2): void
        */
       glDoStartFrameFx(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, int arg1, float arg2, int arg3): void
+       */
+      glDoStartFrameNoZoom(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -3535,6 +4338,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): void
        */
+      popIsoView(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
       postRender(): void;
       /**
        * Method Parameters: 
@@ -3548,14 +4356,27 @@ declare module '@asledgehammer/pipewrench' {
       pushFrameDown(): void;
       /**
        * Method Parameters: 
+       *  - (float arg0, float arg1, float arg2, float arg3, boolean arg4): void
+       */
+      pushIsoView(arg0: number, arg1: number, arg2: number, arg3: number, arg4: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      releaseFBORenderChunkLock(): void;
+      /**
+       * Method Parameters: 
+       *  - (ImDrawData arg0): void
        *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, Consumer arg9): void
+       *  - (Texture arg0, Texture arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, Consumer arg10): void
        *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, int arg9, int arg10, int arg11, int arg12): void
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, float arg9, float arg10, float arg11, float arg12, Consumer arg13): void
        *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10, float arg11, float arg12, float arg13, float arg14, float arg15, float arg16): void
        *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10, float arg11, float arg12, float arg13, float arg14, float arg15, float arg16, Consumer arg17): void
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9, double arg10, double arg11, double arg12, double arg13, double arg14, double arg15, double arg16, float arg17, float arg18, float arg19, float arg20): void
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, float arg9, float arg10, float arg11, float arg12, float arg13, float arg14, float arg15, float arg16, float arg17, float arg18, float arg19, float arg20, float arg21, float arg22, float arg23, float arg24, Consumer arg25): void
        */
-      render(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg10?: number, arg11?: number, arg12?: number, arg13?: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg14?: number, arg15?: number, arg16?: number, arg17?: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg18?: number, arg19?: number, arg20?: number, arg21?: number, arg22?: number, arg23?: number, arg24?: number, arg25?: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): void;
+      render(arg0: imgui.ImDrawData | zombie.core.textures.Texture, arg1?: number | zombie.core.textures.Texture, arg2?: number, arg3?: number, arg4?: number, arg5?: number, arg6?: number, arg7?: number, arg8?: number, arg9?: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg10?: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg11?: number, arg12?: number, arg13?: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg14?: number, arg15?: number, arg16?: number, arg17?: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg18?: number, arg19?: number, arg20?: number, arg21?: number, arg22?: number, arg23?: number, arg24?: number, arg25?: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, float arg9, float arg10, float arg11, float arg12, Consumer arg13): void
@@ -3568,6 +4389,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10, float arg11, float arg12, float arg13, float arg14, float arg15, float arg16, float arg17, float arg18, float arg19, float arg20): void
        */
       renderPoly(arg0: number | zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number, arg12?: number, arg13?: number, arg14?: number, arg15?: number, arg16?: number, arg17?: number, arg18?: number, arg19?: number, arg20?: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      renderQueued(): void;
       /**
        * Method Parameters: 
        *  - (int arg0, int arg1, int arg2, int arg3, float arg4, float arg5, float arg6, float arg7): void
@@ -3591,14 +4417,25 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Texture arg0, int arg1, int arg2, int arg3, int arg4, float arg5, float arg6, float arg7, float arg8): void
-       *  - (Texture arg0, int arg1, int arg2, int arg3, int arg4, float arg5, float arg6, float arg7, float arg8, int arg9): void
+       *  - (Texture arg0, int arg1, int arg2, int arg3, int arg4, float arg5, float arg6, float arg7, float arg8, float arg9): void
        */
       renderline(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9?: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, int arg9): void
+       *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10): void
+       */
+      renderlinef(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10?: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, int arg1, int arg2, int arg3, int arg4): void
        */
       setCutawayTexture(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, int arg1, int arg2, int arg3, int arg4): void
+       */
+      setCutawayTexture2(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number): void;
       /**
        * Method Parameters: 
        *  - (AbstractStyle arg0): void
@@ -3634,6 +4471,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): void
        */
       stopOffscreenUI(): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      static getWaitTime(): number;
     }
     /**
      * @customConstructor RingBuffer.new
@@ -3726,6 +4570,72 @@ declare module '@asledgehammer/pipewrench' {
        */
       static values(): zombie.core.SpriteRenderer$WallShaderTexRender[];
     }
+    /** [ENUM] zombie.core.Transaction$TransactionState */
+    export class Transaction$TransactionState {
+      protected constructor();
+      static readonly Accept: zombie.core.Transaction$TransactionState;
+      static readonly Done: zombie.core.Transaction$TransactionState;
+      static readonly Reject: zombie.core.Transaction$TransactionState;
+      static readonly Request: zombie.core.Transaction$TransactionState;
+      name(): string;
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.core.Transaction$TransactionState>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.core.Transaction$TransactionState>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): zombie.core.Transaction$TransactionState
+       *  - (Class arg0, String arg1): T
+       */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.core.Transaction$TransactionState | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.core.Transaction$TransactionState[]
+       */
+      static values(): zombie.core.Transaction$TransactionState[];
+    }
     /**
      * @customConstructor Translator.new
      * @
@@ -3781,6 +4691,20 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (String arg0): string
+       */
+      static getAttributeText(arg0: string): string;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): string
+       */
+      static getAttributeTextOrNull(arg0: string): string;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (Empty): java.util.ArrayList<zombie.core.Language>
        */
       static getAvailableLanguage(): java.util.ArrayList<zombie.core.Language>;
@@ -3812,6 +4736,20 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): string
        */
       static getDisplayItemName(arg0: string): string;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): string
+       */
+      static getEntityText(arg0: string): string;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): string
+       */
+      static getFluidText(arg0: string): string;
       /**
        * @noSelf
        *

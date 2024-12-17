@@ -27,7 +27,7 @@ declare module '@asledgehammer/pipewrench/server' {
 
       sq: any;
 
-      constructor(sprite1: any, sprite2: any, northSprite1: any, northSprite2: any, shovel: any);
+      constructor(sprite: any, sprite2: any, northSprite: any, northSprite2: any, equipBothHandItem: any);
 
       create(x: any, y: any, z: any, north: any, sprite: any, ...__args: never[]): any;
 

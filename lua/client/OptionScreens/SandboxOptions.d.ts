@@ -9,7 +9,7 @@ declare module '@asledgehammer/pipewrench/client' {
 
       static instance: any;
 
-      addY: any;
+      advancedCheckBox: any;
 
       backButton: any;
 
@@ -17,17 +17,11 @@ declare module '@asledgehammer/pipewrench/client' {
 
       currentPanel: any;
 
-      defaultPreset: any;
-
       deletePresetButton: any;
 
       devPresetButton: any;
 
-      groupBox: any;
-
       hadJoypadFocus: any;
-
-      javaObject: any;
 
       listbox: any;
 
@@ -43,11 +37,17 @@ declare module '@asledgehammer/pipewrench/client' {
 
       savePresetButton: any;
 
+      searchEntry: any;
+
       selectedMonth: any;
 
       selectedYear: any;
 
       constructor(x: any, y: any, width: any, height: any);
+
+      addPresetToList(fileName: any, text: any, userDefined: any, ...__args: never[]): any;
+
+      changeAdvancedMode(arg0: any, bool: any, ...__args: never[]): any;
 
       create(...__args: never[]): any;
 
@@ -57,13 +57,13 @@ declare module '@asledgehammer/pipewrench/client' {
 
       deletePresetStep2(button: any, joypadData: any, ...__args: never[]): any;
 
+      doSearch(...__args: never[]): any;
+
       getApocalypsePreset(...__args: never[]): any;
 
       getBeginnerPreset(...__args: never[]): any;
 
       getBuilderPreset(...__args: never[]): any;
-
-      getDefaultPreset(...__args: never[]): any;
 
       getHardPreset(...__args: never[]): any;
 
@@ -73,21 +73,19 @@ declare module '@asledgehammer/pipewrench/client' {
 
       getSurvivorPreset(...__args: never[]): any;
 
-      instantiate(...__args: never[]): any;
-
       loadPresets(...__args: never[]): any;
 
       onComboBoxSelected(combo: any, optionName: any, ...__args: never[]): any;
 
       onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
-      onGroupBox(index: any, selected: any, groupBoxName: any, ...__args: never[]): any;
-
       onLoseJoypadFocus(joypadData: any, ...__args: never[]): any;
 
       onMouseDownListbox(item: any, ...__args: never[]): any;
 
       onOptionMouseDown(button: any, x: any, y: any, ...__args: never[]): any;
+
+      onPanelChange(...__args: never[]): any;
 
       onPresetChange(...__args: never[]): any;
 
@@ -96,6 +94,8 @@ declare module '@asledgehammer/pipewrench/client' {
       onSaveDeveloperPreset(button: any, joypadData: any, ...__args: never[]): any;
 
       onSavePreset(button: any, joypadData: any, ...__args: never[]): any;
+
+      onTickBoxSelected(arg0: any, value: any, optionName: any, ...__args: never[]): any;
 
       onValidateSavePreset(text: any, ...__args: never[]): any;
 
@@ -107,14 +107,10 @@ declare module '@asledgehammer/pipewrench/client' {
 
       settingsToUI(options: any, ...__args: never[]): any;
 
-      subPanelPreRender(...__args: never[]): any;
-
-      subPanelRender(...__args: never[]): any;
-
       syncStartDay(...__args: never[]): any;
 
       /** @noSelf */
-      static load: (...__args: never[]) => any;
+      static searchPrerender: (self: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.OptionScreens.SandboxOptions {}

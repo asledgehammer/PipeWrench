@@ -20,7 +20,7 @@ declare module '@asledgehammer/pipewrench/client' {
         clicktarget: any,
         onclick: any,
         onmousedown: any,
-        allowMouseUpProcessing: any,
+        allowMouseUpProcessing: any
       );
 
       resize(width: any, ...__args: never[]): any;

@@ -57,6 +57,8 @@ declare module '@asledgehammer/pipewrench/server' {
 
       OnIsoObjectChangedItself(isoObject: any, ...__args: never[]): any;
 
+      OnModDataChangeItself(isoObject: any, ...__args: never[]): any;
+
       OnObjectAboutToBeRemoved(isoObject: any, ...__args: never[]): any;
 
       OnObjectAdded(isoObject: any, ...__args: never[]): any;
@@ -70,6 +72,8 @@ declare module '@asledgehammer/pipewrench/server' {
       removeLuaObjectOnSquare(square: any, ...__args: never[]): any;
 
       sendCommand(command: any, args: any, ...__args: never[]): any;
+
+      updateLuaObjectOnClient(luaObject: any, ...__args: never[]): any;
 
       /** @noSelf */
       static RegisterSystemClass: (luaClass: any, ...__args: never[]) => any;

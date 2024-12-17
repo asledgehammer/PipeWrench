@@ -13,11 +13,17 @@ declare module '@asledgehammer/pipewrench/client' {
 
       gameState: any;
 
+      highlightAreas: any;
+
       object: any;
 
       constructor(x: any, y: any, width: any, height: any, gameState: any);
 
       addLine(text: any, arg0: any, arg1: any, arg2: any, arg3: any, arg4: any, ...__args: never[]): any;
+
+      endHighlightArea(...__args: never[]): any;
+
+      getHighlightAreaUnderMouse(...__args: never[]): any;
 
       playerIndex(...__args: never[]): any;
 
@@ -28,6 +34,8 @@ declare module '@asledgehammer/pipewrench/client' {
       render1(...__args: never[]): any;
 
       setObject(object: any, ...__args: never[]): any;
+
+      startHighlightArea(userData: any, ...__args: never[]): any;
     }
 
     /** @customConstructor DebugChunkStateUI_ObjPropsPanel:new */

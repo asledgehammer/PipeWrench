@@ -628,6 +628,11 @@ declare module '@asledgehammer/pipewrench' {
       isValidString(arg0: string): boolean;
       /**
        * Method Parameters: 
+       *  - (Empty): zombie.config.ConfigOption
+       */
+      makeCopy(): zombie.config.ConfigOption;
+      /**
+       * Method Parameters: 
        *  - (String arg0): void
        */
       parse(arg0: string): void;

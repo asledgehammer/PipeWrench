@@ -15,11 +15,15 @@ declare module '@asledgehammer/pipewrench/client' {
 
       hitchPos: any;
 
+      sound: any;
+
       vehicleA: any;
 
       vehicleB: any;
 
       constructor(character: any, vehicleA: any, vehicleB: any, attachmentA: any, attachmentB: any);
+
+      stopSound(...__args: never[]): any;
     }
   }
   export namespace lua.client.Vehicles.TimedActions.ISAttachTrailerToVehicle {}

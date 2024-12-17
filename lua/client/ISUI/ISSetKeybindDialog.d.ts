@@ -13,9 +13,11 @@ declare module '@asledgehammer/pipewrench/client' {
 
       _default_: any;
 
+      isModBind: any;
+
       keybindName: any;
 
-      constructor(keybindName: any);
+      constructor(keybindName: any, isModBind: any);
 
       createChildren(...__args: never[]): any;
 
@@ -30,6 +32,8 @@ declare module '@asledgehammer/pipewrench/client' {
       onDefault(...__args: never[]): any;
 
       onKeyRelease(key: any, ...__args: never[]): any;
+
+      onMouseButtonDown(btn: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.ISSetKeybindDialog {}

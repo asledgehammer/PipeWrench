@@ -63,6 +63,10 @@ declare module '@asledgehammer/pipewrench/client' {
 
       movableIconScrap: any;
 
+      moveableIconBuild: any;
+
+      moveableIconRepair: any;
+
       player: any;
 
       rbFunc: any;
@@ -105,6 +109,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       climbOverWall(dir: any, ...__args: never[]): any;
 
+      closeDoor(door: any, ...__args: never[]): any;
+
       closeWindow(window: any, ...__args: never[]): any;
 
       cmdCloseVehicleDoor(playerObj: any, part: any, ...__args: never[]): any;
@@ -128,6 +134,8 @@ declare module '@asledgehammer/pipewrench/client' {
       doAButtonDoorOrWindowOrWindowFrame(dir: any, obj: any, ...__args: never[]): any;
 
       doBButtonDoorOrWindowOrWindowFrame(dir: any, obj: any, ...__args: never[]): any;
+
+      dropCorpse(...__args: never[]): any;
 
       getBestAButtonAction(dir: any, ...__args: never[]): any;
 

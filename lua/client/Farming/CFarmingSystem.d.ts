@@ -13,8 +13,6 @@ declare module '@asledgehammer/pipewrench/client' {
 
       changePlayer(player: any, ...__args: never[]): any;
 
-      gainXp(player: any, luaObject: any, ...__args: never[]): any;
-
       getXp(character: any, ...__args: never[]): any;
     }
   }

@@ -39,6 +39,10 @@ declare module '@asledgehammer/pipewrench/client' {
 
       colorPicker4: any;
 
+      colorPicker5: any;
+
+      colorPicker6: any;
+
       controllerTestPanel: any;
 
       cover: any;
@@ -67,6 +71,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       mpColor: any;
 
+      noTargetColor: any;
+
       objHighColor: any;
 
       resetLua: any;
@@ -81,7 +87,15 @@ declare module '@asledgehammer/pipewrench/client' {
 
       tabs: any;
 
+      targetColor: any;
+
+      workstationHighColor: any;
+
       constructor(x: any, y: any, width: any, height: any);
+
+      addAccessibilityPanel(...__args: never[]): any;
+
+      addButton(x: any, y: any, name: any, ...__args: never[]): any;
 
       addColorButton(x: any, y: any, name: any, color: any, onClick: any, ...__args: never[]): any;
 
@@ -98,7 +112,17 @@ declare module '@asledgehammer/pipewrench/client' {
         ...__args: never[]
       ): any;
 
+      addControllerPanel(...__args: never[]): any;
+
+      addDescription(x: any, y: any, text: any, ...__args: never[]): any;
+
+      addDisplayPanel(...__args: never[]): any;
+
       addHorizontalLine(y: any, text: any, ...__args: never[]): any;
+
+      addHorizontalLineSmall(y: any, ...__args: never[]): any;
+
+      addKeybindingPanel(...__args: never[]): any;
 
       addMegaVolumeControl(
         x: any,
@@ -112,24 +136,35 @@ declare module '@asledgehammer/pipewrench/client' {
         ...__args: never[]
       ): any;
 
+      addModOptionsPanel(...__args: never[]): any;
+
+      addMultiplayerPanel(...__args: never[]): any;
+
       addPage(name: any, ...__args: never[]): any;
 
-      addSpinBox(
+      addSlider(
         x: any,
         y: any,
-        w: any,
-        h: any,
+        width: any,
         name: any,
-        options: any,
-        selected: any,
-        target: any,
-        onchange: any,
+        min: any,
+        max: any,
+        step: any,
+        value: any,
         ...__args: never[]
       ): any;
+
+      addSoundPanel(...__args: never[]): any;
+
+      addTextEntry(x: any, y: any, name: any, _text: any, ...__args: never[]): any;
 
       addTextPane(x: any, y: any, w: any, h: any, ...__args: never[]): any;
 
       addTickBox(x: any, y: any, w: any, h: any, ...__args: never[]): any;
+
+      addTitle(x: any, y: any, name: any, ...__args: never[]): any;
+
+      addUIPanel(...__args: never[]): any;
 
       addVolumeControl(
         x: any,
@@ -203,9 +238,15 @@ declare module '@asledgehammer/pipewrench/client' {
 
       onLoseJoypadFocusCurrentTab(joypadData: any, ...__args: never[]): any;
 
+      onModColorPick(button: any, ...__args: never[]): any;
+
       onMouseWheel(del: any, ...__args: never[]): any;
 
+      onMouseWheelCurrentTab(del: any, ...__args: never[]): any;
+
       onMPColor(button: any, ...__args: never[]): any;
+
+      onNoTargetColor(button: any, ...__args: never[]): any;
 
       onObjHighlightColor(button: any, ...__args: never[]): any;
 
@@ -219,13 +260,25 @@ declare module '@asledgehammer/pipewrench/client' {
 
       onTabsActivateView(tabs: any, ...__args: never[]): any;
 
+      onTargetColor(button: any, ...__args: never[]): any;
+
+      onWorkstationHighlightColor(button: any, ...__args: never[]): any;
+
       pickedBadHighlightColor(color: any, mouseUp: any, ...__args: never[]): any;
 
       pickedGoodHighlightColor(color: any, mouseUp: any, ...__args: never[]): any;
 
+      pickedModColor(color: any, mouseUp: any, ...__args: never[]): any;
+
       pickedMPTextColor(color: any, mouseUp: any, ...__args: never[]): any;
 
+      pickedNoTargetColor(color: any, mouseUp: any, ...__args: never[]): any;
+
       pickedObjHighlightColor(color: any, mouseUp: any, ...__args: never[]): any;
+
+      pickedTargetColor(color: any, mouseUp: any, ...__args: never[]): any;
+
+      pickedWorkstationHighlightColor(color: any, mouseUp: any, ...__args: never[]): any;
 
       render(...__args: never[]): any;
 
@@ -240,6 +293,8 @@ declare module '@asledgehammer/pipewrench/client' {
       subPanelPreRender(...__args: never[]): any;
 
       subPanelRender(...__args: never[]): any;
+
+      tableContains(tbl: any, x: any, ...__args: never[]): any;
 
       toUI(...__args: never[]): any;
 

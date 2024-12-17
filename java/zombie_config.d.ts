@@ -59,6 +59,11 @@ declare module '@asledgehammer/pipewrench' {
       isValidString(arg0: string): boolean;
       /**
        * Method Parameters: 
+       *  - (Empty): zombie.config.ConfigOption
+       */
+      makeCopy(): zombie.config.ConfigOption;
+      /**
+       * Method Parameters: 
        *  - (String arg0): void
        */
       parse(arg0: string): void;
@@ -129,6 +134,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): boolean
        */
       isValidString(arg0: string): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.config.ConfigOption
+       */
+      makeCopy(): zombie.config.ConfigOption;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -216,6 +226,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): boolean
        */
       isValidString(arg0: string): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.config.ConfigOption
+       */
+      makeCopy(): zombie.config.ConfigOption;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -315,6 +330,11 @@ declare module '@asledgehammer/pipewrench' {
       isValidString(arg0: string): boolean;
       /**
        * Method Parameters: 
+       *  - (Empty): zombie.config.ConfigOption
+       */
+      makeCopy(): zombie.config.ConfigOption;
+      /**
+       * Method Parameters: 
        *  - (String arg0): void
        */
       parse(arg0: string): void;
@@ -407,6 +427,11 @@ declare module '@asledgehammer/pipewrench' {
       isValidString(arg0: string): boolean;
       /**
        * Method Parameters: 
+       *  - (Empty): zombie.config.ConfigOption
+       */
+      makeCopy(): zombie.config.ConfigOption;
+      /**
+       * Method Parameters: 
        *  - (String arg0): void
        */
       parse(arg0: string): void;
@@ -440,8 +465,9 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Constructors: 
        *  - (String arg0, String arg1, int arg2)
+       *  - (String arg0, String arg1, String[] arg2)
        */
-      constructor(arg0: string, arg1: string, arg2: number);
+      constructor(arg0: string, arg1: string, arg2: number | string[]);
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -452,6 +478,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): string
        */
       getName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getSplitCSVList(): java.util.ArrayList<string>;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -487,6 +518,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): boolean
        */
       isValidString(arg0: string): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.config.ConfigOption
+       */
+      makeCopy(): zombie.config.ConfigOption;
       /**
        * Method Parameters: 
        *  - (String arg0): void

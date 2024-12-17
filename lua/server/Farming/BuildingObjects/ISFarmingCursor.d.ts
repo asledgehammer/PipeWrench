@@ -9,8 +9,6 @@ declare module '@asledgehammer/pipewrench/server' {
 
       character: any;
 
-      floorSprite: any;
-
       noNeedHammer: any;
 
       player: any;

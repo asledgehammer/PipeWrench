@@ -2,6 +2,30 @@
 
 declare module '@asledgehammer/pipewrench/client' {
   export namespace lua.client.ISUI {
+    /** @customConstructor ISCraftingIngredientIconPanel:new */
+    export class ISCraftingIngredientIconPanel extends lua.client.ISUI.ISPanel {
+      [id: string]: any;
+      static [id: string]: any;
+
+      craftingUI: any;
+
+      mouseOverIndex: any;
+
+      tooltipUI: any;
+
+      constructor(craftingUI: any);
+
+      getExtraItem(index: any, ...__args: never[]): any;
+
+      getExtraItemIndex(mouseX: any, mouseY: any, ...__args: never[]): any;
+
+      render(...__args: never[]): any;
+
+      shouldBeVisible(...__args: never[]): any;
+
+      updateTooltip(...__args: never[]): any;
+    }
+
     /** @customConstructor ISCraftingUI:new */
     export class ISCraftingUI extends lua.client.ISUI.ISCollapsableWindow {
       [id: string]: any;
@@ -37,11 +61,11 @@ declare module '@asledgehammer/pipewrench/client' {
 
       fgBar: any;
 
+      ingredientIconPanel: any;
+
       ingredientListbox: any;
 
       ingredientPanel: any;
-
-      ItemInstances: any;
 
       keysRichText: any;
 
@@ -103,9 +127,9 @@ declare module '@asledgehammer/pipewrench/client' {
 
       addItemInEvolvedRecipe(button: any, ...__args: never[]): any;
 
-      craft(button: any, all: any, ...__args: never[]): any;
+      craft(button: any, all: any, _isWorkStation: any, ...__args: never[]): any;
 
-      craftAll(...__args: never[]): any;
+      craftAll(_isWorkStation: any, ...__args: never[]): any;
 
       debugGiveIngredients(...__args: never[]): any;
 
@@ -121,11 +145,11 @@ declare module '@asledgehammer/pipewrench/client' {
 
       getFavoriteModDataString(recipe: any, ...__args: never[]): any;
 
-      GetItemInstance(type: any, ...__args: never[]): any;
-
       getRecipeListBox(...__args: never[]): any;
 
       isExtraClothingItemOf(item1: any, item2: any, ...__args: never[]): any;
+
+      isFluidSource(item: any, fluid: any, amount: any, ...__args: never[]): any;
 
       isKeyConsumed(key: any, ...__args: never[]): any;
 
@@ -169,6 +193,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       removeExtraClothingItemsFromList(index: any, item: any, itemList: any, ...__args: never[]): any;
 
+      renderSelectedItem(x: any, y: any, selectedItem: any, _isWorkStation: any, ...__args: never[]): any;
+
       setVisible(bVisible: any, ...__args: never[]): any;
 
       sortList(...__args: never[]): any;
@@ -176,6 +202,9 @@ declare module '@asledgehammer/pipewrench/client' {
       transferItems(...__args: never[]): any;
 
       update(...__args: never[]): any;
+
+      /** @noSelf */
+      static addIngredientTooltip: (option: any, items: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static onPressKey: (key: any, ...__args: never[]) => any;

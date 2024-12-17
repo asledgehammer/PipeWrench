@@ -19,6 +19,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       slices: any;
 
+      sounds: any;
+
       constructor(x: any, y: any, innerRadius: any, outerRadius: any, playerNum: any);
 
       addSlice(
@@ -41,6 +43,8 @@ declare module '@asledgehammer/pipewrench/client' {
       getSliceCommand(sliceIndex: any, ...__args: never[]): any;
 
       instantiate(...__args: never[]): any;
+
+      isEmpty(...__args: never[]): any;
 
       onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 

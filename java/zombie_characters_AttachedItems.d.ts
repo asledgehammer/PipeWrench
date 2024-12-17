@@ -196,5 +196,71 @@ declare module '@asledgehammer/pipewrench' {
        */
       static getGroup(arg0: string): zombie.characters.AttachedItems.AttachedLocationGroup;
     }
+    /**
+     * @customConstructor AttachedModelName.new
+     * @
+     * [CLASS] zombie.characters.AttachedItems.AttachedModelName
+     */
+    export class AttachedModelName {
+      /**
+       * Constructors: 
+       *  - (AttachedModelName arg0)
+       *  - (String arg0, String arg1, float arg2)
+       *  - (String arg0, String arg1, String arg2, float arg3)
+       */
+      constructor(arg0: zombie.characters.AttachedItems.AttachedModelName | string, arg1?: string, arg2?: number | string, arg3?: number);
+      /**
+       * Method Parameters: 
+       *  - (AttachedModelName arg0): void
+       */
+      addChild(arg0: zombie.characters.AttachedItems.AttachedModelName): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): zombie.characters.AttachedItems.AttachedModelName
+       */
+      getChildByIndex(arg0: number): zombie.characters.AttachedItems.AttachedModelName;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getChildCount(): number;
+    }
+    /**
+     * @customConstructor AttachedModelNames.new
+     * @
+     * [CLASS] zombie.characters.AttachedItems.AttachedModelNames
+     */
+    export class AttachedModelNames {
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       */
+      constructor();
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      clear(): void;
+      /**
+       * Method Parameters: 
+       *  - (AttachedModelNames arg0): void
+       */
+      copyFrom(arg0: zombie.characters.AttachedItems.AttachedModelNames): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): zombie.characters.AttachedItems.AttachedModelName
+       */
+      get(arg0: number): zombie.characters.AttachedItems.AttachedModelName;
+      /**
+       * Method Parameters: 
+       *  - (AttachedItems arg0): void
+       */
+      initFrom(arg0: zombie.characters.AttachedItems.AttachedItems): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      size(): number;
+    }
   }
 }

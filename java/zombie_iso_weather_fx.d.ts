@@ -7,6 +7,14 @@ declare module '@asledgehammer/pipewrench' {
      * [CLASS] zombie.iso.weather.fx.IsoWeatherFX
      */
     export class IsoWeatherFX {
+      /** int */
+      static ID_CLOUD: number;
+      /** int */
+      static ID_FOG: number;
+      /** int */
+      static ID_RAIN: number;
+      /** int */
+      static ID_SNOW: number;
       /** float */
       static ZoomMod: number;
 
@@ -17,9 +25,19 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
+       *  - (Empty): void
+       */
+      Reset(): void;
+      /**
+       * Method Parameters: 
        *  - (Empty): number
        */
       getCloudIntensity(): number;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): zombie.iso.weather.fx.WeatherParticleDrawer
+       */
+      getDrawer(arg0: number): zombie.iso.weather.fx.WeatherParticleDrawer;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -171,6 +189,49 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0, float arg1, float arg2): number
        */
       static lerp(arg0: number, arg1: number, arg2: number): number;
+    }
+    /**
+     * @customConstructor WeatherParticleDrawer.new
+     * @
+     * [CLASS] zombie.iso.weather.fx.WeatherParticleDrawer extends zombie.core.textures.TextureDraw$GenericDrawer
+     */
+    export class WeatherParticleDrawer {
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       */
+      constructor();
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      Reset(): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8): void
+       *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10, float arg11, float arg12): void
+       */
+      addParticle(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9?: number, arg10?: number, arg11?: number, arg12?: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      endFrame(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      postRender(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      render(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      startFrame(): void;
     }
   }
 }

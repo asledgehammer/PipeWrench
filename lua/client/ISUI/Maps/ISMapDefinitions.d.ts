@@ -35,6 +35,21 @@ declare module '@asledgehammer/pipewrench/client' {
       /** @noSelf */
       static revealKnownArea: (mapUI: any, ...__args: never[]) => any;
     }
+
+    export abstract class PrintMediaMaps {
+      static [id: string]: any;
+
+      /** @noSelf */
+      static callLua: (
+        functionName: any,
+        mapUI: any,
+        arg1: any,
+        arg2: any,
+        arg3: any,
+        arg4: any,
+        ...__args: never[]
+      ) => any;
+    }
   }
   export namespace lua.client.ISUI.Maps.ISMapDefinitions {}
 }

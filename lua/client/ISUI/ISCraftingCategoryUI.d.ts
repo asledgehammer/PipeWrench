@@ -41,7 +41,7 @@ declare module '@asledgehammer/pipewrench/client' {
 
       create(...__args: never[]): any;
 
-      drawRecipesMap(y: any, item: any, alt: any, ...__args: never[]): any;
+      drawRecipesMap(y: any, item: any, alt: any, _drawBasic: any, ...__args: never[]): any;
 
       filter(...__args: never[]): any;
 

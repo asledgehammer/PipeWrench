@@ -45,11 +45,15 @@ declare module '@asledgehammer/pipewrench/client' {
 
       noteY: any;
 
+      panel: any;
+
       playerNum: any;
 
       removeBtn: any;
 
       selectedSymbol: any;
+
+      sharingBtn: any;
 
       showTranslationOption: any;
 
@@ -80,6 +84,10 @@ declare module '@asledgehammer/pipewrench/client' {
       checkAnnotationForRemoveJoypad(...__args: never[]): any;
 
       checkAnnotationForRemoveMouse(...__args: never[]): any;
+
+      checkAnnotationForSharingJoypad(...__args: never[]): any;
+
+      checkAnnotationForSharingMouse(...__args: never[]): any;
 
       checkInventory(...__args: never[]): any;
 
@@ -121,11 +129,15 @@ declare module '@asledgehammer/pipewrench/client' {
 
       populateSymbolList(...__args: never[]): any;
 
+      prerenderMap(...__args: never[]): any;
+
       render(...__args: never[]): any;
 
       renderNoteBeingAddedOrEdited(modal: any, ...__args: never[]): any;
 
       renderSymbol(symbol: any, x: any, y: any, ...__args: never[]): any;
+
+      renderSymbolOutline(symbol: any, r: any, g: any, b: any, ...__args: never[]): any;
 
       setCurrentTool(tool: any, ...__args: never[]): any;
 
@@ -137,6 +149,22 @@ declare module '@asledgehammer/pipewrench/client' {
 
       /** @noSelf */
       static RequiredWidth: (...__args: never[]) => any;
+    }
+
+    /** @customConstructor ISWorldMapSymbolsTabPanel:new */
+    export class ISWorldMapSymbolsTabPanel extends lua.client.ISUI.ISTabPanel {
+      [id: string]: any;
+      static [id: string]: any;
+
+      joypadFocused: any;
+
+      symbolsUI: any;
+
+      constructor(x: any, y: any, width: any, height: any, symbolsUI: any);
+
+      onJoypadDown(button: any, joypadData: any, ...__args: never[]): any;
+
+      setJoypadFocused(focused: any, ...__args: never[]): any;
     }
 
     /** @customConstructor ISWorldMapSymbolTool:new */
@@ -257,6 +285,18 @@ declare module '@asledgehammer/pipewrench/client' {
       constructor(symbolsUI: any);
 
       removeAnnotation(...__args: never[]): any;
+    }
+
+    /** @customConstructor ISWorldMapSymbolTool_Sharing:new */
+    export class ISWorldMapSymbolTool_Sharing extends lua.client.ISUI.Maps.ISWorldMapSymbolTool {
+      [id: string]: any;
+      static [id: string]: any;
+
+      propertiesUI: any;
+
+      constructor(symbolsUI: any);
+
+      showPropertiesUI(...__args: never[]): any;
     }
   }
   export namespace lua.client.ISUI.Maps.ISWorldMapSymbols {}

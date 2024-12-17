@@ -22,6 +22,9 @@ declare module '@asledgehammer/pipewrench/client' {
       update(...__args: never[]): any;
 
       /** @noSelf */
+      static OnCreatePlayer: (...__args: never[]) => any;
+
+      /** @noSelf */
       static OnGameStart: (...__args: never[]) => any;
 
       /** @noSelf */

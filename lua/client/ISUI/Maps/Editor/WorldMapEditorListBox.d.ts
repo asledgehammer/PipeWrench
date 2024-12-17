@@ -41,7 +41,7 @@ declare module '@asledgehammer/pipewrench/client' {
         arg1: any,
         arg2: any,
         arg3: any,
-        arg4: any,
+        arg4: any
       );
 
       addItem(text: any, data: any, ...__args: never[]): any;

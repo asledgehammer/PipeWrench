@@ -23,7 +23,7 @@ declare module '@asledgehammer/pipewrench/client' {
         arg5: any,
         arg6: any,
         arg7: any,
-        arg8: any,
+        arg8: any
       );
     }
 
@@ -135,6 +135,9 @@ declare module '@asledgehammer/pipewrench/client' {
 
       /** @noSelf */
       static getBandageType: (bodyPart: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static IsCharactersInSameCar: (doctor: any, patient: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static onCheat: (bodyPart: any, action: any, player: any, otherPlayer: any, ...__args: never[]) => any;

@@ -51,6 +51,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       equipItem(item: any, ...__args: never[]): any;
 
+      getKeyForIndex(index: any, ...__args: never[]): any;
+
       getSlotDef(slot: any, ...__args: never[]): any;
 
       getSlotDefReplacement(slot: any, ...__args: never[]): any;
@@ -59,7 +61,11 @@ declare module '@asledgehammer/pipewrench/client' {
 
       getSlotIndexAt(x: any, y: any, ...__args: never[]): any;
 
+      getThisSlotIndex(slotType: any, list: any, ...__args: never[]): any;
+
       haveThisSlot(slotType: any, list: any, ...__args: never[]): any;
+
+      isAllowedToActivateSlot(...__args: never[]): any;
 
       isInHotbar(item: any, ...__args: never[]): any;
 

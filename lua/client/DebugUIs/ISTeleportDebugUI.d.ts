@@ -13,8 +13,6 @@ declare module '@asledgehammer/pipewrench/client' {
 
       entryZ: any;
 
-      fontHgt: any;
-
       maxLines: any;
 
       multipleLine: any;

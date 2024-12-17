@@ -33,11 +33,15 @@ declare module '@asledgehammer/pipewrench/server' {
 
       OnIsoObjectChangedItself(isoObject: any, ...__args: never[]): any;
 
+      OnModDataChangeItself(isoObject: any, ...__args: never[]): any;
+
       removeIsoObject(...__args: never[]): any;
 
       stateFromIsoObject(isoObject: any, ...__args: never[]): any;
 
       stateToIsoObject(isoObject: any, ...__args: never[]): any;
+
+      updateOnClient(...__args: never[]): any;
     }
   }
   export namespace lua.server.Map.SGlobalObject {}

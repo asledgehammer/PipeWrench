@@ -54,6 +54,11 @@ declare module '@asledgehammer/pipewrench' {
        */
       LoadFramesUseOtherFrame(arg0: string, arg1: string, arg2: string, arg3: string, arg4: number, arg5: string): void;
       /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      hasNoTextures(): boolean;
+      /**
        * @noSelf
        *
        * Method Parameters: 
@@ -62,15 +67,76 @@ declare module '@asledgehammer/pipewrench' {
       static DisposeAll(): void;
     }
     /**
+     * @customConstructor IsoDirectionFrame.new
+     * @
+     * [CLASS] zombie.iso.sprite.IsoDirectionFrame
+     */
+    export class IsoDirectionFrame {
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       *  - (Texture arg0)
+       *  - (Texture arg0, Texture arg1, Texture arg2, Texture arg3)
+       *  - (Texture arg0, Texture arg1, Texture arg2, Texture arg3, Texture arg4)
+       *  - (Texture arg0, Texture arg1, Texture arg2, Texture arg3, Texture arg4, Texture arg5, Texture arg6, Texture arg7)
+       */
+      constructor(arg0?: zombie.core.textures.Texture, arg1?: zombie.core.textures.Texture, arg2?: zombie.core.textures.Texture, arg3?: zombie.core.textures.Texture, arg4?: zombie.core.textures.Texture, arg5?: zombie.core.textures.Texture, arg6?: zombie.core.textures.Texture, arg7?: zombie.core.textures.Texture);
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0): void
+       */
+      SetAllDirections(arg0: zombie.core.textures.Texture): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, IsoDirections arg1): void
+       */
+      SetDirection(arg0: zombie.core.textures.Texture, arg1: zombie.iso.IsoDirections): void;
+      /**
+       * Method Parameters: 
+       *  - (IsoDirections arg0): zombie.core.textures.Texture
+       */
+      getTexture(arg0: zombie.iso.IsoDirections): zombie.core.textures.Texture;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      hasNoTextures(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (float arg0, float arg1, IsoDirections arg2, ColorInfo arg3, boolean arg4, Consumer arg5): void
+       */
+      render(arg0: number, arg1: number, arg2: zombie.iso.IsoDirections, arg3: zombie.core.textures.ColorInfo, arg4: boolean, arg5: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, int arg1, IsoDirections arg2, float arg3): void
+       *  - (int arg0, int arg1, IsoDirections arg2, float arg3, ColorInfo arg4): void
+       */
+      renderexplicit(arg0: number, arg1: number, arg2: zombie.iso.IsoDirections, arg3: number, arg4?: zombie.core.textures.ColorInfo): void;
+    }
+    /**
      * @customConstructor IsoSprite.new
      * @
      * [CLASS] zombie.iso.sprite.IsoSprite
      */
     export class IsoSprite {
+      /** int */
+      static readonly DEFAULT_SPRITE_ID: number;
       /** byte */
       static readonly RL_DEFAULT: number;
       /** byte */
       static readonly RL_FLOOR: number;
+      /** int */
+      static readonly SDF_OPAQUE_PIXELS_ONLY: number;
+      /** int */
+      static readonly SDF_TRANSLUCENT: number;
+      /** int */
+      static readonly SDF_USE_OBJECT_DEPTH_TEXTURE: number;
+      /** boolean */
+      static SEAM_EAST: boolean;
+      /** zombie.tileDepth.TileSeamManager$Tiles */
+      static SEAM_FIX2?: zombie.tileDepth.TileSeamManager$Tiles;
+      /** boolean */
+      static SEAM_SOUTH: boolean;
       /** float */
       static alphaStep: number;
       /** float */
@@ -153,6 +219,11 @@ declare module '@asledgehammer/pipewrench' {
       LoadFramesReverseAltName(arg0: string, arg1: string, arg2: string, arg3: number): void;
       /**
        * Method Parameters: 
+       *  - (String arg0): zombie.core.textures.Texture
+       */
+      LoadSingleTexture(arg0: string): zombie.core.textures.Texture;
+      /**
+       * Method Parameters: 
        *  - (String arg0): void
        *  - (IsoAnim arg0): void
        */
@@ -185,6 +256,21 @@ declare module '@asledgehammer/pipewrench' {
       ReplaceCurrentAnimFrames(arg0: string): void;
       /**
        * Method Parameters: 
+       *  - (Empty): void
+       */
+      disposeAnimation(): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): zombie.iso.sprite.IsoDirectionFrame
+       */
+      getAnimFrame(arg0: number): zombie.iso.sprite.IsoDirectionFrame;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoDirections
+       */
+      getFacing(): zombie.iso.IsoDirections;
+      /**
+       * Method Parameters: 
        *  - (Empty): number
        */
       getID(): number;
@@ -208,6 +294,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): zombie.core.properties.PropertyContainer
        */
       getProperties(): zombie.core.properties.PropertyContainer;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.properties.RoofProperties
+       */
+      getRoofProperties(): zombie.core.properties.RoofProperties;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -243,6 +334,16 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       hasActiveModel(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      hasAnimation(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      hasNoTextures(): boolean;
       /**
        * Method Parameters: 
        *  - (IsoDirections arg0, int arg1, int arg2): boolean
@@ -289,6 +390,17 @@ declare module '@asledgehammer/pipewrench' {
       renderCurrentAnim(arg0: zombie.iso.sprite.IsoSpriteInstance, arg1: zombie.iso.IsoObject, arg2: number, arg3: number, arg4: number, arg5: zombie.iso.IsoDirections, arg6: number, arg7: number, arg8: zombie.core.textures.ColorInfo, arg9: boolean, arg10: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): void;
       /**
        * Method Parameters: 
+       *  - (IsoSpriteInstance arg0, IsoObject arg1, IsoDirections arg2, boolean arg3, boolean arg4, boolean arg5, int arg6, float arg7, float arg8, float arg9, float arg10, float arg11, ColorInfo arg12, boolean arg13, Consumer arg14): void
+       */
+      renderCurrentAnimDepth(arg0: zombie.iso.sprite.IsoSpriteInstance, arg1: zombie.iso.IsoObject, arg2: zombie.iso.IsoDirections, arg3: boolean, arg4: boolean, arg5: boolean, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number, arg12: zombie.core.textures.ColorInfo, arg13: boolean, arg14: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): void;
+      /**
+       * Method Parameters: 
+       *  - (IsoObject arg0, IsoDirections arg1, boolean arg2, boolean arg3, boolean arg4, int arg5, float arg6, float arg7, float arg8, float arg9, float arg10, ColorInfo arg11, boolean arg12, Consumer arg13): void
+       *  - (IsoSpriteInstance arg0, IsoObject arg1, IsoDirections arg2, boolean arg3, boolean arg4, boolean arg5, int arg6, float arg7, float arg8, float arg9, float arg10, float arg11, ColorInfo arg12, boolean arg13, Consumer arg14): void
+       */
+      renderDepth(arg0: zombie.iso.IsoObject | zombie.iso.sprite.IsoSpriteInstance, arg1: zombie.iso.IsoDirections | zombie.iso.IsoObject, arg2: boolean | zombie.iso.IsoDirections, arg3: boolean, arg4: boolean, arg5: number | boolean, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: zombie.core.textures.ColorInfo | number, arg12: boolean | zombie.core.textures.ColorInfo, arg13: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | boolean, arg14?: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): void;
+      /**
+       * Method Parameters: 
        *  - (IsoSpriteInstance arg0, IsoObject arg1, IsoDirections arg2): void
        */
       renderObjectPicker(arg0: zombie.iso.sprite.IsoSpriteInstance, arg1: zombie.iso.IsoObject, arg2: zombie.iso.IsoDirections): void;
@@ -297,6 +409,16 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoSpriteInstance arg0, IsoObject arg1, float arg2, float arg3, float arg4, float arg5, float arg6, ColorInfo arg7, boolean arg8): void
        */
       renderVehicle(arg0: zombie.iso.sprite.IsoSpriteInstance, arg1: zombie.iso.IsoObject, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: zombie.core.textures.ColorInfo, arg8: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (IsoObject arg0, float arg1, float arg2, float arg3, IsoDirections arg4, float arg5, float arg6, ColorInfo arg7, boolean arg8, Consumer arg9): void
+       */
+      renderWallSliceN(arg0: zombie.iso.IsoObject, arg1: number, arg2: number, arg3: number, arg4: zombie.iso.IsoDirections, arg5: number, arg6: number, arg7: zombie.core.textures.ColorInfo, arg8: boolean, arg9: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): void;
+      /**
+       * Method Parameters: 
+       *  - (IsoObject arg0, float arg1, float arg2, float arg3, IsoDirections arg4, float arg5, float arg6, ColorInfo arg7, boolean arg8, Consumer arg9): void
+       */
+      renderWallSliceW(arg0: zombie.iso.IsoObject, arg1: number, arg2: number, arg3: number, arg4: zombie.iso.IsoDirections, arg5: number, arg6: number, arg7: zombie.core.textures.ColorInfo, arg8: boolean, arg9: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): void;
       /**
        * Method Parameters: 
        *  - (DataOutputStream arg0): void
@@ -380,6 +502,13 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (float arg0, float arg1, float arg2): number
+       */
+      static calculateDepth(arg0: number, arg1: number, arg2: number): number;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (String arg0): number
        */
       static getSheetGridIdFromName(arg0: string): number;
@@ -392,6 +521,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoSpriteManager arg0, IsoSprite arg1, int arg2): zombie.iso.sprite.IsoSprite
        */
       static getSprite(arg0: zombie.iso.sprite.IsoSpriteManager, arg1: number | string | zombie.iso.sprite.IsoSprite, arg2?: number): zombie.iso.sprite.IsoSprite;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9): void
+       */
+      static renderTextureWithDepth(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
       /**
        * @noSelf
        *
@@ -409,8 +545,9 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Constructors: 
        *  - (int arg0, int arg1)
+       *  - (int arg0, int arg1, int arg2)
        */
-      constructor(arg0: number, arg1: number);
+      constructor(arg0: number, arg1: number, arg2?: number);
       /**
        * Method Parameters: 
        *  - (Empty): zombie.iso.sprite.IsoSprite
@@ -423,9 +560,15 @@ declare module '@asledgehammer/pipewrench' {
       getHeight(): number;
       /**
        * Method Parameters: 
-       *  - (int arg0, int arg1): zombie.iso.sprite.IsoSprite
+       *  - (Empty): number
        */
-      getSprite(arg0: number, arg1: number): zombie.iso.sprite.IsoSprite;
+      getLevels(): number;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, int arg1): zombie.iso.sprite.IsoSprite
+       *  - (int arg0, int arg1, int arg2): zombie.iso.sprite.IsoSprite
+       */
+      getSprite(arg0: number, arg1: number, arg2?: number): zombie.iso.sprite.IsoSprite;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -450,7 +593,13 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (IsoSprite arg0): number
        */
-      getSpriteIndex(arg0: zombie.iso.sprite.IsoSprite): number;
+      getSpriteGridPosZ(arg0: zombie.iso.sprite.IsoSprite): number;
+      /**
+       * Method Parameters: 
+       *  - (IsoSprite arg0): number
+       *  - (int arg0, int arg1, int arg2): number
+       */
+      getSpriteIndex(arg0: zombie.iso.sprite.IsoSprite | number, arg1?: number, arg2?: number): number;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.iso.sprite.IsoSprite[]
@@ -463,9 +612,15 @@ declare module '@asledgehammer/pipewrench' {
       getWidth(): number;
       /**
        * Method Parameters: 
-       *  - (int arg0, int arg1, IsoSprite arg2): void
+       *  - (int arg0, int arg1, int arg2): boolean
        */
-      setSprite(arg0: number, arg1: number, arg2: zombie.iso.sprite.IsoSprite): void;
+      isValidXYZ(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, int arg1, IsoSprite arg2): void
+       *  - (int arg0, int arg1, int arg2, IsoSprite arg3): void
+       */
+      setSprite(arg0: number, arg1: number, arg2: zombie.iso.sprite.IsoSprite | number, arg3?: zombie.iso.sprite.IsoSprite): void;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -580,8 +735,10 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (IsoObject arg0, float arg1, float arg2, float arg3, IsoDirections arg4, float arg5, float arg6, ColorInfo arg7): void
+       *  - (IsoObject arg0, float arg1, float arg2, float arg3, IsoDirections arg4, float arg5, float arg6, ColorInfo arg7, boolean arg8): void
+       *  - (IsoObject arg0, float arg1, float arg2, float arg3, IsoDirections arg4, float arg5, float arg6, ColorInfo arg7, boolean arg8, Consumer arg9): void
        */
-      render(arg0: zombie.iso.IsoObject, arg1: number, arg2: number, arg3: number, arg4: zombie.iso.IsoDirections, arg5: number, arg6: number, arg7: zombie.core.textures.ColorInfo): void;
+      render(arg0: zombie.iso.IsoObject, arg1: number, arg2: number, arg3: number, arg4: zombie.iso.IsoDirections, arg5: number, arg6: number, arg7: zombie.core.textures.ColorInfo, arg8?: boolean, arg9?: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): void;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3): void

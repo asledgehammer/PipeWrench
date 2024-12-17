@@ -61,6 +61,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       rgb: any;
 
+      rgbCurrent: any;
+
       text: any;
 
       textDirty: any;

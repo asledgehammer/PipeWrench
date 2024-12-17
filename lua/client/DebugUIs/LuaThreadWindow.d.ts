@@ -9,6 +9,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       callframeStack: any;
 
+      currentCallframeIndex: any;
+
       locals: any;
 
       metaNodes: any;
@@ -30,6 +32,8 @@ declare module '@asledgehammer/pipewrench/client' {
       onMouseDoubleClickObject(item: any, ...__args: never[]): any;
 
       onResize(width: any, height: any, ...__args: never[]): any;
+
+      populateLocalVariables(...__args: never[]): any;
 
       render(...__args: never[]): any;
     }

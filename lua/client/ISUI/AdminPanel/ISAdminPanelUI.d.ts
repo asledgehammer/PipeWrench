@@ -9,11 +9,7 @@ declare module '@asledgehammer/pipewrench/client' {
 
       static instance: any;
 
-      adminModal: any;
-
       adminPowerBtn: any;
-
-      beAdmin: any;
 
       buttonBorderColor: any;
 
@@ -33,6 +29,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       packetCountsBtn: any;
 
+      pvpLogTool: any;
+
       safezoneBtn: any;
 
       sandboxOptionsBtn: any;
@@ -40,6 +38,8 @@ declare module '@asledgehammer/pipewrench/client' {
       seeFactionBtn: any;
 
       seeOptionsBtn: any;
+
+      seeRolesBtn: any;
 
       seeSafehousesBtn: any;
 
@@ -51,19 +51,25 @@ declare module '@asledgehammer/pipewrench/client' {
 
       zOffsetSmallFont: any;
 
+      zoneEditor: any;
+
       constructor(x: any, y: any, width: any, height: any);
 
       create(...__args: never[]): any;
 
       onOptionMouseDown(button: any, x: any, y: any, ...__args: never[]): any;
 
-      removeAdmin(...__args: never[]): any;
-
       render(...__args: never[]): any;
 
       setVisible(visible: any, ...__args: never[]): any;
 
       updateButtons(...__args: never[]): any;
+
+      /** @noSelf */
+      static OnNetworkUsersReceived: (...__args: never[]) => any;
+
+      /** @noSelf */
+      static OnRolesReceived: (...__args: never[]) => any;
 
       /** @noSelf */
       static OnSafehousesChanged: (...__args: never[]) => any;

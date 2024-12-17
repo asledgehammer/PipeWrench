@@ -15,9 +15,24 @@ declare module '@asledgehammer/pipewrench' {
       Reset(): void;
       /**
        * Method Parameters: 
+       *  - (Empty): void
+       */
+      destroyThisObject(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoObject
+       */
+      getIsoObject(): zombie.iso.IsoObject;
+      /**
+       * Method Parameters: 
        *  - (Empty): se.krka.kahlua.vm.KahluaTable
        */
       getModData(): se.krka.kahlua.vm.KahluaTable;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoGridSquare
+       */
+      getSquare(): zombie.iso.IsoGridSquare;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.globalObjects.GlobalObjectSystem
@@ -38,6 +53,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): number
        */
       getZ(): number;
+      /**
+       * Method Parameters: 
+       *  - (IsoObject arg0): boolean
+       */
+      isValidIsoObject(arg0: zombie.iso.IsoObject): boolean;
       /**
        * Method Parameters: 
        *  - (int arg0, int arg1, int arg2): void
@@ -82,9 +102,10 @@ declare module '@asledgehammer/pipewrench' {
       getName(): string;
       /**
        * Method Parameters: 
+       *  - (IsoGridSquare arg0): zombie.globalObjects.GlobalObject
        *  - (int arg0, int arg1, int arg2): zombie.globalObjects.GlobalObject
        */
-      getObjectAt(arg0: number, arg1: number, arg2: number): zombie.globalObjects.GlobalObject;
+      getObjectAt(arg0: zombie.iso.IsoGridSquare | number, arg1?: number, arg2?: number): zombie.globalObjects.GlobalObject;
       /**
        * Method Parameters: 
        *  - (int arg0): zombie.globalObjects.GlobalObject
@@ -242,9 +263,24 @@ declare module '@asledgehammer/pipewrench' {
       Reset(): void;
       /**
        * Method Parameters: 
+       *  - (Empty): void
+       */
+      destroyThisObject(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoObject
+       */
+      getIsoObject(): zombie.iso.IsoObject;
+      /**
+       * Method Parameters: 
        *  - (Empty): se.krka.kahlua.vm.KahluaTable
        */
       getModData(): se.krka.kahlua.vm.KahluaTable;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoGridSquare
+       */
+      getSquare(): zombie.iso.IsoGridSquare;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.globalObjects.GlobalObjectSystem
@@ -265,6 +301,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): number
        */
       getZ(): number;
+      /**
+       * Method Parameters: 
+       *  - (IsoObject arg0): boolean
+       */
+      isValidIsoObject(arg0: zombie.iso.IsoObject): boolean;
       /**
        * Method Parameters: 
        *  - (int arg0, int arg1, int arg2): void
@@ -305,9 +346,10 @@ declare module '@asledgehammer/pipewrench' {
       getName(): string;
       /**
        * Method Parameters: 
+       *  - (IsoGridSquare arg0): zombie.globalObjects.GlobalObject
        *  - (int arg0, int arg1, int arg2): zombie.globalObjects.GlobalObject
        */
-      getObjectAt(arg0: number, arg1: number, arg2: number): zombie.globalObjects.GlobalObject;
+      getObjectAt(arg0: zombie.iso.IsoGridSquare | number, arg1?: number, arg2?: number): zombie.globalObjects.GlobalObject;
       /**
        * Method Parameters: 
        *  - (int arg0): zombie.globalObjects.GlobalObject
@@ -358,9 +400,24 @@ declare module '@asledgehammer/pipewrench' {
       Reset(): void;
       /**
        * Method Parameters: 
+       *  - (Empty): void
+       */
+      destroyThisObject(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoObject
+       */
+      getIsoObject(): zombie.iso.IsoObject;
+      /**
+       * Method Parameters: 
        *  - (Empty): se.krka.kahlua.vm.KahluaTable
        */
       getModData(): se.krka.kahlua.vm.KahluaTable;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoGridSquare
+       */
+      getSquare(): zombie.iso.IsoGridSquare;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.globalObjects.GlobalObjectSystem
@@ -381,6 +438,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): number
        */
       getZ(): number;
+      /**
+       * Method Parameters: 
+       *  - (IsoObject arg0): boolean
+       */
+      isValidIsoObject(arg0: zombie.iso.IsoObject): boolean;
       /**
        * Method Parameters: 
        *  - (ByteBuffer arg0, int arg1): void
@@ -413,6 +475,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoObject arg0): void
        */
       OnIsoObjectChangedItself(arg0: zombie.iso.IsoObject): void;
+      /**
+       * Method Parameters: 
+       *  - (IsoObject arg0): void
+       */
+      OnModDataChangeItself(arg0: zombie.iso.IsoObject): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -455,9 +522,10 @@ declare module '@asledgehammer/pipewrench' {
       getName(): string;
       /**
        * Method Parameters: 
+       *  - (IsoGridSquare arg0): zombie.globalObjects.GlobalObject
        *  - (int arg0, int arg1, int arg2): zombie.globalObjects.GlobalObject
        */
-      getObjectAt(arg0: number, arg1: number, arg2: number): zombie.globalObjects.GlobalObject;
+      getObjectAt(arg0: zombie.iso.IsoGridSquare | number, arg1?: number, arg2?: number): zombie.globalObjects.GlobalObject;
       /**
        * Method Parameters: 
        *  - (int arg0): zombie.globalObjects.GlobalObject
@@ -569,6 +637,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0, IsoObject arg1): void
        */
       static OnIsoObjectChangedItself(arg0: string, arg1: zombie.iso.IsoObject): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0, IsoObject arg1): void
+       */
+      static OnModDataChangeItself(arg0: string, arg1: zombie.iso.IsoObject): void;
       /**
        * @noSelf
        *

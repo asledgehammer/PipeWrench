@@ -15,6 +15,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       adminIconOn: any;
 
+      buildBtn: any;
+
       chr: any;
 
       clientBtn: any;
@@ -34,6 +36,8 @@ declare module '@asledgehammer/pipewrench/client' {
       debugIcon: any;
 
       debugIconOn: any;
+
+      disableTexture: any;
 
       handMainTexture: any;
 
@@ -69,6 +73,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       inventoryTextureOn: any;
 
+      lockTexture: any;
+
       loot: any;
 
       mainHand: any;
@@ -99,9 +105,25 @@ declare module '@asledgehammer/pipewrench/client' {
 
       movableTooltip: any;
 
+      moveableIconBuild: any;
+
+      moveableIconBuildOn: any;
+
+      moveableIconRepair: any;
+
       offHand: any;
 
+      offTexture: any;
+
+      onTexture: any;
+
       previousHealth: any;
+
+      radialIcon: any;
+
+      safety: any;
+
+      safetyBtn: any;
 
       searchBtn: any;
 
@@ -110,6 +132,24 @@ declare module '@asledgehammer/pipewrench/client' {
       searchIconOn: any;
 
       toolTip: any;
+
+      warActive: any;
+
+      warInactive: any;
+
+      warManagerBtn: any;
+
+      warManagerBtnX: any;
+
+      warManagerBtnY: any;
+
+      warSoon: any;
+
+      zoneBtn: any;
+
+      zoneIcon: any;
+
+      zoneIconOn: any;
 
       constructor(x: any, y: any, width: any, height: any, chr: any);
 
@@ -142,6 +182,11 @@ declare module '@asledgehammer/pipewrench/client' {
       rightClickSecondary(x: any, y: any, ...__args: never[]): any;
 
       shrinkWrap(...__args: never[]): any;
+
+      toggleSafety(...__args: never[]): any;
+
+      /** @noSelf */
+      static onKeyPressed: (key: any, ...__args: never[]) => any;
     }
 
     /** @customConstructor ISMapPopup:new */

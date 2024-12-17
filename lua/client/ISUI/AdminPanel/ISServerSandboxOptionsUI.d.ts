@@ -23,6 +23,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       options: any;
 
+      searchEntry: any;
+
       constructor(x: any, y: any, width: any, height: any);
 
       createChildren(...__args: never[]): any;
@@ -31,15 +33,24 @@ declare module '@asledgehammer/pipewrench/client' {
 
       destroy(...__args: never[]): any;
 
+      doSearch(...__args: never[]): any;
+
       onButtonApply(...__args: never[]): any;
 
       onButtonClose(...__args: never[]): any;
 
+      onComboBoxSelected(combo: any, optionName: any, ...__args: never[]): any;
+
       onMouseDownListbox(item: any, ...__args: never[]): any;
+
+      onTickBoxSelected(arg0: any, value: any, optionName: any, ...__args: never[]): any;
 
       settingsFromUI(options: any, ...__args: never[]): any;
 
       settingsToUI(options: any, ...__args: never[]): any;
+
+      /** @noSelf */
+      static searchPrerender: (self: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.AdminPanel.ISServerSandboxOptionsUI {}

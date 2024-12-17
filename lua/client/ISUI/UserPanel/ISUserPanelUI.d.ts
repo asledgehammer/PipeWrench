@@ -21,8 +21,6 @@ declare module '@asledgehammer/pipewrench/client' {
 
       showConnectionInfo: any;
 
-      showPingInfo: any;
-
       showServerInfo: any;
 
       ticketsBtn: any;
@@ -38,8 +36,6 @@ declare module '@asledgehammer/pipewrench/client' {
       onOptionMouseDown(button: any, x: any, y: any, ...__args: never[]): any;
 
       onShowConnectionInfo(option: any, enabled: any, ...__args: never[]): any;
-
-      onShowPingInfo(option: any, enabled: any, ...__args: never[]): any;
 
       onShowServerInfo(option: any, enabled: any, ...__args: never[]): any;
 

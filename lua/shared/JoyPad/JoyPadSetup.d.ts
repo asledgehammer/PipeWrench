@@ -3,7 +3,7 @@
 declare module '@asledgehammer/pipewrench' {
   export namespace lua.shared.JoyPad {
     /** @customConstructor JoypadControllerData:new */
-    export class JoypadControllerData extends lua.shared.ISBaseObject {
+    export class JoypadControllerData extends lua.shared.ISBaseObject.ISBaseObject {
       [id: string]: any;
       static [id: string]: any;
 
@@ -51,7 +51,7 @@ declare module '@asledgehammer/pipewrench' {
     }
 
     /** @customConstructor JoypadData:new */
-    export class JoypadData extends lua.shared.ISBaseObject {
+    export class JoypadData extends lua.shared.ISBaseObject.ISBaseObject {
       [id: string]: any;
       static [id: string]: any;
 

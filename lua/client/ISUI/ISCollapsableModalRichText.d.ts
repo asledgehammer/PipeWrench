@@ -42,7 +42,7 @@ declare module '@asledgehammer/pipewrench/client' {
         onclick: any,
         player: any,
         param1: any,
-        param2: any,
+        param2: any
       );
 
       destroy(...__args: never[]): any;

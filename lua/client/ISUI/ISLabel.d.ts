@@ -35,6 +35,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       r: any;
 
+      textColor: any;
+
       tooltip: any;
 
       tooltipUI: any;
@@ -43,9 +45,15 @@ declare module '@asledgehammer/pipewrench/client' {
 
       constructor(x: any, y: any, height: any, name: any, r: any, g: any, b: any, a: any, font: any, bLeft: any);
 
+      getFontHeight(...__args: never[]): any;
+
       getName(...__args: never[]): any;
 
       setColor(r: any, g: any, b: any, ...__args: never[]): any;
+
+      setHeightToFont(minHeight: any, ...__args: never[]): any;
+
+      setHeightToName(minHeight: any, ...__args: never[]): any;
 
       setJoypadFocused(focused: any, ...__args: never[]): any;
 

@@ -75,6 +75,21 @@ declare module '@asledgehammer/pipewrench' {
       getPropertyNames(): java.util.ArrayList<string>;
       /**
        * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoDirections
+       */
+      getSlopedSurfaceDirection(): zombie.iso.IsoDirections;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getSlopedSurfaceHeightMax(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getSlopedSurfaceHeightMin(): number;
+      /**
+       * Method Parameters: 
        *  - (Empty): number
        */
       getStackReplaceTileOffset(): number;
@@ -98,6 +113,16 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       isTableTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): boolean
+       */
+      valueEquals(arg0: string, arg1: string): boolean;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): boolean
+       */
+      valueEqualsIgnoreCase(arg0: string, arg1: string): boolean;
     }
     /**
      * @customConstructor MostTested.new
@@ -110,6 +135,55 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty Constructor)
        */
       constructor();
+    }
+    /**
+     * @customConstructor RoofProperties.new
+     * @
+     * [CLASS] zombie.core.properties.RoofProperties
+     */
+    export class RoofProperties {
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       */
+      constructor();
+      /**
+       * Method Parameters: 
+       *  - (IsoDirections arg0): boolean
+       */
+      hasPossibleSeamLevelBelow(arg0: zombie.iso.IsoDirections): boolean;
+      /**
+       * Method Parameters: 
+       *  - (IsoDirections arg0): boolean
+       */
+      hasPossibleSeamSameLevel(arg0: zombie.iso.IsoDirections): boolean;
+      /**
+       * Method Parameters: 
+       *  - (RoofProperties arg0): boolean
+       */
+      isJoinedLevelBelowEast(arg0: zombie.core.properties.RoofProperties): boolean;
+      /**
+       * Method Parameters: 
+       *  - (RoofProperties arg0): boolean
+       */
+      isJoinedLevelBelowSouth(arg0: zombie.core.properties.RoofProperties): boolean;
+      /**
+       * Method Parameters: 
+       *  - (RoofProperties arg0): boolean
+       */
+      isJoinedSameLevelEast(arg0: zombie.core.properties.RoofProperties): boolean;
+      /**
+       * Method Parameters: 
+       *  - (RoofProperties arg0): boolean
+       */
+      isJoinedSameLevelSouth(arg0: zombie.core.properties.RoofProperties): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (IsoSprite arg0): zombie.core.properties.RoofProperties
+       */
+      static initSprite(arg0: zombie.iso.sprite.IsoSprite): zombie.core.properties.RoofProperties;
     }
   }
 }

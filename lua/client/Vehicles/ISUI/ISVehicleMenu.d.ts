@@ -9,6 +9,9 @@ declare module '@asledgehammer/pipewrench/client' {
       static addSetScriptMenu: (context: any, playerObj: any, vehicle: any, ...__args: never[]) => any;
 
       /** @noSelf */
+      static doAnimalSubMenu: (subMenu: any, playerObj: any, vehicle: any, ...__args: never[]) => any;
+
+      /** @noSelf */
       static doTowingMenu: (playerObj: any, vehicle: any, menu: any, ...__args: never[]) => any;
 
       /** @noSelf */
@@ -53,6 +56,12 @@ declare module '@asledgehammer/pipewrench/client' {
       ) => any;
 
       /** @noSelf */
+      static onAddAnimalFromHandsInTrailer: (playerObj: any, animal: any, vehicle: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static onAddAnimalInTrailer: (playerObj: any, animal: any, vehicle: any, ...__args: never[]) => any;
+
+      /** @noSelf */
       static onAttachTrailer: (
         playerObj: any,
         vehicle: any,
@@ -60,6 +69,9 @@ declare module '@asledgehammer/pipewrench/client' {
         attachmentB: any,
         ...__args: never[]
       ) => any;
+
+      /** @noSelf */
+      static onCheckAnimalInside: (vehicle: any, playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static onCloseDoor: (playerObj: any, part: any, ...__args: never[]) => any;
@@ -150,6 +162,9 @@ declare module '@asledgehammer/pipewrench/client' {
 
       /** @noSelf */
       static onOpenDoor: (playerObj: any, part: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static onRemoveAnimalFromTrailer: (playerObj: any, animal: any, vehicle: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static onRemoveBurntVehicle: (player: any, vehicle: any, ...__args: never[]) => any;

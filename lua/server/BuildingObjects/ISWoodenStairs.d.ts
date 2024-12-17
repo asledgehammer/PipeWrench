@@ -22,14 +22,14 @@ declare module '@asledgehammer/pipewrench/server' {
       sq: any;
 
       constructor(
-        sprite1: any,
+        sprite: any,
         sprite2: any,
         sprite3: any,
-        northSprite1: any,
+        northSprite: any,
         northSprite2: any,
         northSprite3: any,
         pillar: any,
-        pillarNorth: any,
+        pillarNorth: any
       );
 
       create(x: any, y: any, z: any, north: any, sprite: any, ...__args: never[]): any;

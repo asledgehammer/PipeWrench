@@ -9,29 +9,15 @@ declare module '@asledgehammer/pipewrench/client' {
 
       earbudsTex: any;
 
-      fontheight: any;
-
       hasEnabledHeadphones: any;
 
       headphonesTex: any;
-
-      innerHeight: any;
 
       isMute: any;
 
       itemDropBox: any;
 
-      marginBottom: any;
-
-      marginLeft: any;
-
-      marginRight: any;
-
-      marginTop: any;
-
       speakerButton: any;
-
-      textureSize: any;
 
       volume: any;
 

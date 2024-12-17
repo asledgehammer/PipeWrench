@@ -19,13 +19,21 @@ declare module '@asledgehammer/pipewrench/client' {
 
       listbox: any;
 
+      mapPanel: any;
+
       nextButton: any;
+
+      notSortedList: any;
 
       previousScreen: any;
 
       richText: any;
 
+      selectedMapIndex: any;
+
       selectedRegion: any;
+
+      sortedList: any;
 
       startY: any;
 
@@ -34,6 +42,8 @@ declare module '@asledgehammer/pipewrench/client' {
       textEntryLabel: any;
 
       constructor(x: any, y: any, width: any, height: any);
+
+      checkSorted(item: any, ...__args: never[]): any;
 
       clickBack(...__args: never[]): any;
 
@@ -73,9 +83,59 @@ declare module '@asledgehammer/pipewrench/client' {
 
       onResolutionChange(oldw: any, oldh: any, neww: any, newh: any, ...__args: never[]): any;
 
+      recalculateMapSize(...__args: never[]): any;
+
       render(...__args: never[]): any;
 
       useDefaultSpawnRegion(...__args: never[]): any;
+
+      zoomMap(x: any, y: any, scale: any, ...__args: never[]): any;
+    }
+
+    /** @customConstructor MapSpawnSelectImage:new */
+    export class MapSpawnSelectImage extends lua.client.ISUI.ISUIElement {
+      [id: string]: any;
+      static [id: string]: any;
+
+      dragging: any;
+
+      dragMoved: any;
+
+      dragStartCX: any;
+
+      dragStartCY: any;
+
+      dragStartWorldX: any;
+
+      dragStartWorldY: any;
+
+      dragStartX: any;
+
+      dragStartY: any;
+
+      dragStartZoomF: any;
+
+      hasResetView: any;
+
+      mapAPI: any;
+
+      pyramidFileName: any;
+
+      shownInitialLocation: any;
+
+      constructor(x: any, y: any, width: any, height: any);
+
+      clear(...__args: never[]): any;
+
+      hasSomethingToDisplay(...__args: never[]): any;
+
+      initMapData(directory: any, ...__args: never[]): any;
+
+      onMouseDoubleClick(x: any, y: any, ...__args: never[]): any;
+
+      onMouseDown(x: any, y: any, ...__args: never[]): any;
+
+      setImagePyramid(fileName: any, ...__args: never[]): any;
     }
 
     /** @customConstructor MapSpawnSelectInfoPanel:new */

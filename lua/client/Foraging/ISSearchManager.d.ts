@@ -91,6 +91,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       isoMarkers: any;
 
+      isOverride: any;
+
       isSearchMode: any;
 
       isSpotting: any;
@@ -128,6 +130,8 @@ declare module '@asledgehammer/pipewrench/client' {
       radius: any;
 
       reducedTimePerLevel: any;
+
+      searchMode: any;
 
       searchModeOverlay: any;
 
@@ -355,6 +359,9 @@ declare module '@asledgehammer/pipewrench/client' {
 
       /** @noSelf */
       static handleKeyPressed: (_keyPressed: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static handleOverride: (_state: any, _playerNum: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static initBinds: (...__args: never[]) => any;

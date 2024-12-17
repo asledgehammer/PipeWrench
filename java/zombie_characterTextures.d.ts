@@ -130,8 +130,14 @@ declare module '@asledgehammer/pipewrench' {
       protected constructor();
       static readonly Apron: zombie.characterTextures.BloodClothingType;
       static readonly Bag: zombie.characterTextures.BloodClothingType;
+      static readonly Foot_L: zombie.characterTextures.BloodClothingType;
+      static readonly Foot_R: zombie.characterTextures.BloodClothingType;
+      static readonly ForeArm_L: zombie.characterTextures.BloodClothingType;
+      static readonly ForeArm_R: zombie.characterTextures.BloodClothingType;
       static readonly FullHelmet: zombie.characterTextures.BloodClothingType;
       static readonly Groin: zombie.characterTextures.BloodClothingType;
+      static readonly Hand_L: zombie.characterTextures.BloodClothingType;
+      static readonly Hand_R: zombie.characterTextures.BloodClothingType;
       static readonly Hands: zombie.characterTextures.BloodClothingType;
       static readonly Head: zombie.characterTextures.BloodClothingType;
       static readonly Jacket: zombie.characterTextures.BloodClothingType;
@@ -140,6 +146,8 @@ declare module '@asledgehammer/pipewrench' {
       static readonly LongJacket: zombie.characterTextures.BloodClothingType;
       static readonly LowerArms: zombie.characterTextures.BloodClothingType;
       static readonly LowerBody: zombie.characterTextures.BloodClothingType;
+      static readonly LowerLeg_L: zombie.characterTextures.BloodClothingType;
+      static readonly LowerLeg_R: zombie.characterTextures.BloodClothingType;
       static readonly LowerLegs: zombie.characterTextures.BloodClothingType;
       static readonly Neck: zombie.characterTextures.BloodClothingType;
       static readonly Shirt: zombie.characterTextures.BloodClothingType;
@@ -148,8 +156,12 @@ declare module '@asledgehammer/pipewrench' {
       static readonly Shoes: zombie.characterTextures.BloodClothingType;
       static readonly ShortsShort: zombie.characterTextures.BloodClothingType;
       static readonly Trousers: zombie.characterTextures.BloodClothingType;
+      static readonly UpperArm_L: zombie.characterTextures.BloodClothingType;
+      static readonly UpperArm_R: zombie.characterTextures.BloodClothingType;
       static readonly UpperArms: zombie.characterTextures.BloodClothingType;
       static readonly UpperBody: zombie.characterTextures.BloodClothingType;
+      static readonly UpperLeg_L: zombie.characterTextures.BloodClothingType;
+      static readonly UpperLeg_R: zombie.characterTextures.BloodClothingType;
       static readonly UpperLegs: zombie.characterTextures.BloodClothingType;
       name(): string;
       ordinal(): number;

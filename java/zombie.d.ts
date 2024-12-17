@@ -48,6 +48,11 @@ declare module '@asledgehammer/pipewrench' {
       addRandomAmbient(): void;
       /**
        * Method Parameters: 
+       *  - (Empty): void
+       */
+      checkHaveElectricity(): void;
+      /**
+       * Method Parameters: 
        *  - (RoomDef arg0): void
        */
       doAlarm(arg0: zombie.iso.RoomDef): void;
@@ -63,14 +68,29 @@ declare module '@asledgehammer/pipewrench' {
       doOneShotAmbients(): void;
       /**
        * Method Parameters: 
-       *  - (float arg0, float arg1, Vector2f arg2): zombie.iso.BuildingDef
+       *  - (int arg0, int arg1): void
        */
-      getNearestBuilding(arg0: number, arg1: number, arg2: org.joml.Vector2f): zombie.iso.BuildingDef;
+      handleThunderEvent(arg0: number, arg1: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
        */
       init(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isParameterInsideTrue(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (ByteBuffer arg0, int arg1): void
+       */
+      load(arg0: java.nio.ByteBuffer, arg1: number): void;
+      /**
+       * Method Parameters: 
+       *  - (ByteBuffer arg0): void
+       */
+      save(arg0: java.nio.ByteBuffer): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -88,6 +108,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): zombie.BaseAmbientStreamManager
        */
       static getInstance(): zombie.BaseAmbientStreamManager;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (float arg0, float arg1, Vector2f arg2): zombie.iso.BuildingDef
+       */
+      static getNearestBuilding(arg0: number, arg1: number, arg2: org.joml.Vector2f): zombie.iso.BuildingDef;
     }
     /**
      * @customConstructor Ambient.new
@@ -187,6 +214,11 @@ declare module '@asledgehammer/pipewrench' {
       addDaytimeAmbientEmitter(arg0: number, arg1: number, arg2: number, arg3: string): void;
       /**
        * Method Parameters: 
+       *  - (Empty): void
+       */
+      checkHaveElectricity(): void;
+      /**
+       * Method Parameters: 
        *  - (RoomDef arg0): void
        */
       doAlarm(arg0: zombie.iso.RoomDef): void;
@@ -202,9 +234,29 @@ declare module '@asledgehammer/pipewrench' {
       doOneShotAmbients(): void;
       /**
        * Method Parameters: 
+       *  - (int arg0, int arg1): void
+       */
+      handleThunderEvent(arg0: number, arg1: number): void;
+      /**
+       * Method Parameters: 
        *  - (Empty): void
        */
       init(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isParameterInsideTrue(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (ByteBuffer arg0, int arg1): void
+       */
+      load(arg0: java.nio.ByteBuffer, arg1: number): void;
+      /**
+       * Method Parameters: 
+       *  - (ByteBuffer arg0): void
+       */
+      save(arg0: java.nio.ByteBuffer): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -427,6 +479,12 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): void
        */
       playAmbient(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (IsoGridSquare arg0): void
+       *  - (IsoGridSquare arg0, MaterialType arg1): void
+       */
+      playImpactSound(arg0: zombie.iso.IsoGridSquare, arg1?: zombie.iso.enums.MaterialType): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -746,6 +804,12 @@ declare module '@asledgehammer/pipewrench' {
       playAmbient(arg0: string): void;
       /**
        * Method Parameters: 
+       *  - (IsoGridSquare arg0): void
+       *  - (IsoGridSquare arg0, MaterialType arg1): void
+       */
+      playImpactSound(arg0: zombie.iso.IsoGridSquare, arg1?: zombie.iso.enums.MaterialType): void;
+      /**
+       * Method Parameters: 
        *  - (String arg0): void
        */
       playMusic(arg0: string): void;
@@ -856,6 +920,8 @@ declare module '@asledgehammer/pipewrench' {
      * [CLASS] zombie.GameSounds
      */
     export class GameSounds {
+      /** boolean */
+      static readonly VCA_VOLUME: boolean;
       /** int */
       static readonly VERSION: number;
       /** boolean */
@@ -870,9 +936,9 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (String arg0): void
+       *  - (GameSoundScript arg0): void
        */
-      static ReloadFile(arg0: string): void;
+      static OnReloadSound(arg0: zombie.scripting.objects.GameSoundScript): void;
       /**
        * @noSelf
        *
@@ -1170,6 +1236,11 @@ declare module '@asledgehammer/pipewrench' {
       getMultiplier(): number;
       /**
        * Method Parameters: 
+       *  - (float arg0): number
+       */
+      getMultiplierFromTimeDelta(arg0: number): number;
+      /**
+       * Method Parameters: 
        *  - (Empty): number
        */
       getNight(): number;
@@ -1207,6 +1278,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): number
        */
+      getSkyLightLevel(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
       getStartDay(): number;
       /**
        * Method Parameters: 
@@ -1225,6 +1301,11 @@ declare module '@asledgehammer/pipewrench' {
       getStartYear(): number;
       /**
        * Method Parameters: 
+       *  - (Empty): number
+       */
+      getThirtyFPSMultiplier(): number;
+      /**
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       getThunderStorm(): boolean;
@@ -1233,6 +1314,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): number
        */
       getTimeDelta(): number;
+      /**
+       * Method Parameters: 
+       *  - (float arg0): number
+       */
+      getTimeDeltaFromMultiplier(arg0: number): number;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -1268,6 +1354,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): number
        */
       getViewDistMin(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getWorldAgeDaysSinceBegin(): number;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -1421,22 +1512,12 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (float arg0): void
        */
-      setNight(arg0: number): void;
-      /**
-       * Method Parameters: 
-       *  - (float arg0): void
-       */
       setNightMax(arg0: number): void;
       /**
        * Method Parameters: 
        *  - (float arg0): void
        */
       setNightMin(arg0: number): void;
-      /**
-       * Method Parameters: 
-       *  - (float arg0): void
-       */
-      setNightTint(arg0: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -1544,13 +1625,6 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       static isGamePaused(): boolean;
-      /**
-       * @noSelf
-       *
-       * Method Parameters: 
-       *  - (ByteBuffer arg0, UdpConnection arg1): void
-       */
-      static receiveTimeSync(arg0: java.nio.ByteBuffer, arg1: zombie.core.raknet.UdpConnection): void;
       /**
        * @noSelf
        *
@@ -1712,6 +1786,13 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (ByteBuffer arg0): java.util.UUID
+       */
+      static ReadUUID(arg0: java.nio.ByteBuffer): java.util.UUID;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (DataOutputStream arg0, String arg1): void
        *  - (ByteBuffer arg0, String arg1): void
        */
@@ -1727,6 +1808,13 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (ByteBuffer arg0, UUID arg1): void
+       */
+      static WriteUUID(arg0: java.nio.ByteBuffer, arg1: java.util.UUID): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       static doRenderEvent(arg0: boolean): void;
@@ -1737,6 +1825,27 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): string
        */
       static getCoopServerHome(): string;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): java.nio.ByteBuffer
+       */
+      static getEncodedBytesUTF(arg0: string): java.nio.ByteBuffer;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      static getUpdateTime(): number;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      static isIngameState(): boolean;
       /**
        * @noSelf
        *
@@ -1921,6 +2030,29 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Empty): number
+       *  - (IsoGridSquare arg0): number
+       */
+      getCurrentDiminishedLootPercentage(arg0?: zombie.iso.IsoGridSquare): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       *  - (IsoGridSquare arg0): number
+       */
+      getCurrentLootMultiplier(arg0?: zombie.iso.IsoGridSquare): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       *  - (IsoGridSquare arg0): number
+       */
+      getCurrentLootedChance(arg0?: zombie.iso.IsoGridSquare): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getCurrentRatIndex(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
        */
       getDayLengthMinutes(): number;
       /**
@@ -1952,11 +2084,6 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): number
        */
-      getFoodLootModifier(): number;
-      /**
-       * Method Parameters: 
-       *  - (Empty): number
-       */
       getNumOptions(): number;
       /**
        * Method Parameters: 
@@ -1968,11 +2095,6 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): zombie.SandboxOptions$SandboxOption
        */
       getOptionByName(arg0: string): zombie.SandboxOptions$SandboxOption;
-      /**
-       * Method Parameters: 
-       *  - (Empty): number
-       */
-      getOtherLootModifier(): number;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -2000,11 +2122,6 @@ declare module '@asledgehammer/pipewrench' {
       getWaterShutModifier(): number;
       /**
        * Method Parameters: 
-       *  - (Empty): number
-       */
-      getWeaponLootModifier(): number;
-      /**
-       * Method Parameters: 
        *  - (Empty): void
        */
       handleOldServerZombiesFile(): void;
@@ -2023,6 +2140,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): void
        */
       initSandboxVars(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isUnstableScriptNameSpam(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -2069,6 +2191,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (CustomSandboxOption arg0): void
        */
       newCustomOption(arg0: zombie.sandbox.CustomSandboxOption): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): number
+       */
+      randomAlarmDecay(arg0: number): number;
       /**
        * Method Parameters: 
        *  - (int arg0): number
@@ -2150,6 +2277,14 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): boolean
        */
       static isValidPresetName(arg0: string): boolean;
+    }
+    /**
+     * @customConstructor Basement.new
+     * @
+     * [CLASS] zombie.SandboxOptions$Basement
+     */
+    export class SandboxOptions$Basement {
+
     }
     /**
      * @customConstructor BooleanSandboxOption.new
@@ -2242,6 +2377,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): boolean
        */
       isValidString(arg0: string): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.config.ConfigOption
+       */
+      makeCopy(): zombie.config.ConfigOption;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -2389,6 +2529,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): boolean
        */
       isValidString(arg0: string): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.config.ConfigOption
+       */
+      makeCopy(): zombie.config.ConfigOption;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -2558,6 +2703,11 @@ declare module '@asledgehammer/pipewrench' {
       isValidString(arg0: string): boolean;
       /**
        * Method Parameters: 
+       *  - (Empty): zombie.config.ConfigOption
+       */
+      makeCopy(): zombie.config.ConfigOption;
+      /**
+       * Method Parameters: 
        *  - (String arg0): void
        */
       parse(arg0: string): void;
@@ -2710,6 +2860,11 @@ declare module '@asledgehammer/pipewrench' {
       isValidString(arg0: string): boolean;
       /**
        * Method Parameters: 
+       *  - (Empty): zombie.config.ConfigOption
+       */
+      makeCopy(): zombie.config.ConfigOption;
+      /**
+       * Method Parameters: 
        *  - (String arg0): void
        */
       parse(arg0: string): void;
@@ -2760,6 +2915,14 @@ declare module '@asledgehammer/pipewrench' {
      * [CLASS] zombie.SandboxOptions$Map
      */
     export class SandboxOptions$Map {
+
+    }
+    /**
+     * @customConstructor MultiplierConfig.new
+     * @
+     * [CLASS] zombie.SandboxOptions$MultiplierConfig
+     */
+    export class SandboxOptions$MultiplierConfig {
 
     }
     /**
@@ -2873,6 +3036,11 @@ declare module '@asledgehammer/pipewrench' {
       getShortName(): string;
       /**
        * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getSplitCSVList(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
        *  - (Empty): string
        */
       getTableName(): string;
@@ -2921,6 +3089,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): boolean
        */
       isValidString(arg0: string): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.config.ConfigOption
+       */
+      makeCopy(): zombie.config.ConfigOption;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -3279,6 +3452,11 @@ declare module '@asledgehammer/pipewrench' {
       getSoundVolume(): number;
       /**
        * Method Parameters: 
+       *  - (Empty): fmod.fmod.FMODSoundEmitter
+       */
+      getUIEmitter(): fmod.fmod.FMODSoundEmitter;
+      /**
+       * Method Parameters: 
        *  - (Empty): number
        */
       getVehicleEngineVolume(): number;
@@ -3313,6 +3491,12 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): void
        */
       playAmbient(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (IsoGridSquare arg0): void
+       *  - (IsoGridSquare arg0, MaterialType arg1): void
+       */
+      playImpactSound(arg0: zombie.iso.IsoGridSquare, arg1?: zombie.iso.enums.MaterialType): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -3493,13 +3677,11 @@ declare module '@asledgehammer/pipewrench' {
      */
     export class SystemDisabler {
       /** boolean */
+      static disableSyncInventory: boolean;
+      /** boolean */
       static doCharacterStats: boolean;
       /** boolean */
       static doEnableDetectOpenGLErrorsInTexture: boolean;
-      /** boolean */
-      static doKickInDebug: boolean;
-      /** boolean */
-      static doObjectStateSyncEnable: boolean;
       /** boolean */
       static doOverridePOVCharacters: boolean;
       /** boolean */
@@ -3539,13 +3721,6 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
-      static getAllowDebugConnections(): boolean;
-      /**
-       * @noSelf
-       *
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
       static getDoMainLoopDealWithNetData(): boolean;
       /**
        * @noSelf
@@ -3560,7 +3735,21 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      static getKickInDebug(): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       static getOverrideServerConnectDebugCheck(): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      static getUncappedFPS(): boolean;
       /**
        * @noSelf
        *
@@ -3575,6 +3764,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       static getdoVehicleLowRider(): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      static printDetailedInfo(): boolean;
       /**
        * @noSelf
        *
@@ -3616,14 +3812,14 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (boolean arg0): void
        */
-      static setObjectStateSyncEnable(arg0: boolean): void;
+      static setOverridePOVCharacters(arg0: boolean): void;
       /**
        * @noSelf
        *
        * Method Parameters: 
        *  - (boolean arg0): void
        */
-      static setOverridePOVCharacters(arg0: boolean): void;
+      static setUncappedFPS(arg0: boolean): void;
       /**
        * @noSelf
        *
@@ -3697,6 +3893,17 @@ declare module '@asledgehammer/pipewrench' {
       canSpawnAt(arg0: number, arg1: number, arg2: number): boolean;
       /**
        * Method Parameters: 
+       *  - (IsoZombie arg0): boolean
+       *  - (IsoZombie arg0, boolean arg1): boolean
+       */
+      checkAndSpawnZombieForBuildingKey(arg0: zombie.characters.IsoZombie, arg1?: boolean): boolean;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, IsoGridSquare arg1): boolean
+       */
+      checkZombieKeyForBuilding(arg0: string, arg1: zombie.iso.IsoGridSquare): boolean;
+      /**
+       * Method Parameters: 
        *  - (IsoDeadBody arg0, int arg1): void
        */
       createEatingZombies(arg0: zombie.iso.objects.IsoDeadBody, arg1: number): void;
@@ -3724,6 +3931,11 @@ declare module '@asledgehammer/pipewrench' {
       createRealZombieNow(arg0: number, arg1: number, arg2: number): zombie.characters.IsoZombie;
       /**
        * Method Parameters: 
+       *  - (Empty): number
+       */
+      getKeySpawnChanceD100(): number;
+      /**
+       * Method Parameters: 
        *  - (Empty): void
        */
       init(): void;
@@ -3747,6 +3959,17 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoRoom arg0): void
        */
       roomSpotted(arg0: zombie.iso.areas.IsoRoom): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      shouldSpawnZombiesOnLevel(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (IsoZombie arg0): boolean
+       *  - (IsoZombie arg0, BuildingDef arg1): boolean
+       */
+      spawnBuildingKeyOnZombie(arg0: zombie.characters.IsoZombie, arg1?: zombie.iso.BuildingDef): boolean;
       /**
        * Method Parameters: 
        *  - (RoomDef arg0, boolean arg1): void
@@ -3783,13 +4006,15 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Object arg0, int arg1, int arg2, int arg3, int arg4, int arg5, boolean arg6): zombie.WorldSoundManager$WorldSound
        *  - (Object arg0, int arg1, int arg2, int arg3, int arg4, int arg5, boolean arg6, float arg7, float arg8): zombie.WorldSoundManager$WorldSound
        *  - (Object arg0, int arg1, int arg2, int arg3, int arg4, int arg5, boolean arg6, float arg7, float arg8, boolean arg9, boolean arg10, boolean arg11): zombie.WorldSoundManager$WorldSound
+       *  - (Object arg0, int arg1, int arg2, int arg3, int arg4, int arg5, boolean arg6, float arg7, float arg8, boolean arg9, boolean arg10, boolean arg11, boolean arg12): zombie.WorldSoundManager$WorldSound
        */
-      addSound(arg0: any, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6?: boolean, arg7?: number, arg8?: number, arg9?: boolean, arg10?: boolean, arg11?: boolean): zombie.WorldSoundManager$WorldSound;
+      addSound(arg0: any, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6?: boolean, arg7?: number, arg8?: number, arg9?: boolean, arg10?: boolean, arg11?: boolean, arg12?: boolean): zombie.WorldSoundManager$WorldSound;
       /**
        * Method Parameters: 
        *  - (Object arg0, int arg1, int arg2, int arg3, int arg4, int arg5, boolean arg6): zombie.WorldSoundManager$WorldSound
+       *  - (Object arg0, int arg1, int arg2, int arg3, int arg4, int arg5, boolean arg6, float arg7, float arg8): zombie.WorldSoundManager$WorldSound
        */
-      addSoundRepeating(arg0: any, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: boolean): zombie.WorldSoundManager$WorldSound;
+      addSoundRepeating(arg0: any, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: boolean, arg7?: number, arg8?: number): zombie.WorldSoundManager$WorldSound;
       /**
        * Method Parameters: 
        *  - (int arg0, int arg1, int arg2, boolean arg3, IsoZombie arg4): zombie.WorldSoundManager$ResultBiggestSound
@@ -3808,9 +4033,19 @@ declare module '@asledgehammer/pipewrench' {
       getNew(): zombie.WorldSoundManager$WorldSound;
       /**
        * Method Parameters: 
+       *  - (IsoAnimal arg0): zombie.WorldSoundManager$WorldSound
+       */
+      getSoundAnimal(arg0: zombie.characters.animals.IsoAnimal): zombie.WorldSoundManager$WorldSound;
+      /**
+       * Method Parameters: 
        *  - (WorldSound arg0, IsoZombie arg1): number
        */
       getSoundAttract(arg0: zombie.WorldSoundManager$WorldSound, arg1: zombie.characters.IsoZombie): number;
+      /**
+       * Method Parameters: 
+       *  - (WorldSound arg0, IsoAnimal arg1): number
+       */
+      getSoundAttractAnimal(arg0: zombie.WorldSoundManager$WorldSound, arg1: zombie.characters.animals.IsoAnimal): number;
       /**
        * Method Parameters: 
        *  - (IsoZombie arg0): zombie.WorldSoundManager$WorldSound
@@ -3867,9 +4102,9 @@ declare module '@asledgehammer/pipewrench' {
     export class WorldSoundManager$WorldSound {
       /**
        * Constructors: 
-       *  - (WorldSoundManager arg0)
+       *  - (Empty Constructor)
        */
-      constructor(arg0: zombie.WorldSoundManager);
+      constructor();
       /**
        * Method Parameters: 
        *  - (Object arg0, int arg1, int arg2, int arg3, int arg4, int arg5): zombie.WorldSoundManager$WorldSound

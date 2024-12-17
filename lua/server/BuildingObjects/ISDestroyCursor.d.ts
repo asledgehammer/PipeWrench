@@ -17,8 +17,6 @@ declare module '@asledgehammer/pipewrench/server' {
 
       dismantle: any;
 
-      floorSprite: any;
-
       noNeedHammer: any;
 
       objectIndex: any;

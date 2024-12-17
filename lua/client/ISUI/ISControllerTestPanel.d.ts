@@ -7,23 +7,15 @@ declare module '@asledgehammer/pipewrench/client' {
       [id: string]: any;
       static [id: string]: any;
 
-      axisHgt: any;
-
       axisLabelWid: any;
 
-      axisPadY: any;
-
       axisY: any;
-
-      buttonGapX: any;
-
-      buttonGapY: any;
-
-      buttonWid: any;
 
       buttonX: any;
 
       combo: any;
+
+      label: any;
 
       selectedController: any;
 
@@ -42,6 +34,8 @@ declare module '@asledgehammer/pipewrench/client' {
       OnGamepadConnect(index: any, ...__args: never[]): any;
 
       OnGamepadDisconnect(index: any, ...__args: never[]): any;
+
+      onResolutionChange(oldw: any, oldh: any, neww: any, newh: any, ...__args: never[]): any;
 
       render(...__args: never[]): any;
 
