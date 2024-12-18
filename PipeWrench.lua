@@ -7,7 +7,7 @@ function Exports.global(id) return _G[id] end
 function Exports.loadstring(lua) return loadstring(lua) end
 function Exports.execute(lua) return loadstring(lua)() end
 function Exports.addEventListener(id, func) Events[id].Add(func) end
-function Exports.removeEventListener(id, func) Events[id].Add(func) end
+function Exports.removeEventListener(id, func) Events[id].Remove(func) end
 function Exports.AddNoiseToken(arg1,arg2) return AddNoiseToken(arg1,arg2) end
 function Exports.AddWorldSound(arg1,arg2,arg3) return AddWorldSound(arg1,arg2,arg3) end
 function Exports.InvMngGetItem(arg1,arg2,arg3) return InvMngGetItem(arg1,arg2,arg3) end
