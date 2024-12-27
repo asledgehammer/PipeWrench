@@ -97,6 +97,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       getZoneTooltipText(...__args: never[]): any;
 
+      initialiseImages(imageTable: any, width: any, height: any, fade: any, ...__args: never[]): any;
+
       isLeapYear(_yearNum: any, ...__args: never[]): any;
 
       showNextTip(...__args: never[]): any;

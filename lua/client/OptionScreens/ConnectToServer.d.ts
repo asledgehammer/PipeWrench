@@ -23,7 +23,17 @@ declare module '@asledgehammer/pipewrench/client' {
 
       failMessage: any;
 
+      googleAuthButton: any;
+
+      googleAuthEntry: any;
+
+      googleAuthLabel: any;
+
+      googleAuthPopup: any;
+
       isCoop: any;
+
+      loadingBackground: any;
 
       previousScreen: any;
 
@@ -51,6 +61,8 @@ declare module '@asledgehammer/pipewrench/client' {
         port: any,
         serverPassword: any,
         useSteamRelay: any,
+        doHash: any,
+        authType: any,
         ...__args: never[]
       ): any;
 
@@ -68,7 +80,11 @@ declare module '@asledgehammer/pipewrench/client' {
 
       onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
+      OnGoogleAuthRequest(...__args: never[]): any;
+
       onResize(width: any, height: any, ...__args: never[]): any;
+
+      onSendButton(...__args: never[]): any;
 
       render(...__args: never[]): any;
     }

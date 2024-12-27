@@ -34,6 +34,21 @@ declare module '@asledgehammer/pipewrench' {
       ClearChildren(): void;
       /**
        * Method Parameters: 
+       *  - (InventoryItem arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
+       */
+      DrawItemIcon(arg0: zombie.inventory.InventoryItem, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, float arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawLine(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Item arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
+       */
+      DrawScriptItemIcon(arg0: zombie.scripting.objects.Item, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9, double arg10, double arg11, double arg12): void
        */
       DrawSubTextureRGBA(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number, arg12: number): void;
@@ -86,9 +101,29 @@ declare module '@asledgehammer/pipewrench' {
       DrawTextureColor(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): void;
       /**
        * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureIcon(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTextureIconMask(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
        */
       DrawTextureIgnoreOffset(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTexturePercentage(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTexturePercentageBottomUp(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
@@ -104,6 +139,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
       DrawTextureScaledAspect2(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureScaledAspect3(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, Color arg5): void
@@ -137,6 +177,11 @@ declare module '@asledgehammer/pipewrench' {
       DrawTextureTiledY(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
       /**
        * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureTiledYOffset(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
        */
       DrawTexture_FlippedX(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
@@ -152,6 +197,11 @@ declare module '@asledgehammer/pipewrench' {
       DrawUVSliceTexture(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color, arg6: number, arg7: number, arg8: number, arg9: number): void;
       /**
        * Method Parameters: 
+       *  - (Empty): void
+       */
+      EndOutline(): void;
+      /**
+       * Method Parameters: 
        *  - (UIElement arg0): void
        */
       RemoveChild(arg0: zombie.ui.UIElement): void;
@@ -160,6 +210,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (UIElement arg0): void
        */
       RemoveControl(arg0: zombie.ui.UIElement): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5): void
+       */
+      StartOutline(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -223,8 +278,9 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Empty): zombie.ui.UIElement
+       *  - (Empty): zombie.ui.UIElementInterface
        */
-      getParent(): zombie.ui.UIElement;
+      getParent(): zombie.ui.UIElement | zombie.ui.UIElementInterface;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -314,6 +370,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isAlwaysOnTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isAnchorBottom(): boolean;
       /**
        * Method Parameters: 
@@ -330,6 +391,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       isAnchorTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isBackMost(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -379,7 +445,17 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (double arg0, double arg1): boolean
        */
+      isOverElement(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): boolean
+       */
       isPointOver(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isReallyVisible(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -389,7 +465,52 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isWantExtraMouseEvents(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isWantKeyEvents(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyPress(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRelease(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRepeat(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonDown(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonUp(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): boolean
+       */
+      onConsumeMouseMove(arg0: number, arg1: number, arg2: number, arg3: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseWheel(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): void
+       */
+      onExtendMouseMoveOutside(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -405,6 +526,21 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0): void
        */
       onKeyRepeat(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDown(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDownOutside(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonUpOutside(arg0: number, arg1: number, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (double arg0, double arg1): boolean
@@ -624,6 +760,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (boolean arg0): void
        */
+      setWantExtraMouseEvents(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
       setWantKeyEvents(arg0: boolean): void;
       /**
        * Method Parameters: 
@@ -673,6 +814,2091 @@ declare module '@asledgehammer/pipewrench' {
       update(arg0?: number): void;
     }
     /**
+     * @customConstructor AtomUI.new
+     * @
+     * [CLASS] zombie.ui.AtomUI
+     */
+    export class AtomUI {
+      /**
+       * Constructors: 
+       *  - (KahluaTable arg0)
+       */
+      constructor(arg0: se.krka.kahlua.vm.KahluaTable);
+      /**
+       * Method Parameters: 
+       *  - (AtomUI arg0): void
+       */
+      addNode(arg0: zombie.ui.AtomUI): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      bringToTop(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      clearStencilRect(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getAngle(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): se.krka.kahlua.vm.KahluaTable
+       */
+      getColor(): se.krka.kahlua.vm.KahluaTable;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getHeight(): number;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): se.krka.kahlua.vm.KahluaTable
+       */
+      getLuaAbsolutePosition(arg0: number, arg1: number): se.krka.kahlua.vm.KahluaTable;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): se.krka.kahlua.vm.KahluaTable
+       */
+      getLuaLocalPosition(arg0: number, arg1: number): se.krka.kahlua.vm.KahluaTable;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): se.krka.kahlua.vm.KahluaTable
+       */
+      getLuaParentPosition(arg0: number, arg1: number): se.krka.kahlua.vm.KahluaTable;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getMaxDrawHeight(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<zombie.ui.AtomUI>
+       */
+      getNodes(): java.util.ArrayList<zombie.ui.AtomUI>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.ui.UIElementInterface
+       */
+      getParent(): zombie.ui.UIElementInterface;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.ui.AtomUI
+       */
+      getParentNode(): zombie.ui.AtomUI;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getPivotX(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getPivotY(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getRenderThisPlayerOnly(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScaleX(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScaleY(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): se.krka.kahlua.vm.KahluaTable
+       */
+      getTable(): se.krka.kahlua.vm.KahluaTable;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getUIName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getWidth(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getX(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getY(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      init(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isAlwaysOnTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isBackMost(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isCapture(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isDefaultDraw(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEnabled(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isFollowGameWorld(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isForceCursorVisible(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isIgnoreLossControl(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isMouseOver(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): boolean
+       */
+      isOverElement(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): boolean
+       */
+      isPointOver(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isVisible(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isWantKeyEvents(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyPress(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRelease(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRepeat(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonDown(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonUp(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): boolean
+       */
+      onConsumeMouseMove(arg0: number, arg1: number, arg2: number, arg3: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseWheel(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): void
+       */
+      onExtendMouseMoveOutside(arg0: number, arg1: number, arg2: number, arg3: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDownOutside(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonUpOutside(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (AtomUI arg0): void
+       */
+      removeNode(arg0: zombie.ui.AtomUI): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      render(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      repaintStencilRect(): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setAlwaysOnTop(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setAngle(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setBackMost(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): void
+       */
+      setColor(arg0: number, arg1: number, arg2: number, arg3: number): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setEnabled(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setHeight(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setHeightSilent(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (AtomUI arg0): void
+       */
+      setParentNode(arg0: zombie.ui.AtomUI): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setPivotX(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setPivotY(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setScaleX(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setScaleY(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      setStencilRect(): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      setUIName(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setVisible(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setWidth(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setWidthSilent(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setX(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setY(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      update(): void;
+    }
+    /**
+     * @customConstructor AtomUIMap.new
+     * @
+     * [CLASS] zombie.ui.AtomUIMap extends zombie.ui.AtomUI
+     */
+    export class AtomUIMap {
+      /**
+       * Constructors: 
+       *  - (KahluaTable arg0)
+       */
+      constructor(arg0: se.krka.kahlua.vm.KahluaTable);
+      /**
+       * Method Parameters: 
+       *  - (AtomUI arg0): void
+       */
+      addNode(arg0: zombie.ui.AtomUI): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      bringToTop(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      clearStencilRect(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getAngle(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): se.krka.kahlua.vm.KahluaTable
+       */
+      getColor(): se.krka.kahlua.vm.KahluaTable;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getHeight(): number;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): se.krka.kahlua.vm.KahluaTable
+       */
+      getLuaAbsolutePosition(arg0: number, arg1: number): se.krka.kahlua.vm.KahluaTable;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): se.krka.kahlua.vm.KahluaTable
+       */
+      getLuaLocalPosition(arg0: number, arg1: number): se.krka.kahlua.vm.KahluaTable;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): se.krka.kahlua.vm.KahluaTable
+       */
+      getLuaParentPosition(arg0: number, arg1: number): se.krka.kahlua.vm.KahluaTable;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.worldMap.UIWorldMap
+       */
+      getMapUI(): zombie.worldMap.UIWorldMap;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getMaxDrawHeight(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<zombie.ui.AtomUI>
+       */
+      getNodes(): java.util.ArrayList<zombie.ui.AtomUI>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.ui.UIElementInterface
+       */
+      getParent(): zombie.ui.UIElementInterface;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.ui.AtomUI
+       */
+      getParentNode(): zombie.ui.AtomUI;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getPivotX(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getPivotY(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getRenderThisPlayerOnly(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScaleX(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScaleY(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): se.krka.kahlua.vm.KahluaTable
+       */
+      getTable(): se.krka.kahlua.vm.KahluaTable;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getUIName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getWidth(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getX(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getY(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      init(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isAlwaysOnTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isBackMost(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isCapture(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isDefaultDraw(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEnabled(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isFollowGameWorld(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isForceCursorVisible(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isIgnoreLossControl(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isMouseOver(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): boolean
+       */
+      isOverElement(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): boolean
+       */
+      isPointOver(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isVisible(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isWantKeyEvents(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyPress(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRelease(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRepeat(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonDown(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonUp(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): boolean
+       */
+      onConsumeMouseMove(arg0: number, arg1: number, arg2: number, arg3: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseWheel(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): void
+       */
+      onExtendMouseMoveOutside(arg0: number, arg1: number, arg2: number, arg3: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDownOutside(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonUpOutside(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (AtomUI arg0): void
+       */
+      removeNode(arg0: zombie.ui.AtomUI): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      render(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      repaintStencilRect(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      revealOnMap(): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setAlwaysOnTop(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setAngle(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setBackMost(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): void
+       */
+      setColor(arg0: number, arg1: number, arg2: number, arg3: number): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setEnabled(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setHeight(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setHeightSilent(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (AtomUI arg0): void
+       */
+      setParentNode(arg0: zombie.ui.AtomUI): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setPivotX(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setPivotY(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setScaleX(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setScaleY(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      setStencilRect(): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      setUIName(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setVisible(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setWidth(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setWidthSilent(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setX(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setY(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      update(): void;
+    }
+    /**
+     * @customConstructor AtomUIText.new
+     * @
+     * [CLASS] zombie.ui.AtomUIText extends zombie.ui.AtomUI
+     */
+    export class AtomUIText {
+      /**
+       * Constructors: 
+       *  - (KahluaTable arg0)
+       */
+      constructor(arg0: se.krka.kahlua.vm.KahluaTable);
+      /**
+       * Method Parameters: 
+       *  - (AtomUI arg0): void
+       */
+      addNode(arg0: zombie.ui.AtomUI): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      bringToTop(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      clearStencilRect(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getAngle(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): se.krka.kahlua.vm.KahluaTable
+       */
+      getColor(): se.krka.kahlua.vm.KahluaTable;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getHeight(): number;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): se.krka.kahlua.vm.KahluaTable
+       */
+      getLuaAbsolutePosition(arg0: number, arg1: number): se.krka.kahlua.vm.KahluaTable;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): se.krka.kahlua.vm.KahluaTable
+       */
+      getLuaLocalPosition(arg0: number, arg1: number): se.krka.kahlua.vm.KahluaTable;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): se.krka.kahlua.vm.KahluaTable
+       */
+      getLuaParentPosition(arg0: number, arg1: number): se.krka.kahlua.vm.KahluaTable;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getMaxDrawHeight(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<zombie.ui.AtomUI>
+       */
+      getNodes(): java.util.ArrayList<zombie.ui.AtomUI>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.ui.UIElementInterface
+       */
+      getParent(): zombie.ui.UIElementInterface;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.ui.AtomUI
+       */
+      getParentNode(): zombie.ui.AtomUI;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getPivotX(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getPivotY(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getRenderThisPlayerOnly(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScaleX(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScaleY(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): se.krka.kahlua.vm.KahluaTable
+       */
+      getTable(): se.krka.kahlua.vm.KahluaTable;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getTextHeight(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getTextWidth(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getUIName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getWidth(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getX(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getY(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      init(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isAlwaysOnTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isBackMost(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isCapture(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isDefaultDraw(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEnabled(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isFollowGameWorld(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isForceCursorVisible(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isIgnoreLossControl(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isMouseOver(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): boolean
+       */
+      isOverElement(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): boolean
+       */
+      isPointOver(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isVisible(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isWantKeyEvents(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyPress(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRelease(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRepeat(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonDown(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonUp(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): boolean
+       */
+      onConsumeMouseMove(arg0: number, arg1: number, arg2: number, arg3: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseWheel(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): void
+       */
+      onExtendMouseMoveOutside(arg0: number, arg1: number, arg2: number, arg3: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDownOutside(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonUpOutside(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (AtomUI arg0): void
+       */
+      removeNode(arg0: zombie.ui.AtomUI): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      render(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      repaintStencilRect(): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setAlwaysOnTop(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setAngle(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Double arg0): void
+       */
+      setAutoWidth(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setBackMost(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): void
+       */
+      setColor(arg0: number, arg1: number, arg2: number, arg3: number): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setEnabled(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (UIFont arg0): void
+       */
+      setFont(arg0: zombie.ui.UIFont): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setHeight(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setHeightSilent(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (AtomUI arg0): void
+       */
+      setParentNode(arg0: zombie.ui.AtomUI): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setPivotX(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setPivotY(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setScaleX(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setScaleY(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      setStencilRect(): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      setText(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      setUIName(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setVisible(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setWidth(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setWidthSilent(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setX(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setY(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      update(): void;
+    }
+    /**
+     * @customConstructor AtomUITextEntry.new
+     * @
+     * [CLASS] zombie.ui.AtomUITextEntry extends zombie.ui.AtomUI
+     */
+    export class AtomUITextEntry {
+      /**
+       * Constructors: 
+       *  - (KahluaTable arg0)
+       */
+      constructor(arg0: se.krka.kahlua.vm.KahluaTable);
+      /**
+       * Method Parameters: 
+       *  - (AtomUI arg0): void
+       */
+      addNode(arg0: zombie.ui.AtomUI): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      bringToTop(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      clearStencilRect(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      copyToClipboard(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      cutToClipboard(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      focus(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getAngle(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): se.krka.kahlua.vm.KahluaTable
+       */
+      getColor(): se.krka.kahlua.vm.KahluaTable;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getForceUpperCase(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.ui.UINineGrid
+       */
+      getFrame(): zombie.ui.UINineGrid;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getHeight(): number;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): se.krka.kahlua.vm.KahluaTable
+       */
+      getLuaAbsolutePosition(arg0: number, arg1: number): se.krka.kahlua.vm.KahluaTable;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): se.krka.kahlua.vm.KahluaTable
+       */
+      getLuaLocalPosition(arg0: number, arg1: number): se.krka.kahlua.vm.KahluaTable;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): se.krka.kahlua.vm.KahluaTable
+       */
+      getLuaParentPosition(arg0: number, arg1: number): se.krka.kahlua.vm.KahluaTable;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getMaxDrawHeight(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getMaxTextLength(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<zombie.ui.AtomUI>
+       */
+      getNodes(): java.util.ArrayList<zombie.ui.AtomUI>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.ui.UIElementInterface
+       */
+      getParent(): zombie.ui.UIElementInterface;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.ui.AtomUI
+       */
+      getParentNode(): zombie.ui.AtomUI;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getPivotX(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getPivotY(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getRenderThisPlayerOnly(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScaleX(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScaleY(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.Color
+       */
+      getStandardFrameColour(): zombie.core.Color;
+      /**
+       * Method Parameters: 
+       *  - (Empty): se.krka.kahlua.vm.KahluaTable
+       */
+      getTable(): se.krka.kahlua.vm.KahluaTable;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getText(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getUIName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getWidth(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getX(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getY(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      init(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isAlwaysOnTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isBackMost(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isCapture(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isDefaultDraw(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isDoingTextEntry(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEditable(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEnabled(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isFollowGameWorld(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isForceCursorVisible(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isIgnoreFirst(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isIgnoreLossControl(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isMask(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isMouseOver(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isMultiline(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isOnlyNumbers(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isOnlyText(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): boolean
+       */
+      isOverElement(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): boolean
+       */
+      isPointOver(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isTextLimit(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isVisible(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isWantKeyEvents(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyPress(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRelease(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRepeat(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonDown(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonUp(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): boolean
+       */
+      onConsumeMouseMove(arg0: number, arg1: number, arg2: number, arg3: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseWheel(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): void
+       */
+      onExtendMouseMoveOutside(arg0: number, arg1: number, arg2: number, arg3: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      onKeyBack(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      onKeyDelete(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      onKeyDown(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      onKeyEnd(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      onKeyEnter(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      onKeyHome(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      onKeyLeft(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      onKeyRight(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      onKeyUp(): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDownOutside(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonUpOutside(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): void
+       */
+      onOtherKey(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      pasteFromClipboard(): void;
+      /**
+       * Method Parameters: 
+       *  - (char arg0): void
+       */
+      putCharacter(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (AtomUI arg0): void
+       */
+      removeNode(arg0: zombie.ui.AtomUI): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      render(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      repaintStencilRect(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      resetBlink(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      selectAll(): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setAlwaysOnTop(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setAngle(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setBackMost(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): void
+       */
+      setColor(arg0: number, arg1: number, arg2: number, arg3: number): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setDoingTextEntry(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setEnabled(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (UIFont arg0): void
+       */
+      setFont(arg0: zombie.ui.UIFont): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setForceUpperCase(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setHeight(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setHeightSilent(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setIgnoreFirst(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setMask(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): void
+       */
+      setMaxTextLength(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setMultiline(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setOnlyNumbers(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setOnlyText(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (AtomUI arg0): void
+       */
+      setParentNode(arg0: zombie.ui.AtomUI): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setPivotX(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setPivotY(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setScaleX(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setScaleY(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setSelectingRange(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      setStencilRect(): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      setText(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      setUIName(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setVisible(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setWidth(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setWidthSilent(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setX(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setY(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      unfocus(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      update(): void;
+    }
+    /**
+     * @customConstructor AtomUITexture.new
+     * @
+     * [CLASS] zombie.ui.AtomUITexture extends zombie.ui.AtomUI
+     */
+    export class AtomUITexture {
+      /**
+       * Constructors: 
+       *  - (KahluaTable arg0)
+       */
+      constructor(arg0: se.krka.kahlua.vm.KahluaTable);
+      /**
+       * Method Parameters: 
+       *  - (AtomUI arg0): void
+       */
+      addNode(arg0: zombie.ui.AtomUI): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      animPause(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      animPlay(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      animStop(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      bringToTop(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      clearStencilRect(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getAngle(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): se.krka.kahlua.vm.KahluaTable
+       */
+      getColor(): se.krka.kahlua.vm.KahluaTable;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getHeight(): number;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): se.krka.kahlua.vm.KahluaTable
+       */
+      getLuaAbsolutePosition(arg0: number, arg1: number): se.krka.kahlua.vm.KahluaTable;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): se.krka.kahlua.vm.KahluaTable
+       */
+      getLuaLocalPosition(arg0: number, arg1: number): se.krka.kahlua.vm.KahluaTable;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): se.krka.kahlua.vm.KahluaTable
+       */
+      getLuaParentPosition(arg0: number, arg1: number): se.krka.kahlua.vm.KahluaTable;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getMaxDrawHeight(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<zombie.ui.AtomUI>
+       */
+      getNodes(): java.util.ArrayList<zombie.ui.AtomUI>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.ui.UIElementInterface
+       */
+      getParent(): zombie.ui.UIElementInterface;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.ui.AtomUI
+       */
+      getParentNode(): zombie.ui.AtomUI;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getPivotX(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getPivotY(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getRenderThisPlayerOnly(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScaleX(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getScaleY(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): se.krka.kahlua.vm.KahluaTable
+       */
+      getTable(): se.krka.kahlua.vm.KahluaTable;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getUIName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getWidth(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getX(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getY(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      init(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isAlwaysOnTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isBackMost(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isCapture(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isDefaultDraw(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEnabled(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isFollowGameWorld(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isForceCursorVisible(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isIgnoreLossControl(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isMouseOver(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): boolean
+       */
+      isOverElement(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): boolean
+       */
+      isPointOver(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isVisible(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isWantKeyEvents(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyPress(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRelease(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRepeat(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonDown(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonUp(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): boolean
+       */
+      onConsumeMouseMove(arg0: number, arg1: number, arg2: number, arg3: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseWheel(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): void
+       */
+      onExtendMouseMoveOutside(arg0: number, arg1: number, arg2: number, arg3: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDownOutside(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonUpOutside(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (AtomUI arg0): void
+       */
+      removeNode(arg0: zombie.ui.AtomUI): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      render(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      repaintStencilRect(): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setAlwaysOnTop(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setAngle(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): void
+       */
+      setAnimValues(arg0: number, arg1: number, arg2: number, arg3: number): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setBackMost(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): void
+       */
+      setColor(arg0: number, arg1: number, arg2: number, arg3: number): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setEnabled(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setHeight(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setHeightSilent(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (AtomUI arg0): void
+       */
+      setParentNode(arg0: zombie.ui.AtomUI): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setPivotX(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setPivotY(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setScaleX(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setScaleY(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): void
+       */
+      setSlice9(arg0: number, arg1: number, arg2: number, arg3: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      setStencilRect(): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0): void
+       */
+      setTexture(arg0: zombie.core.textures.Texture): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      setUIName(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setVisible(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setWidth(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setWidthSilent(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setX(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (double arg0): void
+       */
+      setY(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      update(): void;
+    }
+    /**
      * @customConstructor Clock.new
      * @
      * [CLASS] zombie.ui.Clock extends zombie.ui.UIElement
@@ -706,6 +2932,21 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): void
        */
       ClearChildren(): void;
+      /**
+       * Method Parameters: 
+       *  - (InventoryItem arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
+       */
+      DrawItemIcon(arg0: zombie.inventory.InventoryItem, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, float arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawLine(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Item arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
+       */
+      DrawScriptItemIcon(arg0: zombie.scripting.objects.Item, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9, double arg10, double arg11, double arg12): void
@@ -760,9 +3001,29 @@ declare module '@asledgehammer/pipewrench' {
       DrawTextureColor(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): void;
       /**
        * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureIcon(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTextureIconMask(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
        */
       DrawTextureIgnoreOffset(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTexturePercentage(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTexturePercentageBottomUp(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
@@ -778,6 +3039,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
       DrawTextureScaledAspect2(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureScaledAspect3(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, Color arg5): void
@@ -811,6 +3077,11 @@ declare module '@asledgehammer/pipewrench' {
       DrawTextureTiledY(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
       /**
        * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureTiledYOffset(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
        */
       DrawTexture_FlippedX(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
@@ -826,6 +3097,11 @@ declare module '@asledgehammer/pipewrench' {
       DrawUVSliceTexture(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color, arg6: number, arg7: number, arg8: number, arg9: number): void;
       /**
        * Method Parameters: 
+       *  - (Empty): void
+       */
+      EndOutline(): void;
+      /**
+       * Method Parameters: 
        *  - (UIElement arg0): void
        */
       RemoveChild(arg0: zombie.ui.UIElement): void;
@@ -834,6 +3110,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (UIElement arg0): void
        */
       RemoveControl(arg0: zombie.ui.UIElement): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5): void
+       */
+      StartOutline(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -897,8 +3178,9 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Empty): zombie.ui.UIElement
+       *  - (Empty): zombie.ui.UIElementInterface
        */
-      getParent(): zombie.ui.UIElement;
+      getParent(): zombie.ui.UIElement | zombie.ui.UIElementInterface;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -983,6 +3265,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isAlwaysOnTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isAnchorBottom(): boolean;
       /**
        * Method Parameters: 
@@ -999,6 +3286,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       isAnchorTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isBackMost(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -1053,7 +3345,17 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (double arg0, double arg1): boolean
        */
+      isOverElement(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): boolean
+       */
       isPointOver(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isReallyVisible(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -1063,7 +3365,52 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isWantExtraMouseEvents(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isWantKeyEvents(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyPress(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRelease(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRepeat(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonDown(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonUp(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): boolean
+       */
+      onConsumeMouseMove(arg0: number, arg1: number, arg2: number, arg3: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseWheel(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): void
+       */
+      onExtendMouseMoveOutside(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -1079,6 +3426,21 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0): void
        */
       onKeyRepeat(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDown(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDownOutside(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonUpOutside(arg0: number, arg1: number, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (double arg0, double arg1): boolean
@@ -1298,665 +3660,7 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (boolean arg0): void
        */
-      setWantKeyEvents(arg0: boolean): void;
-      /**
-       * Method Parameters: 
-       *  - (double arg0): void
-       */
-      setWidth(arg0: number): void;
-      /**
-       * Method Parameters: 
-       *  - (double arg0): void
-       */
-      setWidthOnly(arg0: number): void;
-      /**
-       * Method Parameters: 
-       *  - (double arg0): void
-       */
-      setWidthSilent(arg0: number): void;
-      /**
-       * Method Parameters: 
-       *  - (double arg0): void
-       */
-      setX(arg0: number): void;
-      /**
-       * Method Parameters: 
-       *  - (double arg0): void
-       */
-      setXScroll(arg0: number): void;
-      /**
-       * Method Parameters: 
-       *  - (double arg0): void
-       */
-      setY(arg0: number): void;
-      /**
-       * Method Parameters: 
-       *  - (double arg0): void
-       */
-      setYScroll(arg0: number): void;
-      /**
-       * Method Parameters: 
-       *  - (Empty): void
-       */
-      suspendStencil(): void;
-      /**
-       * Method Parameters: 
-       *  - (Empty): void
-       */
-      update(): void;
-    }
-    /**
-     * @customConstructor HUDButton.new
-     * @
-     * [CLASS] zombie.ui.HUDButton extends zombie.ui.UIElement
-     */
-    export class HUDButton {
-      /**
-       * Constructors: 
-       *  - (String arg0, double arg1, double arg2, String arg3, String arg4, UIElement arg5)
-       *  - (String arg0, float arg1, float arg2, String arg3, String arg4, UIEventHandler arg5)
-       *  - (String arg0, float arg1, float arg2, String arg3, String arg4, String arg5, UIElement arg6)
-       *  - (String arg0, float arg1, float arg2, String arg3, String arg4, String arg5, UIEventHandler arg6)
-       */
-      constructor(arg0: string, arg1: number, arg2: number, arg3: string, arg4: string, arg5: zombie.ui.UIElement | zombie.ui.UIEventHandler | string, arg6?: zombie.ui.UIElement | zombie.ui.UIEventHandler);
-      /**
-       * Method Parameters: 
-       *  - (UIElement arg0): void
-       */
-      AddChild(arg0: zombie.ui.UIElement): void;
-      /**
-       * Method Parameters: 
-       *  - (UIElement arg0): void
-       */
-      BringToTop(arg0: zombie.ui.UIElement): void;
-      /**
-       * Method Parameters: 
-       *  - (String arg0): void
-       */
-      ButtonClicked(arg0: string): void;
-      /**
-       * Method Parameters: 
-       *  - (Empty): void
-       */
-      ClearChildren(): void;
-      /**
-       * Method Parameters: 
-       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9, double arg10, double arg11, double arg12): void
-       */
-      DrawSubTextureRGBA(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number, arg12: number): void;
-      /**
-       * Method Parameters: 
-       *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
-       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
-       *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
-       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
-       */
-      DrawText(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number, arg8?: number): void;
-      /**
-       * Method Parameters: 
-       *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
-       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
-       */
-      DrawTextCentre(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
-      /**
-       * Method Parameters: 
-       *  - (String arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
-       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
-       */
-      DrawTextRight(arg0: string | zombie.ui.UIFont, arg1: number | string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7?: number): void;
-      /**
-       * Method Parameters: 
-       *  - (UIFont arg0, String arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
-       */
-      DrawTextUntrimmed(arg0: zombie.ui.UIFont, arg1: string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number): void;
-      /**
-       * Method Parameters: 
-       *  - (Texture arg0, double arg1, double arg2, double arg3): void
-       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9, double arg10, double arg11, double arg12): void
-       */
-      DrawTexture(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4?: number, arg5?: number, arg6?: number, arg7?: number, arg8?: number, arg9?: number, arg10?: number, arg11?: number, arg12?: number): void;
-      /**
-       * Method Parameters: 
-       *  - (Texture arg0, double arg1, double arg2, double arg3): void
-       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
-       */
-      DrawTextureAngle(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4?: number, arg5?: number, arg6?: number, arg7?: number): void;
-      /**
-       * Method Parameters: 
-       *  - (Texture arg0, double arg1, double arg2, Color arg3): void
-       */
-      DrawTextureCol(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: zombie.core.Color): void;
-      /**
-       * Method Parameters: 
-       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6): void
-       */
-      DrawTextureColor(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): void;
-      /**
-       * Method Parameters: 
-       *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
-       */
-      DrawTextureIgnoreOffset(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
-      /**
-       * Method Parameters: 
-       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
-       */
-      DrawTextureScaled(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
-      /**
-       * Method Parameters: 
-       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
-       */
-      DrawTextureScaledAspect(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
-      /**
-       * Method Parameters: 
-       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
-       */
-      DrawTextureScaledAspect2(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
-      /**
-       * Method Parameters: 
-       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, Color arg5): void
-       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
-       */
-      DrawTextureScaledCol(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color | number, arg6?: number, arg7?: number, arg8?: number): void;
-      /**
-       * Method Parameters: 
-       *  - (Texture arg0, Double arg1, Double arg2, Double arg3, Double arg4, Double arg5, Double arg6, Double arg7, Double arg8): void
-       */
-      DrawTextureScaledColor(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
-      /**
-       * Method Parameters: 
-       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7): void
-       */
-      DrawTextureScaledUniform(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number): void;
-      /**
-       * Method Parameters: 
-       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
-       */
-      DrawTextureTiled(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
-      /**
-       * Method Parameters: 
-       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
-       */
-      DrawTextureTiledX(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
-      /**
-       * Method Parameters: 
-       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
-       */
-      DrawTextureTiledY(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
-      /**
-       * Method Parameters: 
-       *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
-       */
-      DrawTexture_FlippedX(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
-      /**
-       * Method Parameters: 
-       *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
-       */
-      DrawTexture_FlippedXIgnoreOffset(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
-      /**
-       * Method Parameters: 
-       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, Color arg5, double arg6, double arg7, double arg8, double arg9): void
-       */
-      DrawUVSliceTexture(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color, arg6: number, arg7: number, arg8: number, arg9: number): void;
-      /**
-       * Method Parameters: 
-       *  - (UIElement arg0): void
-       */
-      RemoveChild(arg0: zombie.ui.UIElement): void;
-      /**
-       * Method Parameters: 
-       *  - (UIElement arg0): void
-       */
-      RemoveControl(arg0: zombie.ui.UIElement): void;
-      /**
-       * Method Parameters: 
-       *  - (Empty): void
-       */
-      backMost(): void;
-      /**
-       * Method Parameters: 
-       *  - (Empty): void
-       */
-      bringToTop(): void;
-      /**
-       * Method Parameters: 
-       *  - (double arg0): number
-       */
-      clampToParentX(arg0: number): number;
-      /**
-       * Method Parameters: 
-       *  - (double arg0): number
-       */
-      clampToParentY(arg0: number): number;
-      /**
-       * Method Parameters: 
-       *  - (Empty): void
-       */
-      clearMaxDrawHeight(): void;
-      /**
-       * Method Parameters: 
-       *  - (Empty): void
-       */
-      clearStencilRect(): void;
-      /**
-       * Method Parameters: 
-       *  - (Empty): number
-       */
-      getAbsoluteX(): number;
-      /**
-       * Method Parameters: 
-       *  - (Empty): number
-       */
-      getAbsoluteY(): number;
-      /**
-       * Method Parameters: 
-       *  - (Empty): string
-       */
-      getClickedValue(): string;
-      /**
-       * Method Parameters: 
-       *  - (Empty): java.util.ArrayList<zombie.ui.UIElement>
-       */
-      getControls(): java.util.ArrayList<zombie.ui.UIElement>;
-      /**
-       * Method Parameters: 
-       *  - (Empty): number
-       */
-      getHeight(): number;
-      /**
-       * Method Parameters: 
-       *  - (Empty): number
-       */
-      getMaxDrawHeight(): number;
-      /**
-       * Method Parameters: 
-       *  - (Empty): zombie.ui.UIElement
-       */
-      getParent(): zombie.ui.UIElement;
-      /**
-       * Method Parameters: 
-       *  - (Empty): number
-       */
-      getPlayerContext(): number;
-      /**
-       * Method Parameters: 
-       *  - (Empty): number
-       */
-      getRenderThisPlayerOnly(): number;
-      /**
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      getScrollChildren(): boolean;
-      /**
-       * Method Parameters: 
-       *  - (Empty): number
-       */
-      getScrollHeight(): number;
-      /**
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      getScrollWithParent(): boolean;
-      /**
-       * Method Parameters: 
-       *  - (Empty): se.krka.kahlua.vm.KahluaTable
-       */
-      getTable(): se.krka.kahlua.vm.KahluaTable;
-      /**
-       * Method Parameters: 
-       *  - (Empty): string
-       */
-      getUIName(): string;
-      /**
-       * Method Parameters: 
-       *  - (Empty): number
-       */
-      getWidth(): number;
-      /**
-       * Method Parameters: 
-       *  - (Empty): number
-       */
-      getX(): number;
-      /**
-       * Method Parameters: 
-       *  - (Empty): number
-       */
-      getXScroll(): number;
-      /**
-       * Method Parameters: 
-       *  - (UIElement arg0): number
-       */
-      getXScrolled(arg0: zombie.ui.UIElement): number;
-      /**
-       * Method Parameters: 
-       *  - (Empty): number
-       */
-      getY(): number;
-      /**
-       * Method Parameters: 
-       *  - (Empty): number
-       */
-      getYScroll(): number;
-      /**
-       * Method Parameters: 
-       *  - (UIElement arg0): number
-       */
-      getYScrolled(arg0: zombie.ui.UIElement): number;
-      /**
-       * Method Parameters: 
-       *  - (Empty): void
-       */
-      ignoreHeightChange(): void;
-      /**
-       * Method Parameters: 
-       *  - (Empty): void
-       */
-      ignoreWidthChange(): void;
-      /**
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      isAnchorBottom(): boolean;
-      /**
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      isAnchorLeft(): boolean;
-      /**
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      isAnchorRight(): boolean;
-      /**
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      isAnchorTop(): boolean;
-      /**
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      isCapture(): boolean;
-      /**
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      isConsumeMouseEvents(): boolean;
-      /**
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      isDefaultDraw(): boolean;
-      /**
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      isEnabled(): boolean;
-      /**
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      isFollowGameWorld(): boolean;
-      /**
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      isForceCursorVisible(): boolean;
-      /**
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      isIgnoreLossControl(): boolean;
-      /**
-       * Method Parameters: 
-       *  - (int arg0): boolean
-       */
-      isKeyConsumed(arg0: number): boolean;
-      /**
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      isMouseOver(): boolean;
-      /**
-       * Method Parameters: 
-       *  - (double arg0, double arg1): boolean
-       */
-      isPointOver(arg0: number, arg1: number): boolean;
-      /**
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      isVisible(): boolean;
-      /**
-       * Method Parameters: 
-       *  - (Empty): boolean
-       */
-      isWantKeyEvents(): boolean;
-      /**
-       * Method Parameters: 
-       *  - (int arg0): void
-       */
-      onKeyPress(arg0: number): void;
-      /**
-       * Method Parameters: 
-       *  - (int arg0): void
-       */
-      onKeyRelease(arg0: number): void;
-      /**
-       * Method Parameters: 
-       *  - (int arg0): void
-       */
-      onKeyRepeat(arg0: number): void;
-      /**
-       * Method Parameters: 
-       *  - (double arg0, double arg1): boolean
-       */
-      onMouseDown(arg0: number, arg1: number): boolean;
-      /**
-       * Method Parameters: 
-       *  - (double arg0, double arg1): boolean
-       */
-      onMouseMove(arg0: number, arg1: number): boolean;
-      /**
-       * Method Parameters: 
-       *  - (double arg0, double arg1): void
-       */
-      onMouseMoveOutside(arg0: number, arg1: number): void;
-      /**
-       * Method Parameters: 
-       *  - (double arg0, double arg1): boolean
-       */
-      onMouseUp(arg0: number, arg1: number): boolean;
-      /**
-       * Method Parameters: 
-       *  - (double arg0, double arg1): void
-       */
-      onMouseUpOutside(arg0: number, arg1: number): void;
-      /**
-       * Method Parameters: 
-       *  - (double arg0): boolean
-       */
-      onMouseWheel(arg0: number): boolean;
-      /**
-       * Method Parameters: 
-       *  - (Empty): void
-       */
-      onResize(): void;
-      /**
-       * Method Parameters: 
-       *  - (double arg0, double arg1): boolean
-       */
-      onRightMouseDown(arg0: number, arg1: number): boolean;
-      /**
-       * Method Parameters: 
-       *  - (double arg0, double arg1): boolean
-       */
-      onRightMouseUp(arg0: number, arg1: number): boolean;
-      /**
-       * Method Parameters: 
-       *  - (Empty): void
-       */
-      onresize(): void;
-      /**
-       * Method Parameters: 
-       *  - (Empty): void
-       */
-      render(): void;
-      /**
-       * Method Parameters: 
-       *  - (double arg0, double arg1, double arg2, double arg3): void
-       */
-      repaintStencilRect(arg0: number, arg1: number, arg2: number, arg3: number): void;
-      /**
-       * Method Parameters: 
-       *  - (Empty): void
-       */
-      resumeStencil(): void;
-      /**
-       * Method Parameters: 
-       *  - (boolean arg0): void
-       */
-      setAlwaysOnTop(arg0: boolean): void;
-      /**
-       * Method Parameters: 
-       *  - (boolean arg0): void
-       */
-      setAnchorBottom(arg0: boolean): void;
-      /**
-       * Method Parameters: 
-       *  - (boolean arg0): void
-       */
-      setAnchorLeft(arg0: boolean): void;
-      /**
-       * Method Parameters: 
-       *  - (boolean arg0): void
-       */
-      setAnchorRight(arg0: boolean): void;
-      /**
-       * Method Parameters: 
-       *  - (boolean arg0): void
-       */
-      setAnchorTop(arg0: boolean): void;
-      /**
-       * Method Parameters: 
-       *  - (boolean arg0): void
-       */
-      setCapture(arg0: boolean): void;
-      /**
-       * Method Parameters: 
-       *  - (String arg0): void
-       */
-      setClickedValue(arg0: string): void;
-      /**
-       * Method Parameters: 
-       *  - (boolean arg0): void
-       */
-      setConsumeMouseEvents(arg0: boolean): void;
-      /**
-       * Method Parameters: 
-       *  - (Vector arg0): void
-       */
-      setControls(arg0: java.util.Vector<zombie.ui.UIElement>): void;
-      /**
-       * Method Parameters: 
-       *  - (boolean arg0): void
-       */
-      setDefaultDraw(arg0: boolean): void;
-      /**
-       * Method Parameters: 
-       *  - (boolean arg0): void
-       */
-      setEnabled(arg0: boolean): void;
-      /**
-       * Method Parameters: 
-       *  - (boolean arg0): void
-       */
-      setFollowGameWorld(arg0: boolean): void;
-      /**
-       * Method Parameters: 
-       *  - (boolean arg0): void
-       */
-      setForceCursorVisible(arg0: boolean): void;
-      /**
-       * Method Parameters: 
-       *  - (double arg0): void
-       */
-      setHeight(arg0: number): void;
-      /**
-       * Method Parameters: 
-       *  - (double arg0): void
-       */
-      setHeightOnly(arg0: number): void;
-      /**
-       * Method Parameters: 
-       *  - (double arg0): void
-       */
-      setHeightSilent(arg0: number): void;
-      /**
-       * Method Parameters: 
-       *  - (boolean arg0): void
-       */
-      setIgnoreLossControl(arg0: boolean): void;
-      /**
-       * Method Parameters: 
-       *  - (double arg0): void
-       */
-      setMaxDrawHeight(arg0: number): void;
-      /**
-       * Method Parameters: 
-       *  - (UIElement arg0): void
-       */
-      setParent(arg0: zombie.ui.UIElement): void;
-      /**
-       * Method Parameters: 
-       *  - (int arg0): void
-       */
-      setPlayerContext(arg0: number): void;
-      /**
-       * Method Parameters: 
-       *  - (boolean arg0): void
-       */
-      setRenderClippedChildren(arg0: boolean): void;
-      /**
-       * Method Parameters: 
-       *  - (int arg0): void
-       */
-      setRenderThisPlayerOnly(arg0: number): void;
-      /**
-       * Method Parameters: 
-       *  - (boolean arg0): void
-       */
-      setScrollChildren(arg0: boolean): void;
-      /**
-       * Method Parameters: 
-       *  - (double arg0): void
-       */
-      setScrollHeight(arg0: number): void;
-      /**
-       * Method Parameters: 
-       *  - (boolean arg0): void
-       */
-      setScrollWithParent(arg0: boolean): void;
-      /**
-       * Method Parameters: 
-       *  - (double arg0, double arg1, double arg2, double arg3): void
-       */
-      setStencilRect(arg0: number, arg1: number, arg2: number, arg3: number): void;
-      /**
-       * Method Parameters: 
-       *  - (KahluaTable arg0): void
-       */
-      setTable(arg0: se.krka.kahlua.vm.KahluaTable): void;
-      /**
-       * Method Parameters: 
-       *  - (String arg0): void
-       */
-      setUIName(arg0: string): void;
-      /**
-       * Method Parameters: 
-       *  - (boolean arg0): void
-       */
-      setVisible(arg0: boolean): void;
+      setWantExtraMouseEvents(arg0: boolean): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -2046,6 +3750,21 @@ declare module '@asledgehammer/pipewrench' {
       Clicked(arg0: string): void;
       /**
        * Method Parameters: 
+       *  - (InventoryItem arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
+       */
+      DrawItemIcon(arg0: zombie.inventory.InventoryItem, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, float arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawLine(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Item arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
+       */
+      DrawScriptItemIcon(arg0: zombie.scripting.objects.Item, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9, double arg10, double arg11, double arg12): void
        */
       DrawSubTextureRGBA(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number, arg12: number): void;
@@ -2098,9 +3817,29 @@ declare module '@asledgehammer/pipewrench' {
       DrawTextureColor(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): void;
       /**
        * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureIcon(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTextureIconMask(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
        */
       DrawTextureIgnoreOffset(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTexturePercentage(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTexturePercentageBottomUp(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
@@ -2116,6 +3855,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
       DrawTextureScaledAspect2(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureScaledAspect3(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, Color arg5): void
@@ -2149,6 +3893,11 @@ declare module '@asledgehammer/pipewrench' {
       DrawTextureTiledY(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
       /**
        * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureTiledYOffset(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
        */
       DrawTexture_FlippedX(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
@@ -2164,6 +3913,11 @@ declare module '@asledgehammer/pipewrench' {
       DrawUVSliceTexture(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color, arg6: number, arg7: number, arg8: number, arg9: number): void;
       /**
        * Method Parameters: 
+       *  - (Empty): void
+       */
+      EndOutline(): void;
+      /**
+       * Method Parameters: 
        *  - (UIElement arg0, int arg1, int arg2, int arg3, int arg4): void
        */
       Nest(arg0: zombie.ui.UIElement, arg1: number, arg2: number, arg3: number, arg4: number): void;
@@ -2177,6 +3931,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (UIElement arg0): void
        */
       RemoveControl(arg0: zombie.ui.UIElement): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5): void
+       */
+      StartOutline(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -2240,8 +3999,9 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Empty): zombie.ui.UIElement
+       *  - (Empty): zombie.ui.UIElementInterface
        */
-      getParent(): zombie.ui.UIElement;
+      getParent(): zombie.ui.UIElement | zombie.ui.UIElementInterface;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -2326,6 +4086,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isAlwaysOnTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isAnchorBottom(): boolean;
       /**
        * Method Parameters: 
@@ -2342,6 +4107,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       isAnchorTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isBackMost(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -2391,7 +4161,17 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (double arg0, double arg1): boolean
        */
+      isOverElement(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): boolean
+       */
       isPointOver(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isReallyVisible(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -2401,7 +4181,52 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isWantExtraMouseEvents(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isWantKeyEvents(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyPress(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRelease(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRepeat(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonDown(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonUp(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): boolean
+       */
+      onConsumeMouseMove(arg0: number, arg1: number, arg2: number, arg3: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseWheel(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): void
+       */
+      onExtendMouseMoveOutside(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -2417,6 +4242,21 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0): void
        */
       onKeyRepeat(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDown(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDownOutside(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonUpOutside(arg0: number, arg1: number, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (double arg0, double arg1): boolean
@@ -2636,6 +4476,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (boolean arg0): void
        */
+      setWantExtraMouseEvents(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
       setWantKeyEvents(arg0: boolean): void;
       /**
        * Method Parameters: 
@@ -2690,14 +4535,6 @@ declare module '@asledgehammer/pipewrench' {
      */
     export class MoodlesUI {
       /** zombie.core.textures.Texture */
-      static chevronDown?: zombie.core.textures.Texture;
-      /** zombie.core.textures.Texture */
-      static chevronDownBorder?: zombie.core.textures.Texture;
-      /** zombie.core.textures.Texture */
-      static chevronUp?: zombie.core.textures.Texture;
-      /** zombie.core.textures.Texture */
-      static chevronUpBorder?: zombie.core.textures.Texture;
-      /** zombie.core.textures.Texture */
       static minusGreen?: zombie.core.textures.Texture;
       /** zombie.core.textures.Texture */
       static minusRed?: zombie.core.textures.Texture;
@@ -2736,6 +4573,21 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       CurrentlyAnimating(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (InventoryItem arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
+       */
+      DrawItemIcon(arg0: zombie.inventory.InventoryItem, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, float arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawLine(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Item arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
+       */
+      DrawScriptItemIcon(arg0: zombie.scripting.objects.Item, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9, double arg10, double arg11, double arg12): void
@@ -2790,9 +4642,29 @@ declare module '@asledgehammer/pipewrench' {
       DrawTextureColor(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): void;
       /**
        * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureIcon(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTextureIconMask(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
        */
       DrawTextureIgnoreOffset(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTexturePercentage(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTexturePercentageBottomUp(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
@@ -2808,6 +4680,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
       DrawTextureScaledAspect2(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureScaledAspect3(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, Color arg5): void
@@ -2841,6 +4718,11 @@ declare module '@asledgehammer/pipewrench' {
       DrawTextureTiledY(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
       /**
        * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureTiledYOffset(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
        */
       DrawTexture_FlippedX(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
@@ -2856,6 +4738,11 @@ declare module '@asledgehammer/pipewrench' {
       DrawUVSliceTexture(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color, arg6: number, arg7: number, arg8: number, arg9: number): void;
       /**
        * Method Parameters: 
+       *  - (Empty): void
+       */
+      EndOutline(): void;
+      /**
+       * Method Parameters: 
        *  - (UIElement arg0, int arg1, int arg2, int arg3, int arg4): void
        */
       Nest(arg0: zombie.ui.UIElement, arg1: number, arg2: number, arg3: number, arg4: number): void;
@@ -2869,6 +4756,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (UIElement arg0): void
        */
       RemoveControl(arg0: zombie.ui.UIElement): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5): void
+       */
+      StartOutline(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -2932,8 +4824,9 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Empty): zombie.ui.UIElement
+       *  - (Empty): zombie.ui.UIElementInterface
        */
-      getParent(): zombie.ui.UIElement;
+      getParent(): zombie.ui.UIElement | zombie.ui.UIElementInterface;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -3018,6 +4911,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isAlwaysOnTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isAnchorBottom(): boolean;
       /**
        * Method Parameters: 
@@ -3034,6 +4932,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       isAnchorTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isBackMost(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -3083,7 +4986,17 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (double arg0, double arg1): boolean
        */
+      isOverElement(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): boolean
+       */
       isPointOver(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isReallyVisible(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -3093,7 +5006,52 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isWantExtraMouseEvents(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isWantKeyEvents(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyPress(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRelease(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRepeat(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonDown(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonUp(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): boolean
+       */
+      onConsumeMouseMove(arg0: number, arg1: number, arg2: number, arg3: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseWheel(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): void
+       */
+      onExtendMouseMoveOutside(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -3109,6 +5067,21 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0): void
        */
       onKeyRepeat(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDown(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDownOutside(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonUpOutside(arg0: number, arg1: number, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (double arg0, double arg1): boolean
@@ -3328,6 +5301,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (boolean arg0): void
        */
+      setWantExtraMouseEvents(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
       setWantKeyEvents(arg0: boolean): void;
       /**
        * Method Parameters: 
@@ -3423,6 +5401,21 @@ declare module '@asledgehammer/pipewrench' {
       ClearChildren(): void;
       /**
        * Method Parameters: 
+       *  - (InventoryItem arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
+       */
+      DrawItemIcon(arg0: zombie.inventory.InventoryItem, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, float arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawLine(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Item arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
+       */
+      DrawScriptItemIcon(arg0: zombie.scripting.objects.Item, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9, double arg10, double arg11, double arg12): void
        */
       DrawSubTextureRGBA(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number, arg12: number): void;
@@ -3475,9 +5468,29 @@ declare module '@asledgehammer/pipewrench' {
       DrawTextureColor(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): void;
       /**
        * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureIcon(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTextureIconMask(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
        */
       DrawTextureIgnoreOffset(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTexturePercentage(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTexturePercentageBottomUp(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
@@ -3493,6 +5506,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
       DrawTextureScaledAspect2(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureScaledAspect3(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, Color arg5): void
@@ -3526,6 +5544,11 @@ declare module '@asledgehammer/pipewrench' {
       DrawTextureTiledY(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
       /**
        * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureTiledYOffset(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
        */
       DrawTexture_FlippedX(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
@@ -3539,6 +5562,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, Color arg5, double arg6, double arg7, double arg8, double arg9): void
        */
       DrawUVSliceTexture(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      EndOutline(): void;
       /**
        * Method Parameters: 
        *  - (UIElement arg0, int arg1, int arg2, int arg3, int arg4): void
@@ -3559,6 +5587,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       SetCharacter(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5): void
+       */
+      StartOutline(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -3627,8 +5660,9 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Empty): zombie.ui.UIElement
+       *  - (Empty): zombie.ui.UIElementInterface
        */
-      getParent(): zombie.ui.UIElement;
+      getParent(): zombie.ui.UIElement | zombie.ui.UIElementInterface;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -3713,6 +5747,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isAlwaysOnTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isAnchorBottom(): boolean;
       /**
        * Method Parameters: 
@@ -3729,6 +5768,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       isAnchorTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isBackMost(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -3778,7 +5822,17 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (double arg0, double arg1): boolean
        */
+      isOverElement(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): boolean
+       */
       isPointOver(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isReallyVisible(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -3788,7 +5842,52 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isWantExtraMouseEvents(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isWantKeyEvents(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyPress(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRelease(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRepeat(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonDown(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonUp(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): boolean
+       */
+      onConsumeMouseMove(arg0: number, arg1: number, arg2: number, arg3: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseWheel(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): void
+       */
+      onExtendMouseMoveOutside(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -3804,6 +5903,21 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0): void
        */
       onKeyRepeat(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDown(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDownOutside(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonUpOutside(arg0: number, arg1: number, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (double arg0, double arg1): boolean
@@ -4023,6 +6137,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (boolean arg0): void
        */
+      setWantExtraMouseEvents(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
       setWantKeyEvents(arg0: boolean): void;
       /**
        * Method Parameters: 
@@ -4106,9 +6225,24 @@ declare module '@asledgehammer/pipewrench' {
       ClearChildren(): void;
       /**
        * Method Parameters: 
+       *  - (InventoryItem arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
+       */
+      DrawItemIcon(arg0: zombie.inventory.InventoryItem, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, float arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawLine(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
        *  - (int arg0, int arg1, int arg2, int arg3, float arg4, double arg5, double arg6, double arg7, double arg8): void
        */
       DrawProgressBar(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Item arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
+       */
+      DrawScriptItemIcon(arg0: zombie.scripting.objects.Item, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9, double arg10, double arg11, double arg12): void
@@ -4163,9 +6297,29 @@ declare module '@asledgehammer/pipewrench' {
       DrawTextureColor(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): void;
       /**
        * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureIcon(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTextureIconMask(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
        */
       DrawTextureIgnoreOffset(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTexturePercentage(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTexturePercentageBottomUp(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
@@ -4181,6 +6335,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
       DrawTextureScaledAspect2(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureScaledAspect3(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, Color arg5): void
@@ -4214,6 +6373,11 @@ declare module '@asledgehammer/pipewrench' {
       DrawTextureTiledY(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
       /**
        * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureTiledYOffset(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
        */
       DrawTexture_FlippedX(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
@@ -4240,6 +6404,11 @@ declare module '@asledgehammer/pipewrench' {
       DrawValueRightNoPlus(arg0: number, arg1: number, arg2: number): void;
       /**
        * Method Parameters: 
+       *  - (Empty): void
+       */
+      EndOutline(): void;
+      /**
+       * Method Parameters: 
        *  - (UIElement arg0): void
        */
       RemoveChild(arg0: zombie.ui.UIElement): void;
@@ -4248,6 +6417,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (UIElement arg0): void
        */
       RemoveControl(arg0: zombie.ui.UIElement): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5): void
+       */
+      StartOutline(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0, String arg1): void
@@ -4341,8 +6515,9 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Empty): zombie.ui.UIElement
+       *  - (Empty): zombie.ui.UIElementInterface
        */
-      getParent(): zombie.ui.UIElement;
+      getParent(): zombie.ui.UIElement | zombie.ui.UIElementInterface;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -4442,6 +6617,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isAlwaysOnTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isAnchorBottom(): boolean;
       /**
        * Method Parameters: 
@@ -4458,6 +6638,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       isAnchorTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isBackMost(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -4512,7 +6697,17 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (double arg0, double arg1): boolean
        */
+      isOverElement(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): boolean
+       */
       isPointOver(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isReallyVisible(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -4522,7 +6717,52 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isWantExtraMouseEvents(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isWantKeyEvents(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyPress(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRelease(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRepeat(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonDown(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonUp(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): boolean
+       */
+      onConsumeMouseMove(arg0: number, arg1: number, arg2: number, arg3: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseWheel(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): void
+       */
+      onExtendMouseMoveOutside(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -4538,6 +6778,21 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0): void
        */
       onKeyRepeat(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDown(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDownOutside(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonUpOutside(arg0: number, arg1: number, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (double arg0, double arg1): boolean
@@ -4762,6 +7017,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (boolean arg0): void
        */
+      setWantExtraMouseEvents(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
       setWantKeyEvents(arg0: boolean): void;
       /**
        * Method Parameters: 
@@ -4949,6 +7209,21 @@ declare module '@asledgehammer/pipewrench' {
       ClearChildren(): void;
       /**
        * Method Parameters: 
+       *  - (InventoryItem arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
+       */
+      DrawItemIcon(arg0: zombie.inventory.InventoryItem, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, float arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawLine(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Item arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
+       */
+      DrawScriptItemIcon(arg0: zombie.scripting.objects.Item, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9, double arg10, double arg11, double arg12): void
        */
       DrawSubTextureRGBA(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number, arg12: number): void;
@@ -5001,9 +7276,29 @@ declare module '@asledgehammer/pipewrench' {
       DrawTextureColor(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): void;
       /**
        * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureIcon(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTextureIconMask(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
        */
       DrawTextureIgnoreOffset(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTexturePercentage(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTexturePercentageBottomUp(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
@@ -5019,6 +7314,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
       DrawTextureScaledAspect2(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureScaledAspect3(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, Color arg5): void
@@ -5052,6 +7352,11 @@ declare module '@asledgehammer/pipewrench' {
       DrawTextureTiledY(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
       /**
        * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureTiledYOffset(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
        */
       DrawTexture_FlippedX(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
@@ -5067,6 +7372,11 @@ declare module '@asledgehammer/pipewrench' {
       DrawUVSliceTexture(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color, arg6: number, arg7: number, arg8: number, arg9: number): void;
       /**
        * Method Parameters: 
+       *  - (Empty): void
+       */
+      EndOutline(): void;
+      /**
+       * Method Parameters: 
        *  - (UIElement arg0): void
        */
       RemoveChild(arg0: zombie.ui.UIElement): void;
@@ -5075,6 +7385,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (UIElement arg0): void
        */
       RemoveControl(arg0: zombie.ui.UIElement): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5): void
+       */
+      StartOutline(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -5138,8 +7453,9 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Empty): zombie.ui.UIElement
+       *  - (Empty): zombie.ui.UIElementInterface
        */
-      getParent(): zombie.ui.UIElement;
+      getParent(): zombie.ui.UIElement | zombie.ui.UIElementInterface;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -5224,6 +7540,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isAlwaysOnTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isAnchorBottom(): boolean;
       /**
        * Method Parameters: 
@@ -5240,6 +7561,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       isAnchorTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isBackMost(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -5289,7 +7615,17 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (double arg0, double arg1): boolean
        */
+      isOverElement(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): boolean
+       */
       isPointOver(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isReallyVisible(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -5299,7 +7635,52 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isWantExtraMouseEvents(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isWantKeyEvents(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyPress(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRelease(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRepeat(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonDown(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonUp(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): boolean
+       */
+      onConsumeMouseMove(arg0: number, arg1: number, arg2: number, arg3: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseWheel(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): void
+       */
+      onExtendMouseMoveOutside(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -5315,6 +7696,21 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0): void
        */
       onKeyRepeat(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDown(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDownOutside(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonUpOutside(arg0: number, arg1: number, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (double arg0, double arg1): boolean
@@ -5529,6 +7925,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (boolean arg0): void
        */
+      setWantExtraMouseEvents(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
       setWantKeyEvents(arg0: boolean): void;
       /**
        * Method Parameters: 
@@ -5609,6 +8010,21 @@ declare module '@asledgehammer/pipewrench' {
       ClearChildren(): void;
       /**
        * Method Parameters: 
+       *  - (InventoryItem arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
+       */
+      DrawItemIcon(arg0: zombie.inventory.InventoryItem, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, float arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawLine(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Item arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
+       */
+      DrawScriptItemIcon(arg0: zombie.scripting.objects.Item, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9, double arg10, double arg11, double arg12): void
        */
       DrawSubTextureRGBA(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number, arg12: number): void;
@@ -5661,9 +8077,29 @@ declare module '@asledgehammer/pipewrench' {
       DrawTextureColor(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): void;
       /**
        * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureIcon(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTextureIconMask(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
        */
       DrawTextureIgnoreOffset(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTexturePercentage(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTexturePercentageBottomUp(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
@@ -5679,6 +8115,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
       DrawTextureScaledAspect2(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureScaledAspect3(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, Color arg5): void
@@ -5712,6 +8153,11 @@ declare module '@asledgehammer/pipewrench' {
       DrawTextureTiledY(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
       /**
        * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureTiledYOffset(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
        */
       DrawTexture_FlippedX(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
@@ -5727,6 +8173,11 @@ declare module '@asledgehammer/pipewrench' {
       DrawUVSliceTexture(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color, arg6: number, arg7: number, arg8: number, arg9: number): void;
       /**
        * Method Parameters: 
+       *  - (Empty): void
+       */
+      EndOutline(): void;
+      /**
+       * Method Parameters: 
        *  - (UIElement arg0): void
        */
       RemoveChild(arg0: zombie.ui.UIElement): void;
@@ -5735,6 +8186,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (UIElement arg0): void
        */
       RemoveControl(arg0: zombie.ui.UIElement): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5): void
+       */
+      StartOutline(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
       /**
        * Method Parameters: 
        *  - (String arg0, Texture arg1): void
@@ -5808,8 +8264,9 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Empty): zombie.ui.UIElement
+       *  - (Empty): zombie.ui.UIElementInterface
        */
-      getParent(): zombie.ui.UIElement;
+      getParent(): zombie.ui.UIElement | zombie.ui.UIElementInterface;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -5904,6 +8361,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isAlwaysOnTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isAnchorBottom(): boolean;
       /**
        * Method Parameters: 
@@ -5920,6 +8382,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       isAnchorTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isBackMost(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -5969,7 +8436,17 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (double arg0, double arg1): boolean
        */
+      isOverElement(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): boolean
+       */
       isPointOver(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isReallyVisible(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -5979,7 +8456,52 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isWantExtraMouseEvents(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isWantKeyEvents(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyPress(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRelease(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRepeat(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonDown(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonUp(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): boolean
+       */
+      onConsumeMouseMove(arg0: number, arg1: number, arg2: number, arg3: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseWheel(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): void
+       */
+      onExtendMouseMoveOutside(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -5995,6 +8517,21 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0): void
        */
       onKeyRepeat(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDown(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDownOutside(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonUpOutside(arg0: number, arg1: number, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (double arg0, double arg1): boolean
@@ -6224,6 +8761,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (boolean arg0): void
        */
+      setWantExtraMouseEvents(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
       setWantKeyEvents(arg0: boolean): void;
       /**
        * Method Parameters: 
@@ -6304,6 +8846,21 @@ declare module '@asledgehammer/pipewrench' {
       ClearChildren(): void;
       /**
        * Method Parameters: 
+       *  - (InventoryItem arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
+       */
+      DrawItemIcon(arg0: zombie.inventory.InventoryItem, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, float arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawLine(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Item arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
+       */
+      DrawScriptItemIcon(arg0: zombie.scripting.objects.Item, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9, double arg10, double arg11, double arg12): void
        */
       DrawSubTextureRGBA(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number, arg12: number): void;
@@ -6356,9 +8913,29 @@ declare module '@asledgehammer/pipewrench' {
       DrawTextureColor(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): void;
       /**
        * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureIcon(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTextureIconMask(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
        */
       DrawTextureIgnoreOffset(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTexturePercentage(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTexturePercentageBottomUp(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
@@ -6374,6 +8951,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
       DrawTextureScaledAspect2(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureScaledAspect3(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, Color arg5): void
@@ -6407,6 +8989,11 @@ declare module '@asledgehammer/pipewrench' {
       DrawTextureTiledY(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
       /**
        * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureTiledYOffset(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
        */
       DrawTexture_FlippedX(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
@@ -6422,6 +9009,11 @@ declare module '@asledgehammer/pipewrench' {
       DrawUVSliceTexture(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color, arg6: number, arg7: number, arg8: number, arg9: number): void;
       /**
        * Method Parameters: 
+       *  - (Empty): void
+       */
+      EndOutline(): void;
+      /**
+       * Method Parameters: 
        *  - (UIElement arg0): void
        */
       RemoveChild(arg0: zombie.ui.UIElement): void;
@@ -6430,6 +9022,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (UIElement arg0): void
        */
       RemoveControl(arg0: zombie.ui.UIElement): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5): void
+       */
+      StartOutline(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -6493,8 +9090,9 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Empty): zombie.ui.UIElement
+       *  - (Empty): zombie.ui.UIElementInterface
        */
-      getParent(): zombie.ui.UIElement;
+      getParent(): zombie.ui.UIElement | zombie.ui.UIElementInterface;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -6589,6 +9187,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isAlwaysOnTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isAnchorBottom(): boolean;
       /**
        * Method Parameters: 
@@ -6605,6 +9208,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       isAnchorTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isBackMost(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -6654,7 +9262,17 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (double arg0, double arg1): boolean
        */
+      isOverElement(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): boolean
+       */
       isPointOver(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isReallyVisible(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -6664,7 +9282,52 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isWantExtraMouseEvents(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isWantKeyEvents(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyPress(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRelease(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRepeat(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonDown(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonUp(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): boolean
+       */
+      onConsumeMouseMove(arg0: number, arg1: number, arg2: number, arg3: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseWheel(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): void
+       */
+      onExtendMouseMoveOutside(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -6680,6 +9343,21 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0): void
        */
       onKeyRepeat(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDown(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDownOutside(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonUpOutside(arg0: number, arg1: number, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (double arg0, double arg1): boolean
@@ -6904,6 +9582,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (boolean arg0): void
        */
+      setWantExtraMouseEvents(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
       setWantKeyEvents(arg0: boolean): void;
       /**
        * Method Parameters: 
@@ -6957,16 +9640,16 @@ declare module '@asledgehammer/pipewrench' {
      * [CLASS] zombie.ui.SpeedControls extends zombie.ui.UIElement
      */
     export class SpeedControls {
-      /** zombie.ui.HUDButton */
-      static FastForward?: zombie.ui.HUDButton;
-      /** zombie.ui.HUDButton */
-      static FasterForward?: zombie.ui.HUDButton;
-      /** zombie.ui.HUDButton */
-      static Pause?: zombie.ui.HUDButton;
-      /** zombie.ui.HUDButton */
-      static Play?: zombie.ui.HUDButton;
-      /** zombie.ui.HUDButton */
-      static Wait?: zombie.ui.HUDButton;
+      /** int */
+      static readonly FastForwardSpeed: number;
+      /** int */
+      static readonly FasterForwardSpeed: number;
+      /** int */
+      static readonly PauseSpeed: number;
+      /** int */
+      static readonly PlaySpeed: number;
+      /** int */
+      static readonly WaitSpeed: number;
       /** zombie.ui.SpeedControls */
       static instance?: zombie.ui.SpeedControls;
 
@@ -6995,6 +9678,21 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): void
        */
       ClearChildren(): void;
+      /**
+       * Method Parameters: 
+       *  - (InventoryItem arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
+       */
+      DrawItemIcon(arg0: zombie.inventory.InventoryItem, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, float arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawLine(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Item arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
+       */
+      DrawScriptItemIcon(arg0: zombie.scripting.objects.Item, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9, double arg10, double arg11, double arg12): void
@@ -7049,9 +9747,29 @@ declare module '@asledgehammer/pipewrench' {
       DrawTextureColor(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): void;
       /**
        * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureIcon(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTextureIconMask(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
        */
       DrawTextureIgnoreOffset(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTexturePercentage(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTexturePercentageBottomUp(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
@@ -7067,6 +9785,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
       DrawTextureScaledAspect2(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureScaledAspect3(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, Color arg5): void
@@ -7100,6 +9823,11 @@ declare module '@asledgehammer/pipewrench' {
       DrawTextureTiledY(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
       /**
        * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureTiledYOffset(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
        */
       DrawTexture_FlippedX(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
@@ -7113,6 +9841,16 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, Color arg5, double arg6, double arg7, double arg8, double arg9): void
        */
       DrawUVSliceTexture(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      EndOutline(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      Pause(): void;
       /**
        * Method Parameters: 
        *  - (UIElement arg0): void
@@ -7133,6 +9871,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0): void
        */
       SetCurrentGameSpeed(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5): void
+       */
+      StartOutline(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -7201,8 +9944,9 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Empty): zombie.ui.UIElement
+       *  - (Empty): zombie.ui.UIElementInterface
        */
-      getParent(): zombie.ui.UIElement;
+      getParent(): zombie.ui.UIElement | zombie.ui.UIElementInterface;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -7287,6 +10031,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isAlwaysOnTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isAnchorBottom(): boolean;
       /**
        * Method Parameters: 
@@ -7303,6 +10052,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       isAnchorTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isBackMost(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -7352,7 +10106,22 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (double arg0, double arg1): boolean
        */
+      isOverElement(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isPaused(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): boolean
+       */
       isPointOver(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isReallyVisible(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -7362,7 +10131,52 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isWantExtraMouseEvents(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isWantKeyEvents(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyPress(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRelease(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRepeat(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonDown(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonUp(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): boolean
+       */
+      onConsumeMouseMove(arg0: number, arg1: number, arg2: number, arg3: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseWheel(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): void
+       */
+      onExtendMouseMoveOutside(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -7378,6 +10192,21 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0): void
        */
       onKeyRepeat(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDown(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDownOutside(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonUpOutside(arg0: number, arg1: number, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (double arg0, double arg1): boolean
@@ -7592,6 +10421,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (boolean arg0): void
        */
+      setWantExtraMouseEvents(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
       setWantKeyEvents(arg0: boolean): void;
       /**
        * Method Parameters: 
@@ -7628,6 +10462,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (double arg0): void
        */
       setYScroll(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      stepForward(): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -7670,6 +10509,21 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): void
        */
       ClearChildren(): void;
+      /**
+       * Method Parameters: 
+       *  - (InventoryItem arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
+       */
+      DrawItemIcon(arg0: zombie.inventory.InventoryItem, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, float arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawLine(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Item arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
+       */
+      DrawScriptItemIcon(arg0: zombie.scripting.objects.Item, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9, double arg10, double arg11, double arg12): void
@@ -7724,9 +10578,29 @@ declare module '@asledgehammer/pipewrench' {
       DrawTextureColor(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): void;
       /**
        * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureIcon(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTextureIconMask(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
        */
       DrawTextureIgnoreOffset(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTexturePercentage(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTexturePercentageBottomUp(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
@@ -7742,6 +10616,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
       DrawTextureScaledAspect2(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureScaledAspect3(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, Color arg5): void
@@ -7775,6 +10654,11 @@ declare module '@asledgehammer/pipewrench' {
       DrawTextureTiledY(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
       /**
        * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureTiledYOffset(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
        */
       DrawTexture_FlippedX(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
@@ -7790,6 +10674,11 @@ declare module '@asledgehammer/pipewrench' {
       DrawUVSliceTexture(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color, arg6: number, arg7: number, arg8: number, arg9: number): void;
       /**
        * Method Parameters: 
+       *  - (Empty): void
+       */
+      EndOutline(): void;
+      /**
+       * Method Parameters: 
        *  - (UIElement arg0): void
        */
       RemoveChild(arg0: zombie.ui.UIElement): void;
@@ -7798,6 +10687,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (UIElement arg0): void
        */
       RemoveControl(arg0: zombie.ui.UIElement): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5): void
+       */
+      StartOutline(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -7861,8 +10755,9 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Empty): zombie.ui.UIElement
+       *  - (Empty): zombie.ui.UIElementInterface
        */
-      getParent(): zombie.ui.UIElement;
+      getParent(): zombie.ui.UIElement | zombie.ui.UIElementInterface;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -7947,6 +10842,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isAlwaysOnTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isAnchorBottom(): boolean;
       /**
        * Method Parameters: 
@@ -7963,6 +10863,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       isAnchorTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isBackMost(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -8012,7 +10917,17 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (double arg0, double arg1): boolean
        */
+      isOverElement(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): boolean
+       */
       isPointOver(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isReallyVisible(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -8022,7 +10937,52 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isWantExtraMouseEvents(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isWantKeyEvents(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyPress(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRelease(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRepeat(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonDown(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonUp(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): boolean
+       */
+      onConsumeMouseMove(arg0: number, arg1: number, arg2: number, arg3: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseWheel(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): void
+       */
+      onExtendMouseMoveOutside(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -8038,6 +10998,21 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0): void
        */
       onKeyRepeat(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDown(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDownOutside(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonUpOutside(arg0: number, arg1: number, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (double arg0, double arg1): boolean
@@ -8248,6 +11223,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (boolean arg0): void
        */
       setVisible(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setWantExtraMouseEvents(arg0: boolean): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -8638,12 +11618,19 @@ declare module '@asledgehammer/pipewrench' {
     export class TextManager {
       /** zombie.ui.TextManager */
       static readonly instance?: zombie.ui.TextManager;
+      /** zombie.core.opengl.SDFShader */
+      static sdfShader?: zombie.core.opengl.SDFShader;
 
       /**
        * Constructors: 
        *  - (Empty Constructor)
        */
       constructor();
+      /**
+       * Method Parameters: 
+       *  - (UIFont arg0, String arg1): number
+       */
+      CentreStringYOffset(arg0: zombie.ui.UIFont, arg1: string): number;
       /**
        * Method Parameters: 
        *  - (double arg0, double arg1, String arg2): void
@@ -8712,8 +11699,25 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (UIFont arg0, String arg1): number
+       *  - (UIFont arg0, String arg1, boolean arg2, boolean arg3): number
        */
-      MeasureStringY(arg0: zombie.ui.UIFont, arg1: string): number;
+      MeasureStringY(arg0: zombie.ui.UIFont, arg1: string, arg2?: boolean, arg3?: boolean): number;
+      /**
+       * Method Parameters: 
+       *  - (UIFont arg0, String arg1): number
+       */
+      MeasureStringYOffset(arg0: zombie.ui.UIFont, arg1: string): number;
+      /**
+       * Method Parameters: 
+       *  - (UIFont arg0, String arg1): number
+       */
+      MeasureStringYReal(arg0: zombie.ui.UIFont, arg1: string): number;
+      /**
+       * Method Parameters: 
+       *  - (UIFont arg0, String arg1, int arg2): string
+       *  - (UIFont arg0, String arg1, int arg2, int arg3, String arg4): string
+       */
+      WrapText(arg0: zombie.ui.UIFont, arg1: string, arg2: number, arg3?: number, arg4?: string): string;
       /**
        * Method Parameters: 
        *  - (UIFont arg0): zombie.core.fonts.AngelCodeFont
@@ -8788,6 +11792,21 @@ declare module '@asledgehammer/pipewrench' {
       ClearChildren(): void;
       /**
        * Method Parameters: 
+       *  - (InventoryItem arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
+       */
+      DrawItemIcon(arg0: zombie.inventory.InventoryItem, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, float arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawLine(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Item arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
+       */
+      DrawScriptItemIcon(arg0: zombie.scripting.objects.Item, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9, double arg10, double arg11, double arg12): void
        */
       DrawSubTextureRGBA(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number, arg12: number): void;
@@ -8840,9 +11859,29 @@ declare module '@asledgehammer/pipewrench' {
       DrawTextureColor(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): void;
       /**
        * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureIcon(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTextureIconMask(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
        */
       DrawTextureIgnoreOffset(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTexturePercentage(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTexturePercentageBottomUp(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
@@ -8858,6 +11897,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
       DrawTextureScaledAspect2(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureScaledAspect3(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, Color arg5): void
@@ -8891,6 +11935,11 @@ declare module '@asledgehammer/pipewrench' {
       DrawTextureTiledY(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
       /**
        * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureTiledYOffset(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
        */
       DrawTexture_FlippedX(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
@@ -8906,6 +11955,11 @@ declare module '@asledgehammer/pipewrench' {
       DrawUVSliceTexture(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color, arg6: number, arg7: number, arg8: number, arg9: number): void;
       /**
        * Method Parameters: 
+       *  - (Empty): void
+       */
+      EndOutline(): void;
+      /**
+       * Method Parameters: 
        *  - (UIElement arg0): void
        */
       RemoveChild(arg0: zombie.ui.UIElement): void;
@@ -8914,6 +11968,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (UIElement arg0): void
        */
       RemoveControl(arg0: zombie.ui.UIElement): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5): void
+       */
+      StartOutline(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -8948,6 +12007,16 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (String arg0): void
        */
+      clearVariable(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      clearVariables(): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
       clothingItemChanged(arg0: string): void;
       /**
        * Method Parameters: 
@@ -8959,6 +12028,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): number
        */
       getAbsoluteY(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.characters.IsoGameCharacter
+       */
+      getCharacter(): zombie.characters.IsoGameCharacter;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -8987,8 +12061,9 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Empty): zombie.ui.UIElement
+       *  - (Empty): zombie.ui.UIElementInterface
        */
-      getParent(): zombie.ui.UIElement;
+      getParent(): zombie.ui.UIElement | zombie.ui.UIElementInterface;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -9016,6 +12091,11 @@ declare module '@asledgehammer/pipewrench' {
       getScrollWithParent(): boolean;
       /**
        * Method Parameters: 
+       *  - (Empty): string
+       */
+      getState(): string;
+      /**
+       * Method Parameters: 
        *  - (Empty): se.krka.kahlua.vm.KahluaTable
        */
       getTable(): se.krka.kahlua.vm.KahluaTable;
@@ -9024,6 +12104,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): string
        */
       getUIName(): string;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): any
+       */
+      getVariable(arg0: string): any;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -9073,6 +12158,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isAlwaysOnTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isAnchorBottom(): boolean;
       /**
        * Method Parameters: 
@@ -9089,6 +12179,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       isAnchorTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isBackMost(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -9138,7 +12233,17 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (double arg0, double arg1): boolean
        */
+      isOverElement(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): boolean
+       */
       isPointOver(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isReallyVisible(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -9148,7 +12253,52 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isWantExtraMouseEvents(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isWantKeyEvents(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyPress(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRelease(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRepeat(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonDown(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonUp(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): boolean
+       */
+      onConsumeMouseMove(arg0: number, arg1: number, arg2: number, arg3: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseWheel(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): void
+       */
+      onExtendMouseMoveOutside(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -9164,6 +12314,21 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0): void
        */
       onKeyRepeat(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDown(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDownOutside(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonUpOutside(arg0: number, arg1: number, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (double arg0, double arg1): boolean
@@ -9421,9 +12586,21 @@ declare module '@asledgehammer/pipewrench' {
       setUIName(arg0: string): void;
       /**
        * Method Parameters: 
+       *  - (String arg0, boolean arg1): void
+       *  - (String arg0, float arg1): void
+       *  - (String arg0, String arg1): void
+       */
+      setVariable(arg0: string, arg1: boolean | number | string): void;
+      /**
+       * Method Parameters: 
        *  - (boolean arg0): void
        */
       setVisible(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setWantExtraMouseEvents(arg0: boolean): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -9526,6 +12703,21 @@ declare module '@asledgehammer/pipewrench' {
       ClearChildren(): void;
       /**
        * Method Parameters: 
+       *  - (InventoryItem arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
+       */
+      DrawItemIcon(arg0: zombie.inventory.InventoryItem, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, float arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawLine(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Item arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
+       */
+      DrawScriptItemIcon(arg0: zombie.scripting.objects.Item, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9, double arg10, double arg11, double arg12): void
        */
       DrawSubTextureRGBA(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number, arg12: number): void;
@@ -9578,9 +12770,29 @@ declare module '@asledgehammer/pipewrench' {
       DrawTextureColor(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): void;
       /**
        * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureIcon(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTextureIconMask(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
        */
       DrawTextureIgnoreOffset(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTexturePercentage(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTexturePercentageBottomUp(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
@@ -9596,6 +12808,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
       DrawTextureScaledAspect2(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureScaledAspect3(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, Color arg5): void
@@ -9629,6 +12846,11 @@ declare module '@asledgehammer/pipewrench' {
       DrawTextureTiledY(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
       /**
        * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureTiledYOffset(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
        */
       DrawTexture_FlippedX(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
@@ -9642,6 +12864,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, Color arg5, double arg6, double arg7, double arg8, double arg9): void
        */
       DrawUVSliceTexture(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      EndOutline(): void;
       /**
        * Method Parameters: 
        *  - (UIElement arg0, int arg1, int arg2, int arg3, int arg4): void
@@ -9662,6 +12889,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (UIElement arg0): void
        */
       RemoveControl(arg0: zombie.ui.UIElement): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5): void
+       */
+      StartOutline(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
       /**
        * Method Parameters: 
        *  - (byte[] arg0, int arg1, int arg2): void
@@ -9730,8 +12962,9 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Empty): zombie.ui.UIElement
+       *  - (Empty): zombie.ui.UIElementInterface
        */
-      getParent(): zombie.ui.UIElement;
+      getParent(): zombie.ui.UIElement | zombie.ui.UIElementInterface;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -9816,6 +13049,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isAlwaysOnTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isAnchorBottom(): boolean;
       /**
        * Method Parameters: 
@@ -9832,6 +13070,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       isAnchorTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isBackMost(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -9881,12 +13124,27 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (double arg0, double arg1): boolean
        */
+      isOverElement(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): boolean
+       */
       isPointOver(arg0: number, arg1: number): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isReallyVisible(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isVisible(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isWantExtraMouseEvents(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -9897,6 +13155,46 @@ declare module '@asledgehammer/pipewrench' {
        *  - (CharSequence arg0, CharSequence arg1): number
        */
       levenshteinDistance(arg0: java.lang.CharSequence, arg1: java.lang.CharSequence): number;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyPress(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRelease(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRepeat(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonDown(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonUp(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): boolean
+       */
+      onConsumeMouseMove(arg0: number, arg1: number, arg2: number, arg3: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseWheel(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): void
+       */
+      onExtendMouseMoveOutside(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -9912,6 +13210,21 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0): void
        */
       onKeyRepeat(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDown(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDownOutside(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonUpOutside(arg0: number, arg1: number, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (double arg0, double arg1): boolean
@@ -10136,6 +13449,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (boolean arg0): void
        */
+      setWantExtraMouseEvents(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
       setWantKeyEvents(arg0: boolean): void;
       /**
        * Method Parameters: 
@@ -10217,6 +13535,21 @@ declare module '@asledgehammer/pipewrench' {
       ClearChildren(): void;
       /**
        * Method Parameters: 
+       *  - (InventoryItem arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
+       */
+      DrawItemIcon(arg0: zombie.inventory.InventoryItem, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, float arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawLine(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Item arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
+       */
+      DrawScriptItemIcon(arg0: zombie.scripting.objects.Item, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9, double arg10, double arg11, double arg12): void
        */
       DrawSubTextureRGBA(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number, arg12: number): void;
@@ -10269,9 +13602,29 @@ declare module '@asledgehammer/pipewrench' {
       DrawTextureColor(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): void;
       /**
        * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureIcon(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTextureIconMask(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
        */
       DrawTextureIgnoreOffset(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTexturePercentage(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTexturePercentageBottomUp(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
@@ -10287,6 +13640,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
       DrawTextureScaledAspect2(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureScaledAspect3(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, Color arg5): void
@@ -10320,6 +13678,11 @@ declare module '@asledgehammer/pipewrench' {
       DrawTextureTiledY(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
       /**
        * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureTiledYOffset(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
        */
       DrawTexture_FlippedX(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
@@ -10335,6 +13698,11 @@ declare module '@asledgehammer/pipewrench' {
       DrawUVSliceTexture(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color, arg6: number, arg7: number, arg8: number, arg9: number): void;
       /**
        * Method Parameters: 
+       *  - (Empty): void
+       */
+      EndOutline(): void;
+      /**
+       * Method Parameters: 
        *  - (UIElement arg0): void
        */
       RemoveChild(arg0: zombie.ui.UIElement): void;
@@ -10343,6 +13711,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (UIElement arg0): void
        */
       RemoveControl(arg0: zombie.ui.UIElement): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5): void
+       */
+      StartOutline(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -10406,8 +13779,9 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Empty): zombie.ui.UIElement
+       *  - (Empty): zombie.ui.UIElementInterface
        */
-      getParent(): zombie.ui.UIElement;
+      getParent(): zombie.ui.UIElement | zombie.ui.UIElementInterface;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -10492,6 +13866,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isAlwaysOnTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isAnchorBottom(): boolean;
       /**
        * Method Parameters: 
@@ -10508,6 +13887,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       isAnchorTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isBackMost(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -10557,7 +13941,17 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (double arg0, double arg1): boolean
        */
+      isOverElement(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): boolean
+       */
       isPointOver(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isReallyVisible(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -10567,7 +13961,52 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isWantExtraMouseEvents(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isWantKeyEvents(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyPress(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRelease(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRepeat(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonDown(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonUp(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): boolean
+       */
+      onConsumeMouseMove(arg0: number, arg1: number, arg2: number, arg3: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseWheel(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): void
+       */
+      onExtendMouseMoveOutside(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -10583,6 +14022,21 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0): void
        */
       onKeyRepeat(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDown(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDownOutside(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonUpOutside(arg0: number, arg1: number, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (double arg0, double arg1): boolean
@@ -10797,6 +14251,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (boolean arg0): void
        */
+      setWantExtraMouseEvents(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
       setWantKeyEvents(arg0: boolean): void;
       /**
        * Method Parameters: 
@@ -10845,27 +14304,167 @@ declare module '@asledgehammer/pipewrench' {
       update(): void;
     }
     /**
-     * @customConstructor UIEventHandler.new
+     * @customConstructor UIElementInterface.new
      * @
-     * [INTERFACE] zombie.ui.UIEventHandler
+     * [INTERFACE] zombie.ui.UIElementInterface
      */
-    export class UIEventHandler {
+    export class UIElementInterface {
       protected constructor();
       /**
        * Method Parameters: 
-       *  - (String arg0, int arg1, int arg2): void
+       *  - (Empty): number
        */
-      DoubleClick(arg0: string, arg1: number, arg2: number): void;
+      getHeight(): number;
       /**
        * Method Parameters: 
-       *  - (String arg0, String arg1): void
+       *  - (Empty): number
        */
-      ModalClick(arg0: string, arg1: string): void;
+      getMaxDrawHeight(): number;
       /**
        * Method Parameters: 
-       *  - (String arg0, int arg1, int arg2): void
+       *  - (Empty): zombie.ui.UIElementInterface
        */
-      Selected(arg0: string, arg1: number, arg2: number): void;
+      getParent(): zombie.ui.UIElementInterface;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getRenderThisPlayerOnly(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getWidth(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getX(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getY(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isAlwaysOnTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isBackMost(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isCapture(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isDefaultDraw(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isFollowGameWorld(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isForceCursorVisible(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isIgnoreLossControl(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isMouseOver(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): boolean
+       */
+      isOverElement(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): boolean
+       */
+      isPointOver(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isVisible(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isWantKeyEvents(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyPress(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRelease(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRepeat(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonDown(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonUp(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): boolean
+       */
+      onConsumeMouseMove(arg0: number, arg1: number, arg2: number, arg3: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseWheel(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): void
+       */
+      onExtendMouseMoveOutside(arg0: number, arg1: number, arg2: number, arg3: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDownOutside(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonUpOutside(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      render(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      update(): void;
     }
     /** [ENUM] zombie.ui.UIFont */
     export class UIFont {
@@ -10889,6 +14488,16 @@ declare module '@asledgehammer/pipewrench' {
       static readonly NewLarge: zombie.ui.UIFont;
       static readonly NewMedium: zombie.ui.UIFont;
       static readonly NewSmall: zombie.ui.UIFont;
+      static readonly SdfBold: zombie.ui.UIFont;
+      static readonly SdfBoldItalic: zombie.ui.UIFont;
+      static readonly SdfCaveat: zombie.ui.UIFont;
+      static readonly SdfItalic: zombie.ui.UIFont;
+      static readonly SdfOldBold: zombie.ui.UIFont;
+      static readonly SdfOldBoldItalic: zombie.ui.UIFont;
+      static readonly SdfOldItalic: zombie.ui.UIFont;
+      static readonly SdfOldRegular: zombie.ui.UIFont;
+      static readonly SdfRegular: zombie.ui.UIFont;
+      static readonly SdfRobertoSans: zombie.ui.UIFont;
       static readonly Small: zombie.ui.UIFont;
       static readonly Title: zombie.ui.UIFont;
       name(): string;
@@ -10995,12 +14604,12 @@ declare module '@asledgehammer/pipewrench' {
       static readonly ProgressBar?: zombie.ui.ActionProgressBar[];
       /** zombie.iso.IsoObject */
       static RightDownObject?: zombie.iso.IsoObject;
-      /** zombie.ui.UIServerToolbox */
-      static ServerToolbox?: zombie.ui.UIServerToolbox;
-      /** java.util.ArrayList<zombie.ui.UIElement> */
-      static readonly UI?: java.util.ArrayList<zombie.ui.UIElement>;
+      /** java.util.ArrayList<zombie.ui.UIElementInterface> */
+      static readonly UI?: java.util.ArrayList<zombie.ui.UIElementInterface>;
       /** zombie.core.textures.TextureFBO */
       static UIFBO?: zombie.core.textures.TextureFBO;
+      /** boolean */
+      static UITextureContentsValid: boolean;
       /** boolean */
       static VisibleAllUI: boolean;
       /** boolean */
@@ -11041,8 +14650,8 @@ declare module '@asledgehammer/pipewrench' {
       static previousThread?: se.krka.kahlua.vm.KahluaThread;
       /** zombie.ui.SpeedControls */
       static speedControls?: zombie.ui.SpeedControls;
-      /** java.util.ArrayList<zombie.ui.UIElement> */
-      static readonly toTop?: java.util.ArrayList<zombie.ui.UIElement>;
+      /** java.util.ArrayList<zombie.ui.UIElementInterface> */
+      static readonly toTop?: java.util.ArrayList<zombie.ui.UIElementInterface>;
       /** zombie.ui.ObjectTooltip */
       static toolTip?: zombie.ui.ObjectTooltip;
       /** long */
@@ -11065,9 +14674,9 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (UIElement arg0): void
+       *  - (UIElementInterface arg0): void
        */
-      static AddUI(arg0: zombie.ui.UIElement): void;
+      static AddUI(arg0: zombie.ui.UIElementInterface): void;
       /**
        * @noSelf
        *
@@ -11110,9 +14719,9 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (UIElement arg0): void
+       *  - (UIElementInterface arg0): void
        */
-      static RemoveElement(arg0: zombie.ui.UIElement): void;
+      static RemoveElement(arg0: zombie.ui.UIElementInterface): void;
       /**
        * @noSelf
        *
@@ -11148,6 +14757,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): zombie.core.textures.Texture
        */
       static getBlack(): zombie.core.textures.Texture;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (int arg0): number
+       */
+      static getBlinkAlpha(arg0: number): number;
       /**
        * @noSelf
        *
@@ -11370,16 +14986,16 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (Empty): zombie.ui.UIServerToolbox
+       *  - (Empty): zombie.ui.SpeedControls
        */
-      static getServerToolbox(): zombie.ui.UIServerToolbox;
+      static getSpeedControls(): zombie.ui.SpeedControls;
       /**
        * @noSelf
        *
        * Method Parameters: 
-       *  - (Empty): zombie.ui.SpeedControls
+       *  - (int arg0, int arg1): number
        */
-      static getSpeedControls(): zombie.ui.SpeedControls;
+      static getSyncedIconIndex(arg0: number, arg1: number): number;
       /**
        * @noSelf
        *
@@ -11398,9 +15014,9 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (Empty): java.util.ArrayList<zombie.ui.UIElement>
+       *  - (Empty): java.util.ArrayList<zombie.ui.UIElementInterface>
        */
-      static getUI(): java.util.ArrayList<zombie.ui.UIElement>;
+      static getUI(): java.util.ArrayList<zombie.ui.UIElementInterface>;
       /**
        * @noSelf
        *
@@ -11492,6 +15108,20 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): void
        */
       static render(): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      static renderFadeOverlay(): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (int arg0): number
+       */
+      static resetSyncedIconIndex(arg0: number): number;
       /**
        * @noSelf
        *
@@ -11685,16 +15315,16 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (int arg0, UIElement arg1, UIElement arg2): void
+       *  - (int arg0, UIElementInterface arg1, UIElementInterface arg2): void
        */
-      static setPlayerInventory(arg0: number, arg1: zombie.ui.UIElement, arg2: zombie.ui.UIElement): void;
+      static setPlayerInventory(arg0: number, arg1: zombie.ui.UIElementInterface, arg2: zombie.ui.UIElementInterface): void;
       /**
        * @noSelf
        *
        * Method Parameters: 
-       *  - (int arg0, UIElement arg1, UIElement arg2): void
+       *  - (int arg0, UIElementInterface arg1, UIElementInterface arg2): void
        */
-      static setPlayerInventoryTooltip(arg0: number, arg1: zombie.ui.UIElement, arg2: zombie.ui.UIElement): void;
+      static setPlayerInventoryTooltip(arg0: number, arg1: zombie.ui.UIElementInterface, arg2: zombie.ui.UIElementInterface): void;
       /**
        * @noSelf
        *
@@ -11709,13 +15339,6 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoObject arg0): void
        */
       static setRightDownObject(arg0: zombie.iso.IsoObject): void;
-      /**
-       * @noSelf
-       *
-       * Method Parameters: 
-       *  - (UIServerToolbox arg0): void
-       */
-      static setServerToolbox(arg0: zombie.ui.UIServerToolbox): void;
       /**
        * @noSelf
        *
@@ -11750,7 +15373,7 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (ArrayList arg0): void
        */
-      static setUI(arg0: java.util.ArrayList<zombie.ui.UIElement>): void;
+      static setUI(arg0: java.util.ArrayList<zombie.ui.UIElementInterface>): void;
       /**
        * @noSelf
        *
@@ -11769,6 +15392,13 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (KahluaTable arg0, Object arg1): any
+       */
+      static tableget(arg0: se.krka.kahlua.vm.KahluaTable, arg1: any): any;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (Empty): void
        */
       static update(): void;
@@ -11781,19 +15411,16 @@ declare module '@asledgehammer/pipewrench' {
       static updateBeforeFadeOut(): void;
     }
     /**
-     * @customConstructor UIServerToolbox.new
+     * @customConstructor UINineGrid.new
      * @
-     * [CLASS] zombie.ui.UIServerToolbox extends zombie.ui.NewWindow
+     * [CLASS] zombie.ui.UINineGrid extends zombie.ui.UIElement
      */
-    export class UIServerToolbox {
-      /** zombie.ui.UIServerToolbox */
-      static instance?: zombie.ui.UIServerToolbox;
-
+    export class UINineGrid {
       /**
        * Constructors: 
-       *  - (int arg0, int arg1)
+       *  - (int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, String arg8, String arg9, String arg10, String arg11, String arg12, String arg13, String arg14, String arg15, String arg16)
        */
-      constructor(arg0: number, arg1: number);
+      constructor(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: string, arg9: string, arg10: string, arg11: string, arg12: string, arg13: string, arg14: string, arg15: string, arg16: string);
       /**
        * Method Parameters: 
        *  - (UIElement arg0): void
@@ -11816,9 +15443,19 @@ declare module '@asledgehammer/pipewrench' {
       ClearChildren(): void;
       /**
        * Method Parameters: 
-       *  - (String arg0, int arg1, int arg2): void
+       *  - (InventoryItem arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
        */
-      DoubleClick(arg0: string, arg1: number, arg2: number): void;
+      DrawItemIcon(arg0: zombie.inventory.InventoryItem, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, float arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawLine(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Item arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
+       */
+      DrawScriptItemIcon(arg0: zombie.scripting.objects.Item, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9, double arg10, double arg11, double arg12): void
@@ -11873,9 +15510,29 @@ declare module '@asledgehammer/pipewrench' {
       DrawTextureColor(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): void;
       /**
        * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureIcon(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTextureIconMask(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
        */
       DrawTextureIgnoreOffset(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTexturePercentage(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTexturePercentageBottomUp(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
@@ -11891,6 +15548,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
       DrawTextureScaledAspect2(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureScaledAspect3(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, Color arg5): void
@@ -11924,6 +15586,11 @@ declare module '@asledgehammer/pipewrench' {
       DrawTextureTiledY(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
       /**
        * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureTiledYOffset(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
        */
       DrawTexture_FlippedX(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
@@ -11939,19 +15606,14 @@ declare module '@asledgehammer/pipewrench' {
       DrawUVSliceTexture(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color, arg6: number, arg7: number, arg8: number, arg9: number): void;
       /**
        * Method Parameters: 
-       *  - (String arg0, String arg1): void
+       *  - (Empty): void
        */
-      ModalClick(arg0: string, arg1: string): void;
+      EndOutline(): void;
       /**
        * Method Parameters: 
        *  - (UIElement arg0, int arg1, int arg2, int arg3, int arg4): void
        */
       Nest(arg0: zombie.ui.UIElement, arg1: number, arg2: number, arg3: number, arg4: number): void;
-      /**
-       * Method Parameters: 
-       *  - (String arg0, String arg1, String arg2): void
-       */
-      OnCoopServerMessage(arg0: string, arg1: string, arg2: string): void;
       /**
        * Method Parameters: 
        *  - (UIElement arg0): void
@@ -11964,9 +15626,9 @@ declare module '@asledgehammer/pipewrench' {
       RemoveControl(arg0: zombie.ui.UIElement): void;
       /**
        * Method Parameters: 
-       *  - (String arg0, int arg1, int arg2): void
+       *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5): void
        */
-      Selected(arg0: string, arg1: number, arg2: number): void;
+      StartOutline(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -12009,6 +15671,11 @@ declare module '@asledgehammer/pipewrench' {
       getAbsoluteY(): number;
       /**
        * Method Parameters: 
+       *  - (Empty): number
+       */
+      getAlpha(): number;
+      /**
+       * Method Parameters: 
        *  - (Empty): string
        */
       getClickedValue(): string;
@@ -12030,8 +15697,9 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Empty): zombie.ui.UIElement
+       *  - (Empty): zombie.ui.UIElementInterface
        */
-      getParent(): zombie.ui.UIElement;
+      getParent(): zombie.ui.UIElement | zombie.ui.UIElementInterface;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -12116,6 +15784,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isAlwaysOnTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isAnchorBottom(): boolean;
       /**
        * Method Parameters: 
@@ -12132,6 +15805,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       isAnchorTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isBackMost(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -12181,7 +15859,17 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (double arg0, double arg1): boolean
        */
+      isOverElement(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): boolean
+       */
       isPointOver(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isReallyVisible(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -12191,7 +15879,52 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isWantExtraMouseEvents(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isWantKeyEvents(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyPress(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRelease(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRepeat(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonDown(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonUp(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): boolean
+       */
+      onConsumeMouseMove(arg0: number, arg1: number, arg2: number, arg3: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseWheel(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): void
+       */
+      onExtendMouseMoveOutside(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -12207,6 +15940,21 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0): void
        */
       onKeyRepeat(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDown(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDownOutside(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonUpOutside(arg0: number, arg1: number, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (double arg0, double arg1): boolean
@@ -12272,6 +16020,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): void
        */
       resumeStencil(): void;
+      /**
+       * Method Parameters: 
+       *  - (float arg0): void
+       */
+      setAlpha(arg0: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -12364,11 +16117,6 @@ declare module '@asledgehammer/pipewrench' {
       setMaxDrawHeight(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (boolean arg0): void
-       */
-      setMovable(arg0: boolean): void;
-      /**
-       * Method Parameters: 
        *  - (UIElement arg0): void
        */
       setParent(arg0: zombie.ui.UIElement): void;
@@ -12426,6 +16174,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (boolean arg0): void
        */
+      setWantExtraMouseEvents(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
       setWantKeyEvents(arg0: boolean): void;
       /**
        * Method Parameters: 
@@ -12462,11 +16215,6 @@ declare module '@asledgehammer/pipewrench' {
        *  - (double arg0): void
        */
       setYScroll(arg0: number): void;
-      /**
-       * Method Parameters: 
-       *  - (Empty): void
-       */
-      shutdown(): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -12517,6 +16265,21 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): void
        */
       ClearHighlights(): void;
+      /**
+       * Method Parameters: 
+       *  - (InventoryItem arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
+       */
+      DrawItemIcon(arg0: zombie.inventory.InventoryItem, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, float arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawLine(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Item arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
+       */
+      DrawScriptItemIcon(arg0: zombie.scripting.objects.Item, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9, double arg10, double arg11, double arg12): void
@@ -12571,9 +16334,29 @@ declare module '@asledgehammer/pipewrench' {
       DrawTextureColor(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): void;
       /**
        * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureIcon(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTextureIconMask(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
        */
       DrawTextureIgnoreOffset(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTexturePercentage(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTexturePercentageBottomUp(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
@@ -12589,6 +16372,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
       DrawTextureScaledAspect2(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureScaledAspect3(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, Color arg5): void
@@ -12622,6 +16410,11 @@ declare module '@asledgehammer/pipewrench' {
       DrawTextureTiledY(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
       /**
        * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureTiledYOffset(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
        */
       DrawTexture_FlippedX(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
@@ -12637,6 +16430,11 @@ declare module '@asledgehammer/pipewrench' {
       DrawUVSliceTexture(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color, arg6: number, arg7: number, arg8: number, arg9: number): void;
       /**
        * Method Parameters: 
+       *  - (Empty): void
+       */
+      EndOutline(): void;
+      /**
+       * Method Parameters: 
        *  - (UIElement arg0): void
        */
       RemoveChild(arg0: zombie.ui.UIElement): void;
@@ -12650,6 +16448,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): void
        */
       SetText(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5): void
+       */
+      StartOutline(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -12685,6 +16488,16 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): void
        */
       clearStencilRect(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      copyToClipboard(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      cutToClipboard(): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -12727,6 +16540,11 @@ declare module '@asledgehammer/pipewrench' {
       getForceUpperCase(): boolean;
       /**
        * Method Parameters: 
+       *  - (Empty): zombie.ui.UINineGrid
+       */
+      getFrame(): zombie.ui.UINineGrid;
+      /**
+       * Method Parameters: 
        *  - (Empty): number
        */
       getFrameAlpha(): number;
@@ -12763,8 +16581,9 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Empty): zombie.ui.UIElement
+       *  - (Empty): zombie.ui.UIElementInterface
        */
-      getParent(): zombie.ui.UIElement;
+      getParent(): zombie.ui.UIElement | zombie.ui.UIElementInterface;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -12790,6 +16609,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       getScrollWithParent(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.Color
+       */
+      getStandardFrameColour(): zombie.core.Color;
       /**
        * Method Parameters: 
        *  - (Empty): se.krka.kahlua.vm.KahluaTable
@@ -12859,6 +16683,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isAlwaysOnTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isAnchorBottom(): boolean;
       /**
        * Method Parameters: 
@@ -12879,6 +16708,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isBackMost(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isCapture(): boolean;
       /**
        * Method Parameters: 
@@ -12890,6 +16724,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       isDefaultDraw(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isDoingTextEntry(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -12915,6 +16754,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       isForceCursorVisible(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isIgnoreFirst(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -12947,9 +16791,24 @@ declare module '@asledgehammer/pipewrench' {
       isOnlyNumbers(): boolean;
       /**
        * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isOnlyText(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): boolean
+       */
+      isOverElement(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
        *  - (double arg0, double arg1): boolean
        */
       isPointOver(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isReallyVisible(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -12959,7 +16818,17 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isTextLimit(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isVisible(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isWantExtraMouseEvents(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -12970,6 +16839,81 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): void
        */
       onCommandEntered(): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyPress(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRelease(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRepeat(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonDown(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonUp(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): boolean
+       */
+      onConsumeMouseMove(arg0: number, arg1: number, arg2: number, arg3: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseWheel(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): void
+       */
+      onExtendMouseMoveOutside(arg0: number, arg1: number, arg2: number, arg3: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      onKeyBack(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      onKeyDelete(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      onKeyDown(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      onKeyEnd(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      onKeyEnter(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      onKeyHome(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      onKeyLeft(): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -12985,6 +16929,31 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0): void
        */
       onKeyRepeat(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      onKeyRight(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      onKeyUp(): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDown(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDownOutside(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonUpOutside(arg0: number, arg1: number, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (double arg0, double arg1): boolean
@@ -13055,6 +17024,16 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): void
        */
       onresize(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      pasteFromClipboard(): void;
+      /**
+       * Method Parameters: 
+       *  - (char arg0): void
+       */
+      putCharacter(arg0: string): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -13149,6 +17128,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (boolean arg0): void
        */
+      setDoingTextEntry(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
       setEditable(arg0: boolean): void;
       /**
        * Method Parameters: 
@@ -13199,6 +17183,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (boolean arg0): void
        */
+      setIgnoreFirst(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
       setIgnoreLossControl(arg0: boolean): void;
       /**
        * Method Parameters: 
@@ -13230,6 +17219,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (boolean arg0): void
        */
       setOnlyNumbers(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setOnlyText(arg0: boolean): void;
       /**
        * Method Parameters: 
        *  - (UIElement arg0): void
@@ -13272,6 +17266,11 @@ declare module '@asledgehammer/pipewrench' {
       setSelectable(arg0: boolean): void;
       /**
        * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setSelectingRange(arg0: boolean): void;
+      /**
+       * Method Parameters: 
        *  - (double arg0, double arg1, double arg2, double arg3): void
        */
       setStencilRect(arg0: number, arg1: number, arg2: number, arg3: number): void;
@@ -13287,6 +17286,11 @@ declare module '@asledgehammer/pipewrench' {
       setTextColor(arg0: zombie.core.textures.ColorInfo): void;
       /**
        * Method Parameters: 
+       *  - (float arg0, float arg1, float arg2, float arg3): void
+       */
+      setTextRGBA(arg0: number, arg1: number, arg2: number, arg3: number): void;
+      /**
+       * Method Parameters: 
        *  - (String arg0): void
        */
       setUIName(arg0: string): void;
@@ -13295,6 +17299,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (boolean arg0): void
        */
       setVisible(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setWantExtraMouseEvents(arg0: boolean): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -13315,6 +17324,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (double arg0): void
        */
       setWidthSilent(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setWrapLines(arg0: boolean): void;
       /**
        * Method Parameters: 
        *  - (double arg0): void
@@ -13360,6 +17374,149 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): void
        */
       updateText(): void;
+    }
+    /**
+     * @customConstructor UITextEntryInterface.new
+     * @
+     * [INTERFACE] zombie.ui.UITextEntryInterface
+     */
+    export class UITextEntryInterface {
+      protected constructor();
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      copyToClipboard(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      cutToClipboard(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.ui.UINineGrid
+       */
+      getFrame(): zombie.ui.UINineGrid;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.Color
+       */
+      getStandardFrameColour(): zombie.core.Color;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getUIName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isDoingTextEntry(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEditable(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isIgnoreFirst(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isOnlyNumbers(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isOnlyText(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isTextLimit(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      onKeyBack(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      onKeyDelete(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      onKeyDown(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      onKeyEnd(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      onKeyEnter(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      onKeyHome(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      onKeyLeft(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      onKeyRight(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      onKeyUp(): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): void
+       */
+      onOtherKey(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      pasteFromClipboard(): void;
+      /**
+       * Method Parameters: 
+       *  - (char arg0): void
+       */
+      putCharacter(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      selectAll(): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setDoingTextEntry(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setIgnoreFirst(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setSelectingRange(arg0: boolean): void;
     }
     /**
      * @customConstructor UITransition.new
@@ -13453,6 +17610,21 @@ declare module '@asledgehammer/pipewrench' {
       ClearChildren(): void;
       /**
        * Method Parameters: 
+       *  - (InventoryItem arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
+       */
+      DrawItemIcon(arg0: zombie.inventory.InventoryItem, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, float arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawLine(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Item arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
+       */
+      DrawScriptItemIcon(arg0: zombie.scripting.objects.Item, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9, double arg10, double arg11, double arg12): void
        */
       DrawSubTextureRGBA(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number, arg12: number): void;
@@ -13505,9 +17677,29 @@ declare module '@asledgehammer/pipewrench' {
       DrawTextureColor(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): void;
       /**
        * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureIcon(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTextureIconMask(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
        */
       DrawTextureIgnoreOffset(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTexturePercentage(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9): void
+       */
+      DrawTexturePercentageBottomUp(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5): void
@@ -13523,6 +17715,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
        */
       DrawTextureScaledAspect2(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureScaledAspect3(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, Color arg5): void
@@ -13556,6 +17753,11 @@ declare module '@asledgehammer/pipewrench' {
       DrawTextureTiledY(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
       /**
        * Method Parameters: 
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8): void
+       */
+      DrawTextureTiledYOffset(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
+      /**
+       * Method Parameters: 
        *  - (Texture arg0, double arg1, double arg2, int arg3, int arg4, Color arg5): void
        */
       DrawTexture_FlippedX(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color): void;
@@ -13571,6 +17773,11 @@ declare module '@asledgehammer/pipewrench' {
       DrawUVSliceTexture(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: zombie.core.Color, arg6: number, arg7: number, arg8: number, arg9: number): void;
       /**
        * Method Parameters: 
+       *  - (Empty): void
+       */
+      EndOutline(): void;
+      /**
+       * Method Parameters: 
        *  - (UIElement arg0): void
        */
       RemoveChild(arg0: zombie.ui.UIElement): void;
@@ -13579,6 +17786,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (UIElement arg0): void
        */
       RemoveControl(arg0: zombie.ui.UIElement): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5): void
+       */
+      StartOutline(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -13642,8 +17854,9 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Empty): zombie.ui.UIElement
+       *  - (Empty): zombie.ui.UIElementInterface
        */
-      getParent(): zombie.ui.UIElement;
+      getParent(): zombie.ui.UIElement | zombie.ui.UIElementInterface;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -13728,6 +17941,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isAlwaysOnTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isAnchorBottom(): boolean;
       /**
        * Method Parameters: 
@@ -13744,6 +17962,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       isAnchorTop(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isBackMost(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -13793,7 +18016,17 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (double arg0, double arg1): boolean
        */
+      isOverElement(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1): boolean
+       */
       isPointOver(arg0: number, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isReallyVisible(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -13803,7 +18036,52 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      isWantExtraMouseEvents(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       isWantKeyEvents(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyPress(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRelease(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): boolean
+       */
+      onConsumeKeyRepeat(arg0: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonDown(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseButtonUp(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): boolean
+       */
+      onConsumeMouseMove(arg0: number, arg1: number, arg2: number, arg3: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2): boolean
+       */
+      onConsumeMouseWheel(arg0: number, arg1: number, arg2: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (double arg0, double arg1, double arg2, double arg3): void
+       */
+      onExtendMouseMoveOutside(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -13819,6 +18097,21 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0): void
        */
       onKeyRepeat(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDown(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonDownOutside(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, double arg1, double arg2): void
+       */
+      onMouseButtonUpOutside(arg0: number, arg1: number, arg2: number): void;
       /**
        * Method Parameters: 
        *  - (double arg0, double arg1): boolean
@@ -14044,6 +18337,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (boolean arg0): void
        */
       setVisible(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setWantExtraMouseEvents(arg0: boolean): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void

@@ -31,6 +31,28 @@ declare module '@asledgehammer/pipewrench/client' {
 
       constructor(parent: any, vertical: any);
 
+      hitTest(x: any, y: any, ...__args: never[]): any;
+
+      isPointOverThumb(x: any, y: any, ...__args: never[]): any;
+
+      onClickArrowDown(...__args: never[]): any;
+
+      onClickArrowLeft(...__args: never[]): any;
+
+      onClickArrowRight(...__args: never[]): any;
+
+      onClickArrowUp(...__args: never[]): any;
+
+      onClickTrackDown(y: any, ...__args: never[]): any;
+
+      onClickTrackLeft(x: any, ...__args: never[]): any;
+
+      onClickTrackRight(x: any, ...__args: never[]): any;
+
+      onClickTrackUp(y: any, ...__args: never[]): any;
+
+      onMouseDoubleClick(x: any, y: any, ...__args: never[]): any;
+
       onMouseDown(x: any, y: any, ...__args: never[]): any;
 
       refresh(...__args: never[]): any;

@@ -43,6 +43,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       filterDisplayCategory(widget: any, scriptItem: any, ...__args: never[]): any;
 
+      filterLootCategory(widget: any, scriptItem: any, ...__args: never[]): any;
+
       filterName(widget: any, scriptItem: any, ...__args: never[]): any;
 
       filterType(widget: any, scriptItem: any, ...__args: never[]): any;

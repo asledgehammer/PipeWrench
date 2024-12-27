@@ -77,7 +77,21 @@ declare module '@asledgehammer/pipewrench/client' {
 
       textR: any;
 
+      videoCount: any;
+
+      videoH: any;
+
+      videos: any;
+
+      videoW: any;
+
+      videoX: any;
+
+      videoY: any;
+
       constructor(x: any, y: any, width: any, height: any);
+
+      doRightJoystickScrolling(joypadData: any, dx: any, dy: any, ...__args: never[]): any;
 
       onMouseWheel(del: any, ...__args: never[]): any;
 

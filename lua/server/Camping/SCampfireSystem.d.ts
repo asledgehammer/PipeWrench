@@ -19,9 +19,14 @@ declare module '@asledgehammer/pipewrench/server' {
 
       lowerFuelAmount(...__args: never[]): any;
 
+      lowerFuelAmountSpecific(luaObject: any, amt: any, ...__args: never[]): any;
+
       nearCamp(delay: any, ...__args: never[]): any;
 
       removeCampfire(luaObject: any, ...__args: never[]): any;
+
+      /** @noSelf */
+      static putOut: (square: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.server.Camping.SCampfireSystem {}

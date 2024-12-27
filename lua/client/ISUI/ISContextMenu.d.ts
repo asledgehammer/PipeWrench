@@ -91,6 +91,23 @@ declare module '@asledgehammer/pipewrench/client' {
         ...__args: never[]
       ): any;
 
+      addColorBoxOption(
+        name: any,
+        target: any,
+        onSelect: any,
+        param1: any,
+        param2: any,
+        param3: any,
+        param4: any,
+        param5: any,
+        param6: any,
+        param7: any,
+        param8: any,
+        param9: any,
+        param10: any,
+        ...__args: never[]
+      ): any;
+
       addDebugOption(
         name: any,
         target: any,
@@ -109,6 +126,23 @@ declare module '@asledgehammer/pipewrench/client' {
       ): any;
 
       addDefaultOptions(...__args: never[]): any;
+
+      addGetUpOption(
+        text: any,
+        target: any,
+        onSelect: any,
+        p2: any,
+        p3: any,
+        p4: any,
+        p5: any,
+        p6: any,
+        p7: any,
+        p8: any,
+        p9: any,
+        p10: any,
+        undefined: any,
+        ...__args: never[]
+      ): any;
 
       addOption(
         name: any,
@@ -252,6 +286,22 @@ declare module '@asledgehammer/pipewrench/client' {
       isOptionSingleMenu(...__args: never[]): any;
 
       onFocus(x: any, y: any, ...__args: never[]): any;
+
+      onGetUpAndThen(
+        onSelect: any,
+        p1: any,
+        p2: any,
+        p3: any,
+        p4: any,
+        p5: any,
+        p6: any,
+        p7: any,
+        p8: any,
+        p9: any,
+        p10: any,
+        undefined: any,
+        ...__args: never[]
+      ): any;
 
       onJoypadDirDown(...__args: never[]): any;
 

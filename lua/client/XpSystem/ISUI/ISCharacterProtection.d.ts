@@ -13,10 +13,6 @@ declare module '@asledgehammer/pipewrench/client' {
 
       bodyPartPanel: any;
 
-      bpAnchorX: any;
-
-      bpAnchorY: any;
-
       bparts: any;
 
       bpPanelX: any;

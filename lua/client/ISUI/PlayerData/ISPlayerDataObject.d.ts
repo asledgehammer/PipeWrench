@@ -39,7 +39,7 @@ declare module '@asledgehammer/pipewrench/client' {
 
       radialMenu: any;
 
-      safetyUI: any;
+      sleepingUI: any;
 
       vehicleDashboard: any;
 
@@ -58,6 +58,8 @@ declare module '@asledgehammer/pipewrench/client' {
       y1top: any;
 
       y2: any;
+
+      zoneUI: any;
 
       constructor(id: any);
 

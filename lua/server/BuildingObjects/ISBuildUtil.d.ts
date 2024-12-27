@@ -42,7 +42,7 @@ declare module '@asledgehammer/pipewrench/server' {
       static getMaterialOnGroundUses: (itemMap: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getStairObjects: (object: any, ...__args: never[]) => any;
+      static getStairObjects: (object: any, skipFloor: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static getWoodHealth: (ISItem: any, ...__args: never[]) => any;

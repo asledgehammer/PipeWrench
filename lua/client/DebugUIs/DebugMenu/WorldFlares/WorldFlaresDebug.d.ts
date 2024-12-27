@@ -43,8 +43,6 @@ declare module '@asledgehammer/pipewrench/client' {
 
       variableColor: any;
 
-      windowY: any;
-
       zOffsetSmallFont: any;
 
       constructor(x: any, y: any, width: any, height: any, title: any);

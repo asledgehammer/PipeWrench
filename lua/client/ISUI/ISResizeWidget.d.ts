@@ -9,6 +9,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       backgroundColorMouseOver: any;
 
+      resizeFunction: any;
+
       resizing: any;
 
       target: any;

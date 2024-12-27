@@ -39,6 +39,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       overrideBPrompt: any;
 
+      panel: any;
+
       pin: any;
 
       player: any;

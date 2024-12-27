@@ -65,6 +65,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       finalizeDeal(...__args: never[]): any;
 
+      getIndexFromItemId(itemId: any, ...__args: never[]): any;
+
       onAnswerTradeRequest(button: any, ...__args: never[]): any;
 
       onClick(button: any, ...__args: never[]): any;
@@ -97,7 +99,7 @@ declare module '@asledgehammer/pipewrench/client' {
       static ReceiveTradeRequest: (requester: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static RemoveItem: (player: any, index: any, ...__args: never[]) => any;
+      static RemoveItem: (player: any, itemId: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static UpdateState: (player: any, state: any, ...__args: never[]) => any;

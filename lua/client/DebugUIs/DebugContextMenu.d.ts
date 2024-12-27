@@ -6,6 +6,9 @@ declare module '@asledgehammer/pipewrench/client' {
       static [id: string]: any;
 
       /** @noSelf */
+      static AddAnimal: (type: any, breed: any, square: any, skeleton: any, ...__args: never[]) => any;
+
+      /** @noSelf */
       static addRBDebugMenu: (context: any, building: any, ...__args: never[]) => any;
 
       /** @noSelf */
@@ -21,6 +24,16 @@ declare module '@asledgehammer/pipewrench/client' {
       static doCheatMenu: (context: any, playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
+      static doDebugAnimalMenu: (
+        playerObj: any,
+        context: any,
+        worldobjects: any,
+        test: any,
+        square: any,
+        ...__args: never[]
+      ) => any;
+
+      /** @noSelf */
       static doDebugCorpseMenu: (player: any, context: any, worldobjects: any, test: any, ...__args: never[]) => any;
 
       /** @noSelf */
@@ -33,6 +46,12 @@ declare module '@asledgehammer/pipewrench/client' {
       static doDebugZombieMenu: (player: any, context: any, worldobjects: any, test: any, ...__args: never[]) => any;
 
       /** @noSelf */
+      static doMissingClothingItems: (...__args: never[]) => any;
+
+      /** @noSelf */
+      static doMissingItems: (...__args: never[]) => any;
+
+      /** @noSelf */
       static doRandomizedBuilding: (building: any, RBdef: any, ...__args: never[]) => any;
 
       /** @noSelf */
@@ -42,7 +61,19 @@ declare module '@asledgehammer/pipewrench/client' {
       static doRandomizedZoneStory: (square: any, rzs: any, ...__args: never[]) => any;
 
       /** @noSelf */
+      static onAddDesignationZone: (playerObj: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static onAddEnclosure: (playerObj: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static OnAddZombieClient: (player: any, ...__args: never[]) => any;
+
+      /** @noSelf */
       static onAttachedItems: (playerObj: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static onAvatarUI: (player: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static OnBBQSetFuel: (obj: any, ...__args: never[]) => any;
@@ -117,9 +148,6 @@ declare module '@asledgehammer/pipewrench/client' {
       static OnMannequinSetScript: (obj: any, script: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static OnMetalDrumSetWater: (obj: any, ...__args: never[]) => any;
-
-      /** @noSelf */
       static OnMetalDrumZeroWater: (obj: any, ...__args: never[]) => any;
 
       /** @noSelf */
@@ -130,6 +158,12 @@ declare module '@asledgehammer/pipewrench/client' {
 
       /** @noSelf */
       static OnReanimateCorpse: (body: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static OnRemoveAllAnimals: (zombie: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static OnRemoveAllAnimalsClient: (zombie: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static OnRemoveAllZombies: (zombie: any, ...__args: never[]) => any;
@@ -174,6 +208,9 @@ declare module '@asledgehammer/pipewrench/client' {
       static onSetAlarm: (def: any, ...__args: never[]) => any;
 
       /** @noSelf */
+      static onSetAnimRecorderActive: (character: any, isActive: any, ...__args: never[]) => any;
+
+      /** @noSelf */
       static OnSetCompost: (worldobjects: any, obj: any, ...__args: never[]) => any;
 
       /** @noSelf */
@@ -187,6 +224,15 @@ declare module '@asledgehammer/pipewrench/client' {
 
       /** @noSelf */
       static OnSetZombieOnFire: (zombie: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static onShowAnimationText: (chr: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static onShowCursor: (playerObj: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static onShowPlayerModel: (playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static onSpawnPoints: (square: any, player: any, ...__args: never[]) => any;
@@ -210,7 +256,19 @@ declare module '@asledgehammer/pipewrench/client' {
       static onTilesPicker: (playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
+      static onToggleAnimalCheat: (...__args: never[]) => any;
+
+      /** @noSelf */
       static OnUnbendFence: (worldobjects: any, fence: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static OnWindowAddMetal: (playerObj: any, window: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static OnWindowAddMetalBar: (playerObj: any, window: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static OnWindowAddPlank: (playerObj: any, window: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static OnWindowGlassRemoved: (worldobjects: any, window: any, ...__args: never[]) => any;
@@ -220,6 +278,15 @@ declare module '@asledgehammer/pipewrench/client' {
 
       /** @noSelf */
       static OnWindowPermLock: (worldobjects: any, window: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static OnWindowRemoveMetal: (playerObj: any, window: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static OnWindowRemoveMetalBar: (playerObj: any, window: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static OnWindowRemovePlank: (playerObj: any, window: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static OnWindowSmash: (worldobjects: any, window: any, ...__args: never[]) => any;

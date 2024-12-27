@@ -11,8 +11,6 @@ declare module '@asledgehammer/pipewrench/client' {
 
       static upAlpha: any;
 
-      AddSkillBtn: any;
-
       char: any;
 
       level: any;
@@ -25,17 +23,11 @@ declare module '@asledgehammer/pipewrench/client' {
 
       playerNum: any;
 
-      ProgressSkill: any;
+      SkillUnitBorder: any;
 
-      SkillBtnEmptWhitey: any;
-
-      SkillBtnEmpty: any;
-
-      SkillBtnEmptyBig: any;
+      SkillUnitFilled: any;
 
       tooltip: any;
-
-      UnlockedSkill: any;
 
       xp: any;
 

@@ -121,7 +121,13 @@ declare module '@asledgehammer/pipewrench/client' {
 
       titleFontHgt: any;
 
+      totalItems: any;
+
       totalWeight: any;
+
+      visibleFunction: any;
+
+      visibleTarget: any;
 
       zoom: any;
 
@@ -136,6 +142,10 @@ declare module '@asledgehammer/pipewrench/client' {
       collapse(...__args: never[]): any;
 
       createChildren(...__args: never[]): any;
+
+      drawText(str: any, x: any, y: any, r: any, g: any, b: any, a: any, font: any, ...__args: never[]): any;
+
+      drawTextRight(str: any, x: any, y: any, r: any, g: any, b: any, a: any, font: any, ...__args: never[]): any;
 
       dropItemsInContainer(button: any, ...__args: never[]): any;
 
@@ -188,6 +198,8 @@ declare module '@asledgehammer/pipewrench/client' {
       onMouseWheel(del: any, ...__args: never[]): any;
 
       onRightMouseDownOutside(x: any, y: any, ...__args: never[]): any;
+
+      onToggleVisible(...__args: never[]): any;
 
       prevUnlockedContainer(index: any, wrap: any, ...__args: never[]): any;
 

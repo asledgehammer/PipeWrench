@@ -7,6 +7,9 @@ declare module '@asledgehammer/pipewrench' {
      * [CLASS] zombie.iso.weather.fog.ImprovedFog
      */
     export class ImprovedFog {
+      /** int */
+      static readonly MAX_FOG_Z: number;
+
       /**
        * Constructors: 
        *  - (Empty Constructor)
@@ -79,6 +82,13 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (Empty): zombie.iso.weather.fog.ImprovedFogDrawer
+       */
+      static getDrawer(): zombie.iso.weather.fog.ImprovedFogDrawer;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (Empty): number
        */
       static getMaxXOffset(): number;
@@ -96,6 +106,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): number
        */
       static getMinXOffset(): number;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.core.textures.Texture
+       */
+      static getNoiseTexture(): zombie.core.textures.Texture;
       /**
        * @noSelf
        *
@@ -366,9 +383,16 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (int arg0, int arg1): void
+       *  - (ImprovedFogDrawer arg0): void
        */
-      static startRender(arg0: number, arg1: number): void;
+      static startFrame(arg0: zombie.iso.weather.fog.ImprovedFogDrawer): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (int arg0, int arg1): boolean
+       */
+      static startRender(arg0: number, arg1: number): boolean;
       /**
        * @noSelf
        *
@@ -383,6 +407,38 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): void
        */
       static updateKeys(): void;
+    }
+    /**
+     * @customConstructor ImprovedFogDrawer.new
+     * @
+     * [CLASS] zombie.iso.weather.fog.ImprovedFogDrawer extends zombie.core.textures.TextureDraw$GenericDrawer
+     */
+    export class ImprovedFogDrawer {
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       */
+      constructor();
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      endFrame(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      postRender(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      render(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      startFrame(): void;
     }
   }
 }

@@ -9,6 +9,18 @@ declare module '@asledgehammer/pipewrench/client' {
 
       static instance: any;
 
+      addVarAddButton: any;
+
+      addVarComboType: any;
+
+      addVarKey: any;
+
+      addVarKeyLabel: any;
+
+      addVarValue: any;
+
+      addVarValueLabel: any;
+
       buttonActiveNodes: any;
 
       buttonAnimTracks: any;
@@ -82,6 +94,8 @@ declare module '@asledgehammer/pipewrench/client' {
       clear(...__args: never[]): any;
 
       clearLog(...__args: never[]): any;
+
+      colorButtons(...__args: never[]): any;
 
       onClick(_button: any, ...__args: never[]): any;
 

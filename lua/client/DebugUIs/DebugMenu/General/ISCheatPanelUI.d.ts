@@ -30,6 +30,9 @@ declare module '@asledgehammer/pipewrench/client' {
       render(...__args: never[]): any;
 
       /** @noSelf */
+      static EnableCheats: (...__args: never[]) => any;
+
+      /** @noSelf */
       static OnOpenPanel: (...__args: never[]) => any;
     }
   }

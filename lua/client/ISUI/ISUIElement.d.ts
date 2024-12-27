@@ -53,6 +53,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       vscroll: any;
 
+      wantExtraMouseEvents: any;
+
       wantKeyEvents: any;
 
       width: any;
@@ -87,6 +89,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       createChildren(...__args: never[]): any;
 
+      drawItemIcon(item: any, x: any, y: any, a: any, w: any, h: any, ...__args: never[]): any;
+
       drawLine2(x: any, y: any, x2: any, y2: any, a: any, r: any, g: any, b: any, ...__args: never[]): any;
 
       drawProgressBar(x: any, y: any, w: any, h: any, f: any, fg: any, ...__args: never[]): any;
@@ -98,6 +102,8 @@ declare module '@asledgehammer/pipewrench/client' {
       drawRectBorderStatic(x: any, y: any, w: any, h: any, a: any, r: any, g: any, b: any, ...__args: never[]): any;
 
       drawRectStatic(x: any, y: any, w: any, h: any, a: any, r: any, g: any, b: any, ...__args: never[]): any;
+
+      drawScriptItemIcon(scriptItem: any, x: any, y: any, a: any, w: any, h: any, ...__args: never[]): any;
 
       drawText(str: any, x: any, y: any, r: any, g: any, b: any, a: any, font: any, ...__args: never[]): any;
 
@@ -183,6 +189,19 @@ declare module '@asledgehammer/pipewrench/client' {
         ...__args: never[]
       ): any;
 
+      drawTextureScaledAspect3(
+        texture: any,
+        x: any,
+        y: any,
+        w: any,
+        h: any,
+        a: any,
+        r: any,
+        g: any,
+        b: any,
+        ...__args: never[]
+      ): any;
+
       drawTextureScaledStatic(
         texture: any,
         x: any,
@@ -210,6 +229,19 @@ declare module '@asledgehammer/pipewrench/client' {
 
       drawTextureStatic(texture: any, x: any, y: any, a: any, r: any, g: any, b: any, ...__args: never[]): any;
 
+      drawTextureTiled(
+        texture: any,
+        x: any,
+        y: any,
+        w: any,
+        h: any,
+        r: any,
+        g: any,
+        b: any,
+        a: any,
+        ...__args: never[]
+      ): any;
+
       drawTextureTiledX(
         texture: any,
         x: any,
@@ -236,6 +268,19 @@ declare module '@asledgehammer/pipewrench/client' {
         ...__args: never[]
       ): any;
 
+      drawTextureTiledYOffset(
+        texture: any,
+        x: any,
+        y: any,
+        w: any,
+        h: any,
+        r: any,
+        g: any,
+        b: any,
+        a: any,
+        ...__args: never[]
+      ): any;
+
       drawTextZoomed(
         str: any,
         x: any,
@@ -248,6 +293,8 @@ declare module '@asledgehammer/pipewrench/client' {
         font: any,
         ...__args: never[]
       ): any;
+
+      EndOutline(...__args: never[]): any;
 
       getAbsoluteX(...__args: never[]): any;
 
@@ -323,6 +370,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       isMouseOver(...__args: never[]): any;
 
+      isPointOver(screenX: any, screenY: any, ...__args: never[]): any;
+
       isReallyVisible(...__args: never[]): any;
 
       isRemoved(...__args: never[]): any;
@@ -391,6 +440,10 @@ declare module '@asledgehammer/pipewrench/client' {
 
       setAnchorRight(bAnchor: any, ...__args: never[]): any;
 
+      setAnchors(bAnchor: any, ...__args: never[]): any;
+
+      setAnchorsTBLR(bAnchorT: any, bAnchorB: any, bAnchorL: any, bAnchorR: any, ...__args: never[]): any;
+
       setAnchorTop(bAnchor: any, ...__args: never[]): any;
 
       setCapture(bCapture: any, ...__args: never[]): any;
@@ -429,6 +482,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       setVisible(bVisible: any, ...__args: never[]): any;
 
+      setWantExtraMouseEvents(want: any, ...__args: never[]): any;
+
       setWantKeyEvents(want: any, ...__args: never[]): any;
 
       setWidth(w: any, ...__args: never[]): any;
@@ -443,9 +498,13 @@ declare module '@asledgehammer/pipewrench/client' {
 
       setYScroll(y: any, ...__args: never[]): any;
 
+      shrinkWrap(padRight: any, padBottom: any, predicate: any, ...__args: never[]): any;
+
       shrinkX(x: any, ...__args: never[]): any;
 
       shrinkY(y: any, ...__args: never[]): any;
+
+      StartOutline(tex: any, outlineThickness: any, r: any, g: any, b: any, a: any, ...__args: never[]): any;
 
       stayOnSplitScreen(playerNum: any, ...__args: never[]): any;
 

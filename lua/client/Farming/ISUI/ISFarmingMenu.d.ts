@@ -7,6 +7,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       doSeedMenu: ((context: any, plant: any, sq: any, playerObj: any) => any) | any;
 
+      isCompostValid: (() => any) | any;
+
       isFertilizeValid: (() => any) | any;
 
       isHarvestValid: (() => any) | any;
@@ -16,6 +18,8 @@ declare module '@asledgehammer/pipewrench/client' {
       isSeedValid: (() => any) | any;
 
       isWaterValid: (() => any) | any;
+
+      onCompostSquareSelected: (() => any) | any;
 
       onFertilizeSquareSelected: (() => any) | any;
 
@@ -31,7 +35,17 @@ declare module '@asledgehammer/pipewrench/client' {
       static canDigHere: (worldObjects: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static canPlow: (seedAvailable: any, typeOfSeed: any, option: any, ...__args: never[]) => any;
+      static canDigHereSquare: (square: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static canPlow: (
+        seedAvailable: any,
+        typeOfSeed: any,
+        option: any,
+        seedName: any,
+        playerObj: any,
+        ...__args: never[]
+      ) => any;
 
       /** @noSelf */
       static doFarmingMenu: (player: any, context: any, worldobjects: any, test: any, ...__args: never[]) => any;
@@ -40,19 +54,28 @@ declare module '@asledgehammer/pipewrench/client' {
       static doFarmingMenu2: (player: any, context: any, worldobjects: any, test: any, ...__args: never[]) => any;
 
       /** @noSelf */
+      static getFluidContainerMillilitresPerUse: (...__args: never[]) => any;
+
+      /** @noSelf */
       static getPlantName: (plant: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static getShovel: (player: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static getShovelAnim: (item: any, ...__args: never[]) => any;
+      static getWaterUsesFloat: (item: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static getWaterUsesInteger: (item: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static isValidPlant: (plant: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static itemSortByName: (a: any, b: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static onAphidsCure: (worldobjects: any, uses: any, sq: any, playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static onCheat: (worldobjects: any, plant: any, args: any, ...__args: never[]) => any;
@@ -62,6 +85,16 @@ declare module '@asledgehammer/pipewrench/client' {
 
       /** @noSelf */
       static onCheatWater: (worldobjects: any, plant: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static onCompost: (
+        worldobjects: any,
+        handItem: any,
+        plant: any,
+        sq: any,
+        playerObj: any,
+        ...__args: never[]
+      ) => any;
 
       /** @noSelf */
       static onFertilize: (
@@ -92,10 +125,13 @@ declare module '@asledgehammer/pipewrench/client' {
       static onPlow: (worldobjects: any, player: any, handItem: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onSeed: (playerObj: any, typeOfSeed: any, plant: any, sq: any, ...__args: never[]) => any;
+      static onSeed: (playerObj: any, typeOfSeed: any, plant: any, sq: any, seedName: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static onShovel: (worldobjects: any, plant: any, player: any, sq: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static onSlugsCure: (worldobjects: any, uses: any, sq: any, playerObj: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static onWater: (
@@ -107,6 +143,9 @@ declare module '@asledgehammer/pipewrench/client' {
         sq: any,
         ...__args: never[]
       ) => any;
+
+      /** @noSelf */
+      static plantInfo: (prop: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static walkToPlant: (playerObj: any, square: any, ...__args: never[]) => any;

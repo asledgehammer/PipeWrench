@@ -15,29 +15,20 @@ declare module '@asledgehammer/pipewrench/server' {
       static getObjectName: (plant: any, ...__args: never[]) => any;
 
       /** @noSelf */
+      static getObjectPhase: (plant: any, ...__args: never[]) => any;
+
+      /** @noSelf */
       static getSpriteName: (plant: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static growBroccoli: (planting: any, nextGrowing: any, updateNbOfGrow: any, ...__args: never[]) => any;
-
-      /** @noSelf */
-      static growCabbage: (planting: any, nextGrowing: any, updateNbOfGrow: any, ...__args: never[]) => any;
-
-      /** @noSelf */
-      static growCarrots: (planting: any, nextGrowing: any, updateNbOfGrow: any, ...__args: never[]) => any;
-
-      /** @noSelf */
-      static growPotato: (planting: any, nextGrowing: any, updateNbOfGrow: any, ...__args: never[]) => any;
-
-      /** @noSelf */
-      static growRedRadish: (planting: any, nextGrowing: any, updateNbOfGrow: any, ...__args: never[]) => any;
-
-      /** @noSelf */
-      static growStrewberries: (planting: any, nextGrowing: any, updateNbOfGrow: any, ...__args: never[]) => any;
-
-      /** @noSelf */
-      static growTomato: (planting: any, nextGrowing: any, updateNbOfGrow: any, ...__args: never[]) => any;
+      static grow: (planting: any, nextGrowing: any, updateNbOfGrow: any, ...__args: never[]) => any;
     }
   }
-  export namespace lua.server.Farming.farming_vegetableconf {}
+  export namespace lua.server.Farming.farming_vegetableconf {
+    /** @noSelf */
+    export const calcNextTimeFactor: () => any;
+
+    /** @noSelf */
+    export const randomGrowthOffset: () => any;
+  }
 }

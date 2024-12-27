@@ -11,7 +11,11 @@ declare module '@asledgehammer/pipewrench/client' {
 
       endPos: any;
 
+      highlightSquares: any;
+
       itemType: any;
+
+      marker: any;
 
       maxLines: any;
 
@@ -20,6 +24,8 @@ declare module '@asledgehammer/pipewrench/client' {
       name: any;
 
       numLines: any;
+
+      OnRenderTick: any;
 
       player: any;
 
@@ -37,11 +43,13 @@ declare module '@asledgehammer/pipewrench/client' {
 
       zPos: any;
 
-      constructor(x: any, y: any, width: any, height: any, player: any);
+      constructor(x: any, y: any, player: any);
 
       destroy(...__args: never[]): any;
 
       onClick(button: any, ...__args: never[]): any;
+
+      onItemType(buttons: any, index: any, ...__args: never[]): any;
 
       onMouseDownOutside(x: any, y: any, ...__args: never[]): any;
 

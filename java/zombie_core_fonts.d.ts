@@ -47,8 +47,9 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0): number
+       *  - (String arg0, boolean arg1, boolean arg2): number
        */
-      getHeight(arg0: string): number;
+      getHeight(arg0: string, arg1?: boolean, arg2?: boolean): number;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -126,6 +127,12 @@ declare module '@asledgehammer/pipewrench' {
        *  - (TextureID arg0, String arg1)
        */
       constructor(arg0: zombie.core.textures.TextureID, arg1: string);
+      /**
+       * Method Parameters: 
+       *  - (int arg0, int arg1, int arg2): void
+       *  - (int arg0, int arg1, int arg2, int arg3, int arg4): void
+       */
+      TexDeferedCreation(arg0: number, arg1: number, arg2: number, arg3?: number, arg4?: number): void;
       /**
        * Method Parameters: 
        *  - (Asset arg0): void
@@ -280,12 +287,22 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): number
        */
+      getX(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
       getXEnd(): number;
       /**
        * Method Parameters: 
        *  - (Empty): number
        */
       getXStart(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getY(): number;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -316,6 +333,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       isFailure(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, int arg1): boolean
+       */
+      isMaskSet(arg0: number, arg1: number): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean

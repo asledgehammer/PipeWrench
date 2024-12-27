@@ -25,8 +25,6 @@ declare module '@asledgehammer/pipewrench/client' {
 
       richtext: any;
 
-      setY: any;
-
       subFocus: any;
 
       tmpTxt: any;

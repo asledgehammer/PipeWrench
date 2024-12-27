@@ -137,6 +137,9 @@ declare module '@asledgehammer/pipewrench/client' {
       static getBandageType: (bodyPart: any, ...__args: never[]) => any;
 
       /** @noSelf */
+      static IsCharactersInSameCar: (doctor: any, patient: any, ...__args: never[]) => any;
+
+      /** @noSelf */
       static onCheat: (bodyPart: any, action: any, player: any, otherPlayer: any, ...__args: never[]) => any;
 
       /** @noSelf */

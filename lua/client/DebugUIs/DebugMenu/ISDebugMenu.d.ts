@@ -31,6 +31,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       addButtonInfo(_title: any, _func: any, _tab: any, _marginTop: any, ...__args: never[]): any;
 
+      bringToTop(_buttonInfo: any, ...__args: never[]): any;
+
       createChildren(...__args: never[]): any;
 
       onClick(_button: any, ...__args: never[]): any;
@@ -38,6 +40,8 @@ declare module '@asledgehammer/pipewrench/client' {
       onClick_Dev(...__args: never[]): any;
 
       onClick_Main(...__args: never[]): any;
+
+      onClickSandboxSettings(...__args: never[]): any;
 
       setupButtons(...__args: never[]): any;
 
@@ -51,5 +55,8 @@ declare module '@asledgehammer/pipewrench/client' {
       static RegisterClass: (_class: any, ...__args: never[]) => any;
     }
   }
-  export namespace lua.client.DebugUIs.DebugMenu.ISDebugMenu {}
+  export namespace lua.client.DebugUIs.DebugMenu.ISDebugMenu {
+    /** @noSelf */
+    export const doNewUIDebug: () => any;
+  }
 }

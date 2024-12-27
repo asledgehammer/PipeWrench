@@ -15,8 +15,6 @@ declare module '@asledgehammer/pipewrench/server' {
 
       currentSquare: any;
 
-      floorSprite: any;
-
       noNeedHammer: any;
 
       objectIndex: any;

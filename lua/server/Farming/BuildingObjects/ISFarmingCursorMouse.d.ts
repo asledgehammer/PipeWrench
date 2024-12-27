@@ -7,8 +7,6 @@ declare module '@asledgehammer/pipewrench/server' {
       [id: string]: any;
       static [id: string]: any;
 
-      static floorSprite: any;
-
       character: any;
 
       isValid: any;

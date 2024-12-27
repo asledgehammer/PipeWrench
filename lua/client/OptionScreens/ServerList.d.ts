@@ -13,7 +13,13 @@ declare module '@asledgehammer/pipewrench/client' {
 
       addBtn: any;
 
+      authType: any;
+
+      authTypeLabel: any;
+
       backButton: any;
+
+      closeAuthPopupButton: any;
 
       connectTypeEntry: any;
 
@@ -25,13 +31,29 @@ declare module '@asledgehammer/pipewrench/client' {
 
       descLabel: any;
 
+      entryBoxes: any;
+
       eraseBtn: any;
 
+      firstAddServer: any;
+
       getModBtn: any;
+
+      googleAuthButton: any;
+
+      googleAuthConnectLabel: any;
+
+      googleAuthLabel: any;
+
+      googleAuthPopup: any;
+
+      googleKey: any;
 
       itemheightoverride: any;
 
       javaObject: any;
+
+      lastUseSteamRelay: any;
 
       listbox: any;
 
@@ -45,6 +67,10 @@ declare module '@asledgehammer/pipewrench/client' {
 
       passwordLabel: any;
 
+      passwordText: any;
+
+      passwordWasFocused: any;
+
       playButton: any;
 
       portEntry: any;
@@ -54,6 +80,10 @@ declare module '@asledgehammer/pipewrench/client' {
       publicBtn: any;
 
       refreshBtn: any;
+
+      registerBtn: any;
+
+      rememberPasswordTickBox: any;
 
       scrollPanel: any;
 
@@ -68,6 +98,8 @@ declare module '@asledgehammer/pipewrench/client' {
       serverPasswordEntry: any;
 
       showCountdownForJoin: any;
+
+      steamIPwarningLabel: any;
 
       tabs: any;
 
@@ -101,6 +133,12 @@ declare module '@asledgehammer/pipewrench/client' {
 
       onClickServer(item: any, ...__args: never[]): any;
 
+      onCloseQRButton(...__args: never[]): any;
+
+      OnConnected(...__args: never[]): any;
+
+      OnConnectFailed(message: any, detail: any, ...__args: never[]): any;
+
       onGainJoypadFocus(joypadData: any, ...__args: never[]): any;
 
       onGainJoypadFocus_RightPanel(joypadData: any, ...__args: never[]): any;
@@ -120,6 +158,12 @@ declare module '@asledgehammer/pipewrench/client' {
       onMouseDown_Tabs(x: any, y: any, ...__args: never[]): any;
 
       onOptionMouseDown(button: any, x: any, y: any, ...__args: never[]): any;
+
+      OnQRReceived(message: any, ...__args: never[]): any;
+
+      onResolutionChange(oldw: any, oldh: any, neww: any, newh: any, ...__args: never[]): any;
+
+      onSendButton(...__args: never[]): any;
 
       pingServers(init: any, ...__args: never[]): any;
 
@@ -149,5 +193,8 @@ declare module '@asledgehammer/pipewrench/client' {
       static ServerPinged: (ip: any, users: any, ...__args: never[]) => any;
     }
   }
-  export namespace lua.client.OptionScreens.ServerList {}
+  export namespace lua.client.OptionScreens.ServerList {
+    /** @noSelf */
+    export const OnConnected: () => any;
+  }
 }

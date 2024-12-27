@@ -3,9 +3,17 @@
 declare module '@asledgehammer/pipewrench/server' {
   // [LUA-PARTIAL:START]
 
-  // [lua/server/BuildingObjects/ISAnvil.d.ts]
-  /** @customConstructor ISAnvil:new */
-  export class ISAnvil extends lua.server.BuildingObjects.ISAnvil {}
+  // [lua/server/Animal/ISPickDungCursor.d.ts]
+  /** @customConstructor ISPickDungCursor:new */
+  export class ISPickDungCursor extends lua.server.Animal.ISPickDungCursor {}
+
+  // [lua/server/Animal/ISScytheGrassCursor.d.ts]
+  /** @customConstructor ISScytheGrassCursor:new */
+  export class ISScytheGrassCursor extends lua.server.Animal.ISScytheGrassCursor {}
+
+  // [lua/server/BuildingObjects/ISAnimalPickMateCursor.d.ts]
+  /** @customConstructor ISAnimalPickMateCursor:new */
+  export class ISAnimalPickMateCursor extends lua.server.BuildingObjects.ISAnimalPickMateCursor {}
 
   // [lua/server/BuildingObjects/ISBarbedWire.d.ts]
   /** @customConstructor ISBarbedWire:new */
@@ -15,10 +23,6 @@ declare module '@asledgehammer/pipewrench/server' {
   /** @customConstructor ISBrushToolTileCursor:new */
   export class ISBrushToolTileCursor extends lua.server.BuildingObjects.ISBrushToolTileCursor {}
 
-  // [lua/server/BuildingObjects/ISBSFurnace.d.ts]
-  /** @customConstructor ISBSFurnace:new */
-  export class ISBSFurnace extends lua.server.BuildingObjects.ISBSFurnace {}
-
   // [lua/server/BuildingObjects/ISBuildCursorMouse.d.ts]
   /** @customConstructor ISBuildCursorMouse:new */
   export class ISBuildCursorMouse extends lua.server.BuildingObjects.ISBuildCursorMouse {}
@@ -27,8 +31,20 @@ declare module '@asledgehammer/pipewrench/server' {
   /** @customConstructor ISBuildingObject:new */
   export class ISBuildingObject extends lua.server.BuildingObjects.ISBuildingObject {}
 
+  // [lua/server/BuildingObjects/ISBuildIsoEntity.d.ts]
+  /** @customConstructor ISBuildIsoEntity:new */
+  export class ISBuildIsoEntity extends lua.server.BuildingObjects.ISBuildIsoEntity {}
+
+  // [lua/server/BuildingObjects/ISBuildRampCursor.d.ts]
+  /** @customConstructor ISBuildRampCursor:new */
+  export class ISBuildRampCursor extends lua.server.BuildingObjects.ISBuildRampCursor {}
+
   // [lua/server/BuildingObjects/ISBuildUtil.d.ts]
   export abstract class buildUtil extends lua.server.BuildingObjects.buildUtil {}
+
+  // [lua/server/BuildingObjects/ISButcheringHook.d.ts]
+  /** @customConstructor ISButcheringHook:new */
+  export class ISButcheringHook extends lua.server.BuildingObjects.ISButcheringHook {}
 
   // [lua/server/BuildingObjects/ISChopTreeCursor.d.ts]
   /** @customConstructor ISChopTreeCursor:new */
@@ -37,6 +53,10 @@ declare module '@asledgehammer/pipewrench/server' {
   // [lua/server/BuildingObjects/ISCleanBloodCursor.d.ts]
   /** @customConstructor ISCleanBloodCursor:new */
   export class ISCleanBloodCursor extends lua.server.BuildingObjects.ISCleanBloodCursor {}
+
+  // [lua/server/BuildingObjects/ISCleanGraffitiCursor.d.ts]
+  /** @customConstructor ISCleanGraffitiCursor:new */
+  export class ISCleanGraffitiCursor extends lua.server.BuildingObjects.ISCleanGraffitiCursor {}
 
   // [lua/server/BuildingObjects/ISCompost.d.ts]
   /** @customConstructor ISCompost:new */
@@ -58,6 +78,10 @@ declare module '@asledgehammer/pipewrench/server' {
   /** @customConstructor ISEmptyGraves:new */
   export class ISEmptyGraves extends lua.server.BuildingObjects.ISEmptyGraves {}
 
+  // [lua/server/BuildingObjects/ISHutch.d.ts]
+  /** @customConstructor ISHutch:new */
+  export class ISHutch extends lua.server.BuildingObjects.ISHutch {}
+
   // [lua/server/BuildingObjects/ISLightSource.d.ts]
   /** @customConstructor ISLightSource:new */
   export class ISLightSource extends lua.server.BuildingObjects.ISLightSource {}
@@ -73,6 +97,14 @@ declare module '@asledgehammer/pipewrench/server' {
   // [lua/server/BuildingObjects/ISPaintCursor.d.ts]
   /** @customConstructor ISPaintCursor:new */
   export class ISPaintCursor extends lua.server.BuildingObjects.ISPaintCursor {}
+
+  // [lua/server/BuildingObjects/ISPaperCursor.d.ts]
+  /** @customConstructor ISPaperCursor:new */
+  export class ISPaperCursor extends lua.server.BuildingObjects.ISPaperCursor {}
+
+  // [lua/server/BuildingObjects/ISPickCharacterCursor.d.ts]
+  /** @customConstructor ISPickCharacterCursor:new */
+  export class ISPickCharacterCursor extends lua.server.BuildingObjects.ISPickCharacterCursor {}
 
   // [lua/server/BuildingObjects/ISPlace3DItemCursor.d.ts]
   /** @customConstructor ISPlace3DItemCursor:new */
@@ -125,14 +157,11 @@ declare module '@asledgehammer/pipewrench/server' {
   // [lua/server/BuildingObjects/PaintingReference.d.ts]
   export abstract class OtherPainting extends lua.server.BuildingObjects.OtherPainting {}
   export abstract class Painting extends lua.server.BuildingObjects.Painting {}
+  export abstract class WallPaper extends lua.server.BuildingObjects.WallPaper {}
 
   // [lua/server/Camping/BuildingObjects/campingCampfire.d.ts]
   /** @customConstructor campingCampfire:new */
   export class campingCampfire extends lua.server.Camping.BuildingObjects.campingCampfire {}
-
-  // [lua/server/Camping/BuildingObjects/campingTent.d.ts]
-  /** @customConstructor campingTent:new */
-  export class campingTent extends lua.server.Camping.BuildingObjects.campingTent {}
 
   // [lua/server/Camping/camping_fuel.d.ts]
   export abstract class campingFuelCategory extends lua.server.Camping.campingFuelCategory {}
@@ -171,6 +200,10 @@ declare module '@asledgehammer/pipewrench/server' {
 
   // [lua/server/Farming/farming_vegetableconf.d.ts]
   export abstract class farming_vegetableconf extends lua.server.Farming.farming_vegetableconf {}
+  /** @noSelf */
+  export const calcNextTimeFactor: () => any;
+  /** @noSelf */
+  export const randomGrowthOffset: () => any;
 
   // [lua/server/Farming/ScavengeDefinition.d.ts]
   export abstract class scavenges extends lua.server.Farming.scavenges {}
@@ -183,6 +216,18 @@ declare module '@asledgehammer/pipewrench/server' {
   /** @customConstructor SPlantGlobalObject:new */
   export class SPlantGlobalObject extends lua.server.Farming.SPlantGlobalObject {}
 
+  // [lua/server/FeedingTrough/BuildingObjects/ISFeedingTrough.d.ts]
+  /** @customConstructor ISFeedingTrough:new */
+  export class ISFeedingTrough extends lua.server.FeedingTrough.BuildingObjects.ISFeedingTrough {}
+
+  // [lua/server/FeedingTrough/SFeedingTroughGlobalObject.d.ts]
+  /** @customConstructor SFeedingTroughGlobalObject:new */
+  export class SFeedingTroughGlobalObject extends lua.server.FeedingTrough.SFeedingTroughGlobalObject {}
+
+  // [lua/server/FeedingTrough/SFeedingTroughSystem.d.ts]
+  /** @customConstructor SFeedingTroughSystem:new */
+  export class SFeedingTroughSystem extends lua.server.FeedingTrough.SFeedingTroughSystem {}
+
   // [lua/server/FireFighting/FireFighting.d.ts]
   export abstract class FireFighting extends lua.server.FireFighting.FireFighting {}
 
@@ -193,6 +238,9 @@ declare module '@asledgehammer/pipewrench/server' {
   // [lua/server/Fishing/BuildingObjects/FishingNet.d.ts]
   /** @customConstructor fishingNet:new */
   export class fishingNet extends lua.server.Fishing.BuildingObjects.fishingNet {}
+
+  // [lua/server/Foraging/forageServer.d.ts]
+  export abstract class forageServer extends lua.server.Foraging.forageServer {}
 
   // [lua/server/HealthSystem/HealthUpdate.d.ts]
   export abstract class healthUpdate extends lua.server.HealthSystem.healthUpdate {}
@@ -227,6 +275,12 @@ declare module '@asledgehammer/pipewrench/server' {
 
   // [lua/server/Map/MapObjects/MOFarming.d.ts]
 
+  // [lua/server/Map/MapObjects/MOFeedingTrough.d.ts]
+  export abstract class MOFeedingTrough extends lua.server.Map.MapObjects.MOFeedingTrough {}
+
+  // [lua/server/Map/MapObjects/MOHutch.d.ts]
+  export abstract class MOHutch extends lua.server.Map.MapObjects.MOHutch {}
+
   // [lua/server/Map/MetaEnum.d.ts]
   export abstract class MetaObjectEnum extends lua.server.Map.MetaObjectEnum {}
 
@@ -238,17 +292,11 @@ declare module '@asledgehammer/pipewrench/server' {
   /** @customConstructor SGlobalObjectSystem:new */
   export class SGlobalObjectSystem extends lua.server.Map.SGlobalObjectSystem {}
 
-  // [lua/server/MetalDrum/BuildingObjects/ISMetalDrum.d.ts]
-  /** @customConstructor ISMetalDrum:new */
-  export class ISMetalDrum extends lua.server.MetalDrum.BuildingObjects.ISMetalDrum {}
+  // [lua/server/metazones/AnimalsPathConfig.d.ts]
+  export abstract class animals_path_config extends lua.server.metazones.animals_path_config {}
 
-  // [lua/server/MetalDrum/SMetalDrumGlobalObject.d.ts]
-  /** @customConstructor SMetalDrumGlobalObject:new */
-  export class SMetalDrumGlobalObject extends lua.server.MetalDrum.SMetalDrumGlobalObject {}
-
-  // [lua/server/MetalDrum/SMetalDrumSystem.d.ts]
-  /** @customConstructor SMetalDrumSystem:new */
-  export class SMetalDrumSystem extends lua.server.MetalDrum.SMetalDrumSystem {}
+  // [lua/server/metazones/BiomeMapConfig.d.ts]
+  export abstract class biome_map_config extends lua.server.metazones.biome_map_config {}
 
   // [lua/server/metazones/metazoneHandler.d.ts]
   /** @noSelf */
@@ -308,6 +356,9 @@ declare module '@asledgehammer/pipewrench/server' {
   /** @customConstructor SRainBarrelSystem:new */
   export class SRainBarrelSystem extends lua.server.RainBarrel.SRainBarrelSystem {}
 
+  // [lua/server/RandomizedWorldContent/StoryClutter/StoryClutter_Definitions.d.ts]
+  export abstract class StoryClutter extends lua.server.RandomizedWorldContent.StoryClutter.StoryClutter {}
+
   // [lua/server/recipecode.d.ts]
 
   // [lua/server/Seasons/season.d.ts]
@@ -335,7 +386,6 @@ declare module '@asledgehammer/pipewrench/server' {
   export class STrapSystem extends lua.server.Traps.STrapSystem {}
 
   // [lua/server/Traps/TrapDefinition.d.ts]
-  export abstract class Animals extends lua.server.Traps.Animals {}
   export abstract class Traps extends lua.server.Traps.Traps {}
 
   // [lua/server/TurnBased/TurnBasedMain.d.ts]
@@ -348,9 +398,15 @@ declare module '@asledgehammer/pipewrench/server' {
   // [lua/server/TutorialHelperFunctions.d.ts]
   export abstract class TutorialHelperFunctions extends lua.server.TutorialHelperFunctions {}
 
+  // [lua/server/Vehicles/ProfessionVehicles.d.ts]
+  export abstract class ProfessionVehicles extends lua.server.Vehicles.ProfessionVehicles {}
+
   // [lua/server/Vehicles/Vehicles.d.ts]
   export abstract class Vehicles extends lua.server.Vehicles.Vehicles {}
   export abstract class VehicleUtils extends lua.server.Vehicles.VehicleUtils {}
+
+  // [lua/server/WorldGen/WorldGen.d.ts]
+  export abstract class worldgen extends lua.server.WorldGen.worldgen {}
 
   // [lua/server/XpSystem/XPSystem_SkillBook.d.ts]
   export abstract class SkillBook extends lua.server.XpSystem.SkillBook {}

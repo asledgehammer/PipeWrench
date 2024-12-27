@@ -9,8 +9,6 @@ declare module '@asledgehammer/pipewrench/client' {
 
       addLog: any;
 
-      chr: any;
-
       listHeaderColor: any;
 
       ok: any;
@@ -25,13 +23,15 @@ declare module '@asledgehammer/pipewrench/client' {
 
       userlogs: any;
 
+      username: any;
+
       variableColor: any;
 
       windows: any;
 
       zOffsetSmallFont: any;
 
-      constructor(x: any, y: any, width: any, height: any, target: any, onclick: any, player: any, userlogs: any);
+      constructor(x: any, y: any, width: any, height: any, target: any, onclick: any, username: any, userlogs: any);
 
       create(...__args: never[]): any;
 

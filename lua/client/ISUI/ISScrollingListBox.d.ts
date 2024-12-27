@@ -49,6 +49,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       smoothScrollY: any;
 
+      stopPrerender: any;
+
       target: any;
 
       tooltipUI: any;

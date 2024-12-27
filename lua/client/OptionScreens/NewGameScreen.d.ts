@@ -31,7 +31,7 @@ declare module '@asledgehammer/pipewrench/client' {
 
       MouseEnterMainMenuItem: any;
 
-      newButton: any;
+      nextButton: any;
 
       overBottomPanelButton: any;
 

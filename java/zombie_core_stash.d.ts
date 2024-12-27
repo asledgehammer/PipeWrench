@@ -133,6 +133,13 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (BuildingDef arg0): boolean
+       */
+      static isStashBuilding(arg0: zombie.iso.BuildingDef): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (ByteBuffer arg0, int arg1): void
        */
       static load(arg0: java.nio.ByteBuffer, arg1: number): void;

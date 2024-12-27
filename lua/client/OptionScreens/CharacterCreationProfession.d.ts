@@ -7,6 +7,8 @@ declare module '@asledgehammer/pipewrench/client' {
       [id: string]: any;
       static [id: string]: any;
 
+      static instance: any;
+
       addBadTraitBtn: any;
 
       addTraitBtn: any;
@@ -19,21 +21,7 @@ declare module '@asledgehammer/pipewrench/client' {
 
       cost: any;
 
-      defaultBottoms: any;
-
-      defaultBottomspal: any;
-
-      defaultBottomspalColor: any;
-
-      defaultTop: any;
-
-      defaultToppal: any;
-
-      defaultToppalColor: any;
-
       deleteBuildButton: any;
-
-      femaletex: any;
 
       fontHgt: any;
 
@@ -61,12 +49,6 @@ declare module '@asledgehammer/pipewrench/client' {
 
       listboxXpBoost: any;
 
-      mainPanel: any;
-
-      maletex: any;
-
-      mediumFontHgt: any;
-
       playButton: any;
 
       pointToSpend: any;
@@ -86,8 +68,6 @@ declare module '@asledgehammer/pipewrench/client' {
       saveBuildButton: any;
 
       savedBuilds: any;
-
-      smallFontHgt: any;
 
       tablePadX: any;
 
@@ -123,8 +103,6 @@ declare module '@asledgehammer/pipewrench/client' {
 
       deleteBuildStep2(button: any, joypadData: any, ...__args: never[]): any;
 
-      drawAvatar(...__args: never[]): any;
-
       drawProfessionMap(y: any, item: any, alt: any, ...__args: never[]): any;
 
       drawTraitMap(y: any, item: any, alt: any, ...__args: never[]): any;
@@ -138,6 +116,8 @@ declare module '@asledgehammer/pipewrench/client' {
       isTraitExcluded(trait: any, ...__args: never[]): any;
 
       mutualyExclusive(trait: any, bAdd: any, ...__args: never[]): any;
+
+      negativeTraitOffset(...__args: never[]): any;
 
       onDblClickBadTrait(item: any, ...__args: never[]): any;
 

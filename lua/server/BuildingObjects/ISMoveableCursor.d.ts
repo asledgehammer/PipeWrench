@@ -29,8 +29,6 @@ declare module '@asledgehammer/pipewrench/server' {
 
       cursorFacing: any;
 
-      floorSprite: any;
-
       isMoveableCursor: any;
 
       isYButtonResetCursor: any;
@@ -89,6 +87,8 @@ declare module '@asledgehammer/pipewrench/server' {
 
       getObjectList(...__args: never[]): any;
 
+      getRepairObjectList(...__args: never[]): any;
+
       getRotateableObject(...__args: never[]): any;
 
       getScrapObjectList(...__args: never[]): any;
@@ -99,13 +99,15 @@ declare module '@asledgehammer/pipewrench/server' {
 
       rotateWhilePlacing(...__args: never[]): any;
 
+      setCursorFacing(facing: any, ...__args: never[]): any;
+
       setInfoPanel(_square: any, _object: any, _moveProps: any, _customTexture: any, ...__args: never[]): any;
 
       setJoypadFocus(_window: any, ...__args: never[]): any;
 
       setMoveableMode(_mode: any, ...__args: never[]): any;
 
-      shouldAddObject(_obj: any, ...__args: never[]): any;
+      shouldAddObject(_obj: any, moveProps: any, ...__args: never[]): any;
 
       tryInitialItem(_item: any, ...__args: never[]): any;
 

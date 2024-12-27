@@ -26,6 +26,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (String arg0): boolean
        */
+      isAltModel(arg0: string): boolean;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): boolean
+       */
       isExclusive(arg0: string): boolean;
       /**
        * Method Parameters: 
@@ -42,6 +47,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): boolean
        */
       isMultiItem(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): zombie.characters.WornItems.BodyLocation
+       */
+      setAltModel(arg0: string): zombie.characters.WornItems.BodyLocation;
       /**
        * Method Parameters: 
        *  - (String arg0): zombie.characters.WornItems.BodyLocation
@@ -108,6 +118,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (String arg0, String arg1): boolean
        */
+      isAltModel(arg0: string, arg1: string): boolean;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): boolean
+       */
       isExclusive(arg0: string, arg1: string): boolean;
       /**
        * Method Parameters: 
@@ -119,6 +134,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): boolean
        */
       isMultiItem(arg0: string): boolean;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, String arg1): void
+       */
+      setAltModel(arg0: string, arg1: string): void;
       /**
        * Method Parameters: 
        *  - (String arg0, String arg1): void
@@ -262,9 +282,19 @@ declare module '@asledgehammer/pipewrench' {
       isEmpty(): boolean;
       /**
        * Method Parameters: 
+       *  - (ByteBuffer arg0, int arg1): void
+       */
+      load(arg0: java.nio.ByteBuffer, arg1: number): void;
+      /**
+       * Method Parameters: 
        *  - (InventoryItem arg0): void
        */
       remove(arg0: zombie.inventory.InventoryItem): void;
+      /**
+       * Method Parameters: 
+       *  - (ByteBuffer arg0): void
+       */
+      save(arg0: java.nio.ByteBuffer): void;
       /**
        * Method Parameters: 
        *  - (ItemVisuals arg0): void

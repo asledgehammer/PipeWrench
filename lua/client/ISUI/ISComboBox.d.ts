@@ -80,11 +80,15 @@ declare module '@asledgehammer/pipewrench/client' {
 
       getFilterText(...__args: never[]): any;
 
+      getOptionCount(...__args: never[]): any;
+
       getOptionData(index: any, ...__args: never[]): any;
 
       getOptionText(index: any, ...__args: never[]): any;
 
       getOptionTooltip(index: any, ...__args: never[]): any;
+
+      getSelected(...__args: never[]): any;
 
       getSelectedText(...__args: never[]): any;
 
@@ -94,11 +98,17 @@ declare module '@asledgehammer/pipewrench/client' {
 
       isEditable(...__args: never[]): any;
 
+      isEmpty(...__args: never[]): any;
+
+      isEnabled(...__args: never[]): any;
+
       onJoypadDirDown(joypadData: any, ...__args: never[]): any;
 
       onJoypadDirUp(joypadData: any, ...__args: never[]): any;
 
       onMouseDownOutside(x: any, y: any, ...__args: never[]): any;
+
+      pointOnItem(index: any, ...__args: never[]): any;
 
       select(option: any, ...__args: never[]): any;
 
@@ -106,9 +116,13 @@ declare module '@asledgehammer/pipewrench/client' {
 
       setEditable(editable: any, ...__args: never[]): any;
 
+      setEnabled(enabled: any, ...__args: never[]): any;
+
       setFilterText(text: any, ...__args: never[]): any;
 
       setJoypadFocused(focused: any, ...__args: never[]): any;
+
+      setSelected(value: any, ...__args: never[]): any;
 
       setToolTipMap(tooltipmap: any, ...__args: never[]): any;
 

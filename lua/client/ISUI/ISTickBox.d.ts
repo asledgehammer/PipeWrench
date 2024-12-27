@@ -19,6 +19,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       choicesColor: any;
 
+      clickedOption: any;
+
       disabledOptions: any;
 
       enable: any;
@@ -38,6 +40,8 @@ declare module '@asledgehammer/pipewrench/client' {
       joypadIndex: any;
 
       leftMargin: any;
+
+      mouseDownOverOption: any;
 
       mouseOverOption: any;
 

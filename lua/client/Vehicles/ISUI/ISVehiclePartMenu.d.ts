@@ -92,6 +92,9 @@ declare module '@asledgehammer/pipewrench/client' {
       static toPlayerInventory: (playerObj: any, item: any, ...__args: never[]) => any;
 
       /** @noSelf */
+      static toPlayerInventoryTag: (playerObj: any, tag: any, ...__args: never[]) => any;
+
+      /** @noSelf */
       static transferRequiredItems: (playerObj: any, part: any, tbl: any, ...__args: never[]) => any;
     }
   }

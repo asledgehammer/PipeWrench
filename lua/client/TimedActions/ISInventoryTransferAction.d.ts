@@ -11,11 +11,17 @@ declare module '@asledgehammer/pipewrench/client' {
 
       static putSound: any;
 
+      static putSoundContainer: any;
+
       static putSoundTime: any;
 
       allowMissingItems: any;
 
       destContainer: any;
+
+      destContainerOpened: any;
+
+      destContainerOpenSound: any;
 
       dontAdd: any;
 
@@ -31,7 +37,15 @@ declare module '@asledgehammer/pipewrench/client' {
 
       selectedContainer: any;
 
+      sourceContainerOpened: any;
+
+      sourceContainerOpenSound: any;
+
       srcContainer: any;
+
+      started: any;
+
+      transactionId: any;
 
       transactions: any;
 
@@ -43,11 +57,7 @@ declare module '@asledgehammer/pipewrench/client' {
 
       checkQueueList(...__args: never[]): any;
 
-      countItemsRecursive(_containerList: any, _itemsNum: any, ...__args: never[]): any;
-
       doActionAnim(cont: any, ...__args: never[]): any;
-
-      findRootInventory(_inventory: any, ...__args: never[]): any;
 
       floorHasRoomFor(square: any, item: any, ...__args: never[]): any;
 
@@ -55,11 +65,19 @@ declare module '@asledgehammer/pipewrench/client' {
 
       getNotFullFloorSquare(item: any, ...__args: never[]): any;
 
+      getSoundName(...__args: never[]): any;
+
       getTimeDelta(...__args: never[]): any;
 
       isAlreadyTransferred(item: any, ...__args: never[]): any;
 
-      removeItemOnCharacter(...__args: never[]): any;
+      playDestContainerCloseSound(...__args: never[]): any;
+
+      playDestContainerOpenSound(...__args: never[]): any;
+
+      playSourceContainerCloseSound(...__args: never[]): any;
+
+      playSourceContainerOpenSound(...__args: never[]): any;
 
       setAllowMissingItems(allow: any, ...__args: never[]): any;
 
@@ -79,9 +97,6 @@ declare module '@asledgehammer/pipewrench/client' {
       startActionAnim(...__args: never[]): any;
 
       transferItem(item: any, ...__args: never[]): any;
-
-      /** @noSelf */
-      static GetDropItemOffset: (character: any, square: any, item: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.TimedActions.ISInventoryTransferAction {}

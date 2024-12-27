@@ -437,6 +437,11 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Empty): void
+       */
+      Reset(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
        *  - (int arg0): void
        */
       execute_Simulation(arg0?: number): void;
@@ -710,9 +715,19 @@ declare module '@asledgehammer/pipewrench' {
       getSeasonColor(arg0: number, arg1: number, arg2: number): zombie.iso.weather.ClimateColorInfo;
       /**
        * Method Parameters: 
+       *  - (Empty): number
+       */
+      getSeasonId(): number;
+      /**
+       * Method Parameters: 
        *  - (Empty): string
        */
       getSeasonName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getSeasonNameTranslated(): string;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -1685,9 +1700,29 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
+       *  - (Empty): void
+       */
+      Reset(): void;
+      /**
+       * Method Parameters: 
        *  - (Empty): number
        */
       getCurrentMoonPhase(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getMoonFloat(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getPhaseName(): string;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, int arg1, int arg2): void
+       */
+      updatePhase(arg0: number, arg1: number, arg2: number): void;
       /**
        * @noSelf
        *
@@ -1695,27 +1730,6 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): zombie.iso.weather.ClimateMoon
        */
       static getInstance(): zombie.iso.weather.ClimateMoon;
-      /**
-       * @noSelf
-       *
-       * Method Parameters: 
-       *  - (Empty): number
-       */
-      static getMoonFloat(): number;
-      /**
-       * @noSelf
-       *
-       * Method Parameters: 
-       *  - (Empty): string
-       */
-      static getPhaseName(): string;
-      /**
-       * @noSelf
-       *
-       * Method Parameters: 
-       *  - (int arg0, int arg1, int arg2): void
-       */
-      static updatePhase(arg0: number, arg1: number, arg2: number): void;
     }
     /**
      * @customConstructor ClimateValues.new
@@ -2021,6 +2035,13 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0): number
        */
       static getFractionForRealTimeRatePerMin(arg0: number): number;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (float arg0): number
+       */
+      static getRoundedDisplayTemperature(arg0: number): number;
       /**
        * @noSelf
        *

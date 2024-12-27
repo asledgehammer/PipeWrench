@@ -10,6 +10,8 @@ declare module '@asledgehammer/pipewrench' {
       /** byte */
       static readonly UVCA_CIRCLE: number;
       /** byte */
+      static readonly UVCA_DEPTHTEXTURE: number;
+      /** byte */
       static readonly UVCA_NOCIRCLE: number;
       /** byte */
       static readonly UVCA_NONE: number;
@@ -25,6 +27,21 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): void
        */
       EndShader(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      FBORenderChunkEnd(): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, boolean arg1): void
+       */
+      FBORenderChunkStart(arg0: number, arg1: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      NewFrame(): void;
       /**
        * Method Parameters: 
        *  - (int arg0, int arg1, float arg2): void
@@ -55,6 +72,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0, int arg1): void
        */
       StartShader(arg0: number, arg1: number): void;
+      /**
+       * Method Parameters: 
+       *  - (PerformanceProfileProbe arg0): void
+       */
+      beginProfile(arg0: zombie.core.profiling.PerformanceProfileProbe): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -92,9 +114,14 @@ declare module '@asledgehammer/pipewrench' {
       drawParticles(arg0: number, arg1: number, arg2: number): void;
       /**
        * Method Parameters: 
-       *  - (Shader arg0, int arg1, int arg2, int arg3): void
+       *  - (int arg0, int arg1, int arg2, int arg3): void
        */
-      drawPuddles(arg0: zombie.core.opengl.Shader, arg1: number, arg2: number, arg3: number): void;
+      drawPuddles(arg0: number, arg1: number, arg2: number, arg3: number): void;
+      /**
+       * Method Parameters: 
+       *  - (ModelSlot arg0): void
+       */
+      drawQueued(arg0: zombie.core.skinnedmodel.ModelManager$ModelSlot): void;
       /**
        * Method Parameters: 
        *  - (Shader arg0, int arg1, int arg2, int arg3): void
@@ -107,6 +134,11 @@ declare module '@asledgehammer/pipewrench' {
       drawWater(arg0: zombie.core.opengl.Shader, arg1: number, arg2: number, arg3: boolean): void;
       /**
        * Method Parameters: 
+       *  - (PerformanceProfileProbe arg0): void
+       */
+      endProfile(arg0: zombie.core.profiling.PerformanceProfileProbe): void;
+      /**
+       * Method Parameters: 
        *  - (int arg0, float arg1): void
        */
       glAlphaFunc(arg0: number, arg1: number): void;
@@ -115,6 +147,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0): void
        */
       glBind(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, int arg1): void
+       */
+      glBindFramebuffer(arg0: number, arg1: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -147,9 +184,19 @@ declare module '@asledgehammer/pipewrench' {
       glClearColor(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
        * Method Parameters: 
+       *  - (float arg0): void
+       */
+      glClearDepth(arg0: number): void;
+      /**
+       * Method Parameters: 
        *  - (int arg0, int arg1, int arg2, int arg3): void
        */
       glColorMask(arg0: number, arg1: number, arg2: number, arg3: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): void
+       */
+      glDepthFunc(arg0: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -178,9 +225,19 @@ declare module '@asledgehammer/pipewrench' {
       glDoStartFrame(arg0: number, arg1: number, arg2: number, arg3: number, arg4?: boolean): void;
       /**
        * Method Parameters: 
+       *  - (int arg0, int arg1, float arg2, int arg3): void
+       */
+      glDoStartFrameFlipY(arg0: number, arg1: number, arg2: number, arg3: number): void;
+      /**
+       * Method Parameters: 
        *  - (int arg0, int arg1, int arg2): void
        */
       glDoStartFrameFx(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, int arg1, float arg2, int arg3): void
+       */
+      glDoStartFrameNoZoom(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -258,13 +315,33 @@ declare module '@asledgehammer/pipewrench' {
       onRendered(): void;
       /**
        * Method Parameters: 
+       *  - (Empty): void
+       */
+      popIsoView(): void;
+      /**
+       * Method Parameters: 
+       *  - (float arg0, float arg1, float arg2, float arg3, boolean arg4): void
+       */
+      pushIsoView(arg0: number, arg1: number, arg2: number, arg3: number, arg4: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      releaseFBORenderChunkLock(): void;
+      /**
+       * Method Parameters: 
+       *  - (ImDrawData arg0): void
        *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, Consumer arg9): void
+       *  - (Texture arg0, Texture arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, Consumer arg10): void
        *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, int arg9, int arg10, int arg11, int arg12): void
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, float arg9, float arg10, float arg11, float arg12, Consumer arg13): void
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9, float arg10, float arg11, float arg12, float arg13, Consumer arg14): void
        *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10, float arg11, float arg12, float arg13, float arg14, float arg15, float arg16, Consumer arg17): void
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9, double arg10, double arg11, double arg12, double arg13, double arg14, double arg15, double arg16, float arg17, float arg18, float arg19, float arg20): void
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, float arg9, float arg10, float arg11, float arg12, float arg13, float arg14, float arg15, float arg16, float arg17, float arg18, float arg19, float arg20, float arg21, float arg22, float arg23, float arg24, Consumer arg25): void
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9, float arg10, float arg11, float arg12, float arg13, float arg14, float arg15, float arg16, float arg17, float arg18, float arg19, float arg20, float arg21, float arg22, float arg23, float arg24, float arg25, Consumer arg26): void
        */
-      render(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg10?: number, arg11?: number, arg12?: number, arg13?: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg14?: number, arg15?: number, arg16?: number, arg17?: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg18?: number, arg19?: number, arg20?: number, arg21?: number, arg22?: number, arg23?: number, arg24?: number, arg25?: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): void;
+      render(arg0: imgui.ImDrawData | zombie.core.textures.Texture, arg1?: number | zombie.core.textures.Texture, arg2?: number, arg3?: number, arg4?: number, arg5?: number, arg6?: number, arg7?: number, arg8?: number, arg9?: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg10?: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg11?: number, arg12?: number, arg13?: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg14?: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg15?: number, arg16?: number, arg17?: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg18?: number, arg19?: number, arg20?: number, arg21?: number, arg22?: number, arg23?: number, arg24?: number, arg25?: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg26?: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): void;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10, float arg11): void
@@ -272,6 +349,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10, float arg11, float arg12, float arg13, float arg14, float arg15, float arg16, float arg17, float arg18, float arg19, float arg20): void
        */
       renderPoly(arg0: number | zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number, arg12?: number, arg13?: number, arg14?: number, arg15?: number, arg16?: number, arg17?: number, arg18?: number, arg19?: number, arg20?: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      renderQueued(): void;
       /**
        * Method Parameters: 
        *  - (int arg0, int arg1, int arg2, int arg3, float arg4, float arg5, float arg6, float arg7): void
@@ -290,14 +372,26 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Texture arg0, int arg1, int arg2, int arg3, int arg4, float arg5, float arg6, float arg7, float arg8): void
-       *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, int arg9): void
+       *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9): void
+       *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10): void
        */
-      renderline(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9?: number): void;
+      renderline(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9?: number, arg10?: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, int arg9): void
+       *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10): void
+       */
+      renderlinef(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10?: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, int arg1, int arg2, int arg3, int arg4): void
        */
       setCutawayTexture(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, int arg1, int arg2, int arg3, int arg4): void
+       */
+      setCutawayTexture2(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number): void;
       /**
        * Method Parameters: 
        *  - (WallShaderTexRender arg0): void
@@ -339,6 +433,21 @@ declare module '@asledgehammer/pipewrench' {
       EndShader(): void;
       /**
        * Method Parameters: 
+       *  - (Empty): void
+       */
+      FBORenderChunkEnd(): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, boolean arg1): void
+       */
+      FBORenderChunkStart(arg0: number, arg1: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      NewFrame(): void;
+      /**
+       * Method Parameters: 
        *  - (int arg0, int arg1, float arg2): void
        */
       ShaderUpdate1f(arg0: number, arg1: number, arg2: number): void;
@@ -367,6 +476,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0, int arg1): void
        */
       StartShader(arg0: number, arg1: number): void;
+      /**
+       * Method Parameters: 
+       *  - (PerformanceProfileProbe arg0): void
+       */
+      beginProfile(arg0: zombie.core.profiling.PerformanceProfileProbe): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -404,9 +518,14 @@ declare module '@asledgehammer/pipewrench' {
       drawParticles(arg0: number, arg1: number, arg2: number): void;
       /**
        * Method Parameters: 
-       *  - (Shader arg0, int arg1, int arg2, int arg3): void
+       *  - (int arg0, int arg1, int arg2, int arg3): void
        */
-      drawPuddles(arg0: zombie.core.opengl.Shader, arg1: number, arg2: number, arg3: number): void;
+      drawPuddles(arg0: number, arg1: number, arg2: number, arg3: number): void;
+      /**
+       * Method Parameters: 
+       *  - (ModelSlot arg0): void
+       */
+      drawQueued(arg0: zombie.core.skinnedmodel.ModelManager$ModelSlot): void;
       /**
        * Method Parameters: 
        *  - (Shader arg0, int arg1, int arg2, int arg3): void
@@ -417,6 +536,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Shader arg0, int arg1, int arg2, boolean arg3): void
        */
       drawWater(arg0: zombie.core.opengl.Shader, arg1: number, arg2: number, arg3: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (PerformanceProfileProbe arg0): void
+       */
+      endProfile(arg0: zombie.core.profiling.PerformanceProfileProbe): void;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.core.sprite.GenericSpriteRenderState
@@ -432,6 +556,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0): void
        */
       glBind(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, int arg1): void
+       */
+      glBindFramebuffer(arg0: number, arg1: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -464,9 +593,19 @@ declare module '@asledgehammer/pipewrench' {
       glClearColor(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
        * Method Parameters: 
+       *  - (float arg0): void
+       */
+      glClearDepth(arg0: number): void;
+      /**
+       * Method Parameters: 
        *  - (int arg0, int arg1, int arg2, int arg3): void
        */
       glColorMask(arg0: number, arg1: number, arg2: number, arg3: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): void
+       */
+      glDepthFunc(arg0: number): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -495,9 +634,19 @@ declare module '@asledgehammer/pipewrench' {
       glDoStartFrame(arg0: number, arg1: number, arg2: number, arg3: number, arg4?: boolean): void;
       /**
        * Method Parameters: 
+       *  - (int arg0, int arg1, float arg2, int arg3): void
+       */
+      glDoStartFrameFlipY(arg0: number, arg1: number, arg2: number, arg3: number): void;
+      /**
+       * Method Parameters: 
        *  - (int arg0, int arg1, int arg2): void
        */
       glDoStartFrameFx(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, int arg1, float arg2, int arg3): void
+       */
+      glDoStartFrameNoZoom(arg0: number, arg1: number, arg2: number, arg3: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -577,16 +726,36 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): void
        */
+      popIsoView(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
       prePopulating(): void;
       /**
        * Method Parameters: 
+       *  - (float arg0, float arg1, float arg2, float arg3, boolean arg4): void
+       */
+      pushIsoView(arg0: number, arg1: number, arg2: number, arg3: number, arg4: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      releaseFBORenderChunkLock(): void;
+      /**
+       * Method Parameters: 
+       *  - (ImDrawData arg0): void
        *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, Consumer arg9): void
+       *  - (Texture arg0, Texture arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, Consumer arg10): void
        *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, int arg9, int arg10, int arg11, int arg12): void
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, float arg9, float arg10, float arg11, float arg12, Consumer arg13): void
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9, float arg10, float arg11, float arg12, float arg13, Consumer arg14): void
        *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10, float arg11, float arg12, float arg13, float arg14, float arg15, float arg16, Consumer arg17): void
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9, double arg10, double arg11, double arg12, double arg13, double arg14, double arg15, double arg16, float arg17, float arg18, float arg19, float arg20): void
        *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, float arg9, float arg10, float arg11, float arg12, float arg13, float arg14, float arg15, float arg16, float arg17, float arg18, float arg19, float arg20, float arg21, float arg22, float arg23, float arg24, Consumer arg25): void
+       *  - (Texture arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7, double arg8, double arg9, float arg10, float arg11, float arg12, float arg13, float arg14, float arg15, float arg16, float arg17, float arg18, float arg19, float arg20, float arg21, float arg22, float arg23, float arg24, float arg25, Consumer arg26): void
        */
-      render(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg10?: number, arg11?: number, arg12?: number, arg13?: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg14?: number, arg15?: number, arg16?: number, arg17?: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg18?: number, arg19?: number, arg20?: number, arg21?: number, arg22?: number, arg23?: number, arg24?: number, arg25?: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): void;
+      render(arg0: imgui.ImDrawData | zombie.core.textures.Texture, arg1?: number | zombie.core.textures.Texture, arg2?: number, arg3?: number, arg4?: number, arg5?: number, arg6?: number, arg7?: number, arg8?: number, arg9?: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg10?: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg11?: number, arg12?: number, arg13?: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg14?: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg15?: number, arg16?: number, arg17?: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg18?: number, arg19?: number, arg20?: number, arg21?: number, arg22?: number, arg23?: number, arg24?: number, arg25?: java.util._function_.Consumer<zombie.core.textures.TextureDraw> | number, arg26?: java.util._function_.Consumer<zombie.core.textures.TextureDraw>): void;
       /**
        * Method Parameters: 
        *  - (float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10, float arg11): void
@@ -594,6 +763,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10, float arg11, float arg12, float arg13, float arg14, float arg15, float arg16, float arg17, float arg18, float arg19, float arg20): void
        */
       renderPoly(arg0: number | zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number, arg12?: number, arg13?: number, arg14?: number, arg15?: number, arg16?: number, arg17?: number, arg18?: number, arg19?: number, arg20?: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      renderQueued(): void;
       /**
        * Method Parameters: 
        *  - (int arg0, int arg1, int arg2, int arg3, float arg4, float arg5, float arg6, float arg7): void
@@ -612,14 +786,26 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (Texture arg0, int arg1, int arg2, int arg3, int arg4, float arg5, float arg6, float arg7, float arg8): void
-       *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, int arg9): void
+       *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9): void
+       *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10): void
        */
-      renderline(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9?: number): void;
+      renderline(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9?: number, arg10?: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, int arg9): void
+       *  - (Texture arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10): void
+       */
+      renderlinef(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10?: number): void;
       /**
        * Method Parameters: 
        *  - (Texture arg0, int arg1, int arg2, int arg3, int arg4): void
        */
       setCutawayTexture(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Texture arg0, int arg1, int arg2, int arg3, int arg4): void
+       */
+      setCutawayTexture2(arg0: zombie.core.textures.Texture, arg1: number, arg2: number, arg3: number, arg4: number): void;
       /**
        * Method Parameters: 
        *  - (WallShaderTexRender arg0): void

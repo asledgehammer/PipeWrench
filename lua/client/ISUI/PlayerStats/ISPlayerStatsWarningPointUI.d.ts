@@ -21,8 +21,6 @@ declare module '@asledgehammer/pipewrench/client' {
 
       variableColor: any;
 
-      zOffsetSmallFont: any;
-
       constructor(x: any, y: any, width: any, height: any, target: any, onclick: any);
 
       create(...__args: never[]): any;

@@ -12,7 +12,16 @@ declare module '@asledgehammer/pipewrench/server' {
       static getExtinguisherUses: (item: any, ...__args: never[]) => any;
 
       /** @noSelf */
+      static getFluidContainerMillilitresPerUse: (...__args: never[]) => any;
+
+      /** @noSelf */
       static getSquareToExtinguish: (square: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static getWaterUsesFloat: (item: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static getWaterUsesInteger: (item: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static isExtinguisher: (item: any, ...__args: never[]) => any;

@@ -102,6 +102,82 @@ declare module '@asledgehammer/pipewrench' {
       static update(): void;
     }
     /**
+     * @customConstructor TransitionNodeProxy.new
+     * @
+     * [CLASS] zombie.core.utils.TransitionNodeProxy
+     */
+    export class TransitionNodeProxy {
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       */
+      constructor();
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      HasAnyPossibleTransitions(): boolean;
+    }
+    /**
+     * @customConstructor NodeLayerPair.new
+     * @
+     * [CLASS] zombie.core.utils.TransitionNodeProxy$NodeLayerPair
+     */
+    export class TransitionNodeProxy$NodeLayerPair {
+      /**
+       * Constructors: 
+       *  - (LiveAnimNode arg0, AnimLayer arg1)
+       */
+      constructor(arg0: zombie.core.skinnedmodel.advancedanimation.LiveAnimNode, arg1: zombie.core.skinnedmodel.advancedanimation.AnimLayer);
+    }
+    /**
+     * @customConstructor TransitionNodeProxyData.new
+     * @
+     * [CLASS] zombie.core.utils.TransitionNodeProxy$TransitionNodeProxyData
+     */
+    export class TransitionNodeProxy$TransitionNodeProxyData {
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       */
+      constructor();
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      HasValidAnimNodes(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      HasValidTransitions(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.animation.BoneAxis
+       */
+      getDeferredBoneAxis(): zombie.core.skinnedmodel.animation.BoneAxis;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getDeferredBoneName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getDeferredRotationScale(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getUseDeferredMovement(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      getUseDeferredRotation(): boolean;
+    }
+    /**
      * @customConstructor WrappedBuffer.new
      * @
      * [CLASS] zombie.core.utils.WrappedBuffer

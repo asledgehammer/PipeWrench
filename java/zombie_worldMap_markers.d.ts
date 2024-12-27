@@ -14,9 +14,9 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
-       *  - (Empty): zombie.util.Pool<zombie.util.IPooledObject>
+       *  - (Empty): zombie.util.Pool$PoolReference
        */
-      getPool(): zombie.util.Pool<zombie.util.IPooledObject>;
+      getPoolReference(): zombie.util.Pool$PoolReference;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -49,9 +49,9 @@ declare module '@asledgehammer/pipewrench' {
       setMinScreenRadius(arg0: number): void;
       /**
        * Method Parameters: 
-       *  - (Pool arg0): void
+       *  - (PoolReference arg0): void
        */
-      setPool(arg0: zombie.util.Pool<zombie.util.IPooledObject>): void;
+      setPool(arg0: zombie.util.Pool$PoolReference): void;
     }
     /**
      * @customConstructor WorldMapMarker.new
@@ -66,9 +66,9 @@ declare module '@asledgehammer/pipewrench' {
       protected constructor();
       /**
        * Method Parameters: 
-       *  - (Empty): zombie.util.Pool<zombie.util.IPooledObject>
+       *  - (Empty): zombie.util.Pool$PoolReference
        */
-      getPool(): zombie.util.Pool<zombie.util.IPooledObject>;
+      getPoolReference(): zombie.util.Pool$PoolReference;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -91,9 +91,9 @@ declare module '@asledgehammer/pipewrench' {
       setFree(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (Pool arg0): void
+       *  - (PoolReference arg0): void
        */
-      setPool(arg0: zombie.util.Pool<zombie.util.IPooledObject>): void;
+      setPool(arg0: zombie.util.Pool$PoolReference): void;
     }
     /**
      * @customConstructor WorldMapMarkers.new

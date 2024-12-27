@@ -7,9 +7,13 @@ declare module '@asledgehammer/pipewrench/client' {
       [id: string]: any;
       static [id: string]: any;
 
+      actionToBodyPart: any;
+
       addedHeight: any;
 
       biteColumn: any;
+
+      bodyPartAction: any;
 
       bodyPartColumn: any;
 
@@ -95,7 +99,27 @@ declare module '@asledgehammer/pipewrench/client' {
 
       onJoypadDown(button: any, joypadData: any, ...__args: never[]): any;
 
+      setBodyPartAction(bodyPart: any, args: any, ...__args: never[]): any;
+
+      setBodyPartForAction(action: any, bodyPart: any, ...__args: never[]): any;
+
       update(...__args: never[]): any;
+
+      /** @noSelf */
+      static setBodyPartActionForPlayer: (
+        playerObj: any,
+        bodyPart: any,
+        action: any,
+        jobType: any,
+        args: any,
+        ...__args: never[]
+      ) => any;
+
+      /** @noSelf */
+      static setBodyPartForLastAction: (playerObj: any, bodyPart: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static setOtherActionForPlayer: (playerObj: any, bodyPart: any, action: any, ...__args: never[]) => any;
     }
   }
   export namespace lua.client.ISUI.ISGarmentUI {}

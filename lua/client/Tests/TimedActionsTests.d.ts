@@ -6,6 +6,9 @@ declare module '@asledgehammer/pipewrench/client' {
       static [id: string]: any;
 
       /** @noSelf */
+      static getTests: (...__args: never[]) => any;
+
+      /** @noSelf */
       static runAll: (...__args: never[]) => any;
 
       /** @noSelf */

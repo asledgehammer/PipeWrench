@@ -140,6 +140,9 @@ declare module '@asledgehammer/pipewrench/client' {
       static IsAllowed: (...__args: never[]) => any;
 
       /** @noSelf */
+      static NeedsLight: (...__args: never[]) => any;
+
+      /** @noSelf */
       static Recreate: (playerNum: any, ...__args: never[]) => any;
 
       /** @noSelf */

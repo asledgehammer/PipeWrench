@@ -83,6 +83,12 @@ declare module '@asledgehammer/pipewrench/client' {
       static activate: (_player: any, _deviceObject: any, ...__args: never[]) => any;
 
       /** @noSelf */
+      static closeIfActive: (_player: any, _deviceObject: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static isActive: (_player: any, _deviceObject: any, ...__args: never[]) => any;
+
+      /** @noSelf */
       static onEquip: (_player: any, _item: any, ...__args: never[]) => any;
     }
   }

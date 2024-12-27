@@ -9,6 +9,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       character: any;
 
+      isEnalbed: any;
+
       plant: any;
 
       vegetable: any;
@@ -39,6 +41,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       render(...__args: never[]): any;
 
+      setEnabled(val: any, ...__args: never[]): any;
+
       setPlant(plant: any, ...__args: never[]): any;
 
       update(...__args: never[]): any;
@@ -47,7 +51,21 @@ declare module '@asledgehammer/pipewrench/client' {
       static getCurrentGrowingPhase: (info: any, farmingLevel: any, ...__args: never[]) => any;
 
       /** @noSelf */
+      static getDisease: (
+        diseaseLvl: any,
+        farmingLevel: any,
+        disease: any,
+        info: any,
+        index: any,
+        string: any,
+        ...__args: never[]
+      ) => any;
+
+      /** @noSelf */
       static getDiseaseName: (info: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static getDiseaseString: (diseaseLvl: any, farmingLevel: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static getFertilizerColor: (info: any, ...__args: never[]) => any;
@@ -83,7 +101,14 @@ declare module '@asledgehammer/pipewrench/client' {
       static getWaterLvlColor: (plant: any, farmingLevel: any, ...__args: never[]) => any;
 
       /** @noSelf */
+      static hasDisease: (plant: any, ...__args: never[]) => any;
+
+      /** @noSelf */
       static RequiredWidth: (...__args: never[]) => any;
+    }
+
+    export abstract class compost_rgb {
+      static [id: string]: any;
     }
 
     export abstract class disease {

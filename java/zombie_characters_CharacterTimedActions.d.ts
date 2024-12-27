@@ -24,6 +24,11 @@ declare module '@asledgehammer/pipewrench' {
       PlayLoopedSoundTillComplete(arg0: string, arg1: number, arg2: number): void;
       /**
        * Method Parameters: 
+       *  - (Empty): void
+       */
+      complete(): void;
+      /**
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       finished(): boolean;
@@ -42,6 +47,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): number
        */
       getCurrentTime(): number;
+      /**
+       * Method Parameters: 
+       *  - (MoveDeltaModifiers arg0): void
+       */
+      getDeltaModifiers(arg0: zombie.characters.MoveDeltaModifiers): void;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -74,6 +84,16 @@ declare module '@asledgehammer/pipewrench' {
       hasStalled(): boolean;
       /**
        * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isStarted(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      overrideWeaponType(): void;
+      /**
+       * Method Parameters: 
        *  - (Empty): void
        */
       perform(): void;
@@ -87,6 +107,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): void
        */
       resetJobDelta(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      restoreWeaponType(): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -136,6 +161,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (boolean arg0): void
        */
       setUseProgressBar(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setWaitForFinished(arg0: boolean): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -193,6 +223,11 @@ declare module '@asledgehammer/pipewrench' {
       PlayLoopedSoundTillComplete(arg0: string, arg1: number, arg2: number): void;
       /**
        * Method Parameters: 
+       *  - (Empty): void
+       */
+      complete(): void;
+      /**
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       finished(): boolean;
@@ -211,6 +246,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): number
        */
       getCurrentTime(): number;
+      /**
+       * Method Parameters: 
+       *  - (MoveDeltaModifiers arg0): void
+       */
+      getDeltaModifiers(arg0: zombie.characters.MoveDeltaModifiers): void;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -243,6 +283,16 @@ declare module '@asledgehammer/pipewrench' {
       hasStalled(): boolean;
       /**
        * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isStarted(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      overrideWeaponType(): void;
+      /**
+       * Method Parameters: 
        *  - (Empty): void
        */
       perform(): void;
@@ -256,6 +306,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): void
        */
       resetJobDelta(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      restoreWeaponType(): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -305,6 +360,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (boolean arg0): void
        */
       setUseProgressBar(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setWaitForFinished(arg0: boolean): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -374,6 +434,11 @@ declare module '@asledgehammer/pipewrench' {
       Succeeded(arg0: zombie.ai.astar.Path, arg1: zombie.ai.astar.Mover): void;
       /**
        * Method Parameters: 
+       *  - (Empty): void
+       */
+      complete(): void;
+      /**
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       finished(): boolean;
@@ -392,6 +457,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): number
        */
       getCurrentTime(): number;
+      /**
+       * Method Parameters: 
+       *  - (MoveDeltaModifiers arg0): void
+       */
+      getDeltaModifiers(arg0: zombie.characters.MoveDeltaModifiers): void;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -429,14 +499,34 @@ declare module '@asledgehammer/pipewrench' {
       getSecondaryHandMdl(): string;
       /**
        * Method Parameters: 
+       *  - (Empty): number
+       */
+      getTime(): number;
+      /**
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       hasStalled(): boolean;
       /**
        * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isStarted(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      overrideWeaponType(): void;
+      /**
+       * Method Parameters: 
        *  - (Empty): void
        */
       perform(): void;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0, Object arg1): void
+       */
+      replaceObjectInTable(arg0: any, arg1: any): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -447,6 +537,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): void
        */
       resetJobDelta(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      restoreWeaponType(): void;
       /**
        * Method Parameters: 
        *  - (String arg0): void
@@ -469,6 +564,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (float arg0): void
        */
       setCurrentTime(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setCustomRemoteTimedActionSync(arg0: boolean): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -506,6 +606,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (boolean arg0): void
        */
       setUseProgressBar(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setWaitForFinished(arg0: boolean): void;
       /**
        * Method Parameters: 
        *  - (Empty): void

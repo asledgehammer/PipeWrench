@@ -23,9 +23,13 @@ declare module '@asledgehammer/pipewrench/server' {
 
       sprite4: any;
 
+      spriteIndex: any;
+
+      spriteOriginal: any;
+
       sq: any;
 
-      constructor(sprite: any, spriteIndex: any);
+      constructor(spriteOriginal: any, spriteIndex: any);
 
       addDoorPart(x: any, y: any, z: any, north: any, sprite: any, index: any, ...__args: never[]): any;
 

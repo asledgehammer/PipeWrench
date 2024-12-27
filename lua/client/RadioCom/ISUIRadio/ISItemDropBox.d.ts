@@ -7,6 +7,8 @@ declare module '@asledgehammer/pipewrench/client' {
       [id: string]: any;
       static [id: string]: any;
 
+      allowDropAlways: any;
+
       backDropTex: any;
 
       backDropTexCol: any;
@@ -37,6 +39,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       functionTarget: any;
 
+      isLocked: any;
+
       mouseEnabled: any;
 
       mouseOverState: any;
@@ -59,6 +63,10 @@ declare module '@asledgehammer/pipewrench/client' {
 
       toolTipText: any;
 
+      toolTipTextItem: any;
+
+      toolTipTextLocked: any;
+
       constructor(
         x: any,
         y: any,
@@ -80,9 +88,13 @@ declare module '@asledgehammer/pipewrench/client' {
 
       defaultVerifyItem(_item: any, ...__args: never[]): any;
 
+      getValidItems(...__args: never[]): any;
+
       hasValidItemInDrag(...__args: never[]): any;
 
       itemDropped(_items: any, ...__args: never[]): any;
+
+      onDropItem(item: any, ...__args: never[]): any;
 
       onRightMouseUp(x: any, y: any, ...__args: never[]): any;
 

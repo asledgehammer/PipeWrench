@@ -27,6 +27,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       mouseMoved: any;
 
+      objectAtCursorPanel: any;
+
       objectList: any;
 
       objectListSquare: any;
@@ -40,6 +42,8 @@ declare module '@asledgehammer/pipewrench/client' {
       optionsPanel: any;
 
       selectedSquare: any;
+
+      spritePopupPanel: any;
 
       squarePanel: any;
 
@@ -73,6 +77,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       pickSquare(x: any, y: any, ...__args: never[]): any;
 
+      render(...__args: never[]): any;
+
       setObjectList(square: any, x: any, y: any, z: any, ...__args: never[]): any;
 
       showUI(...__args: never[]): any;
@@ -100,6 +106,18 @@ declare module '@asledgehammer/pipewrench/client' {
       onMouseDownOutside(x: any, y: any, ...__args: never[]): any;
 
       onTickBox(index: any, selected: any, ...__args: never[]): any;
+    }
+
+    /** @customConstructor DebugChunkStateUI_SpritePopupPanel:new */
+    export class DebugChunkStateUI_SpritePopupPanel extends lua.client.ISUI.ISPanel {
+      [id: string]: any;
+      static [id: string]: any;
+
+      sprite: any;
+
+      constructor(x: any, y: any, w: any, h: any);
+
+      render(...__args: never[]): any;
     }
   }
   export namespace lua.client.DebugUIs.DebugChunkState.DebugChunkStateUI {}

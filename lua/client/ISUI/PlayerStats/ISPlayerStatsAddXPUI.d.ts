@@ -21,6 +21,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       target: any;
 
+      useMultipliers: any;
+
       variableColor: any;
 
       zOffsetSmallFont: any;

@@ -14,6 +14,16 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
+      /**
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
@@ -32,6 +42,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -88,6 +103,16 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
+      /**
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
@@ -106,6 +131,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -156,6 +186,8 @@ declare module '@asledgehammer/pipewrench' {
      */
     export class ClimbDownSheetRopeState {
       /** float */
+      static readonly CLIMB_DOWN_SLOWDOWN: number;
+      /** float */
       static readonly CLIMB_DOWN_SPEED: number;
 
       /**
@@ -163,6 +195,16 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty Constructor)
        */
       constructor();
+      /**
+       * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
@@ -185,9 +227,9 @@ declare module '@asledgehammer/pipewrench' {
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
        * Method Parameters: 
-       *  - (IsoGameCharacter arg0): number
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
        */
-      getClimbDownSheetRopeSpeed(arg0: zombie.characters.IsoGameCharacter): number;
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -248,11 +290,17 @@ declare module '@asledgehammer/pipewrench' {
       /** int */
       static readonly TRIP_ZOMBIE: number;
 
+
       /**
-       * Constructors: 
-       *  - (Empty Constructor)
+       * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
        */
-      constructor();
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
@@ -273,6 +321,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -334,6 +387,16 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
+      /**
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
@@ -352,6 +415,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -407,6 +475,8 @@ declare module '@asledgehammer/pipewrench' {
      */
     export class ClimbSheetRopeState {
       /** float */
+      static readonly CLIMB_SLOWDOWN: number;
+      /** float */
       static readonly CLIMB_SPEED: number;
 
       /**
@@ -414,6 +484,16 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty Constructor)
        */
       constructor();
+      /**
+       * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
@@ -436,9 +516,9 @@ declare module '@asledgehammer/pipewrench' {
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
        * Method Parameters: 
-       *  - (IsoGameCharacter arg0): number
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
        */
-      getClimbSheetRopeSpeed(arg0: zombie.characters.IsoGameCharacter): number;
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -483,6 +563,58 @@ declare module '@asledgehammer/pipewrench' {
       static instance(): zombie.ai.states.ClimbSheetRopeState;
     }
     /**
+     * @customConstructor ClimbThroughWindowPositioningParams.new
+     * @
+     * [CLASS] zombie.ai.states.ClimbThroughWindowPositioningParams extends zombie.util.PooledObject
+     */
+    export class ClimbThroughWindowPositioningParams {
+
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.util.Pool$PoolReference
+       */
+      getPoolReference(): zombie.util.Pool$PoolReference;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isFree(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      onReleased(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      release(): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setFree(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (PoolReference arg0): void
+       */
+      setPool(arg0: zombie.util.Pool$PoolReference): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.ai.states.ClimbThroughWindowPositioningParams
+       */
+      static alloc(): zombie.ai.states.ClimbThroughWindowPositioningParams;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (ClimbThroughWindowPositioningParams arg0): void
+       */
+      static release(arg0: zombie.ai.states.ClimbThroughWindowPositioningParams): void;
+    }
+    /**
      * @customConstructor ClimbThroughWindowState.new
      * @
      * [CLASS] zombie.ai.states.ClimbThroughWindowState extends zombie.ai.State
@@ -493,6 +625,16 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty Constructor)
        */
       constructor();
+      /**
+       * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
@@ -515,6 +657,11 @@ declare module '@asledgehammer/pipewrench' {
       exit(arg0: zombie.characters.IsoGameCharacter): void;
       /**
        * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
+      /**
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
        */
       getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
@@ -523,6 +670,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): string
        */
       getName(): string;
+      /**
+       * Method Parameters: 
+       *  - (IsoGameCharacter arg0): zombie.ai.states.ClimbThroughWindowPositioningParams
+       */
+      getPositioningParams(arg0: zombie.characters.IsoGameCharacter): zombie.ai.states.ClimbThroughWindowPositioningParams;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.ai.permission.IStatePermissions
@@ -574,15 +726,19 @@ declare module '@asledgehammer/pipewrench' {
        */
       setParams(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.iso.IsoObject): void;
       /**
+       * @noSelf
+       *
        * Method Parameters: 
-       *  - (IsoGameCharacter arg0, float arg1): void
+       *  - (IsoGameCharacter arg0, IsoObject arg1, ClimbThroughWindowPositioningParams arg2): void
        */
-      slideX(arg0: zombie.characters.IsoGameCharacter, arg1: number): void;
+      static getClimbThroughWindowPositioningParams(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.iso.IsoObject, arg2: zombie.ai.states.ClimbThroughWindowPositioningParams): void;
       /**
+       * @noSelf
+       *
        * Method Parameters: 
-       *  - (IsoGameCharacter arg0, float arg1): void
+       *  - (IsoGridSquare arg0, IsoDirections arg1): zombie.iso.IsoGridSquare
        */
-      slideY(arg0: zombie.characters.IsoGameCharacter, arg1: number): void;
+      static getFreeSquareAfterObstacles(arg0: zombie.iso.IsoGridSquare, arg1: zombie.iso.IsoDirections): zombie.iso.IsoGridSquare;
       /**
        * @noSelf
        *
@@ -590,6 +746,41 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): zombie.ai.states.ClimbThroughWindowState
        */
       static instance(): zombie.ai.states.ClimbThroughWindowState;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (IsoGridSquare arg0): boolean
+       */
+      static isFreeSquare(arg0: zombie.iso.IsoGridSquare): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (IsoGridSquare arg0): boolean
+       */
+      static isObstacleSquare(arg0: zombie.iso.IsoGridSquare): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (IsoGameCharacter arg0, ClimbThroughWindowPositioningParams arg1): void
+       */
+      static slideCharacterToWindowOpening(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.ai.states.ClimbThroughWindowPositioningParams): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (IsoGameCharacter arg0, float arg1): void
+       */
+      static slideX(arg0: zombie.characters.IsoGameCharacter, arg1: number): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (IsoGameCharacter arg0, float arg1): void
+       */
+      static slideY(arg0: zombie.characters.IsoGameCharacter, arg1: number): void;
     }
     /**
      * @customConstructor CloseWindowState.new
@@ -602,6 +793,16 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty Constructor)
        */
       constructor();
+      /**
+       * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
@@ -622,6 +823,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -683,6 +889,16 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
+      /**
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
@@ -701,6 +917,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -764,6 +985,16 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
+      /**
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
@@ -782,6 +1013,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -838,6 +1074,16 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
+      /**
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
@@ -856,6 +1102,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -912,6 +1163,16 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
+      /**
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
@@ -930,6 +1191,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -973,6 +1239,76 @@ declare module '@asledgehammer/pipewrench' {
        */
       static instance(): zombie.ai.states.FishingState;
     }
+    /** [ENUM] zombie.ai.states.FishingState$FishingStage */
+    export class FishingState$FishingStage {
+      protected constructor();
+      static readonly Cast: zombie.ai.states.FishingState$FishingStage;
+      static readonly Idle: zombie.ai.states.FishingState$FishingStage;
+      static readonly None: zombie.ai.states.FishingState$FishingStage;
+      static readonly PickUp: zombie.ai.states.FishingState$FishingStage;
+      static readonly PickUpTrash: zombie.ai.states.FishingState$FishingStage;
+      static readonly Strike: zombie.ai.states.FishingState$FishingStage;
+      static readonly StrikeHard: zombie.ai.states.FishingState$FishingStage;
+      static readonly StrikeMedium: zombie.ai.states.FishingState$FishingStage;
+      name(): string;
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Enum arg0): number
+       *  - (Object arg0): number
+       */
+      compareTo(arg0: any): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.Optional<java.lang.Enum$EnumDesc<E>>
+       */
+      describeConstable(): java.util.Optional<java.lang.Enum$EnumDesc<zombie.ai.states.FishingState$FishingStage>>;
+      /**
+       * Method Parameters: 
+       *  - (Object arg0): boolean
+       */
+      equals(arg0: any): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.lang.Class<E>
+       */
+      getDeclaringClass(): java.lang.Class<zombie.ai.states.FishingState$FishingStage>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      hashCode(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      name(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      ordinal(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): zombie.ai.states.FishingState$FishingStage
+       *  - (Class arg0, String arg1): T
+       */
+      static valueOf<T>(arg0: string | java.lang.Class<T>, arg1?: string): zombie.ai.states.FishingState$FishingStage | T;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.ai.states.FishingState$FishingStage[]
+       */
+      static values(): zombie.ai.states.FishingState$FishingStage[];
+    }
     /**
      * @customConstructor FitnessState.new
      * @
@@ -984,6 +1320,16 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty Constructor)
        */
       constructor();
+      /**
+       * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
@@ -1004,6 +1350,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -1060,6 +1411,16 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
+      /**
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
@@ -1078,6 +1439,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -1134,6 +1500,16 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
+      /**
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
@@ -1152,6 +1528,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -1208,6 +1589,16 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
+      /**
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
@@ -1226,6 +1617,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -1287,6 +1683,16 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
+      /**
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
@@ -1305,6 +1711,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -1344,9 +1755,9 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
-       *  - (Empty): zombie.vehicles.PathFindState2
+       *  - (Empty): zombie.pathfind.PathFindState2
        */
-      static instance(): zombie.vehicles.PathFindState2;
+      static instance(): zombie.pathfind.PathFindState2;
     }
     /**
      * @customConstructor PlayerActionsState.new
@@ -1359,6 +1770,16 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty Constructor)
        */
       constructor();
+      /**
+       * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
@@ -1379,6 +1800,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -1435,6 +1861,16 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
+      /**
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
@@ -1453,6 +1889,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -1509,6 +1950,16 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
+      /**
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
@@ -1527,6 +1978,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -1583,6 +2039,16 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
+      /**
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
@@ -1601,6 +2067,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -1657,6 +2128,16 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
+      /**
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
@@ -1675,6 +2156,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -1731,6 +2217,16 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
+      /**
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
@@ -1749,6 +2245,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -1805,6 +2306,16 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
+      /**
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
@@ -1823,6 +2334,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -1879,6 +2395,16 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
+      /**
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
@@ -1897,6 +2423,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -1953,6 +2484,16 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
+      /**
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
@@ -1971,6 +2512,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -2027,6 +2573,16 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
+      /**
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
@@ -2045,6 +2601,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -2101,6 +2662,16 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
+      /**
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
@@ -2119,6 +2690,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -2163,16 +2739,31 @@ declare module '@asledgehammer/pipewrench' {
       static instance(): zombie.ai.states.PlayerOnGroundState;
     }
     /**
-     * @customConstructor PlayerSitOnGroundState.new
+     * @customConstructor PlayerSitOnFurnitureState.new
      * @
-     * [CLASS] zombie.ai.states.PlayerSitOnGroundState extends zombie.ai.State
+     * [CLASS] zombie.ai.states.PlayerSitOnFurnitureState extends zombie.ai.State
      */
-    export class PlayerSitOnGroundState {
+    export class PlayerSitOnFurnitureState {
       /**
        * Constructors: 
        *  - (Empty Constructor)
        */
       constructor();
+      /**
+       * Method Parameters: 
+       *  - (IsoGameCharacter arg0): void
+       */
+      abortSitting(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
@@ -2193,6 +2784,100 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
+      /**
+       * Method Parameters: 
+       *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
+       */
+      getDeltaModifiers(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.characters.MoveDeltaModifiers): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.ai.permission.IStatePermissions
+       */
+      getStatePermissions(): zombie.ai.permission.IStatePermissions;
+      /**
+       * Method Parameters: 
+       *  - (IsoGameCharacter arg0): boolean
+       */
+      isAttacking(arg0: zombie.characters.IsoGameCharacter): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isDoingActionThatCanBeCancelled(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (IsoGameCharacter arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6): boolean
+       */
+      isIgnoreCollide(arg0: zombie.characters.IsoGameCharacter, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (IsoGameCharacter arg0): boolean
+       */
+      isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): zombie.ai.states.PlayerSitOnFurnitureState
+       */
+      static instance(): zombie.ai.states.PlayerSitOnFurnitureState;
+    }
+    /**
+     * @customConstructor PlayerSitOnGroundState.new
+     * @
+     * [CLASS] zombie.ai.states.PlayerSitOnGroundState extends zombie.ai.State
+     */
+    export class PlayerSitOnGroundState {
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       */
+      constructor();
+      /**
+       * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
+      /**
+       * Method Parameters: 
+       *  - (IsoGameCharacter arg0, AnimEvent arg1): void
+       */
+      animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
+      /**
+       * Method Parameters: 
+       *  - (IsoGameCharacter arg0): void
+       */
+      enter(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (IsoGameCharacter arg0): void
+       */
+      execute(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (IsoGameCharacter arg0): void
+       */
+      exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -2249,6 +2934,16 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
+      /**
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
@@ -2267,6 +2962,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -2323,6 +3023,16 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
+      /**
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
@@ -2341,6 +3051,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -2397,6 +3112,16 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
+      /**
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
@@ -2415,6 +3140,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -2471,39 +3201,19 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
-       *  - (IsoLivingCharacter arg0, AttackVars arg1): void
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
        */
-      CalcAttackVars(arg0: zombie.characters.IsoLivingCharacter, arg1: zombie.network.packets.hit.AttackVars): void;
-      /**
-       * Method Parameters: 
-       *  - (IsoGameCharacter arg0, HandWeapon arg1, HitInfo arg2): number
-       */
-      CalcHitChance(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.inventory.types.HandWeapon, arg2: zombie.network.packets.hit.HitInfo): number;
-      /**
-       * Method Parameters: 
-       *  - (IsoGameCharacter arg0, boolean arg1, AttackVars arg2, ArrayList arg3): void
-       */
-      CalcHitList(arg0: zombie.characters.IsoGameCharacter, arg1: boolean, arg2: zombie.network.packets.hit.AttackVars, arg3: java.util.ArrayList<zombie.network.packets.hit.HitInfo>): void;
-      /**
-       * Method Parameters: 
-       *  - (IsoGameCharacter arg0, HandWeapon arg1): void
-       */
-      ConnectSwing(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.inventory.types.HandWeapon): void;
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
-      /**
-       * Method Parameters: 
-       *  - (IsoLivingCharacter arg0, HandWeapon arg1, boolean arg2, ArrayList arg3, ArrayList arg4): void
-       */
-      calcValidTargets(arg0: zombie.characters.IsoLivingCharacter, arg1: zombie.inventory.types.HandWeapon, arg2: boolean, arg3: java.util.ArrayList<zombie.network.packets.hit.HitInfo>, arg4: java.util.ArrayList<zombie.network.packets.hit.HitInfo>): void;
-      /**
-       * Method Parameters: 
-       *  - (HandWeapon arg0, IsoGameCharacter arg1): void
-       */
-      changeWeapon(arg0: zombie.inventory.types.HandWeapon, arg1: zombie.characters.IsoGameCharacter): void;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0): void
@@ -2519,6 +3229,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -2555,31 +3270,12 @@ declare module '@asledgehammer/pipewrench' {
        */
       isMoving(arg0: zombie.characters.IsoGameCharacter): boolean;
       /**
-       * Method Parameters: 
-       *  - (IsoGameCharacter arg0, HitInfo arg1, HitInfo arg2): boolean
-       */
-      isProneTargetBetter(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.network.packets.hit.HitInfo, arg2: zombie.network.packets.hit.HitInfo): boolean;
-      /**
        * @noSelf
        *
        * Method Parameters: 
-       *  - (HandWeapon arg0, IsoGameCharacter arg1): void
+       *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
-      static WeaponLowerCondition(arg0: zombie.inventory.types.HandWeapon, arg1: zombie.characters.IsoGameCharacter): void;
-      /**
-       * @noSelf
-       *
-       * Method Parameters: 
-       *  - (IsoGameCharacter arg0, IsoMovingObject arg1): boolean
-       */
-      static checkPVP(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.iso.IsoMovingObject): boolean;
-      /**
-       * @noSelf
-       *
-       * Method Parameters: 
-       *  - (IsoMovingObject arg0, String arg1, Vector3 arg2): zombie.iso.Vector3
-       */
-      static getBoneWorldPos(arg0: zombie.iso.IsoMovingObject, arg1: string, arg2: zombie.iso.Vector3): zombie.iso.Vector3;
+      static dbgOnGlobalAnimEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
       /**
        * @noSelf
        *
@@ -2587,72 +3283,6 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): zombie.ai.states.SwipeStatePlayer
        */
       static instance(): zombie.ai.states.SwipeStatePlayer;
-      /**
-       * @noSelf
-       *
-       * Method Parameters: 
-       *  - (IsoMovingObject arg0): boolean
-       */
-      static isProne(arg0: zombie.iso.IsoMovingObject): boolean;
-      /**
-       * @noSelf
-       *
-       * Method Parameters: 
-       *  - (IsoMovingObject arg0): boolean
-       */
-      static isStanding(arg0: zombie.iso.IsoMovingObject): boolean;
-      /**
-       * @noSelf
-       *
-       * Method Parameters: 
-       *  - (IsoMovingObject arg0, HandWeapon arg1, IsoGameCharacter arg2): void
-       */
-      static splash(arg0: zombie.iso.IsoMovingObject, arg1: zombie.inventory.types.HandWeapon, arg2: zombie.characters.IsoGameCharacter): void;
-    }
-    /**
-     * @customConstructor CustomComparator.new
-     * @
-     * [CLASS] zombie.ai.states.SwipeStatePlayer$CustomComparator
-     */
-    export class SwipeStatePlayer$CustomComparator {
-      /**
-       * Constructors: 
-       *  - (Empty Constructor)
-       */
-      constructor();
-      /**
-       * Method Parameters: 
-       *  - (Object arg0, Object arg1): number
-       *  - (HitInfo arg0, HitInfo arg1): number
-       */
-      compare(arg0: any, arg1: any): number;
-      /**
-       * Method Parameters: 
-       *  - (Empty): java.util.Comparator<T>
-       */
-      reversed(): java.util.Comparator<any>;
-      /**
-       * Method Parameters: 
-       *  - (Comparator arg0): java.util.Comparator<T>
-       *  - (Function arg0): java.util.Comparator<T>
-       *  - (Function arg0, Comparator arg1): java.util.Comparator<T>
-       */
-      thenComparing<U>(arg0: java.util.Comparator<any> | java.util._function_.Function<any, U>, arg1?: java.util.Comparator<U>): java.util.Comparator<any>;
-      /**
-       * Method Parameters: 
-       *  - (ToDoubleFunction arg0): java.util.Comparator<T>
-       */
-      thenComparingDouble(arg0: java.util._function_.ToDoubleFunction<any>): java.util.Comparator<any>;
-      /**
-       * Method Parameters: 
-       *  - (ToIntFunction arg0): java.util.Comparator<T>
-       */
-      thenComparingInt(arg0: java.util._function_.ToIntFunction<any>): java.util.Comparator<any>;
-      /**
-       * Method Parameters: 
-       *  - (ToLongFunction arg0): java.util.Comparator<T>
-       */
-      thenComparingLong(arg0: java.util._function_.ToLongFunction<any>): java.util.Comparator<any>;
     }
     /**
      * @customConstructor ThumpState.new
@@ -2665,6 +3295,16 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty Constructor)
        */
       constructor();
+      /**
+       * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
@@ -2685,6 +3325,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -2748,6 +3393,16 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
+      /**
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
@@ -2771,6 +3426,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -2827,6 +3487,16 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
+      /**
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
@@ -2845,6 +3515,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -2901,6 +3576,16 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
+      /**
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
@@ -2919,6 +3604,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -2985,6 +3675,16 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
+      /**
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
@@ -3003,6 +3703,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -3059,6 +3764,16 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
+      /**
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
@@ -3077,6 +3792,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -3133,6 +3853,16 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
+      /**
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
@@ -3151,6 +3881,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -3214,6 +3949,16 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
+      /**
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
@@ -3232,6 +3977,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void
@@ -3288,6 +4038,16 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
+       *  - (IAnimEventListenerSetVariableString arg0): void
+       *  - (String arg0, IAnimEventListener arg1): void
+       *  - (String arg0, IAnimEventListenerBoolean arg1): void
+       *  - (String arg0, IAnimEventListenerFloat arg1): void
+       *  - (String arg0, IAnimEventListenerNoParam arg1): void
+       *  - (String arg0, IAnimEventListenerString arg1): void
+       */
+      addAnimEventListener(arg0: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerSetVariableString | string, arg1?: zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListener | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerBoolean | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerFloat | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerNoParam | zombie.core.skinnedmodel.advancedanimation.events.IAnimEventListenerString): void;
+      /**
+       * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimEvent arg1): void
        */
       animEvent(arg0: zombie.characters.IsoGameCharacter, arg1: zombie.core.skinnedmodel.advancedanimation.AnimEvent): void;
@@ -3306,6 +4066,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IsoGameCharacter arg0): void
        */
       exit(arg0: zombie.characters.IsoGameCharacter): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster
+       */
+      getAnimEventBroadcaster(): zombie.core.skinnedmodel.advancedanimation.events.AnimEventBroadcaster;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, MoveDeltaModifiers arg1): void

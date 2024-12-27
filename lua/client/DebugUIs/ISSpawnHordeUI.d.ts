@@ -39,6 +39,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       outfitLbl: any;
 
+      pickedSquareLabel: any;
+
       pickNewSq: any;
 
       playerNum: any;

@@ -69,8 +69,6 @@ declare module '@asledgehammer/pipewrench/client' {
 
       joinPublicServer: any;
 
-      joinServer: any;
-
       lastStandPlayerSelect: any;
 
       latestSaveOption: any;
@@ -95,11 +93,9 @@ declare module '@asledgehammer/pipewrench/client' {
 
       MouseEnterMainMenuItem: any;
 
-      onlineCoopOption: any;
+      multiplayer: any;
 
       onlineCoopScreen: any;
-
-      onlineOption: any;
 
       optionsOption: any;
 
@@ -120,6 +116,8 @@ declare module '@asledgehammer/pipewrench/client' {
       scoreOption: any;
 
       serverConnectPopup: any;
+
+      serverList: any;
 
       serverSettingsScreen: any;
 
@@ -155,7 +153,7 @@ declare module '@asledgehammer/pipewrench/client' {
 
       constructor(inGame: any);
 
-      addCredit(title: any, name: any, ...__args: never[]): any;
+      addCredit(credit: any, number: any, ...__args: never[]): any;
 
       calcLogoHeight(...__args: never[]): any;
 
@@ -249,13 +247,16 @@ declare module '@asledgehammer/pipewrench/client' {
       static continueLatestSaveAux: (fromResetLua: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static displayCheckSavefileModal: (text: any, ...__args: never[]) => any;
+      static displayCheckSavefileModal: (text: any, fatal: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static getMissingMods: (activeMods: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static onAcceptInvite: (connectionString: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onCheckSavefileModalClick: (button: any, ...__args: never[]) => any;
+      static onCheckSavefileModalClick: (model: any, button: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static OnJoypadBeforeDeactivate: (index: any, ...__args: never[]) => any;

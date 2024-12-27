@@ -130,6 +130,11 @@ declare module '@asledgehammer/pipewrench' {
       getSeasonName(): string;
       /**
        * Method Parameters: 
+       *  - (Empty): string
+       */
+      getSeasonNameTranslated(): string;
+      /**
+       * Method Parameters: 
        *  - (Empty): number
        */
       getSeasonProgression(): number;

@@ -31,6 +31,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       listbox: any;
 
+      listCache: any;
+
       mapGroups: any;
 
       modal: any;
@@ -39,9 +41,15 @@ declare module '@asledgehammer/pipewrench/client' {
 
       richText: any;
 
+      searchEntry: any;
+
+      searchLabel: any;
+
       selected: any;
 
       startY: any;
+
+      title: any;
 
       constructor(x: any, y: any, width: any, height: any);
 
@@ -83,6 +91,10 @@ declare module '@asledgehammer/pipewrench/client' {
 
       onJoypadDirRight_child(joypadData: any, ...__args: never[]): any;
 
+      onJoypadDown_listbox(button: any, joypadData: any, ...__args: never[]): any;
+
+      onJoypadDownSearchEntry(button: any, joypadData: any, ...__args: never[]): any;
+
       onLoseJoypadFocus_child(joypadData: any, ...__args: never[]): any;
 
       onOptionMouseDown(button: any, x: any, y: any, ...__args: never[]): any;
@@ -91,7 +103,11 @@ declare module '@asledgehammer/pipewrench/client' {
 
       onSavefileModsChanged(folder: any, ...__args: never[]): any;
 
+      onSearchTextChange(...__args: never[]): any;
+
       render(...__args: never[]): any;
+
+      searchSetText(str: any, ...__args: never[]): any;
 
       setSaveGamesList(...__args: never[]): any;
 

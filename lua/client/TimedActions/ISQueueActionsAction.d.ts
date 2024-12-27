@@ -13,8 +13,6 @@ declare module '@asledgehammer/pipewrench/client' {
 
       args: any;
 
-      indexToAdd: any;
-
       isAddingActions: any;
 
       constructor(

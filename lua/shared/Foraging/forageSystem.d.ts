@@ -45,10 +45,79 @@ declare module '@asledgehammer/pipewrench' {
       static createZoneData: (_forageZone: any, _zoneDef: any, ...__args: never[]) => any;
 
       /** @noSelf */
+      static doClothingItemSpawn: (
+        _character: any,
+        _inventory: any,
+        _itemDef: any,
+        _items: any,
+        ...__args: never[]
+      ) => any;
+
+      /** @noSelf */
+      static doDeadTrapAnimalSpawn: (
+        _character: any,
+        _inventory: any,
+        _itemDef: any,
+        _items: any,
+        ...__args: never[]
+      ) => any;
+
+      /** @noSelf */
       static doEndurancePenalty: (_character: any, _amount: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static doFatiguePenalty: (_character: any, _amount: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static doGenericItemSpawn: (
+        _character: any,
+        _inventory: any,
+        _itemDef: any,
+        _items: any,
+        ...__args: never[]
+      ) => any;
+
+      /** @noSelf */
+      static doGlassesCheck: (_character: any, _skillDef: any, _bonusEffect: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static doItemDefCheck: (...__args: never[]) => any;
+
+      /** @noSelf */
+      static doJunkWeaponSpawn: (
+        _character: any,
+        _inventory: any,
+        _itemDef: any,
+        _items: any,
+        ...__args: never[]
+      ) => any;
+
+      /** @noSelf */
+      static doPoisonItemSpawn: (
+        _character: any,
+        _inventory: any,
+        _itemDef: any,
+        _items: any,
+        ...__args: never[]
+      ) => any;
+
+      /** @noSelf */
+      static doRandomAgeSpawn: (
+        _character: any,
+        _inventory: any,
+        _itemDef: any,
+        _items: any,
+        ...__args: never[]
+      ) => any;
+
+      /** @noSelf */
+      static doWildCropSpawn: (_character: any, _inventory: any, _itemDef: any, _items: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static doWildFoodSpawn: (_character: any, _inventory: any, _itemDef: any, _items: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static doWorldAgeSpawn: (_character: any, _inventory: any, _itemDef: any, _items: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static fillZone: (_zoneData: any, ...__args: never[]) => any;
@@ -195,6 +264,9 @@ declare module '@asledgehammer/pipewrench' {
       static isItemInZone: (_character: any, _itemDef: any, _zoneDef: any, ...__args: never[]) => any;
 
       /** @noSelf */
+      static isItemScriptValid: (_character: any, _itemDef: any, _zoneDef: any, ...__args: never[]) => any;
+
+      /** @noSelf */
       static isItemTypeExist: (_itemType: any, ...__args: never[]) => any;
 
       /** @noSelf */
@@ -208,6 +280,9 @@ declare module '@asledgehammer/pipewrench' {
 
       /** @noSelf */
       static isValidSquare: (_square: any, _itemDef: any, _catDef: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static itemFound: (_character: any, _itemType: any, _amount: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static lootTableUpdate: (...__args: never[]) => any;
@@ -238,6 +313,9 @@ declare module '@asledgehammer/pipewrench' {
 
       /** @noSelf */
       static removeItemDef: (_itemDef: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static setOptionValues: (...__args: never[]) => any;
 
       /** @noSelf */
       static takeItem: (_zoneData: any, _number: any, ...__args: never[]) => any;

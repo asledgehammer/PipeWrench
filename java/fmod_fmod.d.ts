@@ -114,6 +114,104 @@ declare module '@asledgehammer/pipewrench' {
        */
       stop(): void;
     }
+    /**
+     * @customConstructor FMODDebugEventPlayer.new
+     * @
+     * [CLASS] fmod.fmod.FMODDebugEventPlayer
+     */
+    export class FMODDebugEventPlayer {
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       */
+      constructor();
+      /**
+       * Method Parameters: 
+       *  - (int arg0): void
+       */
+      clearParameterValue(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, int arg1): number
+       */
+      getGlobalParameterValue(arg0: string, arg1: number): number;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): number
+       */
+      getParameterCount(arg0: string): number;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, int arg1): string
+       */
+      getParameterName(arg0: string, arg1: number): string;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): number
+       */
+      getParameterValue(arg0: number): number;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      initParameterValues(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, int arg1): boolean
+       */
+      isGlobalParameter(arg0: string, arg1: number): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isPlaying(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      play(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (long arg0): void
+       */
+      setDurationMillis(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setFollowPlayer(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setLoop(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0, float arg1): void
+       */
+      setParameterValue(arg0: number, arg1: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): void
+       */
+      setTimelinePosition(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (float arg0): void
+       */
+      setVolume(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       *  - (boolean arg0): void
+       */
+      stop(arg0?: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      update(): void;
+    }
     export type FMODFootstep = any;
     /**
      * @customConstructor FMODSoundBank.new
@@ -191,6 +289,11 @@ declare module '@asledgehammer/pipewrench' {
       isPlaying(arg0: string | number): boolean;
       /**
        * Method Parameters: 
+       *  - (long arg0, String arg1): boolean
+       */
+      isUsingParameter(arg0: number, arg1: string): boolean;
+      /**
+       * Method Parameters: 
        *  - (String arg0): number
        */
       playAmbientLoopedImpl(arg0: string): number;
@@ -253,6 +356,11 @@ declare module '@asledgehammer/pipewrench' {
       setParameterValue(arg0: number, arg1: fmod.FMOD_STUDIO_PARAMETER_DESCRIPTION, arg2: number): void;
       /**
        * Method Parameters: 
+       *  - (long arg0, String arg1, float arg2): void
+       */
+      setParameterValueByName(arg0: number, arg1: string, arg2: number): void;
+      /**
+       * Method Parameters: 
        *  - (long arg0, float arg1): void
        */
       setPitch(arg0: number, arg1: number): void;
@@ -291,6 +399,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): void
        */
       stopOrTriggerSoundByName(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (long arg0): void
+       */
+      stopOrTriggerSoundLocal(arg0: number): void;
       /**
        * Method Parameters: 
        *  - (long arg0): number

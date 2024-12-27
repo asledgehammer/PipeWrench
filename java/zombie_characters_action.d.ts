@@ -14,6 +14,12 @@ declare module '@asledgehammer/pipewrench' {
       constructor(arg0: zombie.core.skinnedmodel.advancedanimation.IAnimatable);
       /**
        * Method Parameters: 
+       *  - (String arg0): boolean
+       *  - (String arg0, boolean arg1): boolean
+       */
+      canTransitionToState(arg0: string, arg1?: boolean): boolean;
+      /**
+       * Method Parameters: 
        *  - (Empty): number
        */
       childStateCount(): number;
@@ -101,6 +107,11 @@ declare module '@asledgehammer/pipewrench' {
       reportEvent(arg0: string | number, arg1?: string): void;
       /**
        * Method Parameters: 
+       *  - (ActionState arg0): boolean
+       */
+      setCurrentState(arg0: zombie.characters.action.ActionState): boolean;
+      /**
+       * Method Parameters: 
        *  - (ActionGroup arg0): void
        */
       setGroup(arg0: zombie.characters.action.ActionGroup): void;
@@ -128,14 +139,19 @@ declare module '@asledgehammer/pipewrench' {
       constructor();
       /**
        * Method Parameters: 
-       *  - (ActionState arg0): void
+       *  - (ActionState arg0): zombie.characters.action.ActionState
        */
-      addState(arg0: zombie.characters.action.ActionState): void;
+      addState(arg0: zombie.characters.action.ActionState): zombie.characters.action.ActionState;
       /**
        * Method Parameters: 
        *  - (String arg0): zombie.characters.action.ActionState
        */
-      get(arg0: string): zombie.characters.action.ActionState;
+      findState(arg0: string): zombie.characters.action.ActionState;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): string
+       */
+      findStateName(arg0: number): string;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.characters.action.ActionState
@@ -146,6 +162,16 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): zombie.characters.action.ActionState
        */
       getInitialState(): zombie.characters.action.ActionState;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getName(): string;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): zombie.characters.action.ActionState
+       */
+      getOrCreate(arg0: string): zombie.characters.action.ActionState;
       /**
        * @noSelf
        *
@@ -194,6 +220,16 @@ declare module '@asledgehammer/pipewrench' {
       getName(): string;
       /**
        * Method Parameters: 
+       *  - (Empty): zombie.characters.action.ActionGroup
+       */
+      getParentActionGroup(): zombie.characters.action.ActionGroup;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isGrapplerState(): boolean;
+      /**
+       * Method Parameters: 
        *  - (String arg0): void
        */
       load(arg0: string): void;
@@ -209,9 +245,19 @@ declare module '@asledgehammer/pipewrench' {
       resetForReload(): void;
       /**
        * Method Parameters: 
+       *  - (ActionGroup arg0): void
+       */
+      setParentActionGroup(arg0: zombie.characters.action.ActionGroup): void;
+      /**
+       * Method Parameters: 
        *  - (Empty): void
        */
       sortTransitions(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      toString(): string;
       /**
        * @noSelf
        *

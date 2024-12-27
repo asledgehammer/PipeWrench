@@ -9,9 +9,15 @@ declare module '@asledgehammer/pipewrench/client' {
       [id: string]: any;
       static [id: string]: any;
 
+      centerX: any;
+
+      centerY: any;
+
       playerNum: any;
 
-      constructor(character: any);
+      zoom: any;
+
+      constructor(character: any, centerX: any, centerY: any, zoom: any);
     }
   }
   export namespace lua.client.TimedActions.ISReadWorldMap {}

@@ -1,56 +1,17 @@
 local Exports = {}
 -- [LUA-PARTIAL:START]
 
---[lua/client/Blacksmith/ISUI/ISBlacksmithMenu.d.ts]
-Exports.ISBlacksmithMenu = loadstring("require('lua/client/Blacksmith/ISUI/ISBlacksmithMenu');return _G['ISBlacksmithMenu']")()
+--[lua/client/Animals/CAnimals_Interact.d.ts]
+Exports.CAnimals_Interact = loadstring("require('lua/client/Animals/CAnimals_Interact');return _G['CAnimals_Interact']")()
 
---[lua/client/Blacksmith/ISUI/ISFurnaceInfoWindow.d.ts]
-Exports.ISFurnaceInfoWindow = loadstring("require('lua/client/Blacksmith/ISUI/ISFurnaceInfoWindow');return _G['ISFurnaceInfoWindow']")()
+--[lua/client/Animals/CButcherHook_Interact.d.ts]
+Exports.CButcherHook_Interact = loadstring("require('lua/client/Animals/CButcherHook_Interact');return _G['CButcherHook_Interact']")()
 
---[lua/client/Blacksmith/TimedActions/ISAddCoalInFurnace.d.ts]
-Exports.ISAddCoalInFurnace = loadstring("require('lua/client/Blacksmith/TimedActions/ISAddCoalInFurnace');return _G['ISAddCoalInFurnace']")()
+--[lua/client/Animals/CHutch_Interact.d.ts]
+Exports.CHutch_Interact = loadstring("require('lua/client/Animals/CHutch_Interact');return _G['CHutch_Interact']")()
 
---[lua/client/Blacksmith/TimedActions/ISAddLogsInDrum.d.ts]
-Exports.ISAddLogsInDrum = loadstring("require('lua/client/Blacksmith/TimedActions/ISAddLogsInDrum');return _G['ISAddLogsInDrum']")()
-
---[lua/client/Blacksmith/TimedActions/ISDrumLightFromKindle.d.ts]
-Exports.ISDrumLightFromKindle = loadstring("require('lua/client/Blacksmith/TimedActions/ISDrumLightFromKindle');return _G['ISDrumLightFromKindle']")()
-
---[lua/client/Blacksmith/TimedActions/ISDrumLightFromLiterature.d.ts]
-Exports.ISDrumLightFromLiterature = loadstring("require('lua/client/Blacksmith/TimedActions/ISDrumLightFromLiterature');return _G['ISDrumLightFromLiterature']")()
-
---[lua/client/Blacksmith/TimedActions/ISDrumLightFromPetrol.d.ts]
-Exports.ISDrumLightFromPetrol = loadstring("require('lua/client/Blacksmith/TimedActions/ISDrumLightFromPetrol');return _G['ISDrumLightFromPetrol']")()
-
---[lua/client/Blacksmith/TimedActions/ISEmptyDrum.d.ts]
-Exports.ISEmptyDrum = loadstring("require('lua/client/Blacksmith/TimedActions/ISEmptyDrum');return _G['ISEmptyDrum']")()
-
---[lua/client/Blacksmith/TimedActions/ISFurnaceInfoAction.d.ts]
-Exports.ISFurnaceInfoAction = loadstring("require('lua/client/Blacksmith/TimedActions/ISFurnaceInfoAction');return _G['ISFurnaceInfoAction']")()
-
---[lua/client/Blacksmith/TimedActions/ISFurnaceLightFromKindle.d.ts]
-Exports.ISFurnaceLightFromKindle = loadstring("require('lua/client/Blacksmith/TimedActions/ISFurnaceLightFromKindle');return _G['ISFurnaceLightFromKindle']")()
-
---[lua/client/Blacksmith/TimedActions/ISFurnaceLightFromLiterature.d.ts]
-Exports.ISFurnaceLightFromLiterature = loadstring("require('lua/client/Blacksmith/TimedActions/ISFurnaceLightFromLiterature');return _G['ISFurnaceLightFromLiterature']")()
-
---[lua/client/Blacksmith/TimedActions/ISFurnaceLightFromPetrol.d.ts]
-Exports.ISFurnaceLightFromPetrol = loadstring("require('lua/client/Blacksmith/TimedActions/ISFurnaceLightFromPetrol');return _G['ISFurnaceLightFromPetrol']")()
-
---[lua/client/Blacksmith/TimedActions/ISPutOutFireDrum.d.ts]
-Exports.ISPutOutFireDrum = loadstring("require('lua/client/Blacksmith/TimedActions/ISPutOutFireDrum');return _G['ISPutOutFireDrum']")()
-
---[lua/client/Blacksmith/TimedActions/ISRemoveCharcoal.d.ts]
-Exports.ISRemoveCharcoal = loadstring("require('lua/client/Blacksmith/TimedActions/ISRemoveCharcoal');return _G['ISRemoveCharcoal']")()
-
---[lua/client/Blacksmith/TimedActions/ISRemoveDrum.d.ts]
-Exports.ISRemoveDrum = loadstring("require('lua/client/Blacksmith/TimedActions/ISRemoveDrum');return _G['ISRemoveDrum']")()
-
---[lua/client/Blacksmith/TimedActions/ISStopFurnaceFire.d.ts]
-Exports.ISStopFurnaceFire = loadstring("require('lua/client/Blacksmith/TimedActions/ISStopFurnaceFire');return _G['ISStopFurnaceFire']")()
-
---[lua/client/Blacksmith/TimedActions/ISUseBellows.d.ts]
-Exports.ISUseBellows = loadstring("require('lua/client/Blacksmith/TimedActions/ISUseBellows');return _G['ISUseBellows']")()
+--[lua/client/Bed/CBed_Interact.d.ts]
+Exports.CBed_Interact = loadstring("require('lua/client/Bed/CBed_Interact');return _G['CBed_Interact']")()
 
 --[lua/client/BuildingObjects/ISUI/ISBuildMenu.d.ts]
 Exports.ISBuildMenu = loadstring("require('lua/client/BuildingObjects/ISUI/ISBuildMenu');return _G['ISBuildMenu']")()
@@ -64,30 +25,6 @@ Exports.ISPaintMenu = loadstring("require('lua/client/BuildingObjects/ISUI/ISPai
 --[lua/client/BuildingObjects/TimedActions/ISBuildAction.d.ts]
 Exports.ISBuildAction = loadstring("require('lua/client/BuildingObjects/TimedActions/ISBuildAction');return _G['ISBuildAction']")()
 
---[lua/client/BuildingObjects/TimedActions/ISInsertLightSourceFuelAction.d.ts]
-Exports.ISInsertLightSourceFuelAction = loadstring("require('lua/client/BuildingObjects/TimedActions/ISInsertLightSourceFuelAction');return _G['ISInsertLightSourceFuelAction']")()
-
---[lua/client/BuildingObjects/TimedActions/ISMultiStageBuild.d.ts]
-Exports.ISMultiStageBuild = loadstring("require('lua/client/BuildingObjects/TimedActions/ISMultiStageBuild');return _G['ISMultiStageBuild']")()
-
---[lua/client/BuildingObjects/TimedActions/ISPaintAction.d.ts]
-Exports.ISPaintAction = loadstring("require('lua/client/BuildingObjects/TimedActions/ISPaintAction');return _G['ISPaintAction']")()
-
---[lua/client/BuildingObjects/TimedActions/ISPaintSignAction.d.ts]
-Exports.ISPaintSignAction = loadstring("require('lua/client/BuildingObjects/TimedActions/ISPaintSignAction');return _G['ISPaintSignAction']")()
-
---[lua/client/BuildingObjects/TimedActions/ISPlasterAction.d.ts]
-Exports.ISPlasterAction = loadstring("require('lua/client/BuildingObjects/TimedActions/ISPlasterAction');return _G['ISPlasterAction']")()
-
---[lua/client/BuildingObjects/TimedActions/ISRemoveLightSourceFuelAction.d.ts]
-Exports.ISRemoveLightSourceFuelAction = loadstring("require('lua/client/BuildingObjects/TimedActions/ISRemoveLightSourceFuelAction');return _G['ISRemoveLightSourceFuelAction']")()
-
---[lua/client/BuildingObjects/TimedActions/ISShovelGround.d.ts]
-Exports.ISShovelGround = loadstring("require('lua/client/BuildingObjects/TimedActions/ISShovelGround');return _G['ISShovelGround']")()
-
---[lua/client/BuildingObjects/TimedActions/ISToggleLightSourceAction.d.ts]
-Exports.ISToggleLightSourceAction = loadstring("require('lua/client/BuildingObjects/TimedActions/ISToggleLightSourceAction');return _G['ISToggleLightSourceAction']")()
-
 --[lua/client/Camping/CCampfireGlobalObject.d.ts]
 Exports.CCampfireGlobalObject = loadstring("require('lua/client/Camping/CCampfireGlobalObject');return _G['CCampfireGlobalObject']")()
 
@@ -100,35 +37,8 @@ Exports.ISCampingInfoWindow = loadstring("require('lua/client/Camping/ISUI/ISCam
 --[lua/client/Camping/ISUI/ISCampingMenu.d.ts]
 Exports.ISCampingMenu = loadstring("require('lua/client/Camping/ISUI/ISCampingMenu');return _G['ISCampingMenu']")()
 
---[lua/client/Camping/TimedActions/ISAddFuelAction.d.ts]
-Exports.ISAddFuelAction = loadstring("require('lua/client/Camping/TimedActions/ISAddFuelAction');return _G['ISAddFuelAction']")()
-
---[lua/client/Camping/TimedActions/ISAddTentAction.d.ts]
-Exports.ISAddTentAction = loadstring("require('lua/client/Camping/TimedActions/ISAddTentAction');return _G['ISAddTentAction']")()
-
---[lua/client/Camping/TimedActions/ISLightFromKindle.d.ts]
-Exports.ISLightFromKindle = loadstring("require('lua/client/Camping/TimedActions/ISLightFromKindle');return _G['ISLightFromKindle']")()
-
---[lua/client/Camping/TimedActions/ISLightFromLiterature.d.ts]
-Exports.ISLightFromLiterature = loadstring("require('lua/client/Camping/TimedActions/ISLightFromLiterature');return _G['ISLightFromLiterature']")()
-
---[lua/client/Camping/TimedActions/ISLightFromPetrol.d.ts]
-Exports.ISLightFromPetrol = loadstring("require('lua/client/Camping/TimedActions/ISLightFromPetrol');return _G['ISLightFromPetrol']")()
-
---[lua/client/Camping/TimedActions/ISPlaceCampfireAction.d.ts]
-Exports.ISPlaceCampfireAction = loadstring("require('lua/client/Camping/TimedActions/ISPlaceCampfireAction');return _G['ISPlaceCampfireAction']")()
-
---[lua/client/Camping/TimedActions/ISPutOutCampfireAction.d.ts]
-Exports.ISPutOutCampfireAction = loadstring("require('lua/client/Camping/TimedActions/ISPutOutCampfireAction');return _G['ISPutOutCampfireAction']")()
-
---[lua/client/Camping/TimedActions/ISRemoveCampfireAction.d.ts]
-Exports.ISRemoveCampfireAction = loadstring("require('lua/client/Camping/TimedActions/ISRemoveCampfireAction');return _G['ISRemoveCampfireAction']")()
-
---[lua/client/Camping/TimedActions/ISRemoveTentAction.d.ts]
-Exports.ISRemoveTentAction = loadstring("require('lua/client/Camping/TimedActions/ISRemoveTentAction');return _G['ISRemoveTentAction']")()
-
---[lua/client/Camping/TimedActions/ISSleepInTentAction.d.ts]
-Exports.ISSleepInTentAction = loadstring("require('lua/client/Camping/TimedActions/ISSleepInTentAction');return _G['ISSleepInTentAction']")()
+--[lua/client/Chat/ISAlert.d.ts]
+Exports.ISAlert = loadstring("require('lua/client/Chat/ISAlert');return _G['ISAlert']")()
 
 --[lua/client/Chat/ISChat.d.ts]
 Exports.ISChat = loadstring("require('lua/client/Chat/ISChat');return _G['ISChat']")()
@@ -162,6 +72,8 @@ Exports.AnimationClipViewer = loadstring("require('lua/client/DebugUIs/Animation
 Exports.AnimationClipViewer_ListBox = loadstring("require('lua/client/DebugUIs/AnimationClipViewer');return _G['AnimationClipViewer_ListBox']")()
 Exports.AnimationClipViewer_OptionsPanel = loadstring("require('lua/client/DebugUIs/AnimationClipViewer');return _G['AnimationClipViewer_OptionsPanel']")()
 Exports.AnimationClipViewer_Scene = loadstring("require('lua/client/DebugUIs/AnimationClipViewer');return _G['AnimationClipViewer_Scene']")()
+Exports.AnimationClipViewer_SoundBar = loadstring("require('lua/client/DebugUIs/AnimationClipViewer');return _G['AnimationClipViewer_SoundBar']")()
+Exports.AnimationClipViewer_SoundPanel = loadstring("require('lua/client/DebugUIs/AnimationClipViewer');return _G['AnimationClipViewer_SoundPanel']")()
 Exports.AnimationClipViewer_Timeline = loadstring("require('lua/client/DebugUIs/AnimationClipViewer');return _G['AnimationClipViewer_Timeline']")()
 
 --[lua/client/DebugUIs/AttachmentEditorUI.d.ts]
@@ -182,6 +94,9 @@ Exports.BrushToolManager = loadstring("require('lua/client/DebugUIs/BrushTool/Br
 
 --[lua/client/DebugUIs/BrushTool/FireBrushUI.d.ts]
 Exports.FireBrushUI = loadstring("require('lua/client/DebugUIs/BrushTool/FireBrushUI');return _G['FireBrushUI']")()
+
+--[lua/client/DebugUIs/DebugChunkState/DebugChunkState_ObjectAtCursorPanel.d.ts]
+Exports.DebugChunkState_ObjectAtCursorPanel = loadstring("require('lua/client/DebugUIs/DebugChunkState/DebugChunkState_ObjectAtCursorPanel');return _G['DebugChunkState_ObjectAtCursorPanel']")()
 
 --[lua/client/DebugUIs/DebugChunkState/DebugChunkState_ObjectPickerPanel.d.ts]
 Exports.DebugChunkState_ObjectPickerPanel = loadstring("require('lua/client/DebugUIs/DebugChunkState/DebugChunkState_ObjectPickerPanel');return _G['DebugChunkState_ObjectPickerPanel']")()
@@ -204,6 +119,7 @@ Exports.DebugChunkState_VehicleStoryPanel = loadstring("require('lua/client/Debu
 --[lua/client/DebugUIs/DebugChunkState/DebugChunkStateUI.d.ts]
 Exports.DebugChunkStateUI = loadstring("require('lua/client/DebugUIs/DebugChunkState/DebugChunkStateUI');return _G['DebugChunkStateUI']")()
 Exports.DebugChunkStateUI_OptionsPanel = loadstring("require('lua/client/DebugUIs/DebugChunkState/DebugChunkStateUI');return _G['DebugChunkStateUI_OptionsPanel']")()
+Exports.DebugChunkStateUI_SpritePopupPanel = loadstring("require('lua/client/DebugUIs/DebugChunkState/DebugChunkStateUI');return _G['DebugChunkStateUI_SpritePopupPanel']")()
 
 --[lua/client/DebugUIs/DebugChunkState/ISSectionedPanel.d.ts]
 Exports.ISSectionedPanel = loadstring("require('lua/client/DebugUIs/DebugChunkState/ISSectionedPanel');return _G['ISSectionedPanel']")()
@@ -243,6 +159,19 @@ Exports.ISAnimDebugMonitor = loadstring("require('lua/client/DebugUIs/DebugMenu/
 
 --[lua/client/DebugUIs/DebugMenu/Anims/ISAnimLoggerOutput.d.ts]
 Exports.ISAnimLoggerOutput = loadstring("require('lua/client/DebugUIs/DebugMenu/Anims/ISAnimLoggerOutput');return _G['ISAnimLoggerOutput']")()
+
+--[lua/client/DebugUIs/DebugMenu/Audio/ISAudioDebugPanel.d.ts]
+Exports.ISAudioDebugPanel = loadstring("require('lua/client/DebugUIs/DebugMenu/Audio/ISAudioDebugPanel');return _G['ISAudioDebugPanel']")()
+
+--[lua/client/DebugUIs/DebugMenu/Audio/ISFMODEventPlayerPanel.d.ts]
+Exports.ISFMODEventPlayerPanel = loadstring("require('lua/client/DebugUIs/DebugMenu/Audio/ISFMODEventPlayerPanel');return _G['ISFMODEventPlayerPanel']")()
+Exports.ISFMODEventPlayerParameterEditor = loadstring("require('lua/client/DebugUIs/DebugMenu/Audio/ISFMODEventPlayerPanel');return _G['ISFMODEventPlayerParameterEditor']")()
+
+--[lua/client/DebugUIs/DebugMenu/Audio/ISMusicIntensityEventsPanel.d.ts]
+Exports.ISMusicIntensityEventsPanel = loadstring("require('lua/client/DebugUIs/DebugMenu/Audio/ISMusicIntensityEventsPanel');return _G['ISMusicIntensityEventsPanel']")()
+
+--[lua/client/DebugUIs/DebugMenu/Audio/ISMusicThreatStatusPanel.d.ts]
+Exports.ISMusicThreatStatusPanel = loadstring("require('lua/client/DebugUIs/DebugMenu/Audio/ISMusicThreatStatusPanel');return _G['ISMusicThreatStatusPanel']")()
 
 --[lua/client/DebugUIs/DebugMenu/Base/ISDebugPanelBase.d.ts]
 Exports.ISDebugPanelBase = loadstring("require('lua/client/DebugUIs/DebugMenu/Base/ISDebugPanelBase');return _G['ISDebugPanelBase']")()
@@ -299,6 +228,42 @@ Exports.WeatherPeriodDebug = loadstring("require('lua/client/DebugUIs/DebugMenu/
 --[lua/client/DebugUIs/DebugMenu/Climate/WindDebug.d.ts]
 Exports.WindDebug = loadstring("require('lua/client/DebugUIs/DebugMenu/Climate/WindDebug');return _G['WindDebug']")()
 
+--[lua/client/DebugUIs/DebugMenu/Entity/ISEntitiesDebugWindow.d.ts]
+Exports.ISEntitiesDebugWindow = loadstring("require('lua/client/DebugUIs/DebugMenu/Entity/ISEntitiesDebugWindow');return _G['ISEntitiesDebugWindow']")()
+
+--[lua/client/DebugUIs/DebugMenu/Entity/ISEntityInstancesPanel.d.ts]
+Exports.ISEntityInstancesPanel = loadstring("require('lua/client/DebugUIs/DebugMenu/Entity/ISEntityInstancesPanel');return _G['ISEntityInstancesPanel']")()
+
+--[lua/client/DebugUIs/DebugMenu/Entity/ISEntityScriptsPanel.d.ts]
+Exports.ISEntityScriptsPanel = loadstring("require('lua/client/DebugUIs/DebugMenu/Entity/ISEntityScriptsPanel');return _G['ISEntityScriptsPanel']")()
+
+--[lua/client/DebugUIs/DebugMenu/Entity/ISEntityViewPanel.d.ts]
+Exports.ISEntityViewPanel = loadstring("require('lua/client/DebugUIs/DebugMenu/Entity/ISEntityViewPanel');return _G['ISEntityViewPanel']")()
+
+--[lua/client/DebugUIs/DebugMenu/Entity/ISEntityViewWindow.d.ts]
+Exports.ISEntityViewWindow = loadstring("require('lua/client/DebugUIs/DebugMenu/Entity/ISEntityViewWindow');return _G['ISEntityViewWindow']")()
+
+--[lua/client/DebugUIs/DebugMenu/Fluids/ISFluidCategoriesViewPanel.d.ts]
+Exports.ISFluidCategoriesViewPanel = loadstring("require('lua/client/DebugUIs/DebugMenu/Fluids/ISFluidCategoriesViewPanel');return _G['ISFluidCategoriesViewPanel']")()
+
+--[lua/client/DebugUIs/DebugMenu/Fluids/ISFluidDebugWindow.d.ts]
+Exports.ISFluidDebugWindow = loadstring("require('lua/client/DebugUIs/DebugMenu/Fluids/ISFluidDebugWindow');return _G['ISFluidDebugWindow']")()
+
+--[lua/client/DebugUIs/DebugMenu/Fluids/ISFluidItemsViewPanel.d.ts]
+Exports.ISFluidItemsViewPanel = loadstring("require('lua/client/DebugUIs/DebugMenu/Fluids/ISFluidItemsViewPanel');return _G['ISFluidItemsViewPanel']")()
+
+--[lua/client/DebugUIs/DebugMenu/Fluids/ISFluidMixerViewPanel.d.ts]
+Exports.ISFluidMixerViewPanel = loadstring("require('lua/client/DebugUIs/DebugMenu/Fluids/ISFluidMixerViewPanel');return _G['ISFluidMixerViewPanel']")()
+
+--[lua/client/DebugUIs/DebugMenu/Fluids/ISFluidOverviewPanel.d.ts]
+Exports.ISFluidOverviewPanel = loadstring("require('lua/client/DebugUIs/DebugMenu/Fluids/ISFluidOverviewPanel');return _G['ISFluidOverviewPanel']")()
+
+--[lua/client/DebugUIs/DebugMenu/Fluids/ISFluidViewPanel.d.ts]
+Exports.ISFluidViewPanel = loadstring("require('lua/client/DebugUIs/DebugMenu/Fluids/ISFluidViewPanel');return _G['ISFluidViewPanel']")()
+
+--[lua/client/DebugUIs/DebugMenu/General/ISBulletTracerEffect.d.ts]
+Exports.ISBulletTracerEffect = loadstring("require('lua/client/DebugUIs/DebugMenu/General/ISBulletTracerEffect');return _G['ISBulletTracerEffect']")()
+
 --[lua/client/DebugUIs/DebugMenu/General/ISCheatPanelUI.d.ts]
 Exports.ISCheatPanelUI = loadstring("require('lua/client/DebugUIs/DebugMenu/General/ISCheatPanelUI');return _G['ISCheatPanelUI']")()
 
@@ -343,6 +308,21 @@ Exports.IsoRegionLogWindow = loadstring("require('lua/client/DebugUIs/DebugMenu/
 --[lua/client/DebugUIs/DebugMenu/IsoRegions/IsoRegionsWindow.d.ts]
 Exports.IsoRegionsWindow = loadstring("require('lua/client/DebugUIs/DebugMenu/IsoRegions/IsoRegionsWindow');return _G['IsoRegionsWindow']")()
 
+--[lua/client/DebugUIs/DebugMenu/Physics/DebugRagdollPanel.d.ts]
+Exports.DebugRagdollPanel = loadstring("require('lua/client/DebugUIs/DebugMenu/Physics/DebugRagdollPanel');return _G['DebugRagdollPanel']")()
+
+--[lua/client/DebugUIs/DebugMenu/Physics/ForceHitReactionPanel.d.ts]
+Exports.ForceHitReactionPanel = loadstring("require('lua/client/DebugUIs/DebugMenu/Physics/ForceHitReactionPanel');return _G['ForceHitReactionPanel']")()
+
+--[lua/client/DebugUIs/DebugMenu/Physics/HitReactionSettingsPanel.d.ts]
+Exports.HitReactionSettingsPanel = loadstring("require('lua/client/DebugUIs/DebugMenu/Physics/HitReactionSettingsPanel');return _G['HitReactionSettingsPanel']")()
+
+--[lua/client/DebugUIs/DebugMenu/Physics/RagdollSettingsPanel.d.ts]
+Exports.RagdollSettingsPanel = loadstring("require('lua/client/DebugUIs/DebugMenu/Physics/RagdollSettingsPanel');return _G['RagdollSettingsPanel']")()
+
+--[lua/client/DebugUIs/DebugMenu/Player/ISCharacterDebugUI.d.ts]
+Exports.ISCharacterDebugUI = loadstring("require('lua/client/DebugUIs/DebugMenu/Player/ISCharacterDebugUI');return _G['ISCharacterDebugUI']")()
+
 --[lua/client/DebugUIs/DebugMenu/Puddles/PuddlesControl.d.ts]
 Exports.PuddlesControl = loadstring("require('lua/client/DebugUIs/DebugMenu/Puddles/PuddlesControl');return _G['PuddlesControl']")()
 
@@ -354,6 +334,43 @@ Exports.RadioScriptDebugger = loadstring("require('lua/client/DebugUIs/DebugMenu
 
 --[lua/client/DebugUIs/DebugMenu/radio/ZomboidRadioDebug.d.ts]
 Exports.ZomboidRadioDebug = loadstring("require('lua/client/DebugUIs/DebugMenu/radio/ZomboidRadioDebug');return _G['ZomboidRadioDebug']")()
+
+--[lua/client/DebugUIs/DebugMenu/Recipes/ISCraftRecipeDbgWindow.d.ts]
+Exports.ISCraftRecipeDbgWindow = loadstring("require('lua/client/DebugUIs/DebugMenu/Recipes/ISCraftRecipeDbgWindow');return _G['ISCraftRecipeDbgWindow']")()
+
+--[lua/client/DebugUIs/DebugMenu/Recipes/ISCraftRecipeIconsPanel.d.ts]
+Exports.ISCraftRecipeIconsPanel = loadstring("require('lua/client/DebugUIs/DebugMenu/Recipes/ISCraftRecipeIconsPanel');return _G['ISCraftRecipeIconsPanel']")()
+
+--[lua/client/DebugUIs/DebugMenu/Recipes/ISCraftRecipeMonitor.d.ts]
+Exports.ISCraftRecipeMonitor = loadstring("require('lua/client/DebugUIs/DebugMenu/Recipes/ISCraftRecipeMonitor');return _G['ISCraftRecipeMonitor']")()
+
+--[lua/client/DebugUIs/DebugMenu/Recipes/ISCraftRecipeOverviewPanel.d.ts]
+Exports.ISCraftRecipeOverviewPanel = loadstring("require('lua/client/DebugUIs/DebugMenu/Recipes/ISCraftRecipeOverviewPanel');return _G['ISCraftRecipeOverviewPanel']")()
+
+--[lua/client/DebugUIs/DebugMenu/Recipes/ISCraftRecipeQueriesPanel.d.ts]
+Exports.ISCraftRecipeQueriesPanel = loadstring("require('lua/client/DebugUIs/DebugMenu/Recipes/ISCraftRecipeQueriesPanel');return _G['ISCraftRecipeQueriesPanel']")()
+
+--[lua/client/DebugUIs/DebugMenu/Recipes/ISCraftRecipeTagsDebugPanel.d.ts]
+Exports.ISCraftRecipeTagsDebugPanel = loadstring("require('lua/client/DebugUIs/DebugMenu/Recipes/ISCraftRecipeTagsDebugPanel');return _G['ISCraftRecipeTagsDebugPanel']")()
+
+--[lua/client/DebugUIs/DebugMenu/Recipes/ISCraftRecipeTagsPanel.d.ts]
+Exports.ISCraftRecipeTagsPanel = loadstring("require('lua/client/DebugUIs/DebugMenu/Recipes/ISCraftRecipeTagsPanel');return _G['ISCraftRecipeTagsPanel']")()
+
+--[lua/client/DebugUIs/DebugMenu/Recipes/ISRecipeMonitor.d.ts]
+Exports.ISRecipeMonitor = loadstring("require('lua/client/DebugUIs/DebugMenu/Recipes/ISRecipeMonitor');return _G['ISRecipeMonitor']")()
+
+--[lua/client/DebugUIs/DebugMenu/Scripts/ISScriptsDebugWindow.d.ts]
+Exports.ISScriptsDebugWindow = loadstring("require('lua/client/DebugUIs/DebugMenu/Scripts/ISScriptsDebugWindow');return _G['ISScriptsDebugWindow']")()
+
+--[lua/client/DebugUIs/DebugMenu/Scripts/ISScriptViewPanel.d.ts]
+Exports.ISScriptViewPanel = loadstring("require('lua/client/DebugUIs/DebugMenu/Scripts/ISScriptViewPanel');return _G['ISScriptViewPanel']")()
+
+--[lua/client/DebugUIs/DebugMenu/Scripts/ISScriptViewWindow.d.ts]
+Exports.ISScriptViewWindow = loadstring("require('lua/client/DebugUIs/DebugMenu/Scripts/ISScriptViewWindow');return _G['ISScriptViewWindow']")()
+
+--[lua/client/DebugUIs/DebugMenu/Scripts/ISStringListView.d.ts]
+Exports.ISStringListView = loadstring("require('lua/client/DebugUIs/DebugMenu/Scripts/ISStringListView');return _G['ISStringListView']")()
+Exports.ISStringListViewNode = loadstring("require('lua/client/DebugUIs/DebugMenu/Scripts/ISStringListView');return _G['ISStringListViewNode']")()
 
 --[lua/client/DebugUIs/DebugMenu/Statistic/ISGameStatisticPanel.d.ts]
 Exports.ISGameStatisticPanel = loadstring("require('lua/client/DebugUIs/DebugMenu/Statistic/ISGameStatisticPanel');return _G['ISGameStatisticPanel']")()
@@ -373,8 +390,24 @@ Exports.StatisticChartPackets = loadstring("require('lua/client/DebugUIs/DebugMe
 --[lua/client/DebugUIs/DebugMenu/Statistic/StatisticChartUpdatePeriod.d.ts]
 Exports.StatisticChartUpdatePeriod = loadstring("require('lua/client/DebugUIs/DebugMenu/Statistic/StatisticChartUpdatePeriod');return _G['StatisticChartUpdatePeriod']")()
 
+--[lua/client/DebugUIs/DebugMenu/UnitTests/UnitTestsDebug.d.ts]
+Exports.UnitTestsDebug = loadstring("require('lua/client/DebugUIs/DebugMenu/UnitTests/UnitTestsDebug');return _G['UnitTestsDebug']")()
+
+--[lua/client/DebugUIs/DebugMenu/UnitTests/UnitTestsTimedActionsPanel.d.ts]
+Exports.UnitTestsTimedActionsPanel = loadstring("require('lua/client/DebugUIs/DebugMenu/UnitTests/UnitTestsTimedActionsPanel');return _G['UnitTestsTimedActionsPanel']")()
+Exports.UnitTestsTimedActionsPanelTestResults = loadstring("require('lua/client/DebugUIs/DebugMenu/UnitTests/UnitTestsTimedActionsPanel');return _G['UnitTestsTimedActionsPanelTestResults']")()
+
 --[lua/client/DebugUIs/DebugMenu/WorldFlares/WorldFlaresDebug.d.ts]
 Exports.WorldFlaresDebug = loadstring("require('lua/client/DebugUIs/DebugMenu/WorldFlares/WorldFlaresDebug');return _G['WorldFlaresDebug']")()
+
+--[lua/client/DebugUIs/DebugMenu/Xui/XuiDebugLayoutWindow.d.ts]
+Exports.XuiDebugLayoutWindow = loadstring("require('lua/client/DebugUIs/DebugMenu/Xui/XuiDebugLayoutWindow');return _G['XuiDebugLayoutWindow']")()
+
+--[lua/client/DebugUIs/DebugMenu/Xui/XuiDebugWindow.d.ts]
+Exports.XuiDebugWindow = loadstring("require('lua/client/DebugUIs/DebugMenu/Xui/XuiDebugWindow');return _G['XuiDebugWindow']")()
+
+--[lua/client/DebugUIs/DebugMenu/Xui/XuiTestWindow.d.ts]
+Exports.XuiTestWindow = loadstring("require('lua/client/DebugUIs/DebugMenu/Xui/XuiTestWindow');return _G['XuiTestWindow']")()
 
 --[lua/client/DebugUIs/DebugOptionsWindow.d.ts]
 Exports.DebugOptionsWindow = loadstring("require('lua/client/DebugUIs/DebugOptionsWindow');return _G['DebugOptionsWindow']")()
@@ -390,6 +423,9 @@ Exports.DeviceInspector = loadstring("require('lua/client/DebugUIs/DeviceInspect
 
 --[lua/client/DebugUIs/ISAttachedItemsUI.d.ts]
 Exports.ISAttachedItemsUI = loadstring("require('lua/client/DebugUIs/ISAttachedItemsUI');return _G['ISAttachedItemsUI']")()
+
+--[lua/client/DebugUIs/ISDebugAnimationTextUI.d.ts]
+Exports.ISDebugAnimationTextUI = loadstring("require('lua/client/DebugUIs/ISDebugAnimationTextUI');return _G['ISDebugAnimationTextUI']")()
 
 --[lua/client/DebugUIs/ISExtAnimListDebugUI.d.ts]
 Exports.ISExtAnimListDebugUI = loadstring("require('lua/client/DebugUIs/ISExtAnimListDebugUI');return _G['ISExtAnimListDebugUI']")()
@@ -444,8 +480,32 @@ Exports.MPDebugger = loadstring("require('lua/client/DebugUIs/MPDebugger');retur
 --[lua/client/DebugUIs/ObjectViewer.d.ts]
 Exports.ObjectViewer = loadstring("require('lua/client/DebugUIs/ObjectViewer');return _G['ObjectViewer']")()
 
+--[lua/client/DebugUIs/SeamEditor/SeamEditorUI_SeamTileList.d.ts]
+Exports.SeamEditorUI_SeamTileList = loadstring("require('lua/client/DebugUIs/SeamEditor/SeamEditorUI_SeamTileList');return _G['SeamEditorUI_SeamTileList']")()
+
+--[lua/client/DebugUIs/SeamEditor/SeamEditorUI_TileList.d.ts]
+Exports.SeamEditorUI_TileList = loadstring("require('lua/client/DebugUIs/SeamEditor/SeamEditorUI_TileList');return _G['SeamEditorUI_TileList']")()
+
+--[lua/client/DebugUIs/SeamEditor/SeamEditorUI_TileList2.d.ts]
+Exports.SeamEditorUI_TileList2 = loadstring("require('lua/client/DebugUIs/SeamEditor/SeamEditorUI_TileList2');return _G['SeamEditorUI_TileList2']")()
+
+--[lua/client/DebugUIs/SeamEditor/SeamEditorUI.d.ts]
+Exports.SeamEditorUI = loadstring("require('lua/client/DebugUIs/SeamEditor/SeamEditorUI');return _G['SeamEditorUI']")()
+Exports.SeamEditorUI_OptionsPanel = loadstring("require('lua/client/DebugUIs/SeamEditor/SeamEditorUI');return _G['SeamEditorUI_OptionsPanel']")()
+Exports.SeamEditorUI_Scene = loadstring("require('lua/client/DebugUIs/SeamEditor/SeamEditorUI');return _G['SeamEditorUI_Scene']")()
+Exports.SeamEditorUI_TilePicker = loadstring("require('lua/client/DebugUIs/SeamEditor/SeamEditorUI');return _G['SeamEditorUI_TilePicker']")()
+Exports.SeamEditorUI_TilePicker2 = loadstring("require('lua/client/DebugUIs/SeamEditor/SeamEditorUI');return _G['SeamEditorUI_TilePicker2']")()
+
 --[lua/client/DebugUIs/SourceWindow.d.ts]
 Exports.SourceWindow = loadstring("require('lua/client/DebugUIs/SourceWindow');return _G['SourceWindow']")()
+
+--[lua/client/DebugUIs/SpriteModelEditor.d.ts]
+Exports.SpriteModelEditor = loadstring("require('lua/client/DebugUIs/SpriteModelEditor');return _G['SpriteModelEditor']")()
+Exports.SpriteModelEditor_ListBox = loadstring("require('lua/client/DebugUIs/SpriteModelEditor');return _G['SpriteModelEditor_ListBox']")()
+Exports.SpriteModelEditor_OptionsPanel = loadstring("require('lua/client/DebugUIs/SpriteModelEditor');return _G['SpriteModelEditor_OptionsPanel']")()
+Exports.SpriteModelEditor_Scene = loadstring("require('lua/client/DebugUIs/SpriteModelEditor');return _G['SpriteModelEditor_Scene']")()
+Exports.SpriteModelEditor_TileList = loadstring("require('lua/client/DebugUIs/SpriteModelEditor');return _G['SpriteModelEditor_TileList']")()
+Exports.SpriteModelEditor_TilePicker = loadstring("require('lua/client/DebugUIs/SpriteModelEditor');return _G['SpriteModelEditor_TilePicker']")()
 
 --[lua/client/DebugUIs/StashDebug.d.ts]
 Exports.StashDebug = loadstring("require('lua/client/DebugUIs/StashDebug');return _G['StashDebug']")()
@@ -456,13 +516,270 @@ Exports.StreamMapWindow = loadstring("require('lua/client/DebugUIs/StreamMapWind
 --[lua/client/DebugUIs/TextureViewer.d.ts]
 Exports.TextureWindow = loadstring("require('lua/client/DebugUIs/TextureViewer');return _G['TextureWindow']")()
 
+--[lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_EditMode.d.ts]
+Exports.TileGeometryEditor_BoxPanel = loadstring("require('lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_EditMode');return _G['TileGeometryEditor_BoxPanel']")()
+Exports.TileGeometryEditor_CylinderPanel = loadstring("require('lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_EditMode');return _G['TileGeometryEditor_CylinderPanel']")()
+Exports.TileGeometryEditor_DepthTexturePanel = loadstring("require('lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_EditMode');return _G['TileGeometryEditor_DepthTexturePanel']")()
+Exports.TileGeometryEditor_EditMode = loadstring("require('lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_EditMode');return _G['TileGeometryEditor_EditMode']")()
+Exports.TileGeometryEditor_EditMode_Geometry = loadstring("require('lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_EditMode');return _G['TileGeometryEditor_EditMode_Geometry']")()
+Exports.TileGeometryEditor_EditMode_SceneTiles = loadstring("require('lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_EditMode');return _G['TileGeometryEditor_EditMode_SceneTiles']")()
+Exports.TileGeometryEditor_EditMode_Seating = loadstring("require('lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_EditMode');return _G['TileGeometryEditor_EditMode_Seating']")()
+Exports.TileGeometryEditor_GeometryListBox = loadstring("require('lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_EditMode');return _G['TileGeometryEditor_GeometryListBox']")()
+Exports.TileGeometryEditor_ListBox = loadstring("require('lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_EditMode');return _G['TileGeometryEditor_ListBox']")()
+Exports.TileGeometryEditor_PropertiesPanel = loadstring("require('lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_EditMode');return _G['TileGeometryEditor_PropertiesPanel']")()
+Exports.TileGeometryEditor_SeatingListBox = loadstring("require('lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_EditMode');return _G['TileGeometryEditor_SeatingListBox']")()
+Exports.TileGeometryEditor_SeatingPropertiesPanel = loadstring("require('lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_EditMode');return _G['TileGeometryEditor_SeatingPropertiesPanel']")()
+Exports.TileGeometryEditor_TilePicker3 = loadstring("require('lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_EditMode');return _G['TileGeometryEditor_TilePicker3']")()
+
+--[lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_SceneTiles.d.ts]
+Exports.TileGeometryEditor_SceneTiles = loadstring("require('lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_SceneTiles');return _G['TileGeometryEditor_SceneTiles']")()
+
+--[lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_TileList.d.ts]
+Exports.TileGeometryEditor_TileList = loadstring("require('lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_TileList');return _G['TileGeometryEditor_TileList']")()
+
+--[lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_TileList2.d.ts]
+Exports.TileGeometryEditor_TileList2 = loadstring("require('lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_TileList2');return _G['TileGeometryEditor_TileList2']")()
+
+--[lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_TileList3.d.ts]
+Exports.TileGeometryEditor_TileList3 = loadstring("require('lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_TileList3');return _G['TileGeometryEditor_TileList3']")()
+
+--[lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_Tools.d.ts]
+Exports.TileGeometryEditor_AddTileTool = loadstring("require('lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_Tools');return _G['TileGeometryEditor_AddTileTool']")()
+Exports.TileGeometryEditor_DepthRectTool = loadstring("require('lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_Tools');return _G['TileGeometryEditor_DepthRectTool']")()
+Exports.TileGeometryEditor_EditPolygonTool = loadstring("require('lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_Tools');return _G['TileGeometryEditor_EditPolygonTool']")()
+Exports.TileGeometryEditor_GizmoTool = loadstring("require('lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_Tools');return _G['TileGeometryEditor_GizmoTool']")()
+Exports.TileGeometryEditor_GizmoTool_ResizeBox = loadstring("require('lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_Tools');return _G['TileGeometryEditor_GizmoTool_ResizeBox']")()
+Exports.TileGeometryEditor_GizmoTool_ResizeCylinder = loadstring("require('lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_Tools');return _G['TileGeometryEditor_GizmoTool_ResizeCylinder']")()
+Exports.TileGeometryEditor_GizmoTool_Rotate = loadstring("require('lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_Tools');return _G['TileGeometryEditor_GizmoTool_Rotate']")()
+Exports.TileGeometryEditor_GizmoTool_Scale = loadstring("require('lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_Tools');return _G['TileGeometryEditor_GizmoTool_Scale']")()
+Exports.TileGeometryEditor_GizmoTool_SetSurface = loadstring("require('lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_Tools');return _G['TileGeometryEditor_GizmoTool_SetSurface']")()
+Exports.TileGeometryEditor_GizmoTool_Translate = loadstring("require('lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_Tools');return _G['TileGeometryEditor_GizmoTool_Translate']")()
+Exports.TileGeometryEditor_MoveTileTool = loadstring("require('lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_Tools');return _G['TileGeometryEditor_MoveTileTool']")()
+Exports.TileGeometryEditor_Tool = loadstring("require('lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_Tools');return _G['TileGeometryEditor_Tool']")()
+
+--[lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor.d.ts]
+Exports.TileGeometryEditor = loadstring("require('lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor');return _G['TileGeometryEditor']")()
+Exports.TileGeometryEditor_OptionsPanel = loadstring("require('lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor');return _G['TileGeometryEditor_OptionsPanel']")()
+Exports.TileGeometryEditor_Scene = loadstring("require('lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor');return _G['TileGeometryEditor_Scene']")()
+Exports.TileGeometryEditor_SwitchView = loadstring("require('lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor');return _G['TileGeometryEditor_SwitchView']")()
+Exports.TileGeometryEditor_TilePicker = loadstring("require('lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor');return _G['TileGeometryEditor_TilePicker']")()
+Exports.TileGeometryEditor_TilePicker2 = loadstring("require('lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor');return _G['TileGeometryEditor_TilePicker2']")()
+
 --[lua/client/DebugUIs/WatchWindow.d.ts]
 Exports.WatchWindow = loadstring("require('lua/client/DebugUIs/WatchWindow');return _G['WatchWindow']")()
+
+--[lua/client/Entity/ISEntityUI.d.ts]
+Exports.ISEntityUI = loadstring("require('lua/client/Entity/ISEntityUI');return _G['ISEntityUI']")()
+
+--[lua/client/Entity/ISEntityUtilUI.d.ts]
+Exports.ISEntityUtilUI = loadstring("require('lua/client/Entity/ISEntityUtilUI');return _G['ISEntityUtilUI']")()
+
+--[lua/client/Entity/ISUI/BuildRecipe/ISBuildPanel.d.ts]
+Exports.ISBuildPanel = loadstring("require('lua/client/Entity/ISUI/BuildRecipe/ISBuildPanel');return _G['ISBuildPanel']")()
+
+--[lua/client/Entity/ISUI/BuildRecipe/ISBuildRecipePanel.d.ts]
+Exports.ISBuildRecipePanel = loadstring("require('lua/client/Entity/ISUI/BuildRecipe/ISBuildRecipePanel');return _G['ISBuildRecipePanel']")()
+
+--[lua/client/Entity/ISUI/BuildRecipe/ISBuildWidgetIngredientsInputs.d.ts]
+Exports.ISBuildWidgetIngredientsInputs = loadstring("require('lua/client/Entity/ISUI/BuildRecipe/ISBuildWidgetIngredientsInputs');return _G['ISBuildWidgetIngredientsInputs']")()
+
+--[lua/client/Entity/ISUI/BuildRecipe/ISWidgetBuildControl.d.ts]
+Exports.ISWidgetBuildControl = loadstring("require('lua/client/Entity/ISUI/BuildRecipe/ISWidgetBuildControl');return _G['ISWidgetBuildControl']")()
+
+--[lua/client/Entity/ISUI/Components/Crafting/ISButcherHookCraftPanel.d.ts]
+Exports.ISButcherHookCraftPanel = loadstring("require('lua/client/Entity/ISUI/Components/Crafting/ISButcherHookCraftPanel');return _G['ISButcherHookCraftPanel']")()
+
+--[lua/client/Entity/ISUI/Components/Crafting/ISButcherHookProcessorPanel.d.ts]
+Exports.ISButcherHookProcessorPanel = loadstring("require('lua/client/Entity/ISUI/Components/Crafting/ISButcherHookProcessorPanel');return _G['ISButcherHookProcessorPanel']")()
+
+--[lua/client/Entity/ISUI/Components/Crafting/ISCraftBenchPanel.d.ts]
+Exports.ISCraftBenchPanel = loadstring("require('lua/client/Entity/ISUI/Components/Crafting/ISCraftBenchPanel');return _G['ISCraftBenchPanel']")()
+
+--[lua/client/Entity/ISUI/Components/Crafting/ISCraftLogicPanel.d.ts]
+Exports.ISCraftLogicPanel = loadstring("require('lua/client/Entity/ISUI/Components/Crafting/ISCraftLogicPanel');return _G['ISCraftLogicPanel']")()
+
+--[lua/client/Entity/ISUI/Components/Crafting/ISFurnaceLogicPanel.d.ts]
+Exports.ISFurnaceLogicPanel = loadstring("require('lua/client/Entity/ISUI/Components/Crafting/ISFurnaceLogicPanel');return _G['ISFurnaceLogicPanel']")()
+
+--[lua/client/Entity/ISUI/Components/Crafting/ISMashingLogicPanel.d.ts]
+Exports.ISMashingLogicPanel = loadstring("require('lua/client/Entity/ISUI/Components/Crafting/ISMashingLogicPanel');return _G['ISMashingLogicPanel']")()
+
+--[lua/client/Entity/ISUI/Components/ISBaseComponentPanel.d.ts]
+Exports.ISBaseComponentPanel = loadstring("require('lua/client/Entity/ISUI/Components/ISBaseComponentPanel');return _G['ISBaseComponentPanel']")()
+
+--[lua/client/Entity/ISUI/Components/ISTestComponentPanel.d.ts]
+Exports.ISTestComponentPanel = loadstring("require('lua/client/Entity/ISUI/Components/ISTestComponentPanel');return _G['ISTestComponentPanel']")()
+
+--[lua/client/Entity/ISUI/Controls/ISComponentsListPanel.d.ts]
+Exports.ISComponentsListPanel = loadstring("require('lua/client/Entity/ISUI/Controls/ISComponentsListPanel');return _G['ISComponentsListPanel']")()
+
+--[lua/client/Entity/ISUI/Controls/ISComponentsTabPanel.d.ts]
+Exports.ISComponentsTabPanel = loadstring("require('lua/client/Entity/ISUI/Controls/ISComponentsTabPanel');return _G['ISComponentsTabPanel']")()
+
+--[lua/client/Entity/ISUI/Controls/ISEnergyBar.d.ts]
+Exports.ISEnergyBar = loadstring("require('lua/client/Entity/ISUI/Controls/ISEnergyBar');return _G['ISEnergyBar']")()
+
+--[lua/client/Entity/ISUI/Controls/ISEnergySlot.d.ts]
+Exports.ISEnergySlot = loadstring("require('lua/client/Entity/ISUI/Controls/ISEnergySlot');return _G['ISEnergySlot']")()
+
+--[lua/client/Entity/ISUI/Controls/ISEnergySlotPanel.d.ts]
+Exports.ISEnergySlotPanel = loadstring("require('lua/client/Entity/ISUI/Controls/ISEnergySlotPanel');return _G['ISEnergySlotPanel']")()
+
+--[lua/client/Entity/ISUI/Controls/ISFluidSlot.d.ts]
+Exports.ISFluidSlot = loadstring("require('lua/client/Entity/ISUI/Controls/ISFluidSlot');return _G['ISFluidSlot']")()
+
+--[lua/client/Entity/ISUI/Controls/ISFluidSlotPanel.d.ts]
+Exports.ISFluidSlotPanel = loadstring("require('lua/client/Entity/ISUI/Controls/ISFluidSlotPanel');return _G['ISFluidSlotPanel']")()
+
+--[lua/client/Entity/ISUI/Controls/ISGroupBox.d.ts]
+Exports.ISGroupBox = loadstring("require('lua/client/Entity/ISUI/Controls/ISGroupBox');return _G['ISGroupBox']")()
+
+--[lua/client/Entity/ISUI/Controls/ISItemSlot.d.ts]
+Exports.ISItemSlot = loadstring("require('lua/client/Entity/ISUI/Controls/ISItemSlot');return _G['ISItemSlot']")()
+
+--[lua/client/Entity/ISUI/Controls/ISItemSlotPanel.d.ts]
+Exports.ISItemSlotPanel = loadstring("require('lua/client/Entity/ISUI/Controls/ISItemSlotPanel');return _G['ISItemSlotPanel']")()
+
+--[lua/client/Entity/ISUI/Controls/ISTableLayout.d.ts]
+Exports.ISTableLayout = loadstring("require('lua/client/Entity/ISUI/Controls/ISTableLayout');return _G['ISTableLayout']")()
+Exports.ISTableLayoutCell = loadstring("require('lua/client/Entity/ISUI/Controls/ISTableLayout');return _G['ISTableLayoutCell']")()
+Exports.ISTableLayoutColumn = loadstring("require('lua/client/Entity/ISUI/Controls/ISTableLayout');return _G['ISTableLayoutColumn']")()
+Exports.ISTableLayoutRow = loadstring("require('lua/client/Entity/ISUI/Controls/ISTableLayout');return _G['ISTableLayoutRow']")()
+
+--[lua/client/Entity/ISUI/Controls/ISVendorSpiral.d.ts]
+Exports.ISVendorSpiral = loadstring("require('lua/client/Entity/ISUI/Controls/ISVendorSpiral');return _G['ISVendorSpiral']")()
+
+--[lua/client/Entity/ISUI/Controls/ISWidgetComponentHeader.d.ts]
+Exports.ISWidgetComponentHeader = loadstring("require('lua/client/Entity/ISUI/Controls/ISWidgetComponentHeader');return _G['ISWidgetComponentHeader']")()
+
+--[lua/client/Entity/ISUI/Controls/ISWidgetCraftControl.d.ts]
+Exports.ISWidgetCraftControl = loadstring("require('lua/client/Entity/ISUI/Controls/ISWidgetCraftControl');return _G['ISWidgetCraftControl']")()
+
+--[lua/client/Entity/ISUI/Controls/ISWidgetCraftDebug.d.ts]
+Exports.ISWidgetCraftDebug = loadstring("require('lua/client/Entity/ISUI/Controls/ISWidgetCraftDebug');return _G['ISWidgetCraftDebug']")()
+
+--[lua/client/Entity/ISUI/Controls/ISWidgetCraftProgress.d.ts]
+Exports.ISWidgetCraftProgress = loadstring("require('lua/client/Entity/ISUI/Controls/ISWidgetCraftProgress');return _G['ISWidgetCraftProgress']")()
+
+--[lua/client/Entity/ISUI/Controls/ISWidgetEntityDebug.d.ts]
+Exports.ISWidgetEntityDebug = loadstring("require('lua/client/Entity/ISUI/Controls/ISWidgetEntityDebug');return _G['ISWidgetEntityDebug']")()
+
+--[lua/client/Entity/ISUI/Controls/ISWidgetEntityHeader.d.ts]
+Exports.ISWidgetEntityHeader = loadstring("require('lua/client/Entity/ISUI/Controls/ISWidgetEntityHeader');return _G['ISWidgetEntityHeader']")()
+
+--[lua/client/Entity/ISUI/Controls/ISWidgetRecipeSelect.d.ts]
+Exports.ISWidgetRecipeSelect = loadstring("require('lua/client/Entity/ISUI/Controls/ISWidgetRecipeSelect');return _G['ISWidgetRecipeSelect']")()
+
+--[lua/client/Entity/ISUI/Controls/ISWidgetTitleHeader.d.ts]
+Exports.ISWidgetTitleHeader = loadstring("require('lua/client/Entity/ISUI/Controls/ISWidgetTitleHeader');return _G['ISWidgetTitleHeader']")()
+
+--[lua/client/Entity/ISUI/CraftRecipe/ISCraftInputItems.d.ts]
+Exports.ISCraftInputItemNode = loadstring("require('lua/client/Entity/ISUI/CraftRecipe/ISCraftInputItems');return _G['ISCraftInputItemNode']")()
+Exports.ISCraftInputItems = loadstring("require('lua/client/Entity/ISUI/CraftRecipe/ISCraftInputItems');return _G['ISCraftInputItems']")()
+
+--[lua/client/Entity/ISUI/CraftRecipe/ISCraftInventoryPanel.d.ts]
+Exports.ISCraftInventoryPanel = loadstring("require('lua/client/Entity/ISUI/CraftRecipe/ISCraftInventoryPanel');return _G['ISCraftInventoryPanel']")()
+
+--[lua/client/Entity/ISUI/CraftRecipe/ISCraftRecipeInfoBox.d.ts]
+Exports.ISCraftRecipeInfoBox = loadstring("require('lua/client/Entity/ISUI/CraftRecipe/ISCraftRecipeInfoBox');return _G['ISCraftRecipeInfoBox']")()
+
+--[lua/client/Entity/ISUI/CraftRecipe/ISCraftRecipePanel.d.ts]
+Exports.ISCraftRecipePanel = loadstring("require('lua/client/Entity/ISUI/CraftRecipe/ISCraftRecipePanel');return _G['ISCraftRecipePanel']")()
+
+--[lua/client/Entity/ISUI/CraftRecipe/ISCraftRecipeTooltip.d.ts]
+Exports.ISCraftRecipeTooltip = loadstring("require('lua/client/Entity/ISUI/CraftRecipe/ISCraftRecipeTooltip');return _G['ISCraftRecipeTooltip']")()
+
+--[lua/client/Entity/ISUI/CraftRecipe/ISHandCraftPanel.d.ts]
+Exports.ISHandCraftPanel = loadstring("require('lua/client/Entity/ISUI/CraftRecipe/ISHandCraftPanel');return _G['ISHandCraftPanel']")()
+
+--[lua/client/Entity/ISUI/CraftRecipe/ISTiledIconListBox.d.ts]
+Exports.ISTiledIconListBox = loadstring("require('lua/client/Entity/ISUI/CraftRecipe/ISTiledIconListBox');return _G['ISTiledIconListBox']")()
+
+--[lua/client/Entity/ISUI/CraftRecipe/ISTiledIconPanel.d.ts]
+Exports.ISTiledIconPanel = loadstring("require('lua/client/Entity/ISUI/CraftRecipe/ISTiledIconPanel');return _G['ISTiledIconPanel']")()
+
+--[lua/client/Entity/ISUI/CraftRecipe/ISWidgetAutoToggle.d.ts]
+Exports.ISWidgetAutoToggle = loadstring("require('lua/client/Entity/ISUI/CraftRecipe/ISWidgetAutoToggle');return _G['ISWidgetAutoToggle']")()
+
+--[lua/client/Entity/ISUI/CraftRecipe/ISWidgetHandCraftControl.d.ts]
+Exports.ISWidgetHandCraftControl = loadstring("require('lua/client/Entity/ISUI/CraftRecipe/ISWidgetHandCraftControl');return _G['ISWidgetHandCraftControl']")()
+
+--[lua/client/Entity/ISUI/CraftRecipe/ISWidgetIngredients.d.ts]
+Exports.ISWidgetIngredients = loadstring("require('lua/client/Entity/ISUI/CraftRecipe/ISWidgetIngredients');return _G['ISWidgetIngredients']")()
+
+--[lua/client/Entity/ISUI/CraftRecipe/ISWidgetIngredientsInputs.d.ts]
+Exports.ISWidgetIngredientsInputs = loadstring("require('lua/client/Entity/ISUI/CraftRecipe/ISWidgetIngredientsInputs');return _G['ISWidgetIngredientsInputs']")()
+
+--[lua/client/Entity/ISUI/CraftRecipe/ISWidgetIngredientsOutputs.d.ts]
+Exports.ISWidgetIngredientsOutputs = loadstring("require('lua/client/Entity/ISUI/CraftRecipe/ISWidgetIngredientsOutputs');return _G['ISWidgetIngredientsOutputs']")()
+
+--[lua/client/Entity/ISUI/CraftRecipe/ISWidgetInput.d.ts]
+Exports.ISWidgetInput = loadstring("require('lua/client/Entity/ISUI/CraftRecipe/ISWidgetInput');return _G['ISWidgetInput']")()
+
+--[lua/client/Entity/ISUI/CraftRecipe/ISWidgetOutput.d.ts]
+Exports.ISWidgetOutput = loadstring("require('lua/client/Entity/ISUI/CraftRecipe/ISWidgetOutput');return _G['ISWidgetOutput']")()
+
+--[lua/client/Entity/ISUI/CraftRecipe/ISWidgetRecipeCategories.d.ts]
+Exports.ISWidgetRecipeCategories = loadstring("require('lua/client/Entity/ISUI/CraftRecipe/ISWidgetRecipeCategories');return _G['ISWidgetRecipeCategories']")()
+
+--[lua/client/Entity/ISUI/CraftRecipe/ISWidgetRecipeFilterPanel.d.ts]
+Exports.ISWidgetRecipeFilterPanel = loadstring("require('lua/client/Entity/ISUI/CraftRecipe/ISWidgetRecipeFilterPanel');return _G['ISWidgetRecipeFilterPanel']")()
+
+--[lua/client/Entity/ISUI/CraftRecipe/ISWidgetRecipeListPanel.d.ts]
+Exports.ISWidgetRecipeListPanel = loadstring("require('lua/client/Entity/ISUI/CraftRecipe/ISWidgetRecipeListPanel');return _G['ISWidgetRecipeListPanel']")()
+
+--[lua/client/Entity/ISUI/CraftRecipe/ISWidgetRecipesPanel.d.ts]
+Exports.ISWidgetRecipesPanel = loadstring("require('lua/client/Entity/ISUI/CraftRecipe/ISWidgetRecipesPanel');return _G['ISWidgetRecipesPanel']")()
+
+--[lua/client/Entity/ISUI/CraftRecipe/ISWidgetRecipeTools.d.ts]
+Exports.ISWidgetRecipeTools = loadstring("require('lua/client/Entity/ISUI/CraftRecipe/ISWidgetRecipeTools');return _G['ISWidgetRecipeTools']")()
+
+--[lua/client/Entity/ISUI/CraftRecipe/ISWidgetTooltipInput.d.ts]
+Exports.ISWidgetTooltipInput = loadstring("require('lua/client/Entity/ISUI/CraftRecipe/ISWidgetTooltipInput');return _G['ISWidgetTooltipInput']")()
+
+--[lua/client/Entity/ISUI/CraftRecipe/ISWidgetTooltipOutput.d.ts]
+Exports.ISWidgetTooltipOutput = loadstring("require('lua/client/Entity/ISUI/CraftRecipe/ISWidgetTooltipOutput');return _G['ISWidgetTooltipOutput']")()
+
+--[lua/client/Entity/ISUI/ISBaseEntityWindow.d.ts]
+Exports.ISBaseEntityWindow = loadstring("require('lua/client/Entity/ISUI/ISBaseEntityWindow');return _G['ISBaseEntityWindow']")()
+
+--[lua/client/Entity/ISUI/ISEntityBuildMenu.d.ts]
+Exports.ISEntityBuildMenu = loadstring("require('lua/client/Entity/ISUI/ISEntityBuildMenu');return _G['ISEntityBuildMenu']")()
+
+--[lua/client/Entity/ISUI/Layouts/ISBaseStockingLayout.d.ts]
+Exports.ISBaseStockingLayout = loadstring("require('lua/client/Entity/ISUI/Layouts/ISBaseStockingLayout');return _G['ISBaseStockingLayout']")()
+
+--[lua/client/Entity/ISUI/Layouts/ISBaseVendingLayout.d.ts]
+Exports.ISBaseVendingLayout = loadstring("require('lua/client/Entity/ISUI/Layouts/ISBaseVendingLayout');return _G['ISBaseVendingLayout']")()
+
+--[lua/client/Entity/ISUI/Layouts/ISPartsLayout.d.ts]
+Exports.ISPartsLayout = loadstring("require('lua/client/Entity/ISUI/Layouts/ISPartsLayout');return _G['ISPartsLayout']")()
+
+--[lua/client/Entity/ISUI/Layouts/ISSodaStockingLayout.d.ts]
+Exports.ISSodaStockingLayout = loadstring("require('lua/client/Entity/ISUI/Layouts/ISSodaStockingLayout');return _G['ISSodaStockingLayout']")()
+
+--[lua/client/Entity/ISUI/Layouts/ISSodaVendingLayout.d.ts]
+Exports.ISSodaVendingLayout = loadstring("require('lua/client/Entity/ISUI/Layouts/ISSodaVendingLayout');return _G['ISSodaVendingLayout']")()
+
+--[lua/client/Entity/ISUI/Layouts/ISVendorStockingLayout.d.ts]
+Exports.ISVendorStockingLayout = loadstring("require('lua/client/Entity/ISUI/Layouts/ISVendorStockingLayout');return _G['ISVendorStockingLayout']")()
+
+--[lua/client/Entity/ISUI/Layouts/ISVendorVendingLayout.d.ts]
+Exports.ISVendorVendingLayout = loadstring("require('lua/client/Entity/ISUI/Layouts/ISVendorVendingLayout');return _G['ISVendorVendingLayout']")()
+
+--[lua/client/Entity/ISUI/Windows/ISEntityTabWindow.d.ts]
+Exports.ISEntityTabWindow = loadstring("require('lua/client/Entity/ISUI/Windows/ISEntityTabWindow');return _G['ISEntityTabWindow']")()
+
+--[lua/client/Entity/ISUI/Windows/ISEntityWindow.d.ts]
+Exports.ISEntityWindow = loadstring("require('lua/client/Entity/ISUI/Windows/ISEntityWindow');return _G['ISEntityWindow']")()
 
 --[lua/client/erosion/debug/DebugDemoTime.d.ts]
 
 --[lua/client/erosion/debug/Point2D.d.ts]
 Exports.Point2D = loadstring("require('lua/client/erosion/debug/Point2D');return _G['Point2D']")()
+
+--[lua/client/Farming/CFarming_Interact.d.ts]
+Exports.CFarming_Interact = loadstring("require('lua/client/Farming/CFarming_Interact');return _G['CFarming_Interact']")()
 
 --[lua/client/Farming/CFarmingSystem.d.ts]
 Exports.CFarmingSystem = loadstring("require('lua/client/Farming/CFarmingSystem');return _G['CFarmingSystem']")()
@@ -472,6 +789,7 @@ Exports.CPlantGlobalObject = loadstring("require('lua/client/Farming/CPlantGloba
 
 --[lua/client/Farming/ISUI/ISFarmingInfo.d.ts]
 Exports.ISFarmingInfo = loadstring("require('lua/client/Farming/ISUI/ISFarmingInfo');return _G['ISFarmingInfo']")()
+Exports.compost_rgb = loadstring("require('lua/client/Farming/ISUI/ISFarmingInfo');return _G['compost_rgb']")()
 Exports.disease = loadstring("require('lua/client/Farming/ISUI/ISFarmingInfo');return _G['disease']")()
 Exports.disease_rgb = loadstring("require('lua/client/Farming/ISUI/ISFarmingInfo');return _G['disease_rgb']")()
 Exports.fertilizer_rgb = loadstring("require('lua/client/Farming/ISUI/ISFarmingInfo');return _G['fertilizer_rgb']")()
@@ -487,48 +805,57 @@ Exports.ISFarmingMenu = loadstring("require('lua/client/Farming/ISUI/ISFarmingMe
 --[lua/client/Farming/ISUI/ISFarmingWindow.d.ts]
 Exports.ISFarmingWindow = loadstring("require('lua/client/Farming/ISUI/ISFarmingWindow');return _G['ISFarmingWindow']")()
 
---[lua/client/Farming/TimedActions/ISCureFliesAction.d.ts]
-Exports.ISCureFliesAction = loadstring("require('lua/client/Farming/TimedActions/ISCureFliesAction');return _G['ISCureFliesAction']")()
-
---[lua/client/Farming/TimedActions/ISCureMildewAction.d.ts]
-Exports.ISCureMildewAction = loadstring("require('lua/client/Farming/TimedActions/ISCureMildewAction');return _G['ISCureMildewAction']")()
-
---[lua/client/Farming/TimedActions/ISFertilizeAction.d.ts]
-Exports.ISFertilizeAction = loadstring("require('lua/client/Farming/TimedActions/ISFertilizeAction');return _G['ISFertilizeAction']")()
-
---[lua/client/Farming/TimedActions/ISHarvestPlantAction.d.ts]
-Exports.ISHarvestPlantAction = loadstring("require('lua/client/Farming/TimedActions/ISHarvestPlantAction');return _G['ISHarvestPlantAction']")()
-
 --[lua/client/Farming/TimedActions/ISPlantInfoAction.d.ts]
 Exports.ISPlantInfoAction = loadstring("require('lua/client/Farming/TimedActions/ISPlantInfoAction');return _G['ISPlantInfoAction']")()
 
---[lua/client/Farming/TimedActions/ISPlowAction.d.ts]
-Exports.ISPlowAction = loadstring("require('lua/client/Farming/TimedActions/ISPlowAction');return _G['ISPlowAction']")()
+--[lua/client/FeedingTrough/CFeedingTroughGlobalObject.d.ts]
+Exports.CFeedingTroughGlobalObject = loadstring("require('lua/client/FeedingTrough/CFeedingTroughGlobalObject');return _G['CFeedingTroughGlobalObject']")()
 
---[lua/client/Farming/TimedActions/ISSeedAction.d.ts]
-Exports.ISSeedAction = loadstring("require('lua/client/Farming/TimedActions/ISSeedAction');return _G['ISSeedAction']")()
+--[lua/client/FeedingTrough/CFeedingTroughSystem.d.ts]
+Exports.CFeedingTroughSystem = loadstring("require('lua/client/FeedingTrough/CFeedingTroughSystem');return _G['CFeedingTroughSystem']")()
 
---[lua/client/Farming/TimedActions/ISShovelAction.d.ts]
-Exports.ISShovelAction = loadstring("require('lua/client/Farming/TimedActions/ISShovelAction');return _G['ISShovelAction']")()
+--[lua/client/FeedingTrough/ISUI/ISFeedingTroughMenu.d.ts]
+Exports.ISFeedingTroughMenu = loadstring("require('lua/client/FeedingTrough/ISUI/ISFeedingTroughMenu');return _G['ISFeedingTroughMenu']")()
 
---[lua/client/Farming/TimedActions/ISWaterPlantAction.d.ts]
-Exports.ISWaterPlantAction = loadstring("require('lua/client/Farming/TimedActions/ISWaterPlantAction');return _G['ISWaterPlantAction']")()
+--[lua/client/FeedingTrough/ISUI/ISFeedingTroughUI.d.ts]
+Exports.ISFeedingTroughUI = loadstring("require('lua/client/FeedingTrough/ISUI/ISFeedingTroughUI');return _G['ISFeedingTroughUI']")()
 
---[lua/client/Fishing/TimedActions/ISCheckFishingNetAction.d.ts]
-Exports.ISCheckFishingNetAction = loadstring("require('lua/client/Fishing/TimedActions/ISCheckFishingNetAction');return _G['ISCheckFishingNetAction']")()
+--[lua/client/Fishing/FishingDebugWindow.d.ts]
+Exports.FishingDebugWindow = loadstring("require('lua/client/Fishing/FishingDebugWindow');return _G['FishingDebugWindow']")()
 
---[lua/client/Fishing/TimedActions/ISFishingAction.d.ts]
-Exports.ISFishingAction = loadstring("require('lua/client/Fishing/TimedActions/ISFishingAction');return _G['ISFishingAction']")()
+--[lua/client/Fishing/FishingHandler.d.ts]
+
+--[lua/client/Fishing/FishingStates.d.ts]
+
+--[lua/client/Fishing/TensionUI.d.ts]
+-- Wrong: class name is undefined
+--[lua/client/Fluids/ISFluidBar.d.ts]
+Exports.ISFluidBar = loadstring("require('lua/client/Fluids/ISFluidBar');return _G['ISFluidBar']")()
+
+--[lua/client/Fluids/ISFluidContainerPanel.d.ts]
+Exports.ISFluidContainerPanel = loadstring("require('lua/client/Fluids/ISFluidContainerPanel');return _G['ISFluidContainerPanel']")()
+
+--[lua/client/Fluids/ISFluidInfoUI.d.ts]
+Exports.ISFluidInfoUI = loadstring("require('lua/client/Fluids/ISFluidInfoUI');return _G['ISFluidInfoUI']")()
+
+--[lua/client/Fluids/ISFluidPanelAction.d.ts]
+Exports.ISFluidPanelAction = loadstring("require('lua/client/Fluids/ISFluidPanelAction');return _G['ISFluidPanelAction']")()
+
+--[lua/client/Fluids/ISFluidTransferUI.d.ts]
+Exports.ISFluidTransferUI = loadstring("require('lua/client/Fluids/ISFluidTransferUI');return _G['ISFluidTransferUI']")()
 
 --[lua/client/Foraging/forageClient.d.ts]
 Exports.forageClient = loadstring("require('lua/client/Foraging/forageClient');return _G['forageClient']")()
 Exports.forageData = loadstring("require('lua/client/Foraging/forageClient');return _G['forageData']")()
 
+--[lua/client/Foraging/ISAnimalTracksFinder.d.ts]
+Exports.ISAnimalTracksFinder = loadstring("require('lua/client/Foraging/ISAnimalTracksFinder');return _G['ISAnimalTracksFinder']")()
+
+--[lua/client/Foraging/ISAnimalTracksMenu.d.ts]
+Exports.ISAnimalTracksMenu = loadstring("require('lua/client/Foraging/ISAnimalTracksMenu');return _G['ISAnimalTracksMenu']")()
+
 --[lua/client/Foraging/ISBaseIcon.d.ts]
 Exports.ISBaseIcon = loadstring("require('lua/client/Foraging/ISBaseIcon');return _G['ISBaseIcon']")()
-
---[lua/client/Foraging/ISForageAction.d.ts]
-Exports.ISForageAction = loadstring("require('lua/client/Foraging/ISForageAction');return _G['ISForageAction']")()
 
 --[lua/client/Foraging/ISForageIcon.d.ts]
 Exports.ISForageIcon = loadstring("require('lua/client/Foraging/ISForageIcon');return _G['ISForageIcon']")()
@@ -539,8 +866,14 @@ Exports.ISSearchManager = loadstring("require('lua/client/Foraging/ISSearchManag
 --[lua/client/Foraging/ISSearchWindow.d.ts]
 Exports.ISSearchWindow = loadstring("require('lua/client/Foraging/ISSearchWindow');return _G['ISSearchWindow']")()
 
+--[lua/client/Foraging/ISStashIcon.d.ts]
+Exports.ISStashIcon = loadstring("require('lua/client/Foraging/ISStashIcon');return _G['ISStashIcon']")()
+
 --[lua/client/Foraging/ISWorldItemIcon.d.ts]
 Exports.ISWorldItemIcon = loadstring("require('lua/client/Foraging/ISWorldItemIcon');return _G['ISWorldItemIcon']")()
+
+--[lua/client/Foraging/ISWorldItemIconTrack.d.ts]
+Exports.ISWorldItemIconTrack = loadstring("require('lua/client/Foraging/ISWorldItemIconTrack');return _G['ISWorldItemIconTrack']")()
 
 --[lua/client/Foraging/ISZoneDisplay.d.ts]
 Exports.ISZoneDisplay = loadstring("require('lua/client/Foraging/ISZoneDisplay');return _G['ISZoneDisplay']")()
@@ -581,21 +914,36 @@ Exports.ISFactionsList = loadstring("require('lua/client/ISUI/AdminPanel/ISFacti
 --[lua/client/ISUI/AdminPanel/ISItemEditorUI.d.ts]
 Exports.ISItemEditorUI = loadstring("require('lua/client/ISUI/AdminPanel/ISItemEditorUI');return _G['ISItemEditorUI']")()
 
+--[lua/client/ISUI/AdminPanel/ISItemEditPanel.d.ts]
+Exports.ISItemEditPanel = loadstring("require('lua/client/ISUI/AdminPanel/ISItemEditPanel');return _G['ISItemEditPanel']")()
+
 --[lua/client/ISUI/AdminPanel/ISItemsListTable.d.ts]
 Exports.ISItemsListTable = loadstring("require('lua/client/ISUI/AdminPanel/ISItemsListTable');return _G['ISItemsListTable']")()
 
 --[lua/client/ISUI/AdminPanel/ISItemsListViewer.d.ts]
 Exports.ISItemsListViewer = loadstring("require('lua/client/ISUI/AdminPanel/ISItemsListViewer');return _G['ISItemsListViewer']")()
 
+--[lua/client/ISUI/AdminPanel/ISLootLog.d.ts]
+Exports.ISLootLog = loadstring("require('lua/client/ISUI/AdminPanel/ISLootLog');return _G['ISLootLog']")()
+
 --[lua/client/ISUI/AdminPanel/ISMiniScoreboardUI.d.ts]
 Exports.ISMiniScoreboardUI = loadstring("require('lua/client/ISUI/AdminPanel/ISMiniScoreboardUI');return _G['ISMiniScoreboardUI']")()
+
+--[lua/client/ISUI/AdminPanel/ISModalEditRole.d.ts]
+Exports.ISModalEditRole = loadstring("require('lua/client/ISUI/AdminPanel/ISModalEditRole');return _G['ISModalEditRole']")()
 
 --[lua/client/ISUI/AdminPanel/ISPacketCounts.d.ts]
 Exports.ISPacketCounts = loadstring("require('lua/client/ISUI/AdminPanel/ISPacketCounts');return _G['ISPacketCounts']")()
 Exports.ISPacketCountsList = loadstring("require('lua/client/ISUI/AdminPanel/ISPacketCounts');return _G['ISPacketCountsList']")()
 
+--[lua/client/ISUI/AdminPanel/ISPVPLogToolUI.d.ts]
+Exports.ISPVPLogToolUI = loadstring("require('lua/client/ISUI/AdminPanel/ISPVPLogToolUI');return _G['ISPVPLogToolUI']")()
+
 --[lua/client/ISUI/AdminPanel/ISPvpZonePanel.d.ts]
 Exports.ISPvpZonePanel = loadstring("require('lua/client/ISUI/AdminPanel/ISPvpZonePanel');return _G['ISPvpZonePanel']")()
+
+--[lua/client/ISUI/AdminPanel/ISRolesList.d.ts]
+Exports.ISRolesList = loadstring("require('lua/client/ISUI/AdminPanel/ISRolesList');return _G['ISRolesList']")()
 
 --[lua/client/ISUI/AdminPanel/ISSafehousesList.d.ts]
 Exports.ISSafehousesList = loadstring("require('lua/client/ISUI/AdminPanel/ISSafehousesList');return _G['ISSafehousesList']")()
@@ -610,7 +958,11 @@ Exports.ISServerOptionsChange = loadstring("require('lua/client/ISUI/AdminPanel/
 Exports.ISServerSandboxOptionsUI = loadstring("require('lua/client/ISUI/AdminPanel/ISServerSandboxOptionsUI');return _G['ISServerSandboxOptionsUI']")()
 
 --[lua/client/ISUI/AdminPanel/ISStatisticsUI.d.ts]
+Exports.ISStatisticsPanel = loadstring("require('lua/client/ISUI/AdminPanel/ISStatisticsUI');return _G['ISStatisticsPanel']")()
 Exports.ISStatisticsUI = loadstring("require('lua/client/ISUI/AdminPanel/ISStatisticsUI');return _G['ISStatisticsUI']")()
+
+--[lua/client/ISUI/AdminPanel/ISUsersList.d.ts]
+Exports.ISUsersList = loadstring("require('lua/client/ISUI/AdminPanel/ISUsersList');return _G['ISUsersList']")()
 
 --[lua/client/ISUI/AdminPanel/ISWhitelistModifyRow.d.ts]
 Exports.ISWhitelistModifyRow = loadstring("require('lua/client/ISUI/AdminPanel/ISWhitelistModifyRow');return _G['ISWhitelistModifyRow']")()
@@ -627,8 +979,66 @@ Exports.ISLootZed = loadstring("require('lua/client/ISUI/AdminPanel/LootZed/ISLo
 --[lua/client/ISUI/AdminPanel/LootZed/SpawnRateChecker.d.ts]
 Exports.LootZedTool = loadstring("require('lua/client/ISUI/AdminPanel/LootZed/SpawnRateChecker');return _G['LootZedTool']")()
 
+--[lua/client/ISUI/AdminPanel/ZoneEditor/ISMultiplayerZoneEditor.d.ts]
+Exports.ISMultiplayerZoneEditor = loadstring("require('lua/client/ISUI/AdminPanel/ZoneEditor/ISMultiplayerZoneEditor');return _G['ISMultiplayerZoneEditor']")()
+Exports.ISMultiplayerZoneEditor_ButtonPanel = loadstring("require('lua/client/ISUI/AdminPanel/ZoneEditor/ISMultiplayerZoneEditor');return _G['ISMultiplayerZoneEditor_ButtonPanel']")()
+
+--[lua/client/ISUI/AdminPanel/ZoneEditor/MultiplayerZoneEditorMode_NonPVP.d.ts]
+Exports.MultiplayerZoneEditorMode_NonPVP = loadstring("require('lua/client/ISUI/AdminPanel/ZoneEditor/MultiplayerZoneEditorMode_NonPVP');return _G['MultiplayerZoneEditorMode_NonPVP']")()
+
+--[lua/client/ISUI/AdminPanel/ZoneEditor/MultiplayerZoneEditorMode_Safehouse.d.ts]
+Exports.MultiplayerZoneEditorMode_Safehouse = loadstring("require('lua/client/ISUI/AdminPanel/ZoneEditor/MultiplayerZoneEditorMode_Safehouse');return _G['MultiplayerZoneEditorMode_Safehouse']")()
+Exports.MultiplayerZoneEditorMode_Safehouse_Confirm = loadstring("require('lua/client/ISUI/AdminPanel/ZoneEditor/MultiplayerZoneEditorMode_Safehouse');return _G['MultiplayerZoneEditorMode_Safehouse_Confirm']")()
+Exports.MultiplayerZoneEditorMode_Safehouse_Details = loadstring("require('lua/client/ISUI/AdminPanel/ZoneEditor/MultiplayerZoneEditorMode_Safehouse');return _G['MultiplayerZoneEditorMode_Safehouse_Details']")()
+
+--[lua/client/ISUI/AdminPanel/ZoneEditor/MultiplayerZoneEditorMode.d.ts]
+Exports.MultiplayerZoneEditorMode = loadstring("require('lua/client/ISUI/AdminPanel/ZoneEditor/MultiplayerZoneEditorMode');return _G['MultiplayerZoneEditorMode']")()
+
+--[lua/client/ISUI/Animal/ISAddDesignationAnimalZoneUI.d.ts]
+Exports.ISAddDesignationAnimalZoneUI = loadstring("require('lua/client/ISUI/Animal/ISAddDesignationAnimalZoneUI');return _G['ISAddDesignationAnimalZoneUI']")()
+
+--[lua/client/ISUI/Animal/ISAnimalBehaviorDebugUI.d.ts]
+Exports.ISAnimalBehaviorDebugUI = loadstring("require('lua/client/ISUI/Animal/ISAnimalBehaviorDebugUI');return _G['ISAnimalBehaviorDebugUI']")()
+
+--[lua/client/ISUI/Animal/ISAnimalContextMenu.d.ts]
+Exports.AnimalContextMenu = loadstring("require('lua/client/ISUI/Animal/ISAnimalContextMenu');return _G['AnimalContextMenu']")()
+
+--[lua/client/ISUI/Animal/ISAnimalGenomeUI.d.ts]
+Exports.ISAnimalGenomeUI = loadstring("require('lua/client/ISUI/Animal/ISAnimalGenomeUI');return _G['ISAnimalGenomeUI']")()
+
+--[lua/client/ISUI/Animal/ISAnimalTracksUI.d.ts]
+Exports.ISAnimalTracksUI = loadstring("require('lua/client/ISUI/Animal/ISAnimalTracksUI');return _G['ISAnimalTracksUI']")()
+
+--[lua/client/ISUI/Animal/ISAnimalUI.d.ts]
+Exports.ISAnimalAvatar = loadstring("require('lua/client/ISUI/Animal/ISAnimalUI');return _G['ISAnimalAvatar']")()
+Exports.ISAnimalUI = loadstring("require('lua/client/ISUI/Animal/ISAnimalUI');return _G['ISAnimalUI']")()
+
+--[lua/client/ISUI/Animal/ISAnimalZoneFirstInfo.d.ts]
+Exports.ISAnimalZoneFirstInfo = loadstring("require('lua/client/ISUI/Animal/ISAnimalZoneFirstInfo');return _G['ISAnimalZoneFirstInfo']")()
+
+--[lua/client/ISUI/Animal/ISButcherHookUI.d.ts]
+Exports.ISButcherHookUI = loadstring("require('lua/client/ISUI/Animal/ISButcherHookUI');return _G['ISButcherHookUI']")()
+
+--[lua/client/ISUI/Animal/ISButcheringDebugUI.d.ts]
+Exports.ISButcheringDebugUI = loadstring("require('lua/client/ISUI/Animal/ISButcheringDebugUI');return _G['ISButcheringDebugUI']")()
+
+--[lua/client/ISUI/Animal/ISDesignationAnimalZoneUI.d.ts]
+Exports.ISDesignationZoneAnimalZoneUI = loadstring("require('lua/client/ISUI/Animal/ISDesignationAnimalZoneUI');return _G['ISDesignationZoneAnimalZoneUI']")()
+
 --[lua/client/ISUI/BodyParts/ISBodyPartPanel.d.ts]
 Exports.ISBodyPartPanel = loadstring("require('lua/client/ISUI/BodyParts/ISBodyPartPanel');return _G['ISBodyPartPanel']")()
+
+--[lua/client/ISUI/Building/ISBuildWindow.d.ts]
+Exports.ISBuildWindow = loadstring("require('lua/client/ISUI/Building/ISBuildWindow');return _G['ISBuildWindow']")()
+
+--[lua/client/ISUI/Building/ISBuildWindowHeader.d.ts]
+Exports.ISBuildWindowHeader = loadstring("require('lua/client/ISUI/Building/ISBuildWindowHeader');return _G['ISBuildWindowHeader']")()
+
+--[lua/client/ISUI/Crafting/ISHandcraftWindow.d.ts]
+Exports.ISHandcraftWindow = loadstring("require('lua/client/ISUI/Crafting/ISHandcraftWindow');return _G['ISHandcraftWindow']")()
+
+--[lua/client/ISUI/Crafting/ISHandcraftWindowHeader.d.ts]
+Exports.ISHandcraftWindowHeader = loadstring("require('lua/client/ISUI/Crafting/ISHandcraftWindowHeader');return _G['ISHandcraftWindowHeader']")()
 
 --[lua/client/ISUI/Fireplace/ISKnob.d.ts]
 Exports.ISKnob = loadstring("require('lua/client/ISUI/Fireplace/ISKnob');return _G['ISKnob']")()
@@ -642,11 +1052,26 @@ Exports.ISOvenUI = loadstring("require('lua/client/ISUI/Fireplace/ISOvenUI');ret
 --[lua/client/ISUI/FPS.d.ts]
 Exports.ISFPS = loadstring("require('lua/client/ISUI/FPS');return _G['ISFPS']")()
 
+--[lua/client/ISUI/Hutch/ISHutchMenu.d.ts]
+Exports.ISHutchMenu = loadstring("require('lua/client/ISUI/Hutch/ISHutchMenu');return _G['ISHutchMenu']")()
+
+--[lua/client/ISUI/Hutch/ISHutchUI.d.ts]
+Exports.ISHutch3DModel = loadstring("require('lua/client/ISUI/Hutch/ISHutchUI');return _G['ISHutch3DModel']")()
+Exports.ISHutchNestBox = loadstring("require('lua/client/ISUI/Hutch/ISHutchUI');return _G['ISHutchNestBox']")()
+Exports.ISHutchRoost = loadstring("require('lua/client/ISUI/Hutch/ISHutchUI');return _G['ISHutchRoost']")()
+Exports.ISHutchUI = loadstring("require('lua/client/ISUI/Hutch/ISHutchUI');return _G['ISHutchUI']")()
+
 --[lua/client/ISUI/InterpolationPeriodDebug.d.ts]
 Exports.InterpolationPeriodDebug = loadstring("require('lua/client/ISUI/InterpolationPeriodDebug');return _G['InterpolationPeriodDebug']")()
 
 --[lua/client/ISUI/InterpolationPlayerPeriodDebug.d.ts]
 Exports.InterpolationPlayerPeriodDebug = loadstring("require('lua/client/ISUI/InterpolationPlayerPeriodDebug');return _G['InterpolationPlayerPeriodDebug']")()
+
+--[lua/client/ISUI/IS9Patch.d.ts]
+Exports.IS9Patch = loadstring("require('lua/client/ISUI/IS9Patch');return _G['IS9Patch']")()
+
+--[lua/client/ISUI/ISAddGeneticDisorderUIU.d.ts]
+Exports.ISAddGeneticDisorderUI = loadstring("require('lua/client/ISUI/ISAddGeneticDisorderUIU');return _G['ISAddGeneticDisorderUI']")()
 
 --[lua/client/ISUI/ISAlarmClockDialog.d.ts]
 Exports.ISAlarmClockDialog = loadstring("require('lua/client/ISUI/ISAlarmClockDialog');return _G['ISAlarmClockDialog']")()
@@ -681,6 +1106,9 @@ Exports.ISCollapsableWindowJoypad = loadstring("require('lua/client/ISUI/ISColla
 --[lua/client/ISUI/ISColorPicker.d.ts]
 Exports.ISColorPicker = loadstring("require('lua/client/ISUI/ISColorPicker');return _G['ISColorPicker']")()
 
+--[lua/client/ISUI/ISColorPickerHSB.d.ts]
+Exports.ISColorPickerHSB = loadstring("require('lua/client/ISUI/ISColorPickerHSB');return _G['ISColorPickerHSB']")()
+
 --[lua/client/ISUI/ISComboBox.d.ts]
 Exports.ISComboBox = loadstring("require('lua/client/ISUI/ISComboBox');return _G['ISComboBox']")()
 Exports.ISComboBoxEditor = loadstring("require('lua/client/ISUI/ISComboBox');return _G['ISComboBoxEditor']")()
@@ -699,10 +1127,17 @@ Exports.ISControllerTestPanel = loadstring("require('lua/client/ISUI/ISControlle
 Exports.ISCraftingCategoryUI = loadstring("require('lua/client/ISUI/ISCraftingCategoryUI');return _G['ISCraftingCategoryUI']")()
 
 --[lua/client/ISUI/ISCraftingUI.d.ts]
+Exports.ISCraftingIngredientIconPanel = loadstring("require('lua/client/ISUI/ISCraftingUI');return _G['ISCraftingIngredientIconPanel']")()
 Exports.ISCraftingUI = loadstring("require('lua/client/ISUI/ISCraftingUI');return _G['ISCraftingUI']")()
+
+--[lua/client/ISUI/ISDebugAvatarUI.d.ts]
+Exports.ISDebugAvatarUI = loadstring("require('lua/client/ISUI/ISDebugAvatarUI');return _G['ISDebugAvatarUI']")()
 
 --[lua/client/ISUI/ISDemoPopup.d.ts]
 Exports.ISDemoPopup = loadstring("require('lua/client/ISUI/ISDemoPopup');return _G['ISDemoPopup']")()
+
+--[lua/client/ISUI/ISDesignationZonePanel.d.ts]
+Exports.ISDesignationZonePanel = loadstring("require('lua/client/ISUI/ISDesignationZonePanel');return _G['ISDesignationZonePanel']")()
 
 --[lua/client/ISUI/ISDigitalCode.d.ts]
 Exports.ISDigitalCode = loadstring("require('lua/client/ISUI/ISDigitalCode');return _G['ISDigitalCode']")()
@@ -757,6 +1192,9 @@ Exports.ISImage = loadstring("require('lua/client/ISUI/ISImage');return _G['ISIm
 --[lua/client/ISUI/ISInfoContainer.d.ts]
 Exports.ISInfoContainer = loadstring("require('lua/client/ISUI/ISInfoContainer');return _G['ISInfoContainer']")()
 
+--[lua/client/ISUI/ISInventoryItem.d.ts]
+Exports.ISInventoryItem = loadstring("require('lua/client/ISUI/ISInventoryItem');return _G['ISInventoryItem']")()
+
 --[lua/client/ISUI/ISInventoryPage.d.ts]
 Exports.ISInventoryPage = loadstring("require('lua/client/ISUI/ISInventoryPage');return _G['ISInventoryPage']")()
 
@@ -783,6 +1221,7 @@ Exports.ISLcdBar = loadstring("require('lua/client/ISUI/ISLcdBar');return _G['IS
 Exports.ISLightSourceRadialMenu = loadstring("require('lua/client/ISUI/ISLightSourceRadialMenu');return _G['ISLightSourceRadialMenu']")()
 
 --[lua/client/ISUI/ISLiteratureUI.d.ts]
+Exports.ISLiteratureGrowingList = loadstring("require('lua/client/ISUI/ISLiteratureUI');return _G['ISLiteratureGrowingList']")()
 Exports.ISLiteratureList = loadstring("require('lua/client/ISUI/ISLiteratureUI');return _G['ISLiteratureList']")()
 Exports.ISLiteratureMediaList = loadstring("require('lua/client/ISUI/ISLiteratureUI');return _G['ISLiteratureMediaList']")()
 Exports.ISLiteratureUI = loadstring("require('lua/client/ISUI/ISLiteratureUI');return _G['ISLiteratureUI']")()
@@ -830,6 +1269,13 @@ Exports.PauseBuggedModList = loadstring("require('lua/client/ISUI/ISPauseModList
 --[lua/client/ISUI/ISPostDeathUI.d.ts]
 Exports.ISPostDeathUI = loadstring("require('lua/client/ISUI/ISPostDeathUI');return _G['ISPostDeathUI']")()
 
+--[lua/client/ISUI/ISPrintMediaTextPanel.d.ts]
+Exports.ISPrintMediaMap = loadstring("require('lua/client/ISUI/ISPrintMediaTextPanel');return _G['ISPrintMediaMap']")()
+Exports.ISPrintMediaTextPanel = loadstring("require('lua/client/ISUI/ISPrintMediaTextPanel');return _G['ISPrintMediaTextPanel']")()
+
+--[lua/client/ISUI/ISProgressBar.d.ts]
+Exports.ISProgressBar = loadstring("require('lua/client/ISUI/ISProgressBar');return _G['ISProgressBar']")()
+
 --[lua/client/ISUI/ISRadialMenu.d.ts]
 Exports.ISRadialMenu = loadstring("require('lua/client/ISUI/ISRadialMenu');return _G['ISRadialMenu']")()
 
@@ -860,12 +1306,6 @@ Exports.ISRichTextBox = loadstring("require('lua/client/ISUI/ISRichTextBox');ret
 --[lua/client/ISUI/ISRichTextPanel.d.ts]
 Exports.ISRichTextPanel = loadstring("require('lua/client/ISUI/ISRichTextPanel');return _G['ISRichTextPanel']")()
 
---[lua/client/ISUI/ISSafetyUI.d.ts]
-Exports.ISSafetyUI = loadstring("require('lua/client/ISUI/ISSafetyUI');return _G['ISSafetyUI']")()
-
---[lua/client/ISUI/ISScavengeUI.d.ts]
-Exports.ISScavengeUI = loadstring("require('lua/client/ISUI/ISScavengeUI');return _G['ISScavengeUI']")()
-
 --[lua/client/ISUI/ISScrollBar.d.ts]
 Exports.ISScrollBar = loadstring("require('lua/client/ISUI/ISScrollBar');return _G['ISScrollBar']")()
 
@@ -884,11 +1324,17 @@ Exports.ISSetKeybindDialog = loadstring("require('lua/client/ISUI/ISSetKeybindDi
 --[lua/client/ISUI/ISSleepDialog.d.ts]
 Exports.ISSleepDialog = loadstring("require('lua/client/ISUI/ISSleepDialog');return _G['ISSleepDialog']")()
 
+--[lua/client/ISUI/ISSleepingUI.d.ts]
+Exports.ISSleepingUI = loadstring("require('lua/client/ISUI/ISSleepingUI');return _G['ISSleepingUI']")()
+
 --[lua/client/ISUI/ISSpinBox.d.ts]
 Exports.ISSpinBox = loadstring("require('lua/client/ISUI/ISSpinBox');return _G['ISSpinBox']")()
 
 --[lua/client/ISUI/ISTabPanel.d.ts]
 Exports.ISTabPanel = loadstring("require('lua/client/ISUI/ISTabPanel');return _G['ISTabPanel']")()
+
+--[lua/client/ISUI/ISTabPanelPaginated.d.ts]
+Exports.ISTabPanelPaginated = loadstring("require('lua/client/ISUI/ISTabPanelPaginated');return _G['ISTabPanelPaginated']")()
 
 --[lua/client/ISUI/ISTermsOfServiceUI.d.ts]
 Exports.ISTermsOfServiceUI = loadstring("require('lua/client/ISUI/ISTermsOfServiceUI');return _G['ISTermsOfServiceUI']")()
@@ -920,6 +1366,9 @@ Exports.ISUI3DModel = loadstring("require('lua/client/ISUI/ISUI3DModel');return 
 --[lua/client/ISUI/ISUIElement.d.ts]
 Exports.ISUIElement = loadstring("require('lua/client/ISUI/ISUIElement');return _G['ISUIElement']")()
 
+--[lua/client/ISUI/ISUIElementJoypad.d.ts]
+Exports.ISUIElementJoypad = loadstring("require('lua/client/ISUI/ISUIElementJoypad');return _G['ISUIElementJoypad']")()
+
 --[lua/client/ISUI/ISUIEmoteConfig.d.ts]
 Exports.ISUIEmoteConfig = loadstring("require('lua/client/ISUI/ISUIEmoteConfig');return _G['ISUIEmoteConfig']")()
 
@@ -929,9 +1378,17 @@ Exports.ISUIHandler = loadstring("require('lua/client/ISUI/ISUIHandler');return 
 --[lua/client/ISUI/ISUIWriteJournal.d.ts]
 Exports.ISUIWriteJournal = loadstring("require('lua/client/ISUI/ISUIWriteJournal');return _G['ISUIWriteJournal']")()
 
+--[lua/client/ISUI/ISVehicleAnimalUI.d.ts]
+Exports.ISVehicleAnimal3DModel = loadstring("require('lua/client/ISUI/ISVehicleAnimalUI');return _G['ISVehicleAnimal3DModel']")()
+Exports.ISVehicleAnimalUI = loadstring("require('lua/client/ISUI/ISVehicleAnimalUI');return _G['ISVehicleAnimalUI']")()
+
 --[lua/client/ISUI/ISVehicleConfirmBox.d.ts]
 Exports.ISVehicleConfirmBox = loadstring("require('lua/client/ISUI/ISVehicleConfirmBox');return _G['ISVehicleConfirmBox']")()
 Exports.ISVehiclePartListBox = loadstring("require('lua/client/ISUI/ISVehicleConfirmBox');return _G['ISVehiclePartListBox']")()
+
+--[lua/client/ISUI/ISVersionWaterMark.d.ts]
+Exports.WaterMarkUI = loadstring("require('lua/client/ISUI/ISVersionWaterMark');return _G['WaterMarkUI']")()
+Exports.ISVersionWaterMark = loadstring("require('lua/client/ISUI/ISVersionWaterMark');return _G['ISVersionWaterMark']")()
 
 --[lua/client/ISUI/ISVolumeControl.d.ts]
 Exports.ISVolumeControl = loadstring("require('lua/client/ISUI/ISVolumeControl');return _G['ISVolumeControl']")()
@@ -939,11 +1396,28 @@ Exports.ISVolumeControl = loadstring("require('lua/client/ISUI/ISVolumeControl')
 --[lua/client/ISUI/ISVolumeIndicator.d.ts]
 Exports.ISVolumeIndicator = loadstring("require('lua/client/ISUI/ISVolumeIndicator');return _G['ISVolumeIndicator']")()
 
+--[lua/client/ISUI/ISWarManagerUI.d.ts]
+Exports.ISWarManagerUI = loadstring("require('lua/client/ISUI/ISWarManagerUI');return _G['ISWarManagerUI']")()
+
 --[lua/client/ISUI/ISWindow.d.ts]
 Exports.ISWindow = loadstring("require('lua/client/ISUI/ISWindow');return _G['ISWindow']")()
 
 --[lua/client/ISUI/ISWorldObjectContextMenu.d.ts]
 Exports.ISWorldObjectContextMenu = loadstring("require('lua/client/ISUI/ISWorldObjectContextMenu');return _G['ISWorldObjectContextMenu']")()
+
+--[lua/client/ISUI/ISXuiBuilder.d.ts]
+Exports.ISXuiBuilder = loadstring("require('lua/client/ISUI/ISXuiBuilder');return _G['ISXuiBuilder']")()
+Exports.ISXuiFunctions = loadstring("require('lua/client/ISUI/ISXuiBuilder');return _G['ISXuiFunctions']")()
+
+--[lua/client/ISUI/ISXuiSkin.d.ts]
+Exports.ISXuiSkin = loadstring("require('lua/client/ISUI/ISXuiSkin');return _G['ISXuiSkin']")()
+Exports.ISXuiSkinFunctions = loadstring("require('lua/client/ISUI/ISXuiSkin');return _G['ISXuiSkinFunctions']")()
+
+--[lua/client/ISUI/ISXuiTableLayout.d.ts]
+Exports.ISXuiTableLayout = loadstring("require('lua/client/ISUI/ISXuiTableLayout');return _G['ISXuiTableLayout']")()
+Exports.ISXuiTableLayoutCell = loadstring("require('lua/client/ISUI/ISXuiTableLayout');return _G['ISXuiTableLayoutCell']")()
+Exports.ISXuiTableLayoutColumn = loadstring("require('lua/client/ISUI/ISXuiTableLayout');return _G['ISXuiTableLayoutColumn']")()
+Exports.ISXuiTableLayoutRow = loadstring("require('lua/client/ISUI/ISXuiTableLayout');return _G['ISXuiTableLayoutRow']")()
 
 --[lua/client/ISUI/Maps/Editor/WorldMapEditor.d.ts]
 Exports.WorldMapEditor = loadstring("require('lua/client/ISUI/Maps/Editor/WorldMapEditor');return _G['WorldMapEditor']")()
@@ -993,6 +1467,7 @@ Exports.ISMapWrapper = loadstring("require('lua/client/ISUI/Maps/ISMap');return 
 --[lua/client/ISUI/Maps/ISMapDefinitions.d.ts]
 Exports.LootMaps = loadstring("require('lua/client/ISUI/Maps/ISMapDefinitions');return _G['LootMaps']")()
 Exports.MapUtils = loadstring("require('lua/client/ISUI/Maps/ISMapDefinitions');return _G['MapUtils']")()
+Exports.PrintMediaMaps = loadstring("require('lua/client/ISUI/Maps/ISMapDefinitions');return _G['PrintMediaMaps']")()
 
 --[lua/client/ISUI/Maps/ISMiniMap.d.ts]
 Exports.ISMiniMapInner = loadstring("require('lua/client/ISUI/Maps/ISMiniMap');return _G['ISMiniMapInner']")()
@@ -1008,14 +1483,23 @@ Exports.ISWorldMap = loadstring("require('lua/client/ISUI/Maps/ISWorldMap');retu
 Exports.ISWorldMapButtonPanel = loadstring("require('lua/client/ISUI/Maps/ISWorldMap');return _G['ISWorldMapButtonPanel']")()
 Exports.WorldMapOptions = loadstring("require('lua/client/ISUI/Maps/ISWorldMap');return _G['WorldMapOptions']")()
 
+--[lua/client/ISUI/Maps/ISWorldMapKey.d.ts]
+Exports.ISWorldMapKey = loadstring("require('lua/client/ISUI/Maps/ISWorldMapKey');return _G['ISWorldMapKey']")()
+
+--[lua/client/ISUI/Maps/ISWorldMapSharing.d.ts]
+Exports.ISWorldMapSharing = loadstring("require('lua/client/ISUI/Maps/ISWorldMapSharing');return _G['ISWorldMapSharing']")()
+Exports.ISWorldMapSharing_PanelPlayers = loadstring("require('lua/client/ISUI/Maps/ISWorldMapSharing');return _G['ISWorldMapSharing_PanelPlayers']")()
+
 --[lua/client/ISUI/Maps/ISWorldMapSymbols.d.ts]
 Exports.ISWorldMapSymbols = loadstring("require('lua/client/ISUI/Maps/ISWorldMapSymbols');return _G['ISWorldMapSymbols']")()
+Exports.ISWorldMapSymbolsTabPanel = loadstring("require('lua/client/ISUI/Maps/ISWorldMapSymbols');return _G['ISWorldMapSymbolsTabPanel']")()
 Exports.ISWorldMapSymbolTool = loadstring("require('lua/client/ISUI/Maps/ISWorldMapSymbols');return _G['ISWorldMapSymbolTool']")()
 Exports.ISWorldMapSymbolTool_AddNote = loadstring("require('lua/client/ISUI/Maps/ISWorldMapSymbols');return _G['ISWorldMapSymbolTool_AddNote']")()
 Exports.ISWorldMapSymbolTool_AddSymbol = loadstring("require('lua/client/ISUI/Maps/ISWorldMapSymbols');return _G['ISWorldMapSymbolTool_AddSymbol']")()
 Exports.ISWorldMapSymbolTool_EditNote = loadstring("require('lua/client/ISUI/Maps/ISWorldMapSymbols');return _G['ISWorldMapSymbolTool_EditNote']")()
 Exports.ISWorldMapSymbolTool_MoveAnnotation = loadstring("require('lua/client/ISUI/Maps/ISWorldMapSymbols');return _G['ISWorldMapSymbolTool_MoveAnnotation']")()
 Exports.ISWorldMapSymbolTool_RemoveAnnotation = loadstring("require('lua/client/ISUI/Maps/ISWorldMapSymbols');return _G['ISWorldMapSymbolTool_RemoveAnnotation']")()
+Exports.ISWorldMapSymbolTool_Sharing = loadstring("require('lua/client/ISUI/Maps/ISWorldMapSymbols');return _G['ISWorldMapSymbolTool_Sharing']")()
 
 --[lua/client/ISUI/PlayerData/ISPlayerData.d.ts]
 Exports.ISPlayerData = loadstring("require('lua/client/ISUI/PlayerData/ISPlayerData');return _G['ISPlayerData']")()
@@ -1038,6 +1522,9 @@ Exports.ISPlayerStatsChooseTraitUI = loadstring("require('lua/client/ISUI/Player
 --[lua/client/ISUI/PlayerStats/ISPlayerStatsManageInvUI.d.ts]
 Exports.ISPlayerStatsManageInvUI = loadstring("require('lua/client/ISUI/PlayerStats/ISPlayerStatsManageInvUI');return _G['ISPlayerStatsManageInvUI']")()
 
+--[lua/client/ISUI/PlayerStats/ISPlayerStatsSuspicionActivityUI.d.ts]
+Exports.ISPlayerStatsSuspicionActivityUI = loadstring("require('lua/client/ISUI/PlayerStats/ISPlayerStatsSuspicionActivityUI');return _G['ISPlayerStatsSuspicionActivityUI']")()
+
 --[lua/client/ISUI/PlayerStats/ISPlayerStatsUI.d.ts]
 Exports.ISPlayerStatsUI = loadstring("require('lua/client/ISUI/PlayerStats/ISPlayerStatsUI');return _G['ISPlayerStatsUI']")()
 
@@ -1046,6 +1533,24 @@ Exports.ISPlayerStatsUserlogUI = loadstring("require('lua/client/ISUI/PlayerStat
 
 --[lua/client/ISUI/PlayerStats/ISPlayerStatsWarningPointUI.d.ts]
 Exports.ISPlayerStatsWarningPointUI = loadstring("require('lua/client/ISUI/PlayerStats/ISPlayerStatsWarningPointUI');return _G['ISPlayerStatsWarningPointUI']")()
+
+--[lua/client/ISUI/PrintMedia/ISPrintMediaInfo.d.ts]
+Exports.ISPrintMediaInfo = loadstring("require('lua/client/ISUI/PrintMedia/ISPrintMediaInfo');return _G['ISPrintMediaInfo']")()
+Exports.ISPrintMediaSetInfo = loadstring("require('lua/client/ISUI/PrintMedia/ISPrintMediaInfo');return _G['ISPrintMediaSetInfo']")()
+
+--[lua/client/ISUI/PrintMedia/ISPrintMediaPage.d.ts]
+Exports.ISPrintMediaPage = loadstring("require('lua/client/ISUI/PrintMedia/ISPrintMediaPage');return _G['ISPrintMediaPage']")()
+Exports.ISPrintMediaRichText = loadstring("require('lua/client/ISUI/PrintMedia/ISPrintMediaPage');return _G['ISPrintMediaRichText']")()
+
+--[lua/client/ISUI/PrintMedia/ISPrintMediaPanel.d.ts]
+Exports.ISPrintMediaListBox = loadstring("require('lua/client/ISUI/PrintMedia/ISPrintMediaPanel');return _G['ISPrintMediaListBox']")()
+Exports.ISPrintMediaPanel = loadstring("require('lua/client/ISUI/PrintMedia/ISPrintMediaPanel');return _G['ISPrintMediaPanel']")()
+
+--[lua/client/ISUI/PrintMedia/PrintMediaEntries.d.ts]
+Exports.PrintMediaEntries = loadstring("require('lua/client/ISUI/PrintMedia/PrintMediaEntries');return _G['PrintMediaEntries']")()
+
+--[lua/client/ISUI/PrintMedia/PrintMediaManager.d.ts]
+Exports.PrintMediaManager = loadstring("require('lua/client/ISUI/PrintMedia/PrintMediaManager');return _G['PrintMediaManager']")()
 
 --[lua/client/ISUI/RichTextLayout.d.ts]
 Exports.ISRichTextLayout = loadstring("require('lua/client/ISUI/RichTextLayout');return _G['ISRichTextLayout']")()
@@ -1076,6 +1581,10 @@ Exports.ISTicketsUI = loadstring("require('lua/client/ISUI/UserPanel/ISTicketsUI
 
 --[lua/client/ISUI/UserPanel/ISUserPanelUI.d.ts]
 Exports.ISUserPanelUI = loadstring("require('lua/client/ISUI/UserPanel/ISUserPanelUI');return _G['ISUserPanelUI']")()
+
+--[lua/client/ISUI/WelcomeMessageB42.d.ts]
+Exports.WelcomeMessageUI = loadstring("require('lua/client/ISUI/WelcomeMessageB42');return _G['WelcomeMessageUI']")()
+Exports.WelcomeMessageB42 = loadstring("require('lua/client/ISUI/WelcomeMessageB42');return _G['WelcomeMessageB42']")()
 
 --[lua/client/ISUI/ZombiePopulationWindow.d.ts]
 Exports.ZombiePopulationWindow = loadstring("require('lua/client/ISUI/ZombiePopulationWindow');return _G['ZombiePopulationWindow']")()
@@ -1152,29 +1661,11 @@ Exports.CGlobalObject = loadstring("require('lua/client/Map/CGlobalObject');retu
 --[lua/client/Map/CGlobalObjectSystem.d.ts]
 Exports.CGlobalObjectSystem = loadstring("require('lua/client/Map/CGlobalObjectSystem');return _G['CGlobalObjectSystem']")()
 
---[lua/client/MetalDrum/CMetalDrumGlobalObject.d.ts]
-Exports.CMetalDrumGlobalObject = loadstring("require('lua/client/MetalDrum/CMetalDrumGlobalObject');return _G['CMetalDrumGlobalObject']")()
-
---[lua/client/MetalDrum/CMetalDrumSystem.d.ts]
-Exports.CMetalDrumSystem = loadstring("require('lua/client/MetalDrum/CMetalDrumSystem');return _G['CMetalDrumSystem']")()
-
---[lua/client/Moveables/ISMoveableDefinitions.d.ts]
-Exports.ISMoveableDefinitions = loadstring("require('lua/client/Moveables/ISMoveableDefinitions');return _G['ISMoveableDefinitions']")()
-
---[lua/client/Moveables/ISMoveablesAction.d.ts]
-Exports.ISMoveablesAction = loadstring("require('lua/client/Moveables/ISMoveablesAction');return _G['ISMoveablesAction']")()
+--[lua/client/Mining/DiggingUtil.d.ts]
+Exports.DiggingUtil = loadstring("require('lua/client/Mining/DiggingUtil');return _G['DiggingUtil']")()
 
 --[lua/client/Moveables/ISMoveablesIconToolTip.d.ts]
 Exports.ISMoveablesIconToolTip = loadstring("require('lua/client/Moveables/ISMoveablesIconToolTip');return _G['ISMoveablesIconToolTip']")()
-
---[lua/client/Moveables/ISMoveableSpriteProps.d.ts]
-Exports.InfoPanelFlags = loadstring("require('lua/client/Moveables/ISMoveableSpriteProps');return _G['InfoPanelFlags']")()
-Exports.ISMoveableSpriteProps = loadstring("require('lua/client/Moveables/ISMoveableSpriteProps');return _G['ISMoveableSpriteProps']")()
-Exports.ISThumpableSpriteProps = loadstring("require('lua/client/Moveables/ISMoveableSpriteProps');return _G['ISThumpableSpriteProps']")()
-Exports.SpriteGridCache = loadstring("require('lua/client/Moveables/ISMoveableSpriteProps');return _G['SpriteGridCache']")()
-
---[lua/client/Moveables/ISMoveableTools.d.ts]
-Exports.ISMoveableTools = loadstring("require('lua/client/Moveables/ISMoveableTools');return _G['ISMoveableTools']")()
 
 --[lua/client/Music/MusicChoices.d.ts]
 Exports.MusicChoices = loadstring("require('lua/client/Music/MusicChoices');return _G['MusicChoices']")()
@@ -1247,32 +1738,65 @@ Exports.LastStandPlayerSelect = loadstring("require('lua/client/OptionScreens/La
 --[lua/client/OptionScreens/LoadGameScreen.d.ts]
 Exports.LoadGameScreen = loadstring("require('lua/client/OptionScreens/LoadGameScreen');return _G['LoadGameScreen']")()
 
---[lua/client/OptionScreens/LoginScreen.d.ts]
-Exports.LoginScreen = loadstring("require('lua/client/OptionScreens/LoginScreen');return _G['LoginScreen']")()
-
 --[lua/client/OptionScreens/MainOptions.d.ts]
 Exports.MainOptions = loadstring("require('lua/client/OptionScreens/MainOptions');return _G['MainOptions']")()
 
 --[lua/client/OptionScreens/MainScreen.d.ts]
 Exports.MainScreen = loadstring("require('lua/client/OptionScreens/MainScreen');return _G['MainScreen']")()
 
+--[lua/client/OptionScreens/MapsOrder.d.ts]
+Exports.IgnoredMap = loadstring("require('lua/client/OptionScreens/MapsOrder');return _G['IgnoredMap']")()
+Exports.MapsOrder = loadstring("require('lua/client/OptionScreens/MapsOrder');return _G['MapsOrder']")()
+
 --[lua/client/OptionScreens/MapSpawnSelect.d.ts]
 Exports.MapSpawnSelect = loadstring("require('lua/client/OptionScreens/MapSpawnSelect');return _G['MapSpawnSelect']")()
+Exports.MapSpawnSelectImage = loadstring("require('lua/client/OptionScreens/MapSpawnSelect');return _G['MapSpawnSelectImage']")()
 Exports.MapSpawnSelectInfoPanel = loadstring("require('lua/client/OptionScreens/MapSpawnSelect');return _G['MapSpawnSelectInfoPanel']")()
 Exports.MapSpawnSelectListBox = loadstring("require('lua/client/OptionScreens/MapSpawnSelect');return _G['MapSpawnSelectListBox']")()
 
 --[lua/client/OptionScreens/ModMoreInfo.d.ts]
 Exports.ModMoreInfo = loadstring("require('lua/client/OptionScreens/ModMoreInfo');return _G['ModMoreInfo']")()
 
---[lua/client/OptionScreens/ModOrderUI.d.ts]
-Exports.ModOrderUI = loadstring("require('lua/client/OptionScreens/ModOrderUI');return _G['ModOrderUI']")()
+--[lua/client/OptionScreens/ModSelector/ISModsHelpPanel.d.ts]
+Exports.ISModsHelpPanel = loadstring("require('lua/client/OptionScreens/ModSelector/ISModsHelpPanel');return _G['ISModsHelpPanel']")()
 
---[lua/client/OptionScreens/ModSelector.d.ts]
-Exports.ModInfoPanel = loadstring("require('lua/client/OptionScreens/ModSelector');return _G['ModInfoPanel']")()
-Exports.ModListBox = loadstring("require('lua/client/OptionScreens/ModSelector');return _G['ModListBox']")()
-Exports.ModPosterPanel = loadstring("require('lua/client/OptionScreens/ModSelector');return _G['ModPosterPanel']")()
-Exports.ModSelector = loadstring("require('lua/client/OptionScreens/ModSelector');return _G['ModSelector']")()
-Exports.ModThumbnailPanel = loadstring("require('lua/client/OptionScreens/ModSelector');return _G['ModThumbnailPanel']")()
+--[lua/client/OptionScreens/ModSelector/MapOrderListBox.d.ts]
+-- Wrong: class name is undefined
+--[lua/client/OptionScreens/ModSelector/MapOrderUI.d.ts]
+-- Wrong: class name is undefined
+--[lua/client/OptionScreens/ModSelector/MissedModsPanel.d.ts]
+-- Wrong: class name is undefined
+--[lua/client/OptionScreens/ModSelector/ModInfoPanel.d.ts]
+Exports.ModInfoPanel = loadstring("require('lua/client/OptionScreens/ModSelector/ModInfoPanel');return _G['ModInfoPanel']")()
+
+--[lua/client/OptionScreens/ModSelector/ModInfoPanelDesc.d.ts]
+-- Wrong: class name is undefined
+--[lua/client/OptionScreens/ModSelector/ModInfoPanelInteractionParam.d.ts]
+-- Wrong: class name is undefined
+--[lua/client/OptionScreens/ModSelector/ModInfoPanelParam.d.ts]
+-- Wrong: class name is undefined
+--[lua/client/OptionScreens/ModSelector/ModInfoPanelThumbnail.d.ts]
+-- Wrong: class name is undefined
+--[lua/client/OptionScreens/ModSelector/ModInfoPanelTitle.d.ts]
+-- Wrong: class name is undefined
+--[lua/client/OptionScreens/ModSelector/ModListBox.d.ts]
+-- Wrong: class name is undefined
+--[lua/client/OptionScreens/ModSelector/ModListPanel.d.ts]
+-- Wrong: class name is undefined
+--[lua/client/OptionScreens/ModSelector/ModListPresets.d.ts]
+Exports.ModListPresets = loadstring("require('lua/client/OptionScreens/ModSelector/ModListPresets');return _G['ModListPresets']")()
+
+--[lua/client/OptionScreens/ModSelector/ModLoadOrderPanel.d.ts]
+-- Wrong: class name is undefined
+--[lua/client/OptionScreens/ModSelector/ModOrderListBox.d.ts]
+-- Wrong: class name is undefined
+--[lua/client/OptionScreens/ModSelector/ModSelector.d.ts]
+Exports.ModSelector = loadstring("require('lua/client/OptionScreens/ModSelector/ModSelector');return _G['ModSelector']")()
+
+--[lua/client/OptionScreens/ModSelector/ModSelectorModel.d.ts]
+
+--[lua/client/OptionScreens/MultiplayerScreen.d.ts]
+Exports.MultiplayerScreen = loadstring("require('lua/client/OptionScreens/MultiplayerScreen');return _G['MultiplayerScreen']")()
 
 --[lua/client/OptionScreens/NewGameScreen.d.ts]
 Exports.NewGameScreen = loadstring("require('lua/client/OptionScreens/NewGameScreen');return _G['NewGameScreen']")()
@@ -1293,7 +1817,7 @@ Exports.ServerList = loadstring("require('lua/client/OptionScreens/ServerList');
 Exports.BaseServerSettingsPanel = loadstring("require('lua/client/OptionScreens/ServerSettingsScreen');return _G['BaseServerSettingsPanel']")()
 Exports.ServerSettingsScreen = loadstring("require('lua/client/OptionScreens/ServerSettingsScreen');return _G['ServerSettingsScreen']")()
 Exports.SpawnRegionsNameFilePanel = loadstring("require('lua/client/OptionScreens/ServerSettingsScreen');return _G['SpawnRegionsNameFilePanel']")()
-Exports.DefaultServerSettings = loadstring("require('lua/client/OptionScreens/ServerSettingsScreen');return _G['DefaultServerSettings']")()
+-- Wrong: class name is undefinedExports.DefaultServerSettings = loadstring("require('lua/client/OptionScreens/ServerSettingsScreen');return _G['DefaultServerSettings']")()
 
 --[lua/client/OptionScreens/ServerToolbox.d.ts]
 Exports.ServerToolbox = loadstring("require('lua/client/OptionScreens/ServerToolbox');return _G['ServerToolbox']")()
@@ -1306,6 +1830,8 @@ Exports.WorkshopSubmitScreen = loadstring("require('lua/client/OptionScreens/Wor
 
 --[lua/client/OptionScreens/WorldSelect.d.ts]
 Exports.WorldSelect = loadstring("require('lua/client/OptionScreens/WorldSelect');return _G['WorldSelect']")()
+
+--[lua/client/PZAPI/ModOptions.d.ts]
 
 --[lua/client/RadioCom/ISRadioAction.d.ts]
 Exports.ISRadioAction = loadstring("require('lua/client/RadioCom/ISRadioAction');return _G['ISRadioAction']")()
@@ -1432,89 +1958,20 @@ Exports.RecipeUtils = loadstring("require('lua/client/Tests/RecipeUtils');return
 --[lua/client/Tests/TimedActionsTests.d.ts]
 Exports.TimedActionTests = loadstring("require('lua/client/Tests/TimedActionsTests');return _G['TimedActionTests']")()
 
---[lua/client/TimedActions/ISActivateCarBatteryChargerAction.d.ts]
-Exports.ISActivateCarBatteryChargerAction = loadstring("require('lua/client/TimedActions/ISActivateCarBatteryChargerAction');return _G['ISActivateCarBatteryChargerAction']")()
+--[lua/client/TimedActions/Animal/ISCheckAnimalInsideTrailer.d.ts]
+Exports.ISCheckAnimalInsideTrailer = loadstring("require('lua/client/TimedActions/Animal/ISCheckAnimalInsideTrailer');return _G['ISCheckAnimalInsideTrailer']")()
 
---[lua/client/TimedActions/ISActivateGenerator.d.ts]
-Exports.ISActivateGenerator = loadstring("require('lua/client/TimedActions/ISActivateGenerator');return _G['ISActivateGenerator']")()
+--[lua/client/TimedActions/Animal/ISGetHutchInfo.d.ts]
+Exports.ISGetHutchInfo = loadstring("require('lua/client/TimedActions/Animal/ISGetHutchInfo');return _G['ISGetHutchInfo']")()
 
---[lua/client/TimedActions/ISAddCompost.d.ts]
-Exports.ISAddCompost = loadstring("require('lua/client/TimedActions/ISAddCompost');return _G['ISAddCompost']")()
-
---[lua/client/TimedActions/ISAddFuel.d.ts]
-Exports.ISAddFuel = loadstring("require('lua/client/TimedActions/ISAddFuel');return _G['ISAddFuel']")()
-
---[lua/client/TimedActions/ISAddItemInRecipe.d.ts]
-Exports.ISAddItemInRecipe = loadstring("require('lua/client/TimedActions/ISAddItemInRecipe');return _G['ISAddItemInRecipe']")()
-
---[lua/client/TimedActions/ISAddSheetAction.d.ts]
-Exports.ISAddSheetAction = loadstring("require('lua/client/TimedActions/ISAddSheetAction');return _G['ISAddSheetAction']")()
-
---[lua/client/TimedActions/ISAddSheetRope.d.ts]
-Exports.ISAddSheetRope = loadstring("require('lua/client/TimedActions/ISAddSheetRope');return _G['ISAddSheetRope']")()
-
---[lua/client/TimedActions/ISAddWaterFromItemAction.d.ts]
-Exports.ISAddWaterFromItemAction = loadstring("require('lua/client/TimedActions/ISAddWaterFromItemAction');return _G['ISAddWaterFromItemAction']")()
-
---[lua/client/TimedActions/ISApplyBandage.d.ts]
-Exports.ISApplyBandage = loadstring("require('lua/client/TimedActions/ISApplyBandage');return _G['ISApplyBandage']")()
-
---[lua/client/TimedActions/ISAttachItemHotbar.d.ts]
-Exports.ISAttachItemHotbar = loadstring("require('lua/client/TimedActions/ISAttachItemHotbar');return _G['ISAttachItemHotbar']")()
-
---[lua/client/TimedActions/ISBarricadeAction.d.ts]
-Exports.ISBarricadeAction = loadstring("require('lua/client/TimedActions/ISBarricadeAction');return _G['ISBarricadeAction']")()
-
---[lua/client/TimedActions/ISBBQAddFuel.d.ts]
-Exports.ISBBQAddFuel = loadstring("require('lua/client/TimedActions/ISBBQAddFuel');return _G['ISBBQAddFuel']")()
-
---[lua/client/TimedActions/ISBBQExtinguish.d.ts]
-Exports.ISBBQExtinguish = loadstring("require('lua/client/TimedActions/ISBBQExtinguish');return _G['ISBBQExtinguish']")()
+--[lua/client/TimedActions/Animal/ISInspectAnimalTrackAction.d.ts]
+Exports.ISInspectAnimalTrackAction = loadstring("require('lua/client/TimedActions/Animal/ISInspectAnimalTrackAction');return _G['ISInspectAnimalTrackAction']")()
 
 --[lua/client/TimedActions/ISBBQInfoAction.d.ts]
 Exports.ISBBQInfoAction = loadstring("require('lua/client/TimedActions/ISBBQInfoAction');return _G['ISBBQInfoAction']")()
 
---[lua/client/TimedActions/ISBBQInsertPropaneTank.d.ts]
-Exports.ISBBQInsertPropaneTank = loadstring("require('lua/client/TimedActions/ISBBQInsertPropaneTank');return _G['ISBBQInsertPropaneTank']")()
-
---[lua/client/TimedActions/ISBBQLightFromKindle.d.ts]
-Exports.ISBBQLightFromKindle = loadstring("require('lua/client/TimedActions/ISBBQLightFromKindle');return _G['ISBBQLightFromKindle']")()
-
---[lua/client/TimedActions/ISBBQLightFromLiterature.d.ts]
-Exports.ISBBQLightFromLiterature = loadstring("require('lua/client/TimedActions/ISBBQLightFromLiterature');return _G['ISBBQLightFromLiterature']")()
-
---[lua/client/TimedActions/ISBBQLightFromPetrol.d.ts]
-Exports.ISBBQLightFromPetrol = loadstring("require('lua/client/TimedActions/ISBBQLightFromPetrol');return _G['ISBBQLightFromPetrol']")()
-
---[lua/client/TimedActions/ISBBQRemovePropaneTank.d.ts]
-Exports.ISBBQRemovePropaneTank = loadstring("require('lua/client/TimedActions/ISBBQRemovePropaneTank');return _G['ISBBQRemovePropaneTank']")()
-
---[lua/client/TimedActions/ISBBQToggle.d.ts]
-Exports.ISBBQToggle = loadstring("require('lua/client/TimedActions/ISBBQToggle');return _G['ISBBQToggle']")()
-
---[lua/client/TimedActions/ISBurnCorpseAction.d.ts]
-Exports.ISBurnCorpseAction = loadstring("require('lua/client/TimedActions/ISBurnCorpseAction');return _G['ISBurnCorpseAction']")()
-
---[lua/client/TimedActions/ISBuryCorpse.d.ts]
-Exports.ISBuryCorpse = loadstring("require('lua/client/TimedActions/ISBuryCorpse');return _G['ISBuryCorpse']")()
-
 --[lua/client/TimedActions/ISCampingInfoAction.d.ts]
 Exports.ISCampingInfoAction = loadstring("require('lua/client/TimedActions/ISCampingInfoAction');return _G['ISCampingInfoAction']")()
-
---[lua/client/TimedActions/ISChopTreeAction.d.ts]
-Exports.ISChopTreeAction = loadstring("require('lua/client/TimedActions/ISChopTreeAction');return _G['ISChopTreeAction']")()
-
---[lua/client/TimedActions/ISCleanBandage.d.ts]
-Exports.ISCleanBandage = loadstring("require('lua/client/TimedActions/ISCleanBandage');return _G['ISCleanBandage']")()
-
---[lua/client/TimedActions/ISCleanBlood.d.ts]
-Exports.ISCleanBlood = loadstring("require('lua/client/TimedActions/ISCleanBlood');return _G['ISCleanBlood']")()
-
---[lua/client/TimedActions/ISCleanBurn.d.ts]
-Exports.ISCleanBurn = loadstring("require('lua/client/TimedActions/ISCleanBurn');return _G['ISCleanBurn']")()
-
---[lua/client/TimedActions/ISClearAshes.d.ts]
-Exports.ISClearAshes = loadstring("require('lua/client/TimedActions/ISClearAshes');return _G['ISClearAshes']")()
 
 --[lua/client/TimedActions/ISClimbOverFence.d.ts]
 Exports.ISClimbOverFence = loadstring("require('lua/client/TimedActions/ISClimbOverFence');return _G['ISClimbOverFence']")()
@@ -1528,146 +1985,26 @@ Exports.ISClimbThroughWindow = loadstring("require('lua/client/TimedActions/ISCl
 --[lua/client/TimedActions/ISClothingExtraAction.d.ts]
 Exports.ISClothingExtraAction = loadstring("require('lua/client/TimedActions/ISClothingExtraAction');return _G['ISClothingExtraAction']")()
 
---[lua/client/TimedActions/ISComfreyCataplasm.d.ts]
-Exports.ISComfreyCataplasm = loadstring("require('lua/client/TimedActions/ISComfreyCataplasm');return _G['ISComfreyCataplasm']")()
-
---[lua/client/TimedActions/ISConnectCarBatteryToChargerAction.d.ts]
-Exports.ISConnectCarBatteryToChargerAction = loadstring("require('lua/client/TimedActions/ISConnectCarBatteryToChargerAction');return _G['ISConnectCarBatteryToChargerAction']")()
-
---[lua/client/TimedActions/ISConsolidateDrainable.d.ts]
-Exports.ISConsolidateDrainable = loadstring("require('lua/client/TimedActions/ISConsolidateDrainable');return _G['ISConsolidateDrainable']")()
-
---[lua/client/TimedActions/ISConsolidateDrainableAll.d.ts]
-Exports.ISConsolidateDrainableAll = loadstring("require('lua/client/TimedActions/ISConsolidateDrainableAll');return _G['ISConsolidateDrainableAll']")()
-
---[lua/client/TimedActions/ISCraftAction.d.ts]
-Exports.ISCraftAction = loadstring("require('lua/client/TimedActions/ISCraftAction');return _G['ISCraftAction']")()
-
---[lua/client/TimedActions/ISCutHair.d.ts]
-Exports.ISCutHair = loadstring("require('lua/client/TimedActions/ISCutHair');return _G['ISCutHair']")()
-
---[lua/client/TimedActions/ISDestroyStuffAction.d.ts]
-Exports.ISDestroyStuffAction = loadstring("require('lua/client/TimedActions/ISDestroyStuffAction');return _G['ISDestroyStuffAction']")()
-
 --[lua/client/TimedActions/ISDetachItemHotbar.d.ts]
 Exports.ISDetachItemHotbar = loadstring("require('lua/client/TimedActions/ISDetachItemHotbar');return _G['ISDetachItemHotbar']")()
 
---[lua/client/TimedActions/ISDisinfect.d.ts]
-Exports.ISDisinfect = loadstring("require('lua/client/TimedActions/ISDisinfect');return _G['ISDisinfect']")()
-
---[lua/client/TimedActions/ISDismantleAction.d.ts]
-Exports.ISDismantleAction = loadstring("require('lua/client/TimedActions/ISDismantleAction');return _G['ISDismantleAction']")()
-
---[lua/client/TimedActions/ISDrinkFromBottle.d.ts]
-Exports.ISDrinkFromBottle = loadstring("require('lua/client/TimedActions/ISDrinkFromBottle');return _G['ISDrinkFromBottle']")()
-
---[lua/client/TimedActions/ISDropItemAction.d.ts]
-Exports.ISDropItemAction = loadstring("require('lua/client/TimedActions/ISDropItemAction');return _G['ISDropItemAction']")()
-
---[lua/client/TimedActions/ISDropWorldItemAction.d.ts]
-Exports.ISDropWorldItemAction = loadstring("require('lua/client/TimedActions/ISDropWorldItemAction');return _G['ISDropWorldItemAction']")()
-
---[lua/client/TimedActions/ISDryMyself.d.ts]
-Exports.ISDryMyself = loadstring("require('lua/client/TimedActions/ISDryMyself');return _G['ISDryMyself']")()
-
---[lua/client/TimedActions/ISDumpContentsAction.d.ts]
-Exports.ISDumpContentsAction = loadstring("require('lua/client/TimedActions/ISDumpContentsAction');return _G['ISDumpContentsAction']")()
-
---[lua/client/TimedActions/ISDumpWaterAction.d.ts]
-Exports.ISDumpWaterAction = loadstring("require('lua/client/TimedActions/ISDumpWaterAction');return _G['ISDumpWaterAction']")()
-
---[lua/client/TimedActions/ISDyeHair.d.ts]
-Exports.ISDyeHair = loadstring("require('lua/client/TimedActions/ISDyeHair');return _G['ISDyeHair']")()
-
---[lua/client/TimedActions/ISEatFoodAction.d.ts]
-Exports.ISEatFoodAction = loadstring("require('lua/client/TimedActions/ISEatFoodAction');return _G['ISEatFoodAction']")()
-
---[lua/client/TimedActions/ISEjectMagazine.d.ts]
-Exports.ISEjectMagazine = loadstring("require('lua/client/TimedActions/ISEjectMagazine');return _G['ISEjectMagazine']")()
-
---[lua/client/TimedActions/ISEmptyRainBarrelAction.d.ts]
-Exports.ISEmptyRainBarrelAction = loadstring("require('lua/client/TimedActions/ISEmptyRainBarrelAction');return _G['ISEmptyRainBarrelAction']")()
-
---[lua/client/TimedActions/ISEquipHeavyItem.d.ts]
-Exports.ISEquipHeavyItem = loadstring("require('lua/client/TimedActions/ISEquipHeavyItem');return _G['ISEquipHeavyItem']")()
-
---[lua/client/TimedActions/ISEquipWeaponAction.d.ts]
-Exports.ISEquipWeaponAction = loadstring("require('lua/client/TimedActions/ISEquipWeaponAction');return _G['ISEquipWeaponAction']")()
-
---[lua/client/TimedActions/ISFillGrave.d.ts]
-Exports.ISFillGrave = loadstring("require('lua/client/TimedActions/ISFillGrave');return _G['ISFillGrave']")()
-
---[lua/client/TimedActions/ISFinalizeDealAction.d.ts]
-Exports.ISFinalizeDealAction = loadstring("require('lua/client/TimedActions/ISFinalizeDealAction');return _G['ISFinalizeDealAction']")()
-
---[lua/client/TimedActions/ISFireplaceAddFuel.d.ts]
-Exports.ISFireplaceAddFuel = loadstring("require('lua/client/TimedActions/ISFireplaceAddFuel');return _G['ISFireplaceAddFuel']")()
-
---[lua/client/TimedActions/ISFireplaceExtinguish.d.ts]
-Exports.ISFireplaceExtinguish = loadstring("require('lua/client/TimedActions/ISFireplaceExtinguish');return _G['ISFireplaceExtinguish']")()
+--[lua/client/TimedActions/ISDigStairsAction.d.ts]
+Exports.ISDigStairsAction = loadstring("require('lua/client/TimedActions/ISDigStairsAction');return _G['ISDigStairsAction']")()
 
 --[lua/client/TimedActions/ISFireplaceInfoAction.d.ts]
 Exports.ISFireplaceInfoAction = loadstring("require('lua/client/TimedActions/ISFireplaceInfoAction');return _G['ISFireplaceInfoAction']")()
 
---[lua/client/TimedActions/ISFireplaceLightFromKindle.d.ts]
-Exports.ISFireplaceLightFromKindle = loadstring("require('lua/client/TimedActions/ISFireplaceLightFromKindle');return _G['ISFireplaceLightFromKindle']")()
-
---[lua/client/TimedActions/ISFireplaceLightFromLiterature.d.ts]
-Exports.ISFireplaceLightFromLiterature = loadstring("require('lua/client/TimedActions/ISFireplaceLightFromLiterature');return _G['ISFireplaceLightFromLiterature']")()
-
---[lua/client/TimedActions/ISFireplaceLightFromPetrol.d.ts]
-Exports.ISFireplaceLightFromPetrol = loadstring("require('lua/client/TimedActions/ISFireplaceLightFromPetrol');return _G['ISFireplaceLightFromPetrol']")()
-
---[lua/client/TimedActions/ISFitnessAction.d.ts]
-Exports.ISFitnessAction = loadstring("require('lua/client/TimedActions/ISFitnessAction');return _G['ISFitnessAction']")()
-
---[lua/client/TimedActions/ISFixAction.d.ts]
-Exports.ISFixAction = loadstring("require('lua/client/TimedActions/ISFixAction');return _G['ISFixAction']")()
-
---[lua/client/TimedActions/ISFixGenerator.d.ts]
-Exports.ISFixGenerator = loadstring("require('lua/client/TimedActions/ISFixGenerator');return _G['ISFixGenerator']")()
-
---[lua/client/TimedActions/ISGarlicCataplasm.d.ts]
-Exports.ISGarlicCataplasm = loadstring("require('lua/client/TimedActions/ISGarlicCataplasm');return _G['ISGarlicCataplasm']")()
-
 --[lua/client/TimedActions/ISGeneratorInfoAction.d.ts]
 Exports.ISGeneratorInfoAction = loadstring("require('lua/client/TimedActions/ISGeneratorInfoAction');return _G['ISGeneratorInfoAction']")()
-
---[lua/client/TimedActions/ISGetCompost.d.ts]
-Exports.ISGetCompost = loadstring("require('lua/client/TimedActions/ISGetCompost');return _G['ISGetCompost']")()
-
---[lua/client/TimedActions/ISGrabCorpseAction.d.ts]
-Exports.ISGrabCorpseAction = loadstring("require('lua/client/TimedActions/ISGrabCorpseAction');return _G['ISGrabCorpseAction']")()
 
 --[lua/client/TimedActions/ISGrabItemAction.d.ts]
 Exports.ISGrabItemAction = loadstring("require('lua/client/TimedActions/ISGrabItemAction');return _G['ISGrabItemAction']")()
 
---[lua/client/TimedActions/ISInsertMagazine.d.ts]
-Exports.ISInsertMagazine = loadstring("require('lua/client/TimedActions/ISInsertMagazine');return _G['ISInsertMagazine']")()
-
 --[lua/client/TimedActions/ISInventoryTransferAction.d.ts]
 Exports.ISInventoryTransferAction = loadstring("require('lua/client/TimedActions/ISInventoryTransferAction');return _G['ISInventoryTransferAction']")()
 
---[lua/client/TimedActions/ISLightActions.d.ts]
-Exports.ISLightActions = loadstring("require('lua/client/TimedActions/ISLightActions');return _G['ISLightActions']")()
-
---[lua/client/TimedActions/ISLoadBulletsInMagazine.d.ts]
-Exports.ISLoadBulletsInMagazine = loadstring("require('lua/client/TimedActions/ISLoadBulletsInMagazine');return _G['ISLoadBulletsInMagazine']")()
-
---[lua/client/TimedActions/ISLockDoor.d.ts]
-Exports.ISLockDoor = loadstring("require('lua/client/TimedActions/ISLockDoor');return _G['ISLockDoor']")()
-
 --[lua/client/TimedActions/ISMedicalCheckAction.d.ts]
 Exports.ISMedicalCheckAction = loadstring("require('lua/client/TimedActions/ISMedicalCheckAction');return _G['ISMedicalCheckAction']")()
-
---[lua/client/TimedActions/ISOpenCloseCurtain.d.ts]
-Exports.ISOpenCloseCurtain = loadstring("require('lua/client/TimedActions/ISOpenCloseCurtain');return _G['ISOpenCloseCurtain']")()
-
---[lua/client/TimedActions/ISOpenCloseDoor.d.ts]
-Exports.ISOpenCloseDoor = loadstring("require('lua/client/TimedActions/ISOpenCloseDoor');return _G['ISOpenCloseDoor']")()
-
---[lua/client/TimedActions/ISOpenCloseWindow.d.ts]
-Exports.ISOpenCloseWindow = loadstring("require('lua/client/TimedActions/ISOpenCloseWindow');return _G['ISOpenCloseWindow']")()
 
 --[lua/client/TimedActions/ISOpenContainerTimedAction.d.ts]
 Exports.ISOpenContainerTimedAction = loadstring("require('lua/client/TimedActions/ISOpenContainerTimedAction');return _G['ISOpenContainerTimedAction']")()
@@ -1675,198 +2012,29 @@ Exports.ISOpenContainerTimedAction = loadstring("require('lua/client/TimedAction
 --[lua/client/TimedActions/ISOvenUITimedAction.d.ts]
 Exports.ISOvenUITimedAction = loadstring("require('lua/client/TimedActions/ISOvenUITimedAction');return _G['ISOvenUITimedAction']")()
 
---[lua/client/TimedActions/ISPadlockAction.d.ts]
-Exports.ISPadlockAction = loadstring("require('lua/client/TimedActions/ISPadlockAction');return _G['ISPadlockAction']")()
-
---[lua/client/TimedActions/ISPickupBrokenGlass.d.ts]
-Exports.ISPickupBrokenGlass = loadstring("require('lua/client/TimedActions/ISPickupBrokenGlass');return _G['ISPickupBrokenGlass']")()
-
---[lua/client/TimedActions/ISPlaceCarBatteryChargerAction.d.ts]
-Exports.ISPlaceCarBatteryChargerAction = loadstring("require('lua/client/TimedActions/ISPlaceCarBatteryChargerAction');return _G['ISPlaceCarBatteryChargerAction']")()
-
---[lua/client/TimedActions/ISPlaceTrap.d.ts]
-Exports.ISPlaceTrap = loadstring("require('lua/client/TimedActions/ISPlaceTrap');return _G['ISPlaceTrap']")()
-
---[lua/client/TimedActions/ISPlantainCataplasm.d.ts]
-Exports.ISPlantainCataplasm = loadstring("require('lua/client/TimedActions/ISPlantainCataplasm');return _G['ISPlantainCataplasm']")()
-
---[lua/client/TimedActions/ISPlugGenerator.d.ts]
-Exports.ISPlugGenerator = loadstring("require('lua/client/TimedActions/ISPlugGenerator');return _G['ISPlugGenerator']")()
-
---[lua/client/TimedActions/ISPlumbItem.d.ts]
-Exports.ISPlumbItem = loadstring("require('lua/client/TimedActions/ISPlumbItem');return _G['ISPlumbItem']")()
-
---[lua/client/TimedActions/ISPutOutFire.d.ts]
-Exports.ISPutOutFire = loadstring("require('lua/client/TimedActions/ISPutOutFire');return _G['ISPutOutFire']")()
+--[lua/client/TimedActions/ISPickAxeGroundCoverItem.d.ts]
+Exports.ISPickAxeGroundCoverItem = loadstring("require('lua/client/TimedActions/ISPickAxeGroundCoverItem');return _G['ISPickAxeGroundCoverItem']")()
 
 --[lua/client/TimedActions/ISQueueActionsAction.d.ts]
 Exports.ISQueueActionsAction = loadstring("require('lua/client/TimedActions/ISQueueActionsAction');return _G['ISQueueActionsAction']")()
 
---[lua/client/TimedActions/ISRackFirearm.d.ts]
-Exports.ISRackFirearm = loadstring("require('lua/client/TimedActions/ISRackFirearm');return _G['ISRackFirearm']")()
-
---[lua/client/TimedActions/ISReadABook.d.ts]
-Exports.ISReadABook = loadstring("require('lua/client/TimedActions/ISReadABook');return _G['ISReadABook']")()
-
 --[lua/client/TimedActions/ISReadWorldMap.d.ts]
 Exports.ISReadWorldMap = loadstring("require('lua/client/TimedActions/ISReadWorldMap');return _G['ISReadWorldMap']")()
-
---[lua/client/TimedActions/ISReloadWeaponAction.d.ts]
-Exports.ISReloadWeaponAction = loadstring("require('lua/client/TimedActions/ISReloadWeaponAction');return _G['ISReloadWeaponAction']")()
-
---[lua/client/TimedActions/ISRemoveBrokenGlass.d.ts]
-Exports.ISRemoveBrokenGlass = loadstring("require('lua/client/TimedActions/ISRemoveBrokenGlass');return _G['ISRemoveBrokenGlass']")()
-
---[lua/client/TimedActions/ISRemoveBullet.d.ts]
-Exports.ISRemoveBullet = loadstring("require('lua/client/TimedActions/ISRemoveBullet');return _G['ISRemoveBullet']")()
-
---[lua/client/TimedActions/ISRemoveBush.d.ts]
-Exports.ISRemoveBush = loadstring("require('lua/client/TimedActions/ISRemoveBush');return _G['ISRemoveBush']")()
-
---[lua/client/TimedActions/ISRemoveCarBatteryFromChargerAction.d.ts]
-Exports.ISRemoveCarBatteryFromChargerAction = loadstring("require('lua/client/TimedActions/ISRemoveCarBatteryFromChargerAction');return _G['ISRemoveCarBatteryFromChargerAction']")()
-
---[lua/client/TimedActions/ISRemoveGlass.d.ts]
-Exports.ISRemoveGlass = loadstring("require('lua/client/TimedActions/ISRemoveGlass');return _G['ISRemoveGlass']")()
-
---[lua/client/TimedActions/ISRemoveGrass.d.ts]
-Exports.ISRemoveGrass = loadstring("require('lua/client/TimedActions/ISRemoveGrass');return _G['ISRemoveGrass']")()
-
---[lua/client/TimedActions/ISRemovePatch.d.ts]
-Exports.ISRemovePatch = loadstring("require('lua/client/TimedActions/ISRemovePatch');return _G['ISRemovePatch']")()
-
---[lua/client/TimedActions/ISRemoveSheetAction.d.ts]
-Exports.ISRemoveSheetAction = loadstring("require('lua/client/TimedActions/ISRemoveSheetAction');return _G['ISRemoveSheetAction']")()
-
---[lua/client/TimedActions/ISRemoveSheetRope.d.ts]
-Exports.ISRemoveSheetRope = loadstring("require('lua/client/TimedActions/ISRemoveSheetRope');return _G['ISRemoveSheetRope']")()
-
---[lua/client/TimedActions/ISRemoveWeaponUpgrade.d.ts]
-Exports.ISRemoveWeaponUpgrade = loadstring("require('lua/client/TimedActions/ISRemoveWeaponUpgrade');return _G['ISRemoveWeaponUpgrade']")()
-
---[lua/client/TimedActions/ISRepairClothing.d.ts]
-Exports.ISRepairClothing = loadstring("require('lua/client/TimedActions/ISRepairClothing');return _G['ISRepairClothing']")()
-
---[lua/client/TimedActions/ISRestAction.d.ts]
-Exports.ISRestAction = loadstring("require('lua/client/TimedActions/ISRestAction');return _G['ISRestAction']")()
-
---[lua/client/TimedActions/ISRipClothing.d.ts]
-Exports.ISRipClothing = loadstring("require('lua/client/TimedActions/ISRipClothing');return _G['ISRipClothing']")()
-
---[lua/client/TimedActions/ISScavengeAction.d.ts]
-Exports.ISScavengeAction = loadstring("require('lua/client/TimedActions/ISScavengeAction');return _G['ISScavengeAction']")()
-
---[lua/client/TimedActions/ISSetComboWasherDryerMode.d.ts]
-Exports.ISSetComboWasherDryerMode = loadstring("require('lua/client/TimedActions/ISSetComboWasherDryerMode');return _G['ISSetComboWasherDryerMode']")()
-
---[lua/client/TimedActions/ISSitOnChairAction.d.ts]
-Exports.ISSitOnChairAction = loadstring("require('lua/client/TimedActions/ISSitOnChairAction');return _G['ISSitOnChairAction']")()
-
---[lua/client/TimedActions/ISSmashWindow.d.ts]
-Exports.ISSmashWindow = loadstring("require('lua/client/TimedActions/ISSmashWindow');return _G['ISSmashWindow']")()
-
---[lua/client/TimedActions/ISSplint.d.ts]
-Exports.ISSplint = loadstring("require('lua/client/TimedActions/ISSplint');return _G['ISSplint']")()
-
---[lua/client/TimedActions/ISStitch.d.ts]
-Exports.ISStitch = loadstring("require('lua/client/TimedActions/ISStitch');return _G['ISStitch']")()
-
---[lua/client/TimedActions/ISStopAlarmClockAction.d.ts]
-Exports.ISStopAlarmClockAction = loadstring("require('lua/client/TimedActions/ISStopAlarmClockAction');return _G['ISStopAlarmClockAction']")()
-
---[lua/client/TimedActions/ISTakeCarBatteryChargerAction.d.ts]
-Exports.ISTakeCarBatteryChargerAction = loadstring("require('lua/client/TimedActions/ISTakeCarBatteryChargerAction');return _G['ISTakeCarBatteryChargerAction']")()
-
---[lua/client/TimedActions/ISTakeFuel.d.ts]
-Exports.ISTakeFuel = loadstring("require('lua/client/TimedActions/ISTakeFuel');return _G['ISTakeFuel']")()
-
---[lua/client/TimedActions/ISTakeGenerator.d.ts]
-Exports.ISTakeGenerator = loadstring("require('lua/client/TimedActions/ISTakeGenerator');return _G['ISTakeGenerator']")()
-
---[lua/client/TimedActions/ISTakePillAction.d.ts]
-Exports.ISTakePillAction = loadstring("require('lua/client/TimedActions/ISTakePillAction');return _G['ISTakePillAction']")()
-
---[lua/client/TimedActions/ISTakeTrap.d.ts]
-Exports.ISTakeTrap = loadstring("require('lua/client/TimedActions/ISTakeTrap');return _G['ISTakeTrap']")()
-
---[lua/client/TimedActions/ISTakeWaterAction.d.ts]
-Exports.ISTakeWaterAction = loadstring("require('lua/client/TimedActions/ISTakeWaterAction');return _G['ISTakeWaterAction']")()
 
 --[lua/client/TimedActions/ISTimedActionQueue.d.ts]
 Exports.ISTimedActionQueue = loadstring("require('lua/client/TimedActions/ISTimedActionQueue');return _G['ISTimedActionQueue']")()
 
---[lua/client/TimedActions/ISToggleClothingDryer.d.ts]
-Exports.ISToggleClothingDryer = loadstring("require('lua/client/TimedActions/ISToggleClothingDryer');return _G['ISToggleClothingDryer']")()
-
---[lua/client/TimedActions/ISToggleClothingWasher.d.ts]
-Exports.ISToggleClothingWasher = loadstring("require('lua/client/TimedActions/ISToggleClothingWasher');return _G['ISToggleClothingWasher']")()
-
---[lua/client/TimedActions/ISToggleComboWasherDryer.d.ts]
-Exports.ISToggleComboWasherDryer = loadstring("require('lua/client/TimedActions/ISToggleComboWasherDryer');return _G['ISToggleComboWasherDryer']")()
-
---[lua/client/TimedActions/ISToggleLightAction.d.ts]
-Exports.ISToggleLightAction = loadstring("require('lua/client/TimedActions/ISToggleLightAction');return _G['ISToggleLightAction']")()
-
---[lua/client/TimedActions/ISToggleSafetyAction.d.ts]
-Exports.ISToggleSafetyAction = loadstring("require('lua/client/TimedActions/ISToggleSafetyAction');return _G['ISToggleSafetyAction']")()
-
---[lua/client/TimedActions/ISToggleStoveAction.d.ts]
-Exports.ISToggleStoveAction = loadstring("require('lua/client/TimedActions/ISToggleStoveAction');return _G['ISToggleStoveAction']")()
-
---[lua/client/TimedActions/ISTransferWaterAction.d.ts]
-Exports.ISTransferWaterAction = loadstring("require('lua/client/TimedActions/ISTransferWaterAction');return _G['ISTransferWaterAction']")()
-
---[lua/client/TimedActions/ISTrimBeard.d.ts]
-Exports.ISTrimBeard = loadstring("require('lua/client/TimedActions/ISTrimBeard');return _G['ISTrimBeard']")()
-
---[lua/client/TimedActions/ISUnbarricadeAction.d.ts]
-Exports.ISUnbarricadeAction = loadstring("require('lua/client/TimedActions/ISUnbarricadeAction');return _G['ISUnbarricadeAction']")()
-
---[lua/client/TimedActions/ISUnequipAction.d.ts]
-Exports.ISUnequipAction = loadstring("require('lua/client/TimedActions/ISUnequipAction');return _G['ISUnequipAction']")()
-
---[lua/client/TimedActions/ISUnloadBulletsFromFirearm.d.ts]
-Exports.ISUnloadBulletsFromFirearm = loadstring("require('lua/client/TimedActions/ISUnloadBulletsFromFirearm');return _G['ISUnloadBulletsFromFirearm']")()
-
---[lua/client/TimedActions/ISUnloadBulletsFromMagazine.d.ts]
-Exports.ISUnloadBulletsFromMagazine = loadstring("require('lua/client/TimedActions/ISUnloadBulletsFromMagazine');return _G['ISUnloadBulletsFromMagazine']")()
-
---[lua/client/TimedActions/ISUpgradeWeapon.d.ts]
-Exports.ISUpgradeWeapon = loadstring("require('lua/client/TimedActions/ISUpgradeWeapon');return _G['ISUpgradeWeapon']")()
-
---[lua/client/TimedActions/ISWakeOtherPlayer.d.ts]
-Exports.ISWakeOtherPlayer = loadstring("require('lua/client/TimedActions/ISWakeOtherPlayer');return _G['ISWakeOtherPlayer']")()
-
---[lua/client/TimedActions/ISWashClothing.d.ts]
-Exports.ISWashClothing = loadstring("require('lua/client/TimedActions/ISWashClothing');return _G['ISWashClothing']")()
-
---[lua/client/TimedActions/ISWashYourself.d.ts]
-Exports.ISWashYourself = loadstring("require('lua/client/TimedActions/ISWashYourself');return _G['ISWashYourself']")()
-
---[lua/client/TimedActions/ISWearClothing.d.ts]
-Exports.ISWearClothing = loadstring("require('lua/client/TimedActions/ISWearClothing');return _G['ISWearClothing']")()
-Exports.WearClothingAnimations = loadstring("require('lua/client/TimedActions/ISWearClothing');return _G['WearClothingAnimations']")()
-
 --[lua/client/TimedActions/WalkToTimedAction.d.ts]
 Exports.ISWalkToTimedAction = loadstring("require('lua/client/TimedActions/WalkToTimedAction');return _G['ISWalkToTimedAction']")()
+
+--[lua/client/TimedActions/WalkToTimedActionF.d.ts]
+Exports.ISWalkToTimedActionF = loadstring("require('lua/client/TimedActions/WalkToTimedActionF');return _G['ISWalkToTimedActionF']")()
 
 --[lua/client/Traps/CTrapGlobalObject.d.ts]
 Exports.CTrapGlobalObject = loadstring("require('lua/client/Traps/CTrapGlobalObject');return _G['CTrapGlobalObject']")()
 
 --[lua/client/Traps/CTrapSystem.d.ts]
 Exports.CTrapSystem = loadstring("require('lua/client/Traps/CTrapSystem');return _G['CTrapSystem']")()
-
---[lua/client/Traps/TimedActions/ISAddBaitAction.d.ts]
-Exports.ISAddBaitAction = loadstring("require('lua/client/Traps/TimedActions/ISAddBaitAction');return _G['ISAddBaitAction']")()
-
---[lua/client/Traps/TimedActions/ISCheckTrapAction.d.ts]
-Exports.ISCheckTrapAction = loadstring("require('lua/client/Traps/TimedActions/ISCheckTrapAction');return _G['ISCheckTrapAction']")()
-
---[lua/client/Traps/TimedActions/ISRemoveBaitAction.d.ts]
-Exports.ISRemoveBaitAction = loadstring("require('lua/client/Traps/TimedActions/ISRemoveBaitAction');return _G['ISRemoveBaitAction']")()
-
---[lua/client/Traps/TimedActions/ISRemoveTrapAction.d.ts]
-Exports.ISRemoveTrapAction = loadstring("require('lua/client/Traps/TimedActions/ISRemoveTrapAction');return _G['ISRemoveTrapAction']")()
 
 --[lua/client/Tutorial/ISUI/TutorialFocus.d.ts]
 Exports.TutorialFocus = loadstring("require('lua/client/Tutorial/ISUI/TutorialFocus');return _G['TutorialFocus']")()
@@ -1895,11 +2063,13 @@ Exports.TutorialData = loadstring("require('lua/client/Tutorial/TutorialSetup');
 Exports.TutorialStep = loadstring("require('lua/client/Tutorial/TutorialStep');return _G['TutorialStep']")()
 
 --[lua/client/Vehicles/ISUI/EditVehicleState.d.ts]
+Exports.EditVehicleState_EditPhysics_PhysicsMeshPanel = loadstring("require('lua/client/Vehicles/ISUI/EditVehicleState');return _G['EditVehicleState_EditPhysics_PhysicsMeshPanel']")()
 Exports.EditVehicleUI = loadstring("require('lua/client/Vehicles/ISUI/EditVehicleState');return _G['EditVehicleUI']")()
 Exports.EditVehicleUI_EditArea = loadstring("require('lua/client/Vehicles/ISUI/EditVehicleState');return _G['EditVehicleUI_EditArea']")()
 Exports.EditVehicleUI_EditAttachment = loadstring("require('lua/client/Vehicles/ISUI/EditVehicleState');return _G['EditVehicleUI_EditAttachment']")()
 Exports.EditVehicleUI_EditChassis = loadstring("require('lua/client/Vehicles/ISUI/EditVehicleState');return _G['EditVehicleUI_EditChassis']")()
 Exports.EditVehicleUI_EditPanel = loadstring("require('lua/client/Vehicles/ISUI/EditVehicleState');return _G['EditVehicleUI_EditPanel']")()
+Exports.EditVehicleUI_EditPart = loadstring("require('lua/client/Vehicles/ISUI/EditVehicleState');return _G['EditVehicleUI_EditPart']")()
 Exports.EditVehicleUI_EditPassenger = loadstring("require('lua/client/Vehicles/ISUI/EditVehicleState');return _G['EditVehicleUI_EditPassenger']")()
 Exports.EditVehicleUI_EditPhysics = loadstring("require('lua/client/Vehicles/ISUI/EditVehicleState');return _G['EditVehicleUI_EditPhysics']")()
 Exports.EditVehicleUI_EditWheel = loadstring("require('lua/client/Vehicles/ISUI/EditVehicleState');return _G['EditVehicleUI_EditWheel']")()
@@ -1961,20 +2131,11 @@ Exports.SeatOffsetY = loadstring("require('lua/client/Vehicles/ISUI/ISVehicleSea
 --[lua/client/Vehicles/ISVehicleTrailerUtils.d.ts]
 Exports.ISVehicleTrailerUtils = loadstring("require('lua/client/Vehicles/ISVehicleTrailerUtils');return _G['ISVehicleTrailerUtils']")()
 
---[lua/client/Vehicles/TimedActions/ISAddGasolineToVehicle.d.ts]
-Exports.ISAddGasolineToVehicle = loadstring("require('lua/client/Vehicles/TimedActions/ISAddGasolineToVehicle');return _G['ISAddGasolineToVehicle']")()
-
 --[lua/client/Vehicles/TimedActions/ISAttachTrailerToVehicle.d.ts]
 Exports.ISAttachTrailerToVehicle = loadstring("require('lua/client/Vehicles/TimedActions/ISAttachTrailerToVehicle');return _G['ISAttachTrailerToVehicle']")()
 
---[lua/client/Vehicles/TimedActions/ISCloseVehicleDoor.d.ts]
-Exports.ISCloseVehicleDoor = loadstring("require('lua/client/Vehicles/TimedActions/ISCloseVehicleDoor');return _G['ISCloseVehicleDoor']")()
-
 --[lua/client/Vehicles/TimedActions/ISConfigHeadlight.d.ts]
 Exports.ISConfigHeadlight = loadstring("require('lua/client/Vehicles/TimedActions/ISConfigHeadlight');return _G['ISConfigHeadlight']")()
-
---[lua/client/Vehicles/TimedActions/ISDeflateTire.d.ts]
-Exports.ISDeflateTire = loadstring("require('lua/client/Vehicles/TimedActions/ISDeflateTire');return _G['ISDeflateTire']")()
 
 --[lua/client/Vehicles/TimedActions/ISDetachTrailerFromVehicle.d.ts]
 Exports.ISDetachTrailerFromVehicle = loadstring("require('lua/client/Vehicles/TimedActions/ISDetachTrailerFromVehicle');return _G['ISDetachTrailerFromVehicle']")()
@@ -1988,77 +2149,20 @@ Exports.ISExitVehicle = loadstring("require('lua/client/Vehicles/TimedActions/IS
 --[lua/client/Vehicles/TimedActions/ISHorn.d.ts]
 Exports.ISHorn = loadstring("require('lua/client/Vehicles/TimedActions/ISHorn');return _G['ISHorn']")()
 
---[lua/client/Vehicles/TimedActions/ISHotwireVehicle.d.ts]
-Exports.ISHotwireVehicle = loadstring("require('lua/client/Vehicles/TimedActions/ISHotwireVehicle');return _G['ISHotwireVehicle']")()
-
---[lua/client/Vehicles/TimedActions/ISInflateTire.d.ts]
-Exports.ISInflateTire = loadstring("require('lua/client/Vehicles/TimedActions/ISInflateTire');return _G['ISInflateTire']")()
-
---[lua/client/Vehicles/TimedActions/ISInstallVehiclePart.d.ts]
-Exports.ISInstallVehiclePart = loadstring("require('lua/client/Vehicles/TimedActions/ISInstallVehiclePart');return _G['ISInstallVehiclePart']")()
-
 --[lua/client/Vehicles/TimedActions/ISLightbarUITimedAction.d.ts]
 Exports.ISLightbarUITimedAction = loadstring("require('lua/client/Vehicles/TimedActions/ISLightbarUITimedAction');return _G['ISLightbarUITimedAction']")()
-
---[lua/client/Vehicles/TimedActions/ISLockDoors.d.ts]
-Exports.ISLockDoors = loadstring("require('lua/client/Vehicles/TimedActions/ISLockDoors');return _G['ISLockDoors']")()
-
---[lua/client/Vehicles/TimedActions/ISLockVehicleDoor.d.ts]
-Exports.ISLockVehicleDoor = loadstring("require('lua/client/Vehicles/TimedActions/ISLockVehicleDoor');return _G['ISLockVehicleDoor']")()
-
---[lua/client/Vehicles/TimedActions/ISOpenCloseVehicleWindow.d.ts]
-Exports.ISOpenCloseVehicleWindow = loadstring("require('lua/client/Vehicles/TimedActions/ISOpenCloseVehicleWindow');return _G['ISOpenCloseVehicleWindow']")()
 
 --[lua/client/Vehicles/TimedActions/ISOpenMechanicsUIAction.d.ts]
 Exports.ISOpenMechanicsUIAction = loadstring("require('lua/client/Vehicles/TimedActions/ISOpenMechanicsUIAction');return _G['ISOpenMechanicsUIAction']")()
 
---[lua/client/Vehicles/TimedActions/ISOpenVehicleDoor.d.ts]
-Exports.ISOpenVehicleDoor = loadstring("require('lua/client/Vehicles/TimedActions/ISOpenVehicleDoor');return _G['ISOpenVehicleDoor']")()
-
 --[lua/client/Vehicles/TimedActions/ISPathFindAction.d.ts]
 Exports.ISPathFindAction = loadstring("require('lua/client/Vehicles/TimedActions/ISPathFindAction');return _G['ISPathFindAction']")()
-
---[lua/client/Vehicles/TimedActions/ISRechargeCarBattery.d.ts]
-Exports.ISRechargeCarBattery = loadstring("require('lua/client/Vehicles/TimedActions/ISRechargeCarBattery');return _G['ISRechargeCarBattery']")()
-
---[lua/client/Vehicles/TimedActions/ISRefuelFromGasPump.d.ts]
-Exports.ISRefuelFromGasPump = loadstring("require('lua/client/Vehicles/TimedActions/ISRefuelFromGasPump');return _G['ISRefuelFromGasPump']")()
-
---[lua/client/Vehicles/TimedActions/ISRemoveBurntVehicle.d.ts]
-Exports.ISRemoveBurntVehicle = loadstring("require('lua/client/Vehicles/TimedActions/ISRemoveBurntVehicle');return _G['ISRemoveBurntVehicle']")()
-
---[lua/client/Vehicles/TimedActions/ISRepairEngine.d.ts]
-Exports.ISRepairEngine = loadstring("require('lua/client/Vehicles/TimedActions/ISRepairEngine');return _G['ISRepairEngine']")()
-
---[lua/client/Vehicles/TimedActions/ISShutOffVehicleEngine.d.ts]
-Exports.ISShutOffVehicleEngine = loadstring("require('lua/client/Vehicles/TimedActions/ISShutOffVehicleEngine');return _G['ISShutOffVehicleEngine']")()
-
---[lua/client/Vehicles/TimedActions/ISSmashVehicleWindow.d.ts]
-Exports.ISSmashVehicleWindow = loadstring("require('lua/client/Vehicles/TimedActions/ISSmashVehicleWindow');return _G['ISSmashVehicleWindow']")()
-
---[lua/client/Vehicles/TimedActions/ISStartVehicleEngine.d.ts]
-Exports.ISStartVehicleEngine = loadstring("require('lua/client/Vehicles/TimedActions/ISStartVehicleEngine');return _G['ISStartVehicleEngine']")()
 
 --[lua/client/Vehicles/TimedActions/ISStopVehicle.d.ts]
 Exports.ISStopVehicle = loadstring("require('lua/client/Vehicles/TimedActions/ISStopVehicle');return _G['ISStopVehicle']")()
 
 --[lua/client/Vehicles/TimedActions/ISSwitchVehicleSeat.d.ts]
 Exports.ISSwitchVehicleSeat = loadstring("require('lua/client/Vehicles/TimedActions/ISSwitchVehicleSeat');return _G['ISSwitchVehicleSeat']")()
-
---[lua/client/Vehicles/TimedActions/ISTakeEngineParts.d.ts]
-Exports.ISTakeEngineParts = loadstring("require('lua/client/Vehicles/TimedActions/ISTakeEngineParts');return _G['ISTakeEngineParts']")()
-
---[lua/client/Vehicles/TimedActions/ISTakeGasolineFromVehicle.d.ts]
-Exports.ISTakeGasolineFromVehicle = loadstring("require('lua/client/Vehicles/TimedActions/ISTakeGasolineFromVehicle');return _G['ISTakeGasolineFromVehicle']")()
-
---[lua/client/Vehicles/TimedActions/ISUninstallVehiclePart.d.ts]
-Exports.ISUninstallVehiclePart = loadstring("require('lua/client/Vehicles/TimedActions/ISUninstallVehiclePart');return _G['ISUninstallVehiclePart']")()
-
---[lua/client/Vehicles/TimedActions/ISUnlockVehicleDoor.d.ts]
-Exports.ISUnlockVehicleDoor = loadstring("require('lua/client/Vehicles/TimedActions/ISUnlockVehicleDoor');return _G['ISUnlockVehicleDoor']")()
-
---[lua/client/Vehicles/TimedActions/ISWashVehicle.d.ts]
-Exports.ISWashVehicle = loadstring("require('lua/client/Vehicles/TimedActions/ISWashVehicle');return _G['ISWashVehicle']")()
 
 --[lua/client/XpSystem/ISUI/ISCharacterInfo.d.ts]
 Exports.ISCharacterInfo = loadstring("require('lua/client/XpSystem/ISUI/ISCharacterInfo');return _G['ISCharacterInfo']")()

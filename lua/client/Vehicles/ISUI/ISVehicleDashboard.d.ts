@@ -71,15 +71,27 @@ declare module '@asledgehammer/pipewrench/client' {
 
       iconLights: any;
 
+      iconRadio: any;
+
       iconSpeedRegulator: any;
 
       iconTrunk: any;
 
       ignitionTex: any;
 
+      leftSideFuel: any;
+
+      leftSideFuelTex: any;
+
       lightsTex: any;
 
       playerNum: any;
+
+      radioTex: any;
+
+      rightSideFuel: any;
+
+      rightSideFuelTex: any;
 
       speedGauge: any;
 
@@ -112,6 +124,8 @@ declare module '@asledgehammer/pipewrench/client' {
       onClickHeater(...__args: never[]): any;
 
       onClickKeys(...__args: never[]): any;
+
+      onClickRadio(...__args: never[]): any;
 
       onClickTrunk(...__args: never[]): any;
 

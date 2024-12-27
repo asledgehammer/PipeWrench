@@ -25,6 +25,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       selected: any;
 
+      switchSound: any;
+
       tex: any;
 
       title: any;
@@ -42,6 +44,8 @@ declare module '@asledgehammer/pipewrench/client' {
       getValue(...__args: never[]): any;
 
       onMouseDown(x: any, y: any, ...__args: never[]): any;
+
+      playSwitchSound(...__args: never[]): any;
 
       setJoypadFocused(focused: any, ...__args: never[]): any;
 

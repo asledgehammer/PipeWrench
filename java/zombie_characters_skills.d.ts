@@ -203,6 +203,10 @@ declare module '@asledgehammer/pipewrench' {
       /** zombie.characters.skills.PerkFactory$Perk */
       static readonly Blunt?: zombie.characters.skills.PerkFactory$Perk;
       /** zombie.characters.skills.PerkFactory$Perk */
+      static readonly Butchering?: zombie.characters.skills.PerkFactory$Perk;
+      /** zombie.characters.skills.PerkFactory$Perk */
+      static readonly Carving?: zombie.characters.skills.PerkFactory$Perk;
+      /** zombie.characters.skills.PerkFactory$Perk */
       static readonly Combat?: zombie.characters.skills.PerkFactory$Perk;
       /** zombie.characters.skills.PerkFactory$Perk */
       static readonly Cooking?: zombie.characters.skills.PerkFactory$Perk;
@@ -215,11 +219,19 @@ declare module '@asledgehammer/pipewrench' {
       /** zombie.characters.skills.PerkFactory$Perk */
       static readonly Farming?: zombie.characters.skills.PerkFactory$Perk;
       /** zombie.characters.skills.PerkFactory$Perk */
+      static readonly FarmingCategory?: zombie.characters.skills.PerkFactory$Perk;
+      /** zombie.characters.skills.PerkFactory$Perk */
       static readonly Firearm?: zombie.characters.skills.PerkFactory$Perk;
       /** zombie.characters.skills.PerkFactory$Perk */
       static readonly Fishing?: zombie.characters.skills.PerkFactory$Perk;
       /** zombie.characters.skills.PerkFactory$Perk */
       static readonly Fitness?: zombie.characters.skills.PerkFactory$Perk;
+      /** zombie.characters.skills.PerkFactory$Perk */
+      static readonly FlintKnapping?: zombie.characters.skills.PerkFactory$Perk;
+      /** zombie.characters.skills.PerkFactory$Perk */
+      static readonly Glassmaking?: zombie.characters.skills.PerkFactory$Perk;
+      /** zombie.characters.skills.PerkFactory$Perk */
+      static readonly Husbandry?: zombie.characters.skills.PerkFactory$Perk;
       /** zombie.characters.skills.PerkFactory$Perk */
       static readonly Lightfoot?: zombie.characters.skills.PerkFactory$Perk;
       /** zombie.characters.skills.PerkFactory$Perk */
@@ -228,6 +240,8 @@ declare module '@asledgehammer/pipewrench' {
       static readonly MAX?: zombie.characters.skills.PerkFactory$Perk;
       /** zombie.characters.skills.PerkFactory$Perk */
       static readonly Maintenance?: zombie.characters.skills.PerkFactory$Perk;
+      /** zombie.characters.skills.PerkFactory$Perk */
+      static readonly Masonry?: zombie.characters.skills.PerkFactory$Perk;
       /** zombie.characters.skills.PerkFactory$Perk */
       static readonly Mechanics?: zombie.characters.skills.PerkFactory$Perk;
       /** zombie.characters.skills.PerkFactory$Perk */
@@ -243,7 +257,11 @@ declare module '@asledgehammer/pipewrench' {
       /** zombie.characters.skills.PerkFactory$Perk */
       static readonly Passiv?: zombie.characters.skills.PerkFactory$Perk;
       /** zombie.characters.skills.PerkFactory$Perk */
+      static readonly PhysicalCategory?: zombie.characters.skills.PerkFactory$Perk;
+      /** zombie.characters.skills.PerkFactory$Perk */
       static readonly PlantScavenging?: zombie.characters.skills.PerkFactory$Perk;
+      /** zombie.characters.skills.PerkFactory$Perk */
+      static readonly Pottery?: zombie.characters.skills.PerkFactory$Perk;
       /** zombie.characters.skills.PerkFactory$Perk */
       static readonly Reloading?: zombie.characters.skills.PerkFactory$Perk;
       /** zombie.characters.skills.PerkFactory$Perk */
@@ -262,6 +280,8 @@ declare module '@asledgehammer/pipewrench' {
       static readonly Survivalist?: zombie.characters.skills.PerkFactory$Perk;
       /** zombie.characters.skills.PerkFactory$Perk */
       static readonly Tailoring?: zombie.characters.skills.PerkFactory$Perk;
+      /** zombie.characters.skills.PerkFactory$Perk */
+      static readonly Tracking?: zombie.characters.skills.PerkFactory$Perk;
       /** zombie.characters.skills.PerkFactory$Perk */
       static readonly Trapping?: zombie.characters.skills.PerkFactory$Perk;
       /** zombie.characters.skills.PerkFactory$Perk */

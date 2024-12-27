@@ -19,9 +19,15 @@ declare module '@asledgehammer/pipewrench/client' {
 
       addToQueue(action: any, ...__args: never[]): any;
 
+      cancelQueue(...__args: never[]): any;
+
       clearQueue(...__args: never[]): any;
 
       indexOf(action: any, ...__args: never[]): any;
+
+      indexOfType(type: any, ...__args: never[]): any;
+
+      isCurrentActionAddingOtherActions(...__args: never[]): any;
 
       onCompleted(action: any, ...__args: never[]): any;
 
@@ -38,6 +44,9 @@ declare module '@asledgehammer/pipewrench/client' {
       static addAfter: (previousAction: any, action: any, ...__args: never[]) => any;
 
       /** @noSelf */
+      static addGetUpAndThen: (character: any, action: any, ...__args: never[]) => any;
+
+      /** @noSelf */
       static clear: (character: any, ...__args: never[]) => any;
 
       /** @noSelf */
@@ -45,6 +54,9 @@ declare module '@asledgehammer/pipewrench/client' {
 
       /** @noSelf */
       static hasAction: (action: any, ...__args: never[]) => any;
+
+      /** @noSelf */
+      static hasActionType: (character: any, type: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static isPlayerDoingAction: (playerObj: any, ...__args: never[]) => any;

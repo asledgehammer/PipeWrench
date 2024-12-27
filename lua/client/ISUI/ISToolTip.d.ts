@@ -9,6 +9,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       contextMenu: any;
 
+      defaultMyWidth: any;
+
       description: any;
 
       descriptionPanel: any;
@@ -24,6 +26,8 @@ declare module '@asledgehammer/pipewrench/client' {
       maxLineWidth: any;
 
       name: any;
+
+      nameMarginX: any;
 
       owner: any;
 
@@ -66,6 +70,8 @@ declare module '@asledgehammer/pipewrench/client' {
       setOwner(ui: any, ...__args: never[]): any;
 
       setTexture(textureName: any, ...__args: never[]): any;
+
+      setTextureDirectly(texture: any, ...__args: never[]): any;
 
       /** @noSelf */
       static GetFont: (...__args: never[]) => any;

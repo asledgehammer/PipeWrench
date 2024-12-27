@@ -29,7 +29,7 @@ declare module '@asledgehammer/pipewrench/client' {
 
       onMadeActive(...__args: never[]): any;
 
-      registerPanel(_buttonTitle: any, _panelClass: any, ...__args: never[]): any;
+      registerPanel(_buttonTitle: any, _panelClass: any, _ignoreSorting: any, ...__args: never[]): any;
 
       update(...__args: never[]): any;
 

@@ -30,13 +30,20 @@ declare module '@asledgehammer/pipewrench/server' {
       static onNewGame: (playerObj: any, square: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onPlayerMove: (...__args: never[]) => any;
+      static onPlayerMove: (player: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static OnWeaponHitTree: (owner: any, weapon: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onWeaponHitXp: (owner: any, weapon: any, hitObject: any, damage: any, ...__args: never[]) => any;
+      static onWeaponHitXp: (
+        owner: any,
+        weapon: any,
+        hitObject: any,
+        damage: any,
+        hitCount: any,
+        ...__args: never[]
+      ) => any;
 
       /** @noSelf */
       static randXp: (...__args: never[]) => any;

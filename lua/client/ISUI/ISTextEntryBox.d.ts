@@ -91,9 +91,13 @@ declare module '@asledgehammer/pipewrench/client' {
 
       setOnlyNumbers(onlyNumbers: any, ...__args: never[]): any;
 
+      setOnlyText(onlyText: any, ...__args: never[]): any;
+
       setSelectable(enable: any, ...__args: never[]): any;
 
       setText(str: any, ...__args: never[]): any;
+
+      setTextRGBA(r: any, g: any, b: any, a: any, ...__args: never[]): any;
 
       setTooltip(text: any, ...__args: never[]): any;
 

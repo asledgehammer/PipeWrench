@@ -33,6 +33,8 @@ function patch_pipewrench_content(content) {
     content = content.replace(`/** @customConstructor SGlobalObjectSystem.new */`, ``)
     content = content.replace(`export class SGlobalObjectSystem extends zombie.globalObjects.SGlobalObjectSystem {}`, ``)
 
+    content = content.replace(`// [lua/shared/Foraging/forageZones.d.ts]\n  export abstract class forageZones extends lua.shared.Foraging.forageZones {}`, ``)
+
     return content
 }
 
@@ -137,9 +139,111 @@ function patch_ISUIElement() {
     }
 }
 
+function patch_zombie_entity_components_attributes() {
+    console.log("Patching zombie_entity_components_attributes.d.ts ...")
+    try {
+        const file = path.join(__dirname, "java/zombie_entity_components_attributes.d.ts")
+        let content = fs.readFileSync(file, 'utf-8')
+        
+        content = content.replaceAll(
+            `C<any, any>`,
+            `C`
+        ).replaceAll(
+            `any<any, any>`,
+            `any`
+        ).replaceAll(
+            `E<any>`,
+            `E`
+        ).replace(
+            `zombie.entity.components.attributes.AttributeInstance>`,
+            `zombie.entity.components.attributes.AttributeInstance<any, any>>`
+        )
+
+        fs.writeFileSync(file, content)
+    }
+    catch(error) {
+        console.error(error)
+    }
+}
+
+function patch_zombie_entity_util() {
+    console.log("Patching zombie_entity_util.d.ts ...")
+    try {
+        const file = path.join(__dirname, "java/zombie_entity_util.d.ts")
+        let content = fs.readFileSync(file, 'utf-8')
+        
+        content = content.replaceAll(
+            `java.lang.Class `,
+            `java.lang.Class<any> `
+        )
+
+        fs.writeFileSync(file, content)
+    }
+    catch(error) {
+        console.error(error)
+    }
+}
+
+function patch_zombie_scripting_itemConfig() {
+    console.log("Patching zombie_scripting_itemConfig.d.ts ...")
+    try {
+        const file = path.join(__dirname, "java/zombie_scripting_itemConfig.d.ts")
+        let content = fs.readFileSync(file, 'utf-8')
+        
+        content = content.replaceAll(
+            `zombie.scripting.itemConfig.RandomGenerator[]`,
+            `zombie.scripting.itemConfig.RandomGenerator<any>[]`
+        )
+
+        fs.writeFileSync(file, content)
+    }
+    catch(error) {
+        console.error(error)
+    }
+}
+
+function patch_zombie_scripting_ui() {
+    console.log("Patching zombie_scripting_ui.d.ts ...")
+    try {
+        const file = path.join(__dirname, "java/zombie_scripting_ui.d.ts")
+        let content = fs.readFileSync(file, 'utf-8')
+        
+        content = content.replaceAll(
+            `zombie.scripting.ui.XuiScript$XuiVar>`,
+            `zombie.scripting.ui.XuiScript$XuiVar<any, any>>`
+        )
+
+        fs.writeFileSync(file, content)
+    }
+    catch(error) {
+        console.error(error)
+    }
+}
+
+/** Remove duplicate `ForageZones` */
+function patch_lua_shared_Foraging_forageZones() {
+    console.log("Patching zombie_scripting_ui.d.ts ...")
+    try {
+        const file = path.join(__dirname, "lua/shared/Foraging/forageZones.d.ts")
+        let content = fs.readFileSync(file, 'utf-8')
+        
+        content = content.replace(/export abstract class forageZones \{[\s\S]+?}\n/, '')
+
+        fs.writeFileSync(file, content)
+    }
+    catch(error) {
+        console.error(error)
+    }
+}
+
 // Run
 patch_fmod_fmod()
 patch_pipewrench()
 patch_ThermoDebug()
 patch_ISBaseObject()
 patch_ISUIElement()
+patch_zombie_entity_components_attributes()
+patch_zombie_entity_util()
+patch_zombie_scripting_itemConfig()
+patch_zombie_scripting_ui()
+patch_lua_shared_Foraging_forageZones()

@@ -249,6 +249,10 @@ declare module '@asledgehammer/pipewrench' {
     export class UdpConnection {
       /** long */
       static readonly CONNECTION_GRACE_INTERVAL: number;
+      /** long */
+      static readonly CONNECTION_READY_INTERVAL: number;
+      /** java.util.HashMap<java.lang.String, java.lang.Long> */
+      static lastConnections?: java.util.HashMap<string, number>;
 
       /**
        * Constructors: 
@@ -276,6 +280,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): void
        */
       cancelPacket(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      checkReady(): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -359,6 +368,11 @@ declare module '@asledgehammer/pipewrench' {
       getPeer(): zombie.core.raknet.RakNetPeerInterface;
       /**
        * Method Parameters: 
+       *  - (IsoPlayer arg0): number
+       */
+      getPlayerIndex(arg0: zombie.characters.IsoPlayer): number;
+      /**
+       * Method Parameters: 
        *  - (float arg0, float arg1, float arg2): number
        */
       getRelevantAndDistance(arg0: number, arg1: number, arg2: number): number;
@@ -374,9 +388,10 @@ declare module '@asledgehammer/pipewrench' {
       getStatistics(): zombie.core.znet.ZNetStatistics;
       /**
        * Method Parameters: 
+       *  - (String arg0): boolean
        *  - (IsoPlayer arg0): boolean
        */
-      havePlayer(arg0: zombie.characters.IsoPlayer): boolean;
+      havePlayer(arg0: string | zombie.characters.IsoPlayer): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -394,14 +409,29 @@ declare module '@asledgehammer/pipewrench' {
       isFullyConnected(): boolean;
       /**
        * Method Parameters: 
-       *  - (Empty): void
+       *  - (Empty): boolean
        */
-      setConnectionTimestamp(): void;
+      isGoogleAuthTimeout(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isReady(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (long arg0): void
+       */
+      setConnectionTimestamp(arg0: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): void
        */
       setFullyConnected(): void;
+      /**
+       * Method Parameters: 
+       *  - (boolean arg0): void
+       */
+      setReady(arg0: boolean): void;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.core.network.ByteBufferWriter
@@ -633,11 +663,6 @@ declare module '@asledgehammer/pipewrench' {
       getClientSteamID(arg0: number): number;
       /**
        * Method Parameters: 
-       *  - (Empty): string
-       */
-      getDescription(): string;
-      /**
-       * Method Parameters: 
        *  - (Empty): number
        */
       getMaxConnections(): number;
@@ -656,6 +681,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): string
        */
       hashServerPassword(arg0: string): string;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): void
+       */
+      removeConnection(arg0: number): void;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.core.network.ByteBufferWriter

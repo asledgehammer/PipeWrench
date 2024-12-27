@@ -14,6 +14,461 @@ declare module '@asledgehammer/pipewrench' {
       constructor(arg0: zombie.iso.areas.IsoBuilding);
     }
     /**
+     * @customConstructor DesignationZone.new
+     * @
+     * [CLASS] zombie.iso.areas.DesignationZone
+     */
+    export class DesignationZone {
+      /** java.util.ArrayList<zombie.iso.areas.DesignationZone> */
+      static readonly allZones?: java.util.ArrayList<zombie.iso.areas.DesignationZone>;
+      /** long */
+      static lastUpdate: number;
+
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       *  - (String arg0, String arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
+       */
+      constructor(arg0?: string, arg1?: string, arg2?: number, arg3?: number, arg4?: number, arg5?: number, arg6?: number);
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      check(): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): void
+       */
+      doMeta(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getH(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getId(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoGridSquare
+       */
+      getRandomFreeSquare(): zombie.iso.IsoGridSquare;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoGridSquare
+       */
+      getRandomSquare(): zombie.iso.IsoGridSquare;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getW(): number;
+      /**
+       * Method Parameters: 
+       *  - (Double arg0): zombie.iso.areas.DesignationZone
+       */
+      getZoneById(arg0: number): zombie.iso.areas.DesignationZone;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isFullyStreamed(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isStillStreamed(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      loading(): void;
+      /**
+       * Method Parameters: 
+       *  - (ByteBuffer arg0): void
+       */
+      save(arg0: java.nio.ByteBuffer): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      setName(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      unloading(): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      static Reset(): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0, String arg1, int arg2, int arg3, int arg4, int arg5, int arg6): zombie.iso.areas.DesignationZone
+       */
+      static addZone(arg0: string, arg1: string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): zombie.iso.areas.DesignationZone;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): java.util.ArrayList<zombie.iso.areas.DesignationZone>
+       */
+      static getAllZonesByType(arg0: string): java.util.ArrayList<zombie.iso.areas.DesignationZone>;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (int arg0, int arg1, int arg2): zombie.iso.areas.DesignationZone
+       */
+      static getZone(arg0: number, arg1: number, arg2: number): zombie.iso.areas.DesignationZone;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): zombie.iso.areas.DesignationZone
+       */
+      static getZoneByName(arg0: string): zombie.iso.areas.DesignationZone;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0, String arg1): zombie.iso.areas.DesignationZone
+       */
+      static getZoneByNameAndType(arg0: string, arg1: string): zombie.iso.areas.DesignationZone;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0, int arg1, int arg2, int arg3): zombie.iso.areas.DesignationZone
+       */
+      static getZoneByType(arg0: string, arg1: number, arg2: number, arg3: number): zombie.iso.areas.DesignationZone;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (ByteBuffer arg0, int arg1): void
+       */
+      static load(arg0: java.nio.ByteBuffer, arg1: number): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (DesignationZone arg0): void
+       *  - (String arg0, String arg1): void
+       */
+      static removeZone(arg0: zombie.iso.areas.DesignationZone | string, arg1?: string): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      static update(): void;
+    }
+    /**
+     * @customConstructor DesignationZoneAnimal.new
+     * @
+     * [CLASS] zombie.iso.areas.DesignationZoneAnimal extends zombie.iso.areas.DesignationZone
+     */
+    export class DesignationZoneAnimal {
+      /** java.lang.String */
+      static readonly FENCE_NORTH?: string;
+      /** java.lang.String */
+      static readonly FENCE_NORTHCORNER?: string;
+      /** java.lang.String */
+      static readonly FENCE_WEST?: string;
+      /** float */
+      static ZONECOLORB: number;
+      /** float */
+      static ZONECOLORG: number;
+      /** float */
+      static ZONECOLORR: number;
+      /** float */
+      static ZONESELECTEDCOLORB: number;
+      /** float */
+      static ZONESELECTEDCOLORG: number;
+      /** float */
+      static ZONESELECTEDCOLORR: number;
+      /** java.lang.String */
+      static readonly ZONE_TYPE?: string;
+      /** java.util.ArrayList<zombie.iso.areas.DesignationZoneAnimal> */
+      static readonly designationAnimalZoneList?: java.util.ArrayList<zombie.iso.areas.DesignationZoneAnimal>;
+
+      /**
+       * Constructors: 
+       *  - (String arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
+       */
+      constructor(arg0: string, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number);
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      check(): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      createSurroundingFence(): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): void
+       */
+      doMeta(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<zombie.characters.animals.IsoAnimal>
+       */
+      getAnimals(): java.util.ArrayList<zombie.characters.animals.IsoAnimal>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<zombie.characters.animals.IsoAnimal>
+       */
+      getAnimalsConnected(): java.util.ArrayList<zombie.characters.animals.IsoAnimal>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<zombie.iso.objects.IsoWorldInventoryObject>
+       */
+      getFoodOnGround(): java.util.ArrayList<zombie.iso.objects.IsoWorldInventoryObject>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<zombie.iso.objects.IsoWorldInventoryObject>
+       */
+      getFoodOnGroundConnected(): java.util.ArrayList<zombie.iso.objects.IsoWorldInventoryObject>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getFullZoneSize(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getH(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<zombie.iso.objects.IsoHutch>
+       */
+      getHutchs(): java.util.ArrayList<zombie.iso.objects.IsoHutch>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<zombie.iso.objects.IsoHutch>
+       */
+      getHutchsConnected(): java.util.ArrayList<zombie.iso.objects.IsoHutch>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getId(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getName(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoGridSquare
+       */
+      getRandomFreeSquare(): zombie.iso.IsoGridSquare;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoGridSquare
+       */
+      getRandomSquare(): zombie.iso.IsoGridSquare;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<zombie.characters.Position3D>
+       */
+      getRoofAreas(): java.util.ArrayList<zombie.characters.Position3D>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<zombie.characters.Position3D>
+       */
+      getRoofAreasConnected(): java.util.ArrayList<zombie.characters.Position3D>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<zombie.iso.objects.IsoFeedingTrough>
+       */
+      getTroughs(): java.util.ArrayList<zombie.iso.objects.IsoFeedingTrough>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<zombie.iso.objects.IsoFeedingTrough>
+       */
+      getTroughsConnected(): java.util.ArrayList<zombie.iso.objects.IsoFeedingTrough>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getW(): number;
+      /**
+       * Method Parameters: 
+       *  - (Double arg0): zombie.iso.areas.DesignationZone
+       */
+      getZoneById(arg0: number): zombie.iso.areas.DesignationZone;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isFullyStreamed(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isStillStreamed(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      loading(): void;
+      /**
+       * Method Parameters: 
+       *  - (IsoAnimal arg0): void
+       */
+      removeAnimal(arg0: zombie.characters.animals.IsoAnimal): void;
+      /**
+       * Method Parameters: 
+       *  - (ByteBuffer arg0): void
+       */
+      save(arg0: java.nio.ByteBuffer): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      setName(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      unloading(): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      static Reset(): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (IsoWorldInventoryObject arg0, IsoGridSquare arg1): void
+       */
+      static addFoodOnGround(arg0: zombie.iso.objects.IsoWorldInventoryObject, arg1: zombie.iso.IsoGridSquare): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (int arg0, int arg1, int arg2): void
+       */
+      static addNewRoof(arg0: number, arg1: number, arg2: number): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0, String arg1, int arg2, int arg3, int arg4, int arg5, int arg6): zombie.iso.areas.DesignationZone
+       */
+      static addZone(arg0: string, arg1: string, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): zombie.iso.areas.DesignationZone;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (ArrayList arg0, DesignationZoneAnimal arg1, DesignationZoneAnimal arg2): java.util.ArrayList<zombie.iso.areas.DesignationZoneAnimal>
+       */
+      static getAllDZones(arg0: java.util.ArrayList<zombie.iso.areas.DesignationZoneAnimal>, arg1: zombie.iso.areas.DesignationZoneAnimal, arg2: zombie.iso.areas.DesignationZoneAnimal): java.util.ArrayList<zombie.iso.areas.DesignationZoneAnimal>;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<zombie.iso.areas.DesignationZoneAnimal>
+       */
+      static getAllZones(): java.util.ArrayList<zombie.iso.areas.DesignationZoneAnimal>;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): java.util.ArrayList<zombie.iso.areas.DesignationZone>
+       */
+      static getAllZonesByType(arg0: string): java.util.ArrayList<zombie.iso.areas.DesignationZone>;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      static getType(): string;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (int arg0, int arg1): zombie.iso.areas.DesignationZoneAnimal
+       *  - (int arg0, int arg1, int arg2): zombie.iso.areas.DesignationZone
+       *  - (int arg0, int arg1, int arg2): zombie.iso.areas.DesignationZoneAnimal
+       */
+      static getZone(arg0: number, arg1: number, arg2?: number): zombie.iso.areas.DesignationZoneAnimal | zombie.iso.areas.DesignationZone;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): zombie.iso.areas.DesignationZone
+       */
+      static getZoneByName(arg0: string): zombie.iso.areas.DesignationZone;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0, String arg1): zombie.iso.areas.DesignationZone
+       */
+      static getZoneByNameAndType(arg0: string, arg1: string): zombie.iso.areas.DesignationZone;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0, int arg1, int arg2, int arg3): zombie.iso.areas.DesignationZone
+       */
+      static getZoneByType(arg0: string, arg1: number, arg2: number, arg3: number): zombie.iso.areas.DesignationZone;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (ByteBuffer arg0, int arg1): void
+       */
+      static load(arg0: java.nio.ByteBuffer, arg1: number): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (IsoWorldInventoryObject arg0): void
+       */
+      static removeFoodFromGround(arg0: zombie.iso.objects.IsoWorldInventoryObject): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (DesignationZone arg0): void
+       *  - (DesignationZoneAnimal arg0): void
+       *  - (String arg0, String arg1): void
+       */
+      static removeZone(arg0: zombie.iso.areas.DesignationZone | zombie.iso.areas.DesignationZoneAnimal | string, arg1?: string): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      static update(): void;
+    }
+    /**
      * @customConstructor IsoBuilding.new
      * @
      * [CLASS] zombie.iso.areas.IsoBuilding extends zombie.iso.areas.IsoArea
@@ -121,6 +576,11 @@ declare module '@asledgehammer/pipewrench' {
       getRandomContainer(arg0: string): zombie.inventory.ItemContainer;
       /**
        * Method Parameters: 
+       *  - (String arg0): zombie.inventory.ItemContainer
+       */
+      getRandomContainerSingle(arg0: string): zombie.inventory.ItemContainer;
+      /**
+       * Method Parameters: 
        *  - (Empty): zombie.iso.objects.IsoWindow
        */
       getRandomFirstFloorWindow(): zombie.iso.objects.IsoWindow;
@@ -139,12 +599,27 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): boolean
        */
+      hasBasement(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): boolean
+       */
+      hasRoom(arg0: string): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
       hasWater(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
        */
       isAllExplored(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isEntirelyEmptyOutside(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -224,6 +699,31 @@ declare module '@asledgehammer/pipewrench' {
       CreateBuilding(arg0: zombie.iso.IsoCell): zombie.iso.areas.IsoBuilding;
       /**
        * Method Parameters: 
+       *  - (String arg0, String arg1, String arg2, String arg3, String arg4, boolean arg5): boolean
+       */
+      add2TileBench(arg0: string, arg1: string, arg2: string, arg3: string, arg4: string, arg5: boolean): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      addMetalWorkbench(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      addModernPotteryWheel(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      addOldPotteryWheel(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      addPotteryWheel(): boolean;
+      /**
+       * Method Parameters: 
        *  - (IsoGridSquare arg0): void
        */
       addSquare(arg0: zombie.iso.IsoGridSquare): void;
@@ -232,6 +732,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (boolean arg0): void
        */
       createLights(arg0: boolean): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): zombie.iso.IsoRoomLight
+       */
+      findRoomLightByID(arg0: number): zombie.iso.IsoRoomLight;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.iso.areas.IsoBuilding
@@ -261,12 +766,37 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): zombie.iso.IsoGridSquare
        */
+      getRandomDoorAndWallFreeSquare(): zombie.iso.IsoGridSquare;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoGridSquare
+       */
+      getRandomDoorFreeSquare(): zombie.iso.IsoGridSquare;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoGridSquare
+       */
       getRandomFreeSquare(): zombie.iso.IsoGridSquare;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.iso.IsoGridSquare
        */
       getRandomSquare(): zombie.iso.IsoGridSquare;
+      /**
+       * Method Parameters: 
+       *  - (IsoDirections arg0, boolean arg1): zombie.iso.IsoGridSquare
+       */
+      getRandomWallFreePairSquare(arg0: zombie.iso.IsoDirections, arg1: boolean): zombie.iso.IsoGridSquare;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoGridSquare
+       */
+      getRandomWallFreeSquare(): zombie.iso.IsoGridSquare;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.iso.IsoGridSquare
+       */
+      getRandomWallSquare(): zombie.iso.IsoGridSquare;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.iso.RoomDef
@@ -327,6 +857,16 @@ declare module '@asledgehammer/pipewrench' {
        *  - (ArrayList arg0): void
        */
       setWaterSources(arg0: java.util.ArrayList<zombie.iso.IsoObject>): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      spawnRandom2TileWorkstation(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      spawnRandomWorkstation(): boolean;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -479,6 +1019,11 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (String arg0): void
        */
+      addInvite(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
       addPlayer(arg0: string): void;
       /**
        * Method Parameters: 
@@ -503,6 +1048,11 @@ declare module '@asledgehammer/pipewrench' {
       getH(): number;
       /**
        * Method Parameters: 
+       *  - (Empty): number
+       */
+      getHitPoints(): number;
+      /**
+       * Method Parameters: 
        *  - (Empty): string
        */
       getId(): string;
@@ -511,6 +1061,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): number
        */
       getLastVisited(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getOnlineID(): number;
       /**
        * Method Parameters: 
        *  - (Empty): number
@@ -531,6 +1086,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): java.util.ArrayList<string>
        */
       getPlayers(): java.util.ArrayList<string>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.ArrayList<string>
+       */
+      getPlayersRespawn(): java.util.ArrayList<string>;
       /**
        * Method Parameters: 
        *  - (Empty): string
@@ -563,19 +1123,20 @@ declare module '@asledgehammer/pipewrench' {
       getY2(): number;
       /**
        * Method Parameters: 
+       *  - (String arg0): boolean
+       */
+      haveInvite(arg0: string): boolean;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): boolean
        *  - (IsoPlayer arg0): boolean
        */
-      isOwner(arg0: zombie.characters.IsoPlayer): boolean;
+      isOwner(arg0: string | zombie.characters.IsoPlayer): boolean;
       /**
        * Method Parameters: 
        *  - (String arg0): boolean
        */
       isRespawnInSafehouse(arg0: string): boolean;
-      /**
-       * Method Parameters: 
-       *  - (IsoPlayer arg0): void
-       */
-      kickOutOfSafehouse(arg0: zombie.characters.IsoPlayer): void;
       /**
        * Method Parameters: 
        *  - (String arg0): boolean
@@ -586,13 +1147,12 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (String arg0): void
        */
-      removePlayer(arg0: string): void;
+      removeInvite(arg0: string): void;
       /**
        * Method Parameters: 
-       *  - (IsoPlayer arg0): void
-       *  - (IsoPlayer arg0, boolean arg1): void
+       *  - (String arg0): void
        */
-      removeSafeHouse(arg0: zombie.characters.IsoPlayer, arg1?: boolean): void;
+      removePlayer(arg0: string): void;
       /**
        * Method Parameters: 
        *  - (ByteBuffer arg0): void
@@ -605,9 +1165,19 @@ declare module '@asledgehammer/pipewrench' {
       setH(arg0: number): void;
       /**
        * Method Parameters: 
+       *  - (int arg0): void
+       */
+      setHitPoints(arg0: number): void;
+      /**
+       * Method Parameters: 
        *  - (long arg0): void
        */
       setLastVisited(arg0: number): void;
+      /**
+       * Method Parameters: 
+       *  - (int arg0): void
+       */
+      setOnlineID(arg0: number): void;
       /**
        * Method Parameters: 
        *  - (int arg0): void
@@ -657,11 +1227,6 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): void
        */
-      syncSafehouse(): void;
-      /**
-       * Method Parameters: 
-       *  - (Empty): void
-       */
       updatePlayersConnected(): void;
       /**
        * Method Parameters: 
@@ -673,9 +1238,9 @@ declare module '@asledgehammer/pipewrench' {
        *
        * Method Parameters: 
        *  - (IsoGridSquare arg0, IsoPlayer arg1): zombie.iso.areas.SafeHouse
-       *  - (int arg0, int arg1, int arg2, int arg3, String arg4, boolean arg5): zombie.iso.areas.SafeHouse
+       *  - (int arg0, int arg1, int arg2, int arg3, String arg4): zombie.iso.areas.SafeHouse
        */
-      static addSafeHouse(arg0: zombie.iso.IsoGridSquare | number, arg1: zombie.characters.IsoPlayer | number, arg2?: number, arg3?: number, arg4?: string, arg5?: boolean): zombie.iso.areas.SafeHouse;
+      static addSafeHouse(arg0: zombie.iso.IsoGridSquare | number, arg1: zombie.characters.IsoPlayer | number, arg2?: number, arg3?: number, arg4?: string): zombie.iso.areas.SafeHouse;
       /**
        * @noSelf
        *
@@ -701,10 +1266,26 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (int arg0, int arg1): number
+       */
+      static getOnlineID(arg0: number, arg1: number): number;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (int arg0): zombie.iso.areas.SafeHouse
+       *  - (String arg0): zombie.iso.areas.SafeHouse
        *  - (IsoGridSquare arg0): zombie.iso.areas.SafeHouse
        *  - (int arg0, int arg1, int arg2, int arg3): zombie.iso.areas.SafeHouse
        */
-      static getSafeHouse(arg0: zombie.iso.IsoGridSquare | number, arg1?: number, arg2?: number, arg3?: number): zombie.iso.areas.SafeHouse;
+      static getSafeHouse(arg0: number | string | zombie.iso.IsoGridSquare, arg1?: number, arg2?: number, arg3?: number): zombie.iso.areas.SafeHouse;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0): zombie.iso.areas.SafeHouse
+       */
+      static getSafehouseByOwner(arg0: string): zombie.iso.areas.SafeHouse;
       /**
        * @noSelf
        *
@@ -712,6 +1293,14 @@ declare module '@asledgehammer/pipewrench' {
        *  - (Empty): java.util.ArrayList<zombie.iso.areas.SafeHouse>
        */
       static getSafehouseList(): java.util.ArrayList<zombie.iso.areas.SafeHouse>;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (int arg0, int arg1, int arg2, int arg3): zombie.iso.areas.SafeHouse
+       *  - (int arg0, int arg1, int arg2, int arg3, SafeHouse arg4): zombie.iso.areas.SafeHouse
+       */
+      static getSafehouseOverlapping(arg0: number, arg1: number, arg2: number, arg3: number, arg4?: zombie.iso.areas.SafeHouse): zombie.iso.areas.SafeHouse;
       /**
        * @noSelf
        *
@@ -724,9 +1313,30 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (int arg0): void
+       */
+      static hitPoint(arg0: number): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (Empty): void
        */
       static init(): void;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (int arg0, int arg1, int arg2, int arg3): boolean
+       */
+      static intersects(arg0: number, arg1: number, arg2: number, arg3: number): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (String arg0, String arg1): boolean
+       */
+      static isInSameSafehouse(arg0: string, arg1: string): boolean;
       /**
        * @noSelf
        *
@@ -745,9 +1355,44 @@ declare module '@asledgehammer/pipewrench' {
        * @noSelf
        *
        * Method Parameters: 
+       *  - (SafeHouse arg0, IsoPlayer arg1): boolean
+       */
+      static isSafehouseAllowClaim(arg0: zombie.iso.areas.SafeHouse, arg1: zombie.characters.IsoPlayer): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (IsoGridSquare arg0, IsoPlayer arg1): boolean
+       */
+      static isSafehouseAllowInteract(arg0: zombie.iso.IsoGridSquare, arg1: zombie.characters.IsoPlayer): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (IsoGridSquare arg0, IsoPlayer arg1): boolean
+       */
+      static isSafehouseAllowLoot(arg0: zombie.iso.IsoGridSquare, arg1: zombie.characters.IsoPlayer): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (IsoGridSquare arg0, IsoPlayer arg1): boolean
+       */
+      static isSafehouseAllowTrepass(arg0: zombie.iso.IsoGridSquare, arg1: zombie.characters.IsoPlayer): boolean;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
        *  - (ByteBuffer arg0, int arg1): zombie.iso.areas.SafeHouse
        */
       static load(arg0: java.nio.ByteBuffer, arg1: number): zombie.iso.areas.SafeHouse;
+      /**
+       * @noSelf
+       *
+       * Method Parameters: 
+       *  - (SafeHouse arg0): void
+       */
+      static removeSafeHouse(arg0: zombie.iso.areas.SafeHouse): void;
       /**
        * @noSelf
        *

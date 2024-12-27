@@ -15,6 +15,9 @@ declare module '@asledgehammer/pipewrench/client' {
       static getFuelDurationForItem: (item: any, ...__args: never[]) => any;
 
       /** @noSelf */
+      static getFuelDurationForItemInHours: (item: any, ...__args: never[]) => any;
+
+      /** @noSelf */
       static getFuelItemUses: (item: any, ...__args: never[]) => any;
 
       /** @noSelf */
@@ -36,10 +39,16 @@ declare module '@asledgehammer/pipewrench/client' {
       static onAddMultipleFuel: (playerObj: any, campfire: any, fuelType: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onAddTent: (worldobjects: any, player: any, tentKit: any, ...__args: never[]) => any;
+      static onDisplayInfo: (
+        worldobjects: any,
+        player: any,
+        isoCampfireObject: any,
+        campfire: any,
+        ...__args: never[]
+      ) => any;
 
       /** @noSelf */
-      static onDisplayInfo: (
+      static onDropCorpse: (
         worldobjects: any,
         player: any,
         isoCampfireObject: any,
@@ -63,7 +72,6 @@ declare module '@asledgehammer/pipewrench/client' {
         itemType: any,
         lighter: any,
         campfire: any,
-        fuelAmt: any,
         ...__args: never[]
       ) => any;
 
@@ -78,7 +86,7 @@ declare module '@asledgehammer/pipewrench/client' {
       ) => any;
 
       /** @noSelf */
-      static onPlaceCampfire: (worldobjects: any, player: any, campfireKit: any, ...__args: never[]) => any;
+      static onPlaceCampfire: (worldobjects: any, player: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static onPutOutCampfire: (worldobjects: any, player: any, campfire: any, ...__args: never[]) => any;
@@ -87,13 +95,10 @@ declare module '@asledgehammer/pipewrench/client' {
       static onRemoveCampfire: (worldobjects: any, player: any, campfire: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onRemoveTent: (worldobjects: any, player: any, tent: any, ...__args: never[]) => any;
-
-      /** @noSelf */
       static onRest: (worldobjects: any, player: any, tent: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static onSleep: (worldobjects: any, player: any, tent: any, ...__args: never[]) => any;
+      static shouldBurn: (item: any, playersChoice: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static timeString: (timeInMinutes: any, ...__args: never[]) => any;

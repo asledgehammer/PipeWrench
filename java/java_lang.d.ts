@@ -409,9 +409,11 @@ declare module '@asledgehammer/pipewrench' {
        */
       static ulp(arg0: number): number;
     }
+    export type Number = any;
     export type Runnable = any;
     export type StackTraceElement = any;
     export type StringBuffer = any;
+    export type StringBuilder = any;
     export type Thread = any;
     export type ThreadLocal<T> = any;
     export type Throwable = any;

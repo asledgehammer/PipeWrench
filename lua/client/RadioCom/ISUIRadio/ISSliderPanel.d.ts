@@ -19,6 +19,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       customPaginate: any;
 
+      disabled: any;
+
       doButtons: any;
 
       doToolTip: any;
@@ -27,7 +29,11 @@ declare module '@asledgehammer/pipewrench/client' {
 
       dragInside: any;
 
+      isSlider: any;
+
       isSliderPanel: any;
+
+      joypadFocused: any;
 
       leftPressed: any;
 
@@ -79,6 +85,10 @@ declare module '@asledgehammer/pipewrench/client' {
 
       getCurrentValue(...__args: never[]): any;
 
+      onJoypadDirLeft(...__args: never[]): any;
+
+      onJoypadDirRight(...__args: never[]): any;
+
       paginate(...__args: never[]): any;
 
       render(...__args: never[]): any;
@@ -88,6 +98,8 @@ declare module '@asledgehammer/pipewrench/client' {
       setCurrentValue(_v: any, _ignoreOnChange: any, ...__args: never[]): any;
 
       setDoButtons(_b: any, ...__args: never[]): any;
+
+      setJoypadFocused(focused: any, ...__args: never[]): any;
 
       setValues(_min: any, _max: any, _step: any, _shift: any, _ignoreCurVal: any, ...__args: never[]): any;
 

@@ -9,6 +9,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       bFemale: any;
 
+      bodyOutline: any;
+
       bodyPartPanel: any;
 
       bpAnchorX: any;
@@ -26,6 +28,10 @@ declare module '@asledgehammer/pipewrench/client' {
       coreHeatBar: any;
 
       coreRectangleH: any;
+
+      coreRectangleW: any;
+
+      coreRectangleX: any;
 
       coreTemperatureBar: any;
 
@@ -80,6 +86,8 @@ declare module '@asledgehammer/pipewrench/client' {
       selectedBodyPart: any;
 
       selectedViewIndex: any;
+
+      sex: any;
 
       titleColor: any;
 

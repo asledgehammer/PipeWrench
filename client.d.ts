@@ -3,72 +3,17 @@
 declare module '@asledgehammer/pipewrench/client' {
   // [LUA-PARTIAL:START]
 
-  // [lua/client/Blacksmith/ISUI/ISBlacksmithMenu.d.ts]
-  export abstract class ISBlacksmithMenu extends lua.client.Blacksmith.ISUI.ISBlacksmithMenu {}
+  // [lua/client/Animals/CAnimals_Interact.d.ts]
+  export abstract class CAnimals_Interact extends lua.client.Animals.CAnimals_Interact {}
 
-  // [lua/client/Blacksmith/ISUI/ISFurnaceInfoWindow.d.ts]
-  /** @customConstructor ISFurnaceInfoWindow:new */
-  export class ISFurnaceInfoWindow extends lua.client.Blacksmith.ISUI.ISFurnaceInfoWindow {}
+  // [lua/client/Animals/CButcherHook_Interact.d.ts]
+  export abstract class CButcherHook_Interact extends lua.client.Animals.CButcherHook_Interact {}
 
-  // [lua/client/Blacksmith/TimedActions/ISAddCoalInFurnace.d.ts]
-  /** @customConstructor ISAddCoalInFurnace:new */
-  export class ISAddCoalInFurnace extends lua.client.Blacksmith.TimedActions.ISAddCoalInFurnace {}
+  // [lua/client/Animals/CHutch_Interact.d.ts]
+  export abstract class CHutch_Interact extends lua.client.Animals.CHutch_Interact {}
 
-  // [lua/client/Blacksmith/TimedActions/ISAddLogsInDrum.d.ts]
-  /** @customConstructor ISAddLogsInDrum:new */
-  export class ISAddLogsInDrum extends lua.client.Blacksmith.TimedActions.ISAddLogsInDrum {}
-
-  // [lua/client/Blacksmith/TimedActions/ISDrumLightFromKindle.d.ts]
-  /** @customConstructor ISDrumLightFromKindle:new */
-  export class ISDrumLightFromKindle extends lua.client.Blacksmith.TimedActions.ISDrumLightFromKindle {}
-
-  // [lua/client/Blacksmith/TimedActions/ISDrumLightFromLiterature.d.ts]
-  /** @customConstructor ISDrumLightFromLiterature:new */
-  export class ISDrumLightFromLiterature extends lua.client.Blacksmith.TimedActions.ISDrumLightFromLiterature {}
-
-  // [lua/client/Blacksmith/TimedActions/ISDrumLightFromPetrol.d.ts]
-  /** @customConstructor ISDrumLightFromPetrol:new */
-  export class ISDrumLightFromPetrol extends lua.client.Blacksmith.TimedActions.ISDrumLightFromPetrol {}
-
-  // [lua/client/Blacksmith/TimedActions/ISEmptyDrum.d.ts]
-  /** @customConstructor ISEmptyDrum:new */
-  export class ISEmptyDrum extends lua.client.Blacksmith.TimedActions.ISEmptyDrum {}
-
-  // [lua/client/Blacksmith/TimedActions/ISFurnaceInfoAction.d.ts]
-  /** @customConstructor ISFurnaceInfoAction:new */
-  export class ISFurnaceInfoAction extends lua.client.Blacksmith.TimedActions.ISFurnaceInfoAction {}
-
-  // [lua/client/Blacksmith/TimedActions/ISFurnaceLightFromKindle.d.ts]
-  /** @customConstructor ISFurnaceLightFromKindle:new */
-  export class ISFurnaceLightFromKindle extends lua.client.Blacksmith.TimedActions.ISFurnaceLightFromKindle {}
-
-  // [lua/client/Blacksmith/TimedActions/ISFurnaceLightFromLiterature.d.ts]
-  /** @customConstructor ISFurnaceLightFromLiterature:new */
-  export class ISFurnaceLightFromLiterature extends lua.client.Blacksmith.TimedActions.ISFurnaceLightFromLiterature {}
-
-  // [lua/client/Blacksmith/TimedActions/ISFurnaceLightFromPetrol.d.ts]
-  /** @customConstructor ISFurnaceLightFromPetrol:new */
-  export class ISFurnaceLightFromPetrol extends lua.client.Blacksmith.TimedActions.ISFurnaceLightFromPetrol {}
-
-  // [lua/client/Blacksmith/TimedActions/ISPutOutFireDrum.d.ts]
-  /** @customConstructor ISPutOutFireDrum:new */
-  export class ISPutOutFireDrum extends lua.client.Blacksmith.TimedActions.ISPutOutFireDrum {}
-
-  // [lua/client/Blacksmith/TimedActions/ISRemoveCharcoal.d.ts]
-  /** @customConstructor ISRemoveCharcoal:new */
-  export class ISRemoveCharcoal extends lua.client.Blacksmith.TimedActions.ISRemoveCharcoal {}
-
-  // [lua/client/Blacksmith/TimedActions/ISRemoveDrum.d.ts]
-  /** @customConstructor ISRemoveDrum:new */
-  export class ISRemoveDrum extends lua.client.Blacksmith.TimedActions.ISRemoveDrum {}
-
-  // [lua/client/Blacksmith/TimedActions/ISStopFurnaceFire.d.ts]
-  /** @customConstructor ISStopFurnaceFire:new */
-  export class ISStopFurnaceFire extends lua.client.Blacksmith.TimedActions.ISStopFurnaceFire {}
-
-  // [lua/client/Blacksmith/TimedActions/ISUseBellows.d.ts]
-  /** @customConstructor ISUseBellows:new */
-  export class ISUseBellows extends lua.client.Blacksmith.TimedActions.ISUseBellows {}
+  // [lua/client/Bed/CBed_Interact.d.ts]
+  export abstract class CBed_Interact extends lua.client.Bed.CBed_Interact {}
 
   // [lua/client/BuildingObjects/ISUI/ISBuildMenu.d.ts]
   export abstract class ISBuildMenu extends lua.client.BuildingObjects.ISUI.ISBuildMenu {}
@@ -82,40 +27,6 @@ declare module '@asledgehammer/pipewrench/client' {
   // [lua/client/BuildingObjects/TimedActions/ISBuildAction.d.ts]
   /** @customConstructor ISBuildAction:new */
   export class ISBuildAction extends lua.client.BuildingObjects.TimedActions.ISBuildAction {}
-
-  // [lua/client/BuildingObjects/TimedActions/ISInsertLightSourceFuelAction.d.ts]
-  /** @customConstructor ISInsertLightSourceFuelAction:new */
-  export class ISInsertLightSourceFuelAction extends lua.client.BuildingObjects.TimedActions
-    .ISInsertLightSourceFuelAction {}
-
-  // [lua/client/BuildingObjects/TimedActions/ISMultiStageBuild.d.ts]
-  /** @customConstructor ISMultiStageBuild:new */
-  export class ISMultiStageBuild extends lua.client.BuildingObjects.TimedActions.ISMultiStageBuild {}
-
-  // [lua/client/BuildingObjects/TimedActions/ISPaintAction.d.ts]
-  /** @customConstructor ISPaintAction:new */
-  export class ISPaintAction extends lua.client.BuildingObjects.TimedActions.ISPaintAction {}
-
-  // [lua/client/BuildingObjects/TimedActions/ISPaintSignAction.d.ts]
-  /** @customConstructor ISPaintSignAction:new */
-  export class ISPaintSignAction extends lua.client.BuildingObjects.TimedActions.ISPaintSignAction {}
-
-  // [lua/client/BuildingObjects/TimedActions/ISPlasterAction.d.ts]
-  /** @customConstructor ISPlasterAction:new */
-  export class ISPlasterAction extends lua.client.BuildingObjects.TimedActions.ISPlasterAction {}
-
-  // [lua/client/BuildingObjects/TimedActions/ISRemoveLightSourceFuelAction.d.ts]
-  /** @customConstructor ISRemoveLightSourceFuelAction:new */
-  export class ISRemoveLightSourceFuelAction extends lua.client.BuildingObjects.TimedActions
-    .ISRemoveLightSourceFuelAction {}
-
-  // [lua/client/BuildingObjects/TimedActions/ISShovelGround.d.ts]
-  /** @customConstructor ISShovelGround:new */
-  export class ISShovelGround extends lua.client.BuildingObjects.TimedActions.ISShovelGround {}
-
-  // [lua/client/BuildingObjects/TimedActions/ISToggleLightSourceAction.d.ts]
-  /** @customConstructor ISToggleLightSourceAction:new */
-  export class ISToggleLightSourceAction extends lua.client.BuildingObjects.TimedActions.ISToggleLightSourceAction {}
 
   // [lua/client/Camping/CCampfireGlobalObject.d.ts]
   /** @customConstructor CCampfireGlobalObject:new */
@@ -132,45 +43,9 @@ declare module '@asledgehammer/pipewrench/client' {
   // [lua/client/Camping/ISUI/ISCampingMenu.d.ts]
   export abstract class ISCampingMenu extends lua.client.Camping.ISUI.ISCampingMenu {}
 
-  // [lua/client/Camping/TimedActions/ISAddFuelAction.d.ts]
-  /** @customConstructor ISAddFuelAction:new */
-  export class ISAddFuelAction extends lua.client.Camping.TimedActions.ISAddFuelAction {}
-
-  // [lua/client/Camping/TimedActions/ISAddTentAction.d.ts]
-  /** @customConstructor ISAddTentAction:new */
-  export class ISAddTentAction extends lua.client.Camping.TimedActions.ISAddTentAction {}
-
-  // [lua/client/Camping/TimedActions/ISLightFromKindle.d.ts]
-  /** @customConstructor ISLightFromKindle:new */
-  export class ISLightFromKindle extends lua.client.Camping.TimedActions.ISLightFromKindle {}
-
-  // [lua/client/Camping/TimedActions/ISLightFromLiterature.d.ts]
-  /** @customConstructor ISLightFromLiterature:new */
-  export class ISLightFromLiterature extends lua.client.Camping.TimedActions.ISLightFromLiterature {}
-
-  // [lua/client/Camping/TimedActions/ISLightFromPetrol.d.ts]
-  /** @customConstructor ISLightFromPetrol:new */
-  export class ISLightFromPetrol extends lua.client.Camping.TimedActions.ISLightFromPetrol {}
-
-  // [lua/client/Camping/TimedActions/ISPlaceCampfireAction.d.ts]
-  /** @customConstructor ISPlaceCampfireAction:new */
-  export class ISPlaceCampfireAction extends lua.client.Camping.TimedActions.ISPlaceCampfireAction {}
-
-  // [lua/client/Camping/TimedActions/ISPutOutCampfireAction.d.ts]
-  /** @customConstructor ISPutOutCampfireAction:new */
-  export class ISPutOutCampfireAction extends lua.client.Camping.TimedActions.ISPutOutCampfireAction {}
-
-  // [lua/client/Camping/TimedActions/ISRemoveCampfireAction.d.ts]
-  /** @customConstructor ISRemoveCampfireAction:new */
-  export class ISRemoveCampfireAction extends lua.client.Camping.TimedActions.ISRemoveCampfireAction {}
-
-  // [lua/client/Camping/TimedActions/ISRemoveTentAction.d.ts]
-  /** @customConstructor ISRemoveTentAction:new */
-  export class ISRemoveTentAction extends lua.client.Camping.TimedActions.ISRemoveTentAction {}
-
-  // [lua/client/Camping/TimedActions/ISSleepInTentAction.d.ts]
-  /** @customConstructor ISSleepInTentAction:new */
-  export class ISSleepInTentAction extends lua.client.Camping.TimedActions.ISSleepInTentAction {}
+  // [lua/client/Chat/ISAlert.d.ts]
+  /** @customConstructor ISAlert:new */
+  export class ISAlert extends lua.client.Chat.ISAlert {}
 
   // [lua/client/Chat/ISChat.d.ts]
   /** @customConstructor ISChat:new */
@@ -209,6 +84,10 @@ declare module '@asledgehammer/pipewrench/client' {
   export class AnimationClipViewer_OptionsPanel extends lua.client.DebugUIs.AnimationClipViewer_OptionsPanel {}
   /** @customConstructor AnimationClipViewer_Scene:new */
   export class AnimationClipViewer_Scene extends lua.client.DebugUIs.AnimationClipViewer_Scene {}
+  /** @customConstructor AnimationClipViewer_SoundBar:new */
+  export class AnimationClipViewer_SoundBar extends lua.client.DebugUIs.AnimationClipViewer_SoundBar {}
+  /** @customConstructor AnimationClipViewer_SoundPanel:new */
+  export class AnimationClipViewer_SoundPanel extends lua.client.DebugUIs.AnimationClipViewer_SoundPanel {}
   /** @customConstructor AnimationClipViewer_Timeline:new */
   export class AnimationClipViewer_Timeline extends lua.client.DebugUIs.AnimationClipViewer_Timeline {}
   /** @noSelf */
@@ -246,6 +125,11 @@ declare module '@asledgehammer/pipewrench/client' {
   // [lua/client/DebugUIs/BrushTool/FireBrushUI.d.ts]
   /** @customConstructor FireBrushUI:new */
   export class FireBrushUI extends lua.client.DebugUIs.BrushTool.FireBrushUI {}
+
+  // [lua/client/DebugUIs/DebugChunkState/DebugChunkState_ObjectAtCursorPanel.d.ts]
+  /** @customConstructor DebugChunkState_ObjectAtCursorPanel:new */
+  export class DebugChunkState_ObjectAtCursorPanel extends lua.client.DebugUIs.DebugChunkState
+    .DebugChunkState_ObjectAtCursorPanel {}
 
   // [lua/client/DebugUIs/DebugChunkState/DebugChunkState_ObjectPickerPanel.d.ts]
   /** @customConstructor DebugChunkState_ObjectPickerPanel:new */
@@ -286,6 +170,9 @@ declare module '@asledgehammer/pipewrench/client' {
   /** @customConstructor DebugChunkStateUI_OptionsPanel:new */
   export class DebugChunkStateUI_OptionsPanel extends lua.client.DebugUIs.DebugChunkState
     .DebugChunkStateUI_OptionsPanel {}
+  /** @customConstructor DebugChunkStateUI_SpritePopupPanel:new */
+  export class DebugChunkStateUI_SpritePopupPanel extends lua.client.DebugUIs.DebugChunkState
+    .DebugChunkStateUI_SpritePopupPanel {}
 
   // [lua/client/DebugUIs/DebugChunkState/ISSectionedPanel.d.ts]
   /** @customConstructor ISSectionedPanel:new */
@@ -350,6 +237,25 @@ declare module '@asledgehammer/pipewrench/client' {
   // [lua/client/DebugUIs/DebugMenu/Anims/ISAnimLoggerOutput.d.ts]
   /** @customConstructor ISAnimLoggerOutput:new */
   export class ISAnimLoggerOutput extends lua.client.DebugUIs.DebugMenu.Anims.ISAnimLoggerOutput {}
+
+  // [lua/client/DebugUIs/DebugMenu/Audio/ISAudioDebugPanel.d.ts]
+  /** @customConstructor ISAudioDebugPanel:new */
+  export class ISAudioDebugPanel extends lua.client.DebugUIs.DebugMenu.Audio.ISAudioDebugPanel {}
+
+  // [lua/client/DebugUIs/DebugMenu/Audio/ISFMODEventPlayerPanel.d.ts]
+  /** @customConstructor ISFMODEventPlayerPanel:new */
+  export class ISFMODEventPlayerPanel extends lua.client.DebugUIs.DebugMenu.Audio.ISFMODEventPlayerPanel {}
+  /** @customConstructor ISFMODEventPlayerParameterEditor:new */
+  export class ISFMODEventPlayerParameterEditor extends lua.client.DebugUIs.DebugMenu.Audio
+    .ISFMODEventPlayerParameterEditor {}
+
+  // [lua/client/DebugUIs/DebugMenu/Audio/ISMusicIntensityEventsPanel.d.ts]
+  /** @customConstructor ISMusicIntensityEventsPanel:new */
+  export class ISMusicIntensityEventsPanel extends lua.client.DebugUIs.DebugMenu.Audio.ISMusicIntensityEventsPanel {}
+
+  // [lua/client/DebugUIs/DebugMenu/Audio/ISMusicThreatStatusPanel.d.ts]
+  /** @customConstructor ISMusicThreatStatusPanel:new */
+  export class ISMusicThreatStatusPanel extends lua.client.DebugUIs.DebugMenu.Audio.ISMusicThreatStatusPanel {}
 
   // [lua/client/DebugUIs/DebugMenu/Base/ISDebugPanelBase.d.ts]
   /** @customConstructor ISDebugPanelBase:new */
@@ -423,6 +329,54 @@ declare module '@asledgehammer/pipewrench/client' {
   /** @customConstructor WindDebug:new */
   export class WindDebug extends lua.client.DebugUIs.DebugMenu.Climate.WindDebug {}
 
+  // [lua/client/DebugUIs/DebugMenu/Entity/ISEntitiesDebugWindow.d.ts]
+  /** @customConstructor ISEntitiesDebugWindow:new */
+  export class ISEntitiesDebugWindow extends lua.client.DebugUIs.DebugMenu.Entity.ISEntitiesDebugWindow {}
+
+  // [lua/client/DebugUIs/DebugMenu/Entity/ISEntityInstancesPanel.d.ts]
+  /** @customConstructor ISEntityInstancesPanel:new */
+  export class ISEntityInstancesPanel extends lua.client.DebugUIs.DebugMenu.Entity.ISEntityInstancesPanel {}
+
+  // [lua/client/DebugUIs/DebugMenu/Entity/ISEntityScriptsPanel.d.ts]
+  /** @customConstructor ISEntityScriptsPanel:new */
+  export class ISEntityScriptsPanel extends lua.client.DebugUIs.DebugMenu.Entity.ISEntityScriptsPanel {}
+
+  // [lua/client/DebugUIs/DebugMenu/Entity/ISEntityViewPanel.d.ts]
+  /** @customConstructor ISEntityViewPanel:new */
+  export class ISEntityViewPanel extends lua.client.DebugUIs.DebugMenu.Entity.ISEntityViewPanel {}
+
+  // [lua/client/DebugUIs/DebugMenu/Entity/ISEntityViewWindow.d.ts]
+  /** @customConstructor ISEntityViewWindow:new */
+  export class ISEntityViewWindow extends lua.client.DebugUIs.DebugMenu.Entity.ISEntityViewWindow {}
+
+  // [lua/client/DebugUIs/DebugMenu/Fluids/ISFluidCategoriesViewPanel.d.ts]
+  /** @customConstructor ISFluidCategoriesViewPanel:new */
+  export class ISFluidCategoriesViewPanel extends lua.client.DebugUIs.DebugMenu.Fluids.ISFluidCategoriesViewPanel {}
+
+  // [lua/client/DebugUIs/DebugMenu/Fluids/ISFluidDebugWindow.d.ts]
+  /** @customConstructor ISFluidDebugWindow:new */
+  export class ISFluidDebugWindow extends lua.client.DebugUIs.DebugMenu.Fluids.ISFluidDebugWindow {}
+
+  // [lua/client/DebugUIs/DebugMenu/Fluids/ISFluidItemsViewPanel.d.ts]
+  /** @customConstructor ISFluidItemsViewPanel:new */
+  export class ISFluidItemsViewPanel extends lua.client.DebugUIs.DebugMenu.Fluids.ISFluidItemsViewPanel {}
+
+  // [lua/client/DebugUIs/DebugMenu/Fluids/ISFluidMixerViewPanel.d.ts]
+  /** @customConstructor ISFluidMixerViewPanel:new */
+  export class ISFluidMixerViewPanel extends lua.client.DebugUIs.DebugMenu.Fluids.ISFluidMixerViewPanel {}
+
+  // [lua/client/DebugUIs/DebugMenu/Fluids/ISFluidOverviewPanel.d.ts]
+  /** @customConstructor ISFluidOverviewPanel:new */
+  export class ISFluidOverviewPanel extends lua.client.DebugUIs.DebugMenu.Fluids.ISFluidOverviewPanel {}
+
+  // [lua/client/DebugUIs/DebugMenu/Fluids/ISFluidViewPanel.d.ts]
+  /** @customConstructor ISFluidViewPanel:new */
+  export class ISFluidViewPanel extends lua.client.DebugUIs.DebugMenu.Fluids.ISFluidViewPanel {}
+
+  // [lua/client/DebugUIs/DebugMenu/General/ISBulletTracerEffect.d.ts]
+  /** @customConstructor ISBulletTracerEffect:new */
+  export class ISBulletTracerEffect extends lua.client.DebugUIs.DebugMenu.General.ISBulletTracerEffect {}
+
   // [lua/client/DebugUIs/DebugMenu/General/ISCheatPanelUI.d.ts]
   /** @customConstructor ISCheatPanelUI:new */
   export class ISCheatPanelUI extends lua.client.DebugUIs.DebugMenu.General.ISCheatPanelUI {}
@@ -460,6 +414,8 @@ declare module '@asledgehammer/pipewrench/client' {
   // [lua/client/DebugUIs/DebugMenu/ISDebugMenu.d.ts]
   /** @customConstructor ISDebugMenu:new */
   export class ISDebugMenu extends lua.client.DebugUIs.DebugMenu.ISDebugMenu {}
+  /** @noSelf */
+  export const doNewUIDebug: () => any;
 
   // [lua/client/DebugUIs/DebugMenu/ISDebugUtils.d.ts]
   export abstract class ISDebugUtils extends lua.client.DebugUIs.DebugMenu.ISDebugUtils {}
@@ -482,6 +438,26 @@ declare module '@asledgehammer/pipewrench/client' {
   /** @noSelf */
   export const newIsoRegionsWindow: () => any;
 
+  // [lua/client/DebugUIs/DebugMenu/Physics/DebugRagdollPanel.d.ts]
+  /** @customConstructor DebugRagdollPanel:new */
+  export class DebugRagdollPanel extends lua.client.DebugUIs.DebugMenu.Physics.DebugRagdollPanel {}
+
+  // [lua/client/DebugUIs/DebugMenu/Physics/ForceHitReactionPanel.d.ts]
+  /** @customConstructor ForceHitReactionPanel:new */
+  export class ForceHitReactionPanel extends lua.client.DebugUIs.DebugMenu.Physics.ForceHitReactionPanel {}
+
+  // [lua/client/DebugUIs/DebugMenu/Physics/HitReactionSettingsPanel.d.ts]
+  /** @customConstructor HitReactionSettingsPanel:new */
+  export class HitReactionSettingsPanel extends lua.client.DebugUIs.DebugMenu.Physics.HitReactionSettingsPanel {}
+
+  // [lua/client/DebugUIs/DebugMenu/Physics/RagdollSettingsPanel.d.ts]
+  /** @customConstructor RagdollSettingsPanel:new */
+  export class RagdollSettingsPanel extends lua.client.DebugUIs.DebugMenu.Physics.RagdollSettingsPanel {}
+
+  // [lua/client/DebugUIs/DebugMenu/Player/ISCharacterDebugUI.d.ts]
+  /** @customConstructor ISCharacterDebugUI:new */
+  export class ISCharacterDebugUI extends lua.client.DebugUIs.DebugMenu.Player.ISCharacterDebugUI {}
+
   // [lua/client/DebugUIs/DebugMenu/Puddles/PuddlesControl.d.ts]
   /** @customConstructor PuddlesControl:new */
   export class PuddlesControl extends lua.client.DebugUIs.DebugMenu.Puddles.PuddlesControl {}
@@ -497,6 +473,55 @@ declare module '@asledgehammer/pipewrench/client' {
   // [lua/client/DebugUIs/DebugMenu/radio/ZomboidRadioDebug.d.ts]
   /** @customConstructor ZomboidRadioDebug:new */
   export class ZomboidRadioDebug extends lua.client.DebugUIs.DebugMenu.radio.ZomboidRadioDebug {}
+
+  // [lua/client/DebugUIs/DebugMenu/Recipes/ISCraftRecipeDbgWindow.d.ts]
+  /** @customConstructor ISCraftRecipeDbgWindow:new */
+  export class ISCraftRecipeDbgWindow extends lua.client.DebugUIs.DebugMenu.Recipes.ISCraftRecipeDbgWindow {}
+
+  // [lua/client/DebugUIs/DebugMenu/Recipes/ISCraftRecipeIconsPanel.d.ts]
+  /** @customConstructor ISCraftRecipeIconsPanel:new */
+  export class ISCraftRecipeIconsPanel extends lua.client.DebugUIs.DebugMenu.Recipes.ISCraftRecipeIconsPanel {}
+
+  // [lua/client/DebugUIs/DebugMenu/Recipes/ISCraftRecipeMonitor.d.ts]
+  /** @customConstructor ISCraftRecipeMonitor:new */
+  export class ISCraftRecipeMonitor extends lua.client.DebugUIs.DebugMenu.Recipes.ISCraftRecipeMonitor {}
+
+  // [lua/client/DebugUIs/DebugMenu/Recipes/ISCraftRecipeOverviewPanel.d.ts]
+  /** @customConstructor ISCraftRecipeOverviewPanel:new */
+  export class ISCraftRecipeOverviewPanel extends lua.client.DebugUIs.DebugMenu.Recipes.ISCraftRecipeOverviewPanel {}
+
+  // [lua/client/DebugUIs/DebugMenu/Recipes/ISCraftRecipeQueriesPanel.d.ts]
+  /** @customConstructor ISCraftRecipeQueriesPanel:new */
+  export class ISCraftRecipeQueriesPanel extends lua.client.DebugUIs.DebugMenu.Recipes.ISCraftRecipeQueriesPanel {}
+
+  // [lua/client/DebugUIs/DebugMenu/Recipes/ISCraftRecipeTagsDebugPanel.d.ts]
+  /** @customConstructor ISCraftRecipeTagsDebugPanel:new */
+  export class ISCraftRecipeTagsDebugPanel extends lua.client.DebugUIs.DebugMenu.Recipes.ISCraftRecipeTagsDebugPanel {}
+
+  // [lua/client/DebugUIs/DebugMenu/Recipes/ISCraftRecipeTagsPanel.d.ts]
+  /** @customConstructor ISCraftRecipeTagsPanel:new */
+  export class ISCraftRecipeTagsPanel extends lua.client.DebugUIs.DebugMenu.Recipes.ISCraftRecipeTagsPanel {}
+
+  // [lua/client/DebugUIs/DebugMenu/Recipes/ISRecipeMonitor.d.ts]
+  /** @customConstructor ISRecipeMonitor:new */
+  export class ISRecipeMonitor extends lua.client.DebugUIs.DebugMenu.Recipes.ISRecipeMonitor {}
+
+  // [lua/client/DebugUIs/DebugMenu/Scripts/ISScriptsDebugWindow.d.ts]
+  /** @customConstructor ISScriptsDebugWindow:new */
+  export class ISScriptsDebugWindow extends lua.client.DebugUIs.DebugMenu.Scripts.ISScriptsDebugWindow {}
+
+  // [lua/client/DebugUIs/DebugMenu/Scripts/ISScriptViewPanel.d.ts]
+  /** @customConstructor ISScriptViewPanel:new */
+  export class ISScriptViewPanel extends lua.client.DebugUIs.DebugMenu.Scripts.ISScriptViewPanel {}
+
+  // [lua/client/DebugUIs/DebugMenu/Scripts/ISScriptViewWindow.d.ts]
+  /** @customConstructor ISScriptViewWindow:new */
+  export class ISScriptViewWindow extends lua.client.DebugUIs.DebugMenu.Scripts.ISScriptViewWindow {}
+
+  // [lua/client/DebugUIs/DebugMenu/Scripts/ISStringListView.d.ts]
+  /** @customConstructor ISStringListView:new */
+  export class ISStringListView extends lua.client.DebugUIs.DebugMenu.Scripts.ISStringListView {}
+  export abstract class ISStringListViewNode extends lua.client.DebugUIs.DebugMenu.Scripts.ISStringListViewNode {}
 
   // [lua/client/DebugUIs/DebugMenu/Statistic/ISGameStatisticPanel.d.ts]
   /** @customConstructor ISGameStatisticPanel:new */
@@ -523,9 +548,31 @@ declare module '@asledgehammer/pipewrench/client' {
   /** @customConstructor StatisticChartUpdatePeriod:new */
   export class StatisticChartUpdatePeriod extends lua.client.DebugUIs.DebugMenu.Statistic.StatisticChartUpdatePeriod {}
 
+  // [lua/client/DebugUIs/DebugMenu/UnitTests/UnitTestsDebug.d.ts]
+  /** @customConstructor UnitTestsDebug:new */
+  export class UnitTestsDebug extends lua.client.DebugUIs.DebugMenu.UnitTests.UnitTestsDebug {}
+
+  // [lua/client/DebugUIs/DebugMenu/UnitTests/UnitTestsTimedActionsPanel.d.ts]
+  /** @customConstructor UnitTestsTimedActionsPanel:new */
+  export class UnitTestsTimedActionsPanel extends lua.client.DebugUIs.DebugMenu.UnitTests.UnitTestsTimedActionsPanel {}
+  export abstract class UnitTestsTimedActionsPanelTestResults extends lua.client.DebugUIs.DebugMenu.UnitTests
+    .UnitTestsTimedActionsPanelTestResults {}
+
   // [lua/client/DebugUIs/DebugMenu/WorldFlares/WorldFlaresDebug.d.ts]
   /** @customConstructor WorldFlaresDebug:new */
   export class WorldFlaresDebug extends lua.client.DebugUIs.DebugMenu.WorldFlares.WorldFlaresDebug {}
+
+  // [lua/client/DebugUIs/DebugMenu/Xui/XuiDebugLayoutWindow.d.ts]
+  /** @customConstructor XuiDebugLayoutWindow:new */
+  export class XuiDebugLayoutWindow extends lua.client.DebugUIs.DebugMenu.Xui.XuiDebugLayoutWindow {}
+
+  // [lua/client/DebugUIs/DebugMenu/Xui/XuiDebugWindow.d.ts]
+  /** @customConstructor XuiDebugWindow:new */
+  export class XuiDebugWindow extends lua.client.DebugUIs.DebugMenu.Xui.XuiDebugWindow {}
+
+  // [lua/client/DebugUIs/DebugMenu/Xui/XuiTestWindow.d.ts]
+  /** @customConstructor XuiTestWindow:new */
+  export class XuiTestWindow extends lua.client.DebugUIs.DebugMenu.Xui.XuiTestWindow {}
 
   // [lua/client/DebugUIs/DebugOptionsWindow.d.ts]
   /** @customConstructor DebugOptionsWindow:new */
@@ -548,6 +595,10 @@ declare module '@asledgehammer/pipewrench/client' {
   // [lua/client/DebugUIs/ISAttachedItemsUI.d.ts]
   /** @customConstructor ISAttachedItemsUI:new */
   export class ISAttachedItemsUI extends lua.client.DebugUIs.ISAttachedItemsUI {}
+
+  // [lua/client/DebugUIs/ISDebugAnimationTextUI.d.ts]
+  /** @customConstructor ISDebugAnimationTextUI:new */
+  export class ISDebugAnimationTextUI extends lua.client.DebugUIs.ISDebugAnimationTextUI {}
 
   // [lua/client/DebugUIs/ISExtAnimListDebugUI.d.ts]
   /** @customConstructor ISExtAnimListDebugUI:new */
@@ -620,9 +671,51 @@ declare module '@asledgehammer/pipewrench/client' {
   /** @customConstructor ObjectViewer:new */
   export class ObjectViewer extends lua.client.DebugUIs.ObjectViewer {}
 
+  // [lua/client/DebugUIs/SeamEditor/SeamEditorUI_SeamTileList.d.ts]
+  /** @customConstructor SeamEditorUI_SeamTileList:new */
+  export class SeamEditorUI_SeamTileList extends lua.client.DebugUIs.SeamEditor.SeamEditorUI_SeamTileList {}
+
+  // [lua/client/DebugUIs/SeamEditor/SeamEditorUI_TileList.d.ts]
+  /** @customConstructor SeamEditorUI_TileList:new */
+  export class SeamEditorUI_TileList extends lua.client.DebugUIs.SeamEditor.SeamEditorUI_TileList {}
+
+  // [lua/client/DebugUIs/SeamEditor/SeamEditorUI_TileList2.d.ts]
+  /** @customConstructor SeamEditorUI_TileList2:new */
+  export class SeamEditorUI_TileList2 extends lua.client.DebugUIs.SeamEditor.SeamEditorUI_TileList2 {}
+
+  // [lua/client/DebugUIs/SeamEditor/SeamEditorUI.d.ts]
+  /** @customConstructor SeamEditorUI:new */
+  export class SeamEditorUI extends lua.client.DebugUIs.SeamEditor.SeamEditorUI {}
+  /** @customConstructor SeamEditorUI_OptionsPanel:new */
+  export class SeamEditorUI_OptionsPanel extends lua.client.DebugUIs.SeamEditor.SeamEditorUI_OptionsPanel {}
+  /** @customConstructor SeamEditorUI_Scene:new */
+  export class SeamEditorUI_Scene extends lua.client.DebugUIs.SeamEditor.SeamEditorUI_Scene {}
+  /** @customConstructor SeamEditorUI_TilePicker:new */
+  export class SeamEditorUI_TilePicker extends lua.client.DebugUIs.SeamEditor.SeamEditorUI_TilePicker {}
+  /** @customConstructor SeamEditorUI_TilePicker2:new */
+  export class SeamEditorUI_TilePicker2 extends lua.client.DebugUIs.SeamEditor.SeamEditorUI_TilePicker2 {}
+  /** @noSelf */
+  export const SeamEditorUI_InitUI: () => any;
+
   // [lua/client/DebugUIs/SourceWindow.d.ts]
   /** @customConstructor SourceWindow:new */
   export class SourceWindow extends lua.client.DebugUIs.SourceWindow {}
+
+  // [lua/client/DebugUIs/SpriteModelEditor.d.ts]
+  /** @customConstructor SpriteModelEditor:new */
+  export class SpriteModelEditor extends lua.client.DebugUIs.SpriteModelEditor {}
+  /** @customConstructor SpriteModelEditor_ListBox:new */
+  export class SpriteModelEditor_ListBox extends lua.client.DebugUIs.SpriteModelEditor_ListBox {}
+  /** @customConstructor SpriteModelEditor_OptionsPanel:new */
+  export class SpriteModelEditor_OptionsPanel extends lua.client.DebugUIs.SpriteModelEditor_OptionsPanel {}
+  /** @customConstructor SpriteModelEditor_Scene:new */
+  export class SpriteModelEditor_Scene extends lua.client.DebugUIs.SpriteModelEditor_Scene {}
+  /** @customConstructor SpriteModelEditor_TileList:new */
+  export class SpriteModelEditor_TileList extends lua.client.DebugUIs.SpriteModelEditor_TileList {}
+  /** @customConstructor SpriteModelEditor_TilePicker:new */
+  export class SpriteModelEditor_TilePicker extends lua.client.DebugUIs.SpriteModelEditor_TilePicker {}
+  /** @noSelf */
+  export const SpriteModelEditor_InitUI: () => any;
 
   // [lua/client/DebugUIs/StashDebug.d.ts]
   /** @customConstructor StashDebug:new */
@@ -636,14 +729,406 @@ declare module '@asledgehammer/pipewrench/client' {
   /** @customConstructor TextureWindow:new */
   export class TextureWindow extends lua.client.DebugUIs.TextureWindow {}
 
+  // [lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_EditMode.d.ts]
+  /** @customConstructor TileGeometryEditor_BoxPanel:new */
+  export class TileGeometryEditor_BoxPanel extends lua.client.DebugUIs.TileGeometryEditor.TileGeometryEditor_BoxPanel {}
+  /** @customConstructor TileGeometryEditor_CylinderPanel:new */
+  export class TileGeometryEditor_CylinderPanel extends lua.client.DebugUIs.TileGeometryEditor
+    .TileGeometryEditor_CylinderPanel {}
+  /** @customConstructor TileGeometryEditor_DepthTexturePanel:new */
+  export class TileGeometryEditor_DepthTexturePanel extends lua.client.DebugUIs.TileGeometryEditor
+    .TileGeometryEditor_DepthTexturePanel {}
+  /** @customConstructor TileGeometryEditor_EditMode:new */
+  export class TileGeometryEditor_EditMode extends lua.client.DebugUIs.TileGeometryEditor.TileGeometryEditor_EditMode {}
+  /** @customConstructor TileGeometryEditor_EditMode_Geometry:new */
+  export class TileGeometryEditor_EditMode_Geometry extends lua.client.DebugUIs.TileGeometryEditor
+    .TileGeometryEditor_EditMode_Geometry {}
+  /** @customConstructor TileGeometryEditor_EditMode_SceneTiles:new */
+  export class TileGeometryEditor_EditMode_SceneTiles extends lua.client.DebugUIs.TileGeometryEditor
+    .TileGeometryEditor_EditMode_SceneTiles {}
+  /** @customConstructor TileGeometryEditor_EditMode_Seating:new */
+  export class TileGeometryEditor_EditMode_Seating extends lua.client.DebugUIs.TileGeometryEditor
+    .TileGeometryEditor_EditMode_Seating {}
+  /** @customConstructor TileGeometryEditor_GeometryListBox:new */
+  export class TileGeometryEditor_GeometryListBox extends lua.client.DebugUIs.TileGeometryEditor
+    .TileGeometryEditor_GeometryListBox {}
+  /** @customConstructor TileGeometryEditor_ListBox:new */
+  export class TileGeometryEditor_ListBox extends lua.client.DebugUIs.TileGeometryEditor.TileGeometryEditor_ListBox {}
+  /** @customConstructor TileGeometryEditor_PropertiesPanel:new */
+  export class TileGeometryEditor_PropertiesPanel extends lua.client.DebugUIs.TileGeometryEditor
+    .TileGeometryEditor_PropertiesPanel {}
+  /** @customConstructor TileGeometryEditor_SeatingListBox:new */
+  export class TileGeometryEditor_SeatingListBox extends lua.client.DebugUIs.TileGeometryEditor
+    .TileGeometryEditor_SeatingListBox {}
+  /** @customConstructor TileGeometryEditor_SeatingPropertiesPanel:new */
+  export class TileGeometryEditor_SeatingPropertiesPanel extends lua.client.DebugUIs.TileGeometryEditor
+    .TileGeometryEditor_SeatingPropertiesPanel {}
+  /** @customConstructor TileGeometryEditor_TilePicker3:new */
+  export class TileGeometryEditor_TilePicker3 extends lua.client.DebugUIs.TileGeometryEditor
+    .TileGeometryEditor_TilePicker3 {}
+
+  // [lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_SceneTiles.d.ts]
+  /** @customConstructor TileGeometryEditor_SceneTiles:new */
+  export class TileGeometryEditor_SceneTiles extends lua.client.DebugUIs.TileGeometryEditor
+    .TileGeometryEditor_SceneTiles {}
+
+  // [lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_TileList.d.ts]
+  /** @customConstructor TileGeometryEditor_TileList:new */
+  export class TileGeometryEditor_TileList extends lua.client.DebugUIs.TileGeometryEditor.TileGeometryEditor_TileList {}
+
+  // [lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_TileList2.d.ts]
+  /** @customConstructor TileGeometryEditor_TileList2:new */
+  export class TileGeometryEditor_TileList2 extends lua.client.DebugUIs.TileGeometryEditor
+    .TileGeometryEditor_TileList2 {}
+
+  // [lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_TileList3.d.ts]
+  /** @customConstructor TileGeometryEditor_TileList3:new */
+  export class TileGeometryEditor_TileList3 extends lua.client.DebugUIs.TileGeometryEditor
+    .TileGeometryEditor_TileList3 {}
+
+  // [lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor_Tools.d.ts]
+  /** @customConstructor TileGeometryEditor_AddTileTool:new */
+  export class TileGeometryEditor_AddTileTool extends lua.client.DebugUIs.TileGeometryEditor
+    .TileGeometryEditor_AddTileTool {}
+  /** @customConstructor TileGeometryEditor_DepthRectTool:new */
+  export class TileGeometryEditor_DepthRectTool extends lua.client.DebugUIs.TileGeometryEditor
+    .TileGeometryEditor_DepthRectTool {}
+  /** @customConstructor TileGeometryEditor_EditPolygonTool:new */
+  export class TileGeometryEditor_EditPolygonTool extends lua.client.DebugUIs.TileGeometryEditor
+    .TileGeometryEditor_EditPolygonTool {}
+  /** @customConstructor TileGeometryEditor_GizmoTool:new */
+  export class TileGeometryEditor_GizmoTool extends lua.client.DebugUIs.TileGeometryEditor
+    .TileGeometryEditor_GizmoTool {}
+  /** @customConstructor TileGeometryEditor_GizmoTool_ResizeBox:new */
+  export class TileGeometryEditor_GizmoTool_ResizeBox extends lua.client.DebugUIs.TileGeometryEditor
+    .TileGeometryEditor_GizmoTool_ResizeBox {}
+  /** @customConstructor TileGeometryEditor_GizmoTool_ResizeCylinder:new */
+  export class TileGeometryEditor_GizmoTool_ResizeCylinder extends lua.client.DebugUIs.TileGeometryEditor
+    .TileGeometryEditor_GizmoTool_ResizeCylinder {}
+  /** @customConstructor TileGeometryEditor_GizmoTool_Rotate:new */
+  export class TileGeometryEditor_GizmoTool_Rotate extends lua.client.DebugUIs.TileGeometryEditor
+    .TileGeometryEditor_GizmoTool_Rotate {}
+  /** @customConstructor TileGeometryEditor_GizmoTool_Scale:new */
+  export class TileGeometryEditor_GizmoTool_Scale extends lua.client.DebugUIs.TileGeometryEditor
+    .TileGeometryEditor_GizmoTool_Scale {}
+  /** @customConstructor TileGeometryEditor_GizmoTool_SetSurface:new */
+  export class TileGeometryEditor_GizmoTool_SetSurface extends lua.client.DebugUIs.TileGeometryEditor
+    .TileGeometryEditor_GizmoTool_SetSurface {}
+  /** @customConstructor TileGeometryEditor_GizmoTool_Translate:new */
+  export class TileGeometryEditor_GizmoTool_Translate extends lua.client.DebugUIs.TileGeometryEditor
+    .TileGeometryEditor_GizmoTool_Translate {}
+  /** @customConstructor TileGeometryEditor_MoveTileTool:new */
+  export class TileGeometryEditor_MoveTileTool extends lua.client.DebugUIs.TileGeometryEditor
+    .TileGeometryEditor_MoveTileTool {}
+  /** @customConstructor TileGeometryEditor_Tool:new */
+  export class TileGeometryEditor_Tool extends lua.client.DebugUIs.TileGeometryEditor.TileGeometryEditor_Tool {}
+
+  // [lua/client/DebugUIs/TileGeometryEditor/TileGeometryEditor.d.ts]
+  /** @customConstructor TileGeometryEditor:new */
+  export class TileGeometryEditor extends lua.client.DebugUIs.TileGeometryEditor.TileGeometryEditor {}
+  /** @customConstructor TileGeometryEditor_OptionsPanel:new */
+  export class TileGeometryEditor_OptionsPanel extends lua.client.DebugUIs.TileGeometryEditor
+    .TileGeometryEditor_OptionsPanel {}
+  /** @customConstructor TileGeometryEditor_Scene:new */
+  export class TileGeometryEditor_Scene extends lua.client.DebugUIs.TileGeometryEditor.TileGeometryEditor_Scene {}
+  /** @customConstructor TileGeometryEditor_SwitchView:new */
+  export class TileGeometryEditor_SwitchView extends lua.client.DebugUIs.TileGeometryEditor
+    .TileGeometryEditor_SwitchView {}
+  /** @customConstructor TileGeometryEditor_TilePicker:new */
+  export class TileGeometryEditor_TilePicker extends lua.client.DebugUIs.TileGeometryEditor
+    .TileGeometryEditor_TilePicker {}
+  /** @customConstructor TileGeometryEditor_TilePicker2:new */
+  export class TileGeometryEditor_TilePicker2 extends lua.client.DebugUIs.TileGeometryEditor
+    .TileGeometryEditor_TilePicker2 {}
+  /** @noSelf */
+  export const TileGeometryEditor_InitUI: () => any;
+
   // [lua/client/DebugUIs/WatchWindow.d.ts]
   /** @customConstructor WatchWindow:new */
   export class WatchWindow extends lua.client.DebugUIs.WatchWindow {}
+
+  // [lua/client/Entity/ISEntityUI.d.ts]
+  export abstract class ISEntityUI extends lua.client.Entity.ISEntityUI {}
+
+  // [lua/client/Entity/ISEntityUtilUI.d.ts]
+  export abstract class ISEntityUtilUI extends lua.client.Entity.ISEntityUtilUI {}
+
+  // [lua/client/Entity/ISUI/BuildRecipe/ISBuildPanel.d.ts]
+  /** @customConstructor ISBuildPanel:new */
+  export class ISBuildPanel extends lua.client.Entity.ISUI.BuildRecipe.ISBuildPanel {}
+
+  // [lua/client/Entity/ISUI/BuildRecipe/ISBuildRecipePanel.d.ts]
+  /** @customConstructor ISBuildRecipePanel:new */
+  export class ISBuildRecipePanel extends lua.client.Entity.ISUI.BuildRecipe.ISBuildRecipePanel {}
+
+  // [lua/client/Entity/ISUI/BuildRecipe/ISBuildWidgetIngredientsInputs.d.ts]
+  /** @customConstructor ISBuildWidgetIngredientsInputs:new */
+  export class ISBuildWidgetIngredientsInputs extends lua.client.Entity.ISUI.BuildRecipe
+    .ISBuildWidgetIngredientsInputs {}
+
+  // [lua/client/Entity/ISUI/BuildRecipe/ISWidgetBuildControl.d.ts]
+  /** @customConstructor ISWidgetBuildControl:new */
+  export class ISWidgetBuildControl extends lua.client.Entity.ISUI.BuildRecipe.ISWidgetBuildControl {}
+
+  // [lua/client/Entity/ISUI/Components/Crafting/ISButcherHookCraftPanel.d.ts]
+  /** @customConstructor ISButcherHookCraftPanel:new */
+  export class ISButcherHookCraftPanel extends lua.client.Entity.ISUI.Components.Crafting.ISButcherHookCraftPanel {}
+
+  // [lua/client/Entity/ISUI/Components/Crafting/ISButcherHookProcessorPanel.d.ts]
+  /** @customConstructor ISButcherHookProcessorPanel:new */
+  export class ISButcherHookProcessorPanel extends lua.client.Entity.ISUI.Components.Crafting
+    .ISButcherHookProcessorPanel {}
+
+  // [lua/client/Entity/ISUI/Components/Crafting/ISCraftBenchPanel.d.ts]
+  /** @customConstructor ISCraftBenchPanel:new */
+  export class ISCraftBenchPanel extends lua.client.Entity.ISUI.Components.Crafting.ISCraftBenchPanel {}
+
+  // [lua/client/Entity/ISUI/Components/Crafting/ISCraftLogicPanel.d.ts]
+  /** @customConstructor ISCraftLogicPanel:new */
+  export class ISCraftLogicPanel extends lua.client.Entity.ISUI.Components.Crafting.ISCraftLogicPanel {}
+
+  // [lua/client/Entity/ISUI/Components/Crafting/ISFurnaceLogicPanel.d.ts]
+  /** @customConstructor ISFurnaceLogicPanel:new */
+  export class ISFurnaceLogicPanel extends lua.client.Entity.ISUI.Components.Crafting.ISFurnaceLogicPanel {}
+
+  // [lua/client/Entity/ISUI/Components/Crafting/ISMashingLogicPanel.d.ts]
+  /** @customConstructor ISMashingLogicPanel:new */
+  export class ISMashingLogicPanel extends lua.client.Entity.ISUI.Components.Crafting.ISMashingLogicPanel {}
+
+  // [lua/client/Entity/ISUI/Components/ISBaseComponentPanel.d.ts]
+  /** @customConstructor ISBaseComponentPanel:new */
+  export class ISBaseComponentPanel extends lua.client.Entity.ISUI.Components.ISBaseComponentPanel {}
+
+  // [lua/client/Entity/ISUI/Components/ISTestComponentPanel.d.ts]
+  /** @customConstructor ISTestComponentPanel:new */
+  export class ISTestComponentPanel extends lua.client.Entity.ISUI.Components.ISTestComponentPanel {}
+
+  // [lua/client/Entity/ISUI/Controls/ISComponentsListPanel.d.ts]
+  /** @customConstructor ISComponentsListPanel:new */
+  export class ISComponentsListPanel extends lua.client.Entity.ISUI.Controls.ISComponentsListPanel {}
+
+  // [lua/client/Entity/ISUI/Controls/ISComponentsTabPanel.d.ts]
+  /** @customConstructor ISComponentsTabPanel:new */
+  export class ISComponentsTabPanel extends lua.client.Entity.ISUI.Controls.ISComponentsTabPanel {}
+
+  // [lua/client/Entity/ISUI/Controls/ISEnergyBar.d.ts]
+  /** @customConstructor ISEnergyBar:new */
+  export class ISEnergyBar extends lua.client.Entity.ISUI.Controls.ISEnergyBar {}
+
+  // [lua/client/Entity/ISUI/Controls/ISEnergySlot.d.ts]
+  /** @customConstructor ISEnergySlot:new */
+  export class ISEnergySlot extends lua.client.Entity.ISUI.Controls.ISEnergySlot {}
+
+  // [lua/client/Entity/ISUI/Controls/ISEnergySlotPanel.d.ts]
+  /** @customConstructor ISEnergySlotPanel:new */
+  export class ISEnergySlotPanel extends lua.client.Entity.ISUI.Controls.ISEnergySlotPanel {}
+
+  // [lua/client/Entity/ISUI/Controls/ISFluidSlot.d.ts]
+  /** @customConstructor ISFluidSlot:new */
+  export class ISFluidSlot extends lua.client.Entity.ISUI.Controls.ISFluidSlot {}
+
+  // [lua/client/Entity/ISUI/Controls/ISFluidSlotPanel.d.ts]
+  /** @customConstructor ISFluidSlotPanel:new */
+  export class ISFluidSlotPanel extends lua.client.Entity.ISUI.Controls.ISFluidSlotPanel {}
+
+  // [lua/client/Entity/ISUI/Controls/ISGroupBox.d.ts]
+  /** @customConstructor ISGroupBox:new */
+  export class ISGroupBox extends lua.client.Entity.ISUI.Controls.ISGroupBox {}
+
+  // [lua/client/Entity/ISUI/Controls/ISItemSlot.d.ts]
+  /** @customConstructor ISItemSlot:new */
+  export class ISItemSlot extends lua.client.Entity.ISUI.Controls.ISItemSlot {}
+
+  // [lua/client/Entity/ISUI/Controls/ISItemSlotPanel.d.ts]
+  /** @customConstructor ISItemSlotPanel:new */
+  export class ISItemSlotPanel extends lua.client.Entity.ISUI.Controls.ISItemSlotPanel {}
+
+  // [lua/client/Entity/ISUI/Controls/ISTableLayout.d.ts]
+  /** @customConstructor ISTableLayout:new */
+  export class ISTableLayout extends lua.client.Entity.ISUI.Controls.ISTableLayout {}
+  /** @customConstructor ISTableLayoutCell:new */
+  export class ISTableLayoutCell extends lua.client.Entity.ISUI.Controls.ISTableLayoutCell {}
+  /** @customConstructor ISTableLayoutColumn:new */
+  export class ISTableLayoutColumn extends lua.client.Entity.ISUI.Controls.ISTableLayoutColumn {}
+  /** @customConstructor ISTableLayoutRow:new */
+  export class ISTableLayoutRow extends lua.client.Entity.ISUI.Controls.ISTableLayoutRow {}
+
+  // [lua/client/Entity/ISUI/Controls/ISVendorSpiral.d.ts]
+  /** @customConstructor ISVendorSpiral:new */
+  export class ISVendorSpiral extends lua.client.Entity.ISUI.Controls.ISVendorSpiral {}
+
+  // [lua/client/Entity/ISUI/Controls/ISWidgetComponentHeader.d.ts]
+  /** @customConstructor ISWidgetComponentHeader:new */
+  export class ISWidgetComponentHeader extends lua.client.Entity.ISUI.Controls.ISWidgetComponentHeader {}
+
+  // [lua/client/Entity/ISUI/Controls/ISWidgetCraftControl.d.ts]
+  /** @customConstructor ISWidgetCraftControl:new */
+  export class ISWidgetCraftControl extends lua.client.Entity.ISUI.Controls.ISWidgetCraftControl {}
+
+  // [lua/client/Entity/ISUI/Controls/ISWidgetCraftDebug.d.ts]
+  /** @customConstructor ISWidgetCraftDebug:new */
+  export class ISWidgetCraftDebug extends lua.client.Entity.ISUI.Controls.ISWidgetCraftDebug {}
+
+  // [lua/client/Entity/ISUI/Controls/ISWidgetCraftProgress.d.ts]
+  /** @customConstructor ISWidgetCraftProgress:new */
+  export class ISWidgetCraftProgress extends lua.client.Entity.ISUI.Controls.ISWidgetCraftProgress {}
+
+  // [lua/client/Entity/ISUI/Controls/ISWidgetEntityDebug.d.ts]
+  /** @customConstructor ISWidgetEntityDebug:new */
+  export class ISWidgetEntityDebug extends lua.client.Entity.ISUI.Controls.ISWidgetEntityDebug {}
+
+  // [lua/client/Entity/ISUI/Controls/ISWidgetEntityHeader.d.ts]
+  /** @customConstructor ISWidgetEntityHeader:new */
+  export class ISWidgetEntityHeader extends lua.client.Entity.ISUI.Controls.ISWidgetEntityHeader {}
+
+  // [lua/client/Entity/ISUI/Controls/ISWidgetRecipeSelect.d.ts]
+  /** @customConstructor ISWidgetRecipeSelect:new */
+  export class ISWidgetRecipeSelect extends lua.client.Entity.ISUI.Controls.ISWidgetRecipeSelect {}
+
+  // [lua/client/Entity/ISUI/Controls/ISWidgetTitleHeader.d.ts]
+  /** @customConstructor ISWidgetTitleHeader:new */
+  export class ISWidgetTitleHeader extends lua.client.Entity.ISUI.Controls.ISWidgetTitleHeader {}
+
+  // [lua/client/Entity/ISUI/CraftRecipe/ISCraftInputItems.d.ts]
+  /** @customConstructor ISCraftInputItemNode:new */
+  export class ISCraftInputItemNode extends lua.client.Entity.ISUI.CraftRecipe.ISCraftInputItemNode {}
+  /** @customConstructor ISCraftInputItems:new */
+  export class ISCraftInputItems extends lua.client.Entity.ISUI.CraftRecipe.ISCraftInputItems {}
+
+  // [lua/client/Entity/ISUI/CraftRecipe/ISCraftInventoryPanel.d.ts]
+  /** @customConstructor ISCraftInventoryPanel:new */
+  export class ISCraftInventoryPanel extends lua.client.Entity.ISUI.CraftRecipe.ISCraftInventoryPanel {}
+
+  // [lua/client/Entity/ISUI/CraftRecipe/ISCraftRecipeInfoBox.d.ts]
+  /** @customConstructor ISCraftRecipeInfoBox:new */
+  export class ISCraftRecipeInfoBox extends lua.client.Entity.ISUI.CraftRecipe.ISCraftRecipeInfoBox {}
+
+  // [lua/client/Entity/ISUI/CraftRecipe/ISCraftRecipePanel.d.ts]
+  /** @customConstructor ISCraftRecipePanel:new */
+  export class ISCraftRecipePanel extends lua.client.Entity.ISUI.CraftRecipe.ISCraftRecipePanel {}
+
+  // [lua/client/Entity/ISUI/CraftRecipe/ISCraftRecipeTooltip.d.ts]
+  /** @customConstructor ISCraftRecipeTooltip:new */
+  export class ISCraftRecipeTooltip extends lua.client.Entity.ISUI.CraftRecipe.ISCraftRecipeTooltip {}
+
+  // [lua/client/Entity/ISUI/CraftRecipe/ISHandCraftPanel.d.ts]
+  /** @customConstructor ISHandCraftPanel:new */
+  export class ISHandCraftPanel extends lua.client.Entity.ISUI.CraftRecipe.ISHandCraftPanel {}
+
+  // [lua/client/Entity/ISUI/CraftRecipe/ISTiledIconListBox.d.ts]
+  /** @customConstructor ISTiledIconListBox:new */
+  export class ISTiledIconListBox extends lua.client.Entity.ISUI.CraftRecipe.ISTiledIconListBox {}
+
+  // [lua/client/Entity/ISUI/CraftRecipe/ISTiledIconPanel.d.ts]
+  /** @customConstructor ISTiledIconPanel:new */
+  export class ISTiledIconPanel extends lua.client.Entity.ISUI.CraftRecipe.ISTiledIconPanel {}
+
+  // [lua/client/Entity/ISUI/CraftRecipe/ISWidgetAutoToggle.d.ts]
+  /** @customConstructor ISWidgetAutoToggle:new */
+  export class ISWidgetAutoToggle extends lua.client.Entity.ISUI.CraftRecipe.ISWidgetAutoToggle {}
+
+  // [lua/client/Entity/ISUI/CraftRecipe/ISWidgetHandCraftControl.d.ts]
+  /** @customConstructor ISWidgetHandCraftControl:new */
+  export class ISWidgetHandCraftControl extends lua.client.Entity.ISUI.CraftRecipe.ISWidgetHandCraftControl {}
+
+  // [lua/client/Entity/ISUI/CraftRecipe/ISWidgetIngredients.d.ts]
+  /** @customConstructor ISWidgetIngredients:new */
+  export class ISWidgetIngredients extends lua.client.Entity.ISUI.CraftRecipe.ISWidgetIngredients {}
+
+  // [lua/client/Entity/ISUI/CraftRecipe/ISWidgetIngredientsInputs.d.ts]
+  /** @customConstructor ISWidgetIngredientsInputs:new */
+  export class ISWidgetIngredientsInputs extends lua.client.Entity.ISUI.CraftRecipe.ISWidgetIngredientsInputs {}
+
+  // [lua/client/Entity/ISUI/CraftRecipe/ISWidgetIngredientsOutputs.d.ts]
+  /** @customConstructor ISWidgetIngredientsOutputs:new */
+  export class ISWidgetIngredientsOutputs extends lua.client.Entity.ISUI.CraftRecipe.ISWidgetIngredientsOutputs {}
+
+  // [lua/client/Entity/ISUI/CraftRecipe/ISWidgetInput.d.ts]
+  /** @customConstructor ISWidgetInput:new */
+  export class ISWidgetInput extends lua.client.Entity.ISUI.CraftRecipe.ISWidgetInput {}
+
+  // [lua/client/Entity/ISUI/CraftRecipe/ISWidgetOutput.d.ts]
+  /** @customConstructor ISWidgetOutput:new */
+  export class ISWidgetOutput extends lua.client.Entity.ISUI.CraftRecipe.ISWidgetOutput {}
+
+  // [lua/client/Entity/ISUI/CraftRecipe/ISWidgetRecipeCategories.d.ts]
+  /** @customConstructor ISWidgetRecipeCategories:new */
+  export class ISWidgetRecipeCategories extends lua.client.Entity.ISUI.CraftRecipe.ISWidgetRecipeCategories {}
+
+  // [lua/client/Entity/ISUI/CraftRecipe/ISWidgetRecipeFilterPanel.d.ts]
+  /** @customConstructor ISWidgetRecipeFilterPanel:new */
+  export class ISWidgetRecipeFilterPanel extends lua.client.Entity.ISUI.CraftRecipe.ISWidgetRecipeFilterPanel {}
+
+  // [lua/client/Entity/ISUI/CraftRecipe/ISWidgetRecipeListPanel.d.ts]
+  /** @customConstructor ISWidgetRecipeListPanel:new */
+  export class ISWidgetRecipeListPanel extends lua.client.Entity.ISUI.CraftRecipe.ISWidgetRecipeListPanel {}
+
+  // [lua/client/Entity/ISUI/CraftRecipe/ISWidgetRecipesPanel.d.ts]
+  /** @customConstructor ISWidgetRecipesPanel:new */
+  export class ISWidgetRecipesPanel extends lua.client.Entity.ISUI.CraftRecipe.ISWidgetRecipesPanel {}
+
+  // [lua/client/Entity/ISUI/CraftRecipe/ISWidgetRecipeTools.d.ts]
+  /** @customConstructor ISWidgetRecipeTools:new */
+  export class ISWidgetRecipeTools extends lua.client.Entity.ISUI.CraftRecipe.ISWidgetRecipeTools {}
+
+  // [lua/client/Entity/ISUI/CraftRecipe/ISWidgetTooltipInput.d.ts]
+  /** @customConstructor ISWidgetTooltipInput:new */
+  export class ISWidgetTooltipInput extends lua.client.Entity.ISUI.CraftRecipe.ISWidgetTooltipInput {}
+
+  // [lua/client/Entity/ISUI/CraftRecipe/ISWidgetTooltipOutput.d.ts]
+  /** @customConstructor ISWidgetTooltipOutput:new */
+  export class ISWidgetTooltipOutput extends lua.client.Entity.ISUI.CraftRecipe.ISWidgetTooltipOutput {}
+
+  // [lua/client/Entity/ISUI/ISBaseEntityWindow.d.ts]
+  /** @customConstructor ISBaseEntityWindow:new */
+  export class ISBaseEntityWindow extends lua.client.Entity.ISUI.ISBaseEntityWindow {}
+
+  // [lua/client/Entity/ISUI/ISEntityBuildMenu.d.ts]
+  export abstract class ISEntityBuildMenu extends lua.client.Entity.ISUI.ISEntityBuildMenu {}
+
+  // [lua/client/Entity/ISUI/Layouts/ISBaseStockingLayout.d.ts]
+  /** @customConstructor ISBaseStockingLayout:new */
+  export class ISBaseStockingLayout extends lua.client.Entity.ISUI.Layouts.ISBaseStockingLayout {}
+
+  // [lua/client/Entity/ISUI/Layouts/ISBaseVendingLayout.d.ts]
+  /** @customConstructor ISBaseVendingLayout:new */
+  export class ISBaseVendingLayout extends lua.client.Entity.ISUI.Layouts.ISBaseVendingLayout {}
+
+  // [lua/client/Entity/ISUI/Layouts/ISPartsLayout.d.ts]
+  /** @customConstructor ISPartsLayout:new */
+  export class ISPartsLayout extends lua.client.Entity.ISUI.Layouts.ISPartsLayout {}
+
+  // [lua/client/Entity/ISUI/Layouts/ISSodaStockingLayout.d.ts]
+  /** @customConstructor ISSodaStockingLayout:new */
+  export class ISSodaStockingLayout extends lua.client.Entity.ISUI.Layouts.ISSodaStockingLayout {}
+
+  // [lua/client/Entity/ISUI/Layouts/ISSodaVendingLayout.d.ts]
+  /** @customConstructor ISSodaVendingLayout:new */
+  export class ISSodaVendingLayout extends lua.client.Entity.ISUI.Layouts.ISSodaVendingLayout {}
+
+  // [lua/client/Entity/ISUI/Layouts/ISVendorStockingLayout.d.ts]
+  /** @customConstructor ISVendorStockingLayout:new */
+  export class ISVendorStockingLayout extends lua.client.Entity.ISUI.Layouts.ISVendorStockingLayout {}
+
+  // [lua/client/Entity/ISUI/Layouts/ISVendorVendingLayout.d.ts]
+  /** @customConstructor ISVendorVendingLayout:new */
+  export class ISVendorVendingLayout extends lua.client.Entity.ISUI.Layouts.ISVendorVendingLayout {}
+
+  // [lua/client/Entity/ISUI/Windows/ISEntityTabWindow.d.ts]
+  /** @customConstructor ISEntityTabWindow:new */
+  export class ISEntityTabWindow extends lua.client.Entity.ISUI.Windows.ISEntityTabWindow {}
+
+  // [lua/client/Entity/ISUI/Windows/ISEntityWindow.d.ts]
+  /** @customConstructor ISEntityWindow:new */
+  export class ISEntityWindow extends lua.client.Entity.ISUI.Windows.ISEntityWindow {}
 
   // [lua/client/erosion/debug/DebugDemoTime.d.ts]
 
   // [lua/client/erosion/debug/Point2D.d.ts]
   export abstract class Point2D extends lua.client.erosion.debug.Point2D {}
+
+  // [lua/client/Farming/CFarming_Interact.d.ts]
+  export abstract class CFarming_Interact extends lua.client.Farming.CFarming_Interact {}
 
   // [lua/client/Farming/CFarmingSystem.d.ts]
   /** @customConstructor CFarmingSystem:new */
@@ -656,6 +1141,7 @@ declare module '@asledgehammer/pipewrench/client' {
   // [lua/client/Farming/ISUI/ISFarmingInfo.d.ts]
   /** @customConstructor ISFarmingInfo:new */
   export class ISFarmingInfo extends lua.client.Farming.ISUI.ISFarmingInfo {}
+  export abstract class compost_rgb extends lua.client.Farming.ISUI.compost_rgb {}
   export abstract class disease extends lua.client.Farming.ISUI.disease {}
   export abstract class disease_rgb extends lua.client.Farming.ISUI.disease_rgb {}
   export abstract class fertilizer_rgb extends lua.client.Farming.ISUI.fertilizer_rgb {}
@@ -672,61 +1158,77 @@ declare module '@asledgehammer/pipewrench/client' {
   /** @customConstructor ISFarmingWindow:new */
   export class ISFarmingWindow extends lua.client.Farming.ISUI.ISFarmingWindow {}
 
-  // [lua/client/Farming/TimedActions/ISCureFliesAction.d.ts]
-  /** @customConstructor ISCureFliesAction:new */
-  export class ISCureFliesAction extends lua.client.Farming.TimedActions.ISCureFliesAction {}
-
-  // [lua/client/Farming/TimedActions/ISCureMildewAction.d.ts]
-  /** @customConstructor ISCureMildewAction:new */
-  export class ISCureMildewAction extends lua.client.Farming.TimedActions.ISCureMildewAction {}
-
-  // [lua/client/Farming/TimedActions/ISFertilizeAction.d.ts]
-  /** @customConstructor ISFertilizeAction:new */
-  export class ISFertilizeAction extends lua.client.Farming.TimedActions.ISFertilizeAction {}
-
-  // [lua/client/Farming/TimedActions/ISHarvestPlantAction.d.ts]
-  /** @customConstructor ISHarvestPlantAction:new */
-  export class ISHarvestPlantAction extends lua.client.Farming.TimedActions.ISHarvestPlantAction {}
-
   // [lua/client/Farming/TimedActions/ISPlantInfoAction.d.ts]
   /** @customConstructor ISPlantInfoAction:new */
   export class ISPlantInfoAction extends lua.client.Farming.TimedActions.ISPlantInfoAction {}
 
-  // [lua/client/Farming/TimedActions/ISPlowAction.d.ts]
-  /** @customConstructor ISPlowAction:new */
-  export class ISPlowAction extends lua.client.Farming.TimedActions.ISPlowAction {}
+  // [lua/client/FeedingTrough/CFeedingTroughGlobalObject.d.ts]
+  /** @customConstructor CFeedingTroughGlobalObject:new */
+  export class CFeedingTroughGlobalObject extends lua.client.FeedingTrough.CFeedingTroughGlobalObject {}
 
-  // [lua/client/Farming/TimedActions/ISSeedAction.d.ts]
-  /** @customConstructor ISSeedAction:new */
-  export class ISSeedAction extends lua.client.Farming.TimedActions.ISSeedAction {}
+  // [lua/client/FeedingTrough/CFeedingTroughSystem.d.ts]
+  /** @customConstructor CFeedingTroughSystem:new */
+  export class CFeedingTroughSystem extends lua.client.FeedingTrough.CFeedingTroughSystem {}
 
-  // [lua/client/Farming/TimedActions/ISShovelAction.d.ts]
-  /** @customConstructor ISShovelAction:new */
-  export class ISShovelAction extends lua.client.Farming.TimedActions.ISShovelAction {}
+  // [lua/client/FeedingTrough/ISUI/ISFeedingTroughMenu.d.ts]
+  export abstract class ISFeedingTroughMenu extends lua.client.FeedingTrough.ISUI.ISFeedingTroughMenu {}
 
-  // [lua/client/Farming/TimedActions/ISWaterPlantAction.d.ts]
-  /** @customConstructor ISWaterPlantAction:new */
-  export class ISWaterPlantAction extends lua.client.Farming.TimedActions.ISWaterPlantAction {}
+  // [lua/client/FeedingTrough/ISUI/ISFeedingTroughUI.d.ts]
+  /** @customConstructor ISFeedingTroughUI:new */
+  export class ISFeedingTroughUI extends lua.client.FeedingTrough.ISUI.ISFeedingTroughUI {}
 
-  // [lua/client/Fishing/TimedActions/ISCheckFishingNetAction.d.ts]
-  /** @customConstructor ISCheckFishingNetAction:new */
-  export class ISCheckFishingNetAction extends lua.client.Fishing.TimedActions.ISCheckFishingNetAction {}
+  // [lua/client/Fishing/FishingDebugWindow.d.ts]
+  /** @customConstructor FishingDebugWindow:new */
+  export class FishingDebugWindow extends lua.client.Fishing.FishingDebugWindow {}
 
-  // [lua/client/Fishing/TimedActions/ISFishingAction.d.ts]
-  /** @customConstructor ISFishingAction:new */
-  export class ISFishingAction extends lua.client.Fishing.TimedActions.ISFishingAction {}
+  // [lua/client/Fishing/FishingHandler.d.ts]
+  /** @noSelf */
+  export const OnGameStart: () => any;
+
+  // [lua/client/Fishing/FishingStates.d.ts]
+  /** @noSelf */
+  export const start: () => any;
+  /** @noSelf */
+  export const stop: () => any;
+  /** @noSelf */
+  export const update: () => any;
+
+  // [lua/client/Fishing/TensionUI.d.ts]
+  // Wrong: class name is undefined
+
+  // [lua/client/Fluids/ISFluidBar.d.ts]
+  /** @customConstructor ISFluidBar:new */
+  export class ISFluidBar extends lua.client.Fluids.ISFluidBar {}
+
+  // [lua/client/Fluids/ISFluidContainerPanel.d.ts]
+  /** @customConstructor ISFluidContainerPanel:new */
+  export class ISFluidContainerPanel extends lua.client.Fluids.ISFluidContainerPanel {}
+
+  // [lua/client/Fluids/ISFluidInfoUI.d.ts]
+  /** @customConstructor ISFluidInfoUI:new */
+  export class ISFluidInfoUI extends lua.client.Fluids.ISFluidInfoUI {}
+
+  // [lua/client/Fluids/ISFluidPanelAction.d.ts]
+  /** @customConstructor ISFluidPanelAction:new */
+  export class ISFluidPanelAction extends lua.client.Fluids.ISFluidPanelAction {}
+
+  // [lua/client/Fluids/ISFluidTransferUI.d.ts]
+  /** @customConstructor ISFluidTransferUI:new */
+  export class ISFluidTransferUI extends lua.client.Fluids.ISFluidTransferUI {}
 
   // [lua/client/Foraging/forageClient.d.ts]
   export abstract class forageClient extends lua.client.Foraging.forageClient {}
   export abstract class forageData extends lua.client.Foraging.forageData {}
 
+  // [lua/client/Foraging/ISAnimalTracksFinder.d.ts]
+  export abstract class ISAnimalTracksFinder extends lua.client.Foraging.ISAnimalTracksFinder {}
+
+  // [lua/client/Foraging/ISAnimalTracksMenu.d.ts]
+  export abstract class ISAnimalTracksMenu extends lua.client.Foraging.ISAnimalTracksMenu {}
+
   // [lua/client/Foraging/ISBaseIcon.d.ts]
   /** @customConstructor ISBaseIcon:new */
   export class ISBaseIcon extends lua.client.Foraging.ISBaseIcon {}
-
-  // [lua/client/Foraging/ISForageAction.d.ts]
-  /** @customConstructor ISForageAction:new */
-  export class ISForageAction extends lua.client.Foraging.ISForageAction {}
 
   // [lua/client/Foraging/ISForageIcon.d.ts]
   /** @customConstructor ISForageIcon:new */
@@ -740,9 +1242,17 @@ declare module '@asledgehammer/pipewrench/client' {
   /** @customConstructor ISSearchWindow:new */
   export class ISSearchWindow extends lua.client.Foraging.ISSearchWindow {}
 
+  // [lua/client/Foraging/ISStashIcon.d.ts]
+  /** @customConstructor ISStashIcon:new */
+  export class ISStashIcon extends lua.client.Foraging.ISStashIcon {}
+
   // [lua/client/Foraging/ISWorldItemIcon.d.ts]
   /** @customConstructor ISWorldItemIcon:new */
   export class ISWorldItemIcon extends lua.client.Foraging.ISWorldItemIcon {}
+
+  // [lua/client/Foraging/ISWorldItemIconTrack.d.ts]
+  /** @customConstructor ISWorldItemIconTrack:new */
+  export class ISWorldItemIconTrack extends lua.client.Foraging.ISWorldItemIconTrack {}
 
   // [lua/client/Foraging/ISZoneDisplay.d.ts]
   /** @customConstructor ISZoneDisplay:new */
@@ -796,6 +1306,10 @@ declare module '@asledgehammer/pipewrench/client' {
   /** @customConstructor ISItemEditorUI:new */
   export class ISItemEditorUI extends lua.client.ISUI.AdminPanel.ISItemEditorUI {}
 
+  // [lua/client/ISUI/AdminPanel/ISItemEditPanel.d.ts]
+  /** @customConstructor ISItemEditPanel:new */
+  export class ISItemEditPanel extends lua.client.ISUI.AdminPanel.ISItemEditPanel {}
+
   // [lua/client/ISUI/AdminPanel/ISItemsListTable.d.ts]
   /** @customConstructor ISItemsListTable:new */
   export class ISItemsListTable extends lua.client.ISUI.AdminPanel.ISItemsListTable {}
@@ -804,9 +1318,17 @@ declare module '@asledgehammer/pipewrench/client' {
   /** @customConstructor ISItemsListViewer:new */
   export class ISItemsListViewer extends lua.client.ISUI.AdminPanel.ISItemsListViewer {}
 
+  // [lua/client/ISUI/AdminPanel/ISLootLog.d.ts]
+  /** @customConstructor ISLootLog:new */
+  export class ISLootLog extends lua.client.ISUI.AdminPanel.ISLootLog {}
+
   // [lua/client/ISUI/AdminPanel/ISMiniScoreboardUI.d.ts]
   /** @customConstructor ISMiniScoreboardUI:new */
   export class ISMiniScoreboardUI extends lua.client.ISUI.AdminPanel.ISMiniScoreboardUI {}
+
+  // [lua/client/ISUI/AdminPanel/ISModalEditRole.d.ts]
+  /** @customConstructor ISModalEditRole:new */
+  export class ISModalEditRole extends lua.client.ISUI.AdminPanel.ISModalEditRole {}
 
   // [lua/client/ISUI/AdminPanel/ISPacketCounts.d.ts]
   /** @customConstructor ISPacketCounts:new */
@@ -814,9 +1336,17 @@ declare module '@asledgehammer/pipewrench/client' {
   /** @customConstructor ISPacketCountsList:new */
   export class ISPacketCountsList extends lua.client.ISUI.AdminPanel.ISPacketCountsList {}
 
+  // [lua/client/ISUI/AdminPanel/ISPVPLogToolUI.d.ts]
+  /** @customConstructor ISPVPLogToolUI:new */
+  export class ISPVPLogToolUI extends lua.client.ISUI.AdminPanel.ISPVPLogToolUI {}
+
   // [lua/client/ISUI/AdminPanel/ISPvpZonePanel.d.ts]
   /** @customConstructor ISPvpZonePanel:new */
   export class ISPvpZonePanel extends lua.client.ISUI.AdminPanel.ISPvpZonePanel {}
+
+  // [lua/client/ISUI/AdminPanel/ISRolesList.d.ts]
+  /** @customConstructor ISRolesList:new */
+  export class ISRolesList extends lua.client.ISUI.AdminPanel.ISRolesList {}
 
   // [lua/client/ISUI/AdminPanel/ISSafehousesList.d.ts]
   /** @customConstructor ISSafehousesList:new */
@@ -835,8 +1365,14 @@ declare module '@asledgehammer/pipewrench/client' {
   export class ISServerSandboxOptionsUI extends lua.client.ISUI.AdminPanel.ISServerSandboxOptionsUI {}
 
   // [lua/client/ISUI/AdminPanel/ISStatisticsUI.d.ts]
+  /** @customConstructor ISStatisticsPanel:new */
+  export class ISStatisticsPanel extends lua.client.ISUI.AdminPanel.ISStatisticsPanel {}
   /** @customConstructor ISStatisticsUI:new */
   export class ISStatisticsUI extends lua.client.ISUI.AdminPanel.ISStatisticsUI {}
+
+  // [lua/client/ISUI/AdminPanel/ISUsersList.d.ts]
+  /** @customConstructor ISUsersList:new */
+  export class ISUsersList extends lua.client.ISUI.AdminPanel.ISUsersList {}
 
   // [lua/client/ISUI/AdminPanel/ISWhitelistModifyRow.d.ts]
   /** @customConstructor ISWhitelistModifyRow:new */
@@ -857,9 +1393,93 @@ declare module '@asledgehammer/pipewrench/client' {
   // [lua/client/ISUI/AdminPanel/LootZed/SpawnRateChecker.d.ts]
   export abstract class LootZedTool extends lua.client.ISUI.AdminPanel.LootZed.LootZedTool {}
 
+  // [lua/client/ISUI/AdminPanel/ZoneEditor/ISMultiplayerZoneEditor.d.ts]
+  /** @customConstructor ISMultiplayerZoneEditor:new */
+  export class ISMultiplayerZoneEditor extends lua.client.ISUI.AdminPanel.ZoneEditor.ISMultiplayerZoneEditor {}
+  /** @customConstructor ISMultiplayerZoneEditor_ButtonPanel:new */
+  export class ISMultiplayerZoneEditor_ButtonPanel extends lua.client.ISUI.AdminPanel.ZoneEditor
+    .ISMultiplayerZoneEditor_ButtonPanel {}
+
+  // [lua/client/ISUI/AdminPanel/ZoneEditor/MultiplayerZoneEditorMode_NonPVP.d.ts]
+  /** @customConstructor MultiplayerZoneEditorMode_NonPVP:new */
+  export class MultiplayerZoneEditorMode_NonPVP extends lua.client.ISUI.AdminPanel.ZoneEditor
+    .MultiplayerZoneEditorMode_NonPVP {}
+
+  // [lua/client/ISUI/AdminPanel/ZoneEditor/MultiplayerZoneEditorMode_Safehouse.d.ts]
+  /** @customConstructor MultiplayerZoneEditorMode_Safehouse:new */
+  export class MultiplayerZoneEditorMode_Safehouse extends lua.client.ISUI.AdminPanel.ZoneEditor
+    .MultiplayerZoneEditorMode_Safehouse {}
+  /** @customConstructor MultiplayerZoneEditorMode_Safehouse_Confirm:new */
+  export class MultiplayerZoneEditorMode_Safehouse_Confirm extends lua.client.ISUI.AdminPanel.ZoneEditor
+    .MultiplayerZoneEditorMode_Safehouse_Confirm {}
+  /** @customConstructor MultiplayerZoneEditorMode_Safehouse_Details:new */
+  export class MultiplayerZoneEditorMode_Safehouse_Details extends lua.client.ISUI.AdminPanel.ZoneEditor
+    .MultiplayerZoneEditorMode_Safehouse_Details {}
+
+  // [lua/client/ISUI/AdminPanel/ZoneEditor/MultiplayerZoneEditorMode.d.ts]
+  /** @customConstructor MultiplayerZoneEditorMode:new */
+  export class MultiplayerZoneEditorMode extends lua.client.ISUI.AdminPanel.ZoneEditor.MultiplayerZoneEditorMode {}
+
+  // [lua/client/ISUI/Animal/ISAddDesignationAnimalZoneUI.d.ts]
+  /** @customConstructor ISAddDesignationAnimalZoneUI:new */
+  export class ISAddDesignationAnimalZoneUI extends lua.client.ISUI.Animal.ISAddDesignationAnimalZoneUI {}
+
+  // [lua/client/ISUI/Animal/ISAnimalBehaviorDebugUI.d.ts]
+  /** @customConstructor ISAnimalBehaviorDebugUI:new */
+  export class ISAnimalBehaviorDebugUI extends lua.client.ISUI.Animal.ISAnimalBehaviorDebugUI {}
+
+  // [lua/client/ISUI/Animal/ISAnimalContextMenu.d.ts]
+  export abstract class AnimalContextMenu extends lua.client.ISUI.Animal.AnimalContextMenu {}
+
+  // [lua/client/ISUI/Animal/ISAnimalGenomeUI.d.ts]
+  /** @customConstructor ISAnimalGenomeUI:new */
+  export class ISAnimalGenomeUI extends lua.client.ISUI.Animal.ISAnimalGenomeUI {}
+
+  // [lua/client/ISUI/Animal/ISAnimalTracksUI.d.ts]
+  /** @customConstructor ISAnimalTracksUI:new */
+  export class ISAnimalTracksUI extends lua.client.ISUI.Animal.ISAnimalTracksUI {}
+
+  // [lua/client/ISUI/Animal/ISAnimalUI.d.ts]
+  /** @customConstructor ISAnimalAvatar:new */
+  export class ISAnimalAvatar extends lua.client.ISUI.Animal.ISAnimalAvatar {}
+  /** @customConstructor ISAnimalUI:new */
+  export class ISAnimalUI extends lua.client.ISUI.Animal.ISAnimalUI {}
+
+  // [lua/client/ISUI/Animal/ISAnimalZoneFirstInfo.d.ts]
+  /** @customConstructor ISAnimalZoneFirstInfo:new */
+  export class ISAnimalZoneFirstInfo extends lua.client.ISUI.Animal.ISAnimalZoneFirstInfo {}
+
+  // [lua/client/ISUI/Animal/ISButcherHookUI.d.ts]
+  /** @customConstructor ISButcherHookUI:new */
+  export class ISButcherHookUI extends lua.client.ISUI.Animal.ISButcherHookUI {}
+
+  // [lua/client/ISUI/Animal/ISButcheringDebugUI.d.ts]
+  /** @customConstructor ISButcheringDebugUI:new */
+  export class ISButcheringDebugUI extends lua.client.ISUI.Animal.ISButcheringDebugUI {}
+
+  // [lua/client/ISUI/Animal/ISDesignationAnimalZoneUI.d.ts]
+  /** @customConstructor ISDesignationZoneAnimalZoneUI:new */
+  export class ISDesignationZoneAnimalZoneUI extends lua.client.ISUI.Animal.ISDesignationZoneAnimalZoneUI {}
+
   // [lua/client/ISUI/BodyParts/ISBodyPartPanel.d.ts]
   /** @customConstructor ISBodyPartPanel:new */
   export class ISBodyPartPanel extends lua.client.ISUI.BodyParts.ISBodyPartPanel {}
+
+  // [lua/client/ISUI/Building/ISBuildWindow.d.ts]
+  /** @customConstructor ISBuildWindow:new */
+  export class ISBuildWindow extends lua.client.ISUI.Building.ISBuildWindow {}
+
+  // [lua/client/ISUI/Building/ISBuildWindowHeader.d.ts]
+  /** @customConstructor ISBuildWindowHeader:new */
+  export class ISBuildWindowHeader extends lua.client.ISUI.Building.ISBuildWindowHeader {}
+
+  // [lua/client/ISUI/Crafting/ISHandcraftWindow.d.ts]
+  /** @customConstructor ISHandcraftWindow:new */
+  export class ISHandcraftWindow extends lua.client.ISUI.Crafting.ISHandcraftWindow {}
+
+  // [lua/client/ISUI/Crafting/ISHandcraftWindowHeader.d.ts]
+  /** @customConstructor ISHandcraftWindowHeader:new */
+  export class ISHandcraftWindowHeader extends lua.client.ISUI.Crafting.ISHandcraftWindowHeader {}
 
   // [lua/client/ISUI/Fireplace/ISKnob.d.ts]
   /** @customConstructor ISKnob:new */
@@ -876,6 +1496,19 @@ declare module '@asledgehammer/pipewrench/client' {
   // [lua/client/ISUI/FPS.d.ts]
   export abstract class ISFPS extends lua.client.ISUI.ISFPS {}
 
+  // [lua/client/ISUI/Hutch/ISHutchMenu.d.ts]
+  export abstract class ISHutchMenu extends lua.client.ISUI.Hutch.ISHutchMenu {}
+
+  // [lua/client/ISUI/Hutch/ISHutchUI.d.ts]
+  /** @customConstructor ISHutch3DModel:new */
+  export class ISHutch3DModel extends lua.client.ISUI.Hutch.ISHutch3DModel {}
+  /** @customConstructor ISHutchNestBox:new */
+  export class ISHutchNestBox extends lua.client.ISUI.Hutch.ISHutchNestBox {}
+  /** @customConstructor ISHutchRoost:new */
+  export class ISHutchRoost extends lua.client.ISUI.Hutch.ISHutchRoost {}
+  /** @customConstructor ISHutchUI:new */
+  export class ISHutchUI extends lua.client.ISUI.Hutch.ISHutchUI {}
+
   // [lua/client/ISUI/InterpolationPeriodDebug.d.ts]
   /** @customConstructor InterpolationPeriodDebug:new */
   export class InterpolationPeriodDebug extends lua.client.ISUI.InterpolationPeriodDebug {}
@@ -883,6 +1516,14 @@ declare module '@asledgehammer/pipewrench/client' {
   // [lua/client/ISUI/InterpolationPlayerPeriodDebug.d.ts]
   /** @customConstructor InterpolationPlayerPeriodDebug:new */
   export class InterpolationPlayerPeriodDebug extends lua.client.ISUI.InterpolationPlayerPeriodDebug {}
+
+  // [lua/client/ISUI/IS9Patch.d.ts]
+  /** @customConstructor IS9Patch:new */
+  export class IS9Patch extends lua.client.ISUI.IS9Patch {}
+
+  // [lua/client/ISUI/ISAddGeneticDisorderUIU.d.ts]
+  /** @customConstructor ISAddGeneticDisorderUI:new */
+  export class ISAddGeneticDisorderUI extends lua.client.ISUI.ISAddGeneticDisorderUI {}
 
   // [lua/client/ISUI/ISAlarmClockDialog.d.ts]
   /** @customConstructor ISAlarmClockDialog:new */
@@ -927,6 +1568,10 @@ declare module '@asledgehammer/pipewrench/client' {
   /** @customConstructor ISColorPicker:new */
   export class ISColorPicker extends lua.client.ISUI.ISColorPicker {}
 
+  // [lua/client/ISUI/ISColorPickerHSB.d.ts]
+  /** @customConstructor ISColorPickerHSB:new */
+  export class ISColorPickerHSB extends lua.client.ISUI.ISColorPickerHSB {}
+
   // [lua/client/ISUI/ISComboBox.d.ts]
   /** @customConstructor ISComboBox:new */
   export class ISComboBox extends lua.client.ISUI.ISComboBox {}
@@ -952,14 +1597,24 @@ declare module '@asledgehammer/pipewrench/client' {
   export class ISCraftingCategoryUI extends lua.client.ISUI.ISCraftingCategoryUI {}
 
   // [lua/client/ISUI/ISCraftingUI.d.ts]
+  /** @customConstructor ISCraftingIngredientIconPanel:new */
+  export class ISCraftingIngredientIconPanel extends lua.client.ISUI.ISCraftingIngredientIconPanel {}
   /** @customConstructor ISCraftingUI:new */
   export class ISCraftingUI extends lua.client.ISUI.ISCraftingUI {}
+
+  // [lua/client/ISUI/ISDebugAvatarUI.d.ts]
+  /** @customConstructor ISDebugAvatarUI:new */
+  export class ISDebugAvatarUI extends lua.client.ISUI.ISDebugAvatarUI {}
 
   // [lua/client/ISUI/ISDemoPopup.d.ts]
   /** @customConstructor ISDemoPopup:new */
   export class ISDemoPopup extends lua.client.ISUI.ISDemoPopup {}
   /** @noSelf */
   export const DoDemoPopup: () => any;
+
+  // [lua/client/ISUI/ISDesignationZonePanel.d.ts]
+  /** @customConstructor ISDesignationZonePanel:new */
+  export class ISDesignationZonePanel extends lua.client.ISUI.ISDesignationZonePanel {}
 
   // [lua/client/ISUI/ISDigitalCode.d.ts]
   /** @customConstructor ISDigitalCode:new */
@@ -1031,6 +1686,9 @@ declare module '@asledgehammer/pipewrench/client' {
   /** @customConstructor ISInfoContainer:new */
   export class ISInfoContainer extends lua.client.ISUI.ISInfoContainer {}
 
+  // [lua/client/ISUI/ISInventoryItem.d.ts]
+  export abstract class ISInventoryItem extends lua.client.ISUI.ISInventoryItem {}
+
   // [lua/client/ISUI/ISInventoryPage.d.ts]
   /** @customConstructor ISInventoryPage:new */
   export class ISInventoryPage extends lua.client.ISUI.ISInventoryPage {}
@@ -1062,6 +1720,8 @@ declare module '@asledgehammer/pipewrench/client' {
   export class ISLightSourceRadialMenu extends lua.client.ISUI.ISLightSourceRadialMenu {}
 
   // [lua/client/ISUI/ISLiteratureUI.d.ts]
+  /** @customConstructor ISLiteratureGrowingList:new */
+  export class ISLiteratureGrowingList extends lua.client.ISUI.ISLiteratureGrowingList {}
   /** @customConstructor ISLiteratureList:new */
   export class ISLiteratureList extends lua.client.ISUI.ISLiteratureList {}
   /** @customConstructor ISLiteratureMediaList:new */
@@ -1126,6 +1786,16 @@ declare module '@asledgehammer/pipewrench/client' {
   /** @customConstructor ISPostDeathUI:new */
   export class ISPostDeathUI extends lua.client.ISUI.ISPostDeathUI {}
 
+  // [lua/client/ISUI/ISPrintMediaTextPanel.d.ts]
+  /** @customConstructor ISPrintMediaMap:new */
+  export class ISPrintMediaMap extends lua.client.ISUI.ISPrintMediaMap {}
+  /** @customConstructor ISPrintMediaTextPanel:new */
+  export class ISPrintMediaTextPanel extends lua.client.ISUI.ISPrintMediaTextPanel {}
+
+  // [lua/client/ISUI/ISProgressBar.d.ts]
+  /** @customConstructor ISProgressBar:new */
+  export class ISProgressBar extends lua.client.ISUI.ISProgressBar {}
+
   // [lua/client/ISUI/ISRadialMenu.d.ts]
   /** @customConstructor ISRadialMenu:new */
   export class ISRadialMenu extends lua.client.ISUI.ISRadialMenu {}
@@ -1168,14 +1838,6 @@ declare module '@asledgehammer/pipewrench/client' {
   /** @customConstructor ISRichTextPanel:new */
   export class ISRichTextPanel extends lua.client.ISUI.ISRichTextPanel {}
 
-  // [lua/client/ISUI/ISSafetyUI.d.ts]
-  /** @customConstructor ISSafetyUI:new */
-  export class ISSafetyUI extends lua.client.ISUI.ISSafetyUI {}
-
-  // [lua/client/ISUI/ISScavengeUI.d.ts]
-  /** @customConstructor ISScavengeUI:new */
-  export class ISScavengeUI extends lua.client.ISUI.ISScavengeUI {}
-
   // [lua/client/ISUI/ISScrollBar.d.ts]
   /** @customConstructor ISScrollBar:new */
   export class ISScrollBar extends lua.client.ISUI.ISScrollBar {}
@@ -1200,6 +1862,10 @@ declare module '@asledgehammer/pipewrench/client' {
   /** @customConstructor ISSleepDialog:new */
   export class ISSleepDialog extends lua.client.ISUI.ISSleepDialog {}
 
+  // [lua/client/ISUI/ISSleepingUI.d.ts]
+  /** @customConstructor ISSleepingUI:new */
+  export class ISSleepingUI extends lua.client.ISUI.ISSleepingUI {}
+
   // [lua/client/ISUI/ISSpinBox.d.ts]
   /** @customConstructor ISSpinBox:new */
   export class ISSpinBox extends lua.client.ISUI.ISSpinBox {}
@@ -1207,6 +1873,10 @@ declare module '@asledgehammer/pipewrench/client' {
   // [lua/client/ISUI/ISTabPanel.d.ts]
   /** @customConstructor ISTabPanel:new */
   export class ISTabPanel extends lua.client.ISUI.ISTabPanel {}
+
+  // [lua/client/ISUI/ISTabPanelPaginated.d.ts]
+  /** @customConstructor ISTabPanelPaginated:new */
+  export class ISTabPanelPaginated extends lua.client.ISUI.ISTabPanelPaginated {}
 
   // [lua/client/ISUI/ISTermsOfServiceUI.d.ts]
   /** @customConstructor ISTermsOfServiceUI:new */
@@ -1248,6 +1918,10 @@ declare module '@asledgehammer/pipewrench/client' {
   /** @customConstructor ISUIElement:new */
   export class ISUIElement extends lua.client.ISUI.ISUIElement {}
 
+  // [lua/client/ISUI/ISUIElementJoypad.d.ts]
+  /** @customConstructor ISUIElementJoypad:new */
+  export class ISUIElementJoypad extends lua.client.ISUI.ISUIElementJoypad {}
+
   // [lua/client/ISUI/ISUIEmoteConfig.d.ts]
   /** @customConstructor ISUIEmoteConfig:new */
   export class ISUIEmoteConfig extends lua.client.ISUI.ISUIEmoteConfig {}
@@ -1259,11 +1933,22 @@ declare module '@asledgehammer/pipewrench/client' {
   /** @customConstructor ISUIWriteJournal:new */
   export class ISUIWriteJournal extends lua.client.ISUI.ISUIWriteJournal {}
 
+  // [lua/client/ISUI/ISVehicleAnimalUI.d.ts]
+  /** @customConstructor ISVehicleAnimal3DModel:new */
+  export class ISVehicleAnimal3DModel extends lua.client.ISUI.ISVehicleAnimal3DModel {}
+  /** @customConstructor ISVehicleAnimalUI:new */
+  export class ISVehicleAnimalUI extends lua.client.ISUI.ISVehicleAnimalUI {}
+
   // [lua/client/ISUI/ISVehicleConfirmBox.d.ts]
   /** @customConstructor ISVehicleConfirmBox:new */
   export class ISVehicleConfirmBox extends lua.client.ISUI.ISVehicleConfirmBox {}
   /** @customConstructor ISVehiclePartListBox:new */
   export class ISVehiclePartListBox extends lua.client.ISUI.ISVehiclePartListBox {}
+
+  // [lua/client/ISUI/ISVersionWaterMark.d.ts]
+  /** @customConstructor WaterMarkUI:new */
+  export class WaterMarkUI extends lua.client.ISUI.WaterMarkUI {}
+  export abstract class ISVersionWaterMark extends lua.client.ISUI.ISVersionWaterMark {}
 
   // [lua/client/ISUI/ISVolumeControl.d.ts]
   /** @customConstructor ISVolumeControl:new */
@@ -1273,12 +1958,34 @@ declare module '@asledgehammer/pipewrench/client' {
   /** @customConstructor ISVolumeIndicator:new */
   export class ISVolumeIndicator extends lua.client.ISUI.ISVolumeIndicator {}
 
+  // [lua/client/ISUI/ISWarManagerUI.d.ts]
+  /** @customConstructor ISWarManagerUI:new */
+  export class ISWarManagerUI extends lua.client.ISUI.ISWarManagerUI {}
+
   // [lua/client/ISUI/ISWindow.d.ts]
   /** @customConstructor ISWindow:new */
   export class ISWindow extends lua.client.ISUI.ISWindow {}
 
   // [lua/client/ISUI/ISWorldObjectContextMenu.d.ts]
   export abstract class ISWorldObjectContextMenu extends lua.client.ISUI.ISWorldObjectContextMenu {}
+
+  // [lua/client/ISUI/ISXuiBuilder.d.ts]
+  export abstract class ISXuiBuilder extends lua.client.ISUI.ISXuiBuilder {}
+  export abstract class ISXuiFunctions extends lua.client.ISUI.ISXuiFunctions {}
+
+  // [lua/client/ISUI/ISXuiSkin.d.ts]
+  export abstract class ISXuiSkin extends lua.client.ISUI.ISXuiSkin {}
+  export abstract class ISXuiSkinFunctions extends lua.client.ISUI.ISXuiSkinFunctions {}
+
+  // [lua/client/ISUI/ISXuiTableLayout.d.ts]
+  /** @customConstructor ISXuiTableLayout:new */
+  export class ISXuiTableLayout extends lua.client.ISUI.ISXuiTableLayout {}
+  /** @customConstructor ISXuiTableLayoutCell:new */
+  export class ISXuiTableLayoutCell extends lua.client.ISUI.ISXuiTableLayoutCell {}
+  /** @customConstructor ISXuiTableLayoutColumn:new */
+  export class ISXuiTableLayoutColumn extends lua.client.ISUI.ISXuiTableLayoutColumn {}
+  /** @customConstructor ISXuiTableLayoutRow:new */
+  export class ISXuiTableLayoutRow extends lua.client.ISUI.ISXuiTableLayoutRow {}
 
   // [lua/client/ISUI/Maps/Editor/WorldMapEditor.d.ts]
   /** @customConstructor WorldMapEditor:new */
@@ -1353,6 +2060,7 @@ declare module '@asledgehammer/pipewrench/client' {
   // [lua/client/ISUI/Maps/ISMapDefinitions.d.ts]
   export abstract class LootMaps extends lua.client.ISUI.Maps.LootMaps {}
   export abstract class MapUtils extends lua.client.ISUI.Maps.MapUtils {}
+  export abstract class PrintMediaMaps extends lua.client.ISUI.Maps.PrintMediaMaps {}
 
   // [lua/client/ISUI/Maps/ISMiniMap.d.ts]
   /** @customConstructor ISMiniMapInner:new */
@@ -1375,9 +2083,21 @@ declare module '@asledgehammer/pipewrench/client' {
   /** @customConstructor WorldMapOptions:new */
   export class WorldMapOptions extends lua.client.ISUI.Maps.WorldMapOptions {}
 
+  // [lua/client/ISUI/Maps/ISWorldMapKey.d.ts]
+  /** @customConstructor ISWorldMapKey:new */
+  export class ISWorldMapKey extends lua.client.ISUI.Maps.ISWorldMapKey {}
+
+  // [lua/client/ISUI/Maps/ISWorldMapSharing.d.ts]
+  /** @customConstructor ISWorldMapSharing:new */
+  export class ISWorldMapSharing extends lua.client.ISUI.Maps.ISWorldMapSharing {}
+  /** @customConstructor ISWorldMapSharing_PanelPlayers:new */
+  export class ISWorldMapSharing_PanelPlayers extends lua.client.ISUI.Maps.ISWorldMapSharing_PanelPlayers {}
+
   // [lua/client/ISUI/Maps/ISWorldMapSymbols.d.ts]
   /** @customConstructor ISWorldMapSymbols:new */
   export class ISWorldMapSymbols extends lua.client.ISUI.Maps.ISWorldMapSymbols {}
+  /** @customConstructor ISWorldMapSymbolsTabPanel:new */
+  export class ISWorldMapSymbolsTabPanel extends lua.client.ISUI.Maps.ISWorldMapSymbolsTabPanel {}
   /** @customConstructor ISWorldMapSymbolTool:new */
   export class ISWorldMapSymbolTool extends lua.client.ISUI.Maps.ISWorldMapSymbolTool {}
   /** @customConstructor ISWorldMapSymbolTool_AddNote:new */
@@ -1391,6 +2111,8 @@ declare module '@asledgehammer/pipewrench/client' {
   /** @customConstructor ISWorldMapSymbolTool_RemoveAnnotation:new */
   export class ISWorldMapSymbolTool_RemoveAnnotation extends lua.client.ISUI.Maps
     .ISWorldMapSymbolTool_RemoveAnnotation {}
+  /** @customConstructor ISWorldMapSymbolTool_Sharing:new */
+  export class ISWorldMapSymbolTool_Sharing extends lua.client.ISUI.Maps.ISWorldMapSymbolTool_Sharing {}
 
   // [lua/client/ISUI/PlayerData/ISPlayerData.d.ts]
   export abstract class ISPlayerData extends lua.client.ISUI.PlayerData.ISPlayerData {}
@@ -1421,6 +2143,10 @@ declare module '@asledgehammer/pipewrench/client' {
   /** @customConstructor ISPlayerStatsManageInvUI:new */
   export class ISPlayerStatsManageInvUI extends lua.client.ISUI.PlayerStats.ISPlayerStatsManageInvUI {}
 
+  // [lua/client/ISUI/PlayerStats/ISPlayerStatsSuspicionActivityUI.d.ts]
+  /** @customConstructor ISPlayerStatsSuspicionActivityUI:new */
+  export class ISPlayerStatsSuspicionActivityUI extends lua.client.ISUI.PlayerStats.ISPlayerStatsSuspicionActivityUI {}
+
   // [lua/client/ISUI/PlayerStats/ISPlayerStatsUI.d.ts]
   /** @customConstructor ISPlayerStatsUI:new */
   export class ISPlayerStatsUI extends lua.client.ISUI.PlayerStats.ISPlayerStatsUI {}
@@ -1432,6 +2158,33 @@ declare module '@asledgehammer/pipewrench/client' {
   // [lua/client/ISUI/PlayerStats/ISPlayerStatsWarningPointUI.d.ts]
   /** @customConstructor ISPlayerStatsWarningPointUI:new */
   export class ISPlayerStatsWarningPointUI extends lua.client.ISUI.PlayerStats.ISPlayerStatsWarningPointUI {}
+
+  // [lua/client/ISUI/PrintMedia/ISPrintMediaInfo.d.ts]
+  /** @customConstructor ISPrintMediaInfo:new */
+  export class ISPrintMediaInfo extends lua.client.ISUI.PrintMedia.ISPrintMediaInfo {}
+  /** @customConstructor ISPrintMediaSetInfo:new */
+  export class ISPrintMediaSetInfo extends lua.client.ISUI.PrintMedia.ISPrintMediaSetInfo {}
+
+  // [lua/client/ISUI/PrintMedia/ISPrintMediaPage.d.ts]
+  /** @customConstructor ISPrintMediaPage:new */
+  export class ISPrintMediaPage extends lua.client.ISUI.PrintMedia.ISPrintMediaPage {}
+  /** @customConstructor ISPrintMediaRichText:new */
+  export class ISPrintMediaRichText extends lua.client.ISUI.PrintMedia.ISPrintMediaRichText {}
+
+  // [lua/client/ISUI/PrintMedia/ISPrintMediaPanel.d.ts]
+  /** @customConstructor ISPrintMediaListBox:new */
+  export class ISPrintMediaListBox extends lua.client.ISUI.PrintMedia.ISPrintMediaListBox {}
+  /** @customConstructor ISPrintMediaPanel:new */
+  export class ISPrintMediaPanel extends lua.client.ISUI.PrintMedia.ISPrintMediaPanel {}
+
+  // [lua/client/ISUI/PrintMedia/PrintMediaEntries.d.ts]
+  export abstract class PrintMediaEntries extends lua.client.ISUI.PrintMedia.PrintMediaEntries {}
+
+  // [lua/client/ISUI/PrintMedia/PrintMediaManager.d.ts]
+  /** @customConstructor PrintMediaManager:new */
+  export class PrintMediaManager extends lua.client.ISUI.PrintMedia.PrintMediaManager {}
+  /** @noSelf */
+  export const doPrintMediaDebug: () => any;
 
   // [lua/client/ISUI/RichTextLayout.d.ts]
   /** @customConstructor ISRichTextLayout:new */
@@ -1471,6 +2224,11 @@ declare module '@asledgehammer/pipewrench/client' {
   // [lua/client/ISUI/UserPanel/ISUserPanelUI.d.ts]
   /** @customConstructor ISUserPanelUI:new */
   export class ISUserPanelUI extends lua.client.ISUI.UserPanel.ISUserPanelUI {}
+
+  // [lua/client/ISUI/WelcomeMessageB42.d.ts]
+  /** @customConstructor WelcomeMessageUI:new */
+  export class WelcomeMessageUI extends lua.client.ISUI.WelcomeMessageUI {}
+  export abstract class WelcomeMessageB42 extends lua.client.ISUI.WelcomeMessageB42 {}
 
   // [lua/client/ISUI/ZombiePopulationWindow.d.ts]
   /** @customConstructor ZombiePopulationWindow:new */
@@ -1570,33 +2328,12 @@ declare module '@asledgehammer/pipewrench/client' {
   /** @customConstructor CGlobalObjectSystem:new */
   export class CGlobalObjectSystem extends lua.client.Map.CGlobalObjectSystem {}
 
-  // [lua/client/MetalDrum/CMetalDrumGlobalObject.d.ts]
-  /** @customConstructor CMetalDrumGlobalObject:new */
-  export class CMetalDrumGlobalObject extends lua.client.MetalDrum.CMetalDrumGlobalObject {}
-
-  // [lua/client/MetalDrum/CMetalDrumSystem.d.ts]
-  /** @customConstructor CMetalDrumSystem:new */
-  export class CMetalDrumSystem extends lua.client.MetalDrum.CMetalDrumSystem {}
-
-  // [lua/client/Moveables/ISMoveableDefinitions.d.ts]
-  export abstract class ISMoveableDefinitions extends lua.client.Moveables.ISMoveableDefinitions {}
-
-  // [lua/client/Moveables/ISMoveablesAction.d.ts]
-  /** @customConstructor ISMoveablesAction:new */
-  export class ISMoveablesAction extends lua.client.Moveables.ISMoveablesAction {}
+  // [lua/client/Mining/DiggingUtil.d.ts]
+  export abstract class DiggingUtil extends lua.client.Mining.DiggingUtil {}
 
   // [lua/client/Moveables/ISMoveablesIconToolTip.d.ts]
   /** @customConstructor ISMoveablesIconToolTip:new */
   export class ISMoveablesIconToolTip extends lua.client.Moveables.ISMoveablesIconToolTip {}
-
-  // [lua/client/Moveables/ISMoveableSpriteProps.d.ts]
-  export abstract class InfoPanelFlags extends lua.client.Moveables.InfoPanelFlags {}
-  export abstract class ISMoveableSpriteProps extends lua.client.Moveables.ISMoveableSpriteProps {}
-  export abstract class ISThumpableSpriteProps extends lua.client.Moveables.ISThumpableSpriteProps {}
-  export abstract class SpriteGridCache extends lua.client.Moveables.SpriteGridCache {}
-
-  // [lua/client/Moveables/ISMoveableTools.d.ts]
-  export abstract class ISMoveableTools extends lua.client.Moveables.ISMoveableTools {}
 
   // [lua/client/Music/MusicChoices.d.ts]
   export abstract class MusicChoices extends lua.client.Music.MusicChoices {}
@@ -1695,12 +2432,6 @@ declare module '@asledgehammer/pipewrench/client' {
   /** @noSelf */
   export const LoadGameScreen_onModsModified: () => any;
 
-  // [lua/client/OptionScreens/LoginScreen.d.ts]
-  /** @customConstructor LoginScreen:new */
-  export class LoginScreen extends lua.client.OptionScreens.LoginScreen {}
-  /** @noSelf */
-  export const deleteLoginScreen: () => any;
-
   // [lua/client/OptionScreens/MainOptions.d.ts]
   /** @customConstructor MainOptions:new */
   export class MainOptions extends lua.client.OptionScreens.MainOptions {}
@@ -1709,9 +2440,15 @@ declare module '@asledgehammer/pipewrench/client' {
   /** @customConstructor MainScreen:new */
   export class MainScreen extends lua.client.OptionScreens.MainScreen {}
 
+  // [lua/client/OptionScreens/MapsOrder.d.ts]
+  export abstract class IgnoredMap extends lua.client.OptionScreens.IgnoredMap {}
+  export abstract class MapsOrder extends lua.client.OptionScreens.MapsOrder {}
+
   // [lua/client/OptionScreens/MapSpawnSelect.d.ts]
   /** @customConstructor MapSpawnSelect:new */
   export class MapSpawnSelect extends lua.client.OptionScreens.MapSpawnSelect {}
+  /** @customConstructor MapSpawnSelectImage:new */
+  export class MapSpawnSelectImage extends lua.client.OptionScreens.MapSpawnSelectImage {}
   /** @customConstructor MapSpawnSelectInfoPanel:new */
   export class MapSpawnSelectInfoPanel extends lua.client.OptionScreens.MapSpawnSelectInfoPanel {}
   /** @customConstructor MapSpawnSelectListBox:new */
@@ -1721,23 +2458,85 @@ declare module '@asledgehammer/pipewrench/client' {
   /** @customConstructor ModMoreInfo:new */
   export class ModMoreInfo extends lua.client.OptionScreens.ModMoreInfo {}
 
-  // [lua/client/OptionScreens/ModOrderUI.d.ts]
-  /** @customConstructor ModOrderUI:new */
-  export class ModOrderUI extends lua.client.OptionScreens.ModOrderUI {}
+  // [lua/client/OptionScreens/ModSelector/ISModsHelpPanel.d.ts]
+  /** @customConstructor ISModsHelpPanel:new */
+  export class ISModsHelpPanel extends lua.client.OptionScreens.ModSelector.ISModsHelpPanel {}
 
-  // [lua/client/OptionScreens/ModSelector.d.ts]
+  // [lua/client/OptionScreens/ModSelector/MapOrderListBox.d.ts]
+  // Wrong: class name is undefined
+
+  // [lua/client/OptionScreens/ModSelector/MapOrderUI.d.ts]
+  // Wrong: class name is undefined
+
+  // [lua/client/OptionScreens/ModSelector/MissedModsPanel.d.ts]
+  // Wrong: class name is undefined
+
+  // [lua/client/OptionScreens/ModSelector/ModInfoPanel.d.ts]
   /** @customConstructor ModInfoPanel:new */
-  export class ModInfoPanel extends lua.client.OptionScreens.ModInfoPanel {}
-  /** @customConstructor ModListBox:new */
-  export class ModListBox extends lua.client.OptionScreens.ModListBox {}
-  /** @customConstructor ModPosterPanel:new */
-  export class ModPosterPanel extends lua.client.OptionScreens.ModPosterPanel {}
+  export class ModInfoPanel extends lua.client.OptionScreens.ModSelector.ModInfoPanel {}
+
+  // [lua/client/OptionScreens/ModSelector/ModInfoPanelDesc.d.ts]
+  // Wrong: class name is undefined
+  /** @noSelf */
+  export const createChildren: () => any;
+  /** @noSelf */
+  export const render: () => any;
+
+  // [lua/client/OptionScreens/ModSelector/ModInfoPanelInteractionParam.d.ts]
+  // Wrong: class name is undefined
+
+  // [lua/client/OptionScreens/ModSelector/ModInfoPanelParam.d.ts]
+  // Wrong: class name is undefined
+
+  // [lua/client/OptionScreens/ModSelector/ModInfoPanelThumbnail.d.ts]
+  // Wrong: class name is undefined
+
+  // [lua/client/OptionScreens/ModSelector/ModInfoPanelTitle.d.ts]
+  // Wrong: class name is undefined
+
+  // [lua/client/OptionScreens/ModSelector/ModListBox.d.ts]
+  // Wrong: class name is undefined
+
+  // [lua/client/OptionScreens/ModSelector/ModListPanel.d.ts]
+  // Wrong: class name is undefined
+
+  // [lua/client/OptionScreens/ModSelector/ModListPresets.d.ts]
+  /** @customConstructor ModListPresets:new */
+  export class ModListPresets extends lua.client.OptionScreens.ModSelector.ModListPresets {}
+
+  // [lua/client/OptionScreens/ModSelector/ModLoadOrderPanel.d.ts]
+  // Wrong: class name is undefined
+
+  // [lua/client/OptionScreens/ModSelector/ModOrderListBox.d.ts]
+  // Wrong: class name is undefined
+
+  // [lua/client/OptionScreens/ModSelector/ModSelector.d.ts]
   /** @customConstructor ModSelector:new */
-  export class ModSelector extends lua.client.OptionScreens.ModSelector {}
-  /** @customConstructor ModThumbnailPanel:new */
-  export class ModThumbnailPanel extends lua.client.OptionScreens.ModThumbnailPanel {}
+  export class ModSelector extends lua.client.OptionScreens.ModSelector.ModSelector {}
   /** @noSelf */
   export const ModSelector_onModsModified: () => any;
+
+  // [lua/client/OptionScreens/ModSelector/ModSelectorModel.d.ts]
+  /** @noSelf */
+  export const acceptChanges: () => any;
+  /** @noSelf */
+  export const checkMapConflicts: () => any;
+  /** @noSelf */
+  export const getActiveMods: () => any;
+  /** @noSelf */
+  export const getAllMapsInOrder: () => any;
+  /** @noSelf */
+  export const loadModDataFromFile: () => any;
+  /** @noSelf */
+  export const refreshMods: () => any;
+  /** @noSelf */
+  export const reloadMods: () => any;
+  /** @noSelf */
+  export const saveModDataToFile: () => any;
+
+  // [lua/client/OptionScreens/MultiplayerScreen.d.ts]
+  /** @customConstructor MultiplayerScreen:new */
+  export class MultiplayerScreen extends lua.client.OptionScreens.MultiplayerScreen {}
 
   // [lua/client/OptionScreens/NewGameScreen.d.ts]
   /** @customConstructor NewGameScreen:new */
@@ -1746,6 +2545,8 @@ declare module '@asledgehammer/pipewrench/client' {
   // [lua/client/OptionScreens/PublicServerList.d.ts]
   /** @customConstructor PublicServerList:new */
   export class PublicServerList extends lua.client.OptionScreens.PublicServerList {}
+  /** @noSelf */
+  export const OnConnected: () => any;
 
   // [lua/client/OptionScreens/SandboxOptions.d.ts]
   /** @customConstructor SandboxOptionsScreen:new */
@@ -1766,7 +2567,18 @@ declare module '@asledgehammer/pipewrench/client' {
   export class ServerSettingsScreen extends lua.client.OptionScreens.ServerSettingsScreen {}
   /** @customConstructor SpawnRegionsNameFilePanel:new */
   export class SpawnRegionsNameFilePanel extends lua.client.OptionScreens.SpawnRegionsNameFilePanel {}
+  // Wrong: class name is undefined
   export abstract class DefaultServerSettings extends lua.client.OptionScreens.DefaultServerSettings {}
+  /** @noSelf */
+  export const aboutToShow: () => any;
+  /** @noSelf */
+  export const create: () => any;
+  /** @noSelf */
+  export const onButtonCancel: () => any;
+  /** @noSelf */
+  export const onButtonMods: () => any;
+  /** @noSelf */
+  export const onButtonNext: () => any;
 
   // [lua/client/OptionScreens/ServerToolbox.d.ts]
   /** @customConstructor ServerToolbox:new */
@@ -1783,6 +2595,12 @@ declare module '@asledgehammer/pipewrench/client' {
   // [lua/client/OptionScreens/WorldSelect.d.ts]
   /** @customConstructor WorldSelect:new */
   export class WorldSelect extends lua.client.OptionScreens.WorldSelect {}
+
+  // [lua/client/PZAPI/ModOptions.d.ts]
+  /** @noSelf */
+  export const load: () => any;
+  /** @noSelf */
+  export const save: () => any;
 
   // [lua/client/RadioCom/ISRadioAction.d.ts]
   /** @customConstructor ISRadioAction:new */
@@ -1964,117 +2782,25 @@ declare module '@asledgehammer/pipewrench/client' {
   // [lua/client/Tests/TimedActionsTests.d.ts]
   export abstract class TimedActionTests extends lua.client.Tests.TimedActionTests {}
 
-  // [lua/client/TimedActions/ISActivateCarBatteryChargerAction.d.ts]
-  /** @customConstructor ISActivateCarBatteryChargerAction:new */
-  export class ISActivateCarBatteryChargerAction extends lua.client.TimedActions.ISActivateCarBatteryChargerAction {}
+  // [lua/client/TimedActions/Animal/ISCheckAnimalInsideTrailer.d.ts]
+  /** @customConstructor ISCheckAnimalInsideTrailer:new */
+  export class ISCheckAnimalInsideTrailer extends lua.client.TimedActions.Animal.ISCheckAnimalInsideTrailer {}
 
-  // [lua/client/TimedActions/ISActivateGenerator.d.ts]
-  /** @customConstructor ISActivateGenerator:new */
-  export class ISActivateGenerator extends lua.client.TimedActions.ISActivateGenerator {}
+  // [lua/client/TimedActions/Animal/ISGetHutchInfo.d.ts]
+  /** @customConstructor ISGetHutchInfo:new */
+  export class ISGetHutchInfo extends lua.client.TimedActions.Animal.ISGetHutchInfo {}
 
-  // [lua/client/TimedActions/ISAddCompost.d.ts]
-  /** @customConstructor ISAddCompost:new */
-  export class ISAddCompost extends lua.client.TimedActions.ISAddCompost {}
-
-  // [lua/client/TimedActions/ISAddFuel.d.ts]
-  /** @customConstructor ISAddFuel:new */
-  export class ISAddFuel extends lua.client.TimedActions.ISAddFuel {}
-
-  // [lua/client/TimedActions/ISAddItemInRecipe.d.ts]
-  /** @customConstructor ISAddItemInRecipe:new */
-  export class ISAddItemInRecipe extends lua.client.TimedActions.ISAddItemInRecipe {}
-
-  // [lua/client/TimedActions/ISAddSheetAction.d.ts]
-  /** @customConstructor ISAddSheetAction:new */
-  export class ISAddSheetAction extends lua.client.TimedActions.ISAddSheetAction {}
-
-  // [lua/client/TimedActions/ISAddSheetRope.d.ts]
-  /** @customConstructor ISAddSheetRope:new */
-  export class ISAddSheetRope extends lua.client.TimedActions.ISAddSheetRope {}
-
-  // [lua/client/TimedActions/ISAddWaterFromItemAction.d.ts]
-  /** @customConstructor ISAddWaterFromItemAction:new */
-  export class ISAddWaterFromItemAction extends lua.client.TimedActions.ISAddWaterFromItemAction {}
-
-  // [lua/client/TimedActions/ISApplyBandage.d.ts]
-  /** @customConstructor ISApplyBandage:new */
-  export class ISApplyBandage extends lua.client.TimedActions.ISApplyBandage {}
-
-  // [lua/client/TimedActions/ISAttachItemHotbar.d.ts]
-  /** @customConstructor ISAttachItemHotbar:new */
-  export class ISAttachItemHotbar extends lua.client.TimedActions.ISAttachItemHotbar {}
-
-  // [lua/client/TimedActions/ISBarricadeAction.d.ts]
-  /** @customConstructor ISBarricadeAction:new */
-  export class ISBarricadeAction extends lua.client.TimedActions.ISBarricadeAction {}
-
-  // [lua/client/TimedActions/ISBBQAddFuel.d.ts]
-  /** @customConstructor ISBBQAddFuel:new */
-  export class ISBBQAddFuel extends lua.client.TimedActions.ISBBQAddFuel {}
-
-  // [lua/client/TimedActions/ISBBQExtinguish.d.ts]
-  /** @customConstructor ISBBQExtinguish:new */
-  export class ISBBQExtinguish extends lua.client.TimedActions.ISBBQExtinguish {}
+  // [lua/client/TimedActions/Animal/ISInspectAnimalTrackAction.d.ts]
+  /** @customConstructor ISInspectAnimalTrackAction:new */
+  export class ISInspectAnimalTrackAction extends lua.client.TimedActions.Animal.ISInspectAnimalTrackAction {}
 
   // [lua/client/TimedActions/ISBBQInfoAction.d.ts]
   /** @customConstructor ISBBQInfoAction:new */
   export class ISBBQInfoAction extends lua.client.TimedActions.ISBBQInfoAction {}
 
-  // [lua/client/TimedActions/ISBBQInsertPropaneTank.d.ts]
-  /** @customConstructor ISBBQInsertPropaneTank:new */
-  export class ISBBQInsertPropaneTank extends lua.client.TimedActions.ISBBQInsertPropaneTank {}
-
-  // [lua/client/TimedActions/ISBBQLightFromKindle.d.ts]
-  /** @customConstructor ISBBQLightFromKindle:new */
-  export class ISBBQLightFromKindle extends lua.client.TimedActions.ISBBQLightFromKindle {}
-
-  // [lua/client/TimedActions/ISBBQLightFromLiterature.d.ts]
-  /** @customConstructor ISBBQLightFromLiterature:new */
-  export class ISBBQLightFromLiterature extends lua.client.TimedActions.ISBBQLightFromLiterature {}
-
-  // [lua/client/TimedActions/ISBBQLightFromPetrol.d.ts]
-  /** @customConstructor ISBBQLightFromPetrol:new */
-  export class ISBBQLightFromPetrol extends lua.client.TimedActions.ISBBQLightFromPetrol {}
-
-  // [lua/client/TimedActions/ISBBQRemovePropaneTank.d.ts]
-  /** @customConstructor ISBBQRemovePropaneTank:new */
-  export class ISBBQRemovePropaneTank extends lua.client.TimedActions.ISBBQRemovePropaneTank {}
-
-  // [lua/client/TimedActions/ISBBQToggle.d.ts]
-  /** @customConstructor ISBBQToggle:new */
-  export class ISBBQToggle extends lua.client.TimedActions.ISBBQToggle {}
-
-  // [lua/client/TimedActions/ISBurnCorpseAction.d.ts]
-  /** @customConstructor ISBurnCorpseAction:new */
-  export class ISBurnCorpseAction extends lua.client.TimedActions.ISBurnCorpseAction {}
-
-  // [lua/client/TimedActions/ISBuryCorpse.d.ts]
-  /** @customConstructor ISBuryCorpse:new */
-  export class ISBuryCorpse extends lua.client.TimedActions.ISBuryCorpse {}
-
   // [lua/client/TimedActions/ISCampingInfoAction.d.ts]
   /** @customConstructor ISCampingInfoAction:new */
   export class ISCampingInfoAction extends lua.client.TimedActions.ISCampingInfoAction {}
-
-  // [lua/client/TimedActions/ISChopTreeAction.d.ts]
-  /** @customConstructor ISChopTreeAction:new */
-  export class ISChopTreeAction extends lua.client.TimedActions.ISChopTreeAction {}
-
-  // [lua/client/TimedActions/ISCleanBandage.d.ts]
-  /** @customConstructor ISCleanBandage:new */
-  export class ISCleanBandage extends lua.client.TimedActions.ISCleanBandage {}
-
-  // [lua/client/TimedActions/ISCleanBlood.d.ts]
-  /** @customConstructor ISCleanBlood:new */
-  export class ISCleanBlood extends lua.client.TimedActions.ISCleanBlood {}
-
-  // [lua/client/TimedActions/ISCleanBurn.d.ts]
-  /** @customConstructor ISCleanBurn:new */
-  export class ISCleanBurn extends lua.client.TimedActions.ISCleanBurn {}
-
-  // [lua/client/TimedActions/ISClearAshes.d.ts]
-  /** @customConstructor ISClearAshes:new */
-  export class ISClearAshes extends lua.client.TimedActions.ISClearAshes {}
 
   // [lua/client/TimedActions/ISClimbOverFence.d.ts]
   /** @customConstructor ISClimbOverFence:new */
@@ -2092,193 +2818,33 @@ declare module '@asledgehammer/pipewrench/client' {
   /** @customConstructor ISClothingExtraAction:new */
   export class ISClothingExtraAction extends lua.client.TimedActions.ISClothingExtraAction {}
 
-  // [lua/client/TimedActions/ISComfreyCataplasm.d.ts]
-  /** @customConstructor ISComfreyCataplasm:new */
-  export class ISComfreyCataplasm extends lua.client.TimedActions.ISComfreyCataplasm {}
-
-  // [lua/client/TimedActions/ISConnectCarBatteryToChargerAction.d.ts]
-  /** @customConstructor ISConnectCarBatteryToChargerAction:new */
-  export class ISConnectCarBatteryToChargerAction extends lua.client.TimedActions.ISConnectCarBatteryToChargerAction {}
-
-  // [lua/client/TimedActions/ISConsolidateDrainable.d.ts]
-  /** @customConstructor ISConsolidateDrainable:new */
-  export class ISConsolidateDrainable extends lua.client.TimedActions.ISConsolidateDrainable {}
-
-  // [lua/client/TimedActions/ISConsolidateDrainableAll.d.ts]
-  /** @customConstructor ISConsolidateDrainableAll:new */
-  export class ISConsolidateDrainableAll extends lua.client.TimedActions.ISConsolidateDrainableAll {}
-
-  // [lua/client/TimedActions/ISCraftAction.d.ts]
-  /** @customConstructor ISCraftAction:new */
-  export class ISCraftAction extends lua.client.TimedActions.ISCraftAction {}
-
-  // [lua/client/TimedActions/ISCutHair.d.ts]
-  /** @customConstructor ISCutHair:new */
-  export class ISCutHair extends lua.client.TimedActions.ISCutHair {}
-
-  // [lua/client/TimedActions/ISDestroyStuffAction.d.ts]
-  /** @customConstructor ISDestroyStuffAction:new */
-  export class ISDestroyStuffAction extends lua.client.TimedActions.ISDestroyStuffAction {}
-
   // [lua/client/TimedActions/ISDetachItemHotbar.d.ts]
   /** @customConstructor ISDetachItemHotbar:new */
   export class ISDetachItemHotbar extends lua.client.TimedActions.ISDetachItemHotbar {}
 
-  // [lua/client/TimedActions/ISDisinfect.d.ts]
-  /** @customConstructor ISDisinfect:new */
-  export class ISDisinfect extends lua.client.TimedActions.ISDisinfect {}
-
-  // [lua/client/TimedActions/ISDismantleAction.d.ts]
-  /** @customConstructor ISDismantleAction:new */
-  export class ISDismantleAction extends lua.client.TimedActions.ISDismantleAction {}
-
-  // [lua/client/TimedActions/ISDrinkFromBottle.d.ts]
-  /** @customConstructor ISDrinkFromBottle:new */
-  export class ISDrinkFromBottle extends lua.client.TimedActions.ISDrinkFromBottle {}
-
-  // [lua/client/TimedActions/ISDropItemAction.d.ts]
-  /** @customConstructor ISDropItemAction:new */
-  export class ISDropItemAction extends lua.client.TimedActions.ISDropItemAction {}
-
-  // [lua/client/TimedActions/ISDropWorldItemAction.d.ts]
-  /** @customConstructor ISDropWorldItemAction:new */
-  export class ISDropWorldItemAction extends lua.client.TimedActions.ISDropWorldItemAction {}
-
-  // [lua/client/TimedActions/ISDryMyself.d.ts]
-  /** @customConstructor ISDryMyself:new */
-  export class ISDryMyself extends lua.client.TimedActions.ISDryMyself {}
-
-  // [lua/client/TimedActions/ISDumpContentsAction.d.ts]
-  /** @customConstructor ISDumpContentsAction:new */
-  export class ISDumpContentsAction extends lua.client.TimedActions.ISDumpContentsAction {}
-
-  // [lua/client/TimedActions/ISDumpWaterAction.d.ts]
-  /** @customConstructor ISDumpWaterAction:new */
-  export class ISDumpWaterAction extends lua.client.TimedActions.ISDumpWaterAction {}
-
-  // [lua/client/TimedActions/ISDyeHair.d.ts]
-  /** @customConstructor ISDyeHair:new */
-  export class ISDyeHair extends lua.client.TimedActions.ISDyeHair {}
-
-  // [lua/client/TimedActions/ISEatFoodAction.d.ts]
-  /** @customConstructor ISEatFoodAction:new */
-  export class ISEatFoodAction extends lua.client.TimedActions.ISEatFoodAction {}
-
-  // [lua/client/TimedActions/ISEjectMagazine.d.ts]
-  /** @customConstructor ISEjectMagazine:new */
-  export class ISEjectMagazine extends lua.client.TimedActions.ISEjectMagazine {}
-
-  // [lua/client/TimedActions/ISEmptyRainBarrelAction.d.ts]
-  /** @customConstructor ISEmptyRainBarrelAction:new */
-  export class ISEmptyRainBarrelAction extends lua.client.TimedActions.ISEmptyRainBarrelAction {}
-
-  // [lua/client/TimedActions/ISEquipHeavyItem.d.ts]
-  /** @customConstructor ISEquipHeavyItem:new */
-  export class ISEquipHeavyItem extends lua.client.TimedActions.ISEquipHeavyItem {}
-
-  // [lua/client/TimedActions/ISEquipWeaponAction.d.ts]
-  /** @customConstructor ISEquipWeaponAction:new */
-  export class ISEquipWeaponAction extends lua.client.TimedActions.ISEquipWeaponAction {}
-
-  // [lua/client/TimedActions/ISFillGrave.d.ts]
-  /** @customConstructor ISFillGrave:new */
-  export class ISFillGrave extends lua.client.TimedActions.ISFillGrave {}
-
-  // [lua/client/TimedActions/ISFinalizeDealAction.d.ts]
-  /** @customConstructor ISFinalizeDealAction:new */
-  export class ISFinalizeDealAction extends lua.client.TimedActions.ISFinalizeDealAction {}
-
-  // [lua/client/TimedActions/ISFireplaceAddFuel.d.ts]
-  /** @customConstructor ISFireplaceAddFuel:new */
-  export class ISFireplaceAddFuel extends lua.client.TimedActions.ISFireplaceAddFuel {}
-
-  // [lua/client/TimedActions/ISFireplaceExtinguish.d.ts]
-  /** @customConstructor ISFireplaceExtinguish:new */
-  export class ISFireplaceExtinguish extends lua.client.TimedActions.ISFireplaceExtinguish {}
+  // [lua/client/TimedActions/ISDigStairsAction.d.ts]
+  /** @customConstructor ISDigStairsAction:new */
+  export class ISDigStairsAction extends lua.client.TimedActions.ISDigStairsAction {}
 
   // [lua/client/TimedActions/ISFireplaceInfoAction.d.ts]
   /** @customConstructor ISFireplaceInfoAction:new */
   export class ISFireplaceInfoAction extends lua.client.TimedActions.ISFireplaceInfoAction {}
 
-  // [lua/client/TimedActions/ISFireplaceLightFromKindle.d.ts]
-  /** @customConstructor ISFireplaceLightFromKindle:new */
-  export class ISFireplaceLightFromKindle extends lua.client.TimedActions.ISFireplaceLightFromKindle {}
-
-  // [lua/client/TimedActions/ISFireplaceLightFromLiterature.d.ts]
-  /** @customConstructor ISFireplaceLightFromLiterature:new */
-  export class ISFireplaceLightFromLiterature extends lua.client.TimedActions.ISFireplaceLightFromLiterature {}
-
-  // [lua/client/TimedActions/ISFireplaceLightFromPetrol.d.ts]
-  /** @customConstructor ISFireplaceLightFromPetrol:new */
-  export class ISFireplaceLightFromPetrol extends lua.client.TimedActions.ISFireplaceLightFromPetrol {}
-
-  // [lua/client/TimedActions/ISFitnessAction.d.ts]
-  /** @customConstructor ISFitnessAction:new */
-  export class ISFitnessAction extends lua.client.TimedActions.ISFitnessAction {}
-
-  // [lua/client/TimedActions/ISFixAction.d.ts]
-  /** @customConstructor ISFixAction:new */
-  export class ISFixAction extends lua.client.TimedActions.ISFixAction {}
-
-  // [lua/client/TimedActions/ISFixGenerator.d.ts]
-  /** @customConstructor ISFixGenerator:new */
-  export class ISFixGenerator extends lua.client.TimedActions.ISFixGenerator {}
-
-  // [lua/client/TimedActions/ISGarlicCataplasm.d.ts]
-  /** @customConstructor ISGarlicCataplasm:new */
-  export class ISGarlicCataplasm extends lua.client.TimedActions.ISGarlicCataplasm {}
-
   // [lua/client/TimedActions/ISGeneratorInfoAction.d.ts]
   /** @customConstructor ISGeneratorInfoAction:new */
   export class ISGeneratorInfoAction extends lua.client.TimedActions.ISGeneratorInfoAction {}
-
-  // [lua/client/TimedActions/ISGetCompost.d.ts]
-  /** @customConstructor ISGetCompost:new */
-  export class ISGetCompost extends lua.client.TimedActions.ISGetCompost {}
-
-  // [lua/client/TimedActions/ISGrabCorpseAction.d.ts]
-  /** @customConstructor ISGrabCorpseAction:new */
-  export class ISGrabCorpseAction extends lua.client.TimedActions.ISGrabCorpseAction {}
 
   // [lua/client/TimedActions/ISGrabItemAction.d.ts]
   /** @customConstructor ISGrabItemAction:new */
   export class ISGrabItemAction extends lua.client.TimedActions.ISGrabItemAction {}
 
-  // [lua/client/TimedActions/ISInsertMagazine.d.ts]
-  /** @customConstructor ISInsertMagazine:new */
-  export class ISInsertMagazine extends lua.client.TimedActions.ISInsertMagazine {}
-
   // [lua/client/TimedActions/ISInventoryTransferAction.d.ts]
   /** @customConstructor ISInventoryTransferAction:new */
   export class ISInventoryTransferAction extends lua.client.TimedActions.ISInventoryTransferAction {}
 
-  // [lua/client/TimedActions/ISLightActions.d.ts]
-  /** @customConstructor ISLightActions:new */
-  export class ISLightActions extends lua.client.TimedActions.ISLightActions {}
-
-  // [lua/client/TimedActions/ISLoadBulletsInMagazine.d.ts]
-  /** @customConstructor ISLoadBulletsInMagazine:new */
-  export class ISLoadBulletsInMagazine extends lua.client.TimedActions.ISLoadBulletsInMagazine {}
-
-  // [lua/client/TimedActions/ISLockDoor.d.ts]
-  /** @customConstructor ISLockDoor:new */
-  export class ISLockDoor extends lua.client.TimedActions.ISLockDoor {}
-
   // [lua/client/TimedActions/ISMedicalCheckAction.d.ts]
   /** @customConstructor ISMedicalCheckAction:new */
   export class ISMedicalCheckAction extends lua.client.TimedActions.ISMedicalCheckAction {}
-
-  // [lua/client/TimedActions/ISOpenCloseCurtain.d.ts]
-  /** @customConstructor ISOpenCloseCurtain:new */
-  export class ISOpenCloseCurtain extends lua.client.TimedActions.ISOpenCloseCurtain {}
-
-  // [lua/client/TimedActions/ISOpenCloseDoor.d.ts]
-  /** @customConstructor ISOpenCloseDoor:new */
-  export class ISOpenCloseDoor extends lua.client.TimedActions.ISOpenCloseDoor {}
-
-  // [lua/client/TimedActions/ISOpenCloseWindow.d.ts]
-  /** @customConstructor ISOpenCloseWindow:new */
-  export class ISOpenCloseWindow extends lua.client.TimedActions.ISOpenCloseWindow {}
 
   // [lua/client/TimedActions/ISOpenContainerTimedAction.d.ts]
   /** @customConstructor ISOpenContainerTimedAction:new */
@@ -2288,239 +2854,29 @@ declare module '@asledgehammer/pipewrench/client' {
   /** @customConstructor ISOvenUITimedAction:new */
   export class ISOvenUITimedAction extends lua.client.TimedActions.ISOvenUITimedAction {}
 
-  // [lua/client/TimedActions/ISPadlockAction.d.ts]
-  /** @customConstructor ISPadlockAction:new */
-  export class ISPadlockAction extends lua.client.TimedActions.ISPadlockAction {}
-
-  // [lua/client/TimedActions/ISPickupBrokenGlass.d.ts]
-  /** @customConstructor ISPickupBrokenGlass:new */
-  export class ISPickupBrokenGlass extends lua.client.TimedActions.ISPickupBrokenGlass {}
-
-  // [lua/client/TimedActions/ISPlaceCarBatteryChargerAction.d.ts]
-  /** @customConstructor ISPlaceCarBatteryChargerAction:new */
-  export class ISPlaceCarBatteryChargerAction extends lua.client.TimedActions.ISPlaceCarBatteryChargerAction {}
-
-  // [lua/client/TimedActions/ISPlaceTrap.d.ts]
-  /** @customConstructor ISPlaceTrap:new */
-  export class ISPlaceTrap extends lua.client.TimedActions.ISPlaceTrap {}
-
-  // [lua/client/TimedActions/ISPlantainCataplasm.d.ts]
-  /** @customConstructor ISPlantainCataplasm:new */
-  export class ISPlantainCataplasm extends lua.client.TimedActions.ISPlantainCataplasm {}
-
-  // [lua/client/TimedActions/ISPlugGenerator.d.ts]
-  /** @customConstructor ISPlugGenerator:new */
-  export class ISPlugGenerator extends lua.client.TimedActions.ISPlugGenerator {}
-
-  // [lua/client/TimedActions/ISPlumbItem.d.ts]
-  /** @customConstructor ISPlumbItem:new */
-  export class ISPlumbItem extends lua.client.TimedActions.ISPlumbItem {}
-
-  // [lua/client/TimedActions/ISPutOutFire.d.ts]
-  /** @customConstructor ISPutOutFire:new */
-  export class ISPutOutFire extends lua.client.TimedActions.ISPutOutFire {}
+  // [lua/client/TimedActions/ISPickAxeGroundCoverItem.d.ts]
+  /** @customConstructor ISPickAxeGroundCoverItem:new */
+  export class ISPickAxeGroundCoverItem extends lua.client.TimedActions.ISPickAxeGroundCoverItem {}
 
   // [lua/client/TimedActions/ISQueueActionsAction.d.ts]
   /** @customConstructor ISQueueActionsAction:new */
   export class ISQueueActionsAction extends lua.client.TimedActions.ISQueueActionsAction {}
 
-  // [lua/client/TimedActions/ISRackFirearm.d.ts]
-  /** @customConstructor ISRackFirearm:new */
-  export class ISRackFirearm extends lua.client.TimedActions.ISRackFirearm {}
-
-  // [lua/client/TimedActions/ISReadABook.d.ts]
-  /** @customConstructor ISReadABook:new */
-  export class ISReadABook extends lua.client.TimedActions.ISReadABook {}
-
   // [lua/client/TimedActions/ISReadWorldMap.d.ts]
   /** @customConstructor ISReadWorldMap:new */
   export class ISReadWorldMap extends lua.client.TimedActions.ISReadWorldMap {}
-
-  // [lua/client/TimedActions/ISReloadWeaponAction.d.ts]
-  /** @customConstructor ISReloadWeaponAction:new */
-  export class ISReloadWeaponAction extends lua.client.TimedActions.ISReloadWeaponAction {}
-
-  // [lua/client/TimedActions/ISRemoveBrokenGlass.d.ts]
-  /** @customConstructor ISRemoveBrokenGlass:new */
-  export class ISRemoveBrokenGlass extends lua.client.TimedActions.ISRemoveBrokenGlass {}
-
-  // [lua/client/TimedActions/ISRemoveBullet.d.ts]
-  /** @customConstructor ISRemoveBullet:new */
-  export class ISRemoveBullet extends lua.client.TimedActions.ISRemoveBullet {}
-
-  // [lua/client/TimedActions/ISRemoveBush.d.ts]
-  /** @customConstructor ISRemoveBush:new */
-  export class ISRemoveBush extends lua.client.TimedActions.ISRemoveBush {}
-
-  // [lua/client/TimedActions/ISRemoveCarBatteryFromChargerAction.d.ts]
-  /** @customConstructor ISRemoveCarBatteryFromChargerAction:new */
-  export class ISRemoveCarBatteryFromChargerAction extends lua.client.TimedActions
-    .ISRemoveCarBatteryFromChargerAction {}
-
-  // [lua/client/TimedActions/ISRemoveGlass.d.ts]
-  /** @customConstructor ISRemoveGlass:new */
-  export class ISRemoveGlass extends lua.client.TimedActions.ISRemoveGlass {}
-
-  // [lua/client/TimedActions/ISRemoveGrass.d.ts]
-  /** @customConstructor ISRemoveGrass:new */
-  export class ISRemoveGrass extends lua.client.TimedActions.ISRemoveGrass {}
-
-  // [lua/client/TimedActions/ISRemovePatch.d.ts]
-  /** @customConstructor ISRemovePatch:new */
-  export class ISRemovePatch extends lua.client.TimedActions.ISRemovePatch {}
-
-  // [lua/client/TimedActions/ISRemoveSheetAction.d.ts]
-  /** @customConstructor ISRemoveSheetAction:new */
-  export class ISRemoveSheetAction extends lua.client.TimedActions.ISRemoveSheetAction {}
-
-  // [lua/client/TimedActions/ISRemoveSheetRope.d.ts]
-  /** @customConstructor ISRemoveSheetRope:new */
-  export class ISRemoveSheetRope extends lua.client.TimedActions.ISRemoveSheetRope {}
-
-  // [lua/client/TimedActions/ISRemoveWeaponUpgrade.d.ts]
-  /** @customConstructor ISRemoveWeaponUpgrade:new */
-  export class ISRemoveWeaponUpgrade extends lua.client.TimedActions.ISRemoveWeaponUpgrade {}
-
-  // [lua/client/TimedActions/ISRepairClothing.d.ts]
-  /** @customConstructor ISRepairClothing:new */
-  export class ISRepairClothing extends lua.client.TimedActions.ISRepairClothing {}
-
-  // [lua/client/TimedActions/ISRestAction.d.ts]
-  /** @customConstructor ISRestAction:new */
-  export class ISRestAction extends lua.client.TimedActions.ISRestAction {}
-
-  // [lua/client/TimedActions/ISRipClothing.d.ts]
-  /** @customConstructor ISRipClothing:new */
-  export class ISRipClothing extends lua.client.TimedActions.ISRipClothing {}
-
-  // [lua/client/TimedActions/ISScavengeAction.d.ts]
-  /** @customConstructor ISScavengeAction:new */
-  export class ISScavengeAction extends lua.client.TimedActions.ISScavengeAction {}
-
-  // [lua/client/TimedActions/ISSetComboWasherDryerMode.d.ts]
-  /** @customConstructor ISSetComboWasherDryerMode:new */
-  export class ISSetComboWasherDryerMode extends lua.client.TimedActions.ISSetComboWasherDryerMode {}
-
-  // [lua/client/TimedActions/ISSitOnChairAction.d.ts]
-  /** @customConstructor ISSitOnChairAction:new */
-  export class ISSitOnChairAction extends lua.client.TimedActions.ISSitOnChairAction {}
-
-  // [lua/client/TimedActions/ISSmashWindow.d.ts]
-  /** @customConstructor ISSmashWindow:new */
-  export class ISSmashWindow extends lua.client.TimedActions.ISSmashWindow {}
-
-  // [lua/client/TimedActions/ISSplint.d.ts]
-  /** @customConstructor ISSplint:new */
-  export class ISSplint extends lua.client.TimedActions.ISSplint {}
-
-  // [lua/client/TimedActions/ISStitch.d.ts]
-  /** @customConstructor ISStitch:new */
-  export class ISStitch extends lua.client.TimedActions.ISStitch {}
-
-  // [lua/client/TimedActions/ISStopAlarmClockAction.d.ts]
-  /** @customConstructor ISStopAlarmClockAction:new */
-  export class ISStopAlarmClockAction extends lua.client.TimedActions.ISStopAlarmClockAction {}
-
-  // [lua/client/TimedActions/ISTakeCarBatteryChargerAction.d.ts]
-  /** @customConstructor ISTakeCarBatteryChargerAction:new */
-  export class ISTakeCarBatteryChargerAction extends lua.client.TimedActions.ISTakeCarBatteryChargerAction {}
-
-  // [lua/client/TimedActions/ISTakeFuel.d.ts]
-  /** @customConstructor ISTakeFuel:new */
-  export class ISTakeFuel extends lua.client.TimedActions.ISTakeFuel {}
-
-  // [lua/client/TimedActions/ISTakeGenerator.d.ts]
-  /** @customConstructor ISTakeGenerator:new */
-  export class ISTakeGenerator extends lua.client.TimedActions.ISTakeGenerator {}
-
-  // [lua/client/TimedActions/ISTakePillAction.d.ts]
-  /** @customConstructor ISTakePillAction:new */
-  export class ISTakePillAction extends lua.client.TimedActions.ISTakePillAction {}
-
-  // [lua/client/TimedActions/ISTakeTrap.d.ts]
-  /** @customConstructor ISTakeTrap:new */
-  export class ISTakeTrap extends lua.client.TimedActions.ISTakeTrap {}
-
-  // [lua/client/TimedActions/ISTakeWaterAction.d.ts]
-  /** @customConstructor ISTakeWaterAction:new */
-  export class ISTakeWaterAction extends lua.client.TimedActions.ISTakeWaterAction {}
 
   // [lua/client/TimedActions/ISTimedActionQueue.d.ts]
   /** @customConstructor ISTimedActionQueue:new */
   export class ISTimedActionQueue extends lua.client.TimedActions.ISTimedActionQueue {}
 
-  // [lua/client/TimedActions/ISToggleClothingDryer.d.ts]
-  /** @customConstructor ISToggleClothingDryer:new */
-  export class ISToggleClothingDryer extends lua.client.TimedActions.ISToggleClothingDryer {}
-
-  // [lua/client/TimedActions/ISToggleClothingWasher.d.ts]
-  /** @customConstructor ISToggleClothingWasher:new */
-  export class ISToggleClothingWasher extends lua.client.TimedActions.ISToggleClothingWasher {}
-
-  // [lua/client/TimedActions/ISToggleComboWasherDryer.d.ts]
-  /** @customConstructor ISToggleComboWasherDryer:new */
-  export class ISToggleComboWasherDryer extends lua.client.TimedActions.ISToggleComboWasherDryer {}
-
-  // [lua/client/TimedActions/ISToggleLightAction.d.ts]
-  /** @customConstructor ISToggleLightAction:new */
-  export class ISToggleLightAction extends lua.client.TimedActions.ISToggleLightAction {}
-
-  // [lua/client/TimedActions/ISToggleSafetyAction.d.ts]
-  /** @customConstructor ISToggleSafetyAction:new */
-  export class ISToggleSafetyAction extends lua.client.TimedActions.ISToggleSafetyAction {}
-
-  // [lua/client/TimedActions/ISToggleStoveAction.d.ts]
-  /** @customConstructor ISToggleStoveAction:new */
-  export class ISToggleStoveAction extends lua.client.TimedActions.ISToggleStoveAction {}
-
-  // [lua/client/TimedActions/ISTransferWaterAction.d.ts]
-  /** @customConstructor ISTransferWaterAction:new */
-  export class ISTransferWaterAction extends lua.client.TimedActions.ISTransferWaterAction {}
-
-  // [lua/client/TimedActions/ISTrimBeard.d.ts]
-  /** @customConstructor ISTrimBeard:new */
-  export class ISTrimBeard extends lua.client.TimedActions.ISTrimBeard {}
-
-  // [lua/client/TimedActions/ISUnbarricadeAction.d.ts]
-  /** @customConstructor ISUnbarricadeAction:new */
-  export class ISUnbarricadeAction extends lua.client.TimedActions.ISUnbarricadeAction {}
-
-  // [lua/client/TimedActions/ISUnequipAction.d.ts]
-  /** @customConstructor ISUnequipAction:new */
-  export class ISUnequipAction extends lua.client.TimedActions.ISUnequipAction {}
-
-  // [lua/client/TimedActions/ISUnloadBulletsFromFirearm.d.ts]
-  /** @customConstructor ISUnloadBulletsFromFirearm:new */
-  export class ISUnloadBulletsFromFirearm extends lua.client.TimedActions.ISUnloadBulletsFromFirearm {}
-
-  // [lua/client/TimedActions/ISUnloadBulletsFromMagazine.d.ts]
-  /** @customConstructor ISUnloadBulletsFromMagazine:new */
-  export class ISUnloadBulletsFromMagazine extends lua.client.TimedActions.ISUnloadBulletsFromMagazine {}
-
-  // [lua/client/TimedActions/ISUpgradeWeapon.d.ts]
-  /** @customConstructor ISUpgradeWeapon:new */
-  export class ISUpgradeWeapon extends lua.client.TimedActions.ISUpgradeWeapon {}
-
-  // [lua/client/TimedActions/ISWakeOtherPlayer.d.ts]
-  /** @customConstructor ISWakeOtherPlayer:new */
-  export class ISWakeOtherPlayer extends lua.client.TimedActions.ISWakeOtherPlayer {}
-
-  // [lua/client/TimedActions/ISWashClothing.d.ts]
-  /** @customConstructor ISWashClothing:new */
-  export class ISWashClothing extends lua.client.TimedActions.ISWashClothing {}
-
-  // [lua/client/TimedActions/ISWashYourself.d.ts]
-  /** @customConstructor ISWashYourself:new */
-  export class ISWashYourself extends lua.client.TimedActions.ISWashYourself {}
-
-  // [lua/client/TimedActions/ISWearClothing.d.ts]
-  /** @customConstructor ISWearClothing:new */
-  export class ISWearClothing extends lua.client.TimedActions.ISWearClothing {}
-  export abstract class WearClothingAnimations extends lua.client.TimedActions.WearClothingAnimations {}
-
   // [lua/client/TimedActions/WalkToTimedAction.d.ts]
   /** @customConstructor ISWalkToTimedAction:new */
   export class ISWalkToTimedAction extends lua.client.TimedActions.ISWalkToTimedAction {}
+
+  // [lua/client/TimedActions/WalkToTimedActionF.d.ts]
+  /** @customConstructor ISWalkToTimedActionF:new */
+  export class ISWalkToTimedActionF extends lua.client.TimedActions.ISWalkToTimedActionF {}
 
   // [lua/client/Traps/CTrapGlobalObject.d.ts]
   /** @customConstructor CTrapGlobalObject:new */
@@ -2529,22 +2885,6 @@ declare module '@asledgehammer/pipewrench/client' {
   // [lua/client/Traps/CTrapSystem.d.ts]
   /** @customConstructor CTrapSystem:new */
   export class CTrapSystem extends lua.client.Traps.CTrapSystem {}
-
-  // [lua/client/Traps/TimedActions/ISAddBaitAction.d.ts]
-  /** @customConstructor ISAddBaitAction:new */
-  export class ISAddBaitAction extends lua.client.Traps.TimedActions.ISAddBaitAction {}
-
-  // [lua/client/Traps/TimedActions/ISCheckTrapAction.d.ts]
-  /** @customConstructor ISCheckTrapAction:new */
-  export class ISCheckTrapAction extends lua.client.Traps.TimedActions.ISCheckTrapAction {}
-
-  // [lua/client/Traps/TimedActions/ISRemoveBaitAction.d.ts]
-  /** @customConstructor ISRemoveBaitAction:new */
-  export class ISRemoveBaitAction extends lua.client.Traps.TimedActions.ISRemoveBaitAction {}
-
-  // [lua/client/Traps/TimedActions/ISRemoveTrapAction.d.ts]
-  /** @customConstructor ISRemoveTrapAction:new */
-  export class ISRemoveTrapAction extends lua.client.Traps.TimedActions.ISRemoveTrapAction {}
 
   // [lua/client/Tutorial/ISUI/TutorialFocus.d.ts]
   /** @customConstructor TutorialFocus:new */
@@ -2590,6 +2930,9 @@ declare module '@asledgehammer/pipewrench/client' {
   export class TutorialStep extends lua.client.Tutorial.TutorialStep {}
 
   // [lua/client/Vehicles/ISUI/EditVehicleState.d.ts]
+  /** @customConstructor EditVehicleState_EditPhysics_PhysicsMeshPanel:new */
+  export class EditVehicleState_EditPhysics_PhysicsMeshPanel extends lua.client.Vehicles.ISUI
+    .EditVehicleState_EditPhysics_PhysicsMeshPanel {}
   /** @customConstructor EditVehicleUI:new */
   export class EditVehicleUI extends lua.client.Vehicles.ISUI.EditVehicleUI {}
   /** @customConstructor EditVehicleUI_EditArea:new */
@@ -2600,6 +2943,8 @@ declare module '@asledgehammer/pipewrench/client' {
   export class EditVehicleUI_EditChassis extends lua.client.Vehicles.ISUI.EditVehicleUI_EditChassis {}
   /** @customConstructor EditVehicleUI_EditPanel:new */
   export class EditVehicleUI_EditPanel extends lua.client.Vehicles.ISUI.EditVehicleUI_EditPanel {}
+  /** @customConstructor EditVehicleUI_EditPart:new */
+  export class EditVehicleUI_EditPart extends lua.client.Vehicles.ISUI.EditVehicleUI_EditPart {}
   /** @customConstructor EditVehicleUI_EditPassenger:new */
   export class EditVehicleUI_EditPassenger extends lua.client.Vehicles.ISUI.EditVehicleUI_EditPassenger {}
   /** @customConstructor EditVehicleUI_EditPhysics:new */
@@ -2681,25 +3026,13 @@ declare module '@asledgehammer/pipewrench/client' {
   // [lua/client/Vehicles/ISVehicleTrailerUtils.d.ts]
   export abstract class ISVehicleTrailerUtils extends lua.client.Vehicles.ISVehicleTrailerUtils {}
 
-  // [lua/client/Vehicles/TimedActions/ISAddGasolineToVehicle.d.ts]
-  /** @customConstructor ISAddGasolineToVehicle:new */
-  export class ISAddGasolineToVehicle extends lua.client.Vehicles.TimedActions.ISAddGasolineToVehicle {}
-
   // [lua/client/Vehicles/TimedActions/ISAttachTrailerToVehicle.d.ts]
   /** @customConstructor ISAttachTrailerToVehicle:new */
   export class ISAttachTrailerToVehicle extends lua.client.Vehicles.TimedActions.ISAttachTrailerToVehicle {}
 
-  // [lua/client/Vehicles/TimedActions/ISCloseVehicleDoor.d.ts]
-  /** @customConstructor ISCloseVehicleDoor:new */
-  export class ISCloseVehicleDoor extends lua.client.Vehicles.TimedActions.ISCloseVehicleDoor {}
-
   // [lua/client/Vehicles/TimedActions/ISConfigHeadlight.d.ts]
   /** @customConstructor ISConfigHeadlight:new */
   export class ISConfigHeadlight extends lua.client.Vehicles.TimedActions.ISConfigHeadlight {}
-
-  // [lua/client/Vehicles/TimedActions/ISDeflateTire.d.ts]
-  /** @customConstructor ISDeflateTire:new */
-  export class ISDeflateTire extends lua.client.Vehicles.TimedActions.ISDeflateTire {}
 
   // [lua/client/Vehicles/TimedActions/ISDetachTrailerFromVehicle.d.ts]
   /** @customConstructor ISDetachTrailerFromVehicle:new */
@@ -2717,73 +3050,17 @@ declare module '@asledgehammer/pipewrench/client' {
   /** @customConstructor ISHorn:new */
   export class ISHorn extends lua.client.Vehicles.TimedActions.ISHorn {}
 
-  // [lua/client/Vehicles/TimedActions/ISHotwireVehicle.d.ts]
-  /** @customConstructor ISHotwireVehicle:new */
-  export class ISHotwireVehicle extends lua.client.Vehicles.TimedActions.ISHotwireVehicle {}
-
-  // [lua/client/Vehicles/TimedActions/ISInflateTire.d.ts]
-  /** @customConstructor ISInflateTire:new */
-  export class ISInflateTire extends lua.client.Vehicles.TimedActions.ISInflateTire {}
-
-  // [lua/client/Vehicles/TimedActions/ISInstallVehiclePart.d.ts]
-  /** @customConstructor ISInstallVehiclePart:new */
-  export class ISInstallVehiclePart extends lua.client.Vehicles.TimedActions.ISInstallVehiclePart {}
-
   // [lua/client/Vehicles/TimedActions/ISLightbarUITimedAction.d.ts]
   /** @customConstructor ISLightbarUITimedAction:new */
   export class ISLightbarUITimedAction extends lua.client.Vehicles.TimedActions.ISLightbarUITimedAction {}
-
-  // [lua/client/Vehicles/TimedActions/ISLockDoors.d.ts]
-  /** @customConstructor ISLockDoors:new */
-  export class ISLockDoors extends lua.client.Vehicles.TimedActions.ISLockDoors {}
-
-  // [lua/client/Vehicles/TimedActions/ISLockVehicleDoor.d.ts]
-  /** @customConstructor ISLockVehicleDoor:new */
-  export class ISLockVehicleDoor extends lua.client.Vehicles.TimedActions.ISLockVehicleDoor {}
-
-  // [lua/client/Vehicles/TimedActions/ISOpenCloseVehicleWindow.d.ts]
-  /** @customConstructor ISOpenCloseVehicleWindow:new */
-  export class ISOpenCloseVehicleWindow extends lua.client.Vehicles.TimedActions.ISOpenCloseVehicleWindow {}
 
   // [lua/client/Vehicles/TimedActions/ISOpenMechanicsUIAction.d.ts]
   /** @customConstructor ISOpenMechanicsUIAction:new */
   export class ISOpenMechanicsUIAction extends lua.client.Vehicles.TimedActions.ISOpenMechanicsUIAction {}
 
-  // [lua/client/Vehicles/TimedActions/ISOpenVehicleDoor.d.ts]
-  /** @customConstructor ISOpenVehicleDoor:new */
-  export class ISOpenVehicleDoor extends lua.client.Vehicles.TimedActions.ISOpenVehicleDoor {}
-
   // [lua/client/Vehicles/TimedActions/ISPathFindAction.d.ts]
   /** @customConstructor ISPathFindAction:new */
   export class ISPathFindAction extends lua.client.Vehicles.TimedActions.ISPathFindAction {}
-
-  // [lua/client/Vehicles/TimedActions/ISRechargeCarBattery.d.ts]
-  /** @customConstructor ISRechargeCarBattery:new */
-  export class ISRechargeCarBattery extends lua.client.Vehicles.TimedActions.ISRechargeCarBattery {}
-
-  // [lua/client/Vehicles/TimedActions/ISRefuelFromGasPump.d.ts]
-  /** @customConstructor ISRefuelFromGasPump:new */
-  export class ISRefuelFromGasPump extends lua.client.Vehicles.TimedActions.ISRefuelFromGasPump {}
-
-  // [lua/client/Vehicles/TimedActions/ISRemoveBurntVehicle.d.ts]
-  /** @customConstructor ISRemoveBurntVehicle:new */
-  export class ISRemoveBurntVehicle extends lua.client.Vehicles.TimedActions.ISRemoveBurntVehicle {}
-
-  // [lua/client/Vehicles/TimedActions/ISRepairEngine.d.ts]
-  /** @customConstructor ISRepairEngine:new */
-  export class ISRepairEngine extends lua.client.Vehicles.TimedActions.ISRepairEngine {}
-
-  // [lua/client/Vehicles/TimedActions/ISShutOffVehicleEngine.d.ts]
-  /** @customConstructor ISShutOffVehicleEngine:new */
-  export class ISShutOffVehicleEngine extends lua.client.Vehicles.TimedActions.ISShutOffVehicleEngine {}
-
-  // [lua/client/Vehicles/TimedActions/ISSmashVehicleWindow.d.ts]
-  /** @customConstructor ISSmashVehicleWindow:new */
-  export class ISSmashVehicleWindow extends lua.client.Vehicles.TimedActions.ISSmashVehicleWindow {}
-
-  // [lua/client/Vehicles/TimedActions/ISStartVehicleEngine.d.ts]
-  /** @customConstructor ISStartVehicleEngine:new */
-  export class ISStartVehicleEngine extends lua.client.Vehicles.TimedActions.ISStartVehicleEngine {}
 
   // [lua/client/Vehicles/TimedActions/ISStopVehicle.d.ts]
   /** @customConstructor ISStopVehicle:new */
@@ -2792,26 +3069,6 @@ declare module '@asledgehammer/pipewrench/client' {
   // [lua/client/Vehicles/TimedActions/ISSwitchVehicleSeat.d.ts]
   /** @customConstructor ISSwitchVehicleSeat:new */
   export class ISSwitchVehicleSeat extends lua.client.Vehicles.TimedActions.ISSwitchVehicleSeat {}
-
-  // [lua/client/Vehicles/TimedActions/ISTakeEngineParts.d.ts]
-  /** @customConstructor ISTakeEngineParts:new */
-  export class ISTakeEngineParts extends lua.client.Vehicles.TimedActions.ISTakeEngineParts {}
-
-  // [lua/client/Vehicles/TimedActions/ISTakeGasolineFromVehicle.d.ts]
-  /** @customConstructor ISTakeGasolineFromVehicle:new */
-  export class ISTakeGasolineFromVehicle extends lua.client.Vehicles.TimedActions.ISTakeGasolineFromVehicle {}
-
-  // [lua/client/Vehicles/TimedActions/ISUninstallVehiclePart.d.ts]
-  /** @customConstructor ISUninstallVehiclePart:new */
-  export class ISUninstallVehiclePart extends lua.client.Vehicles.TimedActions.ISUninstallVehiclePart {}
-
-  // [lua/client/Vehicles/TimedActions/ISUnlockVehicleDoor.d.ts]
-  /** @customConstructor ISUnlockVehicleDoor:new */
-  export class ISUnlockVehicleDoor extends lua.client.Vehicles.TimedActions.ISUnlockVehicleDoor {}
-
-  // [lua/client/Vehicles/TimedActions/ISWashVehicle.d.ts]
-  /** @customConstructor ISWashVehicle:new */
-  export class ISWashVehicle extends lua.client.Vehicles.TimedActions.ISWashVehicle {}
 
   // [lua/client/XpSystem/ISUI/ISCharacterInfo.d.ts]
   /** @customConstructor ISCharacterInfo:new */

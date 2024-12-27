@@ -2,6 +2,88 @@
 declare module '@asledgehammer/pipewrench' {
   export namespace zombie.core.skinnedmodel.visual {
     /**
+     * @customConstructor AnimalVisual.new
+     * @
+     * [CLASS] zombie.core.skinnedmodel.visual.AnimalVisual extends zombie.core.skinnedmodel.visual.BaseVisual
+     */
+    export class AnimalVisual {
+      /**
+       * Constructors: 
+       *  - (IAnimalVisual arg0)
+       */
+      constructor(arg0: zombie.core.skinnedmodel.visual.IAnimalVisual);
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      clear(): void;
+      /**
+       * Method Parameters: 
+       *  - (BaseVisual arg0): void
+       */
+      copyFrom(arg0: zombie.core.skinnedmodel.visual.BaseVisual): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0, ItemVisuals arg1): void
+       */
+      dressInNamedOutfit(arg0: string, arg1: zombie.core.skinnedmodel.visual.ItemVisuals): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getAnimalSize(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getAnimalType(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.characters.animals.IsoAnimal
+       */
+      getIsoAnimal(): zombie.characters.animals.IsoAnimal;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.model.Model
+       */
+      getModel(): zombie.core.skinnedmodel.model.Model;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.scripting.objects.ModelScript
+       */
+      getModelScript(): zombie.scripting.objects.ModelScript;
+      /**
+       * Method Parameters: 
+       *  - (IsoAnimal arg0): zombie.core.skinnedmodel.model.Model
+       */
+      getModelTest(arg0: zombie.characters.animals.IsoAnimal): zombie.core.skinnedmodel.model.Model;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getSkinTexture(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isSkeleton(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (ByteBuffer arg0, int arg1): void
+       */
+      load(arg0: java.nio.ByteBuffer, arg1: number): void;
+      /**
+       * Method Parameters: 
+       *  - (ByteBuffer arg0): void
+       */
+      save(arg0: java.nio.ByteBuffer): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): void
+       */
+      setSkinTextureName(arg0: string): void;
+    }
+    /**
      * @customConstructor BaseVisual.new
      * @
      * [ABSTRACT CLASS] zombie.core.skinnedmodel.visual.BaseVisual
@@ -76,9 +158,10 @@ declare module '@asledgehammer/pipewrench' {
       addBodyVisualFromItemType(arg0: string): zombie.core.skinnedmodel.visual.ItemVisual;
       /**
        * Method Parameters: 
+       *  - (ItemVisuals arg0, ClothingItem arg1): zombie.core.skinnedmodel.visual.ItemVisual
        *  - (ItemVisuals arg0, Item arg1): zombie.core.skinnedmodel.visual.ItemVisual
        */
-      addClothingItem(arg0: zombie.core.skinnedmodel.visual.ItemVisuals, arg1: zombie.scripting.objects.Item): zombie.core.skinnedmodel.visual.ItemVisual;
+      addClothingItem(arg0: zombie.core.skinnedmodel.visual.ItemVisuals, arg1: zombie.core.skinnedmodel.population.ClothingItem | zombie.scripting.objects.Item): zombie.core.skinnedmodel.visual.ItemVisual;
       /**
        * Method Parameters: 
        *  - (Empty): void
@@ -98,8 +181,9 @@ declare module '@asledgehammer/pipewrench' {
       /**
        * Method Parameters: 
        *  - (String arg0, ItemVisuals arg1): void
+       *  - (String arg0, ItemVisuals arg1, boolean arg2): void
        */
-      dressInNamedOutfit(arg0: string, arg1: zombie.core.skinnedmodel.visual.ItemVisuals): void;
+      dressInNamedOutfit(arg0: string, arg1: zombie.core.skinnedmodel.visual.ItemVisuals, arg2?: boolean): void;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.core.ImmutableColor
@@ -369,6 +453,54 @@ declare module '@asledgehammer/pipewrench' {
       static GetMask(arg0: zombie.core.skinnedmodel.visual.ItemVisuals): zombie.core.skinnedmodel.model.CharacterMask;
     }
     /**
+     * @customConstructor IAnimalVisual.new
+     * @
+     * [INTERFACE] zombie.core.skinnedmodel.visual.IAnimalVisual
+     */
+    export class IAnimalVisual {
+      protected constructor();
+      /**
+       * Method Parameters: 
+       *  - (Empty): number
+       */
+      getAnimalSize(): number;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getAnimalType(): string;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.visual.AnimalVisual
+       */
+      getAnimalVisual(): zombie.core.skinnedmodel.visual.AnimalVisual;
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.core.skinnedmodel.visual.HumanVisual
+       */
+      getHumanVisual(): zombie.core.skinnedmodel.visual.HumanVisual;
+      /**
+       * Method Parameters: 
+       *  - (ItemVisuals arg0): void
+       */
+      getItemVisuals(arg0: zombie.core.skinnedmodel.visual.ItemVisuals): void;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isFemale(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isSkeleton(): boolean;
+      /**
+       * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      isZombie(): boolean;
+    }
+    /**
      * @customConstructor IHumanVisual.new
      * @
      * [INTERFACE] zombie.core.skinnedmodel.visual.IHumanVisual
@@ -448,6 +580,11 @@ declare module '@asledgehammer/pipewrench' {
       copyPatches(arg0: zombie.core.skinnedmodel.visual.ItemVisual): void;
       /**
        * Method Parameters: 
+       *  - (ItemVisual arg0): void
+       */
+      copyVisualFrom(arg0: zombie.core.skinnedmodel.visual.ItemVisual): void;
+      /**
+       * Method Parameters: 
        *  - (Empty): string
        */
       getAlternateModelName(): string;
@@ -499,6 +636,11 @@ declare module '@asledgehammer/pipewrench' {
       getDenimPatch(arg0: zombie.characterTextures.BloodBodyPartType): number;
       /**
        * Method Parameters: 
+       *  - (Empty): string
+       */
+      getDescription(): string;
+      /**
+       * Method Parameters: 
        *  - (BloodBodyPartType arg0): number
        */
       getDirt(arg0: zombie.characterTextures.BloodBodyPartType): number;
@@ -514,9 +656,10 @@ declare module '@asledgehammer/pipewrench' {
       getHolesNumber(): number;
       /**
        * Method Parameters: 
+       *  - (Empty): number
        *  - (ClothingItem arg0): number
        */
-      getHue(arg0: zombie.core.skinnedmodel.population.ClothingItem): number;
+      getHue(arg0?: zombie.core.skinnedmodel.population.ClothingItem): number;
       /**
        * Method Parameters: 
        *  - (Empty): zombie.inventory.InventoryItem
@@ -760,6 +903,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (int arg0): E
        */
       get(arg0: number): any;
+      /**
+       * Method Parameters: 
+       *  - (Empty): string
+       */
+      getDescription(): string;
       /**
        * Method Parameters: 
        *  - (Empty): number

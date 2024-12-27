@@ -39,7 +39,7 @@ declare module '@asledgehammer/pipewrench/client' {
 
       onMouseMove(mx: any, my: any, hitTest: any, ...__args: never[]): any;
 
-      render(...__args: never[]): any;
+      render(r: any, g: any, b: any, a: any, ...__args: never[]): any;
 
       setBounds(x1: any, y1: any, x2: any, y2: any, ...__args: never[]): any;
 

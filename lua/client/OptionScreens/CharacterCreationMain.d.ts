@@ -7,8 +7,6 @@ declare module '@asledgehammer/pipewrench/client' {
       [id: string]: any;
       static [id: string]: any;
 
-      static debug: any;
-
       static forceUpdateCombo: any;
 
       static instance: any;
@@ -53,6 +51,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       clothingTextureCombo: any;
 
+      clothingTextureComboWidth: any;
+
       clothingWidgets: any;
 
       colorPanel: any;
@@ -62,6 +62,8 @@ declare module '@asledgehammer/pipewrench/client' {
       colorPickerHair: any;
 
       colorPickerSkin: any;
+
+      columnWidth: any;
 
       comboWid: any;
 
@@ -74,8 +76,6 @@ declare module '@asledgehammer/pipewrench/client' {
       disabledRArrow: any;
 
       female: any;
-
-      femaletex: any;
 
       hairColorButton: any;
 
@@ -99,10 +99,6 @@ declare module '@asledgehammer/pipewrench/client' {
 
       lArrow: any;
 
-      mainPanel: any;
-
-      maletex: any;
-
       originalYOffset: any;
 
       outfitCombo: any;
@@ -114,6 +110,8 @@ declare module '@asledgehammer/pipewrench/client' {
       presetPanel: any;
 
       randomButton: any;
+
+      randomizeOutfitBtn: any;
 
       rArrow: any;
 
@@ -129,17 +127,39 @@ declare module '@asledgehammer/pipewrench/client' {
 
       skinColors: any;
 
+      soundPlayer: any;
+
+      soundRef: any;
+
+      voiceDemoButton: any;
+
+      voiceLbl: any;
+
+      voicePitchLbl: any;
+
+      voicePitchSlider: any;
+
+      voiceRect: any;
+
+      voiceTypeCombo: any;
+
+      voiceTypeLbl: any;
+
       xOffset: any;
 
       yOffset: any;
 
       constructor(x: any, y: any, width: any, height: any);
 
+      arrangeClothingUI(...__args: never[]): any;
+
+      checkAllClothingOptions(...__args: never[]): any;
+
       create(...__args: never[]): any;
 
       createBeardTypeBtn(...__args: never[]): any;
 
-      createChestTypeBtn(...__args: never[]): any;
+      createBodyTypeBtn(...__args: never[]): any;
 
       createClothingBtn(...__args: never[]): any;
 
@@ -148,6 +168,8 @@ declare module '@asledgehammer/pipewrench/client' {
       createClothingComboDebug(bodyLocation: any, ...__args: never[]): any;
 
       createHairTypeBtn(...__args: never[]): any;
+
+      createVoiceTypeBtn(...__args: never[]): any;
 
       debugClothingDefinitions(...__args: never[]): any;
 
@@ -158,6 +180,12 @@ declare module '@asledgehammer/pipewrench/client' {
       disableBtn(...__args: never[]): any;
 
       doClothingCombo(definition: any, erasePrevious: any, ...__args: never[]): any;
+
+      getVoicePitch(...__args: never[]): any;
+
+      getVoicePrefix(...__args: never[]): any;
+
+      getVoiceType(...__args: never[]): any;
 
       initClothing(...__args: never[]): any;
 
@@ -211,6 +239,10 @@ declare module '@asledgehammer/pipewrench/client' {
 
       onSkinColorSelected(button: any, x: any, y: any, ...__args: never[]): any;
 
+      onVoiceTypeSelected(combo: any, ...__args: never[]): any;
+
+      removeAllClothingWidgets(...__args: never[]): any;
+
       requiredSize(panel: any, ...__args: never[]): any;
 
       saveBuildStep1(...__args: never[]): any;
@@ -219,9 +251,13 @@ declare module '@asledgehammer/pipewrench/client' {
 
       saveBuildValidate(text: any, ...__args: never[]): any;
 
+      shouldShowAllOutfits(...__args: never[]): any;
+
       syncTorsoWithUI(...__args: never[]): any;
 
       syncUIWithTorso(...__args: never[]): any;
+
+      update(...__args: never[]): any;
 
       updateClothingTextureCombo(bodyLocation: any, clothing: any, ...__args: never[]): any;
 

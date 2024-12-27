@@ -52,6 +52,9 @@ declare module '@asledgehammer/pipewrench/server' {
       static getItems: (playerNum: any, ...__args: never[]) => any;
 
       /** @noSelf */
+      static getItemScripts: (items: any, ...__args: never[]) => any;
+
+      /** @noSelf */
       static getPerksTableForChr: (perks: any, chr: any, ...__args: never[]) => any;
 
       /** @noSelf */
@@ -82,7 +85,7 @@ declare module '@asledgehammer/pipewrench/server' {
       static split: (string: any, pattern: any, ...__args: never[]) => any;
 
       /** @noSelf */
-      static testItems: (chr: any, items: any, typeToItem: any, ...__args: never[]) => any;
+      static testItems: (chr: any, items: any, typeToItem: any, tagToItem: any, ...__args: never[]) => any;
 
       /** @noSelf */
       static testPerks: (chr: any, perks: any, ...__args: never[]) => any;

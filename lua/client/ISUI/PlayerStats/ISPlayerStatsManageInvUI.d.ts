@@ -7,6 +7,8 @@ declare module '@asledgehammer/pipewrench/client' {
       [id: string]: any;
       static [id: string]: any;
 
+      static instance: any;
+
       addItemBtn: any;
 
       capacityWeight: any;
@@ -23,7 +25,9 @@ declare module '@asledgehammer/pipewrench/client' {
 
       no: any;
 
-      player: any;
+      playerID: any;
+
+      playerUsername: any;
 
       refreshBtn: any;
 
@@ -31,7 +35,7 @@ declare module '@asledgehammer/pipewrench/client' {
 
       selectedItem: any;
 
-      constructor(x: any, y: any, width: any, height: any, player: any);
+      constructor(x: any, y: any, width: any, height: any, playerID: any, playerUsername: any);
 
       drawDatas(y: any, item: any, alt: any, ...__args: never[]): any;
 
@@ -46,6 +50,12 @@ declare module '@asledgehammer/pipewrench/client' {
       render(...__args: never[]): any;
 
       requestDatas(...__args: never[]): any;
+
+      /** @noSelf */
+      static Close: (...__args: never[]) => any;
+
+      /** @noSelf */
+      static OnOpenPanel: (...__args: never[]) => any;
 
       /** @noSelf */
       static ReceiveItems: (itemtable: any, ...__args: never[]) => any;

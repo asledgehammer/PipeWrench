@@ -1,8 +1,14 @@
 local Exports = {}
 -- [LUA-PARTIAL:START]
 
---[lua/server/BuildingObjects/ISAnvil.d.ts]
-Exports.ISAnvil = loadstring("require('lua/server/BuildingObjects/ISAnvil');return _G['ISAnvil']")()
+--[lua/server/Animal/ISPickDungCursor.d.ts]
+Exports.ISPickDungCursor = loadstring("require('lua/server/Animal/ISPickDungCursor');return _G['ISPickDungCursor']")()
+
+--[lua/server/Animal/ISScytheGrassCursor.d.ts]
+Exports.ISScytheGrassCursor = loadstring("require('lua/server/Animal/ISScytheGrassCursor');return _G['ISScytheGrassCursor']")()
+
+--[lua/server/BuildingObjects/ISAnimalPickMateCursor.d.ts]
+Exports.ISAnimalPickMateCursor = loadstring("require('lua/server/BuildingObjects/ISAnimalPickMateCursor');return _G['ISAnimalPickMateCursor']")()
 
 --[lua/server/BuildingObjects/ISBarbedWire.d.ts]
 Exports.ISBarbedWire = loadstring("require('lua/server/BuildingObjects/ISBarbedWire');return _G['ISBarbedWire']")()
@@ -10,23 +16,32 @@ Exports.ISBarbedWire = loadstring("require('lua/server/BuildingObjects/ISBarbedW
 --[lua/server/BuildingObjects/ISBrushToolTileCursor.d.ts]
 Exports.ISBrushToolTileCursor = loadstring("require('lua/server/BuildingObjects/ISBrushToolTileCursor');return _G['ISBrushToolTileCursor']")()
 
---[lua/server/BuildingObjects/ISBSFurnace.d.ts]
-Exports.ISBSFurnace = loadstring("require('lua/server/BuildingObjects/ISBSFurnace');return _G['ISBSFurnace']")()
-
 --[lua/server/BuildingObjects/ISBuildCursorMouse.d.ts]
 Exports.ISBuildCursorMouse = loadstring("require('lua/server/BuildingObjects/ISBuildCursorMouse');return _G['ISBuildCursorMouse']")()
 
 --[lua/server/BuildingObjects/ISBuildingObject.d.ts]
 Exports.ISBuildingObject = loadstring("require('lua/server/BuildingObjects/ISBuildingObject');return _G['ISBuildingObject']")()
 
+--[lua/server/BuildingObjects/ISBuildIsoEntity.d.ts]
+Exports.ISBuildIsoEntity = loadstring("require('lua/server/BuildingObjects/ISBuildIsoEntity');return _G['ISBuildIsoEntity']")()
+
+--[lua/server/BuildingObjects/ISBuildRampCursor.d.ts]
+Exports.ISBuildRampCursor = loadstring("require('lua/server/BuildingObjects/ISBuildRampCursor');return _G['ISBuildRampCursor']")()
+
 --[lua/server/BuildingObjects/ISBuildUtil.d.ts]
 Exports.buildUtil = loadstring("require('lua/server/BuildingObjects/ISBuildUtil');return _G['buildUtil']")()
+
+--[lua/server/BuildingObjects/ISButcheringHook.d.ts]
+Exports.ISButcheringHook = loadstring("require('lua/server/BuildingObjects/ISButcheringHook');return _G['ISButcheringHook']")()
 
 --[lua/server/BuildingObjects/ISChopTreeCursor.d.ts]
 Exports.ISChopTreeCursor = loadstring("require('lua/server/BuildingObjects/ISChopTreeCursor');return _G['ISChopTreeCursor']")()
 
 --[lua/server/BuildingObjects/ISCleanBloodCursor.d.ts]
 Exports.ISCleanBloodCursor = loadstring("require('lua/server/BuildingObjects/ISCleanBloodCursor');return _G['ISCleanBloodCursor']")()
+
+--[lua/server/BuildingObjects/ISCleanGraffitiCursor.d.ts]
+Exports.ISCleanGraffitiCursor = loadstring("require('lua/server/BuildingObjects/ISCleanGraffitiCursor');return _G['ISCleanGraffitiCursor']")()
 
 --[lua/server/BuildingObjects/ISCompost.d.ts]
 Exports.ISCompost = loadstring("require('lua/server/BuildingObjects/ISCompost');return _G['ISCompost']")()
@@ -43,6 +58,9 @@ Exports.ISDoubleTileFurniture = loadstring("require('lua/server/BuildingObjects/
 --[lua/server/BuildingObjects/ISEmptyGraves.d.ts]
 Exports.ISEmptyGraves = loadstring("require('lua/server/BuildingObjects/ISEmptyGraves');return _G['ISEmptyGraves']")()
 
+--[lua/server/BuildingObjects/ISHutch.d.ts]
+Exports.ISHutch = loadstring("require('lua/server/BuildingObjects/ISHutch');return _G['ISHutch']")()
+
 --[lua/server/BuildingObjects/ISLightSource.d.ts]
 Exports.ISLightSource = loadstring("require('lua/server/BuildingObjects/ISLightSource');return _G['ISLightSource']")()
 
@@ -54,6 +72,12 @@ Exports.ISNaturalFloor = loadstring("require('lua/server/BuildingObjects/ISNatur
 
 --[lua/server/BuildingObjects/ISPaintCursor.d.ts]
 Exports.ISPaintCursor = loadstring("require('lua/server/BuildingObjects/ISPaintCursor');return _G['ISPaintCursor']")()
+
+--[lua/server/BuildingObjects/ISPaperCursor.d.ts]
+Exports.ISPaperCursor = loadstring("require('lua/server/BuildingObjects/ISPaperCursor');return _G['ISPaperCursor']")()
+
+--[lua/server/BuildingObjects/ISPickCharacterCursor.d.ts]
+Exports.ISPickCharacterCursor = loadstring("require('lua/server/BuildingObjects/ISPickCharacterCursor');return _G['ISPickCharacterCursor']")()
 
 --[lua/server/BuildingObjects/ISPlace3DItemCursor.d.ts]
 Exports.ISPlace3DItemCursor = loadstring("require('lua/server/BuildingObjects/ISPlace3DItemCursor');return _G['ISPlace3DItemCursor']")()
@@ -94,12 +118,10 @@ Exports.ISWoodenWall = loadstring("require('lua/server/BuildingObjects/ISWoodenW
 --[lua/server/BuildingObjects/PaintingReference.d.ts]
 Exports.OtherPainting = loadstring("require('lua/server/BuildingObjects/PaintingReference');return _G['OtherPainting']")()
 Exports.Painting = loadstring("require('lua/server/BuildingObjects/PaintingReference');return _G['Painting']")()
+Exports.WallPaper = loadstring("require('lua/server/BuildingObjects/PaintingReference');return _G['WallPaper']")()
 
 --[lua/server/Camping/BuildingObjects/campingCampfire.d.ts]
 Exports.campingCampfire = loadstring("require('lua/server/Camping/BuildingObjects/campingCampfire');return _G['campingCampfire']")()
-
---[lua/server/Camping/BuildingObjects/campingTent.d.ts]
-Exports.campingTent = loadstring("require('lua/server/Camping/BuildingObjects/campingTent');return _G['campingTent']")()
 
 --[lua/server/Camping/camping_fuel.d.ts]
 Exports.campingFuelCategory = loadstring("require('lua/server/Camping/camping_fuel');return _G['campingFuelCategory']")()
@@ -143,6 +165,15 @@ Exports.SFarmingSystem = loadstring("require('lua/server/Farming/SFarmingSystem'
 --[lua/server/Farming/SPlantGlobalObject.d.ts]
 Exports.SPlantGlobalObject = loadstring("require('lua/server/Farming/SPlantGlobalObject');return _G['SPlantGlobalObject']")()
 
+--[lua/server/FeedingTrough/BuildingObjects/ISFeedingTrough.d.ts]
+Exports.ISFeedingTrough = loadstring("require('lua/server/FeedingTrough/BuildingObjects/ISFeedingTrough');return _G['ISFeedingTrough']")()
+
+--[lua/server/FeedingTrough/SFeedingTroughGlobalObject.d.ts]
+Exports.SFeedingTroughGlobalObject = loadstring("require('lua/server/FeedingTrough/SFeedingTroughGlobalObject');return _G['SFeedingTroughGlobalObject']")()
+
+--[lua/server/FeedingTrough/SFeedingTroughSystem.d.ts]
+Exports.SFeedingTroughSystem = loadstring("require('lua/server/FeedingTrough/SFeedingTroughSystem');return _G['SFeedingTroughSystem']")()
+
 --[lua/server/FireFighting/FireFighting.d.ts]
 Exports.FireFighting = loadstring("require('lua/server/FireFighting/FireFighting');return _G['FireFighting']")()
 
@@ -151,6 +182,9 @@ Exports.ISExtinguishCursor = loadstring("require('lua/server/FireFighting/ISExti
 
 --[lua/server/Fishing/BuildingObjects/FishingNet.d.ts]
 Exports.fishingNet = loadstring("require('lua/server/Fishing/BuildingObjects/FishingNet');return _G['fishingNet']")()
+
+--[lua/server/Foraging/forageServer.d.ts]
+Exports.forageServer = loadstring("require('lua/server/Foraging/forageServer');return _G['forageServer']")()
 
 --[lua/server/HealthSystem/HealthUpdate.d.ts]
 Exports.healthUpdate = loadstring("require('lua/server/HealthSystem/HealthUpdate');return _G['healthUpdate']")()
@@ -185,6 +219,12 @@ Exports.WeaponUpgrades = loadstring("require('lua/server/Items/SuburbsDistributi
 
 --[lua/server/Map/MapObjects/MOFarming.d.ts]
 
+--[lua/server/Map/MapObjects/MOFeedingTrough.d.ts]
+Exports.MOFeedingTrough = loadstring("require('lua/server/Map/MapObjects/MOFeedingTrough');return _G['MOFeedingTrough']")()
+
+--[lua/server/Map/MapObjects/MOHutch.d.ts]
+Exports.MOHutch = loadstring("require('lua/server/Map/MapObjects/MOHutch');return _G['MOHutch']")()
+
 --[lua/server/Map/MetaEnum.d.ts]
 Exports.MetaObjectEnum = loadstring("require('lua/server/Map/MetaEnum');return _G['MetaObjectEnum']")()
 
@@ -194,14 +234,11 @@ Exports.SGlobalObject = loadstring("require('lua/server/Map/SGlobalObject');retu
 --[lua/server/Map/SGlobalObjectSystem.d.ts]
 Exports.SGlobalObjectSystem = loadstring("require('lua/server/Map/SGlobalObjectSystem');return _G['SGlobalObjectSystem']")()
 
---[lua/server/MetalDrum/BuildingObjects/ISMetalDrum.d.ts]
-Exports.ISMetalDrum = loadstring("require('lua/server/MetalDrum/BuildingObjects/ISMetalDrum');return _G['ISMetalDrum']")()
+--[lua/server/metazones/AnimalsPathConfig.d.ts]
+Exports.animals_path_config = loadstring("require('lua/server/metazones/AnimalsPathConfig');return _G['animals_path_config']")()
 
---[lua/server/MetalDrum/SMetalDrumGlobalObject.d.ts]
-Exports.SMetalDrumGlobalObject = loadstring("require('lua/server/MetalDrum/SMetalDrumGlobalObject');return _G['SMetalDrumGlobalObject']")()
-
---[lua/server/MetalDrum/SMetalDrumSystem.d.ts]
-Exports.SMetalDrumSystem = loadstring("require('lua/server/MetalDrum/SMetalDrumSystem');return _G['SMetalDrumSystem']")()
+--[lua/server/metazones/BiomeMapConfig.d.ts]
+Exports.biome_map_config = loadstring("require('lua/server/metazones/BiomeMapConfig');return _G['biome_map_config']")()
 
 --[lua/server/metazones/metazoneHandler.d.ts]
 
@@ -244,6 +281,9 @@ Exports.SRainBarrelGlobalObject = loadstring("require('lua/server/RainBarrel/SRa
 --[lua/server/RainBarrel/SRainBarrelSystem.d.ts]
 Exports.SRainBarrelSystem = loadstring("require('lua/server/RainBarrel/SRainBarrelSystem');return _G['SRainBarrelSystem']")()
 
+--[lua/server/RandomizedWorldContent/StoryClutter/StoryClutter_Definitions.d.ts]
+Exports.StoryClutter = loadstring("require('lua/server/RandomizedWorldContent/StoryClutter/StoryClutter_Definitions');return _G['StoryClutter']")()
+
 --[lua/server/recipecode.d.ts]
 Exports.Recipe = loadstring("require('lua/server/recipecode');return _G['Recipe']")()
 
@@ -269,7 +309,6 @@ Exports.STrapGlobalObject = loadstring("require('lua/server/Traps/STrapGlobalObj
 Exports.STrapSystem = loadstring("require('lua/server/Traps/STrapSystem');return _G['STrapSystem']")()
 
 --[lua/server/Traps/TrapDefinition.d.ts]
-Exports.Animals = loadstring("require('lua/server/Traps/TrapDefinition');return _G['Animals']")()
 Exports.Traps = loadstring("require('lua/server/Traps/TrapDefinition');return _G['Traps']")()
 
 --[lua/server/TurnBased/TurnBasedMain.d.ts]
@@ -278,9 +317,15 @@ Exports.TurnbasedDummyChr = loadstring("require('lua/server/TurnBased/TurnBasedM
 --[lua/server/TutorialHelperFunctions.d.ts]
 Exports.TutorialHelperFunctions = loadstring("require('lua/server/TutorialHelperFunctions');return _G['TutorialHelperFunctions']")()
 
+--[lua/server/Vehicles/ProfessionVehicles.d.ts]
+Exports.ProfessionVehicles = loadstring("require('lua/server/Vehicles/ProfessionVehicles');return _G['ProfessionVehicles']")()
+
 --[lua/server/Vehicles/Vehicles.d.ts]
 Exports.Vehicles = loadstring("require('lua/server/Vehicles/Vehicles');return _G['Vehicles']")()
 Exports.VehicleUtils = loadstring("require('lua/server/Vehicles/Vehicles');return _G['VehicleUtils']")()
+
+--[lua/server/WorldGen/WorldGen.d.ts]
+Exports.worldgen = loadstring("require('lua/server/WorldGen/WorldGen');return _G['worldgen']")()
 
 --[lua/server/XpSystem/XPSystem_SkillBook.d.ts]
 Exports.SkillBook = loadstring("require('lua/server/XpSystem/XPSystem_SkillBook');return _G['SkillBook']")()

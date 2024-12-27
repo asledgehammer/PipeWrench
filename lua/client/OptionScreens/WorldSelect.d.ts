@@ -7,6 +7,10 @@ declare module '@asledgehammer/pipewrench/client' {
       [id: string]: any;
       static [id: string]: any;
 
+      advancedButton: any;
+
+      advancedPanel: any;
+
       backButton: any;
 
       listbox: any;
@@ -15,11 +19,41 @@ declare module '@asledgehammer/pipewrench/client' {
 
       mapListbox: any;
 
+      maxXSlider: any;
+
+      maxXValueLabel: any;
+
+      maxYSlider: any;
+
+      maxYValueLabel: any;
+
+      minXSlider: any;
+
+      minXValueLabel: any;
+
+      minYSlider: any;
+
+      minYValueLabel: any;
+
       nextButton: any;
 
       previousScreen: any;
 
+      randomButton: any;
+
+      seedLabel: any;
+
+      seedTextBox: any;
+
+      XLabel: any;
+
+      YLabel: any;
+
       constructor(x: any, y: any, width: any, height: any);
+
+      checkSeed(...__args: never[]): any;
+
+      clickAdvanced(...__args: never[]): any;
 
       clickBack(...__args: never[]): any;
 
@@ -31,6 +65,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       fillList(...__args: never[]): any;
 
+      generateNewSeed(...__args: never[]): any;
+
       hasChoices(...__args: never[]): any;
 
       onDblClick(...__args: never[]): any;
@@ -41,6 +77,14 @@ declare module '@asledgehammer/pipewrench/client' {
 
       onJoypadBeforeDeactivate_listbox(joypadData: any, ...__args: never[]): any;
 
+      onMaxXSliderChange(value: any, ...__args: never[]): any;
+
+      onMaxYSliderChange(value: any, ...__args: never[]): any;
+
+      onMinXSliderChange(value: any, ...__args: never[]): any;
+
+      onMinYSliderChange(value: any, ...__args: never[]): any;
+
       onOptionMouseDown(button: any, x: any, y: any, ...__args: never[]): any;
 
       onResolutionChange(oldw: any, oldh: any, neww: any, newh: any, ...__args: never[]): any;
@@ -48,6 +92,8 @@ declare module '@asledgehammer/pipewrench/client' {
       onSelectWorld(...__args: never[]): any;
 
       render(...__args: never[]): any;
+
+      saveGenParams(...__args: never[]): any;
     }
   }
   export namespace lua.client.OptionScreens.WorldSelect {}

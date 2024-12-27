@@ -39,9 +39,13 @@ declare module '@asledgehammer/pipewrench/client' {
 
       onGridMult3(button: any, x: any, y: any, ...__args: never[]): any;
 
+      onKeyPress(key: any, ...__args: never[]): any;
+
       onResolutionChange(oldw: any, oldh: any, neww: any, newh: any, ...__args: never[]): any;
 
       onSave(button: any, x: any, y: any, ...__args: never[]): any;
+
+      onSetModelWeaponRotationHackChanged(isChecked: any, ...__args: never[]): any;
 
       setEditUI(ui: any, ...__args: never[]): any;
 
@@ -57,6 +61,10 @@ declare module '@asledgehammer/pipewrench/client' {
       [id: string]: any;
       static [id: string]: any;
 
+      animalScriptByModelScript: any;
+
+      animalScriptByName: any;
+
       belowList: any;
 
       button3: any;
@@ -71,11 +79,23 @@ declare module '@asledgehammer/pipewrench/client' {
 
       comboAddModel: any;
 
+      comboAnimal: any;
+
       comboPlayer: any;
+
+      comboPlayerAnimation: any;
+
+      comboVehicle: any;
+
+      currentAnimalScript: any;
+
+      editor: any;
 
       femaleBodyScript: any;
 
       gizmo: any;
+
+      isWorldAttachment: any;
 
       list: any;
 
@@ -89,6 +109,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       originalRotate: any;
 
+      originalScale: any;
+
       selectedAttachment: any;
 
       selectedBone: any;
@@ -97,7 +119,9 @@ declare module '@asledgehammer/pipewrench/client' {
 
       transformMode: any;
 
-      constructor(x: any, y: any, width: any, height: any);
+      constructor(x: any, y: any, width: any, height: any, editor: any);
+
+      addVehiclePartParentMenus(context: any, vehicleScript: any, child: any, parentMenu: any, ...__args: never[]): any;
 
       createChildren(...__args: never[]): any;
 
@@ -107,19 +131,41 @@ declare module '@asledgehammer/pipewrench/client' {
 
       doLayout(...__args: never[]): any;
 
+      fillAnimalCombo(...__args: never[]): any;
+
+      fillVehicleCombo(...__args: never[]): any;
+
+      getSceneObjectId(modelScript: any, ...__args: never[]): any;
+
       getSelectedAttachmentIds(...__args: never[]): any;
 
       getSelectedAttachments(...__args: never[]): any;
 
       getUniqueAttachmentId(modelScript: any, ...__args: never[]): any;
 
-      isBodyScript(modelScript: any, ...__args: never[]): any;
+      initAnimalModelScripts(...__args: never[]): any;
+
+      isAnimalScript(modelScript: any, ...__args: never[]): any;
+
+      isCharacterScript(modelScript: any, ...__args: never[]): any;
+
+      isPlayerScript(modelScript: any, ...__args: never[]): any;
+
+      isVehicleScript(modelScript: any, ...__args: never[]): any;
 
       onComboAddModel(...__args: never[]): any;
 
+      onComboAnimalModel(...__args: never[]): any;
+
+      onComboPlayerAnimation(...__args: never[]): any;
+
       onComboPlayerModel(...__args: never[]): any;
 
+      onComboVehicleModel(...__args: never[]): any;
+
       onDeleteAttachment(button: any, x: any, y: any, ...__args: never[]): any;
+
+      onKeyPress(key: any, ...__args: never[]): any;
 
       onNameEntered(...__args: never[]): any;
 
@@ -129,15 +175,35 @@ declare module '@asledgehammer/pipewrench/client' {
 
       onRightMouseDownList1(x: any, y: any, ...__args: never[]): any;
 
+      onSetCharacterAnimate(child: any, ...__args: never[]): any;
+
+      onSetCharacterShowBones(child: any, ...__args: never[]): any;
+
+      onSetModelIgnoreVehicleScale(child: any, ...__args: never[]): any;
+
       onSetObjectAutoRotate(child: any, ...__args: never[]): any;
 
       onSetObjectParent(child: any, childAttachment: any, parent: any, parentAttachment: any, ...__args: never[]): any;
+
+      onSetObjectParentToVehiclePart(
+        child: any,
+        scriptPart: any,
+        scriptModel: any,
+        attachment: any,
+        ...__args: never[]
+      ): any;
+
+      onSetObjectVisible(child: any, ...__args: never[]): any;
 
       onToggleGizmo(...__args: never[]): any;
 
       onToggleGlobalLocal(...__args: never[]): any;
 
       pickCharacterBone(...__args: never[]): any;
+
+      populateObjectList(...__args: never[]): any;
+
+      setPlayerAnimationCombo(...__args: never[]): any;
 
       setSelectedAttachment(attach: any, ...__args: never[]): any;
 
@@ -162,6 +228,8 @@ declare module '@asledgehammer/pipewrench/client' {
       java3(func: any, arg0: any, arg1: any, arg2: any, ...__args: never[]): any;
 
       java4(func: any, arg0: any, arg1: any, arg2: any, arg3: any, ...__args: never[]): any;
+
+      java5(func: any, arg0: any, arg1: any, arg2: any, arg3: any, arg4: any, ...__args: never[]): any;
 
       java6(func: any, arg0: any, arg1: any, arg2: any, arg3: any, arg4: any, arg5: any, ...__args: never[]): any;
 
@@ -227,8 +295,6 @@ declare module '@asledgehammer/pipewrench/client' {
 
       gizmoAxis: any;
 
-      gizmoClickScenePos: any;
-
       gizmoStartScenePos: any;
 
       zeroVector: any;
@@ -265,11 +331,13 @@ declare module '@asledgehammer/pipewrench/client' {
       [id: string]: any;
       static [id: string]: any;
 
+      editor: any;
+
       scene: any;
 
       weaponRotationHack: any;
 
-      constructor(x: any, y: any, width: any, height: any);
+      constructor(x: any, y: any, width: any, height: any, editor: any);
 
       createChildren(...__args: never[]): any;
 

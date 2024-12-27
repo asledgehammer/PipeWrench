@@ -77,8 +77,6 @@ declare module '@asledgehammer/pipewrench/client' {
 
       windows: any;
 
-      xoffset: any;
-
       xpListBox: any;
 
       constructor(x: any, y: any, width: any, height: any, playerChecked: any, admin: any);
@@ -93,7 +91,7 @@ declare module '@asledgehammer/pipewrench/client' {
 
       onAddWarningPoint(button: any, reason: any, amount: any, ...__args: never[]): any;
 
-      onAddXP(button: any, perk: any, amount: any, addGlobalXP: any, ...__args: never[]): any;
+      onAddXP(button: any, perk: any, amount: any, addGlobalXP: any, useMultipliers: any, ...__args: never[]): any;
 
       onChangeAccessLevel(button: any, accessLevel: any, ...__args: never[]): any;
 

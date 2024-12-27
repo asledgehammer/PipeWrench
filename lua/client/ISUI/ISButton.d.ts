@@ -9,6 +9,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       allowMouseUpProcessing: any;
 
+      backgroundColorEnabled: any;
+
       backgroundColorMouseOver: any;
 
       backgroundColorPressed: any;
@@ -57,6 +59,10 @@ declare module '@asledgehammer/pipewrench/client' {
 
       onmouseover: any;
 
+      originalHeight: any;
+
+      originalWidth: any;
+
       overlayText: any;
 
       pressed: any;
@@ -70,6 +76,8 @@ declare module '@asledgehammer/pipewrench/client' {
       target: any;
 
       textColor: any;
+
+      textureBackground: any;
 
       textureColor: any;
 
@@ -93,7 +101,13 @@ declare module '@asledgehammer/pipewrench/client' {
         allowMouseUpProcessing: any,
       );
 
+      calculateLayout(_preferredWidth: any, _preferredHeight: any, ...__args: never[]): any;
+
       clearJoypadButton(...__args: never[]): any;
+
+      enableAcceptColor(...__args: never[]): any;
+
+      enableCancelColor(...__args: never[]): any;
 
       forceClick(...__args: never[]): any;
 
@@ -144,6 +158,8 @@ declare module '@asledgehammer/pipewrench/client' {
       setTooltip(tooltip: any, ...__args: never[]): any;
 
       setWidthToTitle(minWidth: any, isJoypad: any, ...__args: never[]): any;
+
+      toggleAcceptCancel(bEnabled: any, ...__args: never[]): any;
 
       update(...__args: never[]): any;
 

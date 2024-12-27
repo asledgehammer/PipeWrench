@@ -203,9 +203,9 @@ declare module '@asledgehammer/pipewrench' {
       protected constructor();
       /**
        * Method Parameters: 
-       *  - (Empty): zombie.util.Pool<zombie.util.IPooledObject>
+       *  - (Empty): zombie.util.Pool$PoolReference
        */
-      getPool(): zombie.util.Pool<zombie.util.IPooledObject>;
+      getPoolReference(): zombie.util.Pool$PoolReference;
       /**
        * Method Parameters: 
        *  - (Empty): boolean
@@ -220,7 +220,7 @@ declare module '@asledgehammer/pipewrench' {
        * Method Parameters: 
        *  - (Empty): void
        */
-      release(): void;
+      release<E>(): void;
       /**
        * Method Parameters: 
        *  - (boolean arg0): void
@@ -228,31 +228,31 @@ declare module '@asledgehammer/pipewrench' {
       setFree(arg0: boolean): void;
       /**
        * Method Parameters: 
-       *  - (Pool arg0): void
+       *  - (PoolReference arg0): void
        */
-      setPool(arg0: zombie.util.Pool<zombie.util.IPooledObject>): void;
+      setPool(arg0: zombie.util.Pool$PoolReference): void;
       /**
        * @noSelf
        *
        * Method Parameters: 
+       *  - (IPooledObject[] arg0): E[]
        *  - (List arg0): void
-       *  - (IPooledObject[] arg0): void
        */
-      static release(arg0: java.util.List<zombie.util.IPooledObject> | zombie.util.IPooledObject[]): void;
+      static release<E>(arg0: E[] | java.util.List<zombie.util.IPooledObject>): E[] | void;
       /**
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IPooledObject[] arg0): void
+       *  - (IPooledObject[] arg0): E[]
        */
-      static releaseAndBlank(arg0: zombie.util.IPooledObject[]): void;
+      static releaseAndBlank<E>(arg0: E[]): E[];
       /**
        * @noSelf
        *
        * Method Parameters: 
-       *  - (IPooledObject[] arg0): void
+       *  - (IPooledObject[] arg0): E[]
        */
-      static tryReleaseAndBlank(arg0: zombie.util.IPooledObject[]): void;
+      static tryReleaseAndBlank<E>(arg0: E[]): E[];
     }
     /**
      * @customConstructor PZCalendar.new
@@ -321,6 +321,11 @@ declare module '@asledgehammer/pipewrench' {
       alloc(): PO;
       /**
        * Method Parameters: 
+       *  - (Empty): java.lang.ThreadLocal<zombie.util.Pool$PoolStacks>
+       */
+      getPoolStacks(): java.lang.ThreadLocal<zombie.util.Pool$PoolStacks>;
+      /**
+       * Method Parameters: 
        *  - (IPooledObject arg0): void
        */
       release(arg0: zombie.util.IPooledObject): void;
@@ -333,6 +338,64 @@ declare module '@asledgehammer/pipewrench' {
        *  - (IPooledObject[] arg0): E[]
        */
       static tryRelease<E>(arg0: E | any): any;
+    }
+    /**
+     * @customConstructor PoolReference.new
+     * @
+     * [CLASS] zombie.util.Pool$PoolReference
+     */
+    export class Pool$PoolReference {
+
+      /**
+       * Method Parameters: 
+       *  - (Empty): zombie.util.Pool<zombie.util.IPooledObject>
+       */
+      getPool(): zombie.util.Pool<zombie.util.IPooledObject>;
+      /**
+       * Method Parameters: 
+       *  - (IPooledObject arg0): void
+       */
+      release(arg0: zombie.util.IPooledObject): void;
+    }
+    /**
+     * @customConstructor PoolStacks.new
+     * @
+     * [CLASS] zombie.util.Pool$PoolStacks
+     */
+    export class Pool$PoolStacks {
+
+      /**
+       * Method Parameters: 
+       *  - (Empty): gnu.trove.set.hash.THashSet<zombie.util.IPooledObject>
+       */
+      getInUse(): gnu.trove.set.hash.THashSet<zombie.util.IPooledObject>;
+      /**
+       * Method Parameters: 
+       *  - (Empty): java.util.List<zombie.util.IPooledObject>
+       */
+      getReleased(): java.util.List<zombie.util.IPooledObject>;
+    }
+    /**
+     * @customConstructor SharedStrings.new
+     * @
+     * [CLASS] zombie.util.SharedStrings
+     */
+    export class SharedStrings {
+      /**
+       * Constructors: 
+       *  - (Empty Constructor)
+       */
+      constructor();
+      /**
+       * Method Parameters: 
+       *  - (Empty): void
+       */
+      clear(): void;
+      /**
+       * Method Parameters: 
+       *  - (String arg0): string
+       */
+      get(arg0: string): string;
     }
   }
 }

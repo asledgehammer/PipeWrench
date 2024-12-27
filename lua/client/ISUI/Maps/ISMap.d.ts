@@ -39,6 +39,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       mapAPI: any;
 
+      mapKey: any;
+
       mapObj: any;
 
       ok: any;
@@ -58,6 +60,8 @@ declare module '@asledgehammer/pipewrench/client' {
       selectedColor: any;
 
       setMapData: any;
+
+      showMapKey: any;
 
       symbolsUI: any;
 

@@ -206,6 +206,11 @@ declare module '@asledgehammer/pipewrench' {
       IsSpeaking(): boolean;
       /**
        * Method Parameters: 
+       *  - (Empty): boolean
+       */
+      IsSpeakingNPC(): boolean;
+      /**
+       * Method Parameters: 
        *  - (String arg0): void
        */
       Say(arg0: string): void;

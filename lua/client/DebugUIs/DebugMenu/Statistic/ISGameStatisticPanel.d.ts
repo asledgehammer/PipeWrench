@@ -23,8 +23,6 @@ declare module '@asledgehammer/pipewrench/client' {
 
       buttonToggleMonitor: any;
 
-      cGreen: any;
-
       colExt: any;
 
       colInt: any;
@@ -62,8 +60,6 @@ declare module '@asledgehammer/pipewrench/client' {
       connection_zombies_desync_teleport: any;
 
       connections: any;
-
-      cRed: any;
 
       data: any;
 

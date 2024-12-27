@@ -7,6 +7,9 @@ declare module '@asledgehammer/pipewrench' {
      * [CLASS] zombie.core.skinnedmodel.advancedanimation.debug.AnimatorDebugMonitor
      */
     export class AnimatorDebugMonitor {
+      /** zombie.core.skinnedmodel.advancedanimation.debug.AnimatorDebugMonitor */
+      static instance?: zombie.core.skinnedmodel.advancedanimation.debug.AnimatorDebugMonitor;
+
       /**
        * Constructors: 
        *  - (IsoGameCharacter arg0)
@@ -69,6 +72,11 @@ declare module '@asledgehammer/pipewrench' {
       getSelectedVariableFloat(): number;
       /**
        * Method Parameters: 
+       *  - (Empty): zombie.characters.IsoGameCharacter
+       */
+      getTarget(): zombie.characters.IsoGameCharacter;
+      /**
+       * Method Parameters: 
        *  - (Empty): boolean
        */
       isDoTickStamps(): boolean;
@@ -92,6 +100,11 @@ declare module '@asledgehammer/pipewrench' {
        *  - (String arg0): void
        */
       setSelectedVariable(arg0: string): void;
+      /**
+       * Method Parameters: 
+       *  - (IsoGameCharacter arg0): void
+       */
+      setTarget(arg0: zombie.characters.IsoGameCharacter): void;
       /**
        * Method Parameters: 
        *  - (IsoGameCharacter arg0, AnimLayer[] arg1): void

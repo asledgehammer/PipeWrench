@@ -11,8 +11,6 @@ declare module '@asledgehammer/pipewrench/client' {
 
       static worldSoundTime: any;
 
-      craftingBank: any;
-
       craftingSound: any;
 
       doSaw: any;
@@ -25,6 +23,14 @@ declare module '@asledgehammer/pipewrench/client' {
 
       north: any;
 
+      onCancelFunc: any;
+
+      onCancelTarget: any;
+
+      onCompleteFunc: any;
+
+      onCompleteTarget: any;
+
       sawSound: any;
 
       soundTime: any;
@@ -32,6 +38,10 @@ declare module '@asledgehammer/pipewrench/client' {
       spriteName: any;
 
       square: any;
+
+      started: any;
+
+      transactionId: any;
 
       x: any;
 
@@ -43,7 +53,11 @@ declare module '@asledgehammer/pipewrench/client' {
 
       faceLocation(...__args: never[]): any;
 
-      isReachableThroughWindow(_square: any, ...__args: never[]): any;
+      isReachableThroughWindowOrDoor(_square: any, ...__args: never[]): any;
+
+      setOnCancel(_func: any, _target: any, ...__args: never[]): any;
+
+      setOnComplete(_func: any, _target: any, ...__args: never[]): any;
     }
   }
   export namespace lua.client.BuildingObjects.TimedActions.ISBuildAction {}

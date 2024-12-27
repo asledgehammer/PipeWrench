@@ -13,6 +13,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       backButton: any;
 
+      checkPlayer: any;
+
       deletePlayerButton: any;
 
       deleteWorldButton: any;
@@ -25,11 +27,17 @@ declare module '@asledgehammer/pipewrench/client' {
 
       memoryToIndex: any;
 
+      nextProgress: any;
+
       panel: any;
+
+      progress: any;
 
       richText: any;
 
       selected: any;
+
+      serverProgressBar: any;
 
       serverStatus: any;
 
@@ -43,7 +51,13 @@ declare module '@asledgehammer/pipewrench/client' {
 
       startButton: any;
 
+      startY: any;
+
+      statusTextY: any;
+
       uiStatus: any;
+
+      workshopCount: any;
 
       worldVersion: any;
 
@@ -89,6 +103,8 @@ declare module '@asledgehammer/pipewrench/client' {
 
       onMemorySelected(...__args: never[]): any;
 
+      onResolutionChange(oldw: any, oldh: any, neww: any, newh: any, ...__args: never[]): any;
+
       onSettingsSelected(...__args: never[]): any;
 
       onSoftReset(...__args: never[]): any;
@@ -96,6 +112,8 @@ declare module '@asledgehammer/pipewrench/client' {
       onSoftResetStep2(button: any, joypadData: any, ...__args: never[]): any;
 
       onStartButtonDown(button: any, x: any, y: any, ...__args: never[]): any;
+
+      onUsernameChanged(...__args: never[]): any;
 
       render(...__args: never[]): any;
 
